@@ -172,7 +172,67 @@ Kaynak (resmi): https://www.cfainstitute.org/programs/cfa-program/charter ; http
 - **CFA Society Istanbul** (Türkiye'deki yerel dernek): https://community.cfainstitute.org/istanbul/about-us — dernek aidatı sayfada yayımlanmamış → **UNVERIFIED**. Dernek aidatı CFA Institute aidatından ayrıdır (membership/join sayfası).
 
 ## 6. Geçme oranları, MPS tahminleri, çalışma saatleri, sonuç açıklama süreleri
-_(dolduruluyor)_
+
+### 6a. Resmi geçme oranları (2016–2026)
+**Birincil kaynak (resmi):** CFA Institute "CFA® Exam Results 1963-2026" PDF (dosya değişikliği 25 Eyl 2026): https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/1963-current-candidate-examination-results.pdf ; özet infografik: https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/cfa-exam-results-pass-rate-infographic.pdf (erişim 2026-10-15). PDF metni kolon koordinatlarıyla ayrıştırıldı (L1/L2/L3 kolonları x-konumundan belirlendi).
+**Çapraz teyit:** https://300hours.com/cfa-pass-rates/ ; https://www.pw.live/cfa/exams/cfa-pass-rates ; Bloomberg (L2 May 2024 %59 "1998'den beri en yüksek"): https://www.bloomberg.com/news/articles/2024-07-02/cfa-level-ii-pass-rate-spikes-to-59-the-highest-since-1998 ; resmi basın bültenleri (ör. https://www.cfainstitute.org/about/press-room/2025/cfa-program-results-level-i-may-2025).
+
+| Pencere | Level I | Level II | Level III |
+|---|---|---|---|
+| 2016 Haz (A) | 43% | 46% | 54% |
+| 2016 Ara (B) | 43% | — | — |
+| 2017 Haz | 43% | 47% | 54% |
+| 2017 Ara | 43% | — | — |
+| 2018 Haz | 43% | 45% | 56% |
+| 2018 Ara | 45% | — | — |
+| 2019 Haz | 41% | 44% | 56% |
+| 2019 Ara | 42% | — | — |
+| 2020 Ara (B, pandemi) | 49% | 55% | 56% |
+| 2021 Şub | 44% | — | — |
+| 2021 May | 25% | 40% | 42% |
+| 2021 Tem | 22% | — | — |
+| 2021 Ağu | 26% | 29% | 42% |
+| 2021 Kas | 27% | 46% | 43% |
+| 2022 Şub | 36% | 44% | — |
+| 2022 May | 38% | — | 49% |
+| 2022 Ağu | 37% | 40% | 48% |
+| 2022 Kas | 36% | 44% | — |
+| 2023 Şub | 38% | — | 48% |
+| 2023 May | 39% | 52% | — |
+| 2023 Ağu | 37% | 44% | 47% |
+| 2023 Kas | 35% | 44% | — |
+| 2024 Şub | 44% | — | 49% |
+| 2024 May | 46% | 59% | — |
+| 2024 Ağu | 44% | 47% | 48% |
+| 2024 Kas | 43% | 39% | — |
+| 2025 Şub | 45% | — | 49% |
+| 2025 May | 45% | 54% | — |
+| 2025 Ağu | 43% | 44% | 50% |
+| 2025 Kas | 43% | 42% | — |
+| 2026 Şub | 45% | — | 50% |
+| 2026 May | 39% (31.566 aday) | 43% (18.111) | — |
+| 2026 Ağu | 43% (28.145 aday) | 45% (10.004) | **henüz açıklanmadı** (beklenen 20 Eki 2026 — soleadea/analystprep; **UNVERIFIED**) |
+| **10 yıllık ort. 2017–2026** | **40%** | **45%** | **51%** |
+| 5 yıllık ort. 2022–2026 | 41% | 46% | 49% |
+| 1963–2026 ort. | 41% | 46% | 55% |
+
+Notlar:
+- 2020 Haziran sınavı pandemi nedeniyle yapılmadı (tabloda 2020A satırı yok) — resmi PDF'ten çıkarım.
+- İlk kez girenler vs. erteleme yapmış adaylar farkı büyük (ör. L3 Şub 2026: ilk kez %59, ≥1 erteleme %34). Kaynak: https://300hours.com/cfa-pass-rates/ ; resmi L3 Şub 2026 bülteni (arama snippet'i) https://www.rutlandherald.com/news/business/cfa-institute-reports-results-for-cfa-program-level-iii-testing-in-february-2026/article_d6c65374-b433-5638-b1ed-4fafa2aa54ff.html (BusinessWire yeniden yayımı).
+
+### 6b. MPS (Minimum Passing Score) — RESMİ OLMAYAN TAHMİNLER
+- **Resmi olan:** CFA Institute yüzde cinsinden MPS yayımlamaz; her sınav için zorluk farkına göre MPS ayarlanır (Modified Angoff standart belirleme). Sonuçlar ölçekli puanla raporlanır: **L1 ölçek 1000–1900, MPS 1600; L2 2000–2900, MPS 2600; L3 3000–3900, MPS 3600** — bu ölçek bilgisi resmi sayfadan doğrudan okunamadı, iki bağımsız üçüncü taraf kaynakta tutarlı: https://soleadea.org/cfa-exam/results ; https://300hours.com/cfa-passing-score/ (+ zelleducation snippet'i) → **resmi teyit UNVERIFIED**.
+- L1/L2 adaylar 2 sayfalık skor raporu alır (ölçekli puan, MPS çizgisi, konu bazlı performans %70 "mastery" çizgisine karşı); L3'ü geçenler yalnız "Pass" görür. Kaynak: https://soleadea.org/cfa-exam/results.
+- **Gayriresmî tahminler (300Hours, aday beyanlarına dayalı, 2 Eki 2026):** L1 ≈ **%67–69** (son pencereler ~%69), L2 ≈ **%68–70**, L3 ≈ **%60–65** (L3 hata payı daha yüksek). Kaynak: https://300hours.com/cfa-passing-score/ ; benzer aralık (%68–71): zelleducation (arama snippet'i). **Bunlar resmi değildir; uygulamada hedef olarak "~%70+ deneme sınavı skoru" önerisi bir sezgidir, kanıt değildir.**
+
+### 6c. Önerilen çalışma süresi
+- **Resmi:** "recommended study time of 300 hours per level"; başarılı adaylar seviye başına ortalama 300+ saat raporluyor. Kaynak: https://www.cfainstitute.org/programs/cfa-program (erişim 2026-10-15).
+- Seviye bazlı anket rakamları (L1 ~303, L2 ~328, L3 ~344 saat) yalnızca üçüncü taraf kaynaklarda; tarih/metodoloji belirsiz → **UNVERIFIED**. Kaynak: https://efficientlearning.com/cfa/resources/cfa-study-plan/ ; https://300hours.com/increase-your-chances-of-passing-the-cfa-exams-now (snippet'ler).
+
+### 6d. Sonuç açıklama zamanlaması
+- Resmi çerçeve: pencere kapanışından sonra **5–9 hafta** içinde e-posta (soleadea'nın aktardığı resmi zaman çizelgesi). Sonuçlar ~09:00 ET'den itibaren dalgalar halinde gönderilir (TSİ ~16:00).
+- Ağu 2026 örneği: L1 24 Eyl 2026, L2 30 Eyl 2026, L3 20 Eki 2026 (beklenen). Kaynak: https://soleadea.org/cfa-exam/results ; teyit (L1 24 Eyl): https://analystprep.com/blog/cfa-level-i-august-2026-results/ (snippet).
+- **Kritik kural:** Sonuç gününden önce ilgili seviyenin Practical Skills Module'ü tamamlanmazsa sonuç açıklanmaz (bkz. §8). Kaynak: https://soleadea.org/cfa-exam/results ; https://testprepinsight.com/resources/cfa-exam-dates/.
 
 ## 7. Hesap makineleri ve sınav günü kuralları
 
