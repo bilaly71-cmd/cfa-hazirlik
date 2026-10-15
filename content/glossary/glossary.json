@@ -1,0 +1,4318 @@
+[
+  {
+    "en": "time value of money",
+    "tr": [
+      "paranın zaman değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "present value",
+    "tr": [
+      "bugünkü değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "future value",
+    "tr": [
+      "gelecek değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "net present value",
+    "tr": [
+      "net bugünkü değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "internal rate of return",
+    "tr": [
+      "iç verim oranı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "discount rate",
+    "tr": [
+      "iskonto oranı",
+      "indirgeme oranı"
+    ],
+    "enforce": false,
+    "note_tr": "Merkez bankası bağlamında \"reeskont oranı\" da denir; değerleme bağlamında iskonto/indirgeme oranıdır."
+  },
+  {
+    "en": "annuity",
+    "tr": [
+      "anüite",
+      "eşit taksit",
+      "düzenli ödeme"
+    ],
+    "enforce": false,
+    "note_tr": "Sabit aralıklarla yapılan eşit ödemeler dizisi; sigortacılıktaki \"yıllık gelir sigortası\" anlamı CFA L1'de nadirdir."
+  },
+  {
+    "en": "perpetuity",
+    "tr": [
+      "sonsuz anüite",
+      "süresiz anüite",
+      "sonsuz ödeme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "ordinary annuity",
+    "tr": [
+      "dönem sonu anüite",
+      "normal anüite"
+    ],
+    "enforce": false,
+    "note_tr": "Ödemeler dönem sonunda yapılır (BA II Plus: END)."
+  },
+  {
+    "en": "annuity due",
+    "tr": [
+      "dönem başı anüite",
+      "peşin anüite"
+    ],
+    "enforce": false,
+    "note_tr": "Ödemeler dönem başında yapılır (BA II Plus: BGN)."
+  },
+  {
+    "en": "compounding",
+    "tr": [
+      "bileşik",
+      "bileşikleştirme",
+      "faiz üzerinden faiz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "discounting",
+    "tr": [
+      "iskonto etme",
+      "indirgeme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "effective annual rate",
+    "tr": [
+      "efektif yıllık faiz",
+      "efektif yıllık oran"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "stated annual interest rate",
+    "tr": [
+      "yıllık nominal faiz",
+      "nominal yıllık faiz"
+    ],
+    "enforce": false,
+    "note_tr": "\"Quoted rate\", \"APR\" ile aynı anlamda kullanılır; bileşikleştirme sıklığını hesaba katmaz."
+  },
+  {
+    "en": "holding period return",
+    "tr": [
+      "elde tutma dönemi getirisi",
+      "elde tutma getirisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "money-weighted return",
+    "tr": [
+      "para ağırlıklı getiri"
+    ],
+    "enforce": true,
+    "note_tr": "Yatırımcının nakit giriş-çıkışlarını dikkate alır; IRR mantığıdır."
+  },
+  {
+    "en": "time-weighted return",
+    "tr": [
+      "zaman ağırlıklı getiri"
+    ],
+    "enforce": true,
+    "note_tr": "Nakit akışlarının zamanlamasından etkilenmez; portföy yöneticisi performansında tercih edilir."
+  },
+  {
+    "en": "continuously compounded return",
+    "tr": [
+      "sürekli bileşik getiri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "arithmetic mean",
+    "tr": [
+      "aritmetik ortalama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "geometric mean",
+    "tr": [
+      "geometrik ortalama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "harmonic mean",
+    "tr": [
+      "harmonik ortalama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "weighted average",
+    "tr": [
+      "ağırlıklı ortalama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "median",
+    "tr": [
+      "medyan",
+      "ortanca"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "mode",
+    "tr": [
+      "mod",
+      "tepe değer"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik İngilizcede \"kip/biçim\" demektir; istatistikte en sık görülen değerdir."
+  },
+  {
+    "en": "dispersion",
+    "tr": [
+      "dağılım",
+      "yayılım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "range",
+    "tr": [
+      "açıklık",
+      "değişim aralığı"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik anlamı \"aralık/yelpaze\"; istatistikte en büyük ile en küçük değerin farkıdır."
+  },
+  {
+    "en": "standard deviation",
+    "tr": [
+      "standart sapma"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "variance",
+    "tr": [
+      "varyans"
+    ],
+    "enforce": false,
+    "note_tr": "Bütçe/maliyet muhasebesinde \"sapma, fark\" anlamı da vardır; L1 istatistikte varyanstır."
+  },
+  {
+    "en": "covariance",
+    "tr": [
+      "kovaryans"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "correlation",
+    "tr": [
+      "korelasyon",
+      "ilişki katsayısı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "coefficient of variation",
+    "tr": [
+      "değişim katsayısı",
+      "varyasyon katsayısı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "skewness",
+    "tr": [
+      "çarpıklık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "kurtosis",
+    "tr": [
+      "basıklık",
+      "kurtosis"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "percentile",
+    "tr": [
+      "yüzdelik",
+      "persentil"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "quartile",
+    "tr": [
+      "çeyrek",
+      "kartil"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "downside deviation",
+    "tr": [
+      "aşağı yönlü sapma"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "probability",
+    "tr": [
+      "olasılık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "conditional probability",
+    "tr": [
+      "koşullu olasılık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "expected value",
+    "tr": [
+      "beklenen değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "random variable",
+    "tr": [
+      "rassal değişken",
+      "rastgele değişken"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "normal distribution",
+    "tr": [
+      "normal dağılım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "lognormal distribution",
+    "tr": [
+      "lognormal dağılım",
+      "log-normal dağılım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "binomial distribution",
+    "tr": [
+      "binom dağılım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "population",
+    "tr": [
+      "ana kütle",
+      "evren",
+      "popülasyon"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik anlamı \"nüfus\"; istatistikte incelenen tüm gözlemler kümesidir."
+  },
+  {
+    "en": "sample",
+    "tr": [
+      "örneklem",
+      "örnek"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "sampling error",
+    "tr": [
+      "örnekleme hatası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "standard error",
+    "tr": [
+      "standart hata"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "central limit theorem",
+    "tr": [
+      "merkezi limit teoremi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "confidence interval",
+    "tr": [
+      "güven aralığı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "hypothesis test",
+    "tr": [
+      "hipotez testi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "null hypothesis",
+    "tr": [
+      "sıfır hipotezi",
+      "boş hipotez",
+      "temel hipotez"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "alternative hypothesis",
+    "tr": [
+      "alternatif hipotez"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Type I error",
+    "tr": [
+      "birinci tip hata",
+      "I. tip hata",
+      "tip I hata"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "Type II error",
+    "tr": [
+      "ikinci tip hata",
+      "II. tip hata",
+      "tip II hata"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "significance level",
+    "tr": [
+      "anlamlılık düzeyi",
+      "anlamlılık seviyesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "p-value",
+    "tr": [
+      "p-değeri",
+      "p değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "regression",
+    "tr": [
+      "regresyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "coefficient of determination",
+    "tr": [
+      "belirlilik katsayısı",
+      "R-kare",
+      "determinasyon katsayısı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "dependent variable",
+    "tr": [
+      "bağımlı değişken"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "independent variable",
+    "tr": [
+      "bağımsız değişken"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "residual",
+    "tr": [
+      "kalıntı",
+      "artık",
+      "hata terimi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Monte Carlo simulation",
+    "tr": [
+      "Monte Carlo simülasyonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "bootstrap",
+    "tr": [
+      "bootstrap",
+      "yeniden örnekleme"
+    ],
+    "enforce": false,
+    "note_tr": "Kütüphane/yazılım anlamı değil; örneklemden iadeli tekrar örnekleme yöntemi."
+  },
+  {
+    "en": "shortfall risk",
+    "tr": [
+      "eşik altı kalma riski",
+      "açık riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "tracking error",
+    "tr": [
+      "takip hatası",
+      "izleme hatası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "machine learning",
+    "tr": [
+      "makine öğrenmesi",
+      "makine öğrenimi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "big data",
+    "tr": [
+      "büyük veri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "demand",
+    "tr": [
+      "talep"
+    ],
+    "enforce": false,
+    "note_tr": "Fiil olarak \"talep etmek, istemek\" de olur."
+  },
+  {
+    "en": "supply",
+    "tr": [
+      "arz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "elasticity",
+    "tr": [
+      "esneklik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price elasticity of demand",
+    "tr": [
+      "talebin fiyat esnekliği"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "marginal cost",
+    "tr": [
+      "marjinal maliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "marginal revenue",
+    "tr": [
+      "marjinal gelir",
+      "marjinal hasılat"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "economies of scale",
+    "tr": [
+      "ölçek ekonomi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "diseconomies of scale",
+    "tr": [
+      "ölçek ekonomisizliği",
+      "ölçek dezavantajları",
+      "ölçeğe göre azalan getiri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "perfect competition",
+    "tr": [
+      "tam rekabet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "monopolistic competition",
+    "tr": [
+      "monopolcü rekabet",
+      "tekelci rekabet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "oligopoly",
+    "tr": [
+      "oligopol"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "monopoly",
+    "tr": [
+      "tekel",
+      "monopol"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "breakeven point",
+    "tr": [
+      "başabaş noktası",
+      "başa baş noktası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "shutdown point",
+    "tr": [
+      "üretimi durdurma noktası",
+      "kapanma noktası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "business cycle",
+    "tr": [
+      "konjonktür",
+      "iş çevrimi",
+      "ekonomik döngü"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "recession",
+    "tr": [
+      "resesyon",
+      "durgunluk"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "expansion",
+    "tr": [
+      "genişleme",
+      "büyüme dönemi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "gross domestic product",
+    "tr": [
+      "gayrisafi yurt içi hasıla",
+      "gayri safi yurt içi hasıla",
+      "GSYH"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "inflation",
+    "tr": [
+      "enflasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "deflation",
+    "tr": [
+      "deflasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "disinflation",
+    "tr": [
+      "dezenflasyon"
+    ],
+    "enforce": false,
+    "note_tr": "Fiyatlar düşmez; enflasyonun hızı azalır."
+  },
+  {
+    "en": "stagflation",
+    "tr": [
+      "stagflasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "unemployment",
+    "tr": [
+      "işsizlik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "consumer price index",
+    "tr": [
+      "tüketici fiyat endeksi",
+      "TÜFE"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "producer price index",
+    "tr": [
+      "üretici fiyat endeksi",
+      "ÜFE",
+      "Yİ-ÜFE"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "real interest rate",
+    "tr": [
+      "reel faiz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "nominal interest rate",
+    "tr": [
+      "nominal faiz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "monetary policy",
+    "tr": [
+      "para politikası"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "fiscal policy",
+    "tr": [
+      "maliye politikası"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "central bank",
+    "tr": [
+      "merkez bankası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "policy rate",
+    "tr": [
+      "politika faizi"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de TCMB'nin bir hafta vadeli repo ihale faiz oranı."
+  },
+  {
+    "en": "open market operations",
+    "tr": [
+      "açık piyasa işlemleri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "reserve requirement",
+    "tr": [
+      "zorunlu karşılık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "quantitative easing",
+    "tr": [
+      "parasal genişleme",
+      "niceliksel gevşeme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "money supply",
+    "tr": [
+      "para arzı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "velocity of money",
+    "tr": [
+      "paranın dolaşım hızı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "neutral rate",
+    "tr": [
+      "nötr faiz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "budget deficit",
+    "tr": [
+      "bütçe açığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "balance of payments",
+    "tr": [
+      "ödemeler dengesi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "current account",
+    "tr": [
+      "cari işlemler hesabı",
+      "cari işlemler dengesi",
+      "cari hesap"
+    ],
+    "enforce": false,
+    "note_tr": "Makroekonomide cari işlemler hesabı; bankacılıkta \"vadesiz/cari hesap\" anlamına gelir."
+  },
+  {
+    "en": "capital account",
+    "tr": [
+      "sermaye hesabı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "financial account",
+    "tr": [
+      "finans hesabı",
+      "finansal hesap"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "exchange rate",
+    "tr": [
+      "döviz kuru",
+      "kur"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "spot exchange rate",
+    "tr": [
+      "spot kur",
+      "spot döviz kuru"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "forward exchange rate",
+    "tr": [
+      "vadeli kur",
+      "forward kur"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "appreciation",
+    "tr": [
+      "değer kazanma",
+      "değerlenme",
+      "değer artışı"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik anlamı \"takdir, minnettarlık\"."
+  },
+  {
+    "en": "purchasing power parity",
+    "tr": [
+      "satın alma gücü paritesi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "interest rate parity",
+    "tr": [
+      "faiz oranı paritesi",
+      "faiz paritesi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "comparative advantage",
+    "tr": [
+      "karşılaştırmalı üstünlük"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "absolute advantage",
+    "tr": [
+      "mutlak üstünlük"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "tariff",
+    "tr": [
+      "gümrük tarifesi",
+      "tarife",
+      "gümrük vergisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "quota",
+    "tr": [
+      "kota"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "trade deficit",
+    "tr": [
+      "dış ticaret açığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "currency peg",
+    "tr": [
+      "sabit kur rejimi",
+      "kur bağlaması"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "dollarization",
+    "tr": [
+      "dolarizasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "geopolitical risk",
+    "tr": [
+      "jeopolitik risk"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "opportunity cost",
+    "tr": [
+      "fırsat maliyeti"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "externality",
+    "tr": [
+      "dışsallık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "corporate governance",
+    "tr": [
+      "kurumsal yönetim"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "stakeholder",
+    "tr": [
+      "paydaş"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "shareholder",
+    "tr": [
+      "pay sahibi",
+      "hissedar",
+      "ortak"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "board of directors",
+    "tr": [
+      "yönetim kurulu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "independent director",
+    "tr": [
+      "bağımsız yönetim kurulu üyesi",
+      "bağımsız üye"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "proxy voting",
+    "tr": [
+      "vekâleten oy",
+      "vekaleten oy",
+      "vekil aracılığıyla oy"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "principal-agent problem",
+    "tr": [
+      "vekâlet sorunu",
+      "vekalet sorunu",
+      "asil-vekil sorunu",
+      "temsil sorunu"
+    ],
+    "enforce": false,
+    "note_tr": "\"Principal\" burada anapara değil, \"asil/işi veren taraf\" demektir."
+  },
+  {
+    "en": "business model",
+    "tr": [
+      "iş modeli"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cost of capital",
+    "tr": [
+      "sermaye maliyeti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "weighted average cost of capital",
+    "tr": [
+      "ağırlıklı ortalama sermaye maliyeti"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "cost of equity",
+    "tr": [
+      "özkaynak maliyeti"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "cost of debt",
+    "tr": [
+      "borç maliyeti",
+      "borçlanma maliyeti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capital budgeting",
+    "tr": [
+      "sermaye bütçele",
+      "yatırım bütçele"
+    ],
+    "enforce": false,
+    "note_tr": "Kök biçim: \"sermaye bütçelemesi\", \"yatırım bütçelemesi\"."
+  },
+  {
+    "en": "payback period",
+    "tr": [
+      "geri ödeme süresi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "discounted cash flow",
+    "tr": [
+      "indirgenmiş nakit akış",
+      "iskonto edilmiş nakit akış"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "incremental cash flow",
+    "tr": [
+      "artımsal nakit akışı",
+      "ek nakit akışı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "sunk cost",
+    "tr": [
+      "batık maliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cannibalization",
+    "tr": [
+      "kanibalizasyon",
+      "ürün yamyamlığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "terminal value",
+    "tr": [
+      "uç değer",
+      "devam eden değer",
+      "son değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "working capital",
+    "tr": [
+      "işletme sermayesi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "capital structure",
+    "tr": [
+      "sermaye yapısı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "leverage",
+    "tr": [
+      "kaldıraç"
+    ],
+    "enforce": false,
+    "note_tr": "İngiliz İngilizcesinde \"gearing\" de denir."
+  },
+  {
+    "en": "operating leverage",
+    "tr": [
+      "faaliyet kaldıracı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "financial leverage",
+    "tr": [
+      "finansal kaldıraç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "liquidity",
+    "tr": [
+      "likidite",
+      "likit"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cash conversion cycle",
+    "tr": [
+      "nakit dönüşüm"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"nakit dönüşüm süresi/çevrimi\"."
+  },
+  {
+    "en": "trade credit",
+    "tr": [
+      "ticari kredi",
+      "satıcı kredisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "line of credit",
+    "tr": [
+      "kredi limiti",
+      "kredi hattı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "commercial paper",
+    "tr": [
+      "finansman bonosu",
+      "ticari senet"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de kısa vadeli şirket borçlanma aracının karşılığı \"finansman bonosu\"dur."
+  },
+  {
+    "en": "dividend",
+    "tr": [
+      "temettü",
+      "kâr payı",
+      "kar payı"
+    ],
+    "enforce": false,
+    "note_tr": "SPK mevzuatında resmi terim \"kâr payı\"dır; piyasada \"temettü\" yaygındır."
+  },
+  {
+    "en": "share repurchase",
+    "tr": [
+      "geri alım"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"pay geri alımı\", \"hisse geri alımı\"."
+  },
+  {
+    "en": "stock split",
+    "tr": [
+      "pay bölünmesi",
+      "hisse bölünmesi",
+      "bölünme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "initial public offering",
+    "tr": [
+      "halka arz"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "private equity",
+    "tr": [
+      "girişim sermayesi",
+      "özel sermaye"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de kurumsal karşılığı girişim sermayesi yatırım ortaklığı/fonudur."
+  },
+  {
+    "en": "venture capital",
+    "tr": [
+      "risk sermayesi",
+      "girişim sermayesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "leveraged buyout",
+    "tr": [
+      "kaldıraçlı satın alma"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "mergers and acquisitions",
+    "tr": [
+      "birleşme ve devralma",
+      "birleşme ve satın alma"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "tender offer",
+    "tr": [
+      "pay alım teklifi",
+      "çağrı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "pre-emptive rights",
+    "tr": [
+      "rüçhan",
+      "yeni pay alma"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"rüçhan hakkı\", \"yeni pay alma hakkı\"."
+  },
+  {
+    "en": "rights offering",
+    "tr": [
+      "bedelli sermaye artırımı",
+      "rüçhan hakkı kullanımı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "stock dividend",
+    "tr": [
+      "bedelsiz pay",
+      "bedelsiz sermaye artırımı",
+      "pay olarak kâr payı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "ex-dividend date",
+    "tr": [
+      "hak kullanım tarihi",
+      "temettü hakkı kesim tarihi",
+      "temettüsüz işlem tarihi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "record date",
+    "tr": [
+      "hak sahipliği tarihi",
+      "kayıt tarihi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "financial distress",
+    "tr": [
+      "finansal sıkıntı",
+      "finansal güçlük"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "bankruptcy",
+    "tr": [
+      "iflas"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "covenant",
+    "tr": [
+      "sözleşme şartı",
+      "kısıtlayıcı hüküm",
+      "taahhüt"
+    ],
+    "enforce": false,
+    "note_tr": "Borç sözleşmesinde borçluya getirilen yapma/yapmama şartları."
+  },
+  {
+    "en": "ESG",
+    "tr": [
+      "ESG",
+      "çevresel, sosyal ve yönetişim",
+      "sürdürülebilirlik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "financial statements",
+    "tr": [
+      "finansal tablo",
+      "mali tablo"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "balance sheet",
+    "tr": [
+      "bilanço",
+      "finansal durum tablosu"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "statement of financial position",
+    "tr": [
+      "finansal durum tablosu",
+      "bilanço"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "income statement",
+    "tr": [
+      "gelir tablosu",
+      "kâr veya zarar tablosu",
+      "kar veya zarar tablosu"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "statement of comprehensive income",
+    "tr": [
+      "kapsamlı gelir tablosu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "other comprehensive income",
+    "tr": [
+      "diğer kapsamlı gelir"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cash flow statement",
+    "tr": [
+      "nakit akış"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"nakit akış tablosu\" / \"nakit akışları tablosu\"."
+  },
+  {
+    "en": "statement of changes in equity",
+    "tr": [
+      "özkaynak değişim tablosu",
+      "özkaynaklar değişim tablosu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "notes to the financial statements",
+    "tr": [
+      "dipnot",
+      "finansal tablo dipnotları"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "auditor's report",
+    "tr": [
+      "denetim raporu",
+      "bağımsız denetçi raporu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "revenue",
+    "tr": [
+      "hasılat",
+      "gelir",
+      "satış"
+    ],
+    "enforce": false,
+    "note_tr": "TFRS 15'te resmi terim \"hasılat\"tır."
+  },
+  {
+    "en": "expense",
+    "tr": [
+      "gider"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "net income",
+    "tr": [
+      "net kâr",
+      "net kar",
+      "net dönem kâr",
+      "net dönem kar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "gross profit",
+    "tr": [
+      "brüt kâr",
+      "brüt kar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "operating income",
+    "tr": [
+      "faaliyet kâr",
+      "faaliyet kar",
+      "esas faaliyet kâr"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "earnings per share",
+    "tr": [
+      "pay başına kazanç",
+      "hisse başına kâr",
+      "hisse başına kar",
+      "hisse başına kazanç"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "diluted earnings per share",
+    "tr": [
+      "sulandırılmış pay başına kazanç",
+      "seyreltilmiş pay başına kazanç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cost of goods sold",
+    "tr": [
+      "satışların maliyet",
+      "satılan malın maliyet"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "EBITDA",
+    "tr": [
+      "FAVÖK",
+      "EBITDA"
+    ],
+    "enforce": false,
+    "note_tr": "Faiz, amortisman ve vergi öncesi kâr."
+  },
+  {
+    "en": "EBIT",
+    "tr": [
+      "FVÖK",
+      "EBIT",
+      "faiz ve vergi öncesi kâr",
+      "faiz ve vergi öncesi kar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "accrual",
+    "tr": [
+      "tahakkuk"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "accrual accounting",
+    "tr": [
+      "tahakkuk esası",
+      "tahakkuk esaslı muhasebe"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "accrued expenses",
+    "tr": [
+      "tahakkuk etmiş giderler",
+      "gider tahakkukları"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "prepaid expenses",
+    "tr": [
+      "peşin ödenmiş giderler",
+      "gelecek aylara ait giderler"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "unearned revenue",
+    "tr": [
+      "ertelenmiş gelir",
+      "gelecek aylara ait gelirler",
+      "alınan avanslar"
+    ],
+    "enforce": false,
+    "note_tr": "\"Deferred revenue\" ile aynı anlamdadır; bir yükümlülüktür."
+  },
+  {
+    "en": "accounts receivable",
+    "tr": [
+      "alacak"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"ticari alacaklar\"."
+  },
+  {
+    "en": "accounts payable",
+    "tr": [
+      "ticari borç",
+      "satıcılara borç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "inventory",
+    "tr": [
+      "stok"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "FIFO",
+    "tr": [
+      "FIFO",
+      "ilk giren ilk çıkar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "LIFO",
+    "tr": [
+      "LIFO",
+      "son giren ilk çıkar"
+    ],
+    "enforce": false,
+    "note_tr": "UFRS/TFRS'de LIFO'ya izin verilmez; ABD GAAP'te izinlidir."
+  },
+  {
+    "en": "weighted average cost method",
+    "tr": [
+      "ağırlıklı ortalama maliyet yöntemi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "asset",
+    "tr": [
+      "varlık",
+      "aktif",
+      "kıymet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "liability",
+    "tr": [
+      "yükümlülük",
+      "borç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "equity",
+    "tr": [
+      "özkaynak",
+      "pay senedi",
+      "hisse senedi",
+      "pay",
+      "hisse",
+      "sermaye"
+    ],
+    "enforce": false,
+    "note_tr": "Bağlama göre: bilançoda \"özkaynak\"; yatırım aracı olarak \"pay senedi/hisse senedi\"; \"equity investments\" = pay senedi yatırımları; \"private equity\" = girişim sermayesi."
+  },
+  {
+    "en": "property, plant and equipment",
+    "tr": [
+      "maddi duran varlık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "intangible assets",
+    "tr": [
+      "maddi olmayan duran varlık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "goodwill",
+    "tr": [
+      "şerefiye"
+    ],
+    "enforce": true,
+    "note_tr": "Gündelik anlamı \"iyi niyet\"; muhasebede satın alma bedelinin net varlıkları aşan kısmıdır."
+  },
+  {
+    "en": "depreciation",
+    "tr": [
+      "amortisman",
+      "değer kaybı"
+    ],
+    "enforce": false,
+    "note_tr": "Duran varlıkta \"amortisman\"; döviz kurunda \"değer kaybı\"."
+  },
+  {
+    "en": "amortization",
+    "tr": [
+      "itfa",
+      "amortisman"
+    ],
+    "enforce": false,
+    "note_tr": "Maddi olmayan varlıkta \"itfa payı\"; borçta anaparanın \"itfası/geri ödenmesi\"."
+  },
+  {
+    "en": "impairment",
+    "tr": [
+      "değer düşüklüğü"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "capitalization",
+    "tr": [
+      "aktifleştirme",
+      "aktifleştirilme"
+    ],
+    "enforce": false,
+    "note_tr": "Bir harcamanın gider yerine varlık olarak kaydedilmesi. \"Market capitalization\" için bkz. piyasa değeri."
+  },
+  {
+    "en": "market capitalization",
+    "tr": [
+      "piyasa değeri",
+      "piyasa kapitalizasyonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "deferred tax asset",
+    "tr": [
+      "ertelenmiş vergi varlığı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "deferred tax liability",
+    "tr": [
+      "ertelenmiş vergi"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"ertelenmiş vergi yükümlülüğü/borcu\"."
+  },
+  {
+    "en": "tax base",
+    "tr": [
+      "vergi değeri",
+      "vergi matrahı"
+    ],
+    "enforce": false,
+    "note_tr": "Bir varlık ya da yükümlülüğün vergi açısından değeri (TMS 12)."
+  },
+  {
+    "en": "effective tax rate",
+    "tr": [
+      "efektif vergi oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "lease",
+    "tr": [
+      "kiralama",
+      "kira sözleşmesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "finance lease",
+    "tr": [
+      "finansal kiralama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "operating lease",
+    "tr": [
+      "faaliyet kiralaması"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "right-of-use asset",
+    "tr": [
+      "kullanım hakkı varlığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "lease liability",
+    "tr": [
+      "kira yükümlülüğü",
+      "kiralama yükümlülüğü"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "contingent liability",
+    "tr": [
+      "koşullu borç",
+      "koşullu yükümlülük",
+      "şarta bağlı yükümlülük"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "retained earnings",
+    "tr": [
+      "geçmiş yıllar kâr",
+      "geçmiş yıllar kar",
+      "dağıtılmamış kâr",
+      "dağıtılmamış kar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "treasury shares",
+    "tr": [
+      "geri alınmış pay",
+      "işletmenin kendi payları"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "non-controlling interest",
+    "tr": [
+      "kontrol gücü olmayan pay",
+      "azınlık pay"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "consolidation",
+    "tr": [
+      "konsolidasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "fair value",
+    "tr": [
+      "gerçeğe uygun değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "historical cost",
+    "tr": [
+      "tarihi maliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "book value",
+    "tr": [
+      "defter değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "carrying amount",
+    "tr": [
+      "defter değeri",
+      "kayıtlı değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "net realizable value",
+    "tr": [
+      "net gerçekleşebilir değer",
+      "net gerçekleştirilebilir değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "IFRS",
+    "tr": [
+      "UFRS",
+      "TFRS",
+      "IFRS"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de KGK'nın yayımladığı karşılığı TFRS'dir."
+  },
+  {
+    "en": "US GAAP",
+    "tr": [
+      "ABD GAAP",
+      "US GAAP"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "going concern",
+    "tr": [
+      "işletmenin sürekliliği",
+      "süreklilik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "materiality",
+    "tr": [
+      "önemlilik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "conservatism",
+    "tr": [
+      "ihtiyatlılık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "free cash flow",
+    "tr": [
+      "serbest nakit akışı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "free cash flow to the firm",
+    "tr": [
+      "firmaya serbest nakit akışı",
+      "firmaya ait serbest nakit akışı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "free cash flow to equity",
+    "tr": [
+      "özkaynağa serbest nakit akışı",
+      "özkaynak sahiplerine serbest nakit akışı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "operating activities",
+    "tr": [
+      "işletme faaliyet",
+      "esas faaliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "investing activities",
+    "tr": [
+      "yatırım faaliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "financing activities",
+    "tr": [
+      "finansman faaliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "direct method",
+    "tr": [
+      "doğrudan yöntem"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "indirect method",
+    "tr": [
+      "dolaylı yöntem"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "current ratio",
+    "tr": [
+      "cari oran"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "quick ratio",
+    "tr": [
+      "asit-test oranı",
+      "asit test oranı",
+      "likidite oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cash ratio",
+    "tr": [
+      "nakit oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "debt-to-equity ratio",
+    "tr": [
+      "borç/özkaynak oranı",
+      "borç özkaynak oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "interest coverage ratio",
+    "tr": [
+      "faiz karşılama oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "return on equity",
+    "tr": [
+      "özkaynak kârlılığı",
+      "özkaynak karlılığı",
+      "özkaynak getirisi",
+      "özsermaye kârlılığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "return on assets",
+    "tr": [
+      "aktif kârlılığı",
+      "aktif karlılığı",
+      "varlık getirisi",
+      "aktif getirisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "DuPont analysis",
+    "tr": [
+      "DuPont analizi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "asset turnover",
+    "tr": [
+      "aktif devir hızı",
+      "varlık devir hızı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "inventory turnover",
+    "tr": [
+      "stok devir hızı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "receivables turnover",
+    "tr": [
+      "alacak devir hızı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "days of sales outstanding",
+    "tr": [
+      "alacak tahsil süresi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "gross margin",
+    "tr": [
+      "brüt kâr marjı",
+      "brüt kar marjı",
+      "brüt marj"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "operating margin",
+    "tr": [
+      "faaliyet kâr marjı",
+      "faaliyet kar marjı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "net profit margin",
+    "tr": [
+      "net kâr marjı",
+      "net kar marjı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "solvency",
+    "tr": [
+      "ödeme gücü",
+      "borç ödeme gücü"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "off-balance-sheet",
+    "tr": [
+      "bilanço dışı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "earnings quality",
+    "tr": [
+      "kâr kalitesi",
+      "kar kalitesi",
+      "kazanç kalitesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "revenue recognition",
+    "tr": [
+      "hasılatın muhasebeleştirilmesi",
+      "gelirin kaydedilmesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "provision",
+    "tr": [
+      "karşılık"
+    ],
+    "enforce": false,
+    "note_tr": "Muhasebede \"karşılık\"; sözleşmede \"hüküm/madde\" anlamına gelir."
+  },
+  {
+    "en": "preferred stock",
+    "tr": [
+      "imtiyazlı"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"imtiyazlı pay/hisse\"."
+  },
+  {
+    "en": "common stock",
+    "tr": [
+      "adi pay",
+      "adi hisse",
+      "pay senedi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "convertible bond",
+    "tr": [
+      "dönüştürülebilir"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"paya dönüştürülebilir tahvil\"."
+  },
+  {
+    "en": "warrant",
+    "tr": [
+      "varant"
+    ],
+    "enforce": false,
+    "note_tr": "Fiil olarak \"haklı kılmak, gerektirmek\" anlamı sınav metinlerinde sık geçer; o zaman \"varant\" değildir."
+  },
+  {
+    "en": "stock exchange",
+    "tr": [
+      "borsa",
+      "menkul kıymet borsası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "primary market",
+    "tr": [
+      "birincil piyasa"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "secondary market",
+    "tr": [
+      "ikincil piyasa"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "market order",
+    "tr": [
+      "piyasa emri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "limit order",
+    "tr": [
+      "limitli emir",
+      "limit emir",
+      "limit fiyatlı emir"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "stop order",
+    "tr": [
+      "zarar durdur emri",
+      "stop emir",
+      "şartlı emir"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "bid price",
+    "tr": [
+      "alış fiyatı",
+      "alış kotasyonu"
+    ],
+    "enforce": false,
+    "note_tr": "Piyasa yapıcının alıma hazır olduğu fiyattır."
+  },
+  {
+    "en": "ask price",
+    "tr": [
+      "satış fiyatı",
+      "satış kotasyonu"
+    ],
+    "enforce": false,
+    "note_tr": "\"Offer price\" ile aynı."
+  },
+  {
+    "en": "bid-ask spread",
+    "tr": [
+      "alış-satış farkı",
+      "alım-satım farkı",
+      "kotasyon farkı",
+      "makas"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "short selling",
+    "tr": [
+      "açığa satış"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "short sale",
+    "tr": [
+      "açığa satış"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "buying on margin",
+    "tr": [
+      "kredili"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"kredili işlem/alım\"."
+  },
+  {
+    "en": "margin call",
+    "tr": [
+      "teminat tamamlama",
+      "marjin çağrısı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "initial margin",
+    "tr": [
+      "başlangıç teminatı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "maintenance margin",
+    "tr": [
+      "sürdürme teminatı",
+      "idame teminatı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "variation margin",
+    "tr": [
+      "değişim teminatı",
+      "varyasyon teminatı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price-weighted index",
+    "tr": [
+      "fiyat ağırlıklı endeks"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "market-capitalization-weighted index",
+    "tr": [
+      "piyasa değeri ağırlıklı endeks"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "equal-weighted index",
+    "tr": [
+      "eşit ağırlıklı endeks"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "float-adjusted",
+    "tr": [
+      "halka açıklık düzeltmeli",
+      "fiili dolaşım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "rebalancing",
+    "tr": [
+      "yeniden dengeleme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "reconstitution",
+    "tr": [
+      "endeks yeniden yapılandırması",
+      "kompozisyon değişikliği"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "market efficiency",
+    "tr": [
+      "piyasa etkinliği"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "efficient market hypothesis",
+    "tr": [
+      "etkin piyasa"
+    ],
+    "enforce": true,
+    "note_tr": "Kök: \"etkin piyasalar hipotezi\"."
+  },
+  {
+    "en": "weak-form efficiency",
+    "tr": [
+      "zayıf form"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "semi-strong-form efficiency",
+    "tr": [
+      "yarı güçlü form"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "strong-form efficiency",
+    "tr": [
+      "güçlü form"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "anomaly",
+    "tr": [
+      "anomali"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "behavioral finance",
+    "tr": [
+      "davranışsal finans"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "industry analysis",
+    "tr": [
+      "sektör analizi",
+      "endüstri analizi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "barriers to entry",
+    "tr": [
+      "giriş engelleri",
+      "piyasaya giriş engelleri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "dividend discount model",
+    "tr": [
+      "iskonto modeli",
+      "indirim modeli"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"temettü/kâr payı iskonto modeli\"."
+  },
+  {
+    "en": "Gordon growth model",
+    "tr": [
+      "Gordon büyüme modeli"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "intrinsic value",
+    "tr": [
+      "içsel değer",
+      "gerçek değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price-to-earnings ratio",
+    "tr": [
+      "fiyat/kazanç",
+      "F/K"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price-to-book ratio",
+    "tr": [
+      "PD/DD",
+      "defter değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price-to-sales ratio",
+    "tr": [
+      "fiyat/satış oranı",
+      "F/S"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "enterprise value",
+    "tr": [
+      "firma değeri",
+      "işletme değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price multiple",
+    "tr": [
+      "çarpan",
+      "fiyat çarpanı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "required rate of return",
+    "tr": [
+      "gerekli getiri oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "sustainable growth rate",
+    "tr": [
+      "sürdürülebilir büyüme oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "payout ratio",
+    "tr": [
+      "dağıtım oranı"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"kâr payı dağıtım oranı\"."
+  },
+  {
+    "en": "retention ratio",
+    "tr": [
+      "alıkoyma"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"kâr alıkoyma oranı\"."
+  },
+  {
+    "en": "depository receipt",
+    "tr": [
+      "depo sertifikası",
+      "DR"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "voting rights",
+    "tr": [
+      "oy hakkı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cumulative voting",
+    "tr": [
+      "birikimli oy",
+      "toplu oy"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "bond",
+    "tr": [
+      "tahvil",
+      "bono",
+      "borçlanma aracı"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de vadesi 1 yıla kadar olanlar \"bono\", uzun olanlar \"tahvil\" diye anılır; CFA \"bond\" genel borçlanma aracıdır."
+  },
+  {
+    "en": "fixed-income security",
+    "tr": [
+      "sabit getirili",
+      "borçlanma aracı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "issuer",
+    "tr": [
+      "ihraççı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "par value",
+    "tr": [
+      "nominal değer",
+      "itibari değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "face value",
+    "tr": [
+      "nominal değer",
+      "itibari değer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "coupon",
+    "tr": [
+      "kupon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "coupon rate",
+    "tr": [
+      "kupon oranı",
+      "kupon faizi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "maturity",
+    "tr": [
+      "vade"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "yield to maturity",
+    "tr": [
+      "vadeye kadar getiri"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "current yield",
+    "tr": [
+      "cari getiri"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "yield curve",
+    "tr": [
+      "getiri eğrisi"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "spot rate",
+    "tr": [
+      "spot faiz",
+      "spot oran",
+      "spot kur",
+      "spot getiri"
+    ],
+    "enforce": false,
+    "note_tr": "Sabit getiride \"spot faiz oranı\"; döviz piyasasında \"spot kur\"."
+  },
+  {
+    "en": "forward rate",
+    "tr": [
+      "forward faiz",
+      "vadeli faiz",
+      "forward oran",
+      "vadeli kur"
+    ],
+    "enforce": false,
+    "note_tr": "Sabit getiride ileri tarihli faiz; döviz piyasasında vadeli kur."
+  },
+  {
+    "en": "term structure of interest rates",
+    "tr": [
+      "vade yapısı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "zero-coupon bond",
+    "tr": [
+      "sıfır kuponlu",
+      "kuponsuz",
+      "iskontolu"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "premium bond",
+    "tr": [
+      "primli tahvil",
+      "nominal değerin üzerinde"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "accrued interest",
+    "tr": [
+      "işlemiş faiz",
+      "birikmiş faiz"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "clean price",
+    "tr": [
+      "temiz fiyat"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "full price",
+    "tr": [
+      "kirli fiyat",
+      "tam fiyat"
+    ],
+    "enforce": false,
+    "note_tr": "\"Dirty price\" ile aynı: temiz fiyat + işlemiş faiz."
+  },
+  {
+    "en": "duration",
+    "tr": [
+      "durasyon"
+    ],
+    "enforce": true,
+    "note_tr": "Tahvil fiyatının faiz değişimine duyarlılığı. Gündelik \"süre\" anlamında (ör. kira süresi) geçerse lint uyarısı göz ardı edilebilir."
+  },
+  {
+    "en": "Macaulay duration",
+    "tr": [
+      "Macaulay durasyon"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "modified duration",
+    "tr": [
+      "düzeltilmiş durasyon",
+      "modifiye durasyon"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "effective duration",
+    "tr": [
+      "efektif durasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "key rate duration",
+    "tr": [
+      "anahtar vade durasyonu",
+      "kilit vade durasyonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "money duration",
+    "tr": [
+      "parasal durasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "price value of a basis point",
+    "tr": [
+      "baz puanın fiyat değeri",
+      "PVBP"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "convexity",
+    "tr": [
+      "konveksite",
+      "dışbükeylik"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "basis point",
+    "tr": [
+      "baz puan"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "credit risk",
+    "tr": [
+      "kredi riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "default risk",
+    "tr": [
+      "temerrüt riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "default",
+    "tr": [
+      "temerrüt"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik \"varsayılan (ayar)\" anlamıyla karıştırma; finansta borcun ödenmemesi."
+  },
+  {
+    "en": "loss given default",
+    "tr": [
+      "temerrüt halinde kayıp",
+      "temerrüt hâlinde kayıp",
+      "temerrüt durumunda kayıp"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "probability of default",
+    "tr": [
+      "temerrüt olasılığı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "recovery rate",
+    "tr": [
+      "geri kazanım oranı",
+      "tahsil oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "credit spread",
+    "tr": [
+      "kredi spread",
+      "kredi marj",
+      "kredi risk primi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "credit rating",
+    "tr": [
+      "kredi not",
+      "derecelendirme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "investment grade",
+    "tr": [
+      "yatırım yapılabilir"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "high-yield bond",
+    "tr": [
+      "yüksek getirili tahvil",
+      "spekülatif seviye"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "senior debt",
+    "tr": [
+      "öncelikli borç",
+      "kıdemli borç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "subordinated debt",
+    "tr": [
+      "sermaye benzeri borç",
+      "ikincil borç",
+      "sırası geride borç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "collateral",
+    "tr": [
+      "teminat"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "sinking fund",
+    "tr": [
+      "itfa fonu",
+      "amortisman fonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "callable bond",
+    "tr": [
+      "itfa edilebilir",
+      "geri çağrılabilir"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"erken itfa edilebilir tahvil\" (ihraççıya erken geri ödeme hakkı)."
+  },
+  {
+    "en": "putable bond",
+    "tr": [
+      "erken itfa talep edilebilir",
+      "geri satılabilir",
+      "satma hakkı tanınmış"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "floating-rate note",
+    "tr": [
+      "değişken faizli"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "inflation-linked bond",
+    "tr": [
+      "endeksli"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"enflasyona/TÜFE'ye endeksli tahvil\"."
+  },
+  {
+    "en": "government bond",
+    "tr": [
+      "devlet tahvili",
+      "hazine tahvili",
+      "DİBS",
+      "devlet iç borçlanma senedi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Treasury bill",
+    "tr": [
+      "hazine bonosu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "repurchase agreement",
+    "tr": [
+      "repo",
+      "geri alım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "reverse repo",
+    "tr": [
+      "ters repo"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "securitization",
+    "tr": [
+      "menkul kıymetleştirme"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "asset-backed security",
+    "tr": [
+      "varlığa dayalı menkul kıymet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "mortgage-backed security",
+    "tr": [
+      "ipoteğe dayalı",
+      "konut kredisine dayalı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "covered bond",
+    "tr": [
+      "ipotek teminatlı menkul kıymet",
+      "teminatlı tahvil",
+      "İTMK"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de karşılığı İTMK/VTMK'dır."
+  },
+  {
+    "en": "prepayment risk",
+    "tr": [
+      "erken ödeme riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "reinvestment risk",
+    "tr": [
+      "yeniden yatırım riski"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "interest rate risk",
+    "tr": [
+      "faiz oranı riski",
+      "faiz riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "liquidity risk",
+    "tr": [
+      "likidite riski"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "yield spread",
+    "tr": [
+      "getiri farkı",
+      "getiri spreadi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "benchmark rate",
+    "tr": [
+      "gösterge faiz",
+      "referans faiz",
+      "gösterge oran"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Eurobond",
+    "tr": [
+      "eurobond",
+      "euro tahvil"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "money market",
+    "tr": [
+      "para piyasası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capital market",
+    "tr": [
+      "sermaye piyasası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "private placement",
+    "tr": [
+      "tahsisli satış",
+      "nitelikli yatırımcıya satış"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "underwriting",
+    "tr": [
+      "aracılık yüklenimi",
+      "yüklenimli aracılık",
+      "satışa aracılık"
+    ],
+    "enforce": false,
+    "note_tr": "SPK mevzuatında \"halka arzda satışa aracılık\" ve \"aracılık yüklenimi\" kavramları kullanılır."
+  },
+  {
+    "en": "bond indenture",
+    "tr": [
+      "ihraç sözleşmesi",
+      "tahvil sözleşmesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "derivative",
+    "tr": [
+      "türev"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "underlying asset",
+    "tr": [
+      "dayanak varlık"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "forward contract",
+    "tr": [
+      "forward",
+      "vadeli işlem sözleşmesi"
+    ],
+    "enforce": true,
+    "note_tr": "Tezgâhüstü, standart olmayan vadeli sözleşme. Türkçede \"vadeli işlem\" çoğunlukla borsada işlem gören futures için de kullanılır."
+  },
+  {
+    "en": "futures contract",
+    "tr": [
+      "vadeli işlem",
+      "futures"
+    ],
+    "enforce": true,
+    "note_tr": "Türkiye'de VİOP'ta işlem gören standart sözleşmeler."
+  },
+  {
+    "en": "swap",
+    "tr": [
+      "swap",
+      "takas"
+    ],
+    "enforce": false,
+    "note_tr": "Fiil olarak \"değiştirmek\" anlamı da vardır."
+  },
+  {
+    "en": "interest rate swap",
+    "tr": [
+      "faiz swap",
+      "faiz swab",
+      "faiz takas"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "option",
+    "tr": [
+      "opsiyon"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik \"seçenek\" anlamı çok yaygındır (soru şıkları için de \"option\" denir)."
+  },
+  {
+    "en": "call option",
+    "tr": [
+      "alım opsiyon",
+      "call opsiyon"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "put option",
+    "tr": [
+      "satım opsiyon",
+      "put opsiyon"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "strike price",
+    "tr": [
+      "kullanım fiyatı",
+      "işlem fiyatı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "exercise price",
+    "tr": [
+      "kullanım fiyatı",
+      "işlem fiyatı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "option premium",
+    "tr": [
+      "opsiyon primi",
+      "prim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "in the money",
+    "tr": [
+      "kârda",
+      "karda",
+      "parada"
+    ],
+    "enforce": false,
+    "note_tr": "Kullanıldığında pozitif değer yaratan opsiyon."
+  },
+  {
+    "en": "out of the money",
+    "tr": [
+      "zararda",
+      "parada değil",
+      "para dışında"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "at the money",
+    "tr": [
+      "başabaş",
+      "başa baş",
+      "paranın üzerinde değil"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "time value",
+    "tr": [
+      "zaman değeri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "American option",
+    "tr": [
+      "Amerikan tipi",
+      "Amerikan opsiyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "European option",
+    "tr": [
+      "Avrupa tipi",
+      "Avrupa opsiyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "long position",
+    "tr": [
+      "uzun pozisyon",
+      "alış pozisyon",
+      "alıcı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "short position",
+    "tr": [
+      "kısa pozisyon",
+      "satış pozisyon",
+      "satıcı"
+    ],
+    "enforce": false,
+    "note_tr": "Türkçede \"açık pozisyon\" netleşmemiş her pozisyon için kullanılır; kısa pozisyonla karıştırma."
+  },
+  {
+    "en": "counterparty risk",
+    "tr": [
+      "karşı taraf riski"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "clearinghouse",
+    "tr": [
+      "takas kurumu",
+      "merkezi karşı taraf"
+    ],
+    "enforce": false,
+    "note_tr": "Türkiye'de Takasbank merkezi karşı taraf hizmeti verir."
+  },
+  {
+    "en": "central counterparty",
+    "tr": [
+      "merkezi karşı taraf"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "mark-to-market",
+    "tr": [
+      "değerleme"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"piyasa değerine göre (günlük) değerleme\"."
+  },
+  {
+    "en": "over-the-counter",
+    "tr": [
+      "tezgâhüstü",
+      "tezgahüstü",
+      "tezgâh üstü"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "exchange-traded",
+    "tr": [
+      "borsada işlem gören"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "hedging",
+    "tr": [
+      "riskten korun",
+      "hedge"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "arbitrage",
+    "tr": [
+      "arbitraj"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "put-call parity",
+    "tr": [
+      "parite"
+    ],
+    "enforce": true,
+    "note_tr": "Kök: \"put-call paritesi / alım-satım opsiyonu paritesi\"."
+  },
+  {
+    "en": "cost of carry",
+    "tr": [
+      "taşıma maliyeti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "convenience yield",
+    "tr": [
+      "elde bulundurma getirisi",
+      "elde tutma getirisi",
+      "kolaylık getirisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "replication",
+    "tr": [
+      "kopyalama",
+      "replikasyon",
+      "ikame portföy"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "risk-neutral pricing",
+    "tr": [
+      "risk nötr fiyatlama",
+      "riske nötr fiyatlama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "binomial model",
+    "tr": [
+      "binom modeli",
+      "binom ağacı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "credit default swap",
+    "tr": [
+      "kredi temerrüt",
+      "CDS"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "notional principal",
+    "tr": [
+      "nominal anapara",
+      "nozyonel tutar",
+      "anapara"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "settlement",
+    "tr": [
+      "takas",
+      "uzlaşma",
+      "mutabakat",
+      "teslim"
+    ],
+    "enforce": false,
+    "note_tr": "Takas (menkul kıymet karşılığı nakit teslimi) ya da türevde uzlaşma; gündelik anlamı \"yerleşim, anlaşma\"."
+  },
+  {
+    "en": "physical delivery",
+    "tr": [
+      "fiziki teslimat",
+      "fiziki teslim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cash settlement",
+    "tr": [
+      "nakdi uzlaşı",
+      "nakit uzlaşma",
+      "nakit uzlaşı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "contango",
+    "tr": [
+      "contango",
+      "ileri vadede prim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "backwardation",
+    "tr": [
+      "backwardation",
+      "ters piyasa"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "alternative investments",
+    "tr": [
+      "alternatif yatırım"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "hedge fund",
+    "tr": [
+      "serbest fon",
+      "hedge fon",
+      "serbest yatırım fon"
+    ],
+    "enforce": true,
+    "note_tr": "SPK mevzuatındaki karşılığı \"serbest fon\"dur."
+  },
+  {
+    "en": "real estate investment trust",
+    "tr": [
+      "gayrimenkul yatırım ortaklığı",
+      "GYO"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "real estate",
+    "tr": [
+      "gayrimenkul",
+      "taşınmaz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "infrastructure",
+    "tr": [
+      "altyapı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "commodity",
+    "tr": [
+      "emtia"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "management fee",
+    "tr": [
+      "yönetim ücreti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "incentive fee",
+    "tr": [
+      "performans ücret",
+      "başarı ücret",
+      "teşvik ücret"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "high-water mark",
+    "tr": [
+      "en yüksek değer eşiği",
+      "zirve değer eşiği",
+      "yüksek su işareti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "hurdle rate",
+    "tr": [
+      "engel oranı",
+      "asgari getiri oranı",
+      "eşik getiri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "carried interest",
+    "tr": [
+      "taşınan faiz",
+      "başarı payı"
+    ],
+    "enforce": false,
+    "note_tr": "Genel ortağın kârdan aldığı pay; \"interest\" burada faiz değil, \"pay/hak\"tır."
+  },
+  {
+    "en": "limited partner",
+    "tr": [
+      "sınırlı sorumlu ortak",
+      "komanditer ortak"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "general partner",
+    "tr": [
+      "genel ortak",
+      "komandite ortak",
+      "sınırsız sorumlu ortak"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "fund of funds",
+    "tr": [
+      "fon sepeti fonu",
+      "fon fonu",
+      "fonlara yatırım yapan fon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "lockup period",
+    "tr": [
+      "kilit süresi",
+      "bekleme süresi",
+      "çıkış kısıtı süresi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "redemption",
+    "tr": [
+      "geri alım",
+      "fon payı iadesi",
+      "itfa"
+    ],
+    "enforce": false,
+    "note_tr": "Fonda payların geri satılması; tahvilde anaparanın geri ödenmesi (itfa)."
+  },
+  {
+    "en": "net asset value",
+    "tr": [
+      "net aktif değer",
+      "net varlık değer",
+      "birim pay değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "appraisal",
+    "tr": [
+      "ekspertiz",
+      "değerleme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capitalization rate",
+    "tr": [
+      "kapitalizasyon oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "cryptocurrency",
+    "tr": [
+      "kripto varlık",
+      "kripto para"
+    ],
+    "enforce": false,
+    "note_tr": "Türk mevzuatındaki terim \"kripto varlık\"tır."
+  },
+  {
+    "en": "blockchain",
+    "tr": [
+      "blokzincir",
+      "blok zinciri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "portfolio",
+    "tr": [
+      "portföy"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "portfolio management",
+    "tr": [
+      "portföy yönetimi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "diversification",
+    "tr": [
+      "çeşitlendirme"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "asset allocation",
+    "tr": [
+      "varlık dağılımı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "risk tolerance",
+    "tr": [
+      "risk toleransı",
+      "risk tahammülü"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "risk aversion",
+    "tr": [
+      "riskten kaçınma"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "utility function",
+    "tr": [
+      "fayda fonksiyonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "indifference curve",
+    "tr": [
+      "kayıtsızlık eğrisi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "efficient frontier",
+    "tr": [
+      "etkin sınır"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "minimum-variance portfolio",
+    "tr": [
+      "minimum varyans",
+      "en düşük varyanslı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capital allocation line",
+    "tr": [
+      "sermaye dağılım doğrusu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capital market line",
+    "tr": [
+      "sermaye piyasası doğrusu"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "security market line",
+    "tr": [
+      "menkul kıymet piyasası doğrusu"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "capital asset pricing model",
+    "tr": [
+      "finansal varlık fiyatlama modeli",
+      "FVFM",
+      "sermaye varlıklarını fiyatlama modeli"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "beta",
+    "tr": [
+      "beta"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "alpha",
+    "tr": [
+      "alfa"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "systematic risk",
+    "tr": [
+      "sistematik risk"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "unsystematic risk",
+    "tr": [
+      "sistematik olmayan risk",
+      "şirkete özgü risk"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "market risk premium",
+    "tr": [
+      "piyasa risk primi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "risk premium",
+    "tr": [
+      "risk primi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "risk-free rate",
+    "tr": [
+      "risksiz"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"risksiz faiz oranı / risksiz getiri\"."
+  },
+  {
+    "en": "Sharpe ratio",
+    "tr": [
+      "Sharpe oranı"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "Treynor ratio",
+    "tr": [
+      "Treynor oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Jensen's alpha",
+    "tr": [
+      "Jensen"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "M-squared",
+    "tr": [
+      "M-kare",
+      "M²"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "investment policy statement",
+    "tr": [
+      "yatırım politikası"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"yatırım politikası beyanı/belgesi\"."
+  },
+  {
+    "en": "institutional investor",
+    "tr": [
+      "kurumsal yatırımcı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "individual investor",
+    "tr": [
+      "bireysel yatırımcı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "pension fund",
+    "tr": [
+      "emeklilik fonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "defined benefit plan",
+    "tr": [
+      "tanımlanmış fayda planı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "defined contribution plan",
+    "tr": [
+      "tanımlanmış katkı planı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "endowment",
+    "tr": [
+      "vakıf fonu",
+      "bağış fonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "sovereign wealth fund",
+    "tr": [
+      "ulusal varlık fonu",
+      "devlet varlık fonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "mutual fund",
+    "tr": [
+      "yatırım fon"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"menkul kıymet yatırım fonu\"."
+  },
+  {
+    "en": "exchange-traded fund",
+    "tr": [
+      "borsa yatırım fonu",
+      "BYF"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "index fund",
+    "tr": [
+      "endeks fonu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "active management",
+    "tr": [
+      "aktif yönetim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "passive management",
+    "tr": [
+      "pasif yönetim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "benchmark",
+    "tr": [
+      "karşılaştırma ölçütü",
+      "gösterge",
+      "kıyaslama",
+      "benchmark"
+    ],
+    "enforce": false,
+    "note_tr": "SPK fon mevzuatındaki resmi terim \"karşılaştırma ölçütü\"dür."
+  },
+  {
+    "en": "time horizon",
+    "tr": [
+      "yatırım ufku",
+      "zaman ufku",
+      "vade ufku"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "overconfidence",
+    "tr": [
+      "aşırı güven"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "loss aversion",
+    "tr": [
+      "kayıptan kaçınma"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "anchoring",
+    "tr": [
+      "çapalama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "confirmation bias",
+    "tr": [
+      "doğrulama yanlılığı",
+      "teyit yanlılığı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "herding",
+    "tr": [
+      "sürü davranışı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "value at risk",
+    "tr": [
+      "riske maruz değer"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "stress testing",
+    "tr": [
+      "stres testi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "scenario analysis",
+    "tr": [
+      "senaryo analizi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "enterprise risk management",
+    "tr": [
+      "kurumsal risk yönetimi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "risk budgeting",
+    "tr": [
+      "risk bütçelemesi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "fintech",
+    "tr": [
+      "finansal teknoloji",
+      "fintek"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "robo-adviser",
+    "tr": [
+      "robo-danışman",
+      "robo danışman"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Code of Ethics",
+    "tr": [
+      "etik kural"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "Standards of Professional Conduct",
+    "tr": [
+      "mesleki davranış standartları"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "material nonpublic information",
+    "tr": [
+      "kamuya açıklanmamış",
+      "içsel bilgi"
+    ],
+    "enforce": true,
+    "note_tr": "SPK mevzuatında karşılığı \"içsel bilgi\"dir."
+  },
+  {
+    "en": "insider trading",
+    "tr": [
+      "içsel bilgi",
+      "içeriden öğrenenlerin ticareti",
+      "içerden öğrenenlerin ticareti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "market manipulation",
+    "tr": [
+      "piyasa bozucu",
+      "piyasa dolandırıcılığı",
+      "manipülasyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "fiduciary duty",
+    "tr": [
+      "güven görevi",
+      "sadakat yükümlülüğü",
+      "özen ve sadakat"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "duty of loyalty",
+    "tr": [
+      "sadakat yükümlülüğü",
+      "sadakat görevi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "duty of care",
+    "tr": [
+      "özen yükümlülüğü",
+      "özen görevi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "conflict of interest",
+    "tr": [
+      "çıkar çatışması"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "independence and objectivity",
+    "tr": [
+      "bağımsızlık ve tarafsızlık"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "misrepresentation",
+    "tr": [
+      "yanıltıcı",
+      "yanlış beyan"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "plagiarism",
+    "tr": [
+      "intihal"
+    ],
+    "enforce": true
+  },
+  {
+    "en": "suitability",
+    "tr": [
+      "uygunluk",
+      "yerindelik"
+    ],
+    "enforce": false,
+    "note_tr": "SPK yatırım hizmetleri mevzuatında \"uygunluk testi\" ve \"yerindelik testi\" ayrı kavramlardır."
+  },
+  {
+    "en": "fair dealing",
+    "tr": [
+      "adil davranma",
+      "adil muamele"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "disclosure",
+    "tr": [
+      "açıklama",
+      "ifşa",
+      "bildirim"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "compliance",
+    "tr": [
+      "uyum",
+      "mevzuata uyum"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "GIPS",
+    "tr": [
+      "GIPS",
+      "Küresel Yatırım Performans Standartları"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "record retention",
+    "tr": [
+      "kayıtların saklanması",
+      "kayıt saklama"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "confidentiality",
+    "tr": [
+      "gizlilik"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "front-running",
+    "tr": [
+      "önden işlem",
+      "öne geçme",
+      "front-running"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "referral fee",
+    "tr": [
+      "yönlendirme ücreti"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "soft dollars",
+    "tr": [
+      "yumuşak komisyon",
+      "soft dolar"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "best execution",
+    "tr": [
+      "en iyi icra",
+      "en iyi gerçekleştirme"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "due diligence",
+    "tr": [
+      "özenli inceleme",
+      "durum tespiti",
+      "due diligence"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "reasonable basis",
+    "tr": [
+      "makul dayanak",
+      "makul temel"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "security",
+    "tr": [
+      "menkul kıymet",
+      "sermaye piyasası aracı"
+    ],
+    "enforce": false,
+    "note_tr": "Gündelik anlamı \"güvenlik\"; finansta menkul kıymet. Teminat anlamında \"security interest\" da olabilir."
+  },
+  {
+    "en": "securities",
+    "tr": [
+      "menkul kıymet",
+      "sermaye piyasası araç"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "share",
+    "tr": [
+      "pay",
+      "hisse",
+      "pay senedi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "stock",
+    "tr": [
+      "hisse senedi",
+      "pay senedi",
+      "stok"
+    ],
+    "enforce": false,
+    "note_tr": "ABD'de pay senedi; İngiliz İngilizcesinde \"stock\" stok (envanter) da olabilir."
+  },
+  {
+    "en": "interest",
+    "tr": [
+      "faiz"
+    ],
+    "enforce": false,
+    "note_tr": "\"Non-controlling interest\" ve \"carried interest\" gibi ifadelerde \"pay/hak\" demektir."
+  },
+  {
+    "en": "interest rate",
+    "tr": [
+      "faiz oranı",
+      "faiz"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "principal",
+    "tr": [
+      "anapara",
+      "asil"
+    ],
+    "enforce": false,
+    "note_tr": "Borçta \"anapara\"; vekâlet ilişkisinde \"asil/işveren\"."
+  },
+  {
+    "en": "return",
+    "tr": [
+      "getiri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "rate of return",
+    "tr": [
+      "getiri oranı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "real return",
+    "tr": [
+      "reel getiri"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "yield",
+    "tr": [
+      "getiri",
+      "verim"
+    ],
+    "enforce": false,
+    "note_tr": "Tahvilde \"getiri/verim\"; temettüde \"temettü verimi\"."
+  },
+  {
+    "en": "capital gain",
+    "tr": [
+      "sermaye kazancı",
+      "değer artış kazancı",
+      "alım satım kazancı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "capital loss",
+    "tr": [
+      "sermaye kaybı",
+      "değer kaybı",
+      "alım satım zararı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "broker",
+    "tr": [
+      "aracı kurum",
+      "aracı",
+      "komisyoncu"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "dealer",
+    "tr": [
+      "piyasa yapıcı",
+      "kendi adına işlem yapan aracı",
+      "dealer"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "market maker",
+    "tr": [
+      "piyasa yapıcı"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "custodian",
+    "tr": [
+      "saklama",
+      "saklayıcı"
+    ],
+    "enforce": false,
+    "note_tr": "Kök: \"saklama kuruluşu\"."
+  },
+  {
+    "en": "investment bank",
+    "tr": [
+      "yatırım bankası"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "transaction costs",
+    "tr": [
+      "işlem maliyet"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "liquidity premium",
+    "tr": [
+      "likidite primi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "inflation premium",
+    "tr": [
+      "enflasyon primi"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "spread",
+    "tr": [
+      "spread",
+      "fark",
+      "marj"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "margin",
+    "tr": [
+      "marj",
+      "teminat"
+    ],
+    "enforce": false,
+    "note_tr": "Kârlılıkta \"marj\"; türev/kredili işlemde \"teminat\"."
+  },
+  {
+    "en": "position",
+    "tr": [
+      "pozisyon"
+    ],
+    "enforce": false
+  },
+  {
+    "en": "exposure",
+    "tr": [
+      "maruz kalınan risk",
+      "risk tutarı",
+      "pozisyon",
+      "maruziyet"
+    ],
+    "enforce": false
+  }
+]

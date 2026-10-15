@@ -1,0 +1,482 @@
+{
+ "level": "L2",
+ "curriculum_year": 2027,
+ "sources": [
+  {
+   "url": "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam",
+   "accessed": "2026-10-15"
+  },
+  {
+   "url": "https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/2027-cfa_l2_topic_outline.pdf",
+   "accessed": "2026-10-15"
+  },
+  {
+   "url": "https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/2026-l2-topics-combined.pdf",
+   "accessed": "2026-10-15"
+  },
+  {
+   "url": "https://300hours.com/cfa-curriculum-changes-2027/",
+   "accessed": "2026-10-15"
+  }
+ ],
+ "notes_tr": "CFA Institute'un kamuya açık 2027 Level II konu taslağına göre konu ve modül düzeyinde iskelet (LOS'lar boş; los_count_official resmi taslaktaki LOS sayısıdır). 2027'de 51 modül var (2026: 45). Tek içerik değişikliği Etik: 'Guidance for Standards I-VII' tek modülü yedi ayrı standart modülüne bölündü ve 'Application of the Code and Standards: Level II' modülü geldi. Diğer konuların modül listesi ve LOS sayıları 2026 ile aynı (iki taslak karşılaştırılarak doğrulandı). Konu adları 2027'de: Corporate Issuers -> Corporate Finance, Equity Valuation -> Equities, Portfolio Management -> Portfolio Construction; resmi Level II sayfası Türevler için 'Derivatives and Risk Management' adını kullanıyor, taslak PDF ise 'Derivatives'. Ağırlıklar resmi Level II sayfasından; sayfa tek tablo gösteriyor, ikincil kaynak (300hours) L2 ağırlıklarında değişiklik olmadığını belirtiyor. 2027 müfredatının ilk uygulandığı sınav penceresi resmi sayfada belirtilmiyor (UNVERIFIED). Konu kimlikleri L1 ile aynı sırada tutuldu (QM, ECO, CI, FSA, EQ, FI, DER, AI, PM, ETH); resmi taslakta FSA, Kurumsal Finansman'dan önce gelir.",
+ "topics": [
+  {
+   "id": "QM",
+   "name_en": "Quantitative Methods",
+   "name_tr": "Kantitatif Yöntemler",
+   "weight_min": 5,
+   "weight_max": 10,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "QM-01",
+     "title_en": "Basics of Multiple Regression and Underlying Assumptions",
+     "title_tr": "Çoklu Regresyonun Temelleri ve Varsayımları",
+     "los_count_official": 3,
+     "los": []
+    },
+    {
+     "id": "QM-02",
+     "title_en": "Evaluating Regression Model Fit and Interpreting Model Results",
+     "title_tr": "Regresyon Modelinin Uyumunun Değerlendirilmesi ve Sonuçların Yorumlanması",
+     "los_count_official": 3,
+     "los": []
+    },
+    {
+     "id": "QM-03",
+     "title_en": "Model Misspecification",
+     "title_tr": "Model Tanımlama Hataları",
+     "los_count_official": 4,
+     "los": []
+    },
+    {
+     "id": "QM-04",
+     "title_en": "Extensions of Multiple Regression",
+     "title_tr": "Çoklu Regresyonun Uzantıları",
+     "los_count_official": 3,
+     "los": []
+    },
+    {
+     "id": "QM-05",
+     "title_en": "Time-Series Analysis",
+     "title_tr": "Zaman Serisi Analizi",
+     "los_count_official": 15,
+     "los": []
+    },
+    {
+     "id": "QM-06",
+     "title_en": "Machine Learning",
+     "title_tr": "Makine Öğrenmesi",
+     "los_count_official": 4,
+     "los": []
+    },
+    {
+     "id": "QM-07",
+     "title_en": "Big Data Projects",
+     "title_tr": "Büyük Veri Projeleri",
+     "los_count_official": 7,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "ECO",
+   "name_en": "Economics",
+   "name_tr": "İktisat",
+   "weight_min": 5,
+   "weight_max": 10,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "ECO-01",
+     "title_en": "Currency Exchange Rates: Understanding Equilibrium Value",
+     "title_tr": "Döviz Kurları: Denge Değerini Anlamak",
+     "los_count_official": 13,
+     "los": []
+    },
+    {
+     "id": "ECO-02",
+     "title_en": "Economic Growth",
+     "title_tr": "Ekonomik Büyüme",
+     "los_count_official": 12,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "CI",
+   "name_en": "Corporate Finance",
+   "name_tr": "Kurumsal Finansman",
+   "weight_min": 5,
+   "weight_max": 10,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "CI-01",
+     "title_en": "Analysis of Dividends and Share Repurchases",
+     "title_tr": "Temettü ve Pay Geri Alımlarının Analizi",
+     "los_count_official": 14,
+     "los": []
+    },
+    {
+     "id": "CI-02",
+     "title_en": "Environmental, Social, and Governance (ESG) Considerations in Investment Analysis",
+     "title_tr": "Yatırım Analizinde Çevresel, Sosyal ve Yönetişim (ÇSY) Unsurları",
+     "los_count_official": 4,
+     "los": []
+    },
+    {
+     "id": "CI-03",
+     "title_en": "Cost of Capital: Advanced Topics",
+     "title_tr": "Sermaye Maliyeti: İleri Konular",
+     "los_count_official": 6,
+     "los": []
+    },
+    {
+     "id": "CI-04",
+     "title_en": "Corporate Restructuring",
+     "title_tr": "Kurumsal Yeniden Yapılanma",
+     "los_count_official": 7,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "FSA",
+   "name_en": "Financial Statement Analysis",
+   "name_tr": "Finansal Tablo Analizi",
+   "weight_min": 10,
+   "weight_max": 15,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "FSA-01",
+     "title_en": "Intercorporate Investments",
+     "title_tr": "Şirketler Arası Yatırımlar",
+     "los_count_official": 3,
+     "los": []
+    },
+    {
+     "id": "FSA-02",
+     "title_en": "Employee Compensation: Post-Employment and Share-Based",
+     "title_tr": "Çalışan Ücretlendirmesi: İşten Ayrılma Sonrası Faydalar ve Hisse Bazlı Ödemeler",
+     "los_count_official": 5,
+     "los": []
+    },
+    {
+     "id": "FSA-03",
+     "title_en": "Multinational Operations",
+     "title_tr": "Çok Uluslu Faaliyetler",
+     "los_count_official": 10,
+     "los": []
+    },
+    {
+     "id": "FSA-04",
+     "title_en": "Analysis of Financial Institutions",
+     "title_tr": "Finansal Kuruluşların Analizi",
+     "los_count_official": 6,
+     "los": []
+    },
+    {
+     "id": "FSA-05",
+     "title_en": "Evaluating Quality of Financial Reports",
+     "title_tr": "Finansal Raporların Kalitesinin Değerlendirilmesi",
+     "los_count_official": 13,
+     "los": []
+    },
+    {
+     "id": "FSA-06",
+     "title_en": "Integration of Financial Statement Analysis Techniques",
+     "title_tr": "Finansal Tablo Analizi Tekniklerinin Bütünleştirilmesi",
+     "los_count_official": 5,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "EQ",
+   "name_en": "Equities",
+   "name_tr": "Pay Senetleri",
+   "weight_min": 10,
+   "weight_max": 15,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "EQ-01",
+     "title_en": "Equity Valuation: Applications and Processes",
+     "title_tr": "Pay Değerlemesi: Uygulamalar ve Süreçler",
+     "los_count_official": 8,
+     "los": []
+    },
+    {
+     "id": "EQ-02",
+     "title_en": "Discounted Dividend Valuation",
+     "title_tr": "İndirgenmiş Temettü Değerlemesi",
+     "los_count_official": 16,
+     "los": []
+    },
+    {
+     "id": "EQ-03",
+     "title_en": "Free Cash Flow Valuation",
+     "title_tr": "Serbest Nakit Akışı Değerlemesi",
+     "los_count_official": 13,
+     "los": []
+    },
+    {
+     "id": "EQ-04",
+     "title_en": "Market-Based Valuation: Price and Enterprise Value Multiples",
+     "title_tr": "Piyasa Esaslı Değerleme: Fiyat ve Firma Değeri Çarpanları",
+     "los_count_official": 18,
+     "los": []
+    },
+    {
+     "id": "EQ-05",
+     "title_en": "Residual Income Valuation",
+     "title_tr": "Artık Gelir Değerlemesi",
+     "los_count_official": 11,
+     "los": []
+    },
+    {
+     "id": "EQ-06",
+     "title_en": "Private Company Valuation",
+     "title_tr": "Halka Kapalı Şirket Değerlemesi",
+     "los_count_official": 9,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "FI",
+   "name_en": "Fixed Income",
+   "name_tr": "Sabit Getirili Menkul Kıymetler",
+   "weight_min": 10,
+   "weight_max": 15,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "FI-01",
+     "title_en": "The Term Structure and Interest Rate Dynamics",
+     "title_tr": "Vade Yapısı ve Faiz Oranı Dinamikleri",
+     "los_count_official": 11,
+     "los": []
+    },
+    {
+     "id": "FI-02",
+     "title_en": "The Arbitrage-Free Valuation Framework",
+     "title_tr": "Arbitrajsız Değerleme Çerçevesi",
+     "los_count_official": 9,
+     "los": []
+    },
+    {
+     "id": "FI-03",
+     "title_en": "Valuation and Analysis of Bonds with Embedded Options",
+     "title_tr": "Opsiyon İçeren Tahvillerin Değerlemesi ve Analizi",
+     "los_count_official": 17,
+     "los": []
+    },
+    {
+     "id": "FI-04",
+     "title_en": "Credit Analysis Models",
+     "title_tr": "Kredi Analizi Modelleri",
+     "los_count_official": 8,
+     "los": []
+    },
+    {
+     "id": "FI-05",
+     "title_en": "Credit Default Swaps",
+     "title_tr": "Kredi Temerrüt Swapları",
+     "los_count_official": 5,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "DER",
+   "name_en": "Derivatives and Risk Management",
+   "name_tr": "Türev Araçlar ve Risk Yönetimi",
+   "weight_min": 5,
+   "weight_max": 10,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "DER-01",
+     "title_en": "Pricing and Valuation of Forward Commitments",
+     "title_tr": "Kesin Yükümlülüklerin Fiyatlanması ve Değerlemesi",
+     "los_count_official": 7,
+     "los": []
+    },
+    {
+     "id": "DER-02",
+     "title_en": "Valuation of Contingent Claims",
+     "title_tr": "Şarta Bağlı Hakların Değerlemesi",
+     "los_count_official": 14,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "AI",
+   "name_en": "Alternative Investments",
+   "name_tr": "Alternatif Yatırımlar",
+   "weight_min": 5,
+   "weight_max": 10,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "AI-01",
+     "title_en": "Introduction to Commodities and Commodity Derivatives",
+     "title_tr": "Emtia ve Emtia Türevlerine Giriş",
+     "los_count_official": 10,
+     "los": []
+    },
+    {
+     "id": "AI-02",
+     "title_en": "Overview of Types of Real Estate Investment",
+     "title_tr": "Gayrimenkul Yatırım Türlerine Genel Bakış",
+     "los_count_official": 5,
+     "los": []
+    },
+    {
+     "id": "AI-03",
+     "title_en": "Investments in Real Estate through Publicly Traded Securities",
+     "title_tr": "Borsada İşlem Gören Menkul Kıymetler Aracılığıyla Gayrimenkul Yatırımı",
+     "los_count_official": 5,
+     "los": []
+    },
+    {
+     "id": "AI-04",
+     "title_en": "Hedge Fund Strategies",
+     "title_tr": "Serbest Fon Stratejileri",
+     "los_count_official": 9,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "PM",
+   "name_en": "Portfolio Construction",
+   "name_tr": "Portföy Oluşturma",
+   "weight_min": 10,
+   "weight_max": 15,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "PM-01",
+     "title_en": "Economics and Investment Markets",
+     "title_tr": "İktisat ve Yatırım Piyasaları",
+     "los_count_official": 11,
+     "los": []
+    },
+    {
+     "id": "PM-02",
+     "title_en": "Analysis of Active Portfolio Management",
+     "title_tr": "Aktif Portföy Yönetiminin Analizi",
+     "los_count_official": 6,
+     "los": []
+    },
+    {
+     "id": "PM-03",
+     "title_en": "Exchange-Traded Funds: Mechanics and Applications",
+     "title_tr": "Borsa Yatırım Fonları: İşleyiş ve Uygulamalar",
+     "los_count_official": 8,
+     "los": []
+    },
+    {
+     "id": "PM-04",
+     "title_en": "Using Multifactor Models",
+     "title_tr": "Çok Faktörlü Modellerin Kullanımı",
+     "los_count_official": 7,
+     "los": []
+    },
+    {
+     "id": "PM-05",
+     "title_en": "Measuring and Managing Market Risk",
+     "title_tr": "Piyasa Riskinin Ölçülmesi ve Yönetimi",
+     "los_count_official": 12,
+     "los": []
+    },
+    {
+     "id": "PM-06",
+     "title_en": "Backtesting and Simulation",
+     "title_tr": "Geriye Dönük Test ve Simülasyon",
+     "los_count_official": 8,
+     "los": []
+    }
+   ]
+  },
+  {
+   "id": "ETH",
+   "name_en": "Ethical and Professional Standards",
+   "name_tr": "Etik ve Mesleki Standartlar",
+   "weight_min": 10,
+   "weight_max": 15,
+   "weight_verified": true,
+   "modules": [
+    {
+     "id": "ETH-01",
+     "title_en": "Code of Ethics and Standards of Professional Conduct",
+     "title_tr": "Etik Kurallar ve Mesleki Davranış Standartları",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-02",
+     "title_en": "Guidance for Standard I: Professionalism",
+     "title_tr": "Standart I Rehberi: Profesyonellik",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-03",
+     "title_en": "Guidance for Standard II: Integrity of Capital Markets",
+     "title_tr": "Standart II Rehberi: Sermaye Piyasalarının Bütünlüğü",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-04",
+     "title_en": "Guidance for Standard III: Duties to Clients",
+     "title_tr": "Standart III Rehberi: Müşterilere Karşı Yükümlülükler",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-05",
+     "title_en": "Guidance for Standard IV: Duties to Employers",
+     "title_tr": "Standart IV Rehberi: İşverenlere Karşı Yükümlülükler",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-06",
+     "title_en": "Guidance for Standard V: Investment Analysis, Recommendations, and Actions",
+     "title_tr": "Standart V Rehberi: Yatırım Analizi, Tavsiyeler ve İşlemler",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-07",
+     "title_en": "Guidance for Standard VI: Conflicts of Interest",
+     "title_tr": "Standart VI Rehberi: Çıkar Çatışmaları",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-08",
+     "title_en": "Guidance for Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate",
+     "title_tr": "Standart VII Rehberi: CFA Institute Üyesi veya CFA Adayı Olarak Sorumluluklar",
+     "los_count_official": 2,
+     "los": []
+    },
+    {
+     "id": "ETH-09",
+     "title_en": "Application of the Code and Standards: Level II",
+     "title_tr": "Kural ve Standartların Uygulanması: Seviye II",
+     "los_count_official": 2,
+     "los": []
+    }
+   ]
+  }
+ ]
+}

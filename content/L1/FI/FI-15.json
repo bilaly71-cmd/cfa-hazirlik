@@ -1,0 +1,583 @@
+{
+  "module_id": "FI-15",
+  "lesson": {
+    "id": "FI-15-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-15",
+    "los_ids": [
+      "FI-15-a"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Credit Analysis for Government Issuers",
+    "title_tr": "Kamu İhraççıları için Kredi Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Can a government go bankrupt?",
+        "heading_tr": "Bir devlet iflas edebilir mi?",
+        "en": "The Turkish Treasury borrows in Turkish lira through government bonds (DİBS) and in US dollars or euros through Eurobonds. A company that cannot pay its debts goes to court, and creditors can take its assets. A country is different. There is no bankruptcy court for a sovereign, and creditors usually cannot seize its assets. So an analyst must ask two questions: Can the government pay (ability)? And will it choose to pay (willingness)? Cities, regions, state agencies and supranational banks also borrow. Each type needs a slightly different view.",
+        "tr": "Hazine, Türk lirası cinsinden DİBS ve ABD doları ya da euro cinsinden Eurobond ihraç ederek borçlanır. Borcunu ödeyemeyen bir şirket mahkemeye gider ve alacaklılar varlıklarına el koyabilir. Ülke ise farklıdır: devlet için bir iflas mahkemesi yoktur ve alacaklılar genellikle varlıklarına el koyamaz. Bu yüzden analist iki soru sorar: Devlet ödeyebilir mi (ödeme gücü)? Ödemeyi seçer mi (ödeme isteği)? Belediyeler, bölgesel yönetimler, kamu kuruluşları ve uluslararası kalkınma bankaları da borçlanır; her biri biraz farklı bir bakış gerektirir.",
+        "key_terms": [
+          "sovereign",
+          "ability to pay",
+          "willingness to pay",
+          "Eurobond"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "What analysts look at for sovereigns",
+        "heading_tr": "Devlet ihraççılarında neye bakılır?",
+        "en": "Sovereign analysis uses qualitative and quantitative factors. Institutional and political factors: rule of law, control of corruption, stable and effective government, and a record of paying debts. Fiscal factors: the debt-to-GDP ratio and interest expense compared with government revenue. Economic factors: GDP per capita, real growth, and how diverse and stable the economy is. Monetary factors: an independent central bank, credible inflation policy and a flexible exchange rate give more room to act. External factors: the current account, foreign exchange reserves compared with external debt, and whether the currency is a reserve currency such as the US dollar or the euro.",
+        "tr": "Devlet kredi analizi nitel ve nicel faktörleri birlikte kullanır. Kurumsal ve siyasi faktörler: hukukun üstünlüğü, yolsuzlukla mücadele, istikrarlı ve etkin yönetim, borç ödeme geçmişi. Mali faktörler: kamu borcu/GSYH oranı ve faiz giderinin kamu gelirlerine oranı. Ekonomik faktörler: kişi başı GSYH, reel büyüme, ekonominin çeşitliliği ve istikrarı. Parasal faktörler: bağımsız bir merkez bankası, güvenilir enflasyon politikası ve esnek döviz kuru hareket alanını genişletir. Dış faktörler: cari denge, döviz rezervlerinin dış borca oranı ve paranın ABD doları ya da euro gibi bir rezerv para olup olmadığı.",
+        "key_terms": [
+          "debt-to-GDP",
+          "fiscal",
+          "monetary flexibility",
+          "external debt",
+          "reserve currency",
+          "current account"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key sovereign ratios",
+        "heading_tr": "Temel devlet oranları",
+        "en": "Two simple ratios show fiscal strength. Debt-to-GDP compares the stock of government debt with the size of the economy. Interest-to-revenue shows how much of each unit of government income goes to interest. A third ratio, reserves to short-term external debt, shows whether the country can meet foreign-currency payments due within a year. Higher debt-to-GDP and interest-to-revenue mean weaker credit; higher reserve cover means stronger credit.",
+        "tr": "Mali gücü iki basit oran gösterir. Borç/GSYH, kamu borç stokunu ekonominin büyüklüğüyle karşılaştırır. Faiz/gelir oranı, devletin her bir birimlik gelirinin ne kadarının faize gittiğini gösterir. Üçüncü bir oran olan rezervler/kısa vadeli dış borç, ülkenin bir yıl içinde vadesi gelecek döviz ödemelerini karşılayıp karşılayamayacağını gösterir. Borç/GSYH ve faiz/gelir yükseldikçe kredi kalitesi zayıflar; rezerv karşılama oranı yükseldikçe güçlenir.",
+        "key_terms": [
+          "debt-to-GDP",
+          "interest-to-revenue",
+          "reserve cover"
+        ],
+        "formula_latex": "\\frac{\\text{Debt}}{\\text{GDP}},\\quad \\frac{\\text{Interest expense}}{\\text{Government revenue}},\\quad \\frac{\\text{FX reserves}}{\\text{Short-term external debt}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A quick fiscal check",
+        "heading_tr": "Hızlı bir mali kontrol",
+        "en": "A fictional country, Republic of Novaria, has GDP of 50 trillion, government debt of 20 trillion, government revenue of 12 trillion and interest expense of 1.8 trillion (all in local currency).",
+        "tr": "Kurgusal Novarya Cumhuriyeti'nin GSYH'si 50 trilyon, kamu borcu 20 trilyon, kamu geliri 12 trilyon ve faiz gideri 1,8 trilyondur (hepsi yerel para cinsinden).",
+        "key_terms": [
+          "debt-to-GDP"
+        ],
+        "example": {
+          "en": "Debt-to-GDP = 20 / 50 = 40%. Interest-to-revenue = 1.8 / 12 = 15%. Debt-to-GDP looks moderate, but 15 cents of every unit of revenue goes to interest, which limits the budget. The analyst then checks growth, the currency mix of the debt and reserves before forming a view.",
+          "tr": "Borç/GSYH = 20 / 50 = %40. Faiz/gelir = 1,8 / 12 = %15. Borç/GSYH ılımlı görünse de gelirin her birimin 15 kuruşu faize gidiyor; bu da bütçeyi kısıtlar. Analist görüş oluşturmadan önce büyümeye, borcun döviz kompozisyonuna ve rezervlere de bakar.",
+          "formula_latex": "\\frac{1.8}{12} = 15\\%"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Local-currency vs foreign-currency debt",
+        "heading_tr": "Yerel para ve döviz cinsi borç",
+        "en": "A government can raise taxes and its central bank can create money in the local currency. So debt in the local currency is usually safer from default than debt in a foreign currency, which the government cannot print. For this reason, rating agencies often give a sovereign a higher local-currency rating than its foreign-currency rating. The cost of paying local debt by creating money may be high inflation and a weaker currency, so the investor's real return can still suffer.",
+        "tr": "Devlet vergileri artırabilir, merkez bankası da yerel para basabilir. Bu nedenle yerel para cinsinden borç, devletin basamayacağı döviz cinsinden borca göre temerrüde karşı genellikle daha güvenlidir. Bu yüzden derecelendirme kuruluşları bir devlete çoğu zaman döviz cinsi notundan daha yüksek bir yerel para notu verir. Ancak yerel borcu para basarak ödemenin bedeli yüksek enflasyon ve değer kaybeden para olabilir; yatırımcının reel getirisi yine zarar görebilir.",
+        "key_terms": [
+          "local currency rating",
+          "foreign currency rating",
+          "inflation"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Non-sovereign government issuers",
+        "heading_tr": "Merkezi yönetim dışındaki kamu ihraççıları",
+        "en": "Below the national government are regional and local governments (sub-sovereigns), government agencies, government-owned companies and supranational organizations such as the World Bank. General obligation (GO) bonds of a local government are backed by its power to tax; analysts study the local economy, budget balance and debt burden. Revenue bonds are paid only from a project's income, such as a toll road or water system, so they are analyzed much like corporate debt, using the debt service coverage ratio. Supranationals usually have very high ratings because many member governments support them.",
+        "tr": "Merkezi yönetimin altında bölgesel ve yerel yönetimler (alt-egemen ihraççılar), kamu kurumları, kamu iktisadi teşebbüsleri ve Dünya Bankası gibi uluslarüstü kuruluşlar yer alır. Bir yerel yönetimin genel yükümlülük (GO) tahvilleri vergi toplama yetkisine dayanır; analist yerel ekonomiye, bütçe dengesine ve borç yüküne bakar. Gelir tahvilleri ise yalnızca otoyol veya su şebekesi gibi bir projenin gelirinden ödenir; bu nedenle şirket borcu gibi, borç servisi karşılama oranıyla analiz edilir. Uluslarüstü kuruluşların notu genellikle çok yüksektir; çünkü birçok üye devlet tarafından desteklenirler.",
+        "key_terms": [
+          "sub-sovereign",
+          "general obligation bond",
+          "revenue bond",
+          "debt service coverage ratio",
+          "supranational"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Willingness to pay matters for sovereigns, not only ability. Local-currency ratings are usually higher than foreign-currency ratings, not lower. A fixed exchange rate reduces monetary flexibility. A large share of foreign-currency debt is a weakness. Revenue bonds depend on project cash flows, not on the government's power to tax.",
+        "tr": "Devletlerde yalnızca ödeme gücü değil ödeme isteği de önemlidir. Yerel para notları genellikle döviz notlarından düşük değil yüksektir. Sabit kur rejimi parasal esnekliği azaltır. Döviz cinsi borcun payının yüksek olması bir zayıflıktır. Gelir tahvilleri devletin vergi gücüne değil proje nakit akışlarına dayanır.",
+        "key_terms": [
+          "willingness to pay",
+          "fixed exchange rate"
+        ]
+      }
+    ],
+    "summary_en": "Sovereign credit analysis looks at both the ability and the willingness to pay, because creditors cannot use a bankruptcy court against a country. Analysts study institutional, fiscal, economic, monetary and external factors, using ratios such as debt-to-GDP and interest-to-revenue. Local-currency ratings are usually higher than foreign-currency ratings. GO bonds rely on taxing power, while revenue bonds rely on project income.",
+    "summary_tr": "Devlet kredi analizi hem ödeme gücüne hem ödeme isteğine bakar; çünkü alacaklılar bir ülkeye karşı iflas mahkemesine başvuramaz. Analist kurumsal, mali, ekonomik, parasal ve dış faktörleri, borç/GSYH ve faiz/gelir gibi oranlarla inceler. Yerel para notları genellikle döviz notlarından yüksektir. Genel yükümlülük tahvilleri vergi gücüne, gelir tahvilleri ise proje gelirine dayanır.",
+    "common_traps_tr": [
+      "Devlet analizinde yalnızca ödeme gücüne bakıp ödeme isteğini (siyasi irade) unutmak.",
+      "Yerel para notunun döviz notundan düşük olduğunu sanmak.",
+      "Sabit kur rejimini parasal esneklik kaynağı saymak; aslında esnekliği kısıtlar.",
+      "Gelir tahvilini genel yükümlülük tahvili gibi vergi gücüne bağlamak.",
+      "Faiz/gelir oranı yerine faiz/GSYH veya faiz/borç oranını hesaplamak."
+    ],
+    "vocab_ids": [
+      "sovereign",
+      "ability",
+      "willingness",
+      "creditor",
+      "seize",
+      "debt-to-gdp",
+      "revenue",
+      "reserve-currency",
+      "current-account",
+      "exchange-rate",
+      "general-obligation-bond",
+      "revenue-bond",
+      "supranational",
+      "local-currency"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "DİBS, Eurobond ve kamu borçlanması SPK Düzey 3'ten tanıdık; ülke kredi analizi çerçevesi büyük ölçüde yeni."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-15-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with the credit analysis of a corporate issuer, a key distinctive feature of sovereign credit analysis is most likely that:",
+      "stem_tr": "Bir şirket ihraççısının kredi analiziyle karşılaştırıldığında, devlet kredi analizinin ayırt edici temel özelliği büyük olasılıkla hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the government's willingness to pay must be judged, as well as its ability to pay.",
+          "tr": "devletin ödeme gücünün yanında ödeme isteğinin de değerlendirilmesi gerekir."
+        },
+        {
+          "key": "B",
+          "en": "sovereign bonds are always secured by state-owned assets.",
+          "tr": "devlet tahvilleri her zaman kamuya ait varlıklarla teminatlandırılır."
+        },
+        {
+          "key": "C",
+          "en": "political factors are not relevant because governments can always print money.",
+          "tr": "devletler her zaman para basabildiği için siyasi faktörler önemsizdir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Creditors cannot take a country to bankruptcy court or easily seize its assets, so the government's choice to pay (willingness) matters as much as its capacity (ability).",
+      "explanation_tr": "Alacaklılar bir ülkeyi iflas mahkemesine götüremez ve varlıklarına kolayca el koyamaz; bu nedenle devletin ödemeyi seçmesi (ödeme isteği), ödeme kapasitesi (ödeme gücü) kadar önemlidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Sovereign bonds are normally unsecured; creditors rarely have claims on specific state assets.",
+          "tr": "Devlet tahvilleri normalde teminatsızdır; alacaklıların belirli kamu varlıkları üzerinde hakkı nadiren olur."
+        },
+        "C": {
+          "en": "Political and institutional factors are central to sovereign analysis; printing money also does not help with foreign-currency debt.",
+          "tr": "Siyasi ve kurumsal faktörler devlet analizinin merkezindedir; para basmak döviz cinsi borçta da işe yaramaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sovereign",
+        "willingness",
+        "ability",
+        "secured",
+        "distinctive"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A sovereign's local-currency rating is often higher than its foreign-currency rating mainly because the government:",
+      "stem_tr": "Bir devletin yerel para notunun çoğu zaman döviz cinsi notundan yüksek olmasının temel nedeni, devletin:",
+      "options": [
+        {
+          "key": "A",
+          "en": "holds more foreign-currency reserves than local-currency debt.",
+          "tr": "yerel para borcundan daha fazla döviz rezervi tutmasıdır."
+        },
+        {
+          "key": "B",
+          "en": "can raise taxes and its central bank can create the local currency.",
+          "tr": "vergileri artırabilmesi ve merkez bankasının yerel parayı yaratabilmesidir."
+        },
+        {
+          "key": "C",
+          "en": "pays a lower interest rate on foreign-currency debt.",
+          "tr": "döviz cinsi borca daha düşük faiz ödemesidir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The government controls taxes and, through the central bank, the supply of its own currency. It cannot create US dollars or euros, so foreign-currency debt carries more default risk.",
+      "explanation_tr": "Devlet vergileri ve merkez bankası aracılığıyla kendi parasının arzını kontrol eder. ABD doları ya da euro yaratamaz; bu nedenle döviz cinsi borcun temerrüt riski daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reserve levels do not explain the gap; the key is control over the local currency.",
+          "tr": "Aradaki farkı rezerv düzeyi açıklamaz; asıl etken yerel para üzerindeki kontroldür."
+        },
+        "C": {
+          "en": "The interest rate level does not determine the rating gap; the source of repayment does.",
+          "tr": "Not farkını faiz düzeyi değil, geri ödemenin kaynağı belirler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "local-currency",
+        "foreign-currency",
+        "raise",
+        "central-bank",
+        "mainly"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "TL ve döviz cinsi kamu borçlanması tanıdık; not farkının mantığı yeni."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional country has GDP of 40 trillion, government debt of 12 trillion, government revenue of 9 trillion and annual interest expense of 1.35 trillion. Its interest expense as a percentage of government revenue is closest to:",
+      "stem_tr": "Kurgusal bir ülkenin GSYH'si 40 trilyon, kamu borcu 12 trilyon, kamu geliri 9 trilyon ve yıllık faiz gideri 1,35 trilyondur. Faiz giderinin kamu gelirine oranı yüzde kaçtır (en yakın)?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.4%",
+          "tr": "%3,4",
+          "value": 3.375
+        },
+        {
+          "key": "B",
+          "en": "11.3%",
+          "tr": "%11,3",
+          "value": 11.25
+        },
+        {
+          "key": "C",
+          "en": "15.0%",
+          "tr": "%15,0",
+          "value": 15.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Interest-to-revenue = 1.35 / 9 = 0.15 = 15.0%. This shows how much of government income goes to interest.",
+      "explanation_tr": "Faiz/gelir = 1,35 / 9 = 0,15 = %15,0. Bu oran, devlet gelirinin ne kadarının faize gittiğini gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides interest by GDP (1.35 / 40), not by government revenue.",
+          "tr": "Faiz, kamu geliri yerine GSYH'ye bölünmüş (1,35 / 40)."
+        },
+        "B": {
+          "en": "This divides interest by government debt (1.35 / 12), which is an average interest cost, not interest-to-revenue.",
+          "tr": "Faiz, kamu borcuna bölünmüş (1,35 / 12); bu ortalama faiz maliyetidir, faiz/gelir oranı değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need interest expense as a share of government revenue.",
+          "tr": "Faiz giderinin kamu gelirine oranı isteniyor."
+        },
+        {
+          "en": "Interest-to-revenue = interest expense / government revenue.",
+          "tr": "Faiz/gelir = faiz gideri / kamu geliri.",
+          "formula_latex": "\\frac{\\text{Interest}}{\\text{Revenue}}"
+        },
+        {
+          "en": "Interest = 1.35 trillion; revenue = 9 trillion.",
+          "tr": "Faiz = 1,35 trilyon; gelir = 9 trilyon.",
+          "values": {
+            "interest": 1.35,
+            "revenue": 9
+          }
+        },
+        {
+          "en": "1.35 / 9 = 0.15.",
+          "tr": "1,35 / 9 = 0,15."
+        },
+        {
+          "en": "Interest-to-revenue = 15.0%.",
+          "tr": "Faiz/gelir = %15,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.35 [÷]",
+          "9 [=]",
+          "[×] 100 [=]"
+        ],
+        "note_tr": "Sonuç 15."
+      },
+      "numeric": {
+        "expr": "1.35/9*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "revenue",
+        "interest-expense",
+        "percentage",
+        "annual",
+        "gdp"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following most likely gives a sovereign the greatest monetary flexibility?",
+      "stem_tr": "Aşağıdakilerden hangisi bir devlete büyük olasılıkla en fazla parasal esnekliği sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A fixed exchange rate against the US dollar.",
+          "tr": "ABD dolarına karşı sabit döviz kuru."
+        },
+        {
+          "key": "B",
+          "en": "A large share of government debt in foreign currency.",
+          "tr": "Kamu borcunun büyük bölümünün döviz cinsinden olması."
+        },
+        {
+          "key": "C",
+          "en": "An independent central bank with credible inflation targeting and a floating currency.",
+          "tr": "Güvenilir enflasyon hedeflemesi yapan bağımsız bir merkez bankası ve dalgalı kur."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Monetary flexibility is the ability to use monetary policy to respond to shocks. Central bank independence, credible policy and a floating exchange rate give the most room to act.",
+      "explanation_tr": "Parasal esneklik, şoklara para politikasıyla yanıt verebilme yeteneğidir. Merkez bankası bağımsızlığı, güvenilir politika ve dalgalı kur en geniş hareket alanını sağlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A fixed exchange rate ties monetary policy to keeping the peg, which reduces flexibility.",
+          "tr": "Sabit kur, para politikasını kuru korumaya bağlar; bu da esnekliği azaltır."
+        },
+        "B": {
+          "en": "Foreign-currency debt reduces flexibility because a weaker currency raises the cost of that debt.",
+          "tr": "Döviz cinsi borç esnekliği azaltır; çünkü yerel paranın değer kaybı bu borcun maliyetini artırır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "monetary-flexibility",
+        "independent",
+        "credible",
+        "floating",
+        "exchange-rate",
+        "share"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A city issues bonds to build a toll bridge. The bonds will be repaid only from the bridge's toll income. An analyst evaluating these bonds should most appropriately focus on:",
+      "stem_tr": "Bir şehir, ücretli bir köprü inşa etmek için tahvil ihraç ediyor. Tahviller yalnızca köprünün geçiş ücreti gelirlerinden ödenecek. Bu tahvilleri değerlendiren bir analistin en uygun şekilde odaklanması gereken konu:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the city's total tax base and its power to raise taxes.",
+          "tr": "şehrin toplam vergi tabanı ve vergi artırma yetkisi."
+        },
+        {
+          "key": "B",
+          "en": "the expected toll revenue and the debt service coverage ratio of the project.",
+          "tr": "projenin beklenen geçiş ücreti geliri ve borç servisi karşılama oranı."
+        },
+        {
+          "key": "C",
+          "en": "the national government's foreign-currency rating.",
+          "tr": "merkezi yönetimin döviz cinsi notu."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "These are revenue bonds: only project income repays them. They are analyzed like corporate debt, by forecasting the project's cash flows and checking how well they cover debt service.",
+      "explanation_tr": "Bunlar gelir tahvilleridir: yalnızca proje geliriyle ödenirler. Şirket borcu gibi analiz edilir; projenin nakit akışları tahmin edilir ve borç servisini ne ölçüde karşıladığına bakılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Taxing power backs general obligation bonds, not revenue bonds.",
+          "tr": "Vergi gücü genel yükümlülük tahvillerinin dayanağıdır, gelir tahvillerinin değil."
+        },
+        "C": {
+          "en": "The national rating gives context but does not repay these bonds; the toll income does.",
+          "tr": "Ülke notu bağlam sağlar ama bu tahvilleri ödemez; ödemeyi geçiş ücreti geliri yapar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "revenue-bond",
+        "toll",
+        "debt-service-coverage-ratio",
+        "evaluate",
+        "appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Three fictional countries issue foreign-currency bonds. Based only on the information below, which country's external position is most likely the weakest?",
+      "stem_tr": "Kurgusal üç ülke döviz cinsi tahvil ihraç ediyor. Yalnızca aşağıdaki bilgilere göre hangi ülkenin dış pozisyonu büyük olasılıkla en zayıftır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Country P: current account surplus; FX reserves three times its short-term external debt.",
+          "tr": "P ülkesi: cari fazla; döviz rezervleri kısa vadeli dış borcunun üç katı."
+        },
+        {
+          "key": "B",
+          "en": "Country Q: issues a global reserve currency; moderate current account deficit.",
+          "tr": "Q ülkesi: küresel bir rezerv para ihraç ediyor; ılımlı cari açık."
+        },
+        {
+          "key": "C",
+          "en": "Country R: large current account deficit; FX reserves below its short-term external debt; no reserve currency.",
+          "tr": "R ülkesi: yüksek cari açık; döviz rezervleri kısa vadeli dış borcunun altında; rezerv para yok."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Country R needs foreign currency to fund a large deficit and to repay short-term external debt, but its reserves do not cover that debt and it cannot pay in its own currency. This is the weakest external position.",
+      "explanation_tr": "R ülkesi büyük açığı finanse etmek ve kısa vadeli dış borcu ödemek için dövize ihtiyaç duyar; ancak rezervleri bu borcu karşılamaz ve kendi parasıyla ödeme yapamaz. Bu, en zayıf dış pozisyondur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A surplus and high reserve cover are signs of a strong external position.",
+          "tr": "Cari fazla ve yüksek rezerv karşılama oranı güçlü dış pozisyon işaretleridir."
+        },
+        "B": {
+          "en": "A reserve-currency issuer can borrow in its own currency, which offsets a moderate deficit.",
+          "tr": "Rezerv para ihraç eden ülke kendi parasıyla borçlanabilir; bu, ılımlı açığı dengeler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "current-account",
+        "surplus",
+        "deficit",
+        "reserve-currency",
+        "external-debt",
+        "weak"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-15-a-q07",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-15",
+      "los_id": "FI-15-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Bonds issued by supranational organizations, such as the World Bank, are most likely to have:",
+      "stem_tr": "Dünya Bankası gibi uluslarüstü kuruluşların ihraç ettiği tahvillerin büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "very high credit ratings, because many member governments support the organization.",
+          "tr": "çok yüksek kredi notları vardır; çünkü kuruluşu birçok üye devlet destekler."
+        },
+        {
+          "key": "B",
+          "en": "high-yield ratings, because they lend mainly to developing countries.",
+          "tr": "yüksek getirili (spekülatif) notları vardır; çünkü esas olarak gelişmekte olan ülkelere kredi verirler."
+        },
+        {
+          "key": "C",
+          "en": "no credit rating, because they cannot default.",
+          "tr": "kredi notu yoktur; çünkü temerrüde düşemezler."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Supranationals are owned and backed by many governments, have strong capital and conservative policies, so their bonds usually carry very high ratings.",
+      "explanation_tr": "Uluslarüstü kuruluşlar birçok devletin ortaklığında ve desteğindedir, sermayeleri güçlü ve politikaları ihtiyatlıdır; bu nedenle tahvilleri genellikle çok yüksek not taşır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Lending to developing countries does not make their own bonds speculative; member support is the key.",
+          "tr": "Gelişmekte olan ülkelere kredi vermeleri kendi tahvillerini spekülatif yapmaz; belirleyici olan üye desteğidir."
+        },
+        "C": {
+          "en": "They are rated by agencies; very low risk is not the same as zero risk.",
+          "tr": "Derecelendirme kuruluşlarınca notlandırılırlar; çok düşük risk sıfır risk demek değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "supranational",
+        "member",
+        "support",
+        "developing",
+        "rating"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

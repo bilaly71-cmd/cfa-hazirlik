@@ -1,0 +1,1224 @@
+{
+  "module_id": "FI-08",
+  "lesson": {
+    "id": "FI-08-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-08",
+    "los_ids": [
+      "FI-08-a",
+      "FI-08-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "title_tr": "Değişken Faizli Araçlarda Getiri ve Getiri Farkı Ölçüleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why floating rates?",
+        "heading_tr": "Neden değişken faiz?",
+        "en": "A fixed-rate bond loses value when market rates rise. A floating-rate note (FRN) avoids most of this problem: its coupon resets to a market reference rate (MRR) on each reset date. In Turkey, the Treasury issues TLREF-indexed government bonds, and banks lend to companies at rates linked to a reference rate. The FRN still carries credit risk, so the coupon is MRR plus a fixed spread. Short-term money market instruments, such as Treasury bills and commercial paper, are also quoted with special yield conventions. You must convert them to a common basis before you compare them.",
+        "tr": "Sabit kuponlu tahvil, piyasa faizleri yükseldiğinde değer kaybeder. Değişken faizli tahvil (FRN) bu sorunun büyük kısmından kaçınır: kuponu her faiz belirleme (reset) tarihinde bir piyasa referans faizine (MRR) göre yeniden belirlenir. Türkiye'de Hazine TLREF'e endeksli DİBS ihraç eder; bankalar da şirketlere referans faize bağlı oranlarla kredi verir. FRN yine de kredi riski taşıdığı için kupon, MRR artı sabit bir marjdır. Hazine bonosu ve finansman bonosu gibi kısa vadeli para piyasası araçları da kendine özgü getiri kurallarıyla kote edilir. Bunları karşılaştırmadan önce ortak bir esasa çevirmen gerekir.",
+        "key_terms": [
+          "floating-rate note",
+          "market reference rate",
+          "reset date",
+          "money market"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Quoted margin vs discount margin",
+        "heading_tr": "Kotasyon marjı ve iskonto marjı",
+        "en": "The quoted margin (QM) is the spread over MRR written in the bond contract. It is fixed for the life of the note. The discount margin (DM), also called the required margin, is the spread over MRR that investors require today for the issuer's credit and liquidity risk. On a reset date: if QM = DM, the FRN trades at par; if DM > QM (for example, after a downgrade), it trades at a discount; if DM < QM (credit quality improves), it trades at a premium.",
+        "tr": "Kotasyon marjı (QM), tahvil sözleşmesinde yazan ve MRR'nin üzerine eklenen marjdır; vade boyunca sabittir. İskonto marjı (DM) ya da talep edilen marj, yatırımcıların bugün ihraççının kredi ve likidite riski için MRR üzerine istediği marjdır. Reset tarihinde: QM = DM ise FRN nominalden işlem görür; DM > QM ise (örneğin not indiriminden sonra) iskontolu; DM < QM ise (kredi kalitesi iyileşirse) primli işlem görür.",
+        "key_terms": [
+          "quoted margin",
+          "discount margin",
+          "required margin",
+          "par",
+          "premium",
+          "discount"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Condition",
+              "tr": "Koşul"
+            },
+            {
+              "en": "Price on reset date",
+              "tr": "Reset tarihindeki fiyat"
+            }
+          ],
+          "rows": [
+            [
+              "QM = DM",
+              "Par / Nominal"
+            ],
+            [
+              "DM > QM",
+              "Discount / İskontolu"
+            ],
+            [
+              "DM < QM",
+              "Premium / Primli"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "FRN pricing model",
+        "heading_tr": "FRN fiyatlama modeli",
+        "en": "A simple FRN model assumes MRR stays constant until maturity. Each coupon is (MRR + QM) × FV / m, where m is the number of periods per year. Each cash flow is discounted at (MRR + DM) / m per period. To find DM from a market price, solve for the periodic yield (like a YTM), multiply by m, and subtract MRR.",
+        "tr": "Basit FRN modeli MRR'nin vadeye kadar sabit kaldığını varsayar. Her kupon (MRR + QM) × FV / m'dir; m yıllık dönem sayısıdır. Her nakit akışı dönem başına (MRR + DM) / m ile iskonto edilir. Piyasa fiyatından DM bulmak için dönemlik getiriyi (YTM gibi) çöz, m ile çarp ve MRR'yi çıkar.",
+        "key_terms": [
+          "quoted margin",
+          "discount margin",
+          "periodicity"
+        ],
+        "formula_latex": "PV=\\sum_{t=1}^{N}\\frac{\\frac{(MRR+QM)\\times FV}{m}}{\\left(1+\\frac{MRR+DM}{m}\\right)^{t}}+\\frac{FV}{\\left(1+\\frac{MRR+DM}{m}\\right)^{N}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Pricing an FRN",
+        "heading_tr": "FRN fiyatlama örneği",
+        "en": "A 2-year FRN from a fictional company, Ege Lojistik, pays MRR + 0.80% semiannually. MRR is 3.00%, and the market now requires a margin of 1.20%. The coupon per period is 1.90 and the discount rate per period is 2.10%, with N = 4. The price is below par because DM > QM.",
+        "tr": "Kurgusal Ege Lojistik şirketinin 2 yıl vadeli FRN'si altı ayda bir MRR + %0,80 ödüyor. MRR %3,00 ve piyasa artık %1,20 marj istiyor. Dönemlik kupon 1,90, dönemlik iskonto oranı %2,10 ve N = 4'tür. DM > QM olduğu için fiyat nominalin altındadır.",
+        "key_terms": [
+          "discount margin"
+        ],
+        "example": {
+          "en": "Coupon = (3.00% + 0.80%)/2 × 100 = 1.90; r = (3.00% + 1.20%)/2 = 2.10%; N = 4. PV = 1.90/1.021 + 1.90/1.021² + 1.90/1.021³ + 101.90/1.021⁴ ≈ 99.24.",
+          "tr": "Kupon = (%3,00 + %0,80)/2 × 100 = 1,90; r = (%3,00 + %1,20)/2 = %2,10; N = 4. PV = 1,90/1,021 + 1,90/1,021² + 1,90/1,021³ + 101,90/1,021⁴ ≈ 99,24.",
+          "formula_latex": "PV=\\sum_{t=1}^{4}\\frac{1.90}{1.021^t}+\\frac{100}{1.021^4}\\approx 99.24"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Money market rate conventions",
+        "heading_tr": "Para piyasası oran kuralları",
+        "en": "Money market instruments mature in one year or less. Two quote styles are common. A discount rate (DR) is based on face value: the interest is subtracted from face value to get the price. Treasury bills and commercial paper are often quoted this way, usually with a 360-day year. An add-on rate (AOR) is based on the price: interest is added to the amount invested. Bank deposits, CDs and repos use add-on rates. The bond-equivalent yield (BEY) is an add-on rate on a 365-day year. It is the common basis for comparing different instruments.",
+        "tr": "Para piyasası araçlarının vadesi bir yıl veya daha kısadır. İki kotasyon biçimi yaygındır. İskonto oranı (DR) nominal değeri esas alır: fiyatı bulmak için faiz nominalden düşülür. Hazine bonosu ve finansman bonosu genellikle böyle, çoğunlukla 360 günlük yılla kote edilir. Ekleme esaslı oran (AOR) fiyatı esas alır: faiz yatırılan tutarın üzerine eklenir. Banka mevduatı, mevduat sertifikası (CD) ve repo ekleme esaslı oran kullanır. Tahvil eşdeğeri getiri (BEY), 365 günlük yıl üzerinden ekleme esaslı orandır ve farklı araçları karşılaştırmada ortak esastır.",
+        "key_terms": [
+          "discount rate",
+          "add-on rate",
+          "bond-equivalent yield",
+          "commercial paper",
+          "certificate of deposit"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Money market formulas",
+        "heading_tr": "Para piyasası formülleri",
+        "en": "Discount basis: PV = FV × (1 − Days/Year × DR) and DR = (Year/Days) × (FV − PV)/FV. Add-on basis: PV = FV / (1 + Days/Year × AOR) and AOR = (Year/Days) × (FV − PV)/PV. Use Year = 360 or 365 as the quote states. For BEY, use Year = 365 in the add-on formula. To compare a discount-rate instrument with an add-on instrument, first find its price, then compute its add-on rate on the same day-count basis.",
+        "tr": "İskonto esası: PV = FV × (1 − Gün/Yıl × DR) ve DR = (Yıl/Gün) × (FV − PV)/FV. Ekleme esası: PV = FV / (1 + Gün/Yıl × AOR) ve AOR = (Yıl/Gün) × (FV − PV)/PV. Yıl için kotasyonda belirtilen 360 veya 365'i kullan. BEY için ekleme formülünde Yıl = 365 al. İskonto esaslı bir aracı ekleme esaslı bir araçla karşılaştırmak için önce fiyatını bul, sonra aynı gün sayımı esasında ekleme oranını hesapla.",
+        "key_terms": [
+          "discount basis",
+          "add-on basis",
+          "day count"
+        ],
+        "formula_latex": "DR=\\frac{Year}{Days}\\times\\frac{FV-PV}{FV}\\qquad AOR=\\frac{Year}{Days}\\times\\frac{FV-PV}{PV}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Converting a T-bill quote",
+        "heading_tr": "Hazine bonosu kotasyonunu dönüştürme",
+        "en": "A 182-day Treasury bill is quoted at a discount rate of 6.00% (360-day year). We find its price first, and then its bond-equivalent yield. The BEY is clearly higher than the 6.00% quote, because the base is the price, not face value, and the year has 365 days.",
+        "tr": "182 günlük bir hazine bonosu %6,00 iskonto oranıyla (360 günlük yıl) kote ediliyor. Önce fiyatını, sonra tahvil eşdeğeri getirisini buluyoruz. Taban nominal değer değil fiyat olduğu ve yıl 365 gün olduğu için BEY, %6,00'lık kotasyondan belirgin biçimde yüksektir.",
+        "key_terms": [
+          "bond-equivalent yield"
+        ],
+        "example": {
+          "en": "PV = 100 × (1 − 182/360 × 0.06) = 96.9667. BEY = (365/182) × (3.0333/96.9667) ≈ 6.27%.",
+          "tr": "PV = 100 × (1 − 182/360 × 0,06) = 96,9667. BEY = (365/182) × (3,0333/96,9667) ≈ %6,27."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "First, the quoted margin never changes; only MRR resets. A credit downgrade raises DM, not QM. Second, an FRN is at par on a reset date only when DM = QM. Third, do not mix bases: a discount rate divides by face value, an add-on rate divides by price. Fourth, check the year length (360 or 365) in every question. Finally, the discount rate always understates the true return, so a lower quoted discount rate can still be the better deal.",
+        "tr": "Birincisi, kotasyon marjı asla değişmez; yalnızca MRR yeniden belirlenir. Not indirimi QM'yi değil DM'yi yükseltir. İkincisi, FRN reset tarihinde yalnızca DM = QM ise nominaldedir. Üçüncüsü, tabanları karıştırma: iskonto oranı nominal değere, ekleme oranı fiyata böler. Dördüncüsü, her soruda yıl uzunluğunu (360 mı 365 mi) kontrol et. Son olarak, iskonto oranı gerçek getiriyi her zaman düşük gösterir; bu yüzden daha düşük kote edilen bir iskonto oranı yine de daha iyi seçenek olabilir.",
+        "key_terms": [
+          "quoted margin",
+          "discount margin",
+          "discount rate",
+          "add-on rate"
+        ]
+      }
+    ],
+    "summary_en": "An FRN's coupon is MRR plus a fixed quoted margin. The discount margin is the market's required spread, and comparing it with the quoted margin tells you whether the note trades at par, a premium or a discount. Money market instruments are quoted on a discount basis (face value) or an add-on basis (price). Convert quotes to a bond-equivalent yield (365-day add-on) before comparing them.",
+    "summary_tr": "FRN'nin kuponu MRR artı sabit bir kotasyon marjıdır. İskonto marjı piyasanın talep ettiği marjdır; bunu kotasyon marjıyla karşılaştırmak tahvilin nominal, primli veya iskontolu işlem göreceğini gösterir. Para piyasası araçları iskonto esasıyla (nominal değer) veya ekleme esasıyla (fiyat) kote edilir. Karşılaştırmadan önce kotasyonları tahvil eşdeğeri getiriye (365 gün, ekleme esaslı) çevir.",
+    "common_traps_tr": [
+      "Kotasyon marjının kredi riski değişince değiştiğini sanmak (sabittir; değişen iskonto marjıdır).",
+      "FRN'nin reset tarihinde her zaman nominalde olduğunu varsaymak (yalnızca DM = QM ise).",
+      "DM'yi bulurken yıllık getiriden MRR yerine tüm kupon oranını çıkarmak.",
+      "İskonto oranında fiyata, ekleme oranında nominal değere bölmek (tersi doğru).",
+      "360 ve 365 gün esasını karıştırmak; BEY her zaman 365 gün kullanır."
+    ],
+    "vocab_ids": [
+      "floating-rate-note",
+      "market-reference-rate",
+      "quoted-margin",
+      "discount-margin",
+      "required-margin",
+      "reset-date",
+      "money-market",
+      "discount-rate",
+      "add-on-rate",
+      "bond-equivalent-yield",
+      "commercial-paper",
+      "certificate-of-deposit",
+      "treasury-bill",
+      "periodicity",
+      "understate"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Hazine bonosu, iskontolu/basit faiz hesapları ve değişken faizli DİBS SPK Düzey 3'ten tanıdık; kotasyon/iskonto marjı ayrımı ve BEY dönüşümü CFA'ya özgüdür."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-08-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A floating-rate note (FRN) pays the market reference rate (MRR) plus 0.75% every quarter. On a reset date, investors require a margin of exactly 0.75% over MRR for the issuer's credit risk. On that reset date, the FRN will most likely trade:",
+      "stem_tr": "Değişken faizli bir tahvil (FRN) her çeyrekte piyasa referans faizi (MRR) + %0,75 ödüyor. Bir faiz belirleme (reset) tarihinde yatırımcılar ihraççının kredi riski için MRR üzerine tam %0,75 marj talep ediyor. Bu reset tarihinde FRN büyük olasılıkla nasıl işlem görür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "at par.",
+          "tr": "Nominal değerden (par)."
+        },
+        {
+          "key": "B",
+          "en": "at a premium.",
+          "tr": "Primli (nominalin üzerinde)."
+        },
+        {
+          "key": "C",
+          "en": "at a discount.",
+          "tr": "İskontolu (nominalin altında)."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "When the quoted margin (paid by the note) equals the discount margin (required by the market), each coupon pays exactly the required return. On a reset date the FRN is therefore priced at par.",
+      "explanation_tr": "Kotasyon marjı (tahvilin ödediği) iskonto marjına (piyasanın talep ettiği) eşitse, her kupon tam olarak talep edilen getiriyi öder. Bu yüzden reset tarihinde FRN nominal değerden fiyatlanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A premium needs the quoted margin to be above the required (discount) margin. Here the two margins are equal.",
+          "tr": "Primli fiyat için kotasyon marjının talep edilen (iskonto) marjdan büyük olması gerekir. Burada iki marj eşit."
+        },
+        "C": {
+          "en": "A discount needs the discount margin to be above the quoted margin, for example after the issuer's credit quality falls.",
+          "tr": "İskontolu fiyat için iskonto marjının kotasyon marjından büyük olması gerekir; örneğin ihraççının kredi kalitesi bozulduğunda."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "floating-rate-note",
+        "market-reference-rate",
+        "quoted-margin",
+        "reset-date",
+        "require",
+        "par-value"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Değişken faizli DİBS (ör. TLREF'e endeksli) SPK Düzey 3'te tanınır; iskonto marjı hesabı yenidir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 3-year floating-rate note pays MRR + 0.60% quarterly on a par value of 100. MRR is 3.40% and is assumed to stay constant. The market requires a discount margin of 0.90%. The price of the FRN on a reset date is closest to:",
+      "stem_tr": "3 yıl vadeli, nominali 100 olan değişken faizli bir tahvil çeyreklik olarak MRR + %0,60 ödüyor. MRR %3,40 ve sabit kalacağı varsayılıyor. Piyasa %0,90 iskonto marjı talep ediyor. FRN'nin reset tarihindeki fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "101.70",
+          "tr": "101,70",
+          "value": 101.7
+        },
+        {
+          "key": "B",
+          "en": "99.16",
+          "tr": "99,16",
+          "value": 99.16
+        },
+        {
+          "key": "C",
+          "en": "100.84",
+          "tr": "100,84",
+          "value": 100.84
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Quarterly coupon = (3.40% + 0.60%)/4 × 100 = 1.00. Quarterly discount rate = (3.40% + 0.90%)/4 = 1.075%. With N = 12, the price is about 99.16. The price is below par because the required margin (0.90%) is above the quoted margin (0.60%).",
+      "explanation_tr": "Çeyreklik kupon = (%3,40 + %0,60)/4 × 100 = 1,00. Çeyreklik iskonto oranı = (%3,40 + %0,90)/4 = %1,075. N = 12 ile fiyat yaklaşık 99,16 olur. Talep edilen marj (%0,90) kotasyon marjından (%0,60) büyük olduğu için fiyat nominalin altındadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Discounts at MRR alone (3.40%) and forgets to add the discount margin.",
+          "tr": "Yalnızca MRR (%3,40) ile iskonto etmiş; iskonto marjını eklemeyi unutmuş."
+        },
+        "C": {
+          "en": "Swaps the margins: it uses the discount margin in the coupon and the quoted margin in the discount rate, so the note looks like a premium bond.",
+          "tr": "Marjlar ters kullanılmış: kuponda iskonto marjı, iskonto oranında kotasyon marjı kullanılınca tahvil primli görünüyor."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the FRN price per 100 par on a reset date.",
+          "tr": "Reset tarihinde 100 nominal başına FRN fiyatı isteniyor."
+        },
+        {
+          "en": "Use the FRN pricing model: coupons use MRR + quoted margin; discounting uses MRR + discount margin; m = 4.",
+          "tr": "FRN fiyatlama modeli: kuponlar MRR + kotasyon marjı ile, iskonto MRR + iskonto marjı ile yapılır; m = 4.",
+          "formula_latex": "PV=\\sum_{t=1}^{N}\\frac{\\frac{(MRR+QM)\\times FV}{m}}{\\left(1+\\frac{MRR+DM}{m}\\right)^t}+\\frac{FV}{\\left(1+\\frac{MRR+DM}{m}\\right)^N}"
+        },
+        {
+          "en": "Coupon = 4.00%/4 × 100 = 1.00; rate per period = 4.30%/4 = 1.075%; N = 3 × 4 = 12.",
+          "tr": "Kupon = %4,00/4 × 100 = 1,00; dönemlik oran = %4,30/4 = %1,075; N = 3 × 4 = 12.",
+          "values": {
+            "PMT": 1.0,
+            "r": 0.01075,
+            "N": 12,
+            "FV": 100
+          }
+        },
+        {
+          "en": "Present value of coupons ≈ 11.20 and of principal ≈ 87.96.",
+          "tr": "Kuponların bugünkü değeri ≈ 11,20, anaparanınki ≈ 87,96."
+        },
+        {
+          "en": "Price ≈ 99.16 per 100 par (a discount, because DM > QM).",
+          "tr": "Fiyat ≈ 100 nominal başına 99,16 (DM > QM olduğu için iskontolu)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "12 [N]",
+          "1.075 [I/Y]",
+          "1 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ],
+        "note_tr": "Sonuç -99,16 görünür; işaret nakit çıkışını gösterir."
+      },
+      "numeric": {
+        "expr": "bond_price(0.04, 0.043, 3, 100, 4)"
+      },
+      "vocab_ids": [
+        "floating-rate-note",
+        "quoted-margin",
+        "discount-margin",
+        "assume",
+        "closest",
+        "quarterly"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An FRN was issued at par with a quoted margin of 1.20% over MRR. One year later, the issuer is downgraded by a rating agency, and similar FRNs now need a margin of 1.70%. All else equal, at the next reset date the FRN is most likely to:",
+      "stem_tr": "Bir FRN, MRR üzerine %1,20 kotasyon marjı ile nominal değerden ihraç edildi. Bir yıl sonra ihraççının notu bir derecelendirme kuruluşunca düşürüldü ve benzer FRN'ler artık %1,70 marj gerektiriyor. Diğer her şey sabitken, bir sonraki reset tarihinde FRN büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "trade at par, because the coupon resets to the new MRR.",
+          "tr": "nominalden işlem görür; çünkü kupon yeni MRR'ye göre yeniden belirlenir."
+        },
+        {
+          "key": "B",
+          "en": "trade above par, because a higher required margin means a higher future coupon.",
+          "tr": "nominalin üzerinde işlem görür; çünkü daha yüksek talep edilen marj daha yüksek gelecek kupon demektir."
+        },
+        {
+          "key": "C",
+          "en": "trade below par, because its discount margin is now higher than its quoted margin.",
+          "tr": "nominalin altında işlem görür; çünkü iskonto marjı artık kotasyon marjından yüksektir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The quoted margin stays at 1.20%, but the market now discounts cash flows at MRR + 1.70%. Because DM (1.70%) > QM (1.20%), the FRN is priced at a discount even on a reset date.",
+      "explanation_tr": "Kotasyon marjı %1,20'de kalır, ancak piyasa artık nakit akışlarını MRR + %1,70 ile iskonto eder. DM (%1,70) > QM (%1,20) olduğu için FRN reset tarihinde bile iskontolu fiyatlanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The reset only protects against changes in MRR. It does not change the fixed quoted margin, so a credit spread change still moves the price.",
+          "tr": "Reset yalnızca MRR değişimine karşı korur. Sabit kotasyon marjını değiştirmez; bu yüzden kredi marjı değişimi fiyatı yine etkiler."
+        },
+        "B": {
+          "en": "The coupon margin is fixed in the contract at 1.20%. A higher required margin only raises the discount rate, which lowers the price.",
+          "tr": "Kupon marjı sözleşmede %1,20 olarak sabittir. Talep edilen marjın artması yalnızca iskonto oranını yükseltir; bu da fiyatı düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "downgrade",
+        "discount-margin",
+        "quoted-margin",
+        "all-else-equal",
+        "reset-date",
+        "credit-risk"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A 2-year FRN pays MRR + 1.00% semiannually. MRR is 2.50% (assume it stays constant). The FRN trades at 98.80 per 100 par on a reset date. The discount margin is closest to:",
+      "stem_tr": "2 yıl vadeli bir FRN altı ayda bir MRR + %1,00 ödüyor. MRR %2,50 (sabit kalacağı varsayılıyor). FRN reset tarihinde 100 nominal başına 98,80'den işlem görüyor. İskonto marjı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "63 bps",
+          "tr": "63 baz puan",
+          "value": 63
+        },
+        {
+          "key": "B",
+          "en": "100 bps",
+          "tr": "100 baz puan",
+          "value": 100
+        },
+        {
+          "key": "C",
+          "en": "163 bps",
+          "tr": "163 baz puan",
+          "value": 163.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Solve for the semiannual yield: N = 4, PV = −98.80, PMT = 1.75, FV = 100 → I/Y ≈ 2.065% per half-year, or about 4.13% a year. DM = 4.13% − 2.50% ≈ 1.63%, or about 163 bps. DM is above QM, which matches the price below par.",
+      "explanation_tr": "Altı aylık getiriyi çöz: N = 4, PV = −98,80, PMT = 1,75, FV = 100 → I/Y ≈ yarıyıl başına %2,065, yıllık yaklaşık %4,13. DM = %4,13 − %2,50 ≈ %1,63, yani yaklaşık 163 baz puan. DM'nin QM'den büyük olması, fiyatın nominalin altında olmasıyla uyumludur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracts the full coupon rate (3.50%) from the annual yield instead of only MRR (2.50%).",
+          "tr": "Yıllık getiriden yalnızca MRR'yi (%2,50) değil, tüm kupon oranını (%3,50) çıkarmış."
+        },
+        "B": {
+          "en": "Assumes the discount margin equals the quoted margin. That is only true when the FRN trades at par.",
+          "tr": "İskonto marjını kotasyon marjına eşit varsaymış. Bu yalnızca FRN nominalden işlem görürken doğrudur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the discount margin (DM), the margin over MRR that the market requires.",
+          "tr": "Piyasanın MRR üzerine talep ettiği marj olan iskonto marjı (DM) isteniyor."
+        },
+        {
+          "en": "Find the periodic yield that sets the PV of cash flows equal to the price; then annualize and subtract MRR.",
+          "tr": "Nakit akışlarının bugünkü değerini fiyata eşitleyen dönemlik getiriyi bul; yıllıklaştır ve MRR'yi çıkar.",
+          "formula_latex": "98.80=\\sum_{t=1}^{4}\\frac{1.75}{(1+r)^t}+\\frac{100}{(1+r)^4},\\quad DM=2r-MRR"
+        },
+        {
+          "en": "Semiannual coupon = (2.50% + 1.00%)/2 × 100 = 1.75; N = 4.",
+          "tr": "Altı aylık kupon = (%2,50 + %1,00)/2 × 100 = 1,75; N = 4.",
+          "values": {
+            "PMT": 1.75,
+            "N": 4,
+            "PV": -98.8,
+            "FV": 100
+          }
+        },
+        {
+          "en": "r ≈ 2.0657% per period → annual ≈ 4.1313%.",
+          "tr": "r ≈ dönem başına %2,0657 → yıllık ≈ %4,1313."
+        },
+        {
+          "en": "DM ≈ 4.1313% − 2.50% ≈ 1.63% ≈ 163 bps.",
+          "tr": "DM ≈ %4,1313 − %2,50 ≈ %1,63 ≈ 163 baz puan."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "4 [N]",
+          "-98.8 [PV]",
+          "1.75 [PMT]",
+          "100 [FV]",
+          "[CPT] [I/Y]",
+          "[×] 2 [−] 2.5 [=]"
+        ],
+        "note_tr": "I/Y ≈ 2,0657 (yarıyıllık); ×2 − 2,5 ≈ 1,63 (%)."
+      },
+      "numeric": {
+        "expr": "(2*irr([-98.8, 1.75, 1.75, 1.75, 101.75]) - 0.025)*10000",
+        "unit": "bps"
+      },
+      "vocab_ids": [
+        "discount-margin",
+        "semiannual",
+        "assume",
+        "trade",
+        "closest",
+        "annualize"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following statements about the margins of a floating-rate note is least likely correct?",
+      "stem_tr": "Değişken faizli bir tahvilin marjlarıyla ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The quoted margin changes on every reset date to match the issuer's current credit risk.",
+          "tr": "Kotasyon marjı, ihraççının güncel kredi riskine uyması için her reset tarihinde değişir."
+        },
+        {
+          "key": "B",
+          "en": "The discount margin is set by the market and reflects the issuer's credit risk today.",
+          "tr": "İskonto marjı piyasa tarafından belirlenir ve ihraççının bugünkü kredi riskini yansıtır."
+        },
+        {
+          "key": "C",
+          "en": "At issuance, the quoted margin is usually set close to the discount margin so the note sells near par.",
+          "tr": "İhraç anında kotasyon marjı genellikle iskonto marjına yakın belirlenir; böylece tahvil nominale yakın satılır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The quoted margin is written in the bond contract and stays fixed for the life of the note. Only MRR resets. Changes in credit risk show up in the discount margin, and therefore in the price.",
+      "explanation_tr": "Kotasyon marjı tahvil sözleşmesinde yazılıdır ve vade boyunca sabit kalır. Yalnızca MRR yeniden belirlenir. Kredi riskindeki değişimler iskonto marjına ve dolayısıyla fiyata yansır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This statement is correct: DM is the required margin, so it moves with current credit and liquidity risk.",
+          "tr": "Bu ifade doğrudur: DM talep edilen marjdır; güncel kredi ve likidite riskiyle birlikte değişir."
+        },
+        "C": {
+          "en": "This statement is correct: issuers normally price new FRNs near par by matching the margin to market demand.",
+          "tr": "Bu ifade doğrudur: ihraççılar marjı piyasa talebine uydurarak yeni FRN'leri genellikle nominale yakın fiyatlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "quoted-margin",
+        "discount-margin",
+        "least-likely",
+        "issuance",
+        "reflect",
+        "reset-date"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-a-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 5-year FRN pays MRR + 0.50% annually on a par value of 100. MRR is 2.00% and is assumed to stay constant. The required margin for this issuer is now 0.30%. The FRN price on a reset date is closest to:",
+      "stem_tr": "5 yıl vadeli, nominali 100 olan bir FRN yılda bir MRR + %0,50 ödüyor. MRR %2,00 ve sabit kalacağı varsayılıyor. Bu ihraççı için talep edilen marj artık %0,30. FRN'nin reset tarihindeki fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "99.07",
+          "tr": "99,07",
+          "value": 99.07
+        },
+        {
+          "key": "B",
+          "en": "100.93",
+          "tr": "100,93",
+          "value": 100.93
+        },
+        {
+          "key": "C",
+          "en": "100.00",
+          "tr": "100,00",
+          "value": 100.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Coupon = 2.50 a year; discount rate = 2.00% + 0.30% = 2.30%; N = 5. Price ≈ 100.93. The FRN trades at a premium because QM (0.50%) > DM (0.30%).",
+      "explanation_tr": "Kupon = yılda 2,50; iskonto oranı = %2,00 + %0,30 = %2,30; N = 5. Fiyat ≈ 100,93. QM (%0,50) > DM (%0,30) olduğu için FRN primli işlem görür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Swaps the margins (coupon at 2.30%, discount rate 2.50%), so the result is a discount price.",
+          "tr": "Marjlar ters kullanılmış (kupon %2,30, iskonto oranı %2,50); sonuç iskontolu fiyat olmuş."
+        },
+        "C": {
+          "en": "Assumes an FRN is always at par on a reset date. That is true only when DM equals QM.",
+          "tr": "FRN'nin reset tarihinde her zaman nominalden işlem gördüğünü varsaymış. Bu yalnızca DM = QM olduğunda doğrudur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price per 100 par on a reset date.",
+          "tr": "Reset tarihinde 100 nominal başına fiyat isteniyor."
+        },
+        {
+          "en": "Coupon uses MRR + QM; discount rate uses MRR + DM.",
+          "tr": "Kupon MRR + QM ile, iskonto oranı MRR + DM ile hesaplanır."
+        },
+        {
+          "en": "PMT = (2.00% + 0.50%) × 100 = 2.50; r = 2.30%; N = 5; FV = 100.",
+          "tr": "PMT = (%2,00 + %0,50) × 100 = 2,50; r = %2,30; N = 5; FV = 100.",
+          "values": {
+            "PMT": 2.5,
+            "r": 0.023,
+            "N": 5,
+            "FV": 100
+          }
+        },
+        {
+          "en": "PV ≈ 100.93.",
+          "tr": "PV ≈ 100,93."
+        },
+        {
+          "en": "Price ≈ 100.93 per 100 par (premium).",
+          "tr": "Fiyat ≈ 100 nominal başına 100,93 (primli)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "5 [N]",
+          "2.3 [I/Y]",
+          "2.5 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "bond_price(0.025, 0.023, 5)"
+      },
+      "vocab_ids": [
+        "required-margin",
+        "premium",
+        "assume",
+        "annually",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A 90-day Treasury bill with a face value of 1,000,000 is quoted at a discount rate of 4.00% (360-day year). Its price is closest to:",
+      "stem_tr": "Nominal değeri 1.000.000 olan 90 günlük bir hazine bonosu %4,00 iskonto oranıyla (360 günlük yıl) kote ediliyor. Fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "990,099",
+          "tr": "990.099",
+          "value": 990099.0
+        },
+        {
+          "key": "B",
+          "en": "990,137",
+          "tr": "990.137",
+          "value": 990137.0
+        },
+        {
+          "key": "C",
+          "en": "990,000",
+          "tr": "990.000",
+          "value": 990000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "PV = FV × (1 − Days/Year × DR) = 1,000,000 × (1 − 90/360 × 0.04) = 1,000,000 × 0.99 = 990,000.",
+      "explanation_tr": "PV = FV × (1 − Gün/Yıl × DR) = 1.000.000 × (1 − 90/360 × 0,04) = 1.000.000 × 0,99 = 990.000.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats 4.00% as an add-on rate. A discount rate is applied to the face value and subtracted.",
+          "tr": "%4,00'ı ekleme esaslı oran gibi kullanmış. İskonto oranı nominal değere uygulanır ve çıkarılır."
+        },
+        "B": {
+          "en": "Uses a 365-day year. Discount-rate quotes for T-bills use a 360-day year.",
+          "tr": "365 günlük yıl kullanmış. Hazine bonosu iskonto kotasyonlarında 360 günlük yıl kullanılır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price of a T-bill quoted on a discount-rate basis.",
+          "tr": "İskonto esaslı kote edilen bir hazine bonosunun fiyatı isteniyor."
+        },
+        {
+          "en": "For a discount rate, the interest is taken off the face value.",
+          "tr": "İskonto oranında faiz nominal değerden düşülür.",
+          "formula_latex": "PV=FV\\times\\left(1-\\frac{Days}{Year}\\times DR\\right)"
+        },
+        {
+          "en": "PV = 1,000,000 × (1 − 90/360 × 0.04).",
+          "tr": "PV = 1.000.000 × (1 − 90/360 × 0,04).",
+          "values": {
+            "FV": 1000000,
+            "Days": 90,
+            "Year": 360,
+            "DR": 0.04
+          }
+        },
+        {
+          "en": "90/360 × 0.04 = 0.01.",
+          "tr": "90/360 × 0,04 = 0,01."
+        },
+        {
+          "en": "PV = 990,000.",
+          "tr": "PV = 990.000."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "90 [÷] 360 [×] 0.04 [=]",
+          "[+|-] [+] 1 [=]",
+          "[×] 1000000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1000000*(1 - 90/360*0.04)",
+        "tol": 2e-05
+      },
+      "vocab_ids": [
+        "treasury-bill",
+        "face-value",
+        "discount-rate",
+        "money-market",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Hazine bonosu iskontolu ihraç SPK Düzey 3'te bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 180-day commercial paper with face value 100 sells for 98.50. Its discount rate (360-day year) is closest to:",
+      "stem_tr": "Nominali 100 olan 180 günlük bir finansman bonosu 98,50'den satılıyor. İskonto oranı (360 günlük yıl) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.00%",
+          "tr": "%3,00",
+          "value": 3.0
+        },
+        {
+          "key": "B",
+          "en": "3.05%",
+          "tr": "%3,05",
+          "value": 3.05
+        },
+        {
+          "key": "C",
+          "en": "1.50%",
+          "tr": "%1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "DR = (Year/Days) × (FV − PV)/FV = (360/180) × 1.50/100 = 3.00%.",
+      "explanation_tr": "DR = (Yıl/Gün) × (FV − PV)/FV = (360/180) × 1,50/100 = %3,00.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides the discount by the price. That gives the add-on rate (360-day), not the discount rate.",
+          "tr": "İskontoyu fiyata bölmüş. Bu, iskonto oranını değil ekleme esaslı oranı (360 gün) verir."
+        },
+        "C": {
+          "en": "Does not annualize: 1.50% is the discount for 180 days only.",
+          "tr": "Yıllıklaştırmamış: %1,50 yalnızca 180 günlük iskontodur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual discount rate.",
+          "tr": "Yıllık iskonto oranı isteniyor."
+        },
+        {
+          "en": "The discount rate divides the dollar discount by face value.",
+          "tr": "İskonto oranı, iskonto tutarını nominal değere böler.",
+          "formula_latex": "DR=\\frac{Year}{Days}\\times\\frac{FV-PV}{FV}"
+        },
+        {
+          "en": "DR = (360/180) × (100 − 98.50)/100.",
+          "tr": "DR = (360/180) × (100 − 98,50)/100.",
+          "values": {
+            "FV": 100,
+            "PV": 98.5,
+            "Days": 180
+          }
+        },
+        {
+          "en": "= 2 × 0.015 = 0.03.",
+          "tr": "= 2 × 0,015 = 0,03."
+        },
+        {
+          "en": "DR = 3.00%.",
+          "tr": "DR = %3,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [−] 98.5 [=]",
+          "[÷] 100 [×] 360 [÷] 180 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "360/180*(100 - 98.5)/100*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "commercial-paper",
+        "discount-rate",
+        "face-value",
+        "annualize",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The same 180-day commercial paper sells for 98.50 per 100 face value. Its bond-equivalent yield (an add-on rate on a 365-day year) is closest to:",
+      "stem_tr": "Aynı 180 günlük finansman bonosu 100 nominal başına 98,50'den satılıyor. Tahvil eşdeğeri getirisi (365 günlük yıl üzerinden ekleme esaslı oran) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.046%",
+          "tr": "%3,046",
+          "value": 3.046
+        },
+        {
+          "key": "B",
+          "en": "3.088%",
+          "tr": "%3,088",
+          "value": 3.088
+        },
+        {
+          "key": "C",
+          "en": "3.042%",
+          "tr": "%3,042",
+          "value": 3.042
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "AOR(365) = (365/180) × (100 − 98.50)/98.50 = 2.0278 × 0.015228 ≈ 3.088%. It is higher than the 3.00% discount rate because it uses the price (smaller) as the base and a 365-day year.",
+      "explanation_tr": "AOR(365) = (365/180) × (100 − 98,50)/98,50 = 2,0278 × 0,015228 ≈ %3,088. Taban olarak (daha küçük olan) fiyatı ve 365 günlük yılı kullandığı için %3,00'lık iskonto oranından yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses a 360-day year. The bond-equivalent yield uses 365 days.",
+          "tr": "360 günlük yıl kullanmış. Tahvil eşdeğeri getiri 365 gün kullanır."
+        },
+        "C": {
+          "en": "Divides by face value (a discount-rate idea) instead of by the price paid.",
+          "tr": "Ödenen fiyat yerine nominal değere bölmüş (iskonto oranı mantığı)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the bond-equivalent yield (BEY).",
+          "tr": "Tahvil eşdeğeri getiri (BEY) isteniyor."
+        },
+        {
+          "en": "BEY is an add-on rate with a 365-day year: interest divided by the amount invested.",
+          "tr": "BEY, 365 günlük yıl üzerinden ekleme esaslı orandır: faiz, yatırılan tutara bölünür.",
+          "formula_latex": "AOR=\\frac{Year}{Days}\\times\\frac{FV-PV}{PV}"
+        },
+        {
+          "en": "AOR = (365/180) × (1.50/98.50).",
+          "tr": "AOR = (365/180) × (1,50/98,50).",
+          "values": {
+            "Year": 365,
+            "Days": 180,
+            "FV-PV": 1.5,
+            "PV": 98.5
+          }
+        },
+        {
+          "en": "365/180 = 2.0278; 1.50/98.50 = 0.015228.",
+          "tr": "365/180 = 2,0278; 1,50/98,50 = 0,015228."
+        },
+        {
+          "en": "BEY ≈ 3.088%.",
+          "tr": "BEY ≈ %3,088."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [÷] 98.5 [=]",
+          "[×] 365 [÷] 180 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "365/180*(100 - 98.5)/98.5*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "bond-equivalent-yield",
+        "add-on-rate",
+        "commercial-paper",
+        "closest",
+        "base"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank issues a 120-day certificate of deposit (CD) for 1,000,000 at an add-on rate of 5.00% (360-day year). The amount the investor receives at maturity is closest to:",
+      "stem_tr": "Bir banka 120 günlük, 1.000.000 tutarında bir mevduat sertifikasını (CD) %5,00 ekleme esaslı oranla (360 günlük yıl) ihraç ediyor. Yatırımcının vadede alacağı tutar aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1,016,438",
+          "tr": "1.016.438",
+          "value": 1016438.0
+        },
+        {
+          "key": "B",
+          "en": "1,050,000",
+          "tr": "1.050.000",
+          "value": 1050000.0
+        },
+        {
+          "key": "C",
+          "en": "1,016,667",
+          "tr": "1.016.667",
+          "value": 1016667.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With an add-on rate, interest is added to the principal: FV = 1,000,000 × (1 + 0.05 × 120/360) = 1,000,000 × 1.016667 ≈ 1,016,667.",
+      "explanation_tr": "Ekleme esaslı oranda faiz anaparanın üzerine eklenir: FV = 1.000.000 × (1 + 0,05 × 120/360) = 1.000.000 × 1,016667 ≈ 1.016.667.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses a 365-day year, but the quote is on a 360-day basis.",
+          "tr": "365 günlük yıl kullanmış; oysa kotasyon 360 gün esaslıdır."
+        },
+        "B": {
+          "en": "Applies the full annual rate, ignoring that the CD lasts only 120 days.",
+          "tr": "CD'nin yalnızca 120 gün sürdüğünü göz ardı edip tüm yıllık oranı uygulamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the redemption amount of an add-on CD.",
+          "tr": "Ekleme esaslı bir CD'nin vade sonu tutarı isteniyor."
+        },
+        {
+          "en": "Add-on basis: the interest is added on top of the principal invested.",
+          "tr": "Ekleme esası: faiz, yatırılan anaparanın üzerine eklenir.",
+          "formula_latex": "FV=PV\\times\\left(1+\\frac{Days}{Year}\\times AOR\\right)"
+        },
+        {
+          "en": "FV = 1,000,000 × (1 + 120/360 × 0.05).",
+          "tr": "FV = 1.000.000 × (1 + 120/360 × 0,05).",
+          "values": {
+            "PV": 1000000,
+            "Days": 120,
+            "Year": 360,
+            "AOR": 0.05
+          }
+        },
+        {
+          "en": "120/360 × 0.05 = 0.016667.",
+          "tr": "120/360 × 0,05 = 0,016667."
+        },
+        {
+          "en": "FV ≈ 1,016,667.",
+          "tr": "FV ≈ 1.016.667."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "120 [÷] 360 [×] 0.05 [+] 1 [=]",
+          "[×] 1000000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1000000*(1 + 0.05*120/360)",
+        "tol": 2e-05
+      },
+      "vocab_ids": [
+        "certificate-of-deposit",
+        "add-on-rate",
+        "maturity",
+        "principal",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An investor compares two money market instruments. Instrument X is a 90-day bill quoted at a discount rate of 4.50% (360-day year). Instrument Y is a 90-day deposit quoted at an add-on rate of 4.60% on a 365-day year. The bond-equivalent yield of Instrument X is closest to:",
+      "stem_tr": "Bir yatırımcı iki para piyasası aracını karşılaştırıyor. X aracı, %4,50 iskonto oranıyla (360 günlük yıl) kote edilen 90 günlük bir bonodur. Y aracı, 365 günlük yıl üzerinden %4,60 ekleme esaslı oranla kote edilen 90 günlük bir mevduattır. X aracının tahvil eşdeğeri getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.61%",
+          "tr": "%4,61",
+          "value": 4.61
+        },
+        {
+          "key": "B",
+          "en": "4.50%",
+          "tr": "%4,50",
+          "value": 4.5
+        },
+        {
+          "key": "C",
+          "en": "4.55%",
+          "tr": "%4,55",
+          "value": 4.55
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Price of X = 100 × (1 − 0.045 × 90/360) = 98.875. BEY = (365/90) × (1.125/98.875) ≈ 4.61%. So, on the same basis, X (4.61%) pays slightly more than Y (4.60%), even though its quoted rate looks lower.",
+      "explanation_tr": "X'in fiyatı = 100 × (1 − 0,045 × 90/360) = 98,875. BEY = (365/90) × (1,125/98,875) ≈ %4,61. Yani aynı esasta X (%4,61), kote oranı daha düşük görünse de Y'den (%4,60) biraz fazla getiri sağlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Treats the discount rate as if it were already a bond-equivalent yield.",
+          "tr": "İskonto oranını zaten tahvil eşdeğeri getiriymiş gibi kullanmış."
+        },
+        "C": {
+          "en": "Converts to an add-on rate but keeps a 360-day year. BEY needs 365 days.",
+          "tr": "Ekleme esaslı orana çevirmiş ama 360 günlük yılı korumuş. BEY 365 gün gerektirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need X's yield on a bond-equivalent (365-day add-on) basis so it can be compared with Y.",
+          "tr": "Y ile karşılaştırabilmek için X'in tahvil eşdeğeri (365 gün, ekleme esaslı) getirisi isteniyor."
+        },
+        {
+          "en": "First find the price from the discount rate, then compute the 365-day add-on rate.",
+          "tr": "Önce iskonto oranından fiyatı bul, sonra 365 günlük ekleme esaslı oranı hesapla.",
+          "formula_latex": "PV=FV\\left(1-\\frac{Days}{360}DR\\right),\\quad BEY=\\frac{365}{Days}\\times\\frac{FV-PV}{PV}"
+        },
+        {
+          "en": "PV = 100 × (1 − 0.045 × 0.25) = 98.875.",
+          "tr": "PV = 100 × (1 − 0,045 × 0,25) = 98,875.",
+          "values": {
+            "DR": 0.045,
+            "Days": 90
+          }
+        },
+        {
+          "en": "BEY = (365/90) × (1.125/98.875) = 4.0556 × 0.011378.",
+          "tr": "BEY = (365/90) × (1,125/98,875) = 4,0556 × 0,011378."
+        },
+        {
+          "en": "BEY ≈ 4.61%, slightly above Y's 4.60%.",
+          "tr": "BEY ≈ %4,61; Y'nin %4,60'ından biraz yüksek."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.045 [×] 90 [÷] 360 [=]",
+          "[+|-] [+] 1 [=] [×] 100 [=]",
+          "[STO] 1",
+          "100 [−] [RCL] 1 [=] [÷] [RCL] 1 [=]",
+          "[×] 365 [÷] 90 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "365/90*(100 - 100*(1 - 0.045*90/360))/(100*(1 - 0.045*90/360))*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "bond-equivalent-yield",
+        "discount-rate",
+        "add-on-rate",
+        "money-market",
+        "compare",
+        "slightly"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-08-b-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-08",
+      "los_id": "FI-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with an add-on rate on a 365-day year for the same instrument, a money market discount rate most likely:",
+      "stem_tr": "Aynı araç için 365 günlük yıl üzerinden ekleme esaslı orana kıyasla, para piyasası iskonto oranı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "overstates the investor's rate of return.",
+          "tr": "yatırımcının getiri oranını olduğundan yüksek gösterir."
+        },
+        {
+          "key": "B",
+          "en": "understates the investor's rate of return.",
+          "tr": "yatırımcının getiri oranını olduğundan düşük gösterir."
+        },
+        {
+          "key": "C",
+          "en": "gives the same rate of return.",
+          "tr": "aynı getiri oranını verir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A discount rate uses face value as the base and a 360-day year. The amount actually invested (the price) is smaller than face value, and a year has 365 days, so the true return is higher than the quoted discount rate.",
+      "explanation_tr": "İskonto oranı taban olarak nominal değeri ve 360 günlük yılı kullanır. Gerçekte yatırılan tutar (fiyat) nominalden küçüktür ve yıl 365 gündür; bu yüzden gerçek getiri kote edilen iskonto oranından yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The discount rate divides by the larger face value and uses a 360-day year, so it gives a lower number, not a higher one.",
+          "tr": "İskonto oranı daha büyük olan nominal değere böler ve 360 günlük yıl kullanır; bu yüzden daha yüksek değil, daha düşük bir sayı verir."
+        },
+        "C": {
+          "en": "The two quotes use different bases (face value vs price) and different year lengths, so they differ.",
+          "tr": "İki kotasyon farklı tabanlar (nominal değer – fiyat) ve farklı yıl uzunlukları kullanır; bu yüzden farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discount-rate",
+        "add-on-rate",
+        "understate",
+        "overstate",
+        "rate-of-return"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

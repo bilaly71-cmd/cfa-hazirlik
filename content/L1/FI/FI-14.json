@@ -1,0 +1,1463 @@
+{
+  "module_id": "FI-14",
+  "lesson": {
+    "id": "FI-14-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-14",
+    "los_ids": [
+      "FI-14-a",
+      "FI-14-b",
+      "FI-14-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Credit Risk",
+    "title_tr": "Kredi Riski",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why do corporate bonds pay more?",
+        "heading_tr": "Şirket tahvilleri neden daha çok öder?",
+        "en": "Imagine two bonds with the same maturity in Türkiye. One is a government bond (DİBS). The other is a bond issued by a fictional company, Kuzey Enerji A.Ş. The company bond almost always has a higher yield. Why? Because the company may not pay on time or may not pay in full. Investors want extra yield for this risk. This extra yield over a benchmark government bond is the credit spread. Credit risk is the risk of loss when a borrower does not make full and timely payments of interest and principal. In this module you learn how to measure that loss, how rating agencies summarize it, and why spreads move up and down over time.",
+        "tr": "Aynı vadeli iki tahvil düşünün: biri Hazine'nin ihraç ettiği DİBS, diğeri kurgusal Kuzey Enerji A.Ş.'nin özel sektör tahvili. Şirket tahvilinin getirisi neredeyse her zaman daha yüksektir. Çünkü şirket faizi veya anaparayı zamanında ya da tam olarak ödeyemeyebilir; yatırımcı bu risk için ek getiri ister. Gösterge devlet tahviline göre istenen bu ek getiriye kredi getiri farkı (kredi spread'i) denir. Kredi riski, borçlunun faiz ve anapara ödemelerini tam ve zamanında yapmaması nedeniyle zarara uğrama riskidir. Bu modülde bu zararı nasıl ölçeceğinizi, derecelendirme kuruluşlarının bunu nasıl özetlediğini ve spread'lerin neden değiştiğini öğreneceksiniz.",
+        "key_terms": [
+          "credit risk",
+          "credit spread",
+          "benchmark"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Parts of credit risk",
+        "heading_tr": "Kredi riskinin bileşenleri",
+        "en": "Credit risk has two main parts. Default risk is measured by the probability of default (POD or PD): the chance that the borrower fails to pay as promised in a given period. Loss given default (LGD) is how much the lender loses if default happens. Lenders often recover part of their money, for example by selling collateral. The recovery rate is the share recovered, and loss severity = 1 − recovery rate. Exposure at default (EAD) is the amount owed at the time of default. A bond's price can also fall without any default. Spread risk includes credit migration risk (the issuer's credit quality falls, often shown by a downgrade) and market liquidity risk (the bond becomes hard to sell without a large price cut).",
+        "tr": "Kredi riskinin iki ana bileşeni vardır. Temerrüt riski, temerrüt olasılığı (PD) ile ölçülür: borçlunun belirli bir dönemde vaat ettiği ödemeyi yapamama olasılığı. Temerrüt halinde kayıp (LGD), temerrüt gerçekleşirse alacaklının uğrayacağı zarardır. Alacaklı çoğu zaman paranın bir kısmını, örneğin teminatı satarak geri alır. Geri alınan orana geri kazanım oranı, 1 − geri kazanım oranına ise kayıp oranı (loss severity) denir. Temerrüt anındaki risk tutarı (EAD), temerrüt anında borçlunun ödemesi gereken tutardır. Tahvil fiyatı temerrüt olmadan da düşebilir: spread riski; kredi kalitesinin bozulması (çoğunlukla not indirimiyle görülen kredi göçü riski) ile tahvili büyük fiyat ödünü vermeden satamama riskini (piyasa likidite riski) kapsar.",
+        "key_terms": [
+          "default risk",
+          "probability of default",
+          "loss given default",
+          "recovery rate",
+          "loss severity",
+          "exposure at default",
+          "credit migration risk",
+          "market liquidity risk"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Expected loss",
+        "heading_tr": "Beklenen kayıp",
+        "en": "Expected loss combines the two parts. Loss given default in currency equals exposure times loss severity. Expected loss equals probability of default times loss given default. You can also write expected loss as a percentage of exposure: PD × (1 − RR). As a rough guide, the yield spread of a bond should at least cover its annual expected loss. Any extra spread pays investors for liquidity risk and for uncertainty about PD and LGD.",
+        "tr": "Beklenen kayıp iki bileşeni birleştirir. Para birimi cinsinden temerrüt halinde kayıp, risk tutarı ile kayıp oranının çarpımıdır. Beklenen kayıp, temerrüt olasılığı ile temerrüt halinde kaybın çarpımıdır. Beklenen kaybı risk tutarının yüzdesi olarak da yazabilirsiniz: PD × (1 − RR). Kabaca, bir tahvilin getiri farkı en az yıllık beklenen kaybını karşılamalıdır. Bunun üzerindeki spread, yatırımcıya likidite riski ve PD ile LGD tahminlerindeki belirsizlik için ödenen primdir.",
+        "key_terms": [
+          "expected loss",
+          "loss given default",
+          "yield spread"
+        ],
+        "formula_latex": "EL = PD \\times LGD,\\quad LGD = EAD \\times (1 - RR),\\quad \\text{Spread} \\approx PD \\times (1-RR)"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Expected loss of a company bond",
+        "heading_tr": "Bir şirket tahvilinin beklenen kaybı",
+        "en": "A fund holds TRY 10,000,000 of bonds issued by a fictional firm, Marmara Lojistik. The analyst estimates a one-year PD of 3% and a recovery rate of 45%.",
+        "tr": "Bir fon, kurgusal Marmara Lojistik'in ihraç ettiği 10.000.000 TL nominal tahvil tutuyor. Analist bir yıllık temerrüt olasılığını %3, geri kazanım oranını %45 olarak tahmin ediyor.",
+        "key_terms": [
+          "expected loss"
+        ],
+        "example": {
+          "en": "Loss severity = 1 − 0.45 = 0.55. LGD = 10,000,000 × 0.55 = TRY 5,500,000. Expected loss = 0.03 × 5,500,000 = TRY 165,000, or 1.65% of exposure. If the bond's spread over the government bond is 2.40%, about 0.75% of spread is left as payment for liquidity and uncertainty.",
+          "tr": "Kayıp oranı = 1 − 0,45 = 0,55. LGD = 10.000.000 × 0,55 = 5.500.000 TL. Beklenen kayıp = 0,03 × 5.500.000 = 165.000 TL, yani risk tutarının %1,65'i. Tahvilin devlet tahviline göre spread'i %2,40 ise, yaklaşık %0,75'lik kısım likidite ve belirsizlik primi olarak kalır.",
+          "formula_latex": "EL = 0.03 \\times 10{,}000{,}000 \\times (1-0.45) = 165{,}000"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Credit ratings and how they are used",
+        "heading_tr": "Kredi derecelendirme notları ve kullanımı",
+        "en": "Rating agencies such as Moody's, S&P Global and Fitch give letter grades for credit quality. Bonds rated BBB− (Baa3 at Moody's) or higher are investment grade. Bonds rated BB+ (Ba1) or lower are high yield, also called speculative or junk. An issuer rating (also called corporate family rating) is about the company as a whole; an issue rating is about one specific bond. Ratings are useful because they are simple, widely known and comparable. Regulators, investment mandates and bond indexes use rating thresholds. For example, a fund may be allowed to hold only investment-grade bonds. In Türkiye, agencies authorized by the Capital Markets Board (SPK) also give national-scale ratings, which rank issuers only against other domestic issuers.",
+        "tr": "Moody's, S&P Global ve Fitch gibi derecelendirme kuruluşları kredi kalitesi için harf notları verir. BBB− (Moody's'te Baa3) ve üzeri notlar yatırım yapılabilir seviyedir. BB+ (Ba1) ve altı ise yüksek getirili, spekülatif ya da 'junk' seviyedir. İhraççı notu şirketin bütününe, ihraç notu ise belirli bir tahvile aittir. Notlar basit, yaygın bilinen ve karşılaştırılabilir oldukları için kullanışlıdır. Düzenleyiciler, yatırım yönergeleri ve tahvil endeksleri not eşiklerini kullanır; örneğin bir fon yalnızca yatırım yapılabilir seviyedeki tahvilleri tutabilir. Türkiye'de SPK tarafından yetkilendirilen kuruluşlar ulusal ölçekte not da verir; bu notlar ihraççıyı yalnızca diğer yurt içi ihraççılarla kıyaslar.",
+        "key_terms": [
+          "investment grade",
+          "high yield",
+          "issuer rating",
+          "issue rating",
+          "national scale"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Moody's",
+              "tr": "Moody's"
+            },
+            {
+              "en": "S&P / Fitch",
+              "tr": "S&P / Fitch"
+            },
+            {
+              "en": "Grade",
+              "tr": "Seviye"
+            }
+          ],
+          "rows": [
+            [
+              "Aaa, Aa1–Aa3, A1–A3, Baa1–Baa3",
+              "AAA, AA+ … AA−, A+ … A−, BBB+ … BBB−",
+              "Investment grade / Yatırım yapılabilir"
+            ],
+            [
+              "Ba1 and below",
+              "BB+ and below",
+              "High yield / Spekülatif"
+            ],
+            [
+              "C",
+              "D",
+              "Default (lowest) / Temerrüt"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Shortcomings of ratings",
+        "heading_tr": "Notların eksiklikleri",
+        "en": "Ratings are helpful but not perfect. First, ratings change over time, so a bond bought as A may later be BBB. Second, ratings are slow: market prices and spreads usually react before agencies act. Third, some risks are hard to rate, such as lawsuits, natural disasters, or a leveraged buyout that suddenly adds a lot of debt (event risk). Fourth, agencies make mistakes; before the 2008 crisis, many highly rated mortgage securities later lost value. Finally, a rating is about default and recovery, not about the right price of a bond. Two bonds with the same rating can have very different spreads and price risk.",
+        "tr": "Notlar yararlıdır ama kusursuz değildir. Birincisi, notlar zamanla değişir; A notla alınan bir tahvil sonra BBB olabilir. İkincisi, notlar yavaştır: piyasa fiyatları ve spread'ler genellikle kuruluşlardan önce tepki verir. Üçüncüsü, dava, doğal afet ya da bir anda çok borç ekleyen kaldıraçlı satın alma (olay riski) gibi bazı riskleri notlamak zordur. Dördüncüsü, kuruluşlar hata yapar; 2008 krizinden önce yüksek notlu birçok ipoteğe dayalı menkul kıymet sonradan değer kaybetti. Son olarak not, tahvilin doğru fiyatıyla değil temerrüt ve geri kazanımla ilgilidir; aynı nota sahip iki tahvilin spread'i ve fiyat riski çok farklı olabilir.",
+        "key_terms": [
+          "credit migration",
+          "event risk",
+          "downgrade"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "What drives spreads",
+        "heading_tr": "Spread'leri ne belirler?",
+        "en": "Credit spreads change for three groups of reasons. Macro factors: the credit cycle and the economy. In an expansion, profits rise and spreads narrow; in a recession, defaults rise and spreads widen. Spreads usually start to widen before a downturn. Market factors: liquidity, dealer capacity and the supply of new bonds. When markets are stressed, bid–ask spreads grow and investors demand more yield. A large wave of new issues can also push spreads wider. Issuer-specific factors: leverage, coverage, profitability and events such as a debt-financed acquisition. Spread levels and spread volatility are both higher for lower-rated bonds; high-yield spreads react more strongly to the cycle than investment-grade spreads.",
+        "tr": "Kredi spread'leri üç grup nedenle değişir. Makro faktörler: kredi döngüsü ve ekonomi. Genişleme döneminde kârlar artar, spread'ler daralır; resesyonda temerrütler artar, spread'ler genişler. Spread'ler genellikle durgunluktan önce açılmaya başlar. Piyasa faktörleri: likidite, aracı kurumların (dealer) pozisyon taşıma kapasitesi ve yeni ihraç arzı. Piyasa stres altındayken alış-satış farkı büyür, yatırımcı daha çok getiri ister; yoğun yeni ihraç dalgası da spread'leri açabilir. İhraççıya özgü faktörler: kaldıraç, faiz karşılama, kârlılık ve borçla finanse edilen satın alma gibi olaylar. Düşük notlu tahvillerde hem spread düzeyi hem de spread oynaklığı daha yüksektir; yüksek getirili tahvillerin spread'leri döngüye yatırım yapılabilir seviyedekilerden daha güçlü tepki verir.",
+        "key_terms": [
+          "credit cycle",
+          "spread volatility",
+          "market liquidity",
+          "new issue supply"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Price effect of a spread change",
+        "heading_tr": "Spread değişiminin fiyata etkisi",
+        "en": "When the spread changes and the benchmark yield does not, the bond's yield changes by the same amount. We use modified duration (or spread duration) and convexity. The percentage price change is about minus duration times the spread change, plus one half times convexity times the squared spread change. Write the spread change as a decimal (50 bps = 0.0050).",
+        "tr": "Gösterge getiri sabitken spread değişirse tahvilin getirisi de aynı miktarda değişir. Burada düzeltilmiş durasyon (veya spread durasyonu) ve konveksite kullanılır. Yüzde fiyat değişimi yaklaşık olarak, eksi durasyon çarpı spread değişimi artı yarım çarpı konveksite çarpı spread değişiminin karesidir. Spread değişimini ondalık yazın (50 baz puan = 0,0050).",
+        "key_terms": [
+          "modified duration",
+          "convexity",
+          "basis point"
+        ],
+        "formula_latex": "\\%\\Delta P \\approx -\\text{ModDur} \\times \\Delta s + \\tfrac{1}{2} \\times \\text{Convexity} \\times (\\Delta s)^2"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not mix up recovery rate and loss severity: LGD uses 1 − recovery. Expected loss needs both PD and LGD; a bond with lower PD can still have higher expected loss if its recovery is very low. A bond can lose value with no default because of a downgrade or poor liquidity. Ratings lag prices. BB+ is not investment grade. In a recession, high-yield spreads widen more than investment-grade spreads.",
+        "tr": "Geri kazanım oranı ile kayıp oranını karıştırmayın: LGD, 1 − geri kazanım ile hesaplanır. Beklenen kayıp için hem PD hem LGD gerekir; PD'si düşük bir tahvil, geri kazanımı çok düşükse daha yüksek beklenen kayba sahip olabilir. Tahvil, temerrüt olmadan da not indirimi veya zayıf likidite nedeniyle değer kaybedebilir. Notlar fiyatların gerisinden gelir. BB+ yatırım yapılabilir seviye değildir. Resesyonda yüksek getirili tahvil spread'leri, yatırım yapılabilir seviyedekilerden daha fazla açılır.",
+        "key_terms": [
+          "loss severity",
+          "lag"
+        ]
+      }
+    ],
+    "summary_en": "Credit risk is the risk of loss when a borrower does not pay in full and on time. Expected loss equals probability of default times loss given default, and LGD equals exposure times (1 − recovery rate). Ratings summarize credit risk and are used by regulators, mandates and indexes, but they change, lag market prices and miss event risk. Spreads depend on macro, market and issuer-specific factors, and lower-rated bonds have wider and more volatile spreads.",
+    "summary_tr": "Kredi riski, borçlunun tam ve zamanında ödeme yapmaması nedeniyle zarara uğrama riskidir. Beklenen kayıp, temerrüt olasılığı ile temerrüt halinde kaybın çarpımıdır; LGD ise risk tutarı × (1 − geri kazanım oranı) olarak bulunur. Notlar kredi riskini özetler ve düzenleyiciler, yatırım yönergeleri ve endeksler tarafından kullanılır; ancak değişir, piyasa fiyatlarının gerisinde kalır ve olay riskini kaçırabilir. Spread'ler makro, piyasa ve ihraççıya özgü faktörlere bağlıdır; düşük notlu tahvillerin spread'leri hem daha geniş hem daha oynaktır.",
+    "common_traps_tr": [
+      "LGD hesabında geri kazanım oranını kayıp oranı yerine kullanmak (1 − RR yerine RR ile çarpmak).",
+      "Beklenen kaybı yalnızca temerrüt olasılığına bakarak karşılaştırmak; geri kazanımı hesaba katmamak.",
+      "BB+ notunu yatırım yapılabilir seviye sanmak; eşik BBB− (Baa3).",
+      "Notların piyasa fiyatlarından önce hareket ettiğini düşünmek; genellikle tersi geçerlidir.",
+      "Resesyonda tüm spread'lerin aynı oranda açıldığını varsaymak; yüksek getirili tahviller daha çok etkilenir.",
+      "Spread değişiminin fiyat etkisinde konveksite terimini çıkarmak ya da baz puanı ondalığa çevirmeyi unutmak."
+    ],
+    "vocab_ids": [
+      "credit-risk",
+      "credit-spread",
+      "probability-of-default",
+      "loss-given-default",
+      "recovery-rate",
+      "loss-severity",
+      "expected-loss",
+      "exposure",
+      "credit-rating",
+      "investment-grade",
+      "high-yield",
+      "downgrade",
+      "credit-migration",
+      "event-risk",
+      "credit-cycle",
+      "widen",
+      "narrow",
+      "lag",
+      "timely",
+      "liquidity"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te derecelendirme ve kredi riski kavramları var; PD×LGD ile beklenen kayıp ve spread sürücüleri daha ayrıntılı."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-14-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bank holds a bond position with an exposure of 5,000,000. The one-year probability of default is 2% and the expected recovery rate is 40%. The one-year expected loss is closest to:",
+      "stem_tr": "Bir bankanın risk tutarı 5.000.000 olan bir tahvil pozisyonu var. Bir yıllık temerrüt olasılığı %2, beklenen geri kazanım oranı %40'tır. Bir yıllık beklenen kayıp aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "40,000",
+          "tr": "40.000",
+          "value": 40000
+        },
+        {
+          "key": "B",
+          "en": "60,000",
+          "tr": "60.000",
+          "value": 60000
+        },
+        {
+          "key": "C",
+          "en": "100,000",
+          "tr": "100.000",
+          "value": 100000
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "LGD = 5,000,000 × (1 − 0.40) = 3,000,000. Expected loss = 0.02 × 3,000,000 = 60,000.",
+      "explanation_tr": "LGD = 5.000.000 × (1 − 0,40) = 3.000.000. Beklenen kayıp = 0,02 × 3.000.000 = 60.000.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the recovery rate (40%) as the loss share instead of loss severity (60%).",
+          "tr": "Kayıp oranı (%60) yerine geri kazanım oranı (%40) kullanılmış."
+        },
+        "C": {
+          "en": "This ignores recovery and assumes the full exposure is lost on default.",
+          "tr": "Geri kazanım yok sayılmış; temerrütte tüm tutarın kaybedildiği varsayılmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected loss over one year.",
+          "tr": "Bir yıllık beklenen kayıp isteniyor."
+        },
+        {
+          "en": "Expected loss = PD × LGD, and LGD = exposure × (1 − recovery rate).",
+          "tr": "Beklenen kayıp = PD × LGD; LGD = risk tutarı × (1 − geri kazanım oranı).",
+          "formula_latex": "EL = PD \\times EAD \\times (1-RR)"
+        },
+        {
+          "en": "Put in the values.",
+          "tr": "Değerleri yerine koyalım.",
+          "values": {
+            "PD": 0.02,
+            "EAD": 5000000,
+            "RR": 0.4
+          }
+        },
+        {
+          "en": "LGD = 5,000,000 × 0.60 = 3,000,000.",
+          "tr": "LGD = 5.000.000 × 0,60 = 3.000.000."
+        },
+        {
+          "en": "EL = 0.02 × 3,000,000 = 60,000.",
+          "tr": "EL = 0,02 × 3.000.000 = 60.000."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000000 [×]",
+          "0.6 [×]",
+          "0.02 [=]"
+        ],
+        "note_tr": "Ekranda 60.000 görülür."
+      },
+      "numeric": {
+        "expr": "5000000*0.02*(1-0.40)",
+        "unit": "currency"
+      },
+      "vocab_ids": [
+        "exposure",
+        "probability-of-default",
+        "recovery-rate",
+        "expected-loss",
+        "hold"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Kredi riski kavramı biliniyor; PD×LGD hesabı yeni olabilir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst estimates that a corporate bond has an annual probability of default of 1.5% and a recovery rate of 35%. Expected loss as a percentage of the bond's exposure is closest to:",
+      "stem_tr": "Bir analist, bir şirket tahvilinin yıllık temerrüt olasılığını %1,5, geri kazanım oranını %35 olarak tahmin ediyor. Tahvilin risk tutarına oranla beklenen kayıp yüzde kaçtır (en yakın)?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.975%",
+          "tr": "%0,975",
+          "value": 0.975
+        },
+        {
+          "key": "B",
+          "en": "0.525%",
+          "tr": "%0,525",
+          "value": 0.525
+        },
+        {
+          "key": "C",
+          "en": "1.500%",
+          "tr": "%1,500",
+          "value": 1.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Expected loss % = PD × (1 − RR) = 1.5% × 0.65 = 0.975%.",
+      "explanation_tr": "Beklenen kayıp % = PD × (1 − RR) = %1,5 × 0,65 = %0,975.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This multiplies PD by the recovery rate (1.5% × 0.35) instead of by loss severity.",
+          "tr": "PD, kayıp oranı yerine geri kazanım oranıyla çarpılmış (%1,5 × 0,35)."
+        },
+        "C": {
+          "en": "This is the probability of default only; it assumes zero recovery.",
+          "tr": "Bu yalnızca temerrüt olasılığıdır; geri kazanımın sıfır olduğu varsayılmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need expected loss as a percent of exposure.",
+          "tr": "Risk tutarının yüzdesi olarak beklenen kayıp isteniyor."
+        },
+        {
+          "en": "Use EL% = PD × (1 − RR).",
+          "tr": "EL% = PD × (1 − RR) formülünü kullanırız.",
+          "formula_latex": "EL\\% = PD \\times (1-RR)"
+        },
+        {
+          "en": "Values: PD = 1.5%, RR = 35%.",
+          "tr": "Değerler: PD = %1,5, RR = %35.",
+          "values": {
+            "PD": "1.5%",
+            "RR": "35%"
+          }
+        },
+        {
+          "en": "Loss severity = 1 − 0.35 = 0.65.",
+          "tr": "Kayıp oranı = 1 − 0,35 = 0,65."
+        },
+        {
+          "en": "EL% = 1.5 × 0.65 = 0.975%.",
+          "tr": "EL% = 1,5 × 0,65 = %0,975."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [×]",
+          "0.65 [=]"
+        ],
+        "note_tr": "Sonuç yüzde biriminde: 0,975."
+      },
+      "numeric": {
+        "expr": "1.5*(1-0.35)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "estimate",
+        "annual",
+        "recovery-rate",
+        "expected-loss",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond issued by a fictional firm, Ege Tekstil, trades at a spread of 1.80% over the government bond. An analyst estimates an annual probability of default of 2.5% and a loss severity of 60%. The part of the spread that is above the annual expected loss is closest to:",
+      "stem_tr": "Kurgusal Ege Tekstil'in tahvili devlet tahviline göre %1,80 spread ile işlem görüyor. Analist yıllık temerrüt olasılığını %2,5, kayıp oranını %60 olarak tahmin ediyor. Spread'in yıllık beklenen kaybın üzerinde kalan kısmı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.80%",
+          "tr": "%0,80",
+          "value": 0.8
+        },
+        {
+          "key": "B",
+          "en": "−0.70%",
+          "tr": "−%0,70",
+          "value": -0.7
+        },
+        {
+          "key": "C",
+          "en": "0.30%",
+          "tr": "%0,30",
+          "value": 0.3
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expected loss = 2.5% × 0.60 = 1.50%. Spread above expected loss = 1.80% − 1.50% = 0.30%. This extra part pays for liquidity risk and uncertainty.",
+      "explanation_tr": "Beklenen kayıp = %2,5 × 0,60 = %1,50. Beklenen kaybın üzerindeki spread = %1,80 − %1,50 = %0,30. Bu fazlalık likidite riski ve belirsizlik için ödenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This treats 60% as the recovery rate, so EL = 2.5% × 0.40 = 1.00% and 1.80% − 1.00% = 0.80%.",
+          "tr": "%60 geri kazanım oranı sanılmış; EL = %2,5 × 0,40 = %1,00 ve %1,80 − %1,00 = %0,80 bulunmuş."
+        },
+        "B": {
+          "en": "This subtracts the full probability of default (2.5%) and ignores loss severity.",
+          "tr": "Kayıp oranı yok sayılıp temerrüt olasılığının tamamı (%2,5) çıkarılmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need spread minus annual expected loss.",
+          "tr": "Spread eksi yıllık beklenen kayıp isteniyor."
+        },
+        {
+          "en": "Annual expected loss (%) = PD × loss severity.",
+          "tr": "Yıllık beklenen kayıp (%) = PD × kayıp oranı.",
+          "formula_latex": "EL\\% = PD \\times LS"
+        },
+        {
+          "en": "EL = 2.5% × 0.60.",
+          "tr": "EL = %2,5 × 0,60.",
+          "values": {
+            "PD": "2.5%",
+            "LS": 0.6,
+            "spread": "1.80%"
+          }
+        },
+        {
+          "en": "EL = 1.50%.",
+          "tr": "EL = %1,50."
+        },
+        {
+          "en": "Excess spread = 1.80% − 1.50% = 0.30%.",
+          "tr": "Fazla spread = %1,80 − %1,50 = %0,30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2.5 [×]",
+          "0.6 [=]",
+          "[+/-] [+]",
+          "1.8 [=]"
+        ],
+        "note_tr": "Önce EL = 1,5 bulunur; işareti çevirip 1,8 eklenir: 0,3."
+      },
+      "numeric": {
+        "expr": "1.80-2.5*0.60",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "spread",
+        "loss-severity",
+        "expected-loss",
+        "estimate",
+        "trade"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Loss given default is best described as:",
+      "stem_tr": "Temerrüt halinde kayıp (LGD) en iyi hangi seçenekle tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the likelihood that a borrower will miss a payment in a given year.",
+          "tr": "borçlunun belirli bir yılda bir ödemeyi kaçırma olasılığı."
+        },
+        {
+          "key": "B",
+          "en": "the extra yield of a bond over a government bond of the same maturity.",
+          "tr": "bir tahvilin aynı vadeli devlet tahviline göre sağladığı ek getiri."
+        },
+        {
+          "key": "C",
+          "en": "the amount a lender loses if the borrower defaults, after any recovery.",
+          "tr": "borçlu temerrüde düşerse, geri kazanımlar düşüldükten sonra alacaklının uğradığı kayıp."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "LGD is the loss after recovery if default happens; it equals exposure × (1 − recovery rate).",
+      "explanation_tr": "LGD, temerrüt olursa geri kazanım sonrası kalan kayıptır; risk tutarı × (1 − geri kazanım oranı) ile bulunur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes the probability of default, the other part of credit risk.",
+          "tr": "Bu, kredi riskinin diğer bileşeni olan temerrüt olasılığının tanımıdır."
+        },
+        "B": {
+          "en": "This describes the credit spread, which pays for credit risk but is not LGD.",
+          "tr": "Bu, kredi spread'inin tanımıdır; kredi riskini karşılar ama LGD değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "loss-given-default",
+        "lender",
+        "borrower",
+        "likelihood",
+        "recovery-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bond X has an annual probability of default of 1.0% and a recovery rate of 20%. Bond Y has an annual probability of default of 2.0% and a recovery rate of 70%. The expected loss of Bond X minus the expected loss of Bond Y, in percentage points of exposure, is closest to:",
+      "stem_tr": "X tahvilinin yıllık temerrüt olasılığı %1,0, geri kazanım oranı %20'dir. Y tahvilinin yıllık temerrüt olasılığı %2,0, geri kazanım oranı %70'tir. X'in beklenen kaybı eksi Y'nin beklenen kaybı, risk tutarının yüzde puanı olarak aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "−1.00",
+          "tr": "−1,00",
+          "value": -1.0
+        },
+        {
+          "key": "B",
+          "en": "−1.20",
+          "tr": "−1,20",
+          "value": -1.2
+        },
+        {
+          "key": "C",
+          "en": "0.20",
+          "tr": "0,20",
+          "value": 0.2
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "EL(X) = 1.0% × 0.80 = 0.80%. EL(Y) = 2.0% × 0.30 = 0.60%. Difference = +0.20 percentage points. Bond X has the lower PD but the higher expected loss because its recovery is much lower.",
+      "explanation_tr": "EL(X) = %1,0 × 0,80 = %0,80. EL(Y) = %2,0 × 0,30 = %0,60. Fark = +0,20 yüzde puan. X'in PD'si daha düşük olsa da geri kazanımı çok düşük olduğu için beklenen kaybı daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This compares only the probabilities of default (1.0% − 2.0%) and ignores recovery.",
+          "tr": "Yalnızca temerrüt olasılıkları karşılaştırılmış (%1,0 − %2,0); geri kazanım yok sayılmış."
+        },
+        "B": {
+          "en": "This multiplies PD by the recovery rate: 1.0 × 0.20 − 2.0 × 0.70 = −1.20.",
+          "tr": "PD, geri kazanım oranıyla çarpılmış: 1,0 × 0,20 − 2,0 × 0,70 = −1,20."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need EL(X) − EL(Y) in percentage points.",
+          "tr": "EL(X) − EL(Y) yüzde puan olarak isteniyor."
+        },
+        {
+          "en": "For each bond, EL% = PD × (1 − RR).",
+          "tr": "Her tahvil için EL% = PD × (1 − RR).",
+          "formula_latex": "EL\\% = PD \\times (1-RR)"
+        },
+        {
+          "en": "Bond X: 1.0 × 0.80; Bond Y: 2.0 × 0.30.",
+          "tr": "X: 1,0 × 0,80; Y: 2,0 × 0,30.",
+          "values": {
+            "PD_X": "1.0%",
+            "RR_X": "20%",
+            "PD_Y": "2.0%",
+            "RR_Y": "70%"
+          }
+        },
+        {
+          "en": "EL(X) = 0.80%; EL(Y) = 0.60%.",
+          "tr": "EL(X) = %0,80; EL(Y) = %0,60."
+        },
+        {
+          "en": "Difference = 0.80 − 0.60 = 0.20 percentage points.",
+          "tr": "Fark = 0,80 − 0,60 = 0,20 yüzde puan."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [×]",
+          "0.8 [=]",
+          "[STO] 1",
+          "2 [×]",
+          "0.3 [=]",
+          "[STO] 2",
+          "[RCL] 1 [−]",
+          "[RCL] 2 [=]"
+        ],
+        "note_tr": "Sonuç 0,2 yüzde puan."
+      },
+      "numeric": {
+        "expr": "1.0*(1-0.20)-2.0*(1-0.70)",
+        "unit": "pp"
+      },
+      "vocab_ids": [
+        "probability-of-default",
+        "recovery-rate",
+        "expected-loss",
+        "exposure",
+        "percentage-point"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-a-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The issuer of a bond has not missed any payment. However, a rating agency lowers the bond's rating from A to BBB and the bond's price falls. This loss is most likely an example of:",
+      "stem_tr": "Bir tahvilin ihraççısı hiçbir ödemeyi kaçırmamıştır. Ancak bir derecelendirme kuruluşu tahvilin notunu A'dan BBB'ye indirir ve tahvilin fiyatı düşer. Bu kayıp büyük olasılıkla neyin örneğidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "default risk.",
+          "tr": "temerrüt riski."
+        },
+        {
+          "key": "B",
+          "en": "credit migration risk.",
+          "tr": "kredi göçü (not değişimi) riski."
+        },
+        {
+          "key": "C",
+          "en": "loss severity.",
+          "tr": "kayıp oranı."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Credit migration risk is the risk that credit quality falls (often shown by a downgrade), so the spread widens and the price drops even without default. It is a part of spread risk.",
+      "explanation_tr": "Kredi göçü riski, kredi kalitesinin bozulması (çoğunlukla not indirimiyle görülür) sonucu spread'in açılması ve temerrüt olmadan da fiyatın düşmesi riskidir. Spread riskinin bir parçasıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Default risk is about failing to pay; the issuer has paid everything so far.",
+          "tr": "Temerrüt riski ödememe ile ilgilidir; ihraççı şimdiye kadar tüm ödemeleri yapmıştır."
+        },
+        "C": {
+          "en": "Loss severity measures the loss after a default; no default has happened.",
+          "tr": "Kayıp oranı temerrüt sonrası kaybı ölçer; burada temerrüt yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "issuer",
+        "downgrade",
+        "credit-migration",
+        "however",
+        "miss"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "On the S&P and Fitch rating scales, the lowest investment-grade rating is:",
+      "stem_tr": "S&P ve Fitch not skalalarında yatırım yapılabilir seviyedeki en düşük not hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "BBB−",
+          "tr": "BBB−"
+        },
+        {
+          "key": "B",
+          "en": "BB+",
+          "tr": "BB+"
+        },
+        {
+          "key": "C",
+          "en": "A−",
+          "tr": "A−"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "BBB− (Baa3 at Moody's) is the lowest investment-grade rating. BB+ and below are high yield.",
+      "explanation_tr": "BBB− (Moody's'te Baa3) yatırım yapılabilir seviyedeki en düşük nottur. BB+ ve altı yüksek getirili (spekülatif) seviyedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "BB+ is the highest high-yield (speculative) rating, one notch below investment grade.",
+          "tr": "BB+, yatırım yapılabilir seviyenin bir kademe altındaki en yüksek spekülatif nottur."
+        },
+        "C": {
+          "en": "A− is investment grade, but it is not the lowest; BBB+, BBB and BBB− are below it.",
+          "tr": "A− yatırım yapılabilir seviyededir ama en düşük değildir; altında BBB+, BBB ve BBB− vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "investment-grade",
+        "rating-scale",
+        "lowest",
+        "high-yield"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is least likely a shortcoming of credit ratings?",
+      "stem_tr": "Aşağıdakilerden hangisinin kredi notlarının bir eksikliği olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Ratings often change after market spreads have already moved.",
+          "tr": "Notlar çoğu zaman piyasa spread'leri zaten hareket ettikten sonra değişir."
+        },
+        {
+          "key": "B",
+          "en": "Ratings give a simple, widely understood summary of credit risk.",
+          "tr": "Notlar kredi riskinin basit ve yaygın biçimde anlaşılan bir özetini sunar."
+        },
+        {
+          "key": "C",
+          "en": "Ratings may not capture event risk, such as a large lawsuit.",
+          "tr": "Notlar büyük bir dava gibi olay risklerini yakalayamayabilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A simple, comparable summary is a benefit of ratings, not a shortcoming. Lagging the market and missing event risk are known shortcomings.",
+      "explanation_tr": "Basit ve karşılaştırılabilir bir özet sunmak notların bir faydasıdır, eksikliği değil. Piyasanın gerisinde kalmak ve olay riskini kaçırmak bilinen eksikliklerdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ratings tend to lag market prices; this is a real shortcoming.",
+          "tr": "Notlar piyasa fiyatlarının gerisinde kalma eğilimindedir; bu gerçek bir eksikliktir."
+        },
+        "C": {
+          "en": "Event risk (lawsuits, buyouts, disasters) is hard to rate; this is a real shortcoming.",
+          "tr": "Olay riskini (dava, satın alma, afet) notlamak zordur; bu gerçek bir eksikliktir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "shortcoming",
+        "least",
+        "lag",
+        "event-risk",
+        "summary",
+        "capture"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish pension fund may hold only investment-grade corporate bonds. One of its bonds, rated BBB− by S&P, is downgraded to BB+. The most likely result is that the fund:",
+      "stem_tr": "Türkiye'deki bir emeklilik yatırım fonu yalnızca yatırım yapılabilir seviyedeki şirket tahvillerini tutabilir. S&P'nin BBB− notu verdiği tahvillerinden birinin notu BB+'ya indirilir. En olası sonuç, fonun:",
+      "options": [
+        {
+          "key": "A",
+          "en": "may have to sell the bond, which can push its price down further.",
+          "tr": "tahvili satmak zorunda kalabileceği ve bunun fiyatı daha da düşürebileceğidir."
+        },
+        {
+          "key": "B",
+          "en": "can keep the bond because the issuer has not defaulted.",
+          "tr": "ihraççı temerrüde düşmediği için tahvili tutmaya devam edebileceğidir."
+        },
+        {
+          "key": "C",
+          "en": "will see the bond's spread narrow because the bond now offers a higher yield.",
+          "tr": "tahvil artık daha yüksek getiri sunduğu için spread'inin daralacağıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "BB+ is below investment grade, so the bond breaks the fund's rating rule. Many such funds must sell, and forced selling can widen the spread further. This shows how rating thresholds in mandates affect prices.",
+      "explanation_tr": "BB+ yatırım yapılabilir seviyenin altındadır; tahvil fonun not kuralını ihlal eder. Bu tür fonların birçoğu satmak zorundadır ve zorunlu satışlar spread'i daha da açabilir. Bu, yönergelerdeki not eşiklerinin fiyatları nasıl etkilediğini gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The rule is about the rating, not about default; a BB+ bond no longer meets the mandate.",
+          "tr": "Kural temerrüde değil nota dayanır; BB+ tahvil artık yönergeye uymaz."
+        },
+        "C": {
+          "en": "A downgrade widens the spread; a higher yield comes from a lower price, not from a narrower spread.",
+          "tr": "Not indirimi spread'i açar; daha yüksek getiri spread'in daralmasından değil fiyatın düşmesinden gelir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mandate",
+        "downgrade",
+        "investment-grade",
+        "hold",
+        "result"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Yatırım fonu iç tüzüğü/yatırım sınırlamaları SPK mevzuatından tanıdık."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Over three months, the credit spread on a company's bond widens from 150 bps to 320 bps. During the same period, its rating stays at A−. This is most consistent with:",
+      "stem_tr": "Üç ay içinde bir şirket tahvilinin kredi spread'i 150 baz puandan 320 baz puana açılıyor. Aynı dönemde notu A−'de kalıyor. Bu durum en çok hangisiyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "ratings using the bond's spread as their main input.",
+          "tr": "notların ana girdi olarak tahvilin spread'ini kullanması."
+        },
+        {
+          "key": "B",
+          "en": "a fall in the issuer's default risk.",
+          "tr": "ihraççının temerrüt riskinin azalması."
+        },
+        {
+          "key": "C",
+          "en": "ratings tending to lag the market's view of credit risk.",
+          "tr": "notların piyasanın kredi riski görüşünün gerisinde kalma eğilimi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The market has repriced the risk quickly while the rating has not changed. Ratings are slow to move, so spreads often signal changes in credit quality first.",
+      "explanation_tr": "Piyasa riski hızla yeniden fiyatlamış, not ise değişmemiştir. Notlar yavaş hareket ettiği için kredi kalitesindeki değişimi genellikle önce spread'ler gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "If ratings were based mainly on spreads, the rating would have changed with the large spread move.",
+          "tr": "Notlar esas olarak spread'e dayansaydı, bu büyük spread hareketiyle not da değişirdi."
+        },
+        "B": {
+          "en": "A wider spread shows the market sees higher, not lower, credit risk.",
+          "tr": "Spread'in açılması piyasanın kredi riskini daha düşük değil daha yüksek gördüğünü gösterir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "widen",
+        "basis-point",
+        "lag",
+        "consistent",
+        "period"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The experience of many mortgage securities rated AAA before the 2008 financial crisis best shows that:",
+      "stem_tr": "2008 finansal krizinden önce AAA notu verilen birçok ipoteğe dayalı menkul kıymetin yaşadıkları en iyi neyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a AAA rating means the security cannot default.",
+          "tr": "AAA notunun menkul kıymetin temerrüde düşemeyeceği anlamına geldiğini."
+        },
+        {
+          "key": "B",
+          "en": "rating agencies can make mistakes, so ratings should not replace own analysis.",
+          "tr": "derecelendirme kuruluşlarının hata yapabileceğini; bu yüzden notların kendi analizimizin yerini tutmaması gerektiğini."
+        },
+        {
+          "key": "C",
+          "en": "ratings mainly measure market liquidity risk.",
+          "tr": "notların esas olarak piyasa likidite riskini ölçtüğünü."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Many highly rated structured securities later had large losses and downgrades. Ratings are opinions and can be wrong; investors should do their own credit analysis.",
+      "explanation_tr": "Yüksek notlu birçok yapılandırılmış menkul kıymet sonradan büyük kayıplar ve not indirimleri yaşadı. Notlar birer görüştür ve yanlış olabilir; yatırımcı kendi kredi analizini yapmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No rating removes default risk; AAA only means very low expected risk at that time.",
+          "tr": "Hiçbir not temerrüt riskini ortadan kaldırmaz; AAA yalnızca o an için çok düşük risk beklentisi anlamına gelir."
+        },
+        "C": {
+          "en": "Ratings focus on default and recovery, not on how easily a bond can be sold.",
+          "tr": "Notlar tahvilin ne kadar kolay satılacağına değil, temerrüt ve geri kazanıma odaklanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mortgage",
+        "rate",
+        "mistake",
+        "replace",
+        "default"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-b-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A Turkish company receives a rating of AA on the national scale from a rating agency authorized by the Capital Markets Board (SPK). The most appropriate interpretation is that the rating:",
+      "stem_tr": "Bir Türk şirketi, SPK tarafından yetkilendirilmiş bir derecelendirme kuruluşundan ulusal ölçekte AA notu alıyor. Bu notun en uygun yorumu hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "ranks the company against other Turkish issuers and cannot be compared directly with a global-scale AA.",
+          "tr": "şirketi diğer Türk ihraççılarla kıyasladığı ve küresel ölçekteki AA ile doğrudan karşılaştırılamayacağı."
+        },
+        {
+          "key": "B",
+          "en": "is the same as a global AA rating from S&P.",
+          "tr": "S&P'nin küresel AA notuyla aynı olduğu."
+        },
+        {
+          "key": "C",
+          "en": "guarantees that the company will pay all its debts.",
+          "tr": "şirketin tüm borçlarını ödeyeceğini garanti ettiği."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A national-scale rating compares issuers within one country. It is not directly comparable with an international (global-scale) rating, which also includes country risk.",
+      "explanation_tr": "Ulusal ölçekli not, ihraççıları tek bir ülke içinde kıyaslar. Ülke riskini de içeren uluslararası (küresel ölçekli) notla doğrudan karşılaştırılamaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Global ratings include the country's risk; a national AA can match a much lower global rating.",
+          "tr": "Küresel notlar ülke riskini de içerir; ulusal AA, çok daha düşük bir küresel nota karşılık gelebilir."
+        },
+        "C": {
+          "en": "A rating is an opinion about credit risk, not a guarantee of payment.",
+          "tr": "Not, kredi riskine ilişkin bir görüştür; ödeme garantisi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "national-scale",
+        "authorize",
+        "appropriate",
+        "interpretation",
+        "guarantee"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "SPK'nın derecelendirme kuruluşlarını yetkilendirmesi ve ulusal not ölçeği Türkiye'den tanıdık."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "When the economy moves into a recession, credit spreads most likely:",
+      "stem_tr": "Ekonomi resesyona girdiğinde kredi spread'leri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "narrow for all bonds, because central banks cut policy rates.",
+          "tr": "merkez bankaları politika faizini indirdiği için tüm tahvillerde daralır."
+        },
+        {
+          "key": "B",
+          "en": "widen more for investment-grade bonds than for high-yield bonds.",
+          "tr": "yatırım yapılabilir seviyedeki tahvillerde yüksek getirili tahvillerden daha çok açılır."
+        },
+        {
+          "key": "C",
+          "en": "widen, and more so for high-yield bonds than for investment-grade bonds.",
+          "tr": "açılır ve bu açılma yüksek getirili tahvillerde yatırım yapılabilir seviyedekilerden daha fazladır."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In a downturn, expected defaults rise and investors avoid risk, so spreads widen. Lower-rated issuers are hurt more, so high-yield spreads widen more.",
+      "explanation_tr": "Durgunlukta beklenen temerrütler artar ve yatırımcılar riskten kaçar; spread'ler açılır. Düşük notlu ihraççılar daha çok etkilendiği için yüksek getirili tahvil spread'leri daha fazla açılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Policy rate cuts lower benchmark yields; they do not stop credit spreads from widening.",
+          "tr": "Faiz indirimleri gösterge getirileri düşürür; kredi spread'lerinin açılmasını engellemez."
+        },
+        "B": {
+          "en": "This reverses the pattern; high-yield spreads are more sensitive to the credit cycle.",
+          "tr": "Bu, ilişkiyi ters çevirir; kredi döngüsüne daha duyarlı olan yüksek getirili tahvillerdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "recession",
+        "widen",
+        "narrow",
+        "high-yield",
+        "investment-grade"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is best described as a market factor, rather than a macro or an issuer-specific factor, that affects credit spreads?",
+      "stem_tr": "Aşağıdakilerden hangisi kredi spread'lerini etkileyen makro veya ihraççıya özgü bir faktör değil, piyasa faktörü olarak en iyi tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A drop in GDP growth expectations.",
+          "tr": "GSYH büyüme beklentilerinde düşüş."
+        },
+        {
+          "key": "B",
+          "en": "A large wave of new corporate bond issues and lower dealer capacity.",
+          "tr": "Büyük bir yeni şirket tahvili ihraç dalgası ve aracı kurumların azalan pozisyon kapasitesi."
+        },
+        {
+          "key": "C",
+          "en": "A rise in the issuer's debt-to-EBITDA ratio.",
+          "tr": "İhraççının borç/FAVÖK oranının yükselmesi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Supply of new bonds, dealer capacity and trading liquidity are market factors. They change spreads even if the economy and the issuer stay the same.",
+      "explanation_tr": "Yeni ihraç arzı, aracı kurum kapasitesi ve işlem likiditesi piyasa faktörleridir. Ekonomi ve ihraççı aynı kalsa bile spread'leri değiştirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "GDP growth is a macro factor linked to the credit cycle.",
+          "tr": "GSYH büyümesi, kredi döngüsüne bağlı bir makro faktördür."
+        },
+        "C": {
+          "en": "Leverage of one company is an issuer-specific factor.",
+          "tr": "Tek bir şirketin kaldıracı ihraççıya özgü bir faktördür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "issue",
+        "dealer",
+        "capacity",
+        "supply",
+        "rather"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with the spreads of investment-grade bonds, the spreads of high-yield bonds are most likely:",
+      "stem_tr": "Yatırım yapılabilir seviyedeki tahvillerin spread'leriyle karşılaştırıldığında yüksek getirili tahvillerin spread'leri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower in level and less volatile.",
+          "tr": "düzey olarak daha düşük ve daha az oynaktır."
+        },
+        {
+          "key": "B",
+          "en": "higher in level but equally volatile.",
+          "tr": "düzey olarak daha yüksek ama aynı oynaklıktadır."
+        },
+        {
+          "key": "C",
+          "en": "higher in level and more volatile.",
+          "tr": "düzey olarak daha yüksek ve daha oynaktır."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Lower-rated bonds have higher expected loss and lower liquidity, so their spreads are wider. They also react more to changes in the credit cycle and market conditions, so spread volatility is higher.",
+      "explanation_tr": "Düşük notlu tahvillerin beklenen kaybı yüksek, likiditesi düşüktür; bu nedenle spread'leri daha geniştir. Kredi döngüsündeki ve piyasa koşullarındaki değişimlere daha çok tepki verdikleri için spread oynaklıkları da daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "High-yield bonds carry more credit risk, so their spreads are higher, not lower.",
+          "tr": "Yüksek getirili tahviller daha çok kredi riski taşır; spread'leri daha düşük değil daha yüksektir."
+        },
+        "B": {
+          "en": "Spread volatility rises as credit quality falls; it is not equal across ratings.",
+          "tr": "Kredi kalitesi düştükçe spread oynaklığı artar; notlar arasında eşit değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "high-yield",
+        "volatile",
+        "level",
+        "equally",
+        "investment-grade"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A corporate bond has a modified duration of 6.0 and a convexity of 50. Its credit spread widens by 50 bps while the benchmark yield does not change. The approximate percentage change in the bond's price is closest to:",
+      "stem_tr": "Bir şirket tahvilinin düzeltilmiş durasyonu 6,0, konveksitesi 50'dir. Gösterge getiri değişmezken kredi spread'i 50 baz puan açılıyor. Tahvil fiyatındaki yaklaşık yüzde değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "−3.00%",
+          "tr": "−%3,00",
+          "value": -3.0
+        },
+        {
+          "key": "B",
+          "en": "−2.94%",
+          "tr": "−%2,94",
+          "value": -2.94
+        },
+        {
+          "key": "C",
+          "en": "−3.06%",
+          "tr": "−%3,06",
+          "value": -3.06
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "%ΔP ≈ −6.0 × 0.0050 + 0.5 × 50 × 0.0050² = −0.0300 + 0.000625 = −2.94%.",
+      "explanation_tr": "%ΔP ≈ −6,0 × 0,0050 + 0,5 × 50 × 0,0050² = −0,0300 + 0,000625 = −%2,94.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses duration only and leaves out the convexity adjustment.",
+          "tr": "Yalnızca durasyon kullanılmış; konveksite düzeltmesi unutulmuş."
+        },
+        "C": {
+          "en": "This subtracts the convexity term; convexity always adds to the price change.",
+          "tr": "Konveksite terimi çıkarılmış; konveksite fiyat değişimine her zaman pozitif katkı yapar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the percentage price change from a +50 bps spread change.",
+          "tr": "+50 baz puanlık spread değişiminin yol açtığı yüzde fiyat değişimi isteniyor."
+        },
+        {
+          "en": "Use duration plus convexity.",
+          "tr": "Durasyon artı konveksite yaklaşımı kullanılır.",
+          "formula_latex": "\\%\\Delta P \\approx -D \\times \\Delta s + \\tfrac{1}{2} C (\\Delta s)^2"
+        },
+        {
+          "en": "Values: D = 6.0, C = 50, Δs = 0.0050.",
+          "tr": "Değerler: D = 6,0, C = 50, Δs = 0,0050.",
+          "values": {
+            "D": 6.0,
+            "C": 50,
+            "ds": 0.005
+          }
+        },
+        {
+          "en": "Duration part = −0.0300; convexity part = 0.5 × 50 × 0.000025 = 0.000625.",
+          "tr": "Durasyon kısmı = −0,0300; konveksite kısmı = 0,5 × 50 × 0,000025 = 0,000625."
+        },
+        {
+          "en": "Total ≈ −0.029375 = −2.94%.",
+          "tr": "Toplam ≈ −0,029375 = −%2,94."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [+/-] [×]",
+          "0.005 [=]",
+          "[STO] 1",
+          "0.5 [×]",
+          "50 [×]",
+          "0.005 [x²] [=]",
+          "[+]",
+          "[RCL] 1 [=]"
+        ],
+        "note_tr": "Sonuç −0,029375; 100 ile çarpınca −%2,94."
+      },
+      "numeric": {
+        "expr": "(-6.0*0.005+0.5*50*0.005**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "convexity",
+        "widen",
+        "benchmark",
+        "approximate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional company, Toros Gıda, announces a large share buyback that it will pay for by issuing new debt. All else equal, the spread on Toros Gıda's existing bonds will most likely:",
+      "stem_tr": "Kurgusal Toros Gıda, yeni borçlanmayla finanse edeceği büyük bir pay geri alım programı açıklıyor. Diğer her şey sabitken, Toros Gıda'nın mevcut tahvillerinin spread'i büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "widen, because leverage rises and creditors bear more risk.",
+          "tr": "açılır; çünkü kaldıraç artar ve alacaklılar daha çok risk taşır."
+        },
+        {
+          "key": "B",
+          "en": "narrow, because buybacks show the firm has extra cash.",
+          "tr": "daralır; çünkü geri alım şirketin fazla nakdi olduğunu gösterir."
+        },
+        {
+          "key": "C",
+          "en": "not change, because macro conditions are the same.",
+          "tr": "değişmez; çünkü makro koşullar aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Borrowing to buy back shares raises debt and lowers equity. Bondholders face higher leverage and a weaker cushion, so the issuer-specific part of the spread widens.",
+      "explanation_tr": "Pay geri alımı için borçlanmak borcu artırır, özkaynağı azaltır. Tahvil sahipleri daha yüksek kaldıraç ve daha zayıf bir tampon ile karşılaşır; spread'in ihraççıya özgü kısmı açılır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The buyback is paid with new debt, not spare cash, so credit quality weakens.",
+          "tr": "Geri alım fazla nakitle değil yeni borçla ödeniyor; kredi kalitesi zayıflar."
+        },
+        "C": {
+          "en": "Issuer-specific events change spreads even when the macro picture is stable.",
+          "tr": "Makro tablo sabit olsa da ihraççıya özgü olaylar spread'leri değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "buyback",
+        "leverage",
+        "creditor",
+        "all-else-equal",
+        "announce",
+        "existing"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Pay geri alımı SPK mevzuatından tanıdık; kredi spread'ine etkisi yeni."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-14-c-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-14",
+      "los_id": "FI-14-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two bonds have the same issuer, maturity, seniority and rating. Bond A trades often. Bond B is a small issue that rarely trades. Bond B's spread is 40 bps wider. The difference is most likely due to:",
+      "stem_tr": "İki tahvilin ihraççısı, vadesi, öncelik sırası ve notu aynıdır. A tahvili sık işlem görür. B tahvili küçük bir ihraçtır ve nadiren işlem görür. B'nin spread'i 40 baz puan daha geniştir. Bu fark büyük olasılıkla neden kaynaklanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a higher expected loss on Bond B.",
+          "tr": "B tahvilinin daha yüksek beklenen kaybı."
+        },
+        {
+          "key": "B",
+          "en": "a liquidity premium on Bond B.",
+          "tr": "B tahvilindeki likidite primi."
+        },
+        {
+          "key": "C",
+          "en": "a lower recovery rate on Bond B.",
+          "tr": "B tahvilinin daha düşük geri kazanım oranı."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Same issuer, seniority and rating mean the same PD and LGD. The extra spread pays investors for the cost and risk of trading a less liquid bond.",
+      "explanation_tr": "İhraççı, öncelik ve not aynı olduğundan PD ve LGD de aynıdır. Ek spread, daha az likit bir tahvili alıp satmanın maliyeti ve riski için yatırımcıya ödenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With the same issuer, seniority and rating, expected loss should be about the same.",
+          "tr": "İhraççı, öncelik ve not aynıyken beklenen kayıp da yaklaşık aynı olmalıdır."
+        },
+        "C": {
+          "en": "Recovery depends on seniority and collateral, which are the same for both bonds.",
+          "tr": "Geri kazanım öncelik sırasına ve teminata bağlıdır; bunlar iki tahvilde de aynıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "seniority",
+        "rarely",
+        "liquidity-premium",
+        "issue",
+        "trade"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

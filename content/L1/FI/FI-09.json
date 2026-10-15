@@ -1,0 +1,1443 @@
+{
+  "module_id": "FI-09",
+  "lesson": {
+    "id": "FI-09-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-09",
+    "los_ids": [
+      "FI-09-a",
+      "FI-09-b",
+      "FI-09-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "The Term Structure of Interest Rates: Spot, Par, and Forward Curves",
+    "title_tr": "Faizlerin Vade Yapısı: Spot, Par ve Forward Eğrileri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "One rate is not enough",
+        "heading_tr": "Tek bir faiz yetmez",
+        "en": "In Turkey, a 3-month T-bill and a 10-year government bond rarely have the same yield. Money has a different price for each maturity. A bond is a bundle of cash flows on different dates, so it is more precise to discount each cash flow at the rate for its own date. These rates form the term structure. Banks use it to price loans, and treasurers use it to lock in future borrowing costs. The yield curve on a market screen is a summary of this term structure.",
+        "tr": "Türkiye'de 3 aylık hazine bonosu ile 10 yıllık DİBS'in getirisi nadiren aynıdır. Paranın her vade için farklı bir fiyatı vardır. Tahvil, farklı tarihlerdeki nakit akışlarından oluşan bir pakettir; bu nedenle her nakit akışını kendi tarihinin faiziyle iskonto etmek daha doğrudur. Bu faizler vade yapısını oluşturur. Bankalar kredileri fiyatlamak, hazine yöneticileri de gelecekteki borçlanma maliyetini sabitlemek için onu kullanır. Piyasa ekranındaki getiri eğrisi bu vade yapısının bir özetidir.",
+        "key_terms": [
+          "term structure",
+          "yield curve",
+          "maturity"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Spot, par and forward rates",
+        "heading_tr": "Spot, par ve forward faizler",
+        "en": "A spot rate (z_t) is the yield on a zero-coupon bond maturing at t; the spot curve plots these rates against maturity. Pricing a bond with spot rates gives its no-arbitrage value. A par rate is the coupon rate that makes a bond with that maturity price at exactly par. A forward rate is a rate agreed today for a loan that starts in the future. The notation 2y1y means a 1-year loan starting in 2 years. Bootstrapping uses par rates of increasing maturity to find spot rates step by step.",
+        "tr": "Spot faiz (z_t), t'de itfa olan sıfır kuponlu bir tahvilin getirisidir; spot eğri bu faizleri vadeye göre gösterir. Bir tahvili spot faizlerle fiyatlamak arbitrajsız değerini verir. Par faiz, o vadedeki bir tahvili tam nominalden fiyatlayan kupon oranıdır. Forward faiz, gelecekte başlayacak bir borç için bugün üzerinde anlaşılan faizdir. 2y1y gösterimi, 2 yıl sonra başlayan 1 yıllık borç demektir. Bootstrapping (ardışık türetme), artan vadeli par faizleri kullanarak spot faizleri adım adım bulur.",
+        "key_terms": [
+          "spot rate",
+          "par rate",
+          "forward rate",
+          "bootstrapping",
+          "no-arbitrage"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key relationships",
+        "heading_tr": "Temel ilişkiler",
+        "en": "Price with spot rates: PV = Σ CF_t/(1 + z_t)^t. Forward from spot: (1 + z_B)^B = (1 + z_A)^A × (1 + f_{A,B−A})^{B−A}. Par rate from spot discount factors DF_t = 1/(1 + z_t)^t: par = (1 − DF_N)/(DF_1 + … + DF_N). A bond can also be priced by chaining 1-year forward rates: the discount factor for year t is 1/[(1 + f_0)(1 + f_1)…(1 + f_{t−1})].",
+        "tr": "Spot faizlerle fiyat: PV = Σ CF_t/(1 + z_t)^t. Spottan forward: (1 + z_B)^B = (1 + z_A)^A × (1 + f_{A,B−A})^{B−A}. Spot iskonto faktörlerinden (DF_t = 1/(1 + z_t)^t) par faiz: par = (1 − DF_N)/(DF_1 + … + DF_N). Tahvil, 1 yıllık forward faizleri zincirleyerek de fiyatlanabilir: t. yılın iskonto faktörü 1/[(1 + f_0)(1 + f_1)…(1 + f_{t−1})] olur.",
+        "key_terms": [
+          "discount factor",
+          "forward rate",
+          "par rate"
+        ],
+        "formula_latex": "(1+z_B)^B=(1+z_A)^A\\,(1+f_{A,B-A})^{B-A}\\qquad par_N=\\frac{1-DF_N}{\\sum_{t=1}^{N}DF_t}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "From spot to forward and par",
+        "heading_tr": "Spottan forwarda ve para",
+        "en": "Assume spot rates of 2.00%, 3.00% and 4.00% for 1, 2 and 3 years. The 1y1y forward rate is 1.03²/1.02 − 1 ≈ 4.01%. The 2y1y forward rate is 1.04³/1.03² − 1 ≈ 6.03%. The 3-year par rate is about 3.95%. Notice the order: forward (6.03%) > spot (4.00%) > par (3.95%) for year 3.",
+        "tr": "1, 2 ve 3 yıl için spot faizlerin %2,00, %3,00 ve %4,00 olduğunu varsayalım. 1y1y forward faiz 1,03²/1,02 − 1 ≈ %4,01'dir. 2y1y forward faiz 1,04³/1,03² − 1 ≈ %6,03'tür. 3 yıllık par faiz yaklaşık %3,95'tir. 3. yıl için sıralamaya dikkat: forward (%6,03) > spot (%4,00) > par (%3,95).",
+        "key_terms": [
+          "forward rate",
+          "par rate"
+        ],
+        "example": {
+          "en": "DF = 0.98039, 0.94260, 0.88900; par₃ = (1 − 0.88900)/(0.98039 + 0.94260 + 0.88900) = 0.11100/2.81199 ≈ 3.95%.",
+          "tr": "DF = 0,98039, 0,94260, 0,88900; par₃ = (1 − 0,88900)/(0,98039 + 0,94260 + 0,88900) = 0,11100/2,81199 ≈ %3,95."
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Shapes of the curves",
+        "heading_tr": "Eğrilerin şekilleri",
+        "en": "Spot rates are geometric averages of forward rates. So when the spot curve slopes upward, the forward curve lies above it and the par curve lies slightly below it. When the spot curve slopes downward, the order flips: the forward curve is below the spot curve and the par curve is above it. When the spot curve is flat, all three curves are the same. The par curve stays close to the spot curve because a par bond's value comes mostly from its final payment.",
+        "tr": "Spot faizler forward faizlerin geometrik ortalamasıdır. Bu yüzden spot eğri yukarı eğimliyken forward eğri onun üzerinde, par eğrisi ise biraz altındadır. Spot eğri aşağı eğimliyken sıra tersine döner: forward eğri spot eğrinin altında, par eğrisi üzerindedir. Spot eğri yatayken üç eğri de aynıdır. Par tahvilin değerinin çoğu son ödemeden geldiği için par eğrisi spot eğriye yakın seyreder.",
+        "key_terms": [
+          "upward-sloping",
+          "downward-sloping",
+          "flat",
+          "par curve",
+          "forward curve"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Spot curve",
+              "tr": "Spot eğri"
+            },
+            {
+              "en": "Forward curve",
+              "tr": "Forward eğri"
+            },
+            {
+              "en": "Par curve",
+              "tr": "Par eğrisi"
+            }
+          ],
+          "rows": [
+            [
+              "Upward / Yukarı",
+              "Above spot / Spotun üstünde",
+              "Below spot / Spotun altında"
+            ],
+            [
+              "Downward / Aşağı",
+              "Below spot / Spotun altında",
+              "Above spot / Spotun üstünde"
+            ],
+            [
+              "Flat / Yatay",
+              "Equal / Eşit",
+              "Equal / Eşit"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not average spot rates to get a forward rate; use the compounding relationship. Remember to annualize multi-year forwards with a root. When you price with forwards, chain the rates; do not raise a single forward rate to a power. A YTM is not a simple average of spot rates; it is weighted toward the largest cash flow. Finally, do not memorize 'forward is always higher': it is higher only when the spot curve rises.",
+        "tr": "Forward faiz bulmak için spot faizlerin ortalamasını alma; bileşik faiz ilişkisini kullan. Çok yıllık forward faizleri kök alarak yıllıklaştırmayı unutma. Forward faizlerle fiyatlarken faizleri zincirle; tek bir forward faizin üssünü alma. YTM, spot faizlerin basit ortalaması değildir; en büyük nakit akışına doğru ağırlıklıdır. Son olarak 'forward her zaman yüksektir' diye ezberleme: yalnızca spot eğri yükselirken yüksektir.",
+        "key_terms": [
+          "forward rate",
+          "yield to maturity"
+        ]
+      }
+    ],
+    "summary_en": "Spot rates are zero-coupon yields and give no-arbitrage prices when each cash flow is discounted at its own rate. Forward rates are linked to spot rates by compounding, and par rates are coupon rates that price bonds at par. Bootstrapping turns par rates into spot rates. For an upward-sloping curve, forward > spot > par; for a downward-sloping curve the order reverses.",
+    "summary_tr": "Spot faizler sıfır kuponlu tahvil getirileridir; her nakit akışı kendi faiziyle iskonto edilince arbitrajsız fiyatı verir. Forward faizler spot faizlere bileşik faiz yoluyla bağlıdır; par faizler tahvilleri nominalden fiyatlayan kupon oranlarıdır. Bootstrapping par faizleri spot faizlere çevirir. Yukarı eğimli eğride forward > spot > par; aşağı eğimli eğride sıra tersine döner.",
+    "common_traps_tr": [
+      "Forward faizi iki spot faizin ortalaması ya da farkı sanmak.",
+      "1y2y gibi çok yıllık forward'ı karekök alarak yıllıklaştırmayı unutmak.",
+      "Forward faizlerle fiyatlarken faizleri zincirlemek yerine her birinin üssünü almak.",
+      "YTM'yi spot faizlerin basit ortalaması sanmak.",
+      "Forward eğrinin her zaman spot eğrinin üzerinde olduğunu varsaymak (yalnızca yükselen eğride)."
+    ],
+    "vocab_ids": [
+      "spot-rate",
+      "par-rate",
+      "forward-rate",
+      "term-structure",
+      "bootstrapping",
+      "no-arbitrage",
+      "zero-coupon-bond",
+      "discount-factor",
+      "upward-sloping",
+      "downward-sloping",
+      "spot-curve",
+      "forward-curve",
+      "geometric-average",
+      "flat"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Getiri eğrisi ve sıfır kuponlu tahvil SPK Düzey 3'te var; forward türetme, bootstrapping ve eğri sıralaması CFA'da daha ayrıntılı."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-09-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A spot rate for maturity T is best described as the:",
+      "stem_tr": "T vadesi için spot faiz en iyi şekilde aşağıdakilerden hangisiyle tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "yield to maturity of a zero-coupon bond that matures at T.",
+          "tr": "T'de itfa olan kuponsuz bir tahvilin vadeye kadar getirisi."
+        },
+        {
+          "key": "B",
+          "en": "coupon rate that makes a bond maturing at T sell at par.",
+          "tr": "T'de itfa olan bir tahvili nominalden sattıran kupon oranı."
+        },
+        {
+          "key": "C",
+          "en": "one-year rate expected to apply starting at time T.",
+          "tr": "T anından itibaren geçerli olması beklenen bir yıllık faiz."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A spot rate is the yield on a zero-coupon (single-payment) bond for a given maturity. It is the correct rate for discounting one cash flow that arrives at that date.",
+      "explanation_tr": "Spot faiz, belirli bir vadedeki kuponsuz (tek ödemeli) tahvilin getirisidir. O tarihte gelen tek bir nakit akışını iskonto etmek için doğru orandır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That is the par rate, not the spot rate.",
+          "tr": "Bu, spot faiz değil par faizdir."
+        },
+        "C": {
+          "en": "That describes a forward rate, which starts in the future.",
+          "tr": "Bu, gelecekte başlayan forward faizi tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "spot-rate",
+        "zero-coupon-bond",
+        "yield-to-maturity",
+        "best-describes",
+        "par-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Sıfır kuponlu DİBS getirisi SPK Düzey 3'ten tanıdık; spot eğriyle fiyatlama CFA'da daha ayrıntılıdır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 1-year, 2-year and 3-year spot rates are 3.00%, 4.00% and 5.00%. A 3-year bond pays a 5.00% annual coupon and has a par value of 100. Its no-arbitrage price is closest to:",
+      "stem_tr": "1, 2 ve 3 yıllık spot faizler sırasıyla %3,00, %4,00 ve %5,00'tır. 3 yıl vadeli bir tahvil yıllık %5,00 kupon ödüyor ve nominali 100. Arbitrajsız fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "109.66",
+          "tr": "109,66",
+          "value": 109.66
+        },
+        {
+          "key": "B",
+          "en": "100.18",
+          "tr": "100,18",
+          "value": 100.18
+        },
+        {
+          "key": "C",
+          "en": "105.66",
+          "tr": "105,66",
+          "value": 105.66
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Discount each cash flow at its own spot rate: 5/1.03 + 5/1.04² + 105/1.05³ = 4.854 + 4.623 + 90.703 ≈ 100.18.",
+      "explanation_tr": "Her nakit akışını kendi spot faiziyle iskonto et: 5/1,03 + 5/1,04² + 105/1,05³ = 4,854 + 4,623 + 90,703 ≈ 100,18.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses each spot rate but forgets the exponent: each cash flow must be discounted t times.",
+          "tr": "Her spot faizi kullanmış ama üssü unutmuş: her nakit akışı t kez iskonto edilmelidir."
+        },
+        "C": {
+          "en": "Discounts every cash flow at the 1-year spot rate. Later cash flows need their own (higher) spot rates.",
+          "tr": "Tüm nakit akışlarını 1 yıllık spot faizle iskonto etmiş. Sonraki nakit akışları kendi (daha yüksek) spot faizlerini gerektirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the bond price using the spot curve.",
+          "tr": "Spot eğri kullanılarak tahvil fiyatı isteniyor."
+        },
+        {
+          "en": "Each cash flow is a zero-coupon bond; discount it at the spot rate for its date.",
+          "tr": "Her nakit akışı bir sıfır kuponlu tahvildir; kendi tarihindeki spot faizle iskonto edilir.",
+          "formula_latex": "PV=\\sum_{t=1}^{N}\\frac{CF_t}{(1+z_t)^t}"
+        },
+        {
+          "en": "PV = 5/1.03 + 5/1.04² + 105/1.05³.",
+          "tr": "PV = 5/1,03 + 5/1,04² + 105/1,05³.",
+          "values": {
+            "z1": 0.03,
+            "z2": 0.04,
+            "z3": 0.05
+          }
+        },
+        {
+          "en": "4.8544 + 4.6228 + 90.7029.",
+          "tr": "4,8544 + 4,6228 + 90,7029."
+        },
+        {
+          "en": "Price ≈ 100.18.",
+          "tr": "Fiyat ≈ 100,18."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5 [÷] 1.03 [=] [STO] 1",
+          "5 [÷] 1.04 [x²] [=] [STO] 2",
+          "105 [÷] 1.05 [yˣ] 3 [=]",
+          "[+] [RCL] 1 [+] [RCL] 2 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "5/1.03 + 5/1.04**2 + 105/1.05**3"
+      },
+      "vocab_ids": [
+        "spot-rate",
+        "no-arbitrage",
+        "par-value",
+        "closest",
+        "annual"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The 4-year spot rate is 4.50% (annual compounding). The price of a 4-year zero-coupon bond with a face value of 100 is closest to:",
+      "stem_tr": "4 yıllık spot faiz %4,50'dir (yıllık bileşik). Nominali 100 olan 4 yıl vadeli sıfır kuponlu bir tahvilin fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "84.75",
+          "tr": "84,75",
+          "value": 84.75
+        },
+        {
+          "key": "B",
+          "en": "87.63",
+          "tr": "87,63",
+          "value": 87.63
+        },
+        {
+          "key": "C",
+          "en": "83.86",
+          "tr": "83,86",
+          "value": 83.86
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "PV = 100 / 1.045⁴ = 100 / 1.19252 ≈ 83.86.",
+      "explanation_tr": "PV = 100 / 1,045⁴ = 100 / 1,19252 ≈ 83,86.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses simple interest (1 + 4 × 4.50%) instead of compounding.",
+          "tr": "Bileşik faiz yerine basit faiz (1 + 4 × %4,50) kullanmış."
+        },
+        "B": {
+          "en": "Discounts for only 3 periods instead of 4.",
+          "tr": "4 yerine yalnızca 3 dönem iskonto etmiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price of a 4-year zero-coupon bond.",
+          "tr": "4 yıllık sıfır kuponlu tahvilin fiyatı isteniyor."
+        },
+        {
+          "en": "A single cash flow at year 4 is discounted at the 4-year spot rate.",
+          "tr": "4. yıldaki tek nakit akışı 4 yıllık spot faizle iskonto edilir.",
+          "formula_latex": "PV=\\frac{FV}{(1+z_4)^4}"
+        },
+        {
+          "en": "PV = 100 / 1.045⁴.",
+          "tr": "PV = 100 / 1,045⁴.",
+          "values": {
+            "FV": 100,
+            "z4": 0.045
+          }
+        },
+        {
+          "en": "1.045⁴ = 1.19252.",
+          "tr": "1,045⁴ = 1,19252."
+        },
+        {
+          "en": "Price ≈ 83.86.",
+          "tr": "Fiyat ≈ 83,86."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "4 [N]",
+          "4.5 [I/Y]",
+          "0 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "100/1.045**4"
+      },
+      "vocab_ids": [
+        "zero-coupon-bond",
+        "spot-rate",
+        "face-value",
+        "compounding",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "The 1-, 2- and 3-year spot rates are 2.50%, 3.20% and 3.80%. A 3-year bond pays a 4.00% annual coupon. Its yield to maturity is closest to:",
+      "stem_tr": "1, 2 ve 3 yıllık spot faizler %2,50, %3,20 ve %3,80'dir. 3 yıl vadeli bir tahvil yıllık %4,00 kupon ödüyor. Vadeye kadar getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.77%",
+          "tr": "%3,77",
+          "value": 3.77
+        },
+        {
+          "key": "B",
+          "en": "3.17%",
+          "tr": "%3,17",
+          "value": 3.17
+        },
+        {
+          "key": "C",
+          "en": "3.80%",
+          "tr": "%3,80",
+          "value": 3.8
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Price = 4/1.025 + 4/1.032² + 104/1.038³ ≈ 100.649. Solving N = 3, PMT = 4, FV = 100, PV = −100.649 gives YTM ≈ 3.77%. YTM sits just below the 3-year spot rate because the early coupons use lower spot rates.",
+      "explanation_tr": "Fiyat = 4/1,025 + 4/1,032² + 104/1,038³ ≈ 100,649. N = 3, PMT = 4, FV = 100, PV = −100,649 ile çözünce YTM ≈ %3,77 bulunur. Erken kuponlar daha düşük spot faizlerle iskonto edildiği için YTM, 3 yıllık spot faizin hemen altındadır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Takes a simple average of the spot rates. YTM is a cash-flow-weighted blend, and most of the value comes at year 3.",
+          "tr": "Spot faizlerin basit ortalamasını almış. YTM nakit akışı ağırlıklı bir karışımdır ve değerin çoğu 3. yılda gelir."
+        },
+        "C": {
+          "en": "Uses the 3-year spot rate. The coupons at years 1 and 2 are discounted at lower rates, so YTM is slightly below 3.80%.",
+          "tr": "3 yıllık spot faizi almış. 1. ve 2. yıl kuponları daha düşük faizlerle iskonto edildiği için YTM %3,80'in biraz altındadır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the single discount rate (YTM) that gives the spot-curve price.",
+          "tr": "Spot eğri fiyatını veren tek iskonto oranı (YTM) isteniyor."
+        },
+        {
+          "en": "First price the bond with spot rates, then solve for the internal rate of return.",
+          "tr": "Önce tahvili spot faizlerle fiyatla, sonra iç verim oranını çöz.",
+          "formula_latex": "P=\\sum\\frac{CF_t}{(1+z_t)^t}=\\sum\\frac{CF_t}{(1+YTM)^t}"
+        },
+        {
+          "en": "P = 3.9024 + 3.7558 + 92.9911 ≈ 100.649.",
+          "tr": "P = 3,9024 + 3,7558 + 92,9911 ≈ 100,649.",
+          "values": {
+            "z1": 0.025,
+            "z2": 0.032,
+            "z3": 0.038
+          }
+        },
+        {
+          "en": "Solve: N = 3, PV = −100.649, PMT = 4, FV = 100.",
+          "tr": "Çöz: N = 3, PV = −100,649, PMT = 4, FV = 100."
+        },
+        {
+          "en": "YTM ≈ 3.77%.",
+          "tr": "YTM ≈ %3,77."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "3 [N]",
+          "-100.649 [PV]",
+          "4 [PMT]",
+          "100 [FV]",
+          "[CPT] [I/Y]"
+        ],
+        "note_tr": "Fiyatı önce spot faizlerle ayrı ayrı hesapla."
+      },
+      "numeric": {
+        "expr": "100*irr([-(4/1.025 + 4/1.032**2 + 104/1.038**3), 4, 4, 104])",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "yield-to-maturity",
+        "spot-rate",
+        "weighted",
+        "slightly",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Using the current spot curve, an analyst values a 4-year government bond at 101.40. The bond trades in the market at 100.60. All else equal, an arbitrageur would most likely:",
+      "stem_tr": "Bir analist güncel spot eğriyi kullanarak 4 yıllık bir devlet tahvilini 101,40 olarak değerliyor. Tahvil piyasada 100,60'tan işlem görüyor. Diğer her şey sabitken bir arbitrajcı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "buy the bond and sell (strip) its cash flows as separate zero-coupon bonds.",
+          "tr": "tahvili alır ve nakit akışlarını ayrı sıfır kuponlu tahviller olarak satar (stripping)."
+        },
+        {
+          "key": "B",
+          "en": "sell the bond short and buy the matching zero-coupon bonds.",
+          "tr": "tahvili açığa satar ve eşleşen sıfır kuponlu tahvilleri alır."
+        },
+        {
+          "key": "C",
+          "en": "do nothing, because a difference of less than 1.00 is too small to matter.",
+          "tr": "hiçbir şey yapmaz; çünkü 1,00'dan küçük bir fark önemsizdir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The bond is cheap relative to its spot-curve value. The arbitrageur buys it for 100.60, separates its cash flows, and sells them as zero-coupon bonds for about 101.40, earning the difference.",
+      "explanation_tr": "Tahvil spot eğri değerine göre ucuz. Arbitrajcı tahvili 100,60'tan alır, nakit akışlarını ayırır ve bunları sıfır kuponlu tahviller olarak yaklaşık 101,40'a satarak farkı kazanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That trade earns a profit only when the bond is priced above its spot-curve value. Here it is below.",
+          "tr": "Bu işlem yalnızca tahvil spot eğri değerinin üzerinde fiyatlanırsa kâr getirir. Burada altında."
+        },
+        "C": {
+          "en": "In a no-arbitrage setting, any gap above trading costs can be captured. The size alone does not remove the opportunity.",
+          "tr": "Arbitrajsız ortamda işlem maliyetlerini aşan her fark değerlendirilebilir. Farkın küçük olması fırsatı tek başına ortadan kaldırmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "short-sell",
+        "strip",
+        "all-else-equal",
+        "undervalued"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The 1-year spot rate is 2.00% and the 2-year spot rate is 5.00%. The 1-year forward rate one year from now (1y1y) is closest to:",
+      "stem_tr": "1 yıllık spot faiz %2,00, 2 yıllık spot faiz %5,00'tır. Bir yıl sonra başlayan 1 yıllık forward faiz (1y1y) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.50%",
+          "tr": "%3,50",
+          "value": 3.5
+        },
+        {
+          "key": "B",
+          "en": "8.09%",
+          "tr": "%8,09",
+          "value": 8.09
+        },
+        {
+          "key": "C",
+          "en": "8.00%",
+          "tr": "%8,00",
+          "value": 8.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "No-arbitrage: (1.05)² = (1.02) × (1 + 1y1y). So 1y1y = 1.1025/1.02 − 1 ≈ 8.09%.",
+      "explanation_tr": "Arbitrajsızlık: (1,05)² = (1,02) × (1 + 1y1y). Dolayısıyla 1y1y = 1,1025/1,02 − 1 ≈ %8,09.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the average of the two spot rates. The forward rate must be higher than both when the curve slopes up this much.",
+          "tr": "İki spot faizin ortalamasını almış. Eğri bu kadar dikse forward faiz iki spot faizden de yüksek olmalıdır."
+        },
+        "C": {
+          "en": "Uses the arithmetic shortcut 2 × 5% − 2%. It is only an approximation; the exact geometric result is a little higher.",
+          "tr": "Aritmetik kısayolu (2 × %5 − %2) kullanmış. Bu yalnızca yaklaşıktır; kesin geometrik sonuç biraz daha yüksektir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 1-year rate that starts in one year.",
+          "tr": "Bir yıl sonra başlayan 1 yıllık faiz isteniyor."
+        },
+        {
+          "en": "Investing 2 years at the 2-year spot must equal investing 1 year at the 1-year spot and rolling at the forward rate.",
+          "tr": "2 yıllık spot ile 2 yıl yatırım, 1 yıllık spot ile 1 yıl yatırıp forward faizle devam etmeye eşit olmalıdır.",
+          "formula_latex": "(1+z_2)^2=(1+z_1)(1+f_{1y1y})"
+        },
+        {
+          "en": "1 + f = 1.05² / 1.02.",
+          "tr": "1 + f = 1,05² / 1,02.",
+          "values": {
+            "z1": 0.02,
+            "z2": 0.05
+          }
+        },
+        {
+          "en": "= 1.1025 / 1.02 = 1.080882.",
+          "tr": "= 1,1025 / 1,02 = 1,080882."
+        },
+        {
+          "en": "1y1y ≈ 8.09%.",
+          "tr": "1y1y ≈ %8,09."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.05 [x²] [÷] 1.02 [=]",
+          "[−] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.05**2/1.02 - 1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "no-arbitrage",
+        "closest",
+        "approximation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "Forward faiz türetme SPK Düzey 3'te sınırlı; CFA'da sık sorulur."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 2-year spot rate is 3.00% and the 3-year spot rate is 4.50%. The 1-year forward rate two years from now (2y1y) is closest to:",
+      "stem_tr": "2 yıllık spot faiz %3,00 ve 3 yıllık spot faiz %4,50'dir. İki yıl sonra başlayan 1 yıllık forward faiz (2y1y) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.79%",
+          "tr": "%10,79",
+          "value": 10.79
+        },
+        {
+          "key": "B",
+          "en": "1.50%",
+          "tr": "%1,50",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "7.57%",
+          "tr": "%7,57",
+          "value": 7.57
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "(1.045)³ = (1.03)² × (1 + 2y1y). So 2y1y = 1.141166/1.0609 − 1 ≈ 7.57%.",
+      "explanation_tr": "(1,045)³ = (1,03)² × (1 + 2y1y). Dolayısıyla 2y1y = 1,141166/1,0609 − 1 ≈ %7,57.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by 1.03 only once. The 2-year spot rate must be compounded for two years.",
+          "tr": "Yalnızca bir kez 1,03'e bölmüş. 2 yıllık spot faiz iki yıl bileşiklenmelidir."
+        },
+        "B": {
+          "en": "Simply subtracts the two spot rates. A forward rate is not the difference between spot rates.",
+          "tr": "İki spot faizi basitçe çıkarmış. Forward faiz spot faizler arasındaki fark değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 1-year forward rate starting at year 2.",
+          "tr": "2. yılda başlayan 1 yıllık forward faiz isteniyor."
+        },
+        {
+          "en": "Use the no-arbitrage link between the 3-year and 2-year spot rates.",
+          "tr": "3 yıllık ve 2 yıllık spot faizler arasındaki arbitrajsızlık ilişkisini kullan.",
+          "formula_latex": "(1+z_3)^3=(1+z_2)^2(1+f_{2y1y})"
+        },
+        {
+          "en": "1 + f = 1.045³ / 1.03².",
+          "tr": "1 + f = 1,045³ / 1,03².",
+          "values": {
+            "z2": 0.03,
+            "z3": 0.045
+          }
+        },
+        {
+          "en": "= 1.141166 / 1.0609 = 1.075659.",
+          "tr": "= 1,141166 / 1,0609 = 1,075659."
+        },
+        {
+          "en": "2y1y ≈ 7.57%.",
+          "tr": "2y1y ≈ %7,57."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.045 [yˣ] 3 [=] [÷] 1.03 [x²] [=]",
+          "[−] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.045**3/1.03**2 - 1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "compounding",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 1-year spot rate is 2.00%. The 2-year par rate (annual coupon) is 4.00%. Using bootstrapping, the 2-year spot rate is closest to:",
+      "stem_tr": "1 yıllık spot faiz %2,00'dır. 2 yıllık par faiz (yıllık kupon) %4,00'tır. Bootstrapping (ardışık türetme) yöntemiyle 2 yıllık spot faiz aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.04%",
+          "tr": "%4,04",
+          "value": 4.04
+        },
+        {
+          "key": "B",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "8.24%",
+          "tr": "%8,24",
+          "value": 8.24
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A 2-year 4% par bond is priced at 100: 4/1.02 + 104/(1 + z₂)² = 100. So (1 + z₂)² = 104/(100 − 3.9216) = 1.08245, and z₂ ≈ 4.04%.",
+      "explanation_tr": "2 yıllık %4 kuponlu par tahvil 100'den fiyatlanır: 4/1,02 + 104/(1 + z₂)² = 100. Dolayısıyla (1 + z₂)² = 104/(100 − 3,9216) = 1,08245 ve z₂ ≈ %4,04.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Assumes the spot rate equals the par rate. With an upward-sloping curve, the spot rate is above the par rate.",
+          "tr": "Spot faizin par faize eşit olduğunu varsaymış. Yukarı eğimli eğride spot faiz par faizin üzerindedir."
+        },
+        "C": {
+          "en": "Finds the 2-year total growth but forgets to take the square root to annualize it.",
+          "tr": "2 yıllık toplam büyümeyi bulmuş ama yıllıklaştırmak için karekök almayı unutmuş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 2-year spot rate from par rates.",
+          "tr": "Par faizlerden 2 yıllık spot faiz isteniyor."
+        },
+        {
+          "en": "A par bond's price is 100. Discount the year-1 coupon at the known 1-year spot and solve for z₂.",
+          "tr": "Par tahvilin fiyatı 100'dür. 1. yıl kuponunu bilinen 1 yıllık spotla iskonto et ve z₂'yi çöz.",
+          "formula_latex": "100=\\frac{4}{1.02}+\\frac{104}{(1+z_2)^2}"
+        },
+        {
+          "en": "4/1.02 = 3.9216, so 104/(1 + z₂)² = 96.0784.",
+          "tr": "4/1,02 = 3,9216; dolayısıyla 104/(1 + z₂)² = 96,0784.",
+          "values": {
+            "par2": 0.04,
+            "z1": 0.02
+          }
+        },
+        {
+          "en": "(1 + z₂)² = 1.082449 → 1 + z₂ = 1.040408.",
+          "tr": "(1 + z₂)² = 1,082449 → 1 + z₂ = 1,040408."
+        },
+        {
+          "en": "z₂ ≈ 4.04%.",
+          "tr": "z₂ ≈ %4,04."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4 [÷] 1.02 [=] [+|-] [+] 100 [=] [STO] 1",
+          "104 [÷] [RCL] 1 [=] [√x]",
+          "[−] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((104/(100 - 4/1.02))**0.5 - 1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "bootstrapping",
+        "par-rate",
+        "spot-rate",
+        "upward-sloping",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 1-, 2- and 3-year spot rates are 2.00%, 3.00% and 4.00%. The 3-year par rate (annual coupon) is closest to:",
+      "stem_tr": "1, 2 ve 3 yıllık spot faizler %2,00, %3,00 ve %4,00'tır. 3 yıllık par faiz (yıllık kupon) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.00%",
+          "tr": "%3,00",
+          "value": 3.0
+        },
+        {
+          "key": "B",
+          "en": "3.95%",
+          "tr": "%3,95",
+          "value": 3.95
+        },
+        {
+          "key": "C",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Par rate = (1 − DF₃)/(DF₁ + DF₂ + DF₃). DF₁ = 0.98039, DF₂ = 0.94260, DF₃ = 0.88900. Par = 0.11100/2.81199 ≈ 3.95%.",
+      "explanation_tr": "Par faiz = (1 − DF₃)/(DF₁ + DF₂ + DF₃). DF₁ = 0,98039, DF₂ = 0,94260, DF₃ = 0,88900. Par = 0,11100/2,81199 ≈ %3,95.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the simple average of the spot rates.",
+          "tr": "Spot faizlerin basit ortalamasını almış."
+        },
+        "C": {
+          "en": "Uses the 3-year spot rate. With an upward-sloping spot curve, the par rate is a little below the spot rate.",
+          "tr": "3 yıllık spot faizi kullanmış. Yukarı eğimli spot eğride par faiz, spot faizin biraz altındadır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the coupon rate that prices a 3-year bond at par.",
+          "tr": "3 yıllık tahvili nominalden fiyatlayan kupon oranı isteniyor."
+        },
+        {
+          "en": "Set price = 1 with spot discount factors and solve for the coupon PMT.",
+          "tr": "Spot iskonto faktörleriyle fiyatı 1'e eşitle ve kupon PMT'yi çöz.",
+          "formula_latex": "PMT\\,(DF_1+DF_2+DF_3)+DF_3=1\\Rightarrow PMT=\\frac{1-DF_3}{DF_1+DF_2+DF_3}"
+        },
+        {
+          "en": "DF₁ = 1/1.02 = 0.98039; DF₂ = 1/1.03² = 0.94260; DF₃ = 1/1.04³ = 0.88900.",
+          "tr": "DF₁ = 1/1,02 = 0,98039; DF₂ = 1/1,03² = 0,94260; DF₃ = 1/1,04³ = 0,88900."
+        },
+        {
+          "en": "Sum = 2.81199; 1 − DF₃ = 0.11100.",
+          "tr": "Toplam = 2,81199; 1 − DF₃ = 0,11100."
+        },
+        {
+          "en": "Par rate ≈ 3.95%.",
+          "tr": "Par faiz ≈ %3,95."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.02 [1/x] [STO] 1",
+          "1.03 [x²] [1/x] [STO] 2",
+          "1.04 [yˣ] 3 [=] [1/x] [STO] 3",
+          "1 [−] [RCL] 3 [=] [÷] ( [RCL] 1 [+] [RCL] 2 [+] [RCL] 3 ) [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(1 - 1/1.04**3)/(1/1.02 + 1/1.03**2 + 1/1.04**3)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "par-rate",
+        "spot-rate",
+        "discount-factor",
+        "closest",
+        "upward-sloping"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "The current 1-year rate is 3.00%. The 1y1y forward rate is 4.50% and the 2y1y forward rate is 5.50%. A 3-year bond pays a 6.00% annual coupon (par 100). Its price is closest to:",
+      "stem_tr": "Güncel 1 yıllık faiz %3,00'tır. 1y1y forward faiz %4,50, 2y1y forward faiz %5,50'dir. 3 yıl vadeli bir tahvil yıllık %6,00 kupon ödüyor (nominal 100). Fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "101.59",
+          "tr": "101,59",
+          "value": 101.59
+        },
+        {
+          "key": "B",
+          "en": "108.49",
+          "tr": "108,49",
+          "value": 108.49
+        },
+        {
+          "key": "C",
+          "en": "104.75",
+          "tr": "104,75",
+          "value": 104.75
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Discount factors: 1/1.03 = 0.97087; 1/(1.03 × 1.045) = 0.92906; 1/(1.03 × 1.045 × 1.055) = 0.88063. Price = 6 × 0.97087 + 6 × 0.92906 + 106 × 0.88063 ≈ 104.75.",
+      "explanation_tr": "İskonto faktörleri: 1/1,03 = 0,97087; 1/(1,03 × 1,045) = 0,92906; 1/(1,03 × 1,045 × 1,055) = 0,88063. Fiyat = 6 × 0,97087 + 6 × 0,92906 + 106 × 0,88063 ≈ 104,75.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats each forward rate as if it were a spot rate. Forward rates must be chained (multiplied) period by period.",
+          "tr": "Her forward faizi spot faizmiş gibi kullanmış. Forward faizler dönem dönem zincirlenmeli (çarpılmalı)."
+        },
+        "B": {
+          "en": "Discounts all cash flows at the 1-year rate, ignoring the higher future forward rates.",
+          "tr": "Tüm nakit akışlarını 1 yıllık faizle iskonto etmiş; daha yüksek gelecekteki forward faizleri yok saymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the bond price using a sequence of 1-year forward rates.",
+          "tr": "Ardışık 1 yıllık forward faizlerle tahvil fiyatı isteniyor."
+        },
+        {
+          "en": "The discount factor for year t is the product of the 1-year rates up to t.",
+          "tr": "t. yılın iskonto faktörü, t'ye kadarki 1 yıllık faizlerin çarpımıyla bulunur.",
+          "formula_latex": "PV=\\frac{C}{1+f_0}+\\frac{C}{(1+f_0)(1+f_1)}+\\frac{C+FV}{(1+f_0)(1+f_1)(1+f_2)}"
+        },
+        {
+          "en": "Rates: 3.00%, 4.50%, 5.50%; coupon = 6.",
+          "tr": "Faizler: %3,00, %4,50, %5,50; kupon = 6.",
+          "values": {
+            "f0": 0.03,
+            "f1": 0.045,
+            "f2": 0.055
+          }
+        },
+        {
+          "en": "5.8252 + 5.5744 + 93.3470.",
+          "tr": "5,8252 + 5,5744 + 93,3470."
+        },
+        {
+          "en": "Price ≈ 104.75.",
+          "tr": "Fiyat ≈ 104,75."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.03 [STO] 1",
+          "[×] 1.045 [=] [STO] 2",
+          "[×] 1.055 [=] [STO] 3",
+          "6 [÷] [RCL] 1 [=] [STO] 4",
+          "6 [÷] [RCL] 2 [=] [+] [RCL] 4 [=] [STO] 4",
+          "106 [÷] [RCL] 3 [=] [+] [RCL] 4 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "6/1.03 + 6/(1.03*1.045) + 106/(1.03*1.045*1.055)"
+      },
+      "vocab_ids": [
+        "forward-rate",
+        "discount-factor",
+        "chain",
+        "closest",
+        "coupon"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-b-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 1-year spot rate is 2.50% and the 3-year spot rate is 3.80%. The annualized 2-year forward rate starting one year from now (1y2y) is closest to:",
+      "stem_tr": "1 yıllık spot faiz %2,50, 3 yıllık spot faiz %3,80'dir. Bir yıl sonra başlayan 2 yıllık forward faiz (1y2y), yıllık bazda aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.11%",
+          "tr": "%9,11",
+          "value": 9.11
+        },
+        {
+          "key": "B",
+          "en": "4.46%",
+          "tr": "%4,46",
+          "value": 4.46
+        },
+        {
+          "key": "C",
+          "en": "3.80%",
+          "tr": "%3,80",
+          "value": 3.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "(1.038)³ = (1.025)(1 + 1y2y)². So (1 + 1y2y)² = 1.118386/1.025 = 1.091108 and 1y2y ≈ 4.46%.",
+      "explanation_tr": "(1,038)³ = (1,025)(1 + 1y2y)². Dolayısıyla (1 + 1y2y)² = 1,118386/1,025 = 1,091108 ve 1y2y ≈ %4,46.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gives the total 2-year forward return, not the annualized rate. Take the square root.",
+          "tr": "Yıllık oran değil 2 yıllık toplam forward getiriyi vermiş. Karekök alınmalı."
+        },
+        "C": {
+          "en": "Uses the 3-year spot rate. The forward rate for years 2–3 must be higher than the 3-year spot when the curve slopes up.",
+          "tr": "3 yıllık spot faizi kullanmış. Eğri yukarı eğimliyse 2–3. yıllar için forward faiz 3 yıllık spottan yüksek olmalıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual rate for a 2-year loan that starts in one year.",
+          "tr": "Bir yıl sonra başlayan 2 yıllık bir borç için yıllık faiz isteniyor."
+        },
+        {
+          "en": "Use no-arbitrage between the 3-year spot and the 1-year spot plus the 1y2y forward.",
+          "tr": "3 yıllık spot ile 1 yıllık spot + 1y2y forward arasındaki arbitrajsızlık ilişkisini kullan.",
+          "formula_latex": "(1+z_3)^3=(1+z_1)(1+f_{1y2y})^2"
+        },
+        {
+          "en": "(1 + f)² = 1.038³ / 1.025.",
+          "tr": "(1 + f)² = 1,038³ / 1,025.",
+          "values": {
+            "z1": 0.025,
+            "z3": 0.038
+          }
+        },
+        {
+          "en": "= 1.091108 → 1 + f = 1.044562.",
+          "tr": "= 1,091108 → 1 + f = 1,044562."
+        },
+        {
+          "en": "1y2y ≈ 4.46%.",
+          "tr": "1y2y ≈ %4,46."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.038 [yˣ] 3 [=] [÷] 1.025 [=] [√x]",
+          "[−] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.038**3/1.025)**0.5 - 1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forward-rate",
+        "annualize",
+        "spot-rate",
+        "closest",
+        "upward-sloping"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "When the spot curve is upward sloping, the forward curve most likely lies:",
+      "stem_tr": "Spot eğri yukarı eğimli olduğunda forward eğri büyük olasılıkla nerede yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "below the spot curve.",
+          "tr": "Spot eğrinin altında."
+        },
+        {
+          "key": "B",
+          "en": "on the spot curve.",
+          "tr": "Spot eğrinin üzerinde, onunla çakışık."
+        },
+        {
+          "key": "C",
+          "en": "above the spot curve.",
+          "tr": "Spot eğrinin üzerinde."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A spot rate is a geometric average of the forward rates up to that date. If the average keeps rising, each new forward rate must be above the current average, so the forward curve lies above the spot curve.",
+      "explanation_tr": "Spot faiz, o tarihe kadarki forward faizlerin geometrik ortalamasıdır. Ortalama yükselmeye devam ediyorsa her yeni forward faiz mevcut ortalamanın üzerinde olmalıdır; bu yüzden forward eğri spot eğrinin üzerindedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That happens when the spot curve slopes downward.",
+          "tr": "Bu, spot eğri aşağı eğimli olduğunda görülür."
+        },
+        "B": {
+          "en": "The curves are the same only when the spot curve is flat.",
+          "tr": "Eğriler yalnızca spot eğri yatay olduğunda aynıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "upward-sloping",
+        "forward-curve",
+        "spot-curve",
+        "average",
+        "lie"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The spot curve slopes upward. For the same maturity, which ordering of rates is most likely correct?",
+      "stem_tr": "Spot eğri yukarı eğimli. Aynı vade için faizlerin aşağıdaki sıralamalarından hangisinin doğru olma olasılığı en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Forward rate > spot rate > par rate",
+          "tr": "Forward faiz > spot faiz > par faiz"
+        },
+        {
+          "key": "B",
+          "en": "Par rate > spot rate > forward rate",
+          "tr": "Par faiz > spot faiz > forward faiz"
+        },
+        {
+          "key": "C",
+          "en": "Spot rate > forward rate > par rate",
+          "tr": "Spot faiz > forward faiz > par faiz"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A par bond pays coupons before maturity, and those coupons are discounted at lower short-term spot rates. So the par rate is a blend that sits below the spot rate. Forward rates sit above the spot rate because spot rates are averages of forwards.",
+      "explanation_tr": "Par tahvil vadeden önce kupon öder ve bu kuponlar daha düşük kısa vadeli spot faizlerle iskonto edilir. Bu yüzden par faiz spot faizin altında kalan bir karışımdır. Spot faizler forward faizlerin ortalaması olduğu için forward faizler spot faizin üzerindedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the ordering for a downward-sloping curve.",
+          "tr": "Bu sıralama aşağı eğimli eğri içindir."
+        },
+        "C": {
+          "en": "With a rising curve the forward rate is the highest, not the middle one.",
+          "tr": "Yükselen eğride forward faiz ortada değil, en yüksektedir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "par-rate",
+        "forward-rate",
+        "spot-rate",
+        "ordering",
+        "blend"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "If the spot curve is flat at 4.00%, which of the following is most likely true?",
+      "stem_tr": "Spot eğri %4,00'te yatay ise aşağıdakilerden hangisinin doğru olma olasılığı en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Forward rates are above 4.00%, and par rates are below 4.00%.",
+          "tr": "Forward faizler %4,00'ün üzerinde, par faizler %4,00'ün altındadır."
+        },
+        {
+          "key": "B",
+          "en": "Par rates and forward rates are also 4.00% at all maturities.",
+          "tr": "Par faizler ve forward faizler de tüm vadelerde %4,00'tır."
+        },
+        {
+          "key": "C",
+          "en": "Par rates are 4.00%, but forward rates rise with maturity.",
+          "tr": "Par faizler %4,00'tür, ancak forward faizler vadeyle birlikte yükselir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With a flat spot curve, all discount rates are the same. A par bond then has a coupon equal to that rate, and every implied forward rate equals it too.",
+      "explanation_tr": "Spot eğri yatayken tüm iskonto oranları aynıdır. Bu durumda par tahvilin kuponu bu orana eşittir ve tüm zımni forward faizler de ona eşittir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That pattern belongs to an upward-sloping curve.",
+          "tr": "Bu desen yukarı eğimli eğriye aittir."
+        },
+        "C": {
+          "en": "If every spot rate is 4.00%, every forward rate implied between them is also 4.00%.",
+          "tr": "Tüm spot faizler %4,00 ise aralarındaki tüm zımni forward faizler de %4,00'tır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "flat",
+        "spot-curve",
+        "par-rate",
+        "forward-rate",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "After a central bank signals future rate cuts, the spot curve becomes downward sloping. Compared with the spot curve, the forward curve is most likely:",
+      "stem_tr": "Bir merkez bankası gelecekte faiz indirimi sinyali verdikten sonra spot eğri aşağı eğimli hale geliyor. Spot eğriyle karşılaştırıldığında forward eğri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "below the spot curve and falling faster.",
+          "tr": "spot eğrinin altında ve daha hızlı düşen bir eğridir."
+        },
+        {
+          "key": "B",
+          "en": "above the spot curve, because forward rates always exceed spot rates.",
+          "tr": "spot eğrinin üzerindedir; çünkü forward faizler her zaman spot faizleri aşar."
+        },
+        {
+          "key": "C",
+          "en": "identical to the par curve.",
+          "tr": "par eğrisiyle aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "When spot rates fall with maturity, each new forward rate must be below the average (the spot rate) to pull that average down. So the forward curve lies below the spot curve and is steeper.",
+      "explanation_tr": "Spot faizler vadeyle düşüyorsa, her yeni forward faiz ortalamayı (spot faizi) aşağı çekmek için ortalamanın altında olmalıdır. Bu yüzden forward eğri spot eğrinin altında ve daha diktir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Forward rates exceed spot rates only when the spot curve rises.",
+          "tr": "Forward faizler spot faizleri yalnızca spot eğri yükselirken aşar."
+        },
+        "C": {
+          "en": "The par curve is a blend of spot rates; it is above the spot curve here, while the forward curve is below it.",
+          "tr": "Par eğrisi spot faizlerin bir karışımıdır; burada spot eğrinin üzerindedir, forward eğri ise altındadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "downward-sloping",
+        "forward-curve",
+        "central-bank",
+        "exceed",
+        "signal"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-09-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-09",
+      "los_id": "FI-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following statements about the term structure is least likely correct?",
+      "stem_tr": "Faizlerin vade yapısıyla ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A spot rate can be seen as a geometric average of the forward rates up to that maturity.",
+          "tr": "Bir spot faiz, o vadeye kadarki forward faizlerin geometrik ortalaması olarak görülebilir."
+        },
+        {
+          "key": "B",
+          "en": "Par rates can be used to bootstrap spot rates.",
+          "tr": "Par faizler spot faizleri ardışık türetmek (bootstrapping) için kullanılabilir."
+        },
+        {
+          "key": "C",
+          "en": "The par curve is always above the spot curve.",
+          "tr": "Par eğrisi her zaman spot eğrinin üzerindedir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The par curve is below the spot curve when the spot curve slopes up and above it when the spot curve slopes down. So it is not always above.",
+      "explanation_tr": "Spot eğri yukarı eğimliyken par eğrisi spot eğrinin altında, aşağı eğimliyken üzerindedir. Yani her zaman üzerinde değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This statement is correct; it is the no-arbitrage link between spot and forward rates.",
+          "tr": "Bu ifade doğrudur; spot ve forward faizler arasındaki arbitrajsızlık ilişkisidir."
+        },
+        "B": {
+          "en": "This statement is correct; bootstrapping turns par rates into spot rates one maturity at a time.",
+          "tr": "Bu ifade doğrudur; bootstrapping par faizleri vade vade spot faizlere çevirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "term-structure",
+        "par-rate",
+        "geometric-average",
+        "bootstrapping",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

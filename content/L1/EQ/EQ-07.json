@@ -1,0 +1,1939 @@
+{
+  "module_id": "EQ-07",
+  "lesson": {
+    "id": "EQ-07-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-07",
+    "los_ids": [
+      "EQ-07-a",
+      "EQ-07-b",
+      "EQ-07-c",
+      "EQ-07-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Relative Value Equity Valuation Approaches",
+    "title_tr": "Göreli Değer Esaslı Pay Değerleme Yaklaşımları",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why analysts use multiples",
+        "heading_tr": "Analistler neden çarpan kullanır?",
+        "en": "Imagine two fictional BIST cement producers, Anadolu Çimento and Toros Çimento. They sell the same product in similar regions. If investors pay 6 TL for each 1 TL of Anadolu's earnings but 10 TL for Toros, one of them may be mispriced. This is the idea behind relative valuation: similar assets should sell at similar prices (the law of one price). A multiple, such as price-to-earnings (P/E), turns a share price into a comparable number. Brokerage reports in Turkey often compare a stock's F/K or FD/FAVÖK with its sector peers. Multiples are quick and easy to explain, but they only tell you whether a stock is cheap or expensive relative to something else.",
+        "tr": "Kurgusal iki BIST çimento üreticisini düşünün: Anadolu Çimento ve Toros Çimento. Benzer bölgelerde aynı ürünü satıyorlar. Yatırımcılar Anadolu'nun 1 TL'lik kârı için 6 TL, Toros'unki için 10 TL ödüyorsa, ikisinden biri yanlış fiyatlanmış olabilir. Göreli değerlemenin özü budur: benzer varlıklar benzer fiyatlardan işlem görmelidir (tek fiyat yasası). Fiyat/kazanç (F/K) gibi bir çarpan, hisse fiyatını karşılaştırılabilir bir sayıya dönüştürür. Türkiye'de aracı kurum raporları bir hissenin F/K veya FD/FAVÖK oranını sektördeki emsalleriyle sıklıkla kıyaslar. Çarpanlar hızlı ve anlaşılırdır; ancak yalnızca hissenin başka bir şeye göre ucuz mu pahalı mı olduğunu söyler.",
+        "key_terms": [
+          "relative valuation",
+          "multiple",
+          "law of one price"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Two ways to use multiples",
+        "heading_tr": "Çarpanları kullanmanın iki yolu",
+        "en": "Method of comparables: you compare a company's multiple with a benchmark, such as the median P/E of a peer group or a sector index. A lower multiple than the benchmark suggests the stock is relatively undervalued. The conclusion is relative: if the whole sector is overpriced, a 'cheap' stock can still be overpriced in absolute terms. Method based on forecasted fundamentals: you derive a justified multiple from a valuation model, usually a dividend discount model. The justified multiple shows what the multiple should be, given the company's expected payout, growth and required return. If the actual multiple is below the justified multiple, the stock looks undervalued.",
+        "tr": "Emsal karşılaştırma yöntemi: şirketin çarpanını bir ölçütle, örneğin emsal grubunun medyan F/K'sı veya sektör endeksiyle kıyaslarsınız. Ölçütten düşük bir çarpan, hissenin göreli olarak düşük değerlendiğine işaret eder. Sonuç görelidir: sektörün tamamı pahalıysa 'ucuz' görünen hisse mutlak anlamda yine pahalı olabilir. Tahmini temel göstergelere dayalı yöntem: genellikle bir temettü indirgeme modelinden gerekçeli (justified) bir çarpan türetirsiniz. Gerekçeli çarpan; beklenen dağıtım oranı, büyüme ve getiri beklentisine göre çarpanın ne olması gerektiğini gösterir. Gerçekleşen çarpan gerekçeli çarpanın altındaysa hisse düşük değerlenmiş görünür.",
+        "key_terms": [
+          "method of comparables",
+          "forecasted fundamentals",
+          "justified multiple",
+          "benchmark"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Justified P/E and P/B",
+        "heading_tr": "Gerekçeli F/K ve PD/DD",
+        "en": "From the Gordon growth model, P0 = D1 / (r − g). Divide both sides by expected earnings E1 to get the justified forward P/E. Divide by current earnings E0 to get the justified trailing P/E, which has an extra (1 + g) term. The justified P/B uses return on equity (ROE): a company that earns ROE above its required return r deserves a P/B above 1. Variables: p = dividend payout ratio, r = required return on equity, g = constant growth rate, ROE = return on equity.",
+        "tr": "Gordon büyüme modelinde P0 = D1 / (r − g). Her iki tarafı beklenen kâr E1'e bölerseniz gerekçeli ileriye dönük F/K'yı bulursunuz. Cari kâr E0'a bölerseniz, fazladan (1 + g) terimi içeren gerekçeli geçmiş (trailing) F/K'yı elde edersiniz. Gerekçeli PD/DD özkaynak kârlılığını (ROE) kullanır: getiri beklentisi r'nin üzerinde ROE elde eden şirket 1'in üzerinde PD/DD'yi hak eder. Değişkenler: p = kâr dağıtım oranı, r = özkaynak getiri beklentisi (özkaynak maliyeti), g = sabit büyüme oranı, ROE = özkaynak kârlılığı.",
+        "key_terms": [
+          "justified P/E",
+          "payout ratio",
+          "return on equity",
+          "required return"
+        ],
+        "formula_latex": "\\frac{P_0}{E_1}=\\frac{p}{r-g}\\qquad \\frac{P_0}{E_0}=\\frac{p\\,(1+g)}{r-g}\\qquad \\frac{P_0}{B_0}=\\frac{ROE-g}{r-g}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Price multiples and enterprise value multiples",
+        "heading_tr": "Fiyat çarpanları ve firma değeri çarpanları",
+        "en": "Price multiples compare the share price with a per-share measure: P/E (earnings), P/B (book value of equity), P/S (sales) and P/CF (cash flow). Enterprise value (EV) multiples compare the value of the whole firm with a measure that belongs to all capital providers, such as EBITDA or sales. EV = market value of equity + debt + preferred stock + non-controlling interest − cash and short-term investments. Because EBITDA is before interest, EV/EBITDA is useful when peers have very different debt levels. Match numerator and denominator: equity value goes with equity measures (net income), firm value goes with firm measures (EBITDA, EBIT, sales).",
+        "tr": "Fiyat çarpanları hisse fiyatını hisse başına bir büyüklükle kıyaslar: F/K (kâr), PD/DD (özkaynağın defter değeri), F/S (satışlar) ve F/NA (nakit akışı). Firma değeri (FD) çarpanları ise tüm şirketin değerini, FAVÖK veya satışlar gibi tüm sermaye sağlayıcılarına ait bir büyüklükle kıyaslar. FD = özkaynağın piyasa değeri + borç + imtiyazlı pay + kontrol gücü olmayan paylar − nakit ve kısa vadeli yatırımlar. FAVÖK faiz öncesi olduğu için FD/FAVÖK, borçluluk düzeyleri çok farklı emsalleri kıyaslarken kullanışlıdır. Pay ve paydayı eşleştirin: özkaynak değeri özkaynağa ait büyüklüklerle (net kâr), firma değeri firmaya ait büyüklüklerle (FAVÖK, FVÖK, satışlar) kullanılır.",
+        "key_terms": [
+          "price multiple",
+          "enterprise value",
+          "EBITDA",
+          "P/S",
+          "P/CF"
+        ],
+        "formula_latex": "EV = \\text{Market cap} + \\text{Debt} + \\text{Preferred} + \\text{NCI} - \\text{Cash}",
+        "table": {
+          "headers": [
+            {
+              "en": "Multiple",
+              "tr": "Çarpan"
+            },
+            {
+              "en": "Works best when",
+              "tr": "En uygun olduğu durum"
+            },
+            {
+              "en": "Weakness",
+              "tr": "Zayıf yanı"
+            }
+          ],
+          "rows": [
+            [
+              "P/E (F/K)",
+              "Positive, stable earnings / Pozitif ve istikrarlı kâr",
+              "Meaningless if EPS ≤ 0; accounting choices / Kâr ≤ 0 ise anlamsız; muhasebe tercihleri"
+            ],
+            [
+              "P/B (PD/DD)",
+              "Banks, insurers, asset-heavy firms / Bankalar, sigortacılar, varlık yoğun şirketler",
+              "Ignores intangibles like know-how / Bilgi birikimi gibi maddi olmayan varlıkları dışlar"
+            ],
+            [
+              "P/S (F/S)",
+              "Losses or early-stage firms / Zarar eden veya erken aşamadaki şirketler",
+              "Ignores cost structure and margins / Maliyet yapısını ve marjları dışlar"
+            ],
+            [
+              "P/CF (F/NA)",
+              "Earnings distorted by non-cash items / Kârı nakit dışı kalemlerle bozulmuş şirketler",
+              "Cash flow definitions vary / Nakit akışı tanımları farklılaşır"
+            ],
+            [
+              "EV/EBITDA (FD/FAVÖK)",
+              "Peers with different leverage or D&A / Farklı borçluluk veya amortisman yapısındaki emsaller",
+              "Ignores capex needs / Yatırım harcaması ihtiyacını dışlar"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Choosing the benchmark: peers",
+        "heading_tr": "Ölçütü seçmek: emsaller",
+        "en": "The method of comparables is only as good as the peer group. A common start is an industry classification system, such as GICS or ICB, or the sector indices of Borsa İstanbul. These group companies by their principal business activity, usually the largest source of revenue. A second way is to group companies by common return drivers: firms whose returns react to the same economic factors, such as tourism arrivals, oil prices or the TL exchange rate, even if they are in different classifications. Good peers are similar in business mix, size, growth, risk and accounting. Use the median of peer multiples, because one outlier can distort the mean.",
+        "tr": "Emsal karşılaştırma yöntemi, emsal grubu kadar iyidir. Yaygın başlangıç noktası GICS veya ICB gibi bir sektör sınıflandırma sistemi ya da Borsa İstanbul'un sektör endeksleridir. Bu sistemler şirketleri ana faaliyetlerine, genellikle en büyük gelir kaynağına göre gruplar. İkinci yol, şirketleri ortak getiri belirleyicilerine göre gruplamaktır: farklı sınıflarda olsalar bile getirileri turist sayısı, petrol fiyatı veya TL kuru gibi aynı ekonomik etkenlere tepki veren şirketler. İyi emsaller iş karması, büyüklük, büyüme, risk ve muhasebe açısından benzerdir. Tek bir uç değer ortalamayı bozabileceği için emsal çarpanlarının medyanını kullanın.",
+        "key_terms": [
+          "peer group",
+          "industry classification",
+          "return drivers",
+          "median",
+          "outlier"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Trailing, current and forward multiples",
+        "heading_tr": "Geçmiş, cari ve ileriye dönük çarpanlar",
+        "en": "A trailing P/E divides the current price by earnings of the last four reported quarters (or the last fiscal year). A forward (leading) P/E divides the current price by expected earnings for the next four quarters or the next fiscal year. A current multiple uses the most recent annual figure. When earnings are growing, the forward P/E is lower than the trailing P/E. Be consistent: compare the forward P/E of the company with forward P/Es of peers, and apply a forward multiple to forward EPS. Trailing earnings may include one-time items; analysts often use normalized (underlying) EPS instead. In high-inflation economies such as Turkey, trailing nominal earnings can quickly become out of date, which makes forward measures more informative.",
+        "tr": "Geçmiş (trailing) F/K, cari fiyatı son dört raporlanmış çeyreğin (veya son mali yılın) kârına böler. İleriye dönük (forward) F/K, cari fiyatı önümüzdeki dört çeyrek veya gelecek mali yıl için beklenen kâra böler. Cari çarpan en son yıllık rakamı kullanır. Kâr büyüyorsa ileriye dönük F/K, geçmiş F/K'dan düşüktür. Tutarlı olun: şirketin ileriye dönük F/K'sını emsallerin ileriye dönük F/K'larıyla kıyaslayın ve ileriye dönük çarpanı ileriye dönük HBK'ya uygulayın. Geçmiş kâr tek seferlik kalemler içerebilir; analistler bu yüzden çoğu zaman normalleştirilmiş (olağan) HBK kullanır. Türkiye gibi yüksek enflasyonlu ekonomilerde geçmiş nominal kâr hızla eskir; bu da ileriye dönük göstergeleri daha bilgilendirici kılar.",
+        "key_terms": [
+          "trailing P/E",
+          "forward P/E",
+          "leading",
+          "normalized EPS"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: Marmara Gıda",
+        "heading_tr": "Çözümlü örnek: Marmara Gıda",
+        "en": "Fictional Marmara Gıda trades at 84 TL. Trailing EPS is 7.00 TL and forecast EPS for next year is 8.40 TL. Trailing P/E = 84 / 7.00 = 12.0; forward P/E = 84 / 8.40 = 10.0. The peer median forward P/E is 11.0, so the implied value is 11.0 × 8.40 = 92.40 TL, about 10% above the price. EV check: market cap 12,000 million TL, debt 4,000, cash 1,500 → EV = 14,500 million TL. With EBITDA of 2,900 million TL, EV/EBITDA = 5.0×.",
+        "tr": "Kurgusal Marmara Gıda 84 TL'den işlem görüyor. Geçmiş HBK 7,00 TL, gelecek yıl için tahmini HBK 8,40 TL. Geçmiş F/K = 84 / 7,00 = 12,0; ileriye dönük F/K = 84 / 8,40 = 10,0. Emsallerin medyan ileriye dönük F/K'sı 11,0 olduğundan ima edilen değer 11,0 × 8,40 = 92,40 TL'dir; fiyatın yaklaşık %10 üzerinde. FD kontrolü: piyasa değeri 12.000 milyon TL, borç 4.000, nakit 1.500 → FD = 14.500 milyon TL. FAVÖK 2.900 milyon TL ise FD/FAVÖK = 5,0x.",
+        "key_terms": [
+          "implied value",
+          "peer median"
+        ],
+        "example": {
+          "en": "Implied value = peer forward P/E × company forward EPS = 11.0 × 8.40 = 92.40 TL",
+          "tr": "İma edilen değer = emsal ileriye dönük F/K × şirketin ileriye dönük HBK'sı = 11,0 × 8,40 = 92,40 TL",
+          "formula_latex": "V_0 = \\left(\\frac{P}{E_1}\\right)_{peer}\\times E_1"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not mix equity and firm measures: EV/net income or price/EBITDA is inconsistent. Do not forget to subtract cash when computing EV. A low P/E is not automatically 'cheap': it may reflect low growth or high risk. The trailing justified P/E includes (1 + g); the forward one does not. Comparables give relative, not absolute, value. Do not apply a trailing peer multiple to a forward EPS forecast.",
+        "tr": "Özkaynak ve firma büyüklüklerini karıştırmayın: FD/net kâr veya fiyat/FAVÖK tutarsızdır. FD hesaplarken nakdi düşmeyi unutmayın. Düşük F/K otomatik olarak 'ucuz' demek değildir: düşük büyümeyi veya yüksek riski yansıtıyor olabilir. Gerekçeli geçmiş F/K (1 + g) içerir; ileriye dönük olan içermez. Emsal yöntemi mutlak değil, göreli değer verir. Emsallerin geçmiş çarpanını ileriye dönük HBK tahminine uygulamayın.",
+        "key_terms": [
+          "consistency",
+          "relative value"
+        ]
+      }
+    ],
+    "summary_en": "Multiples value a stock relative to a benchmark. The method of comparables uses peer multiples; the method based on forecasted fundamentals uses justified multiples from a valuation model. Price multiples (P/E, P/B, P/S, P/CF) relate to equity; EV multiples relate to the whole firm. Choose peers by industry classification or common return drivers and use the median. Trailing and forward multiples must be used consistently.",
+    "summary_tr": "Çarpanlar bir hisseyi bir ölçüte göre değerler. Emsal yöntemi emsal çarpanlarını, tahmini temel göstergeler yöntemi ise değerleme modelinden türetilen gerekçeli çarpanları kullanır. Fiyat çarpanları (F/K, PD/DD, F/S, F/NA) özkaynağa, FD çarpanları tüm firmaya aittir. Emsalleri sektör sınıflandırması veya ortak getiri belirleyicilerine göre seçin ve medyanı kullanın. Geçmiş ve ileriye dönük çarpanlar tutarlı biçimde kullanılmalıdır.",
+    "common_traps_tr": [
+      "FD hesabında nakdi düşmemek ya da borcu eklemeyi unutmak.",
+      "FD/FAVÖK ile bulunan firma değerini doğrudan pay sayısına bölmek (net borcu düşmeden).",
+      "Gerekçeli geçmiş F/K'da (1 + g) terimini unutmak veya ileriye dönük F/K'ya eklemek.",
+      "Emsal yönteminin sonucunu mutlak değer gibi yorumlamak.",
+      "Emsal ortalamasının tek bir uç değerle bozulduğunu görmeyip ortalamayı kullanmak.",
+      "Geçmiş çarpanı ileriye dönük HBK'ya uygulamak (tutarsız eşleştirme)."
+    ],
+    "vocab_ids": [
+      "multiple",
+      "relative-valuation",
+      "comparables",
+      "law-of-one-price",
+      "justified-multiple",
+      "payout-ratio",
+      "enterprise-value",
+      "ebitda",
+      "book-value",
+      "peer-group",
+      "trailing",
+      "forward-looking",
+      "outlier",
+      "median",
+      "undervalued",
+      "implied-value",
+      "benchmark",
+      "normalized-earnings"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3 'Finansal Analiz ve Değerleme' konusunda F/K, PD/DD, FD/FAVÖK çarpanları işlenir; gerekçeli çarpan formülleri daha az vurgulanır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-07-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes the method of comparables?",
+      "stem_tr": "Aşağıdakilerden hangisi emsal karşılaştırma yöntemini en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It values a stock by discounting its expected future dividends at the required return.",
+          "tr": "Hissenin beklenen gelecekteki temettülerini getiri beklentisiyle iskonto ederek değerler."
+        },
+        {
+          "key": "B",
+          "en": "It values a stock by comparing its multiple with the multiples of similar companies or a benchmark.",
+          "tr": "Hissenin çarpanını benzer şirketlerin çarpanlarıyla veya bir ölçütle kıyaslayarak değerler."
+        },
+        {
+          "key": "C",
+          "en": "It derives the multiple a stock should have from its payout, growth and required return.",
+          "tr": "Hissenin sahip olması gereken çarpanı dağıtım oranı, büyüme ve getiri beklentisinden türetir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The method of comparables applies the law of one price: similar assets should trade at similar multiples, so the stock's multiple is compared with a peer or benchmark multiple.",
+      "explanation_tr": "Emsal yöntemi tek fiyat yasasına dayanır: benzer varlıklar benzer çarpanlarla işlem görmelidir; bu yüzden hissenin çarpanı emsal veya ölçüt çarpanıyla kıyaslanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes a discounted cash flow (dividend discount) model, which estimates intrinsic value directly.",
+          "tr": "Bu, içsel değeri doğrudan tahmin eden indirgenmiş nakit akışı (temettü indirgeme) modelidir."
+        },
+        "C": {
+          "en": "This is the method based on forecasted fundamentals (justified multiple), not the method of comparables.",
+          "tr": "Bu, emsal yöntemi değil, tahmini temel göstergelere dayalı yöntemdir (gerekçeli çarpan)."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "comparables",
+        "multiple",
+        "benchmark",
+        "discount"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST company, Ege Boya A.Ş., is expected to pay out 40% of its earnings. Its required return on equity is 14% and its expected constant growth rate is 6%. The justified forward P/E is closest to:",
+      "stem_tr": "Kurgusal BIST şirketi Ege Boya A.Ş.'nin kârının %40'ını dağıtması bekleniyor. Özkaynak getiri beklentisi %14, beklenen sabit büyüme oranı %6'dır. Gerekçeli ileriye dönük F/K aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.0",
+          "tr": "5,0",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "5.3",
+          "tr": "5,3",
+          "value": 5.3
+        },
+        {
+          "key": "C",
+          "en": "7.5",
+          "tr": "7,5",
+          "value": 7.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Justified forward P/E = p / (r − g) = 0.40 / (0.14 − 0.06) = 0.40 / 0.08 = 5.0.",
+      "explanation_tr": "Gerekçeli ileriye dönük F/K = p / (r − g) = 0,40 / (0,14 − 0,06) = 0,40 / 0,08 = 5,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the justified trailing P/E: the (1 + g) term is added, but it belongs only to the trailing version.",
+          "tr": "Bu, gerekçeli geçmiş F/K'dır: (1 + g) terimi eklenmiş, oysa bu terim yalnızca geçmiş versiyona aittir."
+        },
+        "C": {
+          "en": "This uses the retention ratio (60%) instead of the payout ratio (40%).",
+          "tr": "Dağıtım oranı (%40) yerine kâr alıkoyma oranı (%60) kullanılmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the justified forward (leading) P/E.",
+          "tr": "İstenen: gerekçeli ileriye dönük F/K."
+        },
+        {
+          "en": "Use the Gordon growth model divided by next-year earnings: P0/E1 = p/(r − g).",
+          "tr": "Gordon büyüme modelini gelecek yılın kârına bölüyoruz: P0/E1 = p/(r − g).",
+          "formula_latex": "\\frac{P_0}{E_1}=\\frac{p}{r-g}"
+        },
+        {
+          "en": "Substitute: p = 0.40, r = 0.14, g = 0.06.",
+          "tr": "Yerine koyalım: p = 0,40, r = 0,14, g = 0,06.",
+          "values": {
+            "p": 0.4,
+            "r": 0.14,
+            "g": 0.06
+          }
+        },
+        {
+          "en": "r − g = 0.08; 0.40 / 0.08 = 5.0.",
+          "tr": "r − g = 0,08; 0,40 / 0,08 = 5,0."
+        },
+        {
+          "en": "Justified forward P/E = 5.0×.",
+          "tr": "Gerekçeli ileriye dönük F/K = 5,0x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.40 [÷]",
+          "[(] 0.14 [-] 0.06 [)]",
+          "[=] → 5"
+        ]
+      },
+      "numeric": {
+        "expr": "0.40/(0.14-0.06)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "justified-multiple",
+        "payout-ratio",
+        "required-return",
+        "forward-looking",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Kapadokya Turizm (fictional) just reported EPS of 4.00 TL and pays out 50% of earnings. Earnings and dividends are expected to grow at 5% forever, and the required return is 12%. The justified trailing P/E is closest to:",
+      "stem_tr": "Kapadokya Turizm (kurgusal) az önce 4,00 TL HBK açıkladı ve kârının %50'sini dağıtıyor. Kâr ve temettülerin sonsuza kadar %5 büyümesi bekleniyor; getiri beklentisi %12'dir. Gerekçeli geçmiş F/K aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.38",
+          "tr": "4,38",
+          "value": 4.375
+        },
+        {
+          "key": "B",
+          "en": "7.14",
+          "tr": "7,14",
+          "value": 7.142857
+        },
+        {
+          "key": "C",
+          "en": "7.50",
+          "tr": "7,50",
+          "value": 7.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Justified trailing P/E = p(1 + g)/(r − g) = 0.50 × 1.05 / 0.07 = 7.50. The EPS of 4.00 TL is not needed for the multiple itself.",
+      "explanation_tr": "Gerekçeli geçmiş F/K = p(1 + g)/(r − g) = 0,50 × 1,05 / 0,07 = 7,50. Çarpanın kendisi için 4,00 TL'lik HBK'ya gerek yoktur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides by r instead of (r − g): 0.50 × 1.05 / 0.12.",
+          "tr": "Payda (r − g) yerine r alınmıştır: 0,50 × 1,05 / 0,12."
+        },
+        "B": {
+          "en": "This is the forward formula p/(r − g); the trailing P/E needs the extra (1 + g) term.",
+          "tr": "Bu, ileriye dönük formüldür p/(r − g); geçmiş F/K fazladan (1 + g) terimi ister."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the justified trailing P/E (price ÷ current EPS).",
+          "tr": "İstenen: gerekçeli geçmiş F/K (fiyat ÷ cari HBK)."
+        },
+        {
+          "en": "P0 = D0(1 + g)/(r − g); divide by E0 → p(1 + g)/(r − g).",
+          "tr": "P0 = D0(1 + g)/(r − g); E0'a bölünce → p(1 + g)/(r − g).",
+          "formula_latex": "\\frac{P_0}{E_0}=\\frac{p(1+g)}{r-g}"
+        },
+        {
+          "en": "Substitute p = 0.50, g = 0.05, r = 0.12.",
+          "tr": "Yerine koyalım: p = 0,50, g = 0,05, r = 0,12.",
+          "values": {
+            "p": 0.5,
+            "g": 0.05,
+            "r": 0.12
+          }
+        },
+        {
+          "en": "Numerator 0.525; denominator 0.07.",
+          "tr": "Pay 0,525; payda 0,07."
+        },
+        {
+          "en": "0.525 / 0.07 = 7.50×.",
+          "tr": "0,525 / 0,07 = 7,50x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.50 [×] 1.05 [=]",
+          "[÷] [(] 0.12 [-] 0.05 [)]",
+          "[=] → 7.5"
+        ]
+      },
+      "numeric": {
+        "expr": "0.50*1.05/(0.12-0.05)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "justified-multiple",
+        "trailing",
+        "payout-ratio",
+        "assume",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Trakya Enerji (fictional) trades at a P/E of 8, while the median P/E of its peer group is 12. Using only the method of comparables, the most appropriate conclusion is that Trakya Enerji is:",
+      "stem_tr": "Trakya Enerji (kurgusal) 8 F/K ile işlem görürken emsal grubunun medyan F/K'sı 12'dir. Yalnızca emsal yöntemini kullanarak varılabilecek en uygun sonuç, Trakya Enerji'nin:",
+      "options": [
+        {
+          "key": "A",
+          "en": "undervalued in absolute terms, so its price is below its intrinsic value.",
+          "tr": "mutlak anlamda düşük değerlendiği, yani fiyatının içsel değerinin altında olduğudur."
+        },
+        {
+          "key": "B",
+          "en": "overvalued, because a low P/E always signals low expected growth.",
+          "tr": "yüksek değerlendiği, çünkü düşük F/K her zaman düşük büyüme beklentisini gösterir."
+        },
+        {
+          "key": "C",
+          "en": "relatively undervalued, although this says nothing about whether the peer group itself is fairly priced.",
+          "tr": "göreli olarak düşük değerlendiği, ancak bunun emsal grubunun kendisinin doğru fiyatlanıp fiyatlanmadığı hakkında bir şey söylemediğidir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Under the method of comparables, a multiple below the benchmark suggests relative undervaluation. The method cannot tell whether the benchmark itself is right, so the conclusion is relative, not absolute.",
+      "explanation_tr": "Emsal yönteminde ölçütün altındaki bir çarpan göreli düşük değerlemeye işaret eder. Yöntem ölçütün kendisinin doğru olup olmadığını söyleyemez; bu yüzden sonuç mutlak değil, görelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Comparables give a relative conclusion; if the whole peer group is overpriced, the stock can still be above intrinsic value.",
+          "tr": "Emsal yöntemi göreli bir sonuç verir; emsal grubunun tamamı pahalıysa hisse yine içsel değerinin üzerinde olabilir."
+        },
+        "B": {
+          "en": "A low P/E may reflect lower growth or higher risk, but 'always' is too strong, and it does not make the stock overvalued.",
+          "tr": "Düşük F/K daha düşük büyümeyi veya daha yüksek riski yansıtabilir; ancak 'her zaman' ifadesi fazla güçlüdür ve hisseyi yüksek değerlenmiş yapmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "comparables",
+        "undervalued",
+        "relative",
+        "intrinsic-value",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst values Doğu Bankası (fictional) with the forecasted fundamentals approach. Expected ROE is 18%, required return is 13% and long-term growth is 8%. Book value per share is 25 TL. The justified price per share is closest to:",
+      "stem_tr": "Bir analist Doğu Bankası'nı (kurgusal) tahmini temel göstergeler yöntemiyle değerliyor. Beklenen ROE %18, getiri beklentisi %13, uzun vadeli büyüme %8'dir. Hisse başına defter değeri 25 TL'dir. Gerekçeli hisse fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "34.6 TL",
+          "tr": "34,6 TL",
+          "value": 34.615
+        },
+        {
+          "key": "B",
+          "en": "50.0 TL",
+          "tr": "50,0 TL",
+          "value": 50.0
+        },
+        {
+          "key": "C",
+          "en": "90.0 TL",
+          "tr": "90,0 TL",
+          "value": 90.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Justified P/B = (ROE − g)/(r − g) = (0.18 − 0.08)/(0.13 − 0.08) = 2.0. Justified price = 2.0 × 25 = 50 TL.",
+      "explanation_tr": "Gerekçeli PD/DD = (ROE − g)/(r − g) = (0,18 − 0,08)/(0,13 − 0,08) = 2,0. Gerekçeli fiyat = 2,0 × 25 = 50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses ROE/r × book value (18/13 × 25) and ignores growth.",
+          "tr": "ROE/r × defter değeri (18/13 × 25) kullanılmış, büyüme dikkate alınmamıştır."
+        },
+        "C": {
+          "en": "This forgets to subtract g in the numerator: ROE/(r − g) = 0.18/0.05 = 3.6.",
+          "tr": "Payda g çıkarılmamış: ROE/(r − g) = 0,18/0,05 = 3,6 alınmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the justified price, using a justified P/B.",
+          "tr": "İstenen: gerekçeli PD/DD üzerinden gerekçeli fiyat."
+        },
+        {
+          "en": "Justified P/B = (ROE − g)/(r − g); price = P/B × book value per share.",
+          "tr": "Gerekçeli PD/DD = (ROE − g)/(r − g); fiyat = PD/DD × hisse başına defter değeri.",
+          "formula_latex": "\\frac{P_0}{B_0}=\\frac{ROE-g}{r-g}"
+        },
+        {
+          "en": "Substitute ROE = 0.18, g = 0.08, r = 0.13.",
+          "tr": "Yerine koyalım: ROE = 0,18, g = 0,08, r = 0,13.",
+          "values": {
+            "ROE": 0.18,
+            "g": 0.08,
+            "r": 0.13,
+            "B0": 25
+          }
+        },
+        {
+          "en": "(0.10)/(0.05) = 2.0×.",
+          "tr": "(0,10)/(0,05) = 2,0x."
+        },
+        {
+          "en": "Price = 2.0 × 25 = 50 TL.",
+          "tr": "Fiyat = 2,0 × 25 = 50 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[(] 0.18 [-] 0.08 [)]",
+          "[÷] [(] 0.13 [-] 0.08 [)]",
+          "[×] 25 [=] → 50"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.18-0.08)/(0.13-0.08)*25",
+        "unit": "TL"
+      },
+      "vocab_ids": [
+        "justified-multiple",
+        "book-value",
+        "return-on-equity",
+        "required-return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A fast-growing online retailer has positive and rising sales but has reported net losses for three years. Which multiple is most appropriate for comparing it with peers?",
+      "stem_tr": "Hızla büyüyen bir çevrim içi perakendeci pozitif ve artan satışlara sahip, ancak üç yıldır net zarar açıklıyor. Emsallerle kıyaslamak için en uygun çarpan hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Price-to-earnings (P/E)",
+          "tr": "Fiyat/kazanç (F/K)"
+        },
+        {
+          "key": "B",
+          "en": "Price-to-book (P/B)",
+          "tr": "Piyasa değeri/defter değeri (PD/DD)"
+        },
+        {
+          "key": "C",
+          "en": "Price-to-sales (P/S)",
+          "tr": "Fiyat/satış (F/S)"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Sales are positive even when earnings are negative, so P/S remains meaningful. P/S is commonly used for loss-making or early-stage companies, keeping in mind that it ignores margins.",
+      "explanation_tr": "Kâr negatifken bile satışlar pozitiftir; bu yüzden F/S anlamlı kalır. F/S, marjları dikkate almadığı unutulmadan, zarar eden veya erken aşamadaki şirketlerde yaygın olarak kullanılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With negative EPS, the P/E is negative and has no useful meaning for comparison.",
+          "tr": "HBK negatif olduğunda F/K negatif çıkar ve kıyaslama için anlamlı değildir."
+        },
+        "B": {
+          "en": "An online retailer has few tangible assets; book value poorly reflects its value-creating resources.",
+          "tr": "Çevrim içi perakendecinin maddi varlığı azdır; defter değeri değer yaratan kaynaklarını zayıf yansıtır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "multiple",
+        "net-loss",
+        "peer-group",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Marmara Gıda (fictional) has 400 million shares trading at 24 TL. It has total debt of 3,200 million TL and cash of 800 million TL; there is no preferred stock or non-controlling interest. EBITDA is 2,000 million TL. The EV/EBITDA multiple is closest to:",
+      "stem_tr": "Marmara Gıda'nın (kurgusal) 400 milyon payı 24 TL'den işlem görüyor. Toplam borcu 3.200 milyon TL, nakdi 800 milyon TL'dir; imtiyazlı pay veya kontrol gücü olmayan pay yoktur. FAVÖK 2.000 milyon TL'dir. FD/FAVÖK çarpanı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.8×",
+          "tr": "4,8x",
+          "value": 4.8
+        },
+        {
+          "key": "B",
+          "en": "6.0×",
+          "tr": "6,0x",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "6.8×",
+          "tr": "6,8x",
+          "value": 6.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Market cap = 400 × 24 = 9,600 million TL. EV = 9,600 + 3,200 − 800 = 12,000. EV/EBITDA = 12,000 / 2,000 = 6.0×.",
+      "explanation_tr": "Piyasa değeri = 400 × 24 = 9.600 milyon TL. FD = 9.600 + 3.200 − 800 = 12.000. FD/FAVÖK = 12.000 / 2.000 = 6,0x.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses only market capitalization (9,600) instead of enterprise value.",
+          "tr": "Firma değeri yerine yalnızca piyasa değeri (9.600) kullanılmıştır."
+        },
+        "C": {
+          "en": "Cash was added instead of subtracted: (9,600 + 3,200 + 800)/2,000.",
+          "tr": "Nakit düşülmek yerine eklenmiştir: (9.600 + 3.200 + 800)/2.000."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need EV/EBITDA.",
+          "tr": "İstenen: FD/FAVÖK."
+        },
+        {
+          "en": "EV = market cap + debt − cash (no preferred or NCI here).",
+          "tr": "FD = piyasa değeri + borç − nakit (burada imtiyazlı pay veya KGOP yok).",
+          "formula_latex": "EV=MC+D-C"
+        },
+        {
+          "en": "Market cap = 400 × 24 = 9,600 million TL.",
+          "tr": "Piyasa değeri = 400 × 24 = 9.600 milyon TL.",
+          "values": {
+            "MC": 9600,
+            "D": 3200,
+            "C": 800,
+            "EBITDA": 2000
+          }
+        },
+        {
+          "en": "EV = 9,600 + 3,200 − 800 = 12,000 million TL.",
+          "tr": "FD = 9.600 + 3.200 − 800 = 12.000 milyon TL."
+        },
+        {
+          "en": "EV/EBITDA = 12,000 / 2,000 = 6.0×.",
+          "tr": "FD/FAVÖK = 12.000 / 2.000 = 6,0x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "400 [×] 24 [=]",
+          "[+] 3200 [-] 800 [=]",
+          "[÷] 2000 [=] → 6"
+        ]
+      },
+      "numeric": {
+        "expr": "(400*24+3200-800)/2000",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "enterprise-value",
+        "ebitda",
+        "market-capitalization",
+        "preferred-stock",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Karadeniz Holding (fictional) shares trade at 45 TL. Equity attributable to owners of the parent is 6,000 million TL, non-controlling interest is 500 million TL and total assets are 15,000 million TL. There are 200 million shares. The P/B ratio is closest to:",
+      "stem_tr": "Karadeniz Holding (kurgusal) payları 45 TL'den işlem görüyor. Ana ortaklığa ait özkaynaklar 6.000 milyon TL, kontrol gücü olmayan paylar 500 milyon TL, toplam varlıklar 15.000 milyon TL'dir. Pay sayısı 200 milyondur. PD/DD oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.60",
+          "tr": "0,60",
+          "value": 0.6
+        },
+        {
+          "key": "B",
+          "en": "1.38",
+          "tr": "1,38",
+          "value": 1.3846
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Book value per share = 6,000 / 200 = 30 TL. P/B = 45 / 30 = 1.50.",
+      "explanation_tr": "Hisse başına defter değeri = 6.000 / 200 = 30 TL. PD/DD = 45 / 30 = 1,50.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Total assets were used instead of equity; P/B uses the book value of equity.",
+          "tr": "Özkaynak yerine toplam varlıklar kullanılmış; PD/DD özkaynağın defter değerini kullanır."
+        },
+        "B": {
+          "en": "Non-controlling interest was included in book value; it does not belong to the parent's shareholders.",
+          "tr": "Kontrol gücü olmayan paylar defter değerine katılmış; bunlar ana ortaklık pay sahiplerine ait değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need P/B per share.",
+          "tr": "İstenen: hisse başına PD/DD."
+        },
+        {
+          "en": "P/B = price ÷ book value per share; book value = equity attributable to parent.",
+          "tr": "PD/DD = fiyat ÷ hisse başına defter değeri; defter değeri = ana ortaklığa ait özkaynak.",
+          "formula_latex": "P/B=\\frac{P}{BVPS}"
+        },
+        {
+          "en": "BVPS = 6,000 / 200 = 30 TL.",
+          "tr": "HBDD = 6.000 / 200 = 30 TL.",
+          "values": {
+            "P": 45,
+            "Equity": 6000,
+            "Shares": 200
+          }
+        },
+        {
+          "en": "45 / 30 = 1.50.",
+          "tr": "45 / 30 = 1,50."
+        },
+        {
+          "en": "P/B = 1.50×.",
+          "tr": "PD/DD = 1,50x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6000 [÷] 200 [=]",
+          "[1/x] [×] 45 [=] → 1.5"
+        ]
+      },
+      "numeric": {
+        "expr": "45/(6000/200)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "book-value",
+        "non-controlling-interest",
+        "attributable",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares two fictional steel producers. Çelik-A has almost no debt, while Çelik-B is financed mainly with bank loans. Why is EV/EBITDA most likely preferred to P/E for this comparison?",
+      "stem_tr": "Bir analist iki kurgusal çelik üreticisini kıyaslıyor. Çelik-A'nın neredeyse hiç borcu yok, Çelik-B ise ağırlıkla banka kredisiyle finanse ediliyor. Bu kıyaslamada FD/FAVÖK neden büyük olasılıkla F/K'ya tercih edilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "EBITDA is measured after interest, so EV/EBITDA captures the extra financial risk of Çelik-B.",
+          "tr": "FAVÖK faiz sonrası ölçülür; bu yüzden FD/FAVÖK Çelik-B'nin ek finansal riskini yakalar."
+        },
+        {
+          "key": "B",
+          "en": "EBITDA is measured before interest, so EV/EBITDA is less affected by differences in capital structure.",
+          "tr": "FAVÖK faiz öncesi ölçülür; bu yüzden FD/FAVÖK sermaye yapısı farklılıklarından daha az etkilenir."
+        },
+        {
+          "key": "C",
+          "en": "EBITDA equals free cash flow to equity, so EV/EBITDA is a direct measure of value per share.",
+          "tr": "FAVÖK özkaynağa serbest nakit akışına eşittir; bu yüzden FD/FAVÖK hisse başına değerin doğrudan ölçüsüdür."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "P/E is affected by interest expense and therefore by leverage. EV includes debt and EBITDA is before interest, so EV/EBITDA compares companies with different debt levels on a more equal basis.",
+      "explanation_tr": "F/K faiz giderinden, dolayısıyla kaldıraçtan etkilenir. FD borcu içerir ve FAVÖK faiz öncesidir; bu yüzden FD/FAVÖK farklı borçluluktaki şirketleri daha eşit bir zeminde kıyaslar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "EBITDA is before interest, not after; that is exactly why it is capital-structure neutral.",
+          "tr": "FAVÖK faiz sonrası değil, faiz öncesidir; sermaye yapısından bağımsız olmasının nedeni de budur."
+        },
+        "C": {
+          "en": "EBITDA ignores capex, working capital, interest and taxes, so it is not FCFE; and EV is firm value, not equity value per share.",
+          "tr": "FAVÖK yatırım harcamalarını, işletme sermayesini, faizi ve vergiyi dikkate almaz; yani ÖSNA değildir. FD de hisse başına özkaynak değeri değil, firma değeridir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "ebitda",
+        "capital-structure",
+        "leverage",
+        "most-likely",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Sakarya Lastik (fictional) trades at 36 TL. Net income is 900 million TL and depreciation and amortization is 300 million TL. There are 150 million shares. Using cash flow defined as net income plus non-cash charges, the P/CF ratio is closest to:",
+      "stem_tr": "Sakarya Lastik (kurgusal) 36 TL'den işlem görüyor. Net kâr 900 milyon TL, amortisman ve itfa payları 300 milyon TL'dir. Pay sayısı 150 milyondur. Nakit akışı net kâr artı nakit dışı giderler olarak tanımlandığında F/NA oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.5",
+          "tr": "4,5",
+          "value": 4.5
+        },
+        {
+          "key": "B",
+          "en": "6.0",
+          "tr": "6,0",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "9.0",
+          "tr": "9,0",
+          "value": 9.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cash flow per share = (900 + 300)/150 = 8.00 TL. P/CF = 36 / 8.00 = 4.5.",
+      "explanation_tr": "Hisse başına nakit akışı = (900 + 300)/150 = 8,00 TL. F/NA = 36 / 8,00 = 4,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the P/E (36 / 6.00); depreciation was not added back.",
+          "tr": "Bu, F/K'dır (36 / 6,00); amortisman geri eklenmemiştir."
+        },
+        "C": {
+          "en": "Depreciation was subtracted instead of added: (900 − 300)/150 = 4.00 TL.",
+          "tr": "Amortisman eklenmek yerine çıkarılmıştır: (900 − 300)/150 = 4,00 TL."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need P/CF.",
+          "tr": "İstenen: F/NA."
+        },
+        {
+          "en": "CF per share = (net income + non-cash charges)/shares; P/CF = price ÷ CF per share.",
+          "tr": "Hisse başına NA = (net kâr + nakit dışı giderler)/pay sayısı; F/NA = fiyat ÷ hisse başına NA.",
+          "formula_latex": "P/CF=\\frac{P}{(NI+D\\&A)/n}"
+        },
+        {
+          "en": "Substitute NI = 900, D&A = 300, n = 150.",
+          "tr": "Yerine koyalım: NK = 900, A&İ = 300, n = 150.",
+          "values": {
+            "NI": 900,
+            "DA": 300,
+            "n": 150,
+            "P": 36
+          }
+        },
+        {
+          "en": "CF per share = 1,200 / 150 = 8.00 TL.",
+          "tr": "Hisse başına NA = 1.200 / 150 = 8,00 TL."
+        },
+        {
+          "en": "P/CF = 36 / 8 = 4.5×.",
+          "tr": "F/NA = 36 / 8 = 4,5x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900 [+] 300 [=]",
+          "[÷] 150 [=]",
+          "[1/x] [×] 36 [=] → 4.5"
+        ]
+      },
+      "numeric": {
+        "expr": "36/((900+300)/150)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "cash-flow",
+        "depreciation",
+        "non-cash",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q06",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "The median EV/EBITDA of peers of Akdeniz Lojistik (fictional) is 7.0×. Akdeniz Lojistik's EBITDA is 1,500 million TL, its net debt is 2,000 million TL and it has 250 million shares. The implied value per share is closest to:",
+      "stem_tr": "Akdeniz Lojistik'in (kurgusal) emsallerinin medyan FD/FAVÖK'ü 7,0x'tir. Şirketin FAVÖK'ü 1.500 milyon TL, net borcu 2.000 milyon TL, pay sayısı 250 milyondur. İma edilen hisse başına değer aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "34 TL",
+          "tr": "34 TL",
+          "value": 34.0
+        },
+        {
+          "key": "B",
+          "en": "42 TL",
+          "tr": "42 TL",
+          "value": 42.0
+        },
+        {
+          "key": "C",
+          "en": "50 TL",
+          "tr": "50 TL",
+          "value": 50.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Implied EV = 7.0 × 1,500 = 10,500 million TL. Equity value = 10,500 − 2,000 = 8,500. Per share = 8,500 / 250 = 34 TL.",
+      "explanation_tr": "İma edilen FD = 7,0 × 1.500 = 10.500 milyon TL. Özkaynak değeri = 10.500 − 2.000 = 8.500. Hisse başına = 8.500 / 250 = 34 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Enterprise value was divided by shares without subtracting net debt.",
+          "tr": "Firma değeri net borç düşülmeden pay sayısına bölünmüştür."
+        },
+        "C": {
+          "en": "Net debt was added to EV instead of subtracted.",
+          "tr": "Net borç firma değerinden düşülmek yerine eklenmiştir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the implied equity value per share.",
+          "tr": "İstenen: ima edilen hisse başına özkaynak değeri."
+        },
+        {
+          "en": "Implied EV = peer EV/EBITDA × company EBITDA; equity = EV − net debt.",
+          "tr": "İma edilen FD = emsal FD/FAVÖK × şirket FAVÖK'ü; özkaynak = FD − net borç.",
+          "formula_latex": "V_E = m\\times EBITDA - ND"
+        },
+        {
+          "en": "Substitute m = 7.0, EBITDA = 1,500, ND = 2,000, n = 250.",
+          "tr": "Yerine koyalım: m = 7,0, FAVÖK = 1.500, NB = 2.000, n = 250.",
+          "values": {
+            "m": 7.0,
+            "EBITDA": 1500,
+            "ND": 2000,
+            "n": 250
+          }
+        },
+        {
+          "en": "EV = 10,500; equity = 8,500 million TL.",
+          "tr": "FD = 10.500; özkaynak = 8.500 milyon TL."
+        },
+        {
+          "en": "Per share = 8,500 / 250 = 34 TL.",
+          "tr": "Hisse başına = 8.500 / 250 = 34 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "7 [×] 1500 [=]",
+          "[-] 2000 [=]",
+          "[÷] 250 [=] → 34"
+        ]
+      },
+      "numeric": {
+        "expr": "(7.0*1500-2000)/250",
+        "unit": "TL"
+      },
+      "vocab_ids": [
+        "implied-value",
+        "net-debt",
+        "enterprise-value",
+        "median",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-b-q07",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "P/B is least likely to be a useful valuation multiple for:",
+      "stem_tr": "PD/DD'nin faydalı bir değerleme çarpanı olma olasılığı en düşük olan şirket hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a commercial bank whose assets are mostly loans and securities.",
+          "tr": "varlıklarının çoğu kredi ve menkul kıymetlerden oluşan bir ticari banka."
+        },
+        {
+          "key": "B",
+          "en": "an insurance company that holds a large bond portfolio.",
+          "tr": "büyük bir tahvil portföyü tutan bir sigorta şirketi."
+        },
+        {
+          "key": "C",
+          "en": "a software company whose main resources are internally developed programs and skilled staff.",
+          "tr": "ana kaynakları kendi geliştirdiği yazılımlar ve nitelikli çalışanlar olan bir yazılım şirketi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Internally developed intangibles and human capital are mostly not on the balance sheet, so book value understates the resources of a software company. P/B works best for asset-heavy and financial firms.",
+      "explanation_tr": "Şirket içinde geliştirilen maddi olmayan varlıklar ve insan sermayesi çoğunlukla bilançoda yer almaz; bu yüzden defter değeri bir yazılım şirketinin kaynaklarını olduğundan düşük gösterir. PD/DD varlık yoğun ve finansal şirketlerde en iyi sonucu verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Bank assets are largely financial and often close to market value, so book value is meaningful.",
+          "tr": "Banka varlıkları büyük ölçüde finansaldır ve çoğu zaman piyasa değerine yakındır; bu yüzden defter değeri anlamlıdır."
+        },
+        "B": {
+          "en": "Insurers, like banks, hold mostly financial assets, which makes P/B one of the main multiples.",
+          "tr": "Sigortacılar da bankalar gibi ağırlıkla finansal varlık tutar; bu da PD/DD'yi temel çarpanlardan biri yapar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "book-value",
+        "intangible",
+        "least-likely",
+        "understate"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-c-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Industry classification systems such as GICS and ICB most likely assign a company to a group based on its:",
+      "stem_tr": "GICS ve ICB gibi sektör sınıflandırma sistemleri bir şirketi büyük olasılıkla neye göre bir gruba atar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "principal business activity, usually its main source of revenue.",
+          "tr": "ana faaliyetine, genellikle temel gelir kaynağına."
+        },
+        {
+          "key": "B",
+          "en": "historical share price volatility.",
+          "tr": "geçmiş hisse fiyatı oynaklığına."
+        },
+        {
+          "key": "C",
+          "en": "market capitalization relative to the index.",
+          "tr": "endekse göre piyasa değerine."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "These systems classify companies by what they mainly do, typically measured by the share of revenue (and often earnings) from each activity.",
+      "explanation_tr": "Bu sistemler şirketleri asıl ne yaptıklarına göre, genellikle her faaliyetten gelen hasılat (çoğu zaman da kâr) payıyla ölçerek sınıflandırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Volatility is a risk statistic; it is not used to assign industry codes.",
+          "tr": "Oynaklık bir risk istatistiğidir; sektör kodu atamak için kullanılmaz."
+        },
+        "C": {
+          "en": "Size is used for size indices, not for industry classification.",
+          "tr": "Büyüklük, sektör sınıflandırması için değil, büyüklük endeksleri için kullanılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "industry-classification",
+        "principal",
+        "revenue",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-c-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using common return drivers rather than an industry classification, which pair of fictional BIST companies is most likely to be placed in the same peer group?",
+      "stem_tr": "Sektör sınıflandırması yerine ortak getiri belirleyicileri kullanıldığında, aşağıdaki kurgusal BIST şirketi çiftlerinden hangisinin aynı emsal grubuna konma olasılığı en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Two companies that use the same audit firm.",
+          "tr": "Aynı bağımsız denetim şirketiyle çalışan iki şirket."
+        },
+        {
+          "key": "B",
+          "en": "A resort hotel operator and an airport duty-free retailer, both driven mainly by foreign tourist arrivals.",
+          "tr": "Her ikisi de ağırlıkla yabancı turist sayısına bağlı bir tatil oteli işletmecisi ile bir havalimanı gümrüksüz satış perakendecisi."
+        },
+        {
+          "key": "C",
+          "en": "Two companies with the same GICS sub-industry code but very different customers and exposures.",
+          "tr": "Aynı GICS alt sektör kodunu taşıyan ama müşterileri ve maruziyetleri çok farklı iki şirket."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Common return drivers are the economic factors that move a company's results and returns. The hotel and duty-free retailer belong to different classifications but share the same main driver: tourism demand.",
+      "explanation_tr": "Ortak getiri belirleyicileri, şirketin sonuçlarını ve getirilerini hareket ettiren ekonomik etkenlerdir. Otel ve gümrüksüz satış perakendecisi farklı sınıflarda olsa da aynı temel belirleyiciyi paylaşır: turizm talebi.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Sharing an auditor does not mean their returns respond to the same economic factors.",
+          "tr": "Aynı denetçiyi kullanmak getirilerinin aynı ekonomik etkenlere tepki verdiği anlamına gelmez."
+        },
+        "C": {
+          "en": "This is grouping by industry classification, and the different exposures mean their return drivers differ.",
+          "tr": "Bu, sektör sınıflandırmasına göre gruplamadır; farklı maruziyetler getiri belirleyicilerinin de farklı olduğunu gösterir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "return-driver",
+        "peer-group",
+        "exposure",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-c-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Five peers of Anadolu Çimento (fictional) have P/E ratios of 8, 9, 10, 11 and 45. The last one has temporarily depressed earnings. The median P/E of the peer group is closest to:",
+      "stem_tr": "Anadolu Çimento'nun (kurgusal) beş emsalinin F/K oranları 8, 9, 10, 11 ve 45'tir. Sonuncusunun kârı geçici olarak düşmüştür. Emsal grubunun medyan F/K'sı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.0",
+          "tr": "10,0",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "11.1",
+          "tr": "11,1",
+          "value": 11.13
+        },
+        {
+          "key": "C",
+          "en": "16.6",
+          "tr": "16,6",
+          "value": 16.6
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Sorted values are 8, 9, 10, 11, 45; the middle value is 10. The median is not affected by the size of the outlier, so it is the preferred peer benchmark here.",
+      "explanation_tr": "Sıralı değerler 8, 9, 10, 11, 45'tir; ortadaki değer 10'dur. Medyan uç değerin büyüklüğünden etkilenmez; bu yüzden burada tercih edilen emsal ölçütüdür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the harmonic mean, which reduces but does not remove the effect of the outlier.",
+          "tr": "Bu harmonik ortalamadır; uç değerin etkisini azaltır ama ortadan kaldırmaz."
+        },
+        "C": {
+          "en": "This is the arithmetic mean, which is pulled up strongly by the outlier of 45.",
+          "tr": "Bu aritmetik ortalamadır ve 45'lik uç değer tarafından güçlü biçimde yukarı çekilir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the median of five P/E values.",
+          "tr": "İstenen: beş F/K değerinin medyanı."
+        },
+        {
+          "en": "Median = middle value of the sorted list (n odd).",
+          "tr": "Medyan = sıralı listenin ortadaki değeri (n tek).",
+          "formula_latex": "\\text{Median}=x_{((n+1)/2)}"
+        },
+        {
+          "en": "Sorted list: 8, 9, 10, 11, 45.",
+          "tr": "Sıralı liste: 8, 9, 10, 11, 45.",
+          "values": {
+            "n": 5
+          }
+        },
+        {
+          "en": "Position (5 + 1)/2 = 3 → value 10.",
+          "tr": "Sıra (5 + 1)/2 = 3 → değer 10."
+        },
+        {
+          "en": "Median P/E = 10.0×.",
+          "tr": "Medyan F/K = 10,0x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "Sort the data by hand: 8, 9, 10, 11, 45",
+          "Pick the 3rd value → 10"
+        ],
+        "note_tr": "Medyan için hesap makinesi gerekmez; [2ND] [7] DATA ile ortalamayı kontrol edebilirsiniz."
+      },
+      "numeric": {
+        "expr": "sorted([8,9,10,11,45])[2]",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "median",
+        "outlier",
+        "temporarily",
+        "depressed",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-c-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT a reason why two companies with the same industry classification may be poor comparables?",
+      "stem_tr": "Aşağıdakilerden hangisi aynı sektör sınıflandırmasındaki iki şirketin kötü emsal olabilmesinin nedenlerinden biri DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They have different product mixes and customer groups.",
+          "tr": "Ürün karmalarının ve müşteri gruplarının farklı olması."
+        },
+        {
+          "key": "B",
+          "en": "They are both classified by their principal business activity.",
+          "tr": "İkisinin de ana faaliyetlerine göre sınıflandırılmış olması."
+        },
+        {
+          "key": "C",
+          "en": "One is a young high-growth firm and the other is mature.",
+          "tr": "Birinin genç ve hızlı büyüyen, diğerinin olgun bir şirket olması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Being classified by principal business activity is simply how the system works; it is not a source of poor comparability. Differences in business mix, growth, size or risk are.",
+      "explanation_tr": "Ana faaliyete göre sınıflandırılmak sistemin işleyiş biçimidir; zayıf karşılaştırılabilirliğin kaynağı değildir. İş karması, büyüme, büyüklük veya risk farklılıkları ise kaynaktır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Different business mix is a real reason for weak comparability.",
+          "tr": "Farklı iş karması, karşılaştırılabilirliği zayıflatan gerçek bir nedendir."
+        },
+        "C": {
+          "en": "Different growth and life-cycle stages lead to different justified multiples.",
+          "tr": "Farklı büyüme ve yaşam döngüsü aşamaları farklı gerekçeli çarpanlara yol açar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "industry-classification",
+        "comparables",
+        "principal",
+        "mature"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-c-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Ege Yatırım Holding (fictional) earns 55% of its revenue from food retail, 30% from electricity generation and 15% from banking. When valuing it with multiples, the most appropriate approach to peer selection is to:",
+      "stem_tr": "Ege Yatırım Holding (kurgusal) gelirinin %55'ini gıda perakendesinden, %30'unu elektrik üretiminden, %15'ini bankacılıktan elde ediyor. Çarpanlarla değerlerken emsal seçiminde en uygun yaklaşım:",
+      "options": [
+        {
+          "key": "A",
+          "en": "use only food retailers, because the principal activity determines the classification.",
+          "tr": "yalnızca gıda perakendecilerini kullanmaktır; çünkü sınıflandırmayı ana faaliyet belirler."
+        },
+        {
+          "key": "B",
+          "en": "use the BIST 100 median P/E, because it contains all three industries.",
+          "tr": "BIST 100 medyan F/K'sını kullanmaktır; çünkü üç sektörü de içerir."
+        },
+        {
+          "key": "C",
+          "en": "value each segment against its own peers and add up the parts, since no single peer group fits the whole company.",
+          "tr": "her bölümü kendi emsalleriyle değerleyip parçaları toplamaktır; çünkü tek bir emsal grubu şirketin tamamına uymaz."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "For a diversified company, a sum-of-the-parts approach lets each segment be valued with an appropriate peer multiple (e.g., P/B for banking, EV/EBITDA for energy), giving a more reliable total.",
+      "explanation_tr": "Çeşitlendirilmiş bir şirkette parçaların toplamı yaklaşımı, her bölümü uygun bir emsal çarpanıyla (ör. bankacılık için PD/DD, enerji için FD/FAVÖK) değerlemeye ve daha güvenilir bir toplama ulaşmaya imkân verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The classification may be retail, but 45% of revenue comes from businesses with very different multiples, so retail peers alone would misvalue the company.",
+          "tr": "Sınıflandırma perakende olabilir; ancak gelirin %45'i çok farklı çarpanlara sahip işlerden gelir, yani yalnızca perakende emsalleri şirketi yanlış değerler."
+        },
+        "B": {
+          "en": "A broad market index mixes many unrelated businesses and does not reflect this company's specific mix.",
+          "tr": "Geniş bir piyasa endeksi birbiriyle ilgisiz birçok işi karıştırır ve bu şirketin özgün karmasını yansıtmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "segment",
+        "peer-group",
+        "diversified",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A forward (leading) P/E is calculated by dividing the current share price by:",
+      "stem_tr": "İleriye dönük F/K, cari hisse fiyatı aşağıdakilerden hangisine bölünerek hesaplanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "expected EPS for the next four quarters or the next fiscal year.",
+          "tr": "önümüzdeki dört çeyrek veya gelecek mali yıl için beklenen HBK'ya."
+        },
+        {
+          "key": "B",
+          "en": "EPS of the last four reported quarters.",
+          "tr": "son dört raporlanmış çeyreğin HBK'sına."
+        },
+        {
+          "key": "C",
+          "en": "the average EPS of the last five years.",
+          "tr": "son beş yılın ortalama HBK'sına."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The forward P/E uses forecast earnings for the coming year; the trailing P/E uses reported earnings of the past year.",
+      "explanation_tr": "İleriye dönük F/K gelecek yıl için tahmini kârı, geçmiş F/K ise geçen yılın raporlanmış kârını kullanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the trailing P/E.",
+          "tr": "Bu, geçmiş (trailing) F/K'dır."
+        },
+        "C": {
+          "en": "This is a normalized (average) earnings measure, not the forward P/E.",
+          "tr": "Bu, normalleştirilmiş (ortalama) bir kâr ölçüsüdür; ileriye dönük F/K değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-looking",
+        "trailing",
+        "fiscal-year",
+        "expected"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bursa Tekstil (fictional) trades at 60 TL. Its quarterly EPS for the last four quarters was 1.10, 1.30, 1.20 and 1.40 TL (most recent last). Analysts expect EPS of 6.00 TL for the next year. The trailing P/E is closest to:",
+      "stem_tr": "Bursa Tekstil (kurgusal) 60 TL'den işlem görüyor. Son dört çeyrekte HBK sırasıyla 1,10, 1,30, 1,20 ve 1,40 TL oldu (en son çeyrek sonda). Analistler gelecek yıl için 6,00 TL HBK bekliyor. Geçmiş F/K aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.0",
+          "tr": "10,0",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "10.7",
+          "tr": "10,7",
+          "value": 10.714
+        },
+        {
+          "key": "C",
+          "en": "12.0",
+          "tr": "12,0",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Trailing EPS = 1.10 + 1.30 + 1.20 + 1.40 = 5.00 TL. Trailing P/E = 60 / 5.00 = 12.0.",
+      "explanation_tr": "Geçmiş HBK = 1,10 + 1,30 + 1,20 + 1,40 = 5,00 TL. Geçmiş F/K = 60 / 5,00 = 12,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the forward P/E using expected EPS of 6.00.",
+          "tr": "Beklenen 6,00 HBK ile hesaplanan ileriye dönük F/K'dır."
+        },
+        "B": {
+          "en": "This annualizes only the latest quarter (1.40 × 4 = 5.60).",
+          "tr": "Yalnızca son çeyrek yıllıklandırılmıştır (1,40 × 4 = 5,60)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the trailing P/E.",
+          "tr": "İstenen: geçmiş F/K."
+        },
+        {
+          "en": "Trailing EPS = sum of the last four quarters; P/E = price ÷ trailing EPS.",
+          "tr": "Geçmiş HBK = son dört çeyreğin toplamı; F/K = fiyat ÷ geçmiş HBK.",
+          "formula_latex": "P/E_{trailing}=\\frac{P_0}{\\sum_{q=1}^{4}EPS_q}"
+        },
+        {
+          "en": "Add the quarters: 1.10 + 1.30 + 1.20 + 1.40.",
+          "tr": "Çeyrekleri toplayalım: 1,10 + 1,30 + 1,20 + 1,40.",
+          "values": {
+            "P0": 60
+          }
+        },
+        {
+          "en": "Trailing EPS = 5.00 TL.",
+          "tr": "Geçmiş HBK = 5,00 TL."
+        },
+        {
+          "en": "P/E = 60 / 5.00 = 12.0×.",
+          "tr": "F/K = 60 / 5,00 = 12,0x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.1 [+] 1.3 [+] 1.2 [+] 1.4 [=]",
+          "[1/x] [×] 60 [=] → 12"
+        ]
+      },
+      "numeric": {
+        "expr": "60/(1.10+1.30+1.20+1.40)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "trailing",
+        "quarter",
+        "annualize",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, for a company whose earnings are expected to grow strongly next year, the forward P/E compared with the trailing P/E is most likely:",
+      "stem_tr": "Diğer her şey sabitken, gelecek yıl kârının güçlü büyümesi beklenen bir şirkette ileriye dönük F/K, geçmiş F/K'ya kıyasla büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher.",
+          "tr": "daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "the same, because both use the same share price.",
+          "tr": "aynıdır; çünkü ikisi de aynı hisse fiyatını kullanır."
+        },
+        {
+          "key": "C",
+          "en": "lower.",
+          "tr": "daha düşüktür."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Same price, larger expected EPS → smaller ratio. With growth g, forward P/E ≈ trailing P/E / (1 + g).",
+      "explanation_tr": "Aynı fiyat, daha büyük beklenen HBK → daha küçük oran. Büyüme g ise ileriye dönük F/K ≈ geçmiş F/K / (1 + g).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher forecast earnings make the denominator larger, so the forward P/E falls, not rises.",
+          "tr": "Daha yüksek tahmini kâr paydayı büyütür; bu yüzden ileriye dönük F/K yükselmez, düşer."
+        },
+        "B": {
+          "en": "The price is the same, but the earnings in the denominator differ.",
+          "tr": "Fiyat aynıdır ama paydadaki kâr farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-looking",
+        "trailing",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Peers of İzmir Ambalaj (fictional) trade at a median forward P/E of 9.0 and a median trailing P/E of 11.0. İzmir Ambalaj's trailing EPS is 3.50 TL and its forecast EPS for next year is 4.20 TL. Using a consistent forward multiple, the estimated value per share is closest to:",
+      "stem_tr": "İzmir Ambalaj'ın (kurgusal) emsalleri 9,0 medyan ileriye dönük F/K ve 11,0 medyan geçmiş F/K ile işlem görüyor. Şirketin geçmiş HBK'sı 3,50 TL, gelecek yıl için tahmini HBK'sı 4,20 TL'dir. Tutarlı bir ileriye dönük çarpanla tahmini hisse başına değer aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "31.5 TL",
+          "tr": "31,5 TL",
+          "value": 31.5
+        },
+        {
+          "key": "B",
+          "en": "37.8 TL",
+          "tr": "37,8 TL",
+          "value": 37.8
+        },
+        {
+          "key": "C",
+          "en": "46.2 TL",
+          "tr": "46,2 TL",
+          "value": 46.2
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A forward multiple must be applied to forward EPS: 9.0 × 4.20 = 37.8 TL.",
+      "explanation_tr": "İleriye dönük çarpan ileriye dönük HBK'ya uygulanmalıdır: 9,0 × 4,20 = 37,8 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The forward multiple was applied to trailing EPS (9.0 × 3.50), which is inconsistent.",
+          "tr": "İleriye dönük çarpan geçmiş HBK'ya uygulanmıştır (9,0 × 3,50); bu tutarsızdır."
+        },
+        "C": {
+          "en": "The trailing multiple was applied to forward EPS (11.0 × 4.20), which overstates value.",
+          "tr": "Geçmiş çarpan ileriye dönük HBK'ya uygulanmıştır (11,0 × 4,20); bu değeri olduğundan yüksek gösterir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need value per share using a forward multiple.",
+          "tr": "İstenen: ileriye dönük çarpanla hisse başına değer."
+        },
+        {
+          "en": "Value = peer forward P/E × company forward EPS (same time basis).",
+          "tr": "Değer = emsal ileriye dönük F/K × şirketin ileriye dönük HBK'sı (aynı zaman bazı).",
+          "formula_latex": "V_0=(P/E_1)_{peer}\\times E_1"
+        },
+        {
+          "en": "Substitute 9.0 and 4.20.",
+          "tr": "9,0 ve 4,20'yi yerine koyalım.",
+          "values": {
+            "PE1": 9.0,
+            "E1": 4.2
+          }
+        },
+        {
+          "en": "9.0 × 4.20 = 37.8.",
+          "tr": "9,0 × 4,20 = 37,8."
+        },
+        {
+          "en": "Value ≈ 37.8 TL per share.",
+          "tr": "Değer ≈ hisse başına 37,8 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "9 [×] 4.2 [=] → 37.8"
+        ]
+      },
+      "numeric": {
+        "expr": "9.0*4.20",
+        "unit": "TL"
+      },
+      "vocab_ids": [
+        "forward-looking",
+        "consistent",
+        "estimate",
+        "overstate",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company trades at a trailing P/E of 15.0. Its earnings are expected to grow by 25% over the next year. Assuming the share price does not change, the forward P/E is closest to:",
+      "stem_tr": "Bir şirket 15,0 geçmiş F/K ile işlem görüyor. Kârının önümüzdeki yıl %25 büyümesi bekleniyor. Hisse fiyatının değişmediği varsayılırsa ileriye dönük F/K aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.0",
+          "tr": "12,0",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "15.0",
+          "tr": "15,0",
+          "value": 15.0
+        },
+        {
+          "key": "C",
+          "en": "18.75",
+          "tr": "18,75",
+          "value": 18.75
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Forward P/E = P / (E0 × 1.25) = trailing P/E / 1.25 = 15.0 / 1.25 = 12.0.",
+      "explanation_tr": "İleriye dönük F/K = P / (E0 × 1,25) = geçmiş F/K / 1,25 = 15,0 / 1,25 = 12,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This ignores the change in earnings between the two periods.",
+          "tr": "İki dönem arasındaki kâr değişimi göz ardı edilmiştir."
+        },
+        "C": {
+          "en": "The trailing P/E was multiplied by 1.25 instead of divided.",
+          "tr": "Geçmiş F/K 1,25'e bölünmek yerine 1,25 ile çarpılmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward P/E from the trailing P/E and growth.",
+          "tr": "İstenen: geçmiş F/K ve büyümeden ileriye dönük F/K."
+        },
+        {
+          "en": "E1 = E0(1 + g), so P/E1 = (P/E0)/(1 + g).",
+          "tr": "E1 = E0(1 + g), dolayısıyla F/K1 = (F/K0)/(1 + g).",
+          "formula_latex": "\\frac{P}{E_1}=\\frac{P/E_0}{1+g}"
+        },
+        {
+          "en": "Substitute 15.0 and g = 0.25.",
+          "tr": "15,0 ve g = 0,25'i yerine koyalım.",
+          "values": {
+            "PE0": 15.0,
+            "g": 0.25
+          }
+        },
+        {
+          "en": "15.0 / 1.25 = 12.0.",
+          "tr": "15,0 / 1,25 = 12,0."
+        },
+        {
+          "en": "Forward P/E = 12.0×.",
+          "tr": "İleriye dönük F/K = 12,0x."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "15 [÷] 1.25 [=] → 12"
+        ]
+      },
+      "numeric": {
+        "expr": "15.0/1.25",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "forward-looking",
+        "trailing",
+        "assume",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-07-d-q06",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Last year, Çukurova Makine (fictional) reported EPS of 9.00 TL, which included a one-time gain of 3.00 TL per share from selling a factory. Before comparing its trailing P/E with peers, the most appropriate step for the analyst is to:",
+      "stem_tr": "Çukurova Makine (kurgusal) geçen yıl hisse başına 9,00 TL kâr açıkladı; bunun 3,00 TL'si bir fabrika satışından gelen tek seferlik kazançtı. Geçmiş F/K'sını emsallerle kıyaslamadan önce analistin atması gereken en uygun adım:",
+      "options": [
+        {
+          "key": "A",
+          "en": "use underlying EPS of 6.00 TL that excludes the non-recurring gain.",
+          "tr": "tekrarlanmayan kazancı dışlayan 6,00 TL'lik olağan HBK'yı kullanmaktır."
+        },
+        {
+          "key": "B",
+          "en": "use reported EPS of 9.00 TL, because it is the audited figure.",
+          "tr": "denetlenmiş rakam olduğu için raporlanan 9,00 TL'lik HBK'yı kullanmaktır."
+        },
+        {
+          "key": "C",
+          "en": "add the gain again to EPS to reflect the cash received, giving 12.00 TL.",
+          "tr": "alınan nakdi yansıtmak için kazancı HBK'ya bir kez daha ekleyip 12,00 TL kullanmaktır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Multiples should reflect sustainable earnings. Removing non-recurring items (normalizing) gives 9.00 − 3.00 = 6.00 TL, which is comparable with peers' ongoing earnings.",
+      "explanation_tr": "Çarpanlar sürdürülebilir kârı yansıtmalıdır. Tekrarlanmayan kalemleri çıkarmak (normalleştirmek) 9,00 − 3,00 = 6,00 TL verir; bu da emsallerin süregelen kârıyla karşılaştırılabilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reported EPS includes a one-time gain, so the trailing P/E would look too low and the stock too cheap.",
+          "tr": "Raporlanan HBK tek seferlik kazanç içerir; geçmiş F/K bu yüzden olduğundan düşük, hisse de olduğundan ucuz görünür."
+        },
+        "C": {
+          "en": "The gain is already in reported EPS; adding it twice makes the distortion worse.",
+          "tr": "Kazanç zaten raporlanan HBK'nın içindedir; iki kez eklemek bozulmayı artırır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "non-recurring",
+        "normalized-earnings",
+        "underlying",
+        "most-appropriate",
+        "sustainable"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

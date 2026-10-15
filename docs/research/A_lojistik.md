@@ -2,7 +2,7 @@
 
 > Erişim tarihi (tüm kaynaklar): 2026-10-15. Her bilginin yanında kaynak URL'si verilir.
 > Doğrulanamayan bilgi **UNVERIFIED** olarak işaretlenir. Henüz yayımlanmamış takvim bilgisi "yayımlanmadı" olarak işaretlenir.
-> Durum: araştırma sürüyor (iskelet).
+> Durum: tamamlandı (2026-10-15). Not: CFA Institute "Dates & Fees" tablosu etkileşimli olduğundan seviye bazlı ücret/takvim satırları resmi sayfada doğrudan okunamadı; resmi toplamlar + ≥2 bağımsız kaynakla çapraz teyit edildi (bkz. §1, §3).
 
 ## 1. Ücretler (L1, L2, L3)
 
@@ -249,16 +249,145 @@ Kaynak (resmi): https://www.cfainstitute.org/programs/cfa-program/candidate-reso
 - **Varış:** Randevudan **30 dk önce**; geç kalan alınmayabilir.
 - **Level I ekran süreleri:** Giriş (Candidate Pledge + tutorial) 19 dk · Oturum 1: **135 dk** · **İsteğe bağlı mola 31 dk** · Oturum 2 girişi 1 dk · Oturum 2: **135 dk** · Anket girişi 1 dk + anket 8 dk · Bitiş 1 dk (toplam ~331 dk).
 - **Level II ve III:** İki eşit oturum, her biri **132 dk**.
-- L1 soru sayısı: 180 bağımsız çoktan seçmeli (2×90). Kaynak: https://finoptions.co/2027-cfa-exam-guide/ ; https://testprepinsight.com/resources/cfa-exam-dates/ (resmi format sayfası bu çalışmada okunmadı → resmi teyit **UNVERIFIED**). L2: 22 vignette × 4 = 88 soru; L3: 11 essay set + 11 item set (finoptions; **UNVERIFIED** resmi teyit).
+- **Format (resmi seviye sayfaları):**
+  - L1: **180 çoktan seçmeli, 3 şık (A/B/C)**, 2 oturum × 90 soru × 135 dk, soru başı ~90 sn, tüm sorular eşit ağırlıklı, **yanlış cevaba ceza yok**. Kaynak: https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam
+  - L2: **22 item set (vignette) / 88 çoktan seçmeli soru**, 2 × 132 dk, oturum başı 11 set; **20 set puanlanır, 2'si puanlanmaz**. Kaynak: https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam
+  - L3: **11 item set + 11 essay (constructed response) set**, 2 × 132 dk (her oturum 6 item+5 essay ya da 5+6); yanıtlar İngilizce. Kaynak: https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam
+  - Teyit (üçüncü taraf): https://finoptions.co/2027-cfa-exam-guide/ (erişim 2026-10-15).
 - **Odaya alınabilenler:** izinli hesap makinesi, pasaport, (gerekirse) maske, ekstra kıyafet katmanı, etiketsiz şeffaf şişede su, Prometric'in ön-onaylı kişisel bakım ürünleri. Yiyecek dolapta kalır. Gözlük kılıfsız ve masada görünür; alyans/nişan yüzüğü dışında takı yok (ESG personal belongings policy snippet'i: https://www.cfainstitute.org/about/governance/policies/esg-personal-belongings-policy — CFA Program için ayrı belge, aynı ilke; **kısmen UNVERIFIED**).
 - Merkezde CCTV (yasal olan yerlerde ses dahil) kaydı yapılabilir. Mola talebi için görevli talimatı izlenir.
 - Not tahtası (noteboard)/kulak tıkacı sağlanıp sağlanmadığı resmi sayfada yok → **UNVERIFIED**.
 
 ## 8. Level III pathway'ler ve Practical Skills Modules
-_(dolduruluyor)_
+
+### 8a. Level III pathway'ler — **hâlâ yürürlükte (2026 ve 2027)**
+- Üç uzmanlaşma yolu: **Portfolio Management**, **Private Wealth**, **Private Markets**. Resmi L3 sayfasında hem 2026 hem **2027 Level III topic outline**'ları her üç pathway için ayrı ayrı yayımlanmış → 2027'de de devam ediyor. Kaynak: https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam (erişim 2026-10-15).
+- L3 konu ağırlıkları (resmi, sayfadaki güncel tablo): Asset Allocation 15–20% · Portfolio Construction 15–20% · Performance Measurement 5–10% · Derivatives and Risk Management 10–15% · Ethical and Professional Standards 10–15% · **Pathway 30–35%**. Kaynak: aynı sayfa.
+- Unvan (charter) hangi pathway'in seçildiğini göstermez; ortak çekirdek + pathway içeriği. Kaynak: resmi basın bültenleri (arama snippet'i) https://www.cfainstitute.org/about/press-room/2025/practical-skills-modules-level-iii-cfa-program ; teyit: https://quintedge.com/blog/cfa-curriculum-changes-2027 (pathway'ler ve çekirdek konular 2027'de değişmedi).
+
+### 8b. Practical Skills Modules (PSM) — **zorunlu, puanlanmaz**
+- **Her seviyede 1 PSM** tamamlanmadan sınav sonucu açıklanmaz (L3 için Şubat 2025'ten beri). Aynı modül birden fazla seviyede kullanılamaz (ör. L1'de Python Programming Fundamentals yapan, L2'de farklı bir modül — Python, Data Science & AI veya Analyst Skills — seçmeli). Kaynak (resmi): https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam ; https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam (erişim 2026-10-15).
+- PSM'ler puanlanmaz; sonuç gününe kadar tamamlanabilir (erken tamamlama önerilir); her biri ~10–20 saat. Kaynak: https://www.cfainstitute.org/about/press-room/2025/practical-skills-modules-level-iii-cfa-program (20 May 2025) ; PSM sayfası (snippet) https://cfainstitute.org/en/programs/cfa/practical-skills-modules.
+- L3 pathway'e özel PSM'ler (Şubat 2026 penceresinden itibaren): Portfolio Management → **Practical Macro** (15 ünite); Private Markets → **Due Diligence** (6 ünite); Private Wealth → **Managing Private Wealth Clients**. "Portfolio Development and Construction" PSM'i tüm L3 adaylarına açık. Kaynak: resmi bülten (20 May 2025) yukarıda.
+- **Sınava etkisi:** PSM sınav puanını etkilemez; yalnızca **sonucun açıklanması için ön koşul** — tamamlanmazsa sonuç bekletilir/açıklanmaz. Kaynak: resmi seviye sayfaları; https://soleadea.org/cfa-exam/results.
+- 2027 PSM güncellemeleri: Equity Analysis, Macro Insights for Investing ve Python (L1/L2) PSM'leri geliştirildi; yeni L3 Due Diligence PSM'inin "2026 içinde" yayımlanması planlanıyor (bülten tarihi itibarıyla). Kaynak: https://www.cfainstitute.org/about/press-room/2026/cfa-institute-announces-updates-to-cfa-program-curriculum (26 May 2026). Not: 2025 bülteni Due Diligence PSM'ini 2025 ortası için duyurmuştu; 2026 bülteni "yeni L3 Due Diligence PSM 2026 sonunda" diyor → iki farklı sürüm/yenileme olabilir, ayrıntı **UNVERIFIED**.
+- PSM Policy belgesinin tam metni bu çalışmada okunmadı → ayrıntılı kurallar **UNVERIFIED**.
 
 ## 9. 2027 müfredat değişiklikleri
-_(dolduruluyor)_
+
+**Duyuru ve yürürlük (resmi):** CFA Institute 26 Mayıs 2026 basın bülteni — 2027 müfredatı **Şubat 2027 ve sonrası** sınavlar için geçerli. Ağustos/Kasım 2026 adayları 2026 müfredatıyla girer. Kaynak: https://www.cfainstitute.org/about/press-room/2026/cfa-institute-announces-updates-to-cfa-program-curriculum ; resmi özet PDF: https://www.cfainstitute.org/sites/default/files/curriculum-update-2027.pdf (erişim 2026-10-15). Teyit: https://analystprep.com/blog/2027-cfa-curriculum-changes-levels-1-2-3/ ; https://soleadea.org/cfa-exam/curriculum-changes-2027 ; https://quintedge.com/blog/cfa-curriculum-changes-2027.
+
+### 9a. Level I — resmi konu ağırlıkları (2026 → 2027)
+Kaynak (resmi, ham HTML ile doğrulandı): https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam (erişim 2026-10-15).
+
+| Oturum | 2026 konu adı | 2026 ağırlık | 2027 konu adı | 2027 ağırlık | Değişim |
+|---|---|---|---|---|---|
+| 1 | Ethical and Professional Standards | 15–20% | Ethical and Professional Standards | **10–15%** | ↓ |
+| 1 | Quantitative Methods | 6–9% | Quantitative Methods | **11–14%** | ↑ |
+| 1 | Economics | 6–9% | Economics | 6–9% | = |
+| 1 | Financial Statement Analysis | 11–14% | Financial Statement Analysis | 11–14% | = |
+| 1 | Corporate Issuers | 6–9% | **Corporate Finance** | 6–9% | ad değişti |
+| 2 | Equity Investments | 11–14% | **Equities** | 11–14% | ad değişti |
+| 2 | Fixed Income | 11–14% | Fixed Income | 11–14% | = |
+| 2 | Derivatives | 5–8% | **Derivatives and Risk Management** | **6–9%** | ad + ↑ |
+| 2 | Alternative Investments | 7–10% | Alternative Investments | **6–9%** | ↓ |
+| 2 | Portfolio Management | 8–12% | **Portfolio Construction** | 8–12% | ad değişti |
+
+> **Çelişki uyarısı:** 300Hours ve UWorld gibi bazı kaynaklar "2027 L1 ağırlıkları değişmedi (Ethics 15–20%, Quant 6–9%)" diyor; **resmi sayfa ve QuintEdge (10 Eki 2026) değiştiğini gösteriyor. Resmi sayfa esas alınmıştır.** (https://300hours.com/cfa-curriculum-changes-2027/ snippet; https://quintedge.com/blog/cfa-curriculum-changes-2027)
+
+### 9b. Level I — modül (Learning Module) karşılaştırması
+Resmi topic outline PDF'leri karşılaştırıldı (2026: https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/2026-l1-topics-combined.pdf ; 2027: https://www.cfainstitute.org/sites/default/files/2027levelitopicoutline_online.pdf ; erişim 2026-10-15). Sayımlar otomatik ayrıştırmayla yapıldı (LM = "The candidate should be able to" başlıkları; LOS = □ maddeleri):
+- **Toplam LM: 93 → 102**; toplam LOS: ~365 → ~340 (soleadea/quintedge'in 93→102 sayımıyla tutarlı).
+- **Quantitative Methods (11 → 11 LM, yeniden yapılandırıldı):** 2026: Rates and Returns, Time Value of Money in Finance, Statistical Measures of Asset Returns, Probability Trees and Conditional Expectations, Portfolio Mathematics, Simulation Methods, Estimation and Inference, Hypothesis Testing, Parametric and Non-Parametric Tests of Independence, Simple Linear Regression, Introduction to Big Data Techniques. → 2027: Returns of Financial Assets and Instruments; Types of Financial Returns; Benchmarking Returns; The Time Value of Money in Finance; Statistical Characteristics of Asset Returns; Statistical Distributions for Financial Asset Prices and Returns; **Estimation and Hypothesis Testing** (ayrı Hypothesis Testing ve Tests of Independence modülleri birleşti/kalktı); The Return and Risk of a Financial Portfolio; Simulation of Financial Asset Prices and Returns; Applications of Simple Linear Regression in Finance; **Introduction to Financial Data Science** (yeni: veri bilimi, AI, LLM). Ayrıca Excel/Google Sheets ile historical simulation, bootstrapping, Monte Carlo; Python Fundamentals PSM ile hizalı portföy optimizasyonu; TVM için etkileşimli "Equation Explorers". **Quant prerequisite reading kaldırıldı.** (resmi PDF + bülten)
+- **Equities (8 → 12 LM, en büyük değişiklik):** 2027 modülleri: Equity Instrument Features; Equity Jurisdictions, Classes, and the Voting Process; Equity Issuance and Trading; Sources of Equity Returns; Introduction to Equity Valuation; Discounted Cash Flow (DCF) and Growth Models; Relative Value Equity Valuation Approaches; Financial Statement Forecasting in Equity Valuation; Industry and Competitive Analysis; Company Analysis: Past, Present, and Future; **Equity Analyst Research Reports** (yeni); **The Capital Asset Pricing Model, Market Model, and Other Factor-Based Equity Models** (yeni). 2026'daki Market Organization and Structure, Security Market Indexes, Market Efficiency, Overview of Equity Securities, Company Analysis: Forecasting, Equity Valuation: Concepts and Basic Tools modülleri bu adlarla yok. LOS 66 → 37 (analystprep sayımı; bizim ayrıştırma 66 → 37 ile uyumlu).
+- **Ethics (5 → 10 LM):** Her Standart (I–VII) ayrı modül ("Guidance for Standard I: Professionalism" … "Guidance for Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate"), Standards of Practice Handbook **12. baskı (v12)** ile güncel; "Application of the Code and Standards: Level I" modülü. **L1'de bağımsız GIPS modülü ("Introduction to GIPS") 2027 outline'ında yok** (PDF'te "GIPS" geçmiyor); "Ethics Application" modülünün yerini "Application of the Code and Standards: Level I" almış görünüyor. Ethics değişikliği **tüm seviyelerde**.
+- **Değişmeyen L1 konuları (modül listesi aynı):** Economics (8 LM), Corporate Finance (7 LM, yalnız ad değişti), Financial Statement Analysis (12 LM), Fixed Income (19 LM), Derivatives (10 LM, ad değişti), Alternative Investments (7 LM), Portfolio Construction (6 LM, ad değişti).
+
+### 9c. Level II ve III
+- **L2:** Resmi bültende yalnızca Ethics güncellemesi (+PSM). Resmi L2 sayfasında hem 2026 hem 2027 outline var; sayfadaki ağırlıklar (yeni adlarla): Quant 5–10%, Economics 5–10%, FSA 10–15%, Corporate Finance 5–10%, Equities 10–15%, Fixed Income 10–15%, Derivatives and Risk Management 5–10%, Alternative Investments 5–10%, Portfolio Construction 10–15%, Ethics 10–15%. Kaynak: https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam (erişim 2026-10-15). L2 2027 modül düzeyindeki farklar bu çalışmada outline PDF'leri karşılaştırılmadı → **UNVERIFIED** (QuintEdge: yalnızca Ethics, ~3→9 modül).
+- **L3:** Ethics güncellemesi; pathway'ler ve çekirdek konular değişmedi (QuintEdge; resmi bülten Ethics dışında L3 içeriği için değişiklik belirtmiyor). Ağırlıklar §8a'da.
+
+### 9d. Bilinen vs. UNVERIFIED özeti
+| Konu | Durum |
+|---|---|
+| 2027 müfredatı Şubat 2027'den itibaren geçerli | Resmi (bülten) |
+| L1 ağırlık değişiklikleri (Ethics ↓, Quant ↑, Derivatives ↑, Alts ↓) ve 4 konu adı değişikliği | Resmi (L1 sayfası) |
+| L1 LM sayısı 93 → 102, Quant/Equities/Ethics modül listeleri | Resmi outline PDF'lerinden kendi ayrıştırmamız (otomatik; küçük sayım hatası olasılığı var) |
+| L1'de bağımsız GIPS modülünün kalkması | Resmi 2027 outline'da yok (çıkarım) + quintedge |
+| L2/L3 modül düzeyinde değişiklikler | **UNVERIFIED** (yalnız Ethics değişikliği resmi) |
+| 2028 müfredatı | **yayımlanmadı** |
+
+## 10. Uygulama için çıkarımlar (kısa)
+- Ücret/tarih verisi uygulamada **sabit kodlanmamalı**; tarih ve kur alanları "son doğrulama tarihi" ile tutulmalı (resmi tablo etkileşimli ve sık değişiyor).
+- Sıradaki kritik tarihler (2026-10-15 itibarıyla): Şub 2027 standard kayıt **5 Kas 2026**, scheduling **10 Kas 2026**; Ağu 2027 kayıt + Access bursu başvurusu **3 Kas 2026**'da açılıyor (Access kapanış 23 Kas 2026); May 2027 standard kayıt **10 Şub 2027**.
+- Paid deferral yok (Şub 2027+): Uygulama, kullanıcıya "kayıt = taahhüt" uyarısı vermeli; 14 günlük iade penceresi hatırlatıcısı faydalı.
+- L1 2027 içeriği için Ethics 10–15%, Quant 11–14% ağırlıkları kullanılmalı (2026 ağırlıkları değil).
+- Gerçek sınav sorusu / "brain dump" içeriği toplanmadı ve kullanılmamalı (Candidate Pledge). Arama sonuçlarında çıkan "exam dumps" siteleri (ör. cciedump.spoto.net) bilinçli olarak **dışlandı**.
 
 ## Kaynaklar
-_(dolduruluyor)_
+
+Tüm erişimler: 2026-10-15. Lisans sütunu: CFA Institute ve ticari sitelerin içerikleri telif korumalıdır → "yalnızca referans" (olgular/rakamlar atıfla kullanılabilir, metin kopyalanmaz). TCMB kur verisi kamuya açık veri → "kullanılabilir" (atıfla).
+
+| # | URL | Tür | Lisans | Güvenilirlik 1-5 | Katkı verdiği konular |
+|---|---|---|---|---|---|
+| 1 | https://www.cfainstitute.org/programs/cfa-program/dates-fees | resmi | yalnızca referans | 5 | Toplam maliyet aralığı, rescheduling USD 250, kaçırılan sınav kuralı, deneme sınırı, ET saatleri |
+| 2 | https://www.cfainstitute.org/programs/cfa/register | resmi | yalnızca referans | 5 | "From USD 1,140", 3.520–4.570 toplam, burs türleri |
+| 3 | https://www.cfainstitute.org/-/media/documents/support/programs/cfa/CFA-Program-Exam-Schedule-4.pdf | resmi | yalnızca referans | 4 (eski, 2025; snippet) | Eski ücretler ve 2026 ücret değişikliği notu |
+| 4 | https://www.cfainstitute.org/about/governance/policies/cfa-program-refund-policy | resmi | yalnızca referans | 5 | 14 gün iade kuralı, iade edilmeyen kalemler |
+| 5 | https://www.cfainstitute.org/about/governance/policies/cfa-program-emergency-deferral-policy | resmi | yalnızca referans | 5 | Emergency deferral şartları, USD 100, Kas 2026 penceresi |
+| 6 | https://www.cfainstitute.org/about/press-room/2026/deferral-policies-update | resmi | yalnızca referans | 5 | Paid deferral'ın Şub 2027'den itibaren kaldırılması, hamilelik kuralı |
+| 7 | https://www.cfainstitute.org/programs/cfa-program/scholarships | resmi | yalnızca referans | 5 | Burs türleri, ortak kurallar |
+| 8 | https://www.cfainstitute.org/programs/cfa-program/scholarships/access | resmi | yalnızca referans | 5 | Access USD 400, başvuru pencereleri 2026–2027 |
+| 9 | https://www.cfainstitute.org/programs/cfa-program/scholarships/student | resmi | yalnızca referans | 5 | Student USD 600, 1 Eyl–15 Tem |
+| 10 | https://www.cfainstitute.org/programs/cfa-program/scholarships/professor | resmi | yalnızca referans | 5 | Professor USD 600, kredi saati şartı |
+| 11 | https://www.cfainstitute.org/programs/cfa-program/test-center-locations | resmi | yalnızca referans | 5 | 400+ merkez, 1 saat kuralı, yeni merkezler |
+| 12 | https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/cfa-pogram-exam-test-center-locations.pdf | resmi | yalnızca referans | 5 | Türkiye: Ankara, İstanbul, İzmir (May 2026 sürümü) |
+| 13 | https://cfainstitute.org/sites/default/files/docs/programs/cfa-program/cities-list-feb25.pdf | resmi | yalnızca referans | 4 (eski sürüm) | Türkiye şehirleri çapraz teyit |
+| 14 | https://www.cfainstitute.org/programs/cfa-program/policies | resmi | yalnızca referans | 5 | L1 uygunluk (23 ay/11 ay/4.000 saat), pasaport, 6 deneme, İngilizce |
+| 15 | https://www.cfainstitute.org/programs/cfa-program/charter | resmi | yalnızca referans | 5 | Charter şartları: 4.000 saat/36 ay, 2–3 referans, PSM |
+| 16 | https://www.cfainstitute.org/membership/join | resmi | yalnızca referans | 5 | Aidatlar USD 299 / 149, ülke indirimi notu |
+| 17 | https://www.cfainstitute.org/about/governance/policies/cfa-calculator-policy | resmi | yalnızca referans | 5 | İzinli hesap makineleri (12 Oca 2026) |
+| 18 | https://www.cfainstitute.org/programs/cfa-program/candidate-resources/exam-day-preparation-guide | resmi | yalnızca referans | 5 | Sınav günü süreleri, mola 31 dk, izinli eşyalar |
+| 19 | https://www.cfainstitute.org/programs/cfa/exam/candidate-checklist | resmi | yalnızca referans | 4 (snippet) | Pasaport adı eşleşmesi |
+| 20 | https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam | resmi | yalnızca referans | 5 | 2026/2027 L1 ağırlıkları, format, PSM kuralı |
+| 21 | https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam | resmi | yalnızca referans | 5 | L2 format ve ağırlıklar |
+| 22 | https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam | resmi | yalnızca referans | 5 | L3 format, pathway'ler, ağırlıklar, PSM |
+| 23 | https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/1963-current-candidate-examination-results.pdf | resmi | yalnızca referans | 5 | 1963–2026 geçme oranları, 10 yıllık ortalamalar |
+| 24 | https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/cfa-exam-results-pass-rate-infographic.pdf | resmi | yalnızca referans | 5 | Son pencereler, aday sayıları, 5 yıllık ortalama |
+| 25 | https://www.cfainstitute.org/about/press-room/2025/practical-skills-modules-level-iii-cfa-program | resmi | yalnızca referans | 5 | L3 pathway PSM'leri |
+| 26 | https://www.cfainstitute.org/about/press-room/2026/cfa-institute-announces-updates-to-cfa-program-curriculum | resmi | yalnızca referans | 5 | 2027 müfredat duyurusu, yürürlük, PSM güncellemeleri |
+| 27 | https://www.cfainstitute.org/sites/default/files/curriculum-update-2027.pdf | resmi | yalnızca referans | 5 | 2027 Quant/Equities/Ethics değişiklik ayrıntıları |
+| 28 | https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/2026-l1-topics-combined.pdf | resmi | yalnızca referans | 5 | 2026 L1 modül listesi (93 LM) |
+| 29 | https://www.cfainstitute.org/sites/default/files/2027levelitopicoutline_online.pdf | resmi | yalnızca referans | 5 | 2027 L1 modül listesi (102 LM) |
+| 30 | https://www.cfainstitute.org/programs/cfa-program | resmi | yalnızca referans | 5 | 300 saat/seviye önerisi |
+| 31 | https://www.cfainstitute.org/about/press-room/2025/cfa-program-results-level-i-may-2025 | resmi | yalnızca referans | 5 | 10 yıllık ortalama teyidi (snippet) |
+| 32 | https://community.cfainstitute.org/istanbul/about-us | resmi (yerel dernek) | yalnızca referans | 4 | CFA Society Istanbul varlığı; aidat bulunamadı |
+| 33 | https://www.tcmb.gov.tr/kurlar/today.xml | resmi (TCMB) | kullanılabilir | 5 | USD/TRY 15.10.2026: satış 49,4204 |
+| 34 | https://quintedge.com/cfa-exam-dates | ticari | yalnızca referans | 3 | Pencere/son tarih çapraz teyidi, ücretler |
+| 35 | https://soleadea.org/cfa-exam-in-2026-2027 | ticari | yalnızca referans | 3 | Sınav tarihleri 2026–2027 |
+| 36 | https://soleadea.org/cfa-2027-dates-schedule | ticari | yalnızca referans | 3 | 2027 takvimi, tahmini sonuç tarihleri |
+| 37 | https://testprepinsight.com/resources/cfa-exam-dates/ | ticari/blog | yalnızca referans | 3 | Ağu 2027 son tarihleri, sonuç süreleri |
+| 38 | https://finoptions.co/2027-cfa-exam-guide/ | ticari | yalnızca referans | 2 | Kas 2027 tahmini tarihleri (azınlık), format, Practice Pack fiyatı |
+| 39 | https://300hours.com/cfa-exam-fee-refund/ | blog | yalnızca referans | 3 | Paid deferral USD 449, iade özetleri |
+| 40 | https://300hours.com/cfa-pass-rates/ | blog | yalnızca referans | 3 | İlk kez giren vs. erteleyen geçme oranları |
+| 41 | https://300hours.com/cfa-passing-score/ | blog | yalnızca referans | 3 | Gayriresmî MPS tahminleri, ölçekli puan |
+| 42 | https://soleadea.org/cfa-exam/results | ticari | yalnızca referans | 3 | Sonuç tarihleri Ağu 2026, ölçek 1000–1900 vb., skor raporu |
+| 43 | https://quintedge.com/blog/cfa-curriculum-changes-2027 | ticari | yalnızca referans | 3 | 2027 ağırlık değişikliği teyidi, L2/L3 değişiklik kapsamı |
+| 44 | https://analystprep.com/blog/2027-cfa-curriculum-changes-levels-1-2-3/ | ticari | yalnızca referans | 3 | 2027 değişiklikleri, LOS sayıları |
+| 45 | https://analystprep.com/blog/how-much-does-the-cfa-program-really-cost-2025-2027/ | ticari | yalnızca referans | 3 | Enrollment ücretinin kaldırılması (snippet) |
+| 46 | https://www.bloomberg.com/news/articles/2024-07-02/cfa-level-ii-pass-rate-spikes-to-59-the-highest-since-1998 | haber | yalnızca referans | 4 | L2 May 2024 %59 teyidi (snippet) |
+| 47 | https://finance.uworld.com/cfa/registration-cost-fees/ | ticari | yalnızca referans | 3 | Kayıt/randevu iki adım, ödeme notları (snippet) |
+| 48 | https://soleadea.org/cfa-scholarship/cfa-program-scholarships-2026 | ticari | yalnızca referans | 2 (Haz 2025 tarihli) | Women's Scholarship'in kalkması (snippet) |
+| 49 | https://www.prometric.com/success-stories/modernizing-cfa-exam-experience/ | ticari (sağlayıcı) | yalnızca referans | 4 | Prometric'in CFA sınavlarını yürütmesi (snippet) |
+| 50 | https://www.schweser.com/cfa/blog/how-to-pass-the-cfa-exam/cfa-exam-calculator-policy | ticari | yalnızca referans | 3 | Hesap makinesi politikası teyidi (snippet; sayfa 403) |
+| 51 | https://300hours.com/cfa-curriculum-changes-2027/ | blog | yalnızca referans | 2 | "Ağırlık değişmedi" iddiası — resmi sayfayla çelişiyor (çelişki kaydı) |
+| 52 | https://www.rutlandherald.com/news/business/cfa-institute-reports-results-for-cfa-program-level-iii-testing-in-february-2026/article_d6c65374-b433-5638-b1ed-4fafa2aa54ff.html | haber (BusinessWire yeniden yayımı) | yalnızca referans | 4 | L3 Şub 2026: ilk kez %59, erteleyen %34 |
+| 53 | https://analystprep.com/blog/cfa-level-i-august-2026-results/ | ticari | yalnızca referans | 3 | L1 Ağu 2026 sonuç tarihi teyidi (snippet) |
+| 54 | https://www.pw.live/cfa/exams/cfa-pass-rates | ticari | yalnızca referans | 2 | Geçme oranı çapraz kontrol (snippet) |
+| 55 | https://connexions.cfainstitute.org/additional-testing-locations-cfa-exams | resmi (arşiv) | yalnızca referans | 3 (snippet, eski) | Koltuk aramada şehir/ülke ile arama önerisi |
+| 56 | https://efficientlearning.com/cfa/resources/cfa-study-plan/ | ticari | yalnızca referans | 2 | Seviye bazlı çalışma saati anket iddiaları (UNVERIFIED) |
+| 57 | https://soleadea.org/cfa-checklist | ticari | yalnızca referans | 3 | Sınav günü kontrol listesi teyidi (snippet) |
+
+**Dışlanan kaynaklar:** cciedump.spoto.net (sınav "dump" satışı — Candidate Pledge ihlali riski, kullanılmadı); thewealthadvisor.com "%39 L3" makalesi (yanlış tarihli eski içerik).
+
+**Toplam değerlendirilen kaynak: 57** (33 resmi/kurumsal, 24 üçüncü taraf).

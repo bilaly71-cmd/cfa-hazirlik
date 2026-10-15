@@ -1,0 +1,1789 @@
+{
+  "module_id": "FSA-01",
+  "lesson": {
+    "id": "FSA-01-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-01",
+    "los_ids": [
+      "FSA-01-a",
+      "FSA-01-b",
+      "FSA-01-c",
+      "FSA-01-d",
+      "FSA-01-e"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Financial Statement Analysis",
+    "title_tr": "Finansal Tablo Analizine Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why read financial statements?",
+        "heading_tr": "Finansal tabloları neden okuruz?",
+        "en": "Imagine Ege Seramik A.S., a fictional tile producer listed on Borsa Istanbul. Every quarter it publishes its financial statements on KAP. A bank wants to know if Ege can repay a new loan. A fund manager wants to know if the share is cheap or expensive. A supplier wants to know if Ege will pay its invoices on time. All three read the same statements, but each asks a different question. Financial statement analysis is the process of using these reports, together with other information, to judge a company's past performance, its current financial position and its future prospects. Good analysis starts with a clear question, not with a pile of numbers.",
+        "tr": "Borsa İstanbul'da işlem gören kurgusal bir seramik üreticisi düşünelim: Ege Seramik A.Ş. Şirket her çeyrekte finansal tablolarını KAP'ta yayımlar. Bir banka, Ege'nin yeni bir krediyi geri ödeyip ödeyemeyeceğini bilmek ister. Bir fon yöneticisi, payın ucuz mu pahalı mı olduğunu merak eder. Bir tedarikçi ise faturalarının zamanında ödenip ödenmeyeceğini sorgular. Üçü de aynı tabloları okur ama her biri farklı bir soruya yanıt arar. Finansal tablo analizi; bu raporları başka bilgilerle birlikte kullanarak şirketin geçmiş performansını, bugünkü finansal durumunu ve gelecekteki beklentilerini değerlendirme sürecidir. İyi bir analiz rakam yığınıyla değil, net bir soruyla başlar.",
+        "key_terms": [
+          "financial statement analysis",
+          "financial position",
+          "prospects"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The six-step framework",
+        "heading_tr": "Altı adımlı analiz çerçevesi",
+        "en": "A financial statement analysis project usually follows six steps. (1) Articulate the purpose and context: what question must be answered, for whom, by when and with what budget. (2) Collect input data: financial statements, footnotes, industry and economic data, and discussions with management. (3) Process the data: adjust the statements, build common-size statements, ratios and forecasts. (4) Analyze and interpret the processed data: turn numbers into answers. (5) Develop and communicate conclusions and recommendations, for example in an analyst report. (6) Follow up: collect new information over time and repeat earlier steps when needed. The steps are not always one-way; new facts may send the analyst back to an earlier step.",
+        "tr": "Bir finansal tablo analizi projesi genellikle altı adımdan oluşur. (1) Amacın ve bağlamın belirlenmesi: hangi soru, kimin için, ne zamana kadar ve hangi kaynakla yanıtlanacak. (2) Girdi verilerinin toplanması: finansal tablolar, dipnotlar, sektör ve ekonomi verileri, yönetimle yapılan görüşmeler. (3) Verilerin işlenmesi: tabloların düzeltilmesi, ortak büyüklük (dikey) tabloların, oranların ve tahminlerin hazırlanması. (4) İşlenmiş verilerin analizi ve yorumlanması: rakamları yanıtlara dönüştürmek. (5) Sonuç ve önerilerin geliştirilip iletilmesi; örneğin bir analist raporuyla. (6) İzleme: zamanla yeni bilgileri toplamak ve gerektiğinde önceki adımları tekrarlamak. Süreç her zaman tek yönlü değildir; yeni bir bilgi analisti önceki bir adıma geri gönderebilir.",
+        "key_terms": [
+          "purpose",
+          "input data",
+          "process",
+          "follow-up"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Step",
+              "tr": "Adım"
+            },
+            {
+              "en": "Typical outputs",
+              "tr": "Tipik çıktılar"
+            }
+          ],
+          "rows": [
+            [
+              "1. Purpose and context / Amaç ve bağlam",
+              "Statement of purpose, list of questions, timetable and budget / Amaç bildirimi, soru listesi, takvim ve bütçe"
+            ],
+            [
+              "2. Collect data / Veri toplama",
+              "Organized statements and industry/economic data / Düzenlenmiş tablolar, sektör ve ekonomi verileri"
+            ],
+            [
+              "3. Process data / Veri işleme",
+              "Adjusted statements, common-size statements, ratios, forecasts / Düzeltilmiş tablolar, dikey tablolar, oranlar, tahminler"
+            ],
+            [
+              "4. Analyze / Analiz ve yorum",
+              "Analytical results / Analiz sonuçları"
+            ],
+            [
+              "5. Conclude and communicate / Sonuç ve iletişim",
+              "Report with recommendations / Önerili analiz raporu"
+            ],
+            [
+              "6. Follow-up / İzleme",
+              "Updated reports and revised recommendations / Güncellenmiş raporlar ve revize öneriler"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "What is the analysis used for?",
+        "heading_tr": "Analiz ne için kullanılır?",
+        "en": "The same statements support many decisions. Equity investors use them to value a company and to compare it with peers. Credit analysts and banks focus on the ability to pay interest and repay principal, so they care more about cash flow, debt levels and downside risk. Managers use the analysis to compare their firm with competitors. Analysts also use it to screen many companies quickly, to evaluate a merger or acquisition target and to check the quality of reported earnings. Financial statement analysis does not give certain answers about the future. It gives a structured, evidence-based view that reduces uncertainty.",
+        "tr": "Aynı tablolar pek çok karara dayanak olur. Pay yatırımcıları şirketi değerlemek ve benzerleriyle karşılaştırmak için kullanır. Kredi analistleri ve bankalar faizi ödeme ve anaparayı geri ödeme gücüne odaklanır; bu yüzden nakit akışı, borç düzeyi ve aşağı yönlü risk onlar için daha önemlidir. Yöneticiler şirketlerini rakiplerle kıyaslamak için analizden yararlanır. Analistler ayrıca çok sayıda şirketi hızla taramak, bir birleşme ya da devralma hedefini değerlendirmek ve raporlanan kârın kalitesini sınamak için de bu analizi kullanır. Finansal tablo analizi gelecek hakkında kesin yanıt vermez; belirsizliği azaltan, kanıta dayalı ve düzenli bir bakış sunar.",
+        "key_terms": [
+          "equity investor",
+          "creditor",
+          "screening",
+          "earnings quality"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Filings, footnotes, commentary and the audit report",
+        "heading_tr": "Bildirimler, dipnotlar, yönetim yorumu ve denetim raporu",
+        "en": "The main statements are only the starting point. Footnotes (notes) explain accounting policies, methods and estimates, and give details such as debt maturities, leases and segment data. Supplementary schedules add information like segment results or reserve data. Management commentary (called MD&A in the United States) discusses results, trends, risks and outlook from management's view; it is useful but not neutral. Regulatory filings, such as annual and quarterly reports filed with a securities regulator or published on KAP, are the official source. The independent auditor's report says whether the statements are fairly presented. An audit gives reasonable assurance, not absolute assurance. The report also lists key audit matters (critical audit matters in the US): areas that needed the most auditor judgment.",
+        "tr": "Temel tablolar yalnızca başlangıç noktasıdır. Dipnotlar muhasebe politikalarını, yöntemlerini ve tahminlerini açıklar; borç vadeleri, kiralamalar ve bölüm bilgileri gibi ayrıntıları verir. Ek tablolar, bölüm sonuçları gibi tamamlayıcı bilgiler sunar. Yönetim yorumu (ABD'de MD&A) sonuçları, eğilimleri, riskleri ve beklentileri yönetimin gözünden tartışır; yararlıdır ama tarafsız değildir. Düzenleyici kuruma sunulan ya da KAP'ta yayımlanan yıllık ve ara dönem raporlar resmî kaynaktır. Bağımsız denetçinin raporu tabloların gerçeğe uygun sunulup sunulmadığını belirtir. Denetim mutlak değil, makul güvence verir. Rapor ayrıca kilit denetim konularını (ABD'de kritik denetim konuları) listeler: denetçinin en çok muhakeme kullandığı alanlar.",
+        "key_terms": [
+          "footnotes",
+          "management commentary",
+          "auditor's report",
+          "reasonable assurance",
+          "key audit matters"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Audit opinion",
+              "tr": "Denetim görüşü"
+            },
+            {
+              "en": "Meaning",
+              "tr": "Anlamı"
+            }
+          ],
+          "rows": [
+            [
+              "Unqualified (unmodified) / Olumlu",
+              "Statements are fairly presented / Tablolar gerçeğe uygun sunulmuş"
+            ],
+            [
+              "Qualified / Şartlı",
+              "Fairly presented except for a specific item / Belirli bir konu dışında gerçeğe uygun"
+            ],
+            [
+              "Adverse / Olumsuz",
+              "Statements are materially misstated / Tablolar önemli ölçüde yanlış"
+            ],
+            [
+              "Disclaimer of opinion / Görüş vermekten kaçınma",
+              "Auditor cannot form an opinion / Denetçi görüş oluşturamıyor"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Reporting frameworks: IFRS and US GAAP",
+        "heading_tr": "Raporlama çerçeveleri: UFRS ve US GAAP",
+        "en": "Standard-setting bodies write the rules: the IASB issues IFRS, and the FASB issues US GAAP. Regulators, such as the SEC in the US or the SPK in Turkey, have legal power to require and enforce reporting. In Turkey, KGK publishes TFRS, which are based on IFRS. The two frameworks are similar in many areas but not identical. For example, LIFO inventory is allowed under US GAAP but not under IFRS. IFRS capitalizes development costs that meet certain criteria, while US GAAP generally expenses research and development. IFRS allows revaluation of property, plant and equipment; US GAAP does not. When two companies use different frameworks, an analyst may need to adjust the numbers before comparing them. Standards also change over time, so analysts follow new standards and their effective dates.",
+        "tr": "Standartları standart belirleyici kuruluşlar yazar: UFRS'yi IASB, US GAAP'i FASB yayımlar. ABD'de SEC, Türkiye'de SPK gibi düzenleyici kurumlar ise raporlamayı zorunlu kılma ve denetleme konusunda yasal yetkiye sahiptir. Türkiye'de KGK, UFRS'ye dayanan TFRS'yi yayımlar. İki çerçeve pek çok alanda benzer ama aynı değildir. Örneğin LIFO stok yöntemi US GAAP'te serbesttir, UFRS'de yasaktır. UFRS belirli koşulları sağlayan geliştirme maliyetlerinin aktifleştirilmesini ister; US GAAP ise araştırma ve geliştirme harcamalarını genellikle doğrudan gider yazar. UFRS maddi duran varlıkların yeniden değerlemesine izin verir, US GAAP vermez. Farklı çerçeve kullanan iki şirketi karşılaştırırken analistin rakamları düzeltmesi gerekebilir. Standartlar zamanla değiştiği için analistler yeni standartları ve yürürlük tarihlerini izler.",
+        "key_terms": [
+          "IASB",
+          "FASB",
+          "standard-setting body",
+          "regulator",
+          "TFRS",
+          "LIFO",
+          "revaluation"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Item",
+              "tr": "Kalem"
+            },
+            {
+              "en": "IFRS",
+              "tr": "UFRS"
+            },
+            {
+              "en": "US GAAP",
+              "tr": "US GAAP"
+            }
+          ],
+          "rows": [
+            [
+              "LIFO inventory / LIFO stok",
+              "Not permitted / Yasak",
+              "Permitted / Serbest"
+            ],
+            [
+              "Development costs / Geliştirme maliyetleri",
+              "Capitalized if criteria met / Koşullar sağlanırsa aktifleştirilir",
+              "Generally expensed / Genellikle gider yazılır"
+            ],
+            [
+              "Revaluation of PP&E / MDV yeniden değerleme",
+              "Permitted / Serbest",
+              "Not permitted / Yasak"
+            ],
+            [
+              "Inventory write-down reversal / Stok değer düşüklüğü iptali",
+              "Permitted (limited) / Serbest (sınırlı)",
+              "Not permitted / Yasak"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Other information sources",
+        "heading_tr": "Diğer bilgi kaynakları",
+        "en": "Annual and interim reports are not the only inputs. Companies hold earnings conference calls and investor presentations, where management explains results and answers analyst questions. Press releases often give preliminary results before the full report; these numbers are usually unaudited. In the US, a proxy statement gives details on board elections and executive pay. Industry data (trade associations, sector reports, competitor statements) shows a company's position against peers. Economic data, such as inflation, interest rates and GDP from TUIK or the central bank (TCMB), shows the environment the company works in. Credit rating reports and independent research add more views. An analyst should judge each source for reliability and possible bias.",
+        "tr": "Yıllık ve ara dönem raporlar tek girdi değildir. Şirketler analist toplantıları (kazanç telekonferansları) ve yatırımcı sunumları düzenler; burada yönetim sonuçları açıklar ve analistlerin sorularını yanıtlar. Basın bültenleri çoğu zaman tam rapordan önce öncü sonuçlar verir; bu rakamlar genellikle denetlenmemiştir. ABD'de vekâlet beyanı (proxy statement) yönetim kurulu seçimleri ve üst yönetim ücretleri hakkında bilgi verir. Sektör verileri (sektör dernekleri, sektör raporları, rakiplerin tabloları) şirketin rakiplerine göre konumunu gösterir. TÜİK ve TCMB'nin enflasyon, faiz ve GSYH gibi ekonomi verileri şirketin içinde bulunduğu ortamı ortaya koyar. Kredi derecelendirme raporları ve bağımsız araştırmalar ek bakış açısı sağlar. Analist her kaynağı güvenilirlik ve olası yanlılık açısından değerlendirmelidir.",
+        "key_terms": [
+          "earnings call",
+          "press release",
+          "proxy statement",
+          "industry data",
+          "economic data"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: a credit review",
+        "heading_tr": "Uygulama: bir kredi incelemesi",
+        "en": "A bank analyst must decide in two weeks whether to lend 200 million TL to Ege Seramik. Step 1: the purpose is a credit decision, so the focus is cash flow and debt service. Step 2: she downloads three years of statements from KAP, reads the footnotes on debt and leases, and collects construction-sector data. Step 3: she builds common-size statements and computes leverage and interest coverage ratios. Step 4: she finds that coverage is falling because of higher borrowing costs. Step 5: she recommends the loan with a covenant on maximum leverage. Step 6: each quarter she checks new KAP filings against the covenant.",
+        "tr": "Bir banka analisti, Ege Seramik'e 200 milyon TL kredi verilip verilmeyeceğine iki hafta içinde karar vermelidir. Adım 1: amaç bir kredi kararıdır; bu nedenle odak nakit akışı ve borç servisidir. Adım 2: KAP'tan üç yıllık tabloları indirir, borç ve kiralama dipnotlarını okur, inşaat sektörü verilerini toplar. Adım 3: dikey tabloları hazırlar, kaldıraç ve faiz karşılama oranlarını hesaplar. Adım 4: artan borçlanma maliyeti yüzünden faiz karşılama oranının düştüğünü görür. Adım 5: azami kaldıraç sınırı içeren bir sözleşme koşuluyla (kovenant) krediyi önerir. Adım 6: her çeyrekte KAP'taki yeni bildirimleri bu koşula göre kontrol eder.",
+        "key_terms": [
+          "covenant",
+          "interest coverage"
+        ],
+        "example": {
+          "en": "Purpose = credit decision -> data = statements, footnotes, sector data -> processing = ratios -> interpretation = coverage falling -> conclusion = lend with covenant -> follow-up = quarterly checks.",
+          "tr": "Amaç = kredi kararı -> veri = tablolar, dipnotlar, sektör verisi -> işleme = oranlar -> yorum = faiz karşılama düşüyor -> sonuç = kovenantlı kredi -> izleme = çeyreklik kontrol."
+        }
+      },
+      {
+        "kind": "turkey",
+        "heading_en": "Turkey: TFRS, KAP and TMS 29",
+        "heading_tr": "Türkiye: TFRS, KAP ve TMS 29",
+        "en": "Listed Turkish companies prepare statements under TFRS and publish them on KAP. Because of high inflation, KGK required TFRS reporters to apply TMS 29 (the Turkish version of IAS 29, financial reporting in hyperinflationary economies) for annual periods ending on or after 31 December 2023. Under TMS 29, non-monetary items such as inventory, property and equity are restated with a general price index, monetary items such as cash and receivables are not restated, and a gain or loss on the net monetary position goes to profit or loss. Prior-year comparatives are also restated into current purchasing power. US GAAP has no similar restatement standard. So an analyst must not compare inflation-adjusted Turkish figures directly with nominal figures from older reports.",
+        "tr": "Borsada işlem gören Türk şirketleri tablolarını TFRS'ye göre hazırlar ve KAP'ta yayımlar. Yüksek enflasyon nedeniyle KGK, TFRS uygulayan işletmelerin 31 Aralık 2023 ve sonrasında sona eren yıllık dönemlerde TMS 29'u (UMS 29'un Türkçe karşılığı: Yüksek Enflasyonlu Ekonomilerde Finansal Raporlama) uygulamasını zorunlu kıldı. TMS 29'a göre stoklar, maddi duran varlıklar ve özkaynak gibi parasal olmayan kalemler genel fiyat endeksiyle yeniden düzenlenir; nakit ve alacaklar gibi parasal kalemler düzeltilmez; net parasal pozisyon kazancı veya kaybı kâr veya zarara yansır. Önceki yılın karşılaştırmalı tutarları da cari satın alma gücüne taşınır. US GAAP'te buna benzer bir yeniden düzenleme standardı yoktur. Bu yüzden analist enflasyona göre düzeltilmiş Türk rakamlarını eski raporlardaki nominal rakamlarla doğrudan karşılaştırmamalıdır.",
+        "key_terms": [
+          "TMS 29",
+          "hyperinflation",
+          "monetary item",
+          "non-monetary item",
+          "net monetary position"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not confuse the steps: building ratios is processing data (step 3), while turning ratios into a view is analysis and interpretation (step 4). Collecting peer statements is part of step 2, not step 1. An unqualified opinion does not guarantee that there is no fraud or error; it gives only reasonable assurance. A qualified opinion means there is an exception for a specific item, while an adverse opinion means the statements as a whole are not fairly presented. Standard setters (IASB, FASB, KGK) write standards; regulators (SEC, SPK) enforce them. Management commentary and press releases are useful but are not audited in the same way as the statements.",
+        "tr": "Adımları karıştırmayın: oranları hesaplamak verilerin işlenmesidir (adım 3); oranları bir görüşe dönüştürmek ise analiz ve yorumdur (adım 4). Rakip şirketlerin tablolarını toplamak adım 2'nin parçasıdır, adım 1'in değil. Olumlu görüş hile veya hata olmadığını garanti etmez; yalnızca makul güvence verir. Şartlı görüş belirli bir kalemde istisna olduğunu, olumsuz görüş ise tabloların bütün olarak gerçeğe uygun sunulmadığını gösterir. Standart belirleyiciler (IASB, FASB, KGK) standart yazar; düzenleyiciler (SEC, SPK) uygulatır. Yönetim yorumu ve basın bültenleri yararlıdır ama tablolar gibi denetimden geçmez.",
+        "key_terms": [
+          "qualified opinion",
+          "adverse opinion",
+          "standard setter",
+          "regulator"
+        ]
+      }
+    ],
+    "summary_en": "Financial statement analysis uses reported data and other information to judge past performance, financial position and future prospects. A project follows six steps: purpose and context, data collection, data processing, analysis and interpretation, conclusions and recommendations, and follow-up. Footnotes, management commentary and the auditor's report are essential parts of the information set. Differences between IFRS and US GAAP, and changes in standards such as TMS 29 or IFRS 18, must be considered before comparing companies.",
+    "summary_tr": "Finansal tablo analizi, raporlanan verileri ve diğer bilgileri kullanarak geçmiş performansı, finansal durumu ve geleceğe ilişkin beklentileri değerlendirir. Bir analiz projesi altı adımdan oluşur: amaç ve bağlam, veri toplama, veri işleme, analiz ve yorum, sonuç ve öneriler, izleme. Dipnotlar, yönetim yorumu ve denetim raporu bilgi setinin vazgeçilmez parçalarıdır. Şirketleri karşılaştırmadan önce UFRS ile US GAAP arasındaki farklar ve TMS 29 ya da UFRS 18 gibi standart değişiklikleri dikkate alınmalıdır.",
+    "common_traps_tr": [
+      "Oran hesaplamayı (veri işleme, adım 3) yorumla (adım 4) karıştırmak.",
+      "Olumlu denetim görüşünü 'hile yok' garantisi sanmak; denetim yalnızca makul güvence verir.",
+      "Şartlı görüş ile olumsuz görüşü karıştırmak: şartlı = belirli bir kalemde istisna, olumsuz = tablolar bütünüyle yanlış.",
+      "Standart belirleyici (IASB, FASB, KGK) ile düzenleyiciyi (SEC, SPK) aynı sanmak.",
+      "LIFO'nun UFRS'de de serbest olduğunu düşünmek; LIFO yalnızca US GAAP'te serbesttir.",
+      "TMS 29'a göre düzeltilmiş rakamları eski nominal raporlarla doğrudan kıyaslamak."
+    ],
+    "vocab_ids": [
+      "financial-statement",
+      "footnote",
+      "auditor",
+      "audit-opinion",
+      "management-commentary",
+      "filing",
+      "ifrs",
+      "us-gaap",
+      "standard-setter",
+      "regulator",
+      "hyperinflation",
+      "earnings-call",
+      "purpose",
+      "follow-up",
+      "reasonable-assurance",
+      "creditor",
+      "disclosure",
+      "evaluate"
+    ],
+    "spk_link": {
+      "status": "known",
+      "note_tr": "SPK Düzey 3 'Finansal Tablolar ve Mali Analiz' konusuyla büyük ölçüde örtüşür; UFRS–US GAAP farkları ve TMS 29 ayrıntıları yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-01-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which step comes first in a financial statement analysis project?",
+      "stem_tr": "Bir finansal tablo analizi projesinde ilk adım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Collect the input data",
+          "tr": "Girdi verilerini toplamak"
+        },
+        {
+          "key": "B",
+          "en": "Articulate the purpose and context of the analysis",
+          "tr": "Analizin amacını ve bağlamını belirlemek"
+        },
+        {
+          "key": "C",
+          "en": "Process the data into ratios and common-size statements",
+          "tr": "Verileri oranlara ve dikey tablolara dönüştürmek"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The framework starts by defining the purpose and context: which question must be answered, for whom, when and with what resources. All other steps depend on this.",
+      "explanation_tr": "Çerçeve, amacın ve bağlamın belirlenmesiyle başlar: hangi soru, kimin için, ne zamana kadar ve hangi kaynakla yanıtlanacak. Diğer tüm adımlar buna bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Data collection is step 2. Without a clear purpose, the analyst does not know which data to collect.",
+          "tr": "Veri toplama 2. adımdır. Amaç net değilse analist hangi veriyi toplayacağını bilemez."
+        },
+        "C": {
+          "en": "Processing data is step 3, after the purpose is set and data is collected.",
+          "tr": "Veri işleme 3. adımdır; amaç belirlenip veri toplandıktan sonra gelir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "purpose",
+        "articulate",
+        "framework",
+        "input-data"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst has adjusted a company's statements for differences in accounting methods and has prepared common-size statements and ratios. The analyst has most likely just completed which step?",
+      "stem_tr": "Bir analist, şirketin tablolarını muhasebe yöntemi farklarına göre düzeltmiş, dikey tabloları ve oranları hazırlamıştır. Analist büyük olasılıkla hangi adımı yeni tamamlamıştır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Process the data",
+          "tr": "Verilerin işlenmesi"
+        },
+        {
+          "key": "B",
+          "en": "Collect the input data",
+          "tr": "Girdi verilerinin toplanması"
+        },
+        {
+          "key": "C",
+          "en": "Follow up",
+          "tr": "İzleme"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Adjusting statements and building common-size statements, ratios and forecasts are the typical outputs of the data processing step (step 3).",
+      "explanation_tr": "Tabloları düzeltmek; dikey tabloları, oranları ve tahminleri hazırlamak veri işleme adımının (3. adım) tipik çıktılarıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Collecting data means gathering statements and other inputs; it does not include adjusting them or computing ratios.",
+          "tr": "Veri toplama tabloları ve diğer girdileri bir araya getirmektir; düzeltme ya da oran hesaplamayı kapsamaz."
+        },
+        "C": {
+          "en": "Follow-up happens after conclusions are communicated, when new information arrives over time.",
+          "tr": "İzleme, sonuçlar iletildikten sonra zamanla yeni bilgi geldiğinde yapılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "adjust",
+        "common-size",
+        "ratio",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which output is most likely produced in the step 'develop and communicate conclusions and recommendations'?",
+      "stem_tr": "'Sonuç ve önerilerin geliştirilmesi ve iletilmesi' adımında en olası çıktı hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A statement of purpose and a timetable",
+          "tr": "Bir amaç bildirimi ve takvim"
+        },
+        {
+          "key": "B",
+          "en": "A set of adjusted financial statements",
+          "tr": "Düzeltilmiş finansal tablolar seti"
+        },
+        {
+          "key": "C",
+          "en": "An analytical report with a recommendation",
+          "tr": "Öneri içeren bir analiz raporu"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In step 5 the analyst prepares the analytical report (for example, an equity research report or a credit memo) that states conclusions and recommendations.",
+      "explanation_tr": "5. adımda analist sonuçları ve önerileri içeren analiz raporunu (örneğin bir hisse araştırma raporu ya da kredi notu) hazırlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A statement of purpose and a timetable are outputs of step 1.",
+          "tr": "Amaç bildirimi ve takvim 1. adımın çıktılarıdır."
+        },
+        "B": {
+          "en": "Adjusted statements are outputs of step 3, data processing.",
+          "tr": "Düzeltilmiş tablolar 3. adımın, yani veri işlemenin çıktılarıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "output",
+        "recommendation",
+        "conclusion",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Six months after issuing a buy recommendation on Marmara Tekstil, an analyst reads the new interim report and sees that margins have fallen well below her forecast. Which action is most appropriate?",
+      "stem_tr": "Marmara Tekstil için 'al' önerisi yayımlamasından altı ay sonra bir analist yeni ara dönem raporunu okur ve marjların tahmininin çok altına düştüğünü görür. En uygun eylem hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Wait for the audited annual report before reviewing the recommendation",
+          "tr": "Öneriyi gözden geçirmeden önce denetlenmiş yıllık raporu beklemek"
+        },
+        {
+          "key": "B",
+          "en": "Treat this as follow-up: update the data and analysis and, if needed, revise the recommendation",
+          "tr": "Bunu izleme adımı olarak ele almak: veriyi ve analizi güncellemek, gerekirse öneriyi revize etmek"
+        },
+        {
+          "key": "C",
+          "en": "Keep the recommendation because the original analysis was completed correctly",
+          "tr": "Özgün analiz doğru yapıldığı için öneriyi korumak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Follow-up (step 6) means gathering new information and repeating earlier steps when needed. A large miss on margins is new information that may change the conclusion, so the analyst should update the work.",
+      "explanation_tr": "İzleme (6. adım), yeni bilgileri toplamak ve gerektiğinde önceki adımları tekrarlamak demektir. Marjlardaki büyük sapma sonucu değiştirebilecek yeni bir bilgidir; analist çalışmasını güncellemelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Interim reports are a key input; waiting months for the annual report ignores relevant information.",
+          "tr": "Ara dönem raporlar temel bir girdidir; yıllık raporu aylarca beklemek önemli bilgiyi göz ardı eder."
+        },
+        "C": {
+          "en": "A correct past analysis can still become outdated; the framework is iterative.",
+          "tr": "Geçmişte doğru yapılmış bir analiz de eskiyebilir; çerçeve yinelemelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "follow-up",
+        "interim-report",
+        "forecast",
+        "appropriate",
+        "revise"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Which of the following is least likely an input to the first step (articulate the purpose and context) of the analysis?",
+      "stem_tr": "Aşağıdakilerden hangisinin analizin ilk adımına (amacın ve bağlamın belirlenmesi) girdi olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The nature of the analyst's role and the client's needs",
+          "tr": "Analistin görevinin niteliği ve müşterinin ihtiyaçları"
+        },
+        {
+          "key": "B",
+          "en": "Guidance from the analyst's employer on report format",
+          "tr": "Analistin çalıştığı kurumun rapor biçimine ilişkin yönergeleri"
+        },
+        {
+          "key": "C",
+          "en": "Financial statements of peer companies and industry statistics",
+          "tr": "Rakip şirketlerin finansal tabloları ve sektör istatistikleri"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Peer statements and industry data are inputs to step 2 (collect data). Step 1 uses the role of the analyst, the client's needs and institutional guidance.",
+      "explanation_tr": "Rakip tabloları ve sektör verileri 2. adımın (veri toplama) girdileridir. 1. adım analistin rolünü, müşterinin ihtiyaçlarını ve kurumsal yönergeleri kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The analyst's role and the client's needs define the purpose, so they are step 1 inputs.",
+          "tr": "Analistin rolü ve müşteri ihtiyaçları amacı belirler; bu yüzden 1. adımın girdileridir."
+        },
+        "B": {
+          "en": "Institutional guidance (format, deadlines) shapes the context in step 1.",
+          "tr": "Kurumsal yönergeler (biçim, süre) 1. adımdaki bağlamı şekillendirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-likely",
+        "input-data",
+        "peer",
+        "purpose"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The main role of financial statement analysis is best described as:",
+      "stem_tr": "Finansal tablo analizinin temel rolünü en iyi tanımlayan ifade hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "using reported and other information to assess past performance, current position and future prospects",
+          "tr": "raporlanan ve diğer bilgileri kullanarak geçmiş performansı, mevcut durumu ve geleceğe ilişkin beklentileri değerlendirmek"
+        },
+        {
+          "key": "B",
+          "en": "confirming that the statements contain no errors or fraud",
+          "tr": "tabloların hiçbir hata veya hile içermediğini doğrulamak"
+        },
+        {
+          "key": "C",
+          "en": "setting the accounting rules that companies must follow",
+          "tr": "şirketlerin uyması gereken muhasebe kurallarını belirlemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Analysts use financial statements, together with other data, to evaluate past performance, financial position and future prospects in order to make economic decisions.",
+      "explanation_tr": "Analistler ekonomik kararlar almak için finansal tabloları diğer verilerle birlikte kullanarak geçmiş performansı, finansal durumu ve gelecek beklentilerini değerlendirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Checking for material misstatement is the auditor's job, and even an audit gives only reasonable assurance.",
+          "tr": "Önemli yanlışlık kontrolü denetçinin işidir; denetim bile yalnızca makul güvence verir."
+        },
+        "C": {
+          "en": "Setting accounting rules is the job of standard setters such as the IASB, FASB or KGK.",
+          "tr": "Muhasebe kurallarını IASB, FASB veya KGK gibi standart belirleyiciler koyar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "evaluate",
+        "prospects",
+        "role",
+        "financial-statement"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank is reviewing a loan request from Anadolu Lojistik. Compared with an equity investor, the bank's credit analyst is most likely to focus on:",
+      "stem_tr": "Bir banka Anadolu Lojistik'in kredi başvurusunu inceliyor. Bir pay yatırımcısıyla karşılaştırıldığında bankanın kredi analisti büyük olasılıkla neye odaklanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the company's long-term growth potential and upside",
+          "tr": "şirketin uzun vadeli büyüme potansiyeline ve yukarı yönlü getiriye"
+        },
+        {
+          "key": "B",
+          "en": "the company's market share ranking in its industry",
+          "tr": "şirketin sektöründeki pazar payı sıralamasına"
+        },
+        {
+          "key": "C",
+          "en": "the company's ability to generate cash to pay interest and repay principal",
+          "tr": "şirketin faizi ödemek ve anaparayı geri ödemek için nakit yaratma gücüne"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A lender's return is limited to interest and principal, so the credit analyst focuses on cash flow, debt service capacity and downside risk.",
+      "explanation_tr": "Kredi verenin getirisi faiz ve anaparayla sınırlıdır; bu yüzden kredi analisti nakit akışına, borç ödeme kapasitesine ve aşağı yönlü riske odaklanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Upside potential matters most to equity investors, who share in growth; lenders do not.",
+          "tr": "Yukarı yönlü potansiyel, büyümeden pay alan pay yatırımcıları için önemlidir; kredi verenler bundan pay almaz."
+        },
+        "B": {
+          "en": "Market share is useful background, but it is not the main question for a lending decision.",
+          "tr": "Pazar payı yararlı bir arka plan bilgisidir ama kredi kararının ana sorusu değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "creditor",
+        "principal",
+        "interest",
+        "likely",
+        "repay"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Financial statement analysis is least likely used to:",
+      "stem_tr": "Finansal tablo analizinin aşağıdakilerden hangisi için kullanılma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "screen a large group of companies for investment ideas",
+          "tr": "yatırım fikri için geniş bir şirket grubunu taramak"
+        },
+        {
+          "key": "B",
+          "en": "predict with certainty tomorrow's closing share price",
+          "tr": "yarınki kapanış fiyatını kesin olarak tahmin etmek"
+        },
+        {
+          "key": "C",
+          "en": "evaluate a company as a possible acquisition target",
+          "tr": "bir şirketi olası bir devralma hedefi olarak değerlendirmek"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Financial statement analysis reduces uncertainty, but it cannot predict short-term prices with certainty. Screening and acquisition analysis are typical uses.",
+      "explanation_tr": "Finansal tablo analizi belirsizliği azaltır ama kısa vadeli fiyatları kesin olarak tahmin edemez. Tarama ve devralma analizi tipik kullanım alanlarıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Screening many companies on ratios is a common use of financial statement analysis.",
+          "tr": "Oranlara göre çok sayıda şirketi taramak finansal tablo analizinin yaygın bir kullanımıdır."
+        },
+        "C": {
+          "en": "Evaluating merger and acquisition targets is a standard use of the analysis.",
+          "tr": "Birleşme ve devralma hedeflerini değerlendirmek analizin standart kullanımlarındandır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-likely",
+        "screen",
+        "certainty",
+        "acquisition"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Compared with a credit analyst, an equity analyst evaluating the same company is most likely to give more attention to:",
+      "stem_tr": "Aynı şirketi değerlendiren bir hisse analisti, bir kredi analistine kıyasla büyük olasılıkla neye daha fazla dikkat eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "future earnings growth that can raise the value of the shares",
+          "tr": "pay değerini artırabilecek gelecekteki kâr büyümesine"
+        },
+        {
+          "key": "B",
+          "en": "the value of collateral available to lenders in default",
+          "tr": "temerrüt durumunda kredi verenlerin başvurabileceği teminatın değerine"
+        },
+        {
+          "key": "C",
+          "en": "the order in which debt holders are repaid in liquidation",
+          "tr": "tasfiye durumunda borç sahiplerine yapılacak ödemelerin sırasına"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Shareholders benefit from growth without an upper limit, so equity analysts focus on future earnings and cash flow growth.",
+      "explanation_tr": "Pay sahipleri büyümeden üst sınır olmadan yararlanır; bu nedenle hisse analistleri gelecekteki kâr ve nakit akışı büyümesine odaklanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Collateral value protects lenders; it is a credit analyst's concern.",
+          "tr": "Teminat değeri kredi vereni korur; kredi analistinin konusudur."
+        },
+        "C": {
+          "en": "Repayment priority in liquidation is mainly a creditor concern.",
+          "tr": "Tasfiyede ödeme sırası esas olarak alacaklıların ilgilendiği bir konudur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "growth",
+        "collateral",
+        "default",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Karadeniz Enerji reports that net income grew 25% this year, while cash flow from operations fell sharply. Which conclusion is most appropriate?",
+      "stem_tr": "Karadeniz Enerji bu yıl net kârının %25 arttığını, işletme faaliyetlerinden nakit akışının ise sert düştüğünü açıklıyor. En uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The rise in net income shows that performance clearly improved",
+          "tr": "Net kârdaki artış performansın açıkça iyileştiğini gösterir"
+        },
+        {
+          "key": "B",
+          "en": "Cash flow is not relevant when the analyst values equity",
+          "tr": "Analist özkaynak değerlemesi yaparken nakit akışı önemli değildir"
+        },
+        {
+          "key": "C",
+          "en": "The analyst should examine earnings quality, such as growth in receivables and other accruals, before concluding",
+          "tr": "Analist sonuca varmadan önce alacaklardaki artış ve diğer tahakkuklar gibi kâr kalitesi göstergelerini incelemelidir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When earnings and operating cash flow move in opposite directions, accruals (for example, rising receivables or inventory) may be driving profit. Checking earnings quality is a core use of the analysis.",
+      "explanation_tr": "Kâr ile işletme nakit akışı ters yönde hareket ediyorsa kârı tahakkuklar (örneğin artan alacaklar veya stoklar) sürüklüyor olabilir. Kâr kalitesini sınamak analizin temel kullanımlarından biridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This takes reported earnings at face value and ignores the warning from cash flow.",
+          "tr": "Bu yanıt raporlanan kârı olduğu gibi kabul eder ve nakit akışındaki uyarıyı görmezden gelir."
+        },
+        "B": {
+          "en": "Cash flow is central to equity valuation and to judging earnings quality.",
+          "tr": "Nakit akışı hem özkaynak değerlemesinin hem de kâr kalitesi değerlendirmesinin merkezindedir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "accrual",
+        "net-income",
+        "appropriate",
+        "earnings-quality",
+        "receivable"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which information is most likely found in the notes (footnotes) to the financial statements?",
+      "stem_tr": "Finansal tablo dipnotlarında hangi bilginin yer alma olasılığı en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The accounting policies, methods and key estimates used",
+          "tr": "Kullanılan muhasebe politikaları, yöntemleri ve önemli tahminler"
+        },
+        {
+          "key": "B",
+          "en": "The consensus earnings forecast of sell-side analysts",
+          "tr": "Aracı kurum analistlerinin ortalama kâr tahmini"
+        },
+        {
+          "key": "C",
+          "en": "The daily trading volume of the company's shares",
+          "tr": "Şirket paylarının günlük işlem hacmi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Notes explain the accounting policies, methods and estimates behind the numbers and give extra detail on items such as debt, leases and segments.",
+      "explanation_tr": "Dipnotlar rakamların arkasındaki muhasebe politikalarını, yöntemlerini ve tahminleri açıklar; borç, kiralama ve bölümler gibi kalemlerde ek ayrıntı verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Analyst forecasts come from data providers, not from the company's notes.",
+          "tr": "Analist tahminleri veri sağlayıcılardan gelir, şirketin dipnotlarından değil."
+        },
+        "C": {
+          "en": "Trading volume is market data, not part of the financial statements.",
+          "tr": "İşlem hacmi piyasa verisidir, finansal tabloların parçası değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "footnote",
+        "accounting-policy",
+        "estimate",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An auditor's report states that the statements are fairly presented except for the way the company measured its inventory. This report contains:",
+      "stem_tr": "Bir denetim raporu, şirketin stoklarını ölçme biçimi dışında tabloların gerçeğe uygun sunulduğunu belirtiyor. Bu rapor hangi görüşü içerir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "an unqualified opinion",
+          "tr": "olumlu görüş"
+        },
+        {
+          "key": "B",
+          "en": "a qualified opinion",
+          "tr": "şartlı görüş"
+        },
+        {
+          "key": "C",
+          "en": "an adverse opinion",
+          "tr": "olumsuz görüş"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A qualified opinion says the statements are fairly presented except for a specific item, here inventory measurement.",
+      "explanation_tr": "Şartlı görüş, belirli bir kalem (burada stok ölçümü) dışında tabloların gerçeğe uygun sunulduğunu belirtir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An unqualified opinion has no exceptions.",
+          "tr": "Olumlu görüş hiçbir istisna içermez."
+        },
+        "C": {
+          "en": "An adverse opinion says the statements as a whole are not fairly presented, not just one item.",
+          "tr": "Olumsuz görüş yalnızca tek bir kalemi değil, tabloların bütün olarak gerçeğe uygun sunulmadığını belirtir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "auditor",
+        "qualified-opinion",
+        "fairly-presented",
+        "except"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Management commentary (MD&A) most likely includes:",
+      "stem_tr": "Yönetim yorumu (MD&A) en olası olarak neyi içerir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the auditor's opinion on internal controls",
+          "tr": "denetçinin iç kontrollere ilişkin görüşünü"
+        },
+        {
+          "key": "B",
+          "en": "a list of every journal entry made during the year",
+          "tr": "yıl içinde yapılan tüm yevmiye kayıtlarının listesini"
+        },
+        {
+          "key": "C",
+          "en": "management's discussion of results, trends, risks and uncertainties",
+          "tr": "yönetimin sonuçlar, eğilimler, riskler ve belirsizlikler hakkındaki değerlendirmesini"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Management commentary explains results, important trends, events, risks and uncertainties from management's point of view. It is useful but not independent.",
+      "explanation_tr": "Yönetim yorumu sonuçları, önemli eğilimleri, olayları, riskleri ve belirsizlikleri yönetimin bakış açısından açıklar. Yararlıdır ama bağımsız değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The auditor's opinion is in the auditor's report, not in management commentary.",
+          "tr": "Denetçinin görüşü denetim raporunda yer alır, yönetim yorumunda değil."
+        },
+        "B": {
+          "en": "Journal entries are not published; reports show summarized information.",
+          "tr": "Yevmiye kayıtları yayımlanmaz; raporlar özet bilgi içerir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "management-commentary",
+        "trend",
+        "uncertainty",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An unqualified audit opinion provides:",
+      "stem_tr": "Olumlu bir denetim görüşü ne sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "absolute assurance that no fraud has occurred",
+          "tr": "hiç hile yapılmadığına dair mutlak güvence"
+        },
+        {
+          "key": "B",
+          "en": "reasonable assurance that the statements are free of material misstatement",
+          "tr": "tabloların önemli yanlışlık içermediğine dair makul güvence"
+        },
+        {
+          "key": "C",
+          "en": "a guarantee that the company will remain profitable",
+          "tr": "şirketin kârlı kalacağına dair garanti"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Audits are based on sampling and judgment, so they give reasonable, not absolute, assurance that the statements are free of material misstatement.",
+      "explanation_tr": "Denetim örnekleme ve muhakemeye dayanır; bu nedenle tabloların önemli yanlışlık içermediğine dair mutlak değil, makul güvence verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No audit can give absolute assurance; some errors or fraud may not be found.",
+          "tr": "Hiçbir denetim mutlak güvence veremez; bazı hata veya hileler bulunamayabilir."
+        },
+        "C": {
+          "en": "An audit opinion is about past statements, not future profitability.",
+          "tr": "Denetim görüşü geçmiş tablolarla ilgilidir, gelecekteki kârlılıkla değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reasonable-assurance",
+        "material",
+        "misstatement",
+        "fraud"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "The auditor's report for Toros Kimya lists the impairment test of goodwill and the estimate of customer rebates as key audit matters. For the analyst, the most appropriate response is to:",
+      "stem_tr": "Toros Kimya'nın denetim raporu, şerefiye değer düşüklüğü testini ve müşteri iskontolarına ilişkin tahmini kilit denetim konuları olarak listeliyor. Analist için en uygun yaklaşım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "give extra attention to these areas because they involve significant judgment and estimates",
+          "tr": "önemli muhakeme ve tahmin içerdikleri için bu alanlara ek dikkat göstermek"
+        },
+        {
+          "key": "B",
+          "en": "treat the opinion as qualified because key audit matters are reported",
+          "tr": "kilit denetim konuları raporlandığı için görüşü şartlı kabul etmek"
+        },
+        {
+          "key": "C",
+          "en": "ignore these items because the auditor has already approved them",
+          "tr": "denetçi onayladığı için bu kalemleri göz ardı etmek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Key audit matters point to the areas that required the most auditor judgment. They do not change the opinion, but they show where the numbers are most sensitive to estimates.",
+      "explanation_tr": "Kilit denetim konuları denetçinin en çok muhakeme kullandığı alanları gösterir. Görüşü değiştirmezler ama rakamların tahminlere en duyarlı olduğu yerleri işaret ederler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Key audit matters appear in clean reports too; they are not a qualification.",
+          "tr": "Kilit denetim konuları olumlu raporlarda da yer alır; şartlı görüş anlamına gelmez."
+        },
+        "C": {
+          "en": "An audit gives only reasonable assurance; judgmental areas still deserve analysis.",
+          "tr": "Denetim yalnızca makul güvence verir; muhakeme gerektiren alanlar yine de analiz edilmelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "key-audit-matter",
+        "judgment",
+        "estimate",
+        "appropriate",
+        "impairment"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-c-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An auditor concludes that a company's statements are materially misstated and do not fairly present its financial position. The auditor will most likely issue:",
+      "stem_tr": "Bir denetçi, şirketin tablolarının önemli ölçüde yanlış olduğu ve finansal durumu gerçeğe uygun sunmadığı sonucuna varıyor. Denetçi büyük olasılıkla hangi görüşü verir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a qualified opinion",
+          "tr": "şartlı görüş"
+        },
+        {
+          "key": "B",
+          "en": "a disclaimer of opinion",
+          "tr": "görüş vermekten kaçınma"
+        },
+        {
+          "key": "C",
+          "en": "an adverse opinion",
+          "tr": "olumsuz görüş"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "An adverse opinion states that the statements are materially misstated and are not fairly presented as a whole.",
+      "explanation_tr": "Olumsuz görüş, tabloların önemli ölçüde yanlış olduğunu ve bütün olarak gerçeğe uygun sunulmadığını belirtir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A qualified opinion is used when only a specific item is a problem, not the statements as a whole.",
+          "tr": "Şartlı görüş, tabloların bütünü değil yalnızca belirli bir kalem sorunlu olduğunda verilir."
+        },
+        "B": {
+          "en": "A disclaimer is used when the auditor cannot form an opinion, for example because of a scope limitation.",
+          "tr": "Görüş vermekten kaçınma, denetçi örneğin kapsam sınırlaması nedeniyle görüş oluşturamadığında kullanılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "adverse-opinion",
+        "misstatement",
+        "material",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "International Financial Reporting Standards (IFRS) are issued by:",
+      "stem_tr": "Uluslararası Finansal Raporlama Standartlarını (UFRS) hangi kuruluş yayımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the FASB",
+          "tr": "FASB"
+        },
+        {
+          "key": "B",
+          "en": "the IASB",
+          "tr": "IASB"
+        },
+        {
+          "key": "C",
+          "en": "IOSCO",
+          "tr": "IOSCO"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The International Accounting Standards Board (IASB) issues IFRS. In Turkey, KGK publishes TFRS based on IFRS.",
+      "explanation_tr": "UFRS'yi Uluslararası Muhasebe Standartları Kurulu (IASB) yayımlar. Türkiye'de KGK, UFRS'ye dayanan TFRS'yi yayımlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The FASB issues US GAAP, not IFRS.",
+          "tr": "FASB, UFRS'yi değil US GAAP'i yayımlar."
+        },
+        "C": {
+          "en": "IOSCO is an organization of securities regulators; it does not issue accounting standards.",
+          "tr": "IOSCO sermaye piyasası düzenleyicilerinin birliğidir; muhasebe standardı yayımlamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "ifrs",
+        "standard-setter",
+        "issue"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes the difference between standard-setting bodies and regulatory authorities?",
+      "stem_tr": "Standart belirleyici kuruluşlar ile düzenleyici kurumlar arasındaki farkı en iyi hangisi açıklar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Standard setters have legal power to fine companies; regulators only write standards",
+          "tr": "Standart belirleyiciler şirketlere ceza verme yetkisine sahiptir; düzenleyiciler yalnızca standart yazar"
+        },
+        {
+          "key": "B",
+          "en": "Both have the same role and the terms can be used interchangeably",
+          "tr": "İkisinin rolü aynıdır ve terimler birbirinin yerine kullanılabilir"
+        },
+        {
+          "key": "C",
+          "en": "Standard setters write the reporting standards; regulators have legal authority to require and enforce reporting",
+          "tr": "Standart belirleyiciler raporlama standartlarını yazar; düzenleyiciler raporlamayı zorunlu kılma ve uygulatma konusunda yasal yetkiye sahiptir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Bodies such as the IASB and FASB set standards. Regulators such as the SEC or SPK have legal authority to require filings and enforce compliance.",
+      "explanation_tr": "IASB ve FASB gibi kuruluşlar standart belirler. SEC veya SPK gibi düzenleyiciler bildirimleri zorunlu kılma ve uyumu sağlama konusunda yasal yetkiye sahiptir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This reverses the roles.",
+          "tr": "Bu şık rolleri ters çevirir."
+        },
+        "B": {
+          "en": "The roles are different: one writes rules, the other enforces them.",
+          "tr": "Roller farklıdır: biri kural yazar, diğeri uygulatır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "standard-setter",
+        "regulator",
+        "enforce",
+        "authority"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which practice is permitted under US GAAP but not under IFRS?",
+      "stem_tr": "Aşağıdaki uygulamalardan hangisi US GAAP'te serbest, UFRS'de yasaktır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Using the LIFO method for inventory",
+          "tr": "Stoklarda LIFO yöntemini kullanmak"
+        },
+        {
+          "key": "B",
+          "en": "Revaluing property, plant and equipment to fair value",
+          "tr": "Maddi duran varlıkları gerçeğe uygun değerle yeniden değerlemek"
+        },
+        {
+          "key": "C",
+          "en": "Capitalizing development costs that meet specific criteria",
+          "tr": "Belirli koşulları sağlayan geliştirme maliyetlerini aktifleştirmek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "LIFO is allowed under US GAAP but prohibited under IFRS.",
+      "explanation_tr": "LIFO US GAAP'te serbest, UFRS'de yasaktır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Revaluation of PP&E is allowed under IFRS but not under US GAAP, the reverse of the question.",
+          "tr": "MDV yeniden değerlemesi UFRS'de serbest, US GAAP'te yasaktır; sorunun tersidir."
+        },
+        "C": {
+          "en": "Capitalizing development costs that meet criteria is an IFRS rule; US GAAP generally expenses them.",
+          "tr": "Koşulları sağlayan geliştirme maliyetlerinin aktifleştirilmesi UFRS kuralıdır; US GAAP bunları genellikle gider yazar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "permit",
+        "inventory",
+        "capitalize",
+        "fair-value"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two identical industrial companies (neither develops software) spend the same amount on product development. Company X reports under IFRS and its development costs meet the capitalization criteria; Company Y reports under US GAAP. All else equal, during a period of rising development spending Company X will most likely report:",
+      "stem_tr": "Yazılım dışı faaliyet gösteren iki özdeş sanayi şirketi ürün geliştirmeye aynı tutarı harcıyor. X şirketi UFRS'ye göre raporluyor ve geliştirme maliyetleri aktifleştirme koşullarını sağlıyor; Y şirketi US GAAP'e göre raporluyor. Diğer her şey sabitken, geliştirme harcamalarının arttığı bir dönemde X şirketi büyük olasılıkla ne raporlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower total assets and lower operating income than Company Y",
+          "tr": "Y'ye göre daha düşük toplam varlık ve daha düşük faaliyet kârı"
+        },
+        {
+          "key": "B",
+          "en": "the same total assets and operating income as Company Y",
+          "tr": "Y ile aynı toplam varlık ve faaliyet kârı"
+        },
+        {
+          "key": "C",
+          "en": "higher total assets and higher operating income than Company Y",
+          "tr": "Y'ye göre daha yüksek toplam varlık ve daha yüksek faaliyet kârı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "X capitalizes development costs as an intangible asset and amortizes them later, while Y expenses them immediately. When spending is rising, the expense of capitalized amounts (amortization) is less than the new spending, so X shows higher assets and higher operating income.",
+      "explanation_tr": "X geliştirme maliyetlerini maddi olmayan duran varlık olarak aktifleştirip sonradan itfa eder; Y ise hemen gider yazar. Harcamalar artarken aktifleştirilen tutarların itfa gideri yeni harcamadan küçük kalır; bu yüzden X daha yüksek varlık ve daha yüksek faaliyet kârı gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the effect for the company that expenses costs (Y), not for the one that capitalizes.",
+          "tr": "Bu, maliyetleri giderleştiren şirketin (Y) durumudur, aktifleştirenin değil."
+        },
+        "B": {
+          "en": "Different treatments of the same spending create different reported numbers.",
+          "tr": "Aynı harcamanın farklı muhasebeleştirilmesi farklı raporlanan rakamlar doğurur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capitalize",
+        "expense",
+        "all-else-equal",
+        "amortization",
+        "intangible-asset"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "IFRS 18, effective for annual periods beginning on or after 1 January 2027, introduces new required subtotals such as operating profit and new disclosures on management-defined performance measures. For an analyst, the most appropriate response is to:",
+      "stem_tr": "1 Ocak 2027 ve sonrasında başlayan yıllık dönemler için yürürlüğe giren UFRS 18, faaliyet kârı gibi yeni zorunlu ara toplamlar ve yönetim tanımlı performans ölçütlerine ilişkin yeni açıklamalar getiriyor. Analist için en uygun yaklaşım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "ignore the change because it does not affect cash",
+          "tr": "nakdi etkilemediği için değişikliği göz ardı etmek"
+        },
+        {
+          "key": "B",
+          "en": "check how the new presentation changes reported subtotals and keep historical comparisons consistent",
+          "tr": "yeni sunumun raporlanan ara toplamları nasıl değiştirdiğini kontrol etmek ve geçmiş karşılaştırmaları tutarlı tutmak"
+        },
+        {
+          "key": "C",
+          "en": "stop using IFRS reports until all companies adopt US GAAP",
+          "tr": "tüm şirketler US GAAP'e geçene kadar UFRS raporlarını kullanmayı bırakmak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "New standards can change subtotals and classifications even when cash is unchanged. Analysts track standard-setting changes so that ratios and trends remain comparable over time.",
+      "explanation_tr": "Yeni standartlar nakit değişmese bile ara toplamları ve sınıflandırmaları değiştirebilir. Analistler oranların ve eğilimlerin zaman içinde karşılaştırılabilir kalması için standart değişikliklerini izler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Presentation changes affect ratios and trends, which drive analysis, even without a cash effect.",
+          "tr": "Sunum değişiklikleri, nakit etkisi olmasa bile analizin dayandığı oranları ve eğilimleri etkiler."
+        },
+        "C": {
+          "en": "This is not practical and not needed; analysts adjust for differences instead.",
+          "tr": "Bu uygulanabilir de değildir, gerekli de değildir; analistler bunun yerine farkları düzeltir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "effective",
+        "subtotal",
+        "disclosure",
+        "appropriate",
+        "consistent"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "UFRS 18 ve yeni sunum kuralları SPK Düzey 3 kapsamında yer almaz."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-d-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish listed company reporting under TFRS applies TMS 29 (financial reporting in hyperinflationary economies). Compared with its unadjusted historical-cost figures, which statement is most accurate?",
+      "stem_tr": "TFRS'ye göre raporlama yapan borsada işlem gören bir Türk şirketi TMS 29'u (Yüksek Enflasyonlu Ekonomilerde Finansal Raporlama) uyguluyor. Düzeltilmemiş tarihî maliyet rakamlarıyla karşılaştırıldığında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Non-monetary items such as property are restated with a general price index, and a gain or loss on the net monetary position is reported in profit or loss",
+          "tr": "Maddi duran varlıklar gibi parasal olmayan kalemler genel fiyat endeksiyle yeniden düzenlenir ve net parasal pozisyon kazancı veya kaybı kâr veya zararda raporlanır"
+        },
+        {
+          "key": "B",
+          "en": "Only monetary items such as cash and receivables are restated",
+          "tr": "Yalnızca nakit ve alacaklar gibi parasal kalemler yeniden düzenlenir"
+        },
+        {
+          "key": "C",
+          "en": "All items are translated into US dollars at the year-end exchange rate",
+          "tr": "Tüm kalemler dönem sonu kuruyla ABD dolarına çevrilir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under TMS 29 (IAS 29), monetary items are already in current purchasing power and are not restated. Non-monetary items are restated using a general price index, and the gain or loss on the net monetary position goes to profit or loss.",
+      "explanation_tr": "TMS 29'a (UMS 29) göre parasal kalemler zaten cari satın alma gücüyle ifade edildiğinden yeniden düzenlenmez. Parasal olmayan kalemler genel fiyat endeksiyle düzeltilir; net parasal pozisyon kazancı veya kaybı kâr veya zarara yansır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This reverses the rule: monetary items are not restated.",
+          "tr": "Bu kuralı tersine çevirir: parasal kalemler yeniden düzenlenmez."
+        },
+        "C": {
+          "en": "TMS 29 uses a general price index, not translation into a foreign currency.",
+          "tr": "TMS 29 yabancı paraya çevrim değil, genel fiyat endeksi kullanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hyperinflation",
+        "restate",
+        "monetary-item",
+        "profit-or-loss",
+        "accurate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Enflasyon muhasebesi SPK sınavlarında genel olarak geçer; TMS 29 uygulama ayrıntıları ek bilgidir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-e-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is an information source outside the company's annual and interim reports?",
+      "stem_tr": "Aşağıdakilerden hangisi şirketin yıllık ve ara dönem raporları dışındaki bir bilgi kaynağıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The notes to the financial statements",
+          "tr": "Finansal tablo dipnotları"
+        },
+        {
+          "key": "B",
+          "en": "The auditor's report",
+          "tr": "Denetim raporu"
+        },
+        {
+          "key": "C",
+          "en": "An earnings conference call with management",
+          "tr": "Yönetimle yapılan bir kazanç telekonferansı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Earnings calls are held separately from the reports; management discusses results and answers analysts' questions.",
+      "explanation_tr": "Kazanç telekonferansları raporlardan ayrı yapılır; yönetim sonuçları tartışır ve analistlerin sorularını yanıtlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Notes are part of the annual and interim reports.",
+          "tr": "Dipnotlar yıllık ve ara dönem raporların parçasıdır."
+        },
+        "B": {
+          "en": "The auditor's report is included in the annual report.",
+          "tr": "Denetim raporu yıllık raporun içinde yer alır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "earnings-call",
+        "interim-report",
+        "source"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-e-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst wants to know whether a cement producer is gaining or losing market share against its competitors. The most appropriate source is:",
+      "stem_tr": "Bir analist, bir çimento üreticisinin rakiplerine karşı pazar payı kazanıp kazanmadığını öğrenmek istiyor. En uygun kaynak hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "industry data such as sector association statistics and competitors' reports",
+          "tr": "sektör derneği istatistikleri ve rakip raporları gibi sektör verileri"
+        },
+        {
+          "key": "B",
+          "en": "the company's statement of changes in equity",
+          "tr": "şirketin özkaynak değişim tablosu"
+        },
+        {
+          "key": "C",
+          "en": "the auditor's report on the company's statements",
+          "tr": "şirket tablolarına ilişkin denetim raporu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Market share is measured against the industry, so the analyst needs industry-level data and peer information.",
+      "explanation_tr": "Pazar payı sektöre göre ölçülür; bu nedenle analistin sektör düzeyinde verilere ve rakip bilgilerine ihtiyacı vardır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The statement of changes in equity shows owners' equity movements, not competitive position.",
+          "tr": "Özkaynak değişim tablosu özkaynak hareketlerini gösterir, rekabet konumunu değil."
+        },
+        "C": {
+          "en": "The audit report gives an opinion on fair presentation, not on market share.",
+          "tr": "Denetim raporu gerçeğe uygun sunum hakkında görüş verir, pazar payı hakkında değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "industry-data",
+        "competitor",
+        "market-share",
+        "appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-e-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst covering a Turkish food retailer wants to understand how inflation and interest rates may affect consumer demand. The most useful additional source is:",
+      "stem_tr": "Bir gıda perakendecisini takip eden analist, enflasyonun ve faiz oranlarının tüketici talebini nasıl etkileyebileceğini anlamak istiyor. En yararlı ek kaynak hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the company's note on property, plant and equipment",
+          "tr": "şirketin maddi duran varlıklar dipnotu"
+        },
+        {
+          "key": "B",
+          "en": "economic data such as TUIK inflation figures and TCMB policy rate decisions",
+          "tr": "TÜİK enflasyon verileri ve TCMB politika faizi kararları gibi ekonomi verileri"
+        },
+        {
+          "key": "C",
+          "en": "the list of the company's board members",
+          "tr": "şirketin yönetim kurulu üyeleri listesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Macroeconomic data on inflation and interest rates from official sources describes the environment that drives consumer demand.",
+      "explanation_tr": "Resmî kaynaklardan gelen enflasyon ve faiz verileri tüketici talebini belirleyen ortamı tanımlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The PP&E note describes the company's assets, not the economic environment.",
+          "tr": "MDV dipnotu şirketin varlıklarını açıklar, ekonomik ortamı değil."
+        },
+        "C": {
+          "en": "Board composition is a governance topic; it does not show demand conditions.",
+          "tr": "Yönetim kurulu yapısı bir kurumsal yönetim konusudur; talep koşullarını göstermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "economic-data",
+        "inflation",
+        "demand",
+        "interest"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-e-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "In the United States, a proxy statement is most likely to provide information about:",
+      "stem_tr": "ABD'de vekâlet beyanı (proxy statement) en olası olarak hangi konuda bilgi verir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the company's daily share price movements",
+          "tr": "şirketin günlük pay fiyatı hareketleri"
+        },
+        {
+          "key": "B",
+          "en": "the detailed calculation of inventory costs",
+          "tr": "stok maliyetlerinin ayrıntılı hesaplaması"
+        },
+        {
+          "key": "C",
+          "en": "board elections, executive compensation and matters for shareholder vote",
+          "tr": "yönetim kurulu seçimleri, üst yönetim ücretleri ve pay sahiplerinin oylayacağı konular"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A proxy statement is sent to shareholders before a meeting and describes items they will vote on, including board elections and executive pay.",
+      "explanation_tr": "Vekâlet beyanı genel kuruldan önce pay sahiplerine gönderilir ve yönetim kurulu seçimleri, üst yönetim ücretleri gibi oylanacak konuları açıklar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Share prices are market data, not part of a proxy statement.",
+          "tr": "Pay fiyatları piyasa verisidir, vekâlet beyanının parçası değildir."
+        },
+        "B": {
+          "en": "Inventory costing is explained in the notes to the financial statements.",
+          "tr": "Stok maliyetlendirmesi finansal tablo dipnotlarında açıklanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "proxy-statement",
+        "compensation",
+        "vote",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-01-e-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Before publishing its full interim report, Kapadokya Turizm releases a press release with preliminary quarterly revenue. The most appropriate way for the analyst to use this information is to:",
+      "stem_tr": "Kapadokya Turizm, tam ara dönem raporunu yayımlamadan önce öncü çeyrek hasılatını içeren bir basın bülteni yayımlıyor. Analistin bu bilgiyi kullanmasının en uygun yolu hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "use it as timely information but compare it with the full report when that is filed",
+          "tr": "zamanında gelen bir bilgi olarak kullanmak ama tam rapor yayımlandığında onunla karşılaştırmak"
+        },
+        {
+          "key": "B",
+          "en": "treat the numbers as audited and final",
+          "tr": "rakamları denetlenmiş ve kesin kabul etmek"
+        },
+        {
+          "key": "C",
+          "en": "ignore it because only annual reports are reliable",
+          "tr": "yalnızca yıllık raporlar güvenilir olduğu için göz ardı etmek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Press releases are timely but preliminary and usually unaudited. The analyst can use them while checking them later against the filed report.",
+      "explanation_tr": "Basın bültenleri zamanlıdır ama öncü niteliktedir ve genellikle denetlenmemiştir. Analist bunları kullanabilir, ancak daha sonra yayımlanan raporla karşılaştırmalıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Preliminary figures can change and are normally not audited.",
+          "tr": "Öncü rakamlar değişebilir ve normalde denetlenmemiştir."
+        },
+        "C": {
+          "en": "Ignoring timely information is not appropriate; interim and other sources are valuable.",
+          "tr": "Zamanlı bilgiyi göz ardı etmek uygun değildir; ara dönem ve diğer kaynaklar değerlidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "press-release",
+        "preliminary",
+        "timely",
+        "appropriate",
+        "file"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

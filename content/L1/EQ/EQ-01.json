@@ -1,0 +1,946 @@
+{
+  "module_id": "EQ-01",
+  "lesson": {
+    "id": "EQ-01-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-01",
+    "los_ids": [
+      "EQ-01-a",
+      "EQ-01-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Equity Instrument Features",
+    "title_tr": "Pay Senedi Araçlarının Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why equity exists",
+        "heading_tr": "Özkaynak neden var?",
+        "en": "A company needs money to grow. It can borrow (debt) or it can sell ownership (equity). Debt holders get fixed interest and must be paid first. Equity holders are paid last, but they own what is left after everyone else is paid. If the company does very well, equity holders gain the most. If it fails, they can lose their whole investment, but no more than that. Think of a fictional company, Ege Kablo A.Ş., listed on Borsa İstanbul. When its profit doubles, its bank still receives the same interest, but the value of its shares can rise sharply. Equity instruments differ in how much income, safety and control they give their holders.",
+        "tr": "Bir şirketin büyümek için paraya ihtiyacı vardır. Borçlanabilir (borç) ya da ortaklık satabilir (özkaynak). Borç verenler sabit faiz alır ve önce ödenir. Pay sahipleri en son ödenir ama herkes ödendikten sonra kalan her şeyin sahibidir. Şirket çok iyi giderse en çok pay sahipleri kazanır; batarsa yatırdıkları paranın tamamını kaybedebilirler ama daha fazlasını değil. Borsa İstanbul'da işlem gören kurgusal Ege Kablo A.Ş.'yi düşünün: kârı ikiye katlandığında banka yine aynı faizi alır, ama payların değeri hızla yükselebilir. Pay araçları, sahiplerine ne kadar gelir, güvence ve kontrol verdiklerine göre farklılaşır.",
+        "key_terms": [
+          "equity",
+          "debt",
+          "residual claim",
+          "limited liability"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Common shares",
+        "heading_tr": "Adi paylar",
+        "en": "Common shares (ordinary shares) give a residual claim: holders receive what remains after creditors and preferred shareholders are paid. They usually carry voting rights, so holders elect the board and vote on major decisions. Dividends are not promised; the board decides whether to pay them. Holders have limited liability: they can lose only the money they invested. Some common shares are callable (the company can buy them back at a set price) or putable (the holder can sell them back to the company at a set price). A put feature helps the investor, so such shares are worth more.",
+        "tr": "Adi paylar artık talep (kalan değer üzerinde hak) verir: alacaklılar ve imtiyazlı pay sahipleri ödendikten sonra kalan, adi pay sahiplerinindir. Genellikle oy hakkı taşırlar; sahipleri yönetim kurulunu seçer ve önemli kararlarda oy kullanır. Temettü taahhüt edilmez; ödenip ödenmeyeceğine yönetim kurulu ve genel kurul karar verir. Sorumluluk sınırlıdır: pay sahibi en çok yatırdığı parayı kaybeder. Bazı adi paylar geri çağrılabilir (şirket belirli fiyattan geri alabilir) ya da satılabilir (sahibi belirli fiyattan şirkete geri satabilir). Satma hakkı yatırımcının lehinedir; bu yüzden böyle paylar daha değerlidir.",
+        "key_terms": [
+          "common share",
+          "residual claim",
+          "voting right",
+          "callable",
+          "putable",
+          "limited liability"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Preferred shares",
+        "heading_tr": "İmtiyazlı paylar (preferred)",
+        "en": "Preferred shares sit between debt and common equity. They usually pay a fixed dividend (a rate on par value) and rank above common shares for dividends and in liquidation, but below all creditors. They usually have no vote. Key types: cumulative (missed dividends accumulate as dividends in arrears and must be paid before any common dividend); non-cumulative (missed dividends are lost); participating (extra dividends when profit passes a level); convertible (can be changed into common shares). Preferred shares can also be callable or putable. Note: in Turkey, 'imtiyazlı pay' often means shares with special voting or board-nomination privileges, which is a different idea from a fixed-dividend preferred share.",
+        "tr": "İmtiyazlı paylar borç ile adi özkaynak arasında yer alır. Genellikle sabit temettü (nominal değer üzerinden bir oran) öder; temettüde ve tasfiyede adi payların önünde ama tüm alacaklıların arkasındadır. Genellikle oy hakkı yoktur. Başlıca türler: birikimli (ödenmeyen temettü birikir ve adi temettüden önce ödenmelidir); birikimsiz (ödenmeyen temettü kaybolur); katılımlı (kâr belirli düzeyi aşınca ek temettü); dönüştürülebilir (adi paya çevrilebilir). Geri çağrılabilir veya satılabilir de olabilir. Dikkat: Türkiye'de 'imtiyazlı pay' çoğu zaman oyda veya yönetim kuruluna aday göstermede ayrıcalık tanıyan payları ifade eder; bu, sabit temettülü 'preferred share' kavramından farklıdır.",
+        "key_terms": [
+          "preferred share",
+          "cumulative",
+          "non-cumulative",
+          "participating",
+          "convertible",
+          "dividends in arrears"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Feature",
+              "tr": "Özellik"
+            },
+            {
+              "en": "Common",
+              "tr": "Adi pay"
+            },
+            {
+              "en": "Preferred",
+              "tr": "İmtiyazlı (preferred)"
+            }
+          ],
+          "rows": [
+            [
+              "Dividend / Temettü",
+              "Variable, not promised / Değişken, taahhütsüz",
+              "Usually fixed / Genellikle sabit"
+            ],
+            [
+              "Voting / Oy",
+              "Yes / Var",
+              "Usually no / Genellikle yok"
+            ],
+            [
+              "Claim order / Sıra",
+              "Last / En son",
+              "Before common / Adi paydan önce"
+            ],
+            [
+              "Upside / Kazanç potansiyeli",
+              "Unlimited / Sınırsız",
+              "Limited / Sınırlı"
+            ],
+            [
+              "Risk",
+              "Highest / En yüksek",
+              "Lower / Daha düşük"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Depository receipts",
+        "heading_tr": "Depo sertifikaları",
+        "en": "A depository receipt (DR) lets investors buy a foreign company's equity in their own market and currency. A depository bank holds the shares in the home market (through a custodian) and issues receipts against them. One receipt can represent one share, several shares or part of a share. A sponsored DR is created with the company's involvement, so holders usually get voting rights. An unsponsored DR is created by the bank alone, and the bank usually keeps the votes. An ADR trades in the US; a global depository receipt (GDR) trades outside the US and outside the home country. US ADRs come in levels: Level I trades OTC, Level II is listed on an exchange, and Level III is listed and also raises new capital.",
+        "tr": "Depo sertifikası (DR), yatırımcının yabancı bir şirketin özkaynağına kendi piyasasında ve kendi para biriminde yatırım yapmasını sağlar. Depo bankası payları şirketin ülkesinde (bir saklama kuruluşu aracılığıyla) tutar ve bunlara karşılık sertifika çıkarır. Bir sertifika bir payı, birkaç payı ya da bir payın bir kısmını temsil edebilir. Sponsorlu DR şirketin katılımıyla oluşturulur; sahipleri genellikle oy hakkı alır. Sponsorsuz DR'yi banka tek başına çıkarır ve oyları genellikle banka kullanır. ADR ABD'de işlem görür; global depo sertifikası (GDR) ABD dışında ve şirketin kendi ülkesi dışında işlem görür. ABD ADR'leri seviyelere ayrılır: Seviye I tezgâhüstünde işlem görür, Seviye II borsaya kotedir, Seviye III hem kotedir hem yeni sermaye toplar.",
+        "key_terms": [
+          "depository receipt",
+          "depository bank",
+          "sponsored",
+          "unsponsored",
+          "ADR",
+          "GDR"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Public vs private equity",
+        "heading_tr": "Borsada işlem gören ve özel sermaye",
+        "en": "Public (listed) shares trade on an exchange such as Borsa İstanbul. Prices are visible all day, liquidity is higher, and the company must publish regular reports (in Turkey, on KAP). Private equity securities are not listed. They are bought and sold in negotiated deals, prices are not continuous, liquidity is low and reporting duties are lighter. Private owners often hold large stakes, sit on the board and plan for the long term. Investors in private equity are usually institutions with long horizons, such as pension funds and endowments. Because private shares are hard to sell, investors demand an illiquidity premium, and valuers apply a discount for lack of marketability.",
+        "tr": "Borsada işlem gören paylar Borsa İstanbul gibi bir borsada alınıp satılır. Fiyatlar gün boyu görünür, likidite yüksektir ve şirket düzenli rapor yayımlamak (Türkiye'de KAP'ta) zorundadır. Özel sermaye payları borsada işlem görmez. Pazarlıkla alınıp satılır, sürekli fiyat yoktur, likidite düşüktür ve raporlama yükü hafiftir. Özel sahipler genellikle büyük paylar tutar, yönetim kurulunda yer alır ve uzun vadeli plan yapar. Özel sermaye yatırımcıları genellikle emeklilik fonları ve vakıf fonları gibi uzun vadeli kurumlardır. Özel paylar zor satıldığı için yatırımcı likiditesizlik primi ister; değerleme yapanlar da pazarlanabilirlik eksikliği iskontosu uygular.",
+        "key_terms": [
+          "listed",
+          "private equity",
+          "liquidity",
+          "disclosure",
+          "illiquidity premium",
+          "discount for lack of marketability"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Item",
+              "tr": "Kalem"
+            },
+            {
+              "en": "Public",
+              "tr": "Borsada işlem gören"
+            },
+            {
+              "en": "Private",
+              "tr": "Özel"
+            }
+          ],
+          "rows": [
+            [
+              "Liquidity / Likidite",
+              "High / Yüksek",
+              "Low / Düşük"
+            ],
+            [
+              "Price / Fiyat",
+              "Market, continuous / Piyasa, sürekli",
+              "Negotiated / Pazarlık"
+            ],
+            [
+              "Reporting / Raporlama",
+              "Heavy (KAP) / Yoğun",
+              "Light / Hafif"
+            ],
+            [
+              "Horizon / Vade",
+              "Often short-term pressure / Kısa vade baskısı",
+              "Long-term / Uzun vade"
+            ],
+            [
+              "Owner control / Kontrol",
+              "Dispersed / Dağınık",
+              "Concentrated / Yoğun"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Dividends in arrears",
+        "heading_tr": "Birikmiş imtiyazlı temettü",
+        "en": "For cumulative preferred shares, the amount that must be paid before common shareholders get any dividend equals the annual preferred dividend times the number of missed years, plus the current year's dividend. The annual preferred dividend is the dividend rate times the par value. For non-cumulative shares, only the current year's dividend counts, because missed dividends are lost.",
+        "tr": "Birikimli imtiyazlı paylarda, adi pay sahiplerine temettü ödenebilmesi için önce ödenmesi gereken tutar; yıllık imtiyazlı temettünün ödenmeyen yıl sayısıyla çarpımı artı bu yılın temettüsüdür. Yıllık imtiyazlı temettü, temettü oranı ile nominal değerin çarpımıdır. Birikimsiz paylarda yalnızca bu yılın temettüsü dikkate alınır, çünkü ödenmeyen temettüler kaybolur.",
+        "key_terms": [
+          "dividend rate",
+          "par value",
+          "dividends in arrears"
+        ],
+        "formula_latex": "\\text{Required} = d \\times Par \\times (n_{missed} + 1)"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Cumulative preferred in practice",
+        "heading_tr": "Uygulamada birikimli imtiyazlı pay",
+        "en": "Marmara Enerji A.Ş. (fictional) has 1,000,000 cumulative preferred shares, par TRY 50, dividend rate 8%. It skipped preferred dividends in the last two years. This year it wants to pay a common dividend. How much must go to preferred holders first?",
+        "tr": "Marmara Enerji A.Ş.'nin (kurgusal) nominal değeri 50 TL, temettü oranı %8 olan 1.000.000 adet birikimli imtiyazlı payı var. Son iki yıl imtiyazlı temettü ödemedi. Bu yıl adi paylara temettü dağıtmak istiyor. Önce imtiyazlı pay sahiplerine ne kadar ödenmeli?",
+        "key_terms": [
+          "cumulative",
+          "par value"
+        ],
+        "example": {
+          "en": "Annual dividend per share = 0.08 × 50 = TRY 4. Missed: 2 × 4 = 8. Current year: 4. Per share: 12. Total: 12 × 1,000,000 = TRY 12,000,000 before any common dividend.",
+          "tr": "Pay başına yıllık temettü = 0,08 × 50 = 4 TL. Ödenmeyen: 2 × 4 = 8. Bu yıl: 4. Pay başına: 12. Toplam: 12 × 1.000.000 = 12.000.000 TL; adi temettüden önce ödenmeli.",
+          "formula_latex": "0.08 \\times 50 \\times (2+1) = 12"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not say preferred shareholders rank above creditors; they rank above common shareholders only. Do not mix up participating (extra dividends) and convertible (change into common shares). A call feature helps the issuer and lowers the value of the share for the investor; a put feature helps the investor and raises the value. Unsponsored depository receipts usually give no voting rights to the holder. Listing increases liquidity and access to capital but adds reporting cost. Private shares are worth less than identical listed shares because they are hard to sell.",
+        "tr": "İmtiyazlı pay sahiplerinin alacaklıların önünde geldiğini söylemeyin; yalnızca adi pay sahiplerinin önündedirler. Katılımlı (ek temettü) ile dönüştürülebiliri (adi paya çevrilme) karıştırmayın. Geri çağırma hakkı ihraççıya yarar ve yatırımcı için payın değerini düşürür; satma hakkı yatırımcıya yarar ve değeri artırır. Sponsorsuz depo sertifikaları sahibine genellikle oy hakkı vermez. Borsaya kote olmak likiditeyi ve sermayeye erişimi artırır ama raporlama maliyeti getirir. Özel paylar, satılması zor olduğu için özdeş borsa paylarından daha az değerlidir.",
+        "key_terms": [
+          "creditor",
+          "participating",
+          "convertible",
+          "callable",
+          "putable"
+        ]
+      }
+    ],
+    "summary_en": "Common shares give a residual claim, voting rights and unlimited upside, and they carry the most risk. Preferred shares usually pay a fixed dividend and rank above common shares but below creditors; they can be cumulative, participating, convertible, callable or putable. Depository receipts let investors own foreign shares in their local market. Private equity is illiquid, negotiated and long-term, so it carries an illiquidity premium.",
+    "summary_tr": "Adi paylar artık talep, oy hakkı ve sınırsız kazanç potansiyeli verir; riski en yüksek olandır. İmtiyazlı paylar genellikle sabit temettü öder, adi payların önünde ama alacaklıların arkasında gelir; birikimli, katılımlı, dönüştürülebilir, geri çağrılabilir ya da satılabilir olabilir. Depo sertifikaları yatırımcının yabancı paylara kendi piyasasında sahip olmasını sağlar. Özel sermaye likit değildir, pazarlıkla fiyatlanır ve uzun vadelidir; bu yüzden likiditesizlik primi taşır.",
+    "common_traps_tr": [
+      "İmtiyazlı (preferred) pay sahipleri alacaklılardan önce değil, sonra gelir.",
+      "Birikimli payda ödenmeyen yıllar + bu yılın temettüsü birlikte ödenir; yalnız ödenmeyen yılları sayıp bu yılı unutmak sık hatadır.",
+      "Katılımlı = ek temettü; dönüştürülebilir = adi paya çevrilme. İkisi farklıdır.",
+      "Geri çağırma (call) ihraççının, satma (put) yatırımcının lehinedir.",
+      "Türkiye'deki 'imtiyazlı pay' (oy/aday gösterme imtiyazı) ile CFA'daki 'preferred share' (sabit temettü önceliği) aynı şey değildir.",
+      "Sponsorsuz depo sertifikasında oy hakkı genellikle depo bankasındadır."
+    ],
+    "vocab_ids": [
+      "common-share",
+      "preferred-share",
+      "residual-claim",
+      "voting-right",
+      "cumulative",
+      "participating",
+      "convertible",
+      "callable",
+      "putable",
+      "depository-receipt",
+      "sponsored",
+      "private-equity",
+      "liquidity",
+      "disclosure",
+      "in-arrears",
+      "par-value",
+      "creditor",
+      "limited-liability"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Pay türleri SPK Düzey 3'te bilinir; ADR seviyeleri ve özel sermaye iskontosu CFA'da daha ayrıntılıdır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-01-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with common shares of the same company, preferred shares most likely give their holders:",
+      "stem_tr": "Aynı şirketin adi paylarıyla karşılaştırıldığında, imtiyazlı paylar sahiplerine büyük olasılıkla ne sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Priority over common shareholders for dividends and in liquidation.",
+          "tr": "Temettüde ve tasfiyede adi pay sahiplerinden önce gelme (öncelik) hakkı."
+        },
+        {
+          "key": "B",
+          "en": "Stronger voting rights in the general meeting.",
+          "tr": "Genel kurulda daha güçlü oy hakkı."
+        },
+        {
+          "key": "C",
+          "en": "An unlimited share of the company's future profit growth.",
+          "tr": "Şirketin gelecekteki kâr artışından sınırsız pay."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Preferred shares rank above common shares: their fixed dividend must be paid before common dividends, and in a liquidation they are paid before common shareholders (but after creditors).",
+      "explanation_tr": "İmtiyazlı paylar adi payların önünde gelir: sabit temettüleri adi pay temettüsünden önce ödenmelidir ve tasfiyede adi pay sahiplerinden önce (ama alacaklılardan sonra) ödeme alırlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Preferred shares usually have no voting rights or only limited ones. Strong voting rights are a feature of common shares.",
+          "tr": "İmtiyazlı payların genellikle oy hakkı yoktur ya da sınırlıdır. Güçlü oy hakkı adi payların özelliğidir."
+        },
+        "C": {
+          "en": "The preferred dividend is fixed, so preferred holders usually do not share in profit growth. Unlimited upside belongs to common shareholders.",
+          "tr": "İmtiyazlı temettü sabittir; bu yüzden imtiyazlı pay sahipleri genellikle kâr artışından pay almaz. Sınırsız yukarı potansiyel adi pay sahiplerine aittir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "preferred-share",
+        "common-share",
+        "priority",
+        "liquidation",
+        "voting-right",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "SPK Düzey 3 'Sermaye Piyasası Araçları' konusunda pay türleri işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A depository receipt is best described as:",
+      "stem_tr": "Depo sertifikası (depository receipt) en iyi hangi şekilde tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A bond issued by a custodian bank in a foreign market.",
+          "tr": "Saklama kuruluşu bankanın yabancı bir piyasada ihraç ettiği tahvil."
+        },
+        {
+          "key": "B",
+          "en": "A security traded in one market that represents shares of a foreign company held by a depository bank.",
+          "tr": "Bir depo bankasının elinde tutulan yabancı şirket paylarını temsil eden ve başka bir piyasada işlem gören menkul kıymet."
+        },
+        {
+          "key": "C",
+          "en": "A new share that the foreign company issues directly in the investor's local currency.",
+          "tr": "Yabancı şirketin yatırımcının yerel para biriminde doğrudan ihraç ettiği yeni pay."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A depository bank holds the company's shares in the home market and issues receipts against them in another market. The receipt trades like a share in that market and its value follows the underlying shares.",
+      "explanation_tr": "Depo bankası şirketin paylarını kendi ülkesinde saklar ve bunlara karşılık başka bir piyasada sertifika çıkarır. Sertifika o piyasada pay gibi işlem görür; değeri dayanak payları izler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A depository receipt is an equity claim on underlying shares, not a debt claim on the bank.",
+          "tr": "Depo sertifikası dayanak paylar üzerinde bir özkaynak hakkıdır; bankadan alacak (borç) değildir."
+        },
+        "C": {
+          "en": "The foreign company does not issue a new share directly; the depository bank issues the receipt against shares it already holds.",
+          "tr": "Yabancı şirket doğrudan yeni pay ihraç etmez; sertifikayı, elinde tuttuğu paylara karşılık depo bankası çıkarır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "depository-receipt",
+        "custodian",
+        "underlying",
+        "foreign",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "SPK sınavında depo sertifikası (ADR/GDR) kısaca geçer; seviye ayrımı CFA'ya özgüdür."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Ege Kablo A.Ş. (a fictional company) has cumulative preferred shares with a par value of TRY 100 and an annual dividend rate of 6%. The company paid no preferred dividends in the last two years. This year, before any dividend can go to common shareholders, the amount Ege Kablo must pay per preferred share is closest to:",
+      "stem_tr": "Ege Kablo A.Ş.'nin (kurgusal) nominal değeri 100 TL, yıllık temettü oranı %6 olan birikimli (kümülatif) imtiyazlı payları vardır. Şirket son iki yılda imtiyazlı temettü ödememiştir. Bu yıl adi pay sahiplerine temettü dağıtılabilmesi için Ege Kablo'nun imtiyazlı pay başına ödemesi gereken tutar en yakın olarak kaçtır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 6",
+          "tr": "6 TL",
+          "value": 6
+        },
+        {
+          "key": "B",
+          "en": "TRY 12",
+          "tr": "12 TL",
+          "value": 12
+        },
+        {
+          "key": "C",
+          "en": "TRY 18",
+          "tr": "18 TL",
+          "value": 18
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cumulative preferred dividends that are not paid become dividends in arrears. Two missed years (2 × 6 = 12) plus the current year (6) must be paid first: 18 per share.",
+      "explanation_tr": "Birikimli imtiyazlı payda ödenmeyen temettüler birikmiş temettü (arrears) olur. Ödenmeyen iki yıl (2 × 6 = 12) ile bu yılın temettüsü (6) önce ödenmelidir: pay başına 18 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is only the current year's dividend. It would be correct for non-cumulative preferred shares, where missed dividends are lost.",
+          "tr": "Bu yalnızca bu yılın temettüsüdür. Ödenmeyen temettünün kaybolduğu birikimsiz (non-cumulative) imtiyazlı payda doğru olurdu."
+        },
+        "B": {
+          "en": "This counts only the two missed years and forgets the current year's dividend.",
+          "tr": "Bu yalnızca ödenmeyen iki yılı sayar, bu yılın temettüsünü unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the total preferred dividend per share that must be paid before common shareholders get anything.",
+          "tr": "(a) Adi pay sahipleri bir şey almadan önce ödenmesi gereken pay başına toplam imtiyazlı temettü isteniyor."
+        },
+        {
+          "en": "(b) Annual preferred dividend = par value × dividend rate. For cumulative shares, missed years accumulate.",
+          "tr": "(b) Yıllık imtiyazlı temettü = nominal değer × temettü oranı. Birikimli paylarda ödenmeyen yıllar birikir.",
+          "formula_latex": "D_{pref} = Par \\times d",
+          "values": {
+            "Par": 100,
+            "d": 0.06
+          }
+        },
+        {
+          "en": "(c) Annual dividend = 100 × 0.06 = 6.",
+          "tr": "(c) Yıllık temettü = 100 × 0,06 = 6.",
+          "values": {
+            "D_pref": 6
+          }
+        },
+        {
+          "en": "(d) Arrears = 2 years × 6 = 12; current year = 6.",
+          "tr": "(d) Birikmiş = 2 yıl × 6 = 12; bu yıl = 6.",
+          "values": {
+            "arrears": 12,
+            "current": 6
+          }
+        },
+        {
+          "en": "(e) Total = 12 + 6 = TRY 18 per preferred share.",
+          "tr": "(e) Toplam = 12 + 6 = imtiyazlı pay başına 18 TL.",
+          "values": {
+            "total": 18
+          }
+        }
+      ],
+      "vocab_ids": [
+        "cumulative",
+        "par-value",
+        "in-arrears",
+        "dividend",
+        "closest-to",
+        "prior"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [×] 0.06 [=]",
+          "[×] 3 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "100*0.06*3",
+        "unit": "TRY"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a non-participating preferred share, a participating preferred share most likely:",
+      "stem_tr": "Katılımsız (non-participating) imtiyazlı payla karşılaştırıldığında, katılımlı (participating) imtiyazlı pay büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Must be redeemed by the issuer on a fixed future date.",
+          "tr": "İhraççı tarafından gelecekte belirli bir tarihte itfa edilmek zorundadır."
+        },
+        {
+          "key": "B",
+          "en": "Can be exchanged for a fixed number of common shares.",
+          "tr": "Belirli sayıda adi payla değiştirilebilir."
+        },
+        {
+          "key": "C",
+          "en": "Pays an extra dividend when the company's profit exceeds a set level.",
+          "tr": "Şirket kârı belirli bir düzeyi aştığında ek temettü öder."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A participating preferred share receives its fixed dividend and also an extra dividend if profits exceed a set level. In a liquidation it may also share in any value left after the preferred par value is paid.",
+      "explanation_tr": "Katılımlı imtiyazlı pay sabit temettüsünü alır; kâr belirli bir düzeyi aşarsa ek temettü de alır. Tasfiyede de imtiyazlı nominal değer ödendikten sonra kalan değere katılabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A fixed redemption date describes a feature some preferred shares have (or a bond); it is not what 'participating' means.",
+          "tr": "Belirli itfa tarihi bazı imtiyazlı payların (ya da tahvilin) özelliğidir; 'katılımlı' kavramının anlamı bu değildir."
+        },
+        "B": {
+          "en": "Exchange into common shares describes a convertible preferred share, not a participating one.",
+          "tr": "Adi paya dönüşüm hakkı dönüştürülebilir (convertible) imtiyazlı payı tanımlar; katılımlıyı değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "participating",
+        "preferred-share",
+        "exceed",
+        "redeem",
+        "convertible",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "For investors in the same company, which ranking of equity instruments is most likely from LOWEST to HIGHEST risk?",
+      "stem_tr": "Aynı şirkete yatırım yapanlar için hangi sıralama pay araçlarını büyük olasılıkla EN DÜŞÜK riskten EN YÜKSEK riske doğru gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Common shares, non-cumulative preferred, cumulative preferred.",
+          "tr": "Adi pay, birikimsiz imtiyazlı pay, birikimli imtiyazlı pay."
+        },
+        {
+          "key": "B",
+          "en": "Cumulative preferred, non-cumulative preferred, common shares.",
+          "tr": "Birikimli imtiyazlı pay, birikimsiz imtiyazlı pay, adi pay."
+        },
+        {
+          "key": "C",
+          "en": "Non-cumulative preferred, cumulative preferred, common shares.",
+          "tr": "Birikimsiz imtiyazlı pay, birikimli imtiyazlı pay, adi pay."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cumulative preferred is the least risky: missed dividends are not lost and must be paid before common dividends. Non-cumulative preferred still ranks above common but missed dividends are lost. Common shares have the residual claim and are the riskiest.",
+      "explanation_tr": "En az riskli olan birikimli imtiyazlı paydır: ödenmeyen temettüler kaybolmaz ve adi temettüden önce ödenmelidir. Birikimsiz imtiyazlı pay yine adi payın önündedir ama ödenmeyen temettü kaybolur. Adi pay kalan değer üzerinde hak (artık talep) taşır ve en risklisidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This reverses the order. Common shares are paid last, so they carry the highest risk, not the lowest.",
+          "tr": "Bu sıralama tersidir. Adi paylar en son ödenir; bu yüzden riskleri en düşük değil en yüksektir."
+        },
+        "C": {
+          "en": "This puts non-cumulative above cumulative in safety. Losing missed dividends makes non-cumulative preferred riskier than cumulative preferred.",
+          "tr": "Bu, birikimsizi güvenlikte birikimlinin önüne koyar. Ödenmeyen temettünün kaybolması birikimsizi birikimliden daha riskli yapar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cumulative",
+        "residual-claim",
+        "risk",
+        "rank",
+        "missed",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-a-q06",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Marmara Enerji A.Ş. (fictional) issues preferred shares that the company can buy back at a fixed price after five years. All else equal, compared with an otherwise identical preferred share without this feature, these shares most likely have:",
+      "stem_tr": "Marmara Enerji A.Ş. (kurgusal), beş yıl sonra sabit bir fiyattan geri alabileceği imtiyazlı paylar ihraç ediyor. Diğer her şey aynıyken, bu özelliği olmayan özdeş bir imtiyazlı payla karşılaştırıldığında bu payların büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "A higher required dividend rate, because the call feature benefits the issuer.",
+          "tr": "Geri çağırma özelliği ihraççının lehine olduğu için daha yüksek bir istenen temettü oranı vardır."
+        },
+        {
+          "key": "B",
+          "en": "A lower required dividend rate, because the call feature protects the investor.",
+          "tr": "Geri çağırma özelliği yatırımcıyı koruduğu için daha düşük bir istenen temettü oranı vardır."
+        },
+        {
+          "key": "C",
+          "en": "The same required dividend rate, because the call price is fixed.",
+          "tr": "Geri çağırma fiyatı sabit olduğu için aynı istenen temettü oranı vardır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A callable preferred share gives the issuer an option: it can buy the shares back when it suits the company (for example, when rates fall). This hurts the investor, so investors demand a higher dividend rate.",
+      "explanation_tr": "Geri çağrılabilir (callable) imtiyazlı pay ihraççıya bir opsiyon verir: şirket uygun olduğunda (örneğin faizler düşünce) payları geri alabilir. Bu yatırımcının aleyhinedir; yatırımcı bu yüzden daha yüksek temettü oranı ister.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The call option belongs to the issuer, not the investor. A feature that protects the investor is a put (putable) feature.",
+          "tr": "Geri çağırma opsiyonu yatırımcıya değil ihraççıya aittir. Yatırımcıyı koruyan özellik satma (putable) hakkıdır."
+        },
+        "C": {
+          "en": "A fixed call price still limits the investor's upside and creates reinvestment risk, so the required rate is not the same.",
+          "tr": "Sabit geri çağırma fiyatı da yatırımcının kazancını sınırlar ve yeniden yatırım riski yaratır; bu yüzden istenen oran aynı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "callable",
+        "issuer",
+        "required-return",
+        "all-else-equal",
+        "feature"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which characteristic is least likely to describe private equity securities?",
+      "stem_tr": "Aşağıdaki özelliklerden hangisinin halka kapalı (özel) sermaye paylarını tanımlaması EN DÜŞÜK olasılıktır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Prices are set through negotiation between buyers and sellers.",
+          "tr": "Fiyatlar alıcı ve satıcı arasında pazarlıkla belirlenir."
+        },
+        {
+          "key": "B",
+          "en": "Continuous price discovery on an organized exchange.",
+          "tr": "Organize bir borsada sürekli fiyat oluşumu."
+        },
+        {
+          "key": "C",
+          "en": "Limited liquidity for investors who want to sell.",
+          "tr": "Satmak isteyen yatırımcılar için sınırlı likidite."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Private equity securities are not listed on an exchange, so there is no continuous price discovery. Prices come from negotiation or valuation models.",
+      "explanation_tr": "Özel sermaye payları borsada işlem görmez; bu yüzden sürekli fiyat oluşumu yoktur. Fiyatlar pazarlık ya da değerleme modelleriyle belirlenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Negotiated prices are typical for private equity, because there is no public market price.",
+          "tr": "Pazarlıkla belirlenen fiyat özel sermayede olağandır, çünkü kamuya açık piyasa fiyatı yoktur."
+        },
+        "C": {
+          "en": "Low liquidity is a key feature of private equity; selling can take a long time.",
+          "tr": "Düşük likidite özel sermayenin temel özelliğidir; satış uzun sürebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "private-equity",
+        "negotiate",
+        "price-discovery",
+        "liquidity",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Anadolu Gıda A.Ş. (fictional), a family-owned company, is preparing an initial public offering (halka arz) on Borsa İstanbul. Compared with staying private, the most likely disadvantage of listing is:",
+      "stem_tr": "Aile şirketi olan Anadolu Gıda A.Ş. (kurgusal) Borsa İstanbul'da halka arz hazırlığında. Halka kapalı kalmayla karşılaştırıldığında, borsaya kote olmanın büyük olasılıkla dezavantajı hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Lower liquidity for the existing family shareholders.",
+          "tr": "Mevcut aile ortakları için daha düşük likidite."
+        },
+        {
+          "key": "B",
+          "en": "Reduced access to new equity capital in the future.",
+          "tr": "Gelecekte yeni özkaynak sermayesine erişimin azalması."
+        },
+        {
+          "key": "C",
+          "en": "Higher disclosure costs and more pressure to meet short-term earnings targets.",
+          "tr": "Daha yüksek kamuyu aydınlatma maliyetleri ve kısa vadeli kâr hedeflerini tutturma baskısı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A listed company must publish regular financial reports and material events (in Turkey, through KAP) and faces daily market prices. This adds cost and can push managers toward short-term results.",
+      "explanation_tr": "Borsaya kote şirket düzenli finansal rapor ve özel durum açıklamaları yapmak (Türkiye'de KAP üzerinden) zorundadır ve her gün piyasa fiyatıyla karşı karşıyadır. Bu maliyet yaratır ve yöneticileri kısa vadeli sonuçlara itebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Listing increases liquidity: the family can sell shares on the exchange more easily than in a private deal.",
+          "tr": "Borsaya kote olmak likiditeyi artırır: aile paylarını özel bir işlemdekinden daha kolay borsada satabilir."
+        },
+        "B": {
+          "en": "Listing usually improves access to capital, because the company can issue new shares to the public later (for example, through a rights issue).",
+          "tr": "Borsaya kote olmak genellikle sermayeye erişimi artırır; şirket daha sonra halka yeni pay ihraç edebilir (örneğin bedelli sermaye artırımı)."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "initial-public-offering",
+        "listed",
+        "disclosure",
+        "short-term",
+        "earnings",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Halka arz ve kamuyu aydınlatma yükümlülükleri SPK mevzuatında işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investor who buys private equity instead of publicly listed shares most likely does so because:",
+      "stem_tr": "Borsada işlem gören paylar yerine özel sermaye satın alan bir yatırımcı büyük olasılıkla bunu neden yapar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "She expects higher returns for accepting low liquidity and can influence management over a long horizon.",
+          "tr": "Düşük likiditeyi kabul ettiği için daha yüksek getiri bekler ve uzun vadede yönetimi etkileyebilir."
+        },
+        {
+          "key": "B",
+          "en": "Private companies must, by law, pay higher dividends than listed companies.",
+          "tr": "Özel şirketler yasa gereği borsa şirketlerinden daha yüksek temettü ödemek zorundadır."
+        },
+        {
+          "key": "C",
+          "en": "Private equity has more frequent and more detailed public reporting.",
+          "tr": "Özel sermayede kamuya açık raporlama daha sık ve daha ayrıntılıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Private equity investors give up liquidity and transparency. In return they expect an illiquidity premium, and with large stakes they can take board seats and push long-term changes without daily market pressure.",
+      "explanation_tr": "Özel sermaye yatırımcıları likiditeden ve şeffaflıktan vazgeçer. Karşılığında likiditesizlik primi bekler; büyük paylarla yönetim kurulunda yer alıp günlük piyasa baskısı olmadan uzun vadeli değişiklikler yapabilirler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "There is no general legal rule that private companies pay higher dividends. Dividends depend on the company's policy and profits.",
+          "tr": "Özel şirketlerin daha yüksek temettü ödemesini gerektiren genel bir yasal kural yoktur. Temettü şirket politikasına ve kâra bağlıdır."
+        },
+        "C": {
+          "en": "The opposite is true: private companies have fewer public reporting duties than listed companies.",
+          "tr": "Tersi doğrudur: özel şirketlerin kamuyu aydınlatma yükümlülüğü borsa şirketlerinden azdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "private-equity",
+        "illiquidity-premium",
+        "influence",
+        "horizon",
+        "by-law",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which investor is most likely to hold a large allocation to private equity?",
+      "stem_tr": "Hangi yatırımcının portföyünde özel sermayeye büyük pay ayırması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A money market fund that must meet daily withdrawals.",
+          "tr": "Günlük para çıkışlarını karşılamak zorunda olan bir para piyasası fonu."
+        },
+        {
+          "key": "B",
+          "en": "A retail investor who trades shares several times a week.",
+          "tr": "Haftada birkaç kez pay alıp satan bireysel yatırımcı."
+        },
+        {
+          "key": "C",
+          "en": "A large endowment fund with a very long investment horizon.",
+          "tr": "Yatırım ufku çok uzun olan büyük bir vakıf (endowment) fonu."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Private equity is illiquid and often locked up for many years. Investors with long horizons and low liquidity needs, such as endowments and pension funds, are the natural holders.",
+      "explanation_tr": "Özel sermaye likit değildir ve çoğu zaman yıllarca bağlı kalır. Vakıf fonları ve emeklilik fonları gibi yatırım ufku uzun, likidite ihtiyacı düşük yatırımcılar doğal sahipleridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A money market fund needs very high liquidity every day, so illiquid private equity does not fit.",
+          "tr": "Para piyasası fonunun her gün çok yüksek likiditeye ihtiyacı vardır; likit olmayan özel sermaye ona uymaz."
+        },
+        "B": {
+          "en": "A frequent trader needs to buy and sell quickly; private equity cannot be traded this way.",
+          "tr": "Sık işlem yapan biri hızlı alıp satmak ister; özel sermaye bu şekilde alınıp satılamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "endowment",
+        "horizon",
+        "withdrawal",
+        "illiquid",
+        "allocation",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-01-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst values a private company that is very similar to a company listed on Borsa İstanbul. Both have the same expected cash flows and risk. All else equal, the private company's shares most likely deserve:",
+      "stem_tr": "Bir analist, Borsa İstanbul'da işlem gören bir şirkete çok benzeyen özel bir şirketi değerliyor. İkisinin beklenen nakit akışları ve riski aynı. Diğer her şey aynıyken, özel şirketin payları büyük olasılıkla neyi hak eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A premium, because private shares do not move with daily market noise.",
+          "tr": "Günlük piyasa dalgalanmasından etkilenmedikleri için prim."
+        },
+        {
+          "key": "B",
+          "en": "A discount, because the shares cannot be sold quickly at a fair price.",
+          "tr": "Hızla ve adil fiyattan satılamadıkları için iskonto."
+        },
+        {
+          "key": "C",
+          "en": "No adjustment, because value depends only on cash flows.",
+          "tr": "Değer yalnızca nakit akışlarına bağlı olduğu için düzeltme gerekmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Investors pay less for an asset they cannot easily sell. A discount for lack of marketability (an illiquidity discount) is applied to private shares, so their value is lower than that of the comparable listed shares.",
+      "explanation_tr": "Yatırımcılar kolayca satamayacakları bir varlığa daha az öder. Özel paylara pazarlanabilirlik eksikliği iskontosu (likiditesizlik iskontosu) uygulanır; bu yüzden değerleri benzer borsa paylarından düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Fewer visible price changes do not remove risk. Low liquidity reduces value; it does not create a premium.",
+          "tr": "Daha az görünen fiyat değişimi riski ortadan kaldırmaz. Düşük likidite değeri düşürür; prim yaratmaz."
+        },
+        "C": {
+          "en": "Value also depends on how easily the asset can be sold. Ignoring liquidity overstates the private company's value.",
+          "tr": "Değer, varlığın ne kadar kolay satılabildiğine de bağlıdır. Likiditeyi yok saymak özel şirketin değerini olduğundan yüksek gösterir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discount",
+        "marketability",
+        "comparable",
+        "all-else-equal",
+        "deserve",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

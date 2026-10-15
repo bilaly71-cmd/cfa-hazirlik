@@ -1,0 +1,758 @@
+{
+  "module_id": "FI-01",
+  "lesson": {
+    "id": "FI-01-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-01",
+    "los_ids": [
+      "FI-01-a",
+      "FI-01-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Instrument Features",
+    "title_tr": "Sabit Getirili Araçların Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why bonds exist",
+        "heading_tr": "Tahvil neden var?",
+        "en": "A company or a government often needs money today and can pay it back later. Instead of asking one bank, it can borrow from many investors at once by selling bonds. Each bond is a small piece of the loan. In Türkiye, the Treasury sells government domestic debt securities (DİBS) at regular auctions, and companies sell private-sector bonds and commercial paper. Imagine a fictional firm, Ege Lojistik A.Ş., that needs TRY 500 million for new trucks. It sells 3-year bonds to pension funds and retail investors. The investors become lenders. They want to know: who is the borrower, when do I get my money back, how much interest do I earn, in which currency, and who is paid first if things go wrong? These questions are exactly the basic features of a bond.",
+        "tr": "Bir şirket ya da devlet çoğu zaman bugün paraya ihtiyaç duyar ve bunu daha sonra geri ödeyebilir. Tek bir bankaya gitmek yerine tahvil satarak aynı anda çok sayıda yatırımcıdan borçlanabilir. Her tahvil, bu borcun küçük bir parçasıdır. Türkiye'de Hazine düzenli ihalelerle devlet iç borçlanma senetleri (DİBS) satar; şirketler ise özel sektör tahvili ve finansman bonosu ihraç eder. Yeni kamyonlar için 500 milyon TL'ye ihtiyaç duyan kurgusal Ege Lojistik A.Ş.'yi düşünün. Şirket emeklilik fonlarına ve bireysel yatırımcılara 3 yıllık tahvil satar; yatırımcılar borç veren konumuna geçer. Bilmek istedikleri şunlardır: borçlu kim, paramı ne zaman geri alırım, ne kadar faiz kazanırım, hangi para biriminde ve işler kötü giderse önce kime ödeme yapılır? Bu sorular tahvilin temel özelliklerinin ta kendisidir.",
+        "key_terms": [
+          "bond",
+          "issuer",
+          "lender",
+          "DİBS",
+          "commercial paper"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The six basic features",
+        "heading_tr": "Altı temel özellik",
+        "en": "Issuer: the entity that borrows. Issuers include governments, local governments, government agencies, supranational organizations and companies (financial and non-financial). Maturity: the date the principal is repaid; tenor is the time left until then. Debt of one year or less is money market debt; longer debt is capital market debt. A perpetual bond has no maturity. Par value (face value, principal): the amount repaid at maturity. Prices are quoted as a percentage of par, so 98.5 means 98.5% of par. Coupon rate: the yearly interest rate paid on par; payment frequency can be annual, semiannual, quarterly or monthly. A zero-coupon bond pays no coupon. Currency: the currency of payments; a dual-currency bond pays coupons in one currency and principal in another. Seniority: the rank of the claim if the issuer fails.",
+        "tr": "İhraççı: borçlanan kuruluştur. Devletler, yerel yönetimler, kamu kuruluşları, uluslarüstü kuruluşlar ve (finansal ve finansal olmayan) şirketler ihraççı olabilir. Vade: anaparanın geri ödendiği tarihtir; kalan vade (tenor) bu tarihe kadar kalan süredir. Vadesi bir yıl veya daha kısa borçlar para piyasası, daha uzunları sermaye piyasası araçlarıdır. Vadesiz tahvilin vadesi yoktur. Nominal değer (anapara): vade sonunda geri ödenen tutardır. Fiyatlar nominalin yüzdesi olarak kote edilir; 98,5 nominalin %98,5'i demektir. Kupon oranı: nominal üzerinden ödenen yıllık faiz oranıdır; ödeme sıklığı yıllık, altı aylık, üç aylık veya aylık olabilir. Kuponsuz tahvil kupon ödemez. Para birimi: ödemelerin yapıldığı para birimidir; çift para birimli tahvil kuponu bir, anaparayı başka bir para biriminde öder. Öncelik sırası: ihraççı batarsa alacağın sırasıdır.",
+        "key_terms": [
+          "issuer",
+          "maturity",
+          "tenor",
+          "par value",
+          "coupon rate",
+          "zero-coupon bond",
+          "dual-currency bond",
+          "seniority",
+          "perpetual bond"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Seniority, security and credit enhancement",
+        "heading_tr": "Öncelik sırası, teminat ve kredi güçlendirme",
+        "en": "Secured bonds are backed by specific assets (collateral), such as real estate, equipment or financial assets. Unsecured bonds (often called debentures in some markets) rely on the issuer's general assets. Senior debt is paid before subordinated debt. A typical order in a liquidation is: senior secured, senior unsecured, subordinated, then equity. Bonds with the same rank are pari passu: they share equally. Credit enhancement lowers risk for bondholders. Internal enhancements are built into the structure, for example overcollateralization (collateral worth more than the debt) or subordination of other tranches. External enhancements come from a third party, such as a guarantee from a parent company or a bank letter of credit.",
+        "tr": "Teminatlı tahviller gayrimenkul, makine veya finansal varlık gibi belirli varlıklarla (teminat) desteklenir. Teminatsız tahviller ihraççının genel varlıklarına dayanır. Kıdemli borç, ikincil (sermaye benzeri) borçtan önce ödenir. Tasfiyede tipik sıra şöyledir: teminatlı kıdemli, teminatsız kıdemli, ikincil borç, en son özkaynak. Aynı sıradaki tahviller pari passu yani eşit sıradadır ve kayıpları eşit paylaşır. Kredi güçlendirme tahvil sahiplerinin riskini azaltır. İçsel güçlendirme yapının içindedir; örneğin fazla teminatlandırma (teminatın borçtan değerli olması) veya diğer dilimlerin ikincil kılınması. Dışsal güçlendirme üçüncü taraftan gelir; örneğin ana şirket garantisi veya banka teminat mektubu.",
+        "key_terms": [
+          "secured",
+          "unsecured",
+          "collateral",
+          "senior",
+          "subordinated",
+          "pari passu",
+          "credit enhancement",
+          "overcollateralization",
+          "guarantee"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The indenture and covenants",
+        "heading_tr": "İhraç sözleşmesi ve taahhütler",
+        "en": "The indenture (trust deed) is the legal contract of a bond issue. It states the issuer, the amount, the maturity, the coupon, any collateral, credit enhancements, embedded options and covenants. A trustee often acts for bondholders and watches whether the issuer follows the terms. Covenants are promises. Affirmative covenants say what the issuer must do: pay interest and principal on time, keep proper accounts and send reports, maintain insurance on assets, comply with laws, and keep the bond pari passu with similar debt. A cross-default clause is also common. Negative covenants say what the issuer must not do: take on too much new debt, give other lenders a claim on assets (negative pledge), sell key assets, pay large dividends or buy back shares (restricted payments), or merge without conditions. Negative covenants usually cost the issuer more because they limit its freedom.",
+        "tr": "İhraç sözleşmesi bir tahvil ihracının hukuki sözleşmesidir. İhraççıyı, tutarı, vadeyi, kuponu, varsa teminatı, kredi güçlendirmeleri, gömülü opsiyonları ve taahhütleri belirtir. Çoğu zaman tahvil sahipleri adına hareket eden bir temsilci (trustee) ihraççının koşullara uyup uymadığını izler. Taahhütler sözdür. Olumlu taahhütler ihraççının ne yapması gerektiğini söyler: faiz ve anaparayı zamanında ödemek, düzgün kayıt tutup rapor göndermek, varlıkları sigortalı tutmak, yasalara uymak ve tahvili benzer borçlarla eşit sırada tutmak. Çapraz temerrüt hükmü de yaygındır. Olumsuz taahhütler ihraççının ne yapmaması gerektiğini söyler: aşırı yeni borçlanmak, varlıklar üzerinde başka borç verenlere hak tanımak (negatif rehin), temel varlıkları satmak, yüksek temettü dağıtmak veya pay geri almak (kısıtlı ödemeler) ya da koşulsuz birleşmek. Olumsuz taahhütler ihraççının hareket alanını daralttığı için genellikle ona daha maliyetlidir.",
+        "key_terms": [
+          "indenture",
+          "trustee",
+          "affirmative covenant",
+          "negative covenant",
+          "cross-default clause",
+          "negative pledge",
+          "restricted payments"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Coupon payment per period",
+        "heading_tr": "Dönem başına kupon ödemesi",
+        "en": "The cash coupon each period depends on par, the coupon rate and the number of payments per year (frequency, m). The coupon rate is always a yearly rate on par value, not on the price. If the bond trades at 95 or 105, the cash coupon does not change. A zero-coupon bond has C = 0 and returns all its interest through the gap between the purchase price and par.",
+        "tr": "Her dönemin nakit kuponu nominal değere, kupon oranına ve yıllık ödeme sayısına (sıklık, m) bağlıdır. Kupon oranı her zaman fiyat üzerinden değil, nominal değer üzerinden yıllık bir orandır. Tahvil 95'ten ya da 105'ten işlem görse de nakit kupon değişmez. Kuponsuz tahvilde C = 0'dır ve getirinin tamamı alış fiyatı ile nominal arasındaki farktan gelir.",
+        "key_terms": [
+          "coupon rate",
+          "frequency",
+          "par value"
+        ],
+        "formula_latex": "C_{\\text{period}} = \\frac{\\text{Coupon rate} \\times \\text{Par}}{m}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Reading a term sheet",
+        "heading_tr": "Bir ihraç özetini okumak",
+        "en": "Ege Lojistik A.Ş. issues TRY 500 million of senior unsecured bonds with par TRY 1,000, a 32% coupon paid quarterly and a 3-year maturity. The indenture says the firm must send audited statements within 90 days of year-end and must not pledge its truck fleet to other lenders.",
+        "tr": "Ege Lojistik A.Ş., nominali 1.000 TL, üç ayda bir ödenen %32 kuponlu ve 3 yıl vadeli 500 milyon TL tutarında teminatsız kıdemli tahvil ihraç eder. İhraç sözleşmesine göre şirket yıl sonundan itibaren 90 gün içinde bağımsız denetimden geçmiş tablolarını göndermek zorundadır ve kamyon filosunu başka borç verenlere rehnedemez.",
+        "key_terms": [
+          "term sheet",
+          "senior unsecured",
+          "negative pledge"
+        ],
+        "example": {
+          "en": "Coupon per bond each quarter = 0.32 × 1,000 / 4 = TRY 80. Number of coupons = 3 × 4 = 12. At maturity the investor receives 1,000 + 80 = TRY 1,080. Sending audited reports is an affirmative covenant; not pledging the fleet is a negative covenant (a negative pledge). Because the bonds are unsecured, holders rank behind any secured lender but ahead of subordinated creditors and shareholders.",
+          "tr": "Tahvil başına üç aylık kupon = 0,32 × 1.000 / 4 = 80 TL. Kupon sayısı = 3 × 4 = 12. Vade sonunda yatırımcı 1.000 + 80 = 1.080 TL alır. Denetimli rapor göndermek olumlu taahhüttür; filoyu rehnetmemek olumsuz taahhüttür (negatif rehin). Tahviller teminatsız olduğundan sahipleri teminatlı alacaklıların arkasında, ancak ikincil alacaklılar ve pay sahiplerinin önündedir.",
+          "formula_latex": "C = \\frac{0.32 \\times 1{,}000}{4} = 80"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Coupon is paid on par, not on the market price. Maturity is a date; tenor is the time left. Senior does not mean secured: a bond can be senior unsecured. A guarantee from a parent is an external credit enhancement, while overcollateralization is internal. An affirmative covenant is an action the issuer must take; it usually does not limit business decisions. A negative covenant limits actions and protects bondholders from the issuer moving value to shareholders or to other creditors.",
+        "tr": "Kupon piyasa fiyatı üzerinden değil, nominal üzerinden ödenir. Vade bir tarihtir; kalan vade kalan süredir. Kıdemli, teminatlı demek değildir: bir tahvil teminatsız kıdemli olabilir. Ana şirket garantisi dışsal, fazla teminatlandırma içsel kredi güçlendirmedir. Olumlu taahhüt ihraççının yapması gereken bir eylemdir ve genellikle iş kararlarını kısıtlamaz. Olumsuz taahhüt eylemleri sınırlar ve tahvil sahiplerini, ihraççının değeri pay sahiplerine ya da diğer alacaklılara aktarmasına karşı korur.",
+        "key_terms": [
+          "affirmative covenant",
+          "negative covenant",
+          "external credit enhancement"
+        ]
+      }
+    ],
+    "summary_en": "A bond is a contract in which an issuer borrows from investors. Its basic features are issuer, maturity, par value, coupon rate and frequency, currency, and seniority. The indenture sets out all terms, including collateral, credit enhancements and covenants. Affirmative covenants require actions; negative covenants restrict actions to protect bondholders.",
+    "summary_tr": "Tahvil, ihraççının yatırımcılardan borçlandığı bir sözleşmedir. Temel özellikleri ihraççı, vade, nominal değer, kupon oranı ve sıklığı, para birimi ve öncelik sırasıdır. İhraç sözleşmesi teminat, kredi güçlendirme ve taahhütler dahil tüm koşulları belirler. Olumlu taahhütler eylem gerektirir; olumsuz taahhütler tahvil sahiplerini korumak için eylemleri kısıtlar.",
+    "common_traps_tr": [
+      "Kuponu piyasa fiyatı üzerinden hesaplamak (doğrusu: nominal × kupon oranı / sıklık).",
+      "'Kıdemli' ile 'teminatlı' kavramlarını karıştırmak; teminatsız kıdemli borç mümkündür.",
+      "Garantiyi içsel kredi güçlendirme sanmak (dışsaldır; fazla teminatlandırma ve ikincil dilim içseldir).",
+      "Rapor gönderme, sigorta ve yasalara uyum gibi maddeleri olumsuz taahhüt sanmak (bunlar olumlu taahhüttür).",
+      "Negatif rehin şartını bir teminat sanmak; aslında yeni teminat verilmesini yasaklayan olumsuz taahhüttür."
+    ],
+    "vocab_ids": [
+      "bond",
+      "issuer",
+      "maturity",
+      "tenor",
+      "par-value",
+      "coupon-rate",
+      "seniority",
+      "secured",
+      "unsecured",
+      "subordinated",
+      "collateral",
+      "indenture",
+      "covenant",
+      "affirmative-covenant",
+      "negative-covenant",
+      "trustee",
+      "credit-enhancement",
+      "negative-pledge"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3 'Sermaye Piyasası Araçları' konusunda tahvil ve bononun temel özellikleri işlenir; taahhüt türleri ve kredi güçlendirme ayrıntısı CFA'da daha derindir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-01-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which feature of a bond tells investors the date on which the principal will be repaid?",
+      "stem_tr": "Tahvilin hangi özelliği yatırımcılara anaparanın geri ödeneceği tarihi söyler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Maturity",
+          "tr": "Vade"
+        },
+        {
+          "key": "B",
+          "en": "Coupon rate",
+          "tr": "Kupon oranı"
+        },
+        {
+          "key": "C",
+          "en": "Seniority",
+          "tr": "Öncelik sırası"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Maturity is the date when the issuer repays the principal and the bond ends.",
+      "explanation_tr": "Vade, ihraççının anaparayı geri ödediği ve tahvilin sona erdiği tarihtir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The coupon rate sets the yearly interest on par, not the repayment date.",
+          "tr": "Kupon oranı geri ödeme tarihini değil, nominal üzerinden yıllık faizi belirler."
+        },
+        "C": {
+          "en": "Seniority is the rank of the claim in a default, not a date.",
+          "tr": "Öncelik sırası bir tarih değil, temerrütte alacağın sırasıdır."
+        }
+      },
+      "vocab_ids": [
+        "maturity",
+        "principal",
+        "repay",
+        "feature",
+        "bond"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Vade ve nominal değer kavramları SPK Düzey 3 sınavında bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has a par value of TRY 1,000, a coupon rate of 30% paid semiannually, and trades at a price of 92. The coupon payment each period is closest to:",
+      "stem_tr": "Bir tahvilin nominal değeri 1.000 TL, altı ayda bir ödenen kupon oranı %30 ve fiyatı 92'dir. Her dönemdeki kupon ödemesi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 138",
+          "tr": "138 TL",
+          "value": 138.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 300",
+          "tr": "300 TL",
+          "value": 300.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 150",
+          "tr": "150 TL",
+          "value": 150.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The coupon is based on par: 0.30 × 1,000 / 2 = TRY 150 every six months. The market price does not change the cash coupon.",
+      "explanation_tr": "Kupon nominal üzerinden hesaplanır: 0,30 × 1.000 / 2 = altı ayda bir 150 TL. Piyasa fiyatı nakit kuponu değiştirmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the market price (920) instead of par: 0.30 × 920 / 2 = 138.",
+          "tr": "Nominal yerine piyasa fiyatı (920) kullanılmış: 0,30 × 920 / 2 = 138."
+        },
+        "B": {
+          "en": "This is the full annual coupon; it forgets that payments are semiannual.",
+          "tr": "Bu yıllık kuponun tamamıdır; ödemelerin altı ayda bir olduğu unutulmuş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash coupon paid every six months.",
+          "tr": "Altı ayda bir ödenen nakit kupon isteniyor."
+        },
+        {
+          "en": "Coupon per period = coupon rate × par / payments per year. The price is not used.",
+          "tr": "Dönem kuponu = kupon oranı × nominal / yıllık ödeme sayısı. Fiyat kullanılmaz.",
+          "formula_latex": "C=\\frac{r_c \\times Par}{m}"
+        },
+        {
+          "en": "Substitute: 0.30 × 1,000 / 2.",
+          "tr": "Yerine koy: 0,30 × 1.000 / 2.",
+          "values": {
+            "r_c": 0.3,
+            "Par": 1000,
+            "m": 2
+          }
+        },
+        {
+          "en": "Result: TRY 150 per half-year.",
+          "tr": "Sonuç: yarıyıl başına 150 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.30 [×] 1000 [÷] 2 [=]"
+        ],
+        "note_tr": "Basit çarpma/bölme; TVM tuşları gerekmez."
+      },
+      "numeric": {
+        "expr": "0.30*1000/2",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "par-value",
+        "coupon-rate",
+        "semiannual",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "An investor holds a bond that pays coupons in euros but will repay its principal in US dollars. This bond is best described as a:",
+      "stem_tr": "Bir yatırımcının elindeki tahvil kuponlarını avro olarak ödüyor ancak anaparayı ABD doları olarak geri ödeyecek. Bu tahvil en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Eurobond",
+          "tr": "Eurobond"
+        },
+        {
+          "key": "B",
+          "en": "dual-currency bond",
+          "tr": "Çift para birimli tahvil"
+        },
+        {
+          "key": "C",
+          "en": "perpetual bond",
+          "tr": "Vadesiz tahvil"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A dual-currency bond makes coupon payments in one currency and pays principal in another.",
+      "explanation_tr": "Çift para birimli tahvil kupon ödemelerini bir para biriminde, anaparayı başka bir para biriminde yapar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A Eurobond is defined by where it is issued (outside the currency's home market), not by mixing currencies.",
+          "tr": "Eurobond, para birimlerini karıştırmasıyla değil, nerede ihraç edildiğiyle (para biriminin ülkesi dışında) tanımlanır."
+        },
+        "C": {
+          "en": "A perpetual bond has no maturity date; nothing in the question says that.",
+          "tr": "Vadesiz tahvilin vade tarihi yoktur; soruda böyle bir bilgi yok."
+        }
+      },
+      "vocab_ids": [
+        "dual-currency",
+        "coupon",
+        "principal",
+        "repay",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Three bonds of the same issuer are outstanding: a senior secured bond, a senior unsecured bond and a subordinated bond. If the issuer is liquidated, which bond is most likely to have the lowest recovery rate?",
+      "stem_tr": "Aynı ihraççının dolaşımda üç tahvili vardır: teminatlı kıdemli, teminatsız kıdemli ve ikincil (sermaye benzeri) tahvil. İhraççı tasfiye edilirse en düşük geri kazanım oranına sahip olması en muhtemel tahvil hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The senior secured bond",
+          "tr": "Teminatlı kıdemli tahvil"
+        },
+        {
+          "key": "B",
+          "en": "The senior unsecured bond",
+          "tr": "Teminatsız kıdemli tahvil"
+        },
+        {
+          "key": "C",
+          "en": "The subordinated bond",
+          "tr": "İkincil (sermaye benzeri) tahvil"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Subordinated debt is paid only after all senior creditors, so it usually recovers the least.",
+      "explanation_tr": "İkincil borç ancak tüm kıdemli alacaklılardan sonra ödenir; bu yüzden genellikle en az geri kazanımı sağlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Senior secured holders have a claim on specific collateral and are paid first; they usually recover the most.",
+          "tr": "Teminatlı kıdemli sahiplerin belirli teminat üzerinde hakkı vardır ve önce ödenir; genellikle en çok onlar geri alır."
+        },
+        "B": {
+          "en": "Senior unsecured holders rank ahead of subordinated holders, so they usually recover more.",
+          "tr": "Teminatsız kıdemli sahipler ikincil sahiplerin önündedir; bu yüzden genellikle daha çok geri alır."
+        }
+      },
+      "vocab_ids": [
+        "outstanding",
+        "senior",
+        "secured",
+        "subordinated",
+        "recovery-rate",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about bond features is least likely correct?",
+      "stem_tr": "Tahvil özellikleriyle ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A bond guaranteed by the issuer's parent company has an external credit enhancement.",
+          "tr": "İhraççının ana şirketi tarafından garanti edilen tahvilde dışsal kredi güçlendirme vardır."
+        },
+        {
+          "key": "B",
+          "en": "A bond with a maturity of nine months is a capital market security.",
+          "tr": "Vadesi dokuz ay olan bir tahvil sermaye piyasası aracıdır."
+        },
+        {
+          "key": "C",
+          "en": "A senior bond can be unsecured.",
+          "tr": "Kıdemli bir tahvil teminatsız olabilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Debt with an original maturity of one year or less belongs to the money market, not the capital market. So statement B is incorrect.",
+      "explanation_tr": "İlk vadesi bir yıl veya daha kısa olan borç sermaye piyasasına değil, para piyasasına aittir. Bu yüzden B ifadesi yanlıştır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is correct: a guarantee comes from a third party, so it is an external enhancement.",
+          "tr": "Bu doğrudur: garanti üçüncü taraftan geldiği için dışsal güçlendirmedir."
+        },
+        "C": {
+          "en": "This is correct: seniority (rank) and security (collateral) are different features; senior unsecured debt is common.",
+          "tr": "Bu doğrudur: öncelik sırası ve teminat farklı özelliklerdir; teminatsız kıdemli borç yaygındır."
+        }
+      },
+      "vocab_ids": [
+        "statement",
+        "likely",
+        "guarantee",
+        "credit-enhancement",
+        "capital-market",
+        "unsecured"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The legal contract that sets out the terms of a bond issue, including the covenants, is called the:",
+      "stem_tr": "Taahhütler dahil, bir tahvil ihracının koşullarını belirleyen hukuki sözleşmeye ne ad verilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "indenture",
+          "tr": "İhraç sözleşmesi"
+        },
+        {
+          "key": "B",
+          "en": "prospectus summary",
+          "tr": "İzahname özeti"
+        },
+        {
+          "key": "C",
+          "en": "credit rating report",
+          "tr": "Kredi derecelendirme raporu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The indenture (also called the trust deed) is the legal contract between the issuer and bondholders.",
+      "explanation_tr": "İhraç sözleşmesi (trust deed), ihraççı ile tahvil sahipleri arasındaki hukuki sözleşmedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A summary is a marketing and disclosure document; the binding terms are in the indenture.",
+          "tr": "Özet, tanıtım ve bilgilendirme belgesidir; bağlayıcı koşullar ihraç sözleşmesindedir."
+        },
+        "C": {
+          "en": "A rating report gives an opinion on credit risk; it is not a contract.",
+          "tr": "Derecelendirme raporu kredi riski hakkında görüştür; sözleşme değildir."
+        }
+      },
+      "vocab_ids": [
+        "indenture",
+        "covenant",
+        "issue",
+        "bondholder"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "SPK mevzuatında ihraç belgesi ve izahname bilinir; 'indenture/trust deed' ve temsilci (trustee) kavramı CFA'ya özgüdür."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely an affirmative covenant?",
+      "stem_tr": "Aşağıdakilerden hangisinin olumlu (yapma) taahhüdü olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The issuer may not sell its main factory.",
+          "tr": "İhraççı ana fabrikasını satamaz."
+        },
+        {
+          "key": "B",
+          "en": "The issuer may not pay dividends above 30% of net income.",
+          "tr": "İhraççı net kârın %30'unu aşan temettü ödeyemez."
+        },
+        {
+          "key": "C",
+          "en": "The issuer must keep its assets insured.",
+          "tr": "İhraççı varlıklarını sigortalı tutmak zorundadır."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "An affirmative covenant requires the issuer to do something; keeping assets insured is an action it must take.",
+      "explanation_tr": "Olumlu taahhüt ihraççının bir şey yapmasını gerektirir; varlıkları sigortalı tutmak yapması gereken bir eylemdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A ban on asset sales restricts an action, so it is a negative covenant.",
+          "tr": "Varlık satış yasağı bir eylemi kısıtlar; bu yüzden olumsuz taahhüttür."
+        },
+        "B": {
+          "en": "A dividend limit is a restricted-payments rule, which is a negative covenant.",
+          "tr": "Temettü sınırı kısıtlı ödeme kuralıdır; olumsuz taahhüttür."
+        }
+      },
+      "vocab_ids": [
+        "affirmative-covenant",
+        "likely",
+        "require",
+        "restrict"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond indenture states that the issuer will not grant any other lender a security interest in its assets unless the bondholders receive an equal claim. This clause is best described as a:",
+      "stem_tr": "Bir ihraç sözleşmesi, tahvil sahiplerine eşit hak tanınmadıkça ihraççının varlıkları üzerinde başka hiçbir borç verene teminat hakkı vermeyeceğini belirtiyor. Bu hüküm en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative pledge",
+          "tr": "Negatif rehin şartı"
+        },
+        {
+          "key": "B",
+          "en": "cross-default clause",
+          "tr": "Çapraz temerrüt hükmü"
+        },
+        {
+          "key": "C",
+          "en": "sinking fund provision",
+          "tr": "İtfa fonu hükmü"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A negative pledge stops the issuer from giving other lenders a prior claim on assets; it is a negative covenant that protects the rank of the bonds.",
+      "explanation_tr": "Negatif rehin şartı ihraççının başka borç verenlere varlıklar üzerinde öncelikli hak vermesini engeller; tahvillerin sırasını koruyan olumsuz taahhüttür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A cross-default clause links default on other debt to this bond; it says nothing about pledging assets.",
+          "tr": "Çapraz temerrüt hükmü diğer borçlardaki temerrüdü bu tahvile bağlar; varlık rehniyle ilgili değildir."
+        },
+        "C": {
+          "en": "A sinking fund requires the issuer to retire part of the issue over time; it does not deal with liens.",
+          "tr": "İtfa fonu ihraççının ihracın bir kısmını zamanla itfa etmesini gerektirir; rehinlerle ilgili değildir."
+        }
+      },
+      "vocab_ids": [
+        "negative-pledge",
+        "indenture",
+        "lend",
+        "unless",
+        "entitle"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with an affirmative covenant, a negative covenant is most likely to:",
+      "stem_tr": "Olumlu taahhütle karşılaştırıldığında olumsuz taahhüdün en muhtemel etkisi hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "be more costly for the issuer because it limits operating and financing decisions.",
+          "tr": "İşletme ve finansman kararlarını sınırladığı için ihraççıya daha maliyetli olması."
+        },
+        {
+          "key": "B",
+          "en": "require the issuer to send audited financial reports to the trustee.",
+          "tr": "İhraççının temsilciye denetimli finansal rapor göndermesini gerektirmesi."
+        },
+        {
+          "key": "C",
+          "en": "increase the issuer's flexibility to take on new debt.",
+          "tr": "İhraççının yeni borç alma esnekliğini artırması."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Negative covenants restrict what the issuer can do (new debt, asset sales, payouts). Losing this freedom has a cost for the issuer, but it protects bondholders.",
+      "explanation_tr": "Olumsuz taahhütler ihraççının yapabileceklerini (yeni borç, varlık satışı, dağıtım) kısıtlar. Bu özgürlüğün kaybı ihraççıya maliyetlidir ama tahvil sahiplerini korur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Sending reports is an action the issuer must take, which makes it an affirmative covenant.",
+          "tr": "Rapor göndermek ihraççının yapması gereken bir eylemdir; bu olumlu taahhüttür."
+        },
+        "C": {
+          "en": "Negative covenants usually limit new debt; they reduce flexibility, not increase it.",
+          "tr": "Olumsuz taahhütler genellikle yeni borcu sınırlar; esnekliği artırmaz, azaltır."
+        }
+      },
+      "vocab_ids": [
+        "negative-covenant",
+        "affirmative-covenant",
+        "likely",
+        "restrict",
+        "incur"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-01-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Batı Enerji A.Ş. has bonds with a cross-default clause. The firm misses a payment on a bank loan, while all bond coupons have been paid on time. Which outcome is most consistent with the indenture?",
+      "stem_tr": "Batı Enerji A.Ş.'nin tahvillerinde çapraz temerrüt hükmü vardır. Şirket bir banka kredisinin ödemesini kaçırmıştır; tahvil kuponlarının tamamı ise zamanında ödenmiştir. İhraç sözleşmesiyle en tutarlı sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The bonds are not affected because their coupons were paid.",
+          "tr": "Kuponları ödendiği için tahviller etkilenmez."
+        },
+        {
+          "key": "B",
+          "en": "The bonds become senior secured debt.",
+          "tr": "Tahviller teminatlı kıdemli borca dönüşür."
+        },
+        {
+          "key": "C",
+          "en": "The bonds may also be treated as in default.",
+          "tr": "Tahviller de temerrütte kabul edilebilir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A cross-default clause says that default on another debt obligation also counts as default on these bonds, so bondholders (through the trustee) can act.",
+      "explanation_tr": "Çapraz temerrüt hükmü başka bir borç yükümlülüğündeki temerrüdün bu tahviller için de temerrüt sayılacağını söyler; tahvil sahipleri (temsilci aracılığıyla) harekete geçebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores the purpose of a cross-default clause, which is to link the bonds to defaults on other debt.",
+          "tr": "Bu, tahvili diğer borçlardaki temerrüde bağlayan çapraz temerrüt hükmünün amacını göz ardı eder."
+        },
+        "B": {
+          "en": "A default does not change seniority or create collateral; ranking is fixed in the contract.",
+          "tr": "Temerrüt öncelik sırasını değiştirmez veya teminat yaratmaz; sıra sözleşmede sabittir."
+        }
+      },
+      "vocab_ids": [
+        "cross-default",
+        "default",
+        "consistent",
+        "obligation",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

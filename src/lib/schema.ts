@@ -233,7 +233,9 @@ export type GlossaryEntry = z.infer<typeof GlossaryEntry>;
 export const Los = z.object({ id: z.string(), en: z.string(), tr: z.string(), calc: z.boolean().default(false) });
 export const Module = z.object({ id: z.string(), title_en: z.string(), title_tr: z.string(), los: z.array(Los).default([]) });
 export const Topic = z.object({
-  id: TopicId,
+  /** L1/L2 konuları TopicId; L3 uzmanlık yolları PATH_* olabilir. */
+  id: z.string(),
+  pathway: z.boolean().optional(),
   name_en: z.string(),
   name_tr: z.string(),
   weight_min: z.number(),

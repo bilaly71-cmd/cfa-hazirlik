@@ -1,0 +1,1488 @@
+{
+  "module_id": "FSA-06",
+  "lesson": {
+    "id": "FSA-06-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-06",
+    "los_ids": [
+      "FSA-06-a",
+      "FSA-06-b",
+      "FSA-06-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analysis of Inventories",
+    "title_tr": "Stokların Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why inventory method matters",
+        "heading_tr": "Stok yöntemi neden önemli?",
+        "en": "For a retailer or a manufacturer, inventory is often the largest current asset, and cost of sales is the largest expense. The same physical goods can give different profits under different cost methods. In Turkey, companies use TFRS; TMS 2 (the Turkish version of IAS 2) allows FIFO, weighted average cost and specific identification, but not LIFO. LIFO is allowed only under US GAAP. When input prices rise fast, as in high-inflation years, FIFO puts older, cheaper costs into cost of sales, so gross profit looks higher. An analyst must know the method before comparing margins.",
+        "tr": "Bir perakendeci ya da üretici için stoklar çoğu zaman en büyük dönen varlık, satışların maliyeti de en büyük gider kalemidir. Aynı fiziksel mallar farklı maliyet yöntemleriyle farklı kâr verebilir. Türkiye'de şirketler TFRS uygular; TMS 2 (IAS 2'nin Türkçe karşılığı) FIFO, ağırlıklı ortalama maliyet ve özel tanımlama yöntemlerine izin verir, LIFO'ya izin vermez. LIFO yalnızca US GAAP'te serbesttir. Girdi fiyatları hızla arttığında, örneğin yüksek enflasyon yıllarında, FIFO eski ve ucuz maliyetleri satışların maliyetine taşır; brüt kâr daha yüksek görünür. Analist marjları karşılaştırmadan önce yöntemi bilmelidir.",
+        "key_terms": [
+          "cost of sales",
+          "FIFO",
+          "LIFO",
+          "weighted average cost",
+          "TMS 2"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Measurement: lower of cost and NRV",
+        "heading_tr": "Ölçüm: maliyet ile NGD'den düşük olanı",
+        "en": "Inventory cost includes purchase cost, conversion cost and other costs to bring goods to their present location and condition (for example, freight-in). Abnormal waste, most storage costs, administrative overhead and selling costs are expensed. Net realizable value (NRV) = estimated selling price - estimated costs to complete - estimated costs to sell. IFRS: inventory is carried at the lower of cost and NRV; a later recovery can be reversed, but only up to the original write-down. US GAAP: lower of cost and NRV for FIFO and weighted average; for LIFO and the retail method, lower of cost or market, where market is replacement cost limited between NRV (ceiling) and NRV minus a normal profit margin (floor). US GAAP never allows reversal.",
+        "tr": "Stok maliyeti satın alma maliyetini, dönüştürme maliyetini ve malları bugünkü konum ve durumuna getiren diğer maliyetleri (ör. alış navlunu) içerir. Olağan dışı fire, çoğu depolama maliyeti, genel yönetim giderleri ve satış giderleri dönem gideri yazılır. Net gerçekleşebilir değer (NGD) = tahmini satış fiyatı - tahmini tamamlama maliyeti - tahmini satış maliyeti. IFRS: stok, maliyet ile NGD'den düşük olanla taşınır; sonraki değer artışı iptal edilebilir ama yalnızca ilk değer düşüklüğü tutarına kadar. US GAAP: FIFO ve ağırlıklı ortalamada maliyet ile NGD'den düşük olanı; LIFO ve perakende yönteminde maliyet ile piyasa değerinden düşük olanı uygulanır. Piyasa değeri yenileme maliyetidir, üst sınırı NGD, alt sınırı NGD eksi normal kâr marjıdır. US GAAP iptale hiç izin vermez.",
+        "key_terms": [
+          "net realizable value",
+          "write-down",
+          "reversal",
+          "replacement cost",
+          "lower of cost or market"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Cost flow and LIFO reserve",
+        "heading_tr": "Maliyet akışı ve LIFO rezervi",
+        "en": "Goods available for sale = beginning inventory + purchases = cost of sales + ending inventory. A US GAAP firm using LIFO discloses the LIFO reserve: the FIFO value of inventory minus the LIFO value. To restate a LIFO firm to FIFO: add the LIFO reserve to inventory; subtract the change in the LIFO reserve from LIFO cost of sales; raise equity by the reserve x (1 - t) and taxes (a deferred tax liability) by the reserve x t.",
+        "tr": "Satılmaya hazır mallar = dönem başı stok + alışlar = satışların maliyeti + dönem sonu stok. LIFO kullanan bir US GAAP şirketi LIFO rezervini açıklar: stokun FIFO değeri eksi LIFO değeri. LIFO şirketini FIFO'ya çevirmek için: stoğa LIFO rezervini ekle; LIFO satışların maliyetinden LIFO rezervindeki değişimi çıkar; özkaynağı rezerv x (1 - t), vergiyi (ertelenmiş vergi yükümlülüğü) rezerv x t kadar artır.",
+        "key_terms": [
+          "LIFO reserve",
+          "goods available for sale"
+        ],
+        "formula_latex": "Inv_{FIFO} = Inv_{LIFO} + R \\quad COGS_{FIFO} = COGS_{LIFO} - (R_{end} - R_{beg}) \\quad \\Delta Equity = R(1-t)"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: three methods",
+        "heading_tr": "Çözümlü örnek: üç yöntem",
+        "en": "Periodic system. Beginning inventory 100 units at TRY 10; purchases 200 units at TRY 12, then 100 units at TRY 15. Sold 280 units. Goods available = 1,000 + 2,400 + 1,500 = 4,900 for 400 units. FIFO cost of sales = 100 x 10 + 180 x 12 = 3,160; ending inventory = 1,740. LIFO cost of sales = 100 x 15 + 180 x 12 = 3,660; ending inventory = 1,240. Weighted average cost = 4,900 / 400 = 12.25; cost of sales = 280 x 12.25 = 3,430; ending inventory = 1,470. With rising prices, LIFO gives the highest cost of sales and the lowest ending inventory.",
+        "tr": "Dönemsel (aralıklı) sistem. Dönem başı stok 100 birim x 10 TL; alışlar önce 200 birim x 12 TL, sonra 100 birim x 15 TL. Satılan 280 birim. Satılmaya hazır mallar = 1.000 + 2.400 + 1.500 = 4.900 TL (400 birim). FIFO satışların maliyeti = 100 x 10 + 180 x 12 = 3.160; dönem sonu stok = 1.740. LIFO satışların maliyeti = 100 x 15 + 180 x 12 = 3.660; dönem sonu stok = 1.240. Ağırlıklı ortalama maliyet = 4.900 / 400 = 12,25; satışların maliyeti = 280 x 12,25 = 3.430; dönem sonu stok = 1.470. Fiyatlar artarken LIFO en yüksek satışların maliyetini ve en düşük dönem sonu stoğu verir.",
+        "key_terms": [
+          "periodic system",
+          "goods available for sale"
+        ],
+        "example": {
+          "en": "FIFO COGS 3,160 | WAC COGS 3,430 | LIFO COGS 3,660",
+          "tr": "FIFO SMM 3.160 | AOM SMM 3.430 | LIFO SMM 3.660"
+        },
+        "table": {
+          "headers": [
+            {
+              "en": "Rising prices: LIFO vs FIFO",
+              "tr": "Artan fiyatlar: LIFO ve FIFO"
+            },
+            {
+              "en": "LIFO result",
+              "tr": "LIFO sonucu"
+            }
+          ],
+          "rows": [
+            [
+              "Cost of sales / Satışların maliyeti",
+              "Higher / Daha yüksek"
+            ],
+            [
+              "Gross profit, net income / Brüt kâr, net kâr",
+              "Lower / Daha düşük"
+            ],
+            [
+              "Income taxes / Vergiler",
+              "Lower / Daha düşük"
+            ],
+            [
+              "CFO (lower taxes) / CFO (düşük vergi)",
+              "Higher / Daha yüksek"
+            ],
+            [
+              "Ending inventory / Dönem sonu stok",
+              "Lower / Daha düşük"
+            ],
+            [
+              "Inventory turnover / Stok devir hızı",
+              "Higher / Daha yüksek"
+            ],
+            [
+              "Current ratio / Cari oran",
+              "Lower / Daha düşük"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Presentation, disclosures and LIFO liquidation",
+        "heading_tr": "Sunum, dipnotlar ve LIFO tasfiyesi",
+        "en": "Inventories are current assets. IFRS disclosures include the cost formula used, carrying amounts by class (raw materials, work in progress, finished goods), the amount expensed, write-downs and reversals with their reasons, and inventories pledged as security. An analyst watches the mix: finished goods growing faster than sales can signal weak demand and future write-downs; rising raw materials and work in progress can signal expected higher demand. A LIFO liquidation happens when a LIFO firm sells more units than it buys; old, cheap layers flow into cost of sales and margins rise for one period only. A change of method is applied retrospectively, except a US GAAP change to LIFO, which is applied prospectively.",
+        "tr": "Stoklar dönen varlıktır. IFRS dipnotları kullanılan maliyet yöntemini, sınıflara göre defter değerlerini (ilk madde ve malzeme, yarı mamul, mamul), gider yazılan tutarı, değer düşüklüklerini ve iptalleri gerekçeleriyle ve teminat olarak rehin verilen stokları içerir. Analist bileşime bakar: mamullerin satışlardan hızlı büyümesi zayıf talebe ve gelecekte değer düşüklüğüne işaret edebilir; ilk madde ve yarı mamullerin artması beklenen talep artışını gösterebilir. LIFO tasfiyesi, LIFO kullanan şirket aldığından fazla birim sattığında olur; eski ve ucuz katmanlar satışların maliyetine akar ve marjlar yalnızca bir dönem için yükselir. Yöntem değişikliği geriye dönük uygulanır; ancak US GAAP'te LIFO'ya geçiş ileriye dönük uygulanır.",
+        "key_terms": [
+          "LIFO liquidation",
+          "finished goods",
+          "work in progress",
+          "raw materials",
+          "pledged"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Trap 1: saying LIFO is allowed under IFRS. It is not. Trap 2: allowing a reversal under US GAAP, or a reversal above the original write-down under IFRS. Trap 3: in the FIFO restatement, subtracting the whole ending LIFO reserve from cost of sales instead of the change in the reserve. Trap 4: adding the full LIFO reserve to equity; equity rises only by the after-tax amount. Trap 5: reading higher margins from a LIFO liquidation as sustainable. Trap 6: with falling prices, the LIFO effects reverse: LIFO cost of sales is lower than FIFO.",
+        "tr": "Tuzak 1: IFRS'te LIFO'ya izin verildiğini sanmak; verilmez. Tuzak 2: US GAAP'te iptale izin vermek ya da IFRS'te ilk değer düşüklüğünü aşan iptal yapmak. Tuzak 3: FIFO'ya çevirirken satışların maliyetinden rezervdeki değişim yerine dönem sonu LIFO rezervinin tamamını düşmek. Tuzak 4: LIFO rezervinin tamamını özkaynağa eklemek; özkaynak yalnızca vergi sonrası tutar kadar artar. Tuzak 5: LIFO tasfiyesinden gelen yüksek marjı kalıcı sanmak. Tuzak 6: fiyatlar düşerken LIFO etkileri tersine döner: LIFO satışların maliyeti FIFO'dan düşük olur.",
+        "key_terms": [
+          "reversal",
+          "after-tax"
+        ]
+      }
+    ],
+    "summary_en": "Inventory is measured at the lower of cost and net realizable value (lower of cost or market for LIFO under US GAAP). IFRS allows reversals of write-downs; US GAAP does not. LIFO is allowed only under US GAAP; with rising prices it gives higher cost of sales, lower inventory and lower taxes than FIFO. The LIFO reserve lets analysts restate LIFO firms to FIFO.",
+    "summary_tr": "Stoklar maliyet ile net gerçekleşebilir değerden düşük olanla ölçülür (US GAAP'te LIFO için maliyet ile piyasa değerinden düşük olanı). IFRS değer düşüklüğü iptaline izin verir, US GAAP vermez. LIFO yalnızca US GAAP'te serbesttir; artan fiyatlarda FIFO'ya göre daha yüksek satışların maliyeti, daha düşük stok ve daha düşük vergi verir. LIFO rezervi, analistin LIFO şirketlerini FIFO'ya çevirmesini sağlar.",
+    "common_traps_tr": [
+      "LIFO yalnızca US GAAP'te serbesttir; IFRS/TFRS (TMS 2) LIFO'ya izin vermez.",
+      "IFRS'te değer düşüklüğü iptali ilk düşüklük tutarıyla sınırlıdır; US GAAP iptale izin vermez.",
+      "FIFO SMM = LIFO SMM - LIFO rezervindeki DEĞİŞİM (rezervin tamamı değil).",
+      "FIFO'ya çevirmede özkaynak rezerv x (1 - t) kadar artar.",
+      "Fiyatlar düşerken LIFO/FIFO etkileri tersine döner.",
+      "LIFO tasfiyesinin yarattığı marj artışı kalıcı değildir."
+    ],
+    "vocab_ids": [
+      "inventory",
+      "cost-of-sales",
+      "net-realizable-value",
+      "write-down",
+      "reversal",
+      "lifo-reserve",
+      "replacement-cost",
+      "weighted-average",
+      "liquidation",
+      "layer",
+      "finished-goods",
+      "raw-materials",
+      "disclose",
+      "gross-margin",
+      "turnover",
+      "restate"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-06-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, inventories are measured at:",
+      "stem_tr": "IFRS'e göre stoklar hangi tutarla ölçülür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the lower of cost and net realizable value.",
+          "tr": "maliyet ile net gerçekleşebilir değerden düşük olanı."
+        },
+        {
+          "key": "B",
+          "en": "the lower of cost or market, where market is replacement cost.",
+          "tr": "maliyet ile piyasa değerinden düşük olanı (piyasa değeri yenileme maliyetidir)."
+        },
+        {
+          "key": "C",
+          "en": "fair value, with changes recognized in profit or loss.",
+          "tr": "gerçeğe uygun değer; değişimler kâr veya zarara yansıtılır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "IAS 2 (TMS 2 in Turkey) requires inventories to be carried at the lower of cost and net realizable value.",
+      "explanation_tr": "IAS 2 (Türkiye'de TMS 2) stokların maliyet ile net gerçekleşebilir değerden düşük olanla taşınmasını ister.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Lower of cost or market with replacement cost is the US GAAP rule for LIFO and retail method inventory only.",
+          "tr": "Yenileme maliyetli 'maliyet ile piyasa değerinden düşük olanı' yalnızca US GAAP'te LIFO ve perakende yöntemi için kuraldır."
+        },
+        "C": {
+          "en": "Fair value is not the general rule for inventories; only limited cases (e.g. commodity broker-traders) use it.",
+          "tr": "Gerçeğe uygun değer stoklar için genel kural değildir; yalnızca sınırlı durumlarda (ör. emtia aracı-tüccarları) kullanılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "inventory",
+        "measure",
+        "net-realizable-value",
+        "lower-of"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Atlas Mobilya (IFRS) holds unfinished sofas with a cost of TRY 200 each. The expected selling price is TRY 230, costs to complete are TRY 25 and selling costs are TRY 15 per unit. The carrying amount per sofa is closest to:",
+      "stem_tr": "Atlas Mobilya (IFRS) birim maliyeti 200 TL olan yarı mamul kanepeler tutuyor. Tahmini satış fiyatı 230 TL, tamamlama maliyeti 25 TL ve satış maliyeti birim başına 15 TL'dir. Kanepe başına defter değeri en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 200",
+          "tr": "200 TL",
+          "value": 200.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 215",
+          "tr": "215 TL",
+          "value": 215.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 190",
+          "tr": "190 TL",
+          "value": 190.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "NRV = 230 - 25 - 15 = 190. Since NRV (190) is below cost (200), the carrying amount is TRY 190 and a write-down of TRY 10 per unit is recognized.",
+      "explanation_tr": "NGD = 230 - 25 - 15 = 190. NGD (190) maliyetin (200) altında olduğundan defter değeri 190 TL'dir ve birim başına 10 TL değer düşüklüğü kaydedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Keeps cost even though NRV is lower; IFRS requires the write-down.",
+          "tr": "NGD daha düşük olduğu halde maliyeti korur; IFRS değer düşüklüğünü zorunlu kılar."
+        },
+        "B": {
+          "en": "Deducts only selling costs (230 - 15) and forgets costs to complete.",
+          "tr": "Yalnızca satış maliyetini düşer (230 - 15), tamamlama maliyetini unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the IFRS carrying amount: lower of cost and NRV.",
+          "tr": "IFRS defter değeri isteniyor: maliyet ile NGD'den düşük olanı."
+        },
+        {
+          "en": "NRV = selling price - costs to complete - costs to sell.",
+          "tr": "NGD = satış fiyatı - tamamlama maliyeti - satış maliyeti.",
+          "formula_latex": "NRV = P - C_{complete} - C_{sell}"
+        },
+        {
+          "en": "NRV = 230 - 25 - 15 = 190.",
+          "tr": "NGD = 230 - 25 - 15 = 190.",
+          "values": {
+            "P": 230,
+            "C_complete": 25,
+            "C_sell": 15
+          }
+        },
+        {
+          "en": "Compare: min(200, 190) = 190.",
+          "tr": "Karşılaştır: min(200, 190) = 190."
+        },
+        {
+          "en": "Carrying amount = TRY 190 per unit.",
+          "tr": "Defter değeri = birim başına 190 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "230",
+          "[-]",
+          "25",
+          "[-]",
+          "15",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "min(200, 230-25-15)"
+      },
+      "vocab_ids": [
+        "net-realizable-value",
+        "carrying-amount",
+        "estimate",
+        "complete",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In 2026, an IFRS reporter wrote inventory down by TRY 30 million. In 2027, before any sale, the net realizable value of the same goods rises by TRY 40 million. The reversal recognized in 2027 is closest to:",
+      "stem_tr": "2026'da IFRS uygulayan bir şirket stoklarına 30 milyon TL değer düşüklüğü kaydetti. 2027'de, mallar satılmadan önce, aynı malların net gerçekleşebilir değeri 40 milyon TL arttı. 2027'de kaydedilecek iptal tutarı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 30 million",
+          "tr": "30 milyon TL",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 40 million",
+          "tr": "40 milyon TL",
+          "value": 40.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "IFRS allows a reversal, but only up to the original write-down, so that inventory does not exceed its original cost. The reversal is TRY 30 million.",
+      "explanation_tr": "IFRS iptale izin verir; ancak stok ilk maliyetini aşmasın diye iptal, ilk değer düşüklüğü tutarıyla sınırlıdır. İptal 30 milyon TL'dir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies the US GAAP rule; IFRS permits reversals.",
+          "tr": "US GAAP kuralını uygular; IFRS iptale izin verir."
+        },
+        "C": {
+          "en": "Ignores the cap; inventory would end up above original cost.",
+          "tr": "Üst sınırı yok sayar; stok ilk maliyetinin üzerine çıkar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the IFRS reversal amount.",
+          "tr": "IFRS'e göre iptal tutarı isteniyor."
+        },
+        {
+          "en": "Reversal = min(original write-down, NRV increase).",
+          "tr": "İptal = min(ilk değer düşüklüğü, NGD artışı).",
+          "formula_latex": "Rev = \\min(WD, \\Delta NRV)"
+        },
+        {
+          "en": "min(30, 40) = 30.",
+          "tr": "min(30, 40) = 30.",
+          "values": {
+            "WD": 30,
+            "dNRV": 40
+          }
+        },
+        {
+          "en": "Reversal = TRY 30 million.",
+          "tr": "İptal = 30 milyon TL."
+        }
+      ],
+      "numeric": {
+        "expr": "min(30, 40)"
+      },
+      "vocab_ids": [
+        "write-down",
+        "reversal",
+        "subsequent",
+        "exceed",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A US GAAP company uses LIFO. For one product line: cost TRY 200, replacement cost TRY 170, net realizable value TRY 190, normal profit margin TRY 12. The inventory write-down is closest to:",
+      "stem_tr": "LIFO kullanan bir US GAAP şirketinin bir ürün grubu için: maliyet 200 TL, yenileme maliyeti 170 TL, net gerçekleşebilir değer 190 TL, normal kâr marjı 12 TL. Stok değer düşüklüğü en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 22",
+          "tr": "22 TL",
+          "value": 22.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 10",
+          "tr": "10 TL",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 30",
+          "tr": "30 TL",
+          "value": 30.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "For LIFO under US GAAP, use lower of cost or market. Market = replacement cost, but not above NRV (190) and not below NRV - normal margin (178). Replacement cost 170 is below the floor, so market = 178. Write-down = 200 - 178 = 22.",
+      "explanation_tr": "US GAAP'te LIFO için maliyet ile piyasa değerinden düşük olanı kullanılır. Piyasa değeri = yenileme maliyeti; ancak NGD'yi (190) aşamaz ve NGD - normal marjın (178) altına inemez. 170 alt sınırın altında olduğundan piyasa değeri 178'dir. Değer düşüklüğü = 200 - 178 = 22.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses lower of cost and NRV (200 - 190), the rule for FIFO or weighted average, not LIFO.",
+          "tr": "Maliyet ile NGD'den düşük olanı kullanır (200 - 190); bu LIFO'nun değil FIFO/ağırlıklı ortalamanın kuralıdır."
+        },
+        "C": {
+          "en": "Uses replacement cost without applying the floor (200 - 170).",
+          "tr": "Alt sınırı uygulamadan yenileme maliyetini kullanır (200 - 170)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the write-down under US GAAP lower of cost or market (LIFO).",
+          "tr": "US GAAP maliyet ile piyasa değerinden düşük olanı (LIFO) kuralıyla değer düşüklüğü isteniyor."
+        },
+        {
+          "en": "Market is the middle value of: ceiling NRV, floor NRV - margin, and replacement cost.",
+          "tr": "Piyasa değeri şu üçünün ortancasıdır: üst sınır NGD, alt sınır NGD - marj, yenileme maliyeti.",
+          "formula_latex": "Market = median(NRV,\\ NRV - m,\\ RC)"
+        },
+        {
+          "en": "Ceiling 190, floor 190 - 12 = 178, replacement 170 -> market = 178.",
+          "tr": "Üst sınır 190, alt sınır 190 - 12 = 178, yenileme 170 -> piyasa = 178.",
+          "values": {
+            "NRV": 190,
+            "m": 12,
+            "RC": 170
+          }
+        },
+        {
+          "en": "Write-down = cost - market = 200 - 178 = 22.",
+          "tr": "Değer düşüklüğü = maliyet - piyasa = 200 - 178 = 22."
+        },
+        {
+          "en": "Write-down = TRY 22.",
+          "tr": "Değer düşüklüğü = 22 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "190",
+          "[-]",
+          "12",
+          "[=]",
+          "[+/-]",
+          "[+]",
+          "200",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "200 - sorted([170, 190, 190-12])[1]"
+      },
+      "vocab_ids": [
+        "replacement-cost",
+        "net-realizable-value",
+        "margin",
+        "lower-of",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In the year it is recognized, an inventory write-down is least likely to cause:",
+      "stem_tr": "Kaydedildiği yılda stok değer düşüklüğünün yol açma olasılığı EN DÜŞÜK olan durum hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a lower current ratio.",
+          "tr": "daha düşük cari oran."
+        },
+        {
+          "key": "B",
+          "en": "a higher inventory turnover ratio.",
+          "tr": "daha yüksek stok devir hızı."
+        },
+        {
+          "key": "C",
+          "en": "a higher gross profit margin.",
+          "tr": "daha yüksek brüt kâr marjı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The write-down is usually recorded in cost of sales, so gross margin falls in that year. Lower inventory reduces the current ratio and raises inventory turnover.",
+      "explanation_tr": "Değer düşüklüğü genellikle satışların maliyetine yazılır; bu yüzden o yıl brüt marj düşer. Azalan stok cari oranı düşürür, stok devir hızını artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is likely: inventory, a current asset, falls while current liabilities stay the same.",
+          "tr": "Bu olasıdır: dönen varlık olan stok azalır, kısa vadeli yükümlülükler değişmez."
+        },
+        "B": {
+          "en": "This is likely: cost of sales rises and average inventory falls, so turnover rises.",
+          "tr": "Bu olasıdır: satışların maliyeti artar, ortalama stok azalır; devir hızı yükselir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "write-down",
+        "current-ratio",
+        "turnover",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-a-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which cost is most likely included in the cost of inventory?",
+      "stem_tr": "Hangi maliyetin stok maliyetine dahil edilmesi en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Selling and advertising costs",
+          "tr": "Satış ve reklam giderleri"
+        },
+        {
+          "key": "B",
+          "en": "Freight-in to bring raw materials to the factory",
+          "tr": "İlk madde ve malzemeyi fabrikaya getiren alış navlunu"
+        },
+        {
+          "key": "C",
+          "en": "Abnormal amounts of wasted materials",
+          "tr": "Olağan dışı miktardaki malzeme firesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Costs needed to bring inventory to its present location and condition, such as freight-in, are capitalized into inventory.",
+      "explanation_tr": "Stoğu bugünkü konum ve durumuna getirmek için gereken alış navlunu gibi maliyetler stok maliyetine eklenir (aktifleştirilir).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Selling costs are expensed as incurred; they do not add to inventory.",
+          "tr": "Satış giderleri oluştuğu dönemde gider yazılır; stoğa eklenmez."
+        },
+        "C": {
+          "en": "Abnormal waste is expensed, not capitalized.",
+          "tr": "Olağan dışı fire gider yazılır, aktifleştirilmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capitalize",
+        "freight",
+        "abnormal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bora Elektrik uses a periodic system. Beginning inventory: 100 units at TRY 10. Purchases: 200 units at TRY 12, then 100 units at TRY 15. Units sold: 280. Under FIFO, cost of sales is closest to:",
+      "stem_tr": "Bora Elektrik dönemsel (aralıklı) stok sistemi kullanıyor. Dönem başı stok: 100 birim x 10 TL. Alışlar: önce 200 birim x 12 TL, sonra 100 birim x 15 TL. Satılan birim: 280. FIFO'ya göre satışların maliyeti en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3,660",
+          "tr": "3.660 TL",
+          "value": 3660.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 3,160",
+          "tr": "3.160 TL",
+          "value": 3160.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 3,430",
+          "tr": "3.430 TL",
+          "value": 3430.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "FIFO sends the oldest costs to cost of sales: 100 x 10 + 180 x 12 = 1,000 + 2,160 = 3,160.",
+      "explanation_tr": "FIFO en eski maliyetleri satışların maliyetine gönderir: 100 x 10 + 180 x 12 = 1.000 + 2.160 = 3.160.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is LIFO cost of sales (100 x 15 + 180 x 12).",
+          "tr": "Bu LIFO satışların maliyetidir (100 x 15 + 180 x 12)."
+        },
+        "C": {
+          "en": "This is weighted average cost of sales (280 x 12.25).",
+          "tr": "Bu ağırlıklı ortalama satışların maliyetidir (280 x 12,25)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need FIFO cost of sales for 280 units.",
+          "tr": "280 birim için FIFO satışların maliyeti isteniyor."
+        },
+        {
+          "en": "FIFO: first units in are the first units sold.",
+          "tr": "FIFO: ilk giren ilk çıkar.",
+          "formula_latex": "COGS = \\sum q_i c_i \\text{ (oldest layers first)}"
+        },
+        {
+          "en": "Use 100 units at 10, then 180 of the 200 units at 12.",
+          "tr": "100 birimi 10'dan, sonra 200 birimin 180'ini 12'den al.",
+          "values": {
+            "q1": 100,
+            "c1": 10,
+            "q2": 180,
+            "c2": 12
+          }
+        },
+        {
+          "en": "1,000 + 2,160 = 3,160.",
+          "tr": "1.000 + 2.160 = 3.160."
+        },
+        {
+          "en": "FIFO cost of sales = TRY 3,160.",
+          "tr": "FIFO satışların maliyeti = 3.160 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100",
+          "[×]",
+          "10",
+          "[=]",
+          "[STO] 1",
+          "180",
+          "[×]",
+          "12",
+          "[+]",
+          "[RCL] 1",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "100*10 + 180*12"
+      },
+      "vocab_ids": [
+        "cost-of-sales",
+        "periodic",
+        "purchase",
+        "units",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bora Elektrik uses a periodic system. Beginning inventory: 100 units at TRY 10. Purchases: 200 units at TRY 12, then 100 units at TRY 15. Units sold: 280. Under the weighted average cost method, ending inventory is closest to:",
+      "stem_tr": "Bora Elektrik dönemsel (aralıklı) stok sistemi kullanıyor. Dönem başı stok: 100 birim x 10 TL. Alışlar: önce 200 birim x 12 TL, sonra 100 birim x 15 TL. Satılan birim: 280. Ağırlıklı ortalama maliyet yöntemine göre dönem sonu stok en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1,470",
+          "tr": "1.470 TL",
+          "value": 1470.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 1,740",
+          "tr": "1.740 TL",
+          "value": 1740.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,240",
+          "tr": "1.240 TL",
+          "value": 1240.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Goods available = 1,000 + 2,400 + 1,500 = 4,900 for 400 units, so average cost = 12.25. Ending units = 400 - 280 = 120. Ending inventory = 120 x 12.25 = 1,470.",
+      "explanation_tr": "Satılmaya hazır mallar = 1.000 + 2.400 + 1.500 = 4.900 TL (400 birim); ortalama maliyet = 12,25. Dönem sonu birim = 400 - 280 = 120. Dönem sonu stok = 120 x 12,25 = 1.470.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is FIFO ending inventory (20 x 12 + 100 x 15).",
+          "tr": "Bu FIFO dönem sonu stoğudur (20 x 12 + 100 x 15)."
+        },
+        "C": {
+          "en": "This is LIFO ending inventory (100 x 10 + 20 x 12).",
+          "tr": "Bu LIFO dönem sonu stoğudur (100 x 10 + 20 x 12)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ending inventory under weighted average cost.",
+          "tr": "Ağırlıklı ortalama maliyetle dönem sonu stok isteniyor."
+        },
+        {
+          "en": "Average cost = goods available / units available.",
+          "tr": "Ortalama maliyet = satılmaya hazır mallar / birim sayısı.",
+          "formula_latex": "\\bar{c} = \\frac{\\sum q_i c_i}{\\sum q_i}"
+        },
+        {
+          "en": "4,900 / 400 = 12.25.",
+          "tr": "4.900 / 400 = 12,25.",
+          "values": {
+            "Goods available": 4900,
+            "Units": 400
+          }
+        },
+        {
+          "en": "Ending units 120 x 12.25 = 1,470.",
+          "tr": "Dönem sonu 120 birim x 12,25 = 1.470."
+        },
+        {
+          "en": "Ending inventory = TRY 1,470.",
+          "tr": "Dönem sonu stok = 1.470 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000",
+          "[+]",
+          "2400",
+          "[+]",
+          "1500",
+          "[=]",
+          "[÷]",
+          "400",
+          "[=]",
+          "[×]",
+          "120",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "(100*10 + 200*12 + 100*15)/400*120"
+      },
+      "vocab_ids": [
+        "weighted-average",
+        "ending-inventory",
+        "goods-available",
+        "units",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "When input prices are rising and inventory quantities are stable, a company using LIFO, compared with an otherwise identical company using FIFO, will most likely report:",
+      "stem_tr": "Girdi fiyatları artarken ve stok miktarları sabitken, LIFO kullanan bir şirket, FIFO kullanan başka her yönüyle aynı şirkete göre büyük olasılıkla ne raporlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower cost of sales and higher ending inventory.",
+          "tr": "daha düşük satışların maliyeti ve daha yüksek dönem sonu stok."
+        },
+        {
+          "key": "B",
+          "en": "higher net income and higher income taxes.",
+          "tr": "daha yüksek net kâr ve daha yüksek gelir vergisi."
+        },
+        {
+          "key": "C",
+          "en": "higher cost of sales and lower ending inventory.",
+          "tr": "daha yüksek satışların maliyeti ve daha düşük dönem sonu stok."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "LIFO puts the newest, more expensive costs into cost of sales and leaves the older, cheaper costs in inventory.",
+      "explanation_tr": "LIFO en yeni ve daha pahalı maliyetleri satışların maliyetine, eski ve ucuz maliyetleri stokta bırakır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes FIFO, not LIFO, when prices rise.",
+          "tr": "Fiyatlar artarken bu LIFO'yu değil FIFO'yu tanımlar."
+        },
+        "B": {
+          "en": "Higher cost of sales under LIFO lowers net income and taxes.",
+          "tr": "LIFO'da yüksek satışların maliyeti net kârı ve vergiyi düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "rising",
+        "otherwise",
+        "identical",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Marmara Tools reports under US GAAP using LIFO. Year-end LIFO inventory is TRY 840 million and the LIFO reserve is TRY 160 million. The tax rate is 25%. If the analyst restates to FIFO, shareholders' equity increases by an amount closest to:",
+      "stem_tr": "Marmara Tools US GAAP'e göre LIFO kullanıyor. Yıl sonu LIFO stoğu 840 milyon TL, LIFO rezervi 160 milyon TL. Vergi oranı %25. Analist FIFO'ya çevirirse özkaynak yaklaşık ne kadar artar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 120 million",
+          "tr": "120 milyon TL",
+          "value": 120.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 160 million",
+          "tr": "160 milyon TL",
+          "value": 160.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 40 million",
+          "tr": "40 milyon TL",
+          "value": 40.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Inventory rises by the full reserve (160), but part of that higher cumulative profit would be paid as tax. Equity rises by 160 x (1 - 0.25) = 120; the other 40 is added to liabilities (deferred tax).",
+      "explanation_tr": "Stok rezervin tamamı (160) kadar artar; ancak bu birikmiş kârın bir kısmı vergi olarak ödenecektir. Özkaynak 160 x (1 - 0,25) = 120 artar; kalan 40 yükümlülüklere (ertelenmiş vergi) eklenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Adds the full reserve to equity and ignores the tax effect.",
+          "tr": "Rezervin tamamını özkaynağa ekler, vergi etkisini yok sayar."
+        },
+        "C": {
+          "en": "This is the tax part (160 x 0.25), which goes to liabilities, not equity.",
+          "tr": "Bu vergi kısmıdır (160 x 0,25); özkaynağa değil yükümlülüklere gider."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the increase in equity when restating LIFO to FIFO.",
+          "tr": "LIFO'dan FIFO'ya çevirmede özkaynak artışı isteniyor."
+        },
+        {
+          "en": "Equity rises by the after-tax LIFO reserve.",
+          "tr": "Özkaynak vergi sonrası LIFO rezervi kadar artar.",
+          "formula_latex": "\\Delta E = R(1-t)"
+        },
+        {
+          "en": "160 x (1 - 0.25).",
+          "tr": "160 x (1 - 0,25).",
+          "values": {
+            "R": 160,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "= 120.",
+          "tr": "= 120."
+        },
+        {
+          "en": "Equity increases by TRY 120 million.",
+          "tr": "Özkaynak 120 milyon TL artar."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1",
+          "[-]",
+          "0.25",
+          "[=]",
+          "[×]",
+          "160",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "160*(1-0.25)"
+      },
+      "vocab_ids": [
+        "lifo-reserve",
+        "restate",
+        "equity",
+        "tax-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Marmara Tools reports LIFO cost of sales of TRY 4,200 million. Its LIFO reserve was TRY 130 million at the start of the year and TRY 160 million at year-end. FIFO cost of sales is closest to:",
+      "stem_tr": "Marmara Tools LIFO satışların maliyetini 4.200 milyon TL olarak raporluyor. LIFO rezervi yıl başında 130 milyon TL, yıl sonunda 160 milyon TL'dir. FIFO satışların maliyeti en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 4,230 million",
+          "tr": "4.230 milyon TL",
+          "value": 4230.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 4,040 million",
+          "tr": "4.040 milyon TL",
+          "value": 4040.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 4,170 million",
+          "tr": "4.170 milyon TL",
+          "value": 4170.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "FIFO cost of sales = LIFO cost of sales - change in LIFO reserve = 4,200 - (160 - 130) = 4,170.",
+      "explanation_tr": "FIFO satışların maliyeti = LIFO satışların maliyeti - LIFO rezervindeki değişim = 4.200 - (160 - 130) = 4.170.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the change in reserve instead of subtracting it.",
+          "tr": "Rezervdeki değişimi çıkarmak yerine ekler."
+        },
+        "B": {
+          "en": "Subtracts the whole ending reserve (4,200 - 160) instead of the change.",
+          "tr": "Değişim yerine dönem sonu rezervin tamamını düşer (4.200 - 160)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need FIFO cost of sales.",
+          "tr": "FIFO satışların maliyeti isteniyor."
+        },
+        {
+          "en": "Subtract the change in the LIFO reserve from LIFO cost of sales.",
+          "tr": "LIFO satışların maliyetinden LIFO rezervindeki değişimi çıkar.",
+          "formula_latex": "COGS_{FIFO} = COGS_{LIFO} - (R_{end} - R_{beg})"
+        },
+        {
+          "en": "Change = 160 - 130 = 30.",
+          "tr": "Değişim = 160 - 130 = 30.",
+          "values": {
+            "R_end": 160,
+            "R_beg": 130
+          }
+        },
+        {
+          "en": "4,200 - 30 = 4,170.",
+          "tr": "4.200 - 30 = 4.170.",
+          "values": {
+            "COGS_LIFO": 4200
+          }
+        },
+        {
+          "en": "FIFO cost of sales = TRY 4,170 million.",
+          "tr": "FIFO satışların maliyeti = 4.170 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "160",
+          "[-]",
+          "130",
+          "[=]",
+          "[+/-]",
+          "[+]",
+          "4200",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "4200 - (160 - 130)"
+      },
+      "vocab_ids": [
+        "lifo-reserve",
+        "cost-of-sales",
+        "restate",
+        "change",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A US GAAP company using LIFO sold more units than it purchased this year, during a period of rising prices. Compared with a year with stable quantities, the most likely effect is:",
+      "stem_tr": "LIFO kullanan bir US GAAP şirketi, fiyatların arttığı bir yılda satın aldığından daha fazla birim sattı. Miktarların sabit olduğu bir yıla göre en olası etki hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a lower gross margin that will recover in later years.",
+          "tr": "sonraki yıllarda düzelecek daha düşük bir brüt marj."
+        },
+        {
+          "key": "B",
+          "en": "a temporarily higher gross margin that analysts should not treat as sustainable.",
+          "tr": "analistin kalıcı saymaması gereken, geçici olarak daha yüksek bir brüt marj."
+        },
+        {
+          "key": "C",
+          "en": "no effect on gross margin, because LIFO always uses current costs.",
+          "tr": "brüt marja etki yok; çünkü LIFO her zaman güncel maliyetleri kullanır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "This is a LIFO liquidation: old, low-cost layers flow into cost of sales, so cost of sales is unusually low and gross margin is temporarily high. Taxes also rise. The margin boost is not sustainable.",
+      "explanation_tr": "Bu bir LIFO tasfiyesidir: eski ve düşük maliyetli katmanlar satışların maliyetine akar; satışların maliyeti olağan dışı düşük, brüt marj geçici olarak yüksek olur. Vergiler de artar. Marj artışı kalıcı değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The effect is the opposite: margin goes up, not down.",
+          "tr": "Etki tersidir: marj düşmez, yükselir."
+        },
+        "C": {
+          "en": "LIFO uses current costs only while purchases cover sales; when old layers are sold, old costs enter cost of sales.",
+          "tr": "LIFO güncel maliyetleri yalnızca alışlar satışları karşıladığında kullanır; eski katmanlar satılınca eski maliyetler satışların maliyetine girer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "liquidation",
+        "layer",
+        "gross-margin",
+        "sustainable",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-b-q07",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Input prices have been falling steadily. All else equal, compared with a FIFO firm, a LIFO firm will most likely report:",
+      "stem_tr": "Girdi fiyatları istikrarlı biçimde düşüyor. Diğer her şey sabitken, FIFO kullanan bir şirkete göre LIFO kullanan şirket büyük olasılıkla ne raporlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower cost of sales and a higher gross margin.",
+          "tr": "daha düşük satışların maliyeti ve daha yüksek brüt marj."
+        },
+        {
+          "key": "B",
+          "en": "higher cost of sales and a lower gross margin.",
+          "tr": "daha yüksek satışların maliyeti ve daha düşük brüt marj."
+        },
+        {
+          "key": "C",
+          "en": "lower ending inventory and a lower current ratio.",
+          "tr": "daha düşük dönem sonu stok ve daha düşük cari oran."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With falling prices, the newest costs are the lowest. LIFO puts them into cost of sales, so cost of sales is lower and gross margin is higher than under FIFO. Ending inventory under LIFO holds the older, higher costs.",
+      "explanation_tr": "Fiyatlar düşerken en yeni maliyetler en düşüktür. LIFO bunları satışların maliyetine koyar; bu yüzden FIFO'ya göre satışların maliyeti düşer, brüt marj yükselir. LIFO'da dönem sonu stok eski ve yüksek maliyetleri taşır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the rising-price result; the effects reverse when prices fall.",
+          "tr": "Bu artan fiyat sonucudur; fiyatlar düşerken etkiler tersine döner."
+        },
+        "C": {
+          "en": "With falling prices LIFO inventory holds older, higher costs, so inventory and current ratio are higher, not lower.",
+          "tr": "Fiyatlar düşerken LIFO stoğu eski ve yüksek maliyetleri taşır; stok ve cari oran düşük değil yüksek olur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "falling",
+        "gross-margin",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT a required inventory disclosure under IFRS?",
+      "stem_tr": "Aşağıdakilerden hangisi IFRS'e göre zorunlu bir stok açıklaması DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The cost formula used, such as FIFO or weighted average",
+          "tr": "Kullanılan maliyet yöntemi (ör. FIFO veya ağırlıklı ortalama)"
+        },
+        {
+          "key": "B",
+          "en": "The carrying amount of inventories pledged as security for liabilities",
+          "tr": "Yükümlülüklere teminat olarak rehin verilen stokların defter değeri"
+        },
+        {
+          "key": "C",
+          "en": "The current replacement cost of every individual inventory item",
+          "tr": "Her bir stok kaleminin güncel yenileme maliyeti"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "IFRS requires the cost formula, carrying amounts by class, amounts expensed, write-downs and reversals, and inventories pledged as security. Item-by-item replacement cost is not required.",
+      "explanation_tr": "IFRS maliyet yöntemini, sınıflara göre defter değerlerini, gider yazılan tutarları, değer düşüklüklerini ve iptalleri, teminata verilen stokları ister. Kalem kalem yenileme maliyeti istenmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The cost formula is a required disclosure.",
+          "tr": "Maliyet yöntemi zorunlu bir açıklamadır."
+        },
+        "B": {
+          "en": "Inventories pledged as security must be disclosed.",
+          "tr": "Teminat olarak rehin verilen stokların açıklanması zorunludur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "disclose",
+        "pledged",
+        "security",
+        "not-question"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Kaya Elektronik's notes show finished goods inventory up 35% from last year, raw materials roughly flat, and sales up 5%. This is most likely a sign of:",
+      "stem_tr": "Kaya Elektronik'in dipnotlarına göre mamul stoku geçen yıla göre %35 artmış, ilk madde ve malzeme yaklaşık sabit kalmış, satışlar %5 artmıştır. Bu durum büyük olasılıkla neyin işaretidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "expected strong demand, because the firm is preparing for growth.",
+          "tr": "güçlü talep beklentisi; şirket büyümeye hazırlanıyor."
+        },
+        {
+          "key": "B",
+          "en": "slowing demand and a higher risk of future write-downs.",
+          "tr": "yavaşlayan talep ve gelecekte değer düşüklüğü riskinin artması."
+        },
+        {
+          "key": "C",
+          "en": "a change from FIFO to weighted average cost.",
+          "tr": "FIFO'dan ağırlıklı ortalama maliyete geçiş."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Finished goods piling up much faster than sales suggests products are not selling. Obsolescence risk and future write-downs become more likely.",
+      "explanation_tr": "Mamullerin satışlardan çok daha hızlı birikmesi ürünlerin satılmadığını gösterir. Eskime riski ve gelecekte değer düşüklüğü olasılığı artar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Preparing for growth usually shows up first in raw materials and work in progress, not unsold finished goods.",
+          "tr": "Büyümeye hazırlık genellikle önce ilk madde ve yarı mamulde görülür, satılmamış mamulde değil."
+        },
+        "C": {
+          "en": "A change in cost formula would not create a 35% rise in finished goods only; there is no sign of it.",
+          "tr": "Maliyet yöntemi değişikliği yalnızca mamulde %35 artış yaratmaz; buna dair bir işaret yok."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "finished-goods",
+        "raw-materials",
+        "obsolete",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Ova Kimya's raw materials and work-in-progress inventories rose sharply, while finished goods stayed flat. Management reports a large new order book. The inventory trend is most consistent with:",
+      "stem_tr": "Ova Kimya'nın ilk madde ve malzeme ile yarı mamul stokları hızla arttı, mamul stoku ise sabit kaldı. Yönetim büyük bir yeni sipariş defteri açıkladı. Stok eğilimi en çok hangisiyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "production being increased to meet expected higher demand.",
+          "tr": "beklenen talep artışını karşılamak için üretimin artırılması."
+        },
+        {
+          "key": "B",
+          "en": "unsold products building up because of weak demand.",
+          "tr": "zayıf talep nedeniyle satılmayan ürünlerin birikmesi."
+        },
+        {
+          "key": "C",
+          "en": "a LIFO liquidation that will raise gross margins.",
+          "tr": "brüt marjları yükseltecek bir LIFO tasfiyesi."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Rising raw materials and work in progress, with flat finished goods and a strong order book, suggest the firm is building up production for future sales.",
+      "explanation_tr": "İlk madde ve yarı mamulün artması, mamulün sabit kalması ve güçlü sipariş defteri şirketin gelecekteki satışlar için üretimi artırdığını gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Weak demand would show up as rising finished goods, which are flat here.",
+          "tr": "Zayıf talep mamul artışıyla görülürdü; burada mamul sabit."
+        },
+        "C": {
+          "en": "A LIFO liquidation requires inventory quantities to fall, not rise.",
+          "tr": "LIFO tasfiyesi stok miktarlarının artmasını değil azalmasını gerektirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "work-in-progress",
+        "raw-materials",
+        "order",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A US GAAP company changes its inventory method from FIFO to LIFO. The change is most likely applied:",
+      "stem_tr": "Bir US GAAP şirketi stok yöntemini FIFO'dan LIFO'ya değiştiriyor. Değişiklik büyük olasılıkla nasıl uygulanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "retrospectively, with all prior periods restated.",
+          "tr": "geriye dönük; önceki tüm dönemler yeniden düzenlenir."
+        },
+        {
+          "key": "B",
+          "en": "prospectively, starting from the year of change.",
+          "tr": "ileriye dönük; değişiklik yılından itibaren."
+        },
+        {
+          "key": "C",
+          "en": "not at all, because a change to LIFO is prohibited.",
+          "tr": "hiç uygulanmaz; çünkü LIFO'ya geçiş yasaktır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Changes in inventory method are normally applied retrospectively, but a change to LIFO under US GAAP is applied prospectively, because rebuilding past LIFO layers is usually impractical.",
+      "explanation_tr": "Stok yöntemi değişiklikleri normalde geriye dönük uygulanır; ancak US GAAP'te LIFO'ya geçiş ileriye dönük uygulanır, çünkü geçmiş LIFO katmanlarını yeniden kurmak genellikle mümkün değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Retrospective application is the general rule, but the change to LIFO is the exception.",
+          "tr": "Geriye dönük uygulama genel kuraldır; LIFO'ya geçiş ise istisnadır."
+        },
+        "C": {
+          "en": "LIFO is allowed under US GAAP; a justified change to it is permitted.",
+          "tr": "LIFO US GAAP'te serbesttir; gerekçeli bir geçişe izin verilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "prospectively",
+        "retrospectively",
+        "restate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-06-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares an IFRS retailer that uses FIFO with a US GAAP retailer that uses LIFO. Prices have risen for several years. The most appropriate step to make their inventory turnover and gross margins comparable is to:",
+      "stem_tr": "Bir analist FIFO kullanan bir IFRS perakendecisini LIFO kullanan bir US GAAP perakendecisiyle karşılaştırıyor. Fiyatlar birkaç yıldır artıyor. Stok devir hızlarını ve brüt marjlarını karşılaştırılabilir kılmak için en uygun adım:",
+      "options": [
+        {
+          "key": "A",
+          "en": "restate the IFRS retailer to LIFO using its inventory notes.",
+          "tr": "IFRS perakendecisini dipnotlarını kullanarak LIFO'ya çevirmek."
+        },
+        {
+          "key": "B",
+          "en": "compare the reported figures directly, because both use lower of cost and NRV.",
+          "tr": "raporlanan rakamları doğrudan karşılaştırmak; çünkü ikisi de maliyet ile NGD'den düşük olanı kullanır."
+        },
+        {
+          "key": "C",
+          "en": "restate the US GAAP retailer to FIFO using its disclosed LIFO reserve.",
+          "tr": "US GAAP perakendecisini açıkladığı LIFO rezervini kullanarak FIFO'ya çevirmek."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The LIFO firm discloses its LIFO reserve, so the analyst can add it to inventory and subtract its change from cost of sales. An IFRS firm cannot use LIFO and gives no data to rebuild LIFO layers.",
+      "explanation_tr": "LIFO kullanan şirket LIFO rezervini açıklar; analist bunu stoğa ekleyip değişimini satışların maliyetinden çıkarabilir. IFRS şirketi LIFO kullanamaz ve LIFO katmanlarını yeniden kurmaya yetecek veri vermez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "IFRS firms do not disclose the data needed to rebuild LIFO layers.",
+          "tr": "IFRS şirketleri LIFO katmanlarını kurmak için gereken veriyi açıklamaz."
+        },
+        "B": {
+          "en": "With rising prices, LIFO and FIFO give different cost of sales and inventory, so direct comparison is misleading.",
+          "tr": "Fiyatlar artarken LIFO ve FIFO farklı satışların maliyeti ve stok verir; doğrudan karşılaştırma yanıltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "lifo-reserve",
+        "comparable",
+        "restate",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

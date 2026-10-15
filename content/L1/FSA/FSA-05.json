@@ -1,0 +1,1099 @@
+{
+  "module_id": "FSA-05",
+  "lesson": {
+    "id": "FSA-05-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-05",
+    "los_ids": [
+      "FSA-05-a",
+      "FSA-05-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analyzing Statements of Cash Flows II",
+    "title_tr": "Nakit Akış Tablosunun Analizi II",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why look beyond net income?",
+        "heading_tr": "Neden net kârın ötesine bakarız?",
+        "en": "Net income uses accruals, so management judgment can move it. Cash is harder to fake. A company pays its suppliers, lenders and shareholders with cash, not with profit. Imagine Kuzey Gıda A.Ş., a fictional BIST food company. Its net income grows 20%, but cash flow from operating activities (CFO) falls because receivables and inventory rise fast. Under high inflation this gap can become even larger. An analyst asks: where does the cash come from (sources), where does it go (uses), and can the business fund itself without new borrowing?",
+        "tr": "Net kâr tahakkuk esasına dayanır; bu yüzden yönetimin tahminleri onu etkileyebilir. Nakdi makyajlamak daha zordur. Şirket tedarikçisine, kredi verene ve ortağına kârla değil nakitle ödeme yapar. Kurgusal bir BIST gıda şirketi olan Kuzey Gıda A.Ş.'yi düşünün: net kârı %20 artıyor ama ticari alacaklar ve stoklar hızla büyüdüğü için işletme faaliyetlerinden nakit akışı (CFO) düşüyor. Yüksek enflasyon döneminde bu fark daha da açılabilir. Analist şunu sorar: Nakit nereden geliyor (kaynaklar), nereye gidiyor (kullanımlar) ve şirket yeni borç almadan kendini finanse edebiliyor mu?",
+        "key_terms": [
+          "accrual",
+          "cash flow from operating activities",
+          "sources and uses of cash"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Evaluating sources and uses; common-size statements",
+        "heading_tr": "Kaynak-kullanım analizi ve ortak büyüklük tabloları",
+        "en": "Step 1: find the main sources of cash. A mature, healthy firm gets most of its cash from operating activities. A young firm often depends on financing. Step 2: find the main drivers of CFO: net income, noncash charges and changes in working capital. Step 3: check uses: capital expenditure, acquisitions, debt repayment, dividends. A common-size cash flow statement makes firms of different size comparable. Approach 1: show each line as a percentage of net revenue. Approach 2: show each inflow as a percentage of total inflows and each outflow as a percentage of total outflows. Trends over several years matter more than one year.",
+        "tr": "1. adım: başlıca nakit kaynaklarını bul. Olgun ve sağlıklı bir şirket nakdinin çoğunu işletme faaliyetlerinden sağlar; genç bir şirket ise çoğunlukla finansmana dayanır. 2. adım: CFO'yu belirleyen kalemleri bul: net kâr, nakit dışı giderler ve işletme sermayesindeki değişimler. 3. adım: kullanımları incele: yatırım harcamaları, satın almalar, borç geri ödemeleri, temettüler. Ortak büyüklük (common-size) nakit akış tablosu farklı büyüklükteki şirketleri karşılaştırılabilir kılar. 1. yaklaşım: her kalemi net hasılatın yüzdesi olarak göster. 2. yaklaşım: her girişi toplam girişlerin, her çıkışı toplam çıkışların yüzdesi olarak göster. Tek yıldan çok, birkaç yıllık eğilim önemlidir.",
+        "key_terms": [
+          "common-size",
+          "net revenue",
+          "total inflows",
+          "total outflows",
+          "working capital"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Free cash flow and the IFRS/US GAAP classification issue",
+        "heading_tr": "Serbest nakit akışı ve IFRS/US GAAP sınıflama farkı",
+        "en": "Free cash flow is the cash left after the firm pays operating costs and invests in fixed and working capital. Free cash flow to the firm (FCFF) is available to all capital providers (debt and equity). Free cash flow to equity (FCFE) is available to common shareholders after debt holders are paid. Classification matters. Under US GAAP, interest paid is an operating cash flow and dividends paid are financing. Under IFRS (IAS 7), interest paid may be operating or financing, and dividends paid may be operating or financing. So before comparing CFO of an IFRS firm and a US GAAP firm, move interest and dividends into the same section. (IFRS 18, effective from 2027, narrows these choices.)",
+        "tr": "Serbest nakit akışı, şirket faaliyet giderlerini ödeyip duran varlıklara ve işletme sermayesine yatırım yaptıktan sonra kalan nakittir. Firmaya serbest nakit akışı (FCFF) tüm sermaye sağlayıcılarına (borç ve özkaynak) aittir. Özkaynağa serbest nakit akışı (FCFE) ise borç verenlere ödeme yapıldıktan sonra adi hissedarlara kalan nakittir. Sınıflama önemlidir: US GAAP'te ödenen faiz işletme, ödenen temettü finansman faaliyetidir. IFRS'te (TMS 7 / IAS 7) ödenen faiz işletme ya da finansman, ödenen temettü de işletme ya da finansman olarak sınıflanabilir. Bu nedenle IFRS ve US GAAP uygulayan iki şirketin CFO'sunu karşılaştırmadan önce faiz ve temettüleri aynı bölüme taşıyın. (2027'de yürürlüğe giren IFRS 18 bu seçenekleri daraltmaktadır.)",
+        "key_terms": [
+          "free cash flow to the firm",
+          "free cash flow to equity",
+          "interest paid",
+          "IAS 7"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "FCFF and FCFE",
+        "heading_tr": "FCFF ve FCFE",
+        "en": "From CFO: add back after-tax interest (only if interest paid was deducted in CFO) and subtract fixed capital investment (FCInv, net capital expenditure). From net income: add noncash charges (NCC) and after-tax interest, subtract FCInv and working capital investment (WCInv). FCFE starts from CFO, subtracts FCInv and adds net borrowing (new debt minus debt repaid). t is the tax rate.",
+        "tr": "CFO'dan: vergi sonrası faizi geri ekle (yalnızca ödenen faiz CFO içinde düşülmüşse) ve duran varlık yatırımını (FCInv, net yatırım harcaması) çıkar. Net kârdan: nakit dışı giderleri (NCC) ve vergi sonrası faizi ekle, FCInv ile işletme sermayesi yatırımını (WCInv) çıkar. FCFE, CFO'dan FCInv'i çıkarıp net borçlanmayı (yeni borç eksi geri ödenen borç) ekleyerek bulunur. t vergi oranıdır.",
+        "key_terms": [
+          "FCInv",
+          "WCInv",
+          "noncash charges",
+          "net borrowing"
+        ],
+        "formula_latex": "FCFF = CFO + Int(1-t) - FCInv \\quad FCFF = NI + NCC + Int(1-t) - FCInv - WCInv \\quad FCFE = CFO - FCInv + \\text{Net borrowing}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Performance and coverage ratios",
+        "heading_tr": "Performans ve karşılama oranları",
+        "en": "Performance ratios show how much cash the business creates. Coverage ratios show whether cash can pay obligations. Higher coverage means more safety. For cash flow per share, subtract preferred dividends from CFO. For the cash interest coverage ratio, add back interest paid and taxes paid to CFO.",
+        "tr": "Performans oranları işletmenin ne kadar nakit yarattığını, karşılama oranları ise nakdin yükümlülükleri ödemeye yetip yetmediğini gösterir. Karşılama oranı yükseldikçe güven payı artar. Hisse başına nakit akışında CFO'dan imtiyazlı hisse temettüleri düşülür. Nakdi faiz karşılama oranında CFO'ya ödenen faiz ve ödenen vergiler geri eklenir.",
+        "key_terms": [
+          "cash flow to revenue",
+          "cash return on assets",
+          "debt coverage",
+          "reinvestment ratio"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Ratio",
+              "tr": "Oran"
+            },
+            {
+              "en": "Formula",
+              "tr": "Formül"
+            }
+          ],
+          "rows": [
+            [
+              "Cash flow to revenue / Nakit akışı-hasılat",
+              "CFO / Net revenue"
+            ],
+            [
+              "Cash return on assets / Aktif nakit getirisi",
+              "CFO / Average total assets"
+            ],
+            [
+              "Cash return on equity / Özkaynak nakit getirisi",
+              "CFO / Average shareholders' equity"
+            ],
+            [
+              "Cash to income / Nakit-faaliyet kârı",
+              "CFO / Operating income"
+            ],
+            [
+              "Cash flow per share / Hisse başına nakit akışı",
+              "(CFO - Preferred dividends) / Weighted avg. shares"
+            ],
+            [
+              "Debt coverage / Borç karşılama",
+              "CFO / Total debt"
+            ],
+            [
+              "Interest coverage / Faiz karşılama",
+              "(CFO + Interest paid + Taxes paid) / Interest paid"
+            ],
+            [
+              "Reinvestment / Yeniden yatırım",
+              "CFO / Cash paid for long-term assets"
+            ],
+            [
+              "Debt payment / Borç ödeme",
+              "CFO / Cash paid for long-term debt repayment"
+            ],
+            [
+              "Dividend payment / Temettü ödeme",
+              "CFO / Dividends paid"
+            ],
+            [
+              "Investing and financing / Yatırım ve finansman",
+              "CFO / Cash outflows for investing and financing"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: Kuzey Gıda",
+        "heading_tr": "Çözümlü örnek: Kuzey Gıda",
+        "en": "Kuzey Gıda (US GAAP-style reporting, TRY millions): CFO 480, interest paid 60 (inside CFO), tax rate 25%, capital expenditure 230, new borrowing 100, debt repaid 60. After-tax interest = 60 x (1 - 0.25) = 45. FCFF = 480 + 45 - 230 = 295. Net borrowing = 100 - 60 = 40. FCFE = 480 - 230 + 40 = 290. Check: FCFE = FCFF - after-tax interest + net borrowing = 295 - 45 + 40 = 290.",
+        "tr": "Kuzey Gıda (US GAAP benzeri sunum, milyon TL): CFO 480, ödenen faiz 60 (CFO içinde), vergi oranı %25, yatırım harcaması 230, yeni borçlanma 100, geri ödenen borç 60. Vergi sonrası faiz = 60 x (1 - 0,25) = 45. FCFF = 480 + 45 - 230 = 295. Net borçlanma = 100 - 60 = 40. FCFE = 480 - 230 + 40 = 290. Sağlama: FCFE = FCFF - vergi sonrası faiz + net borçlanma = 295 - 45 + 40 = 290.",
+        "key_terms": [
+          "after-tax interest"
+        ],
+        "example": {
+          "en": "FCFF = 480 + 60(1 - 0.25) - 230 = 295; FCFE = 480 - 230 + (100 - 60) = 290",
+          "tr": "FCFF = 480 + 60(1 - 0,25) - 230 = 295; FCFE = 480 - 230 + (100 - 60) = 290",
+          "formula_latex": "FCFF = 480 + 60(1-0.25) - 230 = 295"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Trap 1: adding back the full interest instead of after-tax interest in FCFF. Trap 2: adding back interest when the IFRS firm already put interest paid in financing; then CFO is not reduced by interest, so no add-back is needed. Trap 3: forgetting that net borrowing can be negative (repayment larger than new debt). Trap 4: in FCFE, subtracting dividends; dividends are a use of FCFE, not part of its calculation. Trap 5: reading one strong CFO year as a trend; selling receivables or delaying payables can boost CFO only for a short time.",
+        "tr": "Tuzak 1: FCFF'de vergi sonrası faiz yerine faizin tamamını geri eklemek. Tuzak 2: IFRS uygulayan şirket ödenen faizi zaten finansmanda göstermişse faizi geri eklemek; bu durumda CFO faizle azalmamıştır, ekleme gerekmez. Tuzak 3: net borçlanmanın negatif olabileceğini (geri ödeme yeni borçtan büyükse) unutmak. Tuzak 4: FCFE hesabında temettüleri düşmek; temettü FCFE'nin kullanımıdır, hesabın parçası değildir. Tuzak 5: tek bir güçlü CFO yılını eğilim sanmak; alacakları satmak ya da borç ödemelerini geciktirmek CFO'yu yalnızca kısa süreliğine artırır.",
+        "key_terms": [
+          "after-tax interest",
+          "net borrowing"
+        ]
+      }
+    ],
+    "summary_en": "Cash flow analysis checks where cash comes from and where it goes. Common-size statements compare firms of different size. FCFF is cash for all capital providers; FCFE is cash for common shareholders. Performance and coverage ratios show cash generation and the ability to pay obligations.",
+    "summary_tr": "Nakit akışı analizi nakdin nereden gelip nereye gittiğini inceler. Ortak büyüklük tabloları farklı büyüklükteki şirketleri karşılaştırmayı sağlar. FCFF tüm sermaye sağlayıcılarına, FCFE ise adi hissedarlara kalan nakittir. Performans ve karşılama oranları nakit yaratma gücünü ve yükümlülükleri ödeme kapasitesini gösterir.",
+    "common_traps_tr": [
+      "FCFF'de faizin tamamı değil, vergi sonrası faiz Int(1-t) geri eklenir.",
+      "IFRS'te ödenen faiz finansmanda sınıflandıysa CFO'ya faiz geri eklenmez.",
+      "FCFE = CFO - FCInv + net borçlanma; temettü düşülmez.",
+      "Hisse başına nakit akışında imtiyazlı temettü CFO'dan düşülür, adi temettü düşülmez.",
+      "Nakdi faiz karşılama oranında pay CFO + ödenen faiz + ödenen vergidir."
+    ],
+    "vocab_ids": [
+      "operating-activities",
+      "investing-activities",
+      "financing-activities",
+      "free-cash-flow",
+      "common-size",
+      "capital-expenditure",
+      "working-capital",
+      "net-borrowing",
+      "coverage-ratio",
+      "noncash-charge",
+      "inflow",
+      "outflow",
+      "accrual",
+      "sustainable"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-05-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes one standard way to prepare a common-size cash flow statement?",
+      "stem_tr": "Aşağıdakilerden hangisi ortak büyüklük (common-size) nakit akış tablosu hazırlamanın standart yollarından birini en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Each line item is shown as a percentage of total assets.",
+          "tr": "Her kalem toplam varlıkların yüzdesi olarak gösterilir."
+        },
+        {
+          "key": "B",
+          "en": "Each line item is shown as a percentage of net revenue.",
+          "tr": "Her kalem net hasılatın yüzdesi olarak gösterilir."
+        },
+        {
+          "key": "C",
+          "en": "Each line item is shown as a percentage of net income.",
+          "tr": "Her kalem net kârın yüzdesi olarak gösterilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "One approach expresses each cash flow line as a percentage of net revenue. The other approach shows each inflow as a percentage of total inflows and each outflow as a percentage of total outflows.",
+      "explanation_tr": "Yaklaşımlardan biri her nakit akışı kalemini net hasılatın yüzdesi olarak gösterir. Diğer yaklaşım her girişi toplam girişlerin, her çıkışı toplam çıkışların yüzdesi olarak gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Total assets is the base for a common-size balance sheet, not a cash flow statement.",
+          "tr": "Toplam varlıklar ortak büyüklük bilançosunun tabanıdır, nakit akış tablosunun değil."
+        },
+        "C": {
+          "en": "Net income is not a standard base; it can be small or negative and gives unstable percentages.",
+          "tr": "Net kâr standart bir taban değildir; küçük ya da negatif olabilir ve istikrarsız yüzdeler verir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "common-size",
+        "line-item",
+        "percentage",
+        "net-revenue"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Tunca Makine reports net revenue of TRY 1,500 million, total cash inflows of TRY 1,650 million and cash flow from operating activities of TRY 180 million. Using net revenue as the base, CFO in a common-size cash flow statement is closest to:",
+      "stem_tr": "Tunca Makine'nin net hasılatı 1.500 milyon TL, toplam nakit girişleri 1.650 milyon TL ve işletme faaliyetlerinden nakit akışı 180 milyon TL'dir. Net hasılat taban alındığında, ortak büyüklük nakit akış tablosunda CFO'ya en yakın değer:",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.9%",
+          "tr": "%10,9",
+          "value": 10.9
+        },
+        {
+          "key": "B",
+          "en": "8.3%",
+          "tr": "%8,3",
+          "value": 8.3
+        },
+        {
+          "key": "C",
+          "en": "12.0%",
+          "tr": "%12,0",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With the revenue approach, CFO / net revenue = 180 / 1,500 = 12.0%.",
+      "explanation_tr": "Hasılat yaklaşımında CFO / net hasılat = 180 / 1.500 = %12,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides CFO by total inflows (180 / 1,650); that is the inflow approach and CFO is a net figure, not an inflow line.",
+          "tr": "CFO'yu toplam girişlere böler (180 / 1.650); bu giriş yaklaşımıdır ve CFO bir giriş kalemi değil net bir tutardır."
+        },
+        "B": {
+          "en": "Uses an arbitrary base (180 / 2,160) or inverts the logic; it does not use net revenue.",
+          "tr": "Rastgele bir taban kullanır (180 / 2.160) ya da mantığı ters kurar; net hasılatı kullanmaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need CFO as a percentage of net revenue.",
+          "tr": "CFO'nun net hasılata oranı isteniyor."
+        },
+        {
+          "en": "Revenue approach: item / net revenue.",
+          "tr": "Hasılat yaklaşımı: kalem / net hasılat.",
+          "formula_latex": "\\frac{CFO}{\\text{Net revenue}}"
+        },
+        {
+          "en": "Substitute: 180 / 1,500.",
+          "tr": "Yerine koy: 180 / 1.500.",
+          "values": {
+            "CFO": 180,
+            "Net revenue": 1500
+          }
+        },
+        {
+          "en": "Result: 0.12 = 12.0%.",
+          "tr": "Sonuç: 0,12 = %12,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "180",
+          "[÷]",
+          "1500",
+          "[=]",
+          "[×]",
+          "100",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "180/1500*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "common-size",
+        "net-revenue",
+        "inflow",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Over three years, Akın Tekstil's net income rose each year, while its cash flow from operating activities fell each year. Receivables and inventory grew much faster than revenue. This pattern is most consistent with:",
+      "stem_tr": "Üç yıl boyunca Akın Tekstil'in net kârı her yıl artarken işletme faaliyetlerinden nakit akışı her yıl düştü. Ticari alacaklar ve stoklar hasılattan çok daha hızlı büyüdü. Bu tablo en çok hangisiyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Lower earnings quality, because profits are not turning into cash.",
+          "tr": "Kârlar nakde dönüşmediği için daha düşük kâr kalitesi."
+        },
+        {
+          "key": "B",
+          "en": "Stronger liquidity, because current assets are increasing.",
+          "tr": "Dönen varlıklar arttığı için daha güçlü likidite."
+        },
+        {
+          "key": "C",
+          "en": "Conservative revenue recognition, because CFO is below net income.",
+          "tr": "CFO net kârın altında olduğu için temkinli hasılat kaydı."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Rising profit with falling CFO, driven by fast growth in receivables and inventory, means earnings are tied up in working capital. It can signal aggressive revenue recognition or slow-moving inventory, so earnings quality is a concern.",
+      "explanation_tr": "Kâr artarken CFO'nun düşmesi ve bunun alacak ile stoklardaki hızlı büyümeden kaynaklanması, kârın işletme sermayesine bağlandığını gösterir. Agresif hasılat kaydına ya da yavaş dönen stoklara işaret edebilir; kâr kalitesi sorgulanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Higher receivables and inventory are not cash; growing them consumes cash and can hurt liquidity.",
+          "tr": "Artan alacak ve stok nakit değildir; büyümeleri nakit tüketir ve likiditeyi bozabilir."
+        },
+        "C": {
+          "en": "The pattern suggests the opposite: aggressive, not conservative, revenue recognition.",
+          "tr": "Bu tablo tam tersini, yani temkinli değil agresif hasılat kaydını düşündürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "earnings-quality",
+        "receivables",
+        "inventory",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares two firms. Firm X reports under US GAAP. Firm Y reports under IFRS and classifies interest paid as a financing cash flow. To make the operating cash flows comparable, the analyst should most appropriately:",
+      "stem_tr": "Bir analist iki şirketi karşılaştırıyor. X şirketi US GAAP, Y şirketi IFRS uyguluyor ve ödenen faizi finansman faaliyetlerinde sınıflıyor. İşletme nakit akışlarını karşılaştırılabilir kılmak için analistin yapması gereken en uygun işlem:",
+      "options": [
+        {
+          "key": "A",
+          "en": "add Firm Y's interest paid back to Firm X's CFO.",
+          "tr": "Y şirketinin ödenen faizini X şirketinin CFO'suna eklemek."
+        },
+        {
+          "key": "B",
+          "en": "subtract Firm Y's interest paid from Firm Y's CFO.",
+          "tr": "Y şirketinin ödenen faizini Y şirketinin CFO'sundan çıkarmak."
+        },
+        {
+          "key": "C",
+          "en": "make no change, because both standards require the same treatment.",
+          "tr": "Hiçbir değişiklik yapmamak; çünkü iki standart da aynı işlemi gerektirir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "US GAAP requires interest paid in operating activities. Firm Y's CFO is not reduced by interest, so it looks higher. Subtracting Y's interest paid from its CFO (moving it to operating) puts both firms on the US GAAP basis.",
+      "explanation_tr": "US GAAP ödenen faizin işletme faaliyetlerinde gösterilmesini ister. Y'nin CFO'su faizle azaltılmadığı için daha yüksek görünür. Y'nin ödenen faizini CFO'sundan düşmek (işletmeye taşımak) iki şirketi US GAAP tabanında eşitler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Mixes one firm's data into the other firm's numbers; it does not fix the classification difference.",
+          "tr": "Bir şirketin verisini diğerinin rakamlarına karıştırır; sınıflama farkını gidermez."
+        },
+        "C": {
+          "en": "IFRS allows interest paid in operating or financing; US GAAP requires operating. The treatments can differ.",
+          "tr": "IFRS ödenen faizi işletme ya da finansmanda kabul eder; US GAAP işletmeyi zorunlu tutar. İşlemler farklı olabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "interest-paid",
+        "classify",
+        "comparable",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which cash flow profile is most likely for a mature, financially healthy company?",
+      "stem_tr": "Olgun ve finansal açıdan sağlıklı bir şirket için en olası nakit akışı profili hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Negative CFO, positive investing cash flow from asset sales, positive financing cash flow.",
+          "tr": "Negatif CFO, varlık satışlarından pozitif yatırım nakit akışı, pozitif finansman nakit akışı."
+        },
+        {
+          "key": "B",
+          "en": "Positive CFO that covers capital expenditure, negative financing cash flow from dividends and debt repayment.",
+          "tr": "Yatırım harcamalarını karşılayan pozitif CFO, temettü ve borç geri ödemelerinden dolayı negatif finansman nakit akışı."
+        },
+        {
+          "key": "C",
+          "en": "Small positive CFO, large capital expenditure funded mainly by new borrowing.",
+          "tr": "Küçük pozitif CFO, ağırlıkla yeni borçla finanse edilen büyük yatırım harcaması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A mature, healthy firm generates enough operating cash to fund capital spending and still returns cash to lenders and shareholders, so financing cash flow is usually negative.",
+      "explanation_tr": "Olgun ve sağlıklı bir şirket yatırım harcamalarını karşılayacak kadar işletme nakdi üretir ve kalan nakdi kredi verenlere ve ortaklara geri öder; bu yüzden finansman nakit akışı genellikle negatiftir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Selling assets and borrowing to cover negative CFO is a warning sign, typical of a firm in trouble.",
+          "tr": "Negatif CFO'yu kapatmak için varlık satmak ve borçlanmak sıkıntıdaki şirketlere özgü bir uyarı işaretidir."
+        },
+        "C": {
+          "en": "Heavy dependence on new debt is more typical of a young, fast-growing firm.",
+          "tr": "Yeni borca yoğun bağımlılık daha çok genç ve hızlı büyüyen şirketlere özgüdür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mature",
+        "capital-expenditure",
+        "repayment",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Free cash flow to equity (FCFE) is best calculated as:",
+      "stem_tr": "Özkaynağa serbest nakit akışı (FCFE) en doğru şekilde nasıl hesaplanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "CFO - Fixed capital investment + Net borrowing",
+          "tr": "CFO - Duran varlık yatırımı + Net borçlanma"
+        },
+        {
+          "key": "B",
+          "en": "CFO + Interest paid x (1 - Tax rate) - Fixed capital investment",
+          "tr": "CFO + Ödenen faiz x (1 - Vergi oranı) - Duran varlık yatırımı"
+        },
+        {
+          "key": "C",
+          "en": "CFO - Fixed capital investment - Dividends paid",
+          "tr": "CFO - Duran varlık yatırımı - Ödenen temettüler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FCFE is cash available to common shareholders: operating cash flow, minus investment in fixed capital, plus net new borrowing from lenders.",
+      "explanation_tr": "FCFE adi hissedarlara kalan nakittir: işletme nakit akışı, eksi duran varlık yatırımı, artı kredi verenlerden sağlanan net yeni borç.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is FCFF (cash for all capital providers), not FCFE.",
+          "tr": "Bu FCFF'dir (tüm sermaye sağlayıcılarına ait nakit), FCFE değildir."
+        },
+        "C": {
+          "en": "Dividends are paid out of FCFE; they are not deducted to calculate it.",
+          "tr": "Temettüler FCFE'den ödenir; FCFE hesaplanırken düşülmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "free-cash-flow",
+        "fixed-capital-investment",
+        "net-borrowing",
+        "equity"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Selvi Lojistik follows US GAAP. Data (TRY millions): CFO 640; interest paid 50, included in CFO; capital expenditure 210; tax rate 25%. Free cash flow to the firm (FCFF) is closest to:",
+      "stem_tr": "Selvi Lojistik US GAAP uygulamaktadır. Veriler (milyon TL): CFO 640; CFO içinde yer alan ödenen faiz 50; yatırım harcaması 210; vergi oranı %25. Firmaya serbest nakit akışı (FCFF) en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "430.0",
+          "tr": "430,0",
+          "value": 430.0
+        },
+        {
+          "key": "B",
+          "en": "480.0",
+          "tr": "480,0",
+          "value": 480.0
+        },
+        {
+          "key": "C",
+          "en": "467.5",
+          "tr": "467,5",
+          "value": 467.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "FCFF = CFO + Int(1 - t) - FCInv = 640 + 50 x 0.75 - 210 = 640 + 37.5 - 210 = 467.5.",
+      "explanation_tr": "FCFF = CFO + Faiz(1 - t) - FCInv = 640 + 50 x 0,75 - 210 = 640 + 37,5 - 210 = 467,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Forgets to add back after-tax interest (640 - 210).",
+          "tr": "Vergi sonrası faizi geri eklemeyi unutur (640 - 210)."
+        },
+        "B": {
+          "en": "Adds back the full interest of 50 instead of the after-tax amount of 37.5.",
+          "tr": "Vergi sonrası 37,5 yerine faizin tamamını (50) geri ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need FCFF starting from CFO.",
+          "tr": "CFO'dan başlayarak FCFF isteniyor."
+        },
+        {
+          "en": "Interest paid is inside CFO (US GAAP), so add back after-tax interest and subtract capex.",
+          "tr": "Ödenen faiz CFO içinde (US GAAP); vergi sonrası faizi geri ekle ve yatırım harcamasını çıkar.",
+          "formula_latex": "FCFF = CFO + Int(1-t) - FCInv"
+        },
+        {
+          "en": "After-tax interest = 50 x (1 - 0.25) = 37.5.",
+          "tr": "Vergi sonrası faiz = 50 x (1 - 0,25) = 37,5.",
+          "values": {
+            "Int": 50,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "FCFF = 640 + 37.5 - 210.",
+          "tr": "FCFF = 640 + 37,5 - 210.",
+          "values": {
+            "CFO": 640,
+            "FCInv": 210
+          }
+        },
+        {
+          "en": "FCFF = TRY 467.5 million.",
+          "tr": "FCFF = 467,5 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1",
+          "[-]",
+          "0.25",
+          "[=]",
+          "[×]",
+          "50",
+          "[=]",
+          "[+]",
+          "640",
+          "[=]",
+          "[-]",
+          "210",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "640 + 50*(1-0.25) - 210"
+      },
+      "vocab_ids": [
+        "free-cash-flow",
+        "interest-paid",
+        "capital-expenditure",
+        "after-tax",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "For the same year, Selvi Lojistik reports CFO of TRY 640 million and capital expenditure of TRY 210 million. It issued new bonds of TRY 120 million and repaid bank loans of TRY 70 million. FCFE is closest to:",
+      "stem_tr": "Aynı yıl Selvi Lojistik 640 milyon TL CFO ve 210 milyon TL yatırım harcaması raporluyor. 120 milyon TL yeni tahvil ihraç etmiş ve 70 milyon TL banka kredisi geri ödemiştir. FCFE en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "480",
+          "tr": "480",
+          "value": 480.0
+        },
+        {
+          "key": "B",
+          "en": "430",
+          "tr": "430",
+          "value": 430.0
+        },
+        {
+          "key": "C",
+          "en": "550",
+          "tr": "550",
+          "value": 550.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net borrowing = 120 - 70 = 50. FCFE = CFO - FCInv + net borrowing = 640 - 210 + 50 = 480.",
+      "explanation_tr": "Net borçlanma = 120 - 70 = 50. FCFE = CFO - FCInv + net borçlanma = 640 - 210 + 50 = 480.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores net borrowing (640 - 210).",
+          "tr": "Net borçlanmayı yok sayar (640 - 210)."
+        },
+        "C": {
+          "en": "Adds only the new issue of 120 and forgets the repayment of 70.",
+          "tr": "Yalnızca 120'lik yeni ihracı ekler, 70'lik geri ödemeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need FCFE.",
+          "tr": "FCFE isteniyor."
+        },
+        {
+          "en": "FCFE = CFO - FCInv + net borrowing.",
+          "tr": "FCFE = CFO - FCInv + net borçlanma.",
+          "formula_latex": "FCFE = CFO - FCInv + (\\text{Debt issued} - \\text{Debt repaid})"
+        },
+        {
+          "en": "Net borrowing = 120 - 70 = 50.",
+          "tr": "Net borçlanma = 120 - 70 = 50.",
+          "values": {
+            "Debt issued": 120,
+            "Debt repaid": 70
+          }
+        },
+        {
+          "en": "FCFE = 640 - 210 + 50.",
+          "tr": "FCFE = 640 - 210 + 50.",
+          "values": {
+            "CFO": 640,
+            "FCInv": 210
+          }
+        },
+        {
+          "en": "FCFE = TRY 480 million.",
+          "tr": "FCFE = 480 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "640",
+          "[-]",
+          "210",
+          "[+]",
+          "120",
+          "[-]",
+          "70",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "640 - 210 + (120 - 70)"
+      },
+      "vocab_ids": [
+        "net-borrowing",
+        "issue",
+        "repay",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Demir Enerji reports (TRY millions): CFO 300, interest paid 40, income taxes paid 60. Interest paid and taxes paid are both deducted in CFO. The cash flow interest coverage ratio is closest to:",
+      "stem_tr": "Demir Enerji'nin verileri (milyon TL): CFO 300, ödenen faiz 40, ödenen gelir vergisi 60. Ödenen faiz ve vergi CFO içinde düşülmüştür. Nakit akışı faiz karşılama oranı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.5x",
+          "tr": "7,5 kat",
+          "value": 7.5
+        },
+        {
+          "key": "B",
+          "en": "10.0x",
+          "tr": "10,0 kat",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "8.5x",
+          "tr": "8,5 kat",
+          "value": 8.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Interest coverage = (CFO + interest paid + taxes paid) / interest paid = (300 + 40 + 60) / 40 = 400 / 40 = 10.0x.",
+      "explanation_tr": "Faiz karşılama = (CFO + ödenen faiz + ödenen vergi) / ödenen faiz = (300 + 40 + 60) / 40 = 400 / 40 = 10,0 kat.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses CFO / interest paid without adding back interest and taxes (300 / 40).",
+          "tr": "Faiz ve vergiyi geri eklemeden CFO / ödenen faiz kullanır (300 / 40)."
+        },
+        "C": {
+          "en": "Adds back interest but forgets taxes paid ((300 + 40) / 40).",
+          "tr": "Faizi geri ekler ama ödenen vergiyi unutur ((300 + 40) / 40)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash flow interest coverage ratio.",
+          "tr": "Nakit akışı faiz karşılama oranı isteniyor."
+        },
+        {
+          "en": "Add back interest and taxes to CFO, then divide by interest paid.",
+          "tr": "CFO'ya faiz ve vergiyi geri ekle, ödenen faize böl.",
+          "formula_latex": "\\frac{CFO + \\text{Interest paid} + \\text{Taxes paid}}{\\text{Interest paid}}"
+        },
+        {
+          "en": "Numerator = 300 + 40 + 60 = 400.",
+          "tr": "Pay = 300 + 40 + 60 = 400.",
+          "values": {
+            "CFO": 300,
+            "Interest paid": 40,
+            "Taxes paid": 60
+          }
+        },
+        {
+          "en": "Ratio = 400 / 40 = 10.0 times.",
+          "tr": "Oran = 400 / 40 = 10,0 kat."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300",
+          "[+]",
+          "40",
+          "[+]",
+          "60",
+          "[=]",
+          "[÷]",
+          "40",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "(300+40+60)/40",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "coverage-ratio",
+        "interest-paid",
+        "taxes-paid",
+        "deduct",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Ege Seramik (TRY millions): net income 250; depreciation 90; interest expense 40; tax rate 30%; capital expenditure 160; increase in working capital 35. Free cash flow to the firm (FCFF) is closest to:",
+      "stem_tr": "Ege Seramik (milyon TL): net kâr 250; amortisman 90; faiz gideri 40; vergi oranı %30; yatırım harcaması 160; işletme sermayesi artışı 35. Firmaya serbest nakit akışı (FCFF) en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "185",
+          "tr": "185",
+          "value": 185.0
+        },
+        {
+          "key": "B",
+          "en": "208",
+          "tr": "208",
+          "value": 208.0
+        },
+        {
+          "key": "C",
+          "en": "173",
+          "tr": "173",
+          "value": 173.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "FCFF = NI + NCC + Int(1 - t) - FCInv - WCInv = 250 + 90 + 40 x 0.70 - 160 - 35 = 250 + 90 + 28 - 160 - 35 = 173.",
+      "explanation_tr": "FCFF = NK + NDG + Faiz(1 - t) - FCInv - WCInv = 250 + 90 + 40 x 0,70 - 160 - 35 = 250 + 90 + 28 - 160 - 35 = 173.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds back the full interest of 40 instead of after-tax interest of 28.",
+          "tr": "Vergi sonrası 28 yerine faizin tamamını (40) geri ekler."
+        },
+        "B": {
+          "en": "Forgets to subtract the working capital investment of 35.",
+          "tr": "35'lik işletme sermayesi yatırımını çıkarmayı unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need FCFF starting from net income.",
+          "tr": "Net kârdan başlayarak FCFF isteniyor."
+        },
+        {
+          "en": "Use FCFF = NI + NCC + Int(1 - t) - FCInv - WCInv.",
+          "tr": "FCFF = NK + NDG + Faiz(1 - t) - FCInv - WCInv formülünü kullan.",
+          "formula_latex": "FCFF = NI + NCC + Int(1-t) - FCInv - WCInv"
+        },
+        {
+          "en": "After-tax interest = 40 x (1 - 0.30) = 28.",
+          "tr": "Vergi sonrası faiz = 40 x (1 - 0,30) = 28.",
+          "values": {
+            "Int": 40,
+            "t": 0.3
+          }
+        },
+        {
+          "en": "FCFF = 250 + 90 + 28 - 160 - 35.",
+          "tr": "FCFF = 250 + 90 + 28 - 160 - 35.",
+          "values": {
+            "NI": 250,
+            "NCC": 90,
+            "FCInv": 160,
+            "WCInv": 35
+          }
+        },
+        {
+          "en": "FCFF = TRY 173 million.",
+          "tr": "FCFF = 173 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1",
+          "[-]",
+          "0.30",
+          "[=]",
+          "[×]",
+          "40",
+          "[=]",
+          "[+]",
+          "250",
+          "[+]",
+          "90",
+          "[-]",
+          "160",
+          "[-]",
+          "35",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "250 + 90 + 40*(1-0.30) - 160 - 35"
+      },
+      "vocab_ids": [
+        "noncash-charge",
+        "depreciation",
+        "working-capital",
+        "after-tax",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-05-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-05",
+      "los_id": "FSA-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Pamir Gıda reports CFO of TRY 520 million, preferred dividends paid of TRY 20 million, common dividends paid of TRY 40 million and 125 million weighted average common shares. Cash flow per share is closest to:",
+      "stem_tr": "Pamir Gıda 520 milyon TL CFO, 20 milyon TL ödenmiş imtiyazlı hisse temettüsü, 40 milyon TL ödenmiş adi hisse temettüsü ve 125 milyon ağırlıklı ortalama adi hisse raporluyor. Hisse başına nakit akışı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 4.00",
+          "tr": "4,00 TL",
+          "value": 4.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 4.16",
+          "tr": "4,16 TL",
+          "value": 4.16
+        },
+        {
+          "key": "C",
+          "en": "TRY 3.68",
+          "tr": "3,68 TL",
+          "value": 3.68
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cash flow per share = (CFO - preferred dividends) / weighted average common shares = (520 - 20) / 125 = 4.00.",
+      "explanation_tr": "Hisse başına nakit akışı = (CFO - imtiyazlı temettü) / ağırlıklı ortalama adi hisse = (520 - 20) / 125 = 4,00 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Does not subtract preferred dividends (520 / 125).",
+          "tr": "İmtiyazlı temettüyü düşmez (520 / 125)."
+        },
+        "C": {
+          "en": "Also subtracts common dividends, which belong to common shareholders ((520 - 20 - 40) / 125).",
+          "tr": "Adi hissedarlara ait olan adi temettüyü de düşer ((520 - 20 - 40) / 125)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need cash flow per share.",
+          "tr": "Hisse başına nakit akışı isteniyor."
+        },
+        {
+          "en": "Formula: (CFO - preferred dividends) / weighted average shares.",
+          "tr": "Formül: (CFO - imtiyazlı temettü) / ağırlıklı ortalama hisse.",
+          "formula_latex": "\\frac{CFO - D_{pref}}{\\text{Shares}}"
+        },
+        {
+          "en": "(520 - 20) / 125.",
+          "tr": "(520 - 20) / 125.",
+          "values": {
+            "CFO": 520,
+            "D_pref": 20,
+            "Shares": 125
+          }
+        },
+        {
+          "en": "= TRY 4.00 per share.",
+          "tr": "= hisse başına 4,00 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "520",
+          "[-]",
+          "20",
+          "[=]",
+          "[÷]",
+          "125",
+          "[=]"
+        ],
+        "note_tr": "BA II Plus varsayılan Chain modunda soldan sağa hesaplar; tuşları bu sırayla girin."
+      },
+      "numeric": {
+        "expr": "(520-20)/125"
+      },
+      "vocab_ids": [
+        "preferred-dividend",
+        "weighted-average",
+        "per-share",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
