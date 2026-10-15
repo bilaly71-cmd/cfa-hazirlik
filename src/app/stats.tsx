@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { Bar, Card, H, Row, Screen, T } from '@/components/ui';
 import { questions, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
-import { daysUntil, readinessScore, streak, topicStats } from '@/lib/scoring';
+import { daysUntil, localDay, readinessScore, streak, topicStats } from '@/lib/scoring';
 import { useStore } from '@/state/store';
 
 export default function Stats() {
@@ -20,7 +20,7 @@ export default function Stats() {
     const xs = s.attempts.filter((a) => a.trLevel === l);
     return { l, n: xs.length, acc: xs.length ? Math.round((xs.filter((a) => a.correct).length / xs.length) * 100) : 0 };
   });
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDay();
   return (
     <Screen>
       <Stack.Screen options={{ title: 'İstatistik' }} />

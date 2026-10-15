@@ -5,7 +5,7 @@ import { View } from 'react-native';
 import { Bar, Button, Card, Chip, H, Row, Screen, T } from '@/components/ui';
 import { questions, topicName, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
-import { dailyPlan, daysUntil, readinessScore, recommendTrLevel, streak, weakTopics } from '@/lib/scoring';
+import { dailyPlan, daysUntil, localDay, readinessScore, recommendTrLevel, streak, weakTopics } from '@/lib/scoring';
 import { questionOfDay } from '@/lib/session';
 import { dueCards } from '@/lib/srs';
 import { actions, useStore } from '@/state/store';
@@ -15,7 +15,7 @@ const TR_LABEL = ['0 · Sınav modu', '1 · Yalnızca popup', '2 · Çevirince',
 export default function Today() {
   const c = useColors();
   const s = useStore((x) => x);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDay();
   const days = daysUntil(s.settings.examDate);
   const due = useMemo(() => dueCards(s.srs), [s.srs]);
   const dueQ = due.filter((d) => d.key.startsWith('q:')).length;

@@ -58,7 +58,9 @@ function parseArr<T>(schema: z.ZodType<T>, file: string, data: unknown): T[] {
   return out;
 }
 
-const isVerified = (x: { verified: unknown }) => typeof x.verified === 'object' && x.verified !== null;
+// --preview: doğrulanmamış içeriği de pakete alır (YALNIZCA yerel UI testi; commit edilmez)
+const PREVIEW = process.argv.includes('--preview');
+const isVerified = (x: { verified: unknown }) => PREVIEW || (typeof x.verified === 'object' && x.verified !== null);
 
 function loadAll(onlyFile?: string) {
   const syllabi = ['L1', 'L2', 'L3']

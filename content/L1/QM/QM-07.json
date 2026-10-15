@@ -1,0 +1,2017 @@
+{
+  "module_id": "QM-07",
+  "lesson": {
+    "id": "QM-07-lesson",
+    "level": "L1",
+    "topic": "QM",
+    "module_id": "QM-07",
+    "los_ids": [
+      "QM-07-a",
+      "QM-07-b",
+      "QM-07-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Estimation and Hypothesis Testing",
+    "title_tr": "Tahmin ve Hipotez Testi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "From a sample to the population",
+        "heading_tr": "Örneklemden ana kütleye",
+        "en": "A portfolio manager at an Istanbul asset management company shows you 36 months of strong returns. Is she skilled, or was she lucky? You never see the full population of her possible returns; you only see a sample. Statistics lets you estimate the true mean with a range (a confidence interval) and test a claim (a hypothesis test). The same tools help you judge whether a link between, say, BIST 100 returns and consumer confidence is real or just noise.",
+        "tr": "İstanbul'daki bir portföy yönetim şirketinde çalışan bir yönetici size 36 aylık güçlü getiri gösteriyor. Yetenekli mi, yoksa şanslı mı? Olası getirilerinin ana kütlesinin tamamını hiçbir zaman göremezsin; yalnızca bir örneklem görürsün. İstatistik, gerçek ortalamayı bir aralıkla (güven aralığı) tahmin etmeni ve bir iddiayı sınamanı (hipotez testi) sağlar. Aynı araçlar, örneğin BIST 100 getirileriyle tüketici güveni arasındaki bir bağın gerçek mi yoksa gürültü mü olduğunu anlamana da yardım eder.",
+        "key_terms": [
+          "sample",
+          "population",
+          "confidence interval",
+          "hypothesis test"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Sampling methods",
+        "heading_tr": "Örnekleme yöntemleri",
+        "en": "Probability sampling gives every member a known chance of selection. Simple random sampling gives each member an equal chance. Stratified random sampling splits the population into groups (strata), such as rating and maturity buckets, and samples each group in proportion to its size; it is used to replicate bond indexes. Cluster sampling picks whole groups at random. Non-probability methods, such as convenience sampling (easy-to-reach data) and judgmental sampling (the analyst's choice), are fast but can be biased. Sampling error is the gap between a sample statistic and the true population parameter.",
+        "tr": "Olasılıklı örneklemede her elemanın seçilme şansı bilinir. Basit rastgele örneklemede her elemanın şansı eşittir. Tabakalı rastgele örnekleme ana kütleyi not ve vade grupları gibi tabakalara böler ve her gruptan büyüklüğüyle orantılı örnek alır; tahvil endekslerini kopyalamada kullanılır. Küme örneklemesi grupların bazılarını bütün olarak rastgele seçer. Kolayda örnekleme (kolay ulaşılan veri) ve yargısal örnekleme (analistin seçimi) gibi olasılıksız yöntemler hızlıdır ama yanlı olabilir. Örnekleme hatası, örneklem istatistiği ile gerçek ana kütle parametresi arasındaki farktır.",
+        "key_terms": [
+          "simple random sampling",
+          "stratified random sampling",
+          "cluster sampling",
+          "convenience sampling",
+          "sampling error"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Central limit theorem and confidence intervals",
+        "heading_tr": "Merkezi limit teoremi ve güven aralığı",
+        "en": "The central limit theorem says that, for a large sample (n ≥ 30), the sample mean is approximately normal with mean μ and standard error σ/√n, whatever the population's shape. A confidence interval is the point estimate plus or minus a reliability factor times the standard error. Use z when σ is known or n is large (1.645 for 90%, 1.96 for 95%, 2.58 for 99%). Use t with n - 1 degrees of freedom when σ is unknown, especially in small samples from a normal population.",
+        "tr": "Merkezi limit teoremi, büyük bir örneklemde (n ≥ 30) örneklem ortalamasının, ana kütlenin biçimi ne olursa olsun, ortalaması μ ve standart hatası σ/√n olan yaklaşık normal bir dağılıma uyduğunu söyler. Güven aralığı, nokta tahminine bir güvenilirlik katsayısı çarpı standart hatanın eklenip çıkarılmasıyla bulunur. σ biliniyorsa veya n büyükse z kullan (%90 için 1,645; %95 için 1,96; %99 için 2,58). σ bilinmiyorsa, özellikle normal ana kütleden küçük örneklemlerde, n - 1 serbestlik dereceli t kullan.",
+        "key_terms": [
+          "central limit theorem",
+          "standard error",
+          "reliability factor",
+          "confidence interval"
+        ],
+        "formula_latex": "\\bar X \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt n}\\qquad\\text{or}\\qquad \\bar X \\pm t_{\\alpha/2,\\,n-1}\\frac{s}{\\sqrt n}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Building a confidence interval",
+        "heading_tr": "Güven aralığı kurmak",
+        "en": "We have 49 monthly returns of a fund with a mean of 1.2% and a sample standard deviation of 6.3%. The sample is large, so z can be used. First find the standard error, then multiply it by 1.96 for a 95% interval. An interval that includes zero tells us the data cannot rule out a true mean of zero.",
+        "tr": "Ortalaması %1,2 ve örneklem standart sapması %6,3 olan bir fonun 49 aylık getirisi var. Örneklem büyük olduğu için z kullanılabilir. Önce standart hatayı bul, sonra %95 aralık için 1,96 ile çarp. Sıfırı içeren bir aralık, verilerin gerçek ortalamanın sıfır olma ihtimalini dışlayamadığını gösterir.",
+        "key_terms": [
+          "standard error",
+          "confidence interval"
+        ],
+        "example": {
+          "en": "Standard error = 6.3/√49 = 0.9%. 95% interval = 1.2% ± 1.96 × 0.9% = 1.2% ± 1.764% → (-0.56%, 2.96%). Because zero lies inside, the mean return is not significantly different from zero at 5%.",
+          "tr": "Standart hata = 6,3/√49 = %0,9. %95 aralık = %1,2 ± 1,96 × %0,9 = %1,2 ± %1,764 → (%-0,56; %2,96). Sıfır aralığın içinde kaldığı için ortalama getiri %5 düzeyinde sıfırdan anlamlı biçimde farklı değildir."
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Steps of a hypothesis test",
+        "heading_tr": "Hipotez testinin adımları",
+        "en": "1) State the null hypothesis H0 (the claim we test, always with an equal sign) and the alternative Ha. 2) Choose the test statistic and its distribution. 3) Choose the significance level α. 4) Set the decision rule with critical values. 5) Compute the statistic. 6) Decide: reject H0 or fail to reject H0. A one-tailed test (Ha: μ > 0) puts the whole α in one tail; a two-tailed test (Ha: μ ≠ 0) splits it. The p-value is the smallest α at which H0 is rejected: reject when p < α.",
+        "tr": "1) Sıfır hipotezini H0 (sınadığımız iddia; her zaman eşitlik içerir) ve alternatif hipotezi Ha'yı yaz. 2) Test istatistiğini ve dağılımını seç. 3) Anlamlılık düzeyi α'yı seç. 4) Kritik değerlerle karar kuralını belirle. 5) İstatistiği hesapla. 6) Karar ver: H0'ı reddet ya da reddetme. Tek kuyruklu testte (Ha: μ > 0) α'nın tamamı bir kuyruktadır; iki kuyruklu testte (Ha: μ ≠ 0) ikiye bölünür. p-değeri, H0'ın reddedildiği en küçük α'dır: p < α ise reddet.",
+        "key_terms": [
+          "null hypothesis",
+          "alternative hypothesis",
+          "significance level",
+          "p-value",
+          "one-tailed test"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Errors and power",
+        "heading_tr": "Hatalar ve güç",
+        "en": "Two errors are possible. A Type I error rejects a true null; its probability is α. A Type II error fails to reject a false null; its probability is β. Power = 1 - β, the chance of rejecting a false null. For a fixed sample, lowering α raises β. Only a larger sample can reduce both.",
+        "tr": "İki hata mümkündür. I. tip hata doğru bir sıfır hipotezini reddetmektir; olasılığı α'dır. II. tip hata yanlış bir sıfır hipotezini reddetmemektir; olasılığı β'dır. Güç = 1 - β, yani yanlış bir sıfır hipotezini reddetme şansıdır. Örneklem sabitken α'yı düşürmek β'yı artırır. İkisini birden azaltmanın tek yolu daha büyük örneklemdir.",
+        "key_terms": [
+          "Type I error",
+          "Type II error",
+          "power of a test"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Decision",
+              "tr": "Karar"
+            },
+            {
+              "en": "H0 true",
+              "tr": "H0 doğru"
+            },
+            {
+              "en": "H0 false",
+              "tr": "H0 yanlış"
+            }
+          ],
+          "rows": [
+            [
+              "Reject H0 / H0 reddedilir",
+              "Type I error (α) / I. tip hata",
+              "Correct (power) / Doğru (güç)"
+            ],
+            [
+              "Fail to reject / Reddedilmez",
+              "Correct (1 - α) / Doğru",
+              "Type II error (β) / II. tip hata"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Test statistics for a mean and for correlation",
+        "heading_tr": "Ortalama ve korelasyon için test istatistikleri",
+        "en": "For a mean with unknown σ, the t-statistic has n - 1 degrees of freedom. To test whether a population correlation is zero, the parametric t-test uses the sample correlation r and has n - 2 degrees of freedom. A larger |t| means stronger evidence against H0.",
+        "tr": "σ bilinmezken ortalama testi için t istatistiğinin serbestlik derecesi n - 1'dir. Ana kütle korelasyonunun sıfır olup olmadığını sınamak için parametrik t testi örneklem korelasyonu r'yi kullanır ve serbestlik derecesi n - 2'dir. |t| büyüdükçe H0 aleyhine kanıt güçlenir.",
+        "key_terms": [
+          "t-statistic",
+          "degrees of freedom",
+          "correlation"
+        ],
+        "formula_latex": "t=\\frac{\\bar X-\\mu_0}{s/\\sqrt n}\\ (df=n-1),\\qquad t=\\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}\\ (df=n-2)"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Testing a manager's skill",
+        "heading_tr": "Yöneticinin yeteneğini sınamak",
+        "en": "Galata Portföy (fictional): 36 months, mean excess return 0.5%, s = 1.5%. H0: μ ≤ 0 against Ha: μ > 0 at 5%. The alternative has a direction, so the test is one-tailed and the critical value is 1.690 for 35 degrees of freedom. If the analyst wrongly used a two-tailed rule (2.030), she would reach the opposite decision.",
+        "tr": "Galata Portföy (kurgusal): 36 ay, ortalama fazla getiri %0,5, s = %1,5. %5 düzeyinde H0: μ ≤ 0'a karşı Ha: μ > 0. Alternatif hipotezin bir yönü olduğu için test tek kuyrukludur ve 35 serbestlik derecesinde kritik değer 1,690'dır. Analist yanlışlıkla iki kuyruklu kuralı (2,030) kullansaydı ters bir karara varırdı.",
+        "key_terms": [
+          "one-tailed test",
+          "critical value"
+        ],
+        "example": {
+          "en": "t = 0.5 / (1.5/√36) = 0.5 / 0.25 = 2.00 > 1.690 → reject H0. The evidence supports a positive mean excess return at the 5% level.",
+          "tr": "t = 0,5 / (1,5/√36) = 0,5 / 0,25 = 2,00 > 1,690 → H0 reddedilir. Kanıtlar %5 düzeyinde pozitif ortalama fazla getiriyi destekler."
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Parametric vs non-parametric tests",
+        "heading_tr": "Parametrik ve parametrik olmayan testler",
+        "en": "Parametric tests (z, t, chi-square for a variance, F) are about a parameter and assume a distribution, often normal. Non-parametric tests make few assumptions. Use them when data are ranks, when there are outliers, when a small sample comes from a non-normal population, or when the question is not about a parameter. Tests of independence: the correlation t-test (parametric), the Spearman rank correlation test (non-parametric, uses ranks) and the chi-square test for a contingency table of categorical data.",
+        "tr": "Parametrik testler (z, t, varyans için ki-kare, F) bir parametreyle ilgilidir ve genellikle normal olmak üzere bir dağılım varsayar. Parametrik olmayan testler az varsayım yapar. Veriler sıralama olduğunda, uç değerler varsa, küçük örneklem normal olmayan bir ana kütleden geliyorsa ya da soru bir parametreyle ilgili değilse bunları kullan. Bağımsızlık testleri: korelasyon t testi (parametrik), Spearman sıra korelasyonu testi (parametrik olmayan, sıraları kullanır) ve kategorik verilerin çapraz tablosu için ki-kare testi.",
+        "key_terms": [
+          "parametric test",
+          "non-parametric test",
+          "Spearman rank correlation",
+          "chi-square test",
+          "contingency table"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Chi-square test of independence",
+        "heading_tr": "Ki-kare bağımsızlık testi",
+        "en": "For a contingency table with r rows and c columns, the expected count in a cell is row total × column total / n. The statistic sums (O - E)²/E over all cells and has (r - 1)(c - 1) degrees of freedom. A large value means the two classifications are related, so independence is rejected.",
+        "tr": "r satır ve c sütunlu bir çapraz tabloda bir gözün beklenen frekansı satır toplamı × sütun toplamı / n'dir. İstatistik tüm gözlerde (O - E)²/E toplamıdır ve serbestlik derecesi (r - 1)(c - 1)'dir. Büyük bir değer iki sınıflamanın ilişkili olduğunu gösterir; bağımsızlık reddedilir.",
+        "key_terms": [
+          "chi-square test",
+          "expected frequency",
+          "independence"
+        ],
+        "formula_latex": "\\chi^2=\\sum_{i=1}^{r\\cdot c}\\frac{(O_i-E_i)^2}{E_i},\\qquad df=(r-1)(c-1)"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Divide by √n, not n, for the standard error. Use t, not z, for small samples with unknown σ. Match the critical value to the test: one-tailed or two-tailed. Never say 'accept H0'; say 'fail to reject'. A p-value is not the probability that H0 is true. Lowering α raises β and lowers power. For a contingency table, df = (r - 1)(c - 1), and expected counts, not observed counts, go in the denominator.",
+        "tr": "Standart hata için n'ye değil √n'ye böl. σ bilinmeyen küçük örneklemlerde z değil t kullan. Kritik değeri teste göre seç: tek kuyruklu mu, iki kuyruklu mu? Asla 'H0 kabul edilir' deme; 'reddedilemez' de. p-değeri H0'ın doğru olma olasılığı değildir. α'yı düşürmek β'yı artırır ve gücü azaltır. Çapraz tabloda sd = (r - 1)(c - 1)'dir ve paydada gözlenen değil beklenen frekanslar yer alır.",
+        "key_terms": [
+          "standard error",
+          "p-value",
+          "power of a test"
+        ]
+      }
+    ],
+    "summary_en": "The central limit theorem makes the sample mean approximately normal with standard error σ/√n, which lets us build confidence intervals with z or t. A hypothesis test compares a test statistic with critical values, or a p-value with α. Type I and Type II errors trade off; power is 1 - β. Non-parametric tests, such as the Spearman rank correlation, need fewer assumptions, and the chi-square test checks independence in a contingency table.",
+    "summary_tr": "Merkezi limit teoremi, örneklem ortalamasını standart hatası σ/√n olan yaklaşık normal bir dağılıma çevirir; bu sayede z veya t ile güven aralığı kurarız. Hipotez testi, test istatistiğini kritik değerlerle ya da p-değerini α ile karşılaştırır. I. tip ve II. tip hata arasında ödünleşim vardır; güç 1 - β'dır. Spearman sıra korelasyonu gibi parametrik olmayan testler daha az varsayım gerektirir; ki-kare testi çapraz tabloda bağımsızlığı sınar.",
+    "common_traps_tr": [
+      "Standart hatada √n yerine n'ye bölmek.",
+      "Küçük örneklem ve bilinmeyen σ ile t yerine z kullanmak.",
+      "Tek kuyruklu bir alternatif hipotezde iki kuyruklu kritik değer kullanmak (veya tersi).",
+      "p-değerini 'H0'ın doğru olma olasılığı' sanmak; 'H0 kabul edildi' demek.",
+      "α'yı düşürmenin gücü artırdığını sanmak (gücü azaltır).",
+      "Ki-kare testinde serbestlik derecesini r × c almak; doğrusu (r - 1)(c - 1)."
+    ],
+    "vocab_ids": [
+      "central-limit-theorem",
+      "sample",
+      "population",
+      "standard-error",
+      "confidence-interval",
+      "reliability-factor",
+      "stratified-sampling",
+      "null-hypothesis",
+      "significance-level",
+      "p-value",
+      "type-i-error",
+      "type-ii-error",
+      "power-of-a-test",
+      "critical-value",
+      "one-tailed",
+      "non-parametric-test",
+      "chi-square",
+      "contingency-table"
+    ],
+    "spk_link": {
+      "status": "new",
+      "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "QM-07-a-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "According to the central limit theorem, for a large random sample the distribution of the sample mean is most likely:",
+      "stem_tr": "Merkezi limit teoremine göre büyük bir rastgele örneklemde örneklem ortalamasının dağılımı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "approximately normal, even if the population itself is not normal.",
+          "tr": "Ana kütle normal olmasa bile yaklaşık olarak normaldir."
+        },
+        {
+          "key": "B",
+          "en": "exactly normal, but only when the population is normal.",
+          "tr": "Tam olarak normaldir; ancak yalnızca ana kütle normalse."
+        },
+        {
+          "key": "C",
+          "en": "spread out with a variance equal to the population variance σ².",
+          "tr": "Varyansı ana kütle varyansına (σ²) eşit olacak biçimde yayılır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The central limit theorem says that the sample mean of a large sample is approximately normal with mean μ and variance σ²/n, whatever the shape of the population (as long as its variance is finite).",
+      "explanation_tr": "Merkezi limit teoremi, büyük bir örneklemin ortalamasının, ana kütlenin biçimi ne olursa olsun (varyansı sonlu olduğu sürece) ortalaması μ ve varyansı σ²/n olan yaklaşık normal bir dağılıma uyduğunu söyler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The key point of the theorem is that the population does not need to be normal when the sample is large (n ≥ 30 as a rule of thumb).",
+          "tr": "Teoremin özü, örneklem büyükse (pratik kural n ≥ 30) ana kütlenin normal olmasının gerekmemesidir."
+        },
+        "C": {
+          "en": "The variance of the sample mean is σ²/n, so it shrinks as the sample gets larger.",
+          "tr": "Örneklem ortalamasının varyansı σ²/n'dir; örneklem büyüdükçe küçülür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "central-limit-theorem",
+        "sample-mean",
+        "population",
+        "approximately",
+        "random-sample",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-a-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst collects 49 monthly returns of a fictional fund, Anatolia Dengeli Fon. The sample mean is 1.2% and the sample standard deviation is 6.3%. The standard error of the sample mean is closest to:",
+      "stem_tr": "Bir analist kurgusal Anatolia Dengeli Fon'un 49 aylık getirisini topluyor. Örneklem ortalaması %1,2, örneklem standart sapması %6,3'tür. Örneklem ortalamasının standart hatası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.13%",
+          "tr": "%0,13",
+          "value": 0.13
+        },
+        {
+          "key": "B",
+          "en": "6.30%",
+          "tr": "%6,30",
+          "value": 6.3
+        },
+        {
+          "key": "C",
+          "en": "0.90%",
+          "tr": "%0,90",
+          "value": 0.9
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Standard error = s / √n = 6.3% / √49 = 6.3% / 7 = 0.90%.",
+      "explanation_tr": "Standart hata = s / √n = %6,3 / √49 = %6,3 / 7 = %0,90.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by n = 49 instead of √n = 7.",
+          "tr": "√n = 7 yerine n = 49'a bölmüş."
+        },
+        "B": {
+          "en": "Gives the standard deviation of single monthly returns, not of the sample mean.",
+          "tr": "Örneklem ortalamasının değil, tek tek aylık getirilerin standart sapmasını vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the standard error of the sample mean.",
+          "tr": "Örneklem ortalamasının standart hatası isteniyor."
+        },
+        {
+          "en": "When σ is unknown, use the sample standard deviation divided by √n.",
+          "tr": "σ bilinmiyorsa örneklem standart sapması √n'ye bölünür.",
+          "formula_latex": "s_{\\bar X}=\\frac{s}{\\sqrt{n}}"
+        },
+        {
+          "en": "s = 6.3%, n = 49.",
+          "tr": "s = %6,3; n = 49.",
+          "values": {
+            "s": 6.3,
+            "n": 49
+          }
+        },
+        {
+          "en": "√49 = 7.",
+          "tr": "√49 = 7."
+        },
+        {
+          "en": "Standard error = 0.90%.",
+          "tr": "Standart hata = %0,90."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6.3 [÷] 49 [√x] [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "6.3/math.sqrt(49)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "standard-error",
+        "sample",
+        "sample-mean",
+        "standard-deviation",
+        "collect",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-a-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A large sample of monthly returns has a mean of 1.2% and a standard error of 0.9%. The upper limit of a 95% confidence interval for the population mean is closest to:",
+      "stem_tr": "Büyük bir aylık getiri örnekleminin ortalaması %1,2, standart hatası %0,9'dur. Ana kütle ortalaması için %95 güven aralığının üst sınırı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.96%",
+          "tr": "%2,96",
+          "value": 2.96
+        },
+        {
+          "key": "B",
+          "en": "2.68%",
+          "tr": "%2,68",
+          "value": 2.68
+        },
+        {
+          "key": "C",
+          "en": "3.52%",
+          "tr": "%3,52",
+          "value": 3.52
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Upper limit = 1.2% + 1.96 × 0.9% = 1.2% + 1.764% ≈ 2.96%. The full interval is about -0.56% to 2.96%.",
+      "explanation_tr": "Üst sınır = %1,2 + 1,96 × %0,9 = %1,2 + %1,764 ≈ %2,96. Aralığın tamamı yaklaşık %-0,56 ile %2,96 arasıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses 1.645, the reliability factor for a 90% interval.",
+          "tr": "%90 güven aralığının güvenilirlik katsayısı olan 1,645'i kullanmış."
+        },
+        "C": {
+          "en": "Uses 2.58, the reliability factor for a 99% interval.",
+          "tr": "%99 güven aralığının güvenilirlik katsayısı olan 2,58'i kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the upper bound of a 95% confidence interval.",
+          "tr": "%95 güven aralığının üst sınırı isteniyor."
+        },
+        {
+          "en": "Large sample: point estimate ± z(α/2) × standard error, with z = 1.96 for 95%.",
+          "tr": "Büyük örneklem: nokta tahmini ± z(α/2) × standart hata; %95 için z = 1,96.",
+          "formula_latex": "\\bar X \\pm z_{\\alpha/2}\\,\\frac{s}{\\sqrt n}"
+        },
+        {
+          "en": "1.2 + 1.96 × 0.9.",
+          "tr": "1,2 + 1,96 × 0,9.",
+          "values": {
+            "mean": 1.2,
+            "SE": 0.9,
+            "z": 1.96
+          }
+        },
+        {
+          "en": "1.96 × 0.9 = 1.764.",
+          "tr": "1,96 × 0,9 = 1,764."
+        },
+        {
+          "en": "Upper limit ≈ 2.96%.",
+          "tr": "Üst sınır ≈ %2,96."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.96 [×] .9 [+] 1.2 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1.2+1.96*0.9",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "confidence-interval",
+        "standard-error",
+        "upper-limit",
+        "population",
+        "reliability-factor",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-a-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A small sample of 16 annual returns from an approximately normal population has a mean of 10% and a sample standard deviation of 8%. The critical t-value for a two-sided 95% interval with 15 degrees of freedom is 2.131. The lower limit of the 95% confidence interval for the population mean is closest to:",
+      "stem_tr": "Yaklaşık normal bir ana kütleden alınan 16 yıllık getiriden oluşan küçük bir örneklemin ortalaması %10, örneklem standart sapması %8'dir. 15 serbestlik derecesinde iki yönlü %95 aralık için kritik t değeri 2,131'dir. Ana kütle ortalaması için %95 güven aralığının alt sınırı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.08%",
+          "tr": "%6,08",
+          "value": 6.08
+        },
+        {
+          "key": "B",
+          "en": "-7.05%",
+          "tr": "%-7,05",
+          "value": -7.05
+        },
+        {
+          "key": "C",
+          "en": "5.74%",
+          "tr": "%5,74",
+          "value": 5.74
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Standard error = 8% / √16 = 2%. Lower limit = 10% - 2.131 × 2% = 10% - 4.262% ≈ 5.74%.",
+      "explanation_tr": "Standart hata = %8 / √16 = %2. Alt sınır = %10 - 2,131 × %2 = %10 - %4,262 ≈ %5,74.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the z-value 1.96. With a small sample and unknown σ, the t-value must be used.",
+          "tr": "z değerini (1,96) kullanmış. Küçük örneklem ve bilinmeyen σ ile t değeri kullanılmalıdır."
+        },
+        "B": {
+          "en": "Multiplies 2.131 by the standard deviation (8%) instead of the standard error (8%/√16 = 2%).",
+          "tr": "2,131'i standart hata (%8/√16 = %2) yerine standart sapmayla (%8) çarpmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the lower bound of a 95% interval from a small sample.",
+          "tr": "Küçük örneklemden %95 aralığın alt sınırı isteniyor."
+        },
+        {
+          "en": "σ is unknown and n is small, so use the t-distribution with n - 1 = 15 degrees of freedom.",
+          "tr": "σ bilinmiyor ve n küçük; bu yüzden n - 1 = 15 serbestlik dereceli t dağılımı kullanılır.",
+          "formula_latex": "\\bar X \\pm t_{\\alpha/2,\\,n-1}\\,\\frac{s}{\\sqrt n}"
+        },
+        {
+          "en": "Standard error = 8 / √16 = 2.",
+          "tr": "Standart hata = 8 / √16 = 2.",
+          "values": {
+            "mean": 10,
+            "s": 8,
+            "n": 16,
+            "t": 2.131
+          }
+        },
+        {
+          "en": "2.131 × 2 = 4.262.",
+          "tr": "2,131 × 2 = 4,262."
+        },
+        {
+          "en": "Lower limit ≈ 5.74%.",
+          "tr": "Alt sınır ≈ %5,74."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [÷] 16 [√x] [=]",
+          "[×] 2.131 [=] [+/-] [+] 10 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "10-2.131*8/math.sqrt(16)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "t-distribution",
+        "degrees-of-freedom",
+        "critical-value",
+        "confidence-interval",
+        "lower-limit",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-a-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An analyst wants to estimate the average yield of a corporate bond universe. She divides the bonds into groups by credit rating and maturity, then randomly selects bonds from each group in proportion to its share of the universe. This method is best described as:",
+      "stem_tr": "Bir analist, bir şirket tahvili evreninin ortalama getirisini tahmin etmek istiyor. Tahvilleri kredi notu ve vadeye göre gruplara ayırıyor, sonra her gruptan evrendeki payıyla orantılı olarak rastgele tahvil seçiyor. Bu yöntem en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "stratified random sampling.",
+          "tr": "Tabakalı rastgele örnekleme."
+        },
+        {
+          "key": "B",
+          "en": "cluster sampling.",
+          "tr": "Küme örneklemesi."
+        },
+        {
+          "key": "C",
+          "en": "convenience sampling.",
+          "tr": "Kolayda örnekleme."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Splitting the population into groups (strata) and drawing a random sample from each group in proportion to its size is stratified random sampling. It makes sure every rating and maturity group is represented, as in bond index replication.",
+      "explanation_tr": "Ana kütleyi gruplara (tabakalara) bölüp her gruptan büyüklüğüyle orantılı rastgele örnek çekmek tabakalı rastgele örneklemedir. Tahvil endeksini kopyalamada olduğu gibi her not ve vade grubunun temsil edilmesini sağlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Cluster sampling picks whole groups at random and uses all (or a sample of) their members; it does not sample every group.",
+          "tr": "Küme örneklemesi grupların bazılarını bütün olarak rastgele seçer; her gruptan örnek almaz."
+        },
+        "C": {
+          "en": "Convenience sampling uses data that are easy to reach, with no random selection, so it may be biased.",
+          "tr": "Kolayda örnekleme, rastgele seçim olmadan kolay ulaşılan verileri kullanır; bu yüzden yanlı olabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "stratified-sampling",
+        "cluster-sampling",
+        "convenience-sampling",
+        "proportion",
+        "universe",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, which of the following changes will most likely make a confidence interval for a population mean narrower?",
+      "stem_tr": "Diğer her şey sabitken aşağıdaki değişikliklerden hangisi bir ana kütle ortalaması için güven aralığını büyük olasılıkla daraltır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Raising the confidence level from 95% to 99%.",
+          "tr": "Güven düzeyini %95'ten %99'a çıkarmak."
+        },
+        {
+          "key": "B",
+          "en": "Using data with a larger standard deviation.",
+          "tr": "Standart sapması daha büyük verilerle çalışmak."
+        },
+        {
+          "key": "C",
+          "en": "Increasing the sample size.",
+          "tr": "Örneklem büyüklüğünü artırmak."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The width of the interval is 2 × reliability factor × s/√n. A larger n lowers the standard error, so the interval gets narrower. With a t-interval, a larger n also lowers the critical t-value.",
+      "explanation_tr": "Aralığın genişliği 2 × güvenilirlik katsayısı × s/√n'dir. Daha büyük n standart hatayı düşürür ve aralık daralır. t aralığında daha büyük n kritik t değerini de düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A higher confidence level needs a larger reliability factor (2.58 instead of 1.96), which widens the interval.",
+          "tr": "Daha yüksek güven düzeyi daha büyük güvenilirlik katsayısı (1,96 yerine 2,58) gerektirir ve aralığı genişletir."
+        },
+        "B": {
+          "en": "A larger standard deviation raises the standard error and widens the interval.",
+          "tr": "Daha büyük standart sapma standart hatayı artırır ve aralığı genişletir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "confidence-interval",
+        "narrow",
+        "sample-size",
+        "confidence-level",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A Type I error in a hypothesis test occurs when the analyst:",
+      "stem_tr": "Bir hipotez testinde I. tip hata, analist şunu yaptığında oluşur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "rejects a null hypothesis that is actually true.",
+          "tr": "Aslında doğru olan sıfır hipotezini reddettiğinde."
+        },
+        {
+          "key": "B",
+          "en": "fails to reject a null hypothesis that is actually false.",
+          "tr": "Aslında yanlış olan sıfır hipotezini reddetmediğinde."
+        },
+        {
+          "key": "C",
+          "en": "rejects a null hypothesis that is actually false.",
+          "tr": "Aslında yanlış olan sıfır hipotezini reddettiğinde."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A Type I error is a 'false alarm': rejecting a true null hypothesis. Its probability equals the significance level α.",
+      "explanation_tr": "I. tip hata bir 'yanlış alarm'dır: doğru olan sıfır hipotezini reddetmek. Olasılığı anlamlılık düzeyi α'ya eşittir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is a Type II error.",
+          "tr": "Bu, II. tip hatadır."
+        },
+        "C": {
+          "en": "This is a correct decision; its probability is the power of the test.",
+          "tr": "Bu doğru bir karardır; olasılığı testin gücüdür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "type-i-error",
+        "null-hypothesis",
+        "reject",
+        "actually",
+        "hypothesis-test",
+        "significance-level"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio manager at a fictional firm, Galata Portföy, claims that her monthly excess return is positive. In a sample of 36 months, the mean excess return is 0.5% and the sample standard deviation is 1.5%. For H0: μ ≤ 0 versus Ha: μ > 0, the test statistic is closest to:",
+      "stem_tr": "Kurgusal Galata Portföy'deki bir portföy yöneticisi aylık fazla getirisinin pozitif olduğunu iddia ediyor. 36 aylık bir örneklemde ortalama fazla getiri %0,5, örneklem standart sapması %1,5'tir. H0: μ ≤ 0'a karşı Ha: μ > 0 testi için test istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.00",
+          "tr": "2,00",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "0.33",
+          "tr": "0,33",
+          "value": 0.33
+        },
+        {
+          "key": "C",
+          "en": "12.00",
+          "tr": "12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "t = (x̄ - μ0) / (s/√n) = (0.5 - 0) / (1.5/6) = 0.5 / 0.25 = 2.00, with 35 degrees of freedom.",
+      "explanation_tr": "t = (x̄ - μ0) / (s/√n) = (0,5 - 0) / (1,5/6) = 0,5 / 0,25 = 2,00; serbestlik derecesi 35'tir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by the standard deviation instead of the standard error s/√n.",
+          "tr": "Standart hata (s/√n) yerine standart sapmaya bölmüş."
+        },
+        "C": {
+          "en": "Divides the standard deviation by n = 36 instead of √n = 6 when finding the standard error.",
+          "tr": "Standart hatayı bulurken standart sapmayı √n = 6 yerine n = 36'ya bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the t-statistic for a test of a mean.",
+          "tr": "Ortalama testi için t istatistiği isteniyor."
+        },
+        {
+          "en": "σ is unknown, so use the sample standard deviation and the t-statistic.",
+          "tr": "σ bilinmediği için örneklem standart sapması ve t istatistiği kullanılır.",
+          "formula_latex": "t=\\frac{\\bar X-\\mu_0}{s/\\sqrt n}"
+        },
+        {
+          "en": "x̄ = 0.5, μ0 = 0, s = 1.5, n = 36.",
+          "tr": "x̄ = 0,5; μ0 = 0; s = 1,5; n = 36.",
+          "values": {
+            "xbar": 0.5,
+            "mu0": 0,
+            "s": 1.5,
+            "n": 36
+          }
+        },
+        {
+          "en": "Standard error = 1.5/6 = 0.25.",
+          "tr": "Standart hata = 1,5/6 = 0,25."
+        },
+        {
+          "en": "t = 2.00 (df = 35).",
+          "tr": "t = 2,00 (sd = 35)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [÷] 36 [√x] [=] [STO] 1",
+          ".5 [÷] [RCL] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5/(1.5/math.sqrt(36))"
+      },
+      "vocab_ids": [
+        "test-statistic",
+        "excess-return",
+        "claim",
+        "null-hypothesis",
+        "versus",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "For the test H0: μ ≤ 0 versus Ha: μ > 0, the t-statistic is 2.00 with 35 degrees of freedom. Critical t-values are 1.690 for a one-tailed test at 5% and 2.030 for a two-tailed test at 5%. At the 5% significance level, the analyst should most appropriately:",
+      "stem_tr": "H0: μ ≤ 0'a karşı Ha: μ > 0 testinde t istatistiği 35 serbestlik derecesiyle 2,00'dir. Kritik t değerleri %5'te tek kuyruklu test için 1,690, iki kuyruklu test için 2,030'dur. %5 anlamlılık düzeyinde analistin en uygun kararı:",
+      "options": [
+        {
+          "key": "A",
+          "en": "fail to reject H0 because 2.00 is below 2.030.",
+          "tr": "2,00, 2,030'un altında olduğu için H0'ı reddetmemek."
+        },
+        {
+          "key": "B",
+          "en": "reject H0 and conclude that the mean excess return is positive.",
+          "tr": "H0'ı reddetmek ve ortalama fazla getirinin pozitif olduğu sonucuna varmak."
+        },
+        {
+          "key": "C",
+          "en": "accept H0 and conclude that the mean excess return is zero.",
+          "tr": "H0'ı kabul etmek ve ortalama fazla getirinin sıfır olduğu sonucuna varmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "This is a one-tailed (right-tail) test. Because 2.00 > 1.690, the statistic is in the rejection region, so H0 is rejected at the 5% level.",
+      "explanation_tr": "Bu tek kuyruklu (sağ kuyruk) bir testtir. 2,00 > 1,690 olduğu için istatistik ret bölgesindedir; H0 %5 düzeyinde reddedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the two-tailed critical value. The alternative hypothesis 'μ > 0' calls for a one-tailed test.",
+          "tr": "İki kuyruklu kritik değeri kullanmış. 'μ > 0' alternatif hipotezi tek kuyruklu test gerektirir."
+        },
+        "C": {
+          "en": "The statistic is in the rejection region. Also, a test never 'proves' or 'accepts' H0; at most we fail to reject it.",
+          "tr": "İstatistik ret bölgesindedir. Ayrıca test H0'ı asla 'kanıtlamaz' ya da 'kabul etmez'; en fazla onu reddedemeyiz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reject",
+        "critical-value",
+        "one-tailed",
+        "two-tailed",
+        "conclude",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, if an analyst lowers the significance level of a test from 5% to 1%, the test will most likely have:",
+      "stem_tr": "Diğer her şey sabitken bir analist testin anlamlılık düzeyini %5'ten %1'e düşürürse test büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a lower probability of a Type II error and higher power.",
+          "tr": "Daha düşük II. tip hata olasılığına ve daha yüksek güce sahip olur."
+        },
+        {
+          "key": "B",
+          "en": "a higher probability of a Type II error and lower power.",
+          "tr": "Daha yüksek II. tip hata olasılığına ve daha düşük güce sahip olur."
+        },
+        {
+          "key": "C",
+          "en": "a higher probability of a Type I error and the same power.",
+          "tr": "Daha yüksek I. tip hata olasılığına ve aynı güce sahip olur."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A lower α shrinks the rejection region. Fewer true nulls are rejected (fewer Type I errors), but more false nulls survive (more Type II errors), so power = 1 - P(Type II error) falls. Only a larger sample can cut both errors at once.",
+      "explanation_tr": "Daha düşük α ret bölgesini küçültür. Daha az doğru sıfır hipotezi reddedilir (daha az I. tip hata), ama daha fazla yanlış sıfır hipotezi ayakta kalır (daha fazla II. tip hata); bu yüzden güç = 1 - P(II. tip hata) düşer. İki hatayı birlikte azaltmanın tek yolu örneklemi büyütmektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reverses the trade-off. A smaller rejection region makes it harder to reject a false null.",
+          "tr": "Ödünleşimi tersine çevirmiş. Daha küçük ret bölgesi, yanlış bir sıfır hipotezini reddetmeyi zorlaştırır."
+        },
+        "C": {
+          "en": "The probability of a Type I error is α itself, so lowering α to 1% reduces it, not raises it.",
+          "tr": "I. tip hata olasılığı α'nın kendisidir; α'yı %1'e düşürmek onu artırmaz, azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "significance-level",
+        "type-ii-error",
+        "power-of-a-test",
+        "trade-off",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A test of whether a fund's mean return differs from its benchmark gives a p-value of 0.03. Which conclusion is most appropriate?",
+      "stem_tr": "Bir fonun ortalama getirisinin karşılaştırma ölçütünden farklı olup olmadığını sınayan bir test 0,03 p-değeri veriyor. Hangi sonuç en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Reject the null hypothesis at both the 5% and 1% levels.",
+          "tr": "Sıfır hipotezi hem %5 hem %1 düzeyinde reddedilir."
+        },
+        {
+          "key": "B",
+          "en": "Reject the null hypothesis at the 5% level but not at the 1% level.",
+          "tr": "Sıfır hipotezi %5 düzeyinde reddedilir ama %1 düzeyinde reddedilmez."
+        },
+        {
+          "key": "C",
+          "en": "There is a 3% probability that the null hypothesis is true.",
+          "tr": "Sıfır hipotezinin doğru olma olasılığı %3'tür."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The p-value is the smallest significance level at which H0 can be rejected. Reject when p < α: 0.03 < 0.05 (reject) but 0.03 > 0.01 (do not reject).",
+      "explanation_tr": "p-değeri, H0'ın reddedilebileceği en küçük anlamlılık düzeyidir. p < α ise reddet: 0,03 < 0,05 (ret) ama 0,03 > 0,01 (ret yok).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Rejection needs p-value < α. Since 0.03 > 0.01, the null cannot be rejected at 1%.",
+          "tr": "Ret için p-değeri < α olmalıdır. 0,03 > 0,01 olduğu için %1'de reddedilemez."
+        },
+        "C": {
+          "en": "A p-value is the probability of a result at least this extreme if H0 were true; it is not the probability that H0 is true.",
+          "tr": "p-değeri, H0 doğru olsaydı en az bu kadar uç bir sonucun görülme olasılığıdır; H0'ın doğru olma olasılığı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "p-value",
+        "null-hypothesis",
+        "benchmark",
+        "differ",
+        "significance-level",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "For a given test, the probability of failing to reject a false null hypothesis is 20%. The power of the test is closest to:",
+      "stem_tr": "Belirli bir testte yanlış bir sıfır hipotezini reddedememe olasılığı %20'dir. Testin gücü aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.00%",
+          "tr": "%20,00",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "95.00%",
+          "tr": "%95,00",
+          "value": 95.0
+        },
+        {
+          "key": "C",
+          "en": "80.00%",
+          "tr": "%80,00",
+          "value": 80.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Failing to reject a false null is a Type II error (β = 20%). Power = 1 - β = 80%: the chance of correctly rejecting a false null.",
+      "explanation_tr": "Yanlış bir sıfır hipotezini reddetmemek II. tip hatadır (β = %20). Güç = 1 - β = %80: yanlış sıfır hipotezini doğru olarak reddetme şansı.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the probability of a Type II error itself, not the power.",
+          "tr": "Bu, gücün kendisi değil, II. tip hata olasılığıdır."
+        },
+        "B": {
+          "en": "This is 1 - α for a 5% test (the confidence level), which is not linked to the 20% given.",
+          "tr": "Bu, %5'lik bir test için 1 - α'dır (güven düzeyi); verilen %20 ile ilgisi yoktur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the power of the test.",
+          "tr": "Testin gücü isteniyor."
+        },
+        {
+          "en": "Power is the complement of the Type II error probability.",
+          "tr": "Güç, II. tip hata olasılığının tümleyenidir.",
+          "formula_latex": "\\text{Power}=1-\\beta"
+        },
+        {
+          "en": "β = 0.20.",
+          "tr": "β = 0,20.",
+          "values": {
+            "beta": 0.2
+          }
+        },
+        {
+          "en": "1 - 0.20 = 0.80.",
+          "tr": "1 - 0,20 = 0,80."
+        },
+        {
+          "en": "Power = 80%.",
+          "tr": "Güç = %80."
+        }
+      ],
+      "numeric": {
+        "expr": "100*(1-0.2)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "power-of-a-test",
+        "type-ii-error",
+        "fail-to-reject",
+        "null-hypothesis",
+        "given",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A large-sample z-test of H0: μ = 0 against Ha: μ ≠ 0 gives a test statistic of 2.20. The p-value is closest to:",
+      "stem_tr": "Büyük örneklemli bir z testinde H0: μ = 0'a karşı Ha: μ ≠ 0 için test istatistiği 2,20 çıkıyor. p-değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.39%",
+          "tr": "%1,39",
+          "value": 1.39
+        },
+        {
+          "key": "B",
+          "en": "2.78%",
+          "tr": "%2,78",
+          "value": 2.78
+        },
+        {
+          "key": "C",
+          "en": "98.61%",
+          "tr": "%98,61",
+          "value": 98.61
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "N(2.20) ≈ 0.9861, so one tail is 1 - 0.9861 = 0.0139. For a two-sided test, p = 2 × 0.0139 ≈ 0.0278, or 2.78%. H0 is rejected at 5% but not at 1%.",
+      "explanation_tr": "N(2,20) ≈ 0,9861; tek kuyruk 1 - 0,9861 = 0,0139'dur. İki yönlü testte p = 2 × 0,0139 ≈ 0,0278, yani %2,78. H0 %5'te reddedilir, %1'de reddedilmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gives the one-tailed p-value. Ha: μ ≠ 0 is two-sided, so both tails count.",
+          "tr": "Tek kuyruklu p-değerini vermiş. Ha: μ ≠ 0 iki yönlüdür; iki kuyruk da sayılır."
+        },
+        "C": {
+          "en": "Gives N(2.20), the area to the left of the statistic, not the tail area.",
+          "tr": "Kuyruk alanı yerine istatistiğin solundaki alanı, N(2,20)'yi vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the two-sided p-value for z = 2.20.",
+          "tr": "z = 2,20 için iki yönlü p-değeri isteniyor."
+        },
+        {
+          "en": "Two-sided p-value = 2 × (1 - N(|z|)).",
+          "tr": "İki yönlü p-değeri = 2 × (1 - N(|z|)).",
+          "formula_latex": "p=2\\left[1-N(|z|)\\right]"
+        },
+        {
+          "en": "N(2.20) ≈ 0.9861 from the z-table.",
+          "tr": "z tablosundan N(2,20) ≈ 0,9861.",
+          "values": {
+            "z": 2.2
+          }
+        },
+        {
+          "en": "One tail = 0.0139.",
+          "tr": "Tek kuyruk = 0,0139."
+        },
+        {
+          "en": "p ≈ 0.0278 = 2.78%.",
+          "tr": "p ≈ 0,0278 = %2,78."
+        }
+      ],
+      "numeric": {
+        "expr": "100*2*(1-0.5*(1+math.erf(2.2/math.sqrt(2))))",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "p-value",
+        "two-tailed",
+        "test-statistic",
+        "tail",
+        "against",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst compares two strategies over the same 25 months. The mean of the monthly return differences (strategy X minus strategy Y) is 0.36%, and the standard deviation of the differences is 1.5%. For a paired comparison test of H0: μd = 0, the t-statistic is closest to:",
+      "stem_tr": "Bir analist iki stratejiyi aynı 25 ay boyunca karşılaştırıyor. Aylık getiri farklarının (X stratejisi eksi Y stratejisi) ortalaması %0,36, farkların standart sapması %1,5'tir. H0: μd = 0 için eşleştirilmiş karşılaştırma testinde t istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.20",
+          "tr": "1,20",
+          "value": 1.2
+        },
+        {
+          "key": "B",
+          "en": "0.24",
+          "tr": "0,24",
+          "value": 0.24
+        },
+        {
+          "key": "C",
+          "en": "6.00",
+          "tr": "6,00",
+          "value": 6.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The paired test works on the differences: t = d̄ / (sd/√n) = 0.36 / (1.5/5) = 0.36 / 0.30 = 1.20, with 24 degrees of freedom. This is too small to reject H0 at usual levels.",
+      "explanation_tr": "Eşleştirilmiş test farklar üzerinde çalışır: t = d̄ / (sd/√n) = 0,36 / (1,5/5) = 0,36 / 0,30 = 1,20; serbestlik derecesi 24'tür. Bu değer olağan düzeylerde H0'ı reddetmeye yetmez.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by the standard deviation of the differences instead of their standard error.",
+          "tr": "Farkların standart hatası yerine standart sapmasına bölmüş."
+        },
+        "C": {
+          "en": "Divides the standard deviation by n = 25 instead of √n = 5.",
+          "tr": "Standart sapmayı √n = 5 yerine n = 25'e bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the t-statistic of a paired comparison test.",
+          "tr": "Eşleştirilmiş karşılaştırma testinin t istatistiği isteniyor."
+        },
+        {
+          "en": "The two samples are dependent (same months), so test the mean of the differences.",
+          "tr": "İki örneklem bağımlıdır (aynı aylar); bu yüzden farkların ortalaması sınanır.",
+          "formula_latex": "t=\\frac{\\bar d-\\mu_{d0}}{s_d/\\sqrt n}"
+        },
+        {
+          "en": "d̄ = 0.36, sd = 1.5, n = 25.",
+          "tr": "d̄ = 0,36; sd = 1,5; n = 25.",
+          "values": {
+            "dbar": 0.36,
+            "s_d": 1.5,
+            "n": 25
+          }
+        },
+        {
+          "en": "Standard error = 1.5/5 = 0.30.",
+          "tr": "Standart hata = 1,5/5 = 0,30."
+        },
+        {
+          "en": "t = 1.20 (df = 24).",
+          "tr": "t = 1,20 (sd = 24)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [÷] 5 [=] [STO] 1",
+          ".36 [÷] [RCL] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "0.36/(1.5/math.sqrt(25))"
+      },
+      "vocab_ids": [
+        "paired-comparison",
+        "difference",
+        "test-statistic",
+        "dependent",
+        "strategy",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A risk manager believes the monthly return volatility of a currency hedge fund is 4%. A sample of 25 months shows a standard deviation of 5%. For a test of H0: σ² = 0.0016, the chi-square test statistic is closest to:",
+      "stem_tr": "Bir risk yöneticisi, bir döviz serbest fonunun aylık getiri oynaklığının %4 olduğuna inanıyor. 25 aylık bir örneklem %5 standart sapma gösteriyor. H0: σ² = 0,0016 testi için ki-kare test istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "39.06",
+          "tr": "39,06",
+          "value": 39.06
+        },
+        {
+          "key": "B",
+          "en": "30.00",
+          "tr": "30,00",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "37.50",
+          "tr": "37,50",
+          "value": 37.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "χ² = (n - 1)s² / σ0² = 24 × 0.0025 / 0.0016 = 24 × 1.5625 = 37.50, with 24 degrees of freedom. A test of a single variance is a parametric test that assumes a normal population.",
+      "explanation_tr": "χ² = (n - 1)s² / σ0² = 24 × 0,0025 / 0,0016 = 24 × 1,5625 = 37,50; serbestlik derecesi 24'tür. Tek varyans testi, normal ana kütle varsayan parametrik bir testtir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses n = 25 instead of n - 1 = 24 degrees of freedom.",
+          "tr": "n - 1 = 24 serbestlik derecesi yerine n = 25 kullanmış."
+        },
+        "B": {
+          "en": "Uses the ratio of standard deviations (5/4) instead of the ratio of variances (25/16).",
+          "tr": "Varyans oranı (25/16) yerine standart sapma oranını (5/4) kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the chi-square statistic for a test of one variance.",
+          "tr": "Tek varyans testi için ki-kare istatistiği isteniyor."
+        },
+        {
+          "en": "The statistic compares the sample variance with the hypothesized variance, with n - 1 degrees of freedom.",
+          "tr": "İstatistik, örneklem varyansını varsayılan varyansla karşılaştırır; serbestlik derecesi n - 1'dir.",
+          "formula_latex": "\\chi^2=\\frac{(n-1)s^2}{\\sigma_0^2}"
+        },
+        {
+          "en": "s² = 0.05² = 0.0025; σ0² = 0.04² = 0.0016; n - 1 = 24.",
+          "tr": "s² = 0,05² = 0,0025; σ0² = 0,04² = 0,0016; n - 1 = 24.",
+          "values": {
+            "n": 25,
+            "s": 0.05,
+            "sigma0": 0.04
+          }
+        },
+        {
+          "en": "0.0025 / 0.0016 = 1.5625.",
+          "tr": "0,0025 / 0,0016 = 1,5625."
+        },
+        {
+          "en": "χ² = 37.50 (df = 24).",
+          "tr": "χ² = 37,50 (sd = 24)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          ".05 [x²] [÷] .04 [x²] [×] 24 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "24*0.05**2/0.04**2"
+      },
+      "vocab_ids": [
+        "chi-square",
+        "volatility",
+        "variance",
+        "hedge-fund",
+        "believe",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A non-parametric test is most appropriate when:",
+      "stem_tr": "Parametrik olmayan bir test en çok hangi durumda uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the data are given only as ranks, such as fund rankings.",
+          "tr": "Veriler yalnızca sıralama olarak verildiğinde (ör. fon sıralamaları)."
+        },
+        {
+          "key": "B",
+          "en": "the population is normal and the sample is large.",
+          "tr": "Ana kütle normal ve örneklem büyük olduğunda."
+        },
+        {
+          "key": "C",
+          "en": "the hypothesis is about the population mean and σ is known.",
+          "tr": "Hipotez ana kütle ortalamasıyla ilgili ve σ bilindiğinde."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Non-parametric tests make few assumptions about the population distribution. They suit ranked data, data with outliers, small samples from non-normal populations and hypotheses that are not about a parameter (such as randomness or independence).",
+      "explanation_tr": "Parametrik olmayan testler ana kütle dağılımı hakkında az varsayım yapar. Sıralı verilere, uç değerli verilere, normal olmayan ana kütleden alınan küçük örneklemlere ve bir parametreyle ilgili olmayan hipotezlere (rastlantısallık ya da bağımsızlık gibi) uygundur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the ideal case for a parametric test such as the t-test.",
+          "tr": "Bu, t testi gibi parametrik bir test için ideal durumdur."
+        },
+        "C": {
+          "en": "A test of a mean with known σ is a parametric z-test.",
+          "tr": "σ bilinirken ortalama testi parametrik bir z testidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "non-parametric-test",
+        "parametric-test",
+        "rank",
+        "outlier",
+        "assumption",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst finds a sample correlation of 0.40 between monthly BIST 100 returns and changes in a consumer confidence index over 27 months. The t-statistic for testing H0: ρ = 0 is closest to:",
+      "stem_tr": "Bir analist 27 ay boyunca aylık BIST 100 getirileri ile bir tüketici güven endeksindeki değişimler arasında 0,40 örneklem korelasyonu buluyor. H0: ρ = 0 testi için t istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.00",
+          "tr": "2,00",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "2.38",
+          "tr": "2,38",
+          "value": 2.38
+        },
+        {
+          "key": "C",
+          "en": "2.18",
+          "tr": "2,18",
+          "value": 2.18
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "t = r√(n - 2) / √(1 - r²) = 0.40 × 5 / √0.84 = 2.00 / 0.9165 ≈ 2.18, with n - 2 = 25 degrees of freedom.",
+      "explanation_tr": "t = r√(n - 2) / √(1 - r²) = 0,40 × 5 / √0,84 = 2,00 / 0,9165 ≈ 2,18; serbestlik derecesi n - 2 = 25'tir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Forgets to divide by √(1 - r²).",
+          "tr": "√(1 - r²)'ye bölmeyi unutmuş."
+        },
+        "B": {
+          "en": "Divides by (1 - r²) instead of its square root.",
+          "tr": "(1 - r²)'nin karekökü yerine kendisine bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the t-statistic for a test of zero correlation.",
+          "tr": "Sıfır korelasyon testi için t istatistiği isteniyor."
+        },
+        {
+          "en": "Parametric test of correlation (assumes normal variables), df = n - 2.",
+          "tr": "Korelasyonun parametrik testi (değişkenlerin normal olduğunu varsayar), sd = n - 2.",
+          "formula_latex": "t=\\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}"
+        },
+        {
+          "en": "r = 0.40, n = 27, so √(n - 2) = 5.",
+          "tr": "r = 0,40; n = 27; dolayısıyla √(n - 2) = 5.",
+          "values": {
+            "r": 0.4,
+            "n": 27
+          }
+        },
+        {
+          "en": "Numerator 2.00; denominator √0.84 = 0.9165.",
+          "tr": "Pay 2,00; payda √0,84 = 0,9165."
+        },
+        {
+          "en": "t ≈ 2.18 (df = 25).",
+          "tr": "t ≈ 2,18 (sd = 25)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          ".4 [×] 25 [√x] [=] [STO] 1",
+          "1 [-] .4 [x²] [=] [√x]",
+          "[1/x] [×] [RCL] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "0.4*math.sqrt(25)/math.sqrt(1-0.16)"
+      },
+      "vocab_ids": [
+        "correlation",
+        "test-statistic",
+        "consumer-confidence",
+        "sample",
+        "degrees-of-freedom",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "An analyst classifies 100 equity funds by style (growth or value) and by whether they beat their benchmark. Growth funds: 30 beat, 20 did not. Value funds: 20 beat, 30 did not. The chi-square statistic for a test of independence between style and performance is closest to:",
+      "stem_tr": "Bir analist 100 hisse fonunu tarza (büyüme veya değer) ve karşılaştırma ölçütünü geçip geçmediğine göre sınıflandırıyor. Büyüme fonları: 30 geçti, 20 geçemedi. Değer fonları: 20 geçti, 30 geçemedi. Tarz ile performans arasındaki bağımsızlık testi için ki-kare istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.17",
+          "tr": "4,17",
+          "value": 4.17
+        },
+        {
+          "key": "B",
+          "en": "1.00",
+          "tr": "1,00",
+          "value": 1.0
+        },
+        {
+          "key": "C",
+          "en": "4.00",
+          "tr": "4,00",
+          "value": 4.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expected count in each cell = (row total × column total) / n = 50 × 50 / 100 = 25. Each cell gives (±5)²/25 = 1. χ² = 4 × 1 = 4.00.",
+      "explanation_tr": "Her gözdeki beklenen frekans = (satır toplamı × sütun toplamı) / n = 50 × 50 / 100 = 25. Her göz (±5)²/25 = 1 verir. χ² = 4 × 1 = 4,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides each squared difference by the observed count instead of the expected count.",
+          "tr": "Her kare farkı beklenen frekans yerine gözlenen frekansa bölmüş."
+        },
+        "B": {
+          "en": "Computes the term for only one cell instead of summing all four cells.",
+          "tr": "Dört gözün toplamı yerine yalnızca tek bir gözün terimini hesaplamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the chi-square statistic for a 2 × 2 contingency table.",
+          "tr": "2 × 2 çapraz tablo için ki-kare istatistiği isteniyor."
+        },
+        {
+          "en": "Compare observed (O) and expected (E) counts; E = row total × column total / n.",
+          "tr": "Gözlenen (O) ve beklenen (E) frekansları karşılaştır; E = satır toplamı × sütun toplamı / n.",
+          "formula_latex": "\\chi^2=\\sum_{i}\\frac{(O_i-E_i)^2}{E_i}"
+        },
+        {
+          "en": "All row and column totals are 50, so E = 25 in every cell.",
+          "tr": "Tüm satır ve sütun toplamları 50; her gözde E = 25.",
+          "values": {
+            "O": "30, 20, 20, 30",
+            "E": 25
+          }
+        },
+        {
+          "en": "Each cell: 25/25 = 1.",
+          "tr": "Her göz: 25/25 = 1."
+        },
+        {
+          "en": "χ² = 4.00 with (2 - 1)(2 - 1) = 1 degree of freedom.",
+          "tr": "χ² = 4,00; serbestlik derecesi (2 - 1)(2 - 1) = 1."
+        }
+      ],
+      "numeric": {
+        "expr": "sum((o-25)**2/25 for o in [30,20,20,30])"
+      },
+      "vocab_ids": [
+        "chi-square",
+        "independence",
+        "contingency-table",
+        "observed",
+        "expected-frequency",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst classifies 100 equity funds by style (growth or value) and by whether they beat their benchmark. Growth funds: 30 beat, 20 did not. Value funds: 20 beat, 30 did not. The chi-square statistic is 4.00, and the 5% critical values are 3.841 for 1 degree of freedom, 7.815 for 3 and 9.488 for 4. Which statement is most accurate?",
+      "stem_tr": "Bir analist 100 hisse fonunu tarza (büyüme veya değer) ve karşılaştırma ölçütünü geçip geçmediğine göre sınıflandırıyor. Büyüme fonları: 30 geçti, 20 geçemedi. Değer fonları: 20 geçti, 30 geçemedi. Ki-kare istatistiği 4,00'tür; %5 kritik değerleri 1 serbestlik derecesi için 3,841, 3 için 7,815 ve 4 için 9,488'dir. Hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Degrees of freedom are 4, and independence is not rejected.",
+          "tr": "Serbestlik derecesi 4'tür ve bağımsızlık reddedilmez."
+        },
+        {
+          "key": "B",
+          "en": "Degrees of freedom are 1, and independence is rejected at 5%.",
+          "tr": "Serbestlik derecesi 1'dir ve bağımsızlık %5'te reddedilir."
+        },
+        {
+          "key": "C",
+          "en": "Degrees of freedom are 3, and independence is not rejected.",
+          "tr": "Serbestlik derecesi 3'tür ve bağımsızlık reddedilmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "For a contingency table, df = (r - 1)(c - 1) = 1. Since 4.00 > 3.841, we reject the null that style and performance are independent: in this sample, beating the benchmark is related to style.",
+      "explanation_tr": "Çapraz tabloda sd = (r - 1)(c - 1) = 1'dir. 4,00 > 3,841 olduğu için tarz ve performansın bağımsız olduğu sıfır hipotezini reddederiz: bu örneklemde ölçütü geçmek tarzla ilişkilidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the number of cells (r × c = 4) as the degrees of freedom.",
+          "tr": "Göz sayısını (r × c = 4) serbestlik derecesi olarak almış."
+        },
+        "C": {
+          "en": "Uses r × c - 1 = 3. The correct rule is (r - 1)(c - 1) = 1.",
+          "tr": "r × c - 1 = 3 kullanmış. Doğru kural (r - 1)(c - 1) = 1'dir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "degrees-of-freedom",
+        "independence",
+        "critical-value",
+        "reject",
+        "contingency-table",
+        "accurate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "An analyst wants to test whether two sets of fund rankings are related, without assuming that the underlying returns are normally distributed. The test that is most appropriate is the:",
+      "stem_tr": "Bir analist, alttaki getirilerin normal dağıldığını varsaymadan iki fon sıralaması kümesinin ilişkili olup olmadığını sınamak istiyor. En uygun test hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "t-test of the Pearson correlation coefficient.",
+          "tr": "Pearson korelasyon katsayısının t testi."
+        },
+        {
+          "key": "B",
+          "en": "Spearman rank correlation test.",
+          "tr": "Spearman sıra korelasyonu testi."
+        },
+        {
+          "key": "C",
+          "en": "F-test of the equality of two variances.",
+          "tr": "İki varyansın eşitliği için F testi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The Spearman rank correlation uses ranks instead of values, so it needs no normality assumption. It is the non-parametric counterpart of the correlation t-test.",
+      "explanation_tr": "Spearman sıra korelasyonu değerler yerine sıraları kullanır; bu yüzden normallik varsayımı gerektirmez. Korelasyon t testinin parametrik olmayan karşılığıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The Pearson correlation t-test is parametric; it assumes the two variables are normally distributed.",
+          "tr": "Pearson korelasyon t testi parametriktir; iki değişkenin normal dağıldığını varsayar."
+        },
+        "C": {
+          "en": "An F-test compares variances and is parametric; it does not test a relationship between rankings.",
+          "tr": "F testi varyansları karşılaştırır ve parametriktir; sıralamalar arasındaki ilişkiyi sınamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "spearman-rank-correlation",
+        "rank",
+        "non-parametric-test",
+        "underlying",
+        "assume",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Six fund managers are ranked by return in two years. The sum of the squared differences between each manager's two ranks is 10. The Spearman rank correlation is closest to:",
+      "stem_tr": "Altı fon yöneticisi iki ayrı yılda getiriye göre sıralanıyor. Her yöneticinin iki sırası arasındaki farkların kareleri toplamı 10'dur. Spearman sıra korelasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.29",
+          "tr": "0,29",
+          "value": 0.29
+        },
+        {
+          "key": "B",
+          "en": "0.714",
+          "tr": "0,714",
+          "value": 0.714
+        },
+        {
+          "key": "C",
+          "en": "-1.00",
+          "tr": "-1,00",
+          "value": -1.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "rs = 1 - 6Σd² / [n(n² - 1)] = 1 - 60 / (6 × 35) = 1 - 0.2857 ≈ 0.71. Managers who ranked high in one year mostly ranked high in the other.",
+      "explanation_tr": "rs = 1 - 6Σd² / [n(n² - 1)] = 1 - 60 / (6 × 35) = 1 - 0,2857 ≈ 0,71. Bir yıl üst sıralarda olan yöneticiler diğer yıl da çoğunlukla üst sıralarda.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Stops at 6Σd² / [n(n² - 1)] and forgets to subtract it from 1.",
+          "tr": "6Σd² / [n(n² - 1)] değerinde durmuş; bunu 1'den çıkarmayı unutmuş."
+        },
+        "C": {
+          "en": "Uses n(n - 1) = 30 in the denominator instead of n(n² - 1) = 210.",
+          "tr": "Paydada n(n² - 1) = 210 yerine n(n - 1) = 30 kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the Spearman rank correlation.",
+          "tr": "Spearman sıra korelasyonu isteniyor."
+        },
+        {
+          "en": "Use the rank-difference formula; it needs no normality assumption.",
+          "tr": "Sıra farkı formülünü kullan; normallik varsayımı gerektirmez.",
+          "formula_latex": "r_s=1-\\frac{6\\sum d_i^2}{n(n^2-1)}"
+        },
+        {
+          "en": "Σd² = 10, n = 6, so n(n² - 1) = 6 × 35 = 210.",
+          "tr": "Σd² = 10; n = 6; dolayısıyla n(n² - 1) = 6 × 35 = 210.",
+          "values": {
+            "sum_d2": 10,
+            "n": 6
+          }
+        },
+        {
+          "en": "6 × 10 / 210 = 0.2857.",
+          "tr": "6 × 10 / 210 = 0,2857."
+        },
+        {
+          "en": "rs ≈ 0.71.",
+          "tr": "rs ≈ 0,71."
+        }
+      ],
+      "numeric": {
+        "expr": "1-6*10/(6*(6**2-1))"
+      },
+      "vocab_ids": [
+        "spearman-rank-correlation",
+        "rank",
+        "squared",
+        "difference",
+        "manager",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-07-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "In a contingency table of 150 bonds, 60 bonds are rated investment grade and 45 bonds were downgraded during the year. Under the null hypothesis that rating and downgrade are independent, the expected number of investment-grade bonds that were downgraded is closest to:",
+      "stem_tr": "150 tahvilden oluşan bir çapraz tabloda 60 tahvil yatırım yapılabilir notta ve 45 tahvilin notu yıl içinde düşürülmüş. Not ile not indiriminin bağımsız olduğu sıfır hipotezi altında, notu düşürülen yatırım yapılabilir nottaki tahvillerin beklenen sayısı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "18.00",
+          "tr": "18,00",
+          "value": 18.0
+        },
+        {
+          "key": "B",
+          "en": "30.00",
+          "tr": "30,00",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "22.50",
+          "tr": "22,50",
+          "value": 22.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under independence, E = row total × column total / n = 60 × 45 / 150 = 18.",
+      "explanation_tr": "Bağımsızlık altında E = satır toplamı × sütun toplamı / n = 60 × 45 / 150 = 18.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Splits the row total in half, as if each outcome were equally likely.",
+          "tr": "Satır toplamını, her sonuç eşit olasılıklıymış gibi ikiye bölmüş."
+        },
+        "C": {
+          "en": "Splits the column total in half instead of using row total × column total / n.",
+          "tr": "Satır toplamı × sütun toplamı / n yerine sütun toplamını ikiye bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need an expected cell count under independence.",
+          "tr": "Bağımsızlık altında beklenen göz frekansı isteniyor."
+        },
+        {
+          "en": "Expected count = row total × column total / grand total.",
+          "tr": "Beklenen frekans = satır toplamı × sütun toplamı / genel toplam.",
+          "formula_latex": "E_{ij}=\\frac{R_i\\times C_j}{n}"
+        },
+        {
+          "en": "R = 60, C = 45, n = 150.",
+          "tr": "R = 60; C = 45; n = 150.",
+          "values": {
+            "R": 60,
+            "C": 45,
+            "n": 150
+          }
+        },
+        {
+          "en": "60 × 45 = 2,700.",
+          "tr": "60 × 45 = 2.700."
+        },
+        {
+          "en": "E = 2,700 / 150 = 18 bonds.",
+          "tr": "E = 2.700 / 150 = 18 tahvil."
+        }
+      ],
+      "numeric": {
+        "expr": "60*45/150"
+      },
+      "vocab_ids": [
+        "contingency-table",
+        "expected-frequency",
+        "investment-grade",
+        "downgrade",
+        "independence",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "İstatistiksel çıkarım ve hipotez testi SPK Düzey 3 (1009) notlarında yok; tamamen yeni konu."
+      },
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

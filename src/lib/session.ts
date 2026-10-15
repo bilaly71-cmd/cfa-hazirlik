@@ -1,6 +1,7 @@
 // Soru oturumu seçimleri (mod → soru listesi).
 import { questions, questionsByLos, questionsByModule, questionsByTopic } from '@/content';
 import { rng, shuffle } from '@/lib/mock';
+import { localDay } from '@/lib/scoring';
 import type { Question, TopicId } from '@/lib/schema';
 import type { AppState } from '@/state/store';
 
@@ -17,7 +18,7 @@ export function wrongQuestionIds(s: AppState) {
 }
 
 /** Günün sorusu: tarihe göre deterministik. */
-export function questionOfDay(date = new Date().toISOString().slice(0, 10)): Question | undefined {
+export function questionOfDay(date = localDay()): Question | undefined {
   if (!questions.length) return undefined;
   const seed = [...date].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
   return questions[seed % questions.length];

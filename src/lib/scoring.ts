@@ -105,6 +105,12 @@ export function recommendTrLevel(
   return { suggest: null, reason: `Son ${window} soruda %${pct} doğru, ortalama ${Math.round(avg)} sn. Bu seviyede devam.` };
 }
 
+/** Yerel takvim günü (YYYY-MM-DD); toISOString UTC verdiği için gece yarısı kaymasın. */
+export function localDay(d: Date = new Date()) {
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
 export function daysUntil(dateIso: string, now: Date = new Date()) {
   const d = new Date(dateIso + (dateIso.length === 10 ? 'T00:00:00' : ''));
   const a = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());

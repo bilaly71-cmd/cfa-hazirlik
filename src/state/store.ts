@@ -1,8 +1,9 @@
 // Cihazda kalıcı uygulama durumu (AsyncStorage; web'de localStorage). Backend yok.
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { AppState as RNAppState, Platform } from 'react-native';
 import { useSyncExternalStore } from 'react';
 
-import type { Attempt, TrLevel } from '@/lib/scoring';
+import { localDay, type Attempt, type TrLevel } from '@/lib/scoring';
 import { newCard, review, srsKey, type GradeName, type StoredCard } from '@/lib/srs';
 import type { TopicId } from '@/lib/schema';
 
@@ -79,11 +80,37 @@ function emit() {
   for (const l of listeners) l();
 }
 
-function persist() {
+let dirty = false;
+
+function flush() {
   if (saveTimer) clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => {
-    AsyncStorage.setItem(KEY, JSON.stringify(state)).catch(() => {});
-  }, 300);
+  saveTimer = undefined;
+  if (!dirty) return;
+  dirty = false;
+  if (Platform.OS === 'web' && typeof localStorage !== 'undefined') {
+    // web'de senkron yaz: sayfa kapanırken/yenilenirken veri kaybolmasın
+    try {
+      localStorage.setItem(KEY, JSON.stringify(state));
+      return;
+    } catch {
+      // kota dolarsa AsyncStorage'a düş
+    }
+  }
+  AsyncStorage.setItem(KEY, JSON.stringify(state)).catch(() => {});
+}
+
+function persist() {
+  dirty = true;
+  if (saveTimer) clearTimeout(saveTimer);
+  saveTimer = setTimeout(flush, 300);
+}
+
+if (Platform.OS === 'web' && typeof window !== 'undefined') {
+  window.addEventListener('pagehide', flush);
+  window.addEventListener('beforeunload', flush);
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && flush());
+} else {
+  RNAppState.addEventListener('change', (st) => st !== 'active' && flush());
 }
 
 export async function hydrate() {
@@ -126,7 +153,7 @@ export function useStore<T>(selector: (s: AppState) => T): T {
 export const useSettings = () => useStore((s) => s.settings);
 export const isHydrated = () => hydrated;
 
-const today = () => new Date().toISOString().slice(0, 10);
+const today = () => localDay();
 
 // ---- eylemler ----
 export const actions = {
