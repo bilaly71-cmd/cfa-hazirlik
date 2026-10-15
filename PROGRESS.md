@@ -1,6 +1,6 @@
 # PROGRESS
 
-SIRADAKİ ADIM: (1) `npx tsc --noEmit` ve `npm test` temiz mi kontrol et, web'i `npx expo start --web` ile mobil viewport'ta aç, hataları düzelt. (2) Üretici ajanların yazdığı content/L1/**/*.json paketlerini commit et; eksik modülleri (dosyası olmayan) docs/GEN_PROMPT.md ile yeniden üret. (3) Her paket için docs/REVIEW_SPEC.md ile bağımsız reviewer ajan çalıştır → npm run build-content. (4) docs/research/A-D → RESEARCH.md, SOURCES.md, CFA_REHBERI_TR.md, KESIFLER.md ve content/exam_info/info.json birleştir. (5) PWA (public/manifest + sw, scripts/pwa.mjs), GitHub Actions (validate + Pages).
+SIRADAKİ ADIM: Fable 5.1 ajanları çalışıyor (dil katmanı, ETH-a/b, FSA-r1/r2, EQ-r1, FI-r1, QM-b, reviewer R1, araştırma birleştirme). Bitenler commit'lenecek; sonra kuyruk: FI 10-13 & 16-19, EQ 08-12, FSA 11-12, QM 01-05, ECO, CI, DER, AI, PM, etik vakaları+formüller+BA II Plus; her paket için reviewer. Ajan sayısını ≤10 tut (20 paralel ajan kotayı 30 dk'da bitirdi).
 
 ## Nasıl devam edilir (yeni oturum için)
 - İçerik kuralları: `docs/CONTENT_SPEC.md`; üretici görev şablonu: `docs/GEN_PROMPT.md`; denetçi: `docs/REVIEW_SPEC.md`.
@@ -12,7 +12,7 @@ SIRADAKİ ADIM: (1) `npx tsc --noEmit` ve `npm test` temiz mi kontrol et, web'i 
 - [x] Faz 1 — Expo SDK 58 iskeleti, zod şeması, FSRS, skor/mock, kelime eşleme, glossary lint, dışa aktarma, 23 birim testi
 - [x] Faz 2 altyapı — validate/build/ngram (scripts/content.ts), verify_numeric.py
 - [~] Faz 2 içerik — üretici ajanlar başlatıldı: FSA, FI, EQ, ETH, QM, ECO, CI, DER, AI, PM (tüm 102 modül) + glossary/GEN kelime/soru kalıpları + etik vakaları/formüller/BA II Plus. Oturum kesildiğinde ~172 soru diskteydi, hepsi verified:false.
-- [~] Faz 3 — ekranlar yazıldı (Bugün, Konular, Soru, Kelimeler, Daha fazla; quiz, review, mock, lesson, topic, stats, settings, formulas, calculator, exam-info, patterns, ethics); tsc temiz, cihazda/web'de HENÜZ test edilmedi
+- [~] Faz 3 — ekranlar yazıldı (Bugün, Konular, Soru, Kelimeler, Daha fazla; quiz, review, mock, lesson, topic, stats, settings, formulas, calculator, exam-info, patterns, ethics); tsc temiz; web'de test edildi (soru akışı, KaTeX, kelime popup'ı, flip kart, kalıcı kayıt); PWA offline doğrulandı; GitHub Actions hazır (repo remote'u yok)
 - [ ] Milestone A / B / C
 
 ## Metrikler
