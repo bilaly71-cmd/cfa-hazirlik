@@ -8,11 +8,11 @@ while (-not (Test-Path ".\DONE")) {
     if (-not (Test-Path ".\PROGRESS.md")) {
         # İlk çalıştırma: görevi PROMPT.md'den başlat
         $out = claude -p "PROMPT.md dosyasını oku ve oradaki görevi uygula. Bana soru sorma." `
-            --model opus --dangerously-skip-permissions 2>&1 | Tee-Object -FilePath $log
+            --model claude-fable-5-1 --dangerously-skip-permissions 2>&1 | Tee-Object -FilePath $log
     } else {
         # Sonraki çalıştırmalar: son oturumu sürdür
         $out = claude -p "PROGRESS.md'yi oku, PROMPT.md'deki görevi kaldığın yerden sürdür. Bana soru sorma." `
-            --continue --model opus --dangerously-skip-permissions 2>&1 | Tee-Object -FilePath $log
+            --continue --model claude-fable-5-1 --dangerously-skip-permissions 2>&1 | Tee-Object -FilePath $log
     }
 
     $metin = $out -join "`n"
