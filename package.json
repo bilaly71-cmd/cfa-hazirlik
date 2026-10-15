@@ -4,19 +4,24 @@
   "main": "expo-router/entry",
   "dependencies": {
     "@expo/ui": "~58.0.18",
+    "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~58.0.11",
     "expo-constants": "~58.0.12",
     "expo-device": "~58.0.5",
+    "expo-file-system": "~58.0.9",
     "expo-font": "~58.0.8",
     "expo-glass-effect": "~58.0.3",
     "expo-image": "~58.0.15",
     "expo-linking": "~58.0.13",
     "expo-router": "~58.0.20",
+    "expo-sharing": "~58.0.18",
+    "expo-speech": "~58.0.3",
     "expo-splash-screen": "~58.0.9",
     "expo-status-bar": "~58.0.3",
     "expo-symbols": "~58.0.4",
     "expo-system-ui": "~58.0.6",
     "expo-web-browser": "~58.0.6",
+    "katex": "^0.19.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-native": "0.88.0",
@@ -25,19 +30,33 @@
     "react-native-safe-area-context": "~5.10.1",
     "react-native-screens": "~4.30.0",
     "react-native-web": "~0.21.4",
-    "react-native-worklets": "0.13.0"
+    "react-native-webview": "14.0.1",
+    "react-native-worklets": "0.13.0",
+    "ts-fsrs": "^5.4.2",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@types/katex": "^0.16.8",
     "@types/react": "~19.3.0",
-    "typescript": "~6.0.3"
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
   },
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "validate-content": "tsx scripts/content.ts validate",
+    "build-content": "tsx scripts/content.ts build",
+    "ngram-check": "tsx scripts/content.ts ngram",
+    "verify-numeric": "python scripts/verify_numeric.py",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "export-web": "npm run build-content && expo export --platform web && node scripts/pwa.mjs"
   },
-  "private": true
+  "private": true,
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
 }
