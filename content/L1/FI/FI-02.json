@@ -1,0 +1,919 @@
+{
+  "module_id": "FI-02",
+  "lesson": {
+    "id": "FI-02-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-02",
+    "los_ids": [
+      "FI-02-a",
+      "FI-02-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Cash Flows and Types",
+    "title_tr": "Sabit Getirili Nakit Akışları ve Türleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Who gets paid, when and how much",
+        "heading_tr": "Kime, ne zaman, ne kadar ödenir?",
+        "en": "Two bonds with the same issuer and maturity can have very different cash flows. One pays a fixed coupon and all principal at the end. Another pays back principal every year. A third pays a coupon that moves with a market rate. In Türkiye you can see all of these: the Treasury issues fixed-coupon bonds, floating-rate bonds linked to TLREF and inflation-linked bonds whose principal moves with the consumer price index (TÜFE). Some bank bonds can be called early. The pattern of cash flows decides how much risk the investor carries: credit risk, interest rate risk, reinvestment risk and inflation risk. Options inside the bond (call, put, conversion) move value between the issuer and the investor, so the price and yield change too.",
+        "tr": "Aynı ihraççının aynı vadeli iki tahvili çok farklı nakit akışlarına sahip olabilir. Biri sabit kupon öder ve anaparanın tamamını sonda öder. Bir diğeri anaparayı her yıl geri öder. Üçüncüsü piyasa faiziyle hareket eden bir kupon öder. Türkiye'de hepsini görebilirsiniz: Hazine sabit kuponlu tahviller, TLREF'e endeksli değişken faizli tahviller ve anaparası tüketici fiyat endeksiyle (TÜFE) değişen enflasyona endeksli tahviller ihraç eder. Bazı banka bonoları erken itfa edilebilir. Nakit akışı yapısı, yatırımcının taşıdığı riski belirler: kredi riski, faiz oranı riski, yeniden yatırım riski ve enflasyon riski. Tahvilin içindeki opsiyonlar (erken itfa, satma, dönüştürme) değeri ihraççı ile yatırımcı arasında aktarır; bu yüzden fiyat ve getiri de değişir.",
+        "key_terms": [
+          "cash flow",
+          "TLREF",
+          "inflation-linked bond",
+          "embedded option"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Principal repayment structures",
+        "heading_tr": "Anapara geri ödeme yapıları",
+        "en": "A bullet bond pays only coupons until maturity and then all principal at once. A fully amortizing bond pays equal (or scheduled) payments that include both interest and principal, so nothing is left at maturity; most mortgages and car loans work this way. A partially amortizing bond repays part of the principal over time and leaves a balloon payment at maturity. A sinking fund requires the issuer to retire a set part of the issue each year, either by calling bonds at a sinking fund price (often par) or by buying them in the market. Repaying principal earlier lowers credit risk for investors, but it adds reinvestment risk, because cash comes back sooner and may be invested at lower rates.",
+        "tr": "Anaparası vade sonunda ödenen (bullet) tahvil vadeye kadar yalnızca kupon öder ve anaparanın tamamını sonda tek seferde öder. Tamamen itfalı tahvil hem faiz hem anapara içeren eşit (ya da planlı) ödemeler yapar, vade sonunda bakiye kalmaz; konut ve taşıt kredilerinin çoğu böyle işler. Kısmen itfalı tahvil anaparanın bir kısmını zamanla öder ve vade sonunda bir balon ödeme bırakır. İtfa fonu ihraççının her yıl ihracın belirli bir kısmını itfa etmesini gerektirir; bunu tahvilleri itfa fonu fiyatından (çoğunlukla nominal) geri çağırarak veya piyasadan satın alarak yapar. Anaparanın erken ödenmesi yatırımcının kredi riskini azaltır ama yeniden yatırım riskini artırır; çünkü nakit daha erken döner ve daha düşük faizle yatırılabilir.",
+        "key_terms": [
+          "bullet bond",
+          "fully amortizing",
+          "partially amortizing",
+          "balloon payment",
+          "sinking fund",
+          "reinvestment risk"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Structure",
+              "tr": "Yapı"
+            },
+            {
+              "en": "Principal paid",
+              "tr": "Anapara ödemesi"
+            },
+            {
+              "en": "Left at maturity",
+              "tr": "Vadede kalan"
+            }
+          ],
+          "rows": [
+            [
+              "Bullet",
+              "All at maturity / Tamamı vadede",
+              "100%"
+            ],
+            [
+              "Fully amortizing",
+              "Every period / Her dönem",
+              "0%"
+            ],
+            [
+              "Partially amortizing",
+              "Some each period / Her dönem bir kısmı",
+              "Balloon / Balon"
+            ],
+            [
+              "Sinking fund",
+              "Set part of issue each year / Her yıl ihracın bir kısmı",
+              "Remaining bonds / Kalan tahviller"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Coupon structures",
+        "heading_tr": "Kupon yapıları",
+        "en": "A floating-rate note (FRN) pays a market reference rate (MRR) plus a fixed quoted margin; the coupon resets each period. Because the coupon follows rates, its price stays close to par and interest rate risk is small. A cap limits the coupon from above (good for the issuer); a floor limits it from below (good for the investor). A step-up coupon rises on set dates or after an event such as a rating downgrade. Credit-linked coupons change with the issuer's rating. A payment-in-kind (PIK) bond can pay coupons with more bonds instead of cash. A deferred coupon bond pays nothing at first and higher coupons later. An index-linked or inflation-linked bond ties payments to a price index: capital-indexed bonds adjust the principal and apply a fixed coupon rate to it; interest-indexed bonds adjust only the coupon rate.",
+        "tr": "Değişken faizli not (FRN), bir piyasa referans faizi artı sabit bir kotasyon marjı öder; kupon her dönem yeniden belirlenir. Kupon faizleri izlediği için fiyat nominale yakın kalır ve faiz oranı riski düşüktür. Tavan kuponu yukarıdan sınırlar (ihraççı lehine); taban aşağıdan sınırlar (yatırımcı lehine). Artan kupon belirli tarihlerde veya not indirimi gibi bir olaydan sonra yükselir. Krediye bağlı kuponlar ihraççının notuyla değişir. Ayni ödemeli (PIK) tahvil kuponu nakit yerine ek tahvil vererek ödeyebilir. Ertelenmiş kuponlu tahvil önce hiç ödemez, sonra daha yüksek kupon öder. Endekse veya enflasyona bağlı tahvil ödemeleri bir fiyat endeksine bağlar: anaparası endekslenen tahvillerde anapara düzeltilir ve sabit kupon oranı bu anaparaya uygulanır; faizi endekslenen tahvillerde yalnızca kupon oranı düzeltilir.",
+        "key_terms": [
+          "floating-rate note",
+          "reference rate",
+          "quoted margin",
+          "cap",
+          "floor",
+          "step-up coupon",
+          "payment-in-kind",
+          "deferred coupon",
+          "capital-indexed",
+          "interest-indexed"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key cash flow formulas",
+        "heading_tr": "Temel nakit akışı formülleri",
+        "en": "FRN coupon per period: (MRR + quoted margin) × par / m, where m is payments per year. Level payment of a fully amortizing bond: the annuity payment A that makes the present value of n payments at rate r equal the principal P. Capital-indexed bond: adjusted principal = par × (index now / index at issue); coupon = real coupon rate × adjusted principal / m.",
+        "tr": "FRN dönem kuponu: (referans faiz + kotasyon marjı) × nominal / m; m yıllık ödeme sayısıdır. Tamamen itfalı tahvilin eşit taksiti: n ödemenin r oranıyla bugünkü değerini anapara P'ye eşitleyen anüite ödemesi A'dır. Anaparası endekslenen tahvil: düzeltilmiş anapara = nominal × (bugünkü endeks / ihraçtaki endeks); kupon = reel kupon oranı × düzeltilmiş anapara / m.",
+        "key_terms": [
+          "quoted margin",
+          "annuity",
+          "adjusted principal"
+        ],
+        "formula_latex": "C_{FRN}=\\frac{(MRR+QM)\\times Par}{m},\\qquad A=\\frac{r\\,P}{1-(1+r)^{-n}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "An FRN and an amortizing loan",
+        "heading_tr": "Bir FRN ve itfalı bir borç",
+        "en": "Kuzey Faktoring A.Ş. issues a TRY 10 million FRN paying TLREF + 2.00%, reset and paid quarterly. At the latest reset TLREF is 40.00%. Separately, the firm repays a TRY 1 million amortizing loan over 3 years at 10% with level annual payments.",
+        "tr": "Kuzey Faktoring A.Ş., TLREF + %2,00 ödeyen, üç ayda bir yeniden belirlenen ve ödenen 10 milyon TL'lik bir FRN ihraç eder. Son belirleme gününde TLREF %40,00'tır. Ayrıca şirket 1 milyon TL'lik bir krediyi %10 faizle, 3 yılda eşit yıllık taksitlerle geri öder.",
+        "key_terms": [
+          "FRN",
+          "TLREF",
+          "level payment"
+        ],
+        "example": {
+          "en": "FRN coupon this quarter = (0.40 + 0.02) × 10,000,000 / 4 = TRY 1,050,000. Loan payment: A = 0.10 × 1,000,000 / (1 − 1.10^−3) = TRY 402,115. Year 1 interest = 100,000, so principal repaid = 302,115 and the balance falls to 697,885. Each year the interest part shrinks and the principal part grows.",
+          "tr": "Bu çeyreğin FRN kuponu = (0,40 + 0,02) × 10.000.000 / 4 = 1.050.000 TL. Kredi taksiti: A = 0,10 × 1.000.000 / (1 − 1,10^−3) = 402.115 TL. 1. yıl faizi = 100.000 TL; ödenen anapara = 302.115 TL ve bakiye 697.885 TL'ye iner. Her yıl faiz kısmı küçülür, anapara kısmı büyür.",
+          "formula_latex": "A=\\frac{0.10\\times 1{,}000{,}000}{1-1.10^{-3}}=402{,}115"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Contingency provisions",
+        "heading_tr": "Şarta bağlı haklar (gömülü opsiyonlar)",
+        "en": "A callable bond gives the issuer the right to repay early at a call price, usually after a period of call protection. Issuers call when rates fall, so investors face reinvestment risk and demand a higher yield. Call styles: American (any time after protection ends), European (one date) and Bermudan (set dates). A make-whole call pays the present value of remaining cash flows at a small spread over government yields, so it is rarely used to refinance. A putable bond gives the investor the right to sell the bond back at a set price; it benefits the investor and has a lower yield. A convertible bond lets the investor exchange it for a set number of shares (the conversion ratio); it pays a lower coupon. A contingent convertible (CoCo) converts or is written down automatically when a bank's capital falls below a trigger; this favors the issuer.",
+        "tr": "Erken itfa edilebilir (callable) tahvil ihraççıya, genellikle bir koruma döneminden sonra, tahvili erken itfa fiyatından geri ödeme hakkı verir. İhraççılar faizler düşünce geri çağırır; bu yüzden yatırımcı yeniden yatırım riskine maruz kalır ve daha yüksek getiri ister. Türleri: Amerikan (koruma bitince her an), Avrupa (tek tarih) ve Bermuda (belirli tarihler). Make-whole erken itfa, kalan nakit akışlarının devlet tahvili getirisinin biraz üstündeki bir oranla bugünkü değerini öder; bu yüzden yeniden finansman için nadiren kullanılır. Satma hakkı tanıyan (putable) tahvil yatırımcıya tahvili belirli bir fiyattan geri satma hakkı verir; yatırımcı lehinedir ve getirisi daha düşüktür. Paya dönüştürülebilir tahvil yatırımcının onu belirli sayıda payla (dönüşüm oranı) değiştirmesine izin verir; kuponu daha düşüktür. Koşullu dönüştürülebilir tahvil (CoCo), bankanın sermayesi eşiğin altına düşünce otomatik olarak paya dönüşür veya değeri silinir; bu ihraççı lehinedir.",
+        "key_terms": [
+          "callable bond",
+          "call protection",
+          "make-whole call",
+          "putable bond",
+          "convertible bond",
+          "conversion ratio",
+          "contingent convertible"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Legal, regulatory and tax factors",
+        "heading_tr": "Hukuki, düzenleyici ve vergisel faktörler",
+        "en": "Where and how a bond is issued matters. A domestic bond is issued by a local issuer in its own market and currency. A foreign bond is issued by a foreign issuer in another country's domestic market and currency, under that country's rules. A Eurobond is issued outside the jurisdiction of the currency it uses, often sold to investors in many countries, and is usually less regulated. A global bond is sold at the same time in the Eurobond market and at least one domestic market. Issuers may use a special purpose entity (SPE) to hold assets; the SPE is bankruptcy remote, so investors are protected if the sponsor fails. Taxes also shape demand: coupon income is usually taxed as income, price gains as capital gains, some systems tax original issue discount over the life of a zero-coupon bond, and withholding taxes can reduce coupons paid across borders.",
+        "tr": "Tahvilin nerede ve nasıl ihraç edildiği önemlidir. Yurt içi tahvil yerel ihraççı tarafından kendi piyasasında ve kendi para biriminde ihraç edilir. Yabancı tahvil, yabancı bir ihraççının başka bir ülkenin iç piyasasında, o ülkenin para birimiyle ve kurallarıyla ihraç ettiği tahvildir. Eurobond, kullandığı para biriminin ülkesi dışında ihraç edilir, çoğu zaman birçok ülkedeki yatırımcıya satılır ve genellikle daha az düzenlemeye tabidir. Küresel tahvil aynı anda Eurobond piyasasında ve en az bir iç piyasada satılır. İhraççılar varlıkları tutmak için özel amaçlı kuruluş (ÖAK) kullanabilir; ÖAK iflastan ayrıştırılmıştır ve kurucu batsa bile yatırımcı korunur. Vergiler de talebi şekillendirir: kupon geliri genellikle gelir olarak, fiyat kazançları sermaye kazancı olarak vergilendirilir; bazı sistemler kuponsuz tahvilin ihraç iskontosunu ömrü boyunca vergilendirir; stopaj ise sınır ötesi kupon ödemelerini azaltabilir.",
+        "key_terms": [
+          "domestic bond",
+          "foreign bond",
+          "Eurobond",
+          "global bond",
+          "special purpose entity",
+          "bankruptcy remote",
+          "withholding tax",
+          "original issue discount"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Call and CoCo features favor the issuer; put and conversion features favor the investor. So callable bonds yield more than similar straight bonds, while putable and convertible bonds yield less. A cap protects the issuer, a floor protects the investor. A foreign bond and a Eurobond are not the same: the foreign bond is issued inside another country's market and currency; the Eurobond is issued outside the currency's home jurisdiction. Faster principal repayment lowers credit risk but raises reinvestment risk.",
+        "tr": "Erken itfa ve CoCo özellikleri ihraççı lehine; satma ve dönüştürme özellikleri yatırımcı lehinedir. Bu nedenle erken itfa edilebilir tahviller benzer düz tahvillerden daha yüksek, satma hakkı tanıyan ve dönüştürülebilir tahviller daha düşük getiri sunar. Tavan ihraççıyı, taban yatırımcıyı korur. Yabancı tahvil ile Eurobond aynı değildir: yabancı tahvil başka bir ülkenin piyasasında ve para biriminde, Eurobond ise para biriminin ülkesi dışında ihraç edilir. Anaparanın daha hızlı ödenmesi kredi riskini azaltır ama yeniden yatırım riskini artırır.",
+        "key_terms": [
+          "issuer option",
+          "investor option",
+          "foreign bond",
+          "Eurobond"
+        ]
+      }
+    ],
+    "summary_en": "Bonds differ in how principal is repaid (bullet, amortizing, sinking fund) and how coupons are set (fixed, floating, step-up, PIK, deferred, inflation-linked). Embedded options move value: calls and CoCos favor issuers; puts and conversion rights favor investors. Where a bond is issued (domestic, foreign, Eurobond, global), the use of SPEs, and tax rules all change its risks and appeal.",
+    "summary_tr": "Tahviller anaparanın nasıl geri ödendiği (vade sonunda, itfalı, itfa fonlu) ve kuponun nasıl belirlendiği (sabit, değişken, artan, ayni, ertelenmiş, enflasyona endeksli) bakımından farklılaşır. Gömülü opsiyonlar değer aktarır: erken itfa ve CoCo ihraççı lehine, satma ve dönüştürme hakları yatırımcı lehinedir. Tahvilin nerede ihraç edildiği (yurt içi, yabancı, Eurobond, küresel), ÖAK kullanımı ve vergi kuralları riskini ve cazibesini değiştirir.",
+    "common_traps_tr": [
+      "Erken itfa (call) hakkının yatırımcı lehine olduğunu sanmak; ihraççı lehinedir ve getiriyi yükseltir.",
+      "FRN kuponunda kotasyon marjını unutmak veya yıllık oranı dönem sayısına bölmemek.",
+      "Anaparası endekslenen tahvilde kuponu düzeltilmemiş nominal üzerinden hesaplamak.",
+      "Yabancı tahvil (başka ülkenin iç piyasası) ile Eurobond'u (para biriminin ülkesi dışı) karıştırmak.",
+      "Faiz tavanını yatırımcıyı koruyan özellik sanmak (tavan ihraççıyı, taban yatırımcıyı korur)."
+    ],
+    "vocab_ids": [
+      "bullet",
+      "amortizing",
+      "balloon-payment",
+      "sinking-fund",
+      "floating-rate-note",
+      "reference-rate",
+      "quoted-margin",
+      "cap",
+      "floor",
+      "step-up",
+      "inflation-linked",
+      "callable",
+      "putable",
+      "convertible",
+      "contingent-convertible",
+      "eurobond",
+      "special-purpose-entity",
+      "withholding-tax"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te değişken faizli, TÜFE'ye endeksli ve dönüştürülebilir tahviller ile kira sertifikaları işlenir; Eurobond/yabancı tahvil ayrımı ve CoCo yapıları CFA'da daha ayrıntılıdır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-02-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A bond that pays only coupons during its life and repays the entire principal at maturity is best described as a:",
+      "stem_tr": "Ömrü boyunca yalnızca kupon ödeyen ve anaparanın tamamını vadede geri ödeyen tahvil en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "fully amortizing bond",
+          "tr": "Tamamen itfalı tahvil"
+        },
+        {
+          "key": "B",
+          "en": "bullet bond",
+          "tr": "Anaparası vade sonunda ödenen (bullet) tahvil"
+        },
+        {
+          "key": "C",
+          "en": "sinking fund bond",
+          "tr": "İtfa fonlu tahvil"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A bullet bond repays all principal in one payment at maturity.",
+      "explanation_tr": "Bullet tahvil anaparanın tamamını vadede tek seferde öder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A fully amortizing bond repays principal in every period, so nothing is left at maturity.",
+          "tr": "Tamamen itfalı tahvil anaparayı her dönem öder; vadede bakiye kalmaz."
+        },
+        "C": {
+          "en": "A sinking fund retires part of the issue before maturity, so not all principal is paid at the end.",
+          "tr": "İtfa fonu ihracın bir kısmını vadeden önce itfa eder; anaparanın tamamı sonda ödenmez."
+        }
+      },
+      "vocab_ids": [
+        "bullet",
+        "principal",
+        "repay",
+        "maturity",
+        "coupon"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Anaparası vade sonunda ödenen ve itfalı tahviller SPK sınavında bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A floating-rate note with a par value of TRY 1,000,000 pays TLREF + 1.50%, reset and paid quarterly. At the latest reset date TLREF is 45.00%. Assuming each quarter is exactly one fourth of a year, the next coupon payment is closest to:",
+      "stem_tr": "Nominal değeri 1.000.000 TL olan değişken faizli bir not TLREF + %1,50 öder; faiz üç ayda bir belirlenir ve ödenir. Son belirleme gününde TLREF %45,00'tir. Her çeyreğin tam olarak yılın dörtte biri olduğunu varsayarsak, bir sonraki kupon ödemesi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 116,250",
+          "tr": "116.250 TL",
+          "value": 116250.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 465,000",
+          "tr": "465.000 TL",
+          "value": 465000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 112,500",
+          "tr": "112.500 TL",
+          "value": 112500.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Coupon = (0.45 + 0.015) × 1,000,000 / 4 = TRY 116,250.",
+      "explanation_tr": "Kupon = (0,45 + 0,015) × 1.000.000 / 4 = 116.250 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the annual amount; the coupon is paid quarterly, so divide by 4.",
+          "tr": "Bu yıllık tutardır; kupon üç ayda bir ödendiği için 4'e bölünmelidir."
+        },
+        "C": {
+          "en": "This forgets the quoted margin of 1.50%: 0.45 × 1,000,000 / 4.",
+          "tr": "Burada %1,50'lik kotasyon marjı unutulmuş: 0,45 × 1.000.000 / 4."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash coupon for the next quarter.",
+          "tr": "Bir sonraki çeyreğin nakit kuponu isteniyor."
+        },
+        {
+          "en": "FRN coupon = (reference rate + quoted margin) × par / payments per year.",
+          "tr": "FRN kuponu = (referans faiz + kotasyon marjı) × nominal / yıllık ödeme sayısı.",
+          "formula_latex": "C=\\frac{(MRR+QM)\\times Par}{m}"
+        },
+        {
+          "en": "Substitute values.",
+          "tr": "Değerleri yerine koy.",
+          "values": {
+            "MRR": 0.45,
+            "QM": 0.015,
+            "Par": 1000000,
+            "m": 4
+          }
+        },
+        {
+          "en": "(0.465 × 1,000,000) / 4 = 116,250.",
+          "tr": "(0,465 × 1.000.000) / 4 = 116.250."
+        },
+        {
+          "en": "Result: TRY 116,250 for the quarter.",
+          "tr": "Sonuç: çeyrek için 116.250 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.45 [+] 0.015 [=]",
+          "[×] 1000000 [÷] 4 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.45+0.015)*1000000/4",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "floating-rate-note",
+        "reference-rate",
+        "quoted-margin",
+        "assume",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TLREF'e endeksli değişken faizli DİBS/banka bonoları Türkiye piyasasında bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following embedded features most likely benefits the investor rather than the issuer?",
+      "stem_tr": "Aşağıdaki gömülü özelliklerden hangisinin ihraççıdan ziyade yatırımcı lehine olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A call option exercisable after three years",
+          "tr": "Üç yıl sonra kullanılabilen call opsiyonu (erken itfa hakkı)"
+        },
+        {
+          "key": "B",
+          "en": "A contingent convertible feature with a capital trigger",
+          "tr": "Sermaye eşiğine bağlı koşullu dönüştürme (CoCo) özelliği"
+        },
+        {
+          "key": "C",
+          "en": "A put option exercisable at par",
+          "tr": "Nominal değerden kullanılabilen put opsiyonu (geri satma hakkı)"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A put option entitles the holder to sell the bond back at par, which protects the investor when rates rise or credit quality falls.",
+      "explanation_tr": "Satım opsiyonu sahibine tahvili nominalden geri satma hakkı tanır; faizler yükseldiğinde veya kredi kalitesi bozulduğunda yatırımcıyı korur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A call option lets the issuer repay early when rates fall, which benefits the issuer.",
+          "tr": "Call opsiyonu faizler düşünce ihraççının erken geri ödemesine izin verir; ihraççı lehinedir."
+        },
+        "B": {
+          "en": "A CoCo converts or writes down automatically when the bank is weak, which absorbs losses for the issuer.",
+          "tr": "CoCo, banka zayıfladığında otomatik olarak dönüşür veya değeri silinir; zararı ihraççı adına karşılar."
+        }
+      },
+      "vocab_ids": [
+        "putable",
+        "callable",
+        "contingent-convertible",
+        "benefit",
+        "rather-than",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Marmara Gıda A.Ş. issues a TRY 500,000 fully amortizing bond with a 5-year maturity, an 8% annual interest rate and level annual payments. The annual payment is closest to:",
+      "stem_tr": "Marmara Gıda A.Ş., 5 yıl vadeli, yıllık %8 faizli ve eşit yıllık ödemeli 500.000 TL'lik tamamen itfalı bir tahvil ihraç ediyor. Yıllık ödeme en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 140,000",
+          "tr": "140.000 TL",
+          "value": 140000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 125,228",
+          "tr": "125.228 TL",
+          "value": 125228.23
+        },
+        {
+          "key": "C",
+          "en": "TRY 100,000",
+          "tr": "100.000 TL",
+          "value": 100000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The level payment is the annuity whose present value at 8% over 5 years equals TRY 500,000: about TRY 125,228.",
+      "explanation_tr": "Eşit taksit, %8 ile 5 yıllık bugünkü değeri 500.000 TL'ye eşit olan anüitedir: yaklaşık 125.228 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the first-year payment with equal principal parts (100,000 + 40,000 interest), not a level payment.",
+          "tr": "Bu, eşit anapara taksitli yapıda birinci yıl ödemesidir (100.000 + 40.000 faiz); eşit taksit değildir."
+        },
+        "C": {
+          "en": "This only divides principal by 5 and ignores interest.",
+          "tr": "Bu yalnızca anaparayı 5'e böler ve faizi yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the level annual payment that fully repays the bond in 5 years.",
+          "tr": "Tahvili 5 yılda tamamen geri ödeyen eşit yıllık taksit isteniyor."
+        },
+        {
+          "en": "Use the annuity formula (or TVM keys) because each payment is equal.",
+          "tr": "Ödemeler eşit olduğu için anüite formülü (veya TVM tuşları) kullanılır.",
+          "formula_latex": "A=\\frac{rP}{1-(1+r)^{-n}}"
+        },
+        {
+          "en": "Substitute P = 500,000, r = 8%, n = 5.",
+          "tr": "P = 500.000, r = %8, n = 5 yerine konur.",
+          "values": {
+            "P": 500000,
+            "r": 0.08,
+            "n": 5
+          }
+        },
+        {
+          "en": "1 − 1.08^−5 = 0.31942; 0.08 × 500,000 = 40,000; 40,000 / 0.31942 = 125,228.",
+          "tr": "1 − 1,08^−5 = 0,31942; 0,08 × 500.000 = 40.000; 40.000 / 0,31942 = 125.228."
+        },
+        {
+          "en": "Result: about TRY 125,228 per year.",
+          "tr": "Sonuç: yılda yaklaşık 125.228 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "5 [N]",
+          "8 [I/Y]",
+          "-500000 [PV]",
+          "0 [FV]",
+          "[CPT] [PMT]"
+        ]
+      },
+      "numeric": {
+        "expr": "pmt(0.08,5,-500000)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "amortizing",
+        "principal",
+        "closest",
+        "repay"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A capital-indexed inflation-linked bond has a par value of TRY 1,000 and a real coupon rate of 3% paid annually. Over the first year the price index rises by 10%. The coupon paid at the end of the first year is closest to:",
+      "stem_tr": "Anaparası endekslenen, enflasyona endeksli bir tahvilin nominal değeri 1.000 TL ve yıllık ödenen reel kupon oranı %3'tür. İlk yıl boyunca fiyat endeksi %10 artıyor. Birinci yıl sonunda ödenen kupon en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 30",
+          "tr": "30 TL",
+          "value": 30.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 130",
+          "tr": "130 TL",
+          "value": 130.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 33",
+          "tr": "33 TL",
+          "value": 33.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In a capital-indexed bond the principal is adjusted first: 1,000 × 1.10 = 1,100. The fixed real coupon rate is applied to the adjusted principal: 3% × 1,100 = TRY 33.",
+      "explanation_tr": "Anaparası endekslenen tahvilde önce anapara düzeltilir: 1.000 × 1,10 = 1.100. Sabit reel kupon oranı düzeltilmiş anaparaya uygulanır: %3 × 1.100 = 33 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This applies the coupon rate to the original par and ignores the inflation adjustment.",
+          "tr": "Bu, kupon oranını ilk nominale uygular ve enflasyon düzeltmesini yok sayar."
+        },
+        "B": {
+          "en": "This adds inflation to the coupon rate (3% + 10%) on par, which describes an interest-indexed bond, not a capital-indexed one.",
+          "tr": "Bu, enflasyonu kupon oranına ekler (%3 + %10); bu faizi endekslenen tahvildir, anaparası endekslenen değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash coupon of a capital-indexed bond after one year.",
+          "tr": "Anaparası endekslenen tahvilin bir yıl sonraki nakit kuponu isteniyor."
+        },
+        {
+          "en": "First adjust principal by the index change, then apply the real coupon rate.",
+          "tr": "Önce anapara endeks değişimiyle düzeltilir, sonra reel kupon oranı uygulanır.",
+          "formula_latex": "C = r_{real}\\times Par\\times\\frac{I_1}{I_0}"
+        },
+        {
+          "en": "Adjusted principal = 1,000 × 1.10 = 1,100.",
+          "tr": "Düzeltilmiş anapara = 1.000 × 1,10 = 1.100.",
+          "values": {
+            "Par": 1000,
+            "I1/I0": 1.1,
+            "r_real": 0.03
+          }
+        },
+        {
+          "en": "Coupon = 0.03 × 1,100 = 33.",
+          "tr": "Kupon = 0,03 × 1.100 = 33."
+        },
+        {
+          "en": "Result: TRY 33.",
+          "tr": "Sonuç: 33 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [×] 1.10 [×] 0.03 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "0.03*1000*1.10",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "inflation-linked",
+        "par-value",
+        "principal",
+        "coupon-rate",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "TÜFE'ye endeksli DİBS'lerde anapara endekslenir; SPK sınavında kavram olarak geçer, hesap ayrıntısı CFA'da işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Anadolu Çimento A.Ş., a Turkish company, sells TRY-denominated bonds in Türkiye to Turkish investors under Turkish capital markets rules. These bonds are best described as:",
+      "stem_tr": "Bir Türk şirketi olan Anadolu Çimento A.Ş., Türk sermaye piyasası kurallarına göre Türkiye'de Türk yatırımcılara TL cinsinden tahvil satıyor. Bu tahviller en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "domestic bonds",
+          "tr": "Yurt içi tahvil"
+        },
+        {
+          "key": "B",
+          "en": "foreign bonds",
+          "tr": "Yabancı tahvil"
+        },
+        {
+          "key": "C",
+          "en": "Eurobonds",
+          "tr": "Eurobond"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A local issuer selling bonds in its own market and currency, under local rules, issues domestic bonds.",
+      "explanation_tr": "Kendi piyasasında, kendi para biriminde ve yerel kurallarla tahvil satan yerel ihraççı yurt içi tahvil ihraç eder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Foreign bonds are issued by a foreign issuer in another country's domestic market.",
+          "tr": "Yabancı tahvili başka bir ülkenin iç piyasasında yabancı bir ihraççı ihraç eder."
+        },
+        "C": {
+          "en": "Eurobonds are issued outside the home jurisdiction of their currency; here the currency and market are both Turkish.",
+          "tr": "Eurobond para biriminin ülkesi dışında ihraç edilir; burada hem para birimi hem piyasa Türk'tür."
+        }
+      },
+      "vocab_ids": [
+        "issuer",
+        "issue",
+        "bond",
+        "comply"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Özel sektör tahvili ihracı ve SPK onayı Düzey 3 konularındandır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish holding company issues US dollar-denominated bonds through an international bank syndicate. The bonds are sold to investors in several European and Asian countries, but not in the United States domestic market. These bonds are most likely:",
+      "stem_tr": "Bir Türk holding şirketi uluslararası bir banka konsorsiyumu aracılığıyla ABD doları cinsinden tahvil ihraç ediyor. Tahviller birkaç Avrupa ve Asya ülkesindeki yatırımcılara satılıyor, ancak ABD iç piyasasında satılmıyor. Bu tahviller en muhtemel olarak nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "foreign bonds",
+          "tr": "Yabancı tahvil"
+        },
+        {
+          "key": "B",
+          "en": "Eurobonds",
+          "tr": "Eurobond"
+        },
+        {
+          "key": "C",
+          "en": "domestic bonds",
+          "tr": "Yurt içi tahvil"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The bonds use US dollars but are issued outside the US jurisdiction and sold internationally, which defines a Eurobond.",
+      "explanation_tr": "Tahviller ABD doları cinsindendir ancak ABD yargı alanı dışında ihraç edilip uluslararası satılmaktadır; bu Eurobond tanımıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A foreign bond would be sold inside the US domestic market under US rules, which is not the case.",
+          "tr": "Yabancı tahvil ABD iç piyasasında ABD kurallarıyla satılırdı; durum bu değil."
+        },
+        "C": {
+          "en": "The currency is not the issuer's home currency and the bonds are not sold in its home market.",
+          "tr": "Para birimi ihraççının kendi para birimi değildir ve tahviller kendi piyasasında satılmamaktadır."
+        }
+      },
+      "vocab_ids": [
+        "eurobond",
+        "issue",
+        "likely",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Türk şirketlerinin ve Hazine'nin döviz cinsi Eurobond ihraçları piyasada bilinir; yabancı tahvil ile Eurobond ayrımı CFA'da vurgulanır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish bank issues Japanese yen-denominated bonds in Japan, registered with Japanese regulators and sold to Japanese investors. From the Japanese market's point of view, these bonds are best described as:",
+      "stem_tr": "Bir Türk bankası Japonya'da, Japon düzenleyicilerine kayıtlı ve Japon yatırımcılara satılan Japon yeni cinsinden tahvil ihraç ediyor. Japon piyasası açısından bu tahviller en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Eurobonds",
+          "tr": "Eurobond"
+        },
+        {
+          "key": "B",
+          "en": "global bonds",
+          "tr": "Küresel tahvil"
+        },
+        {
+          "key": "C",
+          "en": "foreign bonds",
+          "tr": "Yabancı tahvil"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A foreign issuer selling bonds in another country's domestic market, in that country's currency and under its rules, issues foreign bonds.",
+      "explanation_tr": "Başka bir ülkenin iç piyasasında, o ülkenin para birimiyle ve kurallarıyla tahvil satan yabancı ihraççı yabancı tahvil ihraç eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A Eurobond is issued outside the yen's home jurisdiction; these bonds are issued inside Japan.",
+          "tr": "Eurobond, yenin ülkesi dışında ihraç edilir; bu tahviller Japonya içinde ihraç edilmiştir."
+        },
+        "B": {
+          "en": "A global bond is sold at the same time in the Eurobond market and at least one domestic market.",
+          "tr": "Küresel tahvil aynı anda Eurobond piyasasında ve en az bir iç piyasada satılır."
+        }
+      },
+      "vocab_ids": [
+        "issuer",
+        "issue",
+        "bond",
+        "require"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A leasing company sells a pool of lease receivables to a special purpose entity (SPE), which then issues bonds backed by these receivables. The main benefit of using the SPE for bondholders is most likely that:",
+      "stem_tr": "Bir leasing şirketi kira alacaklarından oluşan bir havuzu özel amaçlı kuruluşa (ÖAK) satıyor; ÖAK bu alacaklara dayalı tahvil ihraç ediyor. ÖAK kullanmanın tahvil sahipleri için temel yararı en muhtemel olarak hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the bonds are protected if the leasing company goes bankrupt.",
+          "tr": "Leasing şirketi iflas ederse tahvillerin korunması."
+        },
+        {
+          "key": "B",
+          "en": "the leasing company guarantees all bond payments.",
+          "tr": "Leasing şirketinin tüm tahvil ödemelerini garanti etmesi."
+        },
+        {
+          "key": "C",
+          "en": "interest on the bonds is free of all taxes.",
+          "tr": "Tahvil faizlerinin her türlü vergiden muaf olması."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The SPE is a separate legal entity and is bankruptcy remote: the receivables belong to the SPE, so creditors of the leasing company cannot take them.",
+      "explanation_tr": "ÖAK ayrı bir tüzel kişidir ve iflastan ayrıştırılmıştır: alacaklar ÖAK'a aittir, bu yüzden leasing şirketinin alacaklıları bunlara el koyamaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The point of the SPE is to separate the assets from the sponsor, not to rely on the sponsor's guarantee.",
+          "tr": "ÖAK'ın amacı varlıkları kurucudan ayırmaktır, kurucunun garantisine dayanmak değildir."
+        },
+        "C": {
+          "en": "An SPE structure does not make interest tax free; tax treatment depends on local law.",
+          "tr": "ÖAK yapısı faizi vergiden muaf kılmaz; vergi uygulaması yerel mevzuata bağlıdır."
+        }
+      },
+      "vocab_ids": [
+        "special-purpose-entity",
+        "securitization",
+        "receivables",
+        "benefit",
+        "likely",
+        "entity"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Varlık finansman fonu ve varlığa dayalı menkul kıymet SPK mevzuatında vardır; 'bankruptcy remote' kavramı CFA'da öne çıkar."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-02-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about the tax treatment of bonds is least likely correct?",
+      "stem_tr": "Tahvillerin vergilendirilmesiyle ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "In many jurisdictions, coupon income is taxed as ordinary income.",
+          "tr": "Birçok ülkede kupon geliri olağan gelir olarak vergilendirilir."
+        },
+        {
+          "key": "B",
+          "en": "A bond bought below par in the secondary market and held to maturity can never create a taxable gain.",
+          "tr": "İkincil piyasada nominalin altında alınıp vadeye kadar tutulan bir tahvil hiçbir zaman vergiye tabi kazanç yaratmaz."
+        },
+        {
+          "key": "C",
+          "en": "Some tax systems tax the original issue discount of a zero-coupon bond over its life, even though no cash is received.",
+          "tr": "Bazı vergi sistemleri, nakit alınmasa bile kuponsuz tahvilin ihraç iskontosunu ömrü boyunca vergilendirir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A bond bought at a discount and repaid at par produces a gain equal to par minus the purchase price; tax systems typically treat it as a capital gain or as interest income. So the statement that it can never be taxed is incorrect.",
+      "explanation_tr": "İskontolu alınıp nominalden itfa edilen tahvil, nominal eksi alış fiyatı kadar kazanç yaratır; vergi sistemleri bunu genellikle sermaye kazancı veya faiz geliri olarak vergilendirir. Bu yüzden hiçbir zaman vergilendirilmeyeceği ifadesi yanlıştır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is a correct general statement: coupons are usually taxed as income.",
+          "tr": "Bu doğru bir genel ifadedir: kuponlar genellikle gelir olarak vergilendirilir."
+        },
+        "C": {
+          "en": "This is correct: some systems tax accreted discount on zero-coupon bonds each year.",
+          "tr": "Bu doğrudur: bazı sistemler kuponsuz tahvillerde biriken iskontoyu her yıl vergilendirir."
+        }
+      },
+      "vocab_ids": [
+        "statement",
+        "likely",
+        "capital-gain",
+        "original-issue-discount",
+        "zero-coupon",
+        "secondary-market"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
