@@ -1,0 +1,1113 @@
+{
+  "module_id": "FI-03",
+  "lesson": {
+    "id": "FI-03-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-03",
+    "los_ids": [
+      "FI-03-a",
+      "FI-03-b",
+      "FI-03-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Issuance and Trading",
+    "title_tr": "Sabit Getirili Araçların İhracı ve Alım Satımı",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A market with many borrowers and few trades",
+        "heading_tr": "Çok borçlu, az işlem: tahvil piyasasının doğası",
+        "en": "The bond market is much bigger than the stock market, but it is quieter. A company has one class of common shares, which trade on an exchange every day. The same company may have twenty different bonds with different maturities, coupons and currencies, and most of them do not trade for days. In Türkiye the Treasury sells DİBS at auctions, banks sell bonds and commercial paper to funds, and investors trade them mostly dealer to dealer, with some trading on the Borsa İstanbul Debt Securities Market (BAP). Understanding who issues, who buys, how bonds are sold the first time and how they trade afterwards explains why a bond price you see on a screen may be only an estimate.",
+        "tr": "Tahvil piyasası pay piyasasından çok daha büyüktür ama çok daha sessizdir. Bir şirketin tek bir adi pay sınıfı vardır ve bu paylar borsada her gün işlem görür. Aynı şirketin farklı vade, kupon ve para biriminde yirmi ayrı tahvili olabilir ve çoğu günlerce el değiştirmez. Türkiye'de Hazine DİBS'leri ihaleyle satar, bankalar fonlara tahvil ve finansman bonosu satar; yatırımcılar bunları çoğunlukla piyasa yapıcılar üzerinden, bir kısmını da Borsa İstanbul Borçlanma Araçları Piyasası'nda (BAP) alıp satar. Kimin ihraç ettiğini, kimin aldığını, tahvilin ilk kez nasıl satıldığını ve sonra nasıl işlem gördüğünü anlamak, ekranda gördüğünüz bir tahvil fiyatının neden çoğu zaman yalnızca bir tahmin olduğunu açıklar.",
+        "key_terms": [
+          "bond market",
+          "dealer",
+          "auction",
+          "BAP",
+          "liquidity"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Market segments by issuer",
+        "heading_tr": "İhraççıya göre piyasa bölümleri",
+        "en": "Fixed-income markets are grouped in several ways. By issuer type: sovereign governments (national treasuries), non-sovereign governments (states, provinces, municipalities), quasi-government or agency entities (state-owned or government-sponsored bodies), supranational organizations (World Bank, EIB) and corporate issuers, which are split into financial issuers (banks, insurers) and non-financial issuers. Securitized bonds (ABS, MBS) form a separate segment because the cash flows come from a pool of assets, not from a company. By credit quality: investment-grade and high-yield (speculative-grade) bonds. By maturity: money market instruments (one year or less, such as Treasury bills and commercial paper) and capital market bonds. By currency and by geography: developed markets and emerging markets, where local-currency and hard-currency (USD, EUR) issues coexist.",
+        "tr": "Sabit getirili piyasalar birkaç şekilde bölümlere ayrılır. İhraççı türüne göre: merkezi devletler (hazineler), merkezi olmayan yönetimler (eyalet, il, belediye), kamu benzeri ya da ajans niteliğindeki kuruluşlar (devlete ait veya devlet destekli kurumlar), uluslarüstü kuruluşlar (Dünya Bankası, EIB) ve şirket ihraççıları; şirketler de finansal (banka, sigorta) ve finansal olmayan ihraççılar olarak ikiye ayrılır. Menkul kıymetleştirilmiş tahviller (VDMK, İDMK) ayrı bir bölümdür; çünkü nakit akışı bir şirketten değil bir varlık havuzundan gelir. Kredi kalitesine göre: yatırım yapılabilir ve yüksek getirili (spekülatif) tahviller. Vadeye göre: para piyasası araçları (bir yıl ve altı; hazine bonosu, finansman bonosu) ve sermaye piyasası tahvilleri. Para birimine ve coğrafyaya göre: gelişmiş ve gelişmekte olan piyasalar; gelişmekte olan piyasalarda yerel para ve sert para (USD, EUR) ihraçları bir arada bulunur.",
+        "key_terms": [
+          "sovereign",
+          "non-sovereign government",
+          "quasi-government",
+          "supranational",
+          "financial issuer",
+          "securitized",
+          "investment grade",
+          "high yield",
+          "money market",
+          "emerging market"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Issuer type",
+              "tr": "İhraççı türü"
+            },
+            {
+              "en": "Example",
+              "tr": "Örnek"
+            },
+            {
+              "en": "Typical note",
+              "tr": "Tipik not"
+            }
+          ],
+          "rows": [
+            [
+              "Sovereign / Merkezi devlet",
+              "Turkish Treasury DİBS / Hazine DİBS",
+              "Local currency: lowest credit risk in that market / Yerel parada en düşük kredi riski"
+            ],
+            [
+              "Non-sovereign / Yerel yönetim",
+              "City or province bond / Belediye tahvili",
+              "Backed by taxes or project revenue / Vergi ya da proje geliriyle desteklenir"
+            ],
+            [
+              "Quasi-government / Kamu benzeri",
+              "Government-sponsored agency / Devlet destekli ajans",
+              "Often implicit state support / Çoğu zaman örtük devlet desteği"
+            ],
+            [
+              "Supranational / Uluslarüstü",
+              "World Bank, EIB / Dünya Bankası, EIB",
+              "Backed by member states / Üye ülkeler destekler"
+            ],
+            [
+              "Corporate / Şirket",
+              "Bank bond, company bond / Banka bonosu, şirket tahvili",
+              "Financial vs non-financial / Finansal ve finansal olmayan"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Who buys bonds",
+        "heading_tr": "Tahvilleri kim alır?",
+        "en": "Most bonds are held by institutional investors. Central banks hold government bonds as reserves and for monetary policy. Sovereign wealth funds and pension funds buy long-term bonds to match long-term liabilities. Insurance companies do the same with their policy liabilities. Banks hold government and high-quality bonds for liquidity and as collateral. Mutual funds and ETFs hold diversified bond portfolios for retail and institutional clients. Hedge funds trade for relative value. Retail investors hold bonds directly or through funds; in Türkiye many retail investors buy DİBS, bank bonds and Eurobonds through brokerage accounts. Investor type matters because buy-and-hold investors such as pension funds trade rarely, which lowers secondary market liquidity.",
+        "tr": "Tahvillerin çoğu kurumsal yatırımcıların elindedir. Merkez bankaları rezerv olarak ve para politikası amacıyla devlet tahvili tutar. Varlık fonları ve emeklilik fonları uzun vadeli yükümlülüklerini karşılamak için uzun vadeli tahvil alır. Sigorta şirketleri poliçe yükümlülükleri için aynısını yapar. Bankalar likidite ve teminat amacıyla devlet tahvili ve yüksek kaliteli tahvil tutar. Yatırım fonları ve borsa yatırım fonları bireysel ve kurumsal müşterileri için çeşitlendirilmiş tahvil portföyleri tutar. Serbest fonlar göreli değer için işlem yapar. Bireysel yatırımcılar tahvili doğrudan ya da fonlar aracılığıyla tutar; Türkiye'de pek çok bireysel yatırımcı aracı kurum hesabıyla DİBS, banka bonosu ve Eurobond alır. Yatırımcı türü önemlidir; çünkü emeklilik fonu gibi al-tut yatırımcılar nadiren işlem yapar ve bu da ikincil piyasa likiditesini düşürür.",
+        "key_terms": [
+          "central bank",
+          "sovereign wealth fund",
+          "pension fund",
+          "insurance company",
+          "mutual fund",
+          "ETF",
+          "hedge fund",
+          "retail investor",
+          "buy-and-hold"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Bond indexes",
+        "heading_tr": "Tahvil endeksleri",
+        "en": "A bond index measures the return of a defined group of bonds and serves as a benchmark for funds. Aggregate (broad) indexes cover a whole market, for example all investment-grade, fixed-rate, taxable bonds in a currency. Segment indexes narrow the universe by issuer type (government, corporate, securitized), credit quality (investment grade, high yield), maturity bucket (1-3 years, 7-10 years), currency or region. Almost all bond indexes are market-value weighted: a bond's weight equals its market value divided by the total. This creates the bums problem: the issuers with the most debt get the largest weights, even if they are the most leveraged. Bond indexes differ from equity indexes in three ways. Constituents change often, because bonds mature and new bonds are issued; indexes are usually rebalanced monthly. Many constituents trade rarely, so index prices rely on dealer quotes or matrix pricing. Replication is hard, so index funds use sampling: they hold a subset that matches the index's duration, credit and sector profile.",
+        "tr": "Tahvil endeksi, tanımlı bir tahvil grubunun getirisini ölçer ve fonlar için karşılaştırma ölçütü olarak kullanılır. Toplam (geniş) endeksler bütün bir piyasayı kapsar; örneğin bir para birimindeki tüm yatırım yapılabilir, sabit kuponlu, vergiye tabi tahviller. Bölüm endeksleri evreni ihraççı türü (kamu, şirket, menkul kıymetleştirilmiş), kredi kalitesi (yatırım yapılabilir, yüksek getirili), vade dilimi (1-3 yıl, 7-10 yıl), para birimi veya bölgeye göre daraltır. Tahvil endekslerinin neredeyse tamamı piyasa değeri ağırlıklıdır: bir tahvilin ağırlığı, piyasa değerinin toplama bölümüne eşittir. Bu, \"bums problem\" denen sorunu doğurur: en çok borcu olan ihraççılar, en kaldıraçlı olsalar bile en büyük ağırlığı alır. Tahvil endeksleri pay endekslerinden üç noktada ayrılır. Bileşenler sık değişir; çünkü tahviller itfa olur ve yenileri ihraç edilir; endeksler genellikle aylık yeniden dengelenir. Bileşenlerin çoğu nadiren işlem görür; bu yüzden endeks fiyatları piyasa yapıcı kotasyonlarına ya da matris fiyatlamaya dayanır. Endeksi birebir kopyalamak zordur; bu nedenle endeks fonları örnekleme yapar: endeksin durasyon, kredi ve sektör profiline uyan bir alt küme tutar.",
+        "key_terms": [
+          "aggregate index",
+          "segment index",
+          "market-value weighted",
+          "bums problem",
+          "rebalancing",
+          "constituent",
+          "sampling",
+          "replication"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Primary market: how bonds are born",
+        "heading_tr": "Birincil piyasa: tahvil nasıl doğar?",
+        "en": "In the primary market the issuer sells new bonds and receives the proceeds. Governments usually sell by auction. In a single-price (uniform) auction all winning bidders pay the same price, the highest accepted yield; in a multiple-price auction each winner pays its own bid. Corporate bonds are usually sold through investment banks. In an underwritten (firm commitment) offering the bank buys the whole issue and resells it, taking the price risk. In a best-efforts offering the bank only tries to sell and keeps no unsold bonds. Steps of an underwritten deal: decide the funding need, choose the structure and bank, prepare the offering document, announce the deal, build the order book (book building), set the final price and spread, allot the bonds and settle. Shelf registration lets a frequent issuer register a large amount once and sell pieces over time. A private placement sells bonds directly to a small group of qualified investors with less disclosure. Issuers often keep a regular issuance calendar and build a maturity ladder so that not too much debt matures in one year.",
+        "tr": "Birincil piyasada ihraççı yeni tahvilleri satar ve ihraç gelirini alır. Devletler genellikle ihaleyle satar. Tek fiyatlı (uniform) ihalede kazanan tüm teklif sahipleri aynı fiyatı, yani kabul edilen en yüksek getiriyi öder; çok fiyatlı ihalede her kazanan kendi teklif fiyatını öder. Şirket tahvilleri genellikle yatırım bankaları aracılığıyla satılır. Aracılık yüklenimli (bakiyeyi yüklenim) halka arzda banka ihracın tamamını satın alıp yeniden satar ve fiyat riskini üstlenir. En iyi gayret aracılığında banka yalnızca satmaya çalışır; satılamayan tahvilleri üstlenmez. Yüklenimli bir ihracın adımları: finansman ihtiyacının belirlenmesi, yapının ve bankanın seçilmesi, izahnamenin hazırlanması, ihracın duyurulması, talep toplama (book building), nihai fiyat ve spreadin belirlenmesi, tahsis ve takas. Raf kaydı, sık ihraç yapan bir ihraççının büyük bir tutarı bir kez kaydettirip zaman içinde parça parça satmasına izin verir. Tahsisli satış, tahvilleri daha az kamuyu aydınlatma yükümlülüğüyle doğrudan küçük bir nitelikli yatırımcı grubuna satar. İhraççılar çoğunlukla düzenli bir ihraç takvimi tutar ve tek bir yılda çok fazla borcun vadesi gelmesin diye vade merdiveni kurar.",
+        "key_terms": [
+          "primary market",
+          "auction",
+          "single-price auction",
+          "multiple-price auction",
+          "underwritten offering",
+          "best-efforts offering",
+          "book building",
+          "shelf registration",
+          "private placement",
+          "maturity ladder"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Secondary market: how bonds trade",
+        "heading_tr": "İkincil piyasa: tahvil nasıl işlem görür?",
+        "en": "After issue, bonds trade in the secondary market between investors. Most bond trading is over the counter (OTC) in a dealer market: dealers quote a bid price (where they buy) and an ask price (where they sell), and the bid-ask spread is their compensation. Liquid government bonds, especially the most recently issued on-the-run bonds, have spreads of a few basis points; older off-the-run bonds, small corporate issues and high-yield bonds have much wider spreads. Some bonds also trade on exchanges or electronic platforms, and in Türkiye outright purchases and repo trades take place on BAP. Settlement is usually T+1 for government bonds and T+2 for corporate bonds in many markets, though conventions differ. Because a bond has a fixed maturity, the amount outstanding shrinks over time, and many bonds end up in buy-and-hold portfolios, so liquidity falls as the bond ages.",
+        "tr": "İhraçtan sonra tahviller ikincil piyasada yatırımcılar arasında işlem görür. Tahvil işlemlerinin çoğu tezgâhüstü (OTC) piyasa yapıcı piyasasında yapılır: piyasa yapıcılar alış fiyatı (aldıkları fiyat) ve satış fiyatı (sattıkları fiyat) kote eder; alış-satış farkı onların kazancıdır. Likit devlet tahvillerinde, özellikle en son ihraç edilen gösterge (on-the-run) tahvillerde fark birkaç baz puandır; eski (off-the-run) tahvillerde, küçük şirket ihraçlarında ve yüksek getirili tahvillerde fark çok daha geniştir. Bazı tahviller borsalarda ya da elektronik platformlarda da işlem görür; Türkiye'de kesin alım satım ve repo işlemleri BAP'ta yapılır. Takas çoğu piyasada devlet tahvilinde genellikle T+1, şirket tahvilinde T+2'dir; ancak uygulamalar farklılık gösterir. Tahvilin sabit bir vadesi olduğundan dolaşımdaki tutar zamanla azalır ve pek çok tahvil al-tut portföylerinde kalır; bu yüzden tahvil yaşlandıkça likiditesi düşer.",
+        "key_terms": [
+          "secondary market",
+          "over-the-counter",
+          "dealer market",
+          "bid price",
+          "ask price",
+          "bid-ask spread",
+          "on-the-run",
+          "off-the-run",
+          "settlement"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Two bonds, two liquidity worlds",
+        "heading_tr": "İki tahvil, iki likidite dünyası",
+        "en": "Suppose a dealer quotes the current 10-year benchmark DİBS at 98.40 bid and 98.44 ask: a spread of 4 cents per 100 of par, about 4 basis points. The same dealer quotes a 5-year bond of a mid-sized fictional company, Karadeniz Enerji A.Ş., at 95.00 bid and 96.50 ask: a spread of 1.50, roughly 158 basis points of the mid price. An investor who buys and immediately sells the corporate bond loses about 1.5% of value, whereas the same round trip in the benchmark costs about 0.04%. This difference is why bond index funds use sampling rather than full replication and why mark-to-market prices of corporate bonds often come from matrix pricing rather than actual trades.",
+        "tr": "Bir piyasa yapıcının gösterge 10 yıllık DİBS için 98,40 alış ve 98,44 satış kote ettiğini varsayalım: 100 nominal başına 4 kuruş, yaklaşık 4 baz puanlık bir fark. Aynı piyasa yapıcı orta ölçekli kurgusal Karadeniz Enerji A.Ş.'nin 5 yıllık tahvilini 95,00 alış ve 96,50 satış kote ediyor: 1,50 puan, yani orta fiyata göre kabaca 158 baz puanlık fark. Şirket tahvilini alıp hemen satan bir yatırımcı değerin yaklaşık %1,5'ini kaybeder; oysa gösterge tahvilde aynı gidiş-dönüş yaklaşık %0,04'e mal olur. Tahvil endeks fonlarının birebir kopyalama yerine örnekleme yapmasının ve şirket tahvillerinin piyasa değerinin çoğu zaman gerçek işlemlerden değil matris fiyatlamadan gelmesinin nedeni bu farktır.",
+        "key_terms": [
+          "bid-ask spread",
+          "benchmark",
+          "round trip",
+          "sampling"
+        ],
+        "example": {
+          "en": "Benchmark spread: (98.44 − 98.40) / 98.42 ≈ 0.04%. Corporate spread: (96.50 − 95.00) / 95.75 ≈ 1.57%.",
+          "tr": "Gösterge fark: (98,44 − 98,40) / 98,42 ≈ %0,04. Şirket tahvili farkı: (96,50 − 95,00) / 95,75 ≈ %1,57.",
+          "formula_latex": "\\text{Relative spread}=\\frac{Ask-Bid}{(Ask+Bid)/2}"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Bonds versus equities: issuance and trading",
+        "heading_tr": "Tahvil ve pay: ihraç ve alım satım karşılaştırması",
+        "en": "Compared with equity markets, bond markets show several differences. Frequency of issuance: a company issues shares rarely (an IPO, then occasional seasoned offerings), but it issues bonds again and again because debt matures and must be refinanced. Number of securities: one share class versus many bond issues per issuer. Trading venue: shares trade mostly on exchanges with a central order book; bonds trade mostly OTC through dealers. Transparency: equity prices and volumes are published in real time; bond trade reporting is less complete, and many quotes are indicative. Liquidity: shares of a listed company trade daily; many bonds do not trade for weeks. Investor base: equities have a large retail base; bonds are dominated by institutions. Price behaviour: a bond's price pulls to par as maturity approaches; a share has no maturity. Finally, bonds of the same issuer differ by seniority, so one issuer can have bonds with very different risks and yields.",
+        "tr": "Pay piyasalarıyla karşılaştırıldığında tahvil piyasalarında birkaç fark görülür. İhraç sıklığı: bir şirket nadiren pay ihraç eder (halka arz, sonra ara sıra ikincil halka arz); tahvili ise borç vadesi geldiği ve yeniden finanse edilmesi gerektiği için tekrar tekrar ihraç eder. Menkul kıymet sayısı: ihraççı başına tek pay sınıfına karşılık çok sayıda tahvil ihracı. İşlem yeri: paylar çoğunlukla merkezi emir defteri olan borsalarda, tahviller çoğunlukla piyasa yapıcılar aracılığıyla tezgâhüstünde işlem görür. Şeffaflık: pay fiyatları ve hacimleri gerçek zamanlı yayımlanır; tahvil işlem raporlaması daha eksiktir ve pek çok kotasyon gösterge niteliğindedir. Likidite: borsaya kote bir şirketin payları her gün işlem görür; pek çok tahvil haftalarca el değiştirmez. Yatırımcı tabanı: paylarda geniş bir bireysel yatırımcı tabanı vardır; tahvillerde kurumlar baskındır. Fiyat davranışı: tahvilin fiyatı vade yaklaştıkça nominale çekilir; payın vadesi yoktur. Son olarak aynı ihraççının tahvilleri öncelik sırasına göre farklılaşır; dolayısıyla tek bir ihraççının çok farklı risk ve getiride tahvilleri olabilir.",
+        "key_terms": [
+          "initial public offering",
+          "seasoned offering",
+          "refinance",
+          "central order book",
+          "transparency",
+          "indicative quote",
+          "pull to par"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not say that bonds trade mainly on exchanges; most bond trading is OTC through dealers, even though some bonds are listed. In a single-price auction all winners pay the same price, not their own bids. An underwritten offering shifts price risk to the bank; a best-efforts offering leaves it with the issuer. Market-value weighting in bond indexes gives the largest weight to the most indebted issuers (bums problem), which is a weakness, not a feature that rewards quality. On-the-run bonds are the newest and most liquid issues of a maturity, not the oldest. Finally, do not confuse a supranational issuer (owned by several governments) with a quasi-government agency (sponsored by one government).",
+        "tr": "Tahvillerin ağırlıklı olarak borsada işlem gördüğünü söylemeyin; bazı tahviller kote olsa da tahvil işlemlerinin çoğu piyasa yapıcılar aracılığıyla tezgâhüstünde yapılır. Tek fiyatlı ihalede tüm kazananlar kendi teklifini değil aynı fiyatı öder. Aracılık yüklenimli halka arz fiyat riskini bankaya aktarır; en iyi gayret aracılığı riski ihraççıda bırakır. Tahvil endekslerinde piyasa değeri ağırlıklandırması en büyük ağırlığı en borçlu ihraççılara verir (bums problem); bu kaliteyi ödüllendiren bir özellik değil, bir zayıflıktır. Gösterge (on-the-run) tahviller bir vadenin en yeni ve en likit ihraçlarıdır, en eskisi değil. Son olarak uluslarüstü ihraççıyı (birden çok devletin ortak olduğu) tek bir devletin desteklediği kamu benzeri ajansla karıştırmayın.",
+        "key_terms": [
+          "OTC",
+          "single-price auction",
+          "underwritten",
+          "bums problem",
+          "on-the-run",
+          "supranational"
+        ]
+      }
+    ],
+    "summary_en": "Fixed-income markets are segmented by issuer type (sovereign, non-sovereign, quasi-government, supranational, corporate, securitized), credit quality, maturity, currency and geography, and are dominated by institutional investors. Bond indexes are market-value weighted, rebalanced often and hard to replicate, so funds use sampling. New bonds are sold by auction, underwritten or best-efforts offerings, shelf registration or private placement. Secondary trading is mostly OTC through dealers, with liquidity that depends on issue size, age and credit quality. Compared with equities, bonds are issued more often, trade less and are less transparent.",
+    "summary_tr": "Sabit getirili piyasalar ihraççı türüne (merkezi devlet, yerel yönetim, kamu benzeri, uluslarüstü, şirket, menkul kıymetleştirilmiş), kredi kalitesine, vadeye, para birimine ve coğrafyaya göre bölümlenir ve kurumsal yatırımcıların egemenliğindedir. Tahvil endeksleri piyasa değeri ağırlıklıdır, sık yeniden dengelenir ve birebir kopyalanması zordur; bu yüzden fonlar örnekleme yapar. Yeni tahviller ihale, aracılık yüklenimli veya en iyi gayret halka arzı, raf kaydı ya da tahsisli satışla satılır. İkincil piyasa işlemleri çoğunlukla piyasa yapıcılar aracılığıyla tezgâhüstünde yapılır; likidite ihraç büyüklüğüne, yaşına ve kredi kalitesine bağlıdır. Paylarla karşılaştırıldığında tahviller daha sık ihraç edilir, daha az işlem görür ve daha az şeffaftır.",
+    "common_traps_tr": [
+      "Tahvillerin çoğunlukla borsada işlem gördüğünü sanmak; ağırlık tezgâhüstü piyasa yapıcı piyasasındadır.",
+      "Tek fiyatlı ihalede her kazananın kendi teklif fiyatını ödediğini düşünmek; herkes aynı (kabul edilen en yüksek getiriye karşılık gelen) fiyatı öder.",
+      "En iyi gayret aracılığında bankanın satılmayan tahvilleri üstlendiğini sanmak; bu yalnızca aracılık yüklenimli ihraçta olur.",
+      "Piyasa değeri ağırlıklı tahvil endeksinin en kaliteli ihraççıya en yüksek ağırlığı verdiğini düşünmek; en borçlu ihraççıya verir.",
+      "Gösterge (on-the-run) tahvili en eski ihraç sanmak; en yeni ve en likit ihraçtır."
+    ],
+    "vocab_ids": [
+      "sovereign",
+      "supranational",
+      "agency",
+      "investment-grade",
+      "high-yield",
+      "institutional-investor",
+      "retail-investor",
+      "bond-index",
+      "market-value-weighted",
+      "rebalance",
+      "primary-market",
+      "secondary-market",
+      "underwrite",
+      "best-efforts",
+      "shelf-registration",
+      "private-placement",
+      "over-the-counter",
+      "bid-ask-spread",
+      "on-the-run",
+      "single-price-auction"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te BAP, Hazine ihaleleri ve halka arz süreci bilinir; tahvil endekslerinin yapısı, bums problem ve küresel ihraççı sınıflaması CFA'da eklenir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-03-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Bonds issued by the World Bank or the European Investment Bank are best described as:",
+      "stem_tr": "Dünya Bankası veya Avrupa Yatırım Bankası tarafından ihraç edilen tahviller en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "supranational bonds",
+          "tr": "Uluslarüstü kuruluş tahvilleri"
+        },
+        {
+          "key": "B",
+          "en": "quasi-government bonds",
+          "tr": "Kamu benzeri kuruluş tahvilleri"
+        },
+        {
+          "key": "C",
+          "en": "sovereign bonds",
+          "tr": "Merkezi devlet tahvilleri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Supranational organizations are owned and backed by several member governments, so their bonds form the supranational segment.",
+      "explanation_tr": "Uluslarüstü kuruluşlar birden çok üye devletin ortak olduğu ve desteklediği kurumlardır; tahvilleri uluslarüstü bölümü oluşturur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A quasi-government or agency issuer is sponsored by a single government, not by many governments.",
+          "tr": "Kamu benzeri ya da ajans niteliğindeki ihraççı tek bir devlet tarafından desteklenir, birçok devlet tarafından değil."
+        },
+        "C": {
+          "en": "A sovereign bond is issued by a national government itself.",
+          "tr": "Merkezi devlet tahvilini bir ulusal hükümetin kendisi ihraç eder."
+        }
+      },
+      "vocab_ids": [
+        "supranational",
+        "sovereign",
+        "agency",
+        "issue"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "Uluslarüstü ihraççı sınıfı SPK notlarında ayrı bir başlık değildir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish bank issues a 2-year TRY bond, and a Turkish cement producer issues a 5-year TRY bond. Within the corporate segment, these two bonds are most likely classified, respectively, as:",
+      "stem_tr": "Bir Türk bankası 2 yıllık TL tahvil, bir Türk çimento üreticisi 5 yıllık TL tahvil ihraç ediyor. Şirket bölümü içinde bu iki tahvil sırasıyla en muhtemel olarak nasıl sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "financial issuer; non-financial issuer",
+          "tr": "Finansal ihraççı; finansal olmayan ihraççı"
+        },
+        {
+          "key": "B",
+          "en": "quasi-government issuer; financial issuer",
+          "tr": "Kamu benzeri ihraççı; finansal ihraççı"
+        },
+        {
+          "key": "C",
+          "en": "money market issuer; capital market issuer",
+          "tr": "Para piyasası ihraççısı; sermaye piyasası ihraççısı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Corporate issuers are split into financial companies (banks, insurers) and non-financial companies (industrial, utilities, services).",
+      "explanation_tr": "Şirket ihraççıları finansal şirketler (banka, sigorta) ve finansal olmayan şirketler (sanayi, altyapı, hizmet) olarak ayrılır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A privately owned bank is not a quasi-government issuer, and a cement producer is not a financial company.",
+          "tr": "Özel bir banka kamu benzeri ihraççı değildir; çimento üreticisi de finansal şirket değildir."
+        },
+        "C": {
+          "en": "Both bonds have maturities over one year, so both are capital market instruments; maturity is not the issuer classification asked here.",
+          "tr": "İki tahvilin de vadesi bir yıldan uzundur, dolayısıyla ikisi de sermaye piyasası aracıdır; burada sorulan ihraççı sınıflamasıdır, vade değil."
+        }
+      },
+      "vocab_ids": [
+        "respectively",
+        "likely",
+        "issuer",
+        "capital-market",
+        "money-market"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which investor group is most likely to buy long-maturity bonds mainly to match long-dated liabilities?",
+      "stem_tr": "Hangi yatırımcı grubunun uzun vadeli tahvilleri ağırlıklı olarak uzun vadeli yükümlülükleriyle eşleştirmek için alması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "hedge funds",
+          "tr": "Serbest fonlar"
+        },
+        {
+          "key": "B",
+          "en": "pension funds and life insurers",
+          "tr": "Emeklilik fonları ve hayat sigortası şirketleri"
+        },
+        {
+          "key": "C",
+          "en": "central banks",
+          "tr": "Merkez bankaları"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Pension funds and life insurers have obligations that stretch decades into the future, so they buy long bonds to match those liabilities.",
+      "explanation_tr": "Emeklilik fonları ve hayat sigortası şirketlerinin yükümlülükleri onlarca yıl ileriye uzanır; bu yüzden bu yükümlülükleri eşleştirmek için uzun vadeli tahvil alırlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Hedge funds trade for relative value and short-term opportunities, not to match liabilities.",
+          "tr": "Serbest fonlar yükümlülük eşleştirmek için değil, göreli değer ve kısa vadeli fırsatlar için işlem yapar."
+        },
+        "C": {
+          "en": "Central banks hold government bonds for reserves and monetary policy, not to match long-dated liabilities.",
+          "tr": "Merkez bankaları devlet tahvilini rezerv ve para politikası amacıyla tutar; uzun vadeli yükümlülük eşleştirmek için değil."
+        }
+      },
+      "vocab_ids": [
+        "institutional-investor",
+        "obligation",
+        "likely",
+        "hold"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Kurumsal yatırımcı türleri ve yükümlülük odaklı yatırım SPK Düzey 3 portföy yönetimi konularında geçer."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A 6-month Treasury bill and a 3-month commercial paper issue are both classified, by maturity, as:",
+      "stem_tr": "6 aylık bir hazine bonosu ile 3 aylık bir finansman bonosu, vadeye göre birlikte nasıl sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "capital market instruments",
+          "tr": "Sermaye piyasası araçları"
+        },
+        {
+          "key": "B",
+          "en": "securitized instruments",
+          "tr": "Menkul kıymetleştirilmiş araçlar"
+        },
+        {
+          "key": "C",
+          "en": "money market instruments",
+          "tr": "Para piyasası araçları"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Debt with an original maturity of one year or less is a money market instrument; Treasury bills and commercial paper are the classic examples.",
+      "explanation_tr": "İlk vadesi bir yıl ve daha kısa olan borçlanma araçları para piyasası aracıdır; hazine bonosu ve finansman bonosu bunun klasik örnekleridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Capital market debt has a maturity longer than one year.",
+          "tr": "Sermaye piyasası borçlanma araçlarının vadesi bir yıldan uzundur."
+        },
+        "B": {
+          "en": "Securitized instruments are backed by asset pools; the classification here is by maturity, not by structure.",
+          "tr": "Menkul kıymetleştirilmiş araçlar varlık havuzuna dayanır; buradaki sınıflama yapıya göre değil vadeye göredir."
+        }
+      },
+      "vocab_ids": [
+        "treasury-bill",
+        "commercial-paper",
+        "money-market",
+        "capital-market"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Hazine bonosu ve finansman bonosu para piyasası aracı olarak SPK sınavında bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst makes three statements about fixed-income market segments. Which statement is least likely correct?",
+      "stem_tr": "Bir analist sabit getirili piyasa bölümleri hakkında üç ifade kullanıyor. Hangi ifadenin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Emerging market issuers may sell bonds both in local currency and in hard currencies such as USD or EUR.",
+          "tr": "Gelişmekte olan piyasa ihraççıları hem yerel para hem de USD veya EUR gibi sert para birimlerinde tahvil satabilir."
+        },
+        {
+          "key": "B",
+          "en": "Securitized bonds are classified with the corporate segment because a company sponsors the structure.",
+          "tr": "Menkul kıymetleştirilmiş tahviller, yapıyı bir şirket kurduğu için şirket bölümünde sınıflandırılır."
+        },
+        {
+          "key": "C",
+          "en": "Investment-grade and high-yield bonds are separated by credit rating, and many institutional investors face limits on high-yield holdings.",
+          "tr": "Yatırım yapılabilir ve yüksek getirili tahviller kredi notuna göre ayrılır ve pek çok kurumsal yatırımcının yüksek getirili tahvil tutma sınırı vardır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Securitized bonds are a separate segment: their cash flows come from a pool of assets held by a special purpose entity, not from the sponsor company's general credit.",
+      "explanation_tr": "Menkul kıymetleştirilmiş tahviller ayrı bir bölümdür: nakit akışları kurucu şirketin genel kredisinden değil, özel amaçlı kuruluşun tuttuğu varlık havuzundan gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is correct: emerging market sovereigns and companies issue in local and hard currencies.",
+          "tr": "Bu doğrudur: gelişmekte olan piyasa devletleri ve şirketleri yerel ve sert para birimlerinde ihraç yapar."
+        },
+        "C": {
+          "en": "This is correct: the rating line between investment grade and high yield matters for investor mandates.",
+          "tr": "Bu doğrudur: yatırım yapılabilir ile yüksek getirili arasındaki not sınırı yatırımcı yetki belgeleri için önemlidir."
+        }
+      },
+      "vocab_ids": [
+        "securitization",
+        "special-purpose-entity",
+        "emerging-market",
+        "investment-grade",
+        "high-yield",
+        "likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Most broad bond market indexes weight their constituents by:",
+      "stem_tr": "Geniş kapsamlı tahvil piyasası endekslerinin çoğu bileşenlerini neye göre ağırlıklandırır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "market value of the bonds outstanding",
+          "tr": "Dolaşımdaki tahvillerin piyasa değeri"
+        },
+        {
+          "key": "B",
+          "en": "equal weights for each bond",
+          "tr": "Her tahvil için eşit ağırlık"
+        },
+        {
+          "key": "C",
+          "en": "the credit rating of each issuer",
+          "tr": "Her ihraççının kredi notu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Almost all bond indexes are market-value weighted: a bond's weight is its market value divided by the total market value of the index.",
+      "explanation_tr": "Tahvil endekslerinin neredeyse tamamı piyasa değeri ağırlıklıdır: tahvilin ağırlığı, piyasa değerinin endeksin toplam piyasa değerine bölümüdür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Equal weighting exists but is rare for bond indexes because of the number of constituents and liquidity differences.",
+          "tr": "Eşit ağırlıklandırma vardır ama bileşen sayısı ve likidite farkları nedeniyle tahvil endekslerinde nadirdir."
+        },
+        "C": {
+          "en": "Ratings define eligibility (for example investment grade only) but do not set the weights.",
+          "tr": "Notlar uygunluğu belirler (örneğin yalnızca yatırım yapılabilir) ama ağırlıkları belirlemez."
+        }
+      },
+      "vocab_ids": [
+        "bond-index",
+        "market-value-weighted",
+        "outstanding",
+        "weight"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Piyasa değeri ağırlıklı endeks mantığı pay endekslerinden bilinir; tahvil endeksine uygulanması CFA'da işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The so-called bums problem of market-value-weighted bond indexes refers to the fact that:",
+      "stem_tr": "Piyasa değeri ağırlıklı tahvil endekslerindeki \"bums problem\" aşağıdakilerden hangisini ifade eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "bonds that fall below investment grade are removed from the index.",
+          "tr": "Yatırım yapılabilir seviyenin altına düşen tahvillerin endeksten çıkarılması."
+        },
+        {
+          "key": "B",
+          "en": "the index gives the largest weights to the issuers with the most debt outstanding.",
+          "tr": "Endeksin en büyük ağırlığı dolaşımda en çok borcu olan ihraççılara vermesi."
+        },
+        {
+          "key": "C",
+          "en": "illiquid bonds in the index must be priced with dealer quotes.",
+          "tr": "Endeksteki likit olmayan tahvillerin piyasa yapıcı kotasyonlarıyla fiyatlanması gerekmesi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Because weights follow market value of debt, the most heavily indebted issuers dominate the index, even if their leverage makes them riskier.",
+      "explanation_tr": "Ağırlıklar borcun piyasa değerini izlediği için en çok borçlanan ihraççılar, kaldıraçları onları daha riskli kılsa bile endekse hâkim olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Removal of downgraded bonds is a rebalancing rule, not the bums problem.",
+          "tr": "Notu düşen tahvillerin çıkarılması bir yeniden dengeleme kuralıdır, bums problem değildir."
+        },
+        "C": {
+          "en": "Pricing with quotes is a liquidity issue of bond indexes, separate from the weighting problem.",
+          "tr": "Kotasyonla fiyatlama tahvil endekslerinin likidite sorunudur; ağırlıklandırma sorunundan ayrıdır."
+        }
+      },
+      "vocab_ids": [
+        "bond-index",
+        "market-value-weighted",
+        "outstanding",
+        "liquidity"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund manager is asked to track a broad investment-grade bond index that contains more than 8,000 bonds. The most appropriate approach is most likely to:",
+      "stem_tr": "Bir fon yöneticisinden 8.000'den fazla tahvil içeren geniş kapsamlı bir yatırım yapılabilir tahvil endeksini izlemesi isteniyor. En uygun yaklaşımın aşağıdakilerden hangisi olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "buy every bond in the index in its exact weight.",
+          "tr": "Endeksteki her tahvili tam ağırlığıyla almak."
+        },
+        {
+          "key": "B",
+          "en": "hold a sample of bonds that matches the index's duration, sector and credit profile.",
+          "tr": "Endeksin durasyon, sektör ve kredi profiline uyan bir tahvil örneklemi tutmak."
+        },
+        {
+          "key": "C",
+          "en": "hold only the ten largest issuers, because they dominate the index weight.",
+          "tr": "Endeks ağırlığına hâkim oldukları için yalnızca en büyük on ihraççıyı tutmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Full replication is impractical because many constituents are illiquid or unavailable; index funds use sampling to match the index's key risk characteristics.",
+      "explanation_tr": "Birebir kopyalama pratik değildir; çünkü bileşenlerin çoğu likit değildir ya da bulunamaz. Endeks fonları endeksin temel risk özelliklerine uyan örnekleme kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Full replication is usually impossible for bond indexes with thousands of illiquid constituents.",
+          "tr": "Binlerce likit olmayan bileşeni olan tahvil endekslerinde birebir kopyalama genellikle imkânsızdır."
+        },
+        "C": {
+          "en": "Holding only a few issuers creates large tracking error and concentration risk.",
+          "tr": "Yalnızca birkaç ihraççı tutmak büyük izleme hatası ve yoğunlaşma riski yaratır."
+        }
+      },
+      "vocab_ids": [
+        "bond-index",
+        "appropriate",
+        "liquidity",
+        "likely",
+        "sensitivity"
+      ],
+      "pattern_ids": [
+        "most-appropriate",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a broad equity index, a broad bond index is most likely to:",
+      "stem_tr": "Geniş kapsamlı bir pay endeksiyle karşılaştırıldığında geniş kapsamlı bir tahvil endeksinin aşağıdakilerden hangisini yapması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "change its constituents more often because bonds mature and new bonds are issued.",
+          "tr": "Tahviller itfa olduğu ve yenileri ihraç edildiği için bileşenlerini daha sık değiştirmesi."
+        },
+        {
+          "key": "B",
+          "en": "rely on exchange-traded prices for almost all constituents.",
+          "tr": "Neredeyse tüm bileşenleri için borsa fiyatlarına dayanması."
+        },
+        {
+          "key": "C",
+          "en": "contain fewer securities because each issuer has only one bond.",
+          "tr": "Her ihraççının tek tahvili olduğu için daha az menkul kıymet içermesi."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Bonds have finite maturities and issuers keep issuing, so bond index membership changes frequently, usually with monthly rebalancing.",
+      "explanation_tr": "Tahvillerin sonlu vadesi vardır ve ihraççılar ihraç etmeye devam eder; bu yüzden tahvil endeksi üyeliği sık değişir ve genellikle aylık yeniden dengelenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Most bonds trade OTC, so index prices come from dealer quotes or matrix pricing rather than exchange prices.",
+          "tr": "Tahvillerin çoğu tezgâhüstünde işlem görür; endeks fiyatları borsa fiyatından değil piyasa yapıcı kotasyonu veya matris fiyatlamadan gelir."
+        },
+        "C": {
+          "en": "An issuer usually has many bonds outstanding, so bond indexes contain far more securities than equity indexes.",
+          "tr": "Bir ihraççının genellikle dolaşımda çok sayıda tahvili vardır; bu nedenle tahvil endeksleri pay endekslerinden çok daha fazla menkul kıymet içerir."
+        }
+      },
+      "vocab_ids": [
+        "bond-index",
+        "rebalance",
+        "maturity",
+        "likely",
+        "over-the-counter"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A Turkish pension fund wants a benchmark for its portfolio of 1- to 3-year fixed-coupon DİBS. The most appropriate benchmark is a bond index that is:",
+      "stem_tr": "Bir Türk emeklilik fonu, 1-3 yıl vadeli sabit kuponlu DİBS portföyü için karşılaştırma ölçütü istiyor. En uygun karşılaştırma ölçütü nasıl bir tahvil endeksidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "an aggregate index covering all TRY bonds of every issuer type and maturity.",
+          "tr": "Her ihraççı türü ve vadedeki tüm TL tahvilleri kapsayan toplam bir endeks."
+        },
+        {
+          "key": "B",
+          "en": "a global government bond index in USD.",
+          "tr": "USD cinsinden küresel bir devlet tahvili endeksi."
+        },
+        {
+          "key": "C",
+          "en": "a segment index limited to TRY government bonds with 1 to 3 years to maturity.",
+          "tr": "Vadesine 1-3 yıl kalan TL devlet tahvilleriyle sınırlı bir bölüm endeksi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A benchmark should match the portfolio's universe: issuer type (government), currency (TRY) and maturity bucket (1-3 years). This is a segment index.",
+      "explanation_tr": "Karşılaştırma ölçütü portföyün evrenine uymalıdır: ihraççı türü (kamu), para birimi (TL) ve vade dilimi (1-3 yıl). Bu bir bölüm endeksidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An aggregate index includes corporate bonds and long maturities that the fund does not hold, so it would misstate performance and risk.",
+          "tr": "Toplam endeks fonun tutmadığı şirket tahvillerini ve uzun vadeleri içerir; performansı ve riski yanlış gösterir."
+        },
+        "B": {
+          "en": "A USD global index differs in currency, issuers and interest rate environment.",
+          "tr": "USD cinsinden küresel bir endeks para birimi, ihraççılar ve faiz ortamı bakımından farklıdır."
+        }
+      },
+      "vocab_ids": [
+        "benchmark",
+        "bond-index",
+        "appropriate",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Karşılaştırma ölçütü seçimi SPK Düzey 3 portföy yönetiminde işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In an underwritten (firm commitment) bond offering, the investment bank:",
+      "stem_tr": "Aracılık yüklenimli (bakiyeyi yüklenim) bir tahvil halka arzında yatırım bankası:",
+      "options": [
+        {
+          "key": "A",
+          "en": "buys the entire issue from the issuer and resells it to investors, bearing the price risk.",
+          "tr": "İhracın tamamını ihraççıdan satın alıp yatırımcılara yeniden satar ve fiyat riskini üstlenir."
+        },
+        {
+          "key": "B",
+          "en": "sells as many bonds as it can and returns the unsold bonds to the issuer.",
+          "tr": "Satabildiği kadar tahvili satar ve satılamayanları ihraççıya iade eder."
+        },
+        {
+          "key": "C",
+          "en": "guarantees the coupon payments to investors for the life of the bond.",
+          "tr": "Tahvilin ömrü boyunca kupon ödemelerini yatırımcılara garanti eder."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under a firm commitment the underwriter purchases the issue and takes the risk of reselling it; this is the difference from a best-efforts deal.",
+      "explanation_tr": "Bakiyeyi yüklenimde aracı kurum ihracı satın alır ve yeniden satış riskini üstlenir; en iyi gayret aracılığından farkı budur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This describes a best-efforts offering, where the bank keeps no price risk.",
+          "tr": "Bu, bankanın fiyat riski taşımadığı en iyi gayret aracılığını tanımlar."
+        },
+        "C": {
+          "en": "Underwriting concerns the sale of the issue, not a guarantee of the issuer's future payments.",
+          "tr": "Yüklenim ihracın satışıyla ilgilidir; ihraççının gelecekteki ödemelerinin garantisi değildir."
+        }
+      },
+      "vocab_ids": [
+        "underwrite",
+        "best-efforts",
+        "issue",
+        "guarantee"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Bakiyeyi yüklenim ve en iyi gayret aracılığı SPK halka arz mevzuatında bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The Turkish Treasury sells a new 5-year bond in a single-price (uniform) auction. Bank A bids a yield of 30.10% and Bank B bids 30.30%. The highest accepted yield is 30.40%. The yields at which Banks A and B receive bonds are, respectively, closest to:",
+      "stem_tr": "Hazine yeni bir 5 yıllık tahvili tek fiyatlı (uniform) ihaleyle satıyor. A Bankası %30,10, B Bankası %30,30 getiriden teklif veriyor. Kabul edilen en yüksek getiri %30,40'tır. A ve B bankalarının tahvil aldığı getiriler sırasıyla en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.10% and 30.30%",
+          "tr": "%30,10 ve %30,30"
+        },
+        {
+          "key": "B",
+          "en": "30.40% and 30.40%",
+          "tr": "%30,40 ve %30,40"
+        },
+        {
+          "key": "C",
+          "en": "30.10% and 30.40%",
+          "tr": "%30,10 ve %30,40"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In a single-price auction every successful bidder receives bonds at the same yield: the highest accepted yield (lowest accepted price), here 30.40%.",
+      "explanation_tr": "Tek fiyatlı ihalede kazanan her teklif sahibi aynı getiriden, yani kabul edilen en yüksek getiriden (en düşük kabul edilen fiyattan) tahvil alır; burada %30,40.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Paying your own bid is the rule of a multiple-price auction, not a single-price auction.",
+          "tr": "Herkesin kendi teklifini ödemesi tek fiyatlı değil çok fiyatlı ihalenin kuralıdır."
+        },
+        "C": {
+          "en": "Mixing the two rules is wrong; in a single-price auction all winners get the same yield.",
+          "tr": "İki kuralı karıştırmak yanlıştır; tek fiyatlı ihalede tüm kazananlar aynı getiriyi alır."
+        }
+      },
+      "vocab_ids": [
+        "single-price-auction",
+        "auction",
+        "bid",
+        "respectively",
+        "closest"
+      ],
+      "pattern_ids": [
+        "respectively",
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Hazine ihale yöntemleri Türkiye'de bilinir; tek/çok fiyatlı ihale ayrımı CFA'da sınanır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with the secondary market for listed shares, the secondary market for corporate bonds is most likely to be:",
+      "stem_tr": "Borsaya kote payların ikincil piyasasıyla karşılaştırıldığında şirket tahvillerinin ikincil piyasasının aşağıdakilerden hangisi olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "more transparent, because every bond trade is published in real time.",
+          "tr": "Her tahvil işlemi gerçek zamanlı yayımlandığı için daha şeffaf."
+        },
+        {
+          "key": "B",
+          "en": "less liquid, with most trades executed over the counter through dealers.",
+          "tr": "İşlemlerin çoğu piyasa yapıcılar aracılığıyla tezgâhüstünde yapıldığından daha az likit."
+        },
+        {
+          "key": "C",
+          "en": "organized around a central limit order book on an exchange.",
+          "tr": "Borsadaki merkezi bir limit emir defteri etrafında örgütlenmiş."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Corporate bonds trade mainly OTC in dealer markets, many issues trade rarely, and quotes are often indicative; shares trade continuously on exchanges.",
+      "explanation_tr": "Şirket tahvilleri ağırlıklı olarak tezgâhüstü piyasa yapıcı piyasalarında işlem görür, birçok ihraç nadiren el değiştirir ve kotasyonlar çoğu zaman gösterge niteliğindedir; paylar borsada sürekli işlem görür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Bond trade reporting is less complete than equity reporting; many quotes are indicative, not firm.",
+          "tr": "Tahvil işlem raporlaması pay raporlamasından daha eksiktir; kotasyonların çoğu kesin değil gösterge niteliğindedir."
+        },
+        "C": {
+          "en": "A central order book is typical of equity exchanges; most bond trading is dealer based.",
+          "tr": "Merkezi emir defteri pay borsalarına özgüdür; tahvil işlemlerinin çoğu piyasa yapıcıya dayanır."
+        }
+      },
+      "vocab_ids": [
+        "secondary-market",
+        "over-the-counter",
+        "dealer",
+        "liquidity",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "BAP'ta tahviller borsa ortamında da işlem görür; küresel OTC ağırlığı CFA bakış açısıdır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Ege Lojistik A.Ş., a frequent issuer, registers a large bond program with the regulator once and then sells tranches over the next two years whenever market conditions are good. This practice is best described as:",
+      "stem_tr": "Sık ihraç yapan Ege Lojistik A.Ş. düzenleyici kuruma büyük bir tahvil programını bir kez kaydettiriyor ve sonraki iki yıl boyunca piyasa koşulları uygun olduğunda dilimler hâlinde satıyor. Bu uygulama en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a private placement",
+          "tr": "Tahsisli satış"
+        },
+        {
+          "key": "B",
+          "en": "a best-efforts offering",
+          "tr": "En iyi gayret aracılığı"
+        },
+        {
+          "key": "C",
+          "en": "shelf registration",
+          "tr": "Raf kaydı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Shelf registration lets an issuer file one master registration and draw down the program in pieces over time, reducing cost and timing risk.",
+      "explanation_tr": "Raf kaydı, ihraççının tek bir ana kayıt yaptırıp programı zaman içinde parça parça kullanmasına olanak tanır; maliyeti ve zamanlama riskini azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A private placement is a sale to a small group of qualified investors, which is about who buys, not about registering once and selling over time.",
+          "tr": "Tahsisli satış küçük bir nitelikli yatırımcı grubuna satıştır; bir kez kaydedip zamanla satmakla değil kimin aldığıyla ilgilidir."
+        },
+        "B": {
+          "en": "Best efforts describes the bank's role in selling, not the registration method.",
+          "tr": "En iyi gayret, bankanın satıştaki rolünü tanımlar, kayıt yöntemini değil."
+        }
+      },
+      "vocab_ids": [
+        "shelf-registration",
+        "private-placement",
+        "best-efforts",
+        "issuer"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "SPK'daki ihraç tavanı/izahname uygulaması raf kaydına benzer."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-03-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements comparing bond and equity markets is least likely correct?",
+      "stem_tr": "Tahvil ve pay piyasalarını karşılaştıran aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A company typically issues bonds more often than it issues shares, because maturing debt must be refinanced.",
+          "tr": "Bir şirket vadesi gelen borcu yeniden finanse etmek zorunda olduğu için genellikle paydan daha sık tahvil ihraç eder."
+        },
+        {
+          "key": "B",
+          "en": "Bonds of the same issuer can carry different yields because they differ in seniority, maturity and embedded options.",
+          "tr": "Aynı ihraççının tahvilleri öncelik sırası, vade ve gömülü opsiyonları farklı olduğu için farklı getiri taşıyabilir."
+        },
+        {
+          "key": "C",
+          "en": "The secondary market liquidity of a bond usually rises as the bond ages, because more investors come to know it.",
+          "tr": "Bir tahvilin ikincil piyasa likiditesi, daha çok yatırımcı onu tanıdığı için tahvil yaşlandıkça genellikle artar."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Liquidity usually falls as a bond ages: the newest (on-the-run) issues trade most, while older bonds move into buy-and-hold portfolios and the amount outstanding shrinks.",
+      "explanation_tr": "Likidite tahvil yaşlandıkça genellikle düşer: en yeni (on-the-run) ihraçlar en çok işlem görür; eski tahviller al-tut portföylerine geçer ve dolaşımdaki tutar azalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is correct: debt matures and is refinanced, so bond issuance is frequent.",
+          "tr": "Bu doğrudur: borç itfa olur ve yeniden finanse edilir; bu yüzden tahvil ihracı sıktır."
+        },
+        "B": {
+          "en": "This is correct: one issuer's bonds differ in rank, maturity and options, so yields differ.",
+          "tr": "Bu doğrudur: tek bir ihraççının tahvilleri sıra, vade ve opsiyon bakımından farklıdır; getirileri de farklıdır."
+        }
+      },
+      "vocab_ids": [
+        "on-the-run",
+        "refinance",
+        "seniority",
+        "liquidity",
+        "likely",
+        "statement"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -175,7 +175,7 @@ def check_question(q: dict) -> list[str]:
 
 
 def iter_files(args: list[str]):
-    targets = [Path(a) for a in args] or [ROOT / "content"]
+    targets = [Path(a).resolve() for a in args] or [ROOT / "content"]
     for t in targets:
         if t.is_dir():
             yield from sorted(p for p in t.rglob("*.json") if "syllabus" not in p.parts)

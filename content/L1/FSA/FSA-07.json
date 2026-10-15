@@ -1,0 +1,1840 @@
+{
+  "module_id": "FSA-07",
+  "lesson": {
+    "id": "FSA-07-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-07",
+    "los_ids": [
+      "FSA-07-a",
+      "FSA-07-b",
+      "FSA-07-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analysis of Long-Term Assets",
+    "title_tr": "Uzun Vadeli Varlıkların Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why long-term assets need a second look",
+        "heading_tr": "Uzun vadeli varlıklara neden ikinci kez bakılır?",
+        "en": "A factory, a software licence, a brand and goodwill all sit on the balance sheet for years. Their carrying amounts depend on choices: did the company capitalize the cost or expense it? Does it test for impairment? How fast does it depreciate? Two Turkish cement producers with the same plants can show very different asset values if one bought its brand and the other built it in-house. Under TFRS, TMS 38 (IAS 38) covers intangibles and TMS 36 (IAS 36) covers impairment. An analyst reads the long-lived asset notes to judge how old the assets are, when heavy capital spending will return, and whether a big impairment is hiding in a weak segment.",
+        "tr": "Bir fabrika, bir yazılım lisansı, bir marka ve şerefiye yıllarca bilançoda durur. Defter değerleri verilen kararlara bağlıdır: şirket maliyeti aktifleştirdi mi, gider mi yazdı? Değer düşüklüğü testi yapıyor mu? Amortismanı ne hızla ayırıyor? Aynı tesislere sahip iki Türk çimento üreticisi, biri markasını satın almış diğeri kendi içinde yaratmışsa çok farklı varlık değerleri gösterebilir. TFRS'de maddi olmayan duran varlıkları TMS 38 (IAS 38), değer düşüklüğünü TMS 36 (IAS 36) düzenler. Analist, varlıkların ne kadar eski olduğunu, ağır yatırım harcamasının ne zaman geri geleceğini ve zayıf bir bölümde büyük bir değer düşüklüğünün saklanıp saklanmadığını anlamak için uzun vadeli varlık dipnotlarını okur.",
+        "key_terms": [
+          "capitalize",
+          "impairment",
+          "intangible asset",
+          "goodwill",
+          "TMS 38",
+          "TMS 36"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Intangibles: three ways to get them",
+        "heading_tr": "Maddi olmayan varlıklar: üç edinme yolu",
+        "en": "1) Purchased intangibles (a patent or licence bought from another firm) are recorded at cost, which is usually fair value at the purchase date. 2) Internally developed intangibles: under IFRS, research costs are expensed as incurred, and development costs are capitalized only after the firm shows technical feasibility, intention and ability to complete, probable future benefits, enough resources and reliable measurement. Under US GAAP, both research and development are expensed, with one exception: software. Software to be sold is capitalized after technological feasibility; internal-use software is capitalized during the application development stage. 3) Intangibles acquired in a business combination are recognized at fair value under the acquisition method. The excess of the purchase price over the fair value of net identifiable assets is goodwill. Goodwill and in-process R&D acquired in a combination are capitalized and not amortized; internally generated goodwill and brands are never recognized.",
+        "tr": "1) Satın alınan maddi olmayan varlıklar (başka firmadan alınan patent ya da lisans) maliyetle kaydedilir; bu genelde alım tarihindeki gerçeğe uygun değerdir. 2) Şirket içinde geliştirilen maddi olmayan varlıklar: IFRS'te araştırma maliyetleri oluştukça gider yazılır; geliştirme maliyetleri yalnızca şirket teknik fizibiliteyi, tamamlama niyet ve yeteneğini, muhtemel gelecek faydayı, yeterli kaynağı ve güvenilir ölçümü gösterdikten sonra aktifleştirilir. US GAAP'te hem araştırma hem geliştirme gider yazılır; tek istisna yazılımdır. Satılacak yazılım teknolojik fizibiliteden sonra, şirket içi kullanım yazılımı ise uygulama geliştirme aşamasında aktifleştirilir. 3) İşletme birleşmesiyle edinilen maddi olmayan varlıklar, satın alma yöntemiyle gerçeğe uygun değerden kaydedilir. Alış bedelinin tanımlanabilir net varlıkların gerçeğe uygun değerini aşan kısmı şerefiyedir. Şerefiye ve birleşmede edinilen süregelen Ar-Ge aktifleştirilir, itfa edilmez; şirket içinde yaratılan şerefiye ve markalar asla kaydedilmez.",
+        "key_terms": [
+          "research",
+          "development",
+          "technical feasibility",
+          "acquisition method",
+          "identifiable",
+          "in-process R&D"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Item",
+              "tr": "Kalem"
+            },
+            {
+              "en": "IFRS",
+              "tr": "IFRS"
+            },
+            {
+              "en": "US GAAP",
+              "tr": "US GAAP"
+            }
+          ],
+          "rows": [
+            [
+              "Research cost",
+              "Expense",
+              "Expense"
+            ],
+            [
+              "Development cost",
+              "Capitalize if six criteria met",
+              "Expense (except software)"
+            ],
+            [
+              "Software for sale",
+              "Development rules",
+              "Capitalize after technological feasibility"
+            ],
+            [
+              "Purchased intangible",
+              "Cost (fair value)",
+              "Cost (fair value)"
+            ],
+            [
+              "Goodwill (combination)",
+              "Capitalize, impairment test, no amortization",
+              "Same"
+            ],
+            [
+              "Internally generated goodwill / brand",
+              "Not recognized",
+              "Not recognized"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Capitalize or expense: the ratio effects",
+        "heading_tr": "Aktifleştirme mi gider mi: oranlara etkisi",
+        "en": "Capitalizing a cost moves it from the income statement to the balance sheet, then back to the income statement slowly as amortization. In the first year, a capitalizing firm shows higher net income, higher assets and higher equity than an expensing firm. Its operating cash flow is also higher because the capitalized outflow is classified as investing, not operating. Total cash flow is the same. In later years, amortization makes net income lower than the expensing firm, and earnings are smoother. Return on assets and return on equity look better at first and worse later. Leverage ratios (debt to equity) look lower because equity is higher. Interest capitalized on self-constructed assets has the same effect and also raises the interest coverage ratio; analysts often add capitalized interest back to interest expense.",
+        "tr": "Bir maliyeti aktifleştirmek onu gelir tablosundan bilançoya taşır, sonra itfa yoluyla yavaş yavaş gelir tablosuna geri getirir. İlk yıl aktifleştiren şirket, gider yazan şirkete göre daha yüksek net kâr, daha yüksek varlık ve daha yüksek özkaynak gösterir. Aktifleştirilen çıkış işletme değil yatırım faaliyeti sayıldığından işletme nakit akışı da daha yüksektir. Toplam nakit akışı aynıdır. Sonraki yıllarda itfa nedeniyle net kâr gider yazan şirketten düşük kalır; kârlar daha düzgün görünür. Aktif kârlılığı ve özkaynak kârlılığı önce daha iyi, sonra daha kötü görünür. Özkaynak yüksek olduğundan kaldıraç oranları (borç/özkaynak) daha düşük çıkar. Kendi inşa edilen varlıklarda aktifleştirilen faiz aynı etkiyi yapar ve faiz karşılama oranını da yükseltir; analistler aktifleştirilen faizi çoğu zaman faiz giderine geri ekler.",
+        "key_terms": [
+          "capitalized interest",
+          "interest coverage",
+          "amortization",
+          "operating cash flow",
+          "investing cash flow"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Impairment: IFRS versus US GAAP",
+        "heading_tr": "Değer düşüklüğü: IFRS ve US GAAP",
+        "en": "An asset is impaired when its carrying amount is above the amount the firm can recover. IFRS (IAS 36): recoverable amount is the higher of fair value less costs to sell and value in use (the present value of expected cash flows). Loss = carrying amount - recoverable amount. US GAAP for assets held for use has two steps: first, the asset is impaired only if the carrying amount is above the undiscounted expected future cash flows; second, the loss is carrying amount minus fair value. Reversal: IFRS allows reversal for PP&E and finite-lived intangibles up to the carrying amount that would exist without the impairment, never for goodwill; US GAAP forbids reversal for assets held for use. Assets held for sale are measured at the lower of carrying amount and fair value less costs to sell under both, are not depreciated, and losses can be reversed up to the earlier loss. Under the IFRS revaluation model, an upward revaluation goes to other comprehensive income as a revaluation surplus, unless it reverses an earlier loss taken in profit or loss; a decrease goes to profit or loss unless it reverses an earlier surplus.",
+        "tr": "Bir varlığın defter değeri şirketin geri kazanabileceği tutarın üstündeyse varlık değer düşüklüğüne uğramıştır. IFRS (IAS 36): geri kazanılabilir tutar, satış maliyetleri düşülmüş gerçeğe uygun değer ile kullanım değerinden (beklenen nakit akışlarının bugünkü değeri) yüksek olanıdır. Zarar = defter değeri - geri kazanılabilir tutar. US GAAP'te kullanımda tutulan varlıklar için iki adım vardır: önce, defter değeri iskonto edilmemiş beklenen nakit akışlarının üstündeyse varlık değer düşüklüğüne uğramış sayılır; sonra zarar, defter değeri eksi gerçeğe uygun değerdir. İptal: IFRS, maddi duran varlıklar ve sınırlı ömürlü maddi olmayan varlıklarda, değer düşüklüğü olmasaydı oluşacak defter değerine kadar iptale izin verir; şerefiyede asla. US GAAP kullanımda tutulan varlıklarda iptali yasaklar. Satış amaçlı tutulan varlıklar her iki sette de defter değeri ile satış maliyetleri düşülmüş gerçeğe uygun değerden düşük olanla ölçülür, amortismana tabi tutulmaz, zararlar önceki zarara kadar iptal edilebilir. IFRS yeniden değerleme modelinde yukarı yönlü yeniden değerleme, daha önce kâr veya zarara yazılmış bir zararı tersine çevirmiyorsa, diğer kapsamlı gelire yeniden değerleme fazlası olarak gider; azalış, önceki bir fazlayı tersine çevirmiyorsa kâr veya zarara gider.",
+        "key_terms": [
+          "recoverable amount",
+          "value in use",
+          "undiscounted",
+          "held for sale",
+          "revaluation surplus",
+          "reversal"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key formulas",
+        "heading_tr": "Temel formüller",
+        "en": "Impairment loss (IFRS) = carrying amount - max(fair value less costs to sell, value in use). Impairment loss (US GAAP, held for use) = carrying amount - fair value, but only if carrying amount > undiscounted future cash flows. Gain or loss on derecognition = sale proceeds - carrying amount; it is reported in the income statement, usually in other gains or losses, never in revenue. An asset that is abandoned gives a loss equal to its carrying amount. Disclosure-based estimates assume straight-line depreciation and a homogeneous asset base: estimated total useful life = gross PP&E / annual depreciation expense; average age = accumulated depreciation / annual depreciation expense; remaining useful life = net PP&E / annual depreciation expense. Total life = age + remaining life. Land is excluded because it is not depreciated.",
+        "tr": "Değer düşüklüğü zararı (IFRS) = defter değeri - maks(satış maliyetleri düşülmüş gerçeğe uygun değer, kullanım değeri). Değer düşüklüğü zararı (US GAAP, kullanımda) = defter değeri - gerçeğe uygun değer; ancak yalnızca defter değeri > iskonto edilmemiş gelecek nakit akışları ise. Bilanço dışı bırakmada kazanç veya zarar = satış hasılatı - defter değeri; gelir tablosunda genellikle diğer kazanç/zararlarda raporlanır, asla hasılatta değil. Terk edilen varlıkta zarar, defter değerine eşittir. Dipnota dayalı tahminler doğrusal amortisman ve türdeş varlık tabanı varsayar: tahmini toplam faydalı ömür = brüt maddi duran varlık / yıllık amortisman gideri; ortalama yaş = birikmiş amortisman / yıllık amortisman gideri; kalan faydalı ömür = net maddi duran varlık / yıllık amortisman gideri. Toplam ömür = yaş + kalan ömür. Arsa amortismana tabi olmadığı için dışarıda tutulur.",
+        "key_terms": [
+          "derecognition",
+          "accumulated depreciation",
+          "average age",
+          "remaining useful life",
+          "gross PP&E"
+        ],
+        "formula_latex": "\\text{Age} = \\frac{\\text{Acc. Dep.}}{\\text{Dep. Exp.}} \\qquad \\text{Total life} = \\frac{\\text{Gross PP\\&E}}{\\text{Dep. Exp.}} \\qquad \\text{Remaining} = \\frac{\\text{Net PP\\&E}}{\\text{Dep. Exp.}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: impairment and asset age",
+        "heading_tr": "Çözümlü örnek: değer düşüklüğü ve varlık yaşı",
+        "en": "Kaya Lojistik (IFRS) has a warehouse with a carrying amount of TRY 900,000. Fair value less costs to sell is TRY 700,000 and value in use is TRY 760,000. Recoverable amount = max(700,000; 760,000) = 760,000. Impairment loss = 900,000 - 760,000 = TRY 140,000. If the same firm reported under US GAAP with undiscounted future cash flows of TRY 950,000, no loss would be recognized because 950,000 is above the carrying amount of 900,000. Asset age: the notes show gross equipment TRY 4,800,000, accumulated depreciation TRY 1,800,000 and depreciation expense TRY 400,000. Total life = 4,800,000 / 400,000 = 12 years; average age = 1,800,000 / 400,000 = 4.5 years; remaining life = 3,000,000 / 400,000 = 7.5 years.",
+        "tr": "Kaya Lojistik (IFRS) deposunun defter değeri 900.000 TL'dir. Satış maliyetleri düşülmüş gerçeğe uygun değer 700.000 TL, kullanım değeri 760.000 TL'dir. Geri kazanılabilir tutar = maks(700.000; 760.000) = 760.000. Değer düşüklüğü zararı = 900.000 - 760.000 = 140.000 TL. Aynı şirket US GAAP'e göre raporlasa ve iskonto edilmemiş gelecek nakit akışları 950.000 TL olsa, 950.000 defter değeri 900.000'in üstünde olduğundan zarar kaydedilmezdi. Varlık yaşı: dipnotlarda brüt ekipman 4.800.000 TL, birikmiş amortisman 1.800.000 TL ve amortisman gideri 400.000 TL. Toplam ömür = 4.800.000 / 400.000 = 12 yıl; ortalama yaş = 1.800.000 / 400.000 = 4,5 yıl; kalan ömür = 3.000.000 / 400.000 = 7,5 yıl.",
+        "key_terms": [
+          "carrying amount",
+          "recoverable amount",
+          "notes"
+        ],
+        "example": {
+          "en": "Loss 140,000 (IFRS) vs 0 (US GAAP); age 4.5 y, remaining 7.5 y",
+          "tr": "Zarar 140.000 (IFRS), 0 (US GAAP); yaş 4,5 yıl, kalan 7,5 yıl"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık tuzaklar",
+        "en": "Do not use undiscounted cash flows as the IFRS recoverable amount; they belong only to the US GAAP recoverability test. Do not amortize goodwill. Do not reverse a goodwill impairment under IFRS or any held-for-use impairment under US GAAP. A gain on sale is not revenue. An impairment has no cash effect, so operating cash flow does not fall; the loss is added back, like depreciation. After an impairment, future depreciation is lower, so later profits and ROA look better. Age estimates break down when a firm uses accelerated depreciation, has land in gross PP&E, or recently had a large acquisition.",
+        "tr": "IFRS geri kazanılabilir tutarı için iskonto edilmemiş nakit akışlarını kullanmayın; onlar yalnızca US GAAP geri kazanılabilirlik testine aittir. Şerefiyeyi itfa etmeyin. IFRS'te şerefiye değer düşüklüğünü, US GAAP'te kullanımda tutulan hiçbir varlığın değer düşüklüğünü iptal etmeyin. Satış kazancı hasılat değildir. Değer düşüklüğünün nakit etkisi yoktur; işletme nakit akışı düşmez, zarar amortisman gibi geri eklenir. Değer düşüklüğünden sonra gelecekteki amortisman düşer; sonraki kârlar ve aktif kârlılığı daha iyi görünür. Şirket hızlandırılmış amortisman kullanıyorsa, brüt maddi duran varlıkta arsa varsa ya da yakın zamanda büyük bir satın alma yapmışsa yaş tahminleri bozulur.",
+        "key_terms": [
+          "undiscounted",
+          "recoverability test",
+          "accelerated depreciation"
+        ]
+      }
+    ],
+    "summary_en": "Purchased intangibles are capitalized at cost; internally developed ones are mostly expensed (IFRS capitalizes development after six criteria, US GAAP capitalizes only certain software costs); intangibles bought in a business combination are recorded at fair value, with the excess as goodwill. Impairment under IFRS compares carrying amount with the recoverable amount; US GAAP first tests against undiscounted cash flows and then measures the loss against fair value, with no reversal for held-for-use assets. Disclosures let an analyst estimate average age, total life and remaining life of PP&E by dividing by depreciation expense.",
+    "summary_tr": "Satın alınan maddi olmayan varlıklar maliyetle aktifleştirilir; şirket içinde geliştirilenler çoğunlukla gider yazılır (IFRS altı ölçütten sonra geliştirmeyi aktifleştirir, US GAAP yalnızca belirli yazılım maliyetlerini aktifleştirir); işletme birleşmesiyle alınanlar gerçeğe uygun değerle kaydedilir, fazlası şerefiyedir. IFRS'te değer düşüklüğü, defter değeri ile geri kazanılabilir tutarı karşılaştırır; US GAAP önce iskonto edilmemiş nakit akışlarıyla test eder, sonra zararı gerçeğe uygun değere göre ölçer ve kullanımda tutulan varlıklarda iptale izin vermez. Dipnotlar, amortisman giderine bölerek maddi duran varlıkların ortalama yaşını, toplam ömrünü ve kalan ömrünü tahmin etmeye olanak verir.",
+    "common_traps_tr": [
+      "IFRS'te araştırma gider, geliştirme (ölçütler sağlanınca) aktif; US GAAP'te ikisi de gider, yazılım istisna.",
+      "IFRS geri kazanılabilir tutar = maks(satış maliyeti düşülmüş GUD, kullanım değeri); iskonto edilmemiş nakit akışı US GAAP'in ilk adımıdır.",
+      "Şerefiye itfa edilmez; değer düşüklüğü iptali IFRS'te bile yasaktır.",
+      "Değer düşüklüğü nakit çıkışı değildir; CFO düşmez, sonraki amortisman azalır.",
+      "Ortalama yaş = birikmiş amortisman / amortisman gideri; arsa ve hızlandırılmış amortisman tahmini bozar."
+    ],
+    "vocab_ids": [
+      "capitalize",
+      "intangible-asset",
+      "goodwill",
+      "impairment",
+      "recoverable-amount",
+      "value-in-use",
+      "undiscounted",
+      "derecognition",
+      "carrying-amount",
+      "accumulated-depreciation",
+      "average-age",
+      "remaining-useful-life",
+      "revaluation-surplus",
+      "held-for-sale",
+      "feasibility",
+      "incur"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3 Muhasebe/TMS konularında TMS 36 ve TMS 38 kuralları işlenir; US GAAP farkları ve dipnottan yaş tahmini yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-07-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, research costs incurred while developing a new product internally are most likely:",
+      "stem_tr": "IFRS'e göre, yeni bir ürün şirket içinde geliştirilirken katlanılan araştırma maliyetleri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "capitalized once technical feasibility is shown.",
+          "tr": "teknik fizibilite gösterilince aktifleştirilir."
+        },
+        {
+          "key": "B",
+          "en": "expensed as incurred.",
+          "tr": "oluştukça gider yazılır."
+        },
+        {
+          "key": "C",
+          "en": "capitalized and amortized over five years.",
+          "tr": "aktifleştirilir ve beş yılda itfa edilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "IAS 38 requires all research costs to be expensed. Only development costs can be capitalized, and only after the six criteria are met.",
+      "explanation_tr": "IAS 38 tüm araştırma maliyetlerinin gider yazılmasını ister. Yalnızca geliştirme maliyetleri, altı ölçüt sağlandıktan sonra aktifleştirilebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Technical feasibility is one of the criteria for capitalizing development costs, not research costs.",
+          "tr": "Teknik fizibilite, araştırma değil geliştirme maliyetlerini aktifleştirme ölçütlerinden biridir."
+        },
+        "C": {
+          "en": "There is no rule that capitalizes research costs; a fixed five-year amortization is invented.",
+          "tr": "Araştırma maliyetini aktifleştiren bir kural yoktur; sabit beş yıllık itfa uydurmadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "research",
+        "incur",
+        "feasibility",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TMS 38 araştırma/geliştirme ayrımı Düzey 3 muhasebe konusunda vardır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Derya Yazılım reports under US GAAP and develops software to sell to customers. It spent TRY 400,000 before technological feasibility was established and TRY 600,000 after that point until the product was ready for release. The amount capitalized is closest to:",
+      "stem_tr": "Derya Yazılım US GAAP'e göre raporlar ve müşterilere satmak için yazılım geliştirir. Teknolojik fizibilite sağlanmadan önce 400.000 TL, bu noktadan ürün satışa hazır olana kadar 600.000 TL harcadı. Aktifleştirilen tutar en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 1,000,000",
+          "tr": "1.000.000 TL",
+          "value": 1000000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 600,000",
+          "tr": "600.000 TL",
+          "value": 600000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "US GAAP expenses software development costs until technological feasibility is established; costs after that point and before release are capitalized. Capitalized = TRY 600,000.",
+      "explanation_tr": "US GAAP, teknolojik fizibilite sağlanana kadar yazılım geliştirme maliyetlerini gider yazar; bu noktadan satışa kadar olan maliyetler aktifleştirilir. Aktifleştirilen = 600.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies the general US GAAP rule that all R&D is expensed, ignoring the software exception.",
+          "tr": "Tüm Ar-Ge'nin gider yazıldığı genel US GAAP kuralını uygular, yazılım istisnasını atlar."
+        },
+        "B": {
+          "en": "Capitalizes everything, including costs incurred before technological feasibility.",
+          "tr": "Teknolojik fizibiliteden önceki maliyetler dahil her şeyi aktifleştirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the capitalized software cost under US GAAP.",
+          "tr": "US GAAP'e göre aktifleştirilen yazılım maliyeti isteniyor."
+        },
+        {
+          "en": "Rule: expense until technological feasibility; capitalize from feasibility to release.",
+          "tr": "Kural: teknolojik fizibiliteye kadar gider; fizibiliteden satışa kadar aktifleştir."
+        },
+        {
+          "en": "Before feasibility: 400,000 expensed. After: 600,000 capitalized.",
+          "tr": "Fizibilite öncesi: 400.000 gider. Sonrası: 600.000 aktif.",
+          "values": {
+            "before": 400000,
+            "after": 600000
+          }
+        },
+        {
+          "en": "Capitalized amount = TRY 600,000.",
+          "tr": "Aktifleştirilen tutar = 600.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "600000",
+          "[=]"
+        ],
+        "note_tr": "Hesap gerektirmez; yalnızca sınıflandırma."
+      },
+      "numeric": {
+        "expr": "600000",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "feasibility",
+        "establish",
+        "release",
+        "capitalize",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Marmara Holding pays TRY 900 million to acquire 100% of Ege Gıda. At the acquisition date the fair value of Ege's identifiable assets is TRY 1,100 million (including a brand valued at TRY 150 million) and the fair value of its liabilities is TRY 450 million. The goodwill recognized is closest to:",
+      "stem_tr": "Marmara Holding, Ege Gıda'nın %100'ünü almak için 900 milyon TL öder. Edinim tarihinde Ege'nin tanımlanabilir varlıklarının gerçeğe uygun değeri 1.100 milyon TL (150 milyon TL değerli bir marka dahil), yükümlülüklerinin gerçeğe uygun değeri 450 milyon TL'dir. Kaydedilen şerefiye en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 250 million",
+          "tr": "250 milyon TL",
+          "value": 250.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 400 million",
+          "tr": "400 milyon TL",
+          "value": 400.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 100 million",
+          "tr": "100 milyon TL",
+          "value": 100.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net identifiable assets at fair value = 1,100 - 450 = 650. Goodwill = 900 - 650 = TRY 250 million. The brand is an identifiable intangible and is already inside the 1,100.",
+      "explanation_tr": "Gerçeğe uygun değerle net tanımlanabilir varlıklar = 1.100 - 450 = 650. Şerefiye = 900 - 650 = 250 milyon TL. Marka tanımlanabilir bir maddi olmayan varlıktır ve zaten 1.100'ün içindedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Wrongly excludes the brand from identifiable assets (900 - (950 - 450)); the brand is identifiable and reduces goodwill.",
+          "tr": "Markayı tanımlanabilir varlıklardan yanlışlıkla çıkarır (900 - (950 - 450)); marka tanımlanabilirdir ve şerefiyeyi azaltır."
+        },
+        "C": {
+          "en": "Subtracts the brand a second time (250 - 150), double counting it.",
+          "tr": "Markayı ikinci kez düşer (250 - 150), çift sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need goodwill under the acquisition method.",
+          "tr": "Satın alma yöntemiyle şerefiye isteniyor."
+        },
+        {
+          "en": "Goodwill = purchase price - fair value of net identifiable assets.",
+          "tr": "Şerefiye = alış bedeli - net tanımlanabilir varlıkların gerçeğe uygun değeri.",
+          "formula_latex": "GW = P - (FV_{assets} - FV_{liab})"
+        },
+        {
+          "en": "Net identifiable assets = 1,100 - 450 = 650 (brand already included).",
+          "tr": "Net tanımlanabilir varlıklar = 1.100 - 450 = 650 (marka dahil).",
+          "values": {
+            "P": 900,
+            "FV_assets": 1100,
+            "FV_liab": 450
+          }
+        },
+        {
+          "en": "Goodwill = 900 - 650 = TRY 250 million.",
+          "tr": "Şerefiye = 900 - 650 = 250 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1100",
+          "[-]",
+          "450",
+          "[=]",
+          "[STO] 1",
+          "900",
+          "[-]",
+          "[RCL] 1",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda soldan sağa."
+      },
+      "numeric": {
+        "expr": "900-(1100-450)",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "acquire",
+        "identifiable",
+        "goodwill",
+        "fair-value",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Şerefiye hesabı TFRS 3 kapsamında Düzey 3'te geçer."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is least likely to appear as an intangible asset on a company's balance sheet?",
+      "stem_tr": "Aşağıdakilerden hangisinin bir şirketin bilançosunda maddi olmayan varlık olarak yer alması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A patent purchased from a university.",
+          "tr": "Bir üniversiteden satın alınan patent."
+        },
+        {
+          "key": "B",
+          "en": "A customer list obtained when acquiring a competitor.",
+          "tr": "Bir rakip satın alınırken edinilen müşteri listesi."
+        },
+        {
+          "key": "C",
+          "en": "A brand name built through the company's own advertising over twenty years.",
+          "tr": "Şirketin yirmi yıllık kendi reklamlarıyla oluşturduğu marka adı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Internally generated brands, customer lists and goodwill are not recognized as assets; their cost is expensed as advertising. Purchased patents and intangibles acquired in a business combination are recognized.",
+      "explanation_tr": "Şirket içinde yaratılan markalar, müşteri listeleri ve şerefiye varlık olarak kaydedilmez; maliyetleri reklam gideri yazılır. Satın alınan patentler ve işletme birleşmesinde edinilen maddi olmayan varlıklar kaydedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A purchased intangible is capitalized at cost under both IFRS and US GAAP.",
+          "tr": "Satın alınan maddi olmayan varlık hem IFRS hem US GAAP'te maliyetle aktifleştirilir."
+        },
+        "B": {
+          "en": "Identifiable intangibles acquired in a business combination are recognized at fair value.",
+          "tr": "İşletme birleşmesinde edinilen tanımlanabilir maddi olmayan varlıklar gerçeğe uygun değerle kaydedilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-likely",
+        "obtain",
+        "competitor",
+        "brand",
+        "advertising"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two otherwise identical firms start a large software project this year. Firm X capitalizes the qualifying development cost; Firm Y expenses it. In the current year, compared with Firm Y, Firm X most likely reports:",
+      "stem_tr": "Aynı koşullardaki iki şirket bu yıl büyük bir yazılım projesine başlar. X şirketi nitelikli geliştirme maliyetini aktifleştirir; Y şirketi gider yazar. Cari yılda, Y'ye kıyasla X büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher net income and higher operating cash flow.",
+          "tr": "daha yüksek net kâr ve daha yüksek işletme nakit akışı raporlar."
+        },
+        {
+          "key": "B",
+          "en": "higher net income but the same operating cash flow.",
+          "tr": "daha yüksek net kâr ama aynı işletme nakit akışı raporlar."
+        },
+        {
+          "key": "C",
+          "en": "lower net income and higher total cash flow.",
+          "tr": "daha düşük net kâr ve daha yüksek toplam nakit akışı raporlar."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Capitalizing removes the cost from this year's expenses (higher net income) and classifies the cash outflow as investing, so operating cash flow is higher. Total cash flow is identical for both firms.",
+      "explanation_tr": "Aktifleştirme maliyeti bu yılın giderlerinden çıkarır (daha yüksek net kâr) ve nakit çıkışını yatırım faaliyeti olarak sınıflar; işletme nakit akışı daha yüksektir. Toplam nakit akışı iki şirkette aynıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Operating cash flow differs: the capitalized outflow moves to investing activities.",
+          "tr": "İşletme nakit akışı farklıdır: aktifleştirilen çıkış yatırım faaliyetlerine geçer."
+        },
+        "C": {
+          "en": "Net income is higher, not lower, in the year of capitalization; total cash flow is the same.",
+          "tr": "Aktifleştirme yılında net kâr düşük değil yüksektir; toplam nakit akışı aynıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "otherwise",
+        "identical",
+        "qualifying",
+        "compared-with",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Goodwill arising from a business combination is most appropriately:",
+      "stem_tr": "İşletme birleşmesinden doğan şerefiye için en uygun işlem:",
+      "options": [
+        {
+          "key": "A",
+          "en": "amortized on a straight-line basis over its expected life.",
+          "tr": "beklenen ömrü boyunca doğrusal yöntemle itfa edilmesidir."
+        },
+        {
+          "key": "B",
+          "en": "not amortized but tested for impairment at least annually.",
+          "tr": "itfa edilmemesi ama en az yılda bir değer düşüklüğü testine tabi tutulmasıdır."
+        },
+        {
+          "key": "C",
+          "en": "expensed in full in the year of acquisition.",
+          "tr": "edinim yılında tamamen gider yazılmasıdır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Under both IFRS and US GAAP, goodwill is an indefinite-lived asset: it is carried at cost less any impairment, tested at least once a year, and never amortized.",
+      "explanation_tr": "Hem IFRS hem US GAAP'te şerefiye belirsiz ömürlü bir varlıktır: maliyet eksi değer düşüklüğü ile taşınır, en az yılda bir test edilir ve asla itfa edilmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Goodwill has no finite life; amortization applies to finite-lived intangibles.",
+          "tr": "Şerefiyenin sınırlı ömrü yoktur; itfa sınırlı ömürlü maddi olmayan varlıklara uygulanır."
+        },
+        "C": {
+          "en": "Goodwill is capitalized, not expensed; only internally generated goodwill is never recognized.",
+          "tr": "Şerefiye gider değil aktiftir; yalnızca şirket içinde yaratılan şerefiye kaydedilmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arise",
+        "goodwill",
+        "annually",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-a-q07",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "In-process research and development acquired in a business combination is most likely:",
+      "stem_tr": "İşletme birleşmesinde edinilen süregelen (devam eden) araştırma-geliştirme büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "expensed immediately under both IFRS and US GAAP.",
+          "tr": "hem IFRS hem US GAAP'te hemen gider yazılır."
+        },
+        {
+          "key": "B",
+          "en": "capitalized under IFRS only.",
+          "tr": "yalnızca IFRS'te aktifleştirilir."
+        },
+        {
+          "key": "C",
+          "en": "capitalized as an indefinite-lived intangible under both IFRS and US GAAP until the project is completed or abandoned.",
+          "tr": "hem IFRS hem US GAAP'te proje tamamlanana ya da terk edilene kadar belirsiz ömürlü maddi olmayan varlık olarak aktifleştirilir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Acquired in-process R&D is recognized at fair value as a separate intangible with an indefinite life under both frameworks; it is tested for impairment and starts amortization only when the project is finished.",
+      "explanation_tr": "Edinilen süregelen Ar-Ge her iki çerçevede de gerçeğe uygun değerle ayrı, belirsiz ömürlü bir maddi olmayan varlık olarak kaydedilir; değer düşüklüğü testine tabi tutulur ve itfa yalnızca proje bitince başlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Immediate expensing applies to the firm's own research, not to R&D bought in a combination.",
+          "tr": "Hemen gider yazma şirketin kendi araştırmasına uygulanır, birleşmede alınan Ar-Ge'ye değil."
+        },
+        "B": {
+          "en": "US GAAP also capitalizes acquired in-process R&D; the IFRS-only rule is for internally developed development costs.",
+          "tr": "US GAAP de edinilen süregelen Ar-Ge'yi aktifleştirir; yalnız-IFRS kuralı şirket içi geliştirme maliyetleri içindir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "in-process",
+        "abandon",
+        "indefinite",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Toros Enerji (IFRS) owns a turbine with a carrying amount of TRY 800,000. Its fair value less costs to sell is TRY 620,000 and its value in use is TRY 680,000. The impairment loss is closest to:",
+      "stem_tr": "Toros Enerji (IFRS) defter değeri 800.000 TL olan bir türbine sahiptir. Satış maliyetleri düşülmüş gerçeğe uygun değeri 620.000 TL, kullanım değeri 680.000 TL'dir. Değer düşüklüğü zararı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 180,000",
+          "tr": "180.000 TL",
+          "value": 180000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 120,000",
+          "tr": "120.000 TL",
+          "value": 120000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Recoverable amount = higher of 620,000 and 680,000 = 680,000. Loss = 800,000 - 680,000 = TRY 120,000.",
+      "explanation_tr": "Geri kazanılabilir tutar = 620.000 ile 680.000'den yüksek olanı = 680.000. Zarar = 800.000 - 680.000 = 120.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses fair value less costs to sell (the lower figure) instead of the higher of the two.",
+          "tr": "İkisinden yüksek olanı yerine satış maliyetleri düşülmüş gerçeğe uygun değeri (düşük rakamı) kullanır."
+        },
+        "C": {
+          "en": "Assumes no impairment; but the carrying amount exceeds the recoverable amount.",
+          "tr": "Değer düşüklüğü yok varsayar; oysa defter değeri geri kazanılabilir tutarı aşıyor."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the IFRS impairment loss.",
+          "tr": "IFRS değer düşüklüğü zararı isteniyor."
+        },
+        {
+          "en": "Loss = carrying amount - recoverable amount, where recoverable = max(FV less costs to sell, value in use).",
+          "tr": "Zarar = defter değeri - geri kazanılabilir tutar; geri kazanılabilir = maks(satış maliyeti düşülmüş GUD, kullanım değeri).",
+          "formula_latex": "Loss = CA - \\max(FVLCS, VIU)"
+        },
+        {
+          "en": "Recoverable = max(620,000; 680,000) = 680,000.",
+          "tr": "Geri kazanılabilir = maks(620.000; 680.000) = 680.000.",
+          "values": {
+            "CA": 800000,
+            "FVLCS": 620000,
+            "VIU": 680000
+          }
+        },
+        {
+          "en": "Loss = 800,000 - 680,000 = TRY 120,000.",
+          "tr": "Zarar = 800.000 - 680.000 = 120.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "800000",
+          "[-]",
+          "680000",
+          "[=]"
+        ],
+        "note_tr": "Önce iki tutardan büyüğünü seçin, sonra çıkarın."
+      },
+      "numeric": {
+        "expr": "800000-max(620000,680000)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "carrying-amount",
+        "value-in-use",
+        "recoverable-amount",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Under US GAAP, a company's machine has a carrying amount of TRY 500,000. Expected undiscounted future cash flows from the machine are TRY 480,000, the present value of those cash flows is TRY 410,000, and the fair value of the machine is TRY 430,000. The impairment loss recognized is closest to:",
+      "stem_tr": "US GAAP'e göre raporlayan bir şirketin makinesinin defter değeri 500.000 TL'dir. Makineden beklenen iskonto edilmemiş gelecek nakit akışları 480.000 TL, bu akışların bugünkü değeri 410.000 TL ve makinenin gerçeğe uygun değeri 430.000 TL'dir. Kaydedilen değer düşüklüğü zararı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 20,000",
+          "tr": "20.000 TL",
+          "value": 20000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 90,000",
+          "tr": "90.000 TL",
+          "value": 90000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 70,000",
+          "tr": "70.000 TL",
+          "value": 70000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Step 1: carrying amount 500,000 > undiscounted cash flows 480,000, so the asset is impaired. Step 2: loss = carrying amount - fair value = 500,000 - 430,000 = TRY 70,000.",
+      "explanation_tr": "1. adım: defter değeri 500.000 > iskonto edilmemiş nakit akışı 480.000, dolayısıyla varlık değer düşüklüğüne uğramıştır. 2. adım: zarar = defter değeri - gerçeğe uygun değer = 500.000 - 430.000 = 70.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Measures the loss against undiscounted cash flows (500,000 - 480,000); they are only the trigger test.",
+          "tr": "Zararı iskonto edilmemiş nakit akışına göre ölçer (500.000 - 480.000); onlar yalnızca tetikleme testidir."
+        },
+        "B": {
+          "en": "Uses the present value of cash flows (500,000 - 410,000), which is the IFRS value-in-use logic, not the US GAAP measure.",
+          "tr": "Nakit akışlarının bugünkü değerini kullanır (500.000 - 410.000); bu US GAAP ölçüsü değil IFRS kullanım değeri mantığıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the US GAAP impairment loss for an asset held for use.",
+          "tr": "Kullanımda tutulan varlık için US GAAP değer düşüklüğü zararı isteniyor."
+        },
+        {
+          "en": "Step 1 (recoverability): impaired if carrying amount > undiscounted cash flows.",
+          "tr": "1. adım (geri kazanılabilirlik): defter değeri > iskonto edilmemiş nakit akışları ise değer düşüklüğü var."
+        },
+        {
+          "en": "500,000 > 480,000, so the asset is impaired.",
+          "tr": "500.000 > 480.000, varlık değer düşüklüğüne uğramış.",
+          "values": {
+            "CA": 500000,
+            "undiscounted_CF": 480000
+          }
+        },
+        {
+          "en": "Step 2: loss = carrying amount - fair value = 500,000 - 430,000.",
+          "tr": "2. adım: zarar = defter değeri - gerçeğe uygun değer = 500.000 - 430.000.",
+          "formula_latex": "Loss = CA - FV",
+          "values": {
+            "FV": 430000
+          }
+        },
+        {
+          "en": "Loss = TRY 70,000.",
+          "tr": "Zarar = 70.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "500000",
+          "[-]",
+          "430000",
+          "[=]"
+        ],
+        "note_tr": "Önce 500.000 ile 480.000'i karşılaştırın (test), sonra gerçeğe uygun değeri çıkarın."
+      },
+      "numeric": {
+        "expr": "500000-430000",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "undiscounted",
+        "present-value",
+        "recognize",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company records a large impairment loss on its factory this year. All else equal, which of the following is the most likely effect?",
+      "stem_tr": "Bir şirket bu yıl fabrikası için büyük bir değer düşüklüğü zararı kaydeder. Diğer her şey sabitken en olası etki hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Operating cash flow falls in the current year.",
+          "tr": "Cari yılda işletme nakit akışı düşer."
+        },
+        {
+          "key": "B",
+          "en": "Return on assets falls this year but future depreciation expense is lower.",
+          "tr": "Bu yıl aktif kârlılığı düşer ama gelecekteki amortisman gideri daha düşük olur."
+        },
+        {
+          "key": "C",
+          "en": "Asset turnover falls because total assets are lower.",
+          "tr": "Toplam varlıklar düştüğü için aktif devir hızı düşer."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The loss reduces net income and total assets, so ROA falls in the impairment year. The lower carrying amount means smaller depreciation charges and higher profits in later years. There is no cash effect.",
+      "explanation_tr": "Zarar net kârı ve toplam varlıkları azaltır; değer düşüklüğü yılında aktif kârlılığı düşer. Daha düşük defter değeri sonraki yıllarda daha küçük amortisman ve daha yüksek kâr anlamına gelir. Nakit etkisi yoktur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An impairment is a non-cash charge; it is added back and operating cash flow is unchanged.",
+          "tr": "Değer düşüklüğü nakit dışı bir giderdir; geri eklenir, işletme nakit akışı değişmez."
+        },
+        "C": {
+          "en": "Lower total assets with the same sales raise asset turnover, not lower it.",
+          "tr": "Aynı satışla daha düşük toplam varlık aktif devir hızını düşürmez, yükseltir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "all-else-equal",
+        "effect",
+        "turnover",
+        "subsequent",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Çınar Tekstil sells a weaving machine for TRY 520,000. The machine originally cost TRY 1,200,000 and has accumulated depreciation of TRY 750,000 at the date of sale. The gain or loss on derecognition is closest to:",
+      "stem_tr": "Çınar Tekstil bir dokuma makinesini 520.000 TL'ye satar. Makinenin ilk maliyeti 1.200.000 TL, satış tarihindeki birikmiş amortismanı 750.000 TL'dir. Bilanço dışı bırakmadan doğan kazanç ya da zarar en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a gain of TRY 70,000.",
+          "tr": "70.000 TL kazanç.",
+          "value": 70000.0
+        },
+        {
+          "key": "B",
+          "en": "a loss of TRY 680,000.",
+          "tr": "680.000 TL zarar.",
+          "value": -680000.0
+        },
+        {
+          "key": "C",
+          "en": "a gain of TRY 520,000.",
+          "tr": "520.000 TL kazanç.",
+          "value": 520000.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Carrying amount = 1,200,000 - 750,000 = 450,000. Gain = proceeds - carrying amount = 520,000 - 450,000 = TRY 70,000, reported in the income statement (not as revenue).",
+      "explanation_tr": "Defter değeri = 1.200.000 - 750.000 = 450.000. Kazanç = hasılat - defter değeri = 520.000 - 450.000 = 70.000 TL; gelir tablosunda (hasılat olarak değil) raporlanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Compares proceeds with original cost (520,000 - 1,200,000) and ignores accumulated depreciation.",
+          "tr": "Hasılatı ilk maliyetle karşılaştırır (520.000 - 1.200.000), birikmiş amortismanı atlar."
+        },
+        "C": {
+          "en": "Treats the whole sale price as a gain, forgetting to subtract the carrying amount.",
+          "tr": "Tüm satış bedelini kazanç sayar, defter değerini düşmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the gain or loss on sale of a long-lived asset.",
+          "tr": "Uzun vadeli varlık satışındaki kazanç/zarar isteniyor."
+        },
+        {
+          "en": "Gain = proceeds - carrying amount; carrying amount = cost - accumulated depreciation.",
+          "tr": "Kazanç = hasılat - defter değeri; defter değeri = maliyet - birikmiş amortisman.",
+          "formula_latex": "Gain = Proceeds - (Cost - AccDep)"
+        },
+        {
+          "en": "Carrying amount = 1,200,000 - 750,000 = 450,000.",
+          "tr": "Defter değeri = 1.200.000 - 750.000 = 450.000.",
+          "values": {
+            "Cost": 1200000,
+            "AccDep": 750000,
+            "Proceeds": 520000
+          }
+        },
+        {
+          "en": "Gain = 520,000 - 450,000 = TRY 70,000.",
+          "tr": "Kazanç = 520.000 - 450.000 = 70.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1200000",
+          "[-]",
+          "750000",
+          "[=]",
+          "[STO] 1",
+          "520000",
+          "[-]",
+          "[RCL] 1",
+          "[=]"
+        ],
+        "note_tr": "Pozitif sonuç kazanç, negatif sonuç zarardır."
+      },
+      "numeric": {
+        "expr": "520000-(1200000-750000)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "proceeds",
+        "accumulated-depreciation",
+        "derecognition",
+        "originally",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Duran varlık satış kârı/zararı Düzey 3 muhasebede temel konudur."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Three years ago, Bolu Kağıt (IFRS) impaired a paper machine. Its carrying amount today is TRY 300,000. The recoverable amount is now TRY 420,000. Had the impairment never been recorded, the carrying amount today would be TRY 380,000. The reversal recognized in profit or loss is closest to:",
+      "stem_tr": "Üç yıl önce Bolu Kağıt (IFRS) bir kağıt makinesi için değer düşüklüğü ayırmıştı. Bugünkü defter değeri 300.000 TL'dir. Geri kazanılabilir tutar şimdi 420.000 TL'dir. Değer düşüklüğü hiç kaydedilmeseydi bugünkü defter değeri 380.000 TL olacaktı. Kâr veya zararda kaydedilen iptal tutarı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 120,000",
+          "tr": "120.000 TL",
+          "value": 120000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 80,000",
+          "tr": "80.000 TL",
+          "value": 80000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "IFRS limits the reversal to the carrying amount that would exist without the earlier impairment: 380,000. Reversal = 380,000 - 300,000 = TRY 80,000.",
+      "explanation_tr": "IFRS iptali, önceki değer düşüklüğü olmasaydı oluşacak defter değeriyle sınırlar: 380.000. İptal = 380.000 - 300.000 = 80.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reverses all the way to the recoverable amount (420,000 - 300,000), ignoring the cap.",
+          "tr": "Üst sınırı atlayıp geri kazanılabilir tutara kadar iptal eder (420.000 - 300.000)."
+        },
+        "C": {
+          "en": "Applies the US GAAP rule of no reversal; IFRS does allow reversal for PP&E.",
+          "tr": "US GAAP'in iptal yok kuralını uygular; IFRS maddi duran varlıkta iptale izin verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the IFRS impairment reversal.",
+          "tr": "IFRS değer düşüklüğü iptali isteniyor."
+        },
+        {
+          "en": "New carrying amount = min(recoverable amount, carrying amount without impairment).",
+          "tr": "Yeni defter değeri = min(geri kazanılabilir tutar, değer düşüklüğü olmasaydı oluşacak defter değeri).",
+          "formula_latex": "Reversal = \\min(RA, CA_{no\\ impairment}) - CA"
+        },
+        {
+          "en": "min(420,000; 380,000) = 380,000.",
+          "tr": "min(420.000; 380.000) = 380.000.",
+          "values": {
+            "RA": 420000,
+            "CA_no_impairment": 380000,
+            "CA": 300000
+          }
+        },
+        {
+          "en": "Reversal = 380,000 - 300,000 = TRY 80,000.",
+          "tr": "İptal = 380.000 - 300.000 = 80.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "380000",
+          "[-]",
+          "300000",
+          "[=]"
+        ],
+        "note_tr": "Önce üst sınırı (380.000) belirleyin."
+      },
+      "numeric": {
+        "expr": "min(420000,380000)-300000",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "reversal",
+        "recoverable-amount",
+        "cap",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under US GAAP, the reversal of a previously recognized impairment loss on a long-lived asset held for use is:",
+      "stem_tr": "US GAAP'e göre, kullanımda tutulan uzun vadeli bir varlıkta daha önce kaydedilmiş değer düşüklüğü zararının iptali:",
+      "options": [
+        {
+          "key": "A",
+          "en": "not permitted.",
+          "tr": "izin verilmez."
+        },
+        {
+          "key": "B",
+          "en": "permitted up to the amount of the original loss.",
+          "tr": "ilk zarar tutarına kadar izin verilir."
+        },
+        {
+          "key": "C",
+          "en": "permitted only if the asset is goodwill.",
+          "tr": "yalnızca varlık şerefiye ise izin verilir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "US GAAP prohibits reversal of impairment losses for assets held for use. Reversal is allowed only for assets held for sale, up to the earlier loss.",
+      "explanation_tr": "US GAAP kullanımda tutulan varlıklarda değer düşüklüğü iptalini yasaklar. İptale yalnızca satış amaçlı tutulan varlıklarda, önceki zarara kadar izin verilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That rule applies to assets held for sale (both frameworks) and, under IFRS, to PP&E held for use.",
+          "tr": "Bu kural satış amaçlı tutulan varlıklara (her iki sette) ve IFRS'te kullanımda tutulan maddi duran varlıklara uygulanır."
+        },
+        "C": {
+          "en": "Goodwill impairment is never reversed under either IFRS or US GAAP.",
+          "tr": "Şerefiye değer düşüklüğü ne IFRS'te ne US GAAP'te iptal edilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "previously",
+        "permit",
+        "held-for-sale",
+        "reversal"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q07",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Ayvalık Zeytin (IFRS, revaluation model) bought land for TRY 1,000,000. At the end of Year 1 the land was revalued to TRY 1,300,000. At the end of Year 2 its fair value fell to TRY 900,000. The amount recognized in profit or loss in Year 2 is closest to:",
+      "stem_tr": "Ayvalık Zeytin (IFRS, yeniden değerleme modeli) 1.000.000 TL'ye arsa aldı. 1. yıl sonunda arsa 1.300.000 TL'ye yeniden değerlendi. 2. yıl sonunda gerçeğe uygun değeri 900.000 TL'ye düştü. 2. yılda kâr veya zararda kaydedilen tutar en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a loss of TRY 400,000.",
+          "tr": "400.000 TL zarar.",
+          "value": 400000.0
+        },
+        {
+          "key": "B",
+          "en": "a loss of TRY 0; the whole decrease goes to OCI.",
+          "tr": "0 TL; azalışın tamamı diğer kapsamlı gelire gider.",
+          "value": 0.0
+        },
+        {
+          "key": "C",
+          "en": "a loss of TRY 100,000.",
+          "tr": "100.000 TL zarar.",
+          "value": 100000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The Year 1 increase of 300,000 was recorded in OCI as a revaluation surplus. The Year 2 decrease of 400,000 first eliminates that surplus (300,000 through OCI); the remaining 100,000 below original cost is a loss in profit or loss.",
+      "explanation_tr": "1. yıldaki 300.000 artış diğer kapsamlı gelire yeniden değerleme fazlası olarak yazılmıştı. 2. yıldaki 400.000 azalış önce bu fazlayı siler (300.000 OCI'dan); ilk maliyetin altına inen kalan 100.000 kâr veya zararda zarardır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Sends the whole decrease to profit or loss, ignoring the existing revaluation surplus in OCI.",
+          "tr": "Azalışın tamamını kâr veya zarara yazar, OCI'daki mevcut yeniden değerleme fazlasını atlar."
+        },
+        "B": {
+          "en": "OCI can absorb only the earlier surplus (300,000); the extra 100,000 must hit profit or loss.",
+          "tr": "OCI yalnızca önceki fazlayı (300.000) karşılayabilir; fazladan 100.000 kâr veya zarara yansımalıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the Year 2 profit-or-loss effect under the revaluation model.",
+          "tr": "Yeniden değerleme modelinde 2. yılın kâr/zarar etkisi isteniyor."
+        },
+        {
+          "en": "Year 1 surplus in OCI = 1,300,000 - 1,000,000 = 300,000.",
+          "tr": "1. yıl OCI fazlası = 1.300.000 - 1.000.000 = 300.000.",
+          "values": {
+            "cost": 1000000,
+            "FV1": 1300000,
+            "FV2": 900000
+          }
+        },
+        {
+          "en": "Year 2 decrease = 1,300,000 - 900,000 = 400,000.",
+          "tr": "2. yıl azalış = 1.300.000 - 900.000 = 400.000."
+        },
+        {
+          "en": "First 300,000 reverses the surplus in OCI; the rest goes to profit or loss.",
+          "tr": "İlk 300.000 OCI'daki fazlayı siler; kalan kâr veya zarara gider.",
+          "formula_latex": "P\\&L\\ loss = \\max(0, \\Delta - Surplus)"
+        },
+        {
+          "en": "Profit-or-loss loss = 400,000 - 300,000 = TRY 100,000.",
+          "tr": "Kâr/zarar zararı = 400.000 - 300.000 = 100.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1300000",
+          "[-]",
+          "900000",
+          "[-]",
+          "300000",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda soldan sağa."
+      },
+      "numeric": {
+        "expr": "max(0,(1300000-900000)-(1300000-1000000))",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "revaluation-surplus",
+        "other-comprehensive-income",
+        "decrease",
+        "eliminate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TMS 16 yeniden değerleme modeli Düzey 3 muhasebede işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-b-q08",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An impairment loss on PP&E is least likely to reduce which of the following in the year it is recognized?",
+      "stem_tr": "Maddi duran varlıkta kaydedilen değer düşüklüğü zararının, kaydedildiği yılda aşağıdakilerden hangisini azaltması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Net income.",
+          "tr": "Net kâr."
+        },
+        {
+          "key": "B",
+          "en": "Cash flow from operating activities.",
+          "tr": "İşletme faaliyetlerinden nakit akışı."
+        },
+        {
+          "key": "C",
+          "en": "Total assets.",
+          "tr": "Toplam varlıklar."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "An impairment is a non-cash expense. It lowers net income and total assets, but it is added back in the indirect cash flow statement, so operating cash flow is unaffected.",
+      "explanation_tr": "Değer düşüklüğü nakit dışı bir giderdir. Net kârı ve toplam varlıkları düşürür ama dolaylı nakit akış tablosunda geri eklenir; işletme nakit akışı etkilenmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The loss is an expense and directly reduces net income.",
+          "tr": "Zarar bir giderdir ve net kârı doğrudan azaltır."
+        },
+        "C": {
+          "en": "The asset's carrying amount is written down, so total assets fall.",
+          "tr": "Varlığın defter değeri düşürülür; toplam varlıklar azalır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-likely",
+        "recognize",
+        "operating-activities",
+        "non-cash"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Selçuk Makine reports gross equipment of TRY 2,400,000, accumulated depreciation of TRY 900,000 and annual depreciation expense of TRY 240,000. Assuming straight-line depreciation, the estimated average age of the equipment is closest to:",
+      "stem_tr": "Selçuk Makine brüt ekipman 2.400.000 TL, birikmiş amortisman 900.000 TL ve yıllık amortisman gideri 240.000 TL raporlar. Doğrusal amortisman varsayımıyla ekipmanın tahmini ortalama yaşı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.25 years",
+          "tr": "6,25 yıl",
+          "value": 6.25
+        },
+        {
+          "key": "B",
+          "en": "3.75 years",
+          "tr": "3,75 yıl",
+          "value": 3.75
+        },
+        {
+          "key": "C",
+          "en": "10.0 years",
+          "tr": "10,0 yıl",
+          "value": 10.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Average age = accumulated depreciation / depreciation expense = 900,000 / 240,000 = 3.75 years.",
+      "explanation_tr": "Ortalama yaş = birikmiş amortisman / amortisman gideri = 900.000 / 240.000 = 3,75 yıl.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides net PP&E (1,500,000) by depreciation; that gives remaining useful life.",
+          "tr": "Net maddi duran varlığı (1.500.000) amortismana böler; bu kalan faydalı ömrü verir."
+        },
+        "C": {
+          "en": "Divides gross PP&E by depreciation; that gives total useful life.",
+          "tr": "Brüt maddi duran varlığı amortismana böler; bu toplam faydalı ömrü verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the average age of the equipment.",
+          "tr": "Ekipmanın ortalama yaşı isteniyor."
+        },
+        {
+          "en": "Average age = accumulated depreciation / annual depreciation expense.",
+          "tr": "Ortalama yaş = birikmiş amortisman / yıllık amortisman gideri.",
+          "formula_latex": "Age = \\frac{AccDep}{DepExp}"
+        },
+        {
+          "en": "900,000 / 240,000 = 3.75.",
+          "tr": "900.000 / 240.000 = 3,75.",
+          "values": {
+            "AccDep": 900000,
+            "DepExp": 240000
+          }
+        },
+        {
+          "en": "Average age = 3.75 years.",
+          "tr": "Ortalama yaş = 3,75 yıl."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900000",
+          "[÷]",
+          "240000",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "900000/240000",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "accumulated-depreciation",
+        "average-age",
+        "assume",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Göksu İnşaat's notes show gross PP&E (excluding land) of TRY 3,600,000, accumulated depreciation of TRY 1,350,000 and depreciation expense of TRY 300,000 for the year. The estimated remaining useful life of the PP&E is closest to:",
+      "stem_tr": "Göksu İnşaat'ın dipnotları arsa hariç brüt maddi duran varlık 3.600.000 TL, birikmiş amortisman 1.350.000 TL ve yıllık amortisman gideri 300.000 TL gösteriyor. Maddi duran varlığın tahmini kalan faydalı ömrü en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.5 years",
+          "tr": "7,5 yıl",
+          "value": 7.5
+        },
+        {
+          "key": "B",
+          "en": "4.5 years",
+          "tr": "4,5 yıl",
+          "value": 4.5
+        },
+        {
+          "key": "C",
+          "en": "12.0 years",
+          "tr": "12,0 yıl",
+          "value": 12.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net PP&E = 3,600,000 - 1,350,000 = 2,250,000. Remaining life = 2,250,000 / 300,000 = 7.5 years (total life 12 - age 4.5).",
+      "explanation_tr": "Net maddi duran varlık = 3.600.000 - 1.350.000 = 2.250.000. Kalan ömür = 2.250.000 / 300.000 = 7,5 yıl (toplam ömür 12 - yaş 4,5).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the average age (1,350,000 / 300,000), not the remaining life.",
+          "tr": "Bu ortalama yaştır (1.350.000 / 300.000), kalan ömür değil."
+        },
+        "C": {
+          "en": "This is the total useful life (3,600,000 / 300,000).",
+          "tr": "Bu toplam faydalı ömürdür (3.600.000 / 300.000)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the remaining useful life.",
+          "tr": "Kalan faydalı ömür isteniyor."
+        },
+        {
+          "en": "Remaining life = net PP&E / depreciation expense; net PP&E = gross - accumulated depreciation.",
+          "tr": "Kalan ömür = net MDV / amortisman gideri; net MDV = brüt - birikmiş amortisman.",
+          "formula_latex": "Remaining = \\frac{Gross - AccDep}{DepExp}"
+        },
+        {
+          "en": "Net PP&E = 3,600,000 - 1,350,000 = 2,250,000.",
+          "tr": "Net MDV = 3.600.000 - 1.350.000 = 2.250.000.",
+          "values": {
+            "Gross": 3600000,
+            "AccDep": 1350000,
+            "DepExp": 300000
+          }
+        },
+        {
+          "en": "2,250,000 / 300,000 = 7.5 years.",
+          "tr": "2.250.000 / 300.000 = 7,5 yıl."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3600000",
+          "[-]",
+          "1350000",
+          "[÷]",
+          "300000",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda çıkarma önce yapılır."
+      },
+      "numeric": {
+        "expr": "(3600000-1350000)/300000",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "remaining-useful-life",
+        "notes",
+        "exclude",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bursa Otomotiv has gross depreciable PP&E of TRY 5,000,000, net PP&E of TRY 3,200,000 and annual depreciation expense of TRY 400,000. The estimated total useful life of its assets is closest to:",
+      "stem_tr": "Bursa Otomotiv'in amortismana tabi brüt maddi duran varlığı 5.000.000 TL, net maddi duran varlığı 3.200.000 TL ve yıllık amortisman gideri 400.000 TL'dir. Varlıklarının tahmini toplam faydalı ömrü en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.0 years",
+          "tr": "8,0 yıl",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "4.5 years",
+          "tr": "4,5 yıl",
+          "value": 4.5
+        },
+        {
+          "key": "C",
+          "en": "12.5 years",
+          "tr": "12,5 yıl",
+          "value": 12.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Total useful life = gross PP&E / depreciation expense = 5,000,000 / 400,000 = 12.5 years. Check: age 1,800,000 / 400,000 = 4.5 plus remaining 3,200,000 / 400,000 = 8.0 equals 12.5.",
+      "explanation_tr": "Toplam faydalı ömür = brüt MDV / amortisman gideri = 5.000.000 / 400.000 = 12,5 yıl. Kontrol: yaş 1.800.000 / 400.000 = 4,5 artı kalan 3.200.000 / 400.000 = 8,0 eşittir 12,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses net PP&E (3,200,000 / 400,000); that is the remaining life.",
+          "tr": "Net MDV'yi kullanır (3.200.000 / 400.000); bu kalan ömürdür."
+        },
+        "B": {
+          "en": "Uses accumulated depreciation (1,800,000 / 400,000); that is the average age.",
+          "tr": "Birikmiş amortismanı kullanır (1.800.000 / 400.000); bu ortalama yaştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the total useful life.",
+          "tr": "Toplam faydalı ömür isteniyor."
+        },
+        {
+          "en": "Total life = gross PP&E / depreciation expense.",
+          "tr": "Toplam ömür = brüt MDV / amortisman gideri.",
+          "formula_latex": "Life = \\frac{Gross}{DepExp}"
+        },
+        {
+          "en": "5,000,000 / 400,000 = 12.5.",
+          "tr": "5.000.000 / 400.000 = 12,5.",
+          "values": {
+            "Gross": 5000000,
+            "DepExp": 400000
+          }
+        },
+        {
+          "en": "Total useful life = 12.5 years.",
+          "tr": "Toplam faydalı ömür = 12,5 yıl."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000000",
+          "[÷]",
+          "400000",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "5000000/400000",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "gross-ppe",
+        "depreciable",
+        "useful-life",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two shipping companies use straight-line depreciation and similar vessel types. Alfa's estimated average asset age is 3 years; Beta's is 11 years, close to Beta's estimated total useful life of 13 years. Which conclusion is most appropriate?",
+      "stem_tr": "İki denizcilik şirketi doğrusal amortisman ve benzer gemi tipleri kullanıyor. Alfa'nın tahmini ortalama varlık yaşı 3 yıl; Beta'nınki 11 yıl ve Beta'nın tahmini toplam faydalı ömrü olan 13 yıla yakın. En uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Beta is likely to need significant capital expenditure soon, and its current depreciation may understate the cost of replacing its fleet.",
+          "tr": "Beta yakında önemli bir yatırım harcamasına ihtiyaç duyacaktır; mevcut amortismanı filoyu yenileme maliyetini olduğundan düşük gösteriyor olabilir."
+        },
+        {
+          "key": "B",
+          "en": "Beta uses more conservative depreciation assumptions than Alfa.",
+          "tr": "Beta, Alfa'dan daha ihtiyatlı amortisman varsayımları kullanıyor."
+        },
+        {
+          "key": "C",
+          "en": "Alfa's vessels are less efficient because they are newer and not yet fully depreciated.",
+          "tr": "Alfa'nın gemileri daha yeni ve henüz tam amortize olmadığı için daha az verimli."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "An old asset base near the end of its life signals that replacement spending is coming. Because the old fleet was bought at lower historical prices, current depreciation understates the true economic cost, which may inflate Beta's margins and ROA.",
+      "explanation_tr": "Ömrünün sonuna yaklaşmış eski bir varlık tabanı yenileme harcamasının yaklaştığını gösterir. Eski filo daha düşük tarihi fiyatlarla alındığından, mevcut amortisman gerçek ekonomik maliyeti olduğundan düşük gösterir; bu da Beta'nın marjlarını ve aktif kârlılığını şişirebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Age estimates say nothing about how conservative the assumptions are; both use similar lives.",
+          "tr": "Yaş tahminleri varsayımların ne kadar ihtiyatlı olduğunu söylemez; ikisi de benzer ömür kullanıyor."
+        },
+        "C": {
+          "en": "Newer assets are usually more, not less, efficient; depreciation status does not measure efficiency.",
+          "tr": "Yeni varlıklar genelde daha az değil daha verimlidir; amortisman durumu verimliliği ölçmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "vessel",
+        "significant",
+        "understate",
+        "fleet",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The estimate of average asset age from financial statement disclosures is least reliable when the company:",
+      "stem_tr": "Finansal tablo dipnotlarından yapılan ortalama varlık yaşı tahmini, şirket aşağıdakilerden hangisini yapıyorsa en az güvenilirdir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "uses straight-line depreciation for all asset classes.",
+          "tr": "tüm varlık sınıflarında doğrusal amortisman kullanıyorsa."
+        },
+        {
+          "key": "B",
+          "en": "uses accelerated depreciation and holds a mix of very different asset types.",
+          "tr": "hızlandırılmış amortisman kullanıyor ve çok farklı varlık tiplerinden oluşan bir karma tutuyorsa."
+        },
+        {
+          "key": "C",
+          "en": "excludes land from gross PP&E in the calculation.",
+          "tr": "hesaplamada arsayı brüt maddi duran varlıktan çıkarıyorsa."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The ratios assume straight-line depreciation and a homogeneous asset base. Accelerated methods and a mix of assets with very different lives distort the estimate.",
+      "explanation_tr": "Oranlar doğrusal amortisman ve türdeş bir varlık tabanı varsayar. Hızlandırılmış yöntemler ve çok farklı ömürlü varlık karması tahmini bozar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Straight-line depreciation is exactly the assumption that makes the estimate work.",
+          "tr": "Doğrusal amortisman tam da tahmini çalıştıran varsayımdır."
+        },
+        "C": {
+          "en": "Excluding land is correct because land is not depreciated; it improves the estimate.",
+          "tr": "Arsayı çıkarmak doğrudur çünkü arsa amortismana tabi değildir; tahmini iyileştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reliable",
+        "accelerated-depreciation",
+        "homogeneous",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-07-c-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-07",
+      "los_id": "FSA-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "During the year, Kapadokya Turizm spent TRY 660,000 on new PP&E and recorded depreciation expense of TRY 440,000. The ratio of capital expenditure to depreciation is closest to:",
+      "stem_tr": "Yıl içinde Kapadokya Turizm yeni maddi duran varlıklara 660.000 TL harcadı ve 440.000 TL amortisman gideri kaydetti. Yatırım harcamasının amortismana oranı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.67",
+          "tr": "0,67",
+          "value": 0.6667
+        },
+        {
+          "key": "B",
+          "en": "2.20",
+          "tr": "2,20",
+          "value": 2.2
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Capex / depreciation = 660,000 / 440,000 = 1.50. A ratio above 1 suggests the company is growing or replacing its asset base faster than it wears out.",
+      "explanation_tr": "Yatırım harcaması / amortisman = 660.000 / 440.000 = 1,50. 1'in üstündeki oran, şirketin varlık tabanını aşınmasından daha hızlı büyüttüğünü ya da yenilediğini gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Inverts the ratio (440,000 / 660,000).",
+          "tr": "Oranı ters çevirir (440.000 / 660.000)."
+        },
+        "B": {
+          "en": "Divides capex by a wrong figure (660,000 / 300,000); the depreciation given is 440,000.",
+          "tr": "Yatırım harcamasını yanlış rakama böler (660.000 / 300.000); verilen amortisman 440.000'dir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need capex divided by depreciation expense.",
+          "tr": "Yatırım harcaması bölü amortisman gideri isteniyor."
+        },
+        {
+          "en": "Ratio = capex / depreciation.",
+          "tr": "Oran = yatırım harcaması / amortisman.",
+          "formula_latex": "\\frac{CapEx}{DepExp}"
+        },
+        {
+          "en": "660,000 / 440,000 = 1.50.",
+          "tr": "660.000 / 440.000 = 1,50.",
+          "values": {
+            "CapEx": 660000,
+            "DepExp": 440000
+          }
+        },
+        {
+          "en": "Ratio = 1.50 (above 1: asset base is growing).",
+          "tr": "Oran = 1,50 (1'in üstü: varlık tabanı büyüyor)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "660000",
+          "[÷]",
+          "440000",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "660000/440000"
+      },
+      "vocab_ids": [
+        "capital-expenditure",
+        "ratio",
+        "wear-out",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

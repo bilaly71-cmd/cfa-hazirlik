@@ -1,0 +1,2519 @@
+{
+  "module_id": "FSA-02",
+  "lesson": {
+    "id": "FSA-02-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-02",
+    "los_ids": [
+      "FSA-02-a",
+      "FSA-02-b",
+      "FSA-02-c",
+      "FSA-02-d",
+      "FSA-02-e"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analyzing Income Statements",
+    "title_tr": "Gelir Tablosunun Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "What the income statement tells you",
+        "heading_tr": "Gelir tablosu ne anlatır?",
+        "en": "Marmara Gıda A.S., a fictional food producer on Borsa Istanbul, publishes its income statement on KAP every quarter. The statement shows revenue at the top, then expenses, and net income at the bottom. But two companies with the same net income can be very different. One may recognize revenue early, capitalize many costs and report a one-time gain. The other may be conservative. An analyst must look inside the numbers: how is revenue recognized, which costs are expensed now and which are spread over years, and which items will not repeat next year. In Türkiye, since the 2023 year-end, TMS 29 (inflation accounting) adds one more line, the net monetary position gain or loss, which also needs careful reading.",
+        "tr": "Borsa İstanbul'da işlem gören kurgusal bir gıda üreticisi olan Marmara Gıda A.Ş., gelir tablosunu her çeyrek KAP'ta yayımlar. Tabloda en üstte hasılat, sonra giderler ve en altta net kâr yer alır. Ancak aynı net kârı açıklayan iki şirket birbirinden çok farklı olabilir. Biri hasılatı erken muhasebeleştirip birçok maliyeti aktifleştirmiş ve tek seferlik bir kazanç raporlamış olabilir; diğeri ihtiyatlı davranmıştır. Analist rakamların içine bakmalıdır: hasılat nasıl muhasebeleştiriliyor, hangi maliyetler hemen giderleştirilip hangileri yıllara yayılıyor ve hangi kalemler gelecek yıl tekrar etmeyecek? Türkiye'de 2023 yıl sonundan beri uygulanan TMS 29 (enflasyon muhasebesi) tabloya bir satır daha ekler: net parasal pozisyon kazancı veya kaybı. Bu satır da dikkatle okunmalıdır.",
+        "key_terms": [
+          "income statement",
+          "revenue",
+          "net income",
+          "net monetary position"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Revenue recognition: the five-step model",
+        "heading_tr": "Hasılatın muhasebeleştirilmesi: beş adımlı model",
+        "en": "IFRS 15 and US GAAP (ASC 606) use the same converged model. Revenue is recognized when control of a good or service transfers to the customer, not when cash is received. The five steps are: (1) identify the contract with the customer; (2) identify the separate performance obligations; (3) determine the transaction price; (4) allocate the price to the performance obligations based on stand-alone selling prices; (5) recognize revenue when (or as) each obligation is satisfied. A performance obligation can be satisfied over time (for example a long-term construction contract, measured by the cost-to-cost method) or at a point in time (a retail sale). Variable consideration, such as rebates or bonuses, is included only to the extent that a significant reversal is not expected. A company that controls the good before transfer is a principal and reports gross revenue; an agent reports only its commission (net).",
+        "tr": "UFRS 15 ve US GAAP (ASC 606) aynı yakınsanmış modeli kullanır. Hasılat, nakit tahsil edildiğinde değil, mal veya hizmetin kontrolü müşteriye geçtiğinde muhasebeleştirilir. Beş adım şöyledir: (1) müşteriyle yapılan sözleşmeyi belirle; (2) ayrı edim yükümlülüklerini belirle; (3) işlem bedelini tespit et; (4) bedeli tek başına satış fiyatlarına göre edim yükümlülüklerine dağıt; (5) her yükümlülük yerine getirildikçe veya getirildiğinde hasılatı muhasebeleştir. Bir edim yükümlülüğü zamana yayılı olarak (örneğin maliyet oranı yöntemiyle ölçülen uzun vadeli inşaat sözleşmesi) ya da belirli bir anda (perakende satış) yerine getirilebilir. İskonto veya prim gibi değişken bedeller, yalnızca önemli bir iptalin beklenmediği ölçüde işlem bedeline dahil edilir. Malı devirden önce kontrol eden şirket asıl işletmedir ve brüt hasılat raporlar; aracı ise yalnızca komisyonunu (net) raporlar.",
+        "key_terms": [
+          "performance obligation",
+          "transaction price",
+          "control",
+          "principal",
+          "agent",
+          "variable consideration"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Expense recognition and the capitalize-or-expense choice",
+        "heading_tr": "Giderlerin muhasebeleştirilmesi ve aktifleştirme-giderleştirme tercihi",
+        "en": "The matching principle says that costs should be recognized in the same period as the revenue they help to create. Cost of goods sold follows the inventory cost flow method (FIFO, weighted average, or LIFO under US GAAP only). Bad debt expense and warranty expense are estimated in the period of sale, not when the loss actually happens. Costs with a future benefit are capitalized as an asset and then depreciated or amortized; other costs are expensed immediately. Capitalizing a cost raises assets, net income and operating cash flow in the first year (the outflow goes to investing), and lowers net income in later years through depreciation. Research costs are expensed under both IFRS and US GAAP; development costs are capitalized under IFRS when strict criteria are met, but expensed under US GAAP except for certain software costs. Interest on self-constructed assets is capitalized under both frameworks.",
+        "tr": "Eşleştirme ilkesine göre maliyetler, oluşmasına katkı sağladıkları hasılatla aynı dönemde muhasebeleştirilmelidir. Satışların maliyeti, stok maliyet akış yöntemini izler (FIFO, ağırlıklı ortalama ya da yalnızca US GAAP'te LIFO). Şüpheli alacak gideri ve garanti gideri, zarar fiilen gerçekleştiğinde değil, satışın yapıldığı dönemde tahmin edilir. Gelecekte fayda sağlayacak maliyetler varlık olarak aktifleştirilip sonra amortismana veya itfaya tabi tutulur; diğer maliyetler hemen giderleştirilir. Bir maliyetin aktifleştirilmesi ilk yıl varlıkları, net kârı ve işletme nakit akışını yükseltir (nakit çıkışı yatırım faaliyetlerine gider), sonraki yıllarda ise amortisman yoluyla net kârı düşürür. Araştırma maliyetleri hem UFRS hem US GAAP'te giderleştirilir; geliştirme maliyetleri UFRS'de sıkı koşullar sağlanınca aktifleştirilir, US GAAP'te ise belirli yazılım maliyetleri dışında giderleştirilir. Şirketin kendi inşa ettiği varlıkların faizi her iki çerçevede de aktifleştirilir.",
+        "key_terms": [
+          "matching principle",
+          "capitalize",
+          "expense",
+          "depreciation",
+          "development costs",
+          "allowance"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Effect of capitalizing (vs expensing), year 1",
+              "tr": "Aktifleştirmenin (giderleştirmeye göre) etkisi, 1. yıl"
+            },
+            {
+              "en": "Direction",
+              "tr": "Yön"
+            }
+          ],
+          "rows": [
+            [
+              "Total assets / Toplam varlıklar",
+              "Higher / Daha yüksek"
+            ],
+            [
+              "Net income, year 1 / Net kâr, 1. yıl",
+              "Higher / Daha yüksek"
+            ],
+            [
+              "Net income, later years / Net kâr, sonraki yıllar",
+              "Lower (depreciation) / Daha düşük (amortisman)"
+            ],
+            [
+              "Cash flow from operations / İşletme nakit akışı",
+              "Higher (outflow moves to investing) / Daha yüksek (çıkış yatırıma kayar)"
+            ],
+            [
+              "Earnings volatility / Kâr oynaklığı",
+              "Lower (smoother) / Daha düşük (daha düzgün)"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Non-recurring items and accounting changes",
+        "heading_tr": "Tekrarlanmayan kalemler ve muhasebe değişiklikleri",
+        "en": "Analysts separate recurring from non-recurring income. Discontinued operations (a component the company has sold or plans to sell) are shown separately, net of tax, below income from continuing operations under both IFRS and US GAAP. Unusual or infrequent items, such as a restructuring charge or a gain on the sale of a factory, stay inside continuing operations but are presented separately, before tax. Neither framework allows an 'extraordinary' line anymore. A change in accounting policy (for example from weighted average to FIFO) is applied retrospectively: prior statements are restated. A change in accounting estimate (for example a longer useful life) is applied prospectively: only current and future periods change. A correction of a prior-period error is also retrospective, with a restatement and adjustment of opening retained earnings.",
+        "tr": "Analistler tekrarlayan ve tekrarlanmayan kârı birbirinden ayırır. Durdurulan faaliyetler (şirketin sattığı ya da satmayı planladığı bir bölüm) hem UFRS hem US GAAP'te sürdürülen faaliyet kârının altında, vergi sonrası ayrı gösterilir. Yeniden yapılandırma gideri veya bir fabrikanın satış kazancı gibi olağandışı ya da seyrek kalemler sürdürülen faaliyetlerin içinde kalır ama vergi öncesi ayrı sunulur. Artık hiçbir çerçeve 'olağanüstü' satırına izin vermez. Muhasebe politikası değişikliği (örneğin ağırlıklı ortalamadan FIFO'ya geçiş) geriye dönük uygulanır: önceki tablolar yeniden düzenlenir. Muhasebe tahmini değişikliği (örneğin daha uzun faydalı ömür) ileriye dönük uygulanır: yalnızca cari ve gelecek dönemler değişir. Önceki dönem hatasının düzeltilmesi de geriye dönüktür; tablolar yeniden düzenlenir ve dönem başı geçmiş yıl kârları düzeltilir.",
+        "key_terms": [
+          "discontinued operations",
+          "unusual or infrequent",
+          "retrospective",
+          "prospective",
+          "restatement"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Event",
+              "tr": "Olay"
+            },
+            {
+              "en": "Treatment",
+              "tr": "İşlem"
+            }
+          ],
+          "rows": [
+            [
+              "Discontinued operation / Durdurulan faaliyet",
+              "Separate line, net of tax, below continuing operations / Ayrı satır, vergi sonrası, sürdürülen faaliyetlerin altında"
+            ],
+            [
+              "Unusual or infrequent item / Olağandışı veya seyrek kalem",
+              "Within continuing operations, shown separately, pre-tax / Sürdürülen faaliyetler içinde, ayrı, vergi öncesi"
+            ],
+            [
+              "Change in accounting policy / Politika değişikliği",
+              "Retrospective (restate prior periods) / Geriye dönük (önceki dönemler yeniden düzenlenir)"
+            ],
+            [
+              "Change in estimate / Tahmin değişikliği",
+              "Prospective (current and future) / İleriye dönük (cari ve gelecek)"
+            ],
+            [
+              "Error correction / Hata düzeltmesi",
+              "Retrospective restatement / Geriye dönük yeniden düzenleme"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Basic and diluted EPS",
+        "heading_tr": "Adi ve sulandırılmış pay başına kazanç",
+        "en": "Basic EPS is net income available to common shareholders divided by the weighted average number of common shares outstanding. Preferred dividends are subtracted because they belong to preferred shareholders. Stock splits and stock dividends are applied to all periods as if they happened at the start of the earliest period. Diluted EPS asks: what would EPS be if all dilutive securities were converted? For convertible preferred stock, use the if-converted method: add back the preferred dividend to the numerator and add the new shares to the denominator. For convertible bonds, add back the after-tax interest and add the new shares. For options and warrants, use the treasury stock method: the company receives the exercise price and is assumed to buy back shares at the average market price; only the net new shares are added. A security is antidilutive if including it would raise EPS; antidilutive securities are excluded, so diluted EPS can never be higher than basic EPS.",
+        "tr": "Adi pay başına kazanç, adi pay sahiplerine ait net kârın dolaşımdaki ağırlıklı ortalama adi pay sayısına bölünmesiyle bulunur. İmtiyazlı pay temettüleri, imtiyazlı pay sahiplerine ait olduğu için düşülür. Pay bölünmeleri ve bedelsiz pay dağıtımları, en eski dönemin başında olmuş gibi tüm dönemlere uygulanır. Sulandırılmış pay başına kazanç şu soruyu sorar: tüm sulandırıcı menkul kıymetler dönüştürülseydi kazanç ne olurdu? Dönüştürülebilir imtiyazlı paylarda dönüştürülmüş varsayımı yöntemi kullanılır: imtiyazlı temettü paya eklenir, yeni paylar paydaya eklenir. Dönüştürülebilir tahvillerde vergi sonrası faiz paya, yeni paylar paydaya eklenir. Opsiyon ve varantlarda hazine payı yöntemi kullanılır: şirket kullanım fiyatını tahsil eder ve bu parayla ortalama piyasa fiyatından pay geri aldığı varsayılır; yalnızca net yeni paylar eklenir. Dahil edilmesi kazancı yükseltecek bir menkul kıymet sulandırma karşıtıdır; bu kıymetler hesaba katılmaz, dolayısıyla sulandırılmış kazanç hiçbir zaman adi kazançtan yüksek olamaz.",
+        "key_terms": [
+          "basic EPS",
+          "diluted EPS",
+          "if-converted method",
+          "treasury stock method",
+          "antidilutive",
+          "weighted average shares"
+        ],
+        "formula_latex": "\\text{Basic EPS}=\\frac{NI-\\text{Pref. div.}}{\\text{Weighted avg. shares}}\\qquad \\text{Diluted EPS}=\\frac{NI-\\text{Pref. div.}+\\text{Conv. pref. div.}+\\text{Conv. int.}\\left(1-t\\right)}{\\text{W. avg. shares}+\\text{Conv. shares}+\\text{Net option shares}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "EPS with convertible preferred and options",
+        "heading_tr": "Dönüştürülebilir imtiyazlı pay ve opsiyonlu kazanç örneği",
+        "en": "Kuzey Lojistik (fictional) reports net income of TRY 50 million. It has 20 million common shares all year and pays TRY 4 million of dividends on convertible preferred shares that can become 5 million common shares. It also has 2 million employee options with an exercise price of TRY 30; the average share price in the year was TRY 50. Step 1, basic EPS = (50 - 4) / 20 = TRY 2.30. Step 2, test the preferred: 4 / 5 = 0.80 per share, below 2.30, so it is dilutive. Step 3, options: exercise brings 2 x 30 = TRY 60 million, which buys back 60 / 50 = 1.2 million shares; net new shares = 2.0 - 1.2 = 0.8 million. Options are dilutive because the exercise price is below the average price. Diluted EPS = (50 - 4 + 4) / (20 + 5 + 0.8) = 50 / 25.8 = TRY 1.94.",
+        "tr": "Kurgusal Kuzey Lojistik 50 milyon TL net kâr açıklar. Yıl boyunca 20 milyon adi payı vardır ve 5 milyon adi paya dönüştürülebilen imtiyazlı paylara 4 milyon TL temettü öder. Ayrıca kullanım fiyatı 30 TL olan 2 milyon çalışan opsiyonu vardır; yıl içindeki ortalama pay fiyatı 50 TL'dir. 1. adım, adi kazanç = (50 − 4) / 20 = 2,30 TL. 2. adım, imtiyazlı payı test et: 4 / 5 = pay başına 0,80; 2,30'un altında olduğu için sulandırıcıdır. 3. adım, opsiyonlar: kullanım 2 × 30 = 60 milyon TL getirir, bununla 60 / 50 = 1,2 milyon pay geri alınır; net yeni pay = 2,0 − 1,2 = 0,8 milyon. Kullanım fiyatı ortalama fiyatın altında olduğu için opsiyonlar sulandırıcıdır. Sulandırılmış kazanç = (50 − 4 + 4) / (20 + 5 + 0,8) = 50 / 25,8 = 1,94 TL.",
+        "key_terms": [
+          "dilutive",
+          "exercise price",
+          "average market price"
+        ],
+        "example": {
+          "en": "Basic EPS = 46 / 20 = 2.30; diluted EPS = 50 / 25.8 = 1.94 (lower, as it must be).",
+          "tr": "Adi kazanç = 46 / 20 = 2,30; sulandırılmış kazanç = 50 / 25,8 = 1,94 (olması gerektiği gibi daha düşük).",
+          "formula_latex": "\\text{Net option shares}=2-\\frac{2\\times 30}{50}=0.8"
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Common-size income statement and margins",
+        "heading_tr": "Dikey gelir tablosu ve kâr marjları",
+        "en": "A common-size income statement expresses every line as a percentage of revenue. This removes the size effect, so a small company can be compared with a large one, and one year with another. The key ratios are gross profit margin (gross profit / revenue), operating profit margin (operating income / revenue), pretax margin (income before tax / revenue) and net profit margin (net income / revenue). The effective tax rate can also be read from the statement as income tax expense divided by pretax income. Reading the trend is more useful than a single number: a falling gross margin with a stable operating margin means the company cut operating expenses to protect profit. Under TMS 29, Turkish statements are restated to year-end purchasing power, so analysts should compare restated figures with restated figures.",
+        "tr": "Dikey (ortak büyüklük) gelir tablosu her satırı hasılatın yüzdesi olarak gösterir. Bu, büyüklük etkisini ortadan kaldırır; böylece küçük bir şirket büyük bir şirketle, bir yıl başka bir yılla karşılaştırılabilir. Temel oranlar brüt kâr marjı (brüt kâr / hasılat), faaliyet kâr marjı (faaliyet kârı / hasılat), vergi öncesi kâr marjı (vergi öncesi kâr / hasılat) ve net kâr marjıdır (net kâr / hasılat). Efektif vergi oranı da tablodan okunabilir: vergi gideri / vergi öncesi kâr. Tek bir rakamdan çok eğilimi okumak işe yarar: faaliyet marjı sabitken brüt marjın düşmesi, şirketin kârı korumak için faaliyet giderlerini kıstığı anlamına gelir. TMS 29 kapsamında Türk şirketlerinin tabloları yıl sonu satın alma gücüne göre düzeltilir; bu yüzden analist düzeltilmiş rakamı düzeltilmiş rakamla karşılaştırmalıdır.",
+        "key_terms": [
+          "common-size",
+          "gross profit margin",
+          "operating margin",
+          "net profit margin",
+          "effective tax rate"
+        ],
+        "formula_latex": "\\text{Gross margin}=\\frac{\\text{Gross profit}}{\\text{Revenue}},\\quad \\text{Operating margin}=\\frac{\\text{Operating income}}{\\text{Revenue}},\\quad \\text{Net margin}=\\frac{\\text{Net income}}{\\text{Revenue}}"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık tuzaklar",
+        "en": "First, revenue is recognized when control transfers, not when cash arrives or an invoice is sent. Second, in EPS questions use the average market price for the treasury stock method, never the year-end price. Third, always test each security for dilution separately; a convertible bond with high after-tax interest per new share can be antidilutive even when the preferred is dilutive. Fourth, a stock split is applied to the whole year (and to prior years), while a share issue for cash is weighted by the months it was outstanding. Fifth, a change in estimate is never restated; a change in policy and an error correction are. Sixth, do not call a restructuring charge 'extraordinary'; the label is not allowed under IFRS or US GAAP. Finally, in common-size analysis, make sure the base is revenue, not total expenses or total assets.",
+        "tr": "Birincisi, hasılat nakit geldiğinde ya da fatura kesildiğinde değil, kontrol devredildiğinde muhasebeleştirilir. İkincisi, kazanç sorularında hazine payı yönteminde yıl sonu fiyatını değil ortalama piyasa fiyatını kullan. Üçüncüsü, her menkul kıymeti sulandırma açısından ayrı ayrı test et; imtiyazlı pay sulandırıcıyken yeni pay başına yüksek vergi sonrası faizi olan dönüştürülebilir tahvil sulandırma karşıtı olabilir. Dördüncüsü, pay bölünmesi tüm yıla (ve önceki yıllara) uygulanır, nakit karşılığı pay ihracı ise dolaşımda kaldığı ay sayısıyla ağırlıklandırılır. Beşincisi, tahmin değişikliği asla geriye dönük düzeltilmez; politika değişikliği ve hata düzeltmesi düzeltilir. Altıncısı, yeniden yapılandırma giderine 'olağanüstü' deme; bu etiket UFRS'de de US GAAP'te de yasaktır. Son olarak dikey analizde tabanın toplam gider ya da toplam varlık değil, hasılat olduğundan emin ol.",
+        "key_terms": [
+          "average market price",
+          "stock split",
+          "extraordinary"
+        ]
+      }
+    ],
+    "summary_en": "Revenue is recognized under the five-step model when control transfers to the customer; principals report gross and agents report net. Expenses follow the matching principle; capitalizing a cost raises early net income, assets and operating cash flow. Discontinued operations are shown net of tax below continuing operations, unusual items stay inside continuing operations, policy changes and error corrections are retrospective while estimate changes are prospective. Basic EPS uses net income less preferred dividends over weighted average shares; diluted EPS adds dilutive convertibles and options but never antidilutive ones. Common-size income statements and margins make companies and years comparable.",
+    "summary_tr": "Hasılat, beş adımlı modele göre kontrol müşteriye geçtiğinde muhasebeleştirilir; asıl işletme brüt, aracı net raporlar. Giderler eşleştirme ilkesini izler; bir maliyetin aktifleştirilmesi ilk yıllarda net kârı, varlıkları ve işletme nakit akışını yükseltir. Durdurulan faaliyetler sürdürülen faaliyetlerin altında vergi sonrası gösterilir, olağandışı kalemler sürdürülen faaliyetlerin içinde kalır; politika değişiklikleri ve hata düzeltmeleri geriye dönük, tahmin değişiklikleri ileriye dönüktür. Adi pay başına kazanç, imtiyazlı temettü düşülmüş net kârın ağırlıklı ortalama pay sayısına bölümüdür; sulandırılmış kazanç sulandırıcı dönüştürülebilir kıymetleri ve opsiyonları ekler, sulandırma karşıtı olanları asla eklemez. Dikey gelir tablosu ve marjlar şirketleri ve yılları karşılaştırılabilir kılar.",
+    "common_traps_tr": [
+      "Hasılatı tahsilat anında değil, kontrolün devrinde muhasebeleştir; aracı yalnızca komisyonunu (net) raporlar.",
+      "Hazine payı yönteminde ortalama piyasa fiyatını kullan; yıl sonu fiyatı tuzaktır.",
+      "Her menkul kıymeti ayrı test et: 'pay başına etki' adi kazançtan büyükse sulandırma karşıtıdır ve dışarıda bırakılır.",
+      "Pay bölünmesi ve bedelsiz pay tüm döneme geriye dönük uygulanır; nakit karşılığı ihraç ise zaman ağırlıklıdır.",
+      "Tahmin değişikliği ileriye dönük; politika değişikliği ve hata düzeltmesi geriye dönüktür.",
+      "Dikey gelir tablosunda taban hasılattır; brüt kâr ya da toplam giderle oran kurma."
+    ],
+    "vocab_ids": [
+      "recognize",
+      "performance-obligation",
+      "transaction-price",
+      "principal-entity",
+      "agent",
+      "capitalize",
+      "expense-verb",
+      "matching-principle",
+      "discontinued-operations",
+      "retrospective",
+      "prospective",
+      "dilutive",
+      "antidilutive",
+      "convertible",
+      "treasury-stock-method",
+      "common-size",
+      "margin",
+      "restate"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "TFRS 15 hasılat modeli ve dikey analiz SPK Düzey 3 (1016, 1007) ile örtüşür; sulandırılmış pay başına kazanç hesabı ve US GAAP farkları yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-02-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under the converged IFRS and US GAAP revenue model, revenue is most appropriately recognized when:",
+      "stem_tr": "Yakınsanmış UFRS ve US GAAP hasılat modeline göre hasılat en uygun olarak ne zaman muhasebeleştirilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the customer pays cash for the good or service.",
+          "tr": "müşteri mal veya hizmet için nakit ödediğinde."
+        },
+        {
+          "key": "B",
+          "en": "the company issues an invoice to the customer.",
+          "tr": "şirket müşteriye fatura kestiğinde."
+        },
+        {
+          "key": "C",
+          "en": "control of the good or service transfers to the customer.",
+          "tr": "mal veya hizmetin kontrolü müşteriye geçtiğinde."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Revenue is recognized when (or as) a performance obligation is satisfied, which happens when control transfers to the customer. Cash collection and invoicing are not the trigger.",
+      "explanation_tr": "Hasılat, edim yükümlülüğü yerine getirildiğinde, yani kontrol müşteriye geçtiğinde muhasebeleştirilir. Tahsilat ve faturalama tetikleyici değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Cash-basis thinking. Under accrual accounting, cash timing does not decide revenue recognition.",
+          "tr": "Nakit esası düşüncesi. Tahakkuk esasında nakit zamanlaması hasılatı belirlemez."
+        },
+        "B": {
+          "en": "An invoice is a document, not a transfer of control; a company could invoice before delivery.",
+          "tr": "Fatura bir belgedir, kontrol devri değildir; şirket teslimden önce de fatura kesebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "recognize",
+        "control",
+        "invoice",
+        "performance-obligation"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TFRS 15 kontrol devri ilkesi Düzey 3'te var."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is the first step of the five-step revenue recognition model?",
+      "stem_tr": "Beş adımlı hasılat modelinin ilk adımı aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Identify the contract with the customer.",
+          "tr": "Müşteriyle yapılan sözleşmeyi belirlemek."
+        },
+        {
+          "key": "B",
+          "en": "Determine the transaction price.",
+          "tr": "İşlem bedelini tespit etmek."
+        },
+        {
+          "key": "C",
+          "en": "Allocate the price to the performance obligations.",
+          "tr": "Bedeli edim yükümlülüklerine dağıtmak."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The order is: identify the contract, identify performance obligations, determine the transaction price, allocate the price, recognize revenue when obligations are satisfied.",
+      "explanation_tr": "Sıra şöyledir: sözleşmeyi belirle, edim yükümlülüklerini belirle, işlem bedelini tespit et, bedeli dağıt, yükümlülükler yerine getirildikçe hasılatı muhasebeleştir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Determining the transaction price is step 3.",
+          "tr": "İşlem bedelinin tespiti 3. adımdır."
+        },
+        "C": {
+          "en": "Allocation is step 4; you cannot allocate a price that has not been determined.",
+          "tr": "Dağıtım 4. adımdır; henüz tespit edilmemiş bir bedel dağıtılamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "identify",
+        "contract",
+        "transaction-price",
+        "allocate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An online travel platform sells a hotel night for TRY 100. It passes TRY 85 to the hotel, which sets the room price and is responsible for the service. The platform does not control the room before the sale. The revenue the platform should report for this sale is closest to:",
+      "stem_tr": "Bir çevrimiçi seyahat platformu bir otel gecesini 100 TL'ye satar. 85 TL'yi oda fiyatını belirleyen ve hizmetten sorumlu olan otele aktarır. Platform satıştan önce odayı kontrol etmez. Platformun bu satış için raporlaması gereken hasılat aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 100",
+          "tr": "100 TL",
+          "value": 100
+        },
+        {
+          "key": "B",
+          "en": "TRY 85",
+          "tr": "85 TL",
+          "value": 85
+        },
+        {
+          "key": "C",
+          "en": "TRY 15",
+          "tr": "15 TL",
+          "value": 15
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The platform does not control the service before it is transferred, so it is an agent. An agent reports only its fee or commission: 100 - 85 = TRY 15.",
+      "explanation_tr": "Platform hizmeti devirden önce kontrol etmediği için aracıdır. Aracı yalnızca ücretini ya da komisyonunu raporlar: 100 − 85 = 15 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gross reporting is for a principal that controls the good or service before transfer.",
+          "tr": "Brüt raporlama, malı veya hizmeti devirden önce kontrol eden asıl işletme içindir."
+        },
+        "B": {
+          "en": "TRY 85 is the hotel's revenue, not the platform's.",
+          "tr": "85 TL otelin hasılatıdır, platformun değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: the platform's revenue.",
+          "tr": "İstenen: platformun hasılatı."
+        },
+        {
+          "en": "Principal or agent? The hotel controls the service, so the platform is an agent and reports net.",
+          "tr": "Asıl mı aracı mı? Hizmeti otel kontrol eder; platform aracıdır, net raporlar."
+        },
+        {
+          "en": "Net revenue = amount collected - amount passed to the principal = 100 - 85.",
+          "tr": "Net hasılat = tahsil edilen − asıl işletmeye aktarılan = 100 − 85.",
+          "formula_latex": "\\text{Revenue}_{agent}=100-85",
+          "values": {
+            "Collected": 100,
+            "Passed on": 85
+          }
+        },
+        {
+          "en": "Result: TRY 15.",
+          "tr": "Sonuç: 15 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100",
+          "[−]",
+          "85",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "100-85",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "agent",
+        "principal-entity",
+        "commission",
+        "pass-on",
+        "responsible"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Boğaz İnşaat (fictional) signs a fixed-price contract for TRY 200 million. Total expected costs are TRY 160 million. In the first year it incurs TRY 40 million of costs. The performance obligation is satisfied over time and progress is measured by the cost-to-cost method. Revenue recognized in the first year is closest to:",
+      "stem_tr": "Kurgusal Boğaz İnşaat 200 milyon TL'lik sabit fiyatlı bir sözleşme imzalar. Beklenen toplam maliyet 160 milyon TL'dir. İlk yılda 40 milyon TL maliyete katlanır. Edim yükümlülüğü zamana yayılı olarak yerine getirilir ve ilerleme maliyet oranı yöntemiyle ölçülür. İlk yılda muhasebeleştirilecek hasılat aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 10 million",
+          "tr": "10 milyon TL",
+          "value": 10
+        },
+        {
+          "key": "B",
+          "en": "TRY 50 million",
+          "tr": "50 milyon TL",
+          "value": 50
+        },
+        {
+          "key": "C",
+          "en": "TRY 40 million",
+          "tr": "40 milyon TL",
+          "value": 40
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Progress = 40 / 160 = 25%. Revenue = 25% x 200 = TRY 50 million. Profit for the year is 50 - 40 = 10 million, but the question asks for revenue.",
+      "explanation_tr": "İlerleme = 40 / 160 = %25. Hasılat = %25 × 200 = 50 milyon TL. Yılın kârı 50 − 40 = 10 milyondur ama soru hasılatı sormaktadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 10 million is the gross profit of the year, not the revenue.",
+          "tr": "10 milyon TL yılın brüt kârıdır, hasılat değil."
+        },
+        "C": {
+          "en": "TRY 40 million is the cost incurred; revenue is the same percentage applied to the contract price.",
+          "tr": "40 milyon TL katlanılan maliyettir; hasılat aynı yüzdenin sözleşme bedeline uygulanmasıyla bulunur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: first-year revenue under the cost-to-cost method.",
+          "tr": "İstenen: maliyet oranı yöntemiyle ilk yıl hasılatı."
+        },
+        {
+          "en": "Percentage complete = costs to date / total expected costs.",
+          "tr": "Tamamlanma yüzdesi = bugüne kadarki maliyet / beklenen toplam maliyet.",
+          "formula_latex": "\\%\\text{ complete}=\\frac{40}{160}=0.25"
+        },
+        {
+          "en": "Revenue = % complete x contract price = 0.25 x 200.",
+          "tr": "Hasılat = tamamlanma yüzdesi × sözleşme bedeli = 0,25 × 200.",
+          "values": {
+            "Contract price": 200,
+            "Costs to date": 40,
+            "Total expected costs": 160
+          }
+        },
+        {
+          "en": "Result: TRY 50 million.",
+          "tr": "Sonuç: 50 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "40",
+          "[÷]",
+          "160",
+          "[×]",
+          "200",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda soldan sağa: 40 ÷ 160 = 0,25; × 200 = 50."
+      },
+      "numeric": {
+        "expr": "40/160*200",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "incur",
+        "over-time",
+        "cost-to-cost",
+        "fixed-price",
+        "progress"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A manufacturer offers its distributors a volume rebate at year-end if they exceed a sales target. Under the converged revenue model, the manufacturer should most likely:",
+      "stem_tr": "Bir üretici, distribütörlerine satış hedefini aşmaları hâlinde yıl sonunda ciro iskontosu sunar. Yakınsanmış hasılat modeline göre üretici büyük olasılıkla ne yapmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "ignore the rebate until it is actually paid, then record it as an expense.",
+          "tr": "iskontoyu fiilen ödenene kadar dikkate almamalı, sonra gider olarak kaydetmelidir."
+        },
+        {
+          "key": "B",
+          "en": "estimate the rebate and reduce the transaction price, including only amounts not expected to reverse significantly.",
+          "tr": "iskontoyu tahmin edip işlem bedelini azaltmalı; yalnızca önemli ölçüde iptal edilmesi beklenmeyen tutarı dahil etmelidir."
+        },
+        {
+          "key": "C",
+          "en": "recognize the full invoice amount as revenue and record the rebate in other comprehensive income.",
+          "tr": "fatura tutarının tamamını hasılat olarak muhasebeleştirmeli, iskontoyu diğer kapsamlı gelirde göstermelidir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A rebate is variable consideration. It is estimated and included in the transaction price only to the extent that a significant reversal of revenue is not expected (IFRS: highly probable; US GAAP: probable).",
+      "explanation_tr": "İskonto değişken bedeldir. Tahmin edilir ve yalnızca hasılatta önemli bir iptalin beklenmediği ölçüde işlem bedeline dahil edilir (UFRS: çok muhtemel; US GAAP: muhtemel).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Waiting until payment overstates revenue in the period of sale and violates the model.",
+          "tr": "Ödemeyi beklemek satış döneminde hasılatı olduğundan yüksek gösterir ve modele aykırıdır."
+        },
+        "C": {
+          "en": "Rebates reduce revenue; they are not an OCI item.",
+          "tr": "İskontolar hasılatı azaltır; diğer kapsamlı gelir kalemi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "rebate",
+        "variable-consideration",
+        "exceed",
+        "reverse",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-a-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares two fictional software companies. Company X recognizes license revenue when the software key is delivered; Company Y recognizes the same type of license revenue evenly over the two-year contract term. All else equal, which statement is most accurate?",
+      "stem_tr": "Bir analist iki kurgusal yazılım şirketini karşılaştırır. X Şirketi lisans hasılatını yazılım anahtarı teslim edildiğinde muhasebeleştirir; Y Şirketi aynı tür lisans hasılatını iki yıllık sözleşme süresine eşit yayar. Diğer her şey aynıyken hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "X's reported revenue is more conservative, so its earnings quality is higher.",
+          "tr": "X'in raporlanan hasılatı daha ihtiyatlıdır, bu yüzden kâr kalitesi daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "Y will report lower revenue in the first year of a growing business, and its deferred (unearned) revenue liability will be larger.",
+          "tr": "Büyüyen bir işte Y ilk yıl daha düşük hasılat raporlar ve ertelenmiş (kazanılmamış) hasılat yükümlülüğü daha büyük olur."
+        },
+        {
+          "key": "C",
+          "en": "The two policies produce the same revenue every year, so the analyst can compare them directly.",
+          "tr": "İki politika her yıl aynı hasılatı üretir, bu yüzden analist doğrudan karşılaştırabilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Recognizing over time delays revenue: Y reports less in year one and carries a larger unearned revenue balance. When the business grows, this difference persists, so the analyst must adjust before comparing.",
+      "explanation_tr": "Zamana yayma hasılatı geciktirir: Y ilk yıl daha az raporlar ve daha büyük bir kazanılmamış hasılat bakiyesi taşır. İş büyürken bu fark sürer; analist karşılaştırmadan önce düzeltme yapmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Recognizing at delivery is the more aggressive (earlier) policy, not the more conservative one.",
+          "tr": "Teslimde muhasebeleştirme daha ihtiyatlı değil, daha agresif (erken) politikadır."
+        },
+        "C": {
+          "en": "Timing differs, so annual revenue differs; totals only converge over the life of the contracts.",
+          "tr": "Zamanlama farklıdır, yıllık hasılat da farklıdır; toplamlar ancak sözleşme ömrü boyunca eşitlenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "evenly",
+        "all-else-equal",
+        "unearned-revenue",
+        "conservative",
+        "aggressive"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The matching principle is best described as recognizing:",
+      "stem_tr": "Eşleştirme ilkesi en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "expenses in the period when cash is paid.",
+          "tr": "giderleri nakit ödendiği dönemde muhasebeleştirmek."
+        },
+        {
+          "key": "B",
+          "en": "expenses in the same period as the revenue they help to generate.",
+          "tr": "giderleri, oluşmasına katkı sağladıkları hasılatla aynı dönemde muhasebeleştirmek."
+        },
+        {
+          "key": "C",
+          "en": "revenue only after all related expenses have been paid.",
+          "tr": "hasılatı yalnızca ilgili tüm giderler ödendikten sonra muhasebeleştirmek."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Matching links expenses to the revenue of the same period, for example cost of goods sold is recorded when the goods are sold.",
+      "explanation_tr": "Eşleştirme, giderleri aynı dönemin hasılatına bağlar; örneğin satışların maliyeti mallar satıldığında kaydedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is cash-basis accounting, not accrual accounting.",
+          "tr": "Bu nakit esaslı muhasebedir, tahakkuk esası değil."
+        },
+        "C": {
+          "en": "Revenue recognition does not wait for expense payment.",
+          "tr": "Hasılatın muhasebeleştirilmesi gider ödemesini beklemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "matching-principle",
+        "generate",
+        "period",
+        "accrual"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Dönemsellik ve eşleştirme Düzey 3'te var."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with expensing a cost immediately, capitalizing it is least likely to result in which of the following in the first year?",
+      "stem_tr": "Bir maliyetin hemen giderleştirilmesiyle karşılaştırıldığında, aktifleştirilmesinin ilk yılda aşağıdakilerden hangisine yol açması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Higher total assets",
+          "tr": "Daha yüksek toplam varlık"
+        },
+        {
+          "key": "B",
+          "en": "Lower cash flow from operating activities",
+          "tr": "Daha düşük işletme faaliyetlerinden nakit akışı"
+        },
+        {
+          "key": "C",
+          "en": "Higher net income",
+          "tr": "Daha yüksek net kâr"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A capitalized cost is an investing outflow, so operating cash flow is higher, not lower. Assets and first-year net income are higher.",
+      "explanation_tr": "Aktifleştirilen maliyet yatırım faaliyetinden nakit çıkışıdır; bu yüzden işletme nakit akışı daha düşük değil, daha yüksektir. Varlıklar ve ilk yıl net kârı da daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Capitalizing creates an asset, so total assets are higher; this is a likely result.",
+          "tr": "Aktifleştirme bir varlık yaratır, toplam varlıklar yükselir; bu olası bir sonuçtur."
+        },
+        "C": {
+          "en": "Only depreciation hits the income statement in year one, so net income is higher; also a likely result.",
+          "tr": "İlk yıl gelir tablosuna yalnızca amortisman yansır, net kâr daha yüksektir; bu da olası bir sonuçtur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capitalize",
+        "expense-verb",
+        "immediately",
+        "outflow",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Regarding research and development costs, which statement is most accurate?",
+      "stem_tr": "Araştırma ve geliştirme maliyetleriyle ilgili hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Under IFRS, development costs are capitalized when specific criteria are met; under US GAAP they are generally expensed.",
+          "tr": "UFRS'de geliştirme maliyetleri belirli koşullar sağlanınca aktifleştirilir; US GAAP'te genellikle giderleştirilir."
+        },
+        {
+          "key": "B",
+          "en": "Under both IFRS and US GAAP, all research and development costs are capitalized.",
+          "tr": "Hem UFRS hem US GAAP'te tüm araştırma ve geliştirme maliyetleri aktifleştirilir."
+        },
+        {
+          "key": "C",
+          "en": "Under IFRS, research costs are capitalized but development costs are expensed.",
+          "tr": "UFRS'de araştırma maliyetleri aktifleştirilir, geliştirme maliyetleri giderleştirilir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both frameworks expense research. IFRS (IAS 38) capitalizes development costs once technical and commercial feasibility criteria are met; US GAAP expenses them, except certain software development costs.",
+      "explanation_tr": "Her iki çerçeve de araştırmayı giderleştirir. UFRS (TMS 38) teknik ve ticari fizibilite koşulları sağlanınca geliştirme maliyetlerini aktifleştirir; US GAAP belirli yazılım geliştirme maliyetleri dışında giderleştirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Research costs are expensed under both frameworks.",
+          "tr": "Araştırma maliyetleri her iki çerçevede de giderleştirilir."
+        },
+        "C": {
+          "en": "This reverses the IFRS rule: research is expensed, development may be capitalized.",
+          "tr": "Bu, UFRS kuralını tersine çevirir: araştırma giderleştirilir, geliştirme aktifleştirilebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "research",
+        "development",
+        "criteria",
+        "feasibility",
+        "generally"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "TMS 38 biliniyor; US GAAP farkı yeni."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Toros Yazılım (fictional) spends TRY 1,200,000 on a project in Year 1. If capitalized, the cost would be amortized straight-line over 4 years starting in Year 1. The tax rate is 20%. Compared with expensing the cost immediately, capitalizing it increases Year 1 net income by an amount closest to:",
+      "stem_tr": "Kurgusal Toros Yazılım 1. yılda bir projeye 1.200.000 TL harcar. Aktifleştirilirse maliyet 1. yıldan başlayarak 4 yılda doğrusal itfa edilecektir. Vergi oranı %20'dir. Maliyetin hemen giderleştirilmesiyle karşılaştırıldığında aktifleştirme 1. yıl net kârını aşağıdakilerden hangisine en yakın tutarda artırır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 240,000",
+          "tr": "240.000 TL",
+          "value": 240000
+        },
+        {
+          "key": "B",
+          "en": "TRY 720,000",
+          "tr": "720.000 TL",
+          "value": 720000
+        },
+        {
+          "key": "C",
+          "en": "TRY 900,000",
+          "tr": "900.000 TL",
+          "value": 900000
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Expensing charges 1,200,000; capitalizing charges only 300,000 of amortization. Pretax difference = 900,000; after tax = 900,000 x (1 - 0.20) = TRY 720,000.",
+      "explanation_tr": "Giderleştirme 1.200.000 gider yazar; aktifleştirme yalnızca 300.000 itfa yazar. Vergi öncesi fark = 900.000; vergi sonrası = 900.000 × (1 − 0,20) = 720.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "240,000 is 300,000 x 0.8, the after-tax amortization, not the difference in net income.",
+          "tr": "240.000, 300.000 × 0,8'dir; vergi sonrası itfa tutarıdır, net kâr farkı değil."
+        },
+        "C": {
+          "en": "900,000 is the pretax difference; net income is after tax.",
+          "tr": "900.000 vergi öncesi farktır; net kâr vergi sonrasıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: the Year 1 net income difference between capitalizing and expensing.",
+          "tr": "İstenen: aktifleştirme ile giderleştirme arasındaki 1. yıl net kâr farkı."
+        },
+        {
+          "en": "Year 1 amortization if capitalized = 1,200,000 / 4 = 300,000.",
+          "tr": "Aktifleştirilirse 1. yıl itfa = 1.200.000 / 4 = 300.000.",
+          "formula_latex": "\\text{Amort.}=\\frac{1{,}200{,}000}{4}=300{,}000"
+        },
+        {
+          "en": "Pretax expense difference = 1,200,000 - 300,000 = 900,000.",
+          "tr": "Vergi öncesi gider farkı = 1.200.000 − 300.000 = 900.000.",
+          "values": {
+            "Spending": 1200000,
+            "Amortization": 300000,
+            "Tax rate": "20%"
+          }
+        },
+        {
+          "en": "After-tax effect = 900,000 x (1 - 0.20) = 720,000.",
+          "tr": "Vergi sonrası etki = 900.000 × (1 − 0,20) = 720.000.",
+          "formula_latex": "\\Delta NI=900{,}000\\times(1-0.20)"
+        },
+        {
+          "en": "Result: net income is higher by TRY 720,000.",
+          "tr": "Sonuç: net kâr 720.000 TL daha yüksektir."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1200000",
+          "[−]",
+          "300000",
+          "[×]",
+          "0.8",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda: 1.200.000 − 300.000 = 900.000; × 0,8 = 720.000."
+      },
+      "numeric": {
+        "expr": "(1200000-1200000/4)*(1-0.20)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "straight-line",
+        "amortize",
+        "pretax",
+        "after-tax",
+        "compared-with"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A retailer sells on credit and expects that about 2% of this year's credit sales will never be collected. Under accrual accounting, the related bad debt expense is most appropriately recognized:",
+      "stem_tr": "Bir perakendeci vadeli satış yapar ve bu yılki vadeli satışların yaklaşık %2'sinin hiç tahsil edilemeyeceğini bekler. Tahakkuk esasına göre ilgili şüpheli alacak gideri en uygun olarak ne zaman muhasebeleştirilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "in the year of the sales, as an estimate, with a matching allowance against receivables.",
+          "tr": "satışların yapıldığı yılda, tahmin olarak, alacaklardan düşülen bir karşılıkla birlikte."
+        },
+        {
+          "key": "B",
+          "en": "only when a specific customer account is written off.",
+          "tr": "yalnızca belirli bir müşteri hesabı kayıttan silindiğinde."
+        },
+        {
+          "key": "C",
+          "en": "when the receivables are more than 90 days past due.",
+          "tr": "alacaklar 90 günden fazla gecikince."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The expense is matched to the revenue of the same period through an allowance for doubtful accounts; the later write-off reduces the allowance, not the expense.",
+      "explanation_tr": "Gider, şüpheli alacak karşılığı yoluyla aynı dönemin hasılatıyla eşleştirilir; sonraki kayıttan silme gideri değil karşılığı azaltır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The direct write-off approach delays the expense and violates matching.",
+          "tr": "Doğrudan silme yaklaşımı gideri geciktirir ve eşleştirmeyi ihlal eder."
+        },
+        "C": {
+          "en": "Ageing can help estimate the allowance, but the expense is not triggered by a 90-day rule.",
+          "tr": "Yaşlandırma karşılık tahmininde yardımcı olur ama gider 90 gün kuralıyla tetiklenmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "allowance",
+        "write-off",
+        "collect",
+        "past-due",
+        "doubtful"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "At the start of the year, a company extends the estimated useful life of its machinery from 8 to 12 years. All else equal, in the current year this change will most likely:",
+      "stem_tr": "Yıl başında bir şirket makinelerinin tahmini faydalı ömrünü 8 yıldan 12 yıla uzatır. Diğer her şey aynıyken bu değişiklik cari yılda büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "reduce depreciation expense and increase net income, with no restatement of prior years.",
+          "tr": "amortisman giderini azaltır ve net kârı artırır; önceki yıllar yeniden düzenlenmez."
+        },
+        {
+          "key": "B",
+          "en": "reduce depreciation expense and require restatement of prior-year statements.",
+          "tr": "amortisman giderini azaltır ve önceki yıl tablolarının yeniden düzenlenmesini gerektirir."
+        },
+        {
+          "key": "C",
+          "en": "have no effect on net income because depreciation is a non-cash expense.",
+          "tr": "amortisman nakit dışı bir gider olduğu için net kârı etkilemez."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A longer useful life is a change in accounting estimate, applied prospectively. Annual depreciation falls, so current net income rises; prior years are not restated.",
+      "explanation_tr": "Daha uzun faydalı ömür bir muhasebe tahmini değişikliğidir ve ileriye dönük uygulanır. Yıllık amortisman düşer, cari net kâr yükselir; önceki yıllar yeniden düzenlenmez.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Restatement applies to policy changes and error corrections, not to estimate changes.",
+          "tr": "Yeniden düzenleme politika değişikliklerine ve hata düzeltmelerine uygulanır, tahmin değişikliklerine değil."
+        },
+        "C": {
+          "en": "Non-cash does not mean no effect on net income; depreciation reduces reported profit.",
+          "tr": "Nakit dışı olması net kârı etkilemediği anlamına gelmez; amortisman raporlanan kârı düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "useful-life",
+        "extend",
+        "prospective",
+        "non-cash",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under both IFRS and US GAAP, the results of a discontinued operation are most appropriately presented:",
+      "stem_tr": "Hem UFRS hem US GAAP'te durdurulan bir faaliyetin sonuçları en uygun olarak nasıl sunulur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "within operating income, before tax, as a separate line.",
+          "tr": "faaliyet kârı içinde, vergi öncesi, ayrı bir satır olarak."
+        },
+        {
+          "key": "B",
+          "en": "separately, net of tax, below income from continuing operations.",
+          "tr": "sürdürülen faaliyetlerden elde edilen kârın altında, vergi sonrası, ayrı olarak."
+        },
+        {
+          "key": "C",
+          "en": "directly in retained earnings without passing through the income statement.",
+          "tr": "gelir tablosundan geçmeden doğrudan geçmiş yıl kârlarında."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Discontinued operations are reported after continuing operations, net of tax, so that users can see the recurring part of the business separately.",
+      "explanation_tr": "Durdurulan faaliyetler, kullanıcılar işin tekrarlayan kısmını ayrı görebilsin diye sürdürülen faaliyetlerden sonra, vergi sonrası raporlanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That treatment is for unusual or infrequent items, which stay in continuing operations.",
+          "tr": "Bu işlem, sürdürülen faaliyetlerin içinde kalan olağandışı veya seyrek kalemler içindir."
+        },
+        "C": {
+          "en": "Only prior-period error corrections and some policy changes adjust opening retained earnings.",
+          "tr": "Yalnızca önceki dönem hata düzeltmeleri ve bazı politika değişiklikleri dönem başı geçmiş yıl kârlarını düzeltir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discontinued-operations",
+        "net-of-tax",
+        "continuing-operations",
+        "present"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Ege Tekstil (fictional) changes its inventory cost flow method from weighted average cost to FIFO. The most appropriate treatment of this change is to:",
+      "stem_tr": "Kurgusal Ege Tekstil stok maliyet akış yöntemini ağırlıklı ortalama maliyetten FIFO'ya değiştirir. Bu değişiklik için en uygun işlem:",
+      "options": [
+        {
+          "key": "A",
+          "en": "apply the new method only to the current and future periods.",
+          "tr": "yeni yöntemi yalnızca cari ve gelecek dönemlere uygulamaktır."
+        },
+        {
+          "key": "B",
+          "en": "apply the new method retrospectively and restate prior-period statements presented.",
+          "tr": "yeni yöntemi geriye dönük uygulamak ve sunulan önceki dönem tablolarını yeniden düzenlemektir."
+        },
+        {
+          "key": "C",
+          "en": "report the cumulative effect as a discontinued operation.",
+          "tr": "birikimli etkiyi durdurulan faaliyet olarak raporlamaktır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A change in inventory method is a change in accounting policy. Both IFRS and US GAAP require retrospective application so that all periods shown are comparable.",
+      "explanation_tr": "Stok yöntemi değişikliği bir muhasebe politikası değişikliğidir. UFRS de US GAAP de tüm sunulan dönemler karşılaştırılabilir olsun diye geriye dönük uygulama ister.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Prospective treatment is for changes in estimates, not changes in policy.",
+          "tr": "İleriye dönük işlem tahmin değişiklikleri içindir, politika değişiklikleri için değil."
+        },
+        "C": {
+          "en": "A discontinued operation is a disposed component of the business, not an accounting change.",
+          "tr": "Durdurulan faaliyet, işletmenin elden çıkarılan bir bölümüdür; muhasebe değişikliği değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "retrospective",
+        "restate",
+        "cumulative",
+        "policy",
+        "comparable"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TMS 8 politika değişikliği Düzey 3'te var."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely to be applied prospectively rather than retrospectively?",
+      "stem_tr": "Aşağıdakilerden hangisinin geriye dönük değil ileriye dönük uygulanması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A change in the estimated residual value of a fleet of trucks",
+          "tr": "Bir kamyon filosunun tahmini hurda değerindeki değişiklik"
+        },
+        {
+          "key": "B",
+          "en": "A change from the completed-contract to the percentage-of-completion approach",
+          "tr": "Tamamlanmış sözleşme yaklaşımından tamamlanma yüzdesi yaklaşımına geçiş"
+        },
+        {
+          "key": "C",
+          "en": "The correction of a mathematical error found in last year's depreciation",
+          "tr": "Geçen yılın amortismanında bulunan bir hesap hatasının düzeltilmesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Residual value is an accounting estimate; changes in estimates affect only current and future periods.",
+      "explanation_tr": "Hurda değeri bir muhasebe tahminidir; tahmin değişiklikleri yalnızca cari ve gelecek dönemleri etkiler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Changing the revenue recognition approach is a policy change, applied retrospectively.",
+          "tr": "Hasılat yaklaşımını değiştirmek bir politika değişikliğidir ve geriye dönük uygulanır."
+        },
+        "C": {
+          "en": "Error corrections are retrospective restatements.",
+          "tr": "Hata düzeltmeleri geriye dönük yeniden düzenlemedir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "prospective",
+        "residual-value",
+        "fleet",
+        "correction",
+        "rather-than"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A manufacturer records a large restructuring charge after closing one of its three plants. Which presentation is most consistent with IFRS?",
+      "stem_tr": "Bir üretici üç fabrikasından birini kapattıktan sonra büyük bir yeniden yapılandırma gideri kaydeder. Hangi sunum UFRS ile en tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An extraordinary item, net of tax, after net income from continuing operations",
+          "tr": "Sürdürülen faaliyetlerden net kârdan sonra, vergi sonrası, olağanüstü kalem"
+        },
+        {
+          "key": "B",
+          "en": "A separately disclosed item within income from continuing operations, before tax",
+          "tr": "Sürdürülen faaliyetlerden elde edilen kâr içinde, vergi öncesi, ayrıca açıklanan bir kalem"
+        },
+        {
+          "key": "C",
+          "en": "A discontinued operation, because a plant was closed",
+          "tr": "Bir fabrika kapatıldığı için durdurulan faaliyet"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A restructuring charge is unusual or infrequent but part of continuing operations; IFRS requires separate disclosure of material items and prohibits the 'extraordinary' label.",
+      "explanation_tr": "Yeniden yapılandırma gideri olağandışı ya da seyrektir ama sürdürülen faaliyetlerin parçasıdır; UFRS önemli kalemlerin ayrıca açıklanmasını ister ve 'olağanüstü' etiketini yasaklar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "IFRS prohibits presenting any item as extraordinary; US GAAP removed the category too.",
+          "tr": "UFRS hiçbir kalemin olağanüstü olarak sunulmasına izin vermez; US GAAP de bu kategoriyi kaldırdı."
+        },
+        "C": {
+          "en": "Closing one plant of a business that continues is not a discontinued operation unless a separate major line of business or geographic area is disposed of.",
+          "tr": "Devam eden bir işin tek bir fabrikasını kapatmak, ayrı bir ana iş kolu ya da coğrafi alan elden çıkarılmadıkça durdurulan faaliyet değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "restructuring",
+        "extraordinary",
+        "disclose",
+        "plant",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A company discovers that last year's revenue was overstated because of an error. Under IFRS and US GAAP, the company should most appropriately:",
+      "stem_tr": "Bir şirket, geçen yılın hasılatının bir hata nedeniyle olduğundan yüksek gösterildiğini fark eder. UFRS ve US GAAP'e göre şirket en uygun olarak ne yapmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "restate the prior-period statements and adjust opening retained earnings.",
+          "tr": "önceki dönem tablolarını yeniden düzenlemeli ve dönem başı geçmiş yıl kârlarını düzeltmelidir."
+        },
+        {
+          "key": "B",
+          "en": "reduce current-year revenue by the same amount.",
+          "tr": "cari yıl hasılatını aynı tutarda azaltmalıdır."
+        },
+        {
+          "key": "C",
+          "en": "disclose the error in the notes without changing any reported figures.",
+          "tr": "hatayı raporlanan rakamları değiştirmeden dipnotlarda açıklamalıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Prior-period errors are corrected retrospectively: comparative statements are restated and the cumulative effect is adjusted in opening retained earnings of the earliest period presented.",
+      "explanation_tr": "Önceki dönem hataları geriye dönük düzeltilir: karşılaştırmalı tablolar yeniden düzenlenir ve birikimli etki, sunulan en eski dönemin başındaki geçmiş yıl kârlarında düzeltilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Pushing last year's error into this year distorts both years.",
+          "tr": "Geçen yılın hatasını bu yıla taşımak iki yılı da bozar."
+        },
+        "C": {
+          "en": "Disclosure alone is not enough; the figures must be restated.",
+          "tr": "Yalnızca açıklama yeterli değildir; rakamlar yeniden düzenlenmelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "overstate",
+        "restate",
+        "retained-earnings",
+        "discover",
+        "comparative"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-c-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst forecasts next year's earnings for a fictional retailer whose current-year income statement includes: (1) a gain on the sale of its discontinued electronics division, (2) a one-time fine paid to a regulator, and (3) higher depreciation after a new store opened. Which item is the analyst least likely to remove when estimating recurring earnings?",
+      "stem_tr": "Bir analist, cari yıl gelir tablosunda şu kalemler bulunan kurgusal bir perakendecinin gelecek yıl kârını tahmin eder: (1) durdurulan elektronik bölümünün satışından kazanç, (2) bir düzenleyiciye ödenen tek seferlik ceza, (3) yeni bir mağaza açıldıktan sonra artan amortisman. Analistin tekrarlayan kârı tahmin ederken çıkarması en az olası kalem hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The gain on the discontinued division",
+          "tr": "Durdurulan bölümün satış kazancı"
+        },
+        {
+          "key": "B",
+          "en": "The one-time regulatory fine",
+          "tr": "Tek seferlik düzenleyici cezası"
+        },
+        {
+          "key": "C",
+          "en": "The higher depreciation from the new store",
+          "tr": "Yeni mağazadan kaynaklanan artan amortisman"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Depreciation on a new store is a recurring operating cost that will continue; the other two items will not repeat and should be removed from the recurring earnings base.",
+      "explanation_tr": "Yeni mağazanın amortismanı devam edecek tekrarlayan bir faaliyet maliyetidir; diğer iki kalem tekrar etmez ve tekrarlayan kâr tabanından çıkarılmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A discontinued operation gain is non-recurring by definition and is already shown below continuing operations.",
+          "tr": "Durdurulan faaliyet kazancı tanım gereği tekrarlanmaz ve zaten sürdürülen faaliyetlerin altında gösterilir."
+        },
+        "B": {
+          "en": "A one-time fine is an unusual item that is not expected to repeat.",
+          "tr": "Tek seferlik ceza tekrar etmesi beklenmeyen olağandışı bir kalemdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forecast",
+        "recurring",
+        "fine",
+        "regulator",
+        "remove"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Pamuk Holding (fictional) reports net income of TRY 48 million and pays TRY 3 million of preferred dividends. It had 10 million common shares outstanding on 1 January and issued 2 million new shares on 1 July. Basic EPS is closest to:",
+      "stem_tr": "Kurgusal Pamuk Holding 48 milyon TL net kâr açıklar ve 3 milyon TL imtiyazlı pay temettüsü öder. 1 Ocak'ta dolaşımda 10 milyon adi payı vardır ve 1 Temmuz'da 2 milyon yeni pay ihraç eder. Adi pay başına kazanç aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3.75",
+          "tr": "3,75 TL",
+          "value": 3.75
+        },
+        {
+          "key": "B",
+          "en": "TRY 4.09",
+          "tr": "4,09 TL",
+          "value": 4.09
+        },
+        {
+          "key": "C",
+          "en": "TRY 4.36",
+          "tr": "4,36 TL",
+          "value": 4.36
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Weighted shares = 10 + 2 x 6/12 = 11 million. Basic EPS = (48 - 3) / 11 = TRY 4.09.",
+      "explanation_tr": "Ağırlıklı pay = 10 + 2 × 6/12 = 11 milyon. Adi kazanç = (48 − 3) / 11 = 4,09 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "3.75 uses 12 million shares, ignoring that the new shares were outstanding only half the year.",
+          "tr": "3,75, yeni payların yalnızca yarım yıl dolaşımda olduğunu göz ardı edip 12 milyon pay kullanır."
+        },
+        "C": {
+          "en": "4.36 forgets to subtract the preferred dividends from net income.",
+          "tr": "4,36, imtiyazlı temettüyü net kârdan düşmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: basic EPS.",
+          "tr": "İstenen: adi pay başına kazanç."
+        },
+        {
+          "en": "Weighted average shares: shares issued on 1 July count for 6 of 12 months.",
+          "tr": "Ağırlıklı ortalama pay: 1 Temmuz'da ihraç edilen paylar 12 ayın 6'sında sayılır.",
+          "formula_latex": "10+2\\times\\frac{6}{12}=11"
+        },
+        {
+          "en": "Numerator = net income - preferred dividends = 48 - 3 = 45.",
+          "tr": "Pay = net kâr − imtiyazlı temettü = 48 − 3 = 45.",
+          "values": {
+            "NI": 48,
+            "Pref. div.": 3,
+            "W. avg. shares": 11
+          }
+        },
+        {
+          "en": "Basic EPS = 45 / 11 = 4.09.",
+          "tr": "Adi kazanç = 45 / 11 = 4,09.",
+          "formula_latex": "\\text{EPS}=\\frac{45}{11}"
+        },
+        {
+          "en": "Result: TRY 4.09 per share.",
+          "tr": "Sonuç: pay başına 4,09 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "48",
+          "[−]",
+          "3",
+          "[÷]",
+          "11",
+          "[=]"
+        ],
+        "note_tr": "Önce 11 milyon ağırlıklı payı elle bul (10 + 2 × 0,5). Chain modunda 48 − 3 = 45; ÷ 11 = 4,09."
+      },
+      "numeric": {
+        "expr": "(48-3)/(10+2*6/12)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "outstanding",
+        "issue",
+        "weighted-average",
+        "preferred-dividend"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Adi HBK Düzey 3'te var; ağırlıklı pay hesabı pekiştirilmeli."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Derya Enerji (fictional) had 6,000,000 shares outstanding on 1 January. It issued 1,200,000 shares on 1 April, completed a 2-for-1 stock split on 1 October and repurchased 600,000 (post-split) shares on 1 December. The weighted average number of shares for basic EPS is closest to:",
+      "stem_tr": "Kurgusal Derya Enerji'nin 1 Ocak'ta dolaşımda 6.000.000 payı vardır. 1 Nisan'da 1.200.000 pay ihraç eder, 1 Ekim'de 2'ye 1 pay bölünmesi yapar ve 1 Aralık'ta 600.000 (bölünme sonrası) payı geri alır. Adi pay başına kazanç için ağırlıklı ortalama pay sayısı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "13,750,000",
+          "tr": "13.750.000",
+          "value": 13750000
+        },
+        {
+          "key": "B",
+          "en": "6,850,000",
+          "tr": "6.850.000",
+          "value": 6850000
+        },
+        {
+          "key": "C",
+          "en": "13,800,000",
+          "tr": "13.800.000",
+          "value": 13800000
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The split is applied retroactively to all shares before it: 6,000,000 x 2 = 12,000,000 for 12 months; 1,200,000 x 2 = 2,400,000 x 9/12 = 1,800,000; repurchase 600,000 x 1/12 = 50,000 reduction. Total = 13,750,000.",
+      "explanation_tr": "Bölünme kendisinden önceki tüm paylara geriye dönük uygulanır: 6.000.000 × 2 = 12.000.000, 12 ay; 1.200.000 × 2 = 2.400.000 × 9/12 = 1.800.000; geri alım 600.000 × 1/12 = 50.000 azalış. Toplam = 13.750.000.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "6,850,000 ignores the stock split; splits must be applied to all pre-split shares.",
+          "tr": "6.850.000 pay bölünmesini göz ardı eder; bölünme bölünme öncesi tüm paylara uygulanmalıdır."
+        },
+        "C": {
+          "en": "13,800,000 ignores the December repurchase, which removes 600,000 shares for one month.",
+          "tr": "13.800.000 Aralık'taki geri alımı göz ardı eder; geri alım bir ay için 600.000 payı düşürür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: weighted average shares outstanding.",
+          "tr": "İstenen: ağırlıklı ortalama dolaşımdaki pay sayısı."
+        },
+        {
+          "en": "Apply the 2-for-1 split retroactively to shares existing before 1 October.",
+          "tr": "2'ye 1 bölünmeyi 1 Ekim'den önce var olan paylara geriye dönük uygula.",
+          "formula_latex": "6{,}000{,}000\\times 2=12{,}000{,}000\\ (12/12)"
+        },
+        {
+          "en": "April issue: 1,200,000 x 2 = 2,400,000 outstanding 9 months: 2,400,000 x 9/12 = 1,800,000.",
+          "tr": "Nisan ihracı: 1.200.000 × 2 = 2.400.000, 9 ay dolaşımda: 2.400.000 × 9/12 = 1.800.000.",
+          "values": {
+            "Jan shares (split-adj.)": 12000000,
+            "Apr shares (split-adj.)": 2400000,
+            "Months": 9
+          }
+        },
+        {
+          "en": "December repurchase: 600,000 x 1/12 = 50,000 (subtract).",
+          "tr": "Aralık geri alımı: 600.000 × 1/12 = 50.000 (çıkar)."
+        },
+        {
+          "en": "Total = 12,000,000 + 1,800,000 - 50,000 = 13,750,000 shares.",
+          "tr": "Toplam = 12.000.000 + 1.800.000 − 50.000 = 13.750.000 pay."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12000000",
+          "[+]",
+          "1800000",
+          "[−]",
+          "50000",
+          "[=]"
+        ],
+        "note_tr": "Parçaları elle hazırla (2.400.000 × 9 ÷ 12 = 1.800.000; 600.000 ÷ 12 = 50.000), sonra topla."
+      },
+      "numeric": {
+        "expr": "6000000*2 + 1200000*2*9/12 - 600000*1/12",
+        "unit": "shares"
+      },
+      "vocab_ids": [
+        "stock-split",
+        "repurchase",
+        "retroactively",
+        "post-split",
+        "outstanding"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Akdeniz Turizm (fictional) reports net income of TRY 30 million. It has 10 million weighted average common shares and convertible preferred shares that pay TRY 2 million of dividends and can be converted into 1.5 million common shares. Diluted EPS is closest to:",
+      "stem_tr": "Kurgusal Akdeniz Turizm 30 milyon TL net kâr açıklar. 10 milyon ağırlıklı ortalama adi payı ve 2 milyon TL temettü ödeyen, 1,5 milyon adi paya dönüştürülebilen imtiyazlı payları vardır. Sulandırılmış pay başına kazanç aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2.43",
+          "tr": "2,43 TL",
+          "value": 2.43
+        },
+        {
+          "key": "B",
+          "en": "TRY 2.61",
+          "tr": "2,61 TL",
+          "value": 2.61
+        },
+        {
+          "key": "C",
+          "en": "TRY 2.80",
+          "tr": "2,80 TL",
+          "value": 2.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Basic EPS = (30 - 2) / 10 = 2.80. Test: 2 / 1.5 = 1.33 < 2.80, so the preferred is dilutive. Diluted EPS = (28 + 2) / (10 + 1.5) = 30 / 11.5 = TRY 2.61.",
+      "explanation_tr": "Adi kazanç = (30 − 2) / 10 = 2,80. Test: 2 / 1,5 = 1,33 < 2,80, imtiyazlı pay sulandırıcıdır. Sulandırılmış kazanç = (28 + 2) / (10 + 1,5) = 30 / 11,5 = 2,61 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "2.43 adds the new shares but forgets to add back the preferred dividend to the numerator.",
+          "tr": "2,43 yeni payları ekler ama imtiyazlı temettüyü paya geri eklemeyi unutur."
+        },
+        "C": {
+          "en": "2.80 is basic EPS; the convertible preferred is dilutive and must be included.",
+          "tr": "2,80 adi kazançtır; dönüştürülebilir imtiyazlı pay sulandırıcıdır ve dahil edilmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: diluted EPS with convertible preferred.",
+          "tr": "İstenen: dönüştürülebilir imtiyazlı payla sulandırılmış kazanç."
+        },
+        {
+          "en": "Basic EPS = (NI - pref. div.) / shares = (30 - 2) / 10 = 2.80.",
+          "tr": "Adi kazanç = (NK − imtiyazlı temettü) / pay = (30 − 2) / 10 = 2,80.",
+          "formula_latex": "\\text{Basic}=\\frac{30-2}{10}=2.80"
+        },
+        {
+          "en": "Dilution test: pref. div. per new share = 2 / 1.5 = 1.33 < 2.80, dilutive.",
+          "tr": "Sulandırma testi: yeni pay başına imtiyazlı temettü = 2 / 1,5 = 1,33 < 2,80, sulandırıcı.",
+          "values": {
+            "Pref. div.": 2,
+            "Conv. shares": 1.5
+          }
+        },
+        {
+          "en": "If-converted: add back the dividend, add the shares: 30 / 11.5.",
+          "tr": "Dönüştürülmüş varsayımı: temettüyü geri ekle, payları ekle: 30 / 11,5.",
+          "formula_latex": "\\text{Diluted}=\\frac{28+2}{10+1.5}"
+        },
+        {
+          "en": "Result: TRY 2.61 per share.",
+          "tr": "Sonuç: pay başına 2,61 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "30",
+          "[÷]",
+          "11.5",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "30/(10+1.5)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "convertible",
+        "dilutive",
+        "if-converted-method",
+        "add-back"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "Sulandırılmış HBK Düzey 3'te yok."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Yıldız Perakende (fictional) has net income of TRY 9,000,000 and 3,000,000 weighted average common shares. There are 400,000 options outstanding with an exercise price of TRY 20. The average share price during the year was TRY 32 and the year-end price was TRY 40. Diluted EPS is closest to:",
+      "stem_tr": "Kurgusal Yıldız Perakende'nin net kârı 9.000.000 TL, ağırlıklı ortalama adi pay sayısı 3.000.000'dur. Kullanım fiyatı 20 TL olan 400.000 opsiyon dolaşımdadır. Yıl içindeki ortalama pay fiyatı 32 TL, yıl sonu fiyatı 40 TL'dir. Sulandırılmış pay başına kazanç aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2.65",
+          "tr": "2,65 TL",
+          "value": 2.65
+        },
+        {
+          "key": "B",
+          "en": "TRY 2.81",
+          "tr": "2,81 TL",
+          "value": 2.81
+        },
+        {
+          "key": "C",
+          "en": "TRY 2.86",
+          "tr": "2,86 TL",
+          "value": 2.86
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Treasury stock method with the average price: proceeds = 400,000 x 20 = 8,000,000, which buys back 8,000,000 / 32 = 250,000 shares. Net new shares = 150,000. Diluted EPS = 9,000,000 / 3,150,000 = TRY 2.86.",
+      "explanation_tr": "Ortalama fiyatla hazine payı yöntemi: gelir = 400.000 × 20 = 8.000.000, bununla 8.000.000 / 32 = 250.000 pay geri alınır. Net yeni pay = 150.000. Sulandırılmış kazanç = 9.000.000 / 3.150.000 = 2,86 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "2.65 adds all 400,000 option shares without the buyback assumption.",
+          "tr": "2,65, geri alım varsayımı olmadan 400.000 opsiyon payının tamamını ekler."
+        },
+        "B": {
+          "en": "2.81 uses the year-end price of 40 instead of the average price of 32.",
+          "tr": "2,81, 32 TL ortalama fiyat yerine 40 TL yıl sonu fiyatını kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: diluted EPS with options (treasury stock method).",
+          "tr": "İstenen: opsiyonlu sulandırılmış kazanç (hazine payı yöntemi)."
+        },
+        {
+          "en": "Basic EPS = 9,000,000 / 3,000,000 = 3.00; options are dilutive because 20 < 32.",
+          "tr": "Adi kazanç = 9.000.000 / 3.000.000 = 3,00; 20 < 32 olduğu için opsiyonlar sulandırıcıdır."
+        },
+        {
+          "en": "Shares repurchased = 400,000 x 20 / 32 = 250,000; net new shares = 400,000 - 250,000 = 150,000.",
+          "tr": "Geri alınan pay = 400.000 × 20 / 32 = 250.000; net yeni pay = 400.000 − 250.000 = 150.000.",
+          "formula_latex": "\\text{Net}=400{,}000-\\frac{400{,}000\\times 20}{32}",
+          "values": {
+            "Options": 400000,
+            "Exercise price": 20,
+            "Average price": 32
+          }
+        },
+        {
+          "en": "Diluted EPS = 9,000,000 / (3,000,000 + 150,000) = 2.857.",
+          "tr": "Sulandırılmış kazanç = 9.000.000 / (3.000.000 + 150.000) = 2,857.",
+          "formula_latex": "\\frac{9{,}000{,}000}{3{,}150{,}000}"
+        },
+        {
+          "en": "Result: TRY 2.86.",
+          "tr": "Sonuç: 2,86 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "9000000",
+          "[÷]",
+          "3150000",
+          "[=]"
+        ],
+        "note_tr": "Net yeni payı önce elle bul: 400.000 − (400.000 × 20 ÷ 32) = 150.000."
+      },
+      "numeric": {
+        "expr": "9000000/(3000000+400000-400000*20/32)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "treasury-stock-method",
+        "exercise-price",
+        "average-market-price",
+        "proceeds",
+        "option"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Çınar Kimya (fictional) reports net income of TRY 12,000,000 with 10,000,000 weighted average common shares and no preferred stock. It has TRY 50,000,000 of 8% convertible bonds outstanding all year, convertible into 1,000,000 common shares. The tax rate is 25%. Diluted EPS is closest to:",
+      "stem_tr": "Kurgusal Çınar Kimya, imtiyazlı payı olmaksızın 10.000.000 ağırlıklı ortalama adi payla 12.000.000 TL net kâr açıklar. Tüm yıl dolaşımda olan, 1.000.000 adi paya dönüştürülebilen %8 faizli 50.000.000 TL dönüştürülebilir tahvili vardır. Vergi oranı %25'tir. Sulandırılmış pay başına kazanç aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1.20",
+          "tr": "1,20 TL",
+          "value": 1.2
+        },
+        {
+          "key": "B",
+          "en": "TRY 1.36",
+          "tr": "1,36 TL",
+          "value": 1.36
+        },
+        {
+          "key": "C",
+          "en": "TRY 1.45",
+          "tr": "1,45 TL",
+          "value": 1.45
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Basic EPS = 12 / 10 = 1.20. After-tax interest = 50 x 8% x (1 - 0.25) = 3.0 million; per new share = 3.0 / 1.0 = 3.00, which is above 1.20, so the bonds are antidilutive and excluded. Diluted EPS = basic EPS = TRY 1.20.",
+      "explanation_tr": "Adi kazanç = 12 / 10 = 1,20. Vergi sonrası faiz = 50 × %8 × (1 − 0,25) = 3,0 milyon; yeni pay başına = 3,0 / 1,0 = 3,00, bu 1,20'nin üstündedir; tahviller sulandırma karşıtıdır ve dışarıda bırakılır. Sulandırılmış kazanç = adi kazanç = 1,20 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "1.36 = (12 + 3) / 11 includes the bonds even though they are antidilutive, which is not allowed.",
+          "tr": "1,36 = (12 + 3) / 11, sulandırma karşıtı olmalarına rağmen tahvilleri dahil eder; buna izin verilmez."
+        },
+        "C": {
+          "en": "1.45 = (12 + 4) / 11 adds back pretax interest and also ignores the antidilution test.",
+          "tr": "1,45 = (12 + 4) / 11, vergi öncesi faizi geri ekler ve sulandırma karşıtlığı testini de yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: diluted EPS, checking whether the bonds are dilutive.",
+          "tr": "İstenen: tahvillerin sulandırıcı olup olmadığı kontrol edilerek sulandırılmış kazanç."
+        },
+        {
+          "en": "Basic EPS = 12,000,000 / 10,000,000 = 1.20.",
+          "tr": "Adi kazanç = 12.000.000 / 10.000.000 = 1,20.",
+          "formula_latex": "\\text{Basic}=\\frac{12}{10}=1.20"
+        },
+        {
+          "en": "After-tax interest saved = 50,000,000 x 0.08 x (1 - 0.25) = 3,000,000.",
+          "tr": "Tasarruf edilen vergi sonrası faiz = 50.000.000 × 0,08 × (1 − 0,25) = 3.000.000.",
+          "values": {
+            "Face": 50000000,
+            "Coupon": "8%",
+            "Tax rate": "25%"
+          }
+        },
+        {
+          "en": "Per-share effect = 3,000,000 / 1,000,000 = 3.00 > 1.20, so antidilutive.",
+          "tr": "Pay başına etki = 3.000.000 / 1.000.000 = 3,00 > 1,20; sulandırma karşıtı."
+        },
+        {
+          "en": "Antidilutive securities are excluded: diluted EPS = TRY 1.20.",
+          "tr": "Sulandırma karşıtı kıymetler dışarıda bırakılır: sulandırılmış kazanç = 1,20 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12000000",
+          "[÷]",
+          "10000000",
+          "[=]"
+        ],
+        "note_tr": "Önce testi yap: 50.000.000 × 0,08 × 0,75 ÷ 1.000.000 = 3,00 > 1,20 → dahil etme."
+      },
+      "numeric": {
+        "expr": "12000000/10000000",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "antidilutive",
+        "convertible",
+        "after-tax",
+        "exclude",
+        "bond"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-d-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Lale Gıda (fictional) has net income of TRY 20 million, 8 million weighted average common shares, convertible preferred shares paying TRY 1.6 million of dividends and convertible into 0.8 million common shares, and 0.5 million options with an exercise price of TRY 25 when the average share price was TRY 20. Diluted EPS is closest to:",
+      "stem_tr": "Kurgusal Lale Gıda'nın net kârı 20 milyon TL, ağırlıklı ortalama adi pay sayısı 8 milyon, 1,6 milyon TL temettü ödeyen ve 0,8 milyon adi paya dönüştürülebilen imtiyazlı payları ve ortalama pay fiyatı 20 TL iken kullanım fiyatı 25 TL olan 0,5 milyon opsiyonu vardır. Sulandırılmış pay başına kazanç aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2.15",
+          "tr": "2,15 TL",
+          "value": 2.15
+        },
+        {
+          "key": "B",
+          "en": "TRY 2.27",
+          "tr": "2,27 TL",
+          "value": 2.27
+        },
+        {
+          "key": "C",
+          "en": "TRY 2.30",
+          "tr": "2,30 TL",
+          "value": 2.3
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Basic EPS = (20 - 1.6) / 8 = 2.30. Preferred: 1.6 / 0.8 = 2.00 < 2.30, dilutive. Options: exercise price 25 is above the average price 20, so they are antidilutive and excluded. Diluted EPS = 20 / 8.8 = TRY 2.27.",
+      "explanation_tr": "Adi kazanç = (20 − 1,6) / 8 = 2,30. İmtiyazlı: 1,6 / 0,8 = 2,00 < 2,30, sulandırıcı. Opsiyonlar: kullanım fiyatı 25, ortalama fiyat 20'nin üstünde; sulandırma karşıtıdır ve dışarıda bırakılır. Sulandırılmış kazanç = 20 / 8,8 = 2,27 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "2.15 = 20 / 9.3 wrongly adds all 0.5 million option shares although the options are out of the money.",
+          "tr": "2,15 = 20 / 9,3, opsiyonlar zararda olmasına rağmen 0,5 milyon opsiyon payının tamamını yanlışlıkla ekler."
+        },
+        "C": {
+          "en": "2.30 is basic EPS; the dilutive preferred must be included.",
+          "tr": "2,30 adi kazançtır; sulandırıcı imtiyazlı pay dahil edilmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: diluted EPS with two potential dilutive securities.",
+          "tr": "İstenen: iki olası sulandırıcı kıymetle sulandırılmış kazanç."
+        },
+        {
+          "en": "Basic EPS = (20 - 1.6) / 8 = 2.30.",
+          "tr": "Adi kazanç = (20 − 1,6) / 8 = 2,30.",
+          "formula_latex": "\\text{Basic}=\\frac{20-1.6}{8}=2.30"
+        },
+        {
+          "en": "Preferred test: 1.6 / 0.8 = 2.00 < 2.30, include (if-converted).",
+          "tr": "İmtiyazlı testi: 1,6 / 0,8 = 2,00 < 2,30, dahil et (dönüştürülmüş varsayımı).",
+          "values": {
+            "Pref. div.": 1.6,
+            "Conv. shares": 0.8
+          }
+        },
+        {
+          "en": "Options: exercise price 25 > average price 20, antidilutive, exclude.",
+          "tr": "Opsiyonlar: kullanım fiyatı 25 > ortalama fiyat 20, sulandırma karşıtı, dışarıda bırak."
+        },
+        {
+          "en": "Diluted EPS = (18.4 + 1.6) / (8 + 0.8) = 20 / 8.8 = 2.27.",
+          "tr": "Sulandırılmış kazanç = (18,4 + 1,6) / (8 + 0,8) = 20 / 8,8 = 2,27.",
+          "formula_latex": "\\frac{20}{8.8}"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20",
+          "[÷]",
+          "8.8",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "20/(8+0.8)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "out-of-the-money",
+        "antidilutive",
+        "exclude",
+        "potential",
+        "respectively"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Sakarya Mobilya (fictional) reports revenue of TRY 2,400 million and cost of goods sold of TRY 1,560 million. Its gross profit margin is closest to:",
+      "stem_tr": "Kurgusal Sakarya Mobilya 2.400 milyon TL hasılat ve 1.560 milyon TL satışların maliyeti raporlar. Brüt kâr marjı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "35.0%",
+          "tr": "%35,0",
+          "value": 35.0
+        },
+        {
+          "key": "B",
+          "en": "53.8%",
+          "tr": "%53,8",
+          "value": 53.8
+        },
+        {
+          "key": "C",
+          "en": "65.0%",
+          "tr": "%65,0",
+          "value": 65.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Gross profit = 2,400 - 1,560 = 840. Gross margin = 840 / 2,400 = 35.0%.",
+      "explanation_tr": "Brüt kâr = 2.400 − 1.560 = 840. Brüt marj = 840 / 2.400 = %35,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "53.8% divides gross profit by cost of goods sold instead of revenue.",
+          "tr": "%53,8 brüt kârı hasılata değil satışların maliyetine böler."
+        },
+        "C": {
+          "en": "65.0% is COGS as a percentage of revenue, the complement of the gross margin.",
+          "tr": "%65,0 satışların maliyetinin hasılata oranıdır; brüt marjın tamamlayıcısıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: gross profit margin.",
+          "tr": "İstenen: brüt kâr marjı."
+        },
+        {
+          "en": "Gross profit = revenue - COGS.",
+          "tr": "Brüt kâr = hasılat − satışların maliyeti.",
+          "formula_latex": "GP=2{,}400-1{,}560=840"
+        },
+        {
+          "en": "Margin = gross profit / revenue = 840 / 2,400.",
+          "tr": "Marj = brüt kâr / hasılat = 840 / 2.400.",
+          "values": {
+            "Revenue": 2400,
+            "COGS": 1560
+          }
+        },
+        {
+          "en": "Result: 0.35 = 35.0%.",
+          "tr": "Sonuç: 0,35 = %35,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2400",
+          "[−]",
+          "1560",
+          "[÷]",
+          "2400",
+          "[×]",
+          "100",
+          "[=]"
+        ],
+        "note_tr": "Chain modunda: 2.400 − 1.560 = 840; ÷ 2.400 = 0,35; × 100 = 35."
+      },
+      "numeric": {
+        "expr": "(2400-1560)/2400*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "gross-profit",
+        "margin",
+        "cost-of-goods-sold",
+        "revenue"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Brüt kâr marjı Düzey 3 oran analizinde var."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Karadeniz Çelik (fictional) reports: revenue TRY 3,200 million, cost of goods sold TRY 2,080 million, selling and administrative expenses TRY 480 million, depreciation TRY 160 million, interest expense TRY 90 million, tax rate 25%. Its operating profit margin is closest to:",
+      "stem_tr": "Kurgusal Karadeniz Çelik şunları raporlar: hasılat 3.200 milyon TL, satışların maliyeti 2.080 milyon TL, satış ve genel yönetim giderleri 480 milyon TL, amortisman 160 milyon TL, faiz gideri 90 milyon TL, vergi oranı %25. Faaliyet kâr marjı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.2%",
+          "tr": "%12,2",
+          "value": 12.2
+        },
+        {
+          "key": "B",
+          "en": "15.0%",
+          "tr": "%15,0",
+          "value": 15.0
+        },
+        {
+          "key": "C",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Operating income = 3,200 - 2,080 - 480 - 160 = 480. Operating margin = 480 / 3,200 = 15.0%. Interest and tax come after operating income.",
+      "explanation_tr": "Faaliyet kârı = 3.200 − 2.080 − 480 − 160 = 480. Faaliyet marjı = 480 / 3.200 = %15,0. Faiz ve vergi faaliyet kârından sonra gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "12.2% is the pretax margin: (480 - 90) / 3,200; interest is not an operating expense here.",
+          "tr": "%12,2 vergi öncesi marjdır: (480 − 90) / 3.200; faiz burada faaliyet gideri değildir."
+        },
+        "C": {
+          "en": "20.0% leaves out depreciation, giving an EBITDA-type margin, not the operating margin.",
+          "tr": "%20,0 amortismanı dışarıda bırakır; bu faaliyet marjı değil, FAVÖK benzeri bir marjdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: operating profit margin.",
+          "tr": "İstenen: faaliyet kâr marjı."
+        },
+        {
+          "en": "Operating income = revenue - COGS - S&A - depreciation (before interest and tax).",
+          "tr": "Faaliyet kârı = hasılat − SMM − satış/genel yönetim − amortisman (faiz ve vergiden önce).",
+          "formula_latex": "OI=3{,}200-2{,}080-480-160=480"
+        },
+        {
+          "en": "Margin = 480 / 3,200.",
+          "tr": "Marj = 480 / 3.200.",
+          "values": {
+            "Revenue": 3200,
+            "Operating income": 480
+          }
+        },
+        {
+          "en": "Result: 15.0%.",
+          "tr": "Sonuç: %15,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3200",
+          "[−]",
+          "2080",
+          "[−]",
+          "480",
+          "[−]",
+          "160",
+          "[÷]",
+          "3200",
+          "[×]",
+          "100",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(3200-2080-480-160)/3200*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "operating-income",
+        "administrative",
+        "depreciation",
+        "interest-expense"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Beyaz Lojistik (fictional) has revenue of TRY 1,800 million, operating income of TRY 270 million and interest expense of TRY 60 million. Its tax rate is 20%. The net profit margin is closest to:",
+      "stem_tr": "Kurgusal Beyaz Lojistik'in hasılatı 1.800 milyon TL, faaliyet kârı 270 milyon TL ve faiz gideri 60 milyon TL'dir. Vergi oranı %20'dir. Net kâr marjı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.3%",
+          "tr": "%9,3",
+          "value": 9.33
+        },
+        {
+          "key": "B",
+          "en": "11.7%",
+          "tr": "%11,7",
+          "value": 11.67
+        },
+        {
+          "key": "C",
+          "en": "15.0%",
+          "tr": "%15,0",
+          "value": 15.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Pretax income = 270 - 60 = 210. Net income = 210 x (1 - 0.20) = 168. Net margin = 168 / 1,800 = 9.3%.",
+      "explanation_tr": "Vergi öncesi kâr = 270 − 60 = 210. Net kâr = 210 × (1 − 0,20) = 168. Net marj = 168 / 1.800 = %9,3.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "11.7% is the pretax margin (210 / 1,800); tax has not been deducted.",
+          "tr": "%11,7 vergi öncesi marjdır (210 / 1.800); vergi düşülmemiştir."
+        },
+        "C": {
+          "en": "15.0% is the operating margin (270 / 1,800).",
+          "tr": "%15,0 faaliyet marjıdır (270 / 1.800)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: net profit margin.",
+          "tr": "İstenen: net kâr marjı."
+        },
+        {
+          "en": "Pretax income = operating income - interest = 270 - 60 = 210.",
+          "tr": "Vergi öncesi kâr = faaliyet kârı − faiz = 270 − 60 = 210."
+        },
+        {
+          "en": "Net income = 210 x (1 - 0.20) = 168.",
+          "tr": "Net kâr = 210 × (1 − 0,20) = 168.",
+          "formula_latex": "NI=210\\times 0.8=168",
+          "values": {
+            "Operating income": 270,
+            "Interest": 60,
+            "Tax rate": "20%"
+          }
+        },
+        {
+          "en": "Net margin = 168 / 1,800 = 0.0933.",
+          "tr": "Net marj = 168 / 1.800 = 0,0933.",
+          "formula_latex": "\\frac{168}{1{,}800}"
+        },
+        {
+          "en": "Result: 9.3%.",
+          "tr": "Sonuç: %9,3."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "270",
+          "[−]",
+          "60",
+          "[×]",
+          "0.8",
+          "[÷]",
+          "1800",
+          "[×]",
+          "100",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(270-60)*(1-0.20)/1800*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "net-profit-margin",
+        "pretax",
+        "deduct",
+        "interest-expense"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A common-size income statement shows that a company's cost of goods sold rose from 60% to 64% of revenue, while its operating margin stayed at 15%. Which conclusion is most consistent with these figures?",
+      "stem_tr": "Dikey gelir tablosu, bir şirketin satışların maliyetinin hasılatın %60'ından %64'üne çıktığını, faaliyet marjının ise %15'te kaldığını gösterir. Hangi sonuç bu rakamlarla en tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Gross margin fell by 4 percentage points and operating expenses as a share of revenue fell by the same amount.",
+          "tr": "Brüt marj 4 puan düştü ve faaliyet giderlerinin hasılata oranı aynı tutarda düştü."
+        },
+        {
+          "key": "B",
+          "en": "Gross margin rose by 4 percentage points because revenue grew faster than costs.",
+          "tr": "Hasılat maliyetlerden hızlı büyüdüğü için brüt marj 4 puan yükseldi."
+        },
+        {
+          "key": "C",
+          "en": "Net income must have fallen because cost of goods sold increased.",
+          "tr": "Satışların maliyeti arttığı için net kâr düşmüş olmalıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "COGS up 4 points means gross margin down 4 points (from 40% to 36%). An unchanged operating margin implies operating expenses fell from 25% to 21% of revenue.",
+      "explanation_tr": "SMM'nin 4 puan artması brüt marjın 4 puan düşmesi demektir (%40'tan %36'ya). Faaliyet marjının değişmemesi, faaliyet giderlerinin hasılatın %25'inden %21'ine gerilediğini gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Higher COGS as a share of revenue means lower, not higher, gross margin.",
+          "tr": "SMM'nin hasılata oranının yükselmesi brüt marjın yükselmesi değil düşmesi demektir."
+        },
+        "C": {
+          "en": "Common-size figures are percentages; absolute net income can rise if revenue grows and the net margin is stable.",
+          "tr": "Dikey rakamlar yüzdedir; hasılat büyür ve net marj sabit kalırsa mutlak net kâr artabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "common-size",
+        "percentage-point",
+        "share-of",
+        "stay",
+        "conclusion"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Selected data for Vadi Tarım (fictional): Year 1 revenue 1,000, COGS 600, operating expenses 250; Year 2 revenue 1,300, COGS 806, operating expenses 299 (all TRY million). Which statement about Year 2 compared with Year 1 is most accurate?",
+      "stem_tr": "Kurgusal Vadi Tarım'ın seçilmiş verileri: 1. yıl hasılat 1.000, SMM 600, faaliyet giderleri 250; 2. yıl hasılat 1.300, SMM 806, faaliyet giderleri 299 (tümü milyon TL). 2. yılın 1. yılla karşılaştırmasına ilişkin hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both gross margin and operating margin improved.",
+          "tr": "Hem brüt marj hem faaliyet marjı iyileşti."
+        },
+        {
+          "key": "B",
+          "en": "Gross margin declined, but a lower operating expense ratio kept the operating margin unchanged.",
+          "tr": "Brüt marj geriledi ancak düşen faaliyet gideri oranı faaliyet marjını değiştirmedi."
+        },
+        {
+          "key": "C",
+          "en": "Operating margin declined because operating expenses grew in absolute terms.",
+          "tr": "Faaliyet giderleri mutlak olarak büyüdüğü için faaliyet marjı geriledi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Gross margin: Year 1 = 40%, Year 2 = 494 / 1,300 = 38%. Operating expenses: 25% then 23%. Operating margin: 15% in both years. The common-size view shows the mix behind an unchanged margin.",
+      "explanation_tr": "Brüt marj: 1. yıl %40, 2. yıl 494 / 1.300 = %38. Faaliyet giderleri: %25, sonra %23. Faaliyet marjı iki yılda da %15. Dikey bakış, değişmeyen marjın arkasındaki bileşimi gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gross margin fell from 40% to 38%, so not both improved.",
+          "tr": "Brüt marj %40'tan %38'e düştü; ikisi birden iyileşmedi."
+        },
+        "C": {
+          "en": "Absolute growth is not the point of common-size analysis; as a share of revenue operating expenses fell and the margin held at 15%.",
+          "tr": "Mutlak büyüme dikey analizin konusu değildir; hasılata oranla faaliyet giderleri düştü ve marj %15'te kaldı."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "decline",
+        "ratio",
+        "absolute",
+        "unchanged",
+        "mix"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-02-e-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A common-size income statement shows a pretax margin of 12.0% and a net profit margin of 9.0%. The company's effective tax rate is closest to:",
+      "stem_tr": "Dikey gelir tablosu %12,0 vergi öncesi kâr marjı ve %9,0 net kâr marjı göstermektedir. Şirketin efektif vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.0%",
+          "tr": "%3,0",
+          "value": 3.0
+        },
+        {
+          "key": "B",
+          "en": "33.3%",
+          "tr": "%33,3",
+          "value": 33.3
+        },
+        {
+          "key": "C",
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Tax as a share of revenue = 12.0% - 9.0% = 3.0%. Effective tax rate = tax / pretax income = 3.0 / 12.0 = 25.0%.",
+      "explanation_tr": "Verginin hasılata oranı = %12,0 − %9,0 = %3,0. Efektif vergi oranı = vergi / vergi öncesi kâr = 3,0 / 12,0 = %25,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "3.0% is tax expense as a percentage of revenue, not of pretax income.",
+          "tr": "%3,0 vergi giderinin hasılata oranıdır, vergi öncesi kâra değil."
+        },
+        "B": {
+          "en": "33.3% divides tax by net income (3 / 9) instead of pretax income.",
+          "tr": "%33,3 vergiyi vergi öncesi kâra değil net kâra böler (3 / 9)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: effective tax rate from common-size data.",
+          "tr": "İstenen: dikey verilerden efektif vergi oranı."
+        },
+        {
+          "en": "Tax / revenue = pretax margin - net margin = 12 - 9 = 3%.",
+          "tr": "Vergi / hasılat = vergi öncesi marj − net marj = 12 − 9 = %3."
+        },
+        {
+          "en": "Effective tax rate = (tax / revenue) / (pretax income / revenue) = 3 / 12.",
+          "tr": "Efektif vergi oranı = (vergi / hasılat) / (vergi öncesi kâr / hasılat) = 3 / 12.",
+          "formula_latex": "t=\\frac{12-9}{12}",
+          "values": {
+            "Pretax margin": "12%",
+            "Net margin": "9%"
+          }
+        },
+        {
+          "en": "Result: 25.0%.",
+          "tr": "Sonuç: %25,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12",
+          "[−]",
+          "9",
+          "[÷]",
+          "12",
+          "[×]",
+          "100",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(12-9)/12*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "effective-tax-rate",
+        "pretax",
+        "net-profit-margin"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

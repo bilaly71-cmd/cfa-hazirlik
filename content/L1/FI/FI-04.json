@@ -1,0 +1,1248 @@
+{
+  "module_id": "FI-04",
+  "lesson": {
+    "id": "FI-04-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-04",
+    "los_ids": [
+      "FI-04-a",
+      "FI-04-b",
+      "FI-04-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Markets for Corporate Issuers",
+    "title_tr": "Şirket İhraççıları için Borçlanma Piyasaları",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Matching the loan to the need",
+        "heading_tr": "Borcu ihtiyaca uydurmak",
+        "en": "A company borrows for two very different reasons. It needs short-term money to pay suppliers and salaries while it waits for customers to pay, and it needs long-term money for factories, ships or acquisitions. Banks have the same problem in a stronger form: they lend for years but fund themselves with deposits that can leave tomorrow. Imagine Marmara Tekstil A.Ş., a fictional exporter. Each spring it needs TRY 200 million for cotton, which it repays in autumn after export sales; for that it uses a bank line or commercial paper. For a new plant it sells a 5-year bond. A Turkish bank, meanwhile, funds a 10-year mortgage book with deposits, interbank borrowing and overnight repos on DİBS. Choosing the wrong instrument creates rollover risk: debt that comes due before the cash to repay it arrives.",
+        "tr": "Bir şirket çok farklı iki nedenle borçlanır. Müşterilerin ödemesini beklerken tedarikçilere ve maaşlara ödeme yapmak için kısa vadeli paraya; fabrika, gemi ya da satın alma için uzun vadeli paraya ihtiyaç duyar. Bankalar aynı sorunu daha ağır biçimde yaşar: yıllarca vadeyle kredi verir ama kendilerini yarın çekilebilecek mevduatla fonlarlar. Kurgusal bir ihracatçı olan Marmara Tekstil A.Ş.'yi düşünün. Her bahar pamuk için 200 milyon TL'ye ihtiyaç duyar ve bunu sonbaharda ihracat satışlarından sonra geri öder; bunun için banka kredi limiti ya da finansman bonosu kullanır. Yeni tesis için ise 5 yıllık tahvil satar. Bir Türk bankası ise 10 yıllık konut kredisi portföyünü mevduat, bankalararası borçlanma ve DİBS üzerinden gecelik repoyla fonlar. Yanlış aracı seçmek çevirme (rollover) riski yaratır: borcun, onu ödeyecek nakit gelmeden önce vadesinin dolması.",
+        "key_terms": [
+          "short-term funding",
+          "long-term funding",
+          "rollover risk",
+          "repo",
+          "commercial paper"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Short-term funding for non-financial companies",
+        "heading_tr": "Finansal olmayan şirketler için kısa vadeli finansman",
+        "en": "Bank lines of credit come in three strengths. An uncommitted line is an informal offer: the bank may refuse to lend when asked, so it is cheap but unreliable. A committed (regular) line is a firm promise for a fixed period, usually up to a year, in return for a commitment fee on the unused amount. A revolving credit facility (revolver) is the strongest: a committed, multi-year agreement that the company can draw, repay and redraw. Larger companies with good ratings issue commercial paper (CP): unsecured notes with maturities from a few days to about a year (270 days or less in the US market), sold at a discount or with interest. CP is usually rolled over, so issuers keep backup lines of credit in case the market closes. Secured short-term options include factoring (selling receivables at a discount) and loans backed by inventory or receivables; these are used by weaker borrowers because the lender wants collateral. In Türkiye, companies issue finansman bonosu, the local form of CP, often sold to funds through banks.",
+        "tr": "Banka kredi limitleri üç güç düzeyinde gelir. Taahhütsüz limit gayriresmî bir tekliftir: banka istendiğinde kredi vermeyi reddedebilir; bu yüzden ucuz ama güvenilmezdir. Taahhütlü (düzenli) limit, kullanılmayan tutar üzerinden ödenen taahhüt komisyonu karşılığında genellikle bir yıla kadar sabit bir süre için kesin sözdür. Rotatif kredi (revolver) en güçlüsüdür: şirketin kullanıp geri ödeyip yeniden kullanabildiği çok yıllı taahhütlü bir anlaşmadır. Kredi notu iyi büyük şirketler finansman bonosu (CP) ihraç eder: birkaç günden yaklaşık bir yıla kadar vadeli (ABD piyasasında en çok 270 gün) teminatsız senetler; iskontolu ya da faizli satılır. Finansman bonosu genellikle çevrilir; bu nedenle ihraççılar piyasanın kapanma ihtimaline karşı yedek kredi limitleri tutar. Teminatlı kısa vadeli seçenekler arasında faktoring (alacakların iskontoyla satılması) ve stok ya da alacaklarla teminatlandırılmış krediler vardır; borç veren teminat istediği için bunları daha zayıf borçlular kullanır. Türkiye'de şirketler finansman bonosu ihraç eder ve çoğunlukla bankalar aracılığıyla fonlara satar.",
+        "key_terms": [
+          "uncommitted line",
+          "committed line",
+          "revolving credit facility",
+          "commitment fee",
+          "commercial paper",
+          "backup line",
+          "factoring",
+          "secured loan"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Source",
+              "tr": "Kaynak"
+            },
+            {
+              "en": "Reliability",
+              "tr": "Güvenilirlik"
+            },
+            {
+              "en": "Typical user",
+              "tr": "Tipik kullanıcı"
+            }
+          ],
+          "rows": [
+            [
+              "Uncommitted line / Taahhütsüz limit",
+              "Low: bank may refuse / Düşük: banka reddedebilir",
+              "Small firms / Küçük şirketler"
+            ],
+            [
+              "Committed line / Taahhütlü limit",
+              "Firm, up to ~1 year / Kesin, ~1 yıla kadar",
+              "Mid-size firms / Orta ölçekli şirketler"
+            ],
+            [
+              "Revolver / Rotatif kredi",
+              "Firm, multi-year / Kesin, çok yıllı",
+              "Large firms / Büyük şirketler"
+            ],
+            [
+              "Commercial paper / Finansman bonosu",
+              "Market dependent, needs backup / Piyasaya bağlı, yedek limit gerekir",
+              "Highly rated firms / Yüksek notlu şirketler"
+            ],
+            [
+              "Factoring, secured loans / Faktoring, teminatlı kredi",
+              "Depends on collateral / Teminata bağlı",
+              "Weaker borrowers / Zayıf borçlular"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Short-term funding for financial institutions",
+        "heading_tr": "Finansal kuruluşlar için kısa vadeli finansman",
+        "en": "Banks fund themselves differently. Retail deposits (current and savings accounts) are the cheapest and most stable source, partly because deposit insurance makes small savers patient. Certificates of deposit (CDs) are deposits with a fixed term; large negotiable CDs can be sold in the secondary market, non-negotiable CDs cannot. Wholesale funds are borrowed from other institutions: central bank funds (reserves lent between banks overnight, such as the federal funds market), interbank loans for days to months, commercial paper issued by the bank and repurchase agreements secured by government bonds. Wholesale funding is flexible but can disappear in a crisis, so regulators prefer banks with a high share of stable retail deposits. In Türkiye, banks also fund through TLREF-based interbank trades and TCMB open market operations.",
+        "tr": "Bankalar kendilerini farklı fonlar. Bireysel mevduat (vadesiz ve vadeli hesaplar) en ucuz ve en istikrarlı kaynaktır; mevduat sigortası küçük tasarruf sahiplerini sabırlı kıldığı için de böyledir. Mevduat sertifikaları (CD) sabit vadeli mevduattır; büyük tutarlı devredilebilir CD'ler ikincil piyasada satılabilir, devredilemez olanlar satılamaz. Toptan fonlar başka kuruluşlardan borçlanılır: merkez bankası fonları (bankalar arasında gecelik ödünç verilen rezervler, örneğin ABD'deki federal fon piyasası), günlerden aylara uzanan bankalararası krediler, bankanın ihraç ettiği finansman bonosu ve devlet tahviliyle teminatlandırılmış repo. Toptan fonlama esnektir ama krizde kaybolabilir; bu yüzden düzenleyiciler istikrarlı bireysel mevduat payı yüksek bankaları tercih eder. Türkiye'de bankalar ayrıca TLREF bazlı bankalararası işlemler ve TCMB açık piyasa işlemleriyle de fonlanır.",
+        "key_terms": [
+          "retail deposit",
+          "certificate of deposit",
+          "negotiable CD",
+          "wholesale funding",
+          "central bank funds",
+          "interbank market",
+          "deposit insurance"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Repurchase agreements",
+        "heading_tr": "Repo sözleşmeleri",
+        "en": "A repurchase agreement (repo) is a sale of a security with a promise to buy it back later at a higher price. Economically it is a secured loan: the seller (repo party) borrows cash and gives the security as collateral; the buyer (reverse repo party) lends cash. The difference between the repurchase price and the sale price is the repo interest, set by the repo rate. Repos are mostly overnight or for a few days (term repo for longer). The lender protects itself with a haircut: it lends less than the market value of the collateral, so the borrower posts initial margin. If the collateral falls in value, the borrower must add more (variation margin). In a tri-party repo a custodian bank holds the collateral and handles valuation for both sides. The repo rate is lower when the collateral is of high quality and liquid, when the term is shorter, when the collateral is delivered to the lender rather than held by the borrower, and when a particular security is in high demand (special collateral). Risks: the borrower may default and the collateral may be worth less than the cash (collateral risk), and the lender may fail to return the security; leverage built with repos can unwind quickly if haircuts rise.",
+        "tr": "Repo (geri alım sözleşmesi), bir menkul kıymetin daha sonra daha yüksek bir fiyattan geri alınması sözüyle satılmasıdır. Ekonomik olarak teminatlı bir kredidir: satıcı (repo tarafı) nakit borçlanır ve menkul kıymeti teminat olarak verir; alıcı (ters repo tarafı) nakit verir. Geri alım fiyatı ile satış fiyatı arasındaki fark repo faizidir ve repo oranıyla belirlenir. Repolar çoğunlukla gecelik ya da birkaç günlüktür (daha uzun vadelisine vadeli repo denir). Borç veren kendini kesinti (haircut) ile korur: teminatın piyasa değerinden daha az nakit verir; böylece borçlu başlangıç teminatı yatırmış olur. Teminatın değeri düşerse borçlu ek teminat (değişim teminatı) koymak zorundadır. Üç taraflı repoda saklamacı bir banka teminatı tutar ve değerlemeyi her iki taraf için yapar. Repo oranı; teminat yüksek kaliteli ve likitse, vade kısaysa, teminat borçluda tutulmak yerine borç verene teslim ediliyorsa ve belirli bir menkul kıymete talep yüksekse (özel teminat) daha düşüktür. Riskler: borçlu temerrüde düşebilir ve teminat nakitten daha az edebilir (teminat riski); borç veren menkul kıymeti geri vermeyebilir; repoyla kurulan kaldıraç, kesintiler yükselince hızla çözülebilir.",
+        "key_terms": [
+          "repurchase agreement",
+          "reverse repo",
+          "repo rate",
+          "repo interest",
+          "haircut",
+          "initial margin",
+          "variation margin",
+          "tri-party repo",
+          "special collateral",
+          "term repo"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Repo arithmetic",
+        "heading_tr": "Repo hesapları",
+        "en": "Cash lent = market value of collateral × (1 − haircut). Initial margin = market value / cash lent = 1 / (1 − haircut). Repo interest = cash lent × repo rate × days / 360 (money market convention; some markets use 365). Repurchase price = cash lent + repo interest. If the repo rate is quoted as an annual rate, always scale it by the actual term. The haircut protects the lender; the repo rate is the borrower's cost.",
+        "tr": "Verilen nakit = teminatın piyasa değeri × (1 − kesinti). Başlangıç teminatı oranı = piyasa değeri / verilen nakit = 1 / (1 − kesinti). Repo faizi = verilen nakit × repo oranı × gün / 360 (para piyasası uygulaması; bazı piyasalar 365 kullanır). Geri alım fiyatı = verilen nakit + repo faizi. Repo oranı yıllık kote edilmişse her zaman gerçek vadeyle ölçeklendirin. Kesinti borç vereni korur; repo oranı borçlunun maliyetidir.",
+        "key_terms": [
+          "haircut",
+          "initial margin",
+          "repo rate",
+          "repurchase price"
+        ],
+        "formula_latex": "Cash = MV\\times(1-h),\\quad Interest = Cash\\times r_{repo}\\times\\frac{t}{360},\\quad P_{repurchase}=Cash+Interest"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A one-week repo on DİBS",
+        "heading_tr": "DİBS üzerine bir haftalık repo",
+        "en": "Karadeniz Portföy, a fictional fund, needs cash for seven days. It repos out DİBS with a market value of TRY 100 million at a 3% haircut and a repo rate of 44% (ACT/360). Cash received: 100 × 0.97 = TRY 97.0 million. Interest: 97.0 × 0.44 × 7/360 = TRY 0.8298 million. Repurchase price: 97.0 + 0.8298 = TRY 97.83 million. The fund keeps the coupon of the DİBS because it is still the economic owner. If the DİBS price falls 2% during the week, the lender asks for more collateral so that the 3% haircut is restored.",
+        "tr": "Kurgusal bir fon olan Karadeniz Portföy yedi günlüğüne nakde ihtiyaç duyuyor. Piyasa değeri 100 milyon TL olan DİBS'leri %3 kesinti ve %44 repo oranıyla (ACT/360) repoya veriyor. Alınan nakit: 100 × 0,97 = 97,0 milyon TL. Faiz: 97,0 × 0,44 × 7/360 = 0,8298 milyon TL. Geri alım fiyatı: 97,0 + 0,8298 = 97,83 milyon TL. DİBS'in kuponu fonda kalır; çünkü ekonomik sahip hâlâ fondur. Hafta içinde DİBS fiyatı %2 düşerse borç veren, %3 kesintinin yeniden sağlanması için ek teminat ister.",
+        "key_terms": [
+          "haircut",
+          "repo rate",
+          "repurchase price",
+          "variation margin"
+        ],
+        "example": {
+          "en": "Cash = 100 × (1 − 0.03) = 97.0; Interest = 97.0 × 0.44 × 7/360 = 0.8298; Repurchase = 97.8298 million TRY.",
+          "tr": "Nakit = 100 × (1 − 0,03) = 97,0; Faiz = 97,0 × 0,44 × 7/360 = 0,8298; Geri alım = 97,8298 milyon TL.",
+          "formula_latex": "97.0\\times0.44\\times\\frac{7}{360}=0.8298"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Long-term funding: investment grade versus high yield",
+        "heading_tr": "Uzun vadeli finansman: yatırım yapılabilir ve yüksek getirili ihraççılar",
+        "en": "Investment-grade issuers (rated BBB−/Baa3 or better) can borrow for long maturities, often 10 to 30 years, with fixed coupons, unsecured, and with few covenants. They have steady market access, use medium-term note (MTN) programs to issue in many sizes and maturities, and build a maturity ladder so that only a small part of the debt comes due each year. High-yield issuers (below investment grade) face a different market. Their bonds have shorter maturities, higher coupons and more protective covenants, are often secured or structured with several seniority levels, and are usually callable so that the company can refinance when its credit improves. Many high-yield companies also use leveraged loans: senior, secured, floating-rate bank loans, often syndicated and sold to institutional investors and CLOs. High-yield market access depends on market conditions and can close in a downturn, so these issuers carry more refinancing risk. The maturity, coupon, security and covenant structure of a bond therefore signals the issuer's credit quality.",
+        "tr": "Yatırım yapılabilir ihraççılar (BBB−/Baa3 ve üzeri) uzun vadelerle, çoğunlukla 10-30 yıl, sabit kuponla, teminatsız ve az taahhütle borçlanabilir. Piyasaya istikrarlı erişimleri vardır; orta vadeli tahvil (MTN) programlarıyla pek çok büyüklük ve vadede ihraç yapar ve her yıl borcun yalnızca küçük bir kısmının vadesi gelsin diye vade merdiveni kurarlar. Yüksek getirili ihraççılar (yatırım yapılabilir seviyenin altı) farklı bir piyasayla karşılaşır. Tahvillerinin vadesi daha kısa, kuponu daha yüksek ve koruyucu taahhütleri daha fazladır; çoğunlukla teminatlı ya da birkaç öncelik düzeyiyle yapılandırılır ve genellikle erken itfa edilebilirdir; böylece şirket kredi kalitesi iyileşince yeniden finansman yapabilir. Pek çok yüksek getirili şirket ayrıca kaldıraçlı kredi kullanır: kıdemli, teminatlı, değişken faizli banka kredileri; çoğunlukla sendikasyon yoluyla kurumsal yatırımcılara ve CLO'lara satılır. Yüksek getirili piyasaya erişim piyasa koşullarına bağlıdır ve durgunlukta kapanabilir; bu nedenle bu ihraççılar daha fazla yeniden finansman riski taşır. Dolayısıyla bir tahvilin vadesi, kuponu, teminatı ve taahhüt yapısı ihraççının kredi kalitesine dair sinyal verir.",
+        "key_terms": [
+          "investment grade",
+          "high yield",
+          "medium-term note",
+          "maturity ladder",
+          "leveraged loan",
+          "syndicated loan",
+          "callable",
+          "refinancing risk",
+          "covenant"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "In a repo the party that sells the security is the borrower of cash, and the repo rate is its cost; the buyer earns the rate. Apply the haircut to the collateral value, not to the cash: cash = MV × (1 − h). The haircut and the initial margin are different numbers: 1/(1 − h) is the margin ratio, not 1 + h. Scale the annual repo rate by days/360, not by months/12 unless told so. A higher-quality, more liquid collateral means a lower repo rate, and a longer term means a higher rate. Uncommitted lines are not reliable funding, and commercial paper is unsecured, so it needs a backup line. High-yield bonds usually have more covenants and shorter maturities than investment-grade bonds, not fewer.",
+        "tr": "Repoda menkul kıymeti satan taraf nakit borçlanan taraftır ve repo oranı onun maliyetidir; alıcı bu oranı kazanır. Kesintiyi nakde değil teminat değerine uygulayın: nakit = PD × (1 − h). Kesinti ile başlangıç teminatı oranı farklı sayılardır: teminat oranı 1/(1 − h)'dir, 1 + h değil. Yıllık repo oranını aksi söylenmedikçe ay/12 ile değil gün/360 ile ölçeklendirin. Daha kaliteli ve daha likit teminat daha düşük repo oranı, daha uzun vade daha yüksek oran demektir. Taahhütsüz limitler güvenilir fonlama değildir; finansman bonosu teminatsızdır, bu yüzden yedek kredi limiti gerektirir. Yüksek getirili tahvillerde yatırım yapılabilir tahvillere göre genellikle daha az değil daha çok taahhüt ve daha kısa vade vardır.",
+        "key_terms": [
+          "repo rate",
+          "haircut",
+          "initial margin",
+          "backup line",
+          "covenant"
+        ]
+      }
+    ],
+    "summary_en": "Non-financial companies fund short-term needs with uncommitted, committed and revolving bank lines, commercial paper backed by standby lines, and secured options such as factoring. Banks rely on retail deposits, CDs and wholesale sources such as interbank loans, central bank funds and repos. A repo is a secured loan: cash equals collateral value minus a haircut, interest equals cash times the repo rate times days over 360, and the repo rate falls with better collateral, shorter term and delivery. Investment-grade issuers borrow long, unsecured and with few covenants; high-yield issuers borrow shorter, pay more, accept covenants and security, and often use callable bonds and leveraged loans.",
+    "summary_tr": "Finansal olmayan şirketler kısa vadeli ihtiyaçlarını taahhütsüz, taahhütlü ve rotatif banka limitleri, yedek limitle desteklenen finansman bonosu ve faktoring gibi teminatlı seçeneklerle karşılar. Bankalar bireysel mevduata, mevduat sertifikalarına ve bankalararası kredi, merkez bankası fonu ve repo gibi toptan kaynaklara dayanır. Repo teminatlı bir kredidir: nakit, teminat değeri eksi kesintiye eşittir; faiz, nakit çarpı repo oranı çarpı gün bölü 360'tır; repo oranı daha iyi teminat, daha kısa vade ve teslimle düşer. Yatırım yapılabilir ihraççılar uzun vadeli, teminatsız ve az taahhütle borçlanır; yüksek getirili ihraççılar daha kısa borçlanır, daha çok öder, taahhüt ve teminat kabul eder; çoğunlukla erken itfa edilebilir tahvil ve kaldıraçlı kredi kullanır.",
+    "common_traps_tr": [
+      "Repoda satıcının borç veren olduğunu sanmak; menkul kıymeti satan taraf nakit borçlanır.",
+      "Kesintiyi nakde uygulamak ya da başlangıç teminatı oranını 1 + h sanmak; doğrusu nakit = PD × (1 − h) ve teminat oranı = 1/(1 − h).",
+      "Yıllık repo oranını gün/360 yerine ay/12 ile ölçeklendirmek.",
+      "Daha riskli teminatın daha düşük repo oranı getirdiğini düşünmek; tersi doğrudur.",
+      "Taahhütsüz kredi limitini güvenilir fonlama sanmak ve finansman bonosunun teminatlı olduğunu düşünmek.",
+      "Yüksek getirili tahvillerin daha az taahhüt taşıdığını sanmak; daha çok taahhüt ve daha kısa vade taşırlar."
+    ],
+    "vocab_ids": [
+      "line-of-credit",
+      "committed",
+      "commercial-paper",
+      "backup-line",
+      "rollover-risk",
+      "factoring",
+      "deposit",
+      "certificate-of-deposit",
+      "interbank",
+      "wholesale-funding",
+      "repurchase-agreement",
+      "repo-rate",
+      "haircut",
+      "tri-party",
+      "margin-call",
+      "investment-grade",
+      "high-yield",
+      "leveraged-loan",
+      "debt-ladder",
+      "refinance"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Repo/ters repo ve finansman bonosu Türkiye piyasasında bilinir; kesinti ve repo oranı hesapları ile yüksek getirili ihraççı yapısı CFA'da işlenir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-04-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which short-term bank funding arrangement gives a company the least certainty that funds will be available when requested?",
+      "stem_tr": "Hangi kısa vadeli banka finansman düzenlemesi, şirkete talep edildiğinde fonun hazır olacağı konusunda en az güvence verir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a revolving credit facility",
+          "tr": "Rotatif kredi"
+        },
+        {
+          "key": "B",
+          "en": "a committed line of credit",
+          "tr": "Taahhütlü kredi limiti"
+        },
+        {
+          "key": "C",
+          "en": "an uncommitted line of credit",
+          "tr": "Taahhütsüz kredi limiti"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "An uncommitted line is only an indication: the bank can refuse to lend when the company asks, so it is the least reliable source.",
+      "explanation_tr": "Taahhütsüz limit yalnızca bir niyet beyanıdır: şirket istediğinde banka kredi vermeyi reddedebilir; bu yüzden en az güvenilir kaynaktır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A revolver is a committed, multi-year facility; it is the most reliable bank line.",
+          "tr": "Rotatif kredi taahhütlü, çok yıllı bir olanaktır; en güvenilir banka limitidir."
+        },
+        "B": {
+          "en": "A committed line is a firm promise for its term in return for a commitment fee.",
+          "tr": "Taahhütlü limit, taahhüt komisyonu karşılığında süresi boyunca kesin bir sözdür."
+        }
+      },
+      "vocab_ids": [
+        "line-of-credit",
+        "committed",
+        "require",
+        "likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Kredi limiti türleri bankacılık uygulamasından bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Marmara Tekstil A.Ş. funds its working capital mainly with 90-day commercial paper that it rolls over at maturity. The most appropriate way to reduce the main risk of this strategy is to:",
+      "stem_tr": "Marmara Tekstil A.Ş. işletme sermayesini ağırlıklı olarak vadesinde çevirdiği 90 günlük finansman bonosuyla fonluyor. Bu stratejinin temel riskini azaltmanın en uygun yolu aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "maintain a backup line of credit with a bank.",
+          "tr": "Bir bankayla yedek kredi limiti bulundurmak."
+        },
+        {
+          "key": "B",
+          "en": "issue the commercial paper at a deeper discount.",
+          "tr": "Finansman bonosunu daha yüksek iskontoyla ihraç etmek."
+        },
+        {
+          "key": "C",
+          "en": "switch from committed to uncommitted bank lines to save fees.",
+          "tr": "Komisyondan tasarruf için taahhütlü limitlerden taahhütsüz limitlere geçmek."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The main risk of rolling CP is rollover risk: the market may refuse new paper. A backup (standby) line of credit provides cash to repay maturing CP if that happens.",
+      "explanation_tr": "Finansman bonosu çevirmenin temel riski çevirme riskidir: piyasa yeni ihracı almayabilir. Yedek kredi limiti bu durumda vadesi gelen bonoyu ödemek için nakit sağlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A deeper discount raises the cost; it does not guarantee that investors will buy the next issue.",
+          "tr": "Daha yüksek iskonto maliyeti artırır; yatırımcıların bir sonraki ihracı alacağını garanti etmez."
+        },
+        "C": {
+          "en": "Uncommitted lines are unreliable exactly when the CP market closes, so this increases the risk.",
+          "tr": "Taahhütsüz limitler tam da finansman bonosu piyasası kapandığında güvenilmezdir; bu, riski artırır."
+        }
+      },
+      "vocab_ids": [
+        "commercial-paper",
+        "rollover-risk",
+        "backup-line",
+        "appropriate",
+        "committed"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Finansman bonosu bilinir; yedek kredi limiti kavramı ABD CP piyasasından gelir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "For a commercial bank, which funding source is most likely to be the cheapest and most stable?",
+      "stem_tr": "Bir ticari banka için hangi fonlama kaynağının en ucuz ve en istikrarlı olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "insured retail deposits",
+          "tr": "Sigortalı bireysel mevduat"
+        },
+        {
+          "key": "B",
+          "en": "overnight interbank borrowing",
+          "tr": "Gecelik bankalararası borçlanma"
+        },
+        {
+          "key": "C",
+          "en": "commercial paper issued by the bank",
+          "tr": "Bankanın ihraç ettiği finansman bonosu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Small insured deposits carry low rates and tend to stay with the bank even in stress, so they are the cheapest and most stable funding.",
+      "explanation_tr": "Küçük sigortalı mevduatın faizi düşüktür ve stres dönemlerinde bile bankada kalma eğilimindedir; bu yüzden en ucuz ve en istikrarlı fonlamadır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Interbank funds are wholesale money that can vanish quickly in a crisis.",
+          "tr": "Bankalararası fonlar krizde hızla kaybolabilen toptan paradır."
+        },
+        "C": {
+          "en": "Bank CP is unsecured wholesale funding that must be rolled over and prices at market rates.",
+          "tr": "Banka finansman bonosu çevrilmesi gereken ve piyasa faizinden fiyatlanan teminatsız toptan fonlamadır."
+        }
+      },
+      "vocab_ids": [
+        "deposit",
+        "wholesale-funding",
+        "interbank",
+        "stable",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Mevduat ve bankalararası fonlama bankacılık bilgisidir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A regional supermarket chain with a weak credit profile needs cash quickly against its customer receivables. The short-term source it is most likely to use is:",
+      "stem_tr": "Kredi profili zayıf bir bölgesel süpermarket zinciri, müşteri alacaklarına karşılık hızla nakde ihtiyaç duyuyor. En muhtemel kullanacağı kısa vadeli kaynak hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "factoring",
+          "tr": "Faktoring"
+        },
+        {
+          "key": "B",
+          "en": "commercial paper",
+          "tr": "Finansman bonosu"
+        },
+        {
+          "key": "C",
+          "en": "a negotiable certificate of deposit",
+          "tr": "Devredilebilir mevduat sertifikası"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Factoring sells receivables to a factor at a discount; it is a secured form of financing available to borrowers that cannot access the unsecured CP market.",
+      "explanation_tr": "Faktoring, alacakların bir faktoring şirketine iskontoyla satılmasıdır; teminatsız finansman bonosu piyasasına erişemeyen borçluların kullanabildiği teminatlı bir finansman biçimidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "CP is unsecured and is issued by large, highly rated companies, not by weak borrowers.",
+          "tr": "Finansman bonosu teminatsızdır ve zayıf borçlular değil büyük, yüksek notlu şirketler tarafından ihraç edilir."
+        },
+        "C": {
+          "en": "A CD is a bank's funding instrument (a deposit), not a way for a retailer to raise cash.",
+          "tr": "Mevduat sertifikası bankanın fonlama aracıdır (mevduat); bir perakendecinin nakit sağlama yolu değildir."
+        }
+      },
+      "vocab_ids": [
+        "factoring",
+        "receivables",
+        "commercial-paper",
+        "certificate-of-deposit",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about short-term funding is least likely correct?",
+      "stem_tr": "Kısa vadeli finansmanla ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A large negotiable certificate of deposit can be sold by the holder in the secondary market before maturity.",
+          "tr": "Büyük tutarlı devredilebilir bir mevduat sertifikası, sahibi tarafından vadeden önce ikincil piyasada satılabilir."
+        },
+        {
+          "key": "B",
+          "en": "Commercial paper is usually secured by the issuer's inventory, which is why it carries low yields.",
+          "tr": "Finansman bonosu genellikle ihraççının stoklarıyla teminatlandırılır; bu yüzden düşük getiri taşır."
+        },
+        {
+          "key": "C",
+          "en": "Regulators view a high share of wholesale funding as a sign of greater bank liquidity risk.",
+          "tr": "Düzenleyiciler yüksek toptan fonlama payını bankanın likidite riskinin daha yüksek olduğunun işareti olarak görür."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Commercial paper is unsecured; its low yield comes from the issuer's high credit rating and short maturity, and from backup lines, not from collateral.",
+      "explanation_tr": "Finansman bonosu teminatsızdır; düşük getirisi teminattan değil, ihraççının yüksek kredi notundan, kısa vadeden ve yedek kredi limitlerinden gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is correct: negotiable CDs trade in the secondary market, unlike non-negotiable CDs.",
+          "tr": "Bu doğrudur: devredilebilir CD'ler devredilemez olanların aksine ikincil piyasada işlem görür."
+        },
+        "C": {
+          "en": "This is correct: wholesale funds can run in a crisis, so regulators prefer stable deposits.",
+          "tr": "Bu doğrudur: toptan fonlar krizde kaçabilir; bu yüzden düzenleyiciler istikrarlı mevduatı tercih eder."
+        }
+      },
+      "vocab_ids": [
+        "commercial-paper",
+        "unsecured",
+        "certificate-of-deposit",
+        "wholesale-funding",
+        "statement",
+        "likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund enters a repo in which it borrows TRY 50,000,000 for 7 days at a repo rate of 42%, using an actual/360 day count. The repo interest it pays is closest to:",
+      "stem_tr": "Bir fon, gerçek/360 gün sayımıyla, %42 repo oranından 7 gün vadeli 50.000.000 TL borçlandığı bir repo işlemine giriyor. Ödeyeceği repo faizi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 402,740",
+          "tr": "402.740 TL",
+          "value": 402739.73
+        },
+        {
+          "key": "B",
+          "en": "TRY 408,333",
+          "tr": "408.333 TL",
+          "value": 408333.33
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,750,000",
+          "tr": "1.750.000 TL",
+          "value": 1750000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Repo interest = cash × rate × days/360 = 50,000,000 × 0.42 × 7/360 = TRY 408,333.",
+      "explanation_tr": "Repo faizi = nakit × oran × gün/360 = 50.000.000 × 0,42 × 7/360 = 408.333 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses a 365-day year instead of the stated 360-day convention.",
+          "tr": "Burada belirtilen 360 gün yerine 365 günlük yıl kullanılmış."
+        },
+        "C": {
+          "en": "This treats the 7-day term as one month (rate / 12), which is wrong.",
+          "tr": "Burada 7 günlük vade bir ay (oran / 12) gibi işlenmiş; bu yanlıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the interest on a 7-day repo.",
+          "tr": "7 günlük reponun faizi isteniyor."
+        },
+        {
+          "en": "Repo interest is simple interest on the cash borrowed, scaled by days/360.",
+          "tr": "Repo faizi borçlanılan nakit üzerinden basit faizdir ve gün/360 ile ölçeklenir.",
+          "formula_latex": "I = Cash\\times r\\times\\frac{t}{360}"
+        },
+        {
+          "en": "Substitute cash = 50,000,000, r = 0.42, t = 7.",
+          "tr": "Nakit = 50.000.000, r = 0,42, t = 7 yerine konur.",
+          "values": {
+            "Cash": 50000000,
+            "r": 0.42,
+            "t": 7
+          }
+        },
+        {
+          "en": "50,000,000 × 0.42 = 21,000,000; × 7/360 = 408,333.33.",
+          "tr": "50.000.000 × 0,42 = 21.000.000; × 7/360 = 408.333,33."
+        },
+        {
+          "en": "Result: about TRY 408,333.",
+          "tr": "Sonuç: yaklaşık 408.333 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50000000 [×] 0.42 [×] 7 [÷] 360 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "50000000*0.42*7/360",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "repurchase-agreement",
+        "repo-rate",
+        "day-count",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Repo faizi hesabı Türkiye piyasasında günlük uygulamadır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A dealer lends cash against government bonds with a market value of TRY 10,000,000 and applies a 5% haircut. The cash the borrower receives is closest to:",
+      "stem_tr": "Bir piyasa yapıcı, piyasa değeri 10.000.000 TL olan devlet tahvilleri karşılığında %5 kesinti uygulayarak nakit veriyor. Borçlunun aldığı nakit en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 9,500,000",
+          "tr": "9.500.000 TL",
+          "value": 9500000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 10,000,000",
+          "tr": "10.000.000 TL",
+          "value": 10000000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 10,500,000",
+          "tr": "10.500.000 TL",
+          "value": 10500000.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cash = collateral market value × (1 − haircut) = 10,000,000 × 0.95 = TRY 9,500,000.",
+      "explanation_tr": "Nakit = teminat piyasa değeri × (1 − kesinti) = 10.000.000 × 0,95 = 9.500.000 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This ignores the haircut; the lender never advances the full collateral value.",
+          "tr": "Burada kesinti yok sayılmış; borç veren teminatın tam değerini asla vermez."
+        },
+        "C": {
+          "en": "This adds the haircut instead of subtracting it; the haircut protects the lender, so cash is below collateral value.",
+          "tr": "Burada kesinti çıkarılmak yerine eklenmiş; kesinti borç vereni korur, bu yüzden nakit teminat değerinin altındadır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash advanced against collateral after the haircut.",
+          "tr": "Kesinti sonrası teminata karşılık verilen nakit isteniyor."
+        },
+        {
+          "en": "Cash = MV × (1 − h).",
+          "tr": "Nakit = PD × (1 − h).",
+          "formula_latex": "Cash = MV\\times(1-h)"
+        },
+        {
+          "en": "Substitute MV = 10,000,000, h = 0.05.",
+          "tr": "PD = 10.000.000, h = 0,05 yerine konur.",
+          "values": {
+            "MV": 10000000,
+            "h": 0.05
+          }
+        },
+        {
+          "en": "10,000,000 × 0.95 = 9,500,000.",
+          "tr": "10.000.000 × 0,95 = 9.500.000."
+        },
+        {
+          "en": "Result: TRY 9,500,000.",
+          "tr": "Sonuç: 9.500.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10000000 [×] 0.95 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "10000000*(1-0.05)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "haircut",
+        "collateral",
+        "lend",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A repo requires a 10% haircut on the collateral. The initial margin ratio (collateral value divided by cash lent) is closest to:",
+      "stem_tr": "Bir repo, teminat üzerinde %10 kesinti gerektiriyor. Başlangıç teminatı oranı (teminat değeri bölü verilen nakit) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "90.0%",
+          "tr": "%90,0",
+          "value": 90.0
+        },
+        {
+          "key": "B",
+          "en": "110.0%",
+          "tr": "%110,0",
+          "value": 110.0
+        },
+        {
+          "key": "C",
+          "en": "111.1%",
+          "tr": "%111,1",
+          "value": 111.11
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Initial margin = MV / cash = 1 / (1 − 0.10) = 1.111, or 111.1%: the borrower must post TRY 111.1 of collateral for every TRY 100 borrowed.",
+      "explanation_tr": "Başlangıç teminatı oranı = PD / nakit = 1 / (1 − 0,10) = 1,111 yani %111,1: borçlu her 100 TL için 111,1 TL teminat yatırmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is 1 − h, the cash as a share of collateral, not the margin ratio.",
+          "tr": "Bu 1 − h'dir, yani teminata oranla nakit; teminat oranı değildir."
+        },
+        "B": {
+          "en": "This is 1 + h; the correct ratio is 1 / (1 − h), which is larger than 1 + h.",
+          "tr": "Bu 1 + h'dir; doğru oran 1 / (1 − h)'dir ve 1 + h'den büyüktür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the ratio of collateral value to cash borrowed.",
+          "tr": "Teminat değerinin borçlanılan nakde oranı isteniyor."
+        },
+        {
+          "en": "Since cash = MV × (1 − h), the ratio MV / cash = 1 / (1 − h).",
+          "tr": "Nakit = PD × (1 − h) olduğundan PD / nakit = 1 / (1 − h).",
+          "formula_latex": "IM=\\frac{MV}{Cash}=\\frac{1}{1-h}"
+        },
+        {
+          "en": "Substitute h = 0.10.",
+          "tr": "h = 0,10 yerine konur.",
+          "values": {
+            "h": 0.1
+          }
+        },
+        {
+          "en": "1 / 0.90 = 1.1111.",
+          "tr": "1 / 0,90 = 1,1111."
+        },
+        {
+          "en": "Result: about 111.1%.",
+          "tr": "Sonuç: yaklaşık %111,1."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [÷] 0.90 [=]",
+          "[×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "100/(1-0.10)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "haircut",
+        "collateral",
+        "margin-call",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Ege Portföy repos out bonds with a market value of TRY 20,000,000 for 14 days. The haircut is 4% and the repo rate is 45% (actual/360). The repurchase price is closest to:",
+      "stem_tr": "Ege Portföy, piyasa değeri 20.000.000 TL olan tahvilleri 14 günlüğüne repoya veriyor. Kesinti %4, repo oranı %45 (gerçek/360). Geri alım fiyatı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 19,200,000",
+          "tr": "19.200.000 TL",
+          "value": 19200000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 19,536,000",
+          "tr": "19.536.000 TL",
+          "value": 19536000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 20,350,000",
+          "tr": "20.350.000 TL",
+          "value": 20350000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cash = 20,000,000 × 0.96 = 19,200,000. Interest = 19,200,000 × 0.45 × 14/360 = 336,000. Repurchase price = 19,200,000 + 336,000 = TRY 19,536,000.",
+      "explanation_tr": "Nakit = 20.000.000 × 0,96 = 19.200.000. Faiz = 19.200.000 × 0,45 × 14/360 = 336.000. Geri alım fiyatı = 19.200.000 + 336.000 = 19.536.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the cash borrowed; the repurchase price must add the repo interest.",
+          "tr": "Bu borçlanılan nakittir; geri alım fiyatına repo faizi eklenmelidir."
+        },
+        "C": {
+          "en": "This ignores the haircut and computes interest on the full collateral value: 20,000,000 + 20,000,000 × 0.45 × 14/360.",
+          "tr": "Burada kesinti yok sayılmış ve faiz tam teminat değeri üzerinden hesaplanmış: 20.000.000 + 20.000.000 × 0,45 × 14/360."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the amount paid at the end of the repo to buy back the bonds.",
+          "tr": "Repo sonunda tahvilleri geri almak için ödenecek tutar isteniyor."
+        },
+        {
+          "en": "Repurchase price = cash + interest, where cash = MV × (1 − h) and interest = cash × r × t/360.",
+          "tr": "Geri alım fiyatı = nakit + faiz; nakit = PD × (1 − h), faiz = nakit × r × t/360.",
+          "formula_latex": "P = MV(1-h)\\left(1 + r\\frac{t}{360}\\right)"
+        },
+        {
+          "en": "Substitute MV = 20,000,000, h = 0.04, r = 0.45, t = 14.",
+          "tr": "PD = 20.000.000, h = 0,04, r = 0,45, t = 14 yerine konur.",
+          "values": {
+            "MV": 20000000,
+            "h": 0.04,
+            "r": 0.45,
+            "t": 14
+          }
+        },
+        {
+          "en": "Cash = 19,200,000; interest = 19,200,000 × 0.0175 = 336,000.",
+          "tr": "Nakit = 19.200.000; faiz = 19.200.000 × 0,0175 = 336.000."
+        },
+        {
+          "en": "Result: TRY 19,536,000.",
+          "tr": "Sonuç: 19.536.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20000000 [×] 0.96 [=]",
+          "[×] 0.45 [×] 14 [÷] 360 [=]",
+          "[+] 19200000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "20000000*(1-0.04)*(1+0.45*14/360)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "haircut",
+        "repo-rate",
+        "collateral",
+        "closest",
+        "repurchase-agreement"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, which change is most likely to lower the repo rate a borrower pays?",
+      "stem_tr": "Diğer koşullar sabitken, aşağıdaki değişikliklerden hangisinin borçlunun ödediği repo oranını düşürmesi en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "replacing government bond collateral with corporate bond collateral",
+          "tr": "Devlet tahvili teminatının şirket tahvili teminatıyla değiştirilmesi"
+        },
+        {
+          "key": "B",
+          "en": "extending the repo term from overnight to three months",
+          "tr": "Repo vadesinin gecelikten üç aya uzatılması"
+        },
+        {
+          "key": "C",
+          "en": "delivering the collateral to the lender instead of holding it in the borrower's custody",
+          "tr": "Teminatın borçlunun saklamasında tutulması yerine borç verene teslim edilmesi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When collateral is delivered, the lender's risk falls, so it accepts a lower repo rate. Higher collateral quality, shorter term and strong demand for the specific security (special collateral) also lower the rate.",
+      "explanation_tr": "Teminat teslim edildiğinde borç verenin riski azalır; bu yüzden daha düşük repo oranı kabul eder. Daha kaliteli teminat, daha kısa vade ve belirli menkul kıymete güçlü talep (özel teminat) de oranı düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Lower-quality, less liquid collateral raises the lender's risk and therefore the repo rate.",
+          "tr": "Daha düşük kaliteli ve daha az likit teminat borç verenin riskini ve dolayısıyla repo oranını yükseltir."
+        },
+        "B": {
+          "en": "A longer term usually means a higher repo rate, in line with the term structure of money market rates.",
+          "tr": "Daha uzun vade, para piyasası faizlerinin vade yapısına uygun olarak genellikle daha yüksek repo oranı demektir."
+        }
+      },
+      "vocab_ids": [
+        "repo-rate",
+        "collateral",
+        "settlement",
+        "likely",
+        "counterparty"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Repo uygulaması bilinir; repo oranını belirleyen etkenler CFA'da sistematik olarak sıralanır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with high-yield issuers, investment-grade corporate issuers are most likely to issue bonds that are:",
+      "stem_tr": "Yüksek getirili ihraççılarla karşılaştırıldığında yatırım yapılabilir şirket ihraççılarının ihraç ettiği tahvillerin aşağıdakilerden hangisi olması en muhtemeldir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "longer in maturity, unsecured and with fewer covenants",
+          "tr": "Daha uzun vadeli, teminatsız ve daha az taahhütlü"
+        },
+        {
+          "key": "B",
+          "en": "shorter in maturity, secured and callable",
+          "tr": "Daha kısa vadeli, teminatlı ve erken itfa edilebilir"
+        },
+        {
+          "key": "C",
+          "en": "floating-rate, syndicated and senior secured",
+          "tr": "Değişken faizli, sendikasyon yoluyla satılan ve kıdemli teminatlı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Strong credit lets investment-grade issuers borrow for 10 to 30 years, unsecured, with few restrictions.",
+      "explanation_tr": "Güçlü kredi kalitesi yatırım yapılabilir ihraççıların 10-30 yıl vadeyle, teminatsız ve az kısıtlamayla borçlanmasına olanak tanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "These are typical features of high-yield bonds.",
+          "tr": "Bunlar yüksek getirili tahvillerin tipik özellikleridir."
+        },
+        "C": {
+          "en": "This describes a leveraged loan, which is a high-yield funding instrument.",
+          "tr": "Bu, yüksek getirili bir finansman aracı olan kaldıraçlı krediyi tanımlar."
+        }
+      },
+      "vocab_ids": [
+        "investment-grade",
+        "high-yield",
+        "unsecured",
+        "covenant",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Yatırım yapılabilir / spekülatif ayrımı bilinir; ihraç yapısına etkisi CFA'da vurgulanır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company rated B issues a 6-year bond with a 2-year call protection period. The most likely reason for including the call feature is to:",
+      "stem_tr": "B notlu bir şirket 2 yıllık erken itfa koruması olan 6 yıllık tahvil ihraç ediyor. Erken itfa özelliğinin eklenmesinin en muhtemel nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "protect investors if the company's credit quality deteriorates.",
+          "tr": "Şirketin kredi kalitesi bozulursa yatırımcıları korumak."
+        },
+        {
+          "key": "B",
+          "en": "let the company refinance at a lower cost if its credit quality improves.",
+          "tr": "Kredi kalitesi iyileşirse şirketin daha düşük maliyetle yeniden finansman yapmasına olanak tanımak."
+        },
+        {
+          "key": "C",
+          "en": "extend the maturity automatically if market conditions worsen.",
+          "tr": "Piyasa koşulları kötüleşirse vadeyi otomatik olarak uzatmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "High-yield issuers use callable bonds so they can repay expensive debt early and reissue cheaper debt once their rating or market spreads improve.",
+      "explanation_tr": "Yüksek getirili ihraççılar, notları ya da piyasa spreadleri iyileştiğinde pahalı borcu erken ödeyip daha ucuz borç ihraç edebilmek için erken itfa edilebilir tahvil kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Investor protection against deterioration comes from a put option or covenants, not from an issuer call.",
+          "tr": "Bozulmaya karşı yatırımcı koruması ihraççının erken itfa hakkından değil, put opsiyonundan ya da taahhütlerden gelir."
+        },
+        "C": {
+          "en": "A call shortens the effective life of the bond; it does not extend maturity.",
+          "tr": "Erken itfa tahvilin fiilî ömrünü kısaltır; vadeyi uzatmaz."
+        }
+      },
+      "vocab_ids": [
+        "callable",
+        "call-protection",
+        "refinance",
+        "high-yield",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A leveraged loan used by a highly leveraged company is best described as a loan that is typically:",
+      "stem_tr": "Yüksek kaldıraçlı bir şirketin kullandığı kaldıraçlı kredi en iyi nasıl tanımlanır? Tipik olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "subordinated, fixed-rate and unsecured",
+          "tr": "İkincil, sabit faizli ve teminatsız"
+        },
+        {
+          "key": "B",
+          "en": "senior, secured and floating-rate",
+          "tr": "Kıdemli, teminatlı ve değişken faizli"
+        },
+        {
+          "key": "C",
+          "en": "short-term, unsecured and sold at a discount",
+          "tr": "Kısa vadeli, teminatsız ve iskontolu satılan"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Leveraged loans rank senior, are secured by company assets, pay a floating rate over a reference rate and are often syndicated to institutional investors.",
+      "explanation_tr": "Kaldıraçlı krediler kıdemli sıradadır, şirket varlıklarıyla teminatlandırılır, referans faiz üzerine değişken faiz öder ve çoğunlukla sendikasyonla kurumsal yatırımcılara satılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subordinated, fixed-rate, unsecured debt describes high-yield bonds that rank below the loans.",
+          "tr": "İkincil, sabit faizli, teminatsız borç, kredilerin altında sıralanan yüksek getirili tahvilleri tanımlar."
+        },
+        "C": {
+          "en": "Short-term unsecured discount instruments are commercial paper, which weak issuers rarely access.",
+          "tr": "Kısa vadeli teminatsız iskontolu araçlar finansman bonosudur; zayıf ihraççılar buna nadiren erişir."
+        }
+      },
+      "vocab_ids": [
+        "leveraged-loan",
+        "senior",
+        "secured",
+        "floating-rate-note",
+        "typically"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "Kaldıraçlı kredi ve CLO piyasası SPK notlarında yer almaz."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investment-grade utility spreads its bond maturities so that roughly equal amounts come due each year over the next 15 years. This practice is best described as building a:",
+      "stem_tr": "Yatırım yapılabilir bir altyapı şirketi, önümüzdeki 15 yıl boyunca her yıl kabaca eşit tutarda borcun vadesi gelecek şekilde tahvil vadelerini dağıtıyor. Bu uygulama en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "sinking fund",
+          "tr": "İtfa fonu"
+        },
+        {
+          "key": "B",
+          "en": "revolving facility",
+          "tr": "Rotatif kredi"
+        },
+        {
+          "key": "C",
+          "en": "maturity ladder",
+          "tr": "Vade merdiveni"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A maturity (debt) ladder limits refinancing risk: only a small part of total debt must be refinanced in any single year.",
+      "explanation_tr": "Vade (borç) merdiveni yeniden finansman riskini sınırlar: herhangi bir yılda toplam borcun yalnızca küçük bir kısmının yeniden finanse edilmesi gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A sinking fund retires part of a single bond issue before maturity; it is a feature of one bond, not a plan across issues.",
+          "tr": "İtfa fonu tek bir ihracın bir kısmını vadeden önce itfa eder; ihraçlar arası bir plan değil tek bir tahvilin özelliğidir."
+        },
+        "B": {
+          "en": "A revolver is a short-term bank facility, not a maturity plan for long-term bonds.",
+          "tr": "Rotatif kredi kısa vadeli bir banka olanağıdır; uzun vadeli tahviller için vade planı değildir."
+        }
+      },
+      "vocab_ids": [
+        "debt-ladder",
+        "refinance",
+        "sinking-fund",
+        "investment-grade"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-04-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about long-term corporate funding is least likely correct?",
+      "stem_tr": "Uzun vadeli şirket finansmanıyla ilgili aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "High-yield issuers typically accept more restrictive covenants because investors demand protection.",
+          "tr": "Yüksek getirili ihraççılar, yatırımcılar koruma talep ettiği için genellikle daha kısıtlayıcı taahhütleri kabul eder."
+        },
+        {
+          "key": "B",
+          "en": "Investment-grade issuers can usually access the bond market in most conditions, whereas high-yield market access may close in a downturn.",
+          "tr": "Yatırım yapılabilir ihraççılar çoğu koşulda tahvil piyasasına erişebilir; oysa yüksek getirili piyasa erişimi durgunlukta kapanabilir."
+        },
+        {
+          "key": "C",
+          "en": "High-yield issuers prefer 30-year fixed-rate bonds to lock in financing for as long as possible.",
+          "tr": "Yüksek getirili ihraççılar finansmanı mümkün olduğunca uzun süre sabitlemek için 30 yıllık sabit faizli tahvilleri tercih eder."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "High-yield bonds usually have shorter maturities (often 5 to 10 years): investors are unwilling to lend to risky companies for decades, and issuers expect to refinance as their credit improves.",
+      "explanation_tr": "Yüksek getirili tahvillerin vadesi genellikle daha kısadır (çoğunlukla 5-10 yıl): yatırımcılar riskli şirketlere onlarca yıl borç vermek istemez; ihraççılar da kredileri iyileştikçe yeniden finansman bekler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is correct: covenants are a key protection in high-yield debt.",
+          "tr": "Bu doğrudur: taahhütler yüksek getirili borçta temel bir korumadır."
+        },
+        "B": {
+          "en": "This is correct: market access is a major difference between the two groups.",
+          "tr": "Bu doğrudur: piyasaya erişim iki grup arasındaki önemli bir farktır."
+        }
+      },
+      "vocab_ids": [
+        "high-yield",
+        "investment-grade",
+        "covenant",
+        "whereas",
+        "statement",
+        "likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

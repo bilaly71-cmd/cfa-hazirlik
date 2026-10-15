@@ -219,3 +219,16 @@ Güvenilir = güvenilirlik ≥ 4. Hedef: her konu için ≥ 3 güvenilir referan
 - **Kurumsal Finans (CF) ve Sabit Getirili (FI):** Bağımsız açık kaynaklar (Saylor BUS202 CC BY 3.0, Touro Fixed Income Mathematics CC BY-NC) 3 puanlı; CC BY olan OpenStax 2e/1e sürümleri bu konulara tam karşılık gelmiyor (Principles of Finance NC-SA). Yeterli ama lisans açısından zayıf.
 - **Etik (ETH):** Resmi Code & Standards sayfaları ve SPL 1002 var; açık lisanslı etik içeriği yok (beklenen: bu içerik özgün yazılacak).
 - Lojistik (ücret, takvim, kurallar) ve Türkiye/SPK bölümleri konu başına değil olgu başına kaynaklanmıştır; bunlar RESEARCH.md içinde satır satır atıflıdır.
+
+## Lisans çelişkileri (dosyalar arası)
+
+| Kaynak | C_mufredat diyor | D_kesifler diyor (metaveriden doğrulandı, 2026-10-16) | Esas alınan |
+|---|---|---|---|
+| OpenStax Principles of Finance | CC BY 4.0 | **CC BY-NC-SA 4.0** (1e ve 2e) | D_kesifler (doğrudan `license.url` kontrolü) → **NC-SA**; ticari uygulamada yalnız referans |
+| OpenStax Introductory Statistics 2e | CC BY 4.0 | **CC BY-NC-SA 4.0**; 1e hâlâ CC BY 4.0 | D_kesifler → 1e kullanılmalı |
+| OpenStax Principles of Economics 3e | CC BY 4.0 | **CC BY-NC-SA 4.0**; 2e CC BY 4.0 | D_kesifler → 2e kullanılmalı |
+| OpenStax Principles of Financial Accounting | CC BY-NC-SA 4.0 | CC BY-NC-SA 4.0 | Tutarlı |
+| Touro Pressbooks (Bigel) | — | CC BY-NC 4.0 (arama motoru "CC BY" demişti) | D_kesifler |
+| Vikipedi | CC BY-SA 4.0 | CC BY-SA 4.0 (sürüm bu oturumda sayfadan doğrulanmadı, UNVERIFIED) | SA yükümlülüğü var |
+
+Kural: CC lisansları geri alınamaz; eski CC BY sürümleri geçerli kalır. Ticari olabilecek uygulama için **yalnız CC BY sürümleri** içerik kaynağı olarak kullanılabilir; NC-SA/NC/ND içerik yalnız referanstır. Ayrıntı: `docs/KESIFLER.md`.

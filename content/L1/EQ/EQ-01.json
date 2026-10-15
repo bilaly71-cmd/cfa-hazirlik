@@ -251,7 +251,11 @@
       "note_tr": "Pay türleri SPK Düzey 3'te bilinir; ADR seviyeleri ve özel sermaye iskontosu CFA'da daha ayrıntılıdır."
     },
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
@@ -313,7 +317,11 @@
         "note_tr": "SPK Düzey 3 'Sermaye Piyasası Araçları' konusunda pay türleri işlenir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-a-q02",
@@ -373,7 +381,11 @@
         "note_tr": "SPK sınavında depo sertifikası (ADR/GDR) kısaca geçer; seviye ayrımı CFA'ya özgüdür."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-a-q03",
@@ -462,14 +474,18 @@
         "par-value",
         "in-arrears",
         "dividend",
-        "closest-to",
-        "prior"
+        "closest-to"
       ],
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "100 [×] 0.06 [=]",
-          "[×] 3 [=]"
+          "100",
+          "[×]",
+          "0.06",
+          "[=]",
+          "[×]",
+          "3",
+          "[=]"
         ]
       },
       "numeric": {
@@ -480,7 +496,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-a-q04",
@@ -537,7 +557,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-a-q05",
@@ -594,7 +618,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-a-q06",
@@ -631,7 +659,7 @@
       "wrong_option_reasons": {
         "B": {
           "en": "The call option belongs to the issuer, not the investor. A feature that protects the investor is a put (putable) feature.",
-          "tr": "Geri çağırma opsiyonu yatırımcıya değil ihraççıya aittir. Yatırımcıyı koruyan özellik satma (putable) hakkıdır."
+          "tr": "Geri çağırma hakkı (call opsiyonu) yatırımcıya değil ihraççıya aittir. Yatırımcıyı koruyan özellik satma (putable) hakkıdır."
         },
         "C": {
           "en": "A fixed call price still limits the investor's upside and creates reinvestment risk, so the required rate is not the same.",
@@ -651,7 +679,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-b-q01",
@@ -707,7 +739,11 @@
         "least-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-b-q02",
@@ -768,7 +804,11 @@
         "note_tr": "Halka arz ve kamuyu aydınlatma yükümlülükleri SPK mevzuatında işlenir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-b-q03",
@@ -825,7 +865,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-b-q04",
@@ -882,7 +926,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "EQ-01-b-q05",
@@ -940,7 +988,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
