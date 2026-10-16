@@ -1,0 +1,1755 @@
+{
+  "module_id": "FSA-08",
+  "lesson": {
+    "id": "FSA-08-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-08",
+    "los_ids": [
+      "FSA-08-a",
+      "FSA-08-b",
+      "FSA-08-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Topics in Long-Term Liabilities and Equity",
+    "title_tr": "Uzun Vadeli Yükümlülükler ve Özkaynaklarda Seçme Konular",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Debt that does not look like debt",
+        "heading_tr": "Borca benzemeyen borçlar",
+        "en": "A retailer rents 200 shops for ten years. An airline leases most of its aircraft. A bank promises its staff a pension when they retire. A technology firm pays engineers partly in share options. None of these is a classic bank loan, but each is a long-term promise to pay. Before IFRS 16 (TFRS 16 in Turkey, effective 2019), operating leases stayed off the balance sheet, so two airlines with the same fleet could show very different leverage. Today both IFRS and US GAAP put almost all leases on the lessee's balance sheet, but the income statement and cash flow treatment still differ. Pensions and share-based pay add further estimates. An analyst must know where these obligations sit and how the choices change leverage, margins and cash flow ratios.",
+        "tr": "Bir perakendeci on yıllığına 200 mağaza kiralar. Bir havayolu uçaklarının çoğunu kiralar. Bir banka çalışanlarına emeklilikte maaş sözü verir. Bir teknoloji şirketi mühendislere kısmen pay opsiyonuyla ödeme yapar. Bunların hiçbiri klasik banka kredisi değildir ama her biri uzun vadeli bir ödeme sözüdür. IFRS 16'dan (Türkiye'de TFRS 16, 2019'dan itibaren) önce faaliyet kiralamaları bilanço dışında kalırdı; aynı filoya sahip iki havayolu çok farklı kaldıraç gösterebilirdi. Bugün hem IFRS hem US GAAP neredeyse tüm kiralamaları kiracının bilançosuna koyar ama gelir tablosu ve nakit akışı işlemleri hâlâ farklıdır. Emeklilik ve hisse bazlı ödemeler ek tahminler getirir. Analist bu yükümlülüklerin nerede durduğunu ve seçimlerin kaldıracı, marjları ve nakit akış oranlarını nasıl değiştirdiğini bilmelidir.",
+        "key_terms": [
+          "lease",
+          "lessee",
+          "lessor",
+          "pension",
+          "share-based compensation",
+          "TFRS 16"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Lessee accounting",
+        "heading_tr": "Kiracı muhasebesi",
+        "en": "A lease is a contract that gives the right to control an identified asset for a period of time in exchange for payments. Lessee under IFRS: one model. At the start, recognize a lease liability equal to the present value of the lease payments and a right-of-use (ROU) asset of the same amount (plus initial direct costs). Each year: interest expense = liability x discount rate; the liability falls by payment minus interest; the ROU asset is amortized, usually straight-line, over the lease term. Total expense is front-loaded. In the cash flow statement, the principal part of the payment is financing; the interest part is usually operating (IFRS allows a choice). Exemptions: short-term leases (12 months or less) and low-value assets can be expensed straight-line. Lessee under US GAAP: two models. A finance lease (ownership transfer, purchase option reasonably certain, major part of economic life, present value substantially all of fair value, or specialized asset) is treated like the IFRS model. An operating lease also puts an ROU asset and a liability on the balance sheet, but the income statement shows one straight-line lease expense inside operating expenses; the whole payment is an operating cash outflow; ROU amortization is the plug: straight-line cost minus interest on the liability.",
+        "tr": "Kiralama, ödemeler karşılığında belirli bir varlığı belirli bir süre kontrol etme hakkı veren sözleşmedir. IFRS'te kiracı: tek model. Başlangıçta, kira ödemelerinin bugünkü değerine eşit bir kira yükümlülüğü ve aynı tutarda (artı başlangıç doğrudan maliyetleri) bir kullanım hakkı varlığı kaydedilir. Her yıl: faiz gideri = yükümlülük x iskonto oranı; yükümlülük, ödeme eksi faiz kadar azalır; kullanım hakkı varlığı genelde doğrusal olarak kira süresi boyunca itfa edilir. Toplam gider öne yüklüdür. Nakit akış tablosunda ödemenin anapara kısmı finansman faaliyetidir; faiz kısmı genelde işletme faaliyetidir (IFRS seçim hakkı verir). İstisnalar: kısa vadeli (12 ay ve altı) ve düşük değerli varlık kiralamaları doğrusal gider yazılabilir. US GAAP'te kiracı: iki model. Finansal kiralama (mülkiyet devri, kullanılması kesine yakın satın alma opsiyonu, ekonomik ömrün büyük bölümü, bugünkü değerin gerçeğe uygun değerin neredeyse tamamı olması ya da özel nitelikli varlık) IFRS modeli gibi işlenir. Faaliyet kiralaması da bilançoya kullanım hakkı varlığı ve yükümlülük koyar ama gelir tablosunda faaliyet giderleri içinde tek bir doğrusal kira gideri görünür; ödemenin tamamı işletme nakit çıkışıdır; kullanım hakkı itfası denkleştirici kalemdir: doğrusal maliyet eksi yükümlülük faizi.",
+        "key_terms": [
+          "right-of-use asset",
+          "lease liability",
+          "finance lease",
+          "operating lease",
+          "front-loaded",
+          "straight-line"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Lessee item",
+              "tr": "Kiracı kalemi"
+            },
+            {
+              "en": "IFRS (all leases)",
+              "tr": "IFRS (tüm kiralamalar)"
+            },
+            {
+              "en": "US GAAP finance",
+              "tr": "US GAAP finansal"
+            },
+            {
+              "en": "US GAAP operating",
+              "tr": "US GAAP faaliyet"
+            }
+          ],
+          "rows": [
+            [
+              "Balance sheet",
+              "ROU asset + lease liability",
+              "ROU asset + lease liability",
+              "ROU asset + lease liability"
+            ],
+            [
+              "Income statement",
+              "Interest + amortization (front-loaded)",
+              "Interest + amortization",
+              "Single straight-line lease expense"
+            ],
+            [
+              "Cash flow: principal",
+              "Financing",
+              "Financing",
+              "Operating (whole payment)"
+            ],
+            [
+              "Cash flow: interest",
+              "Operating (or financing)",
+              "Operating",
+              "Operating"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Lessor accounting",
+        "heading_tr": "Kiraya veren muhasebesi",
+        "en": "The lessor also classifies the lease. In a finance lease (US GAAP: sales-type or direct financing), the lessor removes the asset from its balance sheet and records a lease receivable equal to the present value of the payments (net investment in the lease). Income is interest revenue on the receivable, computed with the effective interest method. If the lessor is a manufacturer or dealer (sales-type), it also records a selling profit at the start: revenue equal to the present value of payments minus cost of goods sold equal to the carrying amount of the asset. In an operating lease, the lessor keeps the asset, continues to depreciate it, and recognizes lease revenue straight-line over the term. Cash received is operating cash flow for an operating lease; for a finance lease the interest part is operating and the principal part is investing.",
+        "tr": "Kiraya veren de kiralamayı sınıflar. Finansal kiralamada (US GAAP: satış tipi ya da doğrudan finansman), kiraya veren varlığı bilançosundan çıkarır ve ödemelerin bugünkü değerine eşit bir kira alacağı (kiralamadaki net yatırım) kaydeder. Gelir, efektif faiz yöntemiyle hesaplanan alacak faizidir. Kiraya veren üretici ya da satıcıysa (satış tipi), başlangıçta bir satış kârı da kaydeder: ödemelerin bugünkü değerine eşit hasılat eksi varlığın defter değerine eşit satışların maliyeti. Faaliyet kiralamasında kiraya veren varlığı elinde tutar, amortisman ayırmaya devam eder ve kira gelirini süre boyunca doğrusal kaydeder. Faaliyet kiralamasında alınan nakit işletme nakit akışıdır; finansal kiralamada faiz kısmı işletme, anapara kısmı yatırım faaliyetidir.",
+        "key_terms": [
+          "lease receivable",
+          "net investment in the lease",
+          "sales-type lease",
+          "selling profit",
+          "effective interest method"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Pensions and share-based pay",
+        "heading_tr": "Emeklilik ve hisse bazlı ödemeler",
+        "en": "Defined contribution (DC) plan: the employer pays a fixed contribution into a fund; the expense is the contribution and no further obligation exists; the employee bears investment risk. Defined benefit (DB) plan: the employer promises a future benefit, often based on salary and years of service. The pension obligation is the present value of promised benefits; plan assets are measured at fair value. Funded status = plan assets - obligation; a deficit is a net pension liability, a surplus is a net pension asset (limited by the asset ceiling under IFRS). Under IFRS, profit or loss shows service cost (current and past) and net interest on the net liability at the discount rate; remeasurements (actuarial gains and losses, return on assets above or below the discount rate) go to OCI and are never recycled. Under US GAAP, pension expense includes service cost, interest cost on the obligation and an expected return on plan assets; actuarial gains and losses and past service cost go to OCI and are amortized to profit or loss over time. Share-based compensation: for stock grants and options, the fair value at the grant date (options via a pricing model) is expensed over the vesting period, with no later adjustment for share price moves; the expense is non-cash and increases paid-in capital, so total equity does not change. Cash-settled awards such as stock appreciation rights are liabilities remeasured at fair value each period.",
+        "tr": "Tanımlanmış katkı (DC) planı: işveren fona sabit bir katkı öder; gider katkı tutarıdır, başka yükümlülük yoktur; yatırım riskini çalışan taşır. Tanımlanmış fayda (DB) planı: işveren genelde maaş ve hizmet yılına dayalı bir gelecek fayda sözü verir. Emeklilik yükümlülüğü, vaat edilen faydaların bugünkü değeridir; plan varlıkları gerçeğe uygun değerle ölçülür. Fonlama durumu = plan varlıkları - yükümlülük; açık net emeklilik yükümlülüğü, fazla net emeklilik varlığıdır (IFRS'te varlık tavanıyla sınırlı). IFRS'te kâr veya zarar hizmet maliyetini (cari ve geçmiş) ve net yükümlülük üzerinden iskonto oranıyla net faizi gösterir; yeniden ölçümler (aktüeryal kazanç/kayıplar, varlık getirisinin iskonto oranından sapması) OCI'a gider ve asla geri dönüştürülmez. US GAAP'te emeklilik gideri hizmet maliyetini, yükümlülük faiz maliyetini ve plan varlıklarının beklenen getirisini içerir; aktüeryal kazanç/kayıplar ve geçmiş hizmet maliyeti OCI'a gider ve zamanla kâr veya zarara itfa edilir. Hisse bazlı ödemeler: pay hibeleri ve opsiyonlarda hibe tarihindeki gerçeğe uygun değer (opsiyonlarda fiyatlama modeliyle) hak ediş süresi boyunca gider yazılır; sonraki pay fiyatı hareketleri için düzeltme yapılmaz; gider nakit dışıdır ve ödenmiş sermayeyi artırır, toplam özkaynak değişmez. Pay değer artış hakları gibi nakit ödemeli ödüller her dönem gerçeğe uygun değerle yeniden ölçülen yükümlülüklerdir.",
+        "key_terms": [
+          "defined contribution plan",
+          "defined benefit plan",
+          "funded status",
+          "service cost",
+          "actuarial gain or loss",
+          "vesting period",
+          "grant date"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key formulas",
+        "heading_tr": "Temel formüller",
+        "en": "Lease liability at start = present value of lease payments at the rate implicit in the lease (or the lessee's incremental borrowing rate). Interest expense (year t) = opening liability x rate. Closing liability = opening liability + interest - payment. ROU amortization (IFRS, finance lease) = ROU asset / lease term. US GAAP operating lease: total lease cost = total payments / term; ROU amortization = lease cost - interest. Sales-type lessor: selling profit = present value of payments - carrying amount of the asset. Net pension liability = pension obligation - fair value of plan assets. IFRS pension cost in P&L = service cost + net interest = service cost + (obligation - plan assets) x discount rate. Option expense per year = (number of options x grant-date fair value per option) / vesting years.",
+        "tr": "Başlangıçta kira yükümlülüğü = kira ödemelerinin kiralamadaki zımni faiz oranıyla (ya da kiracının alternatif borçlanma oranıyla) bugünkü değeri. Faiz gideri (t yılı) = dönem başı yükümlülük x oran. Dönem sonu yükümlülük = dönem başı yükümlülük + faiz - ödeme. Kullanım hakkı itfası (IFRS, finansal kiralama) = kullanım hakkı varlığı / kira süresi. US GAAP faaliyet kiralaması: toplam kira maliyeti = toplam ödemeler / süre; kullanım hakkı itfası = kira maliyeti - faiz. Satış tipi kiraya veren: satış kârı = ödemelerin bugünkü değeri - varlığın defter değeri. Net emeklilik yükümlülüğü = emeklilik yükümlülüğü - plan varlıklarının gerçeğe uygun değeri. IFRS kâr/zarardaki emeklilik maliyeti = hizmet maliyeti + net faiz = hizmet maliyeti + (yükümlülük - plan varlıkları) x iskonto oranı. Yıllık opsiyon gideri = (opsiyon sayısı x hibe tarihi birim gerçeğe uygun değer) / hak ediş yılı.",
+        "key_terms": [
+          "incremental borrowing rate",
+          "implicit rate",
+          "net interest"
+        ],
+        "formula_latex": "L_0 = \\sum_{t=1}^{n} \\frac{PMT_t}{(1+r)^t} \\qquad Int_t = L_{t-1} \\times r \\qquad L_t = L_{t-1} + Int_t - PMT_t"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: one lease, two frameworks",
+        "heading_tr": "Çözümlü örnek: bir kiralama, iki çerçeve",
+        "en": "Pamukkale Tekstil leases a machine for 4 years with payments of TRY 100,000 at the end of each year; the discount rate is 8%. Lease liability = ROU asset = 100,000 x [1 - 1.08^-4] / 0.08 = TRY 331,213. Year 1 interest = 331,213 x 8% = 26,497. Principal repaid = 100,000 - 26,497 = 73,503; closing liability = 257,710. Under IFRS: amortization = 331,213 / 4 = 82,803; total Year 1 expense = 26,497 + 82,803 = 109,300, higher than the 100,000 cash payment. Under US GAAP as an operating lease: single lease expense = 400,000 / 4 = 100,000; ROU amortization = 100,000 - 26,497 = 73,503, which equals the principal reduction, so the ROU asset and the liability stay equal. If the lessor is a dealer whose machine had a carrying amount of TRY 280,000, it records a selling profit of 331,213 - 280,000 = 51,213 at the start and interest revenue of 26,497 in Year 1.",
+        "tr": "Pamukkale Tekstil bir makineyi 4 yıllığına, her yıl sonunda 100.000 TL ödemeyle kiralar; iskonto oranı %8'dir. Kira yükümlülüğü = kullanım hakkı varlığı = 100.000 x [1 - 1,08^-4] / 0,08 = 331.213 TL. 1. yıl faiz = 331.213 x %8 = 26.497. Ödenen anapara = 100.000 - 26.497 = 73.503; dönem sonu yükümlülük = 257.710. IFRS'te: itfa = 331.213 / 4 = 82.803; 1. yıl toplam gider = 26.497 + 82.803 = 109.300, yani 100.000 TL nakit ödemeden yüksek. US GAAP faaliyet kiralamasında: tek kira gideri = 400.000 / 4 = 100.000; kullanım hakkı itfası = 100.000 - 26.497 = 73.503; bu anapara azalışına eşittir, kullanım hakkı varlığı ile yükümlülük eşit kalır. Kiraya veren, makinesinin defter değeri 280.000 TL olan bir satıcıysa başlangıçta 331.213 - 280.000 = 51.213 satış kârı ve 1. yılda 26.497 faiz geliri kaydeder.",
+        "key_terms": [
+          "present value",
+          "amortization",
+          "selling profit"
+        ],
+        "example": {
+          "en": "Liability 331,213; Year 1 interest 26,497; IFRS expense 109,300 vs US GAAP operating 100,000",
+          "tr": "Yükümlülük 331.213; 1. yıl faiz 26.497; IFRS gideri 109.300, US GAAP faaliyet 100.000",
+          "formula_latex": "L_0 = 100{,}000 \\times \\frac{1 - 1.08^{-4}}{0.08} = 331{,}213"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Presentation and disclosure",
+        "heading_tr": "Sunum ve açıklama",
+        "en": "Long-term debt is shown on the balance sheet net of the current portion, which is a current liability. The notes disclose the nature of the debt, interest rates, maturity dates, the amounts maturing in each of the next five years, covenants, collateral and the fair value of the debt (even when it is carried at amortized cost). Lease disclosures include a maturity analysis of lease liabilities, the split of lease cost into interest and amortization (or operating lease cost), cash paid, and ROU assets by class. Pension notes show the obligation, plan assets, funded status, cost components, key assumptions (discount rate, salary growth, expected return) and a sensitivity analysis. Share-based compensation notes describe the plans, the option-pricing inputs (expected volatility, risk-free rate, dividend yield, expected term), the number and weighted-average exercise price of options outstanding, granted, exercised and forfeited, and the unrecognized compensation cost still to be expensed. Analysts use the maturity schedule to judge refinancing risk and liquidity, and compare the fair value of debt with its carrying amount.",
+        "tr": "Uzun vadeli borç bilançoda kısa vadeli kısmı düşülerek gösterilir; kısa vadeli kısım kısa vadeli yükümlülüktür. Dipnotlar borcun niteliğini, faiz oranlarını, vade tarihlerini, önümüzdeki beş yılın her birinde vadesi gelen tutarları, taahhütleri (covenant), teminatı ve borcun gerçeğe uygun değerini (itfa edilmiş maliyetle taşınsa bile) açıklar. Kiralama açıklamaları kira yükümlülüklerinin vade analizini, kira maliyetinin faiz ve itfaya (ya da faaliyet kirası maliyetine) ayrımını, ödenen nakdi ve sınıf bazında kullanım hakkı varlıklarını içerir. Emeklilik dipnotları yükümlülüğü, plan varlıklarını, fonlama durumunu, maliyet bileşenlerini, temel varsayımları (iskonto oranı, maaş artışı, beklenen getiri) ve duyarlılık analizini gösterir. Hisse bazlı ödeme dipnotları planları, opsiyon fiyatlama girdilerini (beklenen oynaklık, risksiz faiz, temettü verimi, beklenen süre), mevcut, verilen, kullanılan ve iptal edilen opsiyonların sayısı ile ağırlıklı ortalama kullanım fiyatını ve henüz gider yazılmamış ücret maliyetini açıklar. Analistler vade çizelgesini yeniden finansman riski ve likiditeyi değerlendirmek için kullanır, borcun gerçeğe uygun değerini defter değeriyle karşılaştırır.",
+        "key_terms": [
+          "current portion",
+          "maturity schedule",
+          "covenant",
+          "collateral",
+          "expected volatility",
+          "unrecognized compensation cost"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık tuzaklar",
+        "en": "Under IFRS and for a US GAAP finance lease, Year 1 total lease expense is above the cash payment; under a US GAAP operating lease it equals the straight-line payment. The liability is the present value, never the sum of payments. Lessee CFO is higher under IFRS than under a US GAAP operating lease because principal is financing. A DC plan creates no balance sheet obligation beyond unpaid contributions. Under IFRS, remeasurements go to OCI and never return to P&L; under US GAAP they are amortized. Option expense is fixed at grant-date fair value; a later rise in the share price does not change it. Share-based compensation reduces net income but not total equity and not operating cash flow.",
+        "tr": "IFRS'te ve US GAAP finansal kiralamada 1. yıl toplam kira gideri nakit ödemenin üstündedir; US GAAP faaliyet kiralamasında doğrusal ödemeye eşittir. Yükümlülük bugünkü değerdir, asla ödemelerin toplamı değil. Anapara finansman faaliyeti sayıldığından kiracının CFO'su IFRS'te US GAAP faaliyet kiralamasına göre daha yüksektir. DC planı, ödenmemiş katkılar dışında bilanço yükümlülüğü yaratmaz. IFRS'te yeniden ölçümler OCI'a gider ve kâr/zarara asla dönmez; US GAAP'te itfa edilir. Opsiyon gideri hibe tarihi gerçeğe uygun değeriyle sabitlenir; pay fiyatının sonradan yükselmesi gideri değiştirmez. Hisse bazlı ödeme net kârı azaltır ama toplam özkaynağı ve işletme nakit akışını azaltmaz.",
+        "key_terms": [
+          "front-loaded",
+          "remeasurement",
+          "grant date"
+        ]
+      }
+    ],
+    "summary_en": "Lessees recognize a lease liability at the present value of payments and a matching right-of-use asset. IFRS uses one model (interest plus amortization, front-loaded expense, principal in financing cash flow); US GAAP keeps finance and operating leases, where an operating lease shows a single straight-line expense and all cash in operating activities. Lessors keep the asset in an operating lease and replace it with a receivable in a finance lease. Defined contribution plans expense the contribution; defined benefit plans report the funded status and split the cost between profit or loss and OCI, with IFRS and US GAAP differing on net interest and remeasurements. Share-based pay is expensed at grant-date fair value over the vesting period. Notes disclose maturities, rates, covenants, lease schedules, pension assumptions and option inputs.",
+    "summary_tr": "Kiracı, ödemelerin bugünkü değeriyle bir kira yükümlülüğü ve eşit tutarda kullanım hakkı varlığı kaydeder. IFRS tek model kullanır (faiz artı itfa, öne yüklü gider, anapara finansman nakit akışında); US GAAP finansal ve faaliyet kiralamasını korur; faaliyet kiralamasında tek bir doğrusal gider ve tüm nakit işletme faaliyetlerinde gösterilir. Kiraya veren faaliyet kiralamasında varlığı tutar, finansal kiralamada alacakla değiştirir. Tanımlanmış katkı planları katkıyı gider yazar; tanımlanmış fayda planları fonlama durumunu raporlar ve maliyeti kâr/zarar ile OCI arasında böler; IFRS ve US GAAP net faiz ve yeniden ölçümlerde ayrılır. Hisse bazlı ödeme hibe tarihi gerçeğe uygun değeriyle hak ediş süresi boyunca gider yazılır. Dipnotlar vadeleri, oranları, taahhütleri, kira çizelgelerini, emeklilik varsayımlarını ve opsiyon girdilerini açıklar.",
+    "common_traps_tr": [
+      "Kira yükümlülüğü ödemelerin toplamı değil bugünkü değeridir.",
+      "IFRS kiracıda toplam gider ilk yıllarda nakit ödemeden yüksektir (öne yüklü); US GAAP faaliyet kiralamasında doğrusal.",
+      "IFRS'te anapara ödemesi finansman nakit akışıdır; US GAAP faaliyet kiralamasında ödemenin tamamı CFO'dur.",
+      "DC planında gider = katkı; DB planında yükümlülük = vaat edilen faydaların bugünkü değeri.",
+      "IFRS: yeniden ölçümler OCI'da kalır; US GAAP: OCI'a gider, sonra kâr/zarara itfa edilir.",
+      "Opsiyon gideri hibe tarihindeki gerçeğe uygun değerle sabittir; sonraki fiyat değişimi gideri etkilemez."
+    ],
+    "vocab_ids": [
+      "lease",
+      "lessee",
+      "lessor",
+      "right-of-use-asset",
+      "lease-liability",
+      "front-loaded",
+      "incremental-borrowing-rate",
+      "defined-contribution-plan",
+      "defined-benefit-plan",
+      "funded-status",
+      "service-cost",
+      "actuarial",
+      "vesting-period",
+      "grant-date",
+      "maturity-schedule",
+      "covenant",
+      "collateral",
+      "volatility"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "TFRS 16 kiracı modeli ve TMS 19 çalışanlara sağlanan faydalar Düzey 3 muhasebede geçer; US GAAP faaliyet kiralaması ve opsiyon gideri ayrıntıları yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-08-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, at the start of a four-year equipment lease, a lessee most likely recognizes:",
+      "stem_tr": "IFRS'e göre, dört yıllık bir ekipman kiralamasının başında kiracı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a right-of-use asset and a lease liability equal to the present value of the lease payments.",
+          "tr": "kira ödemelerinin bugünkü değerine eşit bir kullanım hakkı varlığı ve kira yükümlülüğü kaydeder."
+        },
+        {
+          "key": "B",
+          "en": "only a rent expense each period, with nothing on the balance sheet.",
+          "tr": "bilançoda hiçbir şey olmadan yalnızca her dönem kira gideri kaydeder."
+        },
+        {
+          "key": "C",
+          "en": "the equipment at its fair value and a liability equal to the sum of the lease payments.",
+          "tr": "ekipmanı gerçeğe uygun değeriyle ve kira ödemelerinin toplamına eşit bir yükümlülük kaydeder."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "IFRS 16 has a single lessee model: all leases except short-term and low-value leases go on the balance sheet as a right-of-use asset and a lease liability measured at the present value of payments.",
+      "explanation_tr": "IFRS 16 tek kiracı modeline sahiptir: kısa vadeli ve düşük değerli kiralamalar dışında tüm kiralamalar, ödemelerin bugünkü değeriyle ölçülen kullanım hakkı varlığı ve kira yükümlülüğü olarak bilançoya girer.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Off-balance-sheet treatment is allowed only for short-term (12 months or less) and low-value leases.",
+          "tr": "Bilanço dışı işlem yalnızca kısa vadeli (12 ay ve altı) ve düşük değerli kiralamalarda mümkündür."
+        },
+        "C": {
+          "en": "The liability is the present value, not the undiscounted sum of payments, and the asset is a right-of-use asset, not the equipment itself.",
+          "tr": "Yükümlülük iskonto edilmemiş toplam değil bugünkü değerdir; varlık ekipmanın kendisi değil kullanım hakkı varlığıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "lessee",
+        "right-of-use-asset",
+        "lease-liability",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TFRS 16 kiracı modeli Düzey 3 muhasebede işlenir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Pamukkale Tekstil signs a 4-year lease with payments of TRY 100,000 at the end of each year. The rate implicit in the lease is 8%. The lease liability recognized at the start of the lease is closest to:",
+      "stem_tr": "Pamukkale Tekstil her yıl sonunda 100.000 TL ödemeli 4 yıllık bir kira sözleşmesi imzalar. Kiralamadaki zımni faiz oranı %8'dir. Kiralamanın başında kaydedilen kira yükümlülüğü en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 357,710",
+          "tr": "357.710 TL",
+          "value": 357710.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 331,213",
+          "tr": "331.213 TL",
+          "value": 331213.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 400,000",
+          "tr": "400.000 TL",
+          "value": 400000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Lease liability = PV of an ordinary annuity: 100,000 x [1 - 1.08^-4] / 0.08 = TRY 331,213.",
+      "explanation_tr": "Kira yükümlülüğü = dönem sonu anüitenin bugünkü değeri: 100.000 x [1 - 1,08^-4] / 0,08 = 331.213 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats the payments as an annuity due (BGN mode); payments are at year-end.",
+          "tr": "Ödemeleri dönem başı anüite gibi alır (BGN modu); ödemeler yıl sonundadır."
+        },
+        "C": {
+          "en": "Adds up the undiscounted payments; the liability must be discounted.",
+          "tr": "İskonto edilmemiş ödemeleri toplar; yükümlülük iskonto edilmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the initial lease liability (present value of payments).",
+          "tr": "Başlangıç kira yükümlülüğü (ödemelerin bugünkü değeri) isteniyor."
+        },
+        {
+          "en": "PV of an ordinary annuity at the implicit rate.",
+          "tr": "Zımni oranla dönem sonu anüitenin bugünkü değeri.",
+          "formula_latex": "L_0 = PMT \\times \\frac{1 - (1+r)^{-n}}{r}"
+        },
+        {
+          "en": "Insert: PMT = 100,000; r = 0.08; n = 4.",
+          "tr": "Yerine koy: PMT = 100.000; r = 0,08; n = 4.",
+          "values": {
+            "PMT": 100000,
+            "r": 0.08,
+            "n": 4
+          }
+        },
+        {
+          "en": "Annuity factor = (1 - 0.73503) / 0.08 = 3.31213.",
+          "tr": "Anüite faktörü = (1 - 0,73503) / 0,08 = 3,31213."
+        },
+        {
+          "en": "L0 = 100,000 x 3.31213 = TRY 331,213.",
+          "tr": "L0 = 100.000 x 3,31213 = 331.213 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "4 [N]",
+          "8 [I/Y]",
+          "100000 [PMT]",
+          "0 [FV]",
+          "[CPT] [PV]"
+        ],
+        "note_tr": "END modunda olun; PV negatif çıkar (-331.213), mutlak değerini alın."
+      },
+      "numeric": {
+        "expr": "abs(pv(0.08,4,100000))",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "implicit",
+        "present-value",
+        "ordinary-annuity",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same lease (4 annual year-end payments of TRY 100,000, 8% implicit rate, initial liability TRY 331,213), the lessee's interest expense in Year 1 under IFRS is closest to:",
+      "stem_tr": "Aynı kiralamada (yıl sonunda 4 yıllık 100.000 TL ödeme, %8 zımni oran, başlangıç yükümlülüğü 331.213 TL), kiracının IFRS'e göre 1. yıl faiz gideri en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 32,000",
+          "tr": "32.000 TL",
+          "value": 32000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 100,000",
+          "tr": "100.000 TL",
+          "value": 100000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 26,497",
+          "tr": "26.497 TL",
+          "value": 26497.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Interest = opening liability x rate = 331,213 x 0.08 = TRY 26,497. The remaining 73,503 of the payment reduces the liability.",
+      "explanation_tr": "Faiz = dönem başı yükümlülük x oran = 331.213 x 0,08 = 26.497 TL. Ödemenin kalan 73.503'ü yükümlülüğü azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies 8% to the undiscounted total of 400,000 instead of the present value.",
+          "tr": "%8'i bugünkü değer yerine iskonto edilmemiş toplam 400.000'e uygular."
+        },
+        "B": {
+          "en": "Treats the whole payment as expense; under IFRS the payment is split into interest and principal.",
+          "tr": "Ödemenin tamamını gider sayar; IFRS'te ödeme faiz ve anaparaya ayrılır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need Year 1 interest expense on the lease liability.",
+          "tr": "Kira yükümlülüğünün 1. yıl faiz gideri isteniyor."
+        },
+        {
+          "en": "Interest = opening liability x implicit rate.",
+          "tr": "Faiz = dönem başı yükümlülük x zımni oran.",
+          "formula_latex": "Int_1 = L_0 \\times r"
+        },
+        {
+          "en": "331,213 x 0.08 = 26,497.",
+          "tr": "331.213 x 0,08 = 26.497.",
+          "values": {
+            "L_0": 331213,
+            "r": 0.08
+          }
+        },
+        {
+          "en": "Interest expense = TRY 26,497; principal repaid = 100,000 - 26,497 = 73,503.",
+          "tr": "Faiz gideri = 26.497 TL; ödenen anapara = 100.000 - 26.497 = 73.503."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "331213",
+          "[×]",
+          "8",
+          "[%]",
+          "[=]"
+        ],
+        "note_tr": "Ya da TVM'de PV'yi hesapladıktan sonra [2ND] [PV] (AMORT) P1=1 P2=1 ile INT'i okuyun."
+      },
+      "numeric": {
+        "expr": "abs(pv(0.08,4,100000))*0.08",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "interest-expense",
+        "opening",
+        "principal",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "For the same lease (initial liability and right-of-use asset TRY 331,213, 4 years, 8%, straight-line amortization), the total lease-related expense reported by an IFRS lessee in Year 1 is closest to:",
+      "stem_tr": "Aynı kiralamada (başlangıç yükümlülüğü ve kullanım hakkı varlığı 331.213 TL, 4 yıl, %8, doğrusal itfa), IFRS kiracısının 1. yılda raporladığı toplam kiralama gideri en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 109,300",
+          "tr": "109.300 TL",
+          "value": 109300.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 100,000",
+          "tr": "100.000 TL",
+          "value": 100000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 82,803",
+          "tr": "82.803 TL",
+          "value": 82803.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Interest 331,213 x 8% = 26,497 plus amortization 331,213 / 4 = 82,803 gives TRY 109,300. The expense is front-loaded: it exceeds the 100,000 cash payment in early years.",
+      "explanation_tr": "Faiz 331.213 x %8 = 26.497 artı itfa 331.213 / 4 = 82.803, toplam 109.300 TL. Gider öne yüklüdür: ilk yıllarda 100.000 TL nakit ödemeyi aşar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the straight-line lease expense of a US GAAP operating lease, not the IFRS treatment.",
+          "tr": "Bu US GAAP faaliyet kiralamasının doğrusal kira gideridir, IFRS işlemi değil."
+        },
+        "C": {
+          "en": "Includes only the amortization of the right-of-use asset and forgets the interest.",
+          "tr": "Yalnızca kullanım hakkı varlığının itfasını içerir, faizi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need total Year 1 expense under the IFRS lessee model.",
+          "tr": "IFRS kiracı modelinde 1. yıl toplam gider isteniyor."
+        },
+        {
+          "en": "Expense = interest on liability + straight-line amortization of the ROU asset.",
+          "tr": "Gider = yükümlülük faizi + kullanım hakkı varlığının doğrusal itfası.",
+          "formula_latex": "E_1 = L_0 \\times r + \\frac{ROU_0}{n}"
+        },
+        {
+          "en": "Interest = 331,213 x 0.08 = 26,497.",
+          "tr": "Faiz = 331.213 x 0,08 = 26.497.",
+          "values": {
+            "L_0": 331213,
+            "r": 0.08,
+            "n": 4
+          }
+        },
+        {
+          "en": "Amortization = 331,213 / 4 = 82,803.",
+          "tr": "İtfa = 331.213 / 4 = 82.803."
+        },
+        {
+          "en": "Total = 26,497 + 82,803 = TRY 109,300.",
+          "tr": "Toplam = 26.497 + 82.803 = 109.300 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "331213",
+          "[×]",
+          ".08",
+          "[=]",
+          "[STO] 1",
+          "331213",
+          "[÷]",
+          "4",
+          "[=]",
+          "[+]",
+          "[RCL] 1",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "abs(pv(0.08,4,100000))*0.08 + abs(pv(0.08,4,100000))/4",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "front-loaded",
+        "amortization",
+        "exceed",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A US GAAP lessee classifies the same 4-year lease (payments TRY 100,000 at each year-end, 8%, initial liability TRY 331,213) as an operating lease. The amortization of the right-of-use asset recorded in Year 1 is closest to:",
+      "stem_tr": "Bir US GAAP kiracısı aynı 4 yıllık kiralamayı (her yıl sonunda 100.000 TL ödeme, %8, başlangıç yükümlülüğü 331.213 TL) faaliyet kiralaması olarak sınıflar. 1. yılda kaydedilen kullanım hakkı varlığı itfası en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 82,803",
+          "tr": "82.803 TL",
+          "value": 82803.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 100,000",
+          "tr": "100.000 TL",
+          "value": 100000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 73,503",
+          "tr": "73.503 TL",
+          "value": 73503.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In a US GAAP operating lease the single straight-line lease cost is 400,000 / 4 = 100,000. ROU amortization is the plug: 100,000 - interest 26,497 = TRY 73,503, which equals the principal reduction of the liability.",
+      "explanation_tr": "US GAAP faaliyet kiralamasında tek doğrusal kira maliyeti 400.000 / 4 = 100.000'dir. Kullanım hakkı itfası denkleştirici kalemdir: 100.000 - faiz 26.497 = 73.503 TL; bu, yükümlülüğün anapara azalışına eşittir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Straight-line amortization of the ROU asset (331,213 / 4) is the IFRS / finance lease approach.",
+          "tr": "Kullanım hakkı varlığının doğrusal itfası (331.213 / 4) IFRS / finansal kiralama yaklaşımıdır."
+        },
+        "B": {
+          "en": "100,000 is the total straight-line lease cost, not the amortization component.",
+          "tr": "100.000 toplam doğrusal kira maliyetidir, itfa bileşeni değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROU amortization for a US GAAP operating lease.",
+          "tr": "US GAAP faaliyet kiralamasında kullanım hakkı itfası isteniyor."
+        },
+        {
+          "en": "Total lease cost is straight-line: total payments / term. Amortization = lease cost - interest on the liability.",
+          "tr": "Toplam kira maliyeti doğrusaldır: toplam ödeme / süre. İtfa = kira maliyeti - yükümlülük faizi.",
+          "formula_latex": "Amort_1 = \\frac{\\sum PMT}{n} - L_0 \\times r"
+        },
+        {
+          "en": "Lease cost = 400,000 / 4 = 100,000; interest = 331,213 x 0.08 = 26,497.",
+          "tr": "Kira maliyeti = 400.000 / 4 = 100.000; faiz = 331.213 x 0,08 = 26.497.",
+          "values": {
+            "total_payments": 400000,
+            "n": 4,
+            "L_0": 331213,
+            "r": 0.08
+          }
+        },
+        {
+          "en": "Amortization = 100,000 - 26,497 = TRY 73,503.",
+          "tr": "İtfa = 100.000 - 26.497 = 73.503 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "331213",
+          "[×]",
+          ".08",
+          "[=]",
+          "[STO] 1",
+          "100000",
+          "[-]",
+          "[RCL] 1",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "100000 - abs(pv(0.08,4,100000))*0.08",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "operating-lease",
+        "plug",
+        "classify",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Under US GAAP, a lessee would most likely classify a lease as a finance lease if:",
+      "stem_tr": "US GAAP'e göre bir kiracı aşağıdaki durumlardan hangisinde kiralamayı büyük olasılıkla finansal kiralama olarak sınıflar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the lease term is 12 months or less.",
+          "tr": "kira süresi 12 ay ya da daha kısaysa."
+        },
+        {
+          "key": "B",
+          "en": "the lease term covers a major part of the asset's remaining economic life.",
+          "tr": "kira süresi varlığın kalan ekonomik ömrünün büyük bölümünü kapsıyorsa."
+        },
+        {
+          "key": "C",
+          "en": "the asset is a standard delivery van returned to the lessor at the end of a two-year term with no purchase option.",
+          "tr": "varlık, iki yıllık sürenin sonunda satın alma opsiyonu olmadan kiraya verene iade edilen standart bir kamyonetse."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A lease is a finance lease if any one of five criteria is met: transfer of ownership, a purchase option reasonably certain to be exercised, a term that is a major part of the economic life, a present value of payments that is substantially all of the fair value, or a specialized asset.",
+      "explanation_tr": "Beş ölçütten biri sağlanırsa kiralama finansaldır: mülkiyet devri, kullanılması kesine yakın satın alma opsiyonu, ekonomik ömrün büyük bölümünü kapsayan süre, ödemelerin bugünkü değerinin gerçeğe uygun değerin neredeyse tamamı olması ya da özel nitelikli varlık.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A short-term lease can be kept off the balance sheet entirely; it is not a finance lease.",
+          "tr": "Kısa vadeli kiralama tamamen bilanço dışında tutulabilir; finansal kiralama değildir."
+        },
+        "C": {
+          "en": "A short lease of a standard asset with no transfer or purchase option meets none of the criteria: it is an operating lease.",
+          "tr": "Devir ya da satın alma opsiyonu olmayan standart bir varlığın kısa kiralaması hiçbir ölçütü sağlamaz: faaliyet kiralamasıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "classify",
+        "economic-life",
+        "purchase-option",
+        "specialized",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q07",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Ege Makine, a manufacturer, leases a machine it produced to a customer for 4 years with year-end payments of TRY 100,000; the present value of the payments at 8% is TRY 331,213 and the lease qualifies as a sales-type (finance) lease. The machine's carrying amount in Ege's inventory was TRY 280,000. The selling profit Ege recognizes at the start of the lease is closest to:",
+      "stem_tr": "Üretici Ege Makine, ürettiği bir makineyi bir müşteriye 4 yıllığına yıl sonunda 100.000 TL ödemeyle kiralar; ödemelerin %8'le bugünkü değeri 331.213 TL'dir ve kiralama satış tipi (finansal) kiralamadır. Makinenin Ege'nin stoklarındaki defter değeri 280.000 TL idi. Ege'nin kiralamanın başında kaydettiği satış kârı en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 120,000",
+          "tr": "120.000 TL",
+          "value": 120000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 51,213",
+          "tr": "51.213 TL",
+          "value": 51213.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A sales-type lessor records revenue equal to the present value of payments (331,213) and cost of goods sold equal to the asset's carrying amount (280,000). Selling profit = 331,213 - 280,000 = TRY 51,213; interest revenue follows in later periods.",
+      "explanation_tr": "Satış tipi kiraya veren, ödemelerin bugünkü değerine eşit hasılat (331.213) ve varlığın defter değerine eşit satışların maliyeti (280.000) kaydeder. Satış kârı = 331.213 - 280.000 = 51.213 TL; faiz geliri sonraki dönemlerde gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the undiscounted total payments (400,000 - 280,000); revenue is the present value.",
+          "tr": "İskonto edilmemiş toplam ödemeyi kullanır (400.000 - 280.000); hasılat bugünkü değerdir."
+        },
+        "B": {
+          "en": "Zero profit at inception is the operating lease treatment, where the lessor keeps the asset.",
+          "tr": "Başlangıçta sıfır kâr, kiraya verenin varlığı elinde tuttuğu faaliyet kiralaması işlemidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the lessor's selling profit at lease inception.",
+          "tr": "Kiraya verenin kiralama başlangıcındaki satış kârı isteniyor."
+        },
+        {
+          "en": "Selling profit = revenue (PV of payments) - cost of goods sold (carrying amount).",
+          "tr": "Satış kârı = hasılat (ödemelerin BD) - satışların maliyeti (defter değeri).",
+          "formula_latex": "Profit = PV_{payments} - CA"
+        },
+        {
+          "en": "331,213 - 280,000 = 51,213.",
+          "tr": "331.213 - 280.000 = 51.213.",
+          "values": {
+            "PV_payments": 331213,
+            "CA": 280000
+          }
+        },
+        {
+          "en": "Selling profit = TRY 51,213.",
+          "tr": "Satış kârı = 51.213 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "331213",
+          "[-]",
+          "280000",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "abs(pv(0.08,4,100000))-280000",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "lessor",
+        "sales-type-lease",
+        "selling-profit",
+        "qualify",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q08",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two lessees have identical leases. Company K reports under IFRS; Company M reports under US GAAP and classifies the lease as operating. Compared with Company M, in the first year Company K most likely reports:",
+      "stem_tr": "İki kiracının kiralamaları özdeştir. K şirketi IFRS'e göre, M şirketi US GAAP'e göre raporlar ve kiralamayı faaliyet kiralaması olarak sınıflar. M'ye kıyasla ilk yıl K büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher operating cash flow and higher EBITDA.",
+          "tr": "daha yüksek işletme nakit akışı ve daha yüksek FAVÖK raporlar."
+        },
+        {
+          "key": "B",
+          "en": "the same operating cash flow but lower net income.",
+          "tr": "aynı işletme nakit akışını ama daha düşük net kâr raporlar."
+        },
+        {
+          "key": "C",
+          "en": "lower operating cash flow and higher net income.",
+          "tr": "daha düşük işletme nakit akışı ve daha yüksek net kâr raporlar."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under IFRS the principal part of the payment is a financing outflow, so operating cash flow is higher. Interest and amortization sit below EBITDA, while M's single lease expense is an operating cost above EBITDA, so K's EBITDA is higher too. K's net income is lower in early years because total expense is front-loaded.",
+      "explanation_tr": "IFRS'te ödemenin anapara kısmı finansman çıkışıdır; işletme nakit akışı daha yüksektir. Faiz ve itfa FAVÖK'ün altında yer alırken M'nin tek kira gideri FAVÖK'ün üstünde bir faaliyet gideridir; K'nin FAVÖK'ü de daha yüksektir. Toplam gider öne yüklü olduğundan K'nin net kârı ilk yıllarda daha düşüktür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Operating cash flow differs: K moves the principal payment to financing activities.",
+          "tr": "İşletme nakit akışı farklıdır: K anapara ödemesini finansman faaliyetlerine taşır."
+        },
+        "C": {
+          "en": "K's operating cash flow is higher, not lower, and its early-year net income is lower because of the front-loaded expense.",
+          "tr": "K'nin işletme nakit akışı düşük değil yüksektir; öne yüklü gider nedeniyle ilk yıllarda net kârı daha düşüktür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "identical",
+        "ebitda",
+        "financing-activities",
+        "compared-with",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-a-q09",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In an operating lease, the lessor most likely:",
+      "stem_tr": "Faaliyet kiralamasında kiraya veren büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "derecognizes the asset and records a lease receivable.",
+          "tr": "varlığı bilanço dışı bırakır ve kira alacağı kaydeder."
+        },
+        {
+          "key": "B",
+          "en": "keeps the asset on its balance sheet, depreciates it and recognizes lease revenue straight-line.",
+          "tr": "varlığı bilançosunda tutar, amortisman ayırır ve kira gelirini doğrusal kaydeder."
+        },
+        {
+          "key": "C",
+          "en": "recognizes a selling profit at the start of the lease.",
+          "tr": "kiralamanın başında satış kârı kaydeder."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In an operating lease the risks and rewards stay with the lessor: the asset remains on its books, depreciation continues, and lease income is recognized evenly over the term.",
+      "explanation_tr": "Faaliyet kiralamasında risk ve getiriler kiraya verende kalır: varlık defterlerde kalır, amortisman devam eder ve kira geliri süre boyunca eşit olarak kaydedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Derecognizing the asset and recording a receivable is the finance lease treatment.",
+          "tr": "Varlığı bilanço dışı bırakıp alacak kaydetmek finansal kiralama işlemidir."
+        },
+        "C": {
+          "en": "A selling profit arises only in a sales-type (finance) lease by a manufacturer or dealer.",
+          "tr": "Satış kârı yalnızca üretici ya da satıcının satış tipi (finansal) kiralamasında doğar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "lessor",
+        "derecognize",
+        "receivable",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under a defined contribution pension plan, the employer's pension expense for a period is most likely equal to:",
+      "stem_tr": "Tanımlanmış katkı emeklilik planında işverenin dönem emeklilik gideri büyük olasılıkla neye eşittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the contribution the employer is required to make for that period.",
+          "tr": "işverenin o dönem için yapması gereken katkıya."
+        },
+        {
+          "key": "B",
+          "en": "the change in the present value of promised future benefits.",
+          "tr": "vaat edilen gelecek faydaların bugünkü değerindeki değişime."
+        },
+        {
+          "key": "C",
+          "en": "the actual return earned on the plan assets.",
+          "tr": "plan varlıklarından elde edilen gerçek getiriye."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In a defined contribution plan the employer's only obligation is the agreed contribution; once paid, the expense is complete and investment risk belongs to the employee.",
+      "explanation_tr": "Tanımlanmış katkı planında işverenin tek yükümlülüğü anlaşılan katkıdır; ödenince gider tamamlanır, yatırım riski çalışana aittir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The present value of promised benefits is the obligation of a defined benefit plan.",
+          "tr": "Vaat edilen faydaların bugünkü değeri tanımlanmış fayda planının yükümlülüğüdür."
+        },
+        "C": {
+          "en": "Plan asset returns affect the employee's account, not the employer's expense, in a DC plan.",
+          "tr": "DC planında plan varlığı getirileri işverenin giderini değil çalışanın hesabını etkiler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "defined-contribution-plan",
+        "contribution",
+        "obligation",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "TMS 19 tanımlanmış katkı/fayda ayrımı Düzey 3'te geçer."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "At year-end, Anadolu Bankası's defined benefit pension obligation is TRY 500 million and the fair value of its plan assets is TRY 420 million. The amount reported on the balance sheet is closest to:",
+      "stem_tr": "Yıl sonunda Anadolu Bankası'nın tanımlanmış fayda emeklilik yükümlülüğü 500 milyon TL, plan varlıklarının gerçeğe uygun değeri 420 milyon TL'dir. Bilançoda raporlanan tutar en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a net pension liability of TRY 80 million.",
+          "tr": "80 milyon TL net emeklilik yükümlülüğü.",
+          "value": 80.0
+        },
+        {
+          "key": "B",
+          "en": "a pension liability of TRY 500 million and a separate plan asset of TRY 420 million.",
+          "tr": "500 milyon TL emeklilik yükümlülüğü ve ayrı bir 420 milyon TL plan varlığı.",
+          "value": 500.0
+        },
+        {
+          "key": "C",
+          "en": "a net pension asset of TRY 80 million.",
+          "tr": "80 milyon TL net emeklilik varlığı.",
+          "value": -80.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Funded status = plan assets - obligation = 420 - 500 = -80. A deficit is reported as a net pension liability of TRY 80 million.",
+      "explanation_tr": "Fonlama durumu = plan varlıkları - yükümlülük = 420 - 500 = -80. Açık, 80 milyon TL net emeklilik yükümlülüğü olarak raporlanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Both frameworks present the net funded status, not the gross obligation and assets separately on the face of the balance sheet.",
+          "tr": "Her iki çerçeve de bilançoda brüt yükümlülük ve varlıkları ayrı ayrı değil net fonlama durumunu sunar."
+        },
+        "C": {
+          "en": "The plan is underfunded (assets below obligation), so it is a liability, not an asset.",
+          "tr": "Plan eksik fonlanmış (varlıklar yükümlülüğün altında); bu bir varlık değil yükümlülüktür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the net pension amount on the balance sheet.",
+          "tr": "Bilançodaki net emeklilik tutarı isteniyor."
+        },
+        {
+          "en": "Net liability = obligation - fair value of plan assets.",
+          "tr": "Net yükümlülük = yükümlülük - plan varlıklarının gerçeğe uygun değeri.",
+          "formula_latex": "NPL = PBO - PA"
+        },
+        {
+          "en": "500 - 420 = 80.",
+          "tr": "500 - 420 = 80.",
+          "values": {
+            "PBO": 500,
+            "PA": 420
+          }
+        },
+        {
+          "en": "Net pension liability = TRY 80 million.",
+          "tr": "Net emeklilik yükümlülüğü = 80 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "500",
+          "[-]",
+          "420",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "500-420",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "funded-status",
+        "deficit",
+        "underfunded",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, which component of defined benefit pension cost is recognized in other comprehensive income rather than in profit or loss?",
+      "stem_tr": "IFRS'e göre tanımlanmış fayda emeklilik maliyetinin hangi bileşeni kâr veya zarar yerine diğer kapsamlı gelirde kaydedilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Current service cost.",
+          "tr": "Cari hizmet maliyeti."
+        },
+        {
+          "key": "B",
+          "en": "Net interest on the net pension liability.",
+          "tr": "Net emeklilik yükümlülüğü üzerindeki net faiz."
+        },
+        {
+          "key": "C",
+          "en": "Remeasurements, such as actuarial gains and losses.",
+          "tr": "Aktüeryal kazanç ve kayıplar gibi yeniden ölçümler."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "IAS 19 splits the cost into service cost and net interest (profit or loss) and remeasurements (OCI). Remeasurements are never reclassified to profit or loss.",
+      "explanation_tr": "IAS 19 maliyeti hizmet maliyeti ve net faiz (kâr veya zarar) ile yeniden ölçümler (OCI) olarak böler. Yeniden ölçümler kâr veya zarara asla yeniden sınıflanmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Service cost is an operating expense in profit or loss.",
+          "tr": "Hizmet maliyeti kâr veya zararda bir faaliyet gideridir."
+        },
+        "B": {
+          "en": "Net interest is recognized in profit or loss under IFRS.",
+          "tr": "Net faiz IFRS'te kâr veya zararda kaydedilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "remeasurement",
+        "actuarial",
+        "other-comprehensive-income",
+        "component"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Boğaziçi Teknoloji grants 1,000,000 share options to employees. The fair value of each option at the grant date is TRY 6, and the options vest after 3 years of service. One year later the share price has risen and each option is worth TRY 9. The compensation expense for the first year is closest to:",
+      "stem_tr": "Boğaziçi Teknoloji çalışanlara 1.000.000 pay opsiyonu verir. Hibe tarihinde opsiyon başına gerçeğe uygun değer 6 TL'dir ve opsiyonlar 3 yıllık hizmet sonunda hak edilir. Bir yıl sonra pay fiyatı yükselmiş ve her opsiyon 9 TL değerindedir. İlk yılın ücret gideri en yakın:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3,000,000",
+          "tr": "3.000.000 TL",
+          "value": 3000000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 2,000,000",
+          "tr": "2.000.000 TL",
+          "value": 2000000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 6,000,000",
+          "tr": "6.000.000 TL",
+          "value": 6000000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity-settled awards are measured at grant-date fair value and expensed over the vesting period: 1,000,000 x 6 / 3 = TRY 2,000,000 per year. The later rise to TRY 9 is ignored.",
+      "explanation_tr": "Özkaynağa dayalı ödüller hibe tarihi gerçeğe uygun değeriyle ölçülür ve hak ediş süresine yayılır: 1.000.000 x 6 / 3 = yılda 2.000.000 TL. Sonraki 9 TL'ye yükseliş dikkate alınmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the current fair value of TRY 9; the grant-date value is fixed for equity-settled options.",
+          "tr": "Cari gerçeğe uygun değer 9 TL'yi kullanır; özkaynağa dayalı opsiyonlarda hibe tarihi değeri sabittir."
+        },
+        "C": {
+          "en": "Expenses the whole grant-date value in Year 1 instead of spreading it over the 3-year vesting period.",
+          "tr": "Hibe tarihi değerinin tamamını 3 yıllık hak ediş süresine yaymak yerine 1. yılda gider yazar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual share-based compensation expense.",
+          "tr": "Yıllık hisse bazlı ücret gideri isteniyor."
+        },
+        {
+          "en": "Expense per year = options x grant-date fair value / vesting years.",
+          "tr": "Yıllık gider = opsiyon sayısı x hibe tarihi gerçeğe uygun değer / hak ediş yılı.",
+          "formula_latex": "E = \\frac{N \\times FV_{grant}}{T}"
+        },
+        {
+          "en": "1,000,000 x 6 = 6,000,000 total; / 3 years.",
+          "tr": "1.000.000 x 6 = 6.000.000 toplam; / 3 yıl.",
+          "values": {
+            "N": 1000000,
+            "FV_grant": 6,
+            "T": 3
+          }
+        },
+        {
+          "en": "Expense Year 1 = TRY 2,000,000.",
+          "tr": "1. yıl gider = 2.000.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000000",
+          "[×]",
+          "6",
+          "[÷]",
+          "3",
+          "[=]"
+        ],
+        "note_tr": ""
+      },
+      "numeric": {
+        "expr": "1000000*6/3",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "grant-date",
+        "vesting-period",
+        "vest",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company pays a large part of executive compensation in equity-settled stock options. All else equal, this practice is least likely to:",
+      "stem_tr": "Bir şirket yönetici ücretlerinin büyük bölümünü özkaynağa dayalı pay opsiyonlarıyla öder. Diğer her şey sabitken bu uygulamanın aşağıdakilerden hangisini yapması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "reduce net income.",
+          "tr": "Net kârı azaltması."
+        },
+        {
+          "key": "B",
+          "en": "reduce total shareholders' equity.",
+          "tr": "Toplam özkaynağı azaltması."
+        },
+        {
+          "key": "C",
+          "en": "increase the number of potentially dilutive shares.",
+          "tr": "Potansiyel sulandırıcı pay sayısını artırması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The option expense lowers retained earnings, but an equal amount is credited to paid-in capital, so total equity is unchanged. The expense reduces net income and the options may dilute existing shareholders.",
+      "explanation_tr": "Opsiyon gideri birikmiş kârları düşürür ama eşit tutar ödenmiş sermayeye alacak kaydedilir; toplam özkaynak değişmez. Gider net kârı azaltır ve opsiyonlar mevcut ortakları sulandırabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Share-based compensation is an expense and does reduce net income.",
+          "tr": "Hisse bazlı ödeme bir giderdir ve net kârı azaltır."
+        },
+        "C": {
+          "en": "Options are potential new shares, so diluted EPS is affected.",
+          "tr": "Opsiyonlar potansiyel yeni paylardır; sulandırılmış hisse başına kâr etkilenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "executive",
+        "equity-settled",
+        "dilutive",
+        "all-else-equal",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which statement about defined benefit pension cost best describes a difference between IFRS and US GAAP?",
+      "stem_tr": "Tanımlanmış fayda emeklilik maliyetiyle ilgili hangi ifade IFRS ile US GAAP arasındaki bir farkı en iyi açıklar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "US GAAP recognizes an expected return on plan assets in pension expense, whereas IFRS applies the discount rate to the net pension liability as net interest.",
+          "tr": "US GAAP emeklilik giderinde plan varlıklarının beklenen getirisini kaydeder; IFRS ise net emeklilik yükümlülüğüne iskonto oranını net faiz olarak uygular."
+        },
+        {
+          "key": "B",
+          "en": "IFRS amortizes actuarial gains and losses to profit or loss, whereas US GAAP keeps them permanently in OCI.",
+          "tr": "IFRS aktüeryal kazanç ve kayıpları kâr veya zarara itfa eder; US GAAP onları kalıcı olarak OCI'da tutar."
+        },
+        {
+          "key": "C",
+          "en": "US GAAP reports the gross obligation on the balance sheet, whereas IFRS reports the net funded status.",
+          "tr": "US GAAP bilançoda brüt yükümlülüğü, IFRS ise net fonlama durumunu raporlar."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under US GAAP, pension expense includes interest cost on the obligation minus an expected return on plan assets. Under IFRS, a single net interest amount is computed by applying the discount rate to the net liability (or asset).",
+      "explanation_tr": "US GAAP'te emeklilik gideri, yükümlülük faiz maliyeti eksi plan varlıklarının beklenen getirisini içerir. IFRS'te iskonto oranı net yükümlülüğe (ya da varlığa) uygulanarak tek bir net faiz tutarı hesaplanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It is the reverse: IFRS keeps remeasurements in OCI; US GAAP amortizes them to profit or loss over time.",
+          "tr": "Tam tersi: IFRS yeniden ölçümleri OCI'da tutar; US GAAP onları zamanla kâr veya zarara itfa eder."
+        },
+        "C": {
+          "en": "Both frameworks report the net funded status on the balance sheet.",
+          "tr": "Her iki çerçeve de bilançoda net fonlama durumunu raporlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "expected-return",
+        "discount-rate",
+        "whereas",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-b-q07",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Cash-settled stock appreciation rights (SARs) granted to employees are most appropriately accounted for as:",
+      "stem_tr": "Çalışanlara verilen nakit ödemeli pay değer artış hakları (SAR) için en uygun muhasebe işlemi:",
+      "options": [
+        {
+          "key": "A",
+          "en": "equity, measured once at the grant date.",
+          "tr": "hibe tarihinde bir kez ölçülen özkaynaktır."
+        },
+        {
+          "key": "B",
+          "en": "a liability, remeasured at fair value each reporting period until settlement.",
+          "tr": "ödemeye kadar her raporlama döneminde gerçeğe uygun değerle yeniden ölçülen bir yükümlülüktür."
+        },
+        {
+          "key": "C",
+          "en": "an expense only when the employee exercises the rights.",
+          "tr": "yalnızca çalışan hakları kullandığında giderdir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Because the company must pay cash, the award is a liability. Its fair value is updated every period, so changes in the share price change the expense until the rights are settled.",
+      "explanation_tr": "Şirket nakit ödemek zorunda olduğundan ödül bir yükümlülüktür. Gerçeğe uygun değeri her dönem güncellenir; pay fiyatındaki değişimler haklar ödenene kadar gideri değiştirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Grant-date-only measurement applies to equity-settled awards such as ordinary stock options.",
+          "tr": "Yalnızca hibe tarihinde ölçüm, sıradan pay opsiyonları gibi özkaynağa dayalı ödüllere uygulanır."
+        },
+        "C": {
+          "en": "The expense is recognized over the service (vesting) period, not only at exercise.",
+          "tr": "Gider yalnızca kullanımda değil hizmet (hak ediş) süresi boyunca kaydedilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cash-settled",
+        "settlement",
+        "exercise",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The portion of a 10-year bank loan that must be repaid within the next 12 months is most appropriately presented as:",
+      "stem_tr": "10 yıllık bir banka kredisinin önümüzdeki 12 ay içinde geri ödenmesi gereken kısmı en uygun biçimde nasıl sunulur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a current liability.",
+          "tr": "kısa vadeli yükümlülük olarak."
+        },
+        {
+          "key": "B",
+          "en": "part of non-current debt, with a note disclosure only.",
+          "tr": "yalnızca dipnot açıklamasıyla uzun vadeli borcun parçası olarak."
+        },
+        {
+          "key": "C",
+          "en": "a reduction of cash and cash equivalents.",
+          "tr": "nakit ve nakit benzerlerinden bir indirim olarak."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The current portion of long-term debt is reclassified to current liabilities; the remainder stays in non-current liabilities.",
+      "explanation_tr": "Uzun vadeli borcun kısa vadeli kısmı kısa vadeli yükümlülüklere yeniden sınıflanır; kalan kısım uzun vadeli yükümlülüklerde kalır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Amounts due within a year must be shown as current on the face of the balance sheet, not only in the notes.",
+          "tr": "Bir yıl içinde vadesi gelen tutarlar yalnızca dipnotta değil bilançoda kısa vadeli gösterilmelidir."
+        },
+        "C": {
+          "en": "Liabilities are never netted against cash.",
+          "tr": "Yükümlülükler asla nakitle netleştirilmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "current-portion",
+        "repay",
+        "non-current",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Uzun vadeli borçların kısa vadeli kısmı Düzey 3 muhasebede temel sunum konusudur."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is least likely to be found in the long-term debt note of a company's financial statements?",
+      "stem_tr": "Aşağıdakilerden hangisinin bir şirketin finansal tablolarındaki uzun vadeli borç dipnotunda yer alması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The amounts of debt maturing in each of the next five years.",
+          "tr": "Önümüzdeki beş yılın her birinde vadesi gelen borç tutarları."
+        },
+        {
+          "key": "B",
+          "en": "The names and holdings of the individual bondholders.",
+          "tr": "Tahvil sahiplerinin isimleri ve ellerindeki tutarlar."
+        },
+        {
+          "key": "C",
+          "en": "Interest rates, covenants and any collateral pledged.",
+          "tr": "Faiz oranları, taahhütler ve rehnedilen teminat."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Debt notes describe terms, rates, maturities, covenants, collateral and fair value. The identity of investors holding publicly traded bonds is not disclosed.",
+      "explanation_tr": "Borç dipnotları koşulları, oranları, vadeleri, taahhütleri, teminatı ve gerçeğe uygun değeri açıklar. Halka açık tahvilleri elinde tutan yatırımcıların kimliği açıklanmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A five-year maturity schedule is a standard required disclosure.",
+          "tr": "Beş yıllık vade çizelgesi standart ve zorunlu bir açıklamadır."
+        },
+        "C": {
+          "en": "Rates, covenants and collateral are core elements of the debt note.",
+          "tr": "Oranlar, taahhütler ve teminat borç dipnotunun temel unsurlarıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "maturity-schedule",
+        "covenant",
+        "collateral",
+        "pledge",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A lessee's lease disclosures under both IFRS and US GAAP most likely include:",
+      "stem_tr": "Hem IFRS hem US GAAP'te kiracının kiralama açıklamaları büyük olasılıkla neleri içerir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the lessor's cost of the leased asset and its depreciation method.",
+          "tr": "kiraya verenin kiralanan varlık maliyeti ve amortisman yöntemi."
+        },
+        {
+          "key": "B",
+          "en": "a list of competitors' lease terms for comparison.",
+          "tr": "karşılaştırma için rakiplerin kira koşullarının listesi."
+        },
+        {
+          "key": "C",
+          "en": "a maturity analysis of lease liabilities and the split of lease cost between interest and amortization.",
+          "tr": "kira yükümlülüklerinin vade analizi ve kira maliyetinin faiz ile itfa arasındaki ayrımı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Lessees disclose the nature of their leases, a maturity analysis of lease liabilities, lease cost components, cash paid and right-of-use assets by class.",
+      "explanation_tr": "Kiracılar kiralamalarının niteliğini, kira yükümlülüklerinin vade analizini, kira maliyeti bileşenlerini, ödenen nakdi ve sınıf bazında kullanım hakkı varlıklarını açıklar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The lessor's own cost and depreciation are the lessor's information, not the lessee's disclosure.",
+          "tr": "Kiraya verenin kendi maliyeti ve amortismanı kiracının açıklaması değil kiraya verenin bilgisidir."
+        },
+        "B": {
+          "en": "Companies do not disclose competitor data in their own notes.",
+          "tr": "Şirketler kendi dipnotlarında rakip verisi açıklamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "maturity-analysis",
+        "disclose",
+        "component",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which input is least likely to appear in the share-based compensation note as an assumption used to value employee stock options?",
+      "stem_tr": "Aşağıdaki girdilerden hangisinin, çalışan pay opsiyonlarını değerlemede kullanılan varsayım olarak hisse bazlı ödeme dipnotunda yer alması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Expected share price volatility.",
+          "tr": "Beklenen pay fiyatı oynaklığı."
+        },
+        {
+          "key": "B",
+          "en": "The company's debt-to-equity ratio.",
+          "tr": "Şirketin borç/özkaynak oranı."
+        },
+        {
+          "key": "C",
+          "en": "The risk-free interest rate and expected dividend yield.",
+          "tr": "Risksiz faiz oranı ve beklenen temettü verimi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Option-pricing models use the exercise price, share price, expected term, volatility, risk-free rate and dividend yield. Leverage ratios are not model inputs.",
+      "explanation_tr": "Opsiyon fiyatlama modelleri kullanım fiyatı, pay fiyatı, beklenen süre, oynaklık, risksiz faiz ve temettü verimini kullanır. Kaldıraç oranları model girdisi değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Volatility is a key input: higher volatility raises option value and the expense.",
+          "tr": "Oynaklık temel girdidir: yüksek oynaklık opsiyon değerini ve gideri artırır."
+        },
+        "C": {
+          "en": "Both are standard inputs to Black-Scholes-type models and must be disclosed.",
+          "tr": "İkisi de Black-Scholes tipi modellerin standart girdileridir ve açıklanmalıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "volatility",
+        "risk-free-rate",
+        "dividend-yield",
+        "assumption",
+        "least-likely"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst reads a company's debt maturity schedule: TRY 50 million due in each of Years 1 and 2, TRY 900 million due in Year 3, and TRY 50 million in each of Years 4 and 5. The company's annual operating cash flow is about TRY 150 million. The most appropriate conclusion is that the company:",
+      "stem_tr": "Bir analist şirketin borç vade çizelgesini okur: 1. ve 2. yıllarda 50'şer milyon TL, 3. yılda 900 milyon TL, 4. ve 5. yıllarda 50'şer milyon TL. Şirketin yıllık işletme nakit akışı yaklaşık 150 milyon TL'dir. En uygun sonuç, şirketin:",
+      "options": [
+        {
+          "key": "A",
+          "en": "faces significant refinancing risk in Year 3.",
+          "tr": "3. yılda önemli bir yeniden finansman riskiyle karşı karşıya olduğudur."
+        },
+        {
+          "key": "B",
+          "en": "has a well-spread maturity profile with low liquidity risk.",
+          "tr": "iyi dağılmış bir vade profiline ve düşük likidite riskine sahip olduğudur."
+        },
+        {
+          "key": "C",
+          "en": "should reclassify the Year 3 amount as a current liability now.",
+          "tr": "3. yıl tutarını şimdi kısa vadeli yükümlülük olarak yeniden sınıflaması gerektiğidir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A single maturity of 900 million against operating cash flow of 150 million means the company cannot repay from internal cash and must refinance or raise capital in Year 3. Markets may be closed or expensive at that time, so refinancing risk is high.",
+      "explanation_tr": "150 milyon TL işletme nakit akışına karşı 900 milyonluk tek bir vade, şirketin iç nakitle geri ödeme yapamayacağı ve 3. yılda yeniden finansman ya da sermaye bulması gerektiği anlamına gelir. O dönemde piyasalar kapalı ya da pahalı olabilir; yeniden finansman riski yüksektir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The profile is concentrated, not spread; one year holds about 85% of the debt.",
+          "tr": "Profil dağılmış değil yoğunlaşmıştır; borcun yaklaşık %85'i tek bir yılda."
+        },
+        "C": {
+          "en": "Only amounts due within 12 months are current; Year 3 debt stays non-current until then.",
+          "tr": "Yalnızca 12 ay içinde vadesi gelen tutarlar kısa vadelidir; 3. yıl borcu o zamana kadar uzun vadeli kalır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "refinancing-risk",
+        "maturity-schedule",
+        "liquidity",
+        "concentrated",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-08-c-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-08",
+      "los_id": "FSA-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Karadeniz Enerji issued fixed-rate bonds three years ago and carries them at amortized cost. Market interest rates have risen sharply since the issue. In the notes, the disclosed fair value of the bonds is most likely:",
+      "stem_tr": "Karadeniz Enerji üç yıl önce sabit faizli tahvil ihraç etti ve bunları itfa edilmiş maliyetle taşıyor. İhraçtan bu yana piyasa faizleri keskin biçimde yükseldi. Dipnotlarda açıklanan tahvillerin gerçeğe uygun değeri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "equal to the carrying amount, because the bonds are held at amortized cost.",
+          "tr": "tahviller itfa edilmiş maliyetle tutulduğu için defter değerine eşittir."
+        },
+        {
+          "key": "B",
+          "en": "higher than the carrying amount.",
+          "tr": "defter değerinden yüksektir."
+        },
+        {
+          "key": "C",
+          "en": "lower than the carrying amount.",
+          "tr": "defter değerinden düşüktür."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Fixed-rate bond prices fall when market rates rise, so the fair value is below the amortized cost carrying amount. The company must still disclose fair value in the notes; an analyst may view the difference as an economic gain for the issuer.",
+      "explanation_tr": "Piyasa faizleri yükselince sabit faizli tahvil fiyatları düşer; gerçeğe uygun değer itfa edilmiş maliyet defter değerinin altındadır. Şirket yine de dipnotlarda gerçeğe uygun değeri açıklamalıdır; analist farkı ihraççı için ekonomik bir kazanç olarak görebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Amortized cost ignores market rates; fair value is disclosed separately and will differ.",
+          "tr": "İtfa edilmiş maliyet piyasa faizlerini yok sayar; gerçeğe uygun değer ayrıca açıklanır ve farklı olur."
+        },
+        "B": {
+          "en": "Fair value would be higher only if market rates had fallen.",
+          "tr": "Gerçeğe uygun değer yalnızca piyasa faizleri düşseydi daha yüksek olurdu."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "amortized-cost",
+        "fixed-rate",
+        "sharply",
+        "issue",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
