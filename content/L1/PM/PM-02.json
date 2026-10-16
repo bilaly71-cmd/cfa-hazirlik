@@ -1,0 +1,3511 @@
+{
+  "module_id": "PM-02",
+  "lesson": {
+    "id": "PM-02-lesson",
+    "level": "L1",
+    "topic": "PM",
+    "module_id": "PM-02",
+    "los_ids": [
+      "PM-02-a",
+      "PM-02-b",
+      "PM-02-c",
+      "PM-02-d",
+      "PM-02-e",
+      "PM-02-f",
+      "PM-02-g",
+      "PM-02-h",
+      "PM-02-i"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Portfolio Risk and Return: Part II",
+    "title_tr": "Portföy Riski ve Getirisi: Bölüm II",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "What should the market pay you for?",
+        "heading_tr": "Piyasa size neyin karşılığında ödeme yapmalı?",
+        "en": "Imagine that every investor in Türkiye can buy the same market portfolio, for example a BIST 100 index fund, and can lend or borrow at the same risk-free rate, which we take from DİBS. If a risk can be removed for free by holding many shares, the market has no reason to pay you for carrying it. Only the risk that cannot be diversified away, the risk of moving with the whole market, deserves a reward. The capital asset pricing model (CAPM) turns this idea into a simple rule: expected return equals the risk-free rate plus beta times the market risk premium. With this rule we can set a required return, spot cheap or expensive assets, choose a hurdle rate for a project and judge fund managers.",
+        "tr": "Türkiye'deki her yatırımcının aynı piyasa portföyünü (örneğin bir BIST 100 endeks fonunu) alabildiğini ve DİBS getirisinden alınan aynı risksiz faizle borç verip borçlanabildiğini düşünün. Bir risk, çok sayıda hisse tutarak bedavaya ortadan kaldırılabiliyorsa, piyasanın bu riski taşımanız karşılığında size ödeme yapması için bir neden yoktur. Yalnızca çeşitlendirmeyle yok edilemeyen risk, yani tüm piyasayla birlikte hareket etme riski, ödülü hak eder. Finansal varlık fiyatlama modeli (CAPM) bu fikri basit bir kurala çevirir: beklenen getiri, risksiz faiz artı beta çarpı piyasa risk primine eşittir. Bu kuralla gereken getiriyi belirleyebilir, ucuz ya da pahalı varlıkları bulabilir, bir proje için eşik oranı seçebilir ve fon yöneticilerini değerlendirebiliriz.",
+        "key_terms": [
+          "CAPM",
+          "beta",
+          "risk premium",
+          "market portfolio"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Risk-free asset, CAL and CML",
+        "heading_tr": "Risksiz varlık, CAL ve CML",
+        "en": "Add a risk-free asset to a risky portfolio. Lending means putting part of the money at the risk-free rate (weight in the risky portfolio below 100%). Borrowing means a risky weight above 100%, financed at the risk-free rate. All combinations lie on a straight line, the capital allocation line (CAL), with slope equal to the Sharpe ratio of the risky portfolio. The best CAL is tangent to the efficient frontier at the tangency portfolio. If all investors share the same expectations, the tangency portfolio is the market portfolio, and the line is the capital market line (CML): E(Rp) = Rf + [E(Rm) − Rf]/σm × σp. This is two-fund separation: every investor holds the market portfolio and the risk-free asset, differing only in the mix. The CML applies to efficient portfolios only.",
+        "tr": "Riskli bir portföye risksiz varlık ekleyin. Borç vermek, paranın bir kısmını risksiz faizle değerlendirmektir (riskli portföy ağırlığı %100'ün altında). Borçlanmak, risksiz faizle finanse edilen %100'ün üzerinde riskli ağırlıktır. Tüm kombinasyonlar, eğimi riskli portföyün Sharpe oranına eşit olan düz bir çizgi üzerindedir: sermaye tahsis doğrusu (CAL). En iyi CAL, teğet portföyde etkin sınıra teğettir. Tüm yatırımcıların beklentileri aynıysa teğet portföy piyasa portföyüdür ve çizgi sermaye piyasası doğrusudur (CML): E(Rp) = Rf + [E(Rm) − Rf]/σm × σp. Bu, iki fon ayrışımıdır: her yatırımcı piyasa portföyünü ve risksiz varlığı tutar; yalnızca karışım farklıdır. CML yalnızca etkin portföyler için geçerlidir.",
+        "key_terms": [
+          "capital allocation line",
+          "capital market line",
+          "tangency portfolio",
+          "two-fund separation"
+        ],
+        "formula_latex": "E(R_c)=R_f+y\\,[E(R_p)-R_f],\\ \\sigma_c=y\\sigma_p;\\qquad E(R_p)=R_f+\\frac{E(R_m)-R_f}{\\sigma_m}\\,\\sigma_p"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Systematic risk, return models and beta",
+        "heading_tr": "Sistematik risk, getiri modelleri ve beta",
+        "en": "Total risk has two parts. Systematic (market) risk comes from economy-wide factors such as interest rates, inflation, growth, and cannot be diversified away. Unsystematic (idiosyncratic, firm-specific) risk comes from events specific to one firm, such as a strike or a product recall, and can be diversified away. Only systematic risk is rewarded. A return-generating model explains returns with factors. The market model (single-index model) is R_i = α_i + β_i R_m + e_i. Multifactor models add other factors (size, value, inflation). Uses: estimating expected returns, risk, beta and abnormal return. Beta measures the sensitivity to the market: β = Cov(R_i, R_m) / Var(R_m) = ρ σ_i / σ_m. The market has beta 1; the portfolio beta is the weighted average of the asset betas.",
+        "tr": "Toplam riskin iki parçası vardır. Sistematik (piyasa) risk faiz, enflasyon, büyüme gibi ekonominin geneline ait etkenlerden gelir ve çeşitlendirmeyle yok edilemez. Sistematik olmayan (özgül, firmaya özgü) risk, bir grev ya da ürün geri çağırma gibi tek bir firmaya özgü olaylardan gelir ve çeşitlendirmeyle yok edilebilir. Yalnızca sistematik risk ödüllendirilir. Getiri üretici model, getirileri etkenlerle açıklar. Piyasa modeli (tek endeks modeli) R_i = α_i + β_i R_m + e_i'dir. Çok faktörlü modeller diğer etkenleri (büyüklük, değer, enflasyon) ekler. Kullanımları: beklenen getiri, risk, beta ve anormal getiri tahmini. Beta, piyasaya duyarlılığı ölçer: β = Kov(R_i, R_m) / Var(R_m) = ρ σ_i / σ_m. Piyasanın betası 1'dir; portföy betası varlık betalarının ağırlıklı ortalamasıdır.",
+        "key_terms": [
+          "systematic risk",
+          "unsystematic risk",
+          "market model",
+          "beta",
+          "alpha"
+        ],
+        "formula_latex": "\\beta_i=\\frac{\\mathrm{Cov}(R_i,R_m)}{\\sigma_m^2}=\\rho_{im}\\frac{\\sigma_i}{\\sigma_m}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "CAPM and the security market line",
+        "heading_tr": "CAPM ve menkul kıymet piyasası doğrusu",
+        "en": "CAPM: E(R_i) = R_f + β_i [E(R_m) − R_f]. Plotted against beta, this is the security market line (SML); its slope is the market risk premium. The SML applies to every asset, efficient or not, because it uses beta. The CML applies only to efficient portfolios and uses total risk. Assumptions include: investors are risk averse and use mean-variance analysis, have identical expectations, a single period, can lend and borrow at the risk-free rate, markets are frictionless (no taxes or transaction costs) and investors are price takers. If an asset's expected return is above the SML it is undervalued (positive alpha); below the SML it is overvalued. The required return from CAPM is also used as a hurdle rate for projects.",
+        "tr": "CAPM: E(R_i) = R_f + β_i [E(R_m) − R_f]. Betaya karşı çizildiğinde bu menkul kıymet piyasası doğrusudur (SML); eğimi piyasa risk primidir. SML, beta kullandığı için etkin olsun olmasın her varlık için geçerlidir. CML ise yalnızca etkin portföyler için geçerlidir ve toplam riski kullanır. Varsayımlar şunları içerir: yatırımcılar riskten kaçınır ve ortalama-varyans analizi kullanır, özdeş beklentilere sahiptir, tek dönem vardır, risksiz faizle borç verip borçlanabilir, piyasa sürtünmesizdir (vergi ve işlem maliyeti yoktur) ve yatırımcılar fiyat alıcıdır. Bir varlığın beklenen getirisi SML'nin üzerindeyse varlık düşük fiyatlıdır (pozitif alfa); altındaysa yüksek fiyatlıdır. CAPM'den çıkan gereken getiri aynı zamanda projeler için eşik oranı olarak da kullanılır.",
+        "key_terms": [
+          "security market line",
+          "market risk premium",
+          "required return",
+          "hurdle rate"
+        ],
+        "formula_latex": "E(R_i)=R_f+\\beta_i\\,[E(R_m)-R_f]"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Required return in a lira market",
+        "heading_tr": "Lira piyasasında gereken getiri",
+        "en": "The 2-year DİBS yield (risk-free rate) is 30%, the expected BIST 100 return is 42%, and a stock has a beta of 1.2.",
+        "tr": "2 yıllık DİBS getirisi (risksiz faiz) %30, beklenen BIST 100 getirisi %42 ve bir hissenin betası 1,2'dir.",
+        "key_terms": [],
+        "example": {
+          "en": "Market risk premium = 42 − 30 = 12%. Required return = 30 + 1.2 × 12 = 44.4%. If an analyst expects 47%, alpha = +2.6% and the stock is undervalued.",
+          "tr": "Piyasa risk primi = 42 − 30 = %12. Gereken getiri = 30 + 1,2 × 12 = %44,4. Bir analist %47 bekliyorsa alfa = +%2,6'dır ve hisse düşük fiyatlıdır.",
+          "formula_latex": "E(R)=30+1.2(12)=44.4\\%"
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Risk-adjusted performance measures",
+        "heading_tr": "Risk düzeltmeli performans ölçüleri",
+        "en": "Sharpe ratio = (Rp − Rf) / σp (total risk). Treynor ratio = (Rp − Rf) / βp (systematic risk). Jensen's alpha = Rp − [Rf + βp (Rm − Rf)]. M-squared (Modigliani) = Rf + Sharpe_p × σm − Rm, equal to (Sharpe_p − Sharpe_m) × σm: the return of the portfolio after being levered or de-levered to the market's standard deviation, minus the market's return. Sharpe and M² use total risk and suit an investor whose whole wealth is in the portfolio; Treynor and Jensen's alpha use beta and suit a well-diversified portfolio that is one part of a larger one. Higher is better for all.",
+        "tr": "Sharpe oranı = (Rp − Rf) / σp (toplam risk). Treynor oranı = (Rp − Rf) / βp (sistematik risk). Jensen alfası = Rp − [Rf + βp (Rm − Rf)]. M-kare (Modigliani) = Rf + Sharpe_p × σm − Rm; yani (Sharpe_p − Sharpe_m) × σm: portföyün piyasanın standart sapmasına kadar kaldıraçlanması ya da kaldıraçtan arındırılması sonrası getirisi eksi piyasa getirisi. Sharpe ve M² toplam riski kullanır ve tüm varlığı portföyde olan yatırımcıya uygundur; Treynor ve Jensen alfası beta kullanır ve daha büyük bir portföyün bir parçası olan iyi çeşitlendirilmiş portföye uygundur. Hepsinde yüksek olan daha iyidir.",
+        "key_terms": [
+          "Sharpe ratio",
+          "Treynor ratio",
+          "Jensen's alpha",
+          "M-squared"
+        ],
+        "formula_latex": "S=\\frac{R_p-R_f}{\\sigma_p},\\ T=\\frac{R_p-R_f}{\\beta_p},\\ \\alpha=R_p-[R_f+\\beta_p(R_m-R_f)],\\ M^2=(S_p-S_m)\\sigma_m"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "CML uses standard deviation and applies to efficient portfolios; SML uses beta and applies to all assets. Beta is not correlation: β = ρ σ_i / σ_m. Do not forget to subtract Rf in the CAPM premium. A high standard deviation does not mean a high required return if the risk is unsystematic. Alpha is measured against the SML, not against the market return. Sharpe ratio uses total risk; Treynor uses beta. M² is in percent points, not a ratio. Borrowing at the risk-free rate is an assumption; in real life borrowing costs more.",
+        "tr": "CML standart sapmayı kullanır ve etkin portföyler için geçerlidir; SML beta kullanır ve tüm varlıklar için geçerlidir. Beta korelasyon değildir: β = ρ σ_i / σ_m. CAPM priminde Rf'yi çıkarmayı unutmayın. Risk sistematik değilse yüksek standart sapma yüksek gereken getiri anlamına gelmez. Alfa piyasa getirisine değil, SML'ye göre ölçülür. Sharpe oranı toplam riski, Treynor beta'yı kullanır. M², oran değil yüzde puandır. Risksiz faizle borçlanmak bir varsayımdır; gerçekte borçlanma daha pahalıdır.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A risk-free asset turns the frontier into the CAL and, with common expectations, the CML. Only systematic risk is rewarded; beta measures it. CAPM sets the required return and the SML shows which assets are over- or undervalued. Sharpe, Treynor, M² and Jensen's alpha measure risk-adjusted performance.",
+    "summary_tr": "Risksiz varlık sınırı CAL'e, ortak beklentilerle CML'ye dönüştürür. Yalnızca sistematik risk ödüllendirilir; beta bunu ölçer. CAPM gereken getiriyi belirler ve SML hangi varlıkların yüksek ya da düşük fiyatlı olduğunu gösterir. Sharpe, Treynor, M² ve Jensen alfası risk düzeltmeli performansı ölçer.",
+    "common_traps_tr": [
+      "CML toplam riski, SML betayı kullanır.",
+      "Beta korelasyon değildir.",
+      "CAPM'de önce piyasa primi bulunur: E(Rm) − Rf.",
+      "Alfa SML'ye göre hesaplanır.",
+      "Sharpe toplam, Treynor sistematik riski kullanır.",
+      "Firmaya özgü risk ödüllendirilmez."
+    ],
+    "vocab_ids": [
+      "capital-allocation-line",
+      "capital-market-line",
+      "tangency-portfolio",
+      "systematic-risk",
+      "unsystematic",
+      "beta",
+      "market-model",
+      "security-market-line",
+      "required-return",
+      "risk-premium",
+      "sharpe-ratio",
+      "treynor-ratio",
+      "jensens-alpha",
+      "risk-free-rate"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "CAPM, beta ve Sharpe Düzey 3'ten tanıdık; Treynor, Jensen alfası ve M-kare büyük ölçüde yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "PM-02-a-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio invests 30% in a risk-free asset yielding 4% and 70% in a risky portfolio with expected return 12% and standard deviation 20%. The expected return of the combined portfolio is closest to:",
+      "stem_tr": "Bir portföy %30'unu %4 getirili risksiz varlığa ve %70'ini beklenen getirisi %12, standart sapması %20 olan riskli portföye yatırıyor. Birleşik portföyün beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.6%",
+          "tr": "%9,6",
+          "value": 9.6
+        },
+        {
+          "key": "B",
+          "en": "6.4%",
+          "tr": "%6,4",
+          "value": 6.4
+        },
+        {
+          "key": "C",
+          "en": "8.0%",
+          "tr": "%8,0",
+          "value": 8.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "E(Rc) = 0.30 × 4 + 0.70 × 12 = 1.2 + 8.4 = 9.6%.",
+      "explanation_tr": "E(Rc) = 0,30 × 4 + 0,70 × 12 = 1,2 + 8,4 = %9,6.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "6.4% swaps the weights (0.7 × 4 + 0.3 × 12).",
+          "tr": "%6,4 ağırlıkları yer değiştirir (0,7 × 4 + 0,3 × 12)."
+        },
+        "C": {
+          "en": "8.0% is the simple average of 4% and 12%, ignoring the weights.",
+          "tr": "%8,0 ağırlıkları yok sayıp %4 ile %12'nin basit ortalamasını alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected return of the combined portfolio.",
+          "tr": "Birleşik portföyün beklenen getirisi isteniyor."
+        },
+        {
+          "en": "Use the weighted average of the two components.",
+          "tr": "İki bileşenin ağırlıklı ortalaması alınır.",
+          "formula_latex": "E(R_c)=w_fR_f+w_pE(R_p)"
+        },
+        {
+          "en": "0.30 × 4 and 0.70 × 12.",
+          "tr": "0,30 × 4 ve 0,70 × 12.",
+          "values": {
+            "wf": 0.3,
+            "Rf": 4,
+            "wp": 0.7,
+            "Rp": 12
+          }
+        },
+        {
+          "en": "1.2 + 8.4 = 9.6%.",
+          "tr": "1,2 + 8,4 = %9,6."
+        }
+      ],
+      "vocab_ids": [
+        "risk-free",
+        "expected-return",
+        "weight",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 4 [+] 0.7 [×] 12 [=] → 9.6"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.3*4+0.7*12",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-a-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "For the same portfolio (30% risk-free, 70% in a risky portfolio with standard deviation 20%), the standard deviation of the combined portfolio is closest to:",
+      "stem_tr": "Aynı portföy için (%30 risksiz, %70 standart sapması %20 olan riskli portföyde) birleşik portföyün standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.0%",
+          "tr": "%6,0",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "14.0%",
+          "tr": "%14,0",
+          "value": 14.0
+        },
+        {
+          "key": "C",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The risk-free asset has zero variance and zero covariance, so σc = 0.70 × 20% = 14.0%.",
+      "explanation_tr": "Risksiz varlığın varyansı ve kovaryansı sıfırdır; bu yüzden σc = 0,70 × %20 = %14,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "6.0% uses the weight in the risk-free asset (0.30 × 20).",
+          "tr": "%6,0 risksiz varlığın ağırlığını kullanır (0,30 × 20)."
+        },
+        "C": {
+          "en": "20.0% ignores the risk-free part and equals the risky portfolio's SD.",
+          "tr": "%20,0 risksiz kısmı yok sayar ve riskli portföyün SD'sine eşittir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the standard deviation of the combined portfolio.",
+          "tr": "Birleşik portföyün standart sapması isteniyor."
+        },
+        {
+          "en": "The risk-free asset adds no variance, so SD scales with the risky weight.",
+          "tr": "Risksiz varlık varyans eklemez; SD riskli ağırlıkla orantılı ölçeklenir.",
+          "formula_latex": "\\sigma_c=y\\,\\sigma_p"
+        },
+        {
+          "en": "y = 0.70; σp = 20.",
+          "tr": "y = 0,70; σp = 20.",
+          "values": {
+            "y": 0.7,
+            "sp": 20
+          }
+        },
+        {
+          "en": "σc = 14%.",
+          "tr": "σc = %14."
+        }
+      ],
+      "vocab_ids": [
+        "risk-free",
+        "standard-deviation",
+        "zero",
+        "covariance",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.7 [×] 20 [=] → 14"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.7*20",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-a-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Compared with an investor who lends at the risk-free rate, an investor who borrows at the risk-free rate to invest in the same risky portfolio will most likely have:",
+      "stem_tr": "Risksiz faizle borç veren yatırımcıyla karşılaştırıldığında, aynı riskli portföye yatırım yapmak için risksiz faizle borçlanan yatırımcının en olası durumu şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a lower expected return and a lower standard deviation",
+          "tr": "daha düşük beklenen getiri ve daha düşük standart sapma"
+        },
+        {
+          "key": "B",
+          "en": "a higher expected return and a lower standard deviation",
+          "tr": "daha yüksek beklenen getiri ve daha düşük standart sapma"
+        },
+        {
+          "key": "C",
+          "en": "a higher expected return and a higher standard deviation, with the same Sharpe ratio",
+          "tr": "daha yüksek beklenen getiri ve daha yüksek standart sapma; Sharpe oranı aynı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Moving along the CAL to the right (borrowing) increases both return and risk. The slope, the Sharpe ratio, is unchanged.",
+      "explanation_tr": "CAL boyunca sağa gitmek (borçlanma) hem getiriyi hem riski artırır. Eğim, yani Sharpe oranı değişmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Borrowing raises, not lowers, return and risk.",
+          "tr": "Borçlanma getiri ve riski düşürmez, artırır."
+        },
+        "B": {
+          "en": "Higher return always comes with higher risk along the CAL.",
+          "tr": "CAL boyunca yüksek getiri her zaman yüksek riskle gelir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "borrow",
+        "lend",
+        "sharpe-ratio",
+        "capital-allocation-line"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-a-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor places 150% of her wealth in a risky portfolio with σ = 20% by borrowing 50% at the risk-free rate. The standard deviation of her portfolio is closest to:",
+      "stem_tr": "Bir yatırımcı varlığının %150'sini, risksiz faizle %50 borçlanarak σ = %20 olan bir riskli portföye yatırıyor. Portföyünün standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "30.0%",
+          "tr": "%30,0",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "σc = y × σp = 1.5 × 20% = 30.0%.",
+      "explanation_tr": "σc = y × σp = 1,5 × %20 = %30,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "20.0% ignores leverage.",
+          "tr": "%20,0 kaldıracı yok sayar."
+        },
+        "C": {
+          "en": "10.0% uses the borrowed fraction (0.5 × 20) instead of the total weight.",
+          "tr": "%10,0 toplam ağırlık yerine borçlanılan oranı kullanır (0,5 × 20)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the SD of the levered portfolio.",
+          "tr": "Kaldıraçlı portföyün SD'si isteniyor."
+        },
+        {
+          "en": "SD scales with the total weight y in the risky portfolio.",
+          "tr": "SD, riskli portföydeki toplam ağırlık y ile ölçeklenir.",
+          "formula_latex": "\\sigma_c=y\\,\\sigma_p"
+        },
+        {
+          "en": "y = 1.5; σp = 20.",
+          "tr": "y = 1,5; σp = 20.",
+          "values": {
+            "y": 1.5,
+            "sp": 20
+          }
+        },
+        {
+          "en": "σc = 30%.",
+          "tr": "σc = %30."
+        }
+      ],
+      "vocab_ids": [
+        "leverage",
+        "standard-deviation",
+        "risk-free",
+        "weight",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [×] 20 [=] → 30"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "1.5*20",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-a-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "When a risk-free asset is available, the efficient set of investments most likely becomes:",
+      "stem_tr": "Risksiz bir varlık mevcut olduğunda, etkin yatırım kümesi en olası biçimde şuna dönüşür:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a curve that lies entirely below the original frontier",
+          "tr": "tamamen orijinal sınırın altında kalan bir eğri"
+        },
+        {
+          "key": "B",
+          "en": "a single point at the global minimum-variance portfolio",
+          "tr": "küresel minimum varyanslı portföydeki tek bir nokta"
+        },
+        {
+          "key": "C",
+          "en": "a straight line from the risk-free rate tangent to the efficient frontier of risky assets",
+          "tr": "risksiz faizden çıkıp riskli varlıkların etkin sınırına teğet olan düz bir çizgi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The best CAL touches the frontier at the tangency portfolio. Every investor then holds the tangency portfolio plus lending or borrowing.",
+      "explanation_tr": "En iyi CAL, sınıra teğet portföyde değer. Her yatırımcı da teğet portföy artı borç verme ya da borçlanma tutar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The CAL lies above, not below, the old frontier except at the tangency point.",
+          "tr": "CAL, teğet nokta dışında eski sınırın altında değil üzerindedir."
+        },
+        "B": {
+          "en": "The efficient set is a whole line, not a single point.",
+          "tr": "Etkin küme tek bir nokta değil, bütün bir çizgidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "tangency-portfolio",
+        "capital-allocation-line",
+        "risk-free",
+        "straight-line"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-b-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement correctly distinguishes the capital allocation line (CAL) from the capital market line (CML)?",
+      "stem_tr": "Hangi ifade sermaye tahsis doğrusunu (CAL) sermaye piyasası doğrusundan (CML) doğru biçimde ayırır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The CML is the CAL that uses the market portfolio as the risky portfolio",
+          "tr": "CML, riskli portföy olarak piyasa portföyünü kullanan CAL'dir"
+        },
+        {
+          "key": "B",
+          "en": "The CML uses beta on the horizontal axis",
+          "tr": "CML yatay eksende beta kullanır"
+        },
+        {
+          "key": "C",
+          "en": "The CAL applies only to individual securities",
+          "tr": "CAL yalnızca bireysel menkul kıymetler için geçerlidir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both plot expected return against standard deviation. The CML is a special CAL where all investors share expectations and the tangency portfolio is the market portfolio.",
+      "explanation_tr": "İkisi de beklenen getiriyi standart sapmaya karşı çizer. CML, tüm yatırımcıların aynı beklentilere sahip olduğu ve teğet portföyün piyasa portföyü olduğu özel bir CAL'dir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Beta is on the SML's axis, not the CML's.",
+          "tr": "Beta, SML'nin ekseninde yer alır; CML'nin değil."
+        },
+        "C": {
+          "en": "The CAL is built from portfolios, not only individual securities.",
+          "tr": "CAL yalnızca bireysel menkul kıymetlerden değil, portföylerden oluşur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capital-market-line",
+        "capital-allocation-line",
+        "market-portfolio",
+        "distinguish"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-b-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The risk-free rate is 4%, the expected market return is 11% and the market standard deviation is 18%. According to the CML, the expected return of an efficient portfolio with a standard deviation of 27% is closest to:",
+      "stem_tr": "Risksiz faiz %4, beklenen piyasa getirisi %11 ve piyasa standart sapması %18'dir. CML'ye göre standart sapması %27 olan etkin bir portföyün beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "16.5%",
+          "tr": "%16,5",
+          "value": 16.5
+        },
+        {
+          "key": "B",
+          "en": "10.5%",
+          "tr": "%10,5",
+          "value": 10.5
+        },
+        {
+          "key": "C",
+          "en": "14.5%",
+          "tr": "%14,5",
+          "value": 14.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "E(Rp) = 4 + (11 − 4)/18 × 27 = 4 + 0.3889 × 27 = 14.5%.",
+      "explanation_tr": "E(Rp) = 4 + (11 − 4)/18 × 27 = 4 + 0,3889 × 27 = %14,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "16.5% uses the market return instead of the premium (11/18 × 27).",
+          "tr": "%16,5 primi değil, piyasa getirisini kullanır (11/18 × 27)."
+        },
+        "B": {
+          "en": "10.5% leaves out the risk-free rate (7/18 × 27).",
+          "tr": "%10,5 risksiz faizi atlar (7/18 × 27)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected return on the CML at σ = 27%.",
+          "tr": "CML üzerinde σ = %27 için beklenen getiri isteniyor."
+        },
+        {
+          "en": "Use the CML equation.",
+          "tr": "CML denklemi kullanılır.",
+          "formula_latex": "E(R_p)=R_f+\\frac{E(R_m)-R_f}{\\sigma_m}\\sigma_p"
+        },
+        {
+          "en": "Slope = 7/18 = 0.3889; times 27 = 10.5.",
+          "tr": "Eğim = 7/18 = 0,3889; 27 ile çarpım = 10,5.",
+          "values": {
+            "Rf": 4,
+            "Rm": 11,
+            "sm": 18,
+            "sp": 27
+          }
+        },
+        {
+          "en": "E(Rp) = 4 + 10.5 = 14.5%.",
+          "tr": "E(Rp) = 4 + 10,5 = %14,5."
+        }
+      ],
+      "vocab_ids": [
+        "capital-market-line",
+        "market-portfolio",
+        "standard-deviation",
+        "risk-free",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11 [-] 4 [=] → 7",
+          "[÷] 18 [×] 27 [+] 4 [=] → 14.5"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "4+(11-4)/18*27",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-b-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same inputs (risk-free rate 4%, expected market return 11%, market standard deviation 18%), the slope of the CML is closest to:",
+      "stem_tr": "Aynı girdilerle (risksiz faiz %4, beklenen piyasa getirisi %11, piyasa standart sapması %18) CML'nin eğimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.39",
+          "tr": "0,39",
+          "value": 0.389
+        },
+        {
+          "key": "B",
+          "en": "0.61",
+          "tr": "0,61",
+          "value": 0.611
+        },
+        {
+          "key": "C",
+          "en": "0.22",
+          "tr": "0,22",
+          "value": 0.222
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Slope = (11 − 4)/18 = 0.389, the Sharpe ratio of the market portfolio.",
+      "explanation_tr": "Eğim = (11 − 4)/18 = 0,389; piyasa portföyünün Sharpe oranıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.61 is 11/18, which forgets to subtract the risk-free rate.",
+          "tr": "0,61, 11/18'dir; risksiz faizi çıkarmayı unutur."
+        },
+        "C": {
+          "en": "0.22 is 4/18, the risk-free rate over the market SD.",
+          "tr": "0,22, 4/18'dir; risksiz faizin piyasa SD'sine oranıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the CML slope.",
+          "tr": "CML eğimi isteniyor."
+        },
+        {
+          "en": "The slope is the market Sharpe ratio.",
+          "tr": "Eğim piyasanın Sharpe oranıdır.",
+          "formula_latex": "S_m=\\frac{E(R_m)-R_f}{\\sigma_m}"
+        },
+        {
+          "en": "(11 − 4) / 18.",
+          "tr": "(11 − 4) / 18.",
+          "values": {
+            "Rm": 11,
+            "Rf": 4,
+            "sm": 18
+          }
+        },
+        {
+          "en": "S_m = 0.389.",
+          "tr": "S_m = 0,389."
+        }
+      ],
+      "vocab_ids": [
+        "slope",
+        "capital-market-line",
+        "sharpe-ratio",
+        "market-portfolio",
+        "excess-return",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11 [-] 4 [=] → 7",
+          "[÷] 18 [=] → 0.3889"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(11-4)/18"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-b-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following portfolios lies on the capital market line?",
+      "stem_tr": "Aşağıdaki portföylerden hangisi sermaye piyasası doğrusu üzerinde yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A single stock with a high beta",
+          "tr": "Betası yüksek tek bir hisse"
+        },
+        {
+          "key": "B",
+          "en": "A mix of the market portfolio and the risk-free asset",
+          "tr": "Piyasa portföyü ile risksiz varlığın bir karışımı"
+        },
+        {
+          "key": "C",
+          "en": "A portfolio of only one industry's shares",
+          "tr": "Yalnızca bir sektörün paylarından oluşan portföy"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Only efficient portfolios, combinations of the market portfolio and the risk-free asset, lie on the CML. Single stocks lie below it because they carry diversifiable risk.",
+      "explanation_tr": "CML üzerinde yalnızca etkin portföyler, yani piyasa portföyü ile risksiz varlığın kombinasyonları yer alır. Tek hisseler çeşitlendirilebilir risk taşıdığı için çizginin altında kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A single stock has unsystematic risk and lies below the CML.",
+          "tr": "Tek hisse sistematik olmayan risk taşır ve CML'nin altında kalır."
+        },
+        "C": {
+          "en": "A one-industry portfolio is not fully diversified, so it lies below the CML.",
+          "tr": "Tek sektörlü portföy tam çeşitlendirilmemiştir; CML'nin altında kalır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capital-market-line",
+        "market-portfolio",
+        "asset"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-b-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In CAPM, if all investors have identical expectations and can lend and borrow at the risk-free rate, the optimal risky portfolio for every investor is:",
+      "stem_tr": "CAPM'de tüm yatırımcıların beklentileri özdeşse ve risksiz faizle borç verip borçlanabiliyorlarsa, her yatırımcı için optimal riskli portföy şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the same: the market portfolio",
+          "tr": "aynıdır: piyasa portföyü"
+        },
+        {
+          "key": "B",
+          "en": "different for each investor, depending on risk aversion",
+          "tr": "her yatırımcı için farklıdır, risk aversiyonuna bağlıdır"
+        },
+        {
+          "key": "C",
+          "en": "the global minimum-variance portfolio",
+          "tr": "küresel minimum varyanslı portföy"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Two-fund separation: everyone holds the same tangency (market) portfolio. Risk aversion only changes the mix with the risk-free asset.",
+      "explanation_tr": "İki fon ayrışımı: herkes aynı teğet (piyasa) portföyünü tutar. Risk aversiyonu yalnızca risksiz varlıkla karışımı değiştirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Risk aversion changes the weight on the risk-free asset, not the risky portfolio.",
+          "tr": "Risk aversiyonu risksiz varlığın ağırlığını değiştirir; riskli portföyü değil."
+        },
+        "C": {
+          "en": "The GMV portfolio is not the tangency portfolio.",
+          "tr": "GMV portföy teğet portföy değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "two-fund-separation",
+        "market-portfolio",
+        "identical",
+        "risk-aversion"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-c-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following risks is systematic?",
+      "stem_tr": "Aşağıdaki risklerden hangisi sistematiktir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A strike at one company's factory",
+          "tr": "Tek bir şirketin fabrikasındaki grev"
+        },
+        {
+          "key": "B",
+          "en": "An unexpected rise in the central bank policy rate that affects all firms",
+          "tr": "Tüm firmaları etkileyen merkez bankası politika faizinde beklenmeyen artış"
+        },
+        {
+          "key": "C",
+          "en": "A product recall by one manufacturer",
+          "tr": "Tek bir üreticinin ürün geri çağırması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Economy-wide factors such as interest rates affect all assets and cannot be diversified away. A strike or recall hits one firm and can be diversified.",
+      "explanation_tr": "Faiz gibi ekonomi genelindeki etkenler tüm varlıkları etkiler ve çeşitlendirmeyle yok edilemez. Grev ya da geri çağırma tek firmayı vurur ve çeşitlendirilebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A strike at one firm is unsystematic.",
+          "tr": "Tek firmadaki grev sistematik değildir."
+        },
+        "C": {
+          "en": "A single manufacturer's recall is unsystematic.",
+          "tr": "Tek üreticinin geri çağırması sistematik değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "systematic-risk",
+        "policy-rate",
+        "central-bank",
+        "strike"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-c-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "According to portfolio theory, why does the market not reward investors for bearing unsystematic risk?",
+      "stem_tr": "Portföy teorisine göre piyasa yatırımcıları sistematik olmayan riski taşıdıkları için neden ödüllendirmez?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Because it is smaller than systematic risk for every asset",
+          "tr": "Çünkü her varlık için sistematik riskten küçüktür"
+        },
+        {
+          "key": "B",
+          "en": "Because it cannot be measured",
+          "tr": "Çünkü ölçülemez"
+        },
+        {
+          "key": "C",
+          "en": "Because it can be eliminated at little cost by holding a diversified portfolio",
+          "tr": "Çünkü çeşitlendirilmiş bir portföy tutarak az maliyetle ortadan kaldırılabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Investors can avoid firm-specific risk through diversification, so it earns no premium.",
+      "explanation_tr": "Yatırımcılar firmaya özgü riskten çeşitlendirmeyle kaçınabilir; bu yüzden prim kazandırmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Unsystematic risk is often larger than systematic risk for a single stock.",
+          "tr": "Tek hisse için sistematik olmayan risk çoğu zaman sistematik riskten büyüktür."
+        },
+        "B": {
+          "en": "It can be measured; the reason is that it can be diversified.",
+          "tr": "Ölçülebilir; neden çeşitlendirilebilir olmasıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "unsystematic",
+        "diversification",
+        "premium",
+        "bear"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-c-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "As more randomly chosen stocks are added to an equal-weighted portfolio, the portfolio's total risk most likely:",
+      "stem_tr": "Eşit ağırlıklı bir portföye rastgele seçilmiş daha fazla hisse eklendikçe portföyün toplam riski en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "falls to zero",
+          "tr": "sıfıra düşer"
+        },
+        {
+          "key": "B",
+          "en": "falls toward the level of systematic (market) risk",
+          "tr": "sistematik (piyasa) riskin düzeyine doğru azalır"
+        },
+        {
+          "key": "C",
+          "en": "rises because of added unsystematic risk",
+          "tr": "eklenen sistematik olmayan risk nedeniyle artar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Firm-specific risk averages out, but market risk remains.",
+      "explanation_tr": "Firmaya özgü risk birbirini götürür; ama piyasa riski kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Systematic risk cannot be eliminated, so risk does not fall to zero.",
+          "tr": "Sistematik risk ortadan kaldırılamaz; bu yüzden risk sıfıra düşmez."
+        },
+        "C": {
+          "en": "Adding stocks reduces unsystematic risk, not increases it.",
+          "tr": "Hisse eklemek sistematik olmayan riski artırmaz, azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "diversification",
+        "equal-weighted",
+        "systematic-risk",
+        "unsystematic",
+        "market-risk"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-c-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A stock's returns have a regression R-squared of 0.64 against the market. The most appropriate interpretation is that:",
+      "stem_tr": "Bir hissenin getirilerinin piyasaya karşı regresyon R-karesi 0,64'tür. En uygun yorum hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the stock's beta is 0.64",
+          "tr": "hissenin betası 0,64'tür"
+        },
+        {
+          "key": "B",
+          "en": "64% of the stock's risk is diversifiable",
+          "tr": "hissenin riskinin %64'ü çeşitlendirilebilir"
+        },
+        {
+          "key": "C",
+          "en": "about 64% of the variance of the stock's returns is explained by market movements (systematic risk)",
+          "tr": "hissenin getiri varyansının yaklaşık %64'ü piyasa hareketleriyle (sistematik risk) açıklanır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "R² is the share of return variance explained by the market, that is, systematic. The rest, 36%, is firm-specific.",
+      "explanation_tr": "R², getiri varyansının piyasa tarafından açıklanan, yani sistematik payıdır. Geri kalan %36 firmaya özgüdür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "R² is not beta; beta is the slope.",
+          "tr": "R² beta değildir; beta eğimdir."
+        },
+        "B": {
+          "en": "The explained part is systematic; the diversifiable part is 36%.",
+          "tr": "Açıklanan kısım sistematiktir; çeşitlendirilebilir kısım %36'dır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "r-squared",
+        "variance",
+        "against"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-c-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A BIST 100 investor holds 50 shares in many sectors. Which risk is she still most likely exposed to?",
+      "stem_tr": "BIST 100'de birçok sektörden 50 hisse tutan bir yatırımcı hâlâ hangi riske en olası biçimde maruzdur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Market-wide risk such as a sharp rise in domestic interest rates",
+          "tr": "Yurt içi faizlerde sert artış gibi piyasa geneli risk"
+        },
+        {
+          "key": "B",
+          "en": "The failure of a single company's new product",
+          "tr": "Tek bir şirketin yeni ürününün başarısızlığı"
+        },
+        {
+          "key": "C",
+          "en": "The loss of one firm's key manager",
+          "tr": "Tek bir firmanın kilit yöneticisinin kaybı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Diversification removes firm-specific risk but not market risk.",
+      "explanation_tr": "Çeşitlendirme firmaya özgü riski ortadan kaldırır ama piyasa riskini kaldırmaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A single firm's product failure is largely diversified away across 50 shares.",
+          "tr": "Tek firmanın ürün başarısızlığı 50 hisse arasında büyük ölçüde çeşitlendirilir."
+        },
+        "C": {
+          "en": "A key manager's departure is firm-specific and diversifiable.",
+          "tr": "Kilit yönetici kaybı firmaya özgüdür ve çeşitlendirilebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market-risk",
+        "diversified",
+        "interest"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-d-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In the market model R_i = α_i + β_i R_m + e_i, the error term e_i represents:",
+      "stem_tr": "R_i = α_i + β_i R_m + e_i piyasa modelinde hata terimi e_i neyi temsil eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the market risk premium",
+          "tr": "piyasa risk primini"
+        },
+        {
+          "key": "B",
+          "en": "the risk-free rate",
+          "tr": "risksiz faizi"
+        },
+        {
+          "key": "C",
+          "en": "the firm-specific part of the return not explained by the market",
+          "tr": "getirinin piyasa tarafından açıklanmayan, firmaya özgü kısmını"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The error is the residual return, the part unrelated to the market, which is unsystematic and diversifiable.",
+      "explanation_tr": "Hata terimi artık getiridir; piyasayla ilişkisi olmayan, sistematik olmayan ve çeşitlendirilebilir kısımdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The market risk premium is R_m − R_f, not the error term.",
+          "tr": "Piyasa risk primi R_m − R_f'dir; hata terimi değildir."
+        },
+        "B": {
+          "en": "The risk-free rate does not appear in the simple market model.",
+          "tr": "Risksiz faiz basit piyasa modelinde yer almaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market-model",
+        "error-term",
+        "residual",
+        "return"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-d-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A regression of a stock's returns on the market's returns gives an intercept of 0.5% and a slope of 1.3. If the market return is 10%, the model's predicted stock return is closest to:",
+      "stem_tr": "Bir hissenin getirilerinin piyasa getirilerine regresyonu %0,5 sabit ve 1,3 eğim veriyor. Piyasa getirisi %10 ise modelin tahmin ettiği hisse getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.5%",
+          "tr": "%13,5",
+          "value": 13.5
+        },
+        {
+          "key": "B",
+          "en": "13.0%",
+          "tr": "%13,0",
+          "value": 13.0
+        },
+        {
+          "key": "C",
+          "en": "10.5%",
+          "tr": "%10,5",
+          "value": 10.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "R̂ = α + β R_m = 0.5 + 1.3 × 10 = 13.5%.",
+      "explanation_tr": "R̂ = α + β R_m = 0,5 + 1,3 × 10 = %13,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "13.0% omits the intercept.",
+          "tr": "%13,0 sabit terimi atlar."
+        },
+        "C": {
+          "en": "10.5% adds the intercept to the market return and ignores beta.",
+          "tr": "%10,5 sabiti piyasa getirisine ekler ve betayı yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the model's predicted return.",
+          "tr": "Modelin tahmin ettiği getiri isteniyor."
+        },
+        {
+          "en": "Apply the market model with the error set to zero.",
+          "tr": "Hata sıfır alınarak piyasa modeli uygulanır.",
+          "formula_latex": "\\hat R_i=\\alpha_i+\\beta_iR_m"
+        },
+        {
+          "en": "α = 0.5; β = 1.3; Rm = 10.",
+          "tr": "α = 0,5; β = 1,3; Rm = 10.",
+          "values": {
+            "a": 0.5,
+            "b": 1.3,
+            "Rm": 10
+          }
+        },
+        {
+          "en": "R̂ = 0.5 + 13 = 13.5%.",
+          "tr": "R̂ = 0,5 + 13 = %13,5."
+        }
+      ],
+      "vocab_ids": [
+        "market-model",
+        "intercept",
+        "slope",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.3 [×] 10 [+] 0.5 [=] → 13.5"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.5+1.3*10",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-d-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a typical use of a return-generating model?",
+      "stem_tr": "Aşağıdakilerden hangisi getiri üretici modelin tipik bir kullanımıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Guaranteeing next month's return",
+          "tr": "Gelecek ayın getirisini garanti etmek"
+        },
+        {
+          "key": "B",
+          "en": "Estimating a security's beta and the part of its return not explained by the market",
+          "tr": "Bir menkul kıymetin betasını ve getirisinin piyasa tarafından açıklanmayan kısmını tahmin etmek"
+        },
+        {
+          "key": "C",
+          "en": "Setting the risk-free rate",
+          "tr": "Risksiz faizi belirlemek"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Return-generating models estimate sensitivities to factors, expected returns and abnormal return. They do not guarantee outcomes.",
+      "explanation_tr": "Getiri üretici modeller etkenlere duyarlılıkları, beklenen getirileri ve anormal getiriyi tahmin eder. Sonuçları garanti etmezler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No model can guarantee a return.",
+          "tr": "Hiçbir model getiriyi garanti edemez."
+        },
+        "C": {
+          "en": "The risk-free rate is an input, not an output of the model.",
+          "tr": "Risksiz faiz modelin çıktısı değil, girdisidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "beta",
+        "factor",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-d-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Compared with the single-index market model, a multifactor model most likely:",
+      "stem_tr": "Tek endeksli piyasa modeliyle karşılaştırıldığında çok faktörlü bir model en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "explains returns with several sources of systematic risk, such as size, value or inflation",
+          "tr": "getirileri büyüklük, değer ya da enflasyon gibi birden fazla sistematik risk kaynağıyla açıklar"
+        },
+        {
+          "key": "B",
+          "en": "uses only the market return",
+          "tr": "yalnızca piyasa getirisini kullanır"
+        },
+        {
+          "key": "C",
+          "en": "ignores systematic risk",
+          "tr": "sistematik riski yok sayar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Multifactor models extend the single factor by adding other priced risk factors.",
+      "explanation_tr": "Çok faktörlü modeller tek faktörü, fiyatlanan diğer risk faktörleriyle genişletir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Using only the market return describes the single-index model.",
+          "tr": "Yalnızca piyasa getirisini kullanmak tek endeksli modeli tanımlar."
+        },
+        "C": {
+          "en": "Multifactor models are about systematic risk.",
+          "tr": "Çok faktörlü modeller sistematik risk hakkındadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "value",
+        "systematic-risk",
+        "factor"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-d-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In the market model, a stock with a positive and statistically significant α over many periods most likely indicates:",
+      "stem_tr": "Piyasa modelinde birçok dönem boyunca pozitif ve istatistiksel olarak anlamlı bir α'ya sahip hisse en olası biçimde neyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "that the stock has no market risk",
+          "tr": "hissenin piyasa riski olmadığını"
+        },
+        {
+          "key": "B",
+          "en": "returns above those explained by its market risk, which might reflect mispricing or skill",
+          "tr": "piyasa riskiyle açıklananın üzerinde getiri; bu yanlış fiyatlamayı ya da beceriyi yansıtabilir"
+        },
+        {
+          "key": "C",
+          "en": "that the stock's beta is zero",
+          "tr": "hissenin betasının sıfır olduğunu"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Alpha is the average return left after accounting for market exposure.",
+      "explanation_tr": "Alfa, piyasa maruziyeti hesaba katıldıktan sonra kalan ortalama getiridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A positive alpha says nothing about the stock having no market risk.",
+          "tr": "Pozitif alfa hissenin piyasa riski olmadığını göstermez."
+        },
+        "C": {
+          "en": "Alpha and beta are separate parameters.",
+          "tr": "Alfa ve beta ayrı parametrelerdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "alpha",
+        "significant",
+        "mispricing",
+        "skill",
+        "market-risk"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-e-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The covariance of a stock's returns with the market's returns is 0.054, and the variance of market returns is 0.040. The stock's beta is closest to:",
+      "stem_tr": "Bir hissenin getirilerinin piyasa getirileriyle kovaryansı 0,054 ve piyasa getirilerinin varyansı 0,040'tır. Hissenin betası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.27",
+          "tr": "0,27",
+          "value": 0.27
+        },
+        {
+          "key": "B",
+          "en": "0.74",
+          "tr": "0,74",
+          "value": 0.741
+        },
+        {
+          "key": "C",
+          "en": "1.35",
+          "tr": "1,35",
+          "value": 1.35
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Beta = Cov(i, m) / Var(m) = 0.054 / 0.040 = 1.35.",
+      "explanation_tr": "Beta = Kov(i, m) / Var(m) = 0,054 / 0,040 = 1,35.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.27 divides by the market standard deviation (0.20) instead of the variance.",
+          "tr": "0,27 varyans yerine piyasa standart sapmasına (0,20) böler."
+        },
+        "B": {
+          "en": "0.74 inverts the ratio (0.040 / 0.054).",
+          "tr": "0,74 oranı ters çevirir (0,040 / 0,054)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the stock's beta.",
+          "tr": "Hissenin betası isteniyor."
+        },
+        {
+          "en": "Beta is covariance with the market divided by market variance.",
+          "tr": "Beta, piyasayla kovaryansın piyasa varyansına bölümüdür.",
+          "formula_latex": "\\beta=\\frac{\\mathrm{Cov}(R_i,R_m)}{\\sigma_m^2}"
+        },
+        {
+          "en": "0.054 / 0.040.",
+          "tr": "0,054 / 0,040.",
+          "values": {
+            "cov": 0.054,
+            "var": 0.04
+          }
+        },
+        {
+          "en": "β = 1.35.",
+          "tr": "β = 1,35."
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "covariance",
+        "variance",
+        "market",
+        "stock",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.054 [÷] 0.040 [=] → 1.35"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.054/0.040"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-e-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A stock has a standard deviation of 35% and a correlation of 0.6 with the market, whose standard deviation is 20%. The stock's beta is closest to:",
+      "stem_tr": "Bir hissenin standart sapması %35'tir ve standart sapması %20 olan piyasayla korelasyonu 0,6'dır. Hissenin betası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.34",
+          "tr": "0,34",
+          "value": 0.343
+        },
+        {
+          "key": "B",
+          "en": "1.05",
+          "tr": "1,05",
+          "value": 1.05
+        },
+        {
+          "key": "C",
+          "en": "0.60",
+          "tr": "0,60",
+          "value": 0.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Beta = ρ × σ_i / σ_m = 0.6 × 35 / 20 = 1.05.",
+      "explanation_tr": "Beta = ρ × σ_i / σ_m = 0,6 × 35 / 20 = 1,05.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.34 inverts the ratio of standard deviations (0.6 × 20 / 35).",
+          "tr": "0,34 standart sapma oranını ters çevirir (0,6 × 20 / 35)."
+        },
+        "C": {
+          "en": "0.60 is just the correlation.",
+          "tr": "0,60 yalnızca korelasyondur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need beta from correlation and volatilities.",
+          "tr": "Korelasyon ve oynaklıklardan beta isteniyor."
+        },
+        {
+          "en": "Beta = correlation × stock SD / market SD.",
+          "tr": "Beta = korelasyon × hisse SD / piyasa SD.",
+          "formula_latex": "\\beta=\\rho\\frac{\\sigma_i}{\\sigma_m}"
+        },
+        {
+          "en": "0.6 × 35 / 20.",
+          "tr": "0,6 × 35 / 20.",
+          "values": {
+            "rho": 0.6,
+            "si": 35,
+            "sm": 20
+          }
+        },
+        {
+          "en": "β = 1.05.",
+          "tr": "β = 1,05."
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "correlation",
+        "standard-deviation",
+        "market",
+        "stock",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.6 [×] 35 [÷] 20 [=] → 1.05"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.6*35/20"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-e-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio has 40% in a stock with beta 0.8, 35% in a stock with beta 1.2 and 25% in a stock with beta 1.5. The portfolio beta is closest to:",
+      "stem_tr": "Bir portföyün %40'ı betası 0,8 olan bir hissede, %35'i betası 1,2 olan bir hissede ve %25'i betası 1,5 olan bir hissededir. Portföy betası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.17",
+          "tr": "1,17",
+          "value": 1.167
+        },
+        {
+          "key": "B",
+          "en": "3.50",
+          "tr": "3,50",
+          "value": 3.5
+        },
+        {
+          "key": "C",
+          "en": "1.12",
+          "tr": "1,12",
+          "value": 1.115
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Portfolio beta is the weighted average: 0.4 × 0.8 + 0.35 × 1.2 + 0.25 × 1.5 = 0.32 + 0.42 + 0.375 = 1.115.",
+      "explanation_tr": "Portföy betası ağırlıklı ortalamadır: 0,4 × 0,8 + 0,35 × 1,2 + 0,25 × 1,5 = 0,32 + 0,42 + 0,375 = 1,115.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "1.17 is the simple average of the three betas, ignoring the weights.",
+          "tr": "1,17 ağırlıkları yok sayıp üç betanın basit ortalamasını alır."
+        },
+        "B": {
+          "en": "3.50 adds the betas instead of weighting them.",
+          "tr": "3,50 betaları ağırlıklandırmak yerine toplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the portfolio beta.",
+          "tr": "Portföy betası isteniyor."
+        },
+        {
+          "en": "Weighted average of the betas.",
+          "tr": "Betaların ağırlıklı ortalaması.",
+          "formula_latex": "\\beta_p=\\sum w_i\\beta_i"
+        },
+        {
+          "en": "0.4×0.8 = 0.32; 0.35×1.2 = 0.42; 0.25×1.5 = 0.375.",
+          "tr": "0,4×0,8 = 0,32; 0,35×1,2 = 0,42; 0,25×1,5 = 0,375.",
+          "values": {
+            "w1": 0.4,
+            "w2": 0.35,
+            "w3": 0.25
+          }
+        },
+        {
+          "en": "β_p = 1.115.",
+          "tr": "β_p = 1,115."
+        }
+      ],
+      "vocab_ids": [
+        "weighted-average",
+        "weight",
+        "stock",
+        "closest",
+        "beta"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 0.8 [+] 0.35 [×] 1.2 [+] 0.25 [×] 1.5 [=] → 1.115"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.4*0.8+0.35*1.2+0.25*1.5"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-e-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Over five periods, the market returns are 2, 4, −2, 6 and 0 (%), and a stock's returns are 3, 7, −5, 9 and 1 (%). The beta estimated as the regression slope is closest to:",
+      "stem_tr": "Beş dönem boyunca piyasa getirileri 2, 4, −2, 6 ve 0 (%), bir hissenin getirileri 3, 7, −5, 9 ve 1 (%)'dir. Regresyon eğimi olarak tahmin edilen beta aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.70",
+          "tr": "1,70",
+          "value": 1.7
+        },
+        {
+          "key": "B",
+          "en": "0.59",
+          "tr": "0,59",
+          "value": 0.588
+        },
+        {
+          "key": "C",
+          "en": "6.80",
+          "tr": "6,80",
+          "value": 6.8
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Market mean 2, stock mean 3. Cov = 68/4 = 17; Var(m) = 40/4 = 10. Beta = 17/10 = 1.70.",
+      "explanation_tr": "Piyasa ortalaması 2, hisse ortalaması 3. Kov = 68/4 = 17; Var(m) = 40/4 = 10. Beta = 17/10 = 1,70.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.59 inverts the ratio (10 / 17).",
+          "tr": "0,59 oranı ters çevirir (10 / 17)."
+        },
+        "C": {
+          "en": "6.80 divides the sum of cross products (68) by Var(m) without dividing by n − 1.",
+          "tr": "6,80 çarpım toplamını (68) n − 1'e bölmeden Var(m)'ye böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the regression slope of stock on market.",
+          "tr": "Hissenin piyasaya regresyon eğimi isteniyor."
+        },
+        {
+          "en": "Slope = covariance / market variance.",
+          "tr": "Eğim = kovaryans / piyasa varyansı.",
+          "formula_latex": "\\beta=\\frac{\\mathrm{Cov}(R_i,R_m)}{\\mathrm{Var}(R_m)}"
+        },
+        {
+          "en": "Deviations (m): 0, 2, −4, 4, −2; (i): 0, 4, −8, 6, −2. Cross products sum 68; squares of m sum 40.",
+          "tr": "Sapmalar (m): 0, 2, −4, 4, −2; (i): 0, 4, −8, 6, −2. Çarpımlar toplamı 68; m karelerinin toplamı 40.",
+          "values": {
+            "n": 5
+          }
+        },
+        {
+          "en": "Cov = 17; Var = 10; β = 1.70.",
+          "tr": "Kov = 17; Var = 10; β = 1,70."
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "slope",
+        "covariance",
+        "variance",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [7] ile X = piyasa, Y = hisse verilerini gir",
+          "[2ND] [8] ile LIN seç; [↓] ile b (eğim) = 1.70"
+        ],
+        "note_tr": "BA II Plus'ta b eğimdir (beta)."
+      },
+      "numeric": {
+        "expr": "cov_s([3,7,-5,9,1],[2,4,-2,6,0])/var_s([2,4,-2,6,0])"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-e-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A stock has a beta of 1.5. If the market is expected to fall by 6%, all else equal, the stock's expected change due to the market move is closest to:",
+      "stem_tr": "Bir hissenin betası 1,5'tir. Piyasanın %6 düşmesi bekleniyorsa, diğer her şey sabitken piyasa hareketine bağlı beklenen hisse değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-6.0%",
+          "tr": "%-6,0",
+          "value": -6.0
+        },
+        {
+          "key": "B",
+          "en": "-4.0%",
+          "tr": "%-4,0",
+          "value": -4.0
+        },
+        {
+          "key": "C",
+          "en": "-9.0%",
+          "tr": "%-9,0",
+          "value": -9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expected change = β × market change = 1.5 × (−6%) = −9.0%.",
+      "explanation_tr": "Beklenen değişim = β × piyasa değişimi = 1,5 × (%−6) = %−9,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "-6.0% would apply for a beta of 1.",
+          "tr": "%-6,0 beta 1 olsaydı geçerli olurdu."
+        },
+        "B": {
+          "en": "-4.0% divides by beta (−6 / 1.5) instead of multiplying.",
+          "tr": "%-4,0 beta ile çarpmak yerine böler (−6 / 1,5)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the stock's move implied by beta.",
+          "tr": "Betanın ima ettiği hisse hareketi isteniyor."
+        },
+        {
+          "en": "Multiply beta by the market change.",
+          "tr": "Beta, piyasa değişimiyle çarpılır.",
+          "formula_latex": "\\Delta R_i=\\beta\\,\\Delta R_m"
+        },
+        {
+          "en": "1.5 × (−6).",
+          "tr": "1,5 × (−6).",
+          "values": {
+            "beta": 1.5,
+            "dRm": -6
+          }
+        },
+        {
+          "en": "−9.0%.",
+          "tr": "%−9,0."
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "sensitivity",
+        "market",
+        "all-else-equal",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5 [×] 6 [+/-] [=] → -9"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "1.5*-6",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-f-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is an assumption of the CAPM?",
+      "stem_tr": "Aşağıdakilerden hangisi CAPM'in varsayımlarından biridir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Investors have identical expectations and can borrow and lend at the risk-free rate",
+          "tr": "Yatırımcıların beklentileri özdeştir ve risksiz faizle borçlanıp borç verebilirler"
+        },
+        {
+          "key": "B",
+          "en": "Investors face high transaction costs and taxes",
+          "tr": "Yatırımcılar yüksek işlem maliyeti ve vergiyle karşı karşıyadır"
+        },
+        {
+          "key": "C",
+          "en": "Each investor has a different view of expected returns",
+          "tr": "Her yatırımcının beklenen getirilere ilişkin görüşü farklıdır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "CAPM assumes homogeneous expectations, frictionless markets and risk-free borrowing and lending.",
+      "explanation_tr": "CAPM, homojen beklentileri, sürtünmesiz piyasayı ve risksiz faizle borçlanma ve borç vermeyi varsayar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "CAPM assumes no taxes or transaction costs.",
+          "tr": "CAPM vergi ya da işlem maliyeti olmadığını varsayar."
+        },
+        "C": {
+          "en": "Different expectations contradict the homogeneous expectations assumption.",
+          "tr": "Farklı beklentiler homojen beklentiler varsayımıyla çelişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capm",
+        "assumption",
+        "identical",
+        "borrow",
+        "lend",
+        "risk-free"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-f-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The security market line (SML) differs from the capital market line (CML) in that the SML:",
+      "stem_tr": "Menkul kıymet piyasası doğrusu (SML), sermaye piyasası doğrusundan (CML) şu yönüyle ayrılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "plots expected return against standard deviation",
+          "tr": "beklenen getiriyi standart sapmaya karşı çizer"
+        },
+        {
+          "key": "B",
+          "en": "plots expected return against beta and applies to all assets and portfolios",
+          "tr": "beklenen getiriyi betaya karşı çizer ve tüm varlıklar ile portföyler için geçerlidir"
+        },
+        {
+          "key": "C",
+          "en": "applies only to efficient portfolios",
+          "tr": "yalnızca etkin portföyler için geçerlidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The SML uses systematic risk (beta) and holds for any asset in equilibrium. The CML uses total risk and holds for efficient portfolios.",
+      "explanation_tr": "SML sistematik riski (beta) kullanır ve dengedeki her varlık için geçerlidir. CML toplam riski kullanır ve etkin portföyler için geçerlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Standard deviation is on the CML's axis.",
+          "tr": "Standart sapma CML'nin ekseninde yer alır."
+        },
+        "C": {
+          "en": "Applying only to efficient portfolios describes the CML.",
+          "tr": "Yalnızca etkin portföyler için geçerli olmak CML'yi tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-market-line",
+        "capital-market-line",
+        "beta",
+        "standard-deviation",
+        "equilibrium"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-f-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The slope of the security market line equals:",
+      "stem_tr": "Menkul kıymet piyasası doğrusunun eğimi şuna eşittir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the market risk premium, E(Rm) − Rf",
+          "tr": "piyasa risk primi, E(Rm) − Rf"
+        },
+        {
+          "key": "B",
+          "en": "the risk-free rate",
+          "tr": "risksiz faiz"
+        },
+        {
+          "key": "C",
+          "en": "the Sharpe ratio of the market",
+          "tr": "piyasanın Sharpe oranı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The SML has beta on the x-axis, so its slope is the extra return per unit of beta: the market risk premium. The Sharpe ratio is the CML slope.",
+      "explanation_tr": "SML'nin x ekseninde beta olduğundan eğimi beta başına ek getiridir: piyasa risk primi. Sharpe oranı CML'nin eğimidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The risk-free rate is the intercept, not the slope.",
+          "tr": "Risksiz faiz kesim noktasıdır; eğim değil."
+        },
+        "C": {
+          "en": "The market Sharpe ratio is the slope of the CML.",
+          "tr": "Piyasanın Sharpe oranı CML'nin eğimidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-market-line",
+        "slope",
+        "market-risk-premium",
+        "intercept",
+        "beta",
+        "sharpe-ratio"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-f-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "According to CAPM, which of the following would an investor expect to earn a higher return?",
+      "stem_tr": "CAPM'e göre yatırımcı hangisinin daha yüksek getiri sağlamasını bekler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An asset with beta 0.8 and very high firm-specific risk",
+          "tr": "Betası 0,8 ve firmaya özgü riski çok yüksek varlık"
+        },
+        {
+          "key": "B",
+          "en": "An asset with beta 1.4 and low firm-specific risk, rather than an asset with beta 0.8 and very high firm-specific risk",
+          "tr": "Betası 0,8 ve firmaya özgü riski çok yüksek bir varlık yerine, betası 1,4 ve firmaya özgü riski düşük bir varlık"
+        },
+        {
+          "key": "C",
+          "en": "Both assets are expected to earn the same",
+          "tr": "İkisinin de aynı getiri sağlaması beklenir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "CAPM prices only beta. The asset with the higher beta has the higher required return, regardless of firm-specific risk.",
+      "explanation_tr": "CAPM yalnızca betayı fiyatlar. Betası yüksek olan varlığın gereken getirisi, firmaya özgü riskten bağımsız olarak daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Firm-specific risk is not priced, so the high-specific-risk asset does not earn more.",
+          "tr": "Firmaya özgü risk fiyatlanmaz; bu yüzden özgül riski yüksek varlık daha fazla kazanmaz."
+        },
+        "C": {
+          "en": "Different betas imply different required returns.",
+          "tr": "Farklı betalar farklı gereken getirileri ima eder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capm",
+        "beta",
+        "required-return"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-f-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An asset plots above the security market line. Compared with the CAPM required return, the asset's expected return is:",
+      "stem_tr": "Bir varlık menkul kıymet piyasası doğrusunun üzerinde yer alıyor. CAPM'in gereken getirisiyle kıyaslandığında varlığın beklenen getirisi:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower, so the asset is overvalued",
+          "tr": "daha düşüktür; yani varlık yüksek fiyatlıdır"
+        },
+        {
+          "key": "B",
+          "en": "equal, so the asset is fairly priced",
+          "tr": "eşittir; yani varlık adil fiyatlıdır"
+        },
+        {
+          "key": "C",
+          "en": "higher, so the asset is undervalued",
+          "tr": "daha yüksektir; yani varlık düşük fiyatlıdır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A point above the SML offers more return than its beta requires: positive alpha, a bargain. Buying pressure raises its price until it returns to the line.",
+      "explanation_tr": "SML'nin üzerindeki nokta betasının gerektirdiğinden fazla getiri sunar: pozitif alfa, bir fırsat. Alım baskısı fiyatı çizgiye dönene kadar yükseltir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Below the SML would mean overvalued.",
+          "tr": "SML'nin altında olmak yüksek fiyatlı anlamına gelirdi."
+        },
+        "B": {
+          "en": "On the SML would mean fairly priced.",
+          "tr": "SML üzerinde olmak adil fiyatlı anlamına gelirdi."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-market-line",
+        "undervalued",
+        "expected-return",
+        "required-return",
+        "alpha",
+        "above"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-g-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The 2-year DİBS yield (risk-free rate) is 30%, the expected BIST 100 return is 42%, and a stock has a beta of 1.2. The CAPM required return is closest to:",
+      "stem_tr": "2 yıllık DİBS getirisi (risksiz faiz) %30, beklenen BIST 100 getirisi %42 ve bir hissenin betası 1,2'dir. CAPM'e göre gereken getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.4%",
+          "tr": "%50,4",
+          "value": 50.4
+        },
+        {
+          "key": "B",
+          "en": "44.4%",
+          "tr": "%44,4",
+          "value": 44.4
+        },
+        {
+          "key": "C",
+          "en": "42.0%",
+          "tr": "%42,0",
+          "value": 42.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Required return = 30 + 1.2 × (42 − 30) = 30 + 14.4 = 44.4%.",
+      "explanation_tr": "Gereken getiri = 30 + 1,2 × (42 − 30) = 30 + 14,4 = %44,4.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "50.4% is beta × market return (1.2 × 42), skipping the risk-free rate and the premium.",
+          "tr": "%50,4 risksiz faizi ve primi atlayıp betayı piyasa getirisiyle çarpar (1,2 × 42)."
+        },
+        "C": {
+          "en": "42.0% is the return of a beta-1 asset, ignoring the beta of 1.2.",
+          "tr": "%42,0 beta 1 olan varlığın getirisidir; 1,2'lik betayı yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the CAPM required return.",
+          "tr": "CAPM gereken getirisi isteniyor."
+        },
+        {
+          "en": "Use the CAPM equation.",
+          "tr": "CAPM denklemi kullanılır.",
+          "formula_latex": "E(R_i)=R_f+\\beta_i[E(R_m)-R_f]"
+        },
+        {
+          "en": "Rf = 30; E(Rm) − Rf = 12; β = 1.2.",
+          "tr": "Rf = 30; E(Rm) − Rf = 12; β = 1,2.",
+          "values": {
+            "Rf": 30,
+            "Rm": 42,
+            "beta": 1.2
+          }
+        },
+        {
+          "en": "30 + 1.2 × 12 = 44.4%.",
+          "tr": "30 + 1,2 × 12 = %44,4."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "required-return",
+        "risk-free-rate",
+        "beta",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "42 [-] 30 [=] → 12",
+          "[×] 1.2 [+] 30 [=] → 44.4"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "30+1.2*(42-30)",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-g-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The risk-free rate is 3%, the expected market return is 9% and a stock's beta is 0.7. The CAPM expected return is closest to:",
+      "stem_tr": "Risksiz faiz %3, beklenen piyasa getirisi %9 ve bir hissenin betası 0,7'dir. CAPM beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.3%",
+          "tr": "%6,3",
+          "value": 6.3
+        },
+        {
+          "key": "B",
+          "en": "4.2%",
+          "tr": "%4,2",
+          "value": 4.2
+        },
+        {
+          "key": "C",
+          "en": "7.2%",
+          "tr": "%7,2",
+          "value": 7.2
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "E(R) = 3 + 0.7 × (9 − 3) = 3 + 4.2 = 7.2%.",
+      "explanation_tr": "E(R) = 3 + 0,7 × (9 − 3) = 3 + 4,2 = %7,2.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "6.3% is 0.7 × 9 and ignores the risk-free rate and the premium.",
+          "tr": "%6,3 0,7 × 9'dur; risksiz faizi ve primi yok sayar."
+        },
+        "B": {
+          "en": "4.2% is only the risk premium part and leaves out the risk-free rate.",
+          "tr": "%4,2 yalnızca risk primi kısmıdır; risksiz faizi dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the CAPM expected return.",
+          "tr": "CAPM beklenen getirisi isteniyor."
+        },
+        {
+          "en": "Apply the CAPM.",
+          "tr": "CAPM uygulanır.",
+          "formula_latex": "E(R)=R_f+\\beta(R_m-R_f)"
+        },
+        {
+          "en": "3 + 0.7 × 6.",
+          "tr": "3 + 0,7 × 6.",
+          "values": {
+            "Rf": 3,
+            "Rm": 9,
+            "beta": 0.7
+          }
+        },
+        {
+          "en": "= 7.2%.",
+          "tr": "= %7,2."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "expected-return",
+        "beta",
+        "risk-free-rate",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "9 [-] 3 [=] → 6",
+          "[×] 0.7 [+] 3 [=] → 7.2"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "3+0.7*(9-3)",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-g-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The risk-free rate is 3% and the expected market return is 9%. An asset has a CAPM expected return of 11%. Its beta is closest to:",
+      "stem_tr": "Risksiz faiz %3 ve beklenen piyasa getirisi %9'dur. Bir varlığın CAPM beklenen getirisi %11'dir. Betası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.33",
+          "tr": "1,33",
+          "value": 1.333
+        },
+        {
+          "key": "B",
+          "en": "0.75",
+          "tr": "0,75",
+          "value": 0.75
+        },
+        {
+          "key": "C",
+          "en": "1.22",
+          "tr": "1,22",
+          "value": 1.222
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "β = (E(R) − Rf) / (E(Rm) − Rf) = (11 − 3) / (9 − 3) = 8 / 6 = 1.33.",
+      "explanation_tr": "β = (E(R) − Rf) / (E(Rm) − Rf) = (11 − 3) / (9 − 3) = 8 / 6 = 1,33.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.75 inverts the fraction (6 / 8).",
+          "tr": "0,75 kesri ters çevirir (6 / 8)."
+        },
+        "C": {
+          "en": "1.22 divides by the market return without subtracting the risk-free rate (11 / 9).",
+          "tr": "1,22 risksiz faizi çıkarmadan piyasa getirisine böler (11 / 9)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the beta implied by a required return.",
+          "tr": "Gereken getirinin ima ettiği beta isteniyor."
+        },
+        {
+          "en": "Rearrange CAPM for beta.",
+          "tr": "CAPM beta için yeniden düzenlenir.",
+          "formula_latex": "\\beta=\\frac{E(R)-R_f}{E(R_m)-R_f}"
+        },
+        {
+          "en": "(11 − 3) / (9 − 3).",
+          "tr": "(11 − 3) / (9 − 3).",
+          "values": {
+            "ER": 11,
+            "Rf": 3,
+            "Rm": 9
+          }
+        },
+        {
+          "en": "β = 8/6 = 1.33.",
+          "tr": "β = 8/6 = 1,33."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "beta",
+        "risk-free-rate",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [÷] 6 [=] → 1.3333"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(11-3)/(9-3)"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-g-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A stock with beta 1.5 has a CAPM expected return of 13.5% when the risk-free rate is 3%. The expected market return is closest to:",
+      "stem_tr": "Betası 1,5 olan bir hissenin, risksiz faiz %3 iken CAPM beklenen getirisi %13,5'tir. Beklenen piyasa getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.0%",
+          "tr": "%9,0",
+          "value": 9.0
+        },
+        {
+          "key": "B",
+          "en": "7.0%",
+          "tr": "%7,0",
+          "value": 7.0
+        },
+        {
+          "key": "C",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Premium = (13.5 − 3) / 1.5 = 7.0%, so E(Rm) = 3 + 7 = 10.0%.",
+      "explanation_tr": "Prim = (13,5 − 3) / 1,5 = %7,0; dolayısıyla E(Rm) = 3 + 7 = %10,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "9.0% divides the return by beta without removing the risk-free rate (13.5 / 1.5).",
+          "tr": "%9,0 risksiz faizi çıkarmadan getiriyi betaya böler (13,5 / 1,5)."
+        },
+        "B": {
+          "en": "7.0% is the market risk premium, not the market return.",
+          "tr": "%7,0 piyasa risk primidir; piyasa getirisi değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected market return.",
+          "tr": "Beklenen piyasa getirisi isteniyor."
+        },
+        {
+          "en": "First find the risk premium, then add Rf.",
+          "tr": "Önce risk primi bulunur, sonra Rf eklenir.",
+          "formula_latex": "E(R_m)=R_f+\\frac{E(R)-R_f}{\\beta}"
+        },
+        {
+          "en": "(13.5 − 3) / 1.5 = 7.0.",
+          "tr": "(13,5 − 3) / 1,5 = 7,0.",
+          "values": {
+            "ER": 13.5,
+            "Rf": 3,
+            "beta": 1.5
+          }
+        },
+        {
+          "en": "E(Rm) = 3 + 7 = 10.0%.",
+          "tr": "E(Rm) = 3 + 7 = %10,0."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "risk-premium",
+        "beta",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "13.5 [-] 3 [=] [÷] 1.5 [=] → 7",
+          "[+] 3 [=] → 10"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "3+(13.5-3)/1.5",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-g-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A pension fund's portfolio has a beta of 1.115. With a risk-free rate of 3% and a market risk premium of 6%, the CAPM expected return of the portfolio is closest to:",
+      "stem_tr": "Bir emeklilik fonunun portföy betası 1,115'tir. Risksiz faiz %3 ve piyasa risk primi %6 iken portföyün CAPM beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.69%",
+          "tr": "%9,69",
+          "value": 9.69
+        },
+        {
+          "key": "B",
+          "en": "6.69%",
+          "tr": "%6,69",
+          "value": 6.69
+        },
+        {
+          "key": "C",
+          "en": "12.69%",
+          "tr": "%12,69",
+          "value": 12.69
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "E(R) = 3 + 1.115 × 6 = 3 + 6.69 = 9.69%.",
+      "explanation_tr": "E(R) = 3 + 1,115 × 6 = 3 + 6,69 = %9,69.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "6.69% is only the premium part (1.115 × 6); the risk-free rate is missing.",
+          "tr": "%6,69 yalnızca prim kısmıdır (1,115 × 6); risksiz faiz eksiktir."
+        },
+        "C": {
+          "en": "12.69% adds the risk-free rate twice.",
+          "tr": "%12,69 risksiz faizi iki kez ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the portfolio's CAPM expected return.",
+          "tr": "Portföyün CAPM beklenen getirisi isteniyor."
+        },
+        {
+          "en": "Use CAPM with the portfolio beta and the premium directly.",
+          "tr": "Portföy betası ve doğrudan prim ile CAPM kullanılır.",
+          "formula_latex": "E(R_p)=R_f+\\beta_p\\,MRP"
+        },
+        {
+          "en": "Rf = 3; β = 1.115; MRP = 6.",
+          "tr": "Rf = 3; β = 1,115; MRP = 6.",
+          "values": {
+            "Rf": 3,
+            "beta": 1.115,
+            "MRP": 6
+          }
+        },
+        {
+          "en": "3 + 6.69 = 9.69%.",
+          "tr": "3 + 6,69 = %9,69."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "portfolio",
+        "beta",
+        "market-risk-premium",
+        "expected-return",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.115 [×] 6 [+] 3 [=] → 9.69"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "3+1.115*6",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-h-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-h",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The risk-free rate is 4%, the expected market return is 10% and a stock has a beta of 1.2. An analyst forecasts a return of 13% for the stock. The stock's alpha is closest to:",
+      "stem_tr": "Risksiz faiz %4, beklenen piyasa getirisi %10 ve bir hissenin betası 1,2'dir. Bir analist hisse için %13 getiri öngörüyor. Hissenin alfası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-1.8%",
+          "tr": "%-1,8",
+          "value": -1.8
+        },
+        {
+          "key": "B",
+          "en": "+1.8%",
+          "tr": "%+1,8",
+          "value": 1.8
+        },
+        {
+          "key": "C",
+          "en": "+3.0%",
+          "tr": "%+3,0",
+          "value": 3.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Required return = 4 + 1.2 × 6 = 11.2%. Alpha = forecast − required = 13 − 11.2 = +1.8%, so the stock is undervalued.",
+      "explanation_tr": "Gereken getiri = 4 + 1,2 × 6 = %11,2. Alfa = öngörü − gereken = 13 − 11,2 = +%1,8; hisse düşük fiyatlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "-1.8% reverses the sign.",
+          "tr": "%-1,8 işareti ters çevirir."
+        },
+        "C": {
+          "en": "+3.0% compares the forecast to the market return (13 − 10) instead of the CAPM required return.",
+          "tr": "%+3,0 öngörüyü CAPM gereken getirisi yerine piyasa getirisiyle kıyaslar (13 − 10)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the stock's alpha.",
+          "tr": "Hissenin alfası isteniyor."
+        },
+        {
+          "en": "Alpha = forecast return − CAPM required return.",
+          "tr": "Alfa = öngörülen getiri − CAPM gereken getiri.",
+          "formula_latex": "\\alpha=E(R)-[R_f+\\beta(R_m-R_f)]"
+        },
+        {
+          "en": "Required = 4 + 1.2 × 6 = 11.2.",
+          "tr": "Gereken = 4 + 1,2 × 6 = 11,2.",
+          "values": {
+            "Rf": 4,
+            "Rm": 10,
+            "beta": 1.2,
+            "forecast": 13
+          }
+        },
+        {
+          "en": "Alpha = 13 − 11.2 = +1.8%.",
+          "tr": "Alfa = 13 − 11,2 = +%1,8."
+        }
+      ],
+      "vocab_ids": [
+        "alpha",
+        "undervalued",
+        "required-return",
+        "forecast",
+        "capm",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10 [-] 4 [=] [×] 1.2 [+] 4 [=] → 11.2",
+          "13 [-] 11.2 [=] → 1.8"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "13-(4+1.2*(10-4))",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-h-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-h",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A stock's expected return is 9% and its CAPM required return is 11%. The most appropriate conclusion is that the stock:",
+      "stem_tr": "Bir hissenin beklenen getirisi %9 ve CAPM gereken getirisi %11'dir. En uygun sonuç hissenin:",
+      "options": [
+        {
+          "key": "A",
+          "en": "plots below the security market line and is overvalued",
+          "tr": "menkul kıymet piyasası doğrusunun altında yer aldığı ve yüksek fiyatlı olduğudur"
+        },
+        {
+          "key": "B",
+          "en": "plots above the security market line and is undervalued",
+          "tr": "menkul kıymet piyasası doğrusunun üzerinde yer aldığı ve düşük fiyatlı olduğudur"
+        },
+        {
+          "key": "C",
+          "en": "is fairly priced",
+          "tr": "adil fiyatlı olduğudur"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The expected return is below what its risk requires (negative alpha), so it is overvalued.",
+      "explanation_tr": "Beklenen getiri riskinin gerektirdiğinin altındadır (negatif alfa); bu yüzden hisse yüksek fiyatlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Above the SML means expected return exceeds required return.",
+          "tr": "SML'nin üzerinde olmak beklenen getirinin gereken getiriyi aşması demektir."
+        },
+        "C": {
+          "en": "Expected and required returns differ, so it is not fairly priced.",
+          "tr": "Beklenen ve gereken getiri farklıdır; bu yüzden adil fiyatlı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-market-line",
+        "overvalued",
+        "expected-return",
+        "required-return",
+        "conclusion"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-h-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-h",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company evaluates an equity-financed project with a beta of 1.4. The risk-free rate is 4% and the market risk premium is 5%. The appropriate hurdle rate is closest to:",
+      "stem_tr": "Bir şirket betası 1,4 olan, özkaynakla finanse edilen bir projeyi değerlendiriyor. Risksiz faiz %4, piyasa risk primi %5'tir. Uygun eşik oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.0%",
+          "tr": "%7,0",
+          "value": 7.0
+        },
+        {
+          "key": "B",
+          "en": "11.0%",
+          "tr": "%11,0",
+          "value": 11.0
+        },
+        {
+          "key": "C",
+          "en": "9.0%",
+          "tr": "%9,0",
+          "value": 9.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Hurdle = 4 + 1.4 × 5 = 11.0%. A project with an expected return above 11% adds value.",
+      "explanation_tr": "Eşik oranı = 4 + 1,4 × 5 = %11,0. Beklenen getirisi %11'in üzerindeki proje değer katar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "7.0% is only beta × premium (1.4 × 5), missing the risk-free rate.",
+          "tr": "%7,0 yalnızca beta × primdir (1,4 × 5); risksiz faiz eksiktir."
+        },
+        "C": {
+          "en": "9.0% is Rf + premium (4 + 5), which ignores the project's beta.",
+          "tr": "%9,0 Rf + primdir (4 + 5); projenin betasını yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the project's hurdle rate.",
+          "tr": "Projenin eşik oranı isteniyor."
+        },
+        {
+          "en": "Use the CAPM with the project beta.",
+          "tr": "Proje betasıyla CAPM kullanılır.",
+          "formula_latex": "r=R_f+\\beta\\,MRP"
+        },
+        {
+          "en": "4 + 1.4 × 5.",
+          "tr": "4 + 1,4 × 5.",
+          "values": {
+            "Rf": 4,
+            "beta": 1.4,
+            "MRP": 5
+          }
+        },
+        {
+          "en": "r = 11.0%.",
+          "tr": "r = %11,0."
+        }
+      ],
+      "vocab_ids": [
+        "hurdle-rate",
+        "beta",
+        "risk-premium",
+        "required-return",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.4 [×] 5 [+] 4 [=] → 11"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "4+1.4*5",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-h-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-h",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A stock trades at 100. An analyst expects a price of 110 in one year and a dividend of 4. The risk-free rate is 5%, the market return is 10% and the stock's beta is 1.0. The analyst's expected holding period return is closest to:",
+      "stem_tr": "Bir hisse 100'den işlem görüyor. Bir analist bir yıl sonra 110 fiyat ve 4 temettü bekliyor. Risksiz faiz %5, piyasa getirisi %10 ve hissenin betası 1,0'dır. Analistin beklenen elde tutma dönemi getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "4.0%",
+          "tr": "%4,0",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "14.0%",
+          "tr": "%14,0",
+          "value": 14.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expected return = (110 − 100 + 4) / 100 = 14.0%. CAPM required return is 5 + 1 × 5 = 10%, so alpha is +4%.",
+      "explanation_tr": "Beklenen getiri = (110 − 100 + 4) / 100 = %14,0. CAPM gereken getirisi 5 + 1 × 5 = %10'dur; alfa +%4'tür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "10.0% is the CAPM required return, not the analyst's forecast.",
+          "tr": "%10,0 analistin öngörüsü değil, CAPM gereken getirisidir."
+        },
+        "B": {
+          "en": "4.0% is only the dividend yield.",
+          "tr": "%4,0 yalnızca temettü getirisidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected holding period return.",
+          "tr": "Beklenen elde tutma dönemi getirisi isteniyor."
+        },
+        {
+          "en": "Add price change and dividend, divide by the starting price.",
+          "tr": "Fiyat değişimi ve temettü toplanır, başlangıç fiyatına bölünür.",
+          "formula_latex": "HPR=\\frac{P_1-P_0+D}{P_0}"
+        },
+        {
+          "en": "(110 − 100 + 4) / 100.",
+          "tr": "(110 − 100 + 4) / 100.",
+          "values": {
+            "P0": 100,
+            "P1": 110,
+            "D": 4
+          }
+        },
+        {
+          "en": "HPR = 14.0%.",
+          "tr": "HPR = %14,0."
+        }
+      ],
+      "vocab_ids": [
+        "dividend",
+        "expected-return",
+        "price",
+        "capm",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "110 [-] 100 [+] 4 [=] → 14",
+          "[÷] 100 [=] → 0.14"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(110-100+4)/100*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-h-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-h",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A stock plots above the SML, so many investors want to buy it. All else equal, the most likely market reaction is that its price will:",
+      "stem_tr": "Bir hisse SML'nin üzerinde yer alıyor ve birçok yatırımcı almak istiyor. Diğer her şey sabitken en olası piyasa tepkisi hissenin fiyatının:",
+      "options": [
+        {
+          "key": "A",
+          "en": "fall until its expected return rises",
+          "tr": "beklenen getirisi yükselene kadar düşmesi olur"
+        },
+        {
+          "key": "B",
+          "en": "rise until its expected return falls to the required return on the SML",
+          "tr": "beklenen getirisi SML'deki gereken getiriye düşene kadar yükselmesi olur"
+        },
+        {
+          "key": "C",
+          "en": "stay unchanged because CAPM prices never adjust",
+          "tr": "CAPM fiyatları hiç uyum sağlamadığı için değişmeden kalması olur"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Buying pressure raises the price. A higher price lowers the expected return, which moves the stock back to the SML.",
+      "explanation_tr": "Alım baskısı fiyatı yükseltir. Daha yüksek fiyat beklenen getiriyi düşürür; bu hisseyi SML'ye geri getirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Buying pressure raises, not lowers, price.",
+          "tr": "Alım baskısı fiyatı düşürmez, yükseltir."
+        },
+        "C": {
+          "en": "In equilibrium, mispricing is competed away, so prices do adjust.",
+          "tr": "Dengede yanlış fiyatlama rekabetle ortadan kalkar; yani fiyatlar uyum sağlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "undervalued",
+        "equilibrium",
+        "all-else-equal",
+        "price",
+        "adjust"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-i-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-i",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio earned 15% with a standard deviation of 25% and a beta of 1.3. The risk-free rate is 4%. The Sharpe ratio is closest to:",
+      "stem_tr": "Bir portföy %15 kazandı; standart sapması %25 ve betası 1,3'tür. Risksiz faiz %4'tür. Sharpe oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.60",
+          "tr": "0,60",
+          "value": 0.6
+        },
+        {
+          "key": "B",
+          "en": "0.28",
+          "tr": "0,28",
+          "value": 0.28
+        },
+        {
+          "key": "C",
+          "en": "0.44",
+          "tr": "0,44",
+          "value": 0.44
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Sharpe = (15 − 4) / 25 = 0.44.",
+      "explanation_tr": "Sharpe = (15 − 4) / 25 = 0,44.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.60 is 15 / 25; it does not subtract the risk-free rate.",
+          "tr": "0,60 15 / 25'tir; risksiz faizi çıkarmaz."
+        },
+        "B": {
+          "en": "0.28 uses the market's excess return (7) rather than the portfolio's (7/25).",
+          "tr": "0,28 portföyün değil, piyasanın artık getirisini (7) kullanır (7/25)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the portfolio's Sharpe ratio.",
+          "tr": "Portföyün Sharpe oranı isteniyor."
+        },
+        {
+          "en": "Excess return divided by total risk.",
+          "tr": "Artık getiri toplam riske bölünür.",
+          "formula_latex": "S=\\frac{R_p-R_f}{\\sigma_p}"
+        },
+        {
+          "en": "(15 − 4) / 25.",
+          "tr": "(15 − 4) / 25.",
+          "values": {
+            "Rp": 15,
+            "Rf": 4,
+            "sp": 25
+          }
+        },
+        {
+          "en": "S = 0.44.",
+          "tr": "S = 0,44."
+        }
+      ],
+      "vocab_ids": [
+        "sharpe-ratio",
+        "excess-return",
+        "standard-deviation",
+        "risk-free-rate",
+        "portfolio",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "15 [-] 4 [=] → 11",
+          "[÷] 25 [=] → 0.44"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(15-4)/25"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-i-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-i",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "For the same portfolio (return 15%, beta 1.3, risk-free rate 4%), the Treynor ratio is closest to:",
+      "stem_tr": "Aynı portföy için (getiri %15, beta 1,3, risksiz faiz %4) Treynor oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.46",
+          "tr": "8,46",
+          "value": 8.46
+        },
+        {
+          "key": "B",
+          "en": "11.54",
+          "tr": "11,54",
+          "value": 11.54
+        },
+        {
+          "key": "C",
+          "en": "7.00",
+          "tr": "7,00",
+          "value": 7.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Treynor = (15 − 4) / 1.3 = 8.46.",
+      "explanation_tr": "Treynor = (15 − 4) / 1,3 = 8,46.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "11.54 divides the full return by beta (15 / 1.3).",
+          "tr": "11,54 tüm getiriyi betaya böler (15 / 1,3)."
+        },
+        "C": {
+          "en": "7.00 is the market's own Treynor ratio ((11 − 4) / 1), not the portfolio's.",
+          "tr": "7,00 portföyün değil, piyasanın kendi Treynor oranıdır ((11 − 4) / 1)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the Treynor ratio.",
+          "tr": "Treynor oranı isteniyor."
+        },
+        {
+          "en": "Excess return per unit of beta.",
+          "tr": "Beta başına artık getiri.",
+          "formula_latex": "T=\\frac{R_p-R_f}{\\beta_p}"
+        },
+        {
+          "en": "(15 − 4) / 1.3.",
+          "tr": "(15 − 4) / 1,3.",
+          "values": {
+            "Rp": 15,
+            "Rf": 4,
+            "beta": 1.3
+          }
+        },
+        {
+          "en": "T = 8.46.",
+          "tr": "T = 8,46."
+        }
+      ],
+      "vocab_ids": [
+        "treynor-ratio",
+        "beta",
+        "excess-return",
+        "systematic-risk",
+        "portfolio",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "15 [-] 4 [=] → 11",
+          "[÷] 1.3 [=] → 8.4615"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(15-4)/1.3"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-i-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-i",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The portfolio earned 15% with beta 1.3. The risk-free rate is 4% and the market returned 11%. Jensen's alpha is closest to:",
+      "stem_tr": "Portföy %15 kazandı ve betası 1,3'tür. Risksiz faiz %4 ve piyasa getirisi %11'dir. Jensen alfası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-1.9%",
+          "tr": "%-1,9",
+          "value": -1.9
+        },
+        {
+          "key": "B",
+          "en": "+4.0%",
+          "tr": "%+4,0",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "+1.9%",
+          "tr": "%+1,9",
+          "value": 1.9
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Required = 4 + 1.3 × (11 − 4) = 13.1%. Alpha = 15 − 13.1 = +1.9%.",
+      "explanation_tr": "Gereken = 4 + 1,3 × (11 − 4) = %13,1. Alfa = 15 − 13,1 = +%1,9.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "-1.9% has the wrong sign.",
+          "tr": "%-1,9 işareti yanlıştır."
+        },
+        "B": {
+          "en": "+4.0% compares the portfolio with the market return (15 − 11) and ignores beta.",
+          "tr": "%+4,0 portföyü piyasa getirisiyle kıyaslar (15 − 11) ve betayı yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need Jensen's alpha.",
+          "tr": "Jensen alfası isteniyor."
+        },
+        {
+          "en": "Alpha = actual return − CAPM required return.",
+          "tr": "Alfa = gerçekleşen getiri − CAPM gereken getiri.",
+          "formula_latex": "\\alpha=R_p-[R_f+\\beta_p(R_m-R_f)]"
+        },
+        {
+          "en": "Required = 4 + 1.3 × 7 = 13.1.",
+          "tr": "Gereken = 4 + 1,3 × 7 = 13,1.",
+          "values": {
+            "Rp": 15,
+            "Rf": 4,
+            "Rm": 11,
+            "beta": 1.3
+          }
+        },
+        {
+          "en": "Alpha = 15 − 13.1 = 1.9%.",
+          "tr": "Alfa = 15 − 13,1 = %1,9."
+        }
+      ],
+      "vocab_ids": [
+        "jensens-alpha",
+        "beta",
+        "capm",
+        "required-return",
+        "outperform",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11 [-] 4 [=] [×] 1.3 [+] 4 [=] → 13.1",
+          "15 [-] 13.1 [=] → 1.9"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "15-(4+1.3*(11-4))",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-i-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-i",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The portfolio (return 15%, σ 25%), the market (return 11%, σ 18%) and the risk-free rate of 4% are given. M-squared (M²) is closest to:",
+      "stem_tr": "Portföy (getiri %15, σ %25), piyasa (getiri %11, σ %18) ve %4 risksiz faiz veriliyor. M-kare (M²) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.92%",
+          "tr": "%0,92",
+          "value": 0.92
+        },
+        {
+          "key": "B",
+          "en": "7.92%",
+          "tr": "%7,92",
+          "value": 7.92
+        },
+        {
+          "key": "C",
+          "en": "11.92%",
+          "tr": "%11,92",
+          "value": 11.92
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Portfolio Sharpe = 0.44. Scaled to the market's σ: 4 + 0.44 × 18 = 11.92%. M² = 11.92 − 11 = 0.92%.",
+      "explanation_tr": "Portföyün Sharpe oranı 0,44'tür. Piyasanın σ'sına ölçeklenince: 4 + 0,44 × 18 = %11,92. M² = 11,92 − 11 = %0,92.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "7.92% is 0.44 × 18, the excess return only.",
+          "tr": "%7,92 yalnızca artık getiri olan 0,44 × 18'dir."
+        },
+        "C": {
+          "en": "11.92% is the risk-adjusted return before subtracting the market return.",
+          "tr": "%11,92 piyasa getirisi düşülmeden önceki risk düzeltmeli getiridir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need M² (Modigliani).",
+          "tr": "M² (Modigliani) isteniyor."
+        },
+        {
+          "en": "Scale the portfolio to the market's SD, then subtract the market return.",
+          "tr": "Portföyü piyasanın SD'sine ölçekle, sonra piyasa getirisini çıkar.",
+          "formula_latex": "M^2=R_f+S_p\\sigma_m-R_m"
+        },
+        {
+          "en": "S_p = 0.44; σm = 18; Rf = 4; Rm = 11.",
+          "tr": "S_p = 0,44; σm = 18; Rf = 4; Rm = 11.",
+          "values": {
+            "Sp": 0.44,
+            "sm": 18,
+            "Rf": 4,
+            "Rm": 11
+          }
+        },
+        {
+          "en": "4 + 7.92 − 11 = 0.92%.",
+          "tr": "4 + 7,92 − 11 = %0,92."
+        }
+      ],
+      "vocab_ids": [
+        "m-squared",
+        "sharpe-ratio",
+        "market",
+        "leverage",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.44 [×] 18 [+] 4 [-] 11 [=] → 0.92"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "4+(15-4)/25*18-11",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-02-i-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-i",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An investor holds all her wealth in a single, poorly diversified fund. Which risk-adjusted measure is most appropriate to evaluate it?",
+      "stem_tr": "Bir yatırımcı tüm varlığını tek ve zayıf çeşitlendirilmiş bir fonda tutuyor. Onu değerlendirmek için hangi risk düzeltmeli ölçü en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The Treynor ratio, because only beta matters",
+          "tr": "Treynor oranı; çünkü yalnızca beta önemlidir"
+        },
+        {
+          "key": "B",
+          "en": "The Sharpe ratio, because total risk matters when the fund is the whole portfolio",
+          "tr": "Sharpe oranı; çünkü fon tüm portföy olduğunda toplam risk önemlidir"
+        },
+        {
+          "key": "C",
+          "en": "Jensen's alpha, because it ignores systematic risk",
+          "tr": "Jensen alfası; çünkü sistematik riski yok sayar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "When the fund is the entire portfolio, unsystematic risk is not diversified away, so total risk (Sharpe) is the relevant measure.",
+      "explanation_tr": "Fon portföyün tamamı olduğunda sistematik olmayan risk çeşitlendirilmemiştir; bu yüzden toplam risk (Sharpe) ilgili ölçüdür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treynor ignores unsystematic risk, which matters here.",
+          "tr": "Treynor burada önemli olan sistematik olmayan riski yok sayar."
+        },
+        "C": {
+          "en": "Jensen's alpha is based on beta and does not ignore systematic risk.",
+          "tr": "Jensen alfası beta'ya dayanır ve sistematik riski yok saymaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sharpe-ratio",
+        "treynor-ratio",
+        "diversified",
+        "appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
