@@ -87,8 +87,8 @@
         "kind": "example",
         "heading_en": "Swap value after rates rise",
         "heading_tr": "Faizler yükselince swap değeri",
-        "en": "A company pays 4.0% fixed on TRY 10 million for two more years. New two-year swaps now carry 4.8%. The discount factors are 0.9524 and 0.9070, so their sum is 1.8594. The company still pays 4.0%, which is 0.8% less than the market. The annual advantage is 80,000 and its present value is 80,000 × 1.8594 = TRY 148,752. The receive-fixed counterparty has the same amount as a liability. No cash moves today; the value only shows up in the books and in credit exposure.",
-        "tr": "Bir şirket iki yıl daha 10 milyon TRY üzerinden %4,0 sabit ödeyecektir. Yeni iki yıllık swaplar şimdi %4,8 taşıyor. İskonto çarpanları 0,9524 ve 0,9070; toplamları 1,8594. Şirket hâlâ %4,0 öder; bu, piyasadan %0,8 düşüktür. Yıllık avantaj 80.000, bugünkü değeri 80.000 × 1,8594 = 148.752 TRY'dir. Sabit alan karşı tarafta aynı tutar yükümlülüktür. Bugün nakit hareketi olmaz; değer yalnızca kayıtlarda ve kredi riskinde görünür.",
+        "en": "A company pays 4.0% fixed on TRY 10 million for two more years. New two-year swaps now carry 5.0%. The discount factors are 0.9524 and 0.9070, so their sum is 1.8594. The company still pays 4.0%, which is 1.0% less than the market. The annual advantage is 100,000 and its present value is 100,000 × 1.8594 = TRY 185,940. The receive-fixed counterparty has the same amount as a liability. No cash moves today; the value only shows up in the books and in credit exposure.",
+        "tr": "Bir şirket iki yıl daha 10 milyon TRY üzerinden %4,0 sabit ödeyecektir. Yeni iki yıllık swaplar şimdi %5,0 taşıyor. İskonto çarpanları 0,9524 ve 0,9070; toplamları 1,8594. Şirket hâlâ %4,0 öder; bu, piyasadan %1,0 düşüktür. Yıllık avantaj 100.000, bugünkü değeri 100.000 × 1,8594 = 185.940 TRY'dir. Sabit alan karşı tarafta aynı tutar yükümlülüktür. Bugün nakit hareketi olmaz; değer yalnızca kayıtlarda ve kredi riskinde görünür.",
         "key_terms": [
           "swap value",
           "counterparty"
@@ -131,7 +131,11 @@
       "embedded"
     ],
     "source_basis": "original",
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    },
     "spk_link": {
       "status": "known",
       "note_tr": "Faiz swapı yapısı SPK Türev sınavında bilinir; swap değerleme formülleri kısmen bilinir."
@@ -191,7 +195,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "spk_link": {
         "status": "known",
         "note_tr": "Faiz swapının yapısı SPK Türev sınavında bilinir."
@@ -250,7 +258,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "DER-07-a-q03",
@@ -305,7 +317,11 @@
         "most-consistent"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "DER-07-a-q04",
@@ -360,7 +376,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "DER-07-a-q05",
@@ -415,7 +435,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "DER-07-b-q01",
@@ -470,7 +494,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "DER-07-b-q02",
@@ -556,7 +584,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
@@ -579,35 +611,35 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "A company entered a pay-fixed swap on notional TRY 10 million at a fixed rate of 4.0%. Two years remain with annual payments. The current par swap rate is 4.8%, and the discount factors are 0.9524 for year 1 and 0.9070 for year 2. The value of the swap to the company is closest to:",
-      "stem_tr": "Bir şirket, 10 milyon TRY nominal tutar üzerine %4,0 sabit faizle sabit ödeyen bir swap yapmıştır. İki yıl kalmıştır ve ödemeler yıllıktır. Güncel başabaş swap faizi %4,8'dir ve iskonto çarpanları 1. yıl için 0,9524, 2. yıl için 0,9070'tir. Swapın şirket için değeri aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "A company entered a pay-fixed swap on notional TRY 10 million at a fixed rate of 4.0%. Two years remain with annual payments. The current par swap rate is 5.0%, and the discount factors are 0.9524 for year 1 and 0.9070 for year 2. The value of the swap to the company is closest to:",
+      "stem_tr": "Bir şirket, 10 milyon TRY nominal tutar üzerine %4,0 sabit faizle sabit ödeyen bir swap yapmıştır. İki yıl kalmıştır ve ödemeler yıllıktır. Güncel başabaş swap faizi %5,0'dir ve iskonto çarpanları 1. yıl için 0,9524, 2. yıl için 0,9070'tir. Swapın şirket için değeri aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "TRY 148752",
-          "tr": "TRY 148752",
-          "value": 148752.0
+          "en": "TRY 185,940",
+          "tr": "TRY 185.940",
+          "value": 185940.0
         },
         {
           "key": "B",
-          "en": "TRY 160000",
-          "tr": "TRY 160000",
-          "value": 160000.0
+          "en": "TRY 200,000",
+          "tr": "TRY 200.000",
+          "value": 200000.0
         },
         {
           "key": "C",
-          "en": "TRY 72560",
-          "tr": "TRY 72560",
-          "value": 72560.0
+          "en": "TRY 90,700",
+          "tr": "TRY 90.700",
+          "value": 90700.0
         }
       ],
       "answer": "A",
-      "explanation_en": "The company pays 4.0% while new swaps pay 4.8%, so it gains 0.8% per year on TRY 10 million: 80,000 per year. PV = 80,000 × (0.9524 + 0.9070) = TRY 148,752.",
-      "explanation_tr": "Şirket %4,0 öderken yeni swaplar %4,8 öder; 10 milyon TRY üzerinden yılda %0,8 kazanır: yılda 80.000. Bugünkü değer = 80.000 × (0,9524 + 0,9070) = 148.752 TRY.",
+      "explanation_en": "The company pays 4.0% while new swaps pay 5.0%, so it gains 1.0% per year on TRY 10 million: 100,000 per year. PV = 100,000 × (0.9524 + 0.9070) = TRY 185,940.",
+      "explanation_tr": "Şirket %4,0 öderken yeni swaplar %5,0 öder; 10 milyon TRY üzerinden yılda %1,0 kazanır: yılda 100.000. Bugünkü değer = 100.000 × (0,9524 + 0,9070) = 185.940 TRY.",
       "wrong_option_reasons": {
         "B": {
-          "en": "This does not discount the savings.",
-          "tr": "Bu, tasarrufları iskonto etmez."
+          "en": "This adds the savings without discounting them.",
+          "tr": "Bu, tasarrufları iskonto etmeden toplar."
         },
         "C": {
           "en": "This discounts only the final payment, not both years.",
@@ -625,21 +657,21 @@
           "formula_latex": "V=(S_{new}-S_{old})\\times N\\times\\sum Z_i"
         },
         {
-          "en": "Substitute 0.048 − 0.040, N = 10,000,000, ΣZ = 1.8594.",
-          "tr": "0,048 − 0,040, N = 10.000.000, ΣZ = 1,8594 değerlerini koy.",
+          "en": "Substitute 0.050 − 0.040, N = 10,000,000, ΣZ = 1.8594.",
+          "tr": "0,050 − 0,040, N = 10.000.000, ΣZ = 1,8594 değerlerini koy.",
           "values": {
-            "S_new": 0.048,
+            "S_new": 0.05,
             "S_old": 0.04,
             "N": 10000000
           }
         },
         {
-          "en": "Annual advantage = 80,000.",
-          "tr": "Yıllık avantaj = 80.000."
+          "en": "Annual advantage = 100,000.",
+          "tr": "Yıllık avantaj = 100.000."
         },
         {
-          "en": "PV = 148,752.",
-          "tr": "Bugünkü değer = 148.752."
+          "en": "PV = 185,940.",
+          "tr": "Bugünkü değer = 185.940."
         }
       ],
       "vocab_ids": [
@@ -653,17 +685,21 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "0.048 [-] 0.040 [=] [x] 10000000 [=]  (80000)",
-          "[x] 1.8594 [=]  (148752)"
+          "0.050 [-] 0.040 [=] [x] 10000000 [=]  (100000)",
+          "[x] 1.8594 [=]  (185940)"
         ],
         "note_tr": "0,9524 + 0,9070 = 1,8594 toplamını önce hesaplayın."
       },
       "numeric": {
-        "expr": "(0.048-0.040)*10_000_000*(0.9524+0.9070)",
+        "expr": "(0.050-0.040)*10_000_000*(0.9524+0.9070)",
         "unit": "TRY"
       }
     },
@@ -682,20 +718,20 @@
       "options": [
         {
           "key": "A",
-          "en": "TRY 1000000",
-          "tr": "TRY 1000000",
+          "en": "TRY 1,000,000",
+          "tr": "TRY 1.000.000",
           "value": 1000000.0
         },
         {
           "key": "B",
-          "en": "TRY 160000",
-          "tr": "TRY 160000",
+          "en": "TRY 160,000",
+          "tr": "TRY 160.000",
           "value": 160000.0
         },
         {
           "key": "C",
-          "en": "TRY 840000",
-          "tr": "TRY 840000",
+          "en": "TRY 840,000",
+          "tr": "TRY 840.000",
           "value": 840000.0
         }
       ],
@@ -747,7 +783,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
@@ -812,7 +852,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

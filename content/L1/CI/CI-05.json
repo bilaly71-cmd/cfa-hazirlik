@@ -1,0 +1,1313 @@
+{
+  "module_id": "CI-05",
+  "lesson": {
+    "id": "CI-05-lesson",
+    "level": "L1",
+    "topic": "CI",
+    "module_id": "CI-05",
+    "los_ids": [
+      "CI-05-a",
+      "CI-05-b",
+      "CI-05-c",
+      "CI-05-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Capital Investments and Capital Allocation",
+    "title_tr": "Sermaye Yatırımları ve Sermaye Tahsisi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Where should the money go?",
+        "heading_tr": "Para nereye yatırılmalı?",
+        "en": "A company has more ideas than money: a new plant, a new product line, replacing old machines, or buying a competitor. Capital allocation is the process of choosing which projects deserve scarce funds. A good choice adds value for owners; a bad one destroys it for years because capital projects are large and hard to reverse. Turkish firms face the extra challenge of high and volatile inflation and interest rates, so cash flows and discount rates must be built in the same currency and on the same inflation basis. A disciplined process turns opinions into numbers, checks them, compares projects on the same footing and then monitors results after the investment is made.",
+        "tr": "Bir şirketin parasından çok fikri vardır: yeni bir tesis, yeni bir ürün hattı, eski makinelerin yenilenmesi ya da bir rakibin satın alınması. Sermaye tahsisi, kıt fonları hangi projelerin hak ettiğini seçme sürecidir. İyi bir seçim sahipler için değer katar; kötü bir seçim yıllarca değer yok eder; çünkü sermaye projeleri büyüktür ve geri çevrilmesi zordur. Türk şirketleri yüksek ve oynak enflasyon ve faiz nedeniyle ek bir zorlukla karşılaşır: nakit akışları ve iskonto oranları aynı para biriminde ve aynı enflasyon temelinde kurulmalıdır. Disiplinli bir süreç, görüşleri sayılara dönüştürür, kontrol eder, projeleri aynı zeminde kıyaslar ve yatırımdan sonra sonuçları izler.",
+        "key_terms": [
+          "capital allocation",
+          "capital budgeting",
+          "capital investment"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Types of capital projects",
+        "heading_tr": "Sermaye projesi türleri",
+        "en": "Common categories: replacement/maintenance projects (renewing worn-out equipment to keep operations running, usually low risk), expansion projects (adding capacity for existing products), new product or new market projects (higher risk and uncertainty), regulatory, safety and environmental projects (required by law, often with no direct return) and other projects such as research, IT systems or acquisitions. The category guides the analysis: maintenance projects may be judged by cost, mandatory projects by least-cost compliance, and growth projects by expected NPV and strategic fit.",
+        "tr": "Yaygın kategoriler: yenileme/bakım projeleri (eskimiş ekipmanı yenileyerek operasyonu sürdürme; genellikle düşük riskli), genişleme projeleri (mevcut ürünler için kapasite ekleme), yeni ürün ya da yeni pazar projeleri (daha yüksek risk ve belirsizlik), düzenleyici, güvenlik ve çevre projeleri (yasaların gerektirdiği; çoğu kez doğrudan getirisi yok) ve araştırma, bilgi sistemleri ya da satın almalar gibi diğer projeler. Kategori analizi yönlendirir: bakım projeleri maliyete, zorunlu projeler en düşük maliyetli uyuma, büyüme projeleri beklenen net bugünkü değere ve stratejik uyuma göre değerlendirilebilir.",
+        "key_terms": [
+          "replacement project",
+          "expansion project",
+          "mandatory project"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "NPV, IRR and ROIC",
+        "heading_tr": "NPV, IRR ve ROIC",
+        "en": "Net present value (NPV) is the sum of discounted after-tax incremental cash flows minus the initial outlay. Accept if NPV > 0, because the project earns more than the required return and adds value to shareholders. The internal rate of return (IRR) is the discount rate that makes NPV zero; accept if IRR is above the required return. For mutually exclusive projects, NPV is the better guide because IRR can rank projects wrongly when scale or timing differs and can give multiple answers for non-conventional cash flows. Return on invested capital (ROIC) = NOPAT / invested capital, where NOPAT = EBIT x (1 - tax rate). If ROIC exceeds the cost of capital, the business creates value.",
+        "tr": "Net bugünkü değer (NPV), vergi sonrası artımlı nakit akışlarının iskonto edilmiş toplamından başlangıç harcamasının çıkarılmasıdır. NPV > 0 ise kabul edilir; çünkü proje istenen getirinin üzerinde kazanır ve pay sahiplerine değer katar. İç verim oranı (IRR), NPV'yi sıfır yapan iskonto oranıdır; IRR istenen getirinin üzerindeyse kabul edilir. Birbirini dışlayan projelerde NPV daha iyi bir rehberdir; çünkü ölçek ya da zamanlama farklıysa IRR projeleri yanlış sıralayabilir ve geleneksel olmayan nakit akışlarında birden fazla sonuç verebilir. Yatırılan sermaye getirisi (ROIC) = NOPAT / yatırılan sermaye; NOPAT = FVÖK x (1 - vergi oranı). ROIC sermaye maliyetini aşıyorsa iş değer yaratır.",
+        "key_terms": [
+          "net present value",
+          "internal rate of return",
+          "ROIC",
+          "NOPAT"
+        ],
+        "formula_latex": "NPV=\\sum_{t=0}^{n}\\frac{CF_t}{(1+r)^t},\\qquad ROIC=\\frac{NOPAT}{\\text{Invested capital}}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Sound principles and common mistakes",
+        "heading_tr": "Sağlam ilkeler ve sık hatalar",
+        "en": "Sound principles: use incremental, after-tax cash flows; include changes in working capital and opportunity costs; include side effects such as cannibalization; ignore sunk costs and financing costs (interest is captured in the discount rate); treat inflation consistently (nominal flows with nominal rates); and review results after the project (post-audit). Typical mistakes: counting sunk costs, over-optimistic forecasts, ignoring cannibalization or working capital, using the wrong discount rate, double counting financing costs, ignoring taxes, choosing by IRR alone, and capital rationing driven by politics. Managers' bias, pet projects and the desire to grow can distort allocation.",
+        "tr": "Sağlam ilkeler: artımlı, vergi sonrası nakit akışlarını kullanın; işletme sermayesi değişimlerini ve fırsat maliyetini dahil edin; kanibalizasyon gibi yan etkileri ekleyin; batık maliyetleri ve finansman maliyetlerini yok sayın (faiz iskonto oranında yakalanır); enflasyonu tutarlı ele alın (nominal akışlar nominal oranlarla); ve proje sonrası sonuçları gözden geçirin. Tipik hatalar: batık maliyetleri saymak, aşırı iyimser tahminler, kanibalizasyonu ya da işletme sermayesini yok saymak, yanlış iskonto oranı kullanmak, finansman maliyetini çift saymak, vergileri yok saymak, yalnızca IRR'ye göre seçmek ve siyasetin yönlendirdiği sermaye kısıtlaması. Yöneticilerin yanlılığı, gözde projeler ve büyüme arzusu tahsisi çarpıtabilir.",
+        "key_terms": [
+          "incremental cash flow",
+          "sunk cost",
+          "cannibalization",
+          "post-audit"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Real options",
+        "heading_tr": "Reel opsiyonlar",
+        "en": "Real options are choices management keeps open after a project starts, and they add value that a plain NPV may miss. The timing option lets the firm delay investing until uncertainty falls. Sizing options let the firm expand, contract or abandon a project. Flexibility options allow changing prices or switching inputs and outputs. Fundamental options exist when the project itself is like an option on an underlying asset, such as a mine or an oil field whose value depends on commodity prices. Value of the project = NPV without options + value of the options. Uncertainty usually raises option value.",
+        "tr": "Reel opsiyonlar, bir proje başladıktan sonra yönetimin açık tuttuğu seçeneklerdir ve düz bir NPV'nin kaçırabileceği değer ekler. Zamanlama opsiyonu, firmanın belirsizlik azalana kadar yatırımı ertelemesine izin verir. Boyutlandırma opsiyonları firmanın projeyi büyütmesine, küçültmesine ya da terk etmesine olanak tanır. Esneklik opsiyonları fiyatları değiştirmeye ya da girdi ve çıktıları değiştirmeye imkân verir. Temel (fundamental) opsiyonlar, projenin kendisi bir maden ya da değeri emtia fiyatlarına bağlı bir petrol sahası gibi dayanak varlık üzerine opsiyon olduğunda vardır. Proje değeri = opsiyonsuz NPV + opsiyonların değeri. Belirsizlik genellikle opsiyon değerini artırır.",
+        "key_terms": [
+          "timing option",
+          "sizing option",
+          "flexibility option",
+          "fundamental option"
+        ],
+        "formula_latex": "V=NPV_{\\text{no options}}+V_{options}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: NPV, IRR and ROIC",
+        "heading_tr": "Çözümlü örnek: NPV, IRR ve ROIC",
+        "en": "A project costs TRY 1,000 million now and returns TRY 400, 500 and 600 million at the end of years 1, 2 and 3. At a required return of 10%, NPV = -1,000 + 363.6 + 413.2 + 450.8 = TRY 227.6 million. IRR is about 21.7%, above 10%, so accept. A business earns EBIT of TRY 300 million, taxed at 25%, on invested capital of TRY 1,500 million: ROIC = 300 x 0.75 / 1,500 = 15%.",
+        "tr": "Bir projenin maliyeti şimdi 1.000 milyon TL ve 1, 2, 3. yıl sonlarında 400, 500 ve 600 milyon TL getiri sağlıyor. İstenen getiri %10 iken NPV = -1.000 + 363,6 + 413,2 + 450,8 = 227,6 milyon TL. IRR yaklaşık %21,7'dir ve %10'un üzerindedir; kabul edilir. Bir işletme 300 milyon TL FVÖK kazanıyor, %25 vergilendiriliyor, yatırılan sermaye 1.500 milyon TL: ROIC = 300 x 0,75 / 1.500 = %15.",
+        "key_terms": [],
+        "example": {
+          "en": "NPV = -1000 + 400/1.1 + 500/1.1^2 + 600/1.1^3 = 227.6",
+          "tr": "NPV = -1000 + 400/1,1 + 500/1,1^2 + 600/1,1^3 = 227,6",
+          "formula_latex": "NPV=-1000+\\frac{400}{1.1}+\\frac{500}{1.1^2}+\\frac{600}{1.1^3}"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Sunk costs do not belong in NPV. Interest expense is not subtracted from project cash flows; it is in the discount rate. Cannibalization is a real cost of a new product. When NPV and IRR disagree on mutually exclusive projects, follow NPV. IRR is a rate, not a currency amount. ROIC uses after-tax operating profit and total invested capital, not net income and equity. Real options add value but are valued only when they are realistic.",
+        "tr": "Batık maliyetler NPV'ye girmez. Faiz gideri proje nakit akışlarından çıkarılmaz; iskonto oranındadır. Kanibalizasyon yeni ürünün gerçek bir maliyetidir. Birbirini dışlayan projelerde NPV ve IRR çeliştiğinde NPV'yi izleyin. IRR bir orandır, para tutarı değil. ROIC vergi sonrası faaliyet kârını ve toplam yatırılan sermayeyi kullanır; net kârı ve özkaynağı değil. Reel opsiyonlar değer katar ama yalnızca gerçekçiyse değerlenir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Capital projects are classified as maintenance, expansion, new product, mandatory and other. NPV, IRR and ROIC support decisions: accept projects with positive NPV, and prefer NPV for mutually exclusive choices. Sound allocation uses incremental after-tax cash flows and avoids sunk-cost and cannibalization errors, while real options can add value.",
+    "summary_tr": "Sermaye projeleri bakım, genişleme, yeni ürün, zorunlu ve diğer olarak sınıflandırılır. NPV, IRR ve ROIC kararları destekler: NPV pozitif olan projeler kabul edilir ve birbirini dışlayan seçimlerde NPV tercih edilir. Sağlam tahsis, artımlı vergi sonrası nakit akışlarını kullanır ve batık maliyet ile kanibalizasyon hatalarından kaçınır; reel opsiyonlar değer katabilir.",
+    "common_traps_tr": [
+      "Batık maliyetler NPV'ye girmez.",
+      "Faiz gideri nakit akışından çıkarılmaz; iskonto oranına yansır.",
+      "Birbirini dışlayan projelerde NPV ile IRR çelişirse NPV'yi izleyin.",
+      "ROIC vergi sonrası faaliyet kârını ve toplam yatırılan sermayeyi kullanır.",
+      "Reel opsiyonlar yalnızca gerçekçi olduklarında değer katar."
+    ],
+    "vocab_ids": [
+      "net-present-value",
+      "irr",
+      "roic",
+      "nopat",
+      "incremental-cash-flow",
+      "sunk-cost",
+      "cannibalization",
+      "real-option",
+      "timing-option",
+      "replacement-project",
+      "mutually-exclusive",
+      "cost-of-capital",
+      "capital-expenditure",
+      "closest-to",
+      "most-likely"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "CI-05-a-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A manufacturer replaces a worn-out press with a similar new one to keep production unchanged. This project is best classified as a:",
+      "stem_tr": "Bir imalatçı üretimi aynı tutmak için eskimiş bir presi benzer bir yenisiyle değiştiriyor. Bu proje en iyi şöyle sınıflandırılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "replacement (maintenance) project",
+          "tr": "yenileme (bakım) projesi"
+        },
+        {
+          "key": "B",
+          "en": "expansion project",
+          "tr": "genişleme projesi"
+        },
+        {
+          "key": "C",
+          "en": "new product project",
+          "tr": "yeni ürün projesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Renewing existing equipment to maintain operations is a replacement or maintenance project.",
+      "explanation_tr": "Mevcut ekipmanı operasyonu sürdürmek için yenilemek bir yenileme ya da bakım projesidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Expansion adds capacity.",
+          "tr": "Genişleme kapasite ekler."
+        },
+        "C": {
+          "en": "A new product project introduces something new to customers.",
+          "tr": "Yeni ürün projesi müşterilere yeni bir şey sunar."
+        }
+      },
+      "vocab_ids": [
+        "replacement-project",
+        "capital-expenditure",
+        "best-describes",
+        "maintain"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-a-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bakery chain builds a second factory to increase output of its existing products. This project is best classified as a(n):",
+      "stem_tr": "Bir fırın zinciri mevcut ürünlerinin üretimini artırmak için ikinci bir fabrika kuruyor. Bu proje en iyi şöyle sınıflandırılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "regulatory project",
+          "tr": "düzenleyici proje"
+        },
+        {
+          "key": "B",
+          "en": "expansion project",
+          "tr": "genişleme projesi"
+        },
+        {
+          "key": "C",
+          "en": "replacement project",
+          "tr": "yenileme projesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Adding capacity for existing products is expansion.",
+      "explanation_tr": "Mevcut ürünler için kapasite eklemek genişlemedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No law requires this investment.",
+          "tr": "Hiçbir yasa bu yatırımı zorunlu kılmıyor."
+        },
+        "C": {
+          "en": "Nothing is being replaced.",
+          "tr": "Hiçbir şey yenilenmiyor."
+        }
+      },
+      "vocab_ids": [
+        "capital-expenditure",
+        "best-describes",
+        "expansion",
+        "capacity"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-a-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A chemical plant must install filtration equipment to meet new environmental rules. The equipment will not raise revenue. This project is best described as:",
+      "stem_tr": "Bir kimya tesisi yeni çevre kurallarına uymak için filtreleme ekipmanı kurmak zorunda. Ekipman geliri artırmayacak. Bu proje en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "an expansion project judged by NPV",
+          "tr": "NPV'ye göre değerlendirilen bir genişleme projesi"
+        },
+        {
+          "key": "B",
+          "en": "a new product project",
+          "tr": "yeni bir ürün projesi"
+        },
+        {
+          "key": "C",
+          "en": "a regulatory (mandatory) project, usually judged by least-cost compliance",
+          "tr": "düzenleyici (zorunlu) bir proje; genellikle en düşük maliyetli uyuma göre değerlendirilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Projects required by law are often analyzed by comparing costs of compliance options, since revenue does not change.",
+      "explanation_tr": "Yasanın gerektirdiği projeler, gelir değişmediği için çoğu kez uyum seçeneklerinin maliyetleri karşılaştırılarak analiz edilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No capacity is added.",
+          "tr": "Kapasite eklenmiyor."
+        },
+        "B": {
+          "en": "No new product is introduced.",
+          "tr": "Yeni bir ürün sunulmuyor."
+        }
+      },
+      "vocab_ids": [
+        "capital-expenditure",
+        "regulation",
+        "most-likely",
+        "compliance"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-a-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which category of capital project most likely carries the highest uncertainty about future cash flows?",
+      "stem_tr": "Hangi sermaye projesi kategorisinin gelecekteki nakit akışları konusunda en yüksek belirsizlik taşıması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Replacement of worn-out equipment",
+          "tr": "Eskimiş ekipmanın yenilenmesi"
+        },
+        {
+          "key": "B",
+          "en": "New product or new market projects",
+          "tr": "Yeni ürün ya da yeni pazar projeleri"
+        },
+        {
+          "key": "C",
+          "en": "Routine maintenance projects",
+          "tr": "Rutin bakım projeleri"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With no operating history, demand and costs for new products or markets are hardest to forecast.",
+      "explanation_tr": "Operasyon geçmişi olmadığı için yeni ürün ya da pazarlarda talep ve maliyetleri tahmin etmek en zordur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Replacement projects repeat existing activity.",
+          "tr": "Yenileme projeleri mevcut faaliyeti tekrarlar."
+        },
+        "C": {
+          "en": "Maintenance cash flows are the most predictable.",
+          "tr": "Bakım nakit akışları en öngörülebilir olanlardır."
+        }
+      },
+      "vocab_ids": [
+        "capital-expenditure",
+        "uncertainty",
+        "most-likely",
+        "forecast"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-a-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A firm's board asks which analysis method to use for a project that is legally required with no direct revenue. The most appropriate approach is to:",
+      "stem_tr": "Bir firmanın yönetim kurulu, yasal olarak zorunlu ve doğrudan geliri olmayan bir proje için hangi analiz yönteminin kullanılacağını soruyor. En uygun yaklaşım şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "reject the project because its NPV is negative",
+          "tr": "NPV negatif olduğu için projeyi reddetmek"
+        },
+        {
+          "key": "B",
+          "en": "choose the option with the highest IRR",
+          "tr": "en yüksek IRR'li seçeneği seçmek"
+        },
+        {
+          "key": "C",
+          "en": "compare the costs of the compliant options and choose the least costly",
+          "tr": "uyumlu seçeneklerin maliyetlerini karşılaştırmak ve en az maliyetliyi seçmek"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Since the project must be done, the question is how to do it at least cost.",
+      "explanation_tr": "Proje yapılmak zorunda olduğundan soru, en düşük maliyetle nasıl yapılacağıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Rejecting is not an option when the law requires it.",
+          "tr": "Yasa gerektirdiğinde reddetmek bir seçenek değildir."
+        },
+        "B": {
+          "en": "Without revenue, IRR is not meaningful.",
+          "tr": "Gelir olmadığında IRR anlamlı değildir."
+        }
+      },
+      "vocab_ids": [
+        "capital-expenditure",
+        "compliance",
+        "most-appropriate",
+        "cost-benefit-analysis"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A project costs TRY 1,000 million now and returns TRY 400, 500 and 600 million at the end of years 1, 2 and 3. At a required return of 10%, the net present value is closest to:",
+      "stem_tr": "Bir projenin maliyeti şimdi 1.000 milyon TL'dir ve 1, 2, 3. yıl sonlarında 400, 500 ve 600 milyon TL getiri sağlar. İstenen getiri %10 iken net bugünkü değer en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 227.6 million",
+          "tr": "227.6 milyon TL",
+          "value": 227.6
+        },
+        {
+          "key": "B",
+          "en": "TRY 500.0 million",
+          "tr": "500.0 milyon TL",
+          "value": 500.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,227.6 million",
+          "tr": "1,227.6 milyon TL",
+          "value": 1227.6
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "NPV = -1,000 + 400/1.1 + 500/1.21 + 600/1.331 = -1,000 + 363.6 + 413.2 + 450.8 = 227.6.",
+      "explanation_tr": "NPV = -1.000 + 400/1,1 + 500/1,21 + 600/1,331 = -1.000 + 363,6 + 413,2 + 450,8 = 227,6.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "TRY 500 million is the undiscounted gain (1,500 - 1,000).",
+          "tr": "500 milyon TL iskonto edilmemiş kazançtır (1.500 - 1.000)."
+        },
+        "C": {
+          "en": "TRY 1,227.6 million is the present value of inflows without subtracting the outlay.",
+          "tr": "1.227,6 milyon TL, harcama çıkarılmadan nakit girişlerinin bugünkü değeridir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the NPV at 10%.",
+          "tr": "%10'da NPV isteniyor."
+        },
+        {
+          "en": "Discount each cash flow and subtract the outlay.",
+          "tr": "Her nakit akışını iskonto et ve harcamayı çıkar.",
+          "formula_latex": "NPV=\\sum_{t=0}^{3}\\frac{CF_t}{(1+r)^t}"
+        },
+        {
+          "en": "363.6 + 413.2 + 450.8 = 1,227.6.",
+          "tr": "363,6 + 413,2 + 450,8 = 1.227,6."
+        },
+        {
+          "en": "NPV = 1,227.6 - 1,000 = 227.6.",
+          "tr": "NPV = 1.227,6 - 1.000 = 227,6."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WORK]",
+          "-1000 [ENTER] [↓] 400 [ENTER] [↓] [↓] 500 [ENTER] [↓] [↓] 600 [ENTER]",
+          "[NPV] 10 [ENTER] [↓] [CPT]"
+        ]
+      },
+      "numeric": {
+        "expr": "npv(0.10,[-1000,400,500,600])",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "closest-to",
+        "cost-of-capital",
+        "mutually-exclusive"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "For the same project (TRY -1,000 million, then 400, 500 and 600 million), the internal rate of return is closest to:",
+      "stem_tr": "Aynı proje için (-1.000 milyon TL, ardından 400, 500 ve 600 milyon TL) iç verim oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0%",
+          "tr": "%50.0",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "10.0%",
+          "tr": "%10.0",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "21.7%",
+          "tr": "%21.7",
+          "value": 21.7
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "IRR solves -1,000 + 400/(1+r) + 500/(1+r)^2 + 600/(1+r)^3 = 0, which gives r of about 21.7%.",
+      "explanation_tr": "IRR -1.000 + 400/(1+r) + 500/(1+r)^2 + 600/(1+r)^3 = 0 denklemini çözer ve r yaklaşık %21,7 çıkar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "50.0% is the undiscounted gain divided by the outlay (500 / 1,000).",
+          "tr": "%50,0 iskonto edilmemiş kazancın harcamaya bölümüdür (500 / 1.000)."
+        },
+        "B": {
+          "en": "10.0% is the required return, not the IRR.",
+          "tr": "%10,0 istenen getiridir, IRR değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the discount rate that sets NPV to zero.",
+          "tr": "NPV'yi sıfır yapan iskonto oranı isteniyor."
+        },
+        {
+          "en": "Solve NPV(r) = 0 by trial or with the IRR key.",
+          "tr": "NPV(r) = 0 denklemini deneme yoluyla ya da IRR tuşuyla çöz.",
+          "formula_latex": "0=\\sum_{t=0}^{3}\\frac{CF_t}{(1+IRR)^t}"
+        },
+        {
+          "en": "At 20% NPV is about +28; at 22%, about -6.",
+          "tr": "%20'de NPV yaklaşık +28; %22'de yaklaşık -6."
+        },
+        {
+          "en": "IRR is about 21.7%.",
+          "tr": "IRR yaklaşık %21,7'dir."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WORK]",
+          "-1000 [ENTER] [↓] 400 [ENTER] [↓] [↓] 500 [ENTER] [↓] [↓] 600 [ENTER]",
+          "[IRR] [CPT]"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-1000,400,500,600])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "irr",
+        "cost-of-capital",
+        "closest-to",
+        "net-present-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A business earns EBIT of TRY 300 million, is taxed at 25%, and has invested capital of TRY 1,500 million. Its ROIC is closest to:",
+      "stem_tr": "Bir işletme 300 milyon TL FVÖK kazanıyor, %25 vergilendiriliyor ve yatırılan sermayesi 1.500 milyon TL'dir. ROIC'i en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.0%",
+          "tr": "%15.0",
+          "value": 15.0
+        },
+        {
+          "key": "B",
+          "en": "20.0%",
+          "tr": "%20.0",
+          "value": 20.0
+        },
+        {
+          "key": "C",
+          "en": "11.3%",
+          "tr": "%11.3",
+          "value": 11.3
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "NOPAT = 300 x (1 - 0.25) = 225. ROIC = 225 / 1,500 = 15.0%.",
+      "explanation_tr": "NOPAT = 300 x (1 - 0,25) = 225. ROIC = 225 / 1.500 = %15,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "20.0% uses pre-tax EBIT (300 / 1,500).",
+          "tr": "%20,0 vergi öncesi FVÖK'ü kullanır (300 / 1.500)."
+        },
+        "C": {
+          "en": "11.3% applies the tax twice (300 x 0.75 x 0.75 / 1,500).",
+          "tr": "%11,3 vergiyi iki kez uygular (300 x 0,75 x 0,75 / 1.500)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROIC.",
+          "tr": "ROIC isteniyor."
+        },
+        {
+          "en": "ROIC = NOPAT / invested capital, NOPAT = EBIT x (1 - t).",
+          "tr": "ROIC = NOPAT / yatırılan sermaye, NOPAT = FVÖK x (1 - t).",
+          "formula_latex": "ROIC=\\frac{EBIT(1-t)}{IC}"
+        },
+        {
+          "en": "NOPAT = 300 x 0.75 = 225.",
+          "tr": "NOPAT = 300 x 0,75 = 225."
+        },
+        {
+          "en": "225 / 1,500 = 15.0%.",
+          "tr": "225 / 1.500 = %15,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300 [×] 0.75 [=] [÷] 1500 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "300*(1-0.25)/1500*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "roic",
+        "nopat",
+        "closest-to",
+        "cost-of-capital"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A project has a positive net present value at the firm's required return. The most appropriate conclusion is that the project is expected to:",
+      "stem_tr": "Bir projenin firmanın istenen getirisinde net bugünkü değeri pozitiftir. En uygun sonuç, projenin beklentisinin şu olduğudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "earn exactly the required return and add no value",
+          "tr": "tam olarak istenen getiriyi kazanmak ve değer katmamak"
+        },
+        {
+          "key": "B",
+          "en": "earn more than the required return and add value to shareholders",
+          "tr": "istenen getirinin üzerinde kazanmak ve pay sahiplerine değer katmak"
+        },
+        {
+          "key": "C",
+          "en": "earn less than the required return",
+          "tr": "istenen getirinin altında kazanmak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A positive NPV means discounted inflows exceed the outlay, so shareholder wealth rises.",
+      "explanation_tr": "Pozitif NPV, iskonto edilmiş girişlerin harcamayı aştığı ve pay sahibi servetinin arttığı anlamına gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Zero NPV means exactly the required return.",
+          "tr": "Sıfır NPV tam olarak istenen getiri demektir."
+        },
+        "C": {
+          "en": "Negative NPV would mean less than required.",
+          "tr": "Negatif NPV istenenden az demektir."
+        }
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "cost-of-capital",
+        "most-appropriate",
+        "irr"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two mutually exclusive projects: A has NPV of TRY 50 million and IRR of 18%; B has NPV of TRY 80 million and IRR of 14%. The required return is 10%. The firm should most likely:",
+      "stem_tr": "Birbirini dışlayan iki proje: A'nın NPV'si 50 milyon TL, IRR'si %18; B'nin NPV'si 80 milyon TL, IRR'si %14'tür. İstenen getiri %10'dur. Firma büyük olasılıkla şunu yapmalıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "choose Project B, because it has the higher NPV",
+          "tr": "Proje B'yi seçmek; çünkü NPV'si daha yüksektir"
+        },
+        {
+          "key": "B",
+          "en": "choose Project A, because it has the higher IRR",
+          "tr": "Proje A'yı seçmek; çünkü IRR'si daha yüksektir"
+        },
+        {
+          "key": "C",
+          "en": "choose neither, because the IRRs differ",
+          "tr": "IRR'ler farklı olduğu için hiçbirini seçmemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "NPV measures the absolute value added; for mutually exclusive projects it is the better criterion.",
+      "explanation_tr": "NPV katılan mutlak değeri ölçer; birbirini dışlayan projelerde daha iyi ölçüttür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "IRR can rank projects wrongly when scale or timing differs.",
+          "tr": "IRR, ölçek ya da zamanlama farklıysa projeleri yanlış sıralayabilir."
+        },
+        "C": {
+          "en": "Both projects clear the required return, so one should be chosen.",
+          "tr": "İki proje de istenen getiriyi aşar; biri seçilmelidir."
+        }
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "irr",
+        "mutually-exclusive",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following should be excluded from the incremental cash flows of a proposed project?",
+      "stem_tr": "Önerilen bir projenin artımlı nakit akışlarından aşağıdakilerden hangisi dışlanmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An increase in inventory required by the project",
+          "tr": "Projenin gerektirdiği stok artışı"
+        },
+        {
+          "key": "B",
+          "en": "A consulting fee already paid for a feasibility study",
+          "tr": "Fizibilite çalışması için daha önce ödenmiş danışmanlık ücreti"
+        },
+        {
+          "key": "C",
+          "en": "Lost sales on the firm's existing product caused by the new one",
+          "tr": "Yeni ürünün mevcut ürünün satışında yarattığı kayıp"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A cost already paid is sunk and does not change with the decision.",
+      "explanation_tr": "Daha önce ödenmiş maliyet batıktır ve karara göre değişmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Working capital needs are real cash outlays.",
+          "tr": "İşletme sermayesi ihtiyaçları gerçek nakit çıkışlarıdır."
+        },
+        "C": {
+          "en": "Cannibalization reduces cash flows and should be included.",
+          "tr": "Kanibalizasyon nakit akışlarını azaltır ve dahil edilmelidir."
+        }
+      },
+      "vocab_ids": [
+        "sunk-cost",
+        "incremental-cash-flow",
+        "cannibalization",
+        "not-question"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Interest expense on the debt used to finance a project should not be deducted from the project's cash flows because:",
+      "stem_tr": "Bir projeyi finanse etmek için kullanılan borcun faiz gideri projenin nakit akışlarından çıkarılmamalıdır; çünkü:",
+      "options": [
+        {
+          "key": "A",
+          "en": "interest is always zero",
+          "tr": "faiz her zaman sıfırdır"
+        },
+        {
+          "key": "B",
+          "en": "interest is a sunk cost",
+          "tr": "faiz batık maliyettir"
+        },
+        {
+          "key": "C",
+          "en": "the cost of financing is already reflected in the discount rate",
+          "tr": "finansman maliyeti zaten iskonto oranına yansımıştır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Deducting interest again would double count financing costs.",
+      "explanation_tr": "Faizi yeniden düşmek finansman maliyetini çift saymak olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Interest is rarely zero.",
+          "tr": "Faiz nadiren sıfırdır."
+        },
+        "B": {
+          "en": "Interest on future debt is not a sunk cost.",
+          "tr": "Gelecekteki borcun faizi batık maliyet değildir."
+        }
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "incremental-cash-flow",
+        "net-present-value",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A new product line is expected to take TRY 20 million of annual sales from the company's existing products, which earn a 30% contribution margin. The effect that should be included in the project's incremental cash flows is closest to:",
+      "stem_tr": "Yeni bir ürün hattının, katkı marjı %30 olan mevcut ürünlerden yıllık 20 milyon TL satış alması bekleniyor. Projenin artımlı nakit akışlarına dahil edilmesi gereken etki en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "an increase of TRY 20 million a year",
+          "tr": "yılda 20 milyon TL artış"
+        },
+        {
+          "key": "B",
+          "en": "a reduction of TRY 6 million a year",
+          "tr": "yılda 6 milyon TL azalış"
+        },
+        {
+          "key": "C",
+          "en": "no adjustment, because the sales stay inside the firm",
+          "tr": "düzeltme yok; çünkü satışlar firmanın içinde kalıyor"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cannibalization costs the firm the lost contribution: 20 x 30% = TRY 6 million.",
+      "explanation_tr": "Kanibalizasyon firmaya kaybolan katkıya mal olur: 20 x %30 = 6 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The sales are transferred, not created; they add nothing new.",
+          "tr": "Satışlar yaratılmış değil, aktarılmıştır; yeni bir şey eklemezler."
+        },
+        "C": {
+          "en": "Lost contribution reduces total firm cash flow.",
+          "tr": "Kaybolan katkı toplam firma nakit akışını azaltır."
+        }
+      },
+      "vocab_ids": [
+        "cannibalization",
+        "incremental-cash-flow",
+        "closest-to",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a typical capital allocation mistake?",
+      "stem_tr": "Aşağıdakilerden hangisi tipik bir sermaye tahsisi hatasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Reviewing project results after completion",
+          "tr": "Proje sonuçlarını tamamlandıktan sonra gözden geçirmek"
+        },
+        {
+          "key": "B",
+          "en": "Including the cost of extra working capital",
+          "tr": "İlave işletme sermayesi maliyetini dahil etmek"
+        },
+        {
+          "key": "C",
+          "en": "Using overly optimistic sales forecasts to justify a favored project",
+          "tr": "Gözde bir projeyi haklı çıkarmak için aşırı iyimser satış tahminleri kullanmak"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Biased forecasts overstate value; post-audits and working capital inclusion are good practices.",
+      "explanation_tr": "Yanlı tahminler değeri şişirir; proje sonrası inceleme ve işletme sermayesinin dahil edilmesi iyi uygulamalardır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Post-audits help improve future decisions.",
+          "tr": "Proje sonrası incelemeler gelecekteki kararları iyileştirir."
+        },
+        "B": {
+          "en": "Working capital is a real cash need and should be included.",
+          "tr": "İşletme sermayesi gerçek bir nakit ihtiyacıdır ve dahil edilmelidir."
+        }
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "forecast",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A firm discounts nominal (inflation-inclusive) cash flows using a real discount rate. The most likely effect on the project's NPV is that it will be:",
+      "stem_tr": "Bir firma nominal (enflasyon dahil) nakit akışlarını reel bir iskonto oranıyla iskonto ediyor. Projenin NPV'si üzerindeki en olası etki şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "overstated, because the discount rate is too low for the cash flows",
+          "tr": "fazla tahmin edilir; çünkü iskonto oranı nakit akışlarına göre çok düşüktür"
+        },
+        {
+          "key": "B",
+          "en": "understated, because the discount rate is too high",
+          "tr": "az tahmin edilir; çünkü iskonto oranı çok yüksektir"
+        },
+        {
+          "key": "C",
+          "en": "unaffected, because inflation cancels out",
+          "tr": "etkilenmez; çünkü enflasyon birbirini götürür"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Nominal cash flows must be discounted at nominal rates; using a lower real rate inflates present values.",
+      "explanation_tr": "Nominal nakit akışları nominal oranlarla iskonto edilmelidir; daha düşük reel oran kullanmak bugünkü değerleri şişirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A real rate is lower than the nominal rate, so the NPV is too high, not too low.",
+          "tr": "Reel oran nominal orandan düşüktür; NPV çok düşük değil çok yüksek çıkar."
+        },
+        "C": {
+          "en": "Inflation does not cancel when only one side is adjusted.",
+          "tr": "Yalnızca bir taraf düzeltildiğinde enflasyon birbirini götürmez."
+        }
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "inflation",
+        "discount-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A real option that lets a firm postpone an investment until market conditions become clearer is a:",
+      "stem_tr": "Bir firmanın piyasa koşulları netleşene kadar yatırımı ertelemesine izin veren reel opsiyon şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "sizing option",
+          "tr": "boyutlandırma opsiyonu"
+        },
+        {
+          "key": "B",
+          "en": "flexibility option",
+          "tr": "esneklik opsiyonu"
+        },
+        {
+          "key": "C",
+          "en": "timing option",
+          "tr": "zamanlama opsiyonu"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The option to wait or delay is a timing option.",
+      "explanation_tr": "Beklemek ya da ertelemek opsiyonu bir zamanlama opsiyonudur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Sizing options change the scale of the project, such as expand or abandon.",
+          "tr": "Boyutlandırma opsiyonları projenin ölçeğini değiştirir (büyütme veya terk etme gibi)."
+        },
+        "B": {
+          "en": "Flexibility options change prices or inputs once running.",
+          "tr": "Esneklik opsiyonları proje çalışırken fiyat ya da girdileri değiştirir."
+        }
+      },
+      "vocab_ids": [
+        "timing-option",
+        "real-option",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A factory is built so that its capacity can be doubled cheaply if demand turns out to be strong. This feature is best described as a:",
+      "stem_tr": "Bir fabrika, talep güçlü çıkarsa kapasitesi ucuz biçimde ikiye katlanabilecek şekilde kuruluyor. Bu özellik en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "sizing (expansion) option",
+          "tr": "boyutlandırma (genişleme) opsiyonu"
+        },
+        {
+          "key": "B",
+          "en": "timing option",
+          "tr": "zamanlama opsiyonu"
+        },
+        {
+          "key": "C",
+          "en": "fundamental option",
+          "tr": "temel (fundamental) opsiyon"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The right to expand scale later is a sizing option.",
+      "explanation_tr": "Ölçeği sonradan büyütme hakkı bir boyutlandırma opsiyonudur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A timing option concerns when to start.",
+          "tr": "Zamanlama opsiyonu ne zaman başlanacağıyla ilgilidir."
+        },
+        "C": {
+          "en": "A fundamental option arises when the project is itself an option on an underlying asset.",
+          "tr": "Temel opsiyon, projenin kendisi bir dayanak varlık üzerine opsiyon olduğunda ortaya çıkar."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "capacity",
+        "best-describes",
+        "mutually-exclusive"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A power plant can switch between gas and coal depending on relative prices. This ability is best described as a:",
+      "stem_tr": "Bir enerji santrali göreli fiyatlara göre doğalgaz ile kömür arasında geçiş yapabiliyor. Bu yetenek en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "timing option",
+          "tr": "zamanlama opsiyonu"
+        },
+        {
+          "key": "B",
+          "en": "flexibility option",
+          "tr": "esneklik opsiyonu"
+        },
+        {
+          "key": "C",
+          "en": "abandonment option",
+          "tr": "terk opsiyonu"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Switching inputs or outputs as conditions change is a flexibility option.",
+      "explanation_tr": "Koşullar değiştikçe girdi ya da çıktıları değiştirmek bir esneklik opsiyonudur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Nothing is being delayed.",
+          "tr": "Hiçbir şey ertelenmiyor."
+        },
+        "C": {
+          "en": "The plant continues to operate; it is not being abandoned.",
+          "tr": "Santral çalışmaya devam ediyor; terk edilmiyor."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "best-describes",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A gold mining project is worth much more when the gold price is high and can be closed when it is low. Its value is most like that of:",
+      "stem_tr": "Bir altın madeni projesi altın fiyatı yüksekken çok daha değerlidir ve fiyat düşükken kapatılabilir. Değeri en çok şuna benzer:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a fundamental option on the underlying commodity",
+          "tr": "dayanak emtia üzerine temel (fundamental) bir opsiyon"
+        },
+        {
+          "key": "B",
+          "en": "a risk-free bond",
+          "tr": "risksiz bir tahvil"
+        },
+        {
+          "key": "C",
+          "en": "a sunk cost",
+          "tr": "bir batık maliyet"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "When the project payoff depends directly on an underlying asset's price, the project is itself an option on it.",
+      "explanation_tr": "Projenin getirisi doğrudan dayanak varlık fiyatına bağlıysa, proje kendisi o varlık üzerine bir opsiyondur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A bond has fixed payments and no commodity link.",
+          "tr": "Tahvilin sabit ödemeleri vardır ve emtiayla bağlantısı yoktur."
+        },
+        "C": {
+          "en": "A sunk cost is money already spent.",
+          "tr": "Batık maliyet zaten harcanmış paradır."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "commodity",
+        "most-likely",
+        "net-present-value"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Including the value of a real option in a project analysis will most likely:",
+      "stem_tr": "Bir proje analizine reel opsiyon değerini dahil etmek büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease the value of the project",
+          "tr": "proje değerini azaltır"
+        },
+        {
+          "key": "B",
+          "en": "increase the estimated project value relative to the plain NPV",
+          "tr": "tahmin edilen proje değerini düz NPV'ye göre artırır"
+        },
+        {
+          "key": "C",
+          "en": "leave project value unchanged",
+          "tr": "proje değerini değiştirmez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Project value = NPV without options + option value, and option value is never negative.",
+      "explanation_tr": "Proje değeri = opsiyonsuz NPV + opsiyon değeri; opsiyon değeri hiçbir zaman negatif değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Options add rather than subtract value.",
+          "tr": "Opsiyonlar değer çıkarmaz, ekler."
+        },
+        "C": {
+          "en": "Option value is generally greater than zero when uncertainty exists.",
+          "tr": "Belirsizlik varken opsiyon değeri genellikle sıfırdan büyüktür."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "net-present-value",
+        "uncertainty",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

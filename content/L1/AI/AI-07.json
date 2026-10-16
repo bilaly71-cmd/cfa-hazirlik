@@ -1,0 +1,1276 @@
+{
+  "module_id": "AI-07",
+  "lesson": {
+    "id": "AI-07-lesson",
+    "level": "L1",
+    "topic": "AI",
+    "module_id": "AI-07",
+    "los_ids": [
+      "AI-07-a",
+      "AI-07-b",
+      "AI-07-c",
+      "AI-07-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Digital Assets",
+    "title_tr": "Dijital Varlıklara Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A shared notebook nobody owns",
+        "heading_tr": "Kimseye ait olmayan ortak bir defter",
+        "en": "Imagine a notebook that thousands of computers copy and keep identical. A new line can be added only if most computers agree it is valid, and old lines cannot be changed quietly. That is a distributed ledger. It allows people to move value or record ownership without a single central bank or clearing house in the middle. The best-known use is cryptocurrency, but the same technology can settle securities, record ownership and run automatic contracts. For an investor, digital assets are a brand-new and very volatile area. They have no earnings or coupons in the usual sense, trade all day and night, and are held with secret keys. In Türkiye, crypto asset service providers are now under capital markets supervision, while the central bank works on a digital Turkish lira.",
+        "tr": "Binlerce bilgisayarın kopyalayıp birbirinin aynısı tuttuğu bir defter düşünün. Yeni bir satır ancak bilgisayarların çoğu geçerli olduğunu onaylarsa eklenir ve eski satırlar sessizce değiştirilemez. Buna dağıtık defter (distributed ledger) denir. Ortada tek bir merkez bankası ya da takas kuruluşu olmadan değer aktarmayı ya da mülkiyet kaydetmeyi mümkün kılar. En bilinen kullanımı kripto para birimleridir; ama aynı teknoloji menkul kıymetleri takas edebilir, mülkiyeti kaydedebilir ve otomatik sözleşmeler çalıştırabilir. Yatırımcı açısından dijital varlıklar yepyeni ve çok oynak bir alandır. Olağan anlamda kazanç ya da kuponları yoktur, gece gündüz işlem görür ve gizli anahtarlarla saklanır. Türkiye'de kripto varlık hizmet sağlayıcıları artık sermaye piyasası gözetimi altındadır; merkez bankası ise dijital Türk lirası üzerinde çalışmaktadır.",
+        "key_terms": [
+          "distributed ledger",
+          "cryptocurrency",
+          "digital assets"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Distributed ledger technology (DLT)",
+        "heading_tr": "Dağıtık defter teknolojisi (DLT)",
+        "en": "A distributed ledger is a database shared across many participants (nodes) without a single owner. A blockchain stores records in linked blocks. Consensus mechanisms decide who may add the next block: in proof of work, miners spend computing power; in proof of stake, validators lock up coins as a guarantee. Permissionless ledgers are open to anyone (public cryptocurrencies); permissioned ledgers allow only approved participants (many bank and settlement projects). A smart contract is code stored on the ledger that runs automatically when conditions are met. Tokenization represents ownership of an asset, such as a bond or a building, as a digital token. Financial uses: faster settlement, cross-border payments, record keeping, trade finance and decentralized finance (DeFi) lending.",
+        "tr": "Dağıtık defter, tek sahibi olmayan ve birçok katılımcı (düğüm) arasında paylaşılan bir veri tabanıdır. Blokzincir (blockchain) kayıtları birbirine bağlı bloklarda saklar. Konsensüs mekanizmaları bir sonraki bloğu kimin ekleyeceğine karar verir: iş ispatında (proof of work) madenciler hesaplama gücü harcar; pay ispatında (proof of stake) doğrulayıcılar teminat olarak coin kilitler. İzinsiz (permissionless) defterler herkese açıktır (halka açık kripto paralar); izinli (permissioned) defterlere yalnızca onaylı katılımcılar girebilir (birçok banka ve takas projesi). Akıllı sözleşme, defterde saklanan ve koşullar sağlandığında otomatik çalışan koddur. Tokenizasyon, bir tahvil ya da bina gibi varlığın mülkiyetini dijital bir token olarak temsil etmektir. Finansal kullanımlar: daha hızlı takas, sınır ötesi ödeme, kayıt tutma, ticaret finansmanı ve merkeziyetsiz finans (DeFi) borç verme.",
+        "key_terms": [
+          "blockchain",
+          "consensus",
+          "proof of work",
+          "proof of stake",
+          "smart contract",
+          "tokenization"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Types of digital assets",
+        "heading_tr": "Dijital varlık türleri",
+        "en": "Cryptocurrencies (for example Bitcoin) are native assets of a ledger with no issuer or claim on cash flows; their value rests on scarcity, network use and belief. Stablecoins aim to hold a fixed value by backing from reserves such as cash and short-term bills; they carry reserve and issuer risk. Utility and governance tokens give access to a service or voting rights. Security tokens are tokenized claims on traditional assets and follow securities law. Non-fungible tokens (NFTs) represent unique items. A central bank digital currency (CBDC) is a digital form of central bank money; it is issued by a central bank and has no price risk against the home currency, unlike a cryptocurrency.",
+        "tr": "Kripto para birimleri (örneğin Bitcoin) bir defterin yerli varlıklarıdır; ihraççısı ve nakit akışı üzerinde hakkı yoktur; değerleri kıtlığa, ağ kullanımına ve inanca dayanır. Sabit kripto paralar (stablecoin), nakit ve kısa vadeli bono gibi rezervlerle desteklenerek sabit değeri korumayı hedefler; rezerv ve ihraççı riski taşırlar. Hizmet (utility) ve yönetişim tokenleri bir hizmete erişim ya da oy hakkı verir. Menkul kıymet tokenleri geleneksel varlıklar üzerindeki hakların tokenize edilmiş hâlidir ve menkul kıymet hukukuna tabidir. Fungible olmayan tokenler (NFT) benzersiz öğeleri temsil eder. Merkez bankası dijital parası (CBDC), merkez bankası parasının dijital biçimidir; merkez bankası tarafından ihraç edilir ve kripto paranın aksine ulusal para birimine karşı fiyat riski taşımaz.",
+        "key_terms": [
+          "stablecoin",
+          "security token",
+          "NFT",
+          "CBDC"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Ways to invest and sources of risk",
+        "heading_tr": "Yatırım yolları ve risk kaynakları",
+        "en": "Routes: (1) direct holding in a wallet (self-custody with private keys, hot wallet online or cold wallet offline) or at a custodian or exchange; (2) funds and exchange-traded products (ETPs) that hold or track digital assets; (3) shares of related companies such as miners, exchanges and blockchain service firms; (4) derivatives. Direct holding gives full exposure but carries custody, hacking and key-loss risk. ETPs are easy to buy in a normal brokerage account but add fees and may trade at a premium or discount to net asset value. Related equities add company risk. Main risks: very high volatility, difficult valuation (no cash flows), regulation and legal uncertainty, hacks and fraud, concentrated ownership, and market-structure weakness in stress.",
+        "tr": "Yollar: (1) cüzdanda doğrudan sahiplik (özel anahtarlarla kendi saklaması; çevrim içi sıcak cüzdan ya da çevrim dışı soğuk cüzdan) veya bir saklama kuruluşu ya da borsada; (2) dijital varlıkları tutan veya izleyen fonlar ve borsa yatırım ürünleri (ETP); (3) madenci, borsa ve blokzincir hizmet firmaları gibi ilgili şirketlerin payları; (4) türev ürünler. Doğrudan sahiplik tam maruziyet verir ama saklama, hack ve anahtar kaybı riski taşır. ETP'ler olağan bir aracı kurum hesabından kolayca alınır ama ücret ekler ve net aktif değere göre primli ya da iskontolu işlem görebilir. İlgili hisseler şirket riski ekler. Ana riskler: çok yüksek oynaklık, zor değerleme (nakit akışı yok), düzenleme ve hukuki belirsizlik, hack ve dolandırıcılık, yoğunlaşmış sahiplik ve stres dönemlerinde piyasa yapısı zayıflığı.",
+        "key_terms": [
+          "private key",
+          "hot wallet",
+          "cold wallet",
+          "ETP",
+          "custody"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Return including staking yield",
+        "heading_tr": "Staking getirisi dahil getiri",
+        "en": "Some tokens can be locked (staked) to earn a reward paid in the same token. Total return = (1 + price return) × (1 + staking yield) − 1. If the token price falls, the reward in coins does not protect against the fall, but it reduces the loss.",
+        "tr": "Bazı tokenlar kilitlenerek (stake) aynı tokenla ödenen ödül kazandırabilir. Toplam getiri = (1 + fiyat getirisi) × (1 + staking getirisi) − 1. Token fiyatı düşerse coin cinsinden ödül düşüşe karşı koruma sağlamaz, ancak zararı azaltır.",
+        "key_terms": [
+          "staking",
+          "price return"
+        ],
+        "formula_latex": "R=(1+R_{price})(1+y_{stake})-1"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A staked token",
+        "heading_tr": "Stake edilmiş bir token",
+        "en": "An investor holds a token for a year. The token price falls from 100 to 90, and the staking reward is 6% paid in more tokens.",
+        "tr": "Bir yatırımcı bir token'ı bir yıl tutar. Token fiyatı 100'den 90'a düşer ve staking ödülü daha fazla token olarak %6'dır.",
+        "key_terms": [],
+        "example": {
+          "en": "Price return = −10%. Total return = 0.90 × 1.06 − 1 = −4.6%. The reward reduces the loss but does not remove it.",
+          "tr": "Fiyat getirisi = %−10. Toplam getiri = 0,90 × 1,06 − 1 = %−4,6. Ödül zararı azaltır ama ortadan kaldırmaz.",
+          "formula_latex": "R=0.90\\times1.06-1=-4.6\\%"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "A blockchain is not always public: permissioned ledgers exist. A stablecoin is not risk-free: its reserves and issuer matter. A CBDC is not a cryptocurrency. Digital assets generally have no cash flows, so classic discounted-cash-flow valuation does not apply. Correlation with equities is not stable and has risen in stress. Holding through an ETP removes key-custody risk but adds fees and tracking and premium/discount risk.",
+        "tr": "Blokzincir her zaman halka açık değildir: izinli defterler vardır. Stablecoin risksiz değildir: rezervleri ve ihraççısı önemlidir. CBDC bir kripto para değildir. Dijital varlıkların genelde nakit akışı yoktur; bu yüzden klasik iskontolu nakit akışı değerlemesi uygulanmaz. Hisselerle korelasyon sabit değildir ve stres döneminde yükselmiştir. ETP ile sahiplik anahtar saklama riskini kaldırır ama ücret, izleme farkı ve prim/iskonto riski ekler.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Distributed ledgers let participants share a record without a central owner; consensus, smart contracts and tokenization enable new financial uses. Digital assets include cryptocurrencies, stablecoins, tokens and CBDCs. Investors can hold them directly, through ETPs and funds, or via related equities, facing high volatility, custody, regulatory and valuation risks.",
+    "summary_tr": "Dağıtık defterler katılımcıların merkezî bir sahip olmadan kaydı paylaşmasını sağlar; konsensüs, akıllı sözleşmeler ve tokenizasyon yeni finansal kullanımlara imkân verir. Dijital varlıklar kripto paraları, stablecoin'leri, tokenları ve CBDC'leri kapsar. Yatırımcılar bunları doğrudan, ETP ve fonlar aracılığıyla ya da ilgili hisseler yoluyla tutabilir; yüksek oynaklık, saklama, düzenleme ve değerleme risklerine maruz kalırlar.",
+    "common_traps_tr": [
+      "Blokzincir her zaman halka açık değildir.",
+      "Stablecoin risksiz değildir.",
+      "CBDC kripto para değildir.",
+      "Dijital varlıkların genelde nakit akışı yoktur.",
+      "Korelasyon sabit değildir; krizde yükselebilir.",
+      "ETP saklama riskini azaltır ama ücret ekler."
+    ],
+    "vocab_ids": [
+      "distributed-ledger",
+      "blockchain",
+      "consensus",
+      "proof-of-work",
+      "proof-of-stake",
+      "smart-contract",
+      "tokenization",
+      "stablecoin",
+      "cbdc",
+      "private-key",
+      "custody",
+      "etp",
+      "staking",
+      "digital-assets",
+      "cryptocurrency"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Dijital varlıklar SPK Düzey 3 programında ayrıntılı değildir; kripto varlık hizmet sağlayıcılarına ilişkin düzenleme ayrı izlenmelidir."
+    }
+  },
+  "questions": [
+    {
+      "id": "AI-07-a-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes a distributed ledger?",
+      "stem_tr": "Aşağıdakilerden hangisi dağıtık defteri en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A database shared and kept in agreement across many participants without a single central owner",
+          "tr": "Tek bir merkezî sahibi olmadan birçok katılımcı arasında paylaşılan ve uzlaşıyla tutulan bir veri tabanı"
+        },
+        {
+          "key": "B",
+          "en": "A private database controlled by one bank",
+          "tr": "Tek bir bankanın kontrol ettiği özel veri tabanı"
+        },
+        {
+          "key": "C",
+          "en": "A paper register kept by a stock exchange",
+          "tr": "Bir borsanın tuttuğu kâğıt sicil"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The key features are shared copies, agreement among participants and no single owner.",
+      "explanation_tr": "Temel özellikler paylaşılan kopyalar, katılımcılar arasında uzlaşı ve tek bir sahibin olmamasıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A database controlled by one bank is centralized, not distributed.",
+          "tr": "Tek bir bankanın kontrol ettiği veri tabanı merkezîdir, dağıtık değil."
+        },
+        "C": {
+          "en": "A paper register is neither digital nor shared.",
+          "tr": "Kâğıt sicil ne dijitaldir ne de paylaşılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "distributed-ledger",
+        "database",
+        "exchange"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-a-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a proof-of-stake network, validators are chosen to add new blocks mainly because they:",
+      "stem_tr": "Bir pay ispatı (proof of stake) ağında doğrulayıcılar yeni blok eklemek üzere esas olarak şu nedenle seçilir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "spend large amounts of electricity solving puzzles",
+          "tr": "bulmaca çözmek için büyük miktarda elektrik harcarlar"
+        },
+        {
+          "key": "B",
+          "en": "lock up (stake) coins as a guarantee of honest behavior",
+          "tr": "dürüst davranışın teminatı olarak coin kilitlerler (stake)"
+        },
+        {
+          "key": "C",
+          "en": "are approved by the central bank",
+          "tr": "merkez bankası tarafından onaylanırlar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Proof of stake relies on locked coins that can be lost if a validator cheats. Spending computing power describes proof of work.",
+      "explanation_tr": "Pay ispatı, doğrulayıcı hile yaparsa kaybedilebilecek kilitli coinlere dayanır. Hesaplama gücü harcamak iş ispatını tanımlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes proof of work.",
+          "tr": "Bu iş ispatını (proof of work) tanımlar."
+        },
+        "C": {
+          "en": "Public networks do not need central bank approval.",
+          "tr": "Halka açık ağların merkez bankası onayına ihtiyacı yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "proof-of-stake",
+        "validator",
+        "stake",
+        "consensus",
+        "guarantee",
+        "honest"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-a-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A bank wants a ledger shared only among regulated banks, with each participant approved and identified. The most suitable design is:",
+      "stem_tr": "Bir banka, yalnızca düzenlenmiş bankalar arasında paylaşılan, her katılımcının onaylı ve kimliği belli olduğu bir defter istiyor. En uygun tasarım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a permissionless public ledger",
+          "tr": "izinsiz (permissionless) halka açık defter"
+        },
+        {
+          "key": "B",
+          "en": "an anonymous ledger with no access control",
+          "tr": "erişim kontrolü olmayan anonim defter"
+        },
+        {
+          "key": "C",
+          "en": "a permissioned ledger",
+          "tr": "izinli (permissioned) defter"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A permissioned ledger limits who can join and validate, which fits regulated institutions.",
+      "explanation_tr": "İzinli defter, kimin katılıp doğrulayabileceğini sınırlar; bu düzenlenmiş kurumlara uygundur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Public permissionless ledgers are open to anyone.",
+          "tr": "İzinsiz halka açık defterler herkese açıktır."
+        },
+        "B": {
+          "en": "Anonymous ledgers without access control do not meet regulatory needs.",
+          "tr": "Erişim kontrolü olmayan anonim defterler düzenleyici ihtiyaçları karşılamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "access",
+        "control",
+        "participant"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-a-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A smart contract on a ledger releases payment to a seller automatically once the delivery of goods is recorded. The main benefit of this is:",
+      "stem_tr": "Defterdeki bir akıllı sözleşme, malların teslimi kaydedildiğinde ödemeyi satıcıya otomatik olarak serbest bırakıyor. Bunun ana faydası nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a guarantee that the code can never contain errors",
+          "tr": "kodun hiçbir zaman hata içermeyeceğinin garantisi"
+        },
+        {
+          "key": "B",
+          "en": "automatic execution of agreed conditions, which can reduce delay and counterparty risk",
+          "tr": "üzerinde anlaşılan koşulların otomatik yerine getirilmesi; gecikmeyi ve karşı taraf riskini azaltabilir"
+        },
+        {
+          "key": "C",
+          "en": "removal of all legal risk",
+          "tr": "tüm hukuki riskin ortadan kalkması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Self-executing code enforces rules without manual steps. Code can still have bugs and legal status can remain unclear.",
+      "explanation_tr": "Kendiliğinden çalışan kod, kuralları elle işlem olmadan uygular. Kod yine de hata içerebilir ve hukuki statü belirsiz kalabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Smart contract code can have bugs.",
+          "tr": "Akıllı sözleşme kodu hata içerebilir."
+        },
+        "C": {
+          "en": "Legal and regulatory uncertainty remains.",
+          "tr": "Hukuki ve düzenleyici belirsizlik sürer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "smart-contract",
+        "execute",
+        "counterparty-risk",
+        "benefit"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-a-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Tokenization of a building, where ownership is divided into many digital tokens, is most likely to:",
+      "stem_tr": "Bir binanın mülkiyetinin çok sayıda dijital tokena bölünerek tokenize edilmesi en olası biçimde şunu sağlar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "turn the building into a risk-free asset",
+          "tr": "binayı risksiz bir varlığa dönüştürür"
+        },
+        {
+          "key": "B",
+          "en": "guarantee an active secondary market",
+          "tr": "aktif bir ikinci el piyasasını garanti eder"
+        },
+        {
+          "key": "C",
+          "en": "allow fractional ownership and potentially easier transfer, though legal and liquidity questions remain",
+          "tr": "kesirli mülkiyete ve potansiyel olarak daha kolay devre izin verir; ancak hukuki ve likidite soruları sürer"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Tokens can split ownership into small units and ease transfer. But tokens still depend on legal rights and on enough buyers.",
+      "explanation_tr": "Tokenlar mülkiyeti küçük birimlere bölebilir ve devri kolaylaştırabilir. Ancak tokenlar yine hukuki haklara ve yeterli alıcıya bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Tokenization does not remove the building's risks.",
+          "tr": "Tokenizasyon binanın risklerini ortadan kaldırmaz."
+        },
+        "B": {
+          "en": "An active secondary market is not guaranteed by tokenization.",
+          "tr": "İkinci el piyasası tokenizasyonla garanti edilmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "tokenization",
+        "ownership",
+        "transfer",
+        "secondary-market",
+        "legal"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes a stablecoin?",
+      "stem_tr": "Aşağıdakilerden hangisi stablecoin'i en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A digital token designed to keep a stable value by being backed by reserves such as cash or short-term bills",
+          "tr": "Nakit ya da kısa vadeli bono gibi rezervlerle desteklenerek sabit değeri korumak üzere tasarlanmış dijital token"
+        },
+        {
+          "key": "B",
+          "en": "A central bank liability that is legal tender",
+          "tr": "Yasal ödeme aracı olan bir merkez bankası yükümlülüğü"
+        },
+        {
+          "key": "C",
+          "en": "A token that gives voting rights in a protocol",
+          "tr": "Bir protokolde oy hakkı veren token"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Stablecoins aim to peg to a currency using reserves. They carry issuer and reserve risk. A CBDC is a central bank liability; governance tokens give voting rights.",
+      "explanation_tr": "Stablecoin'ler rezervler kullanarak bir para birimine sabitlenmeyi hedefler. İhraççı ve rezerv riski taşırlar. CBDC bir merkez bankası yükümlülüğüdür; yönetişim tokenları oy hakkı verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes a CBDC.",
+          "tr": "Bu bir CBDC'yi tanımlar."
+        },
+        "C": {
+          "en": "That describes a governance token.",
+          "tr": "Bu bir yönetişim tokenini tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "stablecoin",
+        "issuer",
+        "legal"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which statement about the valuation of most cryptocurrencies is most accurate?",
+      "stem_tr": "Çoğu kripto paranın değerlemesi hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They are valued reliably by discounting expected dividends",
+          "tr": "Beklenen temettülerin iskonto edilmesiyle güvenilir biçimde değerlenirler"
+        },
+        {
+          "key": "B",
+          "en": "They have a contractual redemption value",
+          "tr": "Sözleşmeden doğan bir itfa değerleri vardır"
+        },
+        {
+          "key": "C",
+          "en": "They generally pay no cash flows, so value rests on scarcity, network use and investor belief",
+          "tr": "Genellikle nakit akışı ödemezler; bu yüzden değer kıtlığa, ağ kullanımına ve yatırımcı inancına dayanır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Without earnings, coupons or a redemption value, standard cash flow valuation does not work, which makes valuation hard and volatile.",
+      "explanation_tr": "Kazanç, kupon ya da itfa değeri olmadığı için standart nakit akışı değerlemesi çalışmaz; bu da değerlemeyi zorlaştırır ve oynak yapar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "They usually pay no dividends.",
+          "tr": "Genellikle temettü ödemezler."
+        },
+        "B": {
+          "en": "Most have no contractual redemption value.",
+          "tr": "Çoğunun sözleşmeden doğan itfa değeri yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cryptocurrency",
+        "cash-flow",
+        "valuation",
+        "belief"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "How does a central bank digital currency (CBDC) most likely differ from a cryptocurrency such as Bitcoin?",
+      "stem_tr": "Merkez bankası dijital parası (CBDC) Bitcoin gibi bir kripto paradan en olası biçimde nasıl farklıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A CBDC is issued and backed by the central bank and is denominated in the national currency, so it has no price risk against that currency",
+          "tr": "CBDC merkez bankası tarafından ihraç edilir ve desteklenir, ulusal para cinsindendir; bu nedenle o paraya karşı fiyat riski yoktur"
+        },
+        {
+          "key": "B",
+          "en": "A CBDC has a fixed supply set by code with no issuer",
+          "tr": "CBDC'nin ihraççısı olmayan, kodla belirlenmiş sabit bir arzı vardır"
+        },
+        {
+          "key": "C",
+          "en": "A CBDC is always more volatile than Bitcoin",
+          "tr": "CBDC her zaman Bitcoin'den daha oynaktır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A CBDC is digital central bank money. Bitcoin has no issuer and floats in price.",
+      "explanation_tr": "CBDC, dijital merkez bankası parasıdır. Bitcoin'in ihraççısı yoktur ve fiyatı dalgalanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A fixed code-set supply with no issuer describes Bitcoin, not a CBDC.",
+          "tr": "İhraççısı olmayan, kodla belirlenmiş sabit arz Bitcoin'i tanımlar; CBDC'yi değil."
+        },
+        "C": {
+          "en": "A CBDC is pegged to the national currency, so it is not more volatile.",
+          "tr": "CBDC ulusal para birimine bağlıdır; bu yüzden daha oynak değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cbdc",
+        "central-bank",
+        "denominated",
+        "issuer"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A token gives holders legally enforceable rights to a share of a company's future dividends and is traded on a regulated platform. It is best classified as:",
+      "stem_tr": "Bir token, sahiplerine bir şirketin gelecekteki temettülerinden pay alma konusunda hukuken uygulanabilir haklar veriyor ve düzenlenmiş bir platformda işlem görüyor. En iyi şekilde şu şekilde sınıflandırılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a utility token",
+          "tr": "hizmet tokeni (utility token)"
+        },
+        {
+          "key": "B",
+          "en": "a security token",
+          "tr": "menkul kıymet tokeni (security token)"
+        },
+        {
+          "key": "C",
+          "en": "a stablecoin",
+          "tr": "stablecoin"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Tokenized claims on traditional assets, such as dividends, are security tokens and fall under securities regulation.",
+      "explanation_tr": "Temettü gibi geleneksel varlıklar üzerindeki tokenize edilmiş haklar menkul kıymet tokenidir ve menkul kıymet düzenlemesine tabidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A utility token gives access to a service, not dividend rights.",
+          "tr": "Hizmet tokeni bir hizmete erişim verir; temettü hakkı vermez."
+        },
+        "C": {
+          "en": "A stablecoin aims for a stable price, not dividend rights.",
+          "tr": "Stablecoin sabit fiyat hedefler; temettü hakkı vermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-token",
+        "dividend",
+        "future"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which feature of digital assets most clearly differs from a typical listed equity?",
+      "stem_tr": "Dijital varlıkların hangi özelliği tipik bir borsa hissesinden en belirgin biçimde farklıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Trading is possible 24 hours a day, and ownership is proven by control of private keys",
+          "tr": "İşlem günün 24 saati yapılabilir ve mülkiyet özel anahtarların kontrolüyle kanıtlanır"
+        },
+        {
+          "key": "B",
+          "en": "They always have a regulated exchange with a closing auction",
+          "tr": "Her zaman kapanış seansı olan düzenlenmiş bir borsaları vardır"
+        },
+        {
+          "key": "C",
+          "en": "They always pay a dividend",
+          "tr": "Her zaman temettü öderler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Many digital assets trade continuously on global venues and are controlled by whoever holds the private key. Losing the key can mean losing the asset.",
+      "explanation_tr": "Birçok dijital varlık küresel platformlarda sürekli işlem görür ve özel anahtarı elinde tutan kişi tarafından kontrol edilir. Anahtarı kaybetmek varlığı kaybetmek anlamına gelebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Many crypto venues trade 24/7 and have no closing auction.",
+          "tr": "Birçok kripto platformu 7/24 çalışır ve kapanış seansı yoktur."
+        },
+        "C": {
+          "en": "Most digital assets pay no dividends.",
+          "tr": "Çoğu dijital varlık temettü ödemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "private-key",
+        "ownership",
+        "equity",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a risk of holding digital assets directly in a self-custody wallet?",
+      "stem_tr": "Dijital varlıkları kendi saklaması olan bir cüzdanda doğrudan tutmanın riski aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Daily management fees charged by an ETP issuer",
+          "tr": "Bir ETP ihraççısının aldığı günlük yönetim ücretleri"
+        },
+        {
+          "key": "B",
+          "en": "Permanent loss of the assets if the private key is lost or stolen",
+          "tr": "Özel anahtar kaybolursa ya da çalınırsa varlıkların kalıcı olarak kaybı"
+        },
+        {
+          "key": "C",
+          "en": "Premium or discount to net asset value",
+          "tr": "Net aktif değere göre prim veya iskonto"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In self-custody the owner alone controls the key. No one can recover the assets if it is lost, and thieves can move them if it is stolen.",
+      "explanation_tr": "Kendi saklamasında anahtarı yalnızca sahibi kontrol eder. Kaybolursa kimse varlıkları geri getiremez; çalınırsa hırsızlar taşıyabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Management fees and ETP issuer charges apply to ETPs, not to self-custody.",
+          "tr": "Yönetim ücretleri ve ETP ihraççısı masrafları ETP'ler için geçerlidir; kendi saklaması için değil."
+        },
+        "C": {
+          "en": "Premium or discount to NAV is an ETP issue.",
+          "tr": "NAV'a göre prim veya iskonto ETP'ye özgü bir sorundur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "private-key",
+        "wallet",
+        "permanent"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "analyze",
+      "stem_en": "Compared with holding the coins directly, buying a digital-asset exchange-traded product (ETP) in an ordinary brokerage account most likely:",
+      "stem_tr": "Coinleri doğrudan tutmakla karşılaştırıldığında, olağan bir aracı kurum hesabından dijital varlık borsa yatırım ürünü (ETP) satın almak en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "removes all price risk of the digital asset",
+          "tr": "dijital varlığın tüm fiyat riskini kaldırır"
+        },
+        {
+          "key": "B",
+          "en": "always trades exactly at net asset value",
+          "tr": "her zaman tam olarak net aktif değerinden işlem görür"
+        },
+        {
+          "key": "C",
+          "en": "removes key-custody burden but adds fees and possible tracking error or premium/discount",
+          "tr": "anahtar saklama yükünü kaldırır ama ücret ve olası izleme farkı ya da prim/iskonto ekler"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "An ETP is simple to buy and avoids wallets and keys, but charges fees and can deviate from NAV. The price risk of the underlying remains.",
+      "explanation_tr": "ETP almak basittir ve cüzdan ile anahtar sorununu ortadan kaldırır; ancak ücret alır ve NAV'dan sapabilir. Dayanak varlığın fiyat riski sürer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An ETP still moves with the digital asset's price.",
+          "tr": "ETP yine dijital varlığın fiyatıyla birlikte hareket eder."
+        },
+        "B": {
+          "en": "ETPs can trade at a premium or discount to NAV.",
+          "tr": "ETP'ler NAV'a göre primli veya iskontolu işlem görebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "etp",
+        "premium",
+        "discount",
+        "net-asset-value"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investor buys shares of a company that mines digital assets to gain exposure to the sector. Which statement is most accurate?",
+      "stem_tr": "Bir yatırımcı, sektöre maruziyet sağlamak için dijital varlık madenciliği yapan bir şirketin payını alıyor. Hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The shares move exactly with the digital asset price",
+          "tr": "Paylar dijital varlık fiyatıyla tam olarak birlikte hareket eder"
+        },
+        {
+          "key": "B",
+          "en": "The shares are affected by the digital asset price but also by company-specific factors such as costs, debt and management",
+          "tr": "Paylar dijital varlık fiyatından etkilenir; ama maliyet, borç ve yönetim gibi şirkete özgü etkenlerden de etkilenir"
+        },
+        {
+          "key": "C",
+          "en": "The shares remove all digital asset exposure",
+          "tr": "Paylar tüm dijital varlık maruziyetini ortadan kaldırır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Related equities give indirect exposure with added corporate risk. They do not track the coin one-for-one.",
+      "explanation_tr": "İlgili hisseler dolaylı maruziyet sağlar ve şirket riski ekler. Coini bire bir izlemez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Company factors mean the shares will not move exactly with the coin.",
+          "tr": "Şirket etkenleri nedeniyle paylar coinle tam olarak hareket etmez."
+        },
+        "C": {
+          "en": "Miners remain strongly exposed to digital asset prices.",
+          "tr": "Madenciler dijital varlık fiyatlarına güçlü biçimde maruz kalır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "exposure",
+        "accurate",
+        "asset"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish pension fund wants exposure to digital assets but must hold only regulated, custodied instruments. The most appropriate route is most likely:",
+      "stem_tr": "Bir Türk emeklilik fonu dijital varlık maruziyeti istiyor ancak yalnızca düzenlenmiş ve saklama kuruluşunda tutulan araçları tutabiliyor. En uygun yol büyük olasılıkla hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "buying coins on an unregulated overseas platform and storing the key on a phone",
+          "tr": "düzenlenmemiş yurt dışı platformdan coin alıp anahtarı telefonda saklamak"
+        },
+        {
+          "key": "B",
+          "en": "lending coins to an anonymous borrower",
+          "tr": "coinleri anonim bir borçluya ödünç vermek"
+        },
+        {
+          "key": "C",
+          "en": "a regulated fund or ETP with a qualified custodian",
+          "tr": "nitelikli saklama kuruluşu olan düzenlenmiş bir fon ya da ETP"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A regulated vehicle with institutional custody fits governance rules and reduces key and operational risk.",
+      "explanation_tr": "Kurumsal saklamalı düzenlenmiş bir araç yönetişim kurallarına uyar ve anahtar ile operasyonel riski azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An unregulated platform and a phone key add custody and counterparty risks.",
+          "tr": "Düzenlenmemiş platform ve telefonda anahtar saklama ve karşı taraf riski ekler."
+        },
+        "B": {
+          "en": "Lending to an anonymous borrower is a credit risk and not regulated.",
+          "tr": "Anonim borçluya borç vermek kredi riskidir ve düzenlenmemiştir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "custodian",
+        "pension-fund",
+        "vehicle"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a common way for investors to gain indirect exposure to digital assets?",
+      "stem_tr": "Aşağıdakilerden hangisi yatırımcıların dijital varlıklara dolaylı maruziyet kazanmasının yaygın bir yoludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Buying shares of exchanges, miners or blockchain-related companies",
+          "tr": "Borsaların, madencilerin veya blokzincirle ilgili şirketlerin paylarını almak"
+        },
+        {
+          "key": "B",
+          "en": "Holding only the national currency in a bank account",
+          "tr": "Banka hesabında yalnızca ulusal parayı tutmak"
+        },
+        {
+          "key": "C",
+          "en": "Buying a short-term government bond",
+          "tr": "Kısa vadeli devlet tahvili almak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Shares of related firms respond to the digital asset market without owning coins.",
+      "explanation_tr": "İlgili firmaların payları, coin sahibi olmadan dijital varlık piyasasına tepki verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A bank deposit in the national currency has no digital asset exposure.",
+          "tr": "Ulusal para cinsi banka mevduatının dijital varlık maruziyeti yoktur."
+        },
+        "C": {
+          "en": "A short-term government bond has no digital asset exposure.",
+          "tr": "Kısa vadeli devlet tahvilinin dijital varlık maruziyeti yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "exposure",
+        "exchange",
+        "blockchain"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor holds a staking token for a year. The token price falls from 100 to 90, and the staking reward is 6%, paid in additional tokens. The investor's total return is closest to:",
+      "stem_tr": "Bir yatırımcı bir staking token'ını bir yıl tutuyor. Token fiyatı 100'den 90'a düşüyor ve staking ödülü ek tokenlarla %6 ödeniyor. Yatırımcının toplam getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-4.00%",
+          "tr": "%-4,00",
+          "value": -4.0
+        },
+        {
+          "key": "B",
+          "en": "-10.00%",
+          "tr": "%-10,00",
+          "value": -10.0
+        },
+        {
+          "key": "C",
+          "en": "-4.60%",
+          "tr": "%-4,60",
+          "value": -4.6
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Total return = 0.90 × 1.06 − 1 = −4.6%. The reward is paid in tokens that are also worth less after the price fall.",
+      "explanation_tr": "Toplam getiri = 0,90 × 1,06 − 1 = %−4,6. Ödül, fiyat düşüşünden sonra daha az değerli olan tokenlarla ödenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "−4.00% simply adds −10% and 6%, ignoring that the reward tokens also lost value.",
+          "tr": "%−4,00, ödül tokenlarının da değer kaybettiğini yok sayarak −%10 ile %6'yı toplar."
+        },
+        "B": {
+          "en": "−10.00% ignores the staking reward.",
+          "tr": "%−10,00 staking ödülünü yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the total return including the reward.",
+          "tr": "Ödül dahil toplam getiri isteniyor."
+        },
+        {
+          "en": "Combine price return and staking yield multiplicatively.",
+          "tr": "Fiyat getirisi ve staking getirisi çarpımsal birleştirilir.",
+          "formula_latex": "R=(1+R_p)(1+y)-1"
+        },
+        {
+          "en": "1 + R_p = 90/100 = 0.90; 1 + y = 1.06.",
+          "tr": "1 + R_p = 90/100 = 0,90; 1 + y = 1,06.",
+          "values": {
+            "Rp": -0.1,
+            "y": 0.06
+          }
+        },
+        {
+          "en": "R = 0.90 × 1.06 − 1 = −4.6%.",
+          "tr": "R = 0,90 × 1,06 − 1 = %−4,6."
+        }
+      ],
+      "vocab_ids": [
+        "staking",
+        "closest",
+        "additional"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.9 [×] 1.06 [=] → 0.954",
+          "[-] 1 [=] → -0.046"
+        ],
+        "note_tr": "%−4,6."
+      },
+      "numeric": {
+        "expr": "(0.9*1.06-1)*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes the typical return and risk profile of digital assets such as cryptocurrencies?",
+      "stem_tr": "Aşağıdakilerden hangisi kripto paralar gibi dijital varlıkların tipik getiri ve risk profilini en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Very high volatility, large drawdowns and returns that depend largely on changes in price",
+          "tr": "Çok yüksek oynaklık, büyük değer kayıpları ve büyük ölçüde fiyat değişimine bağlı getiriler"
+        },
+        {
+          "key": "B",
+          "en": "Low volatility and stable coupon income",
+          "tr": "Düşük oynaklık ve istikrarlı kupon geliri"
+        },
+        {
+          "key": "C",
+          "en": "Government-guaranteed returns",
+          "tr": "Devlet garantili getiriler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Digital assets have shown extreme price swings. Most have no income, so return comes mainly from price changes (plus staking or lending yield in some cases).",
+      "explanation_tr": "Dijital varlıklar aşırı fiyat dalgalanmaları göstermiştir. Çoğunun geliri yoktur; bu yüzden getiri esas olarak fiyat değişiminden gelir (bazı durumlarda staking veya borç verme getirisi eklenir).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Low volatility and coupons do not describe cryptocurrencies.",
+          "tr": "Düşük oynaklık ve kupon kripto paraları tanımlamaz."
+        },
+        "C": {
+          "en": "No government guarantees apply to most digital assets.",
+          "tr": "Çoğu dijital varlık için devlet garantisi yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "volatility",
+        "return",
+        "price",
+        "cryptocurrency"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A portfolio manager notes that the correlation between a digital asset and equities was low in calm periods but increased during a market selloff. The most appropriate conclusion is that:",
+      "stem_tr": "Bir portföy yöneticisi, bir dijital varlık ile hisseler arasındaki korelasyonun sakin dönemlerde düşük olduğunu ama piyasa satış dalgasında arttığını görüyor. En uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the asset is a reliable safe haven",
+          "tr": "varlık güvenilir bir güvenli limandır"
+        },
+        {
+          "key": "B",
+          "en": "diversification benefits may disappear when they are needed most, so the allocation should be small and monitored",
+          "tr": "çeşitlendirme faydaları en çok ihtiyaç duyulduğunda ortadan kalkabilir; bu yüzden pay küçük tutulmalı ve izlenmelidir"
+        },
+        {
+          "key": "C",
+          "en": "correlation is irrelevant for portfolio risk",
+          "tr": "korelasyon portföy riski için önemsizdir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Rising correlation in stress reduces diversification when it is most valuable, which argues for modest sizing and monitoring.",
+      "explanation_tr": "Stres dönemlerinde yükselen korelasyon, çeşitlendirmenin en değerli olduğu anda faydayı azaltır; bu da mütevazı büyüklük ve izlemeyi gerektirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The behavior in stress contradicts the safe haven claim.",
+          "tr": "Stres dönemindeki davranış güvenli liman iddiasıyla çelişir."
+        },
+        "C": {
+          "en": "Correlation is central to portfolio risk.",
+          "tr": "Korelasyon portföy riskinin merkezindedir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "selloff",
+        "safe-haven",
+        "allocation",
+        "monitor"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is most likely a source of operational risk specific to digital assets?",
+      "stem_tr": "Aşağıdakilerden hangisi dijital varlıklara özgü operasyonel risk kaynağı olma olasılığı en yüksek olandır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Hacks of exchanges or wallets and failures of smart contract code",
+          "tr": "Borsaların ya da cüzdanların hacklenmesi ve akıllı sözleşme kodunun başarısızlığı"
+        },
+        {
+          "key": "B",
+          "en": "Quarterly earnings announcements",
+          "tr": "Üç aylık kazanç açıklamaları"
+        },
+        {
+          "key": "C",
+          "en": "Coupon payment delays",
+          "tr": "Kupon ödeme gecikmeleri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Security breaches, bugs and platform failures are typical operational risks in digital asset markets.",
+      "explanation_tr": "Güvenlik ihlalleri, hatalar ve platform arızaları dijital varlık piyasalarında tipik operasyonel risklerdir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Most digital assets have no quarterly earnings.",
+          "tr": "Çoğu dijital varlığın üç aylık kazancı yoktur."
+        },
+        "C": {
+          "en": "Most digital assets pay no coupons.",
+          "tr": "Çoğu dijital varlık kupon ödemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hack",
+        "exchange",
+        "wallet",
+        "smart-contract",
+        "operational"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Regulation of digital assets differs across countries and keeps changing. For an investor, this most likely creates:",
+      "stem_tr": "Dijital varlıkların düzenlemesi ülkeden ülkeye farklıdır ve değişmeye devam eder. Yatırımcı için bu en olası biçimde şunu yaratır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a guarantee of stable rules",
+          "tr": "kuralların istikrarının garantisi"
+        },
+        {
+          "key": "B",
+          "en": "legal and regulatory risk that can affect access, taxes and prices",
+          "tr": "erişimi, vergileri ve fiyatları etkileyebilecek hukuki ve düzenleyici risk"
+        },
+        {
+          "key": "C",
+          "en": "no effect on the market",
+          "tr": "piyasa üzerinde hiçbir etki olmaması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Changes in rules, such as bans, licensing or tax treatment, have affected digital asset prices and market access in the past.",
+      "explanation_tr": "Yasaklar, lisanslama ya da vergi uygulaması gibi kural değişiklikleri geçmişte dijital varlık fiyatlarını ve piyasaya erişimi etkilemiştir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Changing rules mean stability is not guaranteed.",
+          "tr": "Kuralların değişmesi istikrarın garanti olmadığı anlamına gelir."
+        },
+        "C": {
+          "en": "Regulatory news has moved prices.",
+          "tr": "Düzenleme haberleri fiyatları hareket ettirmiştir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "regulation",
+        "legal",
+        "risk",
+        "access",
+        "jurisdiction"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

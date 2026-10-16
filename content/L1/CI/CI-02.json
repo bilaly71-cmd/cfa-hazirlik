@@ -1,0 +1,965 @@
+{
+  "module_id": "CI-02",
+  "lesson": {
+    "id": "CI-02-lesson",
+    "level": "L1",
+    "topic": "CI",
+    "module_id": "CI-02",
+    "los_ids": [
+      "CI-02-a",
+      "CI-02-b",
+      "CI-02-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Investors and Other Stakeholders",
+    "title_tr": "Yatırımcılar ve Diğer Paydaşlar",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Many people have a claim on the same firm",
+        "heading_tr": "Aynı firmada birçok kişinin hakkı vardır",
+        "en": "A company is a bundle of promises. Banks and bondholders lend money and expect it back with interest. Shareholders provide equity and hope for dividends and growth. Employees want pay and security, customers want quality, suppliers want payment, governments want taxes and communities want clean air. These groups often want different things. A bank will not like a risky new project, while a shareholder may love it. In Türkiye, a family-controlled AŞ that borrows heavily from banks shows these tensions clearly: lenders watch cash flow and covenants, shareholders watch dividends and growth, and regulators watch both. Analysts study these claims to see who gets paid first, who bears risk and which decisions create conflict.",
+        "tr": "Şirket, bir dizi vaadin bütünüdür. Bankalar ve tahvil sahipleri para borç verir ve faiziyle geri bekler. Pay sahipleri özkaynak sağlar, temettü ve büyüme umar. Çalışanlar ücret ve güvence, müşteriler kalite, tedarikçiler ödeme, devlet vergi, toplum temiz hava ister. Bu gruplar çoğu kez farklı şeyler ister. Banka riskli yeni bir projeyi sevmeyebilir, pay sahibi ise bayılabilir. Türkiye'de bankalardan yoğun borçlanan aile kontrolündeki bir AŞ bu gerilimleri açıkça gösterir: borç verenler nakit akışını ve taahhütleri, pay sahipleri temettü ve büyümeyi, düzenleyiciler her ikisini izler. Analistler kimin önce ödeme aldığını, riski kimin taşıdığını ve hangi kararların çatışma yarattığını görmek için bu haklara bakar.",
+        "key_terms": [
+          "creditor",
+          "shareholder",
+          "stakeholder"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Creditors versus shareholders",
+        "heading_tr": "Alacaklılar ve pay sahipleri",
+        "en": "Creditors (lenders, bondholders) have a contractual claim: fixed interest and principal. They are paid before shareholders in bankruptcy, but their upside is capped at what is promised, so they care mainly about downside risk and want low risk, collateral and covenants. Shareholders have a residual claim: they receive what is left after all other claims. Their upside is unlimited, their downside is limited to their investment, and they vote on major issues. Because of the payoff shape, shareholders may prefer riskier projects, higher dividends or more debt, while creditors prefer safety. Equity behaves like a call option on the firm's value, with the debt face value as the strike.",
+        "tr": "Alacaklıların (borç verenler, tahvil sahipleri) sözleşmeye dayalı bir hakkı vardır: sabit faiz ve anapara. İflasta pay sahiplerinden önce ödeme alırlar; ancak getirileri vaat edilenle sınırlıdır, bu yüzden esas olarak aşağı yönlü riski önemserler ve düşük risk, teminat ve taahhüt isterler. Pay sahiplerinin artık (kalan) bir hakkı vardır: diğer tüm haklar ödendikten sonra kalanı alırlar. Getiri potansiyelleri sınırsız, zararları yatırımlarıyla sınırlıdır ve önemli konularda oy kullanırlar. Getiri şekli nedeniyle pay sahipleri daha riskli projeleri, daha yüksek temettüyü ya da daha çok borcu tercih edebilir; alacaklılar güvenliği tercih eder. Özkaynak, borcun anapara tutarı kullanım fiyatı olan, firma değeri üzerine yazılmış bir alım opsiyonu gibi davranır.",
+        "key_terms": [
+          "creditor",
+          "residual claim",
+          "covenant",
+          "seniority"
+        ],
+        "formula_latex": "\\text{Debt payoff}=\\min(V,D),\\qquad \\text{Equity payoff}=\\max(V-D,0)"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Stakeholder groups",
+        "heading_tr": "Paydaş grupları",
+        "en": "Stakeholders are all groups affected by or affecting the firm. Owners seek return and control; creditors seek safe repayment; managers seek pay, job security and influence; employees seek wages, safety and development; customers seek value and reliable service; suppliers seek timely payment and a lasting relationship; governments and regulators seek taxes and compliance; communities seek jobs and a clean environment. Interests overlap (a profitable firm can pay everyone) but also clash (cost cuts raise profit and cut jobs). Contracts protect some groups explicitly; others, such as employees and customers, rely on implicit claims and reputation.",
+        "tr": "Paydaşlar, şirketten etkilenen ya da şirketi etkileyen tüm gruplardır. Sahipler getiri ve kontrol arar; alacaklılar güvenli geri ödeme; yöneticiler ücret, iş güvencesi ve etki; çalışanlar ücret, güvenlik ve gelişim; müşteriler değer ve güvenilir hizmet; tedarikçiler zamanında ödeme ve kalıcı ilişki; devlet ve düzenleyiciler vergi ve uyum; toplum ise iş ve temiz çevre arar. Çıkarlar örtüşebilir (kârlı bir şirket herkese ödeme yapabilir) ama çatışabilir de (maliyet kesintisi kârı artırır ve iş sayısını azaltır). Sözleşmeler bazı grupları açıkça korur; çalışanlar ve müşteriler gibi diğerleri örtülü haklara ve itibara dayanır.",
+        "key_terms": [
+          "stakeholder",
+          "implicit claim",
+          "supplier",
+          "regulator"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "ESG factors",
+        "heading_tr": "ÇSY faktörleri",
+        "en": "ESG stands for Environmental, Social and Governance factors. Environmental: emissions, energy and water use, waste, climate transition risk. Social: labor practices, health and safety, data privacy, product safety, community relations. Governance: board independence, pay, audit quality, shareholder rights, ethics. Investors use ESG to find material risks and opportunities that affect cash flows and the cost of capital, for example a coal-heavy firm facing carbon costs or a bank with weak controls. Approaches include exclusion (negative screening), ESG integration in valuation, best-in-class selection, thematic investing and engagement. ESG ratings differ among providers because they use different data and weights, so analysts check materiality themselves. In Türkiye, sustainability reporting standards (TSRS) and the BIST Sustainability Index push firms to disclose.",
+        "tr": "ÇSY (ESG), Çevresel, Sosyal ve Yönetişim faktörlerinin kısaltmasıdır. Çevresel: emisyonlar, enerji ve su kullanımı, atık, iklim geçiş riski. Sosyal: çalışma uygulamaları, sağlık ve güvenlik, veri gizliliği, ürün güvenliği, toplumla ilişkiler. Yönetişim: yönetim kurulu bağımsızlığı, ücretler, denetim kalitesi, pay sahibi hakları, etik. Yatırımcılar ÇSY'yi nakit akışlarını ve sermaye maliyetini etkileyen önemli riskleri ve fırsatları bulmak için kullanır; örneğin karbon maliyetiyle karşılaşan kömür ağırlıklı bir şirket ya da zayıf kontrolleri olan bir banka. Yaklaşımlar arasında dışlama (negatif eleme), değerlemede ÇSY entegrasyonu, sektörün en iyisini seçme, tematik yatırım ve etkileşim vardır. ÇSY notları sağlayıcılar arasında farklılaşır; çünkü farklı veri ve ağırlık kullanırlar, bu yüzden analistler önemliliği kendileri kontrol eder. Türkiye'de sürdürülebilirlik raporlama standartları (TSRS) ve BIST Sürdürülebilirlik Endeksi şirketleri açıklama yapmaya yöneltir.",
+        "key_terms": [
+          "ESG",
+          "materiality",
+          "negative screening",
+          "ESG integration"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: who gets what",
+        "heading_tr": "Çözümlü örnek: kim ne alır?",
+        "en": "A firm owes creditors TRY 100 million. If the firm's assets are worth TRY 150 million, creditors receive TRY 100 million and shareholders TRY 50 million. If assets fall to TRY 80 million, creditors receive TRY 80 million (an 80% recovery) and shareholders receive nothing. If assets rise to TRY 400 million, creditors still get only TRY 100 million and shareholders get TRY 300 million. Creditors' payoff is capped; shareholders' is not.",
+        "tr": "Bir firmanın alacaklılara 100 milyon TL borcu var. Varlıkların değeri 150 milyon TL ise alacaklılar 100 milyon TL, pay sahipleri 50 milyon TL alır. Varlıklar 80 milyon TL'ye düşerse alacaklılar 80 milyon TL (%80 geri kazanım) alır, pay sahiplerine bir şey kalmaz. Varlıklar 400 milyon TL'ye çıkarsa alacaklılar yine yalnızca 100 milyon TL, pay sahipleri 300 milyon TL alır. Alacaklıların getirisi sınırlıdır; pay sahiplerinin değildir.",
+        "key_terms": [],
+        "example": {
+          "en": "Debt = min(V, 100); equity = max(V - 100, 0)",
+          "tr": "Borç = min(V, 100); özkaynak = max(V - 100, 0)",
+          "formula_latex": "\\min(V,D)\\ \\text{and}\\ \\max(V-D,0)"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Creditors are paid first, but this does not make them risk-free. Shareholders do not control day-to-day operations; managers do. Shareholder value is not the same as short-term profit. A firm can create value for shareholders while harming other stakeholders; the conflict is the point of governance. ESG is about material financial effects, not only ethics. High ESG ratings from one provider do not guarantee strong performance on another provider's scale.",
+        "tr": "Alacaklılar önce ödeme alır, ancak bu onları risksiz kılmaz. Pay sahipleri günlük operasyonu yönetmez; yöneticiler yönetir. Pay sahibi değeri kısa vadeli kâr demek değildir. Bir şirket diğer paydaşlara zarar verirken pay sahipleri için değer yaratabilir; yönetişimin konusu bu çatışmadır. ÇSY yalnızca etikle ilgili değil, önemli finansal etkilerle ilgilidir. Bir sağlayıcıdan gelen yüksek ÇSY notu başka bir sağlayıcının ölçeğinde güçlü performans anlamına gelmez.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Creditors hold fixed contractual claims paid first with capped upside; shareholders hold the residual claim with unlimited upside and limited downside. Many stakeholder groups have different interests, and ESG factors help investors find material risks and opportunities.",
+    "summary_tr": "Alacaklıların önce ödenen, getirisi sınırlı sabit sözleşme hakları vardır; pay sahiplerinin sınırsız yukarı yönlü, sınırlı aşağı yönlü artık hakkı vardır. Birçok paydaş grubunun çıkarları farklıdır ve ÇSY faktörleri yatırımcıların önemli riskleri ve fırsatları bulmasına yardım eder.",
+    "common_traps_tr": [
+      "Alacaklılar önce ödenir ama risksiz değildir.",
+      "Pay sahipleri riskli projeleri, alacaklılar güvenliği tercih eder.",
+      "Paydaş çıkarları hem örtüşür hem çatışır.",
+      "ÇSY notları sağlayıcılar arasında farklıdır; önemliliği kendiniz kontrol edin.",
+      "Özkaynak, firma değeri üzerine alım opsiyonu gibidir."
+    ],
+    "vocab_ids": [
+      "creditor",
+      "shareholder",
+      "stakeholder",
+      "residual-claim",
+      "covenant",
+      "seniority",
+      "collateral",
+      "esg",
+      "materiality",
+      "implicit-claim",
+      "supplier",
+      "regulator",
+      "sustainability",
+      "payoff",
+      "most-likely",
+      "conflict-of-interest"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "CI-02-a-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with shareholders, creditors most likely have:",
+      "stem_tr": "Pay sahiplerine kıyasla alacaklıların büyük olasılıkla şunları vardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a fixed contractual claim with priority in bankruptcy",
+          "tr": "iflasta önceliği olan sabit bir sözleşme hakkı"
+        },
+        {
+          "key": "B",
+          "en": "an unlimited upside claim on profits",
+          "tr": "kârlar üzerinde sınırsız yukarı yönlü hak"
+        },
+        {
+          "key": "C",
+          "en": "voting control over the board",
+          "tr": "yönetim kurulu üzerinde oy kontrolü"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Creditors are promised fixed payments and are paid ahead of shareholders, but cannot share in extra profit.",
+      "explanation_tr": "Alacaklılara sabit ödemeler vaat edilir ve pay sahiplerinden önce ödenirler; ancak ek kârdan pay alamazlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Unlimited upside belongs to shareholders.",
+          "tr": "Sınırsız yukarı yönlü getiri pay sahiplerine aittir."
+        },
+        "C": {
+          "en": "Voting rights usually belong to shareholders.",
+          "tr": "Oy hakları genellikle pay sahiplerine aittir."
+        }
+      },
+      "vocab_ids": [
+        "creditor",
+        "seniority",
+        "shareholder",
+        "residual-claim"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-a-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Shareholders are said to hold the residual claim on a firm because they:",
+      "stem_tr": "Pay sahiplerinin firma üzerinde artık hakka sahip olduğu söylenir; çünkü:",
+      "options": [
+        {
+          "key": "A",
+          "en": "are guaranteed a fixed dividend",
+          "tr": "sabit bir temettü garantisi alırlar"
+        },
+        {
+          "key": "B",
+          "en": "receive what is left after all other claims are paid",
+          "tr": "diğer tüm talepler ödendikten sonra kalanı alırlar"
+        },
+        {
+          "key": "C",
+          "en": "are paid before lenders in bankruptcy",
+          "tr": "iflasta borç verenlerden önce ödenirler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity holders are paid last, so their return depends on what remains.",
+      "explanation_tr": "Özkaynak sahipleri en son ödenir; getirileri kalana bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Dividends are not guaranteed.",
+          "tr": "Temettü garanti değildir."
+        },
+        "C": {
+          "en": "Lenders are paid before shareholders in bankruptcy.",
+          "tr": "İflasta borç verenler pay sahiplerinden önce ödenir."
+        }
+      },
+      "vocab_ids": [
+        "residual-claim",
+        "shareholder",
+        "creditor",
+        "seniority"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-a-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm owes creditors TRY 100 million. Its assets are worth TRY 150 million. If the firm is liquidated, the amount received by shareholders is closest to:",
+      "stem_tr": "Bir firmanın alacaklılara 100 milyon TL borcu vardır. Varlıkları 150 milyon TL değerindedir. Firma tasfiye edilirse pay sahiplerinin alacağı tutar en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 150 million",
+          "tr": "150 milyon TL",
+          "value": 150.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 100 million",
+          "tr": "100 milyon TL",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 50 million",
+          "tr": "50 milyon TL",
+          "value": 50.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Shareholders get max(V - D, 0) = 150 - 100 = TRY 50 million.",
+      "explanation_tr": "Pay sahipleri max(V - D, 0) = 150 - 100 = 50 milyon TL alır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 150 million is the total asset value, which also pays creditors.",
+          "tr": "150 milyon TL toplam varlık değeridir; alacaklıları da öder."
+        },
+        "B": {
+          "en": "TRY 100 million is what creditors receive.",
+          "tr": "100 milyon TL alacaklıların aldığı tutardır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the amount left for shareholders.",
+          "tr": "Pay sahiplerine kalan tutar isteniyor."
+        },
+        {
+          "en": "Equity = max(asset value - debt, 0).",
+          "tr": "Özkaynak = max(varlık değeri - borç, 0).",
+          "formula_latex": "E=\\max(V-D,0)"
+        },
+        {
+          "en": "150 - 100.",
+          "tr": "150 - 100."
+        },
+        {
+          "en": "TRY 50 million.",
+          "tr": "50 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "150 [-] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "max(150-100,0)",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "payoff",
+        "residual-claim",
+        "closest-to",
+        "creditor"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-a-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm has just raised bank loans and then invests in a much riskier project with a large potential gain. This is most likely favored by:",
+      "stem_tr": "Bir firma yeni banka kredisi aldı ve sonra büyük kazanç potansiyeli olan çok daha riskli bir projeye yatırım yapıyor. Bunu büyük olasılıkla şu taraf destekler:",
+      "options": [
+        {
+          "key": "A",
+          "en": "creditors, who gain from higher risk",
+          "tr": "riskin artmasından kazanan alacaklılar"
+        },
+        {
+          "key": "B",
+          "en": "shareholders, who share the upside but have limited downside",
+          "tr": "yukarı yönlü getiriyi paylaşan ama aşağı yönlü kaybı sınırlı olan pay sahipleri"
+        },
+        {
+          "key": "C",
+          "en": "neither group, since risk helps both equally",
+          "tr": "risk ikisine de eşit yarar sağladığı için iki grup da değil"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity holders gain from large wins and lose at most their investment, while creditors face more default risk without extra return.",
+      "explanation_tr": "Özkaynak sahipleri büyük kazançlardan yararlanır ve en fazla yatırımlarını kaybeder; alacaklılar ek getiri olmadan daha çok temerrüt riski taşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Creditors have capped upside, so more risk only hurts them.",
+          "tr": "Alacaklıların getirisi sınırlıdır; daha çok risk yalnızca onlara zarar verir."
+        },
+        "C": {
+          "en": "Risk affects the two groups differently.",
+          "tr": "Risk iki grubu farklı etkiler."
+        }
+      },
+      "vocab_ids": [
+        "creditor",
+        "shareholder",
+        "payoff",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-a-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes the payoff of equity relative to the payoff of debt?",
+      "stem_tr": "Özkaynağın getirisini borcun getirisiyle kıyaslayan hangi ifade en iyisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Equity has a fixed payoff and debt has an unlimited payoff",
+          "tr": "Özkaynağın getirisi sabit, borcun getirisi sınırsızdır"
+        },
+        {
+          "key": "B",
+          "en": "Both have identical payoffs in all outcomes",
+          "tr": "İkisinin getirisi her durumda aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "Equity has unlimited upside and downside limited to the investment, while debt has capped upside and bears the downside of default",
+          "tr": "Özkaynağın sınırsız yukarı yönlü getirisi ve yatırımla sınırlı zararı vardır; borcun getirisi sınırlıdır ve temerrüt zararını taşır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "This is why equity resembles a call option on firm value and debt resembles a capped claim.",
+      "explanation_tr": "Bu nedenle özkaynak firma değeri üzerine alım opsiyonuna, borç ise sınırlı bir hakka benzer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equity's payoff is variable and debt's is capped.",
+          "tr": "Özkaynağın getirisi değişkendir, borcun getirisi sınırlıdır."
+        },
+        "B": {
+          "en": "Payoffs differ in every outcome where the firm is solvent.",
+          "tr": "Firma ödeme gücüne sahipken getiriler her durumda farklıdır."
+        }
+      },
+      "vocab_ids": [
+        "payoff",
+        "creditor",
+        "shareholder",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-b-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which stakeholder group has timely payment and a lasting relationship as a primary interest?",
+      "stem_tr": "Hangi paydaş grubunun temel çıkarı zamanında ödeme ve kalıcı ilişkidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Suppliers",
+          "tr": "Tedarikçiler"
+        },
+        {
+          "key": "B",
+          "en": "Regulators",
+          "tr": "Düzenleyiciler"
+        },
+        {
+          "key": "C",
+          "en": "Shareholders",
+          "tr": "Pay sahipleri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Suppliers sell on credit and depend on being paid and on repeat orders.",
+      "explanation_tr": "Tedarikçiler vadeyle satar; ödeme almaya ve tekrar eden siparişlere bağlıdırlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Regulators seek compliance and taxes.",
+          "tr": "Düzenleyiciler uyum ve vergi arar."
+        },
+        "C": {
+          "en": "Shareholders seek returns and growth.",
+          "tr": "Pay sahipleri getiri ve büyüme arar."
+        }
+      },
+      "vocab_ids": [
+        "supplier",
+        "stakeholder",
+        "regulator",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-b-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A company announces layoffs to raise its profit margin. Which pair of interests is most clearly in conflict?",
+      "stem_tr": "Bir şirket kâr marjını artırmak için işten çıkarma duyuruyor. Hangi çıkar çifti en açık biçimde çatışmaktadır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Creditors' interest in repayment and suppliers' interest in payment",
+          "tr": "Alacaklıların geri ödeme çıkarı ve tedarikçilerin ödeme çıkarı"
+        },
+        {
+          "key": "B",
+          "en": "Regulators' interest in taxes and customers' interest in quality",
+          "tr": "Düzenleyicilerin vergi çıkarı ve müşterilerin kalite çıkarı"
+        },
+        {
+          "key": "C",
+          "en": "Shareholders' interest in profit and employees' interest in job security",
+          "tr": "Pay sahiplerinin kâr çıkarı ve çalışanların iş güvencesi çıkarı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cost cutting helps profit but harms employees' jobs.",
+      "explanation_tr": "Maliyet kesintisi kâra yardım eder ama çalışanların işlerine zarar verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Both creditors and suppliers want to be paid, so there is no clear conflict.",
+          "tr": "Alacaklılar ve tedarikçilerin ikisi de ödenmek ister; açık bir çatışma yoktur."
+        },
+        "B": {
+          "en": "Taxes and quality are not directly opposed in this case.",
+          "tr": "Bu durumda vergi ve kalite doğrudan karşıt değildir."
+        }
+      },
+      "vocab_ids": [
+        "stakeholder",
+        "shareholder",
+        "conflict-of-interest",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-b-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely an implicit (non-contractual) claim on a firm?",
+      "stem_tr": "Aşağıdakilerden hangisinin bir firma üzerindeki örtülü (sözleşmeye dayanmayan) hak olması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Employees' expectation of fair treatment and job security",
+          "tr": "Çalışanların adil muamele ve iş güvencesi beklentisi"
+        },
+        {
+          "key": "B",
+          "en": "A bank's right to scheduled loan payments",
+          "tr": "Bir bankanın planlı kredi ödemelerini alma hakkı"
+        },
+        {
+          "key": "C",
+          "en": "A bondholder's right to coupon payments",
+          "tr": "Bir tahvil sahibinin kupon ödemelerini alma hakkı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Loans and bonds have written terms; employees' fair treatment is mostly an unwritten expectation backed by reputation.",
+      "explanation_tr": "Kredi ve tahvillerin yazılı şartları vardır; çalışanların adil muamelesi çoğunlukla itibara dayalı yazılı olmayan bir beklentidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Loan payments are explicit contractual claims.",
+          "tr": "Kredi ödemeleri açık sözleşmeye dayalı haklardır."
+        },
+        "C": {
+          "en": "Coupons are explicit contractual claims.",
+          "tr": "Kuponlar açık sözleşmeye dayalı haklardır."
+        }
+      },
+      "vocab_ids": [
+        "implicit-claim",
+        "stakeholder",
+        "supplier",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-b-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Governments and regulators, as stakeholders, are most likely to be primarily interested in the firm's:",
+      "stem_tr": "Paydaş olarak devlet ve düzenleyicilerin esas olarak firmanın hangi yönüyle ilgilenmesi en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "dividend policy only",
+          "tr": "yalnızca temettü politikası"
+        },
+        {
+          "key": "B",
+          "en": "tax payments and compliance with laws",
+          "tr": "vergi ödemeleri ve mevzuata uyum"
+        },
+        {
+          "key": "C",
+          "en": "share price on a particular day",
+          "tr": "belirli bir gündeki pay fiyatı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Governments collect taxes and enforce rules for the public interest.",
+      "explanation_tr": "Devlet kamu yararı için vergi toplar ve kuralları uygular.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Dividend policy mainly concerns owners.",
+          "tr": "Temettü politikası esas olarak sahipleri ilgilendirir."
+        },
+        "C": {
+          "en": "Daily share prices are a market matter.",
+          "tr": "Günlük pay fiyatı bir piyasa konusudur."
+        }
+      },
+      "vocab_ids": [
+        "regulator",
+        "stakeholder",
+        "sustainability",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-b-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Why do investors increasingly pay attention to non-shareholder stakeholders?",
+      "stem_tr": "Yatırımcılar pay sahibi olmayan paydaşlara neden giderek daha fazla önem veriyor?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Poor treatment of employees, customers or communities can damage reputation, cash flows and long-term value",
+          "tr": "Çalışanlara, müşterilere ya da topluma kötü davranmak itibara, nakit akışlarına ve uzun vadeli değere zarar verebilir"
+        },
+        {
+          "key": "B",
+          "en": "Non-shareholders always own the majority of the equity",
+          "tr": "Pay sahibi olmayanlar her zaman özkaynağın çoğunluğuna sahiptir"
+        },
+        {
+          "key": "C",
+          "en": "Stakeholder interests never conflict with shareholder interests",
+          "tr": "Paydaş çıkarları pay sahibi çıkarlarıyla asla çatışmaz"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Stakeholder relationships affect revenue, costs, regulation risk and so shareholder value over time.",
+      "explanation_tr": "Paydaş ilişkileri gelir, maliyet, düzenleme riski ve dolayısıyla zaman içinde pay sahibi değerini etkiler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Non-shareholders by definition do not own the equity.",
+          "tr": "Pay sahibi olmayanlar tanım gereği özkaynağa sahip değildir."
+        },
+        "C": {
+          "en": "Conflicts do occur, which is why analysts study them.",
+          "tr": "Çatışmalar olur; analistlerin bunları incelemesinin nedeni budur."
+        }
+      },
+      "vocab_ids": [
+        "stakeholder",
+        "sustainability",
+        "shareholder",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-c-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Which row correctly classifies the ESG factors: carbon emissions, board independence, employee safety?",
+      "stem_tr": "Hangi satır şu ÇSY faktörlerini doğru sınıflandırır: karbon emisyonu, yönetim kurulu bağımsızlığı, çalışan güvenliği?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Social, environmental, governance",
+          "tr": "Sosyal, çevresel, yönetişim"
+        },
+        {
+          "key": "B",
+          "en": "Environmental, governance, social",
+          "tr": "Çevresel, yönetişim, sosyal"
+        },
+        {
+          "key": "C",
+          "en": "Governance, social, environmental",
+          "tr": "Yönetişim, sosyal, çevresel"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Emissions are environmental, board independence is governance, and safety is social.",
+      "explanation_tr": "Emisyon çevreseldir, yönetim kurulu bağımsızlığı yönetişimdir, güvenlik sosyaldir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The classification here is shuffled.",
+          "tr": "Buradaki sınıflandırma karışıktır."
+        },
+        "C": {
+          "en": "Emissions are not governance and safety is not environmental in this sense.",
+          "tr": "Emisyon yönetişim değildir ve güvenlik bu anlamda çevresel değildir."
+        }
+      },
+      "vocab_ids": [
+        "esg",
+        "materiality",
+        "respectively",
+        "sustainability"
+      ],
+      "pattern_ids": [
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-c-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "ESG integration, as an investment approach, most likely means:",
+      "stem_tr": "Bir yatırım yaklaşımı olarak ÇSY entegrasyonu büyük olasılıkla şu anlama gelir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "excluding every company that emits any carbon",
+          "tr": "karbon salan her şirketi dışlamak"
+        },
+        {
+          "key": "B",
+          "en": "buying only companies with the highest rating from one provider",
+          "tr": "yalnızca tek bir sağlayıcıdan en yüksek notu alan şirketleri satın almak"
+        },
+        {
+          "key": "C",
+          "en": "including material ESG factors in forecasts, risk assessment and valuation",
+          "tr": "önemli ÇSY faktörlerini tahminlere, risk değerlendirmesine ve değerlemeye dahil etmek"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Integration treats ESG as additional financial information about risk and cash flows.",
+      "explanation_tr": "Entegrasyon ÇSY'yi risk ve nakit akışları hakkında ek finansal bilgi olarak ele alır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Blanket exclusion is negative screening.",
+          "tr": "Toptan dışlama negatif elemedir."
+        },
+        "B": {
+          "en": "Following one rating is not integration.",
+          "tr": "Tek bir notu izlemek entegrasyon değildir."
+        }
+      },
+      "vocab_ids": [
+        "esg",
+        "materiality",
+        "sustainability",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-c-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst finds two ESG rating providers give the same company very different scores. The most likely explanation is that the providers:",
+      "stem_tr": "Bir analist, iki ÇSY not sağlayıcısının aynı şirkete çok farklı puanlar verdiğini görüyor. En olası açıklama sağlayıcıların şunları yapmasıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "always use identical methods",
+          "tr": "her zaman aynı yöntemi kullanmaları"
+        },
+        {
+          "key": "B",
+          "en": "use different data, definitions and weights",
+          "tr": "farklı veri, tanım ve ağırlık kullanmaları"
+        },
+        {
+          "key": "C",
+          "en": "avoid looking at governance",
+          "tr": "yönetişime hiç bakmamaları"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "ESG ratings are not standardized, so the analyst must judge which issues are material for the business.",
+      "explanation_tr": "ÇSY notları standartlaşmamıştır; analist işletme için hangi konuların önemli olduğuna kendisi karar vermelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Identical methods would give similar scores.",
+          "tr": "Aynı yöntemler benzer puanlar verirdi."
+        },
+        "C": {
+          "en": "Most providers do include governance.",
+          "tr": "Çoğu sağlayıcı yönetişimi de kapsar."
+        }
+      },
+      "vocab_ids": [
+        "esg",
+        "materiality",
+        "analytical",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-c-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund refuses to hold tobacco and weapons producers regardless of their financial prospects. This approach is best described as:",
+      "stem_tr": "Bir fon, finansal beklentilerinden bağımsız olarak tütün ve silah üreticilerini portföyüne almıyor. Bu yaklaşım en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "ESG integration",
+          "tr": "ÇSY entegrasyonu"
+        },
+        {
+          "key": "B",
+          "en": "thematic investing",
+          "tr": "tematik yatırım"
+        },
+        {
+          "key": "C",
+          "en": "negative screening (exclusion)",
+          "tr": "negatif eleme (dışlama)"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Excluding sectors on principle is exclusion or negative screening.",
+      "explanation_tr": "Sektörleri ilke olarak dışlamak dışlama ya da negatif elemedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Integration weighs ESG factors in valuation rather than banning sectors.",
+          "tr": "Entegrasyon sektörleri yasaklamak yerine ÇSY faktörlerini değerlemede tartar."
+        },
+        "B": {
+          "en": "Thematic investing targets a chosen theme such as clean energy.",
+          "tr": "Tematik yatırım temiz enerji gibi seçilmiş bir temayı hedefler."
+        }
+      },
+      "vocab_ids": [
+        "esg",
+        "sustainability",
+        "most-appropriate",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-02-c-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A coal-heavy utility faces a likely carbon tax. Which ESG-related effect on its valuation is most plausible?",
+      "stem_tr": "Kömür ağırlıklı bir elektrik şirketi olası bir karbon vergisiyle karşı karşıya. Değerlemesi üzerindeki hangi ÇSY ile ilgili etki en makuldür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Higher costs and risk lower expected cash flows and may raise the cost of capital",
+          "tr": "Yüksek maliyet ve risk beklenen nakit akışlarını düşürür ve sermaye maliyetini artırabilir"
+        },
+        {
+          "key": "B",
+          "en": "Lower costs and risk raise expected cash flows",
+          "tr": "Düşük maliyet ve risk beklenen nakit akışlarını artırır"
+        },
+        {
+          "key": "C",
+          "en": "No effect, because environmental factors are not financial",
+          "tr": "Çevresel faktörler finansal olmadığı için etki yok"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Transition risk is a financial risk: it changes costs, capital spending and investor required returns.",
+      "explanation_tr": "Geçiş riski finansal bir risktir: maliyetleri, yatırım harcamasını ve yatırımcıların istediği getiriyi değiştirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A carbon tax raises, not lowers, costs.",
+          "tr": "Karbon vergisi maliyeti düşürmez, artırır."
+        },
+        "C": {
+          "en": "Environmental factors can affect cash flows materially.",
+          "tr": "Çevresel faktörler nakit akışlarını önemli ölçüde etkileyebilir."
+        }
+      },
+      "vocab_ids": [
+        "esg",
+        "materiality",
+        "sustainability",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

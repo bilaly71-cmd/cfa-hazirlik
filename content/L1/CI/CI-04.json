@@ -1,0 +1,1251 @@
+{
+  "module_id": "CI-04",
+  "lesson": {
+    "id": "CI-04-lesson",
+    "level": "L1",
+    "topic": "CI",
+    "module_id": "CI-04",
+    "los_ids": [
+      "CI-04-a",
+      "CI-04-b",
+      "CI-04-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Working Capital and Liquidity",
+    "title_tr": "İşletme Sermayesi ve Likidite",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Cash is tied up between buying and collecting",
+        "heading_tr": "Nakit, satın alma ile tahsilat arasında bağlanır",
+        "en": "A company buys materials, makes goods, sells them and finally collects cash. In between, money is locked in inventory and receivables, partly offset by what the company still owes suppliers. If the gap is long, the company needs to borrow to fund it; if it is short, the company is efficient and can use the cash elsewhere. A Turkish retailer that sells on installment and pays suppliers in 30 days must finance the difference, and with high lira interest rates that financing is expensive. Working capital management therefore aims to keep enough liquidity to meet obligations while not tying up cash that earns nothing.",
+        "tr": "Bir şirket malzeme alır, mal üretir, satar ve sonunda nakit tahsil eder. Bu arada para stokta ve alacaklarda bağlanır; kısmen şirketin tedarikçilere hâlâ borçlu olmasıyla dengelenir. Aradaki boşluk uzunsa şirket bunu finanse etmek için borçlanmak zorundadır; kısaysa şirket verimlidir ve nakdi başka yerde kullanabilir. Taksitle satış yapıp tedarikçilerine 30 günde ödeme yapan bir Türk perakendeci farkı finanse etmek zorundadır ve yüksek lira faizlerinde bu finansman pahalıdır. Bu yüzden işletme sermayesi yönetimi, yükümlülükleri karşılayacak yeterli likiditeyi korurken hiçbir getiri sağlamayan nakdi bağlamamayı hedefler.",
+        "key_terms": [
+          "working capital",
+          "liquidity",
+          "cash conversion cycle"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Cash conversion cycle",
+        "heading_tr": "Nakit dönüşüm döngüsü",
+        "en": "Days of inventory on hand (DIO) = average inventory / COGS x 365. Days sales outstanding (DSO) = average receivables / revenue x 365. Days payables outstanding (DPO) = average payables / COGS x 365. The cash conversion cycle (CCC) = DIO + DSO - DPO: the number of days cash is tied up. A shorter CCC means less financing is needed. Use the same days convention (365) throughout and compare firms in the same industry. A company can shorten its CCC by cutting inventory, collecting faster or paying suppliers later, though stretching payables too far harms supplier relations.",
+        "tr": "Stok devir günü (DIO) = ortalama stok / satışların maliyeti x 365. Alacak tahsil süresi (DSO) = ortalama alacaklar / gelir x 365. Borç ödeme süresi (DPO) = ortalama ticari borçlar / satışların maliyeti x 365. Nakit dönüşüm döngüsü (CCC) = DIO + DSO - DPO: nakdin kaç gün bağlı kaldığıdır. Daha kısa CCC daha az finansman ihtiyacı demektir. Tüm hesaplarda aynı gün sayısını (365) kullanın ve firmaları aynı sektör içinde kıyaslayın. Şirket stoku azaltarak, daha hızlı tahsil ederek ya da tedarikçilere daha geç ödeyerek CCC'yi kısaltabilir; ancak ödemeleri çok uzatmak tedarikçi ilişkilerine zarar verir.",
+        "key_terms": [
+          "DIO",
+          "DSO",
+          "DPO"
+        ],
+        "formula_latex": "CCC=DIO+DSO-DPO"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Liquidity ratios",
+        "heading_tr": "Likidite oranları",
+        "en": "Current ratio = current assets / current liabilities. Quick ratio = (cash + marketable securities + receivables) / current liabilities, which leaves out slow-to-sell inventory. Cash ratio = (cash + marketable securities) / current liabilities. Defensive interval = liquid assets / daily cash expenses, the number of days the firm can pay its bills without new cash. Higher ratios mean more liquidity but also more idle assets. Ratios must be read together with industry norms, the cash conversion cycle and access to credit lines.",
+        "tr": "Cari oran = dönen varlıklar / kısa vadeli yükümlülükler. Asit-test (hızlı) oran = (nakit + piyasa değeri olan menkul kıymetler + alacaklar) / kısa vadeli yükümlülükler; satması yavaş olan stokları dışarıda bırakır. Nakit oranı = (nakit + piyasa değeri olan menkul kıymetler) / kısa vadeli yükümlülükler. Savunma aralığı = likit varlıklar / günlük nakit giderleri; şirketin yeni nakit girişi olmadan faturalarını kaç gün ödeyebileceğidir. Yüksek oranlar daha fazla likidite ama daha çok atıl varlık demektir. Oranlar sektör normları, nakit dönüşüm döngüsü ve kredi limitlerine erişimle birlikte okunmalıdır.",
+        "key_terms": [
+          "current ratio",
+          "quick ratio",
+          "cash ratio",
+          "defensive interval"
+        ],
+        "formula_latex": "\\text{Current ratio}=\\frac{CA}{CL},\\quad \\text{Quick}=\\frac{C+MS+AR}{CL}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Goals, approaches and trade credit",
+        "heading_tr": "Hedefler, yaklaşımlar ve ticari kredi",
+        "en": "Goals of working capital and liquidity management: meet obligations on time, keep the cost of funding low and avoid holding idle cash. Primary sources of liquidity are cash balances, operating cash flow and committed credit lines; secondary sources include selling assets, renegotiating debt or reorganizing, which are costly and signal stress. A conservative approach holds more cash and inventory (safe but lower return); an aggressive approach holds little (higher return but more risk). Trade credit terms such as 2/10 net 30 offer a 2% discount if paid in 10 days, otherwise full payment in 30. Forgoing the discount costs (1 + 2/98)^(365/20) - 1, about 44.6% a year, which is usually more expensive than a bank loan, so paying early is normally better.",
+        "tr": "İşletme sermayesi ve likidite yönetiminin hedefleri: yükümlülükleri zamanında karşılamak, finansman maliyetini düşük tutmak ve atıl nakit bulundurmamak. Birincil likidite kaynakları nakit bakiyeleri, faaliyet nakit akışı ve taahhütlü kredi limitleridir; ikincil kaynaklar varlık satışı, borç yeniden yapılandırma ya da yeniden organizasyonu kapsar; bunlar maliyetlidir ve stres sinyali verir. Muhafazakâr yaklaşım daha çok nakit ve stok tutar (güvenli ama düşük getirili); agresif yaklaşım az tutar (yüksek getirili ama riskli). 2/10 net 30 gibi ticari kredi koşulları 10 günde ödenirse %2 iskonto, aksi halde 30 günde tam ödeme sunar. İskontoyu kaçırmanın maliyeti (1 + 2/98)^(365/20) - 1 olup yılda yaklaşık %44,6'dır; bu genellikle banka kredisinden pahalıdır, bu yüzden erken ödemek normalde daha iyidir.",
+        "key_terms": [
+          "trade credit",
+          "primary source of liquidity",
+          "secondary source of liquidity"
+        ],
+        "formula_latex": "\\text{Cost}=\\left(1+\\frac{d}{1-d}\\right)^{\\frac{365}{N-n}}-1"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: Firm X",
+        "heading_tr": "Çözümlü örnek: X Firması",
+        "en": "Firm X (TRY million): revenue 2,400, COGS 1,800, average inventory 300, average receivables 240, average payables 150. DIO = 300 / 1,800 x 365 = 60.8 days. DSO = 240 / 2,400 x 365 = 36.5 days. DPO = 150 / 1,800 x 365 = 30.4 days. CCC = 60.8 + 36.5 - 30.4 = 66.9 days. Current assets of 700 (cash 100, securities 50, receivables 240, inventory 300, other 10) against current liabilities of 500 give a current ratio of 1.40, quick ratio of 0.78 and cash ratio of 0.30.",
+        "tr": "X Firması (milyon TL): gelir 2.400, satışların maliyeti 1.800, ortalama stok 300, ortalama alacaklar 240, ortalama ticari borçlar 150. DIO = 300 / 1.800 x 365 = 60,8 gün. DSO = 240 / 2.400 x 365 = 36,5 gün. DPO = 150 / 1.800 x 365 = 30,4 gün. CCC = 60,8 + 36,5 - 30,4 = 66,9 gün. Dönen varlıklar 700 (nakit 100, menkul 50, alacaklar 240, stok 300, diğer 10) ve kısa vadeli yükümlülükler 500 ile cari oran 1,40, asit-test oranı 0,78 ve nakit oranı 0,30 olur.",
+        "key_terms": [],
+        "example": {
+          "en": "CCC = 60.8 + 36.5 - 30.4 = 66.9 days",
+          "tr": "CCC = 60,8 + 36,5 - 30,4 = 66,9 gün",
+          "formula_latex": "CCC=60.8+36.5-30.4=66.9"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Use COGS (not sales) for DIO and DPO, and sales for DSO. Subtract, not add, DPO in the CCC. A longer payables period lowers the CCC but may harm relations or cost the discount. A high current ratio built on slow inventory is weaker than it looks. The quick ratio excludes inventory. Compare ratios with the same sector and the same period. The cost of forgoing a discount is annualized with compounding over (N - n) days, not over N.",
+        "tr": "DIO ve DPO için satışların maliyetini (satışı değil), DSO için geliri kullanın. CCC'de DPO'yu toplamayın, çıkarın. Daha uzun ödeme süresi CCC'yi düşürür ama ilişkilere zarar verebilir ya da iskontoyu kaçırtabilir. Yavaş stokla oluşmuş yüksek cari oran göründüğünden zayıftır. Asit-test oranı stoku içermez. Oranları aynı sektör ve aynı dönemle kıyaslayın. İskontoyu kaçırmanın maliyeti N gün üzerinden değil, (N - n) gün üzerinden bileşik olarak yıllıklandırılır.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "The cash conversion cycle is DIO + DSO - DPO. Liquidity is measured with current, quick and cash ratios and the defensive interval. Management balances liquidity and return, uses primary and secondary sources, and compares trade credit discounts with financing costs.",
+    "summary_tr": "Nakit dönüşüm döngüsü DIO + DSO - DPO'dur. Likidite cari, asit-test ve nakit oranları ile savunma aralığıyla ölçülür. Yönetim likidite ve getiriyi dengeler, birincil ve ikincil kaynakları kullanır ve ticari kredi iskontolarını finansman maliyetleriyle kıyaslar.",
+    "common_traps_tr": [
+      "DIO ve DPO satışların maliyetiyle, DSO gelirle hesaplanır.",
+      "CCC = DIO + DSO - DPO (DPO çıkarılır).",
+      "Asit-test oranı stoku dışarıda bırakır.",
+      "İskonto kaçırma maliyeti (N - n) gün üzerinden bileşik yıllıklandırılır.",
+      "Yüksek likidite oranı fazla atıl varlık anlamına da gelebilir."
+    ],
+    "vocab_ids": [
+      "working-capital",
+      "cash-conversion-cycle",
+      "days-sales-outstanding",
+      "current-ratio",
+      "quick-ratio",
+      "cash-ratio",
+      "defensive-interval",
+      "trade-credit",
+      "liquidity",
+      "line-of-credit",
+      "inventory",
+      "accounts-receivable",
+      "closest-to",
+      "assume",
+      "days-inventory",
+      "days-payable"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "CI-04-a-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Firm X has average inventory of TRY 300 million and cost of goods sold of TRY 1,800 million. Using 365 days, days of inventory on hand is closest to:",
+      "stem_tr": "X Firmasının ortalama stoku 300 milyon TL, satışların maliyeti 1.800 milyon TL'dir. 365 gün kullanılarak stok devir günü en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "60.8 days",
+          "tr": "60.8 gün",
+          "value": 60.8
+        },
+        {
+          "key": "B",
+          "en": "45.6 days",
+          "tr": "45.6 gün",
+          "value": 45.6
+        },
+        {
+          "key": "C",
+          "en": "6.0 days",
+          "tr": "6.0 gün",
+          "value": 6.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "DIO = average inventory / COGS x 365 = 300 / 1,800 x 365 = 60.8 days.",
+      "explanation_tr": "DIO = ortalama stok / satışların maliyeti x 365 = 300 / 1.800 x 365 = 60,8 gün.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "45.6 days uses sales (2,400) instead of COGS.",
+          "tr": "45,6 gün, satışların maliyeti yerine satışları (2.400) kullanır."
+        },
+        "C": {
+          "en": "6.0 is inventory turnover (COGS / inventory), not days.",
+          "tr": "6,0 stok devir hızıdır (satışların maliyeti / stok), gün değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need days of inventory on hand.",
+          "tr": "Stok devir günü isteniyor."
+        },
+        {
+          "en": "DIO = average inventory / COGS x 365.",
+          "tr": "DIO = ortalama stok / satışların maliyeti x 365.",
+          "formula_latex": "DIO=\\frac{Inventory}{COGS}\\times 365"
+        },
+        {
+          "en": "300 / 1,800 = 0.1667.",
+          "tr": "300 / 1.800 = 0,1667."
+        },
+        {
+          "en": "x 365 = 60.8 days.",
+          "tr": "x 365 = 60,8 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300 [÷] 1800 [×] 365 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "300/1800*365",
+        "unit": "days"
+      },
+      "vocab_ids": [
+        "days-inventory",
+        "inventory",
+        "closest-to",
+        "cash-conversion-cycle"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-a-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Firm X has average receivables of TRY 240 million and revenue of TRY 2,400 million (COGS TRY 1,800 million). Using 365 days, days sales outstanding is closest to:",
+      "stem_tr": "X Firmasının ortalama alacakları 240 milyon TL, geliri 2.400 milyon TL'dir (satışların maliyeti 1.800 milyon TL). 365 gün kullanılarak alacak tahsil süresi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "48.7 days",
+          "tr": "48.7 gün",
+          "value": 48.7
+        },
+        {
+          "key": "B",
+          "en": "36.5 days",
+          "tr": "36.5 gün",
+          "value": 36.5
+        },
+        {
+          "key": "C",
+          "en": "10.0 days",
+          "tr": "10.0 gün",
+          "value": 10.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "DSO = average receivables / revenue x 365 = 240 / 2,400 x 365 = 36.5 days.",
+      "explanation_tr": "DSO = ortalama alacaklar / gelir x 365 = 240 / 2.400 x 365 = 36,5 gün.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "48.7 days uses COGS rather than revenue.",
+          "tr": "48,7 gün, gelir yerine satışların maliyetini kullanır."
+        },
+        "C": {
+          "en": "10.0 is receivables turnover (revenue / receivables), not days.",
+          "tr": "10,0 alacak devir hızıdır (gelir / alacaklar), gün değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need DSO.",
+          "tr": "DSO isteniyor."
+        },
+        {
+          "en": "DSO = average receivables / revenue x 365.",
+          "tr": "DSO = ortalama alacaklar / gelir x 365.",
+          "formula_latex": "DSO=\\frac{AR}{Revenue}\\times 365"
+        },
+        {
+          "en": "240 / 2,400 = 0.10.",
+          "tr": "240 / 2.400 = 0,10."
+        },
+        {
+          "en": "x 365 = 36.5 days.",
+          "tr": "x 365 = 36,5 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "240 [÷] 2400 [×] 365 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "240/2400*365",
+        "unit": "days"
+      },
+      "vocab_ids": [
+        "days-sales-outstanding",
+        "accounts-receivable",
+        "closest-to",
+        "cash-conversion-cycle"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-a-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Firm X has DIO of 60.8 days, DSO of 36.5 days and DPO of 30.4 days. Its cash conversion cycle is closest to:",
+      "stem_tr": "X Firmasının DIO'su 60,8 gün, DSO'su 36,5 gün ve DPO'su 30,4 gündür. Nakit dönüşüm döngüsü en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "127.7 days",
+          "tr": "127.7 gün",
+          "value": 127.7
+        },
+        {
+          "key": "B",
+          "en": "6.1 days",
+          "tr": "6.1 gün",
+          "value": 6.1
+        },
+        {
+          "key": "C",
+          "en": "66.9 days",
+          "tr": "66.9 gün",
+          "value": 66.9
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "CCC = DIO + DSO - DPO = 60.8 + 36.5 - 30.4 = 66.9 days.",
+      "explanation_tr": "CCC = DIO + DSO - DPO = 60,8 + 36,5 - 30,4 = 66,9 gün.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "127.7 days adds all three components, including DPO.",
+          "tr": "127,7 gün, DPO dahil üç bileşenin hepsini toplar."
+        },
+        "B": {
+          "en": "6.1 days (36.5 + 30.4 - 60.8) subtracts the wrong component.",
+          "tr": "6,1 gün (36,5 + 30,4 - 60,8) yanlış bileşeni çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash conversion cycle.",
+          "tr": "Nakit dönüşüm döngüsü isteniyor."
+        },
+        {
+          "en": "CCC = DIO + DSO - DPO.",
+          "tr": "CCC = DIO + DSO - DPO.",
+          "formula_latex": "CCC=DIO+DSO-DPO"
+        },
+        {
+          "en": "60.8 + 36.5 = 97.3.",
+          "tr": "60,8 + 36,5 = 97,3."
+        },
+        {
+          "en": "97.3 - 30.4 = 66.9 days.",
+          "tr": "97,3 - 30,4 = 66,9 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "60.8 [+] 36.5 [-] 30.4 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "60.8+36.5-30.4",
+        "unit": "days"
+      },
+      "vocab_ids": [
+        "cash-conversion-cycle",
+        "days-payable",
+        "closest-to",
+        "days-inventory"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-a-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Firm A has a cash conversion cycle of 67 days and Firm B in the same industry has 35 days. All else equal, Firm B most likely:",
+      "stem_tr": "A Firmasının nakit dönüşüm döngüsü 67 gün, aynı sektördeki B Firmasının 35 gündür. Diğer her şey aynıyken B Firması büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "needs more financing for working capital",
+          "tr": "işletme sermayesi için daha çok finansmana ihtiyaç duyar"
+        },
+        {
+          "key": "B",
+          "en": "needs less financing for working capital",
+          "tr": "işletme sermayesi için daha az finansmana ihtiyaç duyar"
+        },
+        {
+          "key": "C",
+          "en": "has a lower revenue",
+          "tr": "daha düşük gelire sahiptir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A shorter cycle means cash is tied up for fewer days, so less funding is needed.",
+      "explanation_tr": "Daha kısa döngü, nakdin daha az gün bağlı kaldığı anlamına gelir; bu yüzden daha az fonlamaya ihtiyaç vardır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A longer cycle (Firm A) needs more financing.",
+          "tr": "Daha uzun döngü (A Firması) daha çok finansman gerektirir."
+        },
+        "C": {
+          "en": "The cycle says nothing about revenue levels.",
+          "tr": "Döngü gelir düzeyi hakkında bir şey söylemez."
+        }
+      },
+      "vocab_ids": [
+        "cash-conversion-cycle",
+        "working-capital",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-a-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Firm X (COGS TRY 1,800 million) lengthens the time it takes to pay suppliers by 10 days with no other change. Using 365 days, the reduction in its working capital financing need is closest to:",
+      "stem_tr": "X Firması (satışların maliyeti 1.800 milyon TL), başka bir değişiklik olmadan tedarikçilerine ödeme süresini 10 gün uzatıyor. 365 gün kullanılarak işletme sermayesi finansman ihtiyacındaki azalma en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 65.8 million",
+          "tr": "65.8 milyon TL",
+          "value": 65.8
+        },
+        {
+          "key": "B",
+          "en": "TRY 10.0 million",
+          "tr": "10.0 milyon TL",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 49.3 million",
+          "tr": "49.3 milyon TL",
+          "value": 49.3
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "One day of COGS = 1,800 / 365 = 4.93; 10 days = TRY 49.3 million.",
+      "explanation_tr": "Bir günlük satışların maliyeti = 1.800 / 365 = 4,93; 10 gün = 49,3 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 65.8 million uses revenue (2,400) instead of COGS; DPO is based on COGS.",
+          "tr": "65,8 milyon TL satışların maliyeti yerine geliri (2.400) kullanır; DPO satışların maliyetine dayanır."
+        },
+        "B": {
+          "en": "TRY 10.0 million confuses days with currency units.",
+          "tr": "10,0 milyon TL günleri para birimiyle karıştırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the funding saved by 10 extra payable days.",
+          "tr": "10 gün fazladan borç ödeme süresinin sağladığı fonlama isteniyor."
+        },
+        {
+          "en": "Payables are measured against COGS, so one day equals COGS / 365.",
+          "tr": "Ticari borçlar satışların maliyetiyle ölçülür; bir gün satışların maliyeti / 365'e eşittir.",
+          "formula_latex": "\\Delta AP=\\frac{COGS}{365}\\times \\Delta DPO"
+        },
+        {
+          "en": "1,800 / 365 = 4.93 per day.",
+          "tr": "1.800 / 365 = günlük 4,93."
+        },
+        {
+          "en": "x 10 = TRY 49.3 million.",
+          "tr": "x 10 = 49,3 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1800 [÷] 365 [×] 10 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1800/365*10",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "days-payable",
+        "working-capital",
+        "closest-to",
+        "cash-conversion-cycle"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm has current assets of TRY 700 million (cash 100, marketable securities 50, receivables 240, inventory 300, other 10) and current liabilities of TRY 500 million. Its current ratio is closest to:",
+      "stem_tr": "Bir firmanın dönen varlıkları 700 milyon TL (nakit 100, menkul kıymet 50, alacaklar 240, stok 300, diğer 10), kısa vadeli yükümlülükleri 500 milyon TL'dir. Cari oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.40",
+          "tr": "1,40",
+          "value": 1.4
+        },
+        {
+          "key": "B",
+          "en": "0.71",
+          "tr": "0,71",
+          "value": 0.71
+        },
+        {
+          "key": "C",
+          "en": "0.78",
+          "tr": "0,78",
+          "value": 0.78
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Current ratio = current assets / current liabilities = 700 / 500 = 1.40.",
+      "explanation_tr": "Cari oran = dönen varlıklar / kısa vadeli yükümlülükler = 700 / 500 = 1,40.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.71 inverts the ratio (500 / 700).",
+          "tr": "0,71 oranı ters çevirir (500 / 700)."
+        },
+        "C": {
+          "en": "0.78 is the quick ratio, which excludes inventory and other assets.",
+          "tr": "0,78 asit-test oranıdır; stoku ve diğer varlıkları dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the current ratio.",
+          "tr": "Cari oran isteniyor."
+        },
+        {
+          "en": "Current ratio = CA / CL.",
+          "tr": "Cari oran = DV / KVY.",
+          "formula_latex": "CR=\\frac{CA}{CL}"
+        },
+        {
+          "en": "700 / 500.",
+          "tr": "700 / 500."
+        },
+        {
+          "en": "1.40.",
+          "tr": "1,40."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "700 [÷] 500 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "700/500"
+      },
+      "vocab_ids": [
+        "current-ratio",
+        "liquidity",
+        "closest-to",
+        "working-capital"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same balance sheet (cash 100, marketable securities 50, receivables 240, inventory 300, other 10; current liabilities 500), the quick ratio is closest to:",
+      "stem_tr": "Aynı bilançoyu kullanarak (nakit 100, menkul kıymet 50, alacaklar 240, stok 300, diğer 10; kısa vadeli yükümlülükler 500) asit-test oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.40",
+          "tr": "1,40",
+          "value": 1.4
+        },
+        {
+          "key": "B",
+          "en": "0.30",
+          "tr": "0,30",
+          "value": 0.3
+        },
+        {
+          "key": "C",
+          "en": "0.78",
+          "tr": "0,78",
+          "value": 0.78
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Quick ratio = (cash + securities + receivables) / CL = (100 + 50 + 240) / 500 = 0.78.",
+      "explanation_tr": "Asit-test oranı = (nakit + menkul + alacaklar) / KVY = (100 + 50 + 240) / 500 = 0,78.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "1.40 is the current ratio, which includes inventory.",
+          "tr": "1,40 stoku da içeren cari orandır."
+        },
+        "B": {
+          "en": "0.30 is the cash ratio, which also excludes receivables.",
+          "tr": "0,30 alacakları da dışarıda bırakan nakit oranıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the quick ratio.",
+          "tr": "Asit-test oranı isteniyor."
+        },
+        {
+          "en": "Quick = (cash + marketable securities + receivables) / CL.",
+          "tr": "Asit-test = (nakit + menkul + alacaklar) / KVY.",
+          "formula_latex": "\\text{Quick}=\\frac{C+MS+AR}{CL}"
+        },
+        {
+          "en": "100 + 50 + 240 = 390.",
+          "tr": "100 + 50 + 240 = 390."
+        },
+        {
+          "en": "390 / 500 = 0.78.",
+          "tr": "390 / 500 = 0,78."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [+] 50 [+] 240 [=] [÷] 500 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(100+50+240)/500"
+      },
+      "vocab_ids": [
+        "quick-ratio",
+        "liquidity",
+        "closest-to",
+        "current-ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "With cash of 100 and marketable securities of 50 against current liabilities of 500 (TRY million), the cash ratio is closest to:",
+      "stem_tr": "Nakit 100 ve piyasa değeri olan menkul kıymet 50, kısa vadeli yükümlülükler 500 (milyon TL) iken nakit oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.30",
+          "tr": "0,30",
+          "value": 0.3
+        },
+        {
+          "key": "B",
+          "en": "0.20",
+          "tr": "0,20",
+          "value": 0.2
+        },
+        {
+          "key": "C",
+          "en": "0.78",
+          "tr": "0,78",
+          "value": 0.78
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cash ratio = (cash + marketable securities) / CL = 150 / 500 = 0.30.",
+      "explanation_tr": "Nakit oranı = (nakit + menkul kıymet) / KVY = 150 / 500 = 0,30.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.20 includes only cash (100 / 500) and omits securities.",
+          "tr": "0,20 yalnızca nakdi içerir (100 / 500) ve menkul kıymetleri dışarıda bırakır."
+        },
+        "C": {
+          "en": "0.78 adds receivables, which gives the quick ratio.",
+          "tr": "0,78 alacakları da ekler; bu asit-test oranını verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash ratio.",
+          "tr": "Nakit oranı isteniyor."
+        },
+        {
+          "en": "Cash ratio = (cash + marketable securities) / CL.",
+          "tr": "Nakit oranı = (nakit + menkul) / KVY.",
+          "formula_latex": "\\text{Cash ratio}=\\frac{C+MS}{CL}"
+        },
+        {
+          "en": "100 + 50 = 150.",
+          "tr": "100 + 50 = 150."
+        },
+        {
+          "en": "150 / 500 = 0.30.",
+          "tr": "150 / 500 = 0,30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [+] 50 [=] [÷] 500 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(100+50)/500"
+      },
+      "vocab_ids": [
+        "cash-ratio",
+        "liquidity",
+        "closest-to",
+        "quick-ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A firm has liquid assets (cash, securities and receivables) of TRY 390 million and daily cash expenses of TRY 3.0 million. Its defensive interval is closest to:",
+      "stem_tr": "Bir firmanın likit varlıkları (nakit, menkul kıymet ve alacaklar) 390 milyon TL, günlük nakit giderleri 3,0 milyon TL'dir. Savunma aralığı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.0 days",
+          "tr": "0.0 gün",
+          "value": 0.0077
+        },
+        {
+          "key": "B",
+          "en": "130.0 days",
+          "tr": "130.0 gün",
+          "value": 130.0
+        },
+        {
+          "key": "C",
+          "en": "1,170.0 days",
+          "tr": "1,170.0 gün",
+          "value": 1170.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Defensive interval = liquid assets / daily cash expenses = 390 / 3.0 = 130 days.",
+      "explanation_tr": "Savunma aralığı = likit varlıklar / günlük nakit giderleri = 390 / 3,0 = 130 gün.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.0077 inverts the ratio (3.0 / 390).",
+          "tr": "0,0077 oranı ters çevirir (3,0 / 390)."
+        },
+        "C": {
+          "en": "1,170 multiplies the two numbers (390 x 3.0).",
+          "tr": "1.170 iki sayıyı çarpar (390 x 3,0)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need how many days liquid assets cover expenses.",
+          "tr": "Likit varlıkların giderleri kaç gün karşıladığı isteniyor."
+        },
+        {
+          "en": "Defensive interval = liquid assets / daily cash expenses.",
+          "tr": "Savunma aralığı = likit varlıklar / günlük nakit giderleri.",
+          "formula_latex": "DI=\\frac{\\text{Liquid assets}}{\\text{Daily expenses}}"
+        },
+        {
+          "en": "390 / 3.0.",
+          "tr": "390 / 3,0."
+        },
+        {
+          "en": "130 days.",
+          "tr": "130 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "390 [÷] 3 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "390/3.0",
+        "unit": "days"
+      },
+      "vocab_ids": [
+        "defensive-interval",
+        "liquidity",
+        "closest-to",
+        "day-count"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Two firms have the same current ratio of 1.5, but Firm P holds mostly cash and receivables while Firm Q holds mostly slow-moving inventory. Which statement is most accurate?",
+      "stem_tr": "İki firmanın cari oranı aynı ve 1,5'tir; ancak P Firması esas olarak nakit ve alacak, Q Firması esas olarak yavaş dönen stok tutmaktadır. Hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Firm P is more liquid because its assets can be converted to cash faster",
+          "tr": "P Firması daha likittir; çünkü varlıkları daha hızlı nakde çevrilebilir"
+        },
+        {
+          "key": "B",
+          "en": "Firm Q is more liquid because inventory is a current asset",
+          "tr": "Q Firması daha likittir; çünkü stok bir dönen varlıktır"
+        },
+        {
+          "key": "C",
+          "en": "The firms are equally liquid because the ratios are equal",
+          "tr": "Oranlar eşit olduğu için firmalar eşit likittir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The quality of current assets matters: cash and receivables are closer to cash than slow inventory.",
+      "explanation_tr": "Dönen varlıkların kalitesi önemlidir: nakit ve alacaklar yavaş stoktan nakde daha yakındır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Slow inventory is the least liquid current asset.",
+          "tr": "Yavaş stok, en az likit dönen varlıktır."
+        },
+        "C": {
+          "en": "Equal ratios can hide different asset quality.",
+          "tr": "Eşit oranlar farklı varlık kalitesini gizleyebilir."
+        }
+      },
+      "vocab_ids": [
+        "current-ratio",
+        "quick-ratio",
+        "liquidity",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A supplier offers terms of 2/10 net 30. The annualized cost of not taking the discount (compounded, 365 days) is closest to:",
+      "stem_tr": "Bir tedarikçi 2/10 net 30 koşulu sunuyor. İskontodan yararlanmamanın yıllıklandırılmış (bileşik, 365 gün) maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "37.2%",
+          "tr": "%37.2",
+          "value": 37.2
+        },
+        {
+          "key": "B",
+          "en": "44.6%",
+          "tr": "%44.6",
+          "value": 44.6
+        },
+        {
+          "key": "C",
+          "en": "2.0%",
+          "tr": "%2.0",
+          "value": 2.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cost = (1 + 2/98)^(365/20) - 1 = (1.020408)^18.25 - 1 = 44.6%.",
+      "explanation_tr": "Maliyet = (1 + 2/98)^(365/20) - 1 = (1,020408)^18,25 - 1 = %44,6.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "37.2% is the simple (non-compounded) annualization: 2/98 x 365/20.",
+          "tr": "%37,2 basit (bileşik olmayan) yıllıklandırmadır: 2/98 x 365/20."
+        },
+        "C": {
+          "en": "2.0% is the cost for the 20-day period, not annualized.",
+          "tr": "%2,0 yıllıklandırılmamış 20 günlük dönem maliyetidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual cost of skipping the 2% discount.",
+          "tr": "%2 iskontoyu kaçırmanın yıllık maliyeti isteniyor."
+        },
+        {
+          "en": "Period cost = 2/98; there are 365/20 periods a year.",
+          "tr": "Dönem maliyeti = 2/98; yılda 365/20 dönem vardır.",
+          "formula_latex": "\\left(1+\\frac{d}{1-d}\\right)^{365/(N-n)}-1"
+        },
+        {
+          "en": "1 + 2/98 = 1.020408; exponent 18.25.",
+          "tr": "1 + 2/98 = 1,020408; üs 18,25."
+        },
+        {
+          "en": "1.020408^18.25 = 1.446, so 44.6%.",
+          "tr": "1,020408^18,25 = 1,446; yani %44,6."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2 [÷] 98 [+] 1 [=] [y^x] 18.25 [=] [-] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((1+2/98)**(365/20)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "trade-credit",
+        "working-capital",
+        "closest-to",
+        "day-count"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "With terms of 2/10 net 30 (forgone-discount cost about 44.6% a year), a firm can borrow from its bank at 38% a year. The firm's best action is most likely to:",
+      "stem_tr": "2/10 net 30 koşullarında (kaçırılan iskonto maliyeti yılda yaklaşık %44,6) bir firma bankasından yılda %38'e borçlanabiliyor. Firmanın en iyi hareketi büyük olasılıkla şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "pay on day 30 and skip the discount",
+          "tr": "30. günde ödeyip iskontoyu kaçırmak"
+        },
+        {
+          "key": "B",
+          "en": "pay after day 30 to save interest",
+          "tr": "faizden tasarruf için 30. günden sonra ödemek"
+        },
+        {
+          "key": "C",
+          "en": "borrow from the bank and pay on day 10 to take the discount",
+          "tr": "bankadan borçlanıp iskontodan yararlanmak için 10. günde ödemek"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The discount is worth more than the bank's cost of funds, so financing the early payment saves money.",
+      "explanation_tr": "İskonto bankanın fon maliyetinden daha değerlidir; bu yüzden erken ödemeyi finanse etmek tasarruf sağlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Skipping the discount costs 44.6% versus 38% bank funding.",
+          "tr": "İskontoyu kaçırmak %44,6'ya mal olur; banka fonlaması %38'dir."
+        },
+        "B": {
+          "en": "Paying late risks penalties and supplier relations.",
+          "tr": "Geç ödemek ceza ve tedarikçi ilişkisi riski taşır."
+        }
+      },
+      "vocab_ids": [
+        "trade-credit",
+        "line-of-credit",
+        "most-likely",
+        "working-capital"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a secondary source of liquidity?",
+      "stem_tr": "Aşağıdakilerden hangisi ikincil bir likidite kaynağıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Cash balances",
+          "tr": "Nakit bakiyeleri"
+        },
+        {
+          "key": "B",
+          "en": "Selling assets or renegotiating debt",
+          "tr": "Varlık satışı ya da borcu yeniden müzakere etmek"
+        },
+        {
+          "key": "C",
+          "en": "Operating cash flow",
+          "tr": "Faaliyet nakit akışı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Secondary sources are costlier and often signal financial stress; primary sources include cash, operating cash flow and committed credit lines.",
+      "explanation_tr": "İkincil kaynaklar daha maliyetlidir ve çoğunlukla finansal stres sinyali verir; birincil kaynaklar nakit, faaliyet nakit akışı ve taahhütlü kredi limitlerini içerir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Cash balances are a primary source.",
+          "tr": "Nakit bakiyeleri birincil kaynaktır."
+        },
+        "C": {
+          "en": "Operating cash flow is a primary source.",
+          "tr": "Faaliyet nakit akışı birincil kaynaktır."
+        }
+      },
+      "vocab_ids": [
+        "liquidity",
+        "line-of-credit",
+        "working-capital",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Compared with a conservative working capital policy, an aggressive policy most likely involves:",
+      "stem_tr": "Muhafazakâr bir işletme sermayesi politikasına kıyasla agresif bir politika büyük olasılıkla şunları içerir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher holdings of cash and inventory and lower risk",
+          "tr": "daha yüksek nakit ve stok tutma ve daha düşük risk"
+        },
+        {
+          "key": "B",
+          "en": "no difference in risk or return",
+          "tr": "risk ya da getiride fark yok"
+        },
+        {
+          "key": "C",
+          "en": "lower holdings of cash and inventory, higher expected return and higher liquidity risk",
+          "tr": "daha düşük nakit ve stok tutma, daha yüksek beklenen getiri ve daha yüksek likidite riski"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Less money tied up in idle assets raises return but leaves a smaller liquidity cushion.",
+      "explanation_tr": "Atıl varlıklarda daha az para bağlamak getiriyi artırır ama daha küçük bir likidite tamponu bırakır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes the conservative policy.",
+          "tr": "Bu, muhafazakâr politikayı tanımlar."
+        },
+        "B": {
+          "en": "The two policies differ in both risk and return.",
+          "tr": "İki politika hem risk hem getiri bakımından farklıdır."
+        }
+      },
+      "vocab_ids": [
+        "working-capital",
+        "liquidity",
+        "cash-ratio",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A supplier offers terms of 1/10 net 40. The annualized cost of forgoing the discount (compounded, 365 days) is closest to:",
+      "stem_tr": "Bir tedarikçi 1/10 net 40 koşulu sunuyor. İskontoyu kaçırmanın yıllıklandırılmış (bileşik, 365 gün) maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.0%",
+          "tr": "%13.0",
+          "value": 13.0
+        },
+        {
+          "key": "B",
+          "en": "12.3%",
+          "tr": "%12.3",
+          "value": 12.3
+        },
+        {
+          "key": "C",
+          "en": "1.0%",
+          "tr": "%1.0",
+          "value": 1.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cost = (1 + 1/99)^(365/30) - 1 = (1.010101)^12.1667 - 1 = 13.0%.",
+      "explanation_tr": "Maliyet = (1 + 1/99)^(365/30) - 1 = (1,010101)^12,1667 - 1 = %13,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "12.3% is the simple annualization (1/99 x 365/30) without compounding.",
+          "tr": "%12,3 bileşiksiz basit yıllıklandırmadır (1/99 x 365/30)."
+        },
+        "C": {
+          "en": "1.0% is the 30-day period cost, not annualized.",
+          "tr": "%1,0 yıllıklandırılmamış 30 günlük dönem maliyetidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual cost of skipping a 1% discount.",
+          "tr": "%1 iskontoyu kaçırmanın yıllık maliyeti isteniyor."
+        },
+        {
+          "en": "Credit is extended from day 10 to day 40, i.e., 30 days.",
+          "tr": "Kredi 10. günden 40. güne, yani 30 gün uzar.",
+          "formula_latex": "\\left(1+\\frac{d}{1-d}\\right)^{365/(N-n)}-1"
+        },
+        {
+          "en": "1 + 1/99 = 1.010101; exponent 365/30 = 12.167.",
+          "tr": "1 + 1/99 = 1,010101; üs 365/30 = 12,167."
+        },
+        {
+          "en": "1.010101^12.167 = 1.130, so 13.0%.",
+          "tr": "1,010101^12,167 = 1,130; yani %13,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [÷] 99 [+] 1 [=] [y^x] 12.1667 [=] [-] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((1+1/99)**(365/30)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "trade-credit",
+        "day-count",
+        "closest-to",
+        "working-capital"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

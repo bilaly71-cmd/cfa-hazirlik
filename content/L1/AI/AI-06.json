@@ -1,0 +1,1028 @@
+{
+  "module_id": "AI-06",
+  "lesson": {
+    "id": "AI-06-lesson",
+    "level": "L1",
+    "topic": "AI",
+    "module_id": "AI-06",
+    "los_ids": [
+      "AI-06-a",
+      "AI-06-b",
+      "AI-06-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Hedge Funds",
+    "title_tr": "Serbest Fonlar (Hedge Funds)",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Funds that can do almost anything",
+        "heading_tr": "Neredeyse her şeyi yapabilen fonlar",
+        "en": "An ordinary equity fund buys shares and hopes the market goes up. A hedge fund has much more freedom. It can sell shares it does not own (short selling), borrow to magnify positions, use derivatives and trade many markets. Its goal is often an absolute return: a positive result in most conditions, not just a beat of an index. In exchange, it charges high fees, limits withdrawals and is sold mainly to qualified investors. In Türkiye, serbest fonlar (hedge funds) are likewise offered to qualified investors. This freedom is also the source of the risks: leverage, illiquidity and heavy dependence on the manager's skill.",
+        "tr": "Sıradan bir hisse fonu hisse alır ve piyasanın yükselmesini umar. Bir serbest fon (hedge fund) çok daha fazla serbestiye sahiptir. Sahip olmadığı hisseleri satabilir (açığa satış), pozisyonlarını büyütmek için borçlanabilir, türev kullanabilir ve birçok piyasada işlem yapabilir. Amacı çoğu zaman mutlak getiridir: yalnızca bir endeksi geçmek değil, çoğu koşulda pozitif sonuç. Karşılığında yüksek ücret alır, para çekmeyi sınırlar ve ağırlıklı olarak nitelikli yatırımcılara satılır. Türkiye'de serbest fonlar da benzer biçimde nitelikli yatırımcılara sunulur. Bu serbestlik aynı zamanda risklerin kaynağıdır: kaldıraç, likidite eksikliği ve yöneticinin becerisine ağır bağımlılık.",
+        "key_terms": [
+          "hedge fund",
+          "absolute return",
+          "short selling"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Characteristics and main strategies",
+        "heading_tr": "Özellikler ve ana stratejiler",
+        "en": "Hedge funds differ from traditional funds by: flexible mandates, use of leverage, short positions and derivatives; an absolute-return aim; performance-based fees (for example 2 and 20); lighter regulation and disclosure; limited liquidity through lock-ups and redemption notice periods. Main strategy groups: Equity hedge (long/short equity, market neutral). Event-driven (merger arbitrage, distressed, activist). Relative value (fixed-income arbitrage, convertible arbitrage), which trades price gaps between related securities. Opportunistic (global macro, managed futures or CTA), which takes large views on markets and trends. Multi-strategy funds combine several of these. Long/short equity net exposure = (long − short) / equity; gross exposure = (long + short) / equity.",
+        "tr": "Serbest fonlar geleneksel fonlardan şu yönlerle ayrılır: esnek yatırım sınırları, kaldıraç, açık pozisyon ve türev kullanımı; mutlak getiri hedefi; performansa dayalı ücretler (örneğin 2 ve 20); daha hafif düzenleme ve bilgilendirme; kilit süreleri ve geri alım ihbar süreleriyle sınırlı likidite. Ana strateji grupları: Hisse odaklı (long/short hisse, piyasa nötr). Olay odaklı (birleşme arbitrajı, sorunlu borç, aktivist). Göreli değer (sabit getirili arbitraj, dönüştürülebilir tahvil arbitrajı); ilişkili menkul kıymetler arasındaki fiyat farklarıyla işlem yapar. Fırsatçı (küresel makro, yönetilen vadeli işlemler ya da CTA); piyasalar ve trendler hakkında büyük görüşler alır. Çoklu strateji fonları bunlardan birkaçını birleştirir. Long/short hisse net maruziyeti = (uzun − kısa) / özkaynak; brüt maruziyet = (uzun + kısa) / özkaynak.",
+        "key_terms": [
+          "long/short equity",
+          "event-driven",
+          "relative value",
+          "global macro",
+          "net exposure"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Ways to access hedge funds",
+        "heading_tr": "Serbest fonlara erişim yolları",
+        "en": "Investors can use a single hedge fund (high manager risk, one fee layer), a fund of funds (diversifies managers and screens them, but adds a second fee layer), or a separately managed account (SMA, where the investor owns the assets in its own account, with more transparency, liquidity and control, but a high minimum and own operational burden). Hedge funds also use liquidity terms: a lock-up period, a notice period before redemption, and a gate, which limits the share of fund assets that can be withdrawn at one time. A side pocket separates illiquid assets from the main portfolio.",
+        "tr": "Yatırımcılar tek bir serbest fon (yüksek yönetici riski, tek ücret katmanı), fon sepeti (yöneticileri çeşitlendirir ve eler ama ikinci bir ücret katmanı ekler) ya da ayrı yönetilen hesap (SMA; yatırımcı varlıkların kendi hesabında sahibidir, daha fazla şeffaflık, likidite ve kontrol sağlar, ancak yüksek asgari tutar ve kendi operasyonel yükü vardır) kullanabilir. Serbest fonlar ayrıca likidite şartları uygular: kilit süresi, geri alımdan önce ihbar süresi ve belirli bir anda çekilebilecek fon varlığı oranını sınırlayan kapı (gate). Yan cep (side pocket), likit olmayan varlıkları ana portföyden ayırır.",
+        "key_terms": [
+          "fund of funds",
+          "separately managed account",
+          "lock-up",
+          "gate",
+          "side pocket"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Leverage and equity return",
+        "heading_tr": "Kaldıraç ve özkaynak getirisi",
+        "en": "If a fund borrows so that assets are L times equity, then equity return = L × asset return − (L − 1) × borrowing rate. Leverage raises return when the asset return exceeds the borrowing cost and magnifies losses when it does not. Total return can also be viewed as beta return (from market exposure) plus alpha (manager skill).",
+        "tr": "Bir fon varlıkları özkaynağın L katı olacak biçimde borçlanıyorsa özkaynak getirisi = L × varlık getirisi − (L − 1) × borçlanma faizidir. Kaldıraç, varlık getirisi borçlanma maliyetini aştığında getiriyi artırır, aşmadığında zararı büyütür. Toplam getiri, beta getirisi (piyasa maruziyetinden) artı alfa (yönetici becerisi) olarak da görülebilir.",
+        "key_terms": [
+          "leverage",
+          "alpha",
+          "beta"
+        ],
+        "formula_latex": "R_E=L\\,R_A-(L-1)\\,r_B"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Leverage and net exposure",
+        "heading_tr": "Kaldıraç ve net maruziyet",
+        "en": "A fund has 100 of equity, 120 of long positions and 40 of short positions. Separately, a fund with 100 equity holds 200 of assets earning 6% with 3% borrowing cost.",
+        "tr": "Bir fonun özkaynağı 100, uzun pozisyonu 120 ve kısa pozisyonu 40'tır. Ayrıca özkaynağı 100 olan bir fon, %6 getirili 200 varlık tutar ve borçlanma maliyeti %3'tür.",
+        "key_terms": [],
+        "example": {
+          "en": "Net exposure = (120 − 40)/100 = 80%; gross exposure = (120 + 40)/100 = 160%. Leveraged fund: R_E = 2 × 6% − 1 × 3% = 9%. If assets fall 6%, R_E = 2 × (−6%) − 3% = −15%.",
+          "tr": "Net maruziyet = (120 − 40)/100 = %80; brüt maruziyet = (120 + 40)/100 = %160. Kaldıraçlı fon: R_E = 2 × %6 − 1 × %3 = %9. Varlıklar %6 düşerse R_E = 2 × (%−6) − %3 = %−15.",
+          "formula_latex": "R_E=2(6)-1(3)=9\\%"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Hedge fund is not an asset class with one strategy: strategies differ widely. Absolute return does not mean no losses. A fund of funds is not cheaper: it adds a fee layer. Market neutral does not remove all risk (model, leverage, liquidity). Low correlation to equities in normal times can rise in a crisis. Reported returns may be inflated by survivorship and backfill bias.",
+        "tr": "Serbest fon tek stratejili bir varlık sınıfı değildir: stratejiler çok farklıdır. Mutlak getiri zarar etmemek demek değildir. Fon sepeti daha ucuz değildir: ücret katmanı ekler. Piyasa nötr, tüm riski ortadan kaldırmaz (model, kaldıraç, likidite). Normal zamanlarda hisselerle düşük korelasyon krizde yükselebilir. Raporlanan getiriler hayatta kalma ve geriye dönük doldurma yanlılığıyla şişmiş olabilir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Hedge funds use flexible mandates, leverage, shorting and derivatives to seek absolute returns, with high fees and limited liquidity. Strategies include equity hedge, event-driven, relative value and opportunistic. Investors access them via single funds, funds of funds or SMAs. Sources of return are beta and alpha; risks include leverage, illiquidity and tail events.",
+    "summary_tr": "Serbest fonlar esnek yatırım sınırları, kaldıraç, açığa satış ve türevlerle mutlak getiri arar; ücretleri yüksek, likiditeleri sınırlıdır. Stratejiler arasında hisse odaklı, olay odaklı, göreli değer ve fırsatçı olanlar vardır. Yatırımcılar tek fon, fon sepeti ya da SMA ile erişir. Getiri kaynakları beta ve alfadır; riskler kaldıraç, likidite eksikliği ve kuyruk olaylarını içerir.",
+    "common_traps_tr": [
+      "Mutlak getiri, zarar edilmeyeceği anlamına gelmez.",
+      "Fon sepeti ek ücret katmanı getirir.",
+      "Piyasa nötr strateji risksiz değildir.",
+      "Kaldıraç zararı da büyütür.",
+      "Kriz anında korelasyonlar yükselebilir.",
+      "Getiriler hayatta kalma yanlılığıyla şişmiş olabilir."
+    ],
+    "vocab_ids": [
+      "hedge-fund",
+      "absolute-return",
+      "leverage",
+      "long-short",
+      "event-driven",
+      "relative-value",
+      "global-macro",
+      "fund-of-funds",
+      "separately-managed-account",
+      "gate",
+      "side-pocket",
+      "alpha",
+      "beta",
+      "redemption"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Serbest fonlar (SPK serbest fon düzenlemesi) Düzey 3'te kısaca geçer; strateji sınıflaması ve erişim yolları yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "AI-06-a-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with a traditional mutual fund, a hedge fund is most likely to:",
+      "stem_tr": "Geleneksel bir yatırım fonuyla karşılaştırıldığında bir serbest fonun (hedge fund) en olası özelliği hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "use leverage, short positions and derivatives with fewer restrictions and charge performance-based fees",
+          "tr": "kaldıraç, açık pozisyon ve türevleri daha az kısıtla kullanmak ve performansa dayalı ücret almak"
+        },
+        {
+          "key": "B",
+          "en": "be restricted to long-only positions in listed shares",
+          "tr": "borsadaki hisselerde yalnızca uzun pozisyonla sınırlı olmak"
+        },
+        {
+          "key": "C",
+          "en": "offer daily redemption to the general public",
+          "tr": "genel halka günlük geri alım sunmak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Hedge funds have flexible mandates and performance fees and usually restrict redemptions. Mutual funds are generally more regulated and liquid.",
+      "explanation_tr": "Serbest fonların yatırım sınırları esnektir, performans ücreti alırlar ve genellikle geri alımı kısıtlarlar. Yatırım fonları genelde daha fazla düzenlenir ve daha likittir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Long-only restrictions describe many traditional funds.",
+          "tr": "Yalnızca uzun pozisyon kısıtı birçok geleneksel fonu tanımlar."
+        },
+        "C": {
+          "en": "Daily redemption to the public is typical for mutual funds, not hedge funds.",
+          "tr": "Halka günlük geri alım yatırım fonları için tipiktir; serbest fonlar için değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hedge-fund",
+        "leverage",
+        "compared"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-a-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A fund buys the shares of a company being acquired and short sells the acquirer's shares, aiming to profit when the deal closes. This strategy is best classified as:",
+      "stem_tr": "Bir fon satın alınmakta olan şirketin paylarını alıyor ve satın alanın paylarını açığa satıyor; amaç işlem tamamlandığında kâr etmektir. Bu strateji en iyi nasıl sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "global macro",
+          "tr": "küresel makro"
+        },
+        {
+          "key": "B",
+          "en": "event-driven (merger arbitrage)",
+          "tr": "olay odaklı (birleşme arbitrajı)"
+        },
+        {
+          "key": "C",
+          "en": "managed futures (CTA)",
+          "tr": "yönetilen vadeli işlemler (CTA)"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Merger arbitrage is an event-driven strategy: returns depend on a corporate event such as a takeover closing.",
+      "explanation_tr": "Birleşme arbitrajı olay odaklı bir stratejidir: getiri, devralmanın tamamlanması gibi bir şirket olayına bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Global macro takes broad views on economies, rates and currencies.",
+          "tr": "Küresel makro, ekonomiler, faizler ve kurlar hakkında geniş görüşler alır."
+        },
+        "C": {
+          "en": "Managed futures follow trends in futures markets.",
+          "tr": "Yönetilen vadeli işlemler vadeli piyasalardaki trendleri izler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage",
+        "event-driven",
+        "acquire"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-a-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A long/short equity fund has 100 of equity, 120 of long positions and 40 of short positions. Its net exposure to the equity market is closest to:",
+      "stem_tr": "Bir long/short hisse fonunun özkaynağı 100, uzun pozisyonu 120 ve kısa pozisyonu 40'tır. Hisse piyasasına net maruziyeti aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "160%",
+          "tr": "%160",
+          "value": 160.0
+        },
+        {
+          "key": "B",
+          "en": "20%",
+          "tr": "%20",
+          "value": 20.0
+        },
+        {
+          "key": "C",
+          "en": "80%",
+          "tr": "%80",
+          "value": 80.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Net exposure = (long − short) / equity = (120 − 40) / 100 = 80%.",
+      "explanation_tr": "Net maruziyet = (uzun − kısa) / özkaynak = (120 − 40) / 100 = %80.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "160% is gross exposure (long + short), not net.",
+          "tr": "%160 net değil, brüt maruziyettir (uzun + kısa)."
+        },
+        "B": {
+          "en": "20% is equity minus net positions or a mis-subtraction, not the correct net exposure.",
+          "tr": "%20 yanlış bir çıkarmadır; doğru net maruziyet değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need net exposure.",
+          "tr": "Net maruziyet isteniyor."
+        },
+        {
+          "en": "Net exposure is long minus short, divided by equity.",
+          "tr": "Net maruziyet, uzun eksi kısa pozisyonun özkaynağa bölümüdür.",
+          "formula_latex": "\\text{Net}=\\frac{Long-Short}{Equity}"
+        },
+        {
+          "en": "Long = 120, Short = 40, Equity = 100.",
+          "tr": "Uzun = 120, kısa = 40, özkaynak = 100.",
+          "values": {
+            "Long": 120,
+            "Short": 40,
+            "Equity": 100
+          }
+        },
+        {
+          "en": "Net = 80/100 = 80%.",
+          "tr": "Net = 80/100 = %80."
+        }
+      ],
+      "vocab_ids": [
+        "net-exposure",
+        "long",
+        "short",
+        "equity",
+        "gross-exposure",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "120 [-] 40 [=] → 80",
+          "[÷] 100 [=] → 0.8"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(120-40)/100*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-a-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A global macro hedge fund is best characterized as one that:",
+      "stem_tr": "Bir küresel makro serbest fon en iyi hangi özellikle nitelendirilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "only trades price gaps between two nearly identical securities",
+          "tr": "yalnızca neredeyse özdeş iki menkul kıymet arasındaki fiyat farklarıyla işlem yapar"
+        },
+        {
+          "key": "B",
+          "en": "takes large directional positions based on views about economies, interest rates and currencies",
+          "tr": "ekonomiler, faizler ve kurlar hakkındaki görüşlere dayanarak büyük yönlü pozisyonlar alır"
+        },
+        {
+          "key": "C",
+          "en": "buys only distressed company loans",
+          "tr": "yalnızca sorunlu şirket kredilerini satın alır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Global macro is an opportunistic strategy built on top-down views across markets.",
+      "explanation_tr": "Küresel makro, piyasalar arasında yukarıdan aşağıya görüşlere dayalı fırsatçı bir stratejidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Trading small price gaps between related securities is relative value.",
+          "tr": "İlişkili menkul kıymetler arasındaki küçük fiyat farklarıyla işlem yapmak göreli değerdir."
+        },
+        "C": {
+          "en": "Buying only distressed loans is a distressed (event-driven) strategy.",
+          "tr": "Yalnızca sorunlu kredi almak sorunlu borç (olay odaklı) stratejisidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "global-macro",
+        "directional",
+        "hedge"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-a-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about market-neutral equity hedge funds is most accurate?",
+      "stem_tr": "Piyasa nötr hisse serbest fonları hakkında aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They have no risk of loss",
+          "tr": "Zarar riskleri yoktur"
+        },
+        {
+          "key": "B",
+          "en": "They always earn the market return",
+          "tr": "Her zaman piyasa getirisini kazanırlar"
+        },
+        {
+          "key": "C",
+          "en": "They aim for little net market exposure but still face manager, leverage and liquidity risks",
+          "tr": "Düşük net piyasa maruziyeti hedeflerler ama yönetici, kaldıraç ve likidite risklerine yine de maruzdurlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Matching long and short positions removes much of the market beta, but losses can still come from stock selection, leverage or crowded trades.",
+      "explanation_tr": "Uzun ve kısa pozisyonları dengelemek piyasa betasının büyük bölümünü ortadan kaldırır; ancak hisse seçimi, kaldıraç ya da kalabalık işlemlerden zarar gelebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Market neutral does not remove all risk.",
+          "tr": "Piyasa nötr tüm riski ortadan kaldırmaz."
+        },
+        "B": {
+          "en": "They aim to avoid market returns, not to earn them.",
+          "tr": "Piyasa getirisini kazanmayı değil, ondan bağımsız olmayı hedeflerler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market-neutral",
+        "beta",
+        "net-exposure",
+        "leverage",
+        "liquidity",
+        "accurate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes the main benefit of a separately managed account (SMA) compared with a pooled hedge fund?",
+      "stem_tr": "Aşağıdakilerden hangisi ayrı yönetilen hesabın (SMA) havuz serbest fona göre ana faydasını en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The investor owns the assets directly and gets more transparency, liquidity and control",
+          "tr": "Yatırımcı varlıkların doğrudan sahibidir ve daha fazla şeffaflık, likidite ve kontrol elde eder"
+        },
+        {
+          "key": "B",
+          "en": "A lower minimum investment than a pooled fund",
+          "tr": "Havuz fona göre daha düşük asgari yatırım tutarı"
+        },
+        {
+          "key": "C",
+          "en": "No operational responsibilities for the investor",
+          "tr": "Yatırımcı için hiçbir operasyonel sorumluluk olmaması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In an SMA the assets are held in the investor's own account, so positions are visible and the investor can control or exit them. It typically needs a high minimum and more operational effort.",
+      "explanation_tr": "SMA'da varlıklar yatırımcının kendi hesabında tutulur; pozisyonlar görülebilir ve yatırımcı bunları kontrol edebilir veya çıkabilir. Genellikle yüksek asgari tutar ve daha fazla operasyonel çaba gerektirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "SMAs usually require a higher minimum, not lower.",
+          "tr": "SMA'lar genellikle daha düşük değil, daha yüksek asgari tutar ister."
+        },
+        "C": {
+          "en": "The investor takes on more operational work in an SMA.",
+          "tr": "SMA'da yatırımcı daha fazla operasyonel iş üstlenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "separately-managed-account",
+        "transparency",
+        "pooled",
+        "control",
+        "minimum",
+        "operational"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investor wants hedge fund exposure but lacks the resources to select managers. Compared with investing directly in a single hedge fund, a fund of funds most likely provides:",
+      "stem_tr": "Bir yatırımcı serbest fon maruziyeti istiyor ancak yönetici seçecek kaynağa sahip değil. Tek bir serbest fona doğrudan yatırımla karşılaştırıldığında fon sepeti en olası biçimde ne sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a lower total fee burden",
+          "tr": "daha düşük toplam ücret yükü"
+        },
+        {
+          "key": "B",
+          "en": "full transparency of every underlying position",
+          "tr": "her alt pozisyonun tam şeffaflığı"
+        },
+        {
+          "key": "C",
+          "en": "manager diversification and due diligence, at the cost of an extra layer of fees",
+          "tr": "yönetici çeşitlendirmesi ve durum tespiti; bedeli ek bir ücret katmanıdır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A fund of funds spreads money across managers and screens them, but charges its own fee on top of underlying fees. Transparency is usually lower, not higher.",
+      "explanation_tr": "Fon sepeti parayı yöneticilere yayar ve onları eler; ancak alttaki ücretlerin üzerine kendi ücretini ekler. Şeffaflık genellikle yüksek değil, düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Total fees are higher because of the extra layer.",
+          "tr": "Ek katman nedeniyle toplam ücret daha yüksektir."
+        },
+        "B": {
+          "en": "Funds of funds tend to offer less position-level transparency.",
+          "tr": "Fon sepetleri genellikle pozisyon düzeyinde daha az şeffaflık sunar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "fund-of-funds",
+        "manager",
+        "due-diligence",
+        "layer"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A hedge fund limits the percentage of fund assets that can be redeemed on any one redemption date to 10%. This provision is called:",
+      "stem_tr": "Bir serbest fon, belirli bir geri alım tarihinde geri alınabilecek fon varlıklarının yüzdesini %10 ile sınırlıyor. Bu hükme ne ad verilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a gate",
+          "tr": "kapı (gate)"
+        },
+        {
+          "key": "B",
+          "en": "a hurdle",
+          "tr": "eşik (hurdle)"
+        },
+        {
+          "key": "C",
+          "en": "a clawback",
+          "tr": "geri alma hükmü (clawback)"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A gate caps the amount that can be withdrawn at one time to protect remaining investors from forced asset sales.",
+      "explanation_tr": "Gate, kalan yatırımcıları zorunlu varlık satışlarından korumak için bir anda çekilebilecek tutarı sınırlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A hurdle is a minimum return before the manager earns an incentive fee.",
+          "tr": "Eşik, yöneticinin performans ücreti alması için gereken asgari getiridir."
+        },
+        "C": {
+          "en": "A clawback returns previously paid carry to investors.",
+          "tr": "Clawback, daha önce ödenen performans payının yatırımcılara iadesidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "gate",
+        "redemption",
+        "provision"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "During a market panic many investors in an open-ended hedge fund request redemptions at once while the fund holds illiquid assets. Which feature most directly protects the remaining investors?",
+      "stem_tr": "Piyasa panik dönemlerinde açık uçlu bir serbest fonun çok sayıda yatırımcısı aynı anda geri alım talep ediyor; oysa fon likit olmayan varlıklar tutuyor. Hangi özellik kalan yatırımcıları en doğrudan korur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A higher management fee",
+          "tr": "Daha yüksek yönetim ücreti"
+        },
+        {
+          "key": "B",
+          "en": "A gate or a side pocket for the illiquid assets",
+          "tr": "Likit olmayan varlıklar için bir gate ya da yan cep (side pocket)"
+        },
+        {
+          "key": "C",
+          "en": "A shorter lock-up period",
+          "tr": "Daha kısa kilit süresi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Gates slow down withdrawals and side pockets separate illiquid assets so that the manager is not forced to sell at fire-sale prices.",
+      "explanation_tr": "Gate'ler çekilişleri yavaşlatır, yan cepler ise likit olmayan varlıkları ayırır; böylece yönetici zararına satmak zorunda kalmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A higher fee does nothing to protect against forced sales.",
+          "tr": "Daha yüksek ücret zorunlu satışlara karşı koruma sağlamaz."
+        },
+        "C": {
+          "en": "A shorter lock-up makes redemption easier and increases the problem.",
+          "tr": "Daha kısa kilit süresi geri alımı kolaylaştırır ve sorunu artırır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "gate",
+        "side-pocket",
+        "redemption",
+        "illiquid"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An institutional investor wants to monitor each position of its hedge fund manager daily and keep the right to change risk limits. The most suitable access route is most likely:",
+      "stem_tr": "Kurumsal bir yatırımcı serbest fon yöneticisinin her pozisyonunu günlük izlemek ve risk limitlerini değiştirme hakkını elinde tutmak istiyor. En uygun erişim yolu büyük olasılıkla hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a separately managed account",
+          "tr": "ayrı yönetilen hesap"
+        },
+        {
+          "key": "B",
+          "en": "a fund of funds",
+          "tr": "fon sepeti"
+        },
+        {
+          "key": "C",
+          "en": "shares in a pooled offshore fund",
+          "tr": "yurt dışı havuz fonun payları"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Only an SMA gives the investor ownership of the assets and the control and transparency needed for daily monitoring.",
+      "explanation_tr": "Yalnızca SMA, yatırımcıya varlıkların sahipliğini ve günlük izleme için gereken kontrol ve şeffaflığı verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A fund of funds adds another layer and gives less transparency.",
+          "tr": "Fon sepeti bir katman daha ekler ve daha az şeffaflık sağlar."
+        },
+        "C": {
+          "en": "Pooled fund investors have no say over risk limits.",
+          "tr": "Havuz fon yatırımcılarının risk limitleri üzerinde söz hakkı yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "separately-managed-account",
+        "monitor",
+        "transparency"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The return of a hedge fund can be decomposed into beta and alpha. Alpha is best described as:",
+      "stem_tr": "Bir serbest fonun getirisi beta ve alfa olarak ayrıştırılabilir. Alfa en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "return earned by simply being exposed to the market",
+          "tr": "yalnızca piyasaya maruz kalarak kazanılan getiri"
+        },
+        {
+          "key": "B",
+          "en": "return due to the manager's skill beyond exposure to market factors",
+          "tr": "piyasa faktörlerine maruziyetin ötesinde yöneticinin becerisinden kaynaklanan getiri"
+        },
+        {
+          "key": "C",
+          "en": "the interest earned on the fund's cash",
+          "tr": "fonun nakdinden kazanılan faiz"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Beta return comes from market exposure that can be obtained cheaply. Alpha is the return added by skill.",
+      "explanation_tr": "Beta getirisi ucuza elde edilebilen piyasa maruziyetinden gelir. Alfa, beceriyle eklenen getiridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is beta return, not alpha.",
+          "tr": "Bu alfa değil, beta getirisidir."
+        },
+        "C": {
+          "en": "Interest on cash is a separate component and is not alpha.",
+          "tr": "Nakit faizi ayrı bir bileşendir ve alfa değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "alpha",
+        "beta",
+        "skill",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A hedge fund has 100 of equity and holds 200 of assets that earn 6% for the year. It pays 3% interest on its borrowings. The fund's return on equity is closest to:",
+      "stem_tr": "Bir serbest fonun özkaynağı 100'dür ve yıl içinde %6 getiri sağlayan 200 varlık tutmaktadır. Borçlarına %3 faiz ödemektedir. Fonun özkaynak getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        },
+        {
+          "key": "C",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "R_E = 2 × 6% − 1 × 3% = 9%. Borrowed amount is 100, so interest cost is 3 on 100 equity.",
+      "explanation_tr": "R_E = 2 × %6 − 1 × %3 = %9. Borçlanılan tutar 100'dür, dolayısıyla faiz maliyeti 100 özkaynak üzerinden 3'tür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "6.00% ignores leverage.",
+          "tr": "%6,00 kaldıracı yok sayar."
+        },
+        "B": {
+          "en": "12.00% doubles the return but does not subtract the borrowing cost.",
+          "tr": "%12,00 getiriyi ikiye katlar ama borçlanma maliyetini düşmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the levered return on equity.",
+          "tr": "Kaldıraçlı özkaynak getirisi isteniyor."
+        },
+        {
+          "en": "Equity return = L × asset return − (L − 1) × borrowing rate.",
+          "tr": "Özkaynak getirisi = L × varlık getirisi − (L − 1) × borçlanma faizi.",
+          "formula_latex": "R_E=L R_A-(L-1)r_B"
+        },
+        {
+          "en": "L = 200/100 = 2; R_A = 6%; r_B = 3%.",
+          "tr": "L = 200/100 = 2; R_A = %6; r_B = %3.",
+          "values": {
+            "L": 2,
+            "RA": 6,
+            "rB": 3
+          }
+        },
+        {
+          "en": "R_E = 12 − 3 = 9%.",
+          "tr": "R_E = 12 − 3 = %9."
+        }
+      ],
+      "vocab_ids": [
+        "leverage",
+        "return-on-equity",
+        "interest",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2 [×] 6 [-] 1 [×] 3 [=] → 9"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "2*6-1*3",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Merger arbitrage funds often earn small steady gains but can suffer large losses when a deal collapses. This payoff pattern is best described as:",
+      "stem_tr": "Birleşme arbitrajı fonları çoğu zaman küçük ve istikrarlı kazanç sağlar; ancak bir işlem çöktüğünde büyük zarar edebilir. Bu getiri deseni en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "positive skewness with limited downside",
+          "tr": "sınırlı aşağı yönlü riskle pozitif çarpıklık"
+        },
+        {
+          "key": "B",
+          "en": "negative skewness with tail risk",
+          "tr": "kuyruk riski taşıyan negatif çarpıklık"
+        },
+        {
+          "key": "C",
+          "en": "a symmetric distribution with no tail risk",
+          "tr": "kuyruk riski olmayan simetrik dağılım"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Frequent small gains and rare large losses give a negatively skewed return distribution with fat left tails. Standard deviation alone understates this risk.",
+      "explanation_tr": "Sık küçük kazançlar ve nadir büyük zararlar, kalın sol kuyruklu negatif çarpık bir getiri dağılımı yaratır. Yalnızca standart sapma bu riski olduğundan düşük gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Limited downside with positive skew is the opposite of the pattern described.",
+          "tr": "Sınırlı aşağı yön ve pozitif çarpıklık, anlatılan desenin tersidir."
+        },
+        "C": {
+          "en": "The described pattern is asymmetric and has tail risk.",
+          "tr": "Anlatılan desen asimetriktir ve kuyruk riski taşır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "skewness",
+        "tail-risk",
+        "distribution",
+        "downside"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A hedge fund shows a very low correlation with equities over the last five calm years. Which statement is the most appropriate caution when considering its diversification benefit?",
+      "stem_tr": "Bir serbest fon son beş sakin yılda hisselerle çok düşük korelasyon gösteriyor. Çeşitlendirme faydasını değerlendirirken en uygun uyarı hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A low historical correlation guarantees protection in future crises",
+          "tr": "Düşük geçmiş korelasyon gelecekteki krizlerde korumayı garanti eder"
+        },
+        {
+          "key": "B",
+          "en": "Hedge funds can never be correlated with equities",
+          "tr": "Serbest fonların hisselerle asla korelasyonu olamaz"
+        },
+        {
+          "key": "C",
+          "en": "Correlations may rise in a crisis, and smoothed or biased data may overstate diversification",
+          "tr": "Korelasyonlar krizde yükselebilir; yumuşatılmış ya da yanlı veriler çeşitlendirmeyi olduğundan fazla gösterebilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Historical correlations are not guarantees. Stress periods, leverage, illiquid holdings and database biases can all weaken diversification.",
+      "explanation_tr": "Geçmiş korelasyonlar garanti değildir. Stres dönemleri, kaldıraç, likit olmayan varlıklar ve veri tabanı yanlılıkları çeşitlendirmeyi zayıflatabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Past correlation does not guarantee future protection.",
+          "tr": "Geçmiş korelasyon gelecekteki korumayı garanti etmez."
+        },
+        "B": {
+          "en": "Many hedge fund strategies carry equity-like risk and can be correlated with equities.",
+          "tr": "Birçok serbest fon stratejisi hisse benzeri risk taşır ve hisselerle korelasyon gösterebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "crisis",
+        "biased",
+        "overstate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is most likely a risk specific to hedge fund investing that is less common in a traditional long-only fund?",
+      "stem_tr": "Aşağıdakilerden hangisi geleneksel yalnızca uzun pozisyonlu bir fonda daha az görülen, serbest fon yatırımına özgü bir risk olması en olası olandır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Counterparty and operational risk from derivatives, prime brokers and complex structures",
+          "tr": "Türevlerden, ana aracı kurumlardan (prime broker) ve karmaşık yapılardan kaynaklanan karşı taraf ve operasyonel risk"
+        },
+        {
+          "key": "B",
+          "en": "Complete lack of any market risk",
+          "tr": "Piyasa riskinin tamamen yokluğu"
+        },
+        {
+          "key": "C",
+          "en": "The ability to redeem any time at no cost",
+          "tr": "İstenen zamanda maliyetsiz geri alım imkânı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Hedge funds use leverage, derivatives and prime brokers, which add counterparty, operational and model risks beyond market risk.",
+      "explanation_tr": "Serbest fonlar kaldıraç, türev ve prime broker kullanır; bu da piyasa riskinin ötesinde karşı taraf, operasyonel ve model riski ekler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Hedge funds still carry market risk.",
+          "tr": "Serbest fonlar yine piyasa riski taşır."
+        },
+        "C": {
+          "en": "Redemption is usually restricted, not free and instant.",
+          "tr": "Geri alım genellikle kısıtlıdır; serbest ve anlık değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "counterparty-risk",
+        "operational",
+        "prime-broker",
+        "risk"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

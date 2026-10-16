@@ -1,0 +1,1024 @@
+{
+  "module_id": "AI-05",
+  "lesson": {
+    "id": "AI-05-lesson",
+    "level": "L1",
+    "topic": "AI",
+    "module_id": "AI-05",
+    "los_ids": [
+      "AI-05-a",
+      "AI-05-b",
+      "AI-05-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Natural Resources",
+    "title_tr": "Doğal Kaynaklar",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Owning what the economy consumes",
+        "heading_tr": "Ekonominin tükettiği şeyin sahibi olmak",
+        "en": "Every economy needs food, wood, energy and metals. An investor can own the land that grows wheat in Konya, the forest that supplies timber, or a futures position on oil or copper. These natural resources respond to supply and demand, weather and global growth, not to company profits. That is why they can diversify a portfolio of BIST 100 shares and DİBS. They also pay in unusual ways: land may pay nothing until it is sold, trees pay by growing, and commodity futures pay through price moves, roll effects and interest on the cash held as collateral. This module explains these return sources and the risks that come with them.",
+        "tr": "Her ekonomi gıdaya, odun, enerjiye ve metale ihtiyaç duyar. Yatırımcı, Konya'da buğday yetiştiren araziye, kereste sağlayan ormana ya da petrol veya bakır vadeli işlem pozisyonuna sahip olabilir. Bu doğal kaynaklar şirket kârlarına değil, arz ve talebe, hava koşullarına ve küresel büyümeye tepki verir. Bu yüzden BIST 100 hisseleri ve DİBS'ten oluşan bir portföyü çeşitlendirebilirler. Ödemeleri de alışılmadık yollardan olur: arazi satılana kadar hiçbir şey ödemeyebilir, ağaçlar büyüyerek getiri sağlar, emtia vadeli işlemleri ise fiyat hareketi, vade geçiş (roll) etkisi ve teminat olarak tutulan nakdin faiziyle getiri sağlar. Bu modül bu getiri kaynaklarını ve beraberindeki riskleri anlatır.",
+        "key_terms": [
+          "natural resources",
+          "timberland",
+          "farmland"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Land-based natural resources",
+        "heading_tr": "Arazi temelli doğal kaynaklar",
+        "en": "Raw land is undeveloped land. It produces no income and has holding costs (taxes, maintenance), so return comes from appreciation, often by changing its use, for example from farming to housing. Timberland is land with trees grown for wood. Its return has three parts: biological growth of the trees, changes in timber prices, and changes in land value. The owner can delay the harvest when prices are low, which is a valuable flexibility. Farmland produces crops or livestock. It earns operating income (or rent if leased) and land appreciation, and yields are exposed to weather, crop prices and input costs. Direct ownership is illiquid; investors may also use funds, or listed REITs and agricultural firms.",
+        "tr": "Ham arazi (raw land) geliştirilmemiş arazidir. Gelir üretmez ve elde tutma maliyeti (vergi, bakım) vardır; bu yüzden getiri değer artışından, çoğu kez arazinin kullanım amacının tarımdan konuta çevrilmesi gibi değişikliklerden gelir. Ormanlık arazi (timberland), odun için ağaç yetiştirilen arazidir. Getirisinin üç parçası vardır: ağaçların biyolojik büyümesi, kereste fiyatındaki değişim ve arazi değerindeki değişim. Sahibi fiyatlar düşükken hasadı erteleyebilir; bu değerli bir esnekliktir. Tarım arazisi (farmland) ürün ya da hayvancılık üretir. İşletme geliri (kiraya verilmişse kira) ve arazi değer artışı sağlar; verim hava koşullarına, ürün fiyatlarına ve girdi maliyetlerine açıktır. Doğrudan sahiplik likit değildir; yatırımcılar fonları ya da borsadaki GYO ve tarım şirketlerini de kullanabilir.",
+        "key_terms": [
+          "raw land",
+          "timberland",
+          "farmland",
+          "biological growth",
+          "harvest"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Commodity investing",
+        "heading_tr": "Emtia yatırımı",
+        "en": "Commodities are raw materials: energy, metals, agriculture and livestock. Investors reach them through physical holding (storage and insurance costs), futures contracts, commodity-linked funds and ETPs, or shares of producers (which also carry company risk). A futures contract has an expiry, so a long position must be rolled: sell the near contract and buy the next one. If the futures curve slopes down (backwardation), rolling earns a positive roll yield. If it slopes up (contango), rolling creates a negative roll yield. A fully collateralized futures position also earns interest on the cash set aside as collateral.",
+        "tr": "Emtialar ham maddelerdir: enerji, metaller, tarım ürünleri ve hayvancılık. Yatırımcı bunlara fiziksel sahiplik (depolama ve sigorta maliyeti), vadeli işlem sözleşmeleri, emtiaya bağlı fonlar ve borsa yatırım ürünleri (ETP) ya da üretici şirket payları (bunlar şirket riski de taşır) yoluyla ulaşır. Vadeli işlem sözleşmesinin vadesi vardır; bu yüzden uzun pozisyonun vadesi uzatılmalıdır (roll): yakın sözleşme satılır, bir sonraki alınır. Vadeli işlem eğrisi aşağı eğimliyse (backwardation) vade geçişi pozitif roll getirisi sağlar. Eğri yukarı eğimliyse (contango) negatif roll getirisi doğar. Tam teminatlı vadeli işlem pozisyonu, teminat olarak ayrılan nakit üzerinden faiz de kazanır.",
+        "key_terms": [
+          "backwardation",
+          "contango",
+          "roll yield",
+          "collateral return",
+          "futures contract"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Components of commodity futures return",
+        "heading_tr": "Emtia vadeli işlem getirisinin bileşenleri",
+        "en": "Total return on a fully collateralized commodity futures position = spot price return + roll return + collateral return. Spot return is the change in the spot price. Roll return (yield) comes from the shape of the futures curve. Collateral return is the interest on the cash collateral (for example, short-term government bill yield). Roll yield per roll can be approximated as (near-term futures price − next futures price) / near-term futures price: it is negative in contango and positive in backwardation.",
+        "tr": "Tam teminatlı bir emtia vadeli işlem pozisyonunun toplam getirisi = spot fiyat getirisi + roll getirisi + teminat getirisidir. Spot getiri spot fiyattaki değişimdir. Roll getirisi vadeli işlem eğrisinin biçiminden gelir. Teminat getirisi, nakit teminat üzerinden kazanılan faizdir (örneğin kısa vadeli devlet bonosu getirisi). Roll başına getiri yaklaşık (yakın vadeli fiyat − sonraki vadeli fiyat) / yakın vadeli fiyat ile bulunur: contango'da negatif, backwardation'da pozitiftir.",
+        "key_terms": [
+          "spot return",
+          "roll return",
+          "collateral return"
+        ],
+        "formula_latex": "R=R_{spot}+R_{roll}+R_{collateral},\\quad R_{roll}\\approx\\frac{F_{near}-F_{next}}{F_{near}}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A collateralized oil position",
+        "heading_tr": "Teminatlı bir petrol pozisyonu",
+        "en": "Over a year, the spot price of oil rises 4%. The futures curve is in contango, with a near contract at 80 and the next at 82. Treasury bills pay 3%.",
+        "tr": "Bir yıl içinde petrolün spot fiyatı %4 yükselir. Vadeli işlem eğrisi contango'dadır; yakın sözleşme 80, sonraki 82'dir. Hazine bonosu %3 öder.",
+        "key_terms": [],
+        "example": {
+          "en": "Roll yield per roll = (80 − 82) / 80 = −2.5%. If it is rolled once a year, total return = 4% + (−2.5%) + 3% = 4.5%.",
+          "tr": "Roll başına getiri = (80 − 82) / 80 = %−2,5. Yılda bir kez roll yapılırsa toplam getiri = %4 + (%−2,5) + %3 = %4,5.",
+          "formula_latex": "R=4-2.5+3=4.5\\%"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not forget that raw land has no income. In contango the roll yield is negative; in backwardation it is positive. Spot return is not the same as the return of the futures index, which also includes roll and collateral. Shares of a commodity producer are not the same as owning the commodity. Commodity diversification is not guaranteed in every crisis. Appraisal-based farmland and timberland values look smoother than they are.",
+        "tr": "Ham arazinin geliri olmadığını unutmayın. Contango'da roll getirisi negatiftir; backwardation'da pozitiftir. Spot getiri, roll ve teminatı da içeren vadeli işlem endeksi getirisiyle aynı değildir. Bir emtia üreticisinin payı emtiaya sahip olmakla aynı değildir. Emtia çeşitlendirmesi her krizde garanti değildir. Ekspertize dayalı tarım arazisi ve ormanlık arazi değerleri olduklarından daha yumuşak görünür.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Raw land earns only appreciation, timberland earns biological growth plus price and land value changes, and farmland earns crop income plus appreciation. Commodity futures return equals spot return plus roll return plus collateral return. Natural resources can diversify and hedge inflation but carry price, weather, storage and appraisal-smoothing issues.",
+    "summary_tr": "Ham arazi yalnızca değer artışı kazandırır; ormanlık arazi biyolojik büyüme artı fiyat ve arazi değeri değişimi, tarım arazisi ise ürün geliri artı değer artışı sağlar. Emtia vadeli işlem getirisi spot getiri artı roll getirisi artı teminat getirisine eşittir. Doğal kaynaklar çeşitlendirme ve enflasyondan korunma sağlayabilir; ancak fiyat, hava, depolama ve ekspertiz yumuşatması sorunları taşır.",
+    "common_traps_tr": [
+      "Ham arazi gelir üretmez.",
+      "Contango'da roll getirisi negatif, backwardation'da pozitiftir.",
+      "Spot getiri toplam vadeli işlem getirisi değildir.",
+      "Üretici hissesi emtia değildir.",
+      "Ormanlık arazide hasat erteleme esnekliği vardır.",
+      "Doğal kaynak değerlemeleri yumuşatılmış olabilir."
+    ],
+    "vocab_ids": [
+      "natural-resources",
+      "timberland",
+      "farmland",
+      "raw-land",
+      "harvest",
+      "backwardation",
+      "contango",
+      "roll-yield",
+      "collateral",
+      "futures",
+      "commodity",
+      "appreciation",
+      "inflation-hedge",
+      "spot-price"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Emtia ve vadeli işlem Düzey 3'te geçer; roll getirisi ve ormanlık arazi getirisi yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "AI-05-a-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement about raw land as an investment is most accurate?",
+      "stem_tr": "Ham arazinin bir yatırım olarak değerlendirilmesi hakkında aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It produces no income, so return depends mainly on appreciation, often from a change in land use",
+          "tr": "Gelir üretmez; bu yüzden getiri esas olarak, çoğu kez arazi kullanımındaki değişimden kaynaklanan değer artışına bağlıdır"
+        },
+        {
+          "key": "B",
+          "en": "It earns a steady rent without holding costs",
+          "tr": "Elde tutma maliyeti olmadan istikrarlı kira kazandırır"
+        },
+        {
+          "key": "C",
+          "en": "It earns biological growth like timberland",
+          "tr": "Ormanlık arazi gibi biyolojik büyüme kazandırır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Raw land is undeveloped and has holding costs such as property tax. Its return is capital appreciation.",
+      "explanation_tr": "Ham arazi geliştirilmemiştir ve emlak vergisi gibi elde tutma maliyetleri vardır. Getirisi değer artışıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Raw land has no rent and does have holding costs.",
+          "tr": "Ham arazinin kirası yoktur, elde tutma maliyeti vardır."
+        },
+        "C": {
+          "en": "Biological growth belongs to timberland, not raw land.",
+          "tr": "Biyolojik büyüme ormanlık araziye aittir; ham araziye değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "raw-land",
+        "appreciation",
+        "holding-costs",
+        "mainly"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-a-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The return of a timberland investment is best described as arising from:",
+      "stem_tr": "Bir ormanlık arazi yatırımının getirisi en iyi şu kaynaklardan doğar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "only the interest earned on cash collateral",
+          "tr": "yalnızca nakit teminat üzerinden kazanılan faiz"
+        },
+        {
+          "key": "B",
+          "en": "biological growth of trees, changes in timber prices and changes in land value",
+          "tr": "ağaçların biyolojik büyümesi, kereste fiyatlarındaki değişim ve arazi değerindeki değişim"
+        },
+        {
+          "key": "C",
+          "en": "only the roll yield of futures contracts",
+          "tr": "yalnızca vadeli işlem sözleşmelerinin roll getirisi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Trees grow in volume and quality over time, the timber can be sold at changing prices, and the land itself can change in value.",
+      "explanation_tr": "Ağaçlar zamanla hacim ve kalite olarak büyür, kereste değişen fiyatlarla satılabilir ve arazinin kendisi değer değiştirebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Collateral interest belongs to commodity futures positions.",
+          "tr": "Teminat faizi emtia vadeli işlem pozisyonlarına aittir."
+        },
+        "C": {
+          "en": "Roll yield belongs to futures, not to physical forests.",
+          "tr": "Roll getirisi vadeli işlemlere aittir; fiziksel ormanlara değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "timberland",
+        "biological-growth",
+        "price"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-a-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "When timber prices fall, a timberland owner can often choose to delay harvesting while the trees continue to grow. This flexibility most likely:",
+      "stem_tr": "Kereste fiyatları düştüğünde ormanlık arazi sahibi ağaçlar büyümeye devam ederken hasadı çoğu zaman erteleyebilir. Bu esneklik en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "eliminates all price risk",
+          "tr": "tüm fiyat riskini ortadan kaldırır"
+        },
+        {
+          "key": "B",
+          "en": "forces the owner to sell at the lowest price",
+          "tr": "sahibini en düşük fiyattan satmaya zorlar"
+        },
+        {
+          "key": "C",
+          "en": "reduces the sensitivity of returns to short-term price declines",
+          "tr": "getirilerin kısa vadeli fiyat düşüşlerine duyarlılığını azaltır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Waiting lets trees add volume while prices recover. It helps but does not remove price risk, because prices may stay low.",
+      "explanation_tr": "Beklemek, fiyatlar toparlanırken ağaçların hacim kazanmasını sağlar. Yardımcı olur ama fiyat riskini ortadan kaldırmaz; çünkü fiyatlar düşük kalabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Prices may stay low for a long time, so risk remains.",
+          "tr": "Fiyatlar uzun süre düşük kalabilir; risk devam eder."
+        },
+        "B": {
+          "en": "Flexibility means the owner is NOT forced to sell.",
+          "tr": "Esneklik, sahibin satmaya zorlanmaması demektir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "harvest",
+        "sensitivity",
+        "decline",
+        "timberland"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-a-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investor who needs current income would most likely prefer which natural resource investment?",
+      "stem_tr": "Cari gelire ihtiyaç duyan bir yatırımcı hangi doğal kaynak yatırımını en olası biçimde tercih eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Raw land held for future development",
+          "tr": "Gelecekte geliştirilmek üzere tutulan ham arazi"
+        },
+        {
+          "key": "B",
+          "en": "Farmland leased to a farmer for annual rent",
+          "tr": "Bir çiftçiye yıllık kira karşılığı kiraya verilmiş tarım arazisi"
+        },
+        {
+          "key": "C",
+          "en": "Young timber stands that will not be harvested for 20 years",
+          "tr": "20 yıl hasat edilmeyecek genç ağaçlık alanlar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Leased farmland pays regular rent. Raw land and young timber produce little or no cash for years.",
+      "explanation_tr": "Kiraya verilmiş tarım arazisi düzenli kira öder. Ham arazi ve genç ağaçlar yıllarca çok az nakit üretir ya da hiç üretmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Raw land pays no income.",
+          "tr": "Ham arazi gelir ödemez."
+        },
+        "C": {
+          "en": "Young timber pays no income until harvest.",
+          "tr": "Genç ağaçlar hasada kadar gelir ödemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "farmland",
+        "lease",
+        "annual"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-a-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish fund is considering listed shares of an agricultural company versus owning farmland directly. Compared with direct farmland ownership, the listed shares most likely offer:",
+      "stem_tr": "Bir Türk fonu, bir tarım şirketinin borsadaki payları ile doğrudan tarım arazisine sahip olmayı karşılaştırıyor. Doğrudan tarım arazisi sahipliğine kıyasla borsadaki paylar en olası biçimde şunları sunar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower liquidity and no equity-market risk",
+          "tr": "daha düşük likidite ve hisse piyasası riskinin olmaması"
+        },
+        {
+          "key": "B",
+          "en": "returns that depend only on land prices",
+          "tr": "yalnızca arazi fiyatlarına bağlı getiriler"
+        },
+        {
+          "key": "C",
+          "en": "higher liquidity but more company-specific and equity-market risk",
+          "tr": "daha yüksek likidite ama daha fazla şirkete özgü ve hisse piyasası riski"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Listed shares trade daily but also reflect management quality, leverage and the stock market. Farmland itself is illiquid.",
+      "explanation_tr": "Borsadaki paylar günlük işlem görür ama yönetim kalitesini, kaldıracı ve hisse piyasasını da yansıtır. Tarım arazisinin kendisi likit değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Listed shares are more liquid, not less, and do carry equity-market risk.",
+          "tr": "Borsadaki paylar daha az değil, daha likittir ve hisse piyasası riski taşır."
+        },
+        "B": {
+          "en": "A company's results depend on more than land prices.",
+          "tr": "Bir şirketin sonuçları yalnızca arazi fiyatlarına bağlı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "listed",
+        "liquidity",
+        "compared"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-b-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A commodity futures curve in which the next contract is priced lower than the near contract is called:",
+      "stem_tr": "Bir sonraki sözleşmenin yakın sözleşmeden daha düşük fiyatlandığı emtia vadeli işlem eğrisine ne ad verilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "backwardation",
+          "tr": "backwardation"
+        },
+        {
+          "key": "B",
+          "en": "contango",
+          "tr": "contango"
+        },
+        {
+          "key": "C",
+          "en": "parity",
+          "tr": "parite"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A downward-sloping curve is backwardation. Rolling a long position then tends to earn a positive roll yield.",
+      "explanation_tr": "Aşağı eğimli eğriye backwardation denir. Bu durumda uzun pozisyonun vade geçişi genellikle pozitif roll getirisi sağlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Contango is an upward-sloping curve (next contract higher).",
+          "tr": "Contango yukarı eğimli eğridir (sonraki sözleşme daha yüksek)."
+        },
+        "C": {
+          "en": "Parity is not the name for the shape of the futures curve.",
+          "tr": "Parite, vadeli işlem eğrisinin biçimine verilen ad değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "backwardation",
+        "contango",
+        "roll-yield"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-b-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Over a year, a collateralized oil futures position has a spot price return of +4%, a roll yield of −2.5% and a collateral return of 3%. The total return is closest to:",
+      "stem_tr": "Bir yıl boyunca teminatlı bir petrol vadeli işlem pozisyonunun spot fiyat getirisi +%4, roll getirisi −%2,5 ve teminat getirisi %3'tür. Toplam getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.00%",
+          "tr": "%7,00",
+          "value": 7.0
+        },
+        {
+          "key": "B",
+          "en": "1.50%",
+          "tr": "%1,50",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "4.50%",
+          "tr": "%4,50",
+          "value": 4.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Total return = spot + roll + collateral = 4 − 2.5 + 3 = 4.5%.",
+      "explanation_tr": "Toplam getiri = spot + roll + teminat = 4 − 2,5 + 3 = %4,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "7.00% ignores the negative roll yield (4 + 3).",
+          "tr": "%7,00 negatif roll getirisini yok sayar (4 + 3)."
+        },
+        "B": {
+          "en": "1.50% leaves out the collateral return (4 − 2.5).",
+          "tr": "%1,50 teminat getirisini dışarıda bırakır (4 − 2,5)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the total return of a collateralized futures position.",
+          "tr": "Teminatlı vadeli işlem pozisyonunun toplam getirisi isteniyor."
+        },
+        {
+          "en": "Add spot return, roll return and collateral return.",
+          "tr": "Spot getiri, roll getirisi ve teminat getirisi toplanır.",
+          "formula_latex": "R=R_{spot}+R_{roll}+R_{col}"
+        },
+        {
+          "en": "Substitute 4, −2.5 and 3.",
+          "tr": "4, −2,5 ve 3 yerine konur.",
+          "values": {
+            "spot": 4,
+            "roll": -2.5,
+            "col": 3
+          }
+        },
+        {
+          "en": "R = 4.5%.",
+          "tr": "R = %4,5."
+        }
+      ],
+      "vocab_ids": [
+        "spot-price",
+        "roll-yield",
+        "collateral",
+        "futures",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4 [+] 2.5 [+/-] [+] 3 [=] → 4.5"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "4-2.5+3",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-b-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The near-term futures price of a commodity is 80 and the next contract is priced at 82. The roll yield per roll, using (near − next) / near, is closest to:",
+      "stem_tr": "Bir emtianın yakın vadeli fiyatı 80, bir sonraki sözleşme fiyatı 82'dir. (yakın − sonraki) / yakın formülüyle roll başına getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-2.50%",
+          "tr": "%-2,50",
+          "value": -2.5
+        },
+        {
+          "key": "B",
+          "en": "2.50%",
+          "tr": "%2,50",
+          "value": 2.5
+        },
+        {
+          "key": "C",
+          "en": "-2.00%",
+          "tr": "%-2,00",
+          "value": -2.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "(80 − 82) / 80 = −2.5%. The curve is in contango, so the roll yield is negative.",
+      "explanation_tr": "(80 − 82) / 80 = %−2,5. Eğri contango'dadır; bu yüzden roll getirisi negatiftir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "2.50% has the wrong sign: contango gives a negative roll yield.",
+          "tr": "%2,50 işaret hatasıdır: contango negatif roll getirisi verir."
+        },
+        "C": {
+          "en": "-2.00% reports the raw price difference (80 − 82) as a percent without dividing by the near price.",
+          "tr": "%-2,00 ham fiyat farkını (80 − 82) yakın fiyata bölmeden yüzde gibi yazar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the roll yield for one roll.",
+          "tr": "Bir roll için getiri isteniyor."
+        },
+        {
+          "en": "Use the near-minus-next formula divided by the near price.",
+          "tr": "Yakın eksi sonraki fiyat, yakın fiyata bölünür.",
+          "formula_latex": "R_{roll}=\\frac{F_{near}-F_{next}}{F_{near}}"
+        },
+        {
+          "en": "(80 − 82) / 80.",
+          "tr": "(80 − 82) / 80.",
+          "values": {
+            "Fn": 80,
+            "Fx": 82
+          }
+        },
+        {
+          "en": "Roll yield = −2.5%.",
+          "tr": "Roll getirisi = %−2,5."
+        }
+      ],
+      "vocab_ids": [
+        "roll-yield",
+        "contango",
+        "contract",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [-] 82 [=] → -2",
+          "[÷] 80 [=] → -0.025"
+        ],
+        "note_tr": "%−2,5."
+      },
+      "numeric": {
+        "expr": "(80-82)/80*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-b-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a way of gaining commodity exposure that also exposes the investor to company-specific risk?",
+      "stem_tr": "Aşağıdakilerden hangisi emtia maruziyeti sağlarken yatırımcıyı şirkete özgü riske de maruz bırakan bir yoldur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Holding the physical commodity in storage",
+          "tr": "Fiziksel emtiayı depoda tutmak"
+        },
+        {
+          "key": "B",
+          "en": "Buying shares of a company that produces the commodity",
+          "tr": "Emtiayı üreten bir şirketin payını almak"
+        },
+        {
+          "key": "C",
+          "en": "Holding a fully collateralized futures position",
+          "tr": "Tam teminatlı bir vadeli işlem pozisyonu tutmak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Producer shares reflect management, costs, debt and the stock market in addition to the commodity price.",
+      "explanation_tr": "Üretici payları, emtia fiyatına ek olarak yönetimi, maliyetleri, borcu ve hisse piyasasını yansıtır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Physical holding has storage cost but no company risk.",
+          "tr": "Fiziksel sahiplikte depolama maliyeti vardır ama şirket riski yoktur."
+        },
+        "C": {
+          "en": "A futures position tracks the commodity price, not a company.",
+          "tr": "Vadeli işlem pozisyonu bir şirketi değil, emtia fiyatını izler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "commodity",
+        "exposure",
+        "producer",
+        "physical",
+        "storage"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-b-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A long-only commodity index investor is concerned about persistent contango. Holding all else equal, persistent contango most likely causes:",
+      "stem_tr": "Uzun pozisyonlu bir emtia endeksi yatırımcısı kalıcı contango'dan endişe ediyor. Diğer her şey sabitken kalıcı contango en olası biçimde şuna yol açar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative roll yield that reduces returns versus spot price changes",
+          "tr": "spot fiyat değişimlerine göre getirileri azaltan negatif roll getirisi"
+        },
+        {
+          "key": "B",
+          "en": "positive roll yield that increases returns",
+          "tr": "getirileri artıran pozitif roll getirisi"
+        },
+        {
+          "key": "C",
+          "en": "no effect on returns because roll costs are always zero",
+          "tr": "roll maliyeti her zaman sıfır olduğu için getiriler üzerinde etkisi olmaması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In contango the investor sells the cheaper near contract and buys the more expensive next one every roll, which drags returns.",
+      "explanation_tr": "Contango'da yatırımcı her roll'da daha ucuz yakın sözleşmeyi satıp daha pahalı sonraki sözleşmeyi alır; bu getirileri aşağı çeker.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Positive roll yield occurs in backwardation.",
+          "tr": "Pozitif roll getirisi backwardation'da oluşur."
+        },
+        "C": {
+          "en": "Roll costs are not zero when the curve is sloped.",
+          "tr": "Eğri eğimliyken roll maliyeti sıfır değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "contango",
+        "roll-yield",
+        "spot-price",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-c-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best explains why commodities can act as an inflation hedge?",
+      "stem_tr": "Aşağıdakilerden hangisi emtiaların enflasyondan korunma aracı olarak işleyebilmesini en iyi açıklar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Commodity prices always fall when inflation rises",
+          "tr": "Emtia fiyatları enflasyon yükseldiğinde her zaman düşer"
+        },
+        {
+          "key": "B",
+          "en": "Commodity prices are inputs to goods and services, so they tend to rise when inflation rises",
+          "tr": "Emtia fiyatları mal ve hizmetlerin girdisidir; bu yüzden enflasyon yükseldiğinde artma eğilimindedir"
+        },
+        {
+          "key": "C",
+          "en": "Commodity prices are fixed by contract",
+          "tr": "Emtia fiyatları sözleşmeyle sabitlenmiştir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "When commodity prices rise, they push up costs and consumer prices; unexpected inflation often comes with higher commodity prices.",
+      "explanation_tr": "Emtia fiyatları arttığında maliyetleri ve tüketici fiyatlarını yukarı iter; beklenmeyen enflasyon çoğu zaman daha yüksek emtia fiyatlarıyla birlikte gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Commodity prices tend to rise, not fall, with unexpected inflation.",
+          "tr": "Emtia fiyatları beklenmeyen enflasyonla düşmez, yükselme eğilimindedir."
+        },
+        "C": {
+          "en": "Commodity prices float with supply and demand; they are not fixed.",
+          "tr": "Emtia fiyatları arz ve talebe göre dalgalanır; sabit değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "inflation",
+        "hedge",
+        "input",
+        "commodity"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-c-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "analyze",
+      "stem_en": "An investor holds a portfolio of BIST 100 shares and DİBS and adds a commodity futures index. The most likely reason for adding it is that:",
+      "stem_tr": "Bir yatırımcı BIST 100 hisseleri ve DİBS'ten oluşan portföyüne bir emtia vadeli işlem endeksi ekliyor. Bunu eklemesinin en olası nedeni nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "commodities have a guaranteed positive return",
+          "tr": "emtiaların garanti pozitif getirisi vardır"
+        },
+        {
+          "key": "B",
+          "en": "commodities pay regular dividends",
+          "tr": "emtialar düzenli temettü öder"
+        },
+        {
+          "key": "C",
+          "en": "commodity returns are driven by supply, demand and inflation and often have low correlation with equities and bonds",
+          "tr": "emtia getirileri arz, talep ve enflasyonla belirlenir ve çoğu zaman hisse ve tahvillerle düşük korelasyon taşır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Different return drivers and inflation sensitivity can reduce portfolio risk, though correlations can rise in stress.",
+      "explanation_tr": "Farklı getiri kaynakları ve enflasyon duyarlılığı portföy riskini azaltabilir; ancak stres dönemlerinde korelasyonlar yükselebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No commodity return is guaranteed.",
+          "tr": "Hiçbir emtia getirisi garanti değildir."
+        },
+        "B": {
+          "en": "Commodities themselves pay no dividends or coupons.",
+          "tr": "Emtiaların kendisi temettü ya da kupon ödemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "commodity",
+        "correlation",
+        "supply",
+        "demand",
+        "portfolio"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-c-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a typical risk of investing in farmland?",
+      "stem_tr": "Aşağıdakilerden hangisi tarım arazisi yatırımının tipik risklerinden biridir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A guaranteed harvest regardless of weather",
+          "tr": "Hava koşullarından bağımsız garanti hasat"
+        },
+        {
+          "key": "B",
+          "en": "Weather events and crop price swings that affect yields and income",
+          "tr": "Verimi ve geliri etkileyen hava olayları ve ürün fiyatı dalgalanmaları"
+        },
+        {
+          "key": "C",
+          "en": "Daily marked-to-market prices on an exchange",
+          "tr": "Borsada günlük piyasa değerlemesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Farmland output depends on drought, flood, disease and crop prices. Private farmland is also illiquid and appraisal-valued.",
+      "explanation_tr": "Tarım arazisinin verimi kuraklık, sel, hastalık ve ürün fiyatlarına bağlıdır. Özel tarım arazisi ayrıca likit değildir ve ekspertizle değerlenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Harvest is never guaranteed.",
+          "tr": "Hasat hiçbir zaman garanti değildir."
+        },
+        "C": {
+          "en": "Private farmland is not marked to market daily.",
+          "tr": "Özel tarım arazisi günlük piyasa değerlemesine tabi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "farmland",
+        "yield",
+        "drought",
+        "swings"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-c-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish lira-based investor buys a USD-priced commodity futures index. If the lira weakens against the dollar while the dollar price of the index is unchanged, the investor's lira return is most likely:",
+      "stem_tr": "Türk lirası bazlı bir yatırımcı USD fiyatlı bir emtia vadeli işlem endeksi alıyor. Endeksin dolar fiyatı değişmezken lira dolara karşı zayıflarsa yatırımcının lira getirisi en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative, because commodities fall when the lira weakens",
+          "tr": "negatif olur, çünkü lira zayıfladığında emtialar düşer"
+        },
+        {
+          "key": "B",
+          "en": "zero, because currency moves never matter for commodity investors",
+          "tr": "sıfır olur, çünkü kur hareketleri emtia yatırımcıları için hiç önemli değildir"
+        },
+        {
+          "key": "C",
+          "en": "positive, because the currency move adds to the lira value of the position",
+          "tr": "pozitif olur, çünkü kur hareketi pozisyonun lira değerine eklenir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Currency exposure affects returns for investors who measure returns in another currency. A weaker lira raises the lira value of dollar assets.",
+      "explanation_tr": "Kur maruziyeti, getiriyi başka bir para biriminde ölçen yatırımcıların getirisini etkiler. Daha zayıf lira, dolar varlıkların lira değerini artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Nothing implies commodity prices fall when the lira weakens; the dollar price was unchanged.",
+          "tr": "Lira zayıflayınca emtia fiyatlarının düşeceğini gösteren bir şey yok; dolar fiyatı değişmedi."
+        },
+        "B": {
+          "en": "Currency moves matter for lira-based investors holding foreign-currency assets.",
+          "tr": "Yabancı para cinsi varlık tutan lira bazlı yatırımcılar için kur hareketleri önemlidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "currency-risk",
+        "exposure",
+        "unchanged"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-05-c-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-05",
+      "los_id": "AI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Reported returns of private timberland and farmland funds are based on appraisals. The most appropriate caution when judging their diversification benefits is that:",
+      "stem_tr": "Özel ormanlık arazi ve tarım arazisi fonlarının raporlanan getirileri ekspertizlere dayanır. Çeşitlendirme faydalarını değerlendirirken en uygun uyarı hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "appraisal smoothing can make volatility and correlation look lower than they are",
+          "tr": "ekspertiz yumuşatması oynaklığı ve korelasyonu olduğundan düşük gösterebilir"
+        },
+        {
+          "key": "B",
+          "en": "appraisals make reported risk higher than true risk",
+          "tr": "ekspertizler raporlanan riski gerçek riskten yüksek gösterir"
+        },
+        {
+          "key": "C",
+          "en": "appraisal-based returns are always daily",
+          "tr": "ekspertize dayalı getiriler her zaman günlüktür"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Appraisals lag the market, which understates risk and the correlation with listed markets.",
+      "explanation_tr": "Ekspertizler piyasayı geriden izler; bu da riski ve borsadaki piyasalarla korelasyonu olduğundan düşük gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Smoothing lowers measured risk; it does not raise it.",
+          "tr": "Yumuşatma ölçülen riski artırmaz, düşürür."
+        },
+        "C": {
+          "en": "Appraisals are infrequent, not daily.",
+          "tr": "Ekspertizler seyrektir, günlük değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "appraisal",
+        "timberland",
+        "volatility",
+        "correlation"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
