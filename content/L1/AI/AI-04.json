@@ -1,0 +1,1304 @@
+{
+  "module_id": "AI-04",
+  "lesson": {
+    "id": "AI-04-lesson",
+    "level": "L1",
+    "topic": "AI",
+    "module_id": "AI-04",
+    "los_ids": [
+      "AI-04-a",
+      "AI-04-b",
+      "AI-04-c",
+      "AI-04-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Real Estate and Infrastructure",
+    "title_tr": "Gayrimenkul ve Altyapı",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Buildings, roads and airports as investments",
+        "heading_tr": "Bina, yol ve havalimanı birer yatırım olarak",
+        "en": "A shopping mall in Ankara earns rent. A toll bridge earns fees. A natural gas pipeline earns regulated charges. All of them are real assets: physical things that produce income for many years and often adjust with inflation. Investors like them for steady cash flow and diversification. But a building cannot be sold in a second, its value is estimated by an appraiser, and a big share of the return may come from borrowed money. Infrastructure adds another twist: the asset often depends on government permission, contracts or regulation. In Türkiye, many bridges, airports and hospitals were built under public-private partnership models such as build-operate-transfer. This module covers how to describe, value and judge the risk of these assets.",
+        "tr": "Ankara'daki bir alışveriş merkezi kira kazanır. Ücretli bir köprü geçiş ücreti kazanır. Bir doğal gaz boru hattı düzenlenmiş tarifeler kazanır. Hepsi reel varlıktır: uzun yıllar gelir üreten ve çoğu zaman enflasyonla birlikte ayarlanan fiziksel varlıklar. Yatırımcılar bunları istikrarlı nakit akışı ve çeşitlendirme için sever. Ancak bir bina bir saniyede satılamaz, değeri bir eksper tarafından tahmin edilir ve getirinin büyük bir kısmı borç paradan gelebilir. Altyapı ek bir güçlük getirir: varlık çoğu zaman devlet izni, sözleşmeler ya da düzenlemeye bağlıdır. Türkiye'de birçok köprü, havalimanı ve hastane yap-işlet-devret gibi kamu-özel ortaklığı modelleriyle yapılmıştır. Bu modül bu varlıkları tanımlamayı, değerlemeyi ve riskini yargılamayı kapsar.",
+        "key_terms": [
+          "real assets",
+          "appraisal",
+          "public-private partnership"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Real estate: forms and valuation",
+        "heading_tr": "Gayrimenkul: biçimler ve değerleme",
+        "en": "Real estate can be held in four basic forms. Private equity: direct ownership of property or private funds. Public equity: shares of listed real estate companies or REITs (GYO in Türkiye). Private debt: mortgage loans. Public debt: mortgage-backed securities. Main property types: residential, office, retail, industrial and logistics, hotels, and others. Value is usually estimated with three approaches: the sales comparison approach (similar sold properties), the income approach (capitalizing net operating income) and the cost approach (replacement cost minus depreciation). Net operating income (NOI) is rental income minus vacancy and operating expenses; it excludes depreciation, interest and income taxes. The cap rate is NOI divided by value.",
+        "tr": "Gayrimenkul dört temel biçimde tutulabilir. Özel özkaynak: mülkün ya da özel fonların doğrudan sahipliği. Halka açık özkaynak: borsadaki gayrimenkul şirketlerinin ya da REIT'lerin (Türkiye'de GYO) payları. Özel borç: ipotekli krediler. Halka açık borç: ipoteğe dayalı menkul kıymetler. Ana mülk türleri: konut, ofis, perakende, sanayi ve lojistik, oteller ve diğerleri. Değer genellikle üç yaklaşımla tahmin edilir: emsal karşılaştırma yaklaşımı (satılmış benzer mülkler), gelir yaklaşımı (net işletme gelirinin kapitalizasyonu) ve maliyet yaklaşımı (yeniden inşa maliyeti eksi amortisman). Net işletme geliri (NOI), kira geliri eksi boşluk kaybı ve işletme giderleridir; amortisman, faiz ve gelir vergisini içermez. Kapitalizasyon oranı (cap rate) NOI'nin değere bölünmesidir.",
+        "key_terms": [
+          "REIT",
+          "NOI",
+          "cap rate",
+          "sales comparison approach",
+          "mortgage"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Cap rate valuation and leverage",
+        "heading_tr": "Cap rate ile değerleme ve kaldıraç",
+        "en": "Direct capitalization: Value = NOI / cap rate. A lower cap rate means a higher value for the same NOI. Leverage: when the property's return is higher than the borrowing cost, borrowing raises the return on equity; when it is lower, borrowing lowers it. Equity return = (property return × property value − interest rate × debt) / equity. Leverage also increases risk and can magnify losses when values fall.",
+        "tr": "Doğrudan kapitalizasyon: Değer = NOI / cap rate. Aynı NOI için daha düşük cap rate daha yüksek değer anlamına gelir. Kaldıraç: mülkün getirisi borçlanma maliyetinden yüksekse borçlanma özkaynak getirisini artırır; düşükse azaltır. Özkaynak getirisi = (mülk getirisi × mülk değeri − faiz oranı × borç) / özkaynak. Kaldıraç aynı zamanda riski artırır ve değerler düştüğünde zararları büyütebilir.",
+        "key_terms": [
+          "direct capitalization",
+          "leverage",
+          "equity return"
+        ],
+        "formula_latex": "V=\\frac{NOI}{c},\\qquad R_E=\\frac{R_P\\,V-r_D\\,D}{E}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Valuing an office building",
+        "heading_tr": "Bir ofis binasının değerlemesi",
+        "en": "A building has potential rent of 12 million, 5% vacancy loss and operating expenses of 3 million. The market cap rate is 7%.",
+        "tr": "Bir binanın potansiyel kirası 12 milyon, boşluk kaybı %5 ve işletme giderleri 3 milyondur. Piyasa cap rate'i %7'dir.",
+        "key_terms": [],
+        "example": {
+          "en": "Effective rent = 12 × 0.95 = 11.4. NOI = 11.4 − 3 = 8.4. Value = 8.4 / 0.07 = 120 million.",
+          "tr": "Efektif kira = 12 × 0,95 = 11,4. NOI = 11,4 − 3 = 8,4. Değer = 8,4 / 0,07 = 120 milyon.",
+          "formula_latex": "V=\\frac{8.4}{0.07}=120"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Infrastructure",
+        "heading_tr": "Altyapı",
+        "en": "Infrastructure assets are long-lived physical systems that provide essential services. Economic infrastructure: transportation (toll roads, airports, ports), utilities (power, water, gas pipelines) and communications (towers, fibre). Social infrastructure: hospitals, schools, prisons, government buildings. Brownfield assets already exist and operate; greenfield assets are still to be built, so they carry construction risk but may offer higher growth. Investment forms: direct investment, private infrastructure funds, listed infrastructure companies and public-private partnerships (PPP), where a private firm builds and runs an asset under a contract with the state. Revenue may be paid by users (demand risk) or by the government as availability payments (more stable).",
+        "tr": "Altyapı varlıkları, temel hizmetleri sağlayan uzun ömürlü fiziksel sistemlerdir. Ekonomik altyapı: ulaşım (ücretli yollar, havalimanları, limanlar), kamu hizmetleri (elektrik, su, gaz boru hatları) ve iletişim (kuleler, fiber). Sosyal altyapı: hastaneler, okullar, cezaevleri, kamu binaları. Mevcut (brownfield) varlıklar zaten vardır ve işler; yeni (greenfield) varlıklar henüz inşa edilecektir; inşaat riski taşırlar ama daha yüksek büyüme sunabilirler. Yatırım biçimleri: doğrudan yatırım, özel altyapı fonları, borsadaki altyapı şirketleri ve özel bir firmanın devletle sözleşme çerçevesinde bir varlığı inşa edip işlettiği kamu-özel ortaklıkları (PPP). Gelir kullanıcılardan (talep riski) ya da devletten erişilebilirlik ödemesi olarak (daha istikrarlı) gelebilir.",
+        "key_terms": [
+          "economic infrastructure",
+          "social infrastructure",
+          "brownfield",
+          "greenfield",
+          "availability payment"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "NOI does not include interest or depreciation. A lower cap rate raises value. Listed REITs are more liquid than private property but tend to move more with equities. Appraisal-based indexes smooth returns and understate risk. Leverage helps only when the asset return exceeds the cost of debt. Greenfield is riskier than brownfield. Infrastructure is not risk-free: regulation, politics and demand can hurt returns.",
+        "tr": "NOI faiz ve amortismanı içermez. Daha düşük cap rate değeri artırır. Borsadaki REIT'ler özel gayrimenkulden daha likittir; ama hisselerle daha fazla birlikte hareket etme eğilimindedir. Ekspertize dayalı endeksler getirileri yumuşatır ve riski olduğundan düşük gösterir. Kaldıraç yalnızca varlık getirisi borç maliyetini aşarsa yardımcı olur. Greenfield, brownfield'den risklidir. Altyapı risksiz değildir: düzenleme, siyaset ve talep getiriyi bozabilir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Real estate comes as private or public, equity or debt. NOI divided by the cap rate gives value, and leverage magnifies both gains and losses. Infrastructure is economic or social, brownfield or greenfield, with stable, often inflation-linked cash flows and regulatory and construction risks.",
+    "summary_tr": "Gayrimenkul özel ya da halka açık, özkaynak ya da borç biçiminde olur. NOI'nin cap rate'e bölünmesi değeri verir; kaldıraç hem kazancı hem zararı büyütür. Altyapı ekonomik ya da sosyal, brownfield ya da greenfield olabilir; istikrarlı ve çoğu zaman enflasyona endeksli nakit akışları ile düzenleme ve inşaat riskleri taşır.",
+    "common_traps_tr": [
+      "NOI faiz ve amortisman içermez.",
+      "Cap rate düşerse değer yükselir.",
+      "Listelenmiş GYO daha likittir ama hisse piyasasıyla daha çok oynar.",
+      "Ekspertiz endeksleri riski düşük gösterir.",
+      "Kaldıraç yalnızca getiri borç maliyetini aşarsa fayda sağlar.",
+      "Greenfield altyapı inşaat riski taşır."
+    ],
+    "vocab_ids": [
+      "real-assets",
+      "reit",
+      "net-operating-income",
+      "cap-rate",
+      "sales-comparison-approach",
+      "mortgage",
+      "leverage",
+      "vacancy",
+      "greenfield",
+      "brownfield",
+      "availability-payment",
+      "public-private-partnership",
+      "appraisal",
+      "inflation-linked"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "GYO Düzey 3'te geçer; cap rate, NOI ve altyapı yatırımı yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "AI-04-a-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which pairing of real estate form and investment type is correct?",
+      "stem_tr": "Aşağıdaki gayrimenkul biçimi ve yatırım türü eşleştirmelerinden hangisi doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Mortgage loan: private debt",
+          "tr": "İpotekli kredi: özel borç"
+        },
+        {
+          "key": "B",
+          "en": "Shares of a listed GYO: private equity",
+          "tr": "Borsadaki bir GYO'nun payları: özel özkaynak"
+        },
+        {
+          "key": "C",
+          "en": "Mortgage-backed security: public equity",
+          "tr": "İpoteğe dayalı menkul kıymet: halka açık özkaynak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A mortgage loan is a loan secured by property, so it is private debt. Listed REIT shares are public equity and MBS are public debt.",
+      "explanation_tr": "İpotekli kredi, mülkle teminatlandırılmış bir borçtur; dolayısıyla özel borçtur. Borsadaki REIT payları halka açık özkaynak, MBS ise halka açık borçtur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Listed GYO shares are public equity.",
+          "tr": "Borsadaki GYO payları halka açık özkaynaktır."
+        },
+        "C": {
+          "en": "An MBS is a debt security, so public debt.",
+          "tr": "MBS bir borç senedidir; yani halka açık borçtur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mortgage",
+        "private-debt",
+        "reit",
+        "mortgage-backed-security"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-a-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A building has potential rent of 12 million, a 5% vacancy loss and operating expenses of 3 million. The market cap rate is 7%. Using direct capitalization, the value is closest to:",
+      "stem_tr": "Bir binanın potansiyel kirası 12 milyon, boşluk kaybı %5 ve işletme giderleri 3 milyondur. Piyasa cap rate'i %7'dir. Doğrudan kapitalizasyonla değer aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "128.6 million",
+          "tr": "128,6 milyon",
+          "value": 128.6
+        },
+        {
+          "key": "B",
+          "en": "120 million",
+          "tr": "120 milyon",
+          "value": 120.0
+        },
+        {
+          "key": "C",
+          "en": "162.9 million",
+          "tr": "162,9 milyon",
+          "value": 162.9
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "NOI = 12 × 0.95 − 3 = 8.4. Value = 8.4 / 0.07 = 120 million.",
+      "explanation_tr": "NOI = 12 × 0,95 − 3 = 8,4. Değer = 8,4 / 0,07 = 120 milyon.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "128.6 uses NOI of 9.0 (12 − 3), ignoring the vacancy loss.",
+          "tr": "128,6, boşluk kaybını yok sayıp NOI'yi 9,0 (12 − 3) alır."
+        },
+        "C": {
+          "en": "162.9 divides gross potential rent after 5% vacancy (11.4) by 7%, ignoring expenses.",
+          "tr": "162,9, giderleri yok sayıp boşluk sonrası kirayı (11,4) %7'ye böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the property value by the income approach.",
+          "tr": "Gelir yaklaşımıyla mülk değeri isteniyor."
+        },
+        {
+          "en": "Value is NOI divided by the cap rate.",
+          "tr": "Değer, NOI'nin cap rate'e bölünmesidir.",
+          "formula_latex": "V=\\frac{NOI}{c}"
+        },
+        {
+          "en": "NOI = 12 × (1 − 0.05) − 3 = 8.4.",
+          "tr": "NOI = 12 × (1 − 0,05) − 3 = 8,4.",
+          "values": {
+            "rent": 12,
+            "vacancy": 0.05,
+            "opex": 3,
+            "c": 0.07
+          }
+        },
+        {
+          "en": "V = 8.4 / 0.07 = 120 million.",
+          "tr": "V = 8,4 / 0,07 = 120 milyon."
+        }
+      ],
+      "vocab_ids": [
+        "cap-rate",
+        "vacancy",
+        "direct-capitalization",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12 [×] 0.95 [-] 3 [=] → 8.4",
+          "[÷] 0.07 [=] → 120"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(12*0.95-3)/0.07",
+        "unit": "million"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-a-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which valuation approach for real estate estimates value from the prices of similar properties that recently sold?",
+      "stem_tr": "Aşağıdaki gayrimenkul değerleme yaklaşımlarından hangisi değeri yakın zamanda satılan benzer mülklerin fiyatlarından tahmin eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The income approach",
+          "tr": "Gelir yaklaşımı"
+        },
+        {
+          "key": "B",
+          "en": "The cost approach",
+          "tr": "Maliyet yaklaşımı"
+        },
+        {
+          "key": "C",
+          "en": "The sales comparison approach",
+          "tr": "Emsal karşılaştırma yaklaşımı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The sales comparison approach adjusts recent prices of comparable properties for differences.",
+      "explanation_tr": "Emsal karşılaştırma yaklaşımı, benzer mülklerin yakın dönem fiyatlarını farklılıklara göre düzeltir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The income approach capitalizes the property's net operating income.",
+          "tr": "Gelir yaklaşımı mülkün net işletme gelirini kapitalize eder."
+        },
+        "B": {
+          "en": "The cost approach uses replacement cost less depreciation.",
+          "tr": "Maliyet yaklaşımı yeniden inşa maliyeti eksi amortismanı kullanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sales-comparison-approach",
+        "comparable",
+        "adjust",
+        "approach"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-a-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with owning an office building directly, buying shares of a listed GYO that owns offices most likely gives the investor:",
+      "stem_tr": "Bir ofis binasına doğrudan sahip olmakla karşılaştırıldığında, ofis binaları olan borsadaki bir GYO'nun payını almak yatırımcıya en olası biçimde şunu sağlar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "full control over leasing and property sales",
+          "tr": "kiralama ve mülk satışları üzerinde tam kontrol"
+        },
+        {
+          "key": "B",
+          "en": "greater liquidity and smaller minimum investment, with returns that track equity markets more closely",
+          "tr": "daha yüksek likidite ve daha küçük asgari yatırım; getiriler hisse piyasalarını daha yakından izler"
+        },
+        {
+          "key": "C",
+          "en": "returns based only on infrequent appraisals",
+          "tr": "yalnızca seyrek ekspertizlere dayalı getiriler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Listed shares trade daily in small lots. Their prices are set by the stock market, so they correlate more with equities than appraised private property does.",
+      "explanation_tr": "Borsadaki paylar günlük ve küçük lotlarla işlem görür. Fiyatları hisse senedi piyasasında oluştuğu için ekspertizle değerlenen özel mülke göre hisselerle daha yüksek korelasyon gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A shareholder of a listed GYO has no direct control over leasing decisions.",
+          "tr": "Borsadaki bir GYO'nun pay sahibinin kiralama kararları üzerinde doğrudan kontrolü yoktur."
+        },
+        "C": {
+          "en": "Listed GYO returns are based on market prices, not just appraisals.",
+          "tr": "Borsadaki GYO getirileri yalnızca ekspertize değil, piyasa fiyatlarına dayanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "listed",
+        "liquidity",
+        "minimum"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-a-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Which item is NOT deducted when computing net operating income (NOI)?",
+      "stem_tr": "Net işletme geliri (NOI) hesaplanırken aşağıdakilerden hangisi düşülmez?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Property maintenance and insurance",
+          "tr": "Mülk bakımı ve sigorta"
+        },
+        {
+          "key": "B",
+          "en": "Vacancy and collection losses",
+          "tr": "Boşluk ve tahsilat kayıpları"
+        },
+        {
+          "key": "C",
+          "en": "Interest on the mortgage loan",
+          "tr": "İpotekli kredinin faizi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "NOI is before financing costs, depreciation and income taxes. Operating expenses and vacancy losses are deducted.",
+      "explanation_tr": "NOI; finansman maliyetlerinden, amortismandan ve gelir vergisinden önceki rakamdır. İşletme giderleri ve boşluk kayıpları düşülür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Maintenance and insurance are operating expenses and are deducted.",
+          "tr": "Bakım ve sigorta işletme giderleridir ve düşülür."
+        },
+        "B": {
+          "en": "Vacancy and collection losses reduce rental income and are deducted.",
+          "tr": "Boşluk ve tahsilat kayıpları kira gelirini azaltır ve düşülür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "net-operating-income",
+        "interest",
+        "deduct"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-b-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Why do appraisal-based real estate indexes most likely understate the volatility of property returns?",
+      "stem_tr": "Ekspertize dayalı gayrimenkul endeksleri gayrimenkul getirilerinin oynaklığını neden büyük olasılıkla olduğundan düşük gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Appraisers rely on past transactions, so values lag and are smoothed",
+          "tr": "Eksperler geçmiş işlemlere dayanır; bu yüzden değerler gecikir ve yumuşatılır"
+        },
+        {
+          "key": "B",
+          "en": "Properties are traded every day at transparent prices",
+          "tr": "Mülkler her gün şeffaf fiyatlarla işlem görür"
+        },
+        {
+          "key": "C",
+          "en": "Appraisers update values after every news item",
+          "tr": "Eksperler her haberden sonra değerleri günceller"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Lagged, comparable-based appraisals smooth changes. Real transaction prices would show larger swings.",
+      "explanation_tr": "Gecikmeli ve emsallere dayalı ekspertizler değişimleri yumuşatır. Gerçek işlem fiyatları daha büyük dalgalanmalar gösterirdi.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Private property does not trade daily; that is the cause of the problem.",
+          "tr": "Özel mülk günlük işlem görmez; sorunun nedeni budur."
+        },
+        "C": {
+          "en": "Appraisals are updated infrequently, not after every news item.",
+          "tr": "Ekspertizler seyrek güncellenir; her haberden sonra değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "appraisal",
+        "volatility",
+        "lag",
+        "smoothed",
+        "transaction"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-b-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A property worth 100 million is bought with 40 million equity and 60 million debt at 4% interest. The property's total return for the year is 6% (income plus appreciation). The return on equity is closest to:",
+      "stem_tr": "100 milyon değerindeki bir mülk 40 milyon özkaynak ve %4 faizli 60 milyon borçla alınıyor. Mülkün yıllık toplam getirisi (gelir artı değer artışı) %6'dır. Özkaynak getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "3.50%",
+          "tr": "%3,50",
+          "value": 3.5
+        },
+        {
+          "key": "C",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Return on equity = (6 − 0.04 × 60) / 40 = (6 − 2.4) / 40 = 9.0%. Leverage lifts equity return because 6% exceeds 4%.",
+      "explanation_tr": "Özkaynak getirisi = (6 − 0,04 × 60) / 40 = (6 − 2,4) / 40 = %9,0. %6, %4'ü aştığı için kaldıraç özkaynak getirisini yükseltir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "6.00% ignores leverage and equals the unlevered property return.",
+          "tr": "%6,00 kaldıracı yok sayar ve borçsuz mülk getirisine eşittir."
+        },
+        "B": {
+          "en": "3.50% subtracts the interest from property return on only part of capital.",
+          "tr": "%3,50 faizi yanlış tabana bölerek düşer."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return on the equity portion.",
+          "tr": "Özkaynak kısmının getirisi isteniyor."
+        },
+        {
+          "en": "Equity return = (property return − interest cost) divided by equity.",
+          "tr": "Özkaynak getirisi = (mülk getirisi − faiz maliyeti) / özkaynak.",
+          "formula_latex": "R_E=\\frac{R_P V - r_D D}{E}"
+        },
+        {
+          "en": "R_P V = 6; interest = 4% × 60 = 2.4; E = 40.",
+          "tr": "R_P V = 6; faiz = %4 × 60 = 2,4; E = 40.",
+          "values": {
+            "V": 100,
+            "D": 60,
+            "E": 40
+          }
+        },
+        {
+          "en": "R_E = 3.6 / 40 = 9.0%.",
+          "tr": "R_E = 3,6 / 40 = %9,0."
+        }
+      ],
+      "vocab_ids": [
+        "leverage",
+        "equity-return",
+        "appreciation",
+        "interest",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [-] 2.4 [=] → 3.6",
+          "[÷] 40 [=] → 0.09"
+        ],
+        "note_tr": "%9,0."
+      },
+      "numeric": {
+        "expr": "(6-0.04*60)/40*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-b-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Real estate leases often include rent escalators linked to inflation. This feature most likely makes real estate:",
+      "stem_tr": "Gayrimenkul kira sözleşmeleri çoğunlukla enflasyona bağlı kira artış maddeleri içerir. Bu özellik gayrimenkulü en olası biçimde şöyle yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a partial hedge against inflation",
+          "tr": "enflasyona karşı kısmi bir korunma aracı"
+        },
+        {
+          "key": "B",
+          "en": "immune to any economic downturn",
+          "tr": "her ekonomik küçülmeden bağışık"
+        },
+        {
+          "key": "C",
+          "en": "perfectly liquid",
+          "tr": "tamamen likit"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Rents that rise with inflation protect income in real terms, but vacancies, rates and demand still matter, so the hedge is partial.",
+      "explanation_tr": "Enflasyonla artan kiralar geliri reel olarak korur; ama boşluk oranı, faizler ve talep yine önemlidir, bu yüzden koruma kısmidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A downturn can raise vacancies and cut rents and values.",
+          "tr": "Küçülme boşluk oranını artırıp kira ve değerleri düşürebilir."
+        },
+        "C": {
+          "en": "Escalators do not change that property is illiquid.",
+          "tr": "Kira artış maddeleri mülkün likit olmayan yapısını değiştirmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "escalator",
+        "inflation",
+        "hedge",
+        "lease"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-b-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In a period when borrowing costs rise sharply and property income stays unchanged, a highly leveraged property investor is most likely to experience:",
+      "stem_tr": "Borçlanma maliyetleri keskin biçimde yükselirken mülk geliri değişmediğinde, yüksek kaldıraçlı bir mülk yatırımcısı en olası biçimde ne yaşar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher equity returns because debt is cheaper",
+          "tr": "borç ucuzladığı için daha yüksek özkaynak getirisi"
+        },
+        {
+          "key": "B",
+          "en": "lower equity returns and greater risk of losses",
+          "tr": "daha düşük özkaynak getirisi ve zarar riskinde artış"
+        },
+        {
+          "key": "C",
+          "en": "no change in equity returns because income is unchanged",
+          "tr": "gelir değişmediği için özkaynak getirisinde değişiklik olmaması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Higher interest takes a bigger part of unchanged income, so equity return falls. Cap rates may also rise, lowering property values and magnifying losses.",
+      "explanation_tr": "Daha yüksek faiz, değişmeyen gelirden daha büyük pay alır; özkaynak getirisi düşer. Cap rate'ler de yükselebilir; bu mülk değerlerini düşürür ve zararları büyütür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Debt got more expensive, not cheaper.",
+          "tr": "Borç ucuzlamadı, pahalılaştı."
+        },
+        "C": {
+          "en": "Interest costs changed, so equity return changes.",
+          "tr": "Faiz maliyeti değişti, dolayısıyla özkaynak getirisi de değişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "rise",
+        "cap-rate",
+        "equity-return"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-b-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is the best description of the diversification benefit of real estate?",
+      "stem_tr": "Aşağıdakilerden hangisi gayrimenkulün çeşitlendirme faydasını en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Income and returns depend on local rents and property cycles, which differ from stocks and bonds, though listed real estate correlates more with equities",
+          "tr": "Gelir ve getiriler, hisse ve tahvillerden farklı olan yerel kiralara ve gayrimenkul döngülerine bağlıdır; ancak borsadaki gayrimenkul hisselerle daha çok ilişkilidir"
+        },
+        {
+          "key": "B",
+          "en": "It has a perfect negative correlation with all other assets",
+          "tr": "Diğer tüm varlıklarla tam negatif korelasyonu vardır"
+        },
+        {
+          "key": "C",
+          "en": "It always rises when equity markets fall",
+          "tr": "Hisse piyasaları düştüğünde her zaman yükselir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Private real estate has different drivers, but reported benefits are partly due to smoothing. Perfect negative correlation does not exist in practice.",
+      "explanation_tr": "Özel gayrimenkulün getiri kaynakları farklıdır; ancak raporlanan faydanın bir kısmı yumuşatmadan gelir. Pratikte tam negatif korelasyon yoktur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Real estate does not have a perfect negative correlation with other assets.",
+          "tr": "Gayrimenkulün diğer varlıklarla tam negatif korelasyonu yoktur."
+        },
+        "C": {
+          "en": "Real estate can fall together with equities in a crisis.",
+          "tr": "Gayrimenkul krizde hisselerle birlikte düşebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "benefit",
+        "likely"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-c-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A hospital built and operated by a private firm under a long contract with the government, which pays the firm a fixed availability payment, is best classified as:",
+      "stem_tr": "Devletle yapılan uzun süreli sözleşme kapsamında özel bir firma tarafından inşa edilip işletilen ve devletin sabit bir erişilebilirlik ödemesi yaptığı hastane en iyi hangi kategoride sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "economic infrastructure in communications",
+          "tr": "iletişimde ekonomik altyapı"
+        },
+        {
+          "key": "B",
+          "en": "social infrastructure under a public-private partnership",
+          "tr": "kamu-özel ortaklığı kapsamında sosyal altyapı"
+        },
+        {
+          "key": "C",
+          "en": "raw land",
+          "tr": "ham arazi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Hospitals, schools and prisons are social infrastructure. A contract between a private firm and the state is a PPP.",
+      "explanation_tr": "Hastaneler, okullar ve cezaevleri sosyal altyapıdır. Özel firma ile devlet arasındaki sözleşme bir PPP'dir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Communications (towers, fibre) are economic infrastructure, not hospitals.",
+          "tr": "İletişim (kuleler, fiber) ekonomik altyapıdır; hastaneler değil."
+        },
+        "C": {
+          "en": "A hospital is a built asset, not raw land.",
+          "tr": "Hastane inşa edilmiş bir varlıktır, ham arazi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "social-infrastructure",
+        "public-private-partnership",
+        "availability-payment",
+        "contract",
+        "classify"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-c-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is an example of economic infrastructure?",
+      "stem_tr": "Aşağıdakilerden hangisi ekonomik altyapıya örnektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A public school",
+          "tr": "Bir devlet okulu"
+        },
+        {
+          "key": "B",
+          "en": "A city hall building",
+          "tr": "Bir belediye binası"
+        },
+        {
+          "key": "C",
+          "en": "A toll road",
+          "tr": "Ücretli bir yol"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Transportation assets such as toll roads, airports and ports are economic infrastructure. Schools and government buildings are social.",
+      "explanation_tr": "Ücretli yollar, havalimanları ve limanlar gibi ulaşım varlıkları ekonomik altyapıdır. Okullar ve kamu binaları sosyaldir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Schools are social infrastructure.",
+          "tr": "Okullar sosyal altyapıdır."
+        },
+        "B": {
+          "en": "Government buildings are social infrastructure.",
+          "tr": "Kamu binaları sosyal altyapıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "economic-infrastructure",
+        "toll",
+        "likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-c-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a brownfield infrastructure asset, a greenfield project most likely has:",
+      "stem_tr": "Brownfield bir altyapı varlığıyla karşılaştırıldığında greenfield bir proje en olası biçimde şunu taşır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower risk because nothing has been built yet",
+          "tr": "henüz hiçbir şey inşa edilmediği için daha düşük risk"
+        },
+        {
+          "key": "B",
+          "en": "higher construction and ramp-up risk but potentially higher growth",
+          "tr": "daha yüksek inşaat ve devreye alma riski ama potansiyel olarak daha yüksek büyüme"
+        },
+        {
+          "key": "C",
+          "en": "immediate, stable cash flows",
+          "tr": "hemen başlayan, istikrarlı nakit akışları"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Greenfield assets must be built, which exposes investors to cost overruns, delays and uncertain demand. Brownfield assets already produce cash flow.",
+      "explanation_tr": "Greenfield varlıklar inşa edilmek zorundadır; bu yatırımcıyı maliyet aşımı, gecikme ve belirsiz talebe açar. Brownfield varlıklar zaten nakit akışı üretir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Not yet built means construction and demand risk, not less risk.",
+          "tr": "Henüz inşa edilmemiş olması daha düşük değil, inşaat ve talep riski demektir."
+        },
+        "C": {
+          "en": "Immediate stable cash flows describe brownfield assets.",
+          "tr": "Hemen başlayan istikrarlı nakit akışları brownfield varlıkları tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "greenfield",
+        "brownfield",
+        "ramp-up",
+        "growth"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-c-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about revenue models in infrastructure is most accurate?",
+      "stem_tr": "Altyapıdaki gelir modelleri hakkında aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "User-paid tolls have no demand risk",
+          "tr": "Kullanıcı ücretlerinde talep riski yoktur"
+        },
+        {
+          "key": "B",
+          "en": "Availability payments depend on the number of users",
+          "tr": "Erişilebilirlik ödemeleri kullanıcı sayısına bağlıdır"
+        },
+        {
+          "key": "C",
+          "en": "Availability payments from the government give more stable revenue than user-paid tolls, which carry demand risk",
+          "tr": "Devletten alınan erişilebilirlik ödemeleri, talep riski taşıyan kullanıcı ücretlerinden daha istikrarlı gelir sağlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With availability payments the government pays for the asset being available. With tolls, traffic volumes determine revenue.",
+      "explanation_tr": "Erişilebilirlik ödemelerinde devlet, varlığın kullanıma hazır olması için öder. Geçiş ücretlerinde gelir trafik hacmine bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Tolls depend on traffic volumes and therefore carry demand risk.",
+          "tr": "Geçiş ücretleri trafik hacmine bağlıdır; dolayısıyla talep riski taşır."
+        },
+        "B": {
+          "en": "Availability payments depend on availability, not on usage.",
+          "tr": "Erişilebilirlik ödemeleri kullanıma değil, erişilebilirliğe bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "availability-payment",
+        "toll",
+        "demand",
+        "stable",
+        "revenue"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-c-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish pension fund wants infrastructure exposure but needs daily liquidity and a small minimum investment. The most appropriate vehicle is most likely:",
+      "stem_tr": "Bir Türk emeklilik fonu altyapı maruziyeti istiyor ancak günlük likidite ve düşük asgari yatırım tutarına ihtiyaç duyuyor. En uygun araç büyük olasılıkla hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "shares of listed infrastructure companies",
+          "tr": "borsada işlem gören altyapı şirketlerinin payları"
+        },
+        {
+          "key": "B",
+          "en": "a direct stake in a greenfield airport",
+          "tr": "greenfield bir havalimanında doğrudan pay"
+        },
+        {
+          "key": "C",
+          "en": "a ten-year closed-end private infrastructure fund",
+          "tr": "on yıllık kapalı uçlu özel altyapı fonu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Listed infrastructure stocks trade daily in small lots. Direct stakes and closed-end private funds are illiquid and need large commitments.",
+      "explanation_tr": "Borsadaki altyapı hisseleri günlük ve küçük lotlarla işlem görür. Doğrudan paylar ve kapalı uçlu özel fonlar likit değildir ve büyük taahhüt gerektirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A direct greenfield stake is illiquid and risky.",
+          "tr": "Doğrudan greenfield pay likit değildir ve risklidir."
+        },
+        "C": {
+          "en": "A ten-year closed-end fund has lock-ups and large minimums.",
+          "tr": "On yıllık kapalı uçlu fonda kilit süresi ve yüksek asgari tutar vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "listed",
+        "liquidity",
+        "vehicle",
+        "minimum"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-d-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a typical risk of infrastructure investments?",
+      "stem_tr": "Aşağıdakilerden hangisi altyapı yatırımlarının tipik risklerinden biridir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "No exposure to any government decision",
+          "tr": "Hiçbir devlet kararına maruz kalmama"
+        },
+        {
+          "key": "B",
+          "en": "Daily price swings because of continuous trading",
+          "tr": "Sürekli işlem nedeniyle günlük fiyat dalgalanmaları"
+        },
+        {
+          "key": "C",
+          "en": "Regulatory and political risk, such as changes in tariffs or concession terms",
+          "tr": "Tarifelerde ya da imtiyaz şartlarında değişiklik gibi düzenleyici ve siyasi risk"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Infrastructure often relies on government permission and regulated prices. A change in policy can change revenue.",
+      "explanation_tr": "Altyapı çoğu zaman devlet iznine ve düzenlenmiş fiyatlara dayanır. Politika değişikliği geliri değiştirebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Infrastructure is highly exposed to government decisions.",
+          "tr": "Altyapı devlet kararlarına büyük ölçüde maruzdur."
+        },
+        "B": {
+          "en": "Private infrastructure is not continuously traded.",
+          "tr": "Özel altyapı sürekli işlem görmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "tariff",
+        "concession",
+        "risk",
+        "policy"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-d-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An infrastructure asset has revenues that rise with inflation under its concession contract and low sensitivity to the economic cycle. Which of the following is the most likely consequence for a portfolio?",
+      "stem_tr": "Bir altyapı varlığının imtiyaz sözleşmesi kapsamında gelirleri enflasyonla artıyor ve ekonomik döngüye duyarlılığı düşük. Bir portföy için en olası sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It may provide stable, inflation-linked income and diversification, but not protection from all losses",
+          "tr": "İstikrarlı, enflasyona endeksli gelir ve çeşitlendirme sağlayabilir; ancak tüm zararlara karşı koruma sağlamaz"
+        },
+        {
+          "key": "B",
+          "en": "It will guarantee returns above inflation",
+          "tr": "Enflasyonun üzerinde getiriyi garanti eder"
+        },
+        {
+          "key": "C",
+          "en": "It will move exactly with the equity market",
+          "tr": "Hisse piyasasıyla tam olarak birlikte hareket eder"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Inflation-linked, regulated or contracted revenue is more stable. But leverage, regulation and demand can still cause losses.",
+      "explanation_tr": "Enflasyona endeksli, düzenlenmiş ya da sözleşmeli gelir daha istikrarlıdır. Ancak kaldıraç, düzenleme ve talep yine de zarar doğurabilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "No investment guarantees a return above inflation.",
+          "tr": "Hiçbir yatırım enflasyon üstü getiriyi garanti etmez."
+        },
+        "C": {
+          "en": "Low cyclicality means it does not move exactly with equities.",
+          "tr": "Düşük döngüselliği, hisselerle tam birlikte hareket etmediği anlamına gelir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "inflation-linked",
+        "concession",
+        "consequence",
+        "stable"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-d-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Many infrastructure investments are financed with high leverage. All else equal, this feature most likely:",
+      "stem_tr": "Birçok altyapı yatırımı yüksek kaldıraçla finanse edilir. Diğer her şey sabitken bu özellik en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "eliminates refinancing risk",
+          "tr": "yeniden finansman riskini ortadan kaldırır"
+        },
+        {
+          "key": "B",
+          "en": "increases the sensitivity of equity returns to interest rates and operating results",
+          "tr": "özkaynak getirilerinin faiz oranlarına ve işletme sonuçlarına duyarlılığını artırır"
+        },
+        {
+          "key": "C",
+          "en": "reduces the volatility of equity returns",
+          "tr": "özkaynak getirilerinin oynaklığını azaltır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Fixed debt payments magnify the effect of revenue changes and interest rate moves on equity holders.",
+      "explanation_tr": "Sabit borç ödemeleri, gelir değişimlerinin ve faiz hareketlerinin hissedarlar üzerindeki etkisini büyütür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Highly leveraged assets must refinance debt, so refinancing risk remains.",
+          "tr": "Yüksek kaldıraçlı varlıklar borcu yeniden finanse etmek zorundadır; yeniden finansman riski sürer."
+        },
+        "C": {
+          "en": "Leverage magnifies, not reduces, equity volatility.",
+          "tr": "Kaldıraç özkaynak oynaklığını azaltmaz, büyütür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "refinancing-risk",
+        "interest",
+        "sensitivity",
+        "all-else-equal",
+        "operating"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-d-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which factor is most likely to explain why infrastructure returns can differ from equity market returns?",
+      "stem_tr": "Altyapı getirilerinin hisse piyasası getirilerinden neden farklı olabileceğini hangi etken en olası biçimde açıklar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Cash flows are often contracted or regulated and tied to essential services",
+          "tr": "Nakit akışları çoğu zaman sözleşmeli ya da düzenlenmiştir ve temel hizmetlere bağlıdır"
+        },
+        {
+          "key": "B",
+          "en": "Infrastructure assets are always listed on stock exchanges",
+          "tr": "Altyapı varlıkları her zaman borsada işlem görür"
+        },
+        {
+          "key": "C",
+          "en": "Infrastructure revenue is entirely unrelated to the economy",
+          "tr": "Altyapı geliri ekonomiyle tamamen ilgisizdir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Essential services and long contracts make demand and revenue steadier than for a typical company, though not unrelated to the economy.",
+      "explanation_tr": "Temel hizmetler ve uzun sözleşmeler talebi ve geliri tipik bir şirkete göre daha istikrarlı kılar; ancak ekonomiyle ilgisiz değildir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Many infrastructure assets are private, not listed.",
+          "tr": "Birçok altyapı varlığı özeldir, borsada işlem görmez."
+        },
+        "C": {
+          "en": "Revenue still depends partly on economic activity, such as traffic.",
+          "tr": "Gelir yine kısmen trafik gibi ekonomik faaliyete bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cash-flow",
+        "differ",
+        "likely"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-04-d-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A greenfield toll road concession is expected to open in three years. Which of the following is the most important additional risk compared with an operating toll road?",
+      "stem_tr": "Üç yıl sonra açılması beklenen greenfield bir ücretli yol imtiyazı var. Faaliyetteki bir ücretli yola göre en önemli ek risk hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Certainty of immediate toll revenue",
+          "tr": "Anında geçiş ücreti gelirinin kesinliği"
+        },
+        {
+          "key": "B",
+          "en": "Construction cost overruns, delays and uncertain traffic forecasts",
+          "tr": "İnşaat maliyet aşımları, gecikmeler ve belirsiz trafik tahminleri"
+        },
+        {
+          "key": "C",
+          "en": "No exposure to regulation",
+          "tr": "Düzenlemeye maruz kalmama"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Before opening there is no revenue and the project may cost more or open later. Traffic forecasts for a new road are uncertain.",
+      "explanation_tr": "Açılıştan önce gelir yoktur ve proje daha pahalıya mal olabilir ya da geç açılabilir. Yeni bir yol için trafik tahminleri belirsizdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A road not yet open has no immediate revenue.",
+          "tr": "Henüz açılmamış yolun anında geliri yoktur."
+        },
+        "C": {
+          "en": "Concession roads remain exposed to regulation.",
+          "tr": "İmtiyazlı yollar düzenlemeye maruz kalmaya devam eder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "greenfield",
+        "concession",
+        "overrun",
+        "forecast",
+        "toll"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

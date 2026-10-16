@@ -1,0 +1,904 @@
+{
+  "module_id": "ECO-08",
+  "lesson": {
+    "id": "ECO-08-lesson",
+    "level": "L1",
+    "topic": "ECO",
+    "module_id": "ECO-08",
+    "los_ids": [
+      "ECO-08-a",
+      "ECO-08-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Exchange Rate Calculations",
+    "title_tr": "Döviz Kuru Hesaplamaları",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why you must calculate rates",
+        "heading_tr": "Kurları neden hesaplamak gerekir?",
+        "en": "Banks quote the dollar against most currencies, but companies often need other pairs, such as EUR/TRY or JPY/TRY. When a direct quote does not exist, or when you want to check one, you build the cross rate from two quotes that share a currency. A dealer who gives inconsistent quotes invites triangular arbitrage. The forward rate is also computed, not guessed: it comes from spot and from the interest rates of the two currencies. A Turkish importer who must pay dollars in six months can lock a forward rate, and the rate will be much higher than spot because lira interest rates are higher than dollar rates.",
+        "tr": "Bankalar doları çoğu para birimine karşı kote eder; ancak şirketlerin sık sık EUR/TRY ya da JPY/TRY gibi diğer paritelere ihtiyacı olur. Doğrudan bir kotasyon yoksa ya da birini kontrol etmek istiyorsanız, ortak bir para birimi paylaşan iki kotasyondan çapraz kuru üretirsiniz. Tutarsız kotasyon veren bayi üçgen arbitrajına davetiye çıkarır. Vadeli kur da tahmin edilmez, hesaplanır: spot kurdan ve iki para biriminin faiz oranlarından gelir. Altı ay sonra dolar ödemesi yapacak bir Türk ithalatçı vadeli kuru sabitleyebilir; lira faizleri dolar faizlerinden yüksek olduğu için bu kur spotun epey üzerinde olur.",
+        "key_terms": [
+          "cross rate",
+          "triangular arbitrage",
+          "forward rate"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Cross rates",
+        "heading_tr": "Çapraz kurlar",
+        "en": "To find A/C from A/B and B/C, multiply: A/C = A/B x B/C (the common currency B cancels). If both quotes have the same base (B/A and B/C), divide: A/C = (B/C) / (B/A). If both quotes have the same price currency, divide the other way. Example: EUR/USD = 1.08 and USD/TRY = 34.00 give EUR/TRY = 1.08 x 34.00 = 36.72. With dealer bid and offer prices, the cross bid uses the two bids and the cross offer uses the two offers (when multiplying chained quotes). Cross rates can be checked with a triangular arbitrage: if the quoted cross differs from the implied cross, you can buy cheap and sell dear.",
+        "tr": "A/B ve B/C kotasyonlarından A/C'yi bulmak için çarpın: A/C = A/B x B/C (ortak para birimi B sadeleşir). İki kotasyonun bazı aynıysa (B/A ve B/C) bölün: A/C = (B/C) / (B/A). Fiyat para birimi aynıysa diğer yöne bölün. Örnek: EUR/USD = 1,08 ve USD/TRY = 34,00 iken EUR/TRY = 1,08 x 34,00 = 36,72 olur. Bayinin alış ve satış fiyatlarında, zincirleme kotasyonları çarparken çapraz alış fiyatı iki alış fiyatını, çapraz satış fiyatı iki satış fiyatını kullanır. Çapraz kurlar üçgen arbitrajla kontrol edilebilir: kote edilen çapraz kur ima edilenden farklıysa ucuz alıp pahalı satabilirsiniz.",
+        "key_terms": [
+          "cross rate",
+          "triangular arbitrage",
+          "bid",
+          "offer"
+        ],
+        "formula_latex": "\\frac{A}{C}=\\frac{A}{B}\\times\\frac{B}{C}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Covered interest parity",
+        "heading_tr": "Kapalı faiz paritesi",
+        "en": "Covered interest parity (CIP) says that a hedged investment in either currency must earn the same return, otherwise there is arbitrage. For the quote A/B (price of A in B) over a period of fraction t of a year, F = S x (1 + i_B x t) / (1 + i_A x t), where i_B is the interest rate of the price currency and i_A of the base currency. The currency with the higher interest rate trades at a forward discount. The forward premium or discount in percent is F / S - 1. Forward points are (F - S) x 10,000 for quotes with four decimals. CIP holds because arbitrageurs can borrow in one currency, convert at spot, invest, and sell the proceeds forward.",
+        "tr": "Kapalı faiz paritesi (CIP), her iki para biriminde riskten korunmuş bir yatırımın aynı getiriyi sağlaması gerektiğini söyler; aksi halde arbitraj vardır. A/B kotasyonu (A'nın B cinsinden fiyatı) için yılın t kadarlık bir dönemde F = S x (1 + i_B x t) / (1 + i_A x t) olur; burada i_B fiyat para biriminin, i_A baz para biriminin faizidir. Faizi yüksek olan para birimi vadeli iskontoyla işlem görür. Vadeli prim ya da iskonto yüzdesi F / S - 1'dir. Vadeli puan, dört ondalıklı kotasyonlarda (F - S) x 10.000'dir. CIP geçerlidir; çünkü arbitrajcılar bir para biriminde borçlanabilir, spot kurdan çevirir, yatırır ve elde ettiklerini vadeliye satabilir.",
+        "key_terms": [
+          "covered interest parity",
+          "forward premium",
+          "forward discount",
+          "forward points"
+        ],
+        "formula_latex": "F_{A/B}=S_{A/B}\\,\\frac{1+i_B\\,t}{1+i_A\\,t}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: a one-year forward USD/TRY",
+        "heading_tr": "Çözümlü örnek: bir yıllık vadeli USD/TRY",
+        "en": "Spot USD/TRY is 34.00. The one-year lira rate is 45% and the dollar rate is 5%. F = 34.00 x 1.45 / 1.05 = 46.95. The dollar trades at a forward premium of 46.95 / 34.00 - 1 = 38.1%, and the lira at a forward discount of 1 - 34.00 / 46.95 = 27.6%. Note that the 38.1% is not the simple interest gap of 40 percentage points.",
+        "tr": "Spot USD/TRY 34,00'dır. Bir yıllık lira faizi %45, dolar faizi %5'tir. F = 34,00 x 1,45 / 1,05 = 46,95. Dolar, 46,95 / 34,00 - 1 = %38,1 vadeli primle işlem görür; lira ise 1 - 34,00 / 46,95 = %27,6 vadeli iskontoyla. %38,1'in, 40 puanlık basit faiz farkı olmadığına dikkat edin.",
+        "key_terms": [],
+        "example": {
+          "en": "F = 34.00 x 1.45 / 1.05 = 46.95",
+          "tr": "F = 34,00 x 1,45 / 1,05 = 46,95",
+          "formula_latex": "F=34\\times\\frac{1.45}{1.05}=46.95"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Check which currency is the base before dividing or multiplying. Put the interest rate of the price currency in the numerator of the CIP formula. Use the day-count convention given (for example 180/360). A currency with the higher interest rate is at a forward discount, not a premium. Cross bid and offer prices are built from matching sides. CIP is about hedged returns; it does not forecast the future spot rate.",
+        "tr": "Bölme ya da çarpmadan önce hangi para biriminin baz olduğunu kontrol edin. CIP formülünde fiyat para biriminin faizini paya koyun. Verilen gün sayısı kuralını kullanın (örneğin 180/360). Faizi yüksek olan para birimi vadeli primde değil iskontoda işlem görür. Çapraz alış ve satış fiyatları aynı yönlü fiyatlardan kurulur. CIP riskten korunmuş getirilerle ilgilidir; gelecekteki spot kuru tahmin etmez.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A cross rate is built by multiplying or dividing two quotes that share a currency, and with dealer bid and offer prices the matching sides are combined. Covered interest parity gives F = S x (1 + i_price x t) / (1 + i_base x t); the higher-interest currency trades at a forward discount.",
+    "summary_tr": "Çapraz kur, ortak para birimi paylaşan iki kotasyonun çarpılması ya da bölünmesiyle bulunur; bayi alış ve satış fiyatlarında eşleşen taraflar birleştirilir. Kapalı faiz paritesi F = S x (1 + i_fiyat x t) / (1 + i_baz x t) verir; faizi yüksek para birimi vadeli iskontoda işlem görür.",
+    "common_traps_tr": [
+      "Çapraz kurda ortak para birimi sadeleşecek şekilde çarpın ya da bölün.",
+      "CIP'de fiyat para biriminin faizi paya, baz para biriminin faizi paydaya yazılır.",
+      "Gün sayısı kuralını (örn. 180/360) kullanın.",
+      "Faizi yüksek para birimi vadeli iskontoda işlem görür.",
+      "Çapraz alış fiyatı iki alış fiyatından, çapraz satış fiyatı iki satış fiyatından kurulur."
+    ],
+    "vocab_ids": [
+      "cross-rate",
+      "triangular-arbitrage",
+      "bid-and-ask",
+      "forward-rate",
+      "covered-interest-parity",
+      "forward-premium",
+      "forward-discount",
+      "forward-points",
+      "spot-rate",
+      "exchange-rate",
+      "arbitrage",
+      "closest-to",
+      "assume",
+      "interest",
+      "hedge",
+      "day-count"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "ECO-08-a-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "EUR/USD is 1.0800 and USD/TRY is 34.00. The EUR/TRY cross rate is closest to:",
+      "stem_tr": "EUR/USD 1,0800 ve USD/TRY 34,00'dır. EUR/TRY çapraz kuru en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "36.7200",
+          "tr": "36,7200",
+          "value": 36.72
+        },
+        {
+          "key": "B",
+          "en": "31.4800",
+          "tr": "31,4800",
+          "value": 31.48
+        },
+        {
+          "key": "C",
+          "en": "0.0272",
+          "tr": "0,0272",
+          "value": 0.0272
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "EUR/TRY = EUR/USD x USD/TRY = 1.0800 x 34.00 = 36.72.",
+      "explanation_tr": "EUR/TRY = EUR/USD x USD/TRY = 1,0800 x 34,00 = 36,72.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "31.48 divides 34.00 by 1.0800, which gives the wrong cross.",
+          "tr": "31,48, 34,00'ı 1,0800'e böler; yanlış çapraz kuru verir."
+        },
+        "C": {
+          "en": "0.0272 is the inverse of the correct cross (TRY/EUR).",
+          "tr": "0,0272 doğru çapraz kurun tersidir (TL/EUR)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need EUR/TRY.",
+          "tr": "EUR/TRY isteniyor."
+        },
+        {
+          "en": "Multiply the quotes so that USD cancels.",
+          "tr": "USD sadeleşecek şekilde kotasyonları çarp.",
+          "formula_latex": "\\frac{EUR}{TRY}=\\frac{EUR}{USD}\\times\\frac{USD}{TRY}"
+        },
+        {
+          "en": "1.0800 x 34.00.",
+          "tr": "1,0800 x 34,00."
+        },
+        {
+          "en": "EUR/TRY = 36.72.",
+          "tr": "EUR/TRY = 36,72."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.08 [×] 34 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1.08*34.00"
+      },
+      "vocab_ids": [
+        "cross-rate",
+        "exchange-rate",
+        "closest-to",
+        "assume"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-a-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "USD/JPY is 150.00 and USD/TRY is 34.00. The JPY/TRY cross rate (TRY per 1 JPY) is closest to:",
+      "stem_tr": "USD/JPY 150,00 ve USD/TRY 34,00'dır. JPY/TRY çapraz kuru (1 JPY için TL) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.4118",
+          "tr": "4,4118",
+          "value": 4.4118
+        },
+        {
+          "key": "B",
+          "en": "0.2267",
+          "tr": "0,2267",
+          "value": 0.2267
+        },
+        {
+          "key": "C",
+          "en": "5100.0000",
+          "tr": "5100,0000",
+          "value": 5100.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Both quotes have USD as the base, so JPY/TRY = (USD/TRY) / (USD/JPY) = 34.00 / 150.00 = 0.2267.",
+      "explanation_tr": "İki kotasyonda da baz USD'dir; bu yüzden JPY/TRY = (USD/TRY) / (USD/JPY) = 34,00 / 150,00 = 0,2267.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "4.4118 inverts the fraction (150 / 34), giving JPY per TRY.",
+          "tr": "4,4118 kesri ters çevirir (150 / 34); TL başına JPY verir."
+        },
+        "C": {
+          "en": "5,100 multiplies the two quotes, which does not cancel the dollar.",
+          "tr": "5.100 iki kotasyonu çarpar; dolar sadeleşmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need TRY per JPY.",
+          "tr": "1 JPY için TL isteniyor."
+        },
+        {
+          "en": "Same base (USD): divide the quote of the price currency by the quote of the other.",
+          "tr": "Aynı baz (USD): fiyat para biriminin kotasyonunu diğerine böl.",
+          "formula_latex": "\\frac{JPY}{TRY}=\\frac{USD/TRY}{USD/JPY}"
+        },
+        {
+          "en": "34.00 / 150.00.",
+          "tr": "34,00 / 150,00."
+        },
+        {
+          "en": "0.2267 TRY per JPY.",
+          "tr": "1 JPY = 0,2267 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "34 [÷] 150 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "34.00/150.00"
+      },
+      "vocab_ids": [
+        "cross-rate",
+        "exchange-rate",
+        "closest-to",
+        "spot-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-a-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "EUR/TRY is 37.40 and USD/TRY is 34.00. The implied EUR/USD rate is closest to:",
+      "stem_tr": "EUR/TRY 37,40 ve USD/TRY 34,00'dır. İma edilen EUR/USD kuru en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.9091",
+          "tr": "0,9091",
+          "value": 0.9091
+        },
+        {
+          "key": "B",
+          "en": "71.4000",
+          "tr": "71,4000",
+          "value": 71.4
+        },
+        {
+          "key": "C",
+          "en": "1.1000",
+          "tr": "1,1000",
+          "value": 1.1
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "EUR/USD = (EUR/TRY) / (USD/TRY) = 37.40 / 34.00 = 1.1000.",
+      "explanation_tr": "EUR/USD = (EUR/TRY) / (USD/TRY) = 37,40 / 34,00 = 1,1000.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.9091 inverts the ratio (34.00 / 37.40), which is USD/EUR.",
+          "tr": "0,9091 oranı ters çevirir (34,00 / 37,40); bu USD/EUR'dur."
+        },
+        "B": {
+          "en": "71.40 adds the two quotes.",
+          "tr": "71,40 iki kotasyonu toplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need EUR/USD from two TRY quotes.",
+          "tr": "İki TL kotasyonundan EUR/USD isteniyor."
+        },
+        {
+          "en": "Same price currency (TRY): divide EUR/TRY by USD/TRY.",
+          "tr": "Aynı fiyat para birimi (TL): EUR/TRY'yi USD/TRY'ye böl.",
+          "formula_latex": "\\frac{EUR}{USD}=\\frac{EUR/TRY}{USD/TRY}"
+        },
+        {
+          "en": "37.40 / 34.00.",
+          "tr": "37,40 / 34,00."
+        },
+        {
+          "en": "1.1000.",
+          "tr": "1,1000."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "37.4 [÷] 34 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "37.40/34.00"
+      },
+      "vocab_ids": [
+        "cross-rate",
+        "exchange-rate",
+        "closest-to",
+        "spot-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-a-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A dealer quotes EUR/USD at 1.0780 / 1.0820 (bid / offer) and USD/TRY at 33.90 / 34.10. The cross bid for EUR/TRY (the rate at which the dealer buys EUR for TRY) is closest to:",
+      "stem_tr": "Bir bayi EUR/USD'yi 1,0780 / 1,0820 (alış / satış) ve USD/TRY'yi 33,90 / 34,10 olarak kote ediyor. EUR/TRY çapraz alış kuru (bayinin EUR'yu TL karşılığı aldığı kur) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "36.90",
+          "tr": "36,90",
+          "value": 36.9
+        },
+        {
+          "key": "B",
+          "en": "36.54",
+          "tr": "36,54",
+          "value": 36.54
+        },
+        {
+          "key": "C",
+          "en": "36.76",
+          "tr": "36,76",
+          "value": 36.76
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Bid cross = EUR/USD bid x USD/TRY bid = 1.0780 x 33.90 = 36.54.",
+      "explanation_tr": "Alış çapraz kuru = EUR/USD alış x USD/TRY alış = 1,0780 x 33,90 = 36,54.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "36.90 is the cross offer (1.0820 x 34.10).",
+          "tr": "36,90 çapraz satış kurudur (1,0820 x 34,10)."
+        },
+        "C": {
+          "en": "36.76 mixes the bid of one quote with the offer of the other (1.0780 x 34.10).",
+          "tr": "36,76 bir kotasyonun alışını diğerinin satışıyla karıştırır (1,0780 x 34,10)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cross bid.",
+          "tr": "Çapraz alış kuru isteniyor."
+        },
+        {
+          "en": "Multiply the two bids so each leg is a bank purchase.",
+          "tr": "Her ayağın bankanın alımı olması için iki alış fiyatını çarp.",
+          "formula_latex": "Bid_{EUR/TRY}=Bid_{EUR/USD}\\times Bid_{USD/TRY}"
+        },
+        {
+          "en": "1.0780 x 33.90.",
+          "tr": "1,0780 x 33,90."
+        },
+        {
+          "en": "36.54.",
+          "tr": "36,54."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.078 [×] 33.9 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1.0780*33.90"
+      },
+      "vocab_ids": [
+        "cross-rate",
+        "bid-and-ask",
+        "closest-to",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-a-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "EUR/USD is 1.0800 and USD/TRY is 34.00 (implied EUR/TRY = 36.72), but a dealer quotes EUR/TRY at 37.50. You buy EUR 1 million through USD at the implied rate and sell it at the quoted rate. The arbitrage profit in TRY is closest to:",
+      "stem_tr": "EUR/USD 1,0800 ve USD/TRY 34,00'dır (ima edilen EUR/TRY = 36,72); ancak bir bayi EUR/TRY'yi 37,50'den kote ediyor. 1 milyon EUR'yu USD üzerinden ima edilen kurla alıp kote edilen kurdan satıyorsunuz. TL cinsinden arbitraj kârı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 37,500,000",
+          "tr": "37,500,000 TL",
+          "value": 37500000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 36,720,000",
+          "tr": "36,720,000 TL",
+          "value": 36720000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 780,000",
+          "tr": "780,000 TL",
+          "value": 780000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cost = 1,000,000 x 36.72 = TRY 36,720,000; proceeds = 1,000,000 x 37.50 = TRY 37,500,000; profit = TRY 780,000.",
+      "explanation_tr": "Maliyet = 1.000.000 x 36,72 = 36.720.000 TL; hasılat = 1.000.000 x 37,50 = 37.500.000 TL; kâr = 780.000 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 37,500,000 is the sale proceeds, not the profit.",
+          "tr": "37.500.000 TL satış hasılatıdır, kâr değil."
+        },
+        "B": {
+          "en": "TRY 36,720,000 is the cost of the euros.",
+          "tr": "36.720.000 TL avroların maliyetidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the profit from the inconsistent cross rate.",
+          "tr": "Tutarsız çapraz kurdan elde edilen kâr isteniyor."
+        },
+        {
+          "en": "Profit = (quoted cross - implied cross) x amount.",
+          "tr": "Kâr = (kote edilen çapraz kur - ima edilen çapraz kur) x tutar.",
+          "formula_latex": "\\pi=(X_{quoted}-X_{implied})\\times N"
+        },
+        {
+          "en": "Implied cross = 1.08 x 34.00 = 36.72.",
+          "tr": "İma edilen çapraz kur = 1,08 x 34,00 = 36,72."
+        },
+        {
+          "en": "(37.50 - 36.72) x 1,000,000 = TRY 780,000.",
+          "tr": "(37,50 - 36,72) x 1.000.000 = 780.000 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.08 [×] 34 [=] (36.72)",
+          "37.5 [-] 36.72 [=] [×] 1000000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1000000*(37.50-1.08*34.00)",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "triangular-arbitrage",
+        "arbitrage",
+        "cross-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-b-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Spot USD/TRY is 34.00. The one-year lira interest rate is 45% and the one-year dollar rate is 5%. Using covered interest parity, the one-year forward USD/TRY is closest to:",
+      "stem_tr": "Spot USD/TRY 34,00'dır. Bir yıllık lira faizi %45, bir yıllık dolar faizi %5'tir. Kapalı faiz paritesiyle bir yıllık vadeli USD/TRY en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "46.95",
+          "tr": "46,95",
+          "value": 46.95
+        },
+        {
+          "key": "B",
+          "en": "24.62",
+          "tr": "24,62",
+          "value": 24.62
+        },
+        {
+          "key": "C",
+          "en": "51.77",
+          "tr": "51,77",
+          "value": 51.77
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "F = S x (1 + i_TRY) / (1 + i_USD) = 34.00 x 1.45 / 1.05 = 46.95.",
+      "explanation_tr": "F = S x (1 + i_TL) / (1 + i_USD) = 34,00 x 1,45 / 1,05 = 46,95.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "24.62 inverts the interest rate ratio (1.05 / 1.45).",
+          "tr": "24,62 faiz oranı çarpanını ters çevirir (1,05 / 1,45)."
+        },
+        "C": {
+          "en": "51.77 multiplies by both (1 + i) terms instead of dividing.",
+          "tr": "51,77 bölmek yerine iki (1 + i) terimiyle de çarpar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the one-year forward USD/TRY.",
+          "tr": "Bir yıllık vadeli USD/TRY isteniyor."
+        },
+        {
+          "en": "Apply CIP: multiply spot by (1 + price-currency rate) / (1 + base-currency rate).",
+          "tr": "CIP uygula: spot kuru (1 + fiyat para birimi faizi) / (1 + baz para birimi faizi) ile çarp.",
+          "formula_latex": "F=S\\frac{1+i_{TRY}}{1+i_{USD}}"
+        },
+        {
+          "en": "34.00 x 1.45 / 1.05.",
+          "tr": "34,00 x 1,45 / 1,05."
+        },
+        {
+          "en": "F = 46.95.",
+          "tr": "F = 46,95."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.45 [÷] 1.05 [×] 34 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "34.00*1.45/1.05"
+      },
+      "vocab_ids": [
+        "covered-interest-parity",
+        "forward-rate",
+        "closest-to",
+        "interest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-b-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Spot EUR/USD is 1.0800. The 180-day USD rate is 5.0% and the 180-day EUR rate is 3.0% (annual rates, 180/360 day count). The 180-day forward points (in pips, 4 decimals) are closest to:",
+      "stem_tr": "Spot EUR/USD 1,0800'dür. 180 günlük USD faizi %5,0 ve 180 günlük EUR faizi %3,0'tür (yıllık oranlar, 180/360 gün sayısı). 180 günlük vadeli puanlar (pip cinsinden, 4 ondalık) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "+129.7",
+          "tr": "+129.7",
+          "value": 129.7
+        },
+        {
+          "key": "B",
+          "en": "-105.0",
+          "tr": "-105.0",
+          "value": -105.0
+        },
+        {
+          "key": "C",
+          "en": "+106.4",
+          "tr": "+106.4",
+          "value": 106.4
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F = 1.0800 x (1 + 0.05 x 0.5) / (1 + 0.03 x 0.5) = 1.0800 x 1.025 / 1.015 = 1.09064. Points = (1.09064 - 1.0800) x 10,000 = 106.4.",
+      "explanation_tr": "F = 1,0800 x (1 + 0,05 x 0,5) / (1 + 0,03 x 0,5) = 1,0800 x 1,025 / 1,015 = 1,09064. Puan = (1,09064 - 1,0800) x 10.000 = 106,4.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "129.7 uses full-year rates instead of half-year rates (1.05 / 1.03).",
+          "tr": "129,7 yarım yıllık yerine tam yıllık oranları kullanır (1,05 / 1,03)."
+        },
+        "B": {
+          "en": "-105.0 inverts the rate ratio (1.015 / 1.025) and gives the wrong sign.",
+          "tr": "-105,0 faiz oranı çarpanını ters çevirir (1,015 / 1,025) ve işareti yanlış verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward points for 180 days.",
+          "tr": "180 günlük vadeli puanlar isteniyor."
+        },
+        {
+          "en": "F = S x (1 + i_USD x t) / (1 + i_EUR x t), with t = 0.5.",
+          "tr": "F = S x (1 + i_USD x t) / (1 + i_EUR x t), t = 0,5.",
+          "formula_latex": "F=S\\frac{1+i_{USD}t}{1+i_{EUR}t}"
+        },
+        {
+          "en": "F = 1.0800 x 1.025 / 1.015 = 1.09064.",
+          "tr": "F = 1,0800 x 1,025 / 1,015 = 1,09064."
+        },
+        {
+          "en": "Points = (F - S) x 10,000 = 106.4.",
+          "tr": "Puan = (F - S) x 10.000 = 106,4."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.025 [÷] 1.015 [×] 1.08 [=]",
+          "[-] 1.08 [=] [×] 10000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.0800*(1+0.05*0.5)/(1+0.03*0.5)-1.0800)*10000"
+      },
+      "vocab_ids": [
+        "forward-points",
+        "covered-interest-parity",
+        "day-count",
+        "closest-to",
+        "interest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-b-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "If the interest rate in the price currency is higher than in the base currency, covered interest parity implies that the price currency trades at a forward:",
+      "stem_tr": "Fiyat para biriminin faizi baz para biriminin faizinden yüksekse kapalı faiz paritesi, fiyat para biriminin vadelide şu durumda işlem göreceğini ima eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "discount",
+          "tr": "iskonto"
+        },
+        {
+          "key": "B",
+          "en": "premium",
+          "tr": "prim"
+        },
+        {
+          "key": "C",
+          "en": "par with spot",
+          "tr": "spota eşit"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The higher-yield currency must be worth fewer units of the other in the forward market to offset its extra interest.",
+      "explanation_tr": "Getirisi yüksek para birimi, ek faizi dengelemek için vadeli piyasada diğer para biriminden daha az birim etmelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A premium would let investors earn more interest and gain on the forward, creating arbitrage.",
+          "tr": "Prim yatırımcıların hem daha çok faiz kazanmasına hem vadelide kazanmasına izin verir; arbitraj doğar."
+        },
+        "C": {
+          "en": "Equal forward and spot rates would leave the interest gap unexploited.",
+          "tr": "Vadeli ve spot kurun eşit olması faiz farkını değerlendirilmemiş bırakır."
+        }
+      },
+      "vocab_ids": [
+        "forward-discount",
+        "forward-premium",
+        "covered-interest-parity",
+        "interest",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "if-then"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-b-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Spot USD/TRY is 34.00 and the one-year forward is 46.95. The forward premium on the US dollar relative to the lira is closest to:",
+      "stem_tr": "Spot USD/TRY 34,00 ve bir yıllık vadeli kur 46,95'tir. Doların liraya göre vadeli primi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "40.0%",
+          "tr": "%40.0",
+          "value": 40.0
+        },
+        {
+          "key": "B",
+          "en": "38.1%",
+          "tr": "%38.1",
+          "value": 38.1
+        },
+        {
+          "key": "C",
+          "en": "27.6%",
+          "tr": "%27.6",
+          "value": 27.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Forward premium on the base currency = F / S - 1 = 46.95 / 34.00 - 1 = 38.1%.",
+      "explanation_tr": "Baz paranın vadeli primi = F / S - 1 = 46,95 / 34,00 - 1 = %38,1.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "40.0% is the interest rate gap (45% - 5%), ignoring compounding.",
+          "tr": "%40,0 faiz farkıdır (%45 - %5); bileşiği yok sayar."
+        },
+        "C": {
+          "en": "27.6% is the lira's discount (1 - 34.00 / 46.95), not the dollar's premium.",
+          "tr": "%27,6 liranın iskontosudur (1 - 34,00 / 46,95); doların primi değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the dollar's forward premium.",
+          "tr": "Doların vadeli primi isteniyor."
+        },
+        {
+          "en": "Premium = F / S - 1.",
+          "tr": "Prim = F / S - 1.",
+          "formula_latex": "\\text{Premium}=\\frac{F}{S}-1"
+        },
+        {
+          "en": "46.95 / 34.00 - 1 = 0.381.",
+          "tr": "46,95 / 34,00 - 1 = 0,381."
+        },
+        {
+          "en": "38.1%.",
+          "tr": "%38,1."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "46.95 [÷] 34 [=] [-] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(46.95/34.00-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forward-premium",
+        "forward-rate",
+        "closest-to",
+        "interest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-08-b-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-08",
+      "los_id": "ECO-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Spot USD/TRY is 34.00; the CIP-consistent one-year forward is 46.95, but the market forward is 48.00. Rates are 45% (TRY) and 5% (USD). The arbitrage that exploits this is most likely to:",
+      "stem_tr": "Spot USD/TRY 34,00; CIP ile tutarlı bir yıllık vadeli kur 46,95'tir, ancak piyasadaki vadeli kur 48,00'dır. Faizler %45 (TL) ve %5 (USD)'dir. Bunu değerlendiren arbitraj büyük olasılıkla şunları yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "borrow lira, buy dollars at spot, invest them, and sell the dollars forward at 48.00",
+          "tr": "lira borçlanır, spot kurdan dolar alır, doları yatırır ve doları 48,00'den vadeliye satar"
+        },
+        {
+          "key": "B",
+          "en": "borrow dollars, buy lira at spot, invest them, and buy dollars forward at 48.00",
+          "tr": "dolar borçlanır, spot kurdan lira alır, lirayı yatırır ve doları 48,00'den vadeliye alır"
+        },
+        {
+          "key": "C",
+          "en": "do nothing because the forward is above spot",
+          "tr": "vadeli kur spotun üzerinde olduğu için hiçbir şey yapmaz"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Selling dollars forward at 48.00 earns more than CIP implies: 34 x 1.45 = 49.30 owed, versus 1.05 x 48 = 50.40 received, a riskless gain of 1.10 TRY.",
+      "explanation_tr": "Doları 48,00'den vadeliye satmak CIP'in ima ettiğinden fazlasını kazandırır: borç 34 x 1,45 = 49,30; alınan 1,05 x 48 = 50,40; risksiz kazanç 1,10 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The second strategy is the reverse and would lose money here.",
+          "tr": "İkinci strateji tersidir ve burada zarar ettirir."
+        },
+        "C": {
+          "en": "A forward above the CIP value creates an arbitrage, not an absence of one.",
+          "tr": "CIP değerinin üzerindeki vadeli kur arbitraj yaratır; arbitrajın yokluğunu değil."
+        }
+      },
+      "vocab_ids": [
+        "arbitrage",
+        "covered-interest-parity",
+        "forward-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

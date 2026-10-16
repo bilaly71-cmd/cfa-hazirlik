@@ -1,0 +1,873 @@
+{
+  "module_id": "DER-04",
+  "lesson": {
+    "id": "DER-04-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-04",
+    "los_ids": [
+      "DER-04-a",
+      "DER-04-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+    "title_tr": "Türev Fiyatlamasında Arbitraj, Replikasyon ve Taşıma Maliyeti",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why a forward has one fair price",
+        "heading_tr": "Forward'ın neden tek bir adil fiyatı var?",
+        "en": "Suppose a bank offers a forward to buy a share in one year. You could ignore the forward and instead buy the share today with a loan, then hold it for a year. Both routes give you the share in one year, so they must cost the same. If the forward were cheaper, everyone would buy it and sell the share short; if it were dearer, everyone would do the opposite. These trades push the price back. This idea, no-arbitrage, is how nearly all derivative prices are found. It works for VİOP futures, for USD/TRY forwards and for any other underlying.",
+        "tr": "Bir bankanın bir yıl sonra bir pay almak için forward önerdiğini düşünün. Forward'ı bırakıp payı bugün kredi çekerek alabilir ve bir yıl elde tutabilirsiniz. İki yol da size bir yıl sonra payı verir; bu yüzden aynı maliyete sahip olmalıdır. Forward daha ucuz olsaydı herkes onu alıp payı açığa satardı; daha pahalı olsaydı herkes tersini yapardı. Bu işlemler fiyatı geri iter. Arbitrajsızlık adı verilen bu fikir, neredeyse tüm türev fiyatlarının bulunma yoludur. VİOP vadeli işlemleri, USD/TRY forwardları ve diğer tüm dayanak varlıklar için geçerlidir.",
+        "key_terms": [
+          "no-arbitrage",
+          "replication"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Arbitrage and replication",
+        "heading_tr": "Arbitraj ve replikasyon",
+        "en": "An arbitrage is a set of trades that needs no investment, carries no risk and earns a profit. Two principles drive pricing. First, the law of one price: two assets with identical payoffs must have the same price. Second, no free lunch: you cannot earn more than the risk-free rate on a riskless position. Replication means building the payoff of one instrument from others. A long forward can be replicated by buying the underlying with a loan of PV(F0). When the actual price differs from the replicating cost, an arbitrage exists and trades remove it.",
+        "tr": "Arbitraj, yatırım gerektirmeyen, risk taşımayan ve kâr getiren işlemler bütünüdür. Fiyatlamayı iki ilke yönlendirir. Birincisi tek fiyat kanunu: aynı getiriyi sağlayan iki varlığın fiyatı aynı olmalıdır. İkincisi bedava öğle yemeği yoktur: risksiz bir pozisyonda risksiz faizden fazlasını kazanamazsınız. Replikasyon, bir aracın getirisini başka araçlardan oluşturmaktır. Uzun forward, dayanak varlığı PV(F0) tutarında krediyle alarak kopyalanabilir. Gerçek fiyat replikasyon maliyetinden farklıysa arbitraj vardır ve işlemler bunu ortadan kaldırır.",
+        "key_terms": [
+          "arbitrage",
+          "law of one price",
+          "replication"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Forward price and cost of carry",
+        "heading_tr": "Forward fiyat ve taşıma maliyeti",
+        "en": "With no benefits or costs: F0(T) = S0 (1 + r)^T. With carry benefits (dividends, interest, convenience yield) and costs (storage, insurance): F0(T) = [S0 − PV(benefits) + PV(costs)] (1 + r)^T = S0 (1 + r)^T − FV(benefits) + FV(costs). Costs raise the forward price and benefits lower it. If the forward trades above this value, an arbitrageur borrows, buys the underlying and sells the forward (cash and carry). If below, the arbitrageur sells the underlying short, lends the proceeds and buys the forward (reverse cash and carry). The forward price is not a forecast of the spot price: expected future spot includes a risk premium for bearing the underlying's risk.",
+        "tr": "Getiri veya maliyet yokken: F0(T) = S0 (1 + r)^T. Taşıma getirileri (temettü, faiz, kolaylık getirisi) ve maliyetleri (depolama, sigorta) varken: F0(T) = [S0 − PV(getiri) + PV(maliyet)] (1 + r)^T = S0 (1 + r)^T − FV(getiri) + FV(maliyet). Maliyetler forward fiyatı yükseltir, getiriler düşürür. Forward bu değerin üzerinde işlem görüyorsa arbitrajcı borçlanır, dayanak varlığı alır ve forward satar (nakit-ve-taşı). Altındaysa dayanak varlığı açığa satar, hasılatı borç verir ve forward alır (ters nakit-ve-taşı). Forward fiyat spot fiyatın tahmini değildir: beklenen gelecek spot fiyat, dayanak varlığın riskini taşıma karşılığı bir risk primi içerir.",
+        "key_terms": [
+          "cost of carry",
+          "convenience yield",
+          "cash and carry"
+        ],
+        "formula_latex": "F_0(T)=S_0(1+r)^T-FV(\\text{benefits})+FV(\\text{costs})"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Cash and carry arbitrage",
+        "heading_tr": "Nakit-ve-taşı arbitrajı",
+        "en": "A share is TRY 200, r = 4% and there are no dividends. The fair one-year forward is 200 × 1.04 = TRY 208. A dealer quotes 214. The arbitrageur borrows TRY 200 at 4%, buys the share and sells a one-year forward at 214. At expiry the share is delivered for 214, the loan costs 208, and the profit is TRY 6 whatever the final share price. Such a quote would disappear as traders sell forwards until the price returns to 208.",
+        "tr": "Bir pay 200 TRY, r = %4 ve temettü yok. Adil bir yıllık forward 200 × 1,04 = 208 TRY'dir. Bir kurum 214 fiyatlıyor. Arbitrajcı %4'ten 200 TRY borçlanır, payı alır ve 214'ten bir yıllık forward satar. Vadede pay 214'e teslim edilir, kredi 208'e mal olur ve pay fiyatı ne olursa olsun kâr 6 TRY'dir. Böyle bir fiyat, işlemciler forward satarak fiyatı 208'e döndürene kadar kaybolur.",
+        "key_terms": [
+          "arbitrage",
+          "forward quote"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not use the expected spot price to price a forward. Do not forget to compound benefits and costs to the forward date, or take their present value before compounding the whole amount. Costs increase and benefits reduce the forward price. Note that convenience yield is a benefit, not a cost. The cash-and-carry direction depends on whether the forward is too high (sell it) or too low (buy it). Check the time unit of T: use years.",
+        "tr": "Forward fiyatlamada beklenen spot fiyatı kullanmayın. Getiri ve maliyetleri forward tarihine bileşiklendirmeyi veya tüm tutarı bileşiklendirmeden önce bugünkü değerlerini almayı unutmayın. Maliyetler forward fiyatı artırır, getiriler azaltır. Kolaylık getirisi maliyet değil, getiridir. Nakit-ve-taşı yönü, forward'ın çok yüksek (sat) veya çok düşük (al) olmasına bağlıdır. T'nin birimine dikkat edin: yıl cinsinden kullanın.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "No-arbitrage and replication mean identical payoffs have identical prices. The forward price is the spot price carried forward at the risk-free rate, adjusted for carry costs and benefits. Mispricing is exploited by cash-and-carry or reverse cash-and-carry trades. The forward price is not a forecast of the future spot price.",
+    "summary_tr": "Arbitrajsızlık ve replikasyon, aynı getirinin aynı fiyata sahip olması demektir. Forward fiyat, risksiz faizle ileri taşınan spot fiyatın taşıma maliyet ve getirileriyle düzeltilmiş halidir. Hatalı fiyatlama nakit-ve-taşı veya ters nakit-ve-taşı işlemleriyle kullanılır. Forward fiyat gelecek spot fiyatın tahmini değildir.",
+    "common_traps_tr": [
+      "Forward fiyat beklenen spot fiyat değildir; maliyet-taşıma ilişkisiyle bulunur.",
+      "Temettü ve kolaylık getirisi forward fiyatı düşürür; depolama ve sigorta artırır.",
+      "Temettüyü forward tarihine bileşiklendirmeyi unutmayın (FV).",
+      "Forward fiyat yüksekse sat-ve-borçlan-al; düşükse açığa sat-ve-forward-al.",
+      "T her zaman yıl cinsindendir."
+    ],
+    "vocab_ids": [
+      "arbitrage",
+      "no-arbitrage",
+      "replicate",
+      "replication",
+      "forward",
+      "spot",
+      "law-of-one-price",
+      "cost-of-carry",
+      "carry",
+      "convenience-yield",
+      "storage",
+      "cash-and-carry",
+      "mispricing",
+      "free-lunch",
+      "compound",
+      "dividend"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Taşıma maliyeti modeli SPK Türev sınavında bilinir; arbitrajsızlık ve replikasyon dili CFA'ya özgüdür."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-04-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes the no-arbitrage principle in derivative pricing?",
+      "stem_tr": "Aşağıdaki ifadelerden hangisi türev fiyatlamasında arbitrajsızlık ilkesini en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Two assets or portfolios with identical future payoffs must have the same price today",
+          "tr": "Gelecekte aynı getiriyi sağlayan iki varlık veya portföyün bugün aynı fiyata sahip olması gerekir"
+        },
+        {
+          "key": "B",
+          "en": "The price of a derivative must equal the expected future spot price",
+          "tr": "Türevin fiyatı beklenen gelecek spot fiyata eşit olmalıdır"
+        },
+        {
+          "key": "C",
+          "en": "An investor can earn a risk-free profit if the derivative is exchange-traded",
+          "tr": "Türev organize piyasada işlem görüyorsa yatırımcı risksiz kâr elde edebilir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "This is the law of one price. If two payoffs are identical, any price gap would be removed by arbitrageurs.",
+      "explanation_tr": "Bu, tek fiyat kanunudur. Getiriler aynıysa fiyat farkını arbitrajcılar ortadan kaldırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Forward prices are set by no-arbitrage costs, not by forecasts of the spot price.",
+          "tr": "Forward fiyatlar tahminle değil, arbitrajsızlık maliyetleriyle belirlenir."
+        },
+        "C": {
+          "en": "The principle says the opposite: risk-free profits with no investment cannot persist.",
+          "tr": "İlke tam tersini söyler: yatırımsız risksiz kâr kalıcı olamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "no-arbitrage",
+        "payoff",
+        "identical",
+        "law-of-one-price"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Arbitraj kavramı SPK Türev sınavında bilinir; replikasyon ise kısmen."
+      }
+    },
+    {
+      "id": "DER-04-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A share trades at TRY 100 and the annual risk-free rate is 8% (annual compounding). There are no dividends or costs. The no-arbitrage price of a three-year forward contract on the share is closest to:",
+      "stem_tr": "Bir pay 100 TRY'den işlem görüyor ve yıllık risksiz faiz %8 (yıllık bileşik). Temettü veya maliyet yok. Pay üzerine üç yıllık forward sözleşmenin arbitrajsız fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 124.00",
+          "tr": "TRY 124,00",
+          "value": 124.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 125.97",
+          "tr": "TRY 125,97",
+          "value": 125.9712
+        },
+        {
+          "key": "C",
+          "en": "TRY 108.00",
+          "tr": "TRY 108,00",
+          "value": 108.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "F0(T) = S0 (1 + r)^T = 100 × 1.08^3 = TRY 125.97.",
+      "explanation_tr": "F0(T) = S0 (1 + r)^T = 100 × 1,08^3 = 125,97 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Simple interest is used here, but the cost of carry compounds each year.",
+          "tr": "Burada basit faiz kullanılmış; oysa taşıma maliyeti her yıl bileşik işler."
+        },
+        "C": {
+          "en": "This compounds for one year only. The contract runs for three years.",
+          "tr": "Bu yalnızca bir yıl bileşiklendirir; sözleşme üç yıl sürer."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward price with no carry benefits or costs.",
+          "tr": "Taşıma getirisi veya maliyeti olmayan forward fiyatı isteniyor."
+        },
+        {
+          "en": "Buy the share with borrowed money and compare: the forward must equal the compounded spot price.",
+          "tr": "Payı borçla al ve karşılaştır: forward, bileşik spot fiyata eşit olmalıdır.",
+          "formula_latex": "F_0(T)=S_0(1+r)^T"
+        },
+        {
+          "en": "Substitute S0 = 100, r = 0.08, T = 3.",
+          "tr": "S0 = 100, r = 0,08, T = 3 değerlerini koy.",
+          "values": {
+            "S0": 100,
+            "r": 0.08,
+            "T": 3
+          }
+        },
+        {
+          "en": "1.08^3 = 1.259712.",
+          "tr": "1,08^3 = 1,259712."
+        },
+        {
+          "en": "F0(3) = TRY 125.97.",
+          "tr": "F0(3) = 125,97 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "replicate",
+        "forward",
+        "spot"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.08 [y^x] 3 [=]  (1.259712)",
+          "[x] 100 [=]  (125.97)"
+        ]
+      },
+      "numeric": {
+        "expr": "100*1.08**3",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-04-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share is TRY 200 in the spot market and the one-year risk-free rate is 4%. There are no dividends or costs. A dealer quotes a one-year forward at TRY 214. An arbitrageur borrows TRY 200, buys the share and sells the forward. The arbitrage profit at expiry is closest to:",
+      "stem_tr": "Bir pay spot piyasada 200 TRY ve bir yıllık risksiz faiz %4. Temettü veya maliyet yok. Bir kurum bir yıllık forward'ı 214 TRY'den fiyatlıyor. Bir arbitrajcı 200 TRY borçlanıyor, payı alıyor ve forward satıyor. Vadedeki arbitraj kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 14.00",
+          "tr": "TRY 14,00",
+          "value": 14.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 8.00",
+          "tr": "TRY 8,00",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 6.00",
+          "tr": "TRY 6,00",
+          "value": 6.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Fair forward = 200 × 1.04 = 208. The forward is sold at 214, so profit = 214 − 208 = TRY 6.00.",
+      "explanation_tr": "Adil forward = 200 × 1,04 = 208. Forward 214'ten satıldığı için kâr = 214 − 208 = 6,00 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores the interest on the borrowed money.",
+          "tr": "Bu, borçlanılan paranın faizini göz ardı eder."
+        },
+        "B": {
+          "en": "This is the interest cost, not the profit.",
+          "tr": "Bu, kâr değil faiz maliyetidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the riskless profit when the forward price is too high.",
+          "tr": "Forward fiyatı çok yüksek olduğunda risksiz kâr isteniyor."
+        },
+        {
+          "en": "Repay the loan with interest at expiry and deliver the share for the forward price.",
+          "tr": "Vadede krediyi faiziyle öde ve payı forward fiyatından teslim et.",
+          "formula_latex": "\\text{Profit}=F_0-S_0(1+r)^T"
+        },
+        {
+          "en": "Substitute F0 = 214, S0 = 200, r = 0.04.",
+          "tr": "F0 = 214, S0 = 200, r = 0,04 değerlerini koy.",
+          "values": {
+            "F0": 214,
+            "S0": 200,
+            "r": 0.04
+          }
+        },
+        {
+          "en": "Loan repayment = 208.",
+          "tr": "Kredi geri ödemesi = 208."
+        },
+        {
+          "en": "Profit = 214 − 208 = TRY 6.00.",
+          "tr": "Kâr = 214 − 208 = 6,00 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "replicate",
+        "forward",
+        "spot",
+        "cash-and-carry"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "200 [x] 1.04 [=]  (208)",
+          "214 [-] 208 [=]  (6)"
+        ]
+      },
+      "numeric": {
+        "expr": "214-200*1.04",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-04-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A forward is quoted at a price below S0(1 + r)^T for an asset without carry benefits or costs. Which strategy exploits the mispricing?",
+      "stem_tr": "Taşıma getirisi veya maliyeti olmayan bir varlık için forward fiyatı S0(1 + r)^T'nin altında fiyatlanmış. Hangi strateji bu hatalı fiyatlamadan yararlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Borrow money, buy the asset and sell the forward",
+          "tr": "Borçlan, varlığı al ve forward sat"
+        },
+        {
+          "key": "B",
+          "en": "Sell the asset short, lend the proceeds and buy the forward",
+          "tr": "Varlığı açığa sat, hasılatı borç ver ve forward al"
+        },
+        {
+          "key": "C",
+          "en": "Buy the asset and the forward at the same time",
+          "tr": "Varlığı ve forward'ı aynı anda al"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The cheap forward is bought, the expensive synthetic forward (the asset) is sold short, and the proceeds earn interest. At expiry the profit is riskless.",
+      "explanation_tr": "Ucuz forward alınır, pahalı sentetik forward (varlık) açığa satılır ve hasılat faiz kazanır. Vadede kâr risksizdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the cash-and-carry strategy for an overpriced forward, not an underpriced one.",
+          "tr": "Bu, pahalı forward için nakit-ve-taşı stratejisidir; ucuz forward için değil."
+        },
+        "C": {
+          "en": "Two long positions add exposure and do not lock in a riskless profit.",
+          "tr": "İki uzun pozisyon riski artırır ve risksiz kâr kilitlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "short",
+        "lend",
+        "mispricing",
+        "exploit"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-04-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share trades at TRY 50. A six-month forward on the share (no dividends or costs) is quoted at TRY 51.50. The annualized risk-free rate implied by no-arbitrage pricing (annual compounding) is closest to:",
+      "stem_tr": "Bir pay 50 TRY'den işlem görüyor. Pay üzerine altı aylık forward (temettü veya maliyet yok) 51,50 TRY'den fiyatlanıyor. Arbitrajsız fiyatlamanın ima ettiği yıllık risksiz faiz (yıllık bileşik) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "3.00%",
+          "tr": "%3,00",
+          "value": 3.0
+        },
+        {
+          "key": "C",
+          "en": "6.09%",
+          "tr": "%6,09",
+          "value": 6.09
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "(51.50 / 50) = 1.03 for six months. Annualized: 1.03^(1/0.5) − 1 = 1.0609 − 1 = 6.09%.",
+      "explanation_tr": "Altı ay için 51,50 / 50 = 1,03. Yıllıklandırılmış: 1,03^(1/0,5) − 1 = 1,0609 − 1 = %6,09.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This annualizes with simple interest. The model uses annual compounding.",
+          "tr": "Bu, basit faizle yıllıklandırır; modelde yıllık bileşik kullanılır."
+        },
+        "B": {
+          "en": "This is the six-month return, not an annualized rate.",
+          "tr": "Bu altı aylık getiridir; yıllıklandırılmış oran değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annual rate implied by the forward.",
+          "tr": "Forward'ın ima ettiği yıllık oran isteniyor."
+        },
+        {
+          "en": "Rearrange F0 = S0 (1 + r)^T for r.",
+          "tr": "F0 = S0 (1 + r)^T eşitliğini r için düzenle.",
+          "formula_latex": "r=\\left(\\frac{F_0}{S_0}\\right)^{1/T}-1"
+        },
+        {
+          "en": "Substitute F0 = 51.50, S0 = 50, T = 0.5.",
+          "tr": "F0 = 51,50, S0 = 50, T = 0,5 değerlerini koy.",
+          "values": {
+            "F0": 51.5,
+            "S0": 50,
+            "T": 0.5
+          }
+        },
+        {
+          "en": "(1.03)^2 = 1.0609.",
+          "tr": "(1,03)^2 = 1,0609."
+        },
+        {
+          "en": "r = 6.09%.",
+          "tr": "r = %6,09."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "replicate",
+        "forward",
+        "spot"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "51.5 [÷] 50 [=]  (1.03)",
+          "[y^x] 2 [=]  (1.0609)",
+          "[-] 1 [=] [x] 100  (6.09)"
+        ]
+      },
+      "numeric": {
+        "expr": "((51.5/50)**(1/0.5)-1)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "DER-04-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The no-arbitrage forward price of an asset is best interpreted as:",
+      "stem_tr": "Bir varlığın arbitrajsız forward fiyatı en iyi nasıl yorumlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the cost of buying the asset now and carrying it to the forward date",
+          "tr": "varlığı bugün satın alıp forward tarihine kadar taşımanın maliyeti"
+        },
+        {
+          "key": "B",
+          "en": "the market's best forecast of the future spot price",
+          "tr": "piyasanın gelecek spot fiyat için en iyi tahmini"
+        },
+        {
+          "key": "C",
+          "en": "the average of the spot price and the strike price",
+          "tr": "spot fiyat ile kullanım fiyatının ortalaması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The forward price equals spot plus net cost of carry: interest and storage costs less benefits such as dividends.",
+      "explanation_tr": "Forward fiyat, spot artı net taşıma maliyetidir: faiz ve depolama maliyeti eksi temettü gibi getiriler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The forward price is not a forecast. The expected spot price includes a risk premium that the forward price does not.",
+          "tr": "Forward fiyat bir tahmin değildir; beklenen spot fiyat, forward fiyatta bulunmayan bir risk primi içerir."
+        },
+        "C": {
+          "en": "There is no such averaging in forward pricing.",
+          "tr": "Forward fiyatlamada böyle bir ortalama yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "carry",
+        "forecast",
+        "spot",
+        "net-cost"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-04-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a cost of carry for holding a physical commodity?",
+      "stem_tr": "Fiziki bir emtiayı elde tutmanın taşıma maliyeti aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Dividends received",
+          "tr": "Alınan temettüler"
+        },
+        {
+          "key": "B",
+          "en": "Convenience yield",
+          "tr": "Kolaylık getirisi"
+        },
+        {
+          "key": "C",
+          "en": "Storage and insurance",
+          "tr": "Depolama ve sigorta"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Storage and insurance add to carry costs. Dividends, interest and convenience yield are carry benefits.",
+      "explanation_tr": "Depolama ve sigorta taşıma maliyetini artırır. Temettü, faiz ve kolaylık getirisi taşıma getirileridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Dividends are a benefit of holding an equity underlying, not a cost.",
+          "tr": "Temettü, paya sahip olmanın bir getirisidir, maliyeti değildir."
+        },
+        "B": {
+          "en": "Convenience yield is a benefit from holding the physical commodity.",
+          "tr": "Kolaylık getirisi, fiziki emtiayı elde tutmanın bir getirisidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "storage",
+        "insurance",
+        "convenience-yield",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-04-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share trades at TRY 80. It will pay a dividend of TRY 6 in three months. The annual risk-free rate is 12% (annual compounding). The no-arbitrage price of a one-year forward is closest to:",
+      "stem_tr": "Bir pay 80 TRY'den işlem görüyor. Üç ay sonra 6 TRY temettü ödeyecek. Yıllık risksiz faiz %12 (yıllık bileşik). Bir yıllık forward'ın arbitrajsız fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 83.07",
+          "tr": "TRY 83,07",
+          "value": 83.06772
+        },
+        {
+          "key": "B",
+          "en": "TRY 89.60",
+          "tr": "TRY 89,60",
+          "value": 89.6
+        },
+        {
+          "key": "C",
+          "en": "TRY 83.60",
+          "tr": "TRY 83,60",
+          "value": 83.6
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FV of the dividend at one year = 6 × 1.12^0.75 = 6.5348. F0 = 80 × 1.12 − 6.5348 = 89.60 − 6.53 = TRY 83.07.",
+      "explanation_tr": "Temettünün bir yıl sonraki değeri = 6 × 1,12^0,75 = 6,5348. F0 = 80 × 1,12 − 6,5348 = 89,60 − 6,53 = 83,07 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This ignores the dividend, so the forward would be too high.",
+          "tr": "Bu, temettüyü göz ardı eder; forward olması gerekenden yüksek çıkar."
+        },
+        "C": {
+          "en": "This subtracts the dividend without compounding it to the forward date.",
+          "tr": "Bu, temettüyü forward tarihine bileşiklendirmeden düşer."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward price of a share with a dividend.",
+          "tr": "Temettü ödeyen bir payın forward fiyatı isteniyor."
+        },
+        {
+          "en": "The holder of the forward does not get the dividend, so subtract its future value from the compounded spot price.",
+          "tr": "Forward sahibi temettüyü almaz; bu yüzden bileşik spot fiyattan temettünün gelecek değeri düşülür.",
+          "formula_latex": "F_0(T)=S_0(1+r)^T-FV(\\text{benefits})"
+        },
+        {
+          "en": "Dividend is paid at t = 0.25, so it is compounded for 0.75 years.",
+          "tr": "Temettü t = 0,25'te ödenir; 0,75 yıl bileşiklendirilir.",
+          "values": {
+            "D": 6,
+            "r": 0.12
+          }
+        },
+        {
+          "en": "FV(D) = 6 × 1.12^0.75 = 6.5348.",
+          "tr": "FV(D) = 6 × 1,12^0,75 = 6,5348."
+        },
+        {
+          "en": "F0 = 89.60 − 6.53 = TRY 83.07.",
+          "tr": "F0 = 89,60 − 6,53 = 83,07 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "replicate",
+        "forward",
+        "spot",
+        "dividend",
+        "carry"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.12 [y^x] 0.75 [=] [x] 6 [=]  (6.5348)",
+          "80 [x] 1.12 [-] 6.5348 [=]  (83.07)"
+        ]
+      },
+      "numeric": {
+        "expr": "80*1.12-6*1.12**0.75",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-04-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A commodity trades at TRY 1,000 per unit. The present value of storage costs over the next year is TRY 30, paid today. The risk-free rate is 8% (annual compounding) and there is no convenience yield. The one-year no-arbitrage forward price is closest to:",
+      "stem_tr": "Bir emtia birim başına 1.000 TRY'den işlem görüyor. Önümüzdeki yıla ait depolama maliyetlerinin bugünkü değeri 30 TRY ve bugün ödeniyor. Risksiz faiz %8 (yıllık bileşik) ve kolaylık getirisi yok. Bir yıllık arbitrajsız forward fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1080.00",
+          "tr": "TRY 1080,00",
+          "value": 1080.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 1112.40",
+          "tr": "TRY 1112,40",
+          "value": 1112.4
+        },
+        {
+          "key": "C",
+          "en": "TRY 1047.60",
+          "tr": "TRY 1047,60",
+          "value": 1047.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Costs raise the forward price: F0 = (S0 + PV(costs)) × (1 + r)^T = (1,000 + 30) × 1.08 = TRY 1,112.40.",
+      "explanation_tr": "Maliyetler forward fiyatı artırır: F0 = (S0 + PV(maliyet)) × (1 + r)^T = (1.000 + 30) × 1,08 = 1.112,40 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores the storage costs.",
+          "tr": "Bu, depolama maliyetini göz ardı eder."
+        },
+        "C": {
+          "en": "Storage costs are added, not subtracted. Only benefits are subtracted.",
+          "tr": "Depolama maliyeti eklenir, düşülmez; yalnızca getiriler düşülür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a forward price for a commodity with storage costs.",
+          "tr": "Depolama maliyetli bir emtia için forward fiyatı isteniyor."
+        },
+        {
+          "en": "Add the present value of costs to the spot price, then compound.",
+          "tr": "Maliyetlerin bugünkü değerini spota ekle, sonra bileşiklendir.",
+          "formula_latex": "F_0(T)=(S_0+PV(\\text{costs}))(1+r)^T"
+        },
+        {
+          "en": "Substitute S0 = 1000, PV(costs) = 30, r = 0.08, T = 1.",
+          "tr": "S0 = 1000, PV(maliyet) = 30, r = 0,08, T = 1 değerlerini koy.",
+          "values": {
+            "S0": 1000,
+            "PVcost": 30,
+            "r": 0.08
+          }
+        },
+        {
+          "en": "1,030 × 1.08 = 1,112.40.",
+          "tr": "1.030 × 1,08 = 1.112,40."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "replicate",
+        "forward",
+        "spot",
+        "storage",
+        "carry"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [+] 30 [=]  (1030)",
+          "[x] 1.08 [=]  (1112.4)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1000+30)*1.08",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-04-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-04",
+      "los_id": "DER-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "The one-year futures price of a commodity is lower than S0(1 + r) + storage costs. Which interpretation is most consistent with this observation?",
+      "stem_tr": "Bir emtianın bir yıllık vadeli işlem fiyatı S0(1 + r) + depolama maliyetinden düşüktür. Bu gözlemle en tutarlı yorum hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Holders of the physical commodity earn a convenience yield",
+          "tr": "Fiziki emtiayı elde tutanlar kolaylık getirisi elde eder"
+        },
+        {
+          "key": "B",
+          "en": "The futures price is a perfect forecast of the spot price",
+          "tr": "Vadeli işlem fiyatı spot fiyatın kusursuz bir tahminidir"
+        },
+        {
+          "key": "C",
+          "en": "The risk-free rate is negative",
+          "tr": "Risksiz faiz negatiftir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net carry = costs − benefits. A convenience yield is a benefit of holding the physical good, which lowers the forward or futures price below the pure cost-of-carry level.",
+      "explanation_tr": "Net taşıma = maliyetler − getiriler. Kolaylık getirisi fiziki malı elde tutmanın bir getirisidir ve forward veya vadeli işlem fiyatını saf taşıma maliyeti düzeyinin altına çeker.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Forward and futures prices are set by carry costs and benefits, and are not perfect forecasts.",
+          "tr": "Forward ve vadeli işlem fiyatları taşıma maliyet ve getirileriyle belirlenir; kusursuz tahmin değildir."
+        },
+        "C": {
+          "en": "A lower futures price does not require a negative rate. A benefit such as convenience yield lowers it as well.",
+          "tr": "Düşük vadeli işlem fiyatı negatif faiz gerektirmez; kolaylık getirisi gibi bir getiri de fiyatı düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "convenience-yield",
+        "cost-of-carry",
+        "benefit",
+        "physical"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

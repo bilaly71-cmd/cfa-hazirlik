@@ -1,0 +1,1041 @@
+{
+  "module_id": "ECO-07",
+  "lesson": {
+    "id": "ECO-07-lesson",
+    "level": "L1",
+    "topic": "ECO",
+    "module_id": "ECO-07",
+    "los_ids": [
+      "ECO-07-a",
+      "ECO-07-b",
+      "ECO-07-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Capital Flows and the FX Market",
+    "title_tr": "Sermaye Akımları ve Döviz Piyasası",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why exchange rates touch everything",
+        "heading_tr": "Döviz kuru neden her şeye dokunur?",
+        "en": "Every cross-border trade, loan or investment needs one currency to be swapped for another. An importer of machinery pays in euros, a tourist in Antalya sells euros for lira, and a global fund buying Turkish government bonds needs lira first. The USD/TRY and EUR/TRY rates therefore move import costs, inflation, company profits and foreign investor returns at once. The foreign exchange (FX) market is the largest financial market in the world. It has no single location; banks, brokers and electronic platforms trade it nearly 24 hours a day. Governments choose how much freedom the currency has, and sometimes limit capital flows to protect the economy.",
+        "tr": "Sınır ötesi her ticaret, kredi ya da yatırım bir para biriminin diğeriyle takas edilmesini gerektirir. Makine ithal eden bir firma euro öder, Antalya'daki turist euroyu liraya çevirir, Türk devlet tahvili alan küresel bir fon önce liraya ihtiyaç duyar. Bu nedenle USD/TRY ve EUR/TRY kurları ithalat maliyetini, enflasyonu, şirket kârlarını ve yabancı yatırımcı getirisini aynı anda oynatır. Döviz (FX) piyasası dünyanın en büyük finansal piyasasıdır. Tek bir mekânı yoktur; bankalar, aracılar ve elektronik platformlar neredeyse günün 24 saati işlem yapar. Hükümetler para biriminin ne kadar serbest olacağını seçer ve bazen ekonomiyi korumak için sermaye akımlarını sınırlar.",
+        "key_terms": [
+          "foreign exchange market",
+          "exchange rate",
+          "capital flows"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Participants and quotes",
+        "heading_tr": "Katılımcılar ve kotasyonlar",
+        "en": "The FX market has a sell-side of dealers (large banks) that quote prices and make markets, and a buy-side of corporations, investment funds, hedge funds, governments, central banks and retail traders. Most trading is over-the-counter (OTC), in spot, forward and swap transactions. A quote 'A/B' gives the price of one unit of the base currency (A) in units of the price currency (B). USD/TRY = 34.00 means 1 USD costs 34 TRY. If the quote rises, the base currency appreciates and the price currency depreciates. The nominal exchange rate is the market quote; the real exchange rate adjusts it for price levels and measures relative purchasing power of goods.",
+        "tr": "FX piyasasında fiyat kotasyonu veren ve piyasa yapıcılığı yapan bayilerden (büyük bankalardan) oluşan satış tarafı ile şirketler, yatırım fonları, hedge fonlar, hükümetler, merkez bankaları ve bireysel yatırımcılardan oluşan alış tarafı vardır. İşlemlerin çoğu tezgâhüstü (OTC) piyasada spot, forward ve swap olarak yapılır. 'A/B' kotasyonu, baz para biriminin (A) bir biriminin fiyat para birimi (B) cinsinden fiyatını verir. USD/TRY = 34,00 ise 1 USD 34 TL eder. Kotasyon yükselirse baz para değer kazanır, fiyat para birimi değer kaybeder. Nominal döviz kuru piyasa kotasyonudur; reel döviz kuru bunu fiyat düzeylerine göre düzeltir ve malların göreli satın alma gücünü ölçer.",
+        "key_terms": [
+          "base currency",
+          "price currency",
+          "nominal exchange rate",
+          "real exchange rate",
+          "dealer"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Percentage change and real rate",
+        "heading_tr": "Yüzde değişim ve reel kur",
+        "en": "If the quote A/B moves from S0 to S1, the base currency A changes by (S1 / S0 - 1). The price currency B changes against A by (S0 / S1 - 1), which is not the same number in the opposite sign. The real exchange rate in domestic/foreign terms is the nominal rate multiplied by the foreign price level and divided by the domestic price level. A rise means foreign goods have become more expensive relative to domestic goods, which tends to improve domestic competitiveness.",
+        "tr": "A/B kotasyonu S0'dan S1'e giderse baz para A, (S1 / S0 - 1) kadar değişir. Fiyat para birimi B, A karşısında (S0 / S1 - 1) kadar değişir; bu, ters işaretli aynı sayı değildir. Yerli/yabancı cinsinden reel döviz kuru, nominal kurun yabancı fiyat düzeyiyle çarpılıp yerli fiyat düzeyine bölünmesidir. Artış, yabancı malların yerli mallara göre pahalılaştığını gösterir; bu yerli rekabet gücünü iyileştirme eğilimindedir.",
+        "key_terms": [
+          "appreciation",
+          "depreciation"
+        ],
+        "formula_latex": "\\%\\Delta_{base}=\\frac{S_1}{S_0}-1,\\qquad \\%\\Delta_{price}=\\frac{S_0}{S_1}-1,\\qquad RER_{d/f}=S_{d/f}\\,\\frac{P_f}{P_d}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Exchange rate regimes",
+        "heading_tr": "Döviz kuru rejimleri",
+        "en": "Regimes run from fixed to floating. Dollarization or a monetary union uses another currency or a shared one. A currency board fixes the rate and backs the money fully with reserves. A conventional fixed peg holds the rate within narrow limits, which requires reserves and gives up independent monetary policy. A target zone lets the rate move in a band. A crawling peg adjusts the peg in small steps (for example, to match inflation). A managed float lets the market set the rate, with occasional central bank intervention. In a free float, the market sets the rate alone. Türkiye has used a floating regime since 2001, with periods of heavy central bank intervention.",
+        "tr": "Rejimler sabitten dalgalıya uzanır. Dolarizasyon ya da parasal birlik başka bir para birimini ya da ortak bir parayı kullanır. Para kurulu kuru sabitler ve parayı tamamen rezervle destekler. Geleneksel sabit kur, kuru dar sınırlar içinde tutar; bu rezerv gerektirir ve bağımsız para politikasından vazgeçmek demektir. Hedef bölge, kurun bir bant içinde hareket etmesine izin verir. Kayan kur (crawling peg), sabit kuru küçük adımlarla ayarlar (örneğin enflasyonu izlemek için). Yönetilen dalgalanma, kurun piyasada oluşmasına izin verir; merkez bankası ara sıra müdahale eder. Serbest dalgalanmada kuru yalnızca piyasa belirler. Türkiye 2001'den beri dalgalı kur rejimi kullanmakta, zaman zaman yoğun merkez bankası müdahalesi yaşanmaktadır.",
+        "key_terms": [
+          "fixed exchange rate",
+          "floating exchange rate",
+          "managed float",
+          "crawling peg",
+          "currency board"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Rates, trade, capital flows and controls",
+        "heading_tr": "Kurlar, ticaret, sermaye akımları ve kontroller",
+        "en": "A weaker domestic currency makes exports cheaper abroad and imports dearer at home, which over time tends to narrow a trade deficit (when demand is elastic enough). Higher domestic interest rates attract foreign capital and push the currency up; a carry trade borrows in a low-rate currency to invest in a high-rate one and can reverse sharply. Capital controls are limits on cross-border money flows. Governments use them to stop sudden outflows or 'hot money', to avoid an overvalued currency, to protect domestic banks and industries, and to keep monetary independence. Costs: they can be evaded, distort investment decisions, raise financing costs and reduce investor confidence. The impossible trinity says a country cannot have a fixed rate, free capital flows and independent monetary policy at the same time.",
+        "tr": "Zayıflayan yerli para, ihracatı yurt dışında ucuzlatır, ithalatı yurt içinde pahalılaştırır; bu da zamanla (talep yeterince esnekse) ticaret açığını daraltma eğilimindedir. Yüksek yurt içi faizler yabancı sermayeyi çeker ve parayı yukarı iter; carry trade düşük faizli para biriminde borçlanıp yüksek faizli para birimine yatırım yapar ve sert biçimde tersine dönebilir. Sermaye kontrolleri sınır ötesi para akımlarına getirilen sınırlardır. Hükümetler bunları ani çıkışları ya da 'sıcak parayı' durdurmak, aşırı değerli para birimini önlemek, yerli bankaları ve sektörleri korumak ve para politikası bağımsızlığını sürdürmek için kullanır. Maliyetleri: dolanılabilirler, yatırım kararlarını bozar, finansman maliyetini artırır ve yatırımcı güvenini azaltır. İmkânsız üçlü, bir ülkenin aynı anda sabit kur, serbest sermaye akımı ve bağımsız para politikasına sahip olamayacağını söyler.",
+        "key_terms": [
+          "carry trade",
+          "capital controls",
+          "hot money",
+          "impossible trinity"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: appreciation and the real rate",
+        "heading_tr": "Çözümlü örnek: değer kazanma ve reel kur",
+        "en": "USD/TRY moves from 30.00 to 36.00. The USD appreciates by 36 / 30 - 1 = 20.0%. The TRY depreciates by 1 - 30 / 36 = 16.7%. Next, suppose TRY/USD is 30, the US price index is 120 and the Turkish index is 150. The real rate is 30 x 120 / 150 = 24.0.",
+        "tr": "USD/TRY 30,00'dan 36,00'a çıkıyor. USD, 36 / 30 - 1 = %20,0 değer kazanır. TL, 1 - 30 / 36 = %16,7 değer kaybeder. Şimdi TL/USD kurunun 30, ABD fiyat endeksinin 120, Türkiye endeksinin 150 olduğunu varsayalım. Reel kur 30 x 120 / 150 = 24,0'tür.",
+        "key_terms": [],
+        "example": {
+          "en": "USD: 36/30 - 1 = +20%; TRY: 30/36 - 1 = -16.7%",
+          "tr": "USD: 36/30 - 1 = +%20; TL: 30/36 - 1 = -%16,7"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Read the quote direction first: A/B is the price of A in B. The two currencies' percentage changes are not mirror images; the base moves by S1 / S0 - 1 while the price currency moves by S0 / S1 - 1. A peg without reserves cannot last. A weaker currency does not always fix a trade deficit at once (J-curve). Capital controls are not tariffs.",
+        "tr": "Önce kotasyon yönünü okuyun: A/B, A'nın B cinsinden fiyatıdır. İki para biriminin yüzde değişimleri birbirinin aynası değildir; baz para S1 / S0 - 1, fiyat para birimi S0 / S1 - 1 kadar değişir. Rezervsiz bir sabit kur sürdürülemez. Zayıflayan para ticaret açığını hemen düzeltmez (J eğrisi). Sermaye kontrolleri tarife değildir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "The FX market is a large OTC market with dealers and many buy-side users. Quotes A/B give the price of A in B, and percentage changes for the two currencies differ. Regimes range from fixed to free float, exchange rates influence trade and capital flows, and capital controls try to limit destabilizing flows.",
+    "summary_tr": "Döviz piyasası bayiler ve çok sayıda alış tarafı kullanıcısı olan büyük bir tezgâhüstü piyasadır. A/B kotasyonu A'nın B cinsinden fiyatını verir; iki para biriminin yüzde değişimleri farklıdır. Rejimler sabitten serbest dalgalanmaya uzanır, döviz kurları ticareti ve sermaye akımlarını etkiler, sermaye kontrolleri istikrarsızlaştırıcı akımları sınırlamaya çalışır.",
+    "common_traps_tr": [
+      "A/B kotasyonunda A baz paradır; fiyatı B cinsinden verilir.",
+      "Baz para S1/S0-1, fiyat para birimi S0/S1-1 kadar değişir.",
+      "Sabit kur rezerv ve bağımsız para politikasından vazgeçmeyi gerektirir.",
+      "Zayıf para ticaret açığını hemen kapatmaz (J eğrisi).",
+      "Sermaye kontrolü tarife değildir; dolanılabilir ve güveni azaltabilir."
+    ],
+    "vocab_ids": [
+      "exchange-rate",
+      "base-currency",
+      "nominal-exchange-rate",
+      "real-exchange-rate",
+      "appreciate",
+      "depreciation",
+      "managed-float",
+      "crawling-peg",
+      "capital-controls",
+      "carry-trade",
+      "hot-money",
+      "impossible-trinity",
+      "floating-exchange-rate",
+      "dealer",
+      "most-likely",
+      "reserve"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "ECO-07-a-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A quote of USD/TRY = 34.00 means that:",
+      "stem_tr": "USD/TRY = 34,00 kotasyonu şunu ifade eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1 US dollar costs 34 Turkish lira",
+          "tr": "1 ABD doları 34 Türk lirasıdır"
+        },
+        {
+          "key": "B",
+          "en": "1 Turkish lira costs 34 US dollars",
+          "tr": "1 Türk lirası 34 ABD dolarıdır"
+        },
+        {
+          "key": "C",
+          "en": "the dollar is the price currency",
+          "tr": "dolar fiyat para birimidir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In A/B, A is the base currency and the quote is the price of one A in B.",
+      "explanation_tr": "A/B kotasyonunda A baz paradır ve kotasyon bir A'nın B cinsinden fiyatıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This inverts the quote.",
+          "tr": "Bu, kotasyonu tersine çevirir."
+        },
+        "C": {
+          "en": "The dollar is the base currency here, not the price currency.",
+          "tr": "Burada dolar fiyat para birimi değil baz paradır."
+        }
+      },
+      "vocab_ids": [
+        "base-currency",
+        "exchange-rate",
+        "most-likely",
+        "nominal-exchange-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-a-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "USD/TRY rises from 30.00 to 36.00. The change in the value of the US dollar against the lira is closest to:",
+      "stem_tr": "USD/TRY 30,00'dan 36,00'a yükseliyor. ABD dolarının liraya karşı değerindeki değişim en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "-16.7%",
+          "tr": "-16.7%",
+          "value": -16.7
+        },
+        {
+          "key": "B",
+          "en": "+20.0%",
+          "tr": "+20.0%",
+          "value": 20.0
+        },
+        {
+          "key": "C",
+          "en": "+16.7%",
+          "tr": "+16.7%",
+          "value": 16.7
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The base currency (USD) changes by 36 / 30 - 1 = +20.0%.",
+      "explanation_tr": "Baz para (USD) 36 / 30 - 1 = +%20,0 değişir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "-16.7% is the change in the lira against the dollar, not the dollar's change.",
+          "tr": "-%16,7 liranın dolar karşısındaki değişimidir, doların değişimi değil."
+        },
+        "C": {
+          "en": "+16.7% mixes the two percentage formulas.",
+          "tr": "+%16,7 iki yüzde formülünü karıştırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the % change in the base currency (USD).",
+          "tr": "Baz paranın (USD) yüzde değişimi isteniyor."
+        },
+        {
+          "en": "Base change = S1 / S0 - 1.",
+          "tr": "Baz değişim = S1 / S0 - 1.",
+          "formula_latex": "\\%\\Delta=\\frac{S_1}{S_0}-1"
+        },
+        {
+          "en": "36 / 30 - 1 = 0.20.",
+          "tr": "36 / 30 - 1 = 0,20."
+        },
+        {
+          "en": "USD appreciates by 20.0%.",
+          "tr": "USD %20,0 değer kazanır."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "36 [÷] 30 [=] [-] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(36/30-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "appreciate",
+        "base-currency",
+        "closest-to",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-a-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "USD/TRY rises from 30.00 to 36.00. The change in the value of the Turkish lira against the dollar is closest to:",
+      "stem_tr": "USD/TRY 30,00'dan 36,00'a yükseliyor. Türk lirasının dolar karşısındaki değerindeki değişim en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "-20.0%",
+          "tr": "-20.0%",
+          "value": -20.0
+        },
+        {
+          "key": "B",
+          "en": "+20.0%",
+          "tr": "+20.0%",
+          "value": 20.0
+        },
+        {
+          "key": "C",
+          "en": "-16.7%",
+          "tr": "-16.7%",
+          "value": -16.7
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The price currency (TRY) changes by S0 / S1 - 1 = 30 / 36 - 1 = -16.7%.",
+      "explanation_tr": "Fiyat para birimi (TL) S0 / S1 - 1 = 30 / 36 - 1 = -%16,7 değişir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "-20.0% simply reverses the sign of the dollar's gain; the percentages are not symmetric.",
+          "tr": "-%20,0 doların kazancının işaretini ters çevirir; yüzdeler simetrik değildir."
+        },
+        "B": {
+          "en": "+20.0% is the dollar's gain, not the lira's change.",
+          "tr": "+%20,0 doların kazancıdır, liranın değişimi değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the % change in the price currency (TRY).",
+          "tr": "Fiyat para biriminin (TL) yüzde değişimi isteniyor."
+        },
+        {
+          "en": "Price currency change = S0 / S1 - 1.",
+          "tr": "Fiyat para birimi değişimi = S0 / S1 - 1.",
+          "formula_latex": "\\%\\Delta_{TRY}=\\frac{S_0}{S_1}-1"
+        },
+        {
+          "en": "30 / 36 - 1 = -0.1667.",
+          "tr": "30 / 36 - 1 = -0,1667."
+        },
+        {
+          "en": "TRY depreciates by about 16.7%.",
+          "tr": "TL yaklaşık %16,7 değer kaybeder."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "30 [÷] 36 [=] [-] 1 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(30/36-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "depreciation",
+        "exchange-rate",
+        "closest-to",
+        "base-currency"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-a-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The nominal exchange rate is TRY 30 per USD. The US price index is 120 and the Turkish price index is 150. The real exchange rate (TRY per USD, adjusted for prices) is closest to:",
+      "stem_tr": "Nominal kur 30 TL/USD'dir. ABD fiyat endeksi 120, Türkiye fiyat endeksi 150'dir. Reel döviz kuru (fiyatlara göre düzeltilmiş TL/USD) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "37.5",
+          "tr": "37,5",
+          "value": 37.5
+        },
+        {
+          "key": "B",
+          "en": "24.0",
+          "tr": "24,0",
+          "value": 24.0
+        },
+        {
+          "key": "C",
+          "en": "30.0",
+          "tr": "30,0",
+          "value": 30.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Real rate = S x P_foreign / P_domestic = 30 x 120 / 150 = 24.0.",
+      "explanation_tr": "Reel kur = S x P_yabancı / P_yerli = 30 x 120 / 150 = 24,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "37.5 inverts the price ratio: 30 x 150 / 120.",
+          "tr": "37,5 fiyat oranını ters çevirir: 30 x 150 / 120."
+        },
+        "C": {
+          "en": "30.0 is the nominal rate with no price adjustment.",
+          "tr": "30,0 fiyat düzeltmesi yapılmamış nominal kurdur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the real exchange rate.",
+          "tr": "Reel döviz kuru isteniyor."
+        },
+        {
+          "en": "Real rate = nominal x foreign price level / domestic price level.",
+          "tr": "Reel kur = nominal x yabancı fiyat düzeyi / yerli fiyat düzeyi.",
+          "formula_latex": "RER=S\\,\\frac{P_f}{P_d}"
+        },
+        {
+          "en": "30 x 120 / 150.",
+          "tr": "30 x 120 / 150."
+        },
+        {
+          "en": "24.0.",
+          "tr": "24,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "30 [×] 120 [÷] 150 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "30*120/150"
+      },
+      "vocab_ids": [
+        "real-exchange-rate",
+        "nominal-exchange-rate",
+        "closest-to",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-a-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a buy-side participant in the FX market?",
+      "stem_tr": "Aşağıdakilerden hangisinin FX piyasasında alış tarafı katılımcısı olması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A large bank quoting prices to clients",
+          "tr": "Müşterilere fiyat kotasyonu veren büyük bir banka"
+        },
+        {
+          "key": "B",
+          "en": "An electronic dealing platform's own market-making desk",
+          "tr": "Elektronik işlem platformunun kendi piyasa yapıcılık masası"
+        },
+        {
+          "key": "C",
+          "en": "A pension fund hedging its foreign holdings",
+          "tr": "Yurt dışı varlıklarını riskten koruyan bir emeklilik fonu"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Buy-side users trade FX to meet their own needs; dealers on the sell-side quote prices and make markets.",
+      "explanation_tr": "Alış tarafı kullanıcıları kendi ihtiyaçları için döviz işlemi yapar; satış tarafındaki bayiler fiyat verir ve piyasa yapar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A bank quoting prices is a sell-side dealer.",
+          "tr": "Fiyat veren banka satış tarafı bayisidir."
+        },
+        "B": {
+          "en": "A market-making desk is a sell-side function.",
+          "tr": "Piyasa yapıcılık masası satış tarafı işlevidir."
+        }
+      },
+      "vocab_ids": [
+        "dealer",
+        "exchange-rate",
+        "over-the-counter",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-b-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a free-floating exchange rate regime, the exchange rate is determined by:",
+      "stem_tr": "Serbest dalgalı kur rejiminde döviz kurunu şu belirler:",
+      "options": [
+        {
+          "key": "A",
+          "en": "market supply and demand",
+          "tr": "piyasadaki arz ve talep"
+        },
+        {
+          "key": "B",
+          "en": "a fixed rule set by the central bank",
+          "tr": "merkez bankasının koyduğu sabit kural"
+        },
+        {
+          "key": "C",
+          "en": "the government's budget",
+          "tr": "hükümetin bütçesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "No official target is defended, so the rate moves with supply and demand.",
+      "explanation_tr": "Savunulan resmi bir hedef yoktur; kur arz ve talebe göre hareket eder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A fixed rule describes a peg.",
+          "tr": "Sabit kural bir sabit kur sistemini tanımlar."
+        },
+        "C": {
+          "en": "The budget does not set the exchange rate directly.",
+          "tr": "Bütçe döviz kurunu doğrudan belirlemez."
+        }
+      },
+      "vocab_ids": [
+        "floating-exchange-rate",
+        "managed-float",
+        "exchange-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-b-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A country maintains a fixed exchange rate and allows free capital movement. The central bank is most likely to:",
+      "stem_tr": "Bir ülke sabit döviz kurunu korur ve serbest sermaye hareketine izin verir. Merkez bankası büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "set interest rates freely to meet its inflation target",
+          "tr": "enflasyon hedefine ulaşmak için faizleri özgürce belirler"
+        },
+        {
+          "key": "B",
+          "en": "need no foreign reserves",
+          "tr": "dış rezerve ihtiyaç duymaz"
+        },
+        {
+          "key": "C",
+          "en": "give up independent control of domestic interest rates",
+          "tr": "yurt içi faizler üzerindeki bağımsız kontrolü bırakır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "This is the impossible trinity: with a fixed rate and free capital flows, domestic rates must follow the anchor currency.",
+      "explanation_tr": "Bu imkânsız üçlüdür: sabit kur ve serbest sermaye akımında yurt içi faizler çıpa para birimini izlemelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Interest rate independence is lost under these conditions.",
+          "tr": "Bu koşullarda faiz bağımsızlığı kaybolur."
+        },
+        "B": {
+          "en": "Defending a peg requires reserves.",
+          "tr": "Sabit kuru savunmak rezerv gerektirir."
+        }
+      },
+      "vocab_ids": [
+        "impossible-trinity",
+        "reserve",
+        "capital-controls",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-b-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A regime in which the peg is adjusted in small, regular steps, for example at the pace of inflation, is best described as a:",
+      "stem_tr": "Sabit kurun küçük ve düzenli adımlarla, örneğin enflasyon hızında ayarlandığı rejim en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "crawling peg",
+          "tr": "kayan kur"
+        },
+        {
+          "key": "B",
+          "en": "currency board",
+          "tr": "para kurulu"
+        },
+        {
+          "key": "C",
+          "en": "free float",
+          "tr": "serbest dalgalanma"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A crawling peg moves the central parity gradually in a preset path.",
+      "explanation_tr": "Kayan kur merkezi pariteyi önceden belirlenmiş bir yolda kademeli olarak hareket ettirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A currency board fixes the rate and fully backs the money with reserves.",
+          "tr": "Para kurulu kuru sabitler ve parayı tamamen rezervle destekler."
+        },
+        "C": {
+          "en": "A free float has no official parity.",
+          "tr": "Serbest dalgalanmada resmi parite yoktur."
+        }
+      },
+      "vocab_ids": [
+        "crawling-peg",
+        "managed-float",
+        "exchange-rate",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-b-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "All else equal, a depreciation of a country's currency will most likely, over time:",
+      "stem_tr": "Diğer her şey aynıyken bir ülke parasının değer kaybı zamanla büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "make its exports more expensive and imports cheaper",
+          "tr": "ihracatını pahalılaştırır, ithalatını ucuzlatır"
+        },
+        {
+          "key": "B",
+          "en": "make its exports cheaper abroad and its imports more expensive at home",
+          "tr": "ihracatını yurt dışında ucuzlatır, ithalatını yurt içinde pahalılaştırır"
+        },
+        {
+          "key": "C",
+          "en": "leave trade prices unchanged",
+          "tr": "ticaret fiyatlarını değiştirmez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A weaker currency lowers the foreign-currency price of exports and raises the local price of imports.",
+      "explanation_tr": "Zayıf para, ihracatın döviz fiyatını düşürür ve ithalatın yerel fiyatını yükseltir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the effect of an appreciation.",
+          "tr": "Bu, değer kazanmanın etkisidir."
+        },
+        "C": {
+          "en": "Prices in each currency change after a currency move.",
+          "tr": "Kur hareketinden sonra her para biriminde fiyatlar değişir."
+        }
+      },
+      "vocab_ids": [
+        "depreciation",
+        "all-else-equal",
+        "exchange-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-b-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Country X raises its policy rate well above rates elsewhere, and investors borrow in low-rate currencies to buy X's bonds. This carry trade will most likely, at first:",
+      "stem_tr": "X ülkesi politika faizini diğer ülkelerin çok üzerine çıkarıyor ve yatırımcılar düşük faizli para birimlerinde borçlanıp X'in tahvillerini alıyor. Bu carry trade başlangıçta büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "push X's currency up through capital inflows",
+          "tr": "sermaye girişleri yoluyla X'in parasını yukarı iter"
+        },
+        {
+          "key": "B",
+          "en": "push X's currency down through capital outflows",
+          "tr": "sermaye çıkışları yoluyla X'in parasını aşağı iter"
+        },
+        {
+          "key": "C",
+          "en": "have no effect on the exchange rate",
+          "tr": "döviz kuru üzerinde etkisiz kalır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Buying X's bonds requires buying X's currency, so demand for it rises; the trade is vulnerable to sudden reversals.",
+      "explanation_tr": "X'in tahvillerini almak X'in parasını almayı gerektirir; talep artar. İşlem ani tersine dönüşlere karşı kırılgandır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Outflows would come from a reversal, not the initial trade.",
+          "tr": "Çıkışlar ilk işlemden değil, tersine dönüşten gelir."
+        },
+        "C": {
+          "en": "Large flows into a currency move its price.",
+          "tr": "Bir para birimine büyük girişler fiyatını hareket ettirir."
+        }
+      },
+      "vocab_ids": [
+        "carry-trade",
+        "capital-controls",
+        "hot-money",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-c-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a reason a government imposes capital controls?",
+      "stem_tr": "Aşağıdakilerden hangisinin bir hükümetin sermaye kontrolü uygulamasının nedeni olması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "To encourage speculative short-term flows",
+          "tr": "Spekülatif kısa vadeli akımları teşvik etmek"
+        },
+        {
+          "key": "B",
+          "en": "To reduce the risk of sudden capital outflows",
+          "tr": "Ani sermaye çıkışı riskini azaltmak"
+        },
+        {
+          "key": "C",
+          "en": "To increase exposure to foreign shocks",
+          "tr": "Dış şoklara maruziyeti artırmak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Controls aim to limit sudden, destabilizing flows and protect the currency and banking system.",
+      "explanation_tr": "Kontroller ani, istikrarsızlaştırıcı akımları sınırlamayı ve para birimi ile bankacılık sistemini korumayı amaçlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Controls aim to reduce, not encourage, speculative flows.",
+          "tr": "Kontroller spekülatif akımları teşvik etmeyi değil azaltmayı amaçlar."
+        },
+        "C": {
+          "en": "Controls aim to reduce exposure to foreign shocks.",
+          "tr": "Kontroller dış şoklara maruziyeti azaltmayı amaçlar."
+        }
+      },
+      "vocab_ids": [
+        "capital-controls",
+        "hot-money",
+        "most-likely",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-c-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A country facing large short-term foreign inflows that are pushing its currency up and hurting exporters introduces a tax on foreign purchases of its bonds. This policy is best described as:",
+      "stem_tr": "Parasını yukarı iten ve ihracatçılara zarar veren büyük kısa vadeli yabancı girişleriyle karşılaşan bir ülke, yabancıların tahvil alımına vergi getiriyor. Bu politika en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a tariff on imports",
+          "tr": "ithalata tarife"
+        },
+        {
+          "key": "B",
+          "en": "an export subsidy",
+          "tr": "bir ihracat sübvansiyonu"
+        },
+        {
+          "key": "C",
+          "en": "a capital control on inflows",
+          "tr": "girişlere yönelik bir sermaye kontrolü"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A tax on foreign purchases of domestic assets limits capital inflows, which is a capital control.",
+      "explanation_tr": "Yabancıların yerli varlık alımına vergi, sermaye girişlerini sınırlar; bu bir sermaye kontrolüdür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A tariff taxes imported goods, not capital.",
+          "tr": "Tarife sermayeyi değil ithal malları vergilendirir."
+        },
+        "B": {
+          "en": "An export subsidy pays exporters and is a trade measure.",
+          "tr": "İhracat sübvansiyonu ihracatçılara ödeme yapar ve bir ticaret önlemidir."
+        }
+      },
+      "vocab_ids": [
+        "capital-controls",
+        "hot-money",
+        "most-appropriate",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-c-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a drawback of capital controls?",
+      "stem_tr": "Aşağıdakilerden hangisinin sermaye kontrollerinin bir dezavantajı olması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They raise the efficiency of capital allocation",
+          "tr": "Sermaye tahsisinin verimliliğini artırırlar"
+        },
+        {
+          "key": "B",
+          "en": "They can be evaded and may reduce investor confidence",
+          "tr": "Dolanılabilirler ve yatırımcı güvenini azaltabilirler"
+        },
+        {
+          "key": "C",
+          "en": "They always lower borrowing costs",
+          "tr": "Borçlanma maliyetlerini her zaman düşürürler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Controls distort capital allocation, invite evasion, and may increase the cost of funding by signaling policy risk.",
+      "explanation_tr": "Kontroller sermaye tahsisini bozar, dolanmayı özendirir ve politika riski sinyali vererek fonlama maliyetini artırabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Controls tend to reduce, not raise, allocation efficiency.",
+          "tr": "Kontroller tahsis verimliliğini artırmaz, azaltma eğilimindedir."
+        },
+        "C": {
+          "en": "Financing often becomes costlier after controls.",
+          "tr": "Kontrollerden sonra finansman çoğu kez pahalılaşır."
+        }
+      },
+      "vocab_ids": [
+        "capital-controls",
+        "hot-money",
+        "limitation",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-c-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A government wants to fix its exchange rate and also keep an independent interest rate policy. To make these two goals consistent, it would most likely have to:",
+      "stem_tr": "Bir hükümet döviz kurunu sabitlemek ve aynı zamanda bağımsız faiz politikasını sürdürmek istiyor. Bu iki hedefi uyumlu kılmak için büyük olasılıkla şunu yapmalıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "allow free capital flows",
+          "tr": "sermaye akımlarına serbestçe izin vermek"
+        },
+        {
+          "key": "B",
+          "en": "adopt a free float",
+          "tr": "serbest dalgalanmaya geçmek"
+        },
+        {
+          "key": "C",
+          "en": "restrict capital flows",
+          "tr": "sermaye akımlarını kısıtlamak"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "By the impossible trinity, only two of the three goals can be met; limiting capital flows lets the first two coexist.",
+      "explanation_tr": "İmkânsız üçlüye göre üç hedeften yalnızca ikisi sağlanabilir; sermaye akımlarını sınırlamak ilk ikisinin bir arada bulunmasına imkân verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Free capital flows would make the two goals incompatible.",
+          "tr": "Serbest sermaye akımı iki hedefi bağdaşmaz yapar."
+        },
+        "B": {
+          "en": "A free float gives up the fixed rate goal.",
+          "tr": "Serbest dalgalanma sabit kur hedefinden vazgeçmektir."
+        }
+      },
+      "vocab_ids": [
+        "impossible-trinity",
+        "capital-controls",
+        "exchange-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-07-c-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-07",
+      "los_id": "ECO-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "After capital controls are announced, the country's firms report higher financing costs because foreign lenders demand a premium. This outcome is most consistent with controls:",
+      "stem_tr": "Sermaye kontrolleri açıklandıktan sonra ülkedeki firmalar yabancı borç verenlerin prim istemesi nedeniyle finansman maliyetlerinin arttığını bildiriyor. Bu sonuç kontrollerin şu yönüyle en uyumludur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "reducing investor confidence and raising perceived policy risk",
+          "tr": "yatırımcı güvenini azaltması ve algılanan politika riskini artırması"
+        },
+        {
+          "key": "B",
+          "en": "strengthening property rights for foreigners",
+          "tr": "yabancılar için mülkiyet haklarını güçlendirmesi"
+        },
+        {
+          "key": "C",
+          "en": "guaranteeing exchange rate stability",
+          "tr": "döviz kuru istikrarını garanti etmesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Investors may fear further restrictions on repatriating funds, so they ask for higher returns.",
+      "explanation_tr": "Yatırımcılar fonların geri çekilmesine yönelik yeni kısıtlardan korkabilir ve daha yüksek getiri ister.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Controls tend to weaken, not strengthen, perceived investor protection.",
+          "tr": "Kontroller algılanan yatırımcı korumasını güçlendirmez, zayıflatır."
+        },
+        "C": {
+          "en": "Controls do not guarantee stability.",
+          "tr": "Kontroller istikrarı garanti etmez."
+        }
+      },
+      "vocab_ids": [
+        "capital-controls",
+        "hot-money",
+        "most-consistent",
+        "exchange-rate"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

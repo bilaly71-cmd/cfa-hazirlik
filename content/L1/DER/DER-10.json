@@ -1,0 +1,856 @@
+{
+  "module_id": "DER-10",
+  "lesson": {
+    "id": "DER-10-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-10",
+    "los_ids": [
+      "DER-10-a",
+      "DER-10-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Valuing a Derivative Using a One-Period Binomial Model",
+    "title_tr": "Tek Dönemli Binom Modeliyle Türev Değerlemesi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A two-outcome world",
+        "heading_tr": "İki sonuçlu bir dünya",
+        "en": "To see how option pricing works, imagine the simplest world: in one period, a share can only go up or down. Then an option has only two possible payoffs. With the right number of shares you can build a portfolio that has the same value in both outcomes. That portfolio is riskless, so it must earn the risk-free rate. This gives you the option price without guessing the probability of up or down. The method is a small version of the models that banks use to price options, including options on shares and indices.",
+        "tr": "Opsiyon fiyatlamasının nasıl işlediğini görmek için en basit dünyayı düşünün: bir dönem içinde pay yalnızca yükselebilir veya düşebilir. O zaman opsiyonun yalnızca iki olası getirisi vardır. Doğru sayıda payla, iki sonuçta da aynı değere sahip bir portföy kurabilirsiniz. Bu portföy risksizdir; dolayısıyla risksiz faiz kazanmalıdır. Böylece yükselme veya düşme olasılığını tahmin etmeden opsiyon fiyatını bulursunuz. Bu yöntem, bankaların pay ve endeks opsiyonlarını fiyatlamada kullandığı modellerin küçük bir halidir.",
+        "key_terms": [
+          "binomial model",
+          "hedge ratio"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The tree and its parameters",
+        "heading_tr": "Ağaç ve parametreleri",
+        "en": "In a one-period binomial tree, the share price S0 moves to S_u = S0 × u in the up state or S_d = S0 × d in the down state. The option has payoffs c_u and c_d, taken from the payoff formulas at those prices. The risk-free rate per period is r. For no arbitrage we need d < 1 + r < u. If the risk-free asset earned more than the share in the up state, an arbitrageur would short the share and lend. The hedge ratio h is the number of shares per option that makes the portfolio riskless: h = (c_u − c_d)/(S_u − S_d).",
+        "tr": "Tek dönemli binom ağacında pay fiyatı S0, yukarı durumda S_u = S0 × u'ya, aşağı durumda S_d = S0 × d'ye gider. Opsiyonun c_u ve c_d getirileri bu fiyatlardaki getiri formüllerinden bulunur. Dönem başına risksiz faiz r'dir. Arbitrajsızlık için d < 1 + r < u olmalıdır. Risksiz varlık yukarı durumda bile payı geçseydi arbitrajcı payı açığa satıp borç verirdi. Korunma oranı h, portföyü risksiz yapan opsiyon başına pay adedidir: h = (c_u − c_d)/(S_u − S_d).",
+        "key_terms": [
+          "up factor",
+          "down factor",
+          "hedge ratio",
+          "no arbitrage"
+        ],
+        "formula_latex": "S_u=S_0u,\\quad S_d=S_0d,\\quad h=\\frac{c_u-c_d}{S_u-S_d},\\quad d<1+r<u"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Two ways to the same value",
+        "heading_tr": "Aynı değere iki yol",
+        "en": "Hedge ratio method: form a portfolio of h shares and one short option. It is worth hS_u − c_u or hS_d − c_d, which are equal. Discount that value at r and subtract from hS0 to find c0: c0 = hS0 − (hS_d − c_d)/(1 + r). Risk-neutral method: compute the risk-neutral probability π = (1 + r − d)/(u − d), then c0 = [π c_u + (1 − π) c_d]/(1 + r). Both methods give the same number. The risk-neutral probability is not the real probability: it is the one under which the share earns the risk-free rate on average. The method needs only u, d and r.",
+        "tr": "Korunma oranı yöntemi: h pay ve bir kısa opsiyondan oluşan portföy kurun. Değeri hS_u − c_u veya hS_d − c_d'dir ve ikisi eşittir. Bu değeri r ile iskonto edip hS0'dan çıkararak c0'ı bulun: c0 = hS0 − (hS_d − c_d)/(1 + r). Risk nötr yöntem: risk nötr olasılık π = (1 + r − d)/(u − d) hesaplanır, sonra c0 = [π c_u + (1 − π) c_d]/(1 + r). İki yöntem de aynı sayıyı verir. Risk nötr olasılık gerçek olasılık değildir: payın ortalama olarak risksiz faiz kazandığı olasılıktır. Yöntem yalnızca u, d ve r'yi gerektirir.",
+        "key_terms": [
+          "risk-neutral probability",
+          "hedged portfolio"
+        ],
+        "formula_latex": "\\pi=\\frac{1+r-d}{u-d},\\qquad c_0=\\frac{\\pi c_u+(1-\\pi)c_d}{1+r}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Pricing a call",
+        "heading_tr": "Alım opsiyonu fiyatlama",
+        "en": "A share is TRY 100. It will be TRY 120 or TRY 80 next period. The risk-free rate is 5%. A call has X = 100, so c_u = 20 and c_d = 0. Hedge ratio: h = 20/40 = 0.5. Portfolio: 0.5 shares minus one call is worth 0.5 × 80 − 0 = 40 in both states. PV = 40/1.05 = 38.10. Then c0 = 0.5 × 100 − 38.10 = 11.90. Check with the risk-neutral method: π = (1.05 − 0.80)/(1.20 − 0.80) = 0.625, c0 = 0.625 × 20/1.05 = 11.90. The same.",
+        "tr": "Bir pay 100 TRY. Gelecek dönem 120 TRY veya 80 TRY olacak. Risksiz faiz %5. Alım opsiyonunun X = 100; yani c_u = 20 ve c_d = 0. Korunma oranı: h = 20/40 = 0,5. Portföy: 0,5 pay eksi bir alım opsiyonu iki durumda da 0,5 × 80 − 0 = 40 değerindedir. Bugünkü değer = 40/1,05 = 38,10. Sonra c0 = 0,5 × 100 − 38,10 = 11,90. Risk nötr yöntemle kontrol: π = (1,05 − 0,80)/(1,20 − 0,80) = 0,625, c0 = 0,625 × 20/1,05 = 11,90. Aynı sonuç.",
+        "key_terms": [
+          "hedged portfolio",
+          "risk-neutral probability"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "The risk-neutral probability is not the true probability and does not assume that investors are risk neutral. Discount at the risk-free rate, not at a required return. Take payoffs at the end nodes before computing: c_u = max(0, S_u − X) for a call. The probability π multiplies the up payoff and 1 − π the down payoff. For a put, the payoffs are max(0, X − S). Check d < 1 + r < u, otherwise there is an arbitrage and the model fails. Put-call parity must hold between the call and put values from the same tree.",
+        "tr": "Risk nötr olasılık gerçek olasılık değildir ve yatırımcıların risk nötr olduğunu varsaymaz. Gerekli getiriyle değil, risksiz faizle iskonto edin. Hesaptan önce uç düğümlerdeki getirileri alın: alım için c_u = max(0, S_u − X). π yukarı getiriyi, 1 − π aşağı getiriyi çarpar. Satım için getiriler max(0, X − S)'dir. d < 1 + r < u koşulunu kontrol edin; aksi halde arbitraj vardır ve model bozulur. Aynı ağaçtan çıkan alım ve satım değerleri arasında alım-satım paritesi geçerli olmalıdır.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A one-period binomial tree values an option by building a riskless hedged portfolio, or equivalently by taking the expected payoff under risk-neutral probabilities and discounting at the risk-free rate. The hedge ratio is (c_u − c_d)/(S_u − S_d). The risk-neutral probability is (1 + r − d)/(u − d). It is a pricing tool and not a forecast; the model requires d < 1 + r < u.",
+    "summary_tr": "Tek dönemli binom ağacı, opsiyonu riskli olmayan korunan bir portföy kurarak veya eşdeğer olarak risk nötr olasılıklarla beklenen getiriyi risksiz faizle iskonto ederek değerler. Korunma oranı (c_u − c_d)/(S_u − S_d)'dir. Risk nötr olasılık (1 + r − d)/(u − d)'dir. Bu bir fiyatlama aracıdır, tahmin değildir; model d < 1 + r < u koşulunu gerektirir.",
+    "common_traps_tr": [
+      "Risk nötr olasılık gerçek olasılık değildir.",
+      "İskonto oranı risksiz faizdir; gerekli getiri oranı değil.",
+      "π yukarı getiriyi, 1 − π aşağı getiriyi çarpar.",
+      "d < 1 + r < u koşulu yoksa arbitraj vardır.",
+      "Satım opsiyonunda getiri max(0, X − S)'dir."
+    ],
+    "vocab_ids": [
+      "derivative",
+      "binomial",
+      "hedge-ratio",
+      "risk-neutral",
+      "up-move",
+      "down-move",
+      "probability",
+      "risk-free-rate",
+      "no-arbitrage",
+      "hedged-portfolio",
+      "payoff",
+      "tree",
+      "discount",
+      "node",
+      "riskless",
+      "preferences"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Binom model ve risk nötr fiyatlama SPK müfredatında yoktur; CFA'ya özgüdür."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-10-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A share is TRY 100 today. In one period it will be either TRY 120 or TRY 80. A European call has X = TRY 100. The hedge ratio (number of shares per call sold) that makes a riskless portfolio is closest to:",
+      "stem_tr": "Bir pay bugün 100 TRY. Bir dönem sonra 120 TRY veya 80 TRY olacak. Avrupa tipi bir alım opsiyonunun X = 100 TRY. Riskli olmayan bir portföy oluşturan korunma oranı (satılan her alım opsiyonu için pay adedi) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.5000",
+          "tr": "0,5000",
+          "value": 0.5
+        },
+        {
+          "key": "B",
+          "en": "2.0000",
+          "tr": "2,0000",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "0.1667",
+          "tr": "0,1667",
+          "value": 0.166667
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Call payoffs: c_u = 120 − 100 = 20 and c_d = 0. h = (c_u − c_d)/(S_u − S_d) = 20 / 40 = 0.50 shares per call.",
+      "explanation_tr": "Alım opsiyonu getirileri: c_u = 120 − 100 = 20 ve c_d = 0. h = (c_u − c_d)/(S_u − S_d) = 20 / 40 = alım opsiyonu başına 0,50 pay.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The ratio is inverted: the option payoff range goes in the numerator.",
+          "tr": "Oran ters kurulmuş: opsiyon payoff farkı paya yazılır."
+        },
+        "C": {
+          "en": "The denominator must be the difference between the two share prices, not the up price.",
+          "tr": "Payda iki pay fiyatı arasındaki fark olmalıdır; yukarı fiyat değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the hedge ratio for the call.",
+          "tr": "Alım opsiyonu için korunma oranı isteniyor."
+        },
+        {
+          "en": "The ratio makes the hedged portfolio have the same value in both states.",
+          "tr": "Oran, korunan portföyün iki durumda da aynı değere sahip olmasını sağlar.",
+          "formula_latex": "h=\\frac{c_u-c_d}{S_u-S_d}"
+        },
+        {
+          "en": "Substitute c_u = 20, c_d = 0, S_u = 120, S_d = 80.",
+          "tr": "c_u = 20, c_d = 0, S_u = 120, S_d = 80 değerlerini koy.",
+          "values": {
+            "c_u": 20,
+            "c_d": 0,
+            "S_u": 120,
+            "S_d": 80
+          }
+        },
+        {
+          "en": "h = 20 / 40 = 0.50.",
+          "tr": "h = 20 / 40 = 0,50."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "hedge-ratio",
+        "risk-neutral",
+        "up-move",
+        "down-move"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20 [÷] 40 [=]  (0.5)"
+        ]
+      },
+      "numeric": {
+        "expr": "(20-0)/(120-80)",
+        "unit": "shares"
+      }
+    },
+    {
+      "id": "DER-10-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "In a one-period binomial model, the up factor is u = 1.25, the down factor is d = 0.80 and the one-period risk-free rate is 5%. The risk-neutral probability of an up move is closest to:",
+      "stem_tr": "Tek dönemli bir binom modelinde yukarı hareket çarpanı u = 1,25, aşağı hareket çarpanı d = 0,80 ve bir dönemlik risksiz faiz %5'tir. Yukarı hareketin risk nötr olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.4444",
+          "tr": "0,4444",
+          "value": 0.444444
+        },
+        {
+          "key": "B",
+          "en": "0.5556",
+          "tr": "0,5556",
+          "value": 0.555556
+        },
+        {
+          "key": "C",
+          "en": "0.5000",
+          "tr": "0,5000",
+          "value": 0.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "π = (1 + r − d)/(u − d) = (1.05 − 0.80)/(1.25 − 0.80) = 0.25 / 0.45 = 0.5556.",
+      "explanation_tr": "π = (1 + r − d)/(u − d) = (1,05 − 0,80)/(1,25 − 0,80) = 0,25 / 0,45 = 0,5556.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the probability of a down move, 1 − π.",
+          "tr": "Bu, aşağı hareket olasılığıdır, 1 − π."
+        },
+        "C": {
+          "en": "Risk-neutral probabilities are generally not equal to 0.5. They depend on u, d and r.",
+          "tr": "Risk nötr olasılıklar genellikle 0,5'e eşit değildir; u, d ve r'ye bağlıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the risk-neutral probability of an up move.",
+          "tr": "Yukarı hareketin risk nötr olasılığı isteniyor."
+        },
+        {
+          "en": "Choose π so that the expected share price grows at the risk-free rate.",
+          "tr": "π, beklenen pay fiyatı risksiz faizle büyüyecek şekilde seçilir.",
+          "formula_latex": "\\pi=\\frac{1+r-d}{u-d}"
+        },
+        {
+          "en": "Substitute r = 0.05, u = 1.25, d = 0.80.",
+          "tr": "r = 0,05, u = 1,25, d = 0,80 değerlerini koy.",
+          "values": {
+            "r": 0.05,
+            "u": 1.25,
+            "d": 0.8
+          }
+        },
+        {
+          "en": "π = 0.25 / 0.45 = 0.5556.",
+          "tr": "π = 0,25 / 0,45 = 0,5556."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "hedge-ratio",
+        "risk-neutral",
+        "up-move",
+        "down-move"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.05 [-] 0.80 [=]  (0.25)",
+          "[÷] 0.45 [=]  (0.5556)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.05-0.80)/(1.25-0.80)"
+      }
+    },
+    {
+      "id": "DER-10-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share is TRY 100. After one period it will be TRY 120 or TRY 80. The risk-free rate is 5% per period. A European call with X = TRY 100 has payoffs of TRY 20 (up) and TRY 0 (down). Using risk-neutral valuation, the call value today is closest to:",
+      "stem_tr": "Bir pay 100 TRY. Bir dönem sonra 120 TRY veya 80 TRY olacak. Dönem başına risksiz faiz %5. X = 100 TRY olan Avrupa tipi bir alım opsiyonunun getirisi 20 TRY (yukarı) ve 0 TRY (aşağı). Risk nötr değerleme ile alım opsiyonunun bugünkü değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 12.50",
+          "tr": "TRY 12,50",
+          "value": 12.5
+        },
+        {
+          "key": "B",
+          "en": "TRY 9.52",
+          "tr": "TRY 9,52",
+          "value": 9.52381
+        },
+        {
+          "key": "C",
+          "en": "TRY 11.90",
+          "tr": "TRY 11,90",
+          "value": 11.904762
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "π = (1.05 − 0.80)/(1.20 − 0.80) = 0.625. c0 = [0.625 × 20 + 0.375 × 0] / 1.05 = 12.50 / 1.05 = TRY 11.90.",
+      "explanation_tr": "π = (1,05 − 0,80)/(1,20 − 0,80) = 0,625. c0 = [0,625 × 20 + 0,375 × 0] / 1,05 = 12,50 / 1,05 = 11,90 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The expected payoff is not discounted.",
+          "tr": "Beklenen getiri iskonto edilmemiştir."
+        },
+        "B": {
+          "en": "The probability 0.5 is used instead of the risk-neutral probability.",
+          "tr": "Risk nötr olasılık yerine 0,5 kullanılmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the call value from the risk-neutral approach.",
+          "tr": "Risk nötr yaklaşımla alım opsiyonu değeri isteniyor."
+        },
+        {
+          "en": "Discount the risk-neutral expected payoff at the risk-free rate.",
+          "tr": "Risk nötr beklenen getiriyi risksiz faizle iskonto et.",
+          "formula_latex": "c_0=\\frac{\\pi c_u+(1-\\pi)c_d}{1+r}"
+        },
+        {
+          "en": "First π = 0.625, using u = 1.20 and d = 0.80.",
+          "tr": "Önce u = 1,20 ve d = 0,80 ile π = 0,625."
+        },
+        {
+          "en": "Expected payoff = 0.625 × 20 = 12.50.",
+          "tr": "Beklenen getiri = 0,625 × 20 = 12,50."
+        },
+        {
+          "en": "c0 = 12.50 / 1.05 = TRY 11.90.",
+          "tr": "c0 = 12,50 / 1,05 = 11,90 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "hedge-ratio",
+        "risk-neutral",
+        "up-move",
+        "down-move"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.05 [-] 0.8 [=] [÷] 0.4 [=]  (0.625)",
+          "[x] 20 [÷] 1.05 [=]  (11.90)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.05-0.8)/(1.2-0.8)*20+(1-(1.05-0.8)/(1.2-0.8))*0)/1.05",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-10-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same tree (S0 = 100, up to 120, down to 80, r = 5%), what is the value of a European put with X = TRY 100? The put pays TRY 0 in the up state and TRY 20 in the down state. The put value is closest to:",
+      "stem_tr": "Aynı ağaç kullanılarak (S0 = 100, yukarı 120, aşağı 80, r = %5), X = 100 TRY olan Avrupa tipi bir satım opsiyonunun değeri nedir? Satım opsiyonu yukarı durumda 0 TRY, aşağı durumda 20 TRY öder. Satım opsiyonu değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 11.90",
+          "tr": "TRY 11,90",
+          "value": 11.904762
+        },
+        {
+          "key": "B",
+          "en": "TRY 7.14",
+          "tr": "TRY 7,14",
+          "value": 7.142857
+        },
+        {
+          "key": "C",
+          "en": "TRY 7.50",
+          "tr": "TRY 7,50",
+          "value": 7.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The down-move probability is 1 − 0.625 = 0.375. p0 = (0.375 × 20)/1.05 = 7.50/1.05 = TRY 7.14.",
+      "explanation_tr": "Aşağı hareket olasılığı 1 − 0,625 = 0,375'tir. p0 = (0,375 × 20)/1,05 = 7,50/1,05 = 7,14 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the up-move probability for the down-state payoff.",
+          "tr": "Bu, aşağı durum getirisi için yukarı hareket olasılığını kullanır."
+        },
+        "C": {
+          "en": "The expected payoff is not discounted.",
+          "tr": "Beklenen getiri iskonto edilmemiştir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the put value from the same tree.",
+          "tr": "Aynı ağaçtan satım opsiyonu değeri isteniyor."
+        },
+        {
+          "en": "Use the same risk-neutral probabilities and discount the expected put payoff.",
+          "tr": "Aynı risk nötr olasılıkları kullan ve beklenen satım getirisini iskonto et.",
+          "formula_latex": "p_0=\\frac{\\pi p_u+(1-\\pi)p_d}{1+r}"
+        },
+        {
+          "en": "π = 0.625, so 1 − π = 0.375. p_u = 0, p_d = 20.",
+          "tr": "π = 0,625, yani 1 − π = 0,375. p_u = 0, p_d = 20."
+        },
+        {
+          "en": "Expected payoff = 7.50.",
+          "tr": "Beklenen getiri = 7,50."
+        },
+        {
+          "en": "p0 = 7.50 / 1.05 = TRY 7.14.",
+          "tr": "p0 = 7,50 / 1,05 = 7,14 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "hedge-ratio",
+        "risk-neutral",
+        "up-move",
+        "down-move",
+        "put"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.375 [x] 20 [=]  (7.5)",
+          "[÷] 1.05 [=]  (7.14)"
+        ],
+        "note_tr": "Kontrol: c0 + X/(1+r) − S0 = 11.90 + 95.24 − 100 = 7.14 (alım-satım paritesi)."
+      },
+      "numeric": {
+        "expr": "(1-(1.05-0.8)/(1.2-0.8))*20/1.05",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-10-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share is TRY 50. In one period it will be TRY 65 (up) or TRY 45 (down). The risk-free rate is 4% per period. A European call has X = TRY 55. The call value today is closest to:",
+      "stem_tr": "Bir pay 50 TRY. Bir dönem sonra 65 TRY (yukarı) veya 45 TRY (aşağı) olacak. Dönem başına risksiz faiz %4. Avrupa tipi bir alım opsiyonunun X = 55 TRY. Alım opsiyonunun bugünkü değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 6.25",
+          "tr": "TRY 6,25",
+          "value": 6.25
+        },
+        {
+          "key": "B",
+          "en": "TRY 3.50",
+          "tr": "TRY 3,50",
+          "value": 3.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 3.37",
+          "tr": "TRY 3,37",
+          "value": 3.365385
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "u = 65/50 = 1.30, d = 45/50 = 0.90. π = (1.04 − 0.90)/(1.30 − 0.90) = 0.35. Payoffs: c_u = 65 − 55 = 10, c_d = 0. c0 = 0.35 × 10 / 1.04 = TRY 3.37.",
+      "explanation_tr": "u = 65/50 = 1,30, d = 45/50 = 0,90. π = (1,04 − 0,90)/(1,30 − 0,90) = 0,35. Getiriler: c_u = 65 − 55 = 10, c_d = 0. c0 = 0,35 × 10 / 1,04 = 3,37 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses 1 − π, the down-move probability, for the up-state payoff.",
+          "tr": "Bu, yukarı durum getirisi için aşağı hareket olasılığı olan 1 − π'yi kullanır."
+        },
+        "B": {
+          "en": "The expected payoff is not discounted.",
+          "tr": "Beklenen getiri iskonto edilmemiştir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need to build the factors and the payoffs first.",
+          "tr": "Önce çarpanları ve getirileri oluşturmak gerekir."
+        },
+        {
+          "en": "u and d come from the share prices; then compute π and discount.",
+          "tr": "u ve d pay fiyatlarından gelir; sonra π hesaplanır ve iskonto yapılır.",
+          "formula_latex": "c_0=\\frac{\\pi c_u+(1-\\pi)c_d}{1+r}"
+        },
+        {
+          "en": "u = 1.30, d = 0.90, π = 0.35. c_u = 10, c_d = 0.",
+          "tr": "u = 1,30, d = 0,90, π = 0,35. c_u = 10, c_d = 0.",
+          "values": {
+            "u": 1.3,
+            "d": 0.9,
+            "pi": 0.35
+          }
+        },
+        {
+          "en": "Expected payoff = 3.50.",
+          "tr": "Beklenen getiri = 3,50."
+        },
+        {
+          "en": "c0 = 3.50 / 1.04 = TRY 3.37.",
+          "tr": "c0 = 3,50 / 1,04 = 3,37 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "hedge-ratio",
+        "risk-neutral",
+        "up-move",
+        "down-move"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.04 [-] 0.90 [=] [÷] 0.40 [=]  (0.35)",
+          "[x] 10 [÷] 1.04 [=]  (3.37)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.04-0.9)/(1.3-0.9)*10)/1.04",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-10-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The risk-neutral probability of an up move in a binomial model is best described as:",
+      "stem_tr": "Binom modelinde yukarı hareketin risk nötr olasılığı en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a probability that makes the expected return of the underlying equal to the risk-free rate",
+          "tr": "dayanak varlığın beklenen getirisini risksiz faize eşitleyen bir olasılık"
+        },
+        {
+          "key": "B",
+          "en": "the true probability that the share price will rise",
+          "tr": "pay fiyatının gerçekte yükselme olasılığı"
+        },
+        {
+          "key": "C",
+          "en": "the probability that the option ends in the money",
+          "tr": "opsiyonun parada bitme olasılığı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under the risk-neutral probabilities, the share grows on average at the risk-free rate, and the option can be discounted at the risk-free rate.",
+      "explanation_tr": "Risk nötr olasılıklar altında pay ortalama olarak risksiz faizle büyür ve opsiyon risksiz faizle iskonto edilebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It is a pricing device. The true probability is not needed and is usually different.",
+          "tr": "Bu bir fiyatlama aracıdır; gerçek olasılığa gerek yoktur ve genellikle farklıdır."
+        },
+        "C": {
+          "en": "It is not the probability of ending in the money in the real world.",
+          "tr": "Gerçek dünyada parada bitme olasılığı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-neutral",
+        "probability",
+        "expected-return",
+        "risk-free-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "new",
+        "note_tr": "Risk nötr fiyatlama SPK müfredatında yoktur; CFA'ya özgüdür."
+      }
+    },
+    {
+      "id": "DER-10-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Why can an option be valued without knowing investors' risk preferences or the true probability of an up move?",
+      "stem_tr": "Bir opsiyon, yatırımcıların risk tercihleri veya yukarı hareketin gerçek olasılığı bilinmeden neden değerlenebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Because all investors in the market are risk neutral",
+          "tr": "Çünkü piyasadaki tüm yatırımcılar risk nötrdür"
+        },
+        {
+          "key": "B",
+          "en": "Because the option payoff is always zero in the down state",
+          "tr": "Çünkü opsiyon getirisi aşağı durumda her zaman sıfırdır"
+        },
+        {
+          "key": "C",
+          "en": "Because the option can be combined with the underlying to form a riskless portfolio whose value is fixed by no-arbitrage",
+          "tr": "Çünkü opsiyon, dayanak varlıkla birleştirilerek, değeri arbitrajsızlıkla belirlenen riskli olmayan bir portföy oluşturabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The hedged portfolio earns the risk-free rate in both states. Any other price would allow arbitrage, so preferences do not matter.",
+      "explanation_tr": "Korunan portföy her iki durumda da risksiz faiz kazanır. Başka herhangi bir fiyat arbitrajı mümkün kılar; bu yüzden tercihler önemli değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The method does not assume that investors are risk neutral. It is a mathematical convenience.",
+          "tr": "Yöntem yatırımcıların risk nötr olduğunu varsaymaz; matematiksel bir kolaylıktır."
+        },
+        "B": {
+          "en": "The option payoff in the down state can be positive, for example for a put.",
+          "tr": "Aşağı durumdaki opsiyon getirisi pozitif olabilir; örneğin satım opsiyonunda."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "riskless-portfolio",
+        "no-arbitrage",
+        "preferences",
+        "hedged"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-10-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst believes the true probability that a share rises is 80%, while the risk-neutral probability is 55%. When valuing a call with the binomial model, the analyst should use:",
+      "stem_tr": "Bir analist, bir payın yükselme olasılığının gerçekte %80, risk nötr olasılığın ise %55 olduğunu düşünüyor. Binom modeliyle bir alım opsiyonunu değerlerken analist neyi kullanmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the 55% risk-neutral probability, discounting at the risk-free rate",
+          "tr": "%55'lik risk nötr olasılığı, risksiz faizle iskonto ederek"
+        },
+        {
+          "key": "B",
+          "en": "the 80% probability, discounting at the risk-free rate",
+          "tr": "%80'lik olasılığı, risksiz faizle iskonto ederek"
+        },
+        {
+          "key": "C",
+          "en": "the average of 80% and 55%, discounting at the risk-free rate",
+          "tr": "%80 ve %55'in ortalamasını, risksiz faizle iskonto ederek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The risk-neutral expected payoff, discounted at the risk-free rate, gives the no-arbitrage price. The belief about the true probability does not change the price.",
+      "explanation_tr": "Risksiz faizle iskonto edilmiş risk nötr beklenen getiri arbitrajsız fiyatı verir. Gerçek olasılığa dair inanç fiyatı değiştirmez.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "With real-world probabilities, the discount rate would also need a risk premium. The risk-neutral approach is simpler and consistent.",
+          "tr": "Gerçek dünya olasılıklarında iskonto oranına risk primi de eklemek gerekir; risk nötr yaklaşım daha basit ve tutarlıdır."
+        },
+        "C": {
+          "en": "Averaging mixes two different probability measures and has no theoretical basis.",
+          "tr": "Ortalama almak iki farklı olasılık ölçüsünü karıştırır ve kuramsal dayanağı yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "real-world",
+        "belief",
+        "discount",
+        "risk-premium"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-10-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In a one-period binomial model with u = 1.10, d = 0.95 and a risk-free rate of 12% per period, which statement is correct?",
+      "stem_tr": "Dönem başına u = 1,10, d = 0,95 ve risksiz faiz %12 olan tek dönemli bir binom modelinde aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "No arbitrage exists, because d is less than 1",
+          "tr": "Arbitraj yoktur; çünkü d, 1'den küçüktür"
+        },
+        {
+          "key": "B",
+          "en": "An arbitrage exists, because even the up state return is below the risk-free rate",
+          "tr": "Arbitraj vardır; çünkü yukarı durum getirisi bile risksiz faizin altındadır"
+        },
+        {
+          "key": "C",
+          "en": "No arbitrage exists, because the risk-neutral probability is 0.5",
+          "tr": "Arbitraj yoktur; çünkü risk nötr olasılık 0,5'tir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Investing in the risk-free asset beats the share in both states, so shorting the share and lending earns a riskless profit. The model requires d < 1 + r < u.",
+      "explanation_tr": "Risksiz varlık iki durumda da payı geçer; bu yüzden payı açığa satıp borç vermek risksiz kâr sağlar. Model d < 1 + r < u koşulunu gerektirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No-arbitrage needs d < 1 + r < u. Here 1 + r = 1.12 is above u = 1.10.",
+          "tr": "Arbitrajsızlık için d < 1 + r < u gerekir. Burada 1 + r = 1,12, u = 1,10'un üzerindedir."
+        },
+        "C": {
+          "en": "π = (1.12 − 0.95)/(1.10 − 0.95) = 1.13, which is above 1 and not a valid probability.",
+          "tr": "π = (1,12 − 0,95)/(1,10 − 0,95) = 1,13'tür; 1'in üzerindedir ve geçerli bir olasılık değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "no-arbitrage",
+        "up-factor",
+        "down-factor",
+        "probability"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-10-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a correct statement about the hedge ratio and the risk-neutral approach in a one-period binomial model?",
+      "stem_tr": "Tek dönemli binom modelinde korunma oranı ve risk nötr yaklaşım hakkında aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both approaches give the same option value when the same tree and the same risk-free rate are used",
+          "tr": "Aynı ağaç ve aynı risksiz faiz kullanıldığında iki yaklaşım da aynı opsiyon değerini verir"
+        },
+        {
+          "key": "B",
+          "en": "The hedge ratio approach gives a higher value because it ignores discounting",
+          "tr": "Korunma oranı yaklaşımı iskontoyu göz ardı ettiği için daha yüksek değer verir"
+        },
+        {
+          "key": "C",
+          "en": "The risk-neutral approach requires knowledge of the investors' expected return",
+          "tr": "Risk nötr yaklaşım yatırımcıların beklenen getirisinin bilinmesini gerektirir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both are consequences of no-arbitrage. The hedge ratio method builds a riskless portfolio explicitly, while the risk-neutral method uses the probability that makes the share earn the risk-free rate.",
+      "explanation_tr": "İkisi de arbitrajsızlığın sonucudur. Korunma oranı yöntemi riskli olmayan portföyü açıkça kurar; risk nötr yöntem payın risksiz faiz kazanmasını sağlayan olasılığı kullanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The hedged portfolio is discounted at the risk-free rate, so discounting is not ignored.",
+          "tr": "Korunan portföy risksiz faizle iskonto edilir; iskonto göz ardı edilmez."
+        },
+        "C": {
+          "en": "It uses only u, d and r, and does not use expected returns.",
+          "tr": "Yalnızca u, d ve r'yi kullanır; beklenen getiriyi kullanmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hedge-ratio",
+        "equivalent",
+        "no-arbitrage",
+        "tree"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

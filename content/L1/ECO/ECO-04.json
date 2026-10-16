@@ -1,0 +1,1356 @@
+{
+  "module_id": "ECO-04",
+  "lesson": {
+    "id": "ECO-04-lesson",
+    "level": "L1",
+    "topic": "ECO",
+    "module_id": "ECO-04",
+    "los_ids": [
+      "ECO-04-a",
+      "ECO-04-b",
+      "ECO-04-c",
+      "ECO-04-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Monetary Policy",
+    "title_tr": "Para Politikası",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why we need a central bank",
+        "heading_tr": "Merkez bankasına neden ihtiyaç var?",
+        "en": "Prices, interest rates and exchange rates affect every household and firm. A central bank looks after the value of money and the health of the financial system. In Türkiye, the TCMB publishes a one-week repo auction rate as its policy rate and announces an inflation target. When inflation runs above target, the bank can raise the policy rate: loans become dearer, spending slows and price pressure eases. When the economy is weak, it can cut the rate. For a bond or equity investor, one decision by the central bank changes yields, the lira and share prices at the same time.",
+        "tr": "Fiyatlar, faizler ve döviz kurları her hanehalkını ve firmayı etkiler. Merkez bankası paranın değerini ve finansal sistemin sağlığını gözetir. Türkiye'de TCMB, politika faizi olarak bir haftalık repo ihale faizini açıklar ve bir enflasyon hedefi duyurur. Enflasyon hedefin üzerinde seyrettiğinde banka politika faizini artırabilir: krediler pahalanır, harcamalar yavaşlar ve fiyat baskısı hafifler. Ekonomi zayıfsa faizi indirebilir. Tahvil ya da hisse yatırımcısı için merkez bankasının tek bir kararı getirileri, lirayı ve hisse fiyatlarını aynı anda değiştirir.",
+        "key_terms": [
+          "central bank",
+          "policy rate",
+          "inflation target"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Roles, money and objectives",
+        "heading_tr": "Roller, para ve hedefler",
+        "en": "Central bank roles: sole issuer of banknotes, banker to the government and to banks, lender of last resort in a crisis, supervisor of banks and the payment system, and manager of foreign reserves, while conducting monetary policy. Money serves as a medium of exchange, a store of value and a unit of account. Banks keep only a fraction of deposits as reserves and lend the rest, which creates money; the simple money multiplier is 1 / reserve requirement. The main objective is usually price stability, often a low positive inflation target (about 2% in many developed economies). A small positive target gives a buffer against deflation, which is hard to fight. Some banks also target employment, financial stability or the exchange rate.",
+        "tr": "Merkez bankasının rolleri: banknot ihracının tek yetkilisi, hükümetin ve bankaların bankacısı, kriz anında son kredi merci, bankaların ve ödeme sisteminin gözetmeni ve döviz rezervlerinin yöneticisi olmak; bunların yanında para politikasını yürütmek. Para değişim aracı, değer saklama aracı ve hesap birimi işlevini görür. Bankalar mevduatın yalnızca bir kısmını karşılık olarak tutar, kalanını borç verir ve bu para yaratır; basit para çarpanı 1 / zorunlu karşılık oranıdır. Ana hedef genellikle fiyat istikrarıdır; çoğu zaman düşük pozitif bir enflasyon hedefi (birçok gelişmiş ekonomide yaklaşık %2) kullanılır. Küçük pozitif hedef, mücadelesi zor olan deflasyona karşı tampon sağlar. Bazı bankalar istihdamı, finansal istikrarı ya da döviz kurunu da hedefler.",
+        "key_terms": [
+          "lender of last resort",
+          "money multiplier",
+          "price stability"
+        ],
+        "formula_latex": "\\text{Money multiplier}=\\frac{1}{\\text{reserve requirement}}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Tools and transmission",
+        "heading_tr": "Araçlar ve aktarım",
+        "en": "Main tools: the policy rate (the rate at which banks borrow short-term from the central bank), reserve requirements (higher requirement means less lending), and open market operations (buying securities adds reserves and pushes short rates down; selling does the reverse). When the policy rate is near zero, banks may use quantitative easing, buying long-term assets to lower long-term yields. The transmission mechanism links the policy rate to the economy: short-term rates, asset prices, expectations of inflation and the exchange rate. A cut tends to lower borrowing costs, raise asset prices, weaken the currency, lift demand and raise inflation. The real interest rate is approximately the nominal rate minus expected inflation.",
+        "tr": "Ana araçlar: politika faizi (bankaların merkez bankasından kısa vadeli borçlandığı faiz), zorunlu karşılıklar (yüksek karşılık daha az kredi demektir) ve açık piyasa işlemleri (menkul değer alımı karşılıkları artırır ve kısa faizleri aşağı iter; satış tersini yapar). Politika faizi sıfıra yakınken bankalar parasal genişleme kullanabilir: uzun vadeli varlık alarak uzun vadeli getirileri düşürür. Aktarım mekanizması politika faizini ekonomiye bağlar: kısa vadeli faizler, varlık fiyatları, enflasyon beklentileri ve döviz kuru. İndirim borçlanma maliyetini düşürür, varlık fiyatlarını yükseltir, parayı zayıflatır, talebi artırır ve enflasyonu yükseltme eğilimindedir. Reel faiz yaklaşık olarak nominal faiz eksi beklenen enflasyondur.",
+        "key_terms": [
+          "open market operations",
+          "quantitative easing",
+          "reserve requirement",
+          "transmission mechanism"
+        ],
+        "formula_latex": "r\\approx i-\\pi^{e}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Effectiveness, targeting and limits",
+        "heading_tr": "Etkinlik, hedefleme ve sınırlar",
+        "en": "An effective central bank is independent (free from political pressure), credible (people believe it will meet its target) and transparent (it explains decisions). Inflation targeting sets a numeric goal and moves the policy rate to reach it. Exchange rate targeting ties the currency to another, which means giving up independent monetary policy if capital moves freely. The neutral rate is about the trend real growth rate plus the inflation target; a policy rate above it is contractionary, below it expansionary. Limits: a liquidity trap (cutting rates does not raise spending), the zero lower bound, long and variable lags, and weak transmission if banks or households will not borrow.",
+        "tr": "Etkin bir merkez bankası bağımsızdır (siyasi baskıdan uzak), güvenilirdir (insanlar hedefe ulaşacağına inanır) ve şeffaftır (kararlarını açıklar). Enflasyon hedeflemesi sayısal bir hedef koyar ve politika faizini ona ulaşmak için hareket ettirir. Döviz kuru hedeflemesi parayı bir başkasına bağlar; sermaye serbestçe hareket ediyorsa bu, bağımsız para politikasından vazgeçmek demektir. Nötr faiz yaklaşık olarak trend reel büyüme artı enflasyon hedefidir; ondan yüksek bir politika faizi daraltıcı, düşük bir faiz genişleticidir. Sınırlar: likidite tuzağı (faiz indirimi harcamayı artırmaz), sıfır alt sınırı, uzun ve değişken gecikmeler ve bankalar ya da hanehalkı borçlanmak istemiyorsa zayıf aktarım.",
+        "key_terms": [
+          "inflation targeting",
+          "neutral rate",
+          "liquidity trap",
+          "zero lower bound"
+        ],
+        "formula_latex": "i_{neutral}\\approx g_{real}+\\pi^{target}"
+      },
+      {
+        "kind": "text",
+        "heading_en": "Policy mix",
+        "heading_tr": "Politika karışımı",
+        "en": "Fiscal and monetary policy can be combined in four ways. Easy fiscal with easy monetary raises output strongly and has an ambiguous effect on interest rates. Tight fiscal with tight monetary lowers output strongly. Easy fiscal with tight monetary pushes interest rates up and favors public over private spending. Tight fiscal with easy monetary pushes rates down and favors private over public spending.",
+        "tr": "Maliye ve para politikası dört şekilde birleştirilebilir. Gevşek maliye ile gevşek para çıktıyı güçlü artırır ve faizler üzerinde etkisi belirsizdir. Sıkı maliye ile sıkı para çıktıyı güçlü düşürür. Gevşek maliye ile sıkı para faizleri yukarı iter ve kamu harcamasını özel harcamaya tercih eder. Sıkı maliye ile gevşek para faizleri aşağı iter ve özel harcamayı kamu harcamasına tercih eder.",
+        "key_terms": [],
+        "table": {
+          "headers": [
+            {
+              "en": "Fiscal / Monetary",
+              "tr": "Maliye / Para"
+            },
+            {
+              "en": "Output",
+              "tr": "Çıktı"
+            },
+            {
+              "en": "Interest rates",
+              "tr": "Faizler"
+            },
+            {
+              "en": "Spending mix",
+              "tr": "Harcama dağılımı"
+            }
+          ],
+          "rows": [
+            [
+              "Easy / Easy",
+              "Up strongly / Güçlü artar",
+              "Ambiguous / Belirsiz",
+              "Public up, private up / Kamu ve özel artar"
+            ],
+            [
+              "Tight / Tight",
+              "Down strongly / Güçlü düşer",
+              "Ambiguous / Belirsiz",
+              "Both down / İkisi de düşer"
+            ],
+            [
+              "Easy / Tight",
+              "Ambiguous / Belirsiz",
+              "Up strongly / Güçlü artar",
+              "Public up, private down / Kamu artar, özel düşer"
+            ],
+            [
+              "Tight / Easy",
+              "Ambiguous / Belirsiz",
+              "Down strongly / Güçlü düşer",
+              "Public down, private up / Kamu düşer, özel artar"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: multiplier and neutral rate",
+        "heading_tr": "Çözümlü örnek: çarpan ve nötr faiz",
+        "en": "With a reserve requirement of 8%, the money multiplier is 1 / 0.08 = 12.5, so TRY 200 million of new reserves can support up to TRY 2,500 million of deposits. If trend real growth is 3% and the inflation target is 5%, the neutral rate is about 8%. A policy rate of 10% is above neutral, so policy is contractionary.",
+        "tr": "%8 zorunlu karşılıkla para çarpanı 1 / 0,08 = 12,5'tir; 200 milyon TL yeni karşılık en çok 2.500 milyon TL mevduatı destekleyebilir. Trend reel büyüme %3, enflasyon hedefi %5 ise nötr faiz yaklaşık %8'dir. %10'luk politika faizi nötrün üzerindedir; politika daraltıcıdır.",
+        "key_terms": [],
+        "example": {
+          "en": "Multiplier = 1 / 0.08 = 12.5; neutral = 3% + 5% = 8%",
+          "tr": "Çarpan = 1 / 0,08 = 12,5; nötr = %3 + %5 = %8"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "The simple money multiplier is a maximum; leakage into cash lowers it. Raising the reserve requirement is contractionary. Real rate uses expected, not past, inflation. A policy rate that falls is not automatically expansionary: compare it with the neutral rate. Exchange rate targeting and free capital flows do not go together with independent monetary policy. Central banks are not mainly profit seekers.",
+        "tr": "Basit para çarpanı bir üst sınırdır; nakde kaçış onu düşürür. Zorunlu karşılığı artırmak daraltıcıdır. Reel faiz geçmiş değil beklenen enflasyonu kullanır. Düşen bir politika faizi otomatik olarak genişletici değildir: nötr faizle kıyaslayın. Döviz kuru hedeflemesi ve serbest sermaye hareketi bağımsız para politikasıyla bir arada yürümez. Merkez bankaları esas olarak kâr peşinde değildir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Central banks issue money, supervise banks and aim mainly at price stability. Policy rate, reserve requirement and open market operations (and QE) work through a transmission mechanism. Effective central banks are independent, credible and transparent; targeting regimes and limits matter. Fiscal and monetary policies can reinforce or offset each other.",
+    "summary_tr": "Merkez bankaları para ihraç eder, bankaları gözetir ve esas olarak fiyat istikrarını hedefler. Politika faizi, zorunlu karşılık ve açık piyasa işlemleri (ve parasal genişleme) bir aktarım mekanizmasıyla işler. Etkin merkez bankaları bağımsız, güvenilir ve şeffaftır; hedefleme rejimleri ve sınırlar önemlidir. Maliye ve para politikaları birbirini güçlendirebilir ya da dengeleyebilir.",
+    "common_traps_tr": [
+      "Basit para çarpanı bir üst sınırdır; nakde kaçış onu düşürür.",
+      "Zorunlu karşılığı artırmak daraltıcıdır.",
+      "Reel faiz beklenen enflasyonu kullanır.",
+      "Politika faizinin düşmesi, nötr faizin üzerindeyse hâlâ daraltıcı olabilir.",
+      "Sabit kur hedefi ve serbest sermaye hareketi ile bağımsız para politikası birlikte yürümez."
+    ],
+    "vocab_ids": [
+      "central-bank",
+      "policy-rate",
+      "lender-of-last-resort",
+      "money-multiplier",
+      "reserve-requirement",
+      "open-market-operations",
+      "quantitative-easing",
+      "transmission-mechanism",
+      "inflation-targeting",
+      "neutral-rate",
+      "liquidity-trap",
+      "real-interest-rate",
+      "price-stability",
+      "inflation",
+      "most-likely",
+      "assume"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "ECO-04-a-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which role is most consistent with a central bank acting as lender of last resort?",
+      "stem_tr": "Hangi rol, merkez bankasının son kredi merci olarak hareket etmesiyle en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Providing emergency loans to solvent banks that cannot borrow elsewhere",
+          "tr": "Başka yerden borçlanamayan ödeme gücü olan bankalara acil kredi vermek"
+        },
+        {
+          "key": "B",
+          "en": "Setting income tax rates",
+          "tr": "Gelir vergisi oranlarını belirlemek"
+        },
+        {
+          "key": "C",
+          "en": "Auditing company financial statements",
+          "tr": "Şirket finansal tablolarını denetlemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In a liquidity squeeze the central bank lends to banks to prevent a wider crisis.",
+      "explanation_tr": "Likidite sıkışıklığında merkez bankası daha geniş bir krizi önlemek için bankalara borç verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Taxes are set by government.",
+          "tr": "Vergileri hükümet belirler."
+        },
+        "C": {
+          "en": "Auditing is done by independent auditors.",
+          "tr": "Denetimi bağımsız denetçiler yapar."
+        }
+      },
+      "vocab_ids": [
+        "lender-of-last-resort",
+        "central-bank",
+        "most-consistent",
+        "government"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-a-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT a function of money?",
+      "stem_tr": "Aşağıdakilerden hangisi paranın işlevlerinden DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Medium of exchange",
+          "tr": "Değişim aracı"
+        },
+        {
+          "key": "B",
+          "en": "Guaranteeing a positive return on every holding",
+          "tr": "Her elde tutma için pozitif getiri garantisi vermek"
+        },
+        {
+          "key": "C",
+          "en": "Unit of account",
+          "tr": "Hesap birimi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Money is a medium of exchange, a store of value and a unit of account; it does not guarantee any return.",
+      "explanation_tr": "Para değişim aracı, değer saklama aracı ve hesap birimidir; herhangi bir getiriyi garanti etmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Being accepted in trade is the medium-of-exchange function.",
+          "tr": "Alışverişte kabul edilmek değişim aracı işlevidir."
+        },
+        "C": {
+          "en": "Pricing goods in lira is the unit-of-account function.",
+          "tr": "Malları lirayla fiyatlamak hesap birimi işlevidir."
+        }
+      },
+      "vocab_ids": [
+        "money-multiplier",
+        "price-stability",
+        "inflation",
+        "not-question"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-a-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The reserve requirement is 8%. Banks receive TRY 200 million of new reserves. Using the simple money multiplier, the maximum increase in the money supply is closest to:",
+      "stem_tr": "Zorunlu karşılık oranı %8'dir. Bankalar 200 milyon TL yeni karşılık alıyor. Basit para çarpanıyla para arzındaki azami artış en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 16 million",
+          "tr": "16 milyon TL",
+          "value": 16.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 200 million",
+          "tr": "200 milyon TL",
+          "value": 200.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 2,500 million",
+          "tr": "2,500 milyon TL",
+          "value": 2500.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Multiplier = 1 / 0.08 = 12.5; 200 x 12.5 = TRY 2,500 million.",
+      "explanation_tr": "Çarpan = 1 / 0,08 = 12,5; 200 x 12,5 = 2.500 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 16 million multiplies by the requirement (200 x 0.08) instead of dividing.",
+          "tr": "16 milyon TL, karşılık oranına bölmek yerine onunla çarpar (200 x 0,08)."
+        },
+        "B": {
+          "en": "TRY 200 million ignores the multiplier.",
+          "tr": "200 milyon TL çarpanı yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the maximum money creation from new reserves.",
+          "tr": "Yeni karşılıklardan azami para yaratımı isteniyor."
+        },
+        {
+          "en": "Money multiplier = 1 / reserve requirement.",
+          "tr": "Para çarpanı = 1 / zorunlu karşılık.",
+          "formula_latex": "m=\\frac{1}{r}"
+        },
+        {
+          "en": "m = 1 / 0.08 = 12.5.",
+          "tr": "m = 1 / 0,08 = 12,5."
+        },
+        {
+          "en": "200 x 12.5 = TRY 2,500 million.",
+          "tr": "200 x 12,5 = 2.500 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.08 [1/x] (12.5)",
+          "[×] 200 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "200/0.08",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "money-multiplier",
+        "reserve-requirement",
+        "closest-to",
+        "assume"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-a-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The most common primary objective of a central bank is:",
+      "stem_tr": "Bir merkez bankasının en yaygın birincil hedefi şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "maximizing the government's tax revenue",
+          "tr": "hükümetin vergi gelirini en çoklamak"
+        },
+        {
+          "key": "B",
+          "en": "price stability",
+          "tr": "fiyat istikrarı"
+        },
+        {
+          "key": "C",
+          "en": "maximizing bank profits",
+          "tr": "banka kârlarını en çoklamak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Most central banks put low, stable inflation first, often with an explicit target.",
+      "explanation_tr": "Çoğu merkez bankası düşük ve istikrarlı enflasyonu öne koyar, çoğu zaman açık bir hedefle.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Tax revenue is a fiscal matter.",
+          "tr": "Vergi geliri maliye konusudur."
+        },
+        "C": {
+          "en": "Central banks are not profit maximizers.",
+          "tr": "Merkez bankaları kâr en çoklayıcısı değildir."
+        }
+      },
+      "vocab_ids": [
+        "price-stability",
+        "central-bank",
+        "inflation",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-a-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Why do many central banks target a low positive inflation rate (for example 2%) rather than zero?",
+      "stem_tr": "Birçok merkez bankası neden sıfır yerine düşük pozitif bir enflasyon (örneğin %2) hedefler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Zero inflation would raise the policy rate above the neutral rate permanently",
+          "tr": "Sıfır enflasyon politika faizini kalıcı olarak nötr faizin üzerine çıkarır"
+        },
+        {
+          "key": "B",
+          "en": "Positive inflation raises real wages automatically",
+          "tr": "Pozitif enflasyon reel ücretleri otomatik artırır"
+        },
+        {
+          "key": "C",
+          "en": "A small positive rate leaves room to cut real rates and reduces the risk of deflation",
+          "tr": "Küçük pozitif oran reel faizi indirmek için alan bırakır ve deflasyon riskini azaltır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With some inflation, a cut in the nominal rate can push the real rate below zero; deflation can make debts heavier and spending fall.",
+      "explanation_tr": "Biraz enflasyon varsa nominal faiz indirimi reel faizi sıfırın altına itebilir; deflasyon borçları ağırlaştırabilir ve harcamayı düşürebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The neutral rate is the real growth rate plus the target, not tied to zero inflation in this way.",
+          "tr": "Nötr faiz reel büyüme artı hedeftir; bu şekilde sıfır enflasyona bağlı değildir."
+        },
+        "B": {
+          "en": "Inflation erodes, not raises, real wages unless pay catches up.",
+          "tr": "Enflasyon, ücretler yetişmedikçe reel ücreti artırmaz, aşındırır."
+        }
+      },
+      "vocab_ids": [
+        "price-stability",
+        "real-interest-rate",
+        "neutral-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-b-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A central bank raises the reserve requirement. All else equal, this is most likely to:",
+      "stem_tr": "Bir merkez bankası zorunlu karşılığı artırıyor. Diğer her şey aynıyken bu büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "reduce bank lending and money supply growth",
+          "tr": "banka kredilerini ve para arzı artışını azaltır"
+        },
+        {
+          "key": "B",
+          "en": "raise bank lending and money supply growth",
+          "tr": "banka kredilerini ve para arzı artışını artırır"
+        },
+        {
+          "key": "C",
+          "en": "have no effect on lending",
+          "tr": "krediler üzerinde etkisiz kalır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Banks must hold more reserves, so they can lend less; the money multiplier falls.",
+      "explanation_tr": "Bankalar daha çok karşılık tutmak zorundadır, daha az kredi verebilir; para çarpanı düşer.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Higher requirements restrict, not expand, lending.",
+          "tr": "Yüksek karşılık krediyi sınırlar, genişletmez."
+        },
+        "C": {
+          "en": "The requirement directly changes how much can be lent.",
+          "tr": "Karşılık oranı ne kadar kredi verilebileceğini doğrudan değiştirir."
+        }
+      },
+      "vocab_ids": [
+        "reserve-requirement",
+        "money-multiplier",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-b-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The nominal policy rate is 45% and expected inflation is 38%. Using the approximation, the real interest rate is closest to:",
+      "stem_tr": "Nominal politika faizi %45, beklenen enflasyon %38'dir. Yaklaşık formülle reel faiz en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "83.0%",
+          "tr": "%83.0",
+          "value": 83.0
+        },
+        {
+          "key": "B",
+          "en": "-7.0%",
+          "tr": "%-7.0",
+          "value": -7.0
+        },
+        {
+          "key": "C",
+          "en": "7.0%",
+          "tr": "%7.0",
+          "value": 7.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Real rate is approximately nominal minus expected inflation = 45 - 38 = 7%.",
+      "explanation_tr": "Reel faiz yaklaşık olarak nominal eksi beklenen enflasyondur = 45 - 38 = %7.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "83% adds the two rates.",
+          "tr": "%83 iki oranı toplar."
+        },
+        "B": {
+          "en": "-7% subtracts in the wrong order (38 - 45).",
+          "tr": "-%7 çıkarmayı ters sırada yapar (38 - 45)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the real interest rate.",
+          "tr": "Reel faiz isteniyor."
+        },
+        {
+          "en": "Real rate ≈ nominal rate - expected inflation.",
+          "tr": "Reel faiz ≈ nominal faiz - beklenen enflasyon.",
+          "formula_latex": "r\\approx i-\\pi^{e}"
+        },
+        {
+          "en": "45% - 38%.",
+          "tr": "%45 - %38."
+        },
+        {
+          "en": "7%.",
+          "tr": "%7."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "45 [-] 38 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "45-38",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "real-interest-rate",
+        "inflation",
+        "closest-to",
+        "policy-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-b-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A central bank cuts its policy rate. Through the transmission mechanism, the most likely effect is:",
+      "stem_tr": "Bir merkez bankası politika faizini indiriyor. Aktarım mekanizması yoluyla en olası etki şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower borrowing costs, higher asset prices and a weaker currency",
+          "tr": "daha düşük borçlanma maliyetleri, daha yüksek varlık fiyatları ve daha zayıf para birimi"
+        },
+        {
+          "key": "B",
+          "en": "higher borrowing costs and a stronger currency",
+          "tr": "daha yüksek borçlanma maliyetleri ve daha güçlü para birimi"
+        },
+        {
+          "key": "C",
+          "en": "lower asset prices and lower inflation expectations",
+          "tr": "daha düşük varlık fiyatları ve daha düşük enflasyon beklentileri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Lower rates make loans cheaper, lift valuations, and reduce the return on holding the currency.",
+      "explanation_tr": "Düşük faiz kredileri ucuzlatır, değerlemeleri yükseltir ve para birimini elde tutmanın getirisini azaltır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes a rate increase.",
+          "tr": "Bu bir faiz artışını tanımlar."
+        },
+        "C": {
+          "en": "A cut tends to raise asset prices and inflation expectations.",
+          "tr": "İndirim varlık fiyatlarını ve enflasyon beklentilerini artırma eğilimindedir."
+        }
+      },
+      "vocab_ids": [
+        "transmission-mechanism",
+        "policy-rate",
+        "asset",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-b-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "When a central bank buys government securities in the open market, it most likely:",
+      "stem_tr": "Bir merkez bankası açık piyasada devlet menkul değeri aldığında büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "drains reserves and pushes short-term rates up",
+          "tr": "karşılıkları çeker ve kısa vadeli faizleri yukarı iter"
+        },
+        {
+          "key": "B",
+          "en": "adds reserves to the banking system and pushes short-term rates down",
+          "tr": "bankacılık sistemine karşılık ekler ve kısa vadeli faizleri aşağı iter"
+        },
+        {
+          "key": "C",
+          "en": "raises the reserve requirement",
+          "tr": "zorunlu karşılığı artırır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Purchases credit banks with reserves, increasing supply of funds and lowering the interbank rate.",
+      "explanation_tr": "Alımlar bankaların hesabına karşılık yazar; fon arzını artırır ve bankalar arası faizi düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Selling securities drains reserves.",
+          "tr": "Menkul satışı karşılıkları çeker."
+        },
+        "C": {
+          "en": "Reserve requirements are a separate tool.",
+          "tr": "Zorunlu karşılık ayrı bir araçtır."
+        }
+      },
+      "vocab_ids": [
+        "open-market-operations",
+        "central-bank",
+        "policy-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-b-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Quantitative easing is most appropriate when:",
+      "stem_tr": "Parasal genişleme en uygun olarak şu durumda kullanılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the policy rate is near zero and more stimulus is needed",
+          "tr": "politika faizi sıfıra yakındır ve daha fazla teşvik gerekir"
+        },
+        {
+          "key": "B",
+          "en": "inflation is far above target",
+          "tr": "enflasyon hedefin çok üzerindedir"
+        },
+        {
+          "key": "C",
+          "en": "the currency needs to be strengthened by selling reserves",
+          "tr": "para birimi, rezerv satılarak güçlendirilmek istenir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With little room to cut the policy rate, the bank buys long-term assets to lower long-term yields.",
+      "explanation_tr": "Politika faizini indirmek için az alan kaldığında banka uzun vadeli getirileri düşürmek için uzun vadeli varlık alır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "High inflation calls for tightening, not easing.",
+          "tr": "Yüksek enflasyon gevşeme değil sıkılaştırma gerektirir."
+        },
+        "C": {
+          "en": "QE is asset purchasing, not selling reserves.",
+          "tr": "Parasal genişleme varlık alımıdır, rezerv satışı değildir."
+        }
+      },
+      "vocab_ids": [
+        "quantitative-easing",
+        "policy-rate",
+        "central-bank",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-c-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which set of characteristics most describes an effective central bank?",
+      "stem_tr": "Hangi özellikler kümesi etkin bir merkez bankasını en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Political control, secrecy and frequent target changes",
+          "tr": "Siyasi kontrol, gizlilik ve sık hedef değişikliği"
+        },
+        {
+          "key": "B",
+          "en": "Independence, credibility and transparency",
+          "tr": "Bağımsızlık, güvenilirlik ve şeffaflık"
+        },
+        {
+          "key": "C",
+          "en": "Profit maximization, secrecy and independence",
+          "tr": "Kâr en çoklama, gizlilik ve bağımsızlık"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Independence limits political pressure, credibility anchors expectations and transparency lets markets follow decisions.",
+      "explanation_tr": "Bağımsızlık siyasi baskıyı sınırlar, güvenilirlik beklentileri çıpalar, şeffaflık piyasaların kararları izlemesini sağlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Political control and shifting targets weaken credibility.",
+          "tr": "Siyasi kontrol ve değişen hedefler güvenilirliği zayıflatır."
+        },
+        "C": {
+          "en": "Central banks do not aim to maximize profit, and secrecy hurts credibility.",
+          "tr": "Merkez bankaları kâr en çoklamayı amaçlamaz; gizlilik güvenilirliği zedeler."
+        }
+      },
+      "vocab_ids": [
+        "central-bank",
+        "independent",
+        "inflation-targeting",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-c-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Trend real growth is 3.0% and the inflation target is 5.0%. The neutral nominal policy rate is closest to:",
+      "stem_tr": "Trend reel büyüme %3,0 ve enflasyon hedefi %5,0'tir. Nötr nominal politika faizi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.0%",
+          "tr": "%2.0",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "15.0%",
+          "tr": "%15.0",
+          "value": 15.0
+        },
+        {
+          "key": "C",
+          "en": "8.0%",
+          "tr": "%8.0",
+          "value": 8.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Neutral rate ≈ trend real growth + inflation target = 3.0 + 5.0 = 8.0%.",
+      "explanation_tr": "Nötr faiz ≈ trend reel büyüme + enflasyon hedefi = 3,0 + 5,0 = %8,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "2.0% subtracts the two (5 - 3).",
+          "tr": "%2,0 ikisini çıkarır (5 - 3)."
+        },
+        "B": {
+          "en": "15.0% multiplies them (3 x 5).",
+          "tr": "%15,0 ikisini çarpar (3 x 5)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the neutral policy rate.",
+          "tr": "Nötr politika faizi isteniyor."
+        },
+        {
+          "en": "Neutral rate ≈ trend real growth + inflation target.",
+          "tr": "Nötr faiz ≈ trend reel büyüme + enflasyon hedefi.",
+          "formula_latex": "i_n\\approx g+\\pi^{*}"
+        },
+        {
+          "en": "3.0% + 5.0%.",
+          "tr": "%3,0 + %5,0."
+        },
+        {
+          "en": "8.0%.",
+          "tr": "%8,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [+] 5 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "3.0+5.0",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "neutral-rate",
+        "inflation-targeting",
+        "closest-to",
+        "real-interest-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-c-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The neutral rate is 8% and the central bank sets the policy rate at 10%. The policy stance is best described as:",
+      "stem_tr": "Nötr faiz %8'dir ve merkez bankası politika faizini %10'a ayarlıyor. Politika duruşu en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "expansionary",
+          "tr": "genişletici"
+        },
+        {
+          "key": "B",
+          "en": "contractionary",
+          "tr": "daraltıcı"
+        },
+        {
+          "key": "C",
+          "en": "neutral",
+          "tr": "nötr"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A policy rate above the neutral rate restrains demand and inflation: contractionary.",
+      "explanation_tr": "Nötr faizin üzerindeki politika faizi talebi ve enflasyonu frenler: daraltıcıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Expansionary would require a rate below neutral.",
+          "tr": "Genişletici olması için faizin nötrün altında olması gerekirdi."
+        },
+        "C": {
+          "en": "10% is not equal to 8%, so it is not neutral.",
+          "tr": "%10, %8'e eşit değildir; bu yüzden nötr değildir."
+        }
+      },
+      "vocab_ids": [
+        "neutral-rate",
+        "policy-rate",
+        "best-describes",
+        "inflation"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-c-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A country fixes its currency to the dollar and allows free capital flows. Compared with inflation targeting, the central bank is most likely to:",
+      "stem_tr": "Bir ülke parasını dolara sabitliyor ve serbest sermaye akışına izin veriyor. Enflasyon hedeflemesine kıyasla merkez bankası büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "gain full independence of policy",
+          "tr": "politikada tam bağımsızlık kazanır"
+        },
+        {
+          "key": "B",
+          "en": "need no foreign reserves",
+          "tr": "dış rezerve ihtiyaç duymaz"
+        },
+        {
+          "key": "C",
+          "en": "lose control over domestic interest rates",
+          "tr": "yurt içi faizler üzerindeki kontrolü kaybeder"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "To hold the peg with free capital flows, domestic rates must follow the anchor currency's rates.",
+      "explanation_tr": "Serbest sermaye akışında sabit kuru korumak için yurt içi faizlerin çıpa para biriminin faizini izlemesi gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The peg takes away policy independence.",
+          "tr": "Sabit kur politika bağımsızlığını ortadan kaldırır."
+        },
+        "B": {
+          "en": "Defending a peg usually requires large reserves.",
+          "tr": "Sabit kuru savunmak genellikle büyük rezerv gerektirir."
+        }
+      },
+      "vocab_ids": [
+        "inflation-targeting",
+        "central-bank",
+        "policy-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-c-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a limit of monetary policy?",
+      "stem_tr": "Aşağıdakilerden hangisi para politikasının bir sınırı olması en olası olandır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A liquidity trap, where lower rates fail to raise spending",
+          "tr": "Faiz indiriminin harcamayı artıramadığı bir likidite tuzağı"
+        },
+        {
+          "key": "B",
+          "en": "Instant effects on the economy",
+          "tr": "Ekonomi üzerinde anlık etkiler"
+        },
+        {
+          "key": "C",
+          "en": "Complete control over long-term rates",
+          "tr": "Uzun vadeli faizler üzerinde tam kontrol"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Rate cuts may not lift spending when households and firms will not borrow; effects also work with long, variable lags.",
+      "explanation_tr": "Hanehalkı ve firmalar borçlanmak istemiyorsa faiz indirimleri harcamayı artırmayabilir; etkiler ayrıca uzun ve değişken gecikmelerle işler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Monetary policy works with lags, not instantly.",
+          "tr": "Para politikası anında değil gecikmeyle işler."
+        },
+        "C": {
+          "en": "Central banks control short rates more than long-term rates.",
+          "tr": "Merkez bankaları uzun vadeli faizlerden çok kısa faizleri kontrol eder."
+        }
+      },
+      "vocab_ids": [
+        "liquidity-trap",
+        "policy-rate",
+        "limitation",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-d-q01",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Easy fiscal policy combined with tight monetary policy will most likely lead to:",
+      "stem_tr": "Gevşek maliye politikasının sıkı para politikasıyla birleşmesi büyük olasılıkla şuna yol açar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower interest rates and rising private spending",
+          "tr": "daha düşük faizler ve artan özel harcama"
+        },
+        {
+          "key": "B",
+          "en": "falling output and falling public spending",
+          "tr": "düşen çıktı ve düşen kamu harcaması"
+        },
+        {
+          "key": "C",
+          "en": "higher interest rates, with public spending rising and private spending falling",
+          "tr": "daha yüksek faizler; kamu harcaması artar, özel harcama düşer"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Deficits plus tight money push rates up strongly, shifting resources toward the government.",
+      "explanation_tr": "Açık ve sıkı para faizleri güçlü biçimde yükseltir; kaynaklar kamuya kayar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Lower rates and rising private spending belong to tight fiscal and easy monetary policy.",
+          "tr": "Daha düşük faiz ve artan özel harcama sıkı maliye ve gevşek para politikasının sonucudur."
+        },
+        "B": {
+          "en": "Falling output and public spending belong to tight fiscal and tight monetary policy.",
+          "tr": "Düşen çıktı ve kamu harcaması sıkı maliye ve sıkı para politikasının sonucudur."
+        }
+      },
+      "vocab_ids": [
+        "fiscal",
+        "crowding-out",
+        "interest",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-d-q02",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Easy fiscal policy combined with easy monetary policy will most likely:",
+      "stem_tr": "Gevşek maliye politikasının gevşek para politikasıyla birleşmesi büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "raise output strongly, with an ambiguous effect on interest rates",
+          "tr": "çıktıyı güçlü artırır; faizler üzerindeki etki belirsizdir"
+        },
+        {
+          "key": "B",
+          "en": "lower output strongly",
+          "tr": "çıktıyı güçlü düşürür"
+        },
+        {
+          "key": "C",
+          "en": "raise interest rates strongly and lower private spending",
+          "tr": "faizleri güçlü yükseltir ve özel harcamayı düşürür"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both policies add demand, so output rises; fiscal pushes rates up while monetary pushes them down.",
+      "explanation_tr": "İkisi de talep ekler, çıktı artar; maliye faizleri yukarı, para aşağı iter.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Output falls strongly when both policies are tight.",
+          "tr": "İkisi de sıkıysa çıktı güçlü düşer."
+        },
+        "C": {
+          "en": "Rising rates and lower private spending describe easy fiscal with tight monetary.",
+          "tr": "Yükselen faiz ve düşen özel harcama gevşek maliye ve sıkı paraya aittir."
+        }
+      },
+      "vocab_ids": [
+        "fiscal",
+        "stimulus",
+        "policy-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-d-q03",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Tight fiscal policy combined with easy monetary policy will most likely lead to:",
+      "stem_tr": "Sıkı maliye politikasının gevşek para politikasıyla birleşmesi büyük olasılıkla şuna yol açar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher interest rates and higher public spending",
+          "tr": "daha yüksek faizler ve daha yüksek kamu harcaması"
+        },
+        {
+          "key": "B",
+          "en": "lower interest rates, with private spending rising and public spending falling",
+          "tr": "daha düşük faizler; özel harcama artar, kamu harcaması düşer"
+        },
+        {
+          "key": "C",
+          "en": "a strong rise in output with higher interest rates",
+          "tr": "faizlerin arttığı güçlü bir çıktı yükselişi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cutting deficits frees savings for private borrowers, and easy money pushes rates down, favoring private spending.",
+      "explanation_tr": "Açıkların azaltılması tasarrufları özel borçlulara bırakır, gevşek para faizleri düşürür; özel harcama öne çıkar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher rates and higher public spending describe easy fiscal and tight monetary.",
+          "tr": "Yüksek faiz ve yüksek kamu harcaması gevşek maliye ve sıkı paraya aittir."
+        },
+        "C": {
+          "en": "Tight fiscal does not support a strong output rise.",
+          "tr": "Sıkı maliye güçlü bir çıktı artışını desteklemez."
+        }
+      },
+      "vocab_ids": [
+        "fiscal",
+        "crowding-out",
+        "policy-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-d-q04",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "If both fiscal and monetary policy are tight, output will most likely:",
+      "stem_tr": "Hem maliye hem para politikası sıkıysa çıktı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "fall strongly",
+          "tr": "güçlü biçimde düşer"
+        },
+        {
+          "key": "B",
+          "en": "rise strongly",
+          "tr": "güçlü biçimde artar"
+        },
+        {
+          "key": "C",
+          "en": "be unaffected",
+          "tr": "etkilenmez"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both reduce aggregate demand, so output falls strongly while the effect on interest rates is ambiguous.",
+      "explanation_tr": "İkisi de toplam talebi azaltır; çıktı güçlü düşer, faizler üzerindeki etki belirsizdir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Tightening does not raise output.",
+          "tr": "Sıkılaştırma çıktıyı artırmaz."
+        },
+        "C": {
+          "en": "Two contractionary policies cannot leave output unaffected.",
+          "tr": "İki daraltıcı politika çıktıyı etkisiz bırakamaz."
+        }
+      },
+      "vocab_ids": [
+        "fiscal",
+        "contraction",
+        "policy-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "ECO-04-d-q05",
+      "level": "L1",
+      "topic": "ECO",
+      "module_id": "ECO-04",
+      "los_id": "ECO-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A government wants low interest rates to cut its debt-service costs, while the central bank is trying to bring inflation down to its target. This situation is best described as:",
+      "stem_tr": "Bir hükümet borç servisi maliyetlerini azaltmak için düşük faiz istiyor, merkez bankası ise enflasyonu hedefine indirmeye çalışıyor. Bu durum en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a coordinated policy mix",
+          "tr": "eşgüdümlü bir politika karışımı"
+        },
+        {
+          "key": "B",
+          "en": "a conflict between fiscal and monetary objectives",
+          "tr": "maliye ve para hedefleri arasında bir çelişki"
+        },
+        {
+          "key": "C",
+          "en": "a liquidity trap",
+          "tr": "bir likidite tuzağı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cutting rates to help the budget could weaken the bank's inflation fight, so the aims conflict.",
+      "explanation_tr": "Bütçeye yardım için faiz indirmek bankanın enflasyonla mücadelesini zayıflatabilir; hedefler çelişir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Opposing goals are the opposite of coordination.",
+          "tr": "Zıt hedefler eşgüdümün tersidir."
+        },
+        "C": {
+          "en": "A liquidity trap is about ineffective rate cuts at very low rates.",
+          "tr": "Likidite tuzağı çok düşük faizde etkisiz kalan indirimlerle ilgilidir."
+        }
+      },
+      "vocab_ids": [
+        "central-bank",
+        "fiscal",
+        "inflation",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

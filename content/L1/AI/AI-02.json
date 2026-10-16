@@ -1,0 +1,869 @@
+{
+  "module_id": "AI-02",
+  "lesson": {
+    "id": "AI-02-lesson",
+    "level": "L1",
+    "topic": "AI",
+    "module_id": "AI-02",
+    "los_ids": [
+      "AI-02-a",
+      "AI-02-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Alternative Investment Performance and Returns",
+    "title_tr": "Alternatif Yatırımlarda Performans ve Getiri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why alternative returns are hard to trust",
+        "heading_tr": "Alternatif getirilere neden kolay güvenilmez",
+        "en": "A BIST 100 fund shows a price every second. A private building, a venture-capital stake or a hedge fund does not. Its value is estimated from appraisals, models or the manager's own marks. Those numbers move slowly and look calm. Reported risk can therefore look low and the Sharpe ratio can look high, even when the real risk is large. On top of that, the return the investor actually keeps is smaller than the gross return, because the manager takes a management fee and an incentive fee. To judge an alternative fairly you must (1) know the data pitfalls and (2) calculate returns after fees.",
+        "tr": "BIST 100'e bağlı bir fonun fiyatı saniyede bir görünür. Özel bir bina, girişim sermayesi payı ya da bir serbest fon (hedge fund) için bu geçerli değildir. Değeri ekspertiz, model ya da yöneticinin kendi değerlemesiyle tahmin edilir. Bu rakamlar yavaş hareket eder ve sakin görünür. Bu yüzden raporlanan risk düşük, Sharpe oranı yüksek görünebilir; oysa gerçek risk büyük olabilir. Ayrıca yatırımcının fiilen elinde tuttuğu getiri brüt getiriden düşüktür; çünkü yönetici yönetim ücreti ve performans ücreti alır. Bir alternatifi adil değerlendirmek için (1) veri tuzaklarını bilmek ve (2) ücret sonrası getiriyi hesaplamak gerekir.",
+        "key_terms": [
+          "appraisal",
+          "Sharpe ratio",
+          "gross return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Performance pitfalls",
+        "heading_tr": "Performans değerlendirme tuzakları",
+        "en": "Illiquidity and appraisal smoothing: infrequent, appraisal-based prices lag the market. Measured standard deviation and correlation come out too low and the Sharpe ratio too high. Unsmoothing techniques try to reverse this. Survivorship bias: a database that keeps only funds still alive leaves out the failures, so average returns look too high. Backfill (instant-history) bias: a fund joins a database after good results and its earlier good history is added. Selection bias: only funds that choose to report are included. Valuation bias: the manager prices its own illiquid holdings. Private funds with irregular cash flows are usually measured with the internal rate of return (IRR), which is money-weighted, not with simple time-weighted returns.",
+        "tr": "Likidite eksikliği ve ekspertiz yumuşatması: seyrek, ekspertize dayalı fiyatlar piyasayı geriden izler. Ölçülen standart sapma ve korelasyon çok düşük, Sharpe oranı çok yüksek çıkar. Yumuşatmayı geri alma (unsmoothing) teknikleri bunu düzeltmeye çalışır. Hayatta kalma yanlılığı (survivorship bias): yalnızca hâlâ yaşayan fonları tutan bir veri tabanı başarısızları dışarıda bırakır; ortalama getiri olduğundan yüksek görünür. Geriye dönük doldurma (backfill) yanlılığı: bir fon iyi sonuçlardan sonra veri tabanına girer ve önceki iyi geçmişi eklenir. Seçim yanlılığı: yalnızca raporlamayı seçen fonlar dahil olur. Değerleme yanlılığı: yönetici likit olmayan varlıklarını kendisi fiyatlar. Düzensiz nakit akışlı özel fonlar genellikle basit zaman ağırlıklı getiriyle değil, para ağırlıklı olan iç verim oranıyla (IRR) ölçülür.",
+        "key_terms": [
+          "survivorship bias",
+          "backfill bias",
+          "unsmoothing",
+          "internal rate of return"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Net returns after management and incentive fees",
+        "heading_tr": "Yönetim ve performans ücreti sonrası net getiri",
+        "en": "Management fee = fee rate × the base (beginning or ending assets; read the question). Incentive fee = incentive rate × profit above the threshold. The threshold is either zero (no hurdle) or the hurdle amount. Profit is usually measured after the management fee. If the fund has a high-water mark (HWM), the incentive is paid only on gains above the highest previous net asset value. Net return equals ending value after both fees divided by beginning value, minus 1. In a loss year there is no incentive fee, but the management fee is still charged.",
+        "tr": "Yönetim ücreti = ücret oranı × baz (dönem başı ya da sonu varlıklar; soruyu okuyun). Performans ücreti = performans ücreti oranı × eşiğin üzerindeki kâr. Eşik ya sıfırdır (eşik yok) ya da eşik tutarıdır. Kâr genellikle yönetim ücretinden sonra ölçülür. Fonda yüksek su işareti (high-water mark, HWM) varsa performans ücreti yalnızca önceki en yüksek net aktif değerin üzerindeki kazançtan alınır. Net getiri, iki ücret sonrası dönem sonu değerin dönem başı değere bölünüp 1 çıkarılmasıdır. Zarar yılında performans ücreti alınmaz; ama yönetim ücreti yine alınır.",
+        "key_terms": [
+          "management fee",
+          "incentive fee",
+          "high-water mark"
+        ],
+        "formula_latex": "R_{net}=\\frac{V_{end}-F_{m}-F_{i}}{V_{0}}-1,\\quad F_i=c\\,(V_{end}-F_m-V_0-H)^{+}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A 2-and-20 fund",
+        "heading_tr": "2 ve 20 uygulayan fon",
+        "en": "A fund starts the year at 100 million and ends at 118 million before fees. The management fee is 2% of ending assets. The incentive fee is 20% of profit after the management fee, with no hurdle.",
+        "tr": "Bir fon yıla 100 milyonla başlar, ücretler öncesi 118 milyonla bitirir. Yönetim ücreti dönem sonu varlıkların %2'si, performans ücreti yönetim ücreti sonrası kârın %20'sidir; eşik yoktur.",
+        "key_terms": [],
+        "example": {
+          "en": "Management fee = 2% × 118 = 2.36. Profit after management fee = 118 − 2.36 − 100 = 15.64. Incentive fee = 20% × 15.64 = 3.128. Ending value after fees = 118 − 2.36 − 3.128 = 112.512, so net return = 12.51% (gross return 18%).",
+          "tr": "Yönetim ücreti = %2 × 118 = 2,36. Yönetim ücreti sonrası kâr = 118 − 2,36 − 100 = 15,64. Performans ücreti = %20 × 15,64 = 3,128. Ücretler sonrası dönem sonu değer = 118 − 2,36 − 3,128 = 112,512; net getiri = %12,51 (brüt getiri %18).",
+          "formula_latex": "R_{net}=\\frac{112.512}{100}-1=12.51\\%"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Check the fee base: beginning or ending assets give different answers. Compute the incentive fee on profit after the management fee unless the question says otherwise. With a hurdle, subtract the hurdle first. Never charge an incentive fee in a loss year, and never forget the high-water mark after a loss. Do not read a low reported standard deviation of a private fund as true low risk. Remember that a higher Sharpe ratio caused by smoothing is a measurement effect, not skill.",
+        "tr": "Ücret bazını kontrol edin: dönem başı ya da sonu varlıklar farklı sonuç verir. Soru aksini söylemiyorsa performans ücretini yönetim ücreti sonrası kâr üzerinden hesaplayın. Eşik varsa önce eşiği çıkarın. Zarar yılında asla performans ücreti hesaplamayın; zarardan sonra yüksek su işaretini unutmayın. Özel bir fonun düşük raporlanan standart sapmasını gerçek düşük risk saymayın. Yumuşatmadan kaynaklanan yüksek Sharpe oranının beceri değil, bir ölçüm etkisi olduğunu unutmayın.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Appraisal-based and survivor-biased data make alternatives look less risky and more profitable than they are. Private funds with irregular cash flows use IRR. Net returns are found by deducting the management fee and then the incentive fee, honoring any hurdle and high-water mark.",
+    "summary_tr": "Ekspertize dayalı ve hayatta kalma yanlılığı taşıyan veriler alternatifleri olduğundan daha az riskli ve daha kârlı gösterir. Düzensiz nakit akışlı özel fonlar IRR kullanır. Net getiri, yönetim ücreti ve ardından performans ücreti düşülerek, eşik ve yüksek su işareti gözetilerek bulunur.",
+    "common_traps_tr": [
+      "Yumuşatılmış getiri standart sapmayı düşük, Sharpe oranını yüksek gösterir.",
+      "Hayatta kalma yanlılığı ortalama getiriyi yukarı çeker.",
+      "Zarar yılında performans ücreti yoktur; yönetim ücreti vardır.",
+      "Ücret bazının dönem başı mı sonu mu olduğuna bakın.",
+      "Eşik varsa performans ücretini yalnızca eşiği aşan kâr üzerinden hesaplayın.",
+      "Yüksek su işareti, zarar sonrası yeniden aynı kazanç için ücret alınmasını önler."
+    ],
+    "vocab_ids": [
+      "appraisal",
+      "illiquid",
+      "survivorship-bias",
+      "backfill-bias",
+      "unsmoothing",
+      "management-fee",
+      "incentive-fee",
+      "high-water-mark",
+      "gross-of-fees",
+      "net-of-fees",
+      "sharpe-ratio",
+      "biased",
+      "database"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Alternatif fon ücreti sonrası getiri hesabı ve yumuşatma sorunu Düzey 3 programında yoktur."
+    }
+  },
+  "questions": [
+    {
+      "id": "AI-02-a-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Because private real estate is valued by infrequent appraisals, its reported return series most likely shows:",
+      "stem_tr": "Özel gayrimenkul seyrek ekspertizlerle değerlendiği için raporlanan getiri serisi en olası biçimde şunu gösterir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a standard deviation that is too low and a Sharpe ratio that is too high",
+          "tr": "olduğundan düşük standart sapma ve olduğundan yüksek Sharpe oranı"
+        },
+        {
+          "key": "B",
+          "en": "a standard deviation that is too high and a Sharpe ratio that is too low",
+          "tr": "olduğundan yüksek standart sapma ve olduğundan düşük Sharpe oranı"
+        },
+        {
+          "key": "C",
+          "en": "a correlation with equities that is too high",
+          "tr": "hisselerle olduğundan yüksek korelasyon"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Appraisals smooth and lag true values. Measured volatility and correlation fall, so the Sharpe ratio rises. The true risk is understated.",
+      "explanation_tr": "Ekspertizler gerçek değerleri yumuşatır ve geriden izler. Ölçülen oynaklık ve korelasyon düşer, dolayısıyla Sharpe oranı yükselir. Gerçek risk olduğundan düşük gösterilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Smoothing lowers measured volatility; it does not raise it.",
+          "tr": "Yumuşatma ölçülen oynaklığı artırmaz, düşürür."
+        },
+        "C": {
+          "en": "Lagged values lower measured correlation with listed markets, not raise it.",
+          "tr": "Gecikmeli değerler borsadaki piyasalarla ölçülen korelasyonu yükseltmez, düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "smoothed",
+        "standard-deviation",
+        "sharpe-ratio",
+        "appraisal",
+        "lag",
+        "understate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-a-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A database of hedge fund returns contains only funds that are still operating today. The most likely effect on the reported average return is that it is:",
+      "stem_tr": "Bir serbest fon (hedge fund) getiri veri tabanı yalnızca bugün hâlâ faaliyette olan fonları içeriyor. Raporlanan ortalama getiri üzerindeki en olası etki hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "understated because failed funds are included",
+          "tr": "başarısız fonlar dahil olduğu için olduğundan düşük"
+        },
+        {
+          "key": "B",
+          "en": "overstated because of survivorship bias",
+          "tr": "hayatta kalma yanlılığı nedeniyle olduğundan yüksek"
+        },
+        {
+          "key": "C",
+          "en": "unaffected, because dead funds had average returns",
+          "tr": "etkilenmemiş; çünkü kapanan fonların getirisi ortalamaydı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Funds that closed after poor results are missing, which pushes the average up. This is survivorship bias.",
+      "explanation_tr": "Kötü sonuçlardan sonra kapanan fonlar eksiktir; bu ortalamayı yukarı çeker. Buna hayatta kalma yanlılığı denir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The failed funds are NOT included in this database.",
+          "tr": "Başarısız fonlar bu veri tabanına DAHİL DEĞİLDİR."
+        },
+        "C": {
+          "en": "Funds usually close because of poor returns, so they are not average.",
+          "tr": "Fonlar genellikle kötü getiri nedeniyle kapanır; bu yüzden ortalama getirili değildirler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "survivorship-bias",
+        "operating",
+        "database",
+        "overstate",
+        "failed",
+        "average"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-a-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A fund joins a database in 2025 after three strong years, and the database adds those three earlier years to its record. This practice is best described as:",
+      "stem_tr": "Bir fon üç güçlü yılın ardından 2025'te bir veri tabanına katılıyor ve veri tabanı bu üç önceki yılı kaydına ekliyor. Bu uygulama en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "survivorship bias",
+          "tr": "hayatta kalma yanlılığı"
+        },
+        {
+          "key": "B",
+          "en": "smoothing bias",
+          "tr": "yumuşatma yanlılığı"
+        },
+        {
+          "key": "C",
+          "en": "backfill (instant-history) bias",
+          "tr": "geriye dönük doldurma (backfill) yanlılığı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Adding a good past after the fund has already succeeded inflates average returns. This is backfill bias.",
+      "explanation_tr": "Fon başarılı olduktan sonra iyi geçmişinin eklenmesi ortalama getirileri şişirir. Buna backfill yanlılığı denir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Survivorship bias is about missing dead funds, not about added history.",
+          "tr": "Hayatta kalma yanlılığı kapanan fonların eksikliğiyle ilgilidir; eklenen geçmişle değil."
+        },
+        "B": {
+          "en": "Smoothing relates to appraisal-based valuation, not database entry rules.",
+          "tr": "Yumuşatma ekspertize dayalı değerlemeyle ilgilidir; veri tabanına giriş kurallarıyla değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "backfill-bias",
+        "database",
+        "record",
+        "inflate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-a-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which measure is most appropriate for evaluating a private equity fund whose investors contribute and receive cash at irregular dates?",
+      "stem_tr": "Yatırımcıların düzensiz tarihlerde sermaye koyduğu ve nakit aldığı bir özel sermaye fonunu değerlendirmek için en uygun ölçü hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The simple monthly time-weighted return",
+          "tr": "Basit aylık zaman ağırlıklı getiri"
+        },
+        {
+          "key": "B",
+          "en": "The internal rate of return (money-weighted)",
+          "tr": "İç verim oranı (para ağırlıklı)"
+        },
+        {
+          "key": "C",
+          "en": "The daily closing price return",
+          "tr": "Günlük kapanış fiyatı getirisi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A private fund has no daily prices, and the GP controls the timing of cash flows. IRR reflects the size and timing of the investor's own cash flows.",
+      "explanation_tr": "Özel fonun günlük fiyatı yoktur ve nakit akışlarının zamanlamasını GP belirler. IRR, yatırımcının kendi nakit akışlarının büyüklüğünü ve zamanlamasını yansıtır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Time-weighted returns need frequent valuations, which a private fund lacks.",
+          "tr": "Zaman ağırlıklı getiri sık değerleme gerektirir; özel fonda bu yoktur."
+        },
+        "C": {
+          "en": "Private funds have no daily closing prices.",
+          "tr": "Özel fonların günlük kapanış fiyatı yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "irregular",
+        "money-weighted",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-a-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "An investor sees that a fund's reported Sharpe ratio is very high because its manager values illiquid holdings using his own estimates, which change very little. The most appropriate response is to:",
+      "stem_tr": "Bir yatırımcı, yöneticinin likit olmayan varlıklarını çok az değişen kendi tahminleriyle değerlemesi nedeniyle bir fonun raporlanan Sharpe oranının çok yüksek olduğunu görüyor. En uygun tepki hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "accept the ratio because high Sharpe ratios prove skill",
+          "tr": "yüksek Sharpe oranı beceriyi kanıtladığı için oranı kabul etmek"
+        },
+        {
+          "key": "B",
+          "en": "ignore the ratio and use only the manager's marketing report",
+          "tr": "oranı yok saymak ve yalnızca yöneticinin pazarlama raporunu kullanmak"
+        },
+        {
+          "key": "C",
+          "en": "question the valuation and consider unsmoothing the returns before comparing",
+          "tr": "değerlemeyi sorgulamak ve karşılaştırmadan önce getirileri yumuşatmadan arındırmayı düşünmek"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Self-priced, stable valuations understate volatility and can overstate the Sharpe ratio. Unsmoothing or independent valuation gives a fairer risk picture.",
+      "explanation_tr": "Kendi fiyatladığı, istikrarlı değerlemeler oynaklığı olduğundan düşük gösterir ve Sharpe oranını şişirebilir. Yumuşatmadan arındırma ya da bağımsız değerleme daha adil bir risk resmi verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A high Sharpe ratio from smoothed data may be an artifact, not skill.",
+          "tr": "Yumuşatılmış veriden çıkan yüksek Sharpe oranı beceri değil, yapay bir sonuç olabilir."
+        },
+        "B": {
+          "en": "A marketing report is not independent evidence.",
+          "tr": "Pazarlama raporu bağımsız bir kanıt değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "valuation",
+        "manager",
+        "illiquid",
+        "sharpe-ratio",
+        "unsmoothing",
+        "marketing"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q01",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund starts at 100 million and ends the year at 118 million before fees. The management fee is 2% of ending assets. The incentive fee is 20% of profit after the management fee, with no hurdle. The net return to investors is closest to:",
+      "stem_tr": "Bir fon 100 milyonla başlıyor ve yılı ücretler öncesi 118 milyonla bitiriyor. Yönetim ücreti dönem sonu varlıkların %2'si; performans ücreti yönetim ücreti sonrası kârın %20'si ve eşik yok. Yatırımcıların net getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.51%",
+          "tr": "%12,51",
+          "value": 12.51
+        },
+        {
+          "key": "B",
+          "en": "14.40%",
+          "tr": "%14,40",
+          "value": 14.4
+        },
+        {
+          "key": "C",
+          "en": "15.64%",
+          "tr": "%15,64",
+          "value": 15.64
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Management fee 2.36; profit after fee 15.64; incentive 3.128; ending 112.512; net return 12.51%.",
+      "explanation_tr": "Yönetim ücreti 2,36; ücret sonrası kâr 15,64; performans ücreti 3,128; dönem sonu 112,512; net getiri %12,51.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "14.40% takes only the 20% incentive fee from the 18% gross return (18 − 3.6) and forgets the management fee.",
+          "tr": "%14,40, brüt %18 getiriden yalnızca %20 performans ücretini düşer (18 − 3,6) ve yönetim ücretini unutur."
+        },
+        "C": {
+          "en": "15.64% is the profit after management fee but before the incentive fee.",
+          "tr": "%15,64, yönetim ücreti sonrası ama performans ücreti öncesi getiridir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return after both fees.",
+          "tr": "İki ücret sonrası getiri isteniyor."
+        },
+        {
+          "en": "Management fee on ending assets, then incentive fee on profit after that fee.",
+          "tr": "Yönetim ücreti dönem sonu varlıklar üzerinden, ardından performans ücreti bu ücret sonrası kâr üzerinden.",
+          "formula_latex": "R_{net}=\\frac{V_{end}-F_m-F_i}{V_0}-1"
+        },
+        {
+          "en": "F_m = 2% × 118 = 2.36; profit after fee = 118 − 2.36 − 100 = 15.64.",
+          "tr": "F_m = %2 × 118 = 2,36; ücret sonrası kâr = 118 − 2,36 − 100 = 15,64.",
+          "values": {
+            "V0": 100,
+            "Vend": 118
+          }
+        },
+        {
+          "en": "F_i = 20% × 15.64 = 3.128.",
+          "tr": "F_i = %20 × 15,64 = 3,128."
+        },
+        {
+          "en": "Net value = 118 − 2.36 − 3.128 = 112.512, so R = 12.51%.",
+          "tr": "Net değer = 118 − 2,36 − 3,128 = 112,512; R = %12,51."
+        }
+      ],
+      "vocab_ids": [
+        "management-fee",
+        "incentive-fee",
+        "net-of-fees",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "118 [ENTER]",
+          "2.36 [-]",
+          "3.128 [-]",
+          "100 [÷]",
+          "[=] → 1.12512",
+          "[-] 1 [=] → 0.12512"
+        ],
+        "note_tr": "Net değeri 100'e bölüp 1 çıkar; getiri %12,51."
+      },
+      "numeric": {
+        "expr": "((118-0.02*118-0.2*(118-0.02*118-100))/100-1)*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q02",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund charges a 2% management fee on beginning assets and a 20% incentive fee on profit after the management fee, with no hurdle. If the fund's gross return is 15%, the net return is closest to:",
+      "stem_tr": "Bir fon dönem başı varlıklar üzerinden %2 yönetim ücreti ve yönetim ücreti sonrası kârın %20'si kadar performans ücreti alıyor; eşik yok. Fonun brüt getirisi %15 ise net getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "10.40%",
+          "tr": "%10,40",
+          "value": 10.4
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Management fee 2%; profit after fee 13%; incentive 2.6%; net return = 15 − 2 − 2.6 = 10.4%.",
+      "explanation_tr": "Yönetim ücreti %2; ücret sonrası kâr %13; performans ücreti %2,6; net getiri = 15 − 2 − 2,6 = %10,4.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "12.00% deducts only the incentive fee on the gross return (15 × 0.8) and forgets the management fee.",
+          "tr": "%12,00 yalnızca brüt getiri üzerinden performans ücretini düşer (15 × 0,8); yönetim ücretini unutur."
+        },
+        "B": {
+          "en": "10.00% charges the incentive fee on the full 15% gross return (3%) instead of on the 13% left after the management fee: 15 − 2 − 3.",
+          "tr": "%10,00, performans ücretini yönetim ücreti sonrası kalan %13 yerine brüt %15 üzerinden (3) hesaplar: 15 − 2 − 3."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need net return after both fees.",
+          "tr": "İki ücret sonrası net getiri isteniyor."
+        },
+        {
+          "en": "Incentive fee applies to the gross return minus the management fee.",
+          "tr": "Performans ücreti brüt getiri eksi yönetim ücreti üzerine uygulanır.",
+          "formula_latex": "R_{net}=R_g-f_m-c\\,(R_g-f_m)"
+        },
+        {
+          "en": "R_g − f_m = 15% − 2% = 13%.",
+          "tr": "R_g − f_m = %15 − %2 = %13.",
+          "values": {
+            "Rg": 15,
+            "fm": 2,
+            "c": 0.2
+          }
+        },
+        {
+          "en": "Incentive = 20% × 13% = 2.6%.",
+          "tr": "Performans ücreti = %20 × %13 = %2,6."
+        },
+        {
+          "en": "Net = 15 − 2 − 2.6 = 10.4%.",
+          "tr": "Net = 15 − 2 − 2,6 = %10,4."
+        }
+      ],
+      "vocab_ids": [
+        "management-fee",
+        "incentive-fee",
+        "gross-of-fees",
+        "net-of-fees",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "15 [-] 2 [=] → 13",
+          "[×] 0.8 [=] → 10.4"
+        ],
+        "note_tr": "Eşik yoksa net = (Rg − fm) × (1 − c)."
+      },
+      "numeric": {
+        "expr": "(15-2)*(1-0.2)",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q03",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund with a 2% management fee on beginning assets and a 20% incentive fee has a gross return of −5% in a year. The net return is closest to:",
+      "stem_tr": "Dönem başı varlıklar üzerinden %2 yönetim ücreti ve %20 performans ücreti olan bir fonun brüt getirisi bir yıl −%5'tir. Net getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-7.00%",
+          "tr": "%-7,00",
+          "value": -7.0
+        },
+        {
+          "key": "B",
+          "en": "-5.00%",
+          "tr": "%-5,00",
+          "value": -5.0
+        },
+        {
+          "key": "C",
+          "en": "-9.00%",
+          "tr": "%-9,00",
+          "value": -9.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "There is no profit, so no incentive fee. The management fee is still charged: −5% − 2% = −7%.",
+      "explanation_tr": "Kâr olmadığı için performans ücreti yoktur. Yönetim ücreti yine alınır: −%5 − %2 = −%7.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "−5.00% ignores the management fee, which is charged even in a loss year.",
+          "tr": "−%5,00 yönetim ücretini yok sayar; oysa zarar yılında da alınır."
+        },
+        "C": {
+          "en": "−9.00% deducts the 2% management fee twice; there is no incentive fee to add.",
+          "tr": "−%9,00 %2 yönetim ücretini iki kez düşer; eklenecek bir performans ücreti yoktur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find net return in a loss year.",
+          "tr": "Zarar yılında net getiri bulunur."
+        },
+        {
+          "en": "Incentive fee is zero when there is no profit; the management fee remains.",
+          "tr": "Kâr yoksa performans ücreti sıfırdır; yönetim ücreti kalır.",
+          "formula_latex": "R_{net}=R_g-f_m"
+        },
+        {
+          "en": "R_net = −5% − 2% = −7%.",
+          "tr": "R_net = −%5 − %2 = −%7.",
+          "values": {
+            "Rg": -5,
+            "fm": 2
+          }
+        }
+      ],
+      "vocab_ids": [
+        "management-fee",
+        "incentive-fee",
+        "loss",
+        "gross-of-fees",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5 [+/-] [-] 2 [=] → -7"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "-5-2",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q04",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A hedge fund has a 20% incentive fee with a high-water mark and ignores management fees. Its NAV is 100 at the start, 120 after year 1 (incentive fee already paid on that gain), 105 after year 2, and 130 before incentive fees in year 3. The year-3 incentive fee is closest to:",
+      "stem_tr": "Bir serbest fonun %20 performans ücreti ve yüksek su işareti var; yönetim ücretleri yok sayılıyor. Net aktif değeri (NAV) başlangıçta 100, 1. yıl sonunda 120 (bu kazanç için performans ücreti zaten ödendi), 2. yıl sonunda 105 ve 3. yılda performans ücretleri öncesi 130. 3. yıl performans ücreti aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.0",
+          "tr": "5,0",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "2.0",
+          "tr": "2,0",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "6.0",
+          "tr": "6,0",
+          "value": 6.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Incentive fee applies only above the high-water mark of 120: 20% × (130 − 120) = 2.0. The recovery from 105 to 120 earns no fee.",
+      "explanation_tr": "Performans ücreti yalnızca 120'lik yüksek su işaretinin üzerine uygulanır: %20 × (130 − 120) = 2,0. 105'ten 120'ye toparlanma ücret doğurmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "5.0 charges 20% on the 25-point gain from 105 to 130, ignoring the high-water mark.",
+          "tr": "5,0, yüksek su işaretini yok sayıp 105'ten 130'a 25 puanlık kazancın %20'sini alır."
+        },
+        "C": {
+          "en": "6.0 charges 20% on the full gain from the original 100 to 130, ignoring the fee already paid on the first 20.",
+          "tr": "6,0, ilk 20 puan için zaten ücret ödenmiş olmasını yok sayıp ilk 100'den 130'a tüm kazancın %20'sini alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We want the year-3 incentive fee with a high-water mark.",
+          "tr": "Yüksek su işaretiyle 3. yıl performans ücreti isteniyor."
+        },
+        {
+          "en": "Fee only on gains above the highest prior NAV.",
+          "tr": "Ücret yalnızca önceki en yüksek NAV'ın üzerindeki kazançtan alınır.",
+          "formula_latex": "F_i=c\\,(V-HWM)^{+}"
+        },
+        {
+          "en": "HWM = 120; year-3 value = 130.",
+          "tr": "HWM = 120; 3. yıl değeri = 130.",
+          "values": {
+            "HWM": 120,
+            "V": 130,
+            "c": 0.2
+          }
+        },
+        {
+          "en": "Gain above HWM = 10; fee = 20% × 10 = 2.0.",
+          "tr": "HWM üzeri kazanç = 10; ücret = %20 × 10 = 2,0."
+        }
+      ],
+      "vocab_ids": [
+        "high-water-mark",
+        "incentive-fee",
+        "recover",
+        "gain",
+        "net-asset-value",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "130 [-] 120 [=] → 10",
+          "[×] 0.2 [=] → 2"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "0.2*(130-120)"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q05",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A fund starts at 200 million and ends at 230 million before fees. The management fee is 1.5% of beginning assets (3.0 million). The incentive fee is 20% of profit after the management fee in excess of a hard hurdle of 5% on beginning assets. The net return is closest to:",
+      "stem_tr": "Bir fon 200 milyonla başlıyor ve ücretler öncesi 230 milyonla bitiriyor. Yönetim ücreti dönem başı varlıkların %1,5'i (3,0 milyon). Performans ücreti, dönem başı varlıklar üzerinden %5 sert eşiği aşan, yönetim ücreti sonrası kârın %20'sidir. Net getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.80%",
+          "tr": "%11,80",
+          "value": 11.8
+        },
+        {
+          "key": "B",
+          "en": "10.80%",
+          "tr": "%10,80",
+          "value": 10.8
+        },
+        {
+          "key": "C",
+          "en": "11.50%",
+          "tr": "%11,50",
+          "value": 11.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Profit after management fee = 230 − 3 − 200 = 27; hurdle = 10; excess = 17; incentive = 3.4; ending = 223.6; net return = 11.8%.",
+      "explanation_tr": "Yönetim ücreti sonrası kâr = 230 − 3 − 200 = 27; eşik = 10; fazla = 17; performans ücreti = 3,4; dönem sonu = 223,6; net getiri = %11,8.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "10.80% charges the incentive fee on all 27 of profit (5.4) and ignores the hurdle.",
+          "tr": "%10,80, eşiği yok sayıp performans ücretini kârın tamamı olan 27 üzerinden (5,4) alır."
+        },
+        "C": {
+          "en": "11.50% measures profit before the management fee (30 − 10 = 20, fee 4.0), so it overlooks that the management fee reduces the fee base.",
+          "tr": "%11,50, kârı yönetim ücretinden önce ölçer (30 − 10 = 20, ücret 4,0); yönetim ücretinin ücret tabanını düşürdüğünü gözden kaçırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need net return with a hard hurdle.",
+          "tr": "Sert eşikle net getiri isteniyor."
+        },
+        {
+          "en": "Incentive applies to profit after management fee minus the hurdle amount.",
+          "tr": "Performans ücreti, yönetim ücreti sonrası kârdan eşik tutarı çıkarıldıktan sonra uygulanır.",
+          "formula_latex": "F_i=c\\,(V_{end}-F_m-V_0-H)"
+        },
+        {
+          "en": "F_m = 3.0; H = 5% × 200 = 10; profit after F_m = 230 − 3 − 200 = 27.",
+          "tr": "F_m = 3,0; H = %5 × 200 = 10; F_m sonrası kâr = 230 − 3 − 200 = 27.",
+          "values": {
+            "V0": 200,
+            "Vend": 230,
+            "Fm": 3,
+            "H": 10
+          }
+        },
+        {
+          "en": "F_i = 20% × (27 − 10) = 3.4.",
+          "tr": "F_i = %20 × (27 − 10) = 3,4."
+        },
+        {
+          "en": "Ending = 230 − 3 − 3.4 = 223.6; R = 223.6/200 − 1 = 11.8%.",
+          "tr": "Dönem sonu = 230 − 3 − 3,4 = 223,6; R = 223,6/200 − 1 = %11,8."
+        }
+      ],
+      "vocab_ids": [
+        "hurdle-rate",
+        "management-fee",
+        "incentive-fee",
+        "excess",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "230 [-] 3 [-] 3.4 [=] → 223.6",
+          "[÷] 200 [=] → 1.118"
+        ],
+        "note_tr": "1 çıkar: %11,8."
+      },
+      "numeric": {
+        "expr": "((230-3-0.2*(230-3-200-10))/200-1)*100",
+        "unit": "%"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

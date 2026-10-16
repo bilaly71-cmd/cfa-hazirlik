@@ -1,0 +1,818 @@
+{
+  "module_id": "DER-07",
+  "lesson": {
+    "id": "DER-07-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-07",
+    "los_ids": [
+      "DER-07-a",
+      "DER-07-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Pricing and Valuation of Interest Rate and Other Swaps",
+    "title_tr": "Faiz Swapları ve Diğer Swapların Fiyatlanması ve Değerlemesi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Many forwards in one contract",
+        "heading_tr": "Tek sözleşmede birçok forward",
+        "en": "A Turkish company borrows at a floating rate linked to TLREF but wants stable payments. Instead of refinancing, it enters a swap: it pays a fixed rate and receives the floating rate. Each period it exchanges only the net difference. A swap is therefore like a bundle of forward contracts, one for each payment date, all sharing one fixed rate. This bundle idea explains how swaps are priced: the fixed rate is chosen so the whole bundle has zero value at the start. After that, as market rates move, the swap becomes an asset for one side and a liability for the other.",
+        "tr": "Türk bir şirket TLREF'e bağlı değişken faizle borçlanmıştır ama istikrarlı ödemeler istemektedir. Yeniden finansman yapmak yerine swap yapar: sabit faiz öder, değişken faiz alır. Her dönem yalnızca net farkı takas eder. Bu yüzden swap, her ödeme tarihi için bir forward içeren ve hepsi aynı sabit faizi paylaşan bir forward demeti gibidir. Bu demet fikri swapın nasıl fiyatlandığını açıklar: sabit faiz, tüm demetin başlangıçta sıfır değere sahip olacağı şekilde seçilir. Sonra piyasa faizleri hareket ettikçe swap bir taraf için varlık, diğer taraf için yükümlülük olur.",
+        "key_terms": [
+          "interest rate swap",
+          "pay fixed",
+          "strip of forwards"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Swap vs strip of forwards",
+        "heading_tr": "Swap ve forward dizisi",
+        "en": "In a plain vanilla interest rate swap, one party pays a fixed rate and receives a floating rate on a notional that is not exchanged. A strip of forwards would give one forward per period, each at its own forward rate. The swap uses a single fixed rate, which is a kind of average of the forward rates. When the curve slopes up, the swap rate is above the early forward rates, so the pay-fixed side overpays early and underpays later. This is like an implicit loan from the pay-fixed side to the receive-fixed side early on, which creates credit exposure. Total value is still zero at inception.",
+        "tr": "Standart bir faiz swapında bir taraf, el değiştirmeyen bir nominal tutar üzerinden sabit faiz öder ve değişken faiz alır. Forward dizisi her dönem için kendi forward faiziyle bir forward verir. Swap, forward faizlerin bir tür ortalaması olan tek bir sabit faiz kullanır. Eğri yukarı eğimliyken swap faizi erken forward faizlerin üzerindedir; böylece sabit ödeyen taraf erken dönemde fazla, sonra eksik öder. Bu, erken dönemde sabit ödeyenden sabit alana örtük bir kredi gibidir ve kredi riski yaratır. Toplam değer başlangıçta yine sıfırdır.",
+        "key_terms": [
+          "plain vanilla",
+          "implicit loan",
+          "credit exposure"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Item",
+              "tr": "Öğe"
+            },
+            {
+              "en": "Swap",
+              "tr": "Swap"
+            },
+            {
+              "en": "Strip of forwards",
+              "tr": "Forward dizisi"
+            }
+          ],
+          "rows": [
+            [
+              "Fixed rate",
+              "One for all periods",
+              "Different for each period"
+            ],
+            [
+              "Value at start",
+              "Zero in total",
+              "Each forward is zero"
+            ],
+            [
+              "Credit exposure",
+              "Shifts over time",
+              "Each contract separate"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Swap rate and swap value",
+        "heading_tr": "Swap faizi ve swap değeri",
+        "en": "The par swap rate with discount factors Z_i and n annual periods is S = (1 − Z_n) / Σ Z_i. The floating leg is worth par at each reset date, so the fixed leg must also be worth par at the start. During the life, the value to the pay-fixed party is approximately V = (S_new − S_old) × N × Σ Z_i over the remaining payments, where S_new is the current par swap rate and S_old is the contract rate. If market swap rates rise, a pay-fixed swap gains value. The net payment each period is (fixed rate − floating rate) × notional × period length, paid by the pay-fixed party if positive.",
+        "tr": "Z_i iskonto çarpanları ve n yıllık dönem için başabaş swap faizi S = (1 − Z_n) / Σ Z_i'dir. Değişken bacak her yenileme tarihinde nominal değerine eşittir; bu yüzden sabit bacak da başlangıçta nominal değere eşit olmalıdır. Ömrü boyunca sabit ödeyen taraf için değer, kalan ödemeler üzerinden yaklaşık V = (S_yeni − S_eski) × N × Σ Z_i'dir; S_yeni güncel başabaş swap faizi, S_eski sözleşme faizidir. Piyasa swap faizleri yükselirse sabit ödeyen swap değer kazanır. Her dönemin net ödemesi (sabit faiz − değişken faiz) × nominal × dönem uzunluğudur; pozitifse sabit ödeyen taraf öder.",
+        "key_terms": [
+          "par swap rate",
+          "discount factor",
+          "net payment"
+        ],
+        "formula_latex": "S=\\frac{1-Z_n}{\\sum_{i=1}^{n}Z_i},\\qquad V_{pay\\text{-}fixed}\\approx(S_{new}-S_{old})\\,N\\sum_i Z_i"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Swap value after rates rise",
+        "heading_tr": "Faizler yükselince swap değeri",
+        "en": "A company pays 4.0% fixed on TRY 10 million for two more years. New two-year swaps now carry 4.8%. The discount factors are 0.9524 and 0.9070, so their sum is 1.8594. The company still pays 4.0%, which is 0.8% less than the market. The annual advantage is 80,000 and its present value is 80,000 × 1.8594 = TRY 148,752. The receive-fixed counterparty has the same amount as a liability. No cash moves today; the value only shows up in the books and in credit exposure.",
+        "tr": "Bir şirket iki yıl daha 10 milyon TRY üzerinden %4,0 sabit ödeyecektir. Yeni iki yıllık swaplar şimdi %4,8 taşıyor. İskonto çarpanları 0,9524 ve 0,9070; toplamları 1,8594. Şirket hâlâ %4,0 öder; bu, piyasadan %0,8 düşüktür. Yıllık avantaj 80.000, bugünkü değeri 80.000 × 1,8594 = 148.752 TRY'dir. Sabit alan karşı tarafta aynı tutar yükümlülüktür. Bugün nakit hareketi olmaz; değer yalnızca kayıtlarda ve kredi riskinde görünür.",
+        "key_terms": [
+          "swap value",
+          "counterparty"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not mix up the swap price (the fixed rate) with the swap value (the PV of the difference). At inception the value is zero, but the price is not. Rising rates help pay-fixed and hurt receive-fixed. The notional is not exchanged in interest rate swaps. The swap is not a series of independent forwards with the same price: the embedded forwards have different values. Only net payments move.",
+        "tr": "Swap fiyatı (sabit faiz) ile swap değerini (farkın bugünkü değeri) karıştırmayın. Başlangıçta değer sıfırdır ama fiyat sıfır değildir. Faizlerin yükselmesi sabit ödeyene yarar, sabit alana zarar verir. Faiz swaplarında nominal tutar el değiştirmez. Swap, aynı fiyatlı bağımsız forward dizisi değildir: içindeki forward'ların değerleri farklıdır. Yalnızca net ödemeler hareket eder.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A swap resembles a strip of forwards sharing one fixed rate. The swap rate is set so that the swap has zero value at initiation, and the par rate is (1 − Z_n) / ΣZ. Later the value changes with market rates: rising rates raise the value of a pay-fixed swap. Payments are netted and the notional is not exchanged.",
+    "summary_tr": "Swap, tek bir sabit faizi paylaşan forward dizisine benzer. Swap faizi, başlangıçta swapın değerinin sıfır olacağı şekilde belirlenir; başabaş faiz (1 − Z_n) / ΣZ'dir. Sonra değer piyasa faizleriyle değişir: faiz artışı sabit ödeyen swapın değerini yükseltir. Ödemeler netleştirilir ve nominal tutar el değiştirmez.",
+    "common_traps_tr": [
+      "Swap fiyatı = sabit faiz; swap değeri = farkın bugünkü değeri.",
+      "Başlangıçta swap değeri sıfırdır; fiyat sıfır değildir.",
+      "Faiz yükselirse sabit ödeyen kazanır, sabit alan kaybeder.",
+      "Faiz swapında nominal tutar el değiştirmez; yalnızca net faiz ödenir.",
+      "Dizideki forward'ların değerleri tek tek sıfır değildir."
+    ],
+    "vocab_ids": [
+      "swap",
+      "interest-rate-swap",
+      "fixed-rate",
+      "floating-rate",
+      "notional",
+      "discount-factor",
+      "swap-rate",
+      "pay-fixed",
+      "receive-fixed",
+      "strip",
+      "plain-vanilla",
+      "credit-exposure",
+      "net-payment",
+      "reset",
+      "implicit",
+      "embedded"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Faiz swapı yapısı SPK Türev sınavında bilinir; swap değerleme formülleri kısmen bilinir."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-07-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A pay-fixed interest rate swap is best seen as:",
+      "stem_tr": "Sabit ödeyen bir faiz swapı en iyi nasıl görülebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a series of forward contracts on the floating rate, all with the same fixed rate",
+          "tr": "hepsi aynı sabit faizli, değişken faiz üzerine yazılmış bir forward sözleşmeler dizisi"
+        },
+        {
+          "key": "B",
+          "en": "a single option on the floating rate",
+          "tr": "değişken faiz üzerine tek bir opsiyon"
+        },
+        {
+          "key": "C",
+          "en": "a loan that is repaid at the first payment date",
+          "tr": "ilk ödeme tarihinde geri ödenen bir kredi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Each period's net payment is like a forward on the floating rate, but all periods share the same fixed rate.",
+      "explanation_tr": "Her dönemin net ödemesi değişken faiz üzerine bir forward gibidir; ancak tüm dönemler aynı sabit faizi paylaşır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A swap creates obligations, not a right. It is not an option.",
+          "tr": "Swap yükümlülük doğurur, hak vermez; opsiyon değildir."
+        },
+        "C": {
+          "en": "The notional is not exchanged in an interest rate swap, and payments continue over several dates.",
+          "tr": "Faiz swapında nominal tutar el değiştirmez ve ödemeler birkaç tarih boyunca sürer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap",
+        "strip",
+        "forward",
+        "floating-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Faiz swapının yapısı SPK Türev sınavında bilinir."
+      }
+    },
+    {
+      "id": "DER-07-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A key difference between a swap and a strip of separately priced forward contracts is that in the swap:",
+      "stem_tr": "Swap ile ayrı fiyatlanmış forward sözleşmeler dizisi arasındaki temel fark, swapta şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the notional amount is exchanged at the start",
+          "tr": "nominal tutar başlangıçta el değiştirir"
+        },
+        {
+          "key": "B",
+          "en": "the fixed rate is the same in every period",
+          "tr": "sabit faiz her dönemde aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "the floating payments are fixed in advance for all periods",
+          "tr": "değişken ödemeler tüm dönemler için önceden sabitlenir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In a strip, each forward has its own price (the forward rate for that period). In a swap, one fixed rate is used for all periods.",
+      "explanation_tr": "Dizide her forward kendi fiyatına sahiptir (o dönemin forward faizi). Swapta tüm dönemler için tek bir sabit faiz kullanılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "In an interest rate swap the notional is only a reference and is not exchanged.",
+          "tr": "Faiz swapında nominal tutar yalnızca referanstır; el değiştirmez."
+        },
+        "C": {
+          "en": "The floating rate is reset each period according to the market.",
+          "tr": "Değişken faiz her dönem piyasaya göre yeniden belirlenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "strip",
+        "fixed-rate",
+        "period",
+        "notional"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-07-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The yield curve is upward sloping when a pay-fixed swap is entered. Compared with the forward rates for the early periods, the swap fixed rate is:",
+      "stem_tr": "Bir sabit ödeyen swap yapılırken getiri eğrisi yukarı eğimlidir. Erken dönemlerin forward faizleriyle kıyaslandığında swap sabit faizi nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower, so the pay-fixed party pays less than the forward rate early and more later",
+          "tr": "daha düşüktür; sabit ödeyen taraf erken dönemde forward faizden az, sonra daha fazla öder"
+        },
+        {
+          "key": "B",
+          "en": "equal in every period to the forward rate",
+          "tr": "her dönemde forward faize eşittir"
+        },
+        {
+          "key": "C",
+          "en": "higher, so the pay-fixed party pays more than the forward rate early and less later",
+          "tr": "daha yüksektir; sabit ödeyen taraf erken dönemde forward faizden fazla, sonra daha az öder"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The swap rate is an average of the forward rates. With rising forward rates, the average is above the early rates and below the late rates.",
+      "explanation_tr": "Swap faizi forward faizlerin bir ortalamasıdır. Forward faizler artarken ortalama erken oranların üzerinde, geç oranların altındadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the pattern for a downward-sloping curve.",
+          "tr": "Bu, aşağı eğimli eğrideki durumdur."
+        },
+        "B": {
+          "en": "The swap rate is one number, while forward rates differ by period on a sloped curve.",
+          "tr": "Swap faizi tek bir sayıdır; eğimli eğride forward faizler dönemden döneme farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "upward-sloping",
+        "yield-curve",
+        "average",
+        "pay-fixed"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-07-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Because the swap rate differs from some of the individual forward rates, the swap can be viewed as including:",
+      "stem_tr": "Swap faizi bazı tekil forward faizlerden farklı olduğu için swap neyi içeriyor gibi görülebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a free option for the receive-fixed party",
+          "tr": "sabit alan taraf için ücretsiz bir opsiyon"
+        },
+        {
+          "key": "B",
+          "en": "an implicit loan between the two parties during part of the swap's life",
+          "tr": "swapın ömrünün bir bölümünde iki taraf arasında örtük bir kredi"
+        },
+        {
+          "key": "C",
+          "en": "a guarantee from the clearinghouse in every case",
+          "tr": "her durumda takas kuruluşunun garantisi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "When one party overpays relative to the forward rate, it is effectively lending to the other, which creates credit exposure. Later the pattern reverses.",
+      "explanation_tr": "Bir taraf forward faize göre fazla ödüyorsa diğerine fiilen kredi vermiş olur; bu kredi riski yaratır. Daha sonra durum tersine döner.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The swap has no optionality. Both sides are obligated to pay.",
+          "tr": "Swapta opsiyonellik yoktur; iki taraf da ödemekle yükümlüdür."
+        },
+        "C": {
+          "en": "Many swaps are OTC and bilateral, so there is no automatic clearinghouse guarantee.",
+          "tr": "Birçok swap tezgâhüstü ve ikilidir; otomatik bir takas kuruluşu garantisi yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "implicit",
+        "loan",
+        "credit-exposure",
+        "overpay"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-07-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "At initiation, the value of a swap and the value of each forward in an equivalent strip are most accurately described as:",
+      "stem_tr": "Başlangıçta bir swapın değeri ile eşdeğer bir forward dizisindeki her forward'ın değeri en doğru nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "both the swap and every embedded forward have zero value",
+          "tr": "hem swapın hem de içindeki her forward'ın değeri sıfırdır"
+        },
+        {
+          "key": "B",
+          "en": "the swap has a positive value for the pay-fixed party",
+          "tr": "swapın değeri sabit ödeyen taraf için pozitiftir"
+        },
+        {
+          "key": "C",
+          "en": "the swap has zero total value, while the individual forwards embedded in it generally do not have zero value",
+          "tr": "swapın toplam değeri sıfırdır; içindeki tekil forward'ların değeri ise genellikle sıfır değildir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The positive and negative values of the embedded forwards cancel, so the sum is zero at the start.",
+      "explanation_tr": "İçindeki forward'ların pozitif ve negatif değerleri birbirini götürür; toplam başlangıçta sıfırdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Embedded forwards use the single swap rate, not their own forward rates, so they generally have non-zero values that offset.",
+          "tr": "İçindeki forward'lar kendi forward faizlerini değil tek swap faizini kullanır; bu yüzden genellikle birbirini götüren sıfırdan farklı değerler taşır."
+        },
+        "B": {
+          "en": "A swap is priced so that neither party pays upfront, so the value is zero.",
+          "tr": "Swap, kimsenin peşin ödeme yapmayacağı şekilde fiyatlanır; değeri sıfırdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "embedded",
+        "offset",
+        "initiation",
+        "zero-value"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-07-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The swap rate (the swap's price) is set so that:",
+      "stem_tr": "Swap faizi (swapın fiyatı) neye göre belirlenir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the swap has zero value to both parties at initiation",
+          "tr": "swapın başlangıçta iki taraf için de sıfır değere sahip olmasına"
+        },
+        {
+          "key": "B",
+          "en": "the fixed payments are equal to the floating payments in every period",
+          "tr": "her dönem sabit ödemelerin değişken ödemelere eşit olmasına"
+        },
+        {
+          "key": "C",
+          "en": "the pay-fixed party earns a premium",
+          "tr": "sabit ödeyen tarafın prim kazanmasına"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The present value of fixed payments equals the present value of expected floating payments, so the value at initiation is zero.",
+      "explanation_tr": "Sabit ödemelerin bugünkü değeri, beklenen değişken ödemelerin bugünkü değerine eşittir; bu yüzden başlangıç değeri sıfırdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "They are equal only in present value terms in total, not period by period.",
+          "tr": "Eşitlik dönem dönem değil, yalnızca toplam bugünkü değer açısından geçerlidir."
+        },
+        "C": {
+          "en": "No premium is paid in a standard interest rate swap.",
+          "tr": "Standart faiz swapında prim ödenmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap-rate",
+        "initiation",
+        "present-value",
+        "zero-value"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-07-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A three-year annual-pay interest rate swap is priced with discount factors of 0.9709, 0.9426 and 0.8890 for years 1, 2 and 3. The swap fixed rate is closest to:",
+      "stem_tr": "Üç yıllık, yıllık ödemeli bir faiz swapı, 1., 2. ve 3. yıllar için 0,9709, 0,9426 ve 0,8890 iskonto çarpanlarıyla fiyatlanıyor. Swap sabit faizi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.70%",
+          "tr": "%3,70",
+          "value": 3.7
+        },
+        {
+          "key": "B",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 3.999858
+        },
+        {
+          "key": "C",
+          "en": "3.96%",
+          "tr": "%3,96",
+          "value": 3.960749
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Swap rate = (1 − Z_n) / ΣZ_i = (1 − 0.8890) / (0.9709 + 0.9426 + 0.8890) = 0.1110 / 2.8025 = 3.96%.",
+      "explanation_tr": "Swap faizi = (1 − Z_n) / ΣZ_i = (1 − 0,8890) / (0,9709 + 0,9426 + 0,8890) = 0,1110 / 2,8025 = %3,96.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides by the number of years and does not use the sum of discount factors.",
+          "tr": "Bu, yıl sayısına böler; iskonto çarpanları toplamını kullanmaz."
+        },
+        "B": {
+          "en": "This is the three-year spot rate, not the swap rate.",
+          "tr": "Bu üç yıllık spot faizdir; swap faizi değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the par swap rate from discount factors.",
+          "tr": "İskonto çarpanlarından başabaş swap faizi isteniyor."
+        },
+        {
+          "en": "At par, the fixed leg PV equals the floating leg PV, which is 1 − Z_n per unit of notional.",
+          "tr": "Başabaşta sabit bacağın bugünkü değeri, nominal birim başına 1 − Z_n olan değişken bacağınkine eşittir.",
+          "formula_latex": "S=\\frac{1-Z_n}{\\sum_{i=1}^{n}Z_i}"
+        },
+        {
+          "en": "Substitute the discount factors.",
+          "tr": "İskonto çarpanlarını yerine koy.",
+          "values": {
+            "Z1": 0.9709,
+            "Z2": 0.9426,
+            "Z3": 0.889
+          }
+        },
+        {
+          "en": "Sum of Z = 2.8025. Numerator = 0.1110.",
+          "tr": "Z toplamı = 2,8025. Pay = 0,1110."
+        },
+        {
+          "en": "S = 3.96%.",
+          "tr": "S = %3,96."
+        }
+      ],
+      "vocab_ids": [
+        "swap",
+        "fixed-rate",
+        "floating-rate",
+        "notional",
+        "discount-factor"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.9709 [+] 0.9426 [+] 0.8890 [=]  (2.8025)",
+          "1 [-] 0.8890 [=] [÷] 2.8025 [=]  (0.0396)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1-0.8890)/(0.9709+0.9426+0.8890)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "DER-07-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company entered a pay-fixed swap on notional TRY 10 million at a fixed rate of 4.0%. Two years remain with annual payments. The current par swap rate is 4.8%, and the discount factors are 0.9524 for year 1 and 0.9070 for year 2. The value of the swap to the company is closest to:",
+      "stem_tr": "Bir şirket, 10 milyon TRY nominal tutar üzerine %4,0 sabit faizle sabit ödeyen bir swap yapmıştır. İki yıl kalmıştır ve ödemeler yıllıktır. Güncel başabaş swap faizi %4,8'dir ve iskonto çarpanları 1. yıl için 0,9524, 2. yıl için 0,9070'tir. Swapın şirket için değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 148752",
+          "tr": "TRY 148752",
+          "value": 148752.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 160000",
+          "tr": "TRY 160000",
+          "value": 160000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 72560",
+          "tr": "TRY 72560",
+          "value": 72560.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The company pays 4.0% while new swaps pay 4.8%, so it gains 0.8% per year on TRY 10 million: 80,000 per year. PV = 80,000 × (0.9524 + 0.9070) = TRY 148,752.",
+      "explanation_tr": "Şirket %4,0 öderken yeni swaplar %4,8 öder; 10 milyon TRY üzerinden yılda %0,8 kazanır: yılda 80.000. Bugünkü değer = 80.000 × (0,9524 + 0,9070) = 148.752 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This does not discount the savings.",
+          "tr": "Bu, tasarrufları iskonto etmez."
+        },
+        "C": {
+          "en": "This discounts only the final payment, not both years.",
+          "tr": "Bu yalnızca son ödemeyi iskonto eder; iki yılı da hesaba katmaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of an existing pay-fixed swap after rates rose.",
+          "tr": "Faizler yükseldikten sonra mevcut sabit ödeyen swapın değeri isteniyor."
+        },
+        {
+          "en": "Value = rate difference × notional × sum of remaining discount factors.",
+          "tr": "Değer = faiz farkı × nominal × kalan iskonto çarpanları toplamı.",
+          "formula_latex": "V=(S_{new}-S_{old})\\times N\\times\\sum Z_i"
+        },
+        {
+          "en": "Substitute 0.048 − 0.040, N = 10,000,000, ΣZ = 1.8594.",
+          "tr": "0,048 − 0,040, N = 10.000.000, ΣZ = 1,8594 değerlerini koy.",
+          "values": {
+            "S_new": 0.048,
+            "S_old": 0.04,
+            "N": 10000000
+          }
+        },
+        {
+          "en": "Annual advantage = 80,000.",
+          "tr": "Yıllık avantaj = 80.000."
+        },
+        {
+          "en": "PV = 148,752.",
+          "tr": "Bugünkü değer = 148.752."
+        }
+      ],
+      "vocab_ids": [
+        "swap",
+        "fixed-rate",
+        "floating-rate",
+        "notional",
+        "discount-factor"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.048 [-] 0.040 [=] [x] 10000000 [=]  (80000)",
+          "[x] 1.8594 [=]  (148752)"
+        ],
+        "note_tr": "0,9524 + 0,9070 = 1,8594 toplamını önce hesaplayın."
+      },
+      "numeric": {
+        "expr": "(0.048-0.040)*10_000_000*(0.9524+0.9070)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-07-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A pay-fixed swap has a notional of TRY 20 million, a fixed rate of 5.0% and annual payments. At the start of the period the floating rate was set at 4.2%. The net payment made by the pay-fixed party at the end of the period is closest to:",
+      "stem_tr": "Sabit ödeyen bir swapın nominal tutarı 20 milyon TRY, sabit faizi %5,0 ve ödemeleri yıllıktır. Dönem başında değişken faiz %4,2 olarak belirlenmiştir. Sabit ödeyen tarafın dönem sonunda yaptığı net ödeme aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1000000",
+          "tr": "TRY 1000000",
+          "value": 1000000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 160000",
+          "tr": "TRY 160000",
+          "value": 160000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 840000",
+          "tr": "TRY 840000",
+          "value": 840000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net = (5.0% − 4.2%) × 20,000,000 = 0.008 × 20,000,000 = TRY 160,000, paid by the pay-fixed party.",
+      "explanation_tr": "Net = (%5,0 − %4,2) × 20.000.000 = 0,008 × 20.000.000 = 160.000 TRY; sabit ödeyen taraf öder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the fixed leg only. Payments are netted.",
+          "tr": "Bu yalnızca sabit bacaktır; ödemeler netleştirilir."
+        },
+        "C": {
+          "en": "This is the floating leg only. Payments are netted.",
+          "tr": "Bu yalnızca değişken bacaktır; ödemeler netleştirilir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the net swap payment.",
+          "tr": "Net swap ödemesi isteniyor."
+        },
+        {
+          "en": "Only the difference between the fixed and floating legs is paid.",
+          "tr": "Yalnızca sabit ve değişken bacak arasındaki fark ödenir.",
+          "formula_latex": "\\text{Net}=(S-L)\\times N"
+        },
+        {
+          "en": "Substitute S = 0.05, L = 0.042, N = 20,000,000.",
+          "tr": "S = 0,05, L = 0,042, N = 20.000.000 değerlerini koy.",
+          "values": {
+            "S": 0.05,
+            "L": 0.042,
+            "N": 20000000
+          }
+        },
+        {
+          "en": "Net = 160,000.",
+          "tr": "Net = 160.000."
+        }
+      ],
+      "vocab_ids": [
+        "swap",
+        "fixed-rate",
+        "floating-rate",
+        "notional",
+        "discount-factor"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.05 [-] 0.042 [=] [x] 20000000 [=]  (160000)"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.05-0.042)*20_000_000",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-07-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company entered a pay-fixed swap. Market swap rates for the remaining term then fall. The swap's value to the company is most likely:",
+      "stem_tr": "Bir şirket sabit ödeyen swap yapmıştır. Sonra kalan vade için piyasa swap faizleri düşmüştür. Swapın şirket için değeri büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative, because it pays a fixed rate that is above the current market rate",
+          "tr": "negatiftir; çünkü güncel piyasa faizinin üzerinde bir sabit faiz öder"
+        },
+        {
+          "key": "B",
+          "en": "positive, because it pays a fixed rate that is above the market rate",
+          "tr": "pozitiftir; çünkü piyasa faizinin üzerinde bir sabit faiz öder"
+        },
+        {
+          "key": "C",
+          "en": "unchanged, because swap value does not depend on swap rates",
+          "tr": "değişmemiştir; çünkü swap değeri swap faizlerine bağlı değildir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The company locked in a higher fixed rate than new swaps now offer, so the position is a liability. The receive-fixed party gains.",
+      "explanation_tr": "Şirket, yeni swapların sunduğundan yüksek bir sabit faiz sabitlemiştir; pozisyon yükümlülüktür. Sabit alan taraf kazanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Paying above the market rate is a disadvantage and produces a negative value.",
+          "tr": "Piyasa faizinin üzerinde ödemek dezavantajdır ve negatif değer yaratır."
+        },
+        "C": {
+          "en": "Swap value changes with market rates since the remaining fixed payments are valued at the new rates.",
+          "tr": "Kalan sabit ödemeler yeni faizlerle değerlendiği için swap değeri piyasa faizleriyle değişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap-value",
+        "pay-fixed",
+        "liability",
+        "market-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

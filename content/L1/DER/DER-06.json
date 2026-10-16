@@ -1,0 +1,742 @@
+{
+  "module_id": "DER-06",
+  "lesson": {
+    "id": "DER-06-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-06",
+    "los_ids": [
+      "DER-06-a",
+      "DER-06-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Pricing and Valuation of Futures Contracts",
+    "title_tr": "Vadeli İşlem (Futures) Sözleşmelerinin Fiyatlanması ve Değerlemesi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "The same promise, settled differently",
+        "heading_tr": "Aynı söz, farklı uzlaşma",
+        "en": "A forward and a futures contract both promise to buy or sell later at a fixed price. The big difference is when the money moves. With a forward, nothing is paid until expiry. With a futures contract, the exchange settles gains and losses every evening. On VİOP, Takasbank credits and debits the accounts of members each day, so a loss cannot grow unpaid. This keeps default risk small. It also changes the cash-flow timing, and that is why futures prices can differ a little from forward prices.",
+        "tr": "Forward ve vadeli işlem sözleşmeleri, ileride sabit fiyattan alma veya satma sözü verir. Büyük fark, paranın ne zaman el değiştirdiğidir. Forward'da vadeye kadar hiçbir ödeme yapılmaz. Vadeli işlemde ise borsa kâr ve zararı her akşam uzlaştırır. VİOP'ta Takasbank her gün üyelerin hesaplarına alacak ve borç yazar; böylece zarar ödenmeden büyüyemez. Bu, temerrüt riskini küçük tutar. Aynı zamanda nakit akışının zamanlamasını değiştirir ve vadeli işlem fiyatlarının forward fiyatlarından biraz farklı olabilmesinin nedeni budur.",
+        "key_terms": [
+          "futures",
+          "daily settlement",
+          "VİOP"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Daily settlement and margin",
+        "heading_tr": "Günlük uzlaşma ve teminat",
+        "en": "Each day the clearinghouse sets a settlement price. A long position gains when the settlement price rises and loses when it falls; the short position is the mirror image. The gain or loss is credited or debited to the margin account (mark-to-market). The initial margin is the deposit required when the position opens. If the balance falls below the maintenance margin, a margin call is issued and the trader must deposit variation margin to restore the account to the initial margin level. After each settlement, the value of the futures position resets to zero, but the futures price remains positive. At expiry the futures price converges to the spot price.",
+        "tr": "Takas kuruluşu her gün bir uzlaşma fiyatı belirler. Uzun pozisyon, uzlaşma fiyatı yükselince kazanır ve düşünce kaybeder; kısa pozisyon ayna görüntüsüdür. Kâr veya zarar teminat hesabına alacak veya borç yazılır (piyasa değerine getirme). Başlangıç teminatı, pozisyon açılırken istenen güvencedir. Bakiye sürdürme teminatının altına düşerse teminat tamamlama çağrısı yapılır ve yatırımcı hesabı başlangıç teminatı düzeyine getirmek için değişim teminatı yatırmak zorundadır. Her uzlaşmadan sonra vadeli işlem pozisyonunun değeri sıfıra sıfırlanır; ancak vadeli işlem fiyatı pozitif kalır. Vadede vadeli işlem fiyatı spot fiyata yakınsar.",
+        "key_terms": [
+          "settlement price",
+          "initial margin",
+          "maintenance margin",
+          "margin call",
+          "variation margin",
+          "convergence"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Futures price and forward price",
+        "heading_tr": "Vadeli işlem ve forward fiyat",
+        "en": "The futures price at time 0 follows the same cost-of-carry logic as a forward: f0(T) = S0 (1 + r)^T minus carry benefits plus carry costs. Daily gain on a long position: (f_t − f_{t−1}) × multiplier × number of contracts. If interest rates are constant or uncorrelated with the futures price, the futures price equals the forward price. If rates are positively correlated with futures prices, the long can reinvest gains at higher rates and finance losses at lower rates, so the futures price is higher than the forward price. With negative correlation, the futures price is lower.",
+        "tr": "Zaman 0'daki vadeli işlem fiyatı, forward gibi taşıma maliyeti mantığını izler: f0(T) = S0 (1 + r)^T eksi taşıma getirileri artı taşıma maliyetleri. Uzun pozisyonun günlük kazancı: (f_t − f_{t−1}) × çarpan × sözleşme sayısı. Faizler sabitse veya vadeli işlem fiyatıyla ilişkisizse vadeli işlem fiyatı forward fiyata eşittir. Faizler vadeli işlem fiyatlarıyla pozitif ilişkiliyse uzun taraf kazançlarını yüksek faizle yeniden yatırabilir ve zararları düşük faizle finanse edebilir; bu yüzden vadeli işlem fiyatı forward fiyattan yüksektir. Negatif ilişkide vadeli işlem fiyatı daha düşüktür.",
+        "key_terms": [
+          "futures price",
+          "forward price",
+          "correlation"
+        ],
+        "formula_latex": "\\text{Daily gain (long)}=(f_t-f_{t-1})\\times \\text{multiplier}\\times n"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A margin call",
+        "heading_tr": "Teminat tamamlama örneği",
+        "en": "An investor opens a short position in a futures contract and posts an initial margin of TRY 20,000. The maintenance margin is TRY 15,000. Over two days the futures price rises and the short loses TRY 6,000. The balance falls to TRY 14,000, which is below the maintenance margin. The investor gets a margin call and must deposit TRY 6,000 to bring the account back to TRY 20,000, not just the TRY 1,000 needed to reach the maintenance level. If the investor does not deposit, the broker can close the position.",
+        "tr": "Bir yatırımcı vadeli işlemde kısa pozisyon açar ve 20.000 TRY başlangıç teminatı yatırır. Sürdürme teminatı 15.000 TRY'dir. İki günde vadeli işlem fiyatı yükselir ve kısa pozisyon 6.000 TRY kaybeder. Bakiye sürdürme teminatının altında olan 14.000 TRY'ye düşer. Yatırımcıya teminat tamamlama çağrısı yapılır ve hesabı sürdürme düzeyine çıkarmak için gereken 1.000 TRY değil, 20.000 TRY'ye tamamlamak için 6.000 TRY yatırması gerekir. Yatırmazsa aracı kurum pozisyonu kapatabilir.",
+        "key_terms": [
+          "margin call",
+          "variation margin"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "A margin call restores the initial margin, not the maintenance margin. After daily settlement the futures position value is zero, but the futures price is not. Forward and futures prices are the same only under constant or uncorrelated interest rates. Do not say that futures have no risk: market risk remains. Margin is not a down payment on the underlying and not an option premium.",
+        "tr": "Teminat tamamlama çağrısı bakiyeyi sürdürme teminatına değil, başlangıç teminatına getirir. Günlük uzlaşmadan sonra vadeli işlem pozisyonunun değeri sıfırdır; vadeli işlem fiyatı sıfır değildir. Forward ve vadeli işlem fiyatları yalnızca sabit veya ilişkisiz faizlerde aynıdır. Vadeli işlemin risksiz olduğunu söylemeyin: piyasa riski sürer. Teminat, dayanak varlık için peşinat veya opsiyon primi değildir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Futures are settled daily through margin accounts and the position value resets to zero after each settlement. Futures prices converge to spot at expiry. Futures and forward prices are equal if rates are constant or uncorrelated; with positive correlation the futures price is higher, with negative correlation it is lower.",
+    "summary_tr": "Vadeli işlemler teminat hesapları üzerinden günlük olarak uzlaştırılır ve her uzlaşmadan sonra pozisyon değeri sıfıra sıfırlanır. Vadeli işlem fiyatları vadede spota yakınsar. Faizler sabit veya ilişkisizse vadeli işlem ve forward fiyatları eşittir; pozitif korelasyonda vadeli işlem fiyatı yüksek, negatifte düşüktür.",
+    "common_traps_tr": [
+      "Teminat tamamlama çağrısı bakiyeyi başlangıç teminatına getirir.",
+      "Uzlaşmadan sonra pozisyon değeri sıfırdır; vadeli işlem fiyatı değil.",
+      "Pozitif faiz-fiyat korelasyonunda vadeli işlem fiyatı forward fiyattan yüksektir.",
+      "Vadede vadeli işlem fiyatı spot fiyata eşitlenir.",
+      "Teminat bir güvencedir; prim veya peşinat değildir."
+    ],
+    "vocab_ids": [
+      "futures",
+      "forward",
+      "margin",
+      "margin-call",
+      "initial-margin",
+      "maintenance-margin",
+      "variation-margin",
+      "mark-to-market",
+      "settlement",
+      "settlement-price",
+      "convergence",
+      "correlation",
+      "clearinghouse",
+      "daily-settlement",
+      "reinvest",
+      "multiplier"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Günlük uzlaşma ve teminat işleyişi SPK Türev sınavında bilinir; faiz-fiyat korelasyonu etkisi yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-06-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In the daily mark-to-market process of a futures contract, a loss on a long position is:",
+      "stem_tr": "Vadeli işlem sözleşmesinin günlük piyasa değerine getirme sürecinde, uzun pozisyondaki zarar nasıl işlenir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "deducted from the margin account each day",
+          "tr": "her gün teminat hesabından düşülür"
+        },
+        {
+          "key": "B",
+          "en": "carried forward and paid only at expiry",
+          "tr": "ertelenir ve yalnızca vadede ödenir"
+        },
+        {
+          "key": "C",
+          "en": "ignored until the position is closed",
+          "tr": "pozisyon kapanana kadar yok sayılır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The clearinghouse credits gains and debits losses each day based on the settlement price. This keeps the credit risk small.",
+      "explanation_tr": "Takas kuruluşu, kâr ve zararı her gün uzlaşma fiyatına göre hesaba işler; bu da kredi riskini küçük tutar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That is how an unmargined forward works. Futures are settled daily.",
+          "tr": "Teminatsız bir forward böyle işler; vadeli işlemler günlük uzlaştırılır."
+        },
+        "C": {
+          "en": "Gains and losses are realized every day through the margin account, not when the position closes.",
+          "tr": "Kâr ve zararlar pozisyon kapandığında değil, teminat hesabı üzerinden her gün gerçekleşir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mark-to-market",
+        "margin-account",
+        "settlement-price",
+        "daily"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Günlük gün sonu uzlaşması (VİOP) SPK Türev sınavında bilinir."
+      }
+    },
+    {
+      "id": "DER-06-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A trader holds 5 long BIST 30 futures contracts. The multiplier is TRY 10 per index point (hypothetical). The previous settlement price was 12,400 and today's settlement price is 12,436. The trader's gain credited to the margin account today is closest to:",
+      "stem_tr": "Bir yatırımcı 5 adet uzun BIST 30 vadeli işlem sözleşmesi taşıyor. Çarpan endeks puanı başına 10 TRY (varsayımsal). Önceki uzlaşma fiyatı 12.400, bugünkü uzlaşma fiyatı 12.436. Yatırımcının bugün teminat hesabına yansıyan kazancı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 360",
+          "tr": "TRY 360",
+          "value": 360.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 1800",
+          "tr": "TRY 1800",
+          "value": 1800.0
+        },
+        {
+          "key": "C",
+          "en": "TRY -1800",
+          "tr": "TRY -1800",
+          "value": -1800.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Price change = 12,436 − 12,400 = 36 points. Gain = 36 × 10 × 5 = TRY 1,800.",
+      "explanation_tr": "Fiyat değişimi = 12.436 − 12.400 = 36 puan. Kazanç = 36 × 10 × 5 = 1.800 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the gain for one contract only. The trader holds five.",
+          "tr": "Bu yalnızca tek sözleşmenin kazancıdır; yatırımcı beş sözleşme taşıyor."
+        },
+        "C": {
+          "en": "The price rose, so a long position gains. The sign is wrong.",
+          "tr": "Fiyat yükseldi, uzun pozisyon kazanır; işaret hatalıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the daily mark-to-market gain on a long futures position.",
+          "tr": "Uzun vadeli işlem pozisyonunun günlük piyasa değerine getirme kazancı isteniyor."
+        },
+        {
+          "en": "Gain = price change × multiplier × number of contracts.",
+          "tr": "Kazanç = fiyat değişimi × çarpan × sözleşme sayısı.",
+          "formula_latex": "\\text{Gain}=(F_t-F_{t-1})\\times\\text{multiplier}\\times n"
+        },
+        {
+          "en": "Substitute 36 points, multiplier 10 and 5 contracts.",
+          "tr": "36 puan, çarpan 10 ve 5 sözleşmeyi yerine koy.",
+          "values": {
+            "change": 36,
+            "multiplier": 10,
+            "n": 5
+          }
+        },
+        {
+          "en": "36 × 10 = 360 per contract.",
+          "tr": "Sözleşme başına 36 × 10 = 360."
+        },
+        {
+          "en": "360 × 5 = TRY 1,800.",
+          "tr": "360 × 5 = 1.800 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "futures",
+        "forward",
+        "margin",
+        "mark-to-market",
+        "settlement"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12436 [-] 12400 [=]  (36)",
+          "[x] 10 [x] 5 [=]  (1800)"
+        ]
+      },
+      "numeric": {
+        "expr": "(12436-12400)*10*5",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-06-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "As a futures contract approaches expiry, the futures price:",
+      "stem_tr": "Vadeli işlem sözleşmesi vadeye yaklaştıkça vadeli işlem fiyatı ne olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "moves away from the spot price",
+          "tr": "spot fiyattan uzaklaşır"
+        },
+        {
+          "key": "B",
+          "en": "becomes equal to the initial margin",
+          "tr": "başlangıç teminatına eşit olur"
+        },
+        {
+          "key": "C",
+          "en": "converges to the spot price of the underlying",
+          "tr": "dayanak varlığın spot fiyatına yakınsar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "At expiry, the futures price must equal spot, since a contract for immediate delivery is the same as buying spot. Costs of carry shrink to zero.",
+      "explanation_tr": "Vadede vadeli işlem fiyatı spota eşit olmalıdır; çünkü anında teslim sözleşmesi spot alımla aynıdır. Taşıma maliyetleri sıfıra iner.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "If the gap stayed, an arbitrageur could buy and sell at expiry for a riskless profit.",
+          "tr": "Fark kalsaydı arbitrajcı vadede risksiz kâr elde edebilirdi."
+        },
+        "B": {
+          "en": "Margin is a deposit and has no relation to the futures price.",
+          "tr": "Teminat bir güvence tutarıdır ve vadeli işlem fiyatıyla ilgisi yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "converge",
+        "expiry",
+        "spot",
+        "arbitrageur"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A futures account has an initial margin of TRY 20,000 and a maintenance margin of TRY 15,000. After losses of TRY 6,000 the balance is TRY 14,000. To meet the margin call, the trader must deposit an amount closest to:",
+      "stem_tr": "Bir vadeli işlem hesabında başlangıç teminatı 20.000 TRY ve sürdürme teminatı 15.000 TRY'dir. 6.000 TRY zarardan sonra bakiye 14.000 TRY'dir. Teminat tamamlama çağrısını karşılamak için yatırımcının yatırması gereken tutar aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1000",
+          "tr": "TRY 1000",
+          "value": 1000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 6000",
+          "tr": "TRY 6000",
+          "value": 6000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 20000",
+          "tr": "TRY 20000",
+          "value": 20000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The balance is below the maintenance margin, so a margin call is issued. The deposit restores the balance to the initial margin: 20,000 − 14,000 = TRY 6,000.",
+      "explanation_tr": "Bakiye sürdürme teminatının altında olduğu için teminat tamamlama çağrısı yapılır. Yatırılacak tutar bakiyeyi başlangıç teminatına getirir: 20.000 − 14.000 = 6.000 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The call restores the balance to the initial margin, not just to the maintenance margin.",
+          "tr": "Çağrı bakiyeyi yalnızca sürdürme teminatına değil, başlangıç teminatına tamamlar."
+        },
+        "C": {
+          "en": "This is the full initial margin. The trader already holds TRY 14,000.",
+          "tr": "Bu başlangıç teminatının tamamıdır; yatırımcının elinde zaten 14.000 TRY var."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the variation margin deposit after a margin call.",
+          "tr": "Teminat tamamlama çağrısı sonrası yatırılacak değişim teminatı isteniyor."
+        },
+        {
+          "en": "Compare 14,000 with the maintenance margin 15,000: it is lower, so a call is made.",
+          "tr": "14.000'i 15.000'lik sürdürme teminatıyla karşılaştır: düşük olduğu için çağrı yapılır."
+        },
+        {
+          "en": "The deposit restores the initial margin.",
+          "tr": "Yatırılan tutar başlangıç teminatını yeniden oluşturur.",
+          "formula_latex": "\\text{Deposit}=M_{initial}-\\text{Balance}"
+        },
+        {
+          "en": "20,000 − 14,000 = 6,000.",
+          "tr": "20.000 − 14.000 = 6.000."
+        }
+      ],
+      "vocab_ids": [
+        "futures",
+        "forward",
+        "margin",
+        "mark-to-market",
+        "settlement",
+        "margin-call",
+        "maintenance-margin"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20000 [-] 14000 [=]  (6000)"
+        ]
+      },
+      "numeric": {
+        "expr": "20000-14000",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-06-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A trader holds a long futures position. After the end-of-day settlement, the value of the futures position to the trader is:",
+      "stem_tr": "Bir yatırımcı uzun vadeli işlem pozisyonu taşıyor. Gün sonu uzlaşmasından sonra pozisyonun yatırımcı için değeri nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "equal to the futures price",
+          "tr": "vadeli işlem fiyatına eşittir"
+        },
+        {
+          "key": "B",
+          "en": "equal to the present value of the futures price",
+          "tr": "vadeli işlem fiyatının bugünkü değerine eşittir"
+        },
+        {
+          "key": "C",
+          "en": "zero, because the accumulated gain or loss has been settled and paid into the margin account",
+          "tr": "sıfırdır; çünkü biriken kâr veya zarar uzlaştırılmış ve teminat hesabına işlenmiştir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Daily settlement resets the futures contract to zero value. In contrast, a forward's value accumulates until expiry.",
+      "explanation_tr": "Günlük uzlaşma vadeli işlem sözleşmesini sıfır değere sıfırlar; forward'ın değeri ise vadeye kadar birikir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The futures price is the price at which new contracts would be struck. It is not the value of the existing position.",
+          "tr": "Vadeli işlem fiyatı yeni sözleşmelerin yapılacağı fiyattır; mevcut pozisyonun değeri değildir."
+        },
+        "B": {
+          "en": "This applies to a forward before settlement, not to a daily-settled futures contract.",
+          "tr": "Bu, uzlaşmadan önceki forward için geçerlidir; günlük uzlaşan vadeli işlem için değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reset",
+        "accumulate",
+        "mark-to-market",
+        "value"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under which conditions are forward and futures prices on the same underlying and maturity approximately equal?",
+      "stem_tr": "Aynı dayanak varlık ve vade için forward ve vadeli işlem fiyatları hangi koşullarda yaklaşık eşittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Interest rates are constant or uncorrelated with the futures price",
+          "tr": "Faizler sabittir veya vadeli işlem fiyatıyla ilişkili değildir"
+        },
+        {
+          "key": "B",
+          "en": "The futures contract is not marked to market",
+          "tr": "Vadeli işlem sözleşmesi piyasa değerine getirilmez"
+        },
+        {
+          "key": "C",
+          "en": "The underlying pays large dividends",
+          "tr": "Dayanak varlık yüksek temettü öder"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The difference arises because futures gains are received and losses are paid daily, then reinvested or financed at changing rates. With constant or uncorrelated rates this has no systematic effect.",
+      "explanation_tr": "Fark, vadeli işlem kazançlarının günlük alınması, zararların ödenmesi ve sonra değişen faizlerle yeniden yatırılması veya finanse edilmesinden doğar. Faizler sabit veya ilişkisiz ise sistematik etki olmaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "If futures were not marked to market they would be forwards. The difference comes from daily settlement together with changing rates.",
+          "tr": "Piyasa değerine getirilmeseydi forward olurdu; fark, günlük uzlaşma ile değişen faizlerin birlikteliğinden doğar."
+        },
+        "C": {
+          "en": "Dividends affect both prices in the same way and do not explain a difference.",
+          "tr": "Temettü her iki fiyatı aynı biçimde etkiler ve farkı açıklamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "constant",
+        "uncorrelated",
+        "approximately",
+        "daily-settlement"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Interest rates are positively correlated with the futures price. Compared with the forward price, the futures price is most likely:",
+      "stem_tr": "Faizler vadeli işlem fiyatıyla pozitif ilişkilidir. Forward fiyatla kıyaslandığında vadeli işlem fiyatı büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower",
+          "tr": "daha düşüktür"
+        },
+        {
+          "key": "B",
+          "en": "the same",
+          "tr": "aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "higher",
+          "tr": "daha yüksektir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When prices rise, rates tend to rise: the long receives gains that are reinvested at high rates. When prices fall, rates tend to fall: losses are financed cheaply. The long is better off, so the futures price is higher.",
+      "explanation_tr": "Fiyatlar yükselince faizler de yükselir: uzun taraf kazançlarını yüksek faizle yeniden yatırır. Fiyatlar düşünce faizler düşer: zararlar ucuza finanse edilir. Uzun taraf avantajlıdır; bu yüzden vadeli işlem fiyatı yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the case with a negative correlation.",
+          "tr": "Bu, negatif korelasyonda geçerlidir."
+        },
+        "B": {
+          "en": "With a positive correlation the daily settlement creates a systematic advantage to the long, so the prices differ.",
+          "tr": "Pozitif korelasyonda günlük uzlaşma uzun taraf için sistematik avantaj yaratır; fiyatlar farklılaşır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "positive-correlation",
+        "reinvest",
+        "finance",
+        "advantage"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Interest rates are negatively correlated with the futures price. Which statement is most accurate?",
+      "stem_tr": "Faizler vadeli işlem fiyatıyla negatif ilişkilidir. Aşağıdakilerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The futures price is likely to be lower than the forward price",
+          "tr": "Vadeli işlem fiyatının forward fiyattan düşük olması olasıdır"
+        },
+        {
+          "key": "B",
+          "en": "The futures price is likely to be higher than the forward price",
+          "tr": "Vadeli işlem fiyatının forward fiyattan yüksek olması olasıdır"
+        },
+        {
+          "key": "C",
+          "en": "The forward price is zero",
+          "tr": "Forward fiyat sıfırdır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With negative correlation, the long gains when rates are low (reinvested poorly) and loses when rates are high (financed dearly). This disadvantage lowers the futures price below the forward price.",
+      "explanation_tr": "Negatif korelasyonda uzun taraf faizler düşükken kazanır (kötü yeniden yatırım) ve faizler yüksekken kaybeder (pahalı finansman). Bu dezavantaj vadeli işlem fiyatını forward fiyatın altına çeker.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That holds with a positive correlation.",
+          "tr": "Bu, pozitif korelasyon için geçerlidir."
+        },
+        "C": {
+          "en": "The forward price is not zero. Only its initial value is zero.",
+          "tr": "Forward fiyat sıfır değildir; yalnızca başlangıç değeri sıfırdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "negative-correlation",
+        "disadvantage",
+        "lower",
+        "reinvest"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a reason why a forward price may differ from a futures price, besides the correlation with rates?",
+      "stem_tr": "Faizlerle korelasyon dışında, forward fiyatın vadeli işlem fiyatından farklı olmasının nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Futures always have longer maturities than forwards",
+          "tr": "Vadeli işlemlerin vadesi her zaman forward'lardan uzundur"
+        },
+        {
+          "key": "B",
+          "en": "Margining and clearing reduce credit risk for futures but not for an unmargined forward",
+          "tr": "Teminat ve takas vadeli işlemde kredi riskini azaltır, teminatsız forward'da azaltmaz"
+        },
+        {
+          "key": "C",
+          "en": "Futures are not affected by the cost of carry",
+          "tr": "Vadeli işlemler taşıma maliyetinden etkilenmez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Credit exposure, liquidity, taxes and contract standardization differ. The clearinghouse and margin make credit risk small for futures.",
+      "explanation_tr": "Kredi riski, likidite, vergi ve sözleşme standardizasyonu farklıdır. Takas kuruluşu ve teminat, vadeli işlemlerde kredi riskini küçültür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Maturities vary for both instruments and do not explain a systematic difference.",
+          "tr": "Her iki araçta da vadeler değişir ve sistematik bir farkı açıklamaz."
+        },
+        "C": {
+          "en": "Futures prices include carry costs and benefits in the same way as forwards.",
+          "tr": "Vadeli işlem fiyatları, forward'lar gibi taşıma maliyet ve getirilerini içerir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-risk",
+        "clearing",
+        "unmargined",
+        "standardization"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-06-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares a forward and a futures on the same share with the same expiry. Rates are constant. The two contracts differ most in:",
+      "stem_tr": "Bir analist aynı paya ve aynı vadeye sahip bir forward ile bir vadeli işlemi karşılaştırıyor. Faizler sabit. İki sözleşme en çok hangi açıdan farklıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the timing of cash flows, since futures settle daily and forwards at expiry",
+          "tr": "nakit akışlarının zamanlaması; vadeli işlem günlük, forward vadede uzlaşır"
+        },
+        {
+          "key": "B",
+          "en": "their price, which must differ by the margin amount",
+          "tr": "fiyatları; teminat tutarı kadar farklı olmak zorundadır"
+        },
+        {
+          "key": "C",
+          "en": "their payoff at expiry, which is linear for forwards and convex for futures",
+          "tr": "vadedeki payoff; forward için doğrusal, vadeli işlem için dışbükeydir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The total gain or loss is the same, but futures realize it in daily steps and forwards at expiry. That affects financing and credit risk, not the price when rates are constant.",
+      "explanation_tr": "Toplam kazanç veya zarar aynıdır; ancak vadeli işlem bunu günlük adımlarla, forward vadede gerçekleştirir. Faizler sabitken bu, fiyatı değil finansmanı ve kredi riskini etkiler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "With constant rates the prices are essentially equal. Margin is a deposit, not a price component.",
+          "tr": "Faizler sabitken fiyatlar esasen eşittir; teminat fiyatın bir bileşeni değil, güvence tutarıdır."
+        },
+        "C": {
+          "en": "Both contracts have a linear payoff in the underlying price.",
+          "tr": "Her iki sözleşmenin de dayanak fiyata göre payoff'u doğrusaldır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "timing",
+        "cash-flow",
+        "daily-settlement",
+        "constant"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
