@@ -9,8 +9,8 @@
       "curriculum_year": 2027,
       "title_en": "Valuing Options on a Cement Stock",
       "title_tr": "Bir Çimento Hissesi Üzerine Opsiyon Değerlemesi",
-      "text_en": "Sinan Özdemir is a derivatives analyst at the fictional firm Boyabat Menkul. He values options on the stock of Güneş Çimento, which trades at TRY 100 and pays no dividends. Over the next period (one year) the stock is expected to move either up by a factor of 1.25 or down by a factor of 0.80. The one-period risk-free rate is 5%. The options are European, have a strike price of TRY 100 and expire at the end of the period.\nSinan uses a one-period binomial model. He first computes the stock prices at the end of the period (TRY 125 in the up state and TRY 80 in the down state) and the option payoffs in each state. His assistant, Pınar, has already found that the call is worth TRY 13.23 today.\nA client has sold 2,000 call options and wants to hedge the position by trading the stock. Pınar asks whether the same logic, with the stock rising and the option holder exercising early, would make an American call on this stock worth more than the European call.\nFinally, Sinan wants to check the put price without building a second tree, using put-call parity for European options on a stock with no dividends.",
-      "text_tr": "Sinan Özdemir, kurgusal Boyabat Menkul'de türev analistidir. Güneş Çimento hissesi üzerine opsiyonları değerliyor; hisse TL 100'den işlem görüyor ve temettü ödemiyor. Bir sonraki dönemde (bir yıl) hissenin ya 1,25 çarpanıyla yukarı ya da 0,80 çarpanıyla aşağı gitmesi bekleniyor. Bir dönemlik risksiz faiz %5. Opsiyonlar Avrupa tipi, kullanım fiyatı TL 100 ve dönem sonunda vadesi doluyor.\nSinan tek dönemli iki terimli (binomial) model kullanıyor. Önce dönem sonu hisse fiyatlarını (yukarı durumda TL 125, aşağı durumda TL 80) ve her durumda opsiyon getirisini hesaplıyor. Asistanı Pınar çağrı opsiyonunun bugün TL 13,23 değerinde olduğunu zaten bulmuş.\nBir müşteri 2,000 adet çağrı opsiyonu sattı ve pozisyonu hisse alıp satarak korumak istiyor. Pınar, hisse yükselirken opsiyon sahibinin erken kullanım yapmasının bu hisse üzerine bir Amerikan çağrı opsiyonunu Avrupa çağrısından daha değerli yapıp yapmayacağını soruyor.\nSon olarak Sinan, ikinci bir ağaç kurmadan, temettüsüz hisse üzerine Avrupa opsiyonları için put-call paritesini kullanarak satım opsiyonu fiyatını kontrol etmek istiyor.",
+      "text_en": "Sinan Özdemir is a derivatives analyst at the fictional firm Boyabat Menkul. He values options on the stock of Güneş Çimento, which trades at TRY 100 and pays no dividends. Over the next period (one year) the stock is expected to move either up by a factor of 1.25 or down by a factor of 0.80. The one-period risk-free rate is 5%. The options are European, have a strike price of TRY 100 and expire at the end of the period.\nSinan uses a one-period binomial model. He first computes the stock prices at the end of the period (TRY 125 in the up state and TRY 80 in the down state) and the option payoffs in each state. His assistant, Pınar, helps him with the hedging and early-exercise questions.\nA client has sold 2,000 call options and wants to hedge the position by trading the stock. Pınar asks whether the same logic, with the stock rising and the option holder exercising early, would make an American call on this stock worth more than the European call.\nFinally, Sinan wants to check the put price without building a second tree, using put-call parity for European options on a stock with no dividends.",
+      "text_tr": "Sinan Özdemir, kurgusal Boyabat Menkul'de türev analistidir. Güneş Çimento hissesi üzerine opsiyonları değerliyor; hisse TL 100'den işlem görüyor ve temettü ödemiyor. Bir sonraki dönemde (bir yıl) hissenin ya 1,25 çarpanıyla yukarı ya da 0,80 çarpanıyla aşağı gitmesi bekleniyor. Bir dönemlik risksiz faiz %5. Opsiyonlar Avrupa tipi, kullanım fiyatı TL 100 ve dönem sonunda vadesi doluyor.\nSinan tek dönemli iki terimli (binomial) model kullanıyor. Önce dönem sonu hisse fiyatlarını (yukarı durumda TL 125, aşağı durumda TL 80) ve her durumda opsiyon getirisini hesaplıyor. Asistanı Pınar, korunma ve erken kullanım sorularında ona yardım ediyor.\nBir müşteri 2.000 adet çağrı opsiyonu sattı ve pozisyonu hisse alıp satarak korumak istiyor. Pınar, hisse yükselirken opsiyon sahibinin erken kullanım yapmasının bu hisse üzerine bir Amerikan çağrı opsiyonunu Avrupa çağrısından daha değerli yapıp yapmayacağını soruyor.\nSon olarak Sinan, ikinci bir ağaç kurmadan, temettüsüz hisse üzerine Avrupa opsiyonları için put-call paritesini kullanarak satım opsiyonu fiyatını kontrol etmek istiyor.",
       "tables": [
         {
           "title_en": "Exhibit 1: One-period tree",
@@ -45,7 +45,11 @@
         "L2-DER-02-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -127,7 +131,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-DER-02-v01-q2",
@@ -207,7 +215,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-DER-02-v01-q3",
@@ -287,7 +299,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-DER-02-v01-q4",
@@ -301,12 +317,12 @@
       "cognitive": "apply",
       "set_id": "L2-DER-02-v01",
       "stem_en": "To delta-hedge the 2,000 short calls, the client should hold a number of shares closest to:",
-      "stem_tr": "2,000 adet satılmış çağrıyı delta nötr yapmak için müşterinin tutması gereken hisse sayısı en yakın şunlardır:",
+      "stem_tr": "2.000 adet satılmış çağrıyı delta nötr yapmak için müşterinin tutması gereken hisse sayısı en yakın şunlardır:",
       "options": [
         {
           "key": "A",
           "en": "1111.1",
-          "tr": "1111,1",
+          "tr": "1.111,1",
           "value": 1111.1
         },
         {
@@ -324,7 +340,7 @@
       ],
       "answer": "A",
       "explanation_en": "Hedge ratio = (Cu - Cd)/(Su - Sd) = 25/45 = 0.5556. For 2,000 short calls, hold 2,000 x 0.5556 = 1111.1 shares (long).",
-      "explanation_tr": "Hedge oranı = (Cu - Cd)/(Su - Sd) = 25/45 = 0,5556. 2,000 satılmış çağrı için 2,000 x 0,5556 = 1111,1 hisse (uzun) tutulmalıdır.",
+      "explanation_tr": "Hedge oranı = (Cu - Cd)/(Su - Sd) = 25/45 = 0,5556. 2.000 satılmış çağrı için 2.000 x 0,5556 = 1.111,1 hisse (uzun) tutulmalıdır.",
       "wrong_option_reasons": {
         "B": {
           "en": "It uses the up-state payoff divided by the up-state price instead of the ratio of payoff spread to price spread.",
@@ -346,11 +362,11 @@
         },
         {
           "en": "25/45 = 0.5556; times 2,000.",
-          "tr": "25/45 = 0,5556; 2,000 ile çarp."
+          "tr": "25/45 = 0,5556; 2.000 ile çarp."
         },
         {
           "en": "Result: 1111.1 shares.",
-          "tr": "Sonuç: 1111,1 hisse."
+          "tr": "Sonuç: 1.111,1 hisse."
         }
       ],
       "numeric": {
@@ -367,7 +383,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-DER-02-v01-q5",
@@ -423,7 +443,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

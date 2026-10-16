@@ -93,7 +93,8 @@
         "out-of-sample",
         "monte-carlo-simulation",
         "sharpe-ratio",
-        "significance-level"
+        "significance-level",
+        "false-positive"
       ],
       "numeric": {
         "expr": "(1-0.95**40)*100",
@@ -171,7 +172,8 @@
         "out-of-sample",
         "monte-carlo-simulation",
         "sharpe-ratio",
-        "significance-level"
+        "significance-level",
+        "false-positive"
       ],
       "numeric": {
         "expr": "5/40",
@@ -202,8 +204,8 @@
         },
         {
           "key": "B",
-          "en": "TRY 0.00 million",
-          "tr": "0,00 milyon TL",
+          "en": "TRY 0.0012 million",
+          "tr": "0,0012 milyon TL",
           "value": 0.0012
         },
         {
@@ -249,7 +251,8 @@
         "out-of-sample",
         "monte-carlo-simulation",
         "sharpe-ratio",
-        "significance-level"
+        "significance-level",
+        "standard-error"
       ],
       "numeric": {
         "expr": "12/10000**0.5",
@@ -302,8 +305,8 @@
           "tr": "12'nin köküne bölmek yanlış yönde bir dönüşümdür."
         }
       },
-      "explanation_en": "Mean return scales with 12 and standard deviation with √12, so the Sharpe ratio scales with √12: 0.14 × 3.464 = 0.49.",
-      "explanation_tr": "Ortalama getiri 12 ile, standart sapma √12 ile ölçeklenir; Sharpe oranı √12 ile ölçeklenir: 0,14 × 3,464 = 0,49.",
+      "explanation_en": "Mean return scales with 12 and standard deviation with √12, so the Sharpe ratio scales with √12: 0.14 × 3.4641 = 0.4850, or about 0.48.",
+      "explanation_tr": "Ortalama getiri 12 ile, standart sapma √12 ile ölçeklenir; Sharpe oranı √12 ile ölçeklenir: 0,14 × 3,4641 = 0,4850, yani yaklaşık 0,48.",
       "solution_steps": [
         {
           "en": "Sharpe ratio scales with √(periods per year).",
@@ -352,7 +355,7 @@
         {
           "key": "A",
           "en": "a look-ahead bias that made the out-of-sample test look worse than reality.",
-          "tr": "gerçekten daha kötü görünmesine yol açan bir ileriye bakış yanlılığı."
+          "tr": "örneklem dışı testin gerçekte olduğundan daha kötü görünmesine yol açan bir ileriye bakış yanlılığı."
         },
         {
           "key": "B",

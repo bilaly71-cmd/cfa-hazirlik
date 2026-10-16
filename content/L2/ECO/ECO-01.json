@@ -10,7 +10,7 @@
       "title_en": "A Carry Trade in USD/TRY",
       "title_tr": "USD/TRY'de Carry Trade",
       "text_en": "Murat Tekin is a currency strategist at the fictional bank Galata Menkul. He is analysing USD/TRY, quoted as TRY per 1 USD (USD is the foreign currency and TRY the domestic currency). The spot rate is 40.00. The one-year TRY interest rate is 45.0% and the one-year USD interest rate is 4.5%. Expected annual inflation is 35.0% in Turkey and 3.0% in the United States.\nA client, Zeynep Arslan, runs a small family office. She proposes a carry trade: borrow USD 1,000 for one year at 4.5%, convert it into TRY at the spot rate, invest in a one-year TRY deposit at 45.0%, and convert the proceeds back into USD at the spot rate prevailing in one year, without hedging. Murat points out that the TRY has lost value in most years and that foreign investors hold much of the Turkish bond market.\nHe also notes that Turkey runs a persistent current account deficit that is financed mostly by short-term portfolio inflows, while foreign exchange reserves are limited. Murat uses covered interest rate parity for the forward rate and relative purchasing power parity for a long-run expected spot rate. Zeynep asks what happens if the spot rate in one year is 52.00.",
-      "text_tr": "Murat Tekin, kurgusal Galata Menkul bankasında döviz stratejistidir. USD/TRY paritesini inceliyor; kur 1 USD için TL cinsinden verilmiştir (USD yabancı para, TL yerli para). Spot kur 40,00. Bir yıllık TL faizi %45,0, bir yıllık USD faizi %4,5. Beklenen yıllık enflasyon Türkiye'de %35,0, ABD'de %3,0.\nBir müşteri olan Zeynep Arslan küçük bir aile ofisi yönetiyor. Bir carry trade öneriyor: bir yıl için %4,5'ten 1,000 USD borçlanmak, spot kurdan TL'ye çevirmek, bir yıllık %45,0 faizli TL mevduata yatırmak ve bir yıl sonraki spot kurdan, riskten korunmadan, USD'ye geri çevirmek. Murat, TL'nin çoğu yıl değer kaybettiğini ve yabancı yatırımcıların Türk tahvil piyasasının büyük bölümünü elinde tuttuğunu belirtiyor.\nAyrıca Türkiye'nin kalıcı bir cari açık verdiğini, bunun çoğunlukla kısa vadeli portföy girişleriyle finanse edildiğini ve döviz rezervlerinin sınırlı olduğunu not ediyor. Murat forward kur için örtülü faiz paritesini, uzun vadeli beklenen spot kur için göreli satın alma gücü paritesini kullanıyor. Zeynep, bir yıl sonraki spot kur 52,00 olursa ne olacağını soruyor.",
+      "text_tr": "Murat Tekin, kurgusal Galata Menkul bankasında döviz stratejistidir. USD/TRY paritesini inceliyor; kur 1 USD için TL cinsinden verilmiştir (USD yabancı para, TL yerli para). Spot kur 40,00. Bir yıllık TL faizi %45,0, bir yıllık USD faizi %4,5. Beklenen yıllık enflasyon Türkiye'de %35,0, ABD'de %3,0.\nBir müşteri olan Zeynep Arslan küçük bir aile ofisi yönetiyor. Bir carry trade öneriyor: bir yıl için %4,5'ten 1.000 USD borçlanmak, spot kurdan TL'ye çevirmek, bir yıllık %45,0 faizli TL mevduata yatırmak ve bir yıl sonraki spot kurdan, riskten korunmadan, USD'ye geri çevirmek. Murat, TL'nin çoğu yıl değer kaybettiğini ve yabancı yatırımcıların Türk tahvil piyasasının büyük bölümünü elinde tuttuğunu belirtiyor.\nAyrıca Türkiye'nin kalıcı bir cari açık verdiğini, bunun çoğunlukla kısa vadeli portföy girişleriyle finanse edildiğini ve döviz rezervlerinin sınırlı olduğunu not ediyor. Murat forward kur için örtülü faiz paritesini, uzun vadeli beklenen spot kur için göreli satın alma gücü paritesini kullanıyor. Zeynep, bir yıl sonraki spot kur 52,00 olursa ne olacağını soruyor.",
       "tables": [
         {
           "title_en": "Exhibit 1: Market inputs",
@@ -47,7 +47,11 @@
         "L2-ECO-01-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -129,7 +133,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-ECO-01-v01-q2",
@@ -185,7 +193,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-ECO-01-v01-q3",
@@ -221,8 +233,8 @@
         }
       ],
       "answer": "C",
-      "explanation_en": "E(S1) = S x (1 + inflation_TR)/(1 + inflation_US) = 40.00 x 1.35/1.03 = 52.43. The TRY is expected to depreciate by about 31% in USD terms.",
-      "explanation_tr": "E(S1) = S x (1 + enflasyon_TR)/(1 + enflasyon_ABD) = 40,00 x 1,35/1,03 = 52,43. TL'nin USD karşısında yaklaşık %31 değer kaybetmesi beklenir.",
+      "explanation_en": "E(S1) = S x (1 + inflation_TR)/(1 + inflation_US) = 40.00 x 1.35/1.03 = 52.43. The USD is expected to rise by about 31% against the TRY, so the TRY loses about 24% of its USD value.",
+      "explanation_tr": "E(S1) = S x (1 + enflasyon_TR)/(1 + enflasyon_ABD) = 40,00 x 1,35/1,03 = 52,43. USD'nin TL karşısında yaklaşık %31 yükselmesi beklenir; yani TL'nin USD cinsinden değeri yaklaşık %24 düşer.",
       "wrong_option_reasons": {
         "A": {
           "en": "It subtracts the inflation rates instead of using the ratio of (1 + inflation) terms.",
@@ -265,7 +277,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-ECO-01-v01-q4",
@@ -279,7 +295,7 @@
       "cognitive": "apply",
       "set_id": "L2-ECO-01-v01",
       "stem_en": "If the spot rate in one year is 52.00, the carry trade on USD 1,000 produces a profit in USD, after repaying the loan with interest, closest to:",
-      "stem_tr": "Bir yıl sonraki spot kur 52,00 olursa, 1,000 USD'lik carry trade krediyi faiziyle geri ödedikten sonra USD cinsinden yaklaşık ne kadar kâr getirir?",
+      "stem_tr": "Bir yıl sonraki spot kur 52,00 olursa, 1.000 USD'lik carry trade krediyi faiziyle geri ödedikten sonra USD cinsinden yaklaşık ne kadar kâr getirir?",
       "options": [
         {
           "key": "A",
@@ -302,7 +318,7 @@
       ],
       "answer": "A",
       "explanation_en": "USD 1,000 buys TRY 40,000, grows to TRY 58,000, and converts to USD 1,115.4 at 52.00. The loan costs USD 1,045. Profit = 70.4.",
-      "explanation_tr": "1,000 USD, 40,000 TL alır; 58,000 TL'ye büyür ve 52,00 kurundan 1,115,4 USD eder. Kredi maliyeti 1,045 USD. Kâr = 70,4.",
+      "explanation_tr": "1.000 USD, 40.000 TL alır; 58.000 TL'ye büyür ve 52,00 kurundan 1.115,4 USD eder. Kredi maliyeti 1.045 USD. Kâr = 70,4.",
       "wrong_option_reasons": {
         "B": {
           "en": "It ignores the TRY depreciation and subtracts the two interest rates only.",
@@ -310,7 +326,7 @@
         },
         "C": {
           "en": "It forgets to repay the USD loan with 4.5% interest and uses only the 1,000 principal.",
-          "tr": "USD krediyi %4,5 faiziyle geri ödemeyi unutur, yalnızca 1,000 anaparayı çıkarır."
+          "tr": "USD krediyi %4,5 faiziyle geri ödemeyi unutur, yalnızca 1.000 anaparayı çıkarır."
         }
       },
       "solution_steps": [
@@ -320,11 +336,11 @@
         },
         {
           "en": "Convert USD 1,000 to TRY, add 45% interest and convert back at the new spot.",
-          "tr": "1,000 USD'yi TL'ye çevir, %45 faiz ekle, yeni spot kurdan geri çevir."
+          "tr": "1.000 USD'yi TL'ye çevir, %45 faiz ekle, yeni spot kurdan geri çevir."
         },
         {
           "en": "1,000 x 1.45 x 40 / 52 - 1,000 x 1.045.",
-          "tr": "1,000 x 1,45 x 40 / 52 - 1,000 x 1,045."
+          "tr": "1.000 x 1,45 x 40 / 52 - 1.000 x 1,045."
         },
         {
           "en": "Result: USD 70.4.",
@@ -345,7 +361,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-ECO-01-v01-q5",
@@ -401,7 +421,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

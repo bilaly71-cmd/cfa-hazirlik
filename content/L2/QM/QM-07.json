@@ -10,7 +10,7 @@
       "title_en": "Reading Central Bank Statements with Text Analytics",
       "title_tr": "Metin Analitiğiyle Merkez Bankası Metinlerini Okumak",
       "text_en": "Deniz Arıkan works on the quantitative research team of the fictional investment house Haliç Yatırım. Her team is building a model that reads the quarterly statements of a central bank and classifies each as 'hawkish' (positive class) or 'not hawkish'. The corpus has 500 labelled statements.\nThe project plan has five steps: (1) problem formulation, (2) data curation, (3) text preparation and wrangling, (4) data exploration, and (5) model training. In step 3 the team removes HTML tags and punctuation, lowercases the text, removes stop words, splits the text into tokens and applies stemming. Before splitting the data into training and test sets, a junior analyst computes the mean and standard deviation of every numeric feature on the full sample and rescales all features.\nThe team scores the classifier on the test statements (Exhibit 1). Deniz also builds a feature from term frequency-inverse document frequency (TF-IDF). For the word 'inflation', TF is its count divided by the number of tokens in the document (6 of 200 tokens), and IDF is the natural log of the total number of documents divided by the number of documents that contain the word (1,000 and 100 documents).\nFinally, Deniz studies the feature 'statement length in words'. In the sample, the mean is 180 words, the standard deviation is 40, the minimum is 40 and the maximum is 400. One statement has 260 words.",
-      "text_tr": "Deniz Arıkan, kurgusal yatırım kuruluşu Haliç Yatırım'ın kantitatif araştırma ekibinde çalışıyor. Ekibi, bir merkez bankasının çeyreklik metinlerini okuyup her birini 'şahin' (pozitif sınıf) veya 'şahin değil' olarak sınıflandıran bir model kuruyor. Derlemde 500 etiketli metin var.\nProje planı beş adımdan oluşuyor: (1) problem tanımı, (2) veri derleme, (3) metin hazırlama ve düzenleme, (4) veri keşfi ve (5) model eğitimi. 3. adımda ekip HTML etiketlerini ve noktalamayı kaldırıyor, metni küçük harfe çeviriyor, durak sözcükleri çıkarıyor, metni belirteçlere (token) ayırıyor ve kök bulma uyguluyor. Veriyi eğitim ve test kümelerine bölmeden önce genç bir analist tüm sayısal özelliklerin ortalamasını ve standart sapmasını tüm örneklemde hesaplıyor ve özelliklerin hepsini yeniden ölçekliyor.\nEkip, sınıflandırıcıyı test metinlerinde puanlıyor (Gösterge 1). Deniz ayrıca terim sıklığı-ters belge sıklığı (TF-IDF) ile bir özellik üretiyor. 'inflation' kelimesi için TF, kelimenin sayısının belgedeki belirteç sayısına bölünmesidir (200 belirteçte 6); IDF ise toplam belge sayısının kelimeyi içeren belge sayısına oranının doğal logaritmasıdır (1,000 ve 100 belge).\nSon olarak Deniz 'metin uzunluğu (kelime)' özelliğini inceliyor. Örneklemde ortalama 180 kelime, standart sapma 40, minimum 40 ve maksimum 400. Bir metin 260 kelimedir.",
+      "text_tr": "Deniz Arıkan, kurgusal yatırım kuruluşu Haliç Yatırım'ın kantitatif araştırma ekibinde çalışıyor. Ekibi, bir merkez bankasının çeyreklik metinlerini okuyup her birini 'şahin' (pozitif sınıf) veya 'şahin değil' olarak sınıflandıran bir model kuruyor. Derlemde 500 etiketli metin var.\nProje planı beş adımdan oluşuyor: (1) problem tanımı, (2) veri derleme, (3) metin hazırlama ve düzenleme, (4) veri keşfi ve (5) model eğitimi. 3. adımda ekip HTML etiketlerini ve noktalamayı kaldırıyor, metni küçük harfe çeviriyor, durak sözcükleri çıkarıyor, metni belirteçlere (token) ayırıyor ve kök bulma uyguluyor. Veriyi eğitim ve test kümelerine bölmeden önce genç bir analist tüm sayısal özelliklerin ortalamasını ve standart sapmasını tüm örneklemde hesaplıyor ve özelliklerin hepsini yeniden ölçekliyor.\nEkip, sınıflandırıcıyı test metinlerinde puanlıyor (Gösterge 1). Deniz ayrıca terim sıklığı-ters belge sıklığı (TF-IDF) ile bir özellik üretiyor. 'inflation' kelimesi için TF, kelimenin sayısının belgedeki belirteç sayısına bölünmesidir (200 belirteçte 6); IDF ise toplam belge sayısının kelimeyi içeren belge sayısına oranının doğal logaritmasıdır (1.000 ve 100 belge).\nSon olarak Deniz 'metin uzunluğu (kelime)' özelliğini inceliyor. Örneklemde ortalama 180 kelime, standart sapma 40, minimum 40 ve maksimum 400. Bir metin 260 kelimedir.",
       "tables": [
         {
           "title_en": "Exhibit 1: Test results (positive class = hawkish)",
@@ -43,7 +43,11 @@
         "L2-QM-07-v01-q6"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -101,7 +105,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-07-v01-q2",
@@ -181,7 +189,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-07-v01-q3",
@@ -218,7 +230,7 @@
       ],
       "answer": "C",
       "explanation_en": "TF = 6/200 = 0.03; IDF = ln(1,000/100) = 2.303; TF-IDF = 0.03 x 2.303 = 0.069.",
-      "explanation_tr": "TF = 6/200 = 0,03; IDF = ln(1,000/100) = 2,303; TF-IDF = 0,03 x 2,303 = 0,069.",
+      "explanation_tr": "TF = 6/200 = 0,03; IDF = ln(1.000/100) = 2,303; TF-IDF = 0,03 x 2,303 = 0,069.",
       "wrong_option_reasons": {
         "A": {
           "en": "This is only the term frequency, with no IDF.",
@@ -226,7 +238,7 @@
         },
         "B": {
           "en": "It uses the ratio 1,000/100 = 10 directly instead of its natural log.",
-          "tr": "1,000/100 = 10 oranını doğal logaritma almadan doğrudan kullanır."
+          "tr": "1.000/100 = 10 oranını doğal logaritma almadan doğrudan kullanır."
         }
       },
       "solution_steps": [
@@ -261,7 +273,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-07-v01-q4",
@@ -317,7 +333,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-07-v01-q5",
@@ -397,7 +417,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-07-v01-q6",
@@ -453,7 +477,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

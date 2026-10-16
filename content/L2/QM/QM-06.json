@@ -10,7 +10,7 @@
       "title_en": "Fraud Detection at a Participation Bank",
       "title_tr": "Bir Katılım Bankasında Sahtekârlık Tespiti",
       "text_en": "Burak Çelik leads the data science team at the fictional bank Ege Katılım. The team has built a supervised classifier to flag fraudulent card transactions. The model was tested on 1,000 labelled transactions, and the results are in Exhibit 1: of the 75 transactions that were truly fraudulent, the model caught 45; it also flagged 15 genuine transactions as fraud.\nBurak worries about two things. First, the head of risk says the model has 95.5% accuracy and is therefore excellent. Burak notes that only 7.5% of the transactions are fraudulent. Second, Burak compares three candidate algorithms using the training error and the validation error (Exhibit 2). The model builder wants to pick the deep decision tree because it has the lowest training error.\nA third idea is to apply a LASSO penalty to a logistic model with 200 customer features. A junior colleague also asks whether an unsupervised method such as k-means clustering could replace the classifier. Burak explains that the fraud labels are available and that the goal is to predict a known outcome.",
-      "text_tr": "Burak Çelik, kurgusal Ege Katılım bankasının veri bilimi ekibini yönetiyor. Ekip, sahte kart işlemlerini işaretlemek için gözetimli bir sınıflandırıcı kurdu. Model, etiketli 1,000 işlemde test edildi ve sonuçlar Gösterge 1'de: gerçekten sahte olan 75 işlemin 45'ini model yakaladı; ayrıca 15 gerçek işlemi sahte olarak işaretledi.\nBurak iki noktadan endişeli. Birincisi, risk başkanı modelin %95,5 doğruluğa sahip olduğunu ve bu yüzden mükemmel olduğunu söylüyor. Burak, işlemlerin yalnızca %7,5'inin sahte olduğunu not ediyor. İkincisi, Burak üç aday algoritmayı eğitim hatası ve doğrulama hatasıyla karşılaştırıyor (Gösterge 2). Model kurucu, eğitim hatası en düşük olduğu için derin karar ağacını seçmek istiyor.\nÜçüncü fikir, 200 müşteri özelliğine sahip bir lojistik modele LASSO cezası uygulamak. Genç bir meslektaş ayrıca k-ortalamalar kümelemesi gibi gözetimsiz bir yöntemin sınıflandırıcının yerini alıp alamayacağını soruyor. Burak, sahtekârlık etiketlerinin mevcut olduğunu ve amacın bilinen bir sonucu tahmin etmek olduğunu açıklıyor.",
+      "text_tr": "Burak Çelik, kurgusal Ege Katılım bankasının veri bilimi ekibini yönetiyor. Ekip, sahte kart işlemlerini işaretlemek için gözetimli bir sınıflandırıcı kurdu. Model, etiketli 1.000 işlemde test edildi ve sonuçlar Gösterge 1'de: gerçekten sahte olan 75 işlemin 45'ini model yakaladı; ayrıca 15 gerçek işlemi sahte olarak işaretledi.\nBurak iki noktadan endişeli. Birincisi, risk başkanı modelin %95,5 doğruluğa sahip olduğunu ve bu yüzden mükemmel olduğunu söylüyor. Burak, işlemlerin yalnızca %7,5'inin sahte olduğunu not ediyor. İkincisi, Burak üç aday algoritmayı eğitim hatası ve doğrulama hatasıyla karşılaştırıyor (Gösterge 2). Model kurucu, eğitim hatası en düşük olduğu için derin karar ağacını seçmek istiyor.\nÜçüncü fikir, 200 müşteri özelliğine sahip bir lojistik modele LASSO cezası uygulamak. Genç bir meslektaş ayrıca k-ortalamalar kümelemesi gibi gözetimsiz bir yöntemin sınıflandırıcının yerini alıp alamayacağını soruyor. Burak, sahtekârlık etiketlerinin mevcut olduğunu ve amacın bilinen bir sonucu tahmin etmek olduğunu açıklıyor.",
       "tables": [
         {
           "title_en": "Exhibit 1: Confusion matrix (n = 1,000)",
@@ -69,7 +69,11 @@
         "L2-QM-06-v01-q6"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -101,8 +105,8 @@
         },
         {
           "key": "C",
-          "en": "0.95",
-          "tr": "0,95",
+          "en": "0.955",
+          "tr": "0,955",
           "value": 0.955
         }
       ],
@@ -151,7 +155,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-06-v01-q2",
@@ -207,7 +215,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-06-v01-q3",
@@ -226,7 +238,7 @@
         {
           "key": "A",
           "en": "Accuracy is the best measure because it uses all 1,000 observations.",
-          "tr": "Doğruluk en iyi ölçüdür çünkü 1,000 gözlemin hepsini kullanır."
+          "tr": "Doğruluk en iyi ölçüdür çünkü 1.000 gözlemin hepsini kullanır."
         },
         {
           "key": "B",
@@ -263,7 +275,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-06-v01-q4",
@@ -319,7 +335,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-06-v01-q5",
@@ -375,7 +395,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-QM-06-v01-q6",
@@ -431,7 +455,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
