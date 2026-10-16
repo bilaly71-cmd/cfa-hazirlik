@@ -1,0 +1,1200 @@
+{
+  "module_id": "FI-12",
+  "lesson": {
+    "id": "FI-12-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-12",
+    "los_ids": [
+      "FI-12-a",
+      "FI-12-b",
+      "FI-12-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Yield-Based Bond Convexity and Portfolio Properties",
+    "title_tr": "Getiri Esaslı Konveksite ve Portföy Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Duration is a straight line, prices are curved",
+        "heading_tr": "Durasyon düz bir çizgidir, fiyatlar eğridir",
+        "en": "Duration treats the price–yield relation as a straight line. In reality it is a curve that bends away from the line. For small yield moves the line is good enough. After a large move, such as a sharp TCMB shock to DİBS yields, the error is big. Convexity measures the bend. For a plain bond it is positive: the price rises more when yields fall than it drops when yields rise by the same amount.",
+        "tr": "Durasyon fiyat–getiri ilişkisini düz bir çizgi gibi ele alır. Gerçekte bu ilişki çizgiden uzaklaşan bir eğridir. Küçük getiri hareketlerinde çizgi yeterlidir. TCMB kaynaklı sert bir DİBS getiri şoku gibi büyük hareketlerden sonra hata büyür. Konveksite eğriliği ölçer. Sade bir tahvilde pozitiftir: getiri düşünce fiyat, getiri aynı miktar artınca düşeceğinden daha fazla yükselir.",
+        "key_terms": [
+          "convexity",
+          "price-yield relation"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Convexity and what drives it",
+        "heading_tr": "Konveksite ve belirleyicileri",
+        "en": "Convexity is the second-order effect of yield on price. A positive-convexity bond gains more from a yield fall than it loses from a yield rise of the same size, so investors like it. All else equal, convexity is higher for longer maturity, lower coupon, lower yield, and more dispersed cash flows. At the same duration, a barbell portfolio (short and long bonds) has higher convexity than a bullet portfolio (bonds near the middle).",
+        "tr": "Konveksite, getirinin fiyat üzerindeki ikinci dereceden etkisidir. Pozitif konveksiteli tahvil, getiri düşüşünden, aynı büyüklükteki getiri artışında kaybettiğinden daha fazla kazanır; bu yüzden yatırımcılar onu sever. Diğer her şey eşitken konveksite uzun vade, düşük kupon, düşük getiri ve daha dağınık nakit akışlarında yüksektir. Aynı durasyonda barbell portföy (kısa ve uzun tahviller), bullet portföyden (orta vadeli tahviller) daha yüksek konveksiteye sahiptir.",
+        "key_terms": [
+          "convexity",
+          "barbell",
+          "bullet"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Price change with duration and convexity",
+        "heading_tr": "Durasyon ve konveksite ile fiyat değişimi",
+        "en": "%ΔPV ≈ −ModDur × Δy + ½ × Convexity × (Δy)². The second term is the convexity adjustment; it is always positive when convexity is positive. Approximate convexity = (PV₋ + PV₊ − 2PV₀) / (PV₀ × (Δy)²), where PV₋ and PV₊ are prices after a yield fall and rise of Δy. Portfolio duration and convexity are the market-value-weighted averages of the bonds' values. They assume all yields change by the same amount (parallel shift).",
+        "tr": "%ΔPV ≈ −ModDur × Δy + ½ × Konveksite × (Δy)². İkinci terim konveksite düzeltmesidir; konveksite pozitifse her zaman pozitiftir. Yaklaşık konveksite = (PV₋ + PV₊ − 2PV₀) / (PV₀ × (Δy)²); burada PV₋ ve PV₊, getirinin Δy kadar düşmesi ve artmasından sonraki fiyatlardır. Portföy durasyonu ve konveksitesi, tahvillerin değerlerinin piyasa değeri ağırlıklı ortalamasıdır. Tüm getirilerin aynı miktarda değiştiği (paralel kayma) varsayılır.",
+        "key_terms": [
+          "convexity adjustment"
+        ],
+        "formula_latex": "\\%\\Delta PV\\approx-\\text{ModDur}\\,\\Delta y+\\tfrac12\\,\\text{Conv}\\,(\\Delta y)^2"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A 100 bp yield rise",
+        "heading_tr": "100 bp getiri artışı",
+        "en": "A bond has ModDur = 7.2 and convexity = 62. Yield rises by 80 bps (0.008). Duration effect = −7.2 × 0.008 = −5.76%. Convexity adjustment = ½ × 62 × 0.008² = +0.198%. Total estimate = −5.76% + 0.198% = −5.56%. Using duration alone overstates the loss by about 0.2 percentage points.",
+        "tr": "Bir tahvilin ModDur değeri 7,2 ve konveksitesi 62'dir. Getiri 80 bp (0,008) artar. Durasyon etkisi = −7,2 × 0,008 = −%5,76. Konveksite düzeltmesi = ½ × 62 × 0,008² = +%0,198. Toplam tahmin = −%5,76 + %0,198 = −%5,56. Yalnızca durasyon kullanmak kaybı yaklaşık 0,2 puan fazla gösterir.",
+        "key_terms": [
+          "convexity adjustment"
+        ],
+        "example": {
+          "en": "−7.2 × 0.008 + 0.5 × 62 × 0.008² = −5.56%.",
+          "tr": "−7,2 × 0,008 + 0,5 × 62 × 0,008² = −%5,56."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Limits and traps",
+        "heading_tr": "Sınırlar ve tuzaklar",
+        "en": "Duration and convexity are estimates. They assume a parallel yield shift and work best for small changes; for a non-parallel move or a big shock they can be inaccurate. A portfolio's duration is a weighted average, but the weights are market values, not par amounts. Do not subtract the convexity adjustment for a plain bond, and remember to square Δy. Convexity is quoted in different scales in practice; check the units.",
+        "tr": "Durasyon ve konveksite birer tahmindir. Paralel getiri kaymasını varsayar ve küçük değişimlerde en iyi sonucu verir; paralel olmayan hareketlerde ya da büyük şoklarda yanıltıcı olabilir. Portföy durasyonu ağırlıklı ortalamadır ama ağırlıklar nominal değil piyasa değerleridir. Sade tahvilde konveksite düzeltmesini çıkarmayın ve Δy'nin karesini almayı unutmayın. Uygulamada konveksite farklı ölçeklerde verilebilir; birimlere bakın.",
+        "key_terms": [
+          "parallel shift",
+          "non-parallel shift"
+        ]
+      }
+    ],
+    "summary_en": "Convexity captures the curvature of the price–yield curve, so duration alone misestimates large price moves. The convexity adjustment is ½ × Convexity × (Δy)², and it adds to the duration estimate. Portfolio duration and convexity are market-value-weighted averages but assume parallel yield shifts, so they are less reliable when the curve twists.",
+    "summary_tr": "Konveksite fiyat–getiri eğrisinin eğriliğini yakalar; bu yüzden yalnızca durasyon büyük fiyat hareketlerini yanlış tahmin eder. Konveksite düzeltmesi ½ × Konveksite × (Δy)² olup durasyon tahminine eklenir. Portföy durasyonu ve konveksitesi piyasa değeri ağırlıklı ortalamalardır, ancak paralel getiri kaymasını varsayar; eğri bükülürse daha az güvenilirdirler.",
+    "common_traps_tr": [
+      "Konveksite düzeltmesinin işaretini yanlış almak (pozitif konvekseteli tahvilde artı).",
+      "½ çarpanını ya da Δy'nin karesini unutmak.",
+      "Portföy ağırlıklarını piyasa değeri yerine nominal tutarla almak.",
+      "Portföy durasyonunun paralel olmayan kaymada da güvenilir olduğunu sanmak.",
+      "Yalnızca durasyonla yapılan tahminin getiri düşüşünde fiyatı fazla gösterdiğini sanmak (aslında az gösterir)."
+    ],
+    "vocab_ids": [
+      "convexity",
+      "convexity-adjustment",
+      "modified-duration",
+      "price-yield-relation",
+      "barbell",
+      "bullet",
+      "parallel-shift",
+      "market-value",
+      "weighted-average",
+      "portfolio",
+      "estimate",
+      "curvature"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Konveksite SPK Düzey 3'te sınırlı; CFA'da sayısal olarak sorulur."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-12-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A plain (option-free) bond has positive convexity. For a given yield change, compared with the duration-only estimate, the actual price change is:",
+      "stem_tr": "Opsiyonsuz sade bir tahvil pozitif konveksiteye sahiptir. Belirli bir getiri değişiminde, yalnızca durasyonla yapılan tahminle kıyaslandığında gerçek fiyat değişimi nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "more favorable only when the yield falls.",
+          "tr": "yalnızca getiri düştüğünde daha olumludur."
+        },
+        {
+          "key": "B",
+          "en": "less favorable, whether the yield rises or falls.",
+          "tr": "getiri artsa da düşse de daha olumsuzdur."
+        },
+        {
+          "key": "C",
+          "en": "more favorable, whether the yield rises or falls.",
+          "tr": "getiri artsa da düşse de daha olumludur."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The price–yield curve lies above its tangent line. So the price falls less than duration predicts when yields rise, and rises more than predicted when yields fall.",
+      "explanation_tr": "Fiyat–getiri eğrisi teğet doğrusunun üzerindedir. Bu yüzden getiri artınca fiyat, durasyonun öngördüğünden az düşer; getiri düşünce öngörülenden fazla yükselir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The convexity adjustment is positive for both a rise and a fall because Δy is squared.",
+          "tr": "Δy'nin karesi alındığı için konveksite düzeltmesi hem artışta hem düşüşte pozitiftir."
+        },
+        "B": {
+          "en": "Positive convexity improves the outcome; it never worsens it relative to the line.",
+          "tr": "Pozitif konveksite sonucu iyileştirir; doğruya göre asla kötüleştirmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "convexity",
+        "option-free",
+        "favorable",
+        "compared-with",
+        "yield"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond is priced at 100.000. If its yield falls by 50 bps, the price is 102.195; if its yield rises by 50 bps, the price is 97.865. Its approximate convexity is closest to:",
+      "stem_tr": "Bir tahvilin fiyatı 100,000'dür. Getirisi 50 bp düşerse fiyat 102,195; 50 bp artarsa fiyat 97,865 olur. Yaklaşık konveksitesi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "24.0",
+          "tr": "24,0",
+          "value": 24.0
+        },
+        {
+          "key": "B",
+          "en": "12.0",
+          "tr": "12,0",
+          "value": 12.0
+        },
+        {
+          "key": "C",
+          "en": "0.0",
+          "tr": "0,0",
+          "value": 0.0024
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Convexity = (102.195 + 97.865 − 200) / (100 × 0.005²) = 24.0.",
+      "explanation_tr": "Konveksite = (102,195 + 97,865 − 200) / (100 × 0,005²) = 24,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides by an extra factor of 2, which belongs to the convexity adjustment, not to convexity.",
+          "tr": "Bu, konveksite düzeltmesine ait olan fazladan 2 çarpanına böler; konveksiteye ait değildir."
+        },
+        "C": {
+          "en": "This enters Δy as 0.5 instead of 0.005, so the scale is wrong.",
+          "tr": "Bu, Δy'yi 0,005 yerine 0,5 alır; ölçek yanlıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: approximate convexity from two prices.",
+          "tr": "İstenen: iki fiyattan yaklaşık konveksite."
+        },
+        {
+          "en": "Formula: (PV₋ + PV₊ − 2PV₀)/(PV₀ × Δy²), Δy = 0.005",
+          "tr": "Formül: (PV₋ + PV₊ − 2PV₀)/(PV₀ × Δy²), Δy = 0,005",
+          "formula_latex": "\\text{Conv}\\approx\\frac{PV_-+PV_+-2PV_0}{PV_0(\\Delta y)^2}"
+        },
+        {
+          "en": "Numerator = 0.0600; denominator = 100 × 0.000025 = 0.0025; result = 24.0",
+          "tr": "Pay = 0,0600; payda = 100 × 0,000025 = 0,0025; sonuç = 24,0"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "102.195 [+] 97.865 [-] 200 [=]",
+          "[÷] 0.0025 [=]"
+        ],
+        "note_tr": "Pay ve paydayı ayrı hesaplayın; Δy² = 0,000025."
+      },
+      "numeric": {
+        "expr": "(102.195+97.865-2*100)/(100*0.005**2)"
+      },
+      "vocab_ids": [
+        "convexity",
+        "approximate",
+        "closest-to",
+        "price",
+        "basis-point"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has a convexity of 55. Its yield rises by 100 bps. The convexity adjustment to the estimated percentage price change is closest to:",
+      "stem_tr": "Bir tahvilin konveksitesi 55'tir. Getirisi 100 bp artmaktadır. Tahmini yüzde fiyat değişimine yapılacak konveksite düzeltmesi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.550%",
+          "tr": "0,550%",
+          "value": 0.55
+        },
+        {
+          "key": "B",
+          "en": "0.275%",
+          "tr": "0,275%",
+          "value": 0.275
+        },
+        {
+          "key": "C",
+          "en": "27.500%",
+          "tr": "27,500%",
+          "value": 27.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Adjustment = ½ × 55 × 0.01² = 0.00275 = +0.275%.",
+      "explanation_tr": "Düzeltme = ½ × 55 × 0,01² = 0,00275 = +%0,275.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This forgets the ½ factor.",
+          "tr": "Bu, ½ çarpanını unutur."
+        },
+        "C": {
+          "en": "This does not square Δy.",
+          "tr": "Bu, Δy'nin karesini almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: convexity adjustment for +100 bps.",
+          "tr": "İstenen: +100 bp için konveksite düzeltmesi."
+        },
+        {
+          "en": "Formula: ½ × Convexity × (Δy)²",
+          "tr": "Formül: ½ × Konveksite × (Δy)²",
+          "formula_latex": "\\tfrac12\\,\\text{Conv}\\,(\\Delta y)^2"
+        },
+        {
+          "en": "½ × 55 × 0.0001 = 0.00275 → +0.275%",
+          "tr": "½ × 55 × 0,0001 = 0,00275 → +%0,275"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5 [×] 55 [×] 0.01 [x²] [=]",
+          "[×] 100 [=]"
+        ],
+        "note_tr": "Δy = 0,01; kare alıp 100 ile çarparak yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "0.5*55*0.01**2*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "convexity-adjustment",
+        "convexity",
+        "closest-to",
+        "basis-point",
+        "adjustment"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "All else equal, which of the following will most likely decrease a bond's convexity?",
+      "stem_tr": "Diğer her şey eşitken aşağıdakilerden hangisi bir tahvilin konveksitesini büyük olasılıkla azaltır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A longer time to maturity.",
+          "tr": "Daha uzun vade."
+        },
+        {
+          "key": "B",
+          "en": "Cash flows that are more dispersed over time.",
+          "tr": "Zamana daha dağınık yayılmış nakit akışları."
+        },
+        {
+          "key": "C",
+          "en": "A higher coupon rate.",
+          "tr": "Daha yüksek kupon oranı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A higher coupon pulls cash flows forward and makes them less dispersed, which lowers convexity (as it lowers duration).",
+      "explanation_tr": "Yüksek kupon nakit akışlarını öne çeker ve dağılımını azaltır; bu da (durasyonu düşürdüğü gibi) konveksiteyi düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Longer maturity raises convexity.",
+          "tr": "Uzun vade konveksiteyi artırır."
+        },
+        "B": {
+          "en": "More dispersed cash flows raise convexity.",
+          "tr": "Daha dağınık nakit akışları konveksiteyi artırır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "convexity",
+        "all-else-equal",
+        "most-likely",
+        "dispersed",
+        "coupon"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bond A and Bond B have the same yield and the same modified duration. Bond A has a convexity of 90 and Bond B has a convexity of 40. Which statement is most likely correct?",
+      "stem_tr": "A ve B tahvillerinin getirisi ve düzeltilmiş durasyonu aynıdır. A tahvilinin konveksitesi 90, B tahvilinin 40'tır. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Bond A outperforms Bond B if yields change by a large amount in either direction.",
+          "tr": "Getiriler her iki yönde de büyük miktarda değişirse A tahvili B tahvilinden daha iyi performans gösterir."
+        },
+        {
+          "key": "B",
+          "en": "Bond B outperforms Bond A if yields change by a large amount in either direction.",
+          "tr": "Getiriler her iki yönde de büyük miktarda değişirse B tahvili A tahvilinden daha iyi performans gösterir."
+        },
+        {
+          "key": "C",
+          "en": "Bond A outperforms Bond B only if yields rise.",
+          "tr": "A tahvili yalnızca getiriler artarsa B tahvilinden daha iyi performans gösterir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With the same duration, the higher-convexity bond has a larger positive adjustment. It loses less when yields rise and gains more when yields fall. Large moves magnify the advantage, so the market usually pays a higher price for convexity.",
+      "explanation_tr": "Aynı durasyonda yüksek konveksiteli tahvilin pozitif düzeltmesi daha büyüktür. Getiri artınca daha az kaybeder, düşünce daha çok kazanır. Büyük hareketler avantajı büyütür; bu nedenle piyasa genellikle konveksite için daha yüksek fiyat öder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Higher convexity helps, not hurts, so Bond B cannot win in both cases.",
+          "tr": "Yüksek konveksite yarar sağlar, zarar vermez; B her iki durumda kazanamaz."
+        },
+        "C": {
+          "en": "The convexity advantage appears for both rises and falls since the adjustment is positive in each case.",
+          "tr": "Düzeltme her iki durumda da pozitif olduğu için konveksite avantajı hem artışta hem düşüşte görülür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "convexity",
+        "outperform",
+        "most-likely",
+        "yield",
+        "magnitude"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bond has a modified duration of 7.2 and a convexity of 62. If its yield rises by 80 bps, the estimated percentage price change using duration and convexity is closest to:",
+      "stem_tr": "Bir tahvilin düzeltilmiş durasyonu 7,2 ve konveksitesi 62'dir. Getirisi 80 bp artarsa durasyon ve konveksite ile tahmin edilen yüzde fiyat değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-5.76%",
+          "tr": "-5,76%",
+          "value": -5.76
+        },
+        {
+          "key": "B",
+          "en": "-5.56%",
+          "tr": "-5,56%",
+          "value": -5.5616
+        },
+        {
+          "key": "C",
+          "en": "-5.96%",
+          "tr": "-5,96%",
+          "value": -5.9584
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Duration effect = −5.760%; convexity adjustment = +0.198%; total ≈ −5.56%.",
+      "explanation_tr": "Durasyon etkisi = −%5,760; konveksite düzeltmesi = +%0,198; toplam ≈ −%5,56.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses duration only and leaves out the positive convexity adjustment.",
+          "tr": "Bu, yalnızca durasyonu kullanır ve pozitif konveksite düzeltmesini dışarıda bırakır."
+        },
+        "C": {
+          "en": "This subtracts the convexity adjustment, which should be added for a positive-convexity bond.",
+          "tr": "Bu, pozitif konveksiteli tahvilde eklenmesi gereken konveksite düzeltmesini çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: percentage price change for +80 bps.",
+          "tr": "İstenen: +80 bp için yüzde fiyat değişimi."
+        },
+        {
+          "en": "Formula: −ModDur × Δy + ½ × Conv × Δy²",
+          "tr": "Formül: −ModDur × Δy + ½ × Konv × Δy²",
+          "formula_latex": "-\\text{ModDur}\\,\\Delta y+\\tfrac12\\text{Conv}(\\Delta y)^2"
+        },
+        {
+          "en": "−7.2 × 0.008 + 0.5 × 62 × 0.000064 = −0.05760 + 0.00198 = −0.05562",
+          "tr": "−7,2 × 0,008 + 0,5 × 62 × 0,000064 = −0,05760 + 0,00198 = −0,05562"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "7.2 [×] 0.008 [+/-] [=]",
+          "[+] 0.5 [×] 62 [×] 0.008 [x²] [=]"
+        ],
+        "note_tr": "Sonuç ondalık olarak −0,0556; 100 ile çarpıp yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "(-7.2*0.008+0.5*62*0.008**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "convexity",
+        "closest-to",
+        "estimate",
+        "basis-point"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has a modified duration of 4.5 and a convexity of 30. If its yield falls by 150 bps, the estimated percentage price change using duration and convexity is closest to:",
+      "stem_tr": "Bir tahvilin düzeltilmiş durasyonu 4,5 ve konveksitesi 30'dur. Getirisi 150 bp düşerse durasyon ve konveksite ile tahmin edilen yüzde fiyat değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.75%",
+          "tr": "6,75%",
+          "value": 6.75
+        },
+        {
+          "key": "B",
+          "en": "6.41%",
+          "tr": "6,41%",
+          "value": 6.4125
+        },
+        {
+          "key": "C",
+          "en": "7.09%",
+          "tr": "7,09%",
+          "value": 7.0875
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Duration effect = +6.750%; convexity adjustment = ½ × 30 × 0.015² = +0.3375%; total ≈ +7.09%.",
+      "explanation_tr": "Durasyon etkisi = +%6,750; konveksite düzeltmesi = ½ × 30 × 0,015² = +%0,3375; toplam ≈ +%7,09.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses duration only and ignores the convexity adjustment.",
+          "tr": "Bu, yalnızca durasyonu kullanır ve konveksite düzeltmesini yok sayar."
+        },
+        "B": {
+          "en": "This subtracts the convexity adjustment, but it is positive in a yield fall too.",
+          "tr": "Bu, konveksite düzeltmesini çıkarır; oysa getiri düşüşünde de pozitiftir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: percentage price change when yields fall 150 bps (Δy = −0.015).",
+          "tr": "İstenen: getiri 150 bp düşünce yüzde fiyat değişimi (Δy = −0,015)."
+        },
+        {
+          "en": "Duration term: −4.5 × (−0.015) = +0.0675",
+          "tr": "Durasyon terimi: −4,5 × (−0,015) = +0,0675"
+        },
+        {
+          "en": "Convexity term: 0.5 × 30 × 0.000225 = +0.003375; total = +0.070875 → +7.09%",
+          "tr": "Konveksite terimi: 0,5 × 30 × 0,000225 = +0,003375; toplam = +0,070875 → +%7,09"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4.5 [×] 0.015 [=]",
+          "[+] 0.5 [×] 30 [×] 0.015 [x²] [=]"
+        ],
+        "note_tr": "Δy karesi pozitif olduğundan konveksite terimi artıdır."
+      },
+      "numeric": {
+        "expr": "(4.5*0.015+0.5*30*0.015**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "convexity",
+        "closest-to",
+        "fall",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor holds a TRY 20 million market value of a bond with a modified duration of 5.5 and a convexity of 40. Yields rise by 100 bps. The estimated change in position value (TRY million) using duration and convexity is closest to:",
+      "stem_tr": "Bir yatırımcı, düzeltilmiş durasyonu 5,5 ve konveksitesi 40 olan ve piyasa değeri 20 milyon TL olan bir tahvil tutmaktadır. Getiriler 100 bp artmaktadır. Durasyon ve konveksite ile tahmin edilen pozisyon değeri değişimi (milyon TL) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-1.06 million TRY",
+          "tr": "-1,06 million TRY",
+          "value": -1.06
+        },
+        {
+          "key": "B",
+          "en": "-1.10 million TRY",
+          "tr": "-1,10 million TRY",
+          "value": -1.1
+        },
+        {
+          "key": "C",
+          "en": "-1.14 million TRY",
+          "tr": "-1,14 million TRY",
+          "value": -1.14
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "%ΔPV = −5.5 × 0.01 + 0.5 × 40 × 0.0001 = −0.055 + 0.002 = −5.3%. On TRY 20 million this is −1.06 million.",
+      "explanation_tr": "%ΔPV = −5,5 × 0,01 + 0,5 × 40 × 0,0001 = −0,055 + 0,002 = −%5,3. 20 milyon TL üzerinde bu −1,06 milyon TL'dir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This uses duration only and ignores the convexity adjustment.",
+          "tr": "Bu, yalnızca durasyonu kullanır ve konveksite düzeltmesini yok sayar."
+        },
+        "C": {
+          "en": "This subtracts the convexity adjustment; it should be added.",
+          "tr": "Bu, konveksite düzeltmesini çıkarır; eklenmesi gerekir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: money change, so first find the percentage change.",
+          "tr": "İstenen: para cinsinden değişim; önce yüzde değişim bulunur."
+        },
+        {
+          "en": "%ΔPV = −5.5 × 0.01 + ½ × 40 × 0.01² = −5.3%",
+          "tr": "%ΔPV = −5,5 × 0,01 + ½ × 40 × 0,01² = −%5,3"
+        },
+        {
+          "en": "Money change = 20 × (−0.053) = −1.06 million TRY",
+          "tr": "Para değişimi = 20 × (−0,053) = −1,06 milyon TL"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5.5 [×] 0.01 [+/-] [+] 0.5 [×] 40 [×] 0.01 [x²] [=]",
+          "[×] 20 [=]"
+        ],
+        "note_tr": "Önce yüzde değişimi bulun, sonra piyasa değeriyle çarpın."
+      },
+      "numeric": {
+        "expr": "20*(-5.5*0.01+0.5*40*0.01**2)",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "market-value",
+        "modified-duration",
+        "convexity",
+        "closest-to",
+        "position"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "When yields fall, an estimate of price change that uses only modified duration, compared with the actual price change of a plain bond, will most likely:",
+      "stem_tr": "Getiriler düştüğünde, yalnızca düzeltilmiş durasyonla yapılan fiyat değişimi tahmini, sade bir tahvilin gerçek fiyat değişimine kıyasla büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "overestimate the price increase.",
+          "tr": "fiyat artışını olduğundan fazla tahmin eder."
+        },
+        {
+          "key": "B",
+          "en": "underestimate the price increase.",
+          "tr": "fiyat artışını olduğundan az tahmin eder."
+        },
+        {
+          "key": "C",
+          "en": "estimate the price increase exactly.",
+          "tr": "fiyat artışını tam olarak tahmin eder."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Positive convexity adds to the gain when yields fall, so duration alone understates the increase.",
+      "explanation_tr": "Pozitif konveksite getiri düşüşünde kazancı artırır; bu yüzden yalnızca durasyon artışı olduğundan az gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The actual price curve lies above the tangent line, so the estimate is too low, not too high.",
+          "tr": "Gerçek fiyat eğrisi teğetin üzerindedir; tahmin fazla değil, düşüktür."
+        },
+        "C": {
+          "en": "The straight-line estimate is exact only for very small changes.",
+          "tr": "Doğrusal tahmin yalnızca çok küçük değişimlerde tamdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "modified-duration",
+        "underestimate",
+        "most-likely",
+        "compared-with",
+        "actual"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A bond trades at 100 with a modified duration of 8.0 and a convexity of 90. The yield rises by 200 bps. The estimated new price using duration and convexity is closest to:",
+      "stem_tr": "Bir tahvil 100'den işlem görmekte olup düzeltilmiş durasyonu 8,0 ve konveksitesi 90'dır. Getiri 200 bp artmaktadır. Durasyon ve konveksite ile tahmin edilen yeni fiyat aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "84.0",
+          "tr": "84,0",
+          "value": 84.0
+        },
+        {
+          "key": "B",
+          "en": "82.2",
+          "tr": "82,2",
+          "value": 82.2
+        },
+        {
+          "key": "C",
+          "en": "85.8",
+          "tr": "85,8",
+          "value": 85.8
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "%ΔPV = −16% + 1.8% = −14.2%; new price = 100 × (1 − 0.142) = 85.8.",
+      "explanation_tr": "%ΔPV = −%16 + %1,8 = −%14,2; yeni fiyat = 100 × (1 − 0,142) = 85,8.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the duration-only price; it omits the convexity adjustment.",
+          "tr": "Bu, yalnızca durasyonla bulunan fiyattır; konveksite düzeltmesini içermez."
+        },
+        "B": {
+          "en": "This subtracts the convexity adjustment instead of adding it.",
+          "tr": "Bu, konveksite düzeltmesini eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: new price after +200 bps.",
+          "tr": "İstenen: +200 bp sonrası yeni fiyat."
+        },
+        {
+          "en": "%ΔPV = −8.0 × 0.02 + 0.5 × 90 × 0.0004 = −0.16 + 0.018 = −0.142",
+          "tr": "%ΔPV = −8,0 × 0,02 + 0,5 × 90 × 0,0004 = −0,16 + 0,018 = −0,142"
+        },
+        {
+          "en": "Price = 100 × (1 − 0.142) = 85.8",
+          "tr": "Fiyat = 100 × (1 − 0,142) = 85,8"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [×] 0.02 [+/-] [=]",
+          "[+] 0.5 [×] 90 [×] 0.02 [x²] [=]",
+          "[+] 1 [=] [×] 100 [=]"
+        ],
+        "note_tr": "Yüzde değişimi hesaplayıp 1 ekleyin ve 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "100*(1-8*0.02+0.5*90*0.02**2)"
+      },
+      "vocab_ids": [
+        "convexity",
+        "modified-duration",
+        "closest-to",
+        "new-price",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio consists of three bonds: TRY 40 million (modified duration 3.0), TRY 35 million (5.5) and TRY 25 million (8.0) of market value. The portfolio modified duration is closest to:",
+      "stem_tr": "Bir portföy üç tahvilden oluşur: piyasa değeri 40 milyon TL (düzeltilmiş durasyon 3,0), 35 milyon TL (5,5) ve 25 milyon TL (8,0). Portföyün düzeltilmiş durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.125 years",
+          "tr": "5,125 years",
+          "value": 5.125
+        },
+        {
+          "key": "B",
+          "en": "5.500 years",
+          "tr": "5,500 years",
+          "value": 5.5
+        },
+        {
+          "key": "C",
+          "en": "5.875 years",
+          "tr": "5,875 years",
+          "value": 5.875
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Weights are 40%, 35% and 25%. Portfolio duration = 1.200 + 1.925 + 2.000 = 5.125.",
+      "explanation_tr": "Ağırlıklar %40, %35 ve %25'tir. Portföy durasyonu = 1,200 + 1,925 + 2,000 = 5,125.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the simple average; it ignores the different market-value weights.",
+          "tr": "Bu basit ortalamadır; farklı piyasa değeri ağırlıklarını yok sayar."
+        },
+        "C": {
+          "en": "The weights are applied in reverse order.",
+          "tr": "Ağırlıklar ters sırayla uygulanmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: portfolio modified duration.",
+          "tr": "İstenen: portföyün düzeltilmiş durasyonu."
+        },
+        {
+          "en": "Weights = market value / total (100): 0.40, 0.35, 0.25",
+          "tr": "Ağırlıklar = piyasa değeri / toplam (100): 0,40, 0,35, 0,25"
+        },
+        {
+          "en": "0.40 × 3.0 + 0.35 × 5.5 + 0.25 × 8.0 = 5.125",
+          "tr": "0,40 × 3,0 + 0,35 × 5,5 + 0,25 × 8,0 = 5,125",
+          "formula_latex": "D_p=\\sum w_i D_i"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 3 [+] 0.35 [×] 5.5 [+] 0.25 [×] 8 [=]"
+        ],
+        "note_tr": "Ağırlıklı ortalama."
+      },
+      "numeric": {
+        "expr": "0.40*3.0+0.35*5.5+0.25*8.0",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "portfolio",
+        "modified-duration",
+        "market-value",
+        "weighted-average",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The main limitation of using portfolio duration to estimate the portfolio's price change is that it assumes:",
+      "stem_tr": "Portföyün fiyat değişimini tahmin etmek için portföy durasyonunu kullanmanın temel sınırlaması hangi varsayımdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "all bonds in the portfolio have the same maturity.",
+          "tr": "Portföydeki tüm tahvillerin vadesinin aynı olması."
+        },
+        {
+          "key": "B",
+          "en": "all bond yields change by the same amount (a parallel shift).",
+          "tr": "Tüm tahvil getirilerinin aynı miktarda değişmesi (paralel kayma)."
+        },
+        {
+          "key": "C",
+          "en": "yield changes are always very large.",
+          "tr": "Getiri değişimlerinin her zaman çok büyük olması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A weighted-average duration treats all yields as moving together. If short and long yields move differently (curve steepens or flattens), the estimate can be wrong.",
+      "explanation_tr": "Ağırlıklı ortalama durasyon tüm getirilerin birlikte hareket ettiğini varsayar. Kısa ve uzun getiriler farklı hareket ederse (eğri dikleşir ya da yataylaşırsa) tahmin yanlış olabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Bonds in a portfolio can have different maturities; the issue is how their yields move.",
+          "tr": "Portföydeki tahvillerin vadeleri farklı olabilir; sorun getirilerin nasıl hareket ettiğidir."
+        },
+        "C": {
+          "en": "Duration works best for small changes; large ones need convexity.",
+          "tr": "Durasyon küçük değişimlerde iyi çalışır; büyük değişimlerde konveksite gerekir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "portfolio",
+        "parallel-shift",
+        "limitation",
+        "assume",
+        "duration"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio has market-value weights of 30%, 50% and 20% in three bonds with convexities of 20, 60 and 150. The portfolio convexity is closest to:",
+      "stem_tr": "Bir portföyün üç tahvildeki piyasa değeri ağırlıkları %30, %50 ve %20'dir; tahvillerin konveksiteleri 20, 60 ve 150'dir. Portföy konveksitesi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "76.7",
+          "tr": "76,7",
+          "value": 76.6667
+        },
+        {
+          "key": "B",
+          "en": "79.0",
+          "tr": "79,0",
+          "value": 79.0
+        },
+        {
+          "key": "C",
+          "en": "66.0",
+          "tr": "66,0",
+          "value": 66.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Portfolio convexity = 0.3 × 20 + 0.5 × 60 + 0.2 × 150 = 6 + 30 + 30 = 66.",
+      "explanation_tr": "Portföy konveksitesi = 0,3 × 20 + 0,5 × 60 + 0,2 × 150 = 6 + 30 + 30 = 66.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the simple average and ignores the weights.",
+          "tr": "Bu basit ortalamadır; ağırlıkları yok sayar."
+        },
+        "B": {
+          "en": "The 30% and 20% weights are swapped.",
+          "tr": "%30 ve %20 ağırlıkları yer değiştirmiştir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: portfolio convexity, a market-value-weighted average.",
+          "tr": "İstenen: piyasa değeri ağırlıklı ortalama olan portföy konveksitesi."
+        },
+        {
+          "en": "Formula: Σ wᵢ × Convexityᵢ",
+          "tr": "Formül: Σ wᵢ × Konveksiteᵢ",
+          "formula_latex": "C_p=\\sum w_i C_i"
+        },
+        {
+          "en": "0.3 × 20 + 0.5 × 60 + 0.2 × 150 = 66",
+          "tr": "0,3 × 20 + 0,5 × 60 + 0,2 × 150 = 66"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 20 [+] 0.5 [×] 60 [+] 0.2 [×] 150 [=]"
+        ],
+        "note_tr": "Ağırlıklı ortalama."
+      },
+      "numeric": {
+        "expr": "0.3*20+0.5*60+0.2*150"
+      },
+      "vocab_ids": [
+        "portfolio",
+        "convexity",
+        "market-value",
+        "weighted-average",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A bullet portfolio (bonds with maturities near 5 years) and a barbell portfolio (2-year and 10-year bonds) have the same market value and the same portfolio duration. Which statement is most likely correct?",
+      "stem_tr": "Bir bullet portföy (vadeleri 5 yıl civarında tahviller) ile bir barbell portföy (2 yıllık ve 10 yıllık tahviller) aynı piyasa değerine ve aynı portföy durasyonuna sahiptir. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The barbell portfolio has higher convexity.",
+          "tr": "Barbell portföyün konveksitesi daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "The bullet portfolio has higher convexity.",
+          "tr": "Bullet portföyün konveksitesi daha yüksektir."
+        },
+        {
+          "key": "C",
+          "en": "The two portfolios have the same convexity because duration is equal.",
+          "tr": "Durasyon eşit olduğu için iki portföyün konveksitesi aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A barbell spreads its cash flows over a wider range of dates than a bullet, so for the same duration it has higher convexity.",
+      "explanation_tr": "Barbell, nakit akışlarını bullet'ten daha geniş bir tarih aralığına yayar; aynı durasyonda daha yüksek konveksiteye sahiptir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Cash flows concentrated near the middle are less dispersed, which gives lower convexity.",
+          "tr": "Ortada yoğunlaşan nakit akışları daha az dağınıktır; bu daha düşük konveksite verir."
+        },
+        "C": {
+          "en": "Equal duration does not imply equal convexity; dispersion of cash flows matters.",
+          "tr": "Eşit durasyon eşit konveksite anlamına gelmez; nakit akışlarının dağılımı önemlidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "barbell",
+        "bullet",
+        "convexity",
+        "most-likely",
+        "dispersed"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-12-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-12",
+      "los_id": "FI-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A portfolio has a modified duration of 5.125 and a convexity of 66. If all yields rise by 50 bps (a parallel shift), the estimated percentage change in portfolio value is closest to:",
+      "stem_tr": "Bir portföyün düzeltilmiş durasyonu 5,125 ve konveksitesi 66'dır. Tüm getiriler 50 bp artarsa (paralel kayma) portföy değerindeki tahmini yüzde değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-2.56%",
+          "tr": "-2,56%",
+          "value": -2.5625
+        },
+        {
+          "key": "B",
+          "en": "-2.48%",
+          "tr": "-2,48%",
+          "value": -2.48
+        },
+        {
+          "key": "C",
+          "en": "-2.65%",
+          "tr": "-2,65%",
+          "value": -2.645
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Duration term = −2.5625%; convexity term = +0.0825%; total = -2.48%. The result holds only for a parallel shift.",
+      "explanation_tr": "Durasyon terimi = −%2,5625; konveksite terimi = +%0,0825; toplam = %-2,48. Sonuç yalnızca paralel kayma için geçerlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This leaves out the convexity adjustment.",
+          "tr": "Bu, konveksite düzeltmesini dışarıda bırakır."
+        },
+        "C": {
+          "en": "This subtracts the adjustment; for positive convexity it must be added.",
+          "tr": "Bu, düzeltmeyi çıkarır; pozitif konveksitede eklenmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: portfolio % change for +50 bps, parallel shift.",
+          "tr": "İstenen: +50 bp, paralel kayma için portföy % değişimi."
+        },
+        {
+          "en": "−5.125 × 0.005 = −0.025625",
+          "tr": "−5,125 × 0,005 = −0,025625"
+        },
+        {
+          "en": "+0.5 × 66 × 0.000025 = +0.000825; total = −0.0248 → −2.48%",
+          "tr": "+0,5 × 66 × 0,000025 = +0,000825; toplam = −0,0248 → −%2,48"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5.125 [×] 0.005 [+/-] [=]",
+          "[+] 0.5 [×] 66 [×] 0.005 [x²] [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpıp yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "(-5.125*0.005+0.5*66*0.005**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "portfolio",
+        "parallel-shift",
+        "convexity",
+        "closest-to",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -45,19 +45,19 @@
         "stem_tr": "\"Is closest to\" ifadesi cevap şıkları hakkında ne söyler?",
         "options": [
           {
-            "en": "One option is exactly equal to the answer.",
-            "tr": "Bir şık cevaba tam olarak eşittir."
-          },
-          {
             "en": "The options are approximate; pick the nearest one.",
             "tr": "Şıklar yaklaşık değerlerdir; en yakınını seç."
+          },
+          {
+            "en": "One option is exactly equal to the answer.",
+            "tr": "Bir şık cevaba tam olarak eşittir."
           },
           {
             "en": "All options are wrong and you must write your own number.",
             "tr": "Tüm şıklar yanlıştır, kendi sayını yazmalısın."
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Kalıp, yuvarlama farkını kabul eder; en yakın şık doğru kabul edilir."
       },
       {
@@ -85,23 +85,27 @@
         "stem_tr": "Sonucun %12,6; şıklar %6,3, %12,6 ve %25,2. Kök \"closest to\" diyor. Cevaplamadan önce en faydalı kontrol hangisi?",
         "options": [
           {
-            "en": "No check is needed; the exact value is there, so choose it.",
-            "tr": "Kontrol gerekmez; tam değer şıkta var, onu seç."
-          },
-          {
             "en": "Check for a factor-of-two error (annual vs semiannual), since the wrong options are exactly half and double.",
             "tr": "Yanlış şıklar tam yarısı ve iki katı; yıllık/yarıyıllık gibi ikiye katlama hatası yapmadığını kontrol et."
+          },
+          {
+            "en": "No check is needed; the exact value is there, so choose it.",
+            "tr": "Kontrol gerekmez; tam değer şıkta var, onu seç."
           },
           {
             "en": "Choose the middle option because it is always safest.",
             "tr": "Orta şık her zaman en güvenlidir, onu seç."
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Çeldiriciler tipik hatalardan türetilir. Yarısı ve iki katı şıklar, dönem sayısı/faiz çevrimi hatasını hedefler; bir saniyelik kontrol değerlidir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "least-likely",
@@ -153,15 +157,15 @@
             "tr": "Hiçbiri"
           },
           {
-            "en": "One",
-            "tr": "Biri"
-          },
-          {
             "en": "Two",
             "tr": "İkisi"
+          },
+          {
+            "en": "One",
+            "tr": "Biri"
           }
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation_tr": "İki şık doğrudur, biri yanlıştır. Yanlış olanı işaretlemen istenir."
       },
       {
@@ -169,19 +173,19 @@
         "stem_tr": "Soru kökünü okurken \"least likely\" ifadesini zihninde en iyi nasıl çevirirsin?",
         "options": [
           {
-            "en": "\"Find the TRUE statement.\"",
-            "tr": "\"DOĞRU ifadeyi bul.\""
-          },
-          {
             "en": "\"Find the FALSE or weakest statement.\"",
             "tr": "\"YANLIŞ ya da en zayıf ifadeyi bul.\""
+          },
+          {
+            "en": "\"Find the TRUE statement.\"",
+            "tr": "\"DOĞRU ifadeyi bul.\""
           },
           {
             "en": "\"Find the statement with the biggest number.\"",
             "tr": "\"En büyük sayılı ifadeyi bul.\""
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "\"Least likely\" = en az olası = yanlış olanı bul. Bu çeviri \"most likely\" ile karıştırmayı önler."
       },
       {
@@ -209,23 +213,27 @@
         "stem_tr": "Kökü hızlı okudun ve açıkça doğru olan bir şıkkı seçtin. Sonra \"least\" kelimesini fark ettin. Ne oldu?",
         "options": [
           {
-            "en": "You answered correctly; true statements are always the answer.",
-            "tr": "Doğru cevapladın; doğru ifadeler her zaman cevaptır."
-          },
-          {
             "en": "You fell into the classic trap: a true statement is a distractor in a \"least likely\" question.",
             "tr": "Klasik tuzağa düştün: \"least likely\" sorusunda doğru ifade çeldiricidir."
+          },
+          {
+            "en": "You answered correctly; true statements are always the answer.",
+            "tr": "Doğru cevapladın; doğru ifadeler her zaman cevaptır."
           },
           {
             "en": "The question is faulty.",
             "tr": "Soru hatalıdır."
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "\"Least\" kelimesini kaçırmak en sık yapılan okuma hatasıdır. Kökteki olumsuz anahtar kelimeleri işaretlemeyi alışkanlık yap."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "most-likely",
@@ -269,19 +277,19 @@
         "stem_tr": "\"Most likely\" sorusunda kaç şık doğrudur?",
         "options": [
           {
-            "en": "Exactly one.",
-            "tr": "Tam olarak bir."
+            "en": "It depends on probability.",
+            "tr": "Olasılığa bağlıdır."
           },
           {
             "en": "Two.",
             "tr": "İki."
           },
           {
-            "en": "It depends on probability.",
-            "tr": "Olasılığa bağlıdır."
+            "en": "Exactly one.",
+            "tr": "Tam olarak bir."
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Tek doğru şık vardır; diğer ikisi çeldiricidir. Kalıp, ifadeyi yumuşatmak için kullanılır."
       },
       {
@@ -325,7 +333,11 @@
         "explanation_tr": "Eleme yöntemi burada tam çalışır: iki yanlış elenince kalan en olası şıktır. Sınavda yanlış cevap puan götürmez, boş bırakma."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "most-appropriate",
@@ -373,15 +385,15 @@
             "tr": "Doğru olan herhangi bir ifadeyi seç."
           },
           {
-            "en": "Compare the options and pick the best fit.",
-            "tr": "Şıkları kıyasla, en iyi uyanı seç."
-          },
-          {
             "en": "Pick the option with the most numbers.",
             "tr": "En çok sayı içeren şıkkı seç."
+          },
+          {
+            "en": "Compare the options and pick the best fit.",
+            "tr": "Şıkları kıyasla, en iyi uyanı seç."
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation_tr": "Birden fazla şık doğru görünebilir; fark, uygunluk derecesindedir."
       },
       {
@@ -389,19 +401,19 @@
         "stem_tr": "Tüm şıkları okuyunca A ve C kabul edilebilir görünüyor. Ne yapmalısın?",
         "options": [
           {
-            "en": "Choose A because it comes first.",
-            "tr": "A'yı seç, çünkü ilk gelir."
-          },
-          {
             "en": "Choose the one that solves the issue more directly.",
             "tr": "Sorunu daha doğrudan çözeni seç."
+          },
+          {
+            "en": "Choose A because it comes first.",
+            "tr": "A'yı seç, çünkü ilk gelir."
           },
           {
             "en": "Skip the question.",
             "tr": "Soruyu atla."
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Sıra önemli değildir; hangi şık durumu daha doğrudan ve eksiksiz çözüyor diye bak."
       },
       {
@@ -409,23 +421,27 @@
         "stem_tr": "\"En uygun eylem\" büyük olasılıkla hangi eylemdir?",
         "options": [
           {
-            "en": "fits the rule and the situation best",
-            "tr": "kurala ve duruma en iyi uyan"
+            "en": "is the fastest",
+            "tr": "en hızlı olan"
           },
           {
             "en": "is the cheapest",
             "tr": "en ucuz olan"
           },
           {
-            "en": "is the fastest",
-            "tr": "en hızlı olan"
+            "en": "fits the rule and the situation best",
+            "tr": "kurala ve duruma en iyi uyan"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Ölçüt hız veya maliyet değil, kurala ve duruma uygunluktur."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "all-else-equal",
@@ -469,19 +485,19 @@
         "stem_tr": "Diğer her şey sabitken beklenen getiri artıyor. Hisse fiyatı büyük olasılıkla:",
         "options": [
           {
-            "en": "rise",
-            "tr": "yükselir"
-          },
-          {
             "en": "fall",
             "tr": "düşer"
+          },
+          {
+            "en": "rise",
+            "tr": "yükselir"
           },
           {
             "en": "stay the same",
             "tr": "aynı kalır"
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "İskonto oranı artınca bugünkü değer düşer; nakit akışları sabit kalır."
       },
       {
@@ -509,23 +525,27 @@
         "stem_tr": "\"All else equal\" ifadesinde diğer girdiler:",
         "options": [
           {
-            "en": "held constant",
-            "tr": "sabit tutulur"
+            "en": "random",
+            "tr": "rastgeledir"
           },
           {
             "en": "doubled",
             "tr": "ikiye katlanır"
           },
           {
-            "en": "random",
-            "tr": "rastgeledir"
+            "en": "held constant",
+            "tr": "sabit tutulur"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Sabit tutmak, ceteris paribus mantığıdır."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "not-question",
@@ -549,19 +569,19 @@
         "stem_tr": "NOT sorusunda doğru cevap hangi ifadedir?",
         "options": [
           {
-            "en": "true",
-            "tr": "doğru olan"
-          },
-          {
             "en": "false",
             "tr": "yanlış olan"
+          },
+          {
+            "en": "true",
+            "tr": "doğru olan"
           },
           {
             "en": "longest",
             "tr": "en uzun olan"
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Soru yanlış olanı arar; diğer iki şık doğrudur."
       },
       {
@@ -593,15 +613,15 @@
             "tr": "\"measure\""
           },
           {
-            "en": "\"NOT\"",
-            "tr": "\"NOT\""
-          },
-          {
             "en": "\"following\"",
             "tr": "\"following\""
+          },
+          {
+            "en": "\"NOT\"",
+            "tr": "\"NOT\""
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation_tr": "NOT, doğru-yanlış mantığını tersine çevirir."
       },
       {
@@ -609,29 +629,33 @@
         "stem_tr": "Öğrenci NOT sorusunda doğru bir ifadeyi seçiyor. En olası neden:",
         "options": [
           {
-            "en": "missing the word NOT",
-            "tr": "NOT kelimesini kaçırmak"
-          },
-          {
             "en": "bad calculator",
             "tr": "kötü hesap makinesi"
+          },
+          {
+            "en": "missing the word NOT",
+            "tr": "NOT kelimesini kaçırmak"
           },
           {
             "en": "too many options",
             "tr": "çok şık olması"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Soru kökünü dikkatli okumamak klasik hatadır."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "best-describes",
     "pattern_en": "best describes",
     "meaning_tr": "\"En iyi tanımlar\": bir kavramın, durumun veya kişinin tanımına ya da özelliğine EN iyi uyan ifadeyi seç. Şıklar kısmen doğru olabilir.",
-    "trap_tr": "Yanlış okuma: \"Hangisi duration'ı en iyi tanımlar?\" Öğrenci \"faiz değişimine fiyat duyarlılığı\" yerine, ilk duyduğu \"vadeye kalan süre\" şıkkını seçer. İkisi de ilgili görünür, ama duyarlılık tanımı sorulan şeye daha iyi uyar. Anahtar kelime kısmen eşleşen şıkka kanma.",
+    "trap_tr": "Yanlış okuma: \"Hangisi duration'ı en iyi tanımlar?\" Öğrenci \"faiz değişimine fiyat duyarlılığı\" yerine, ilk duyduğu \"vadeye kalan süre\" şıkkını seçer. İkisi de ilgili görünür, ama vade ile durasyon aynı şey değildir; duyarlılık tanımı sorulan şeye daha iyi uyar. Anahtar kelime kısmen eşleşen şıkka kanma.",
     "strategy_tr": "Kavramı önce kendi cümlenle tanımla, sonra şıklarla eşleştir. Kısmen doğru ama eksik şıkkı ele. Mutlak ifadeler (\"her zaman\", \"asla\") varsa şüphelen.",
     "examples": [
       {
@@ -689,19 +713,19 @@
         "stem_tr": "\"Best describes\" sorusunda iyi bir ilk adım nedir?",
         "options": [
           {
-            "en": "Define the term yourself",
-            "tr": "Terimi kendin tanımlamak"
+            "en": "Read only option C",
+            "tr": "Yalnızca C'yi okumak"
           },
           {
             "en": "Guess",
             "tr": "Tahmin etmek"
           },
           {
-            "en": "Read only option C",
-            "tr": "Yalnızca C'yi okumak"
+            "en": "Define the term yourself",
+            "tr": "Terimi kendin tanımlamak"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Kendi tanımın şıkları süzmeni kolaylaştırır."
       },
       {
@@ -725,7 +749,11 @@
         "explanation_tr": "Mutlak ifadeler genellikle aşırı genellemedir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "most-consistent",
@@ -749,19 +777,19 @@
         "stem_tr": "\"Most consistent with\" hangi şıkkı sorar?",
         "options": [
           {
-            "en": "agrees best with the given facts",
-            "tr": "verilen olgularla en iyi uyuşan"
+            "en": "is the biggest number",
+            "tr": "en büyük sayı"
           },
           {
             "en": "is your own opinion",
             "tr": "senin kendi görüşün"
           },
           {
-            "en": "is the biggest number",
-            "tr": "en büyük sayı"
+            "en": "agrees best with the given facts",
+            "tr": "verilen olgularla en iyi uyuşan"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Kıstas, verilen bilgiyle uyumdur."
       },
       {
@@ -769,19 +797,19 @@
         "stem_tr": "Bir şık soru kökündeki olgularla çelişiyor. Ne yapmalısın?",
         "options": [
           {
-            "en": "eliminate it",
-            "tr": "elemelisin"
-          },
-          {
             "en": "keep it",
             "tr": "tutmalısın"
+          },
+          {
+            "en": "eliminate it",
+            "tr": "elemelisin"
           },
           {
             "en": "choose it",
             "tr": "seçmelisin"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Çelişen şık tutarlı olamaz."
       },
       {
@@ -809,23 +837,27 @@
         "stem_tr": "Kanıt: satışlar düştü, stoklar arttı. En tutarlı olan:",
         "options": [
           {
-            "en": "weak demand",
-            "tr": "zayıf talep"
-          },
-          {
             "en": "strong demand",
             "tr": "güçlü talep"
+          },
+          {
+            "en": "weak demand",
+            "tr": "zayıf talep"
           },
           {
             "en": "a sales boom",
             "tr": "satış patlaması"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Düşen satış ve artan stok, zayıf talepten beklenen bir birleşimdir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "except",
@@ -853,15 +885,15 @@
             "tr": "bir"
           },
           {
-            "en": "two",
-            "tr": "iki"
-          },
-          {
             "en": "three",
             "tr": "üç"
+          },
+          {
+            "en": "two",
+            "tr": "iki"
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation_tr": "Üç şıktan ikisi kurala uyar, biri uymaz ve cevap odur."
       },
       {
@@ -893,15 +925,15 @@
             "tr": "All"
           },
           {
-            "en": "EXCEPT",
-            "tr": "EXCEPT"
-          },
-          {
             "en": "following",
             "tr": "following"
+          },
+          {
+            "en": "EXCEPT",
+            "tr": "EXCEPT"
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation_tr": "EXCEPT, istisnayı arar."
       },
       {
@@ -925,7 +957,11 @@
         "explanation_tr": "Her zaman bir şık uymamalıdır; muhtemelen soruyu yanlış okudun."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "respectively",
@@ -989,19 +1025,19 @@
         "stem_tr": "\"M ve N fonları için getiriler sırasıyla %5 ve %9.\" M kazandı:",
         "options": [
           {
-            "en": "5%",
-            "tr": "%5"
+            "en": "14%",
+            "tr": "%14"
           },
           {
             "en": "9%",
             "tr": "%9"
           },
           {
-            "en": "14%",
-            "tr": "%14"
+            "en": "5%",
+            "tr": "%5"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "M birinci, %5 birinci değerdir."
       },
       {
@@ -1025,7 +1061,11 @@
         "explanation_tr": "Çeldirici şıklar genelde sırası ters verilmiş değerlerdir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "if-then",
@@ -1049,19 +1089,19 @@
         "stem_tr": "\"Eğer A ise B\": A olursa neyi biliriz?",
         "options": [
           {
-            "en": "B happens",
-            "tr": "B olur"
+            "en": "nothing",
+            "tr": "hiçbir şey"
           },
           {
             "en": "B does not happen",
             "tr": "B olmaz"
           },
           {
-            "en": "nothing",
-            "tr": "hiçbir şey"
+            "en": "B happens",
+            "tr": "B olur"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Koşul sağlanınca sonuç beklenir."
       },
       {
@@ -1077,8 +1117,8 @@
             "tr": "Hayır"
           },
           {
-            "en": "Only on Mondays",
-            "tr": "Yalnızca pazartesi"
+            "en": "Only if A is common",
+            "tr": "Yalnızca A yaygınsa"
           }
         ],
         "answer": 1,
@@ -1109,23 +1149,27 @@
         "stem_tr": "If-then sorusunda koşul nasıl ele alınmalı?",
         "options": [
           {
-            "en": "given",
-            "tr": "verilmiş kabul edilmeli"
-          },
-          {
             "en": "doubtful",
             "tr": "şüpheli"
+          },
+          {
+            "en": "given",
+            "tr": "verilmiş kabul edilmeli"
           },
           {
             "en": "optional",
             "tr": "isteğe bağlı"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Koşulu doğru kabul edip sonucu hesaplarsın."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "least-appropriate",
@@ -1149,19 +1193,19 @@
         "stem_tr": "\"Least appropriate\" hangi şıkkı ister?",
         "options": [
           {
-            "en": "the worst fit",
-            "tr": "en kötü uyan"
+            "en": "the middle one",
+            "tr": "ortadaki"
           },
           {
             "en": "the best fit",
             "tr": "en iyi uyan"
           },
           {
-            "en": "the middle one",
-            "tr": "ortadaki"
+            "en": "the worst fit",
+            "tr": "en kötü uyan"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "En uygunsuz şık hedeflenir."
       },
       {
@@ -1213,19 +1257,23 @@
             "tr": "\"most appropriate\""
           },
           {
-            "en": "\"NOT appropriate\"",
-            "tr": "\"uygun DEĞİL\""
-          },
-          {
             "en": "\"closest to\"",
             "tr": "\"closest to\""
+          },
+          {
+            "en": "\"NOT appropriate\"",
+            "tr": "\"uygun DEĞİL\""
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation_tr": "İkisi de uygun olmayan şıkkı arar."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "correct-statement",
@@ -1269,19 +1317,19 @@
         "stem_tr": "Uzun ifadelerde ne yapmalısın?",
         "options": [
           {
-            "en": "Read only the first half",
-            "tr": "Yalnızca ilk yarıyı oku"
-          },
-          {
             "en": "Check every part",
             "tr": "Her parçayı kontrol et"
+          },
+          {
+            "en": "Read only the first half",
+            "tr": "Yalnızca ilk yarıyı oku"
           },
           {
             "en": "Choose the longest",
             "tr": "En uzununu seç"
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Tam doğruluk için tüm parçalar doğru olmalıdır."
       },
       {
@@ -1289,19 +1337,19 @@
         "stem_tr": "Hangi kelime ifadeyi sık sık yanlış yapar?",
         "options": [
           {
-            "en": "\"always\"",
-            "tr": "\"her zaman\""
-          },
-          {
             "en": "\"may\"",
             "tr": "\"olabilir\""
+          },
+          {
+            "en": "\"always\"",
+            "tr": "\"her zaman\""
           },
           {
             "en": "\"often\"",
             "tr": "\"sıklıkla\""
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Mutlak kelimeler istisnaları yok sayar."
       },
       {
@@ -1309,23 +1357,27 @@
         "stem_tr": "\"Doğru ifade\" sorusunda kaç şık tamamen doğrudur?",
         "options": [
           {
-            "en": "one",
-            "tr": "bir"
+            "en": "three",
+            "tr": "üç"
           },
           {
             "en": "two",
             "tr": "iki"
           },
           {
-            "en": "three",
-            "tr": "üç"
+            "en": "one",
+            "tr": "bir"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Genelde tek doğru cevap vardır."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "incorrect-statement",
@@ -1349,19 +1401,19 @@
         "stem_tr": "\"Yanlış ifade\" sorusunda cevap hangi ifadedir?",
         "options": [
           {
-            "en": "true",
-            "tr": "doğru"
-          },
-          {
             "en": "false",
             "tr": "yanlış"
+          },
+          {
+            "en": "true",
+            "tr": "doğru"
           },
           {
             "en": "the shortest",
             "tr": "en kısa"
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Yanlış olan istenir."
       },
       {
@@ -1389,19 +1441,19 @@
         "stem_tr": "Yanlış ifadeler doğrulardan genelde nasıl ayrılır?",
         "options": [
           {
-            "en": "a small reversed detail",
-            "tr": "küçük, tersine çevrilmiş bir ayrıntıyla"
+            "en": "the font",
+            "tr": "yazı tipiyle"
           },
           {
             "en": "their length",
             "tr": "uzunluklarıyla"
           },
           {
-            "en": "the font",
-            "tr": "yazı tipiyle"
+            "en": "a small reversed detail",
+            "tr": "küçük, tersine çevrilmiş bir ayrıntıyla"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Yön, oran veya kural gibi bir ayrıntı tersine çevrilir."
       },
       {
@@ -1409,23 +1461,27 @@
         "stem_tr": "Öğrenci doğru bir ifadeyi işaretliyor. Olası neden:",
         "options": [
           {
-            "en": "missing \"incorrect\" in the stem",
-            "tr": "soruda \"incorrect\"i kaçırmak"
-          },
-          {
             "en": "calculator error",
             "tr": "hesap makinesi hatası"
+          },
+          {
+            "en": "missing \"incorrect\" in the stem",
+            "tr": "soruda \"incorrect\"i kaçırmak"
           },
           {
             "en": "bad luck",
             "tr": "şanssızlık"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Soru kökündeki ters mantığı kaçırmak yaygındır."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "best-explains",
@@ -1469,19 +1525,19 @@
         "stem_tr": "İyi bir açıklama nasıl olmalı?",
         "options": [
           {
-            "en": "directly affect the outcome",
-            "tr": "sonucu doğrudan etkilemeli"
-          },
-          {
             "en": "sound complicated",
             "tr": "karmaşık görünmeli"
+          },
+          {
+            "en": "directly affect the outcome",
+            "tr": "sonucu doğrudan etkilemeli"
           },
           {
             "en": "repeat the stem",
             "tr": "soruyu tekrar etmeli"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Neden, sonucu doğrudan etkileyen unsur olmalıdır."
       },
       {
@@ -1489,19 +1545,19 @@
         "stem_tr": "Net kâr arttı, özkaynak sabit kaldı. ROE büyük olasılıkla:",
         "options": [
           {
-            "en": "rose",
-            "tr": "arttı"
+            "en": "stayed constant",
+            "tr": "sabit kaldı"
           },
           {
             "en": "fell",
             "tr": "düştü"
           },
           {
-            "en": "stayed constant",
-            "tr": "sabit kaldı"
+            "en": "rose",
+            "tr": "arttı"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Pay artarken payda sabit; oran yükselir."
       },
       {
@@ -1525,7 +1581,11 @@
         "explanation_tr": "Sebep, sonuçtan önce gelmelidir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "increase-decrease",
@@ -1549,19 +1609,19 @@
         "stem_tr": "Piyasa faizleri düşüyor. Mevcut sabit kuponlu tahvilin fiyatı:",
         "options": [
           {
-            "en": "increase",
-            "tr": "artar"
+            "en": "not change",
+            "tr": "değişmez"
           },
           {
             "en": "decrease",
             "tr": "azalır"
           },
           {
-            "en": "not change",
-            "tr": "değişmez"
+            "en": "increase",
+            "tr": "artar"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Fiyat ve getiri ters yönlüdür."
       },
       {
@@ -1609,23 +1669,27 @@
         "stem_tr": "Yönü kontrol etmek için hangi araç yardımcı olur?",
         "options": [
           {
-            "en": "A small numeric example",
-            "tr": "Küçük bir sayısal örnek"
-          },
-          {
             "en": "A long essay",
             "tr": "Uzun bir deneme"
+          },
+          {
+            "en": "A small numeric example",
+            "tr": "Küçük bir sayısal örnek"
           },
           {
             "en": "Guessing",
             "tr": "Tahmin"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Küçük bir örnek yönü hızla gösterir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "ceteris-paribus",
@@ -1649,19 +1713,19 @@
         "stem_tr": "\"Ceteris paribus\" ne demektir?",
         "options": [
           {
-            "en": "other things equal",
-            "tr": "diğer şeyler eşit/sabit"
+            "en": "in the future",
+            "tr": "gelecekte"
           },
           {
             "en": "at any cost",
             "tr": "ne pahasına olursa olsun"
           },
           {
-            "en": "in the future",
-            "tr": "gelecekte"
+            "en": "other things equal",
+            "tr": "diğer şeyler eşit/sabit"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Diğer koşulların sabit tutulduğunu belirtir."
       },
       {
@@ -1689,19 +1753,19 @@
         "stem_tr": "Hangi ifade \"ceteris paribus\" ile anlamca en yakındır?",
         "options": [
           {
-            "en": "all else equal",
-            "tr": "all else equal"
+            "en": "as a result",
+            "tr": "as a result"
           },
           {
             "en": "in addition",
             "tr": "in addition"
           },
           {
-            "en": "as a result",
-            "tr": "as a result"
+            "en": "all else equal",
+            "tr": "all else equal"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "İkisi de aynı sabitleme anlamındadır."
       },
       {
@@ -1725,13 +1789,17 @@
         "explanation_tr": "Birkaç yaygın ifadeyi önceden öğrenmek yeterlidir."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "which-combination",
     "pattern_en": "which combination / which pair",
-    "meaning_tr": "\"Hangi kombinasyon\": şıklar iki (ya da üç) ögenin ikilileri halinde verilir (ör. \"artar, azalır\"). İkisi de doğru olmalıdır; yarım doğru kombinasyon yanlıştır.",
-    "trap_tr": "Yanlış okuma: Şıklar \"A: Artar / Azalır, B: Artar / Artar, C: Azalır / Azalır\". Öğrenci yalnızca ilk kelimeye bakıp A ile B arasında kalır. Her iki yönü de ayrı ayrı bulmadan karar vermek hatalıdır. Örnek: faiz artınca tahvil fiyatı azalır, getiri artar; yalnız fiyata bakarsan yanlış kombinasyona düşersin.",
+    "meaning_tr": "\"Hangi kombinasyon\": şıklar iki (ya da üç) öğenin ikilileri halinde verilir (ör. \"artar, azalır\"). İkisi de doğru olmalıdır; yarım doğru kombinasyon yanlıştır.",
+    "trap_tr": "Yanlış okuma: Şıklar \"A: Artar / Azalır, B: Artar / Artar, C: Azalır / Azalır\". Öğrenci yalnızca ilk kelimeye bakıp A ile B arasında kalır. Her iki yönü de ayrı ayrı bulmadan karar vermek hatalıdır. Örnek: piyasa getirileri artınca mevcut tahvilin fiyatı azalır, kupon ödemesi ise aynı kalır; yalnız fiyata bakarsan yanlış kombinasyona düşersin.",
     "strategy_tr": "Önce her öğenin doğru cevabını kendin bul ve bir kenara yaz (1: ..., 2: ...). Sonra bu ikiliyle birebir uyuşan şıkkı seç. Şıkları okuyup sonra düşünmek zaman kaybettirir.",
     "examples": [
       {
@@ -1749,19 +1817,19 @@
         "stem_tr": "Kombinasyon sorusunda kaç parça doğru olmalı?",
         "options": [
           {
-            "en": "one",
-            "tr": "bir"
-          },
-          {
             "en": "all",
             "tr": "hepsi"
+          },
+          {
+            "en": "one",
+            "tr": "bir"
           },
           {
             "en": "none",
             "tr": "hiçbiri"
           }
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation_tr": "Her iki (veya tüm) parça birlikte doğru olmalı."
       },
       {
@@ -1769,40 +1837,40 @@
         "stem_tr": "İyi bir ilk adım:",
         "options": [
           {
-            "en": "solve each part before reading options",
-            "tr": "şıklara bakmadan her parçayı çözmek"
-          },
-          {
             "en": "read only option A",
             "tr": "yalnızca A'yı okumak"
+          },
+          {
+            "en": "solve each part before reading options",
+            "tr": "şıklara bakmadan her parçayı çözmek"
           },
           {
             "en": "guess",
             "tr": "tahmin etmek"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Kendi ikilini bulup eşleştirmek hızlıdır."
       },
       {
-        "stem_en": "Rates rise. Bond price and yield change as: (price, yield)",
-        "stem_tr": "Faizler artıyor. Tahvil fiyatı ve getirisi: (fiyat, getiri)",
+        "stem_en": "Market yields rise. For an existing fixed-coupon bond, the price and the coupon payment change as: (price, coupon payment)",
+        "stem_tr": "Piyasa getirileri artıyor. Mevcut sabit kuponlu tahvilde fiyat ve kupon ödemesi nasıl değişir: (fiyat, kupon ödemesi)",
         "options": [
-          {
-            "en": "decrease, increase",
-            "tr": "azalır, artar"
-          },
-          {
-            "en": "increase, increase",
-            "tr": "artar, artar"
-          },
           {
             "en": "decrease, decrease",
             "tr": "azalır, azalır"
+          },
+          {
+            "en": "increase, stay the same",
+            "tr": "artar, aynı kalır"
+          },
+          {
+            "en": "decrease, stay the same",
+            "tr": "azalır, aynı kalır"
           }
         ],
-        "answer": 0,
-        "explanation_tr": "Fiyat düşer, getiri yükselir."
+        "answer": 2,
+        "explanation_tr": "Getiriler artınca fiyat düşer; kupon ödemesi tahvilin sabit şartıdır ve değişmez. Yalnız fiyata bakmak 'azalır, azalır' çeldiricisine götürür."
       },
       {
         "stem_en": "Looking only at the first word of each option is:",
@@ -1825,7 +1893,11 @@
         "explanation_tr": "İkinci parça farklı olabilir ve yanlış kombinasyona götürür."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   {
     "id": "most-accurate",
@@ -1849,19 +1921,19 @@
         "stem_tr": "\"Most accurate\" hangi şıkkı arar?",
         "options": [
           {
-            "en": "the fewest errors",
-            "tr": "en az hata içeren"
+            "en": "the largest number",
+            "tr": "en büyük sayı"
           },
           {
             "en": "the most words",
             "tr": "en çok kelime içeren"
           },
           {
-            "en": "the largest number",
-            "tr": "en büyük sayı"
+            "en": "the fewest errors",
+            "tr": "en az hata içeren"
           }
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation_tr": "Göreli doğruluk ölçülür."
       },
       {
@@ -1909,22 +1981,26 @@
         "stem_tr": "\"Asla\" diyen şık genellikle:",
         "options": [
           {
-            "en": "an overstatement",
-            "tr": "aşırı genelleme"
-          },
-          {
             "en": "perfectly accurate",
             "tr": "kusursuz doğru"
+          },
+          {
+            "en": "an overstatement",
+            "tr": "aşırı genelleme"
           },
           {
             "en": "a number",
             "tr": "bir sayı"
           }
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation_tr": "Mutlak kelimeler çoğu zaman gerçeği abartır."
       }
     ],
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "independent-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   }
 ]

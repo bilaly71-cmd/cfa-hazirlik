@@ -8,12 +8,12 @@
     "steps": [
       {
         "keys": "[2ND] [FORMAT] 9 [ENTER]",
-        "display": "DEC=9.00000000",
+        "display": "DEC=9",
         "note_tr": "Ondalık basamağı 9 yapar; tüm basamaklar görünür. Sonuçta [2ND] [FORMAT] ile 4'e çekilebilir."
       },
       {
         "keys": "[2ND] [P/Y] 1 [ENTER]",
-        "display": "P/Y=1.0",
+        "display": "P/Y=1",
         "note_tr": "Yılda 1 ödeme. [↓] ile C/Y'ye geç; C/Y=1 olmalı. Çıkmak için [2ND] [QUIT]."
       },
       {
@@ -46,7 +46,11 @@
       "BGN modunda kalıp bir sonraki soruyu çözmek en sık görülen hatadır.",
       "[2ND] [RESET] ayarlarını da sıfırlar; DEC değerini tekrar ayarla."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Önerilen ayar: DEC=9 (veya 4), P/Y=1, END modu. AOS ya da Chn tercihine karar ver ve sınavda aynı kal."
   },
   {
@@ -88,11 +92,15 @@
       }
     ],
     "pitfalls_tr": [
-      "PV ve FV aynı işaretli girilirse [CPT] 'Error 5' verir.",
+      "N veya I/Y hesaplarken PV ve FV aynı işaretliyse (PMT=0) [CPT] 'Error 5' verir.",
       "I/Y yüzde olarak girilir (8, 0.08 değil).",
       "N, I/Y ile aynı dönem biriminde olmalı (aylık faiz ↔ ay sayısı)."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "1.000 TL'yi yıllık %8 ile 5 yıl bileşik faizle yatırırsan FV ≈ 1,469.33 TL (pozitif; çıkan ile gelen para zıt işaretli)."
   },
   {
@@ -133,7 +141,11 @@
       "BGN modunda ilk ödeme t=0'dadır; N dönem sayısını değiştirmez.",
       "Dönem başı annüitede 'Error' alıyorsan işaretlere bak."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "3 yıl boyunca her yıl başında 100 TL, %5: PV ≈ 285.94 TL. Aynı akış dönem sonunda olsaydı 272.32 TL olurdu (BGN, olağan değerin 1+r katıdır)."
   },
   {
@@ -154,14 +166,14 @@
         "note_tr": "Nominal yıllık oran (%)."
       },
       {
-        "keys": "[↓] 12 [ENTER]",
+        "keys": "[↓] [↓] 12 [ENTER]",
         "display": "C/Y=12",
-        "note_tr": "Yılda bileşikleme sayısı."
+        "note_tr": "Ekran sırası NOM, EFF, C/Y'dir; EFF'yi atlayıp C/Y'ye gel ve yılda bileşikleme sayısını gir."
       },
       {
-        "keys": "[↓] [CPT]",
+        "keys": "[↑] [CPT]",
         "display": "EFF=12.6825",
-        "note_tr": "Efektif yıllık oran."
+        "note_tr": "EFF satırına dön ve hesapla: efektif yıllık oran. (Sıra farklı görünürse cihazında dene.)"
       },
       {
         "keys": "[2ND] [QUIT]",
@@ -173,8 +185,12 @@
       "Sürekli bileşikleme için ICONV kullanılmaz: e^r − 1 hesapla ([2ND] [e^x]).",
       "Bu sayfa TVM'deki P/Y/C/Y değerini etkileyebilir; sonra P/Y'yi kontrol et."
     ],
-    "verified": false,
-    "example_tr": "Nominal %12, aylık bileşik: EAR = 12.6825%. Ters hesapta EFF gir, C/Y gir, NOM'da [CPT] yap."
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
+    "example_tr": "Nominal %12, aylık bileşik: EAR = 12.6825%. Ters hesapta EFF ve C/Y gir, NOM satırında [CPT] yap."
   },
   {
     "id": "ba-cf-npv-irr",
@@ -220,7 +236,11 @@
       "BA II Plus'ta NPV, CF0'ı t=0'da kabul eder: ilk akış bir dönem sonraysa CF0=0 gir.",
       "Sonuçları çıkınca yeni problem öncesi [2ND] [CLR WORK] yap."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Akışlar −1000, 400, 500, 600; iskonto %10: NPV ≈ 227.65, IRR ≈ 21.65%. NPV>0 olduğu için proje kabul edilir."
   },
   {
@@ -267,7 +287,11 @@
       "P1 ve P2 dönem numarasıdır, tarih değil.",
       "Her taksit tablo için P1=P2 girilerek tek taksit de incelenebilir."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "İlk 6 ayda toplam anapara ≈ 4,925.19, faiz ≈ 238.79 (taksit ≈ 860.66)."
   },
   {
@@ -307,7 +331,11 @@
       "Eski veri kalmışsa sonuçlar bozulur: önce CLR WORK.",
       "Y değerlerini görmezden gel; 1-V modunda Y kullanılmaz."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Veri 8, 12, 10, 14, 6: ortalama 10.00, Sx (örneklem) ≈ 3.1623, σx (anakütle) ≈ 2.8284."
   },
   {
@@ -347,7 +375,11 @@
       "r kareye çevirerek R² bulunur.",
       "X-Y sırasını karıştırma: Y bağımlı değişken."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "X = 8, 12, 10, 14, 6; Y = 2, 5, 3, 4, 2: eğim b ≈ 0.3500, sabit a ≈ -0.3000, r ≈ 0.8489."
   },
   {
@@ -383,9 +415,9 @@
         "note_tr": "İtfa değeri (nominal)."
       },
       {
-        "keys": "[↓] [2ND] [SET]",
-        "display": "1/Y veya 2/Y",
-        "note_tr": "Kupon sıklığı: yıllık 1/Y, yarıyıllık 2/Y. Soru yıllık kuponluysa 1/Y."
+        "keys": "[↓] (ACT/360: ACT bırak) [↓] [2ND] [SET]",
+        "display": "2/Y → 1/Y",
+        "note_tr": "RV'den sonra önce gün sayım satırı (ACT/360), sonra kupon sıklığı satırı gelir; sıklığı [2ND] [SET] ile 2/Y ↔ 1/Y değiştir. Yıllık kuponlu soruda 1/Y. Satır sırasını cihazında dene."
       },
       {
         "keys": "[↓] 6 [ENTER]",
@@ -404,7 +436,11 @@
       "PRI temiz fiyattır; kirli fiyat için AI ekle.",
       "Tarih yerine N tabanlı TVM ile de çözülebilir (kuponlar eşit aralıklıysa)."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "3 yıllık %5 kuponlu tahvil, YTM %6: fiyat ≈ 97.327 (100 nominal başına)."
   },
   {
@@ -427,11 +463,11 @@
       {
         "keys": "1.04 [÷] 1.02 [−] 1 [=]",
         "display": "0.0196",
-        "note_tr": "Reel getiri (1+nominal)/(1+enflasyon) − 1."
+        "note_tr": "Reel getiri (1+nominal)/(1+enflasyon) − 1 ≈ 0.0196 (ekranda tam görmek için DEC=4 veya daha fazla yap)."
       }
     ],
     "pitfalls_tr": [
-      "BA II Plus'ta özel bir yüzde değişim çalışma sayfası olabilir; tuş dizisinden emin değilsen yukarıdaki genel yöntemi kullan.",
+      "BA II Plus'ta özel bir Δ% tuşu/çalışma sayfası olup olmadığını cihazında dene; tuş dizisi burada doğrulanmadı, aşağıdaki genel yöntem her cihazda çalışır.",
       "Zincir (Chn) modda işlem sırasına dikkat: parantez yoktur; adım adım ilerle.",
       "Log getiri için [LN] tuşu: ln(P1/P0)."
     ],
@@ -458,19 +494,23 @@
       {
         "keys": "[2ND] [MEM]",
         "display": "M0=",
-        "note_tr": "Hafıza ekranı; tüm değerleri gözden geçir. [2ND] [CLR WORK] ile temizlenir."
+        "note_tr": "Hafıza ekranı; [↓] ile M0–M9'u gözden geçir. [2ND] [CLR WORK] hepsini temizler. (Tuş dizisini cihazında dene.)"
       },
       {
         "keys": "[RCL] [PV]",
         "display": "PV",
-        "note_tr": "TVM tuşları da [RCL] ile okunabilir."
+        "note_tr": "TVM değerleri [RCL] ve ilgili TVM tuşuyla çağrılabilir (örn. [RCL] [PV]); cihazında dene."
       }
     ],
     "pitfalls_tr": [
       "Ara sonucu yazıya çevirip yuvarlayarak girme; STO/RCL tam hassasiyeti korur.",
-      "CLR WORK yalnızca açık çalışma sayfasını değil, hafıza ekranında hafızaları siler: dikkat."
+      "Hafıza ekranında ([2ND] [MEM]) [2ND] [CLR WORK] tüm hafızaları siler: dikkat."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Bir sonucu başka bir formüle taşırken yuvarlama hatasını azaltmak için ara sonucu hafızaya yaz."
   },
   {
@@ -507,11 +547,15 @@
     ],
     "pitfalls_tr": [
       "Error 5: PV/PMT/FV işaretleri uyumsuz veya hepsi aynı yönde.",
-      "Error 7: IRR/ICONV yakınsamadı; akışları kontrol et.",
+      "Error 7: IRR hesabı yakınsamadı/uygun akış yok; akış işaretlerini kontrol et. (Hata kodlarını cihaz kılavuzuyla da doğrula.)",
       "CF çalışma sayfası sonuçları TVM'yi etkilemez; ikisini karıştırma.",
       "Dönem birimi (ay/yıl) ile faiz birimini eşleştir."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Hatalı sonuçların çoğu BGN modu, P/Y ayarı ve işaret hatasından gelir."
   },
   {
@@ -547,7 +591,11 @@
       "P/Y=12 iken N ay sayısıdır (360), yıl sayısı değil.",
       "İstersen P/Y=1 bırakıp N=360, I/Y=0.5 gir (aylık oran)."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "100.000 TL kredi, %6, 30 yıl, aylık: taksit ≈ 599.55 TL."
   },
   {
@@ -572,7 +620,11 @@
       "PV ve FV zıt işaretli olmalı; aksi halde hata verir.",
       "Faiz bulma sonucu dönemlik orandır; yıllığa çevir."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "%6 faizle paranın ikiye katlanması için N ≈ 11.90 dönem. Yaklaşık 72 kuralı: 72/6=12; kural kaba bir tahmindir."
   },
   {
@@ -602,7 +654,11 @@
       "[e^x] ikinci fonksiyondur; [2ND] unutulursa yanlış sonuç.",
       "Log getiriler toplanır, basit getiriler çarpılır."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Sürekli %8: EAR = 8.33%. ln(1,10) = 9.53%."
   },
   {
@@ -637,7 +693,11 @@
       "Zaman ağırlıklı getiri için her alt dönem getirisini hesapla ve çarp: (1+R1)(1+R2)...-1.",
       "Aynı akış tarihlerini eşit aralıklı kabul eder."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Para ağırlıklı getiri nakit akışlarının zamanlamasından etkilenir; yönetici performansı için zaman ağırlıklı getiri kullanılır."
   },
   {
@@ -662,7 +722,11 @@
       "Yarıyıllık kuponda N=2×yıl, I/Y=YTM/2, PMT=kupon/2.",
       "Bulunan I/Y dönemlik orandır: yıllığa çevir (BEY için ×2)."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "3 yıllık %5 kuponlu tahvil, YTM %6: PV ≈ 97.327."
   },
   {
@@ -678,22 +742,23 @@
         "note_tr": "Temizle."
       },
       {
-        "keys": "X01 değeri [ENTER] [↓] Y01 ağırlık [ENTER]",
-        "display": "X, Y",
-        "note_tr": "LIN modunda ΣXY alınır; Y'ye ağırlık gir."
+        "keys": "10 [ENTER] [↓] 0.6 [ENTER] [↓] 20 [ENTER] [↓] 0.4 [ENTER]",
+        "display": "X01=10, Y01=0.6 ...",
+        "note_tr": "Her satırda X'e değeri, Y'ye ağırlığı gir."
       },
       {
-        "keys": "[2ND] [STAT] [2ND] [SET] ... ΣXY ve ΣY",
-        "note_tr": "Ağırlıklı ortalama = ΣXY / ΣY."
+        "keys": "[2ND] [STAT] [2ND] [SET] (LIN seçili olana kadar)",
+        "display": "LIN",
+        "note_tr": "LIN modunda ΣX, ΣX², ΣY, ΣY², ΣXY değerleri gösterilir; [↓] ile ΣY ve ΣXY'ye ilerle."
       },
       {
         "keys": "ΣXY [÷] ΣY [=]",
-        "note_tr": "Elle böl."
+        "note_tr": "Ağırlıklı ortalama = ΣXY / ΣY. Değerleri ekrandan oku, elle böl (veya STO/RCL kullan)."
       }
     ],
     "pitfalls_tr": [
-      "1-V modunda Y kullanılmaz.",
-      "Ağırlıklar toplamı 1 değilse ΣY'ye böl."
+      "1-V modunda Y satırının frekans olarak kullanılıp kullanılmadığını cihazında dene; bu rehber ağırlığı LIN modunda ΣXY/ΣY ile hesaplar (matematiksel olarak doğru).",
+      "Ağırlıklar toplamı 1 değilse ΣY'ye böl (formülde zaten bölünür)."
     ],
     "verified": false,
     "example_tr": "Getiriler %10, %20, ağırlıklar 0,6 ve 0,4: ΣXY=14, ΣY=1 → %14."
@@ -732,7 +797,11 @@
       "BEGIN modunda ekranda BEGIN görünür; işin sonunda END'e dön.",
       "Faiz bulmada PV ve FV zıt işaretli olmalı."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "1.000 TL, %8, 5 yıl: FV ≈ 1,469.33."
   },
   {
@@ -774,7 +843,11 @@
       "NPV için [i] önce girilir; IRR için gerekmez.",
       "İşaretler uyumsuzsa IRR hata verir."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Aynı akışlar: NPV ≈ 227.65, IRR ≈ 21.65%."
   },
   {
@@ -807,7 +880,11 @@
       "HP 12C yalnızca örneklem standart sapması verir (anakütle için √((n−1)/n) ile çarp).",
       "Eski veriler [f] [CLEAR Σ] ile silinmeli."
     ],
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "formula-check+katex-render",
+      "date": "2026-10-16"
+    },
     "example_tr": "Veri 8, 12, 10, 14, 6: ortalama 10.00, s ≈ 3.1623."
   },
   {
@@ -819,19 +896,19 @@
     "steps": [
       {
         "keys": "[g] [M.DY]",
-        "note_tr": "Tarih biçimini AA.GGYYYY yap."
+        "note_tr": "Tarih biçimini AA.GGYYYY yapar (cihazında dene)."
       },
       {
-        "keys": "5 [PMT] 6 [i]",
-        "note_tr": "Kupon oranı (PMT) ve getiri; yarıyıllık kuponla çalışır, cihaz tahvili 2 kuponlu kabul eder."
+        "keys": "6 [i] 5 [PMT]",
+        "note_tr": "Yıllık getiri (%) ve yıllık kupon oranı (%); cihaz kuponu yarıyıllık öder kabul eder."
       },
       {
         "keys": "1.012026 [ENTER] 1.012029",
-        "note_tr": "Valör ve vade tarihi."
+        "note_tr": "Valör [ENTER] vade tarihi (AA.GGYYYY)."
       },
       {
         "keys": "[f] [PRICE]",
-        "note_tr": "Fiyatı hesaplar (YTM için fiyatı gir, [f] [YTM] kullan)."
+        "note_tr": "Fiyatı (100 nominal başına) hesaplar. YTM için fiyatı [PV]'ye girip [f] [YTM] kullanılır; tuş sırasını cihazında dene."
       }
     ],
     "pitfalls_tr": [
@@ -839,6 +916,6 @@
       "Tarih biçimi yanlışsa hata verir."
     ],
     "verified": false,
-    "example_tr": "HP 12C bond fonksiyonları yarıyıllık kupon varsayar; yıllık kuponlu tahvil için TVM ile çözmek daha güvenlidir."
+    "example_tr": "3 yıllık %5 kuponlu tahvil, YTM %6: yıllık kuponla fiyat 97.327; HP 12C'nin yarıyıllık varsayımıyla ≈ 97.29. Yıllık kuponlu tahvil için TVM daha güvenlidir."
   }
 ]
