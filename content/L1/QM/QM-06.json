@@ -359,31 +359,31 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "An analyst models next year's return on Rumeli Enerji shares with three scenarios: recession (probability 0.25, return -8%), normal growth (probability 0.50, return 10%) and boom (probability 0.25, return 22%). The expected return is 8.5%. The standard deviation of the return is closest to:",
-      "stem_tr": "Bir analist Rumeli Enerji hissesinin gelecek yılki getirisini üç senaryoyla modelliyor: durgunluk (olasılık 0,25; getiri %-8), normal büyüme (olasılık 0,50; getiri %10) ve canlı büyüme (olasılık 0,25; getiri %22). Beklenen getiri %8,5'tir. Getirinin standart sapması aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst assigns three scenarios to next year's return on Ege Lojistik shares (a fictional company): weak demand (probability 0.30, return -12%), stable demand (probability 0.50, return 8%) and strong demand (probability 0.20, return 25%). The expected return is 5.4%. The standard deviation of the return is closest to:",
+      "stem_tr": "Bir analist, kurgusal Ege Lojistik hissesinin gelecek yılki getirisi için üç senaryo belirliyor: zayıf talep (olasılık 0,30; getiri %-12), istikrarlı talep (olasılık 0,50; getiri %8) ve güçlü talep (olasılık 0,20; getiri %25). Beklenen getiri %5,4'tür. Getirinin standart sapması aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "12.34%",
-          "tr": "%12,34",
-          "value": 12.34
+          "en": "15.21%",
+          "tr": "%15,21",
+          "value": 15.21
         },
         {
           "key": "B",
-          "en": "15.11%",
-          "tr": "%15,11",
-          "value": 15.11
+          "en": "18.62%",
+          "tr": "%18,62",
+          "value": 18.62
         },
         {
           "key": "C",
-          "en": "10.71%",
-          "tr": "%10,71",
-          "value": 10.71
+          "en": "13.08%",
+          "tr": "%13,08",
+          "value": 13.08
         }
       ],
       "answer": "C",
-      "explanation_en": "Deviations from 8.5% are -16.5, 1.5 and 13.5. Variance = 0.25(272.25) + 0.50(2.25) + 0.25(182.25) = 114.75 (%²). Standard deviation = √114.75 ≈ 10.71%.",
-      "explanation_tr": "%8,5'ten sapmalar -16,5; 1,5 ve 13,5'tir. Varyans = 0,25(272,25) + 0,50(2,25) + 0,25(182,25) = 114,75 (%²). Standart sapma = √114,75 ≈ %10,71.",
+      "explanation_en": "Deviations from 5.4% are -17.4, 2.6 and 19.6. Variance = 0.30(302.76) + 0.50(6.76) + 0.20(384.16) = 171.04 (%²). Standard deviation = √171.04 ≈ 13.08%.",
+      "explanation_tr": "%5,4'ten sapmalar -17,4; 2,6 ve 19,6'dır. Varyans = 0,30(302,76) + 0,50(6,76) + 0,20(384,16) = 171,04 (%²). Standart sapma = √171,04 ≈ %13,08.",
       "wrong_option_reasons": {
         "A": {
           "en": "Gives each scenario an equal weight of 1/3 instead of using the stated probabilities.",
@@ -405,19 +405,19 @@
           "formula_latex": "\\sigma^2=\\sum_i P_i\\left[R_i-E(R)\\right]^2"
         },
         {
-          "en": "Squared deviations: 272.25, 2.25 and 182.25.",
-          "tr": "Kare sapmalar: 272,25; 2,25 ve 182,25.",
+          "en": "Squared deviations: 302.76, 6.76 and 384.16.",
+          "tr": "Kare sapmalar: 302,76; 6,76 ve 384,16.",
           "values": {
-            "E(R)": 8.5
+            "E(R)": 5.4
           }
         },
         {
-          "en": "Weighted: 68.06 + 1.13 + 45.56 = 114.75 (%²).",
-          "tr": "Ağırlıklı: 68,06 + 1,13 + 45,56 = 114,75 (%²)."
+          "en": "Weighted: 90.83 + 3.38 + 76.83 = 171.04 (%²).",
+          "tr": "Ağırlıklı: 90,83 + 3,38 + 76,83 = 171,04 (%²)."
         },
         {
-          "en": "σ = √114.75 ≈ 10.71%.",
-          "tr": "σ = √114,75 ≈ %10,71."
+          "en": "σ = √171.04 ≈ 13.08%.",
+          "tr": "σ = √171,04 ≈ %13,08."
         }
       ],
       "calculator": {
@@ -425,21 +425,21 @@
         "keystrokes": [
           "[2ND] [7]",
           "[2ND] [CE/C]",
-          "8 [+/-] [ENTER]",
-          "[↓] 25 [ENTER] [↓]",
-          "10 [ENTER]",
+          "12 [+/-] [ENTER]",
+          "[↓] 30 [ENTER] [↓]",
+          "8 [ENTER]",
           "[↓] 50 [ENTER] [↓]",
-          "22 [ENTER]",
-          "[↓] 25 [ENTER]",
+          "25 [ENTER]",
+          "[↓] 20 [ENTER]",
           "[2ND] [8]",
           "[2ND] [ENTER]  (1-V görünene kadar)",
-          "[↓] [↓]  x̄ = 8.5",
-          "[↓] [↓]  σx = 10.71"
+          "[↓] [↓]  x̄ = 5.4",
+          "[↓] [↓]  σx = 13.08"
         ],
-        "note_tr": "σx (Sx değil) olasılık ağırlıklı standart sapmayı verir."
+        "note_tr": "Y değerleri frekans olarak girilir (30/50/20); σx (n'e bölen) okunur, Sx değil."
       },
       "numeric": {
-        "expr": "math.sqrt(0.25*(-8-8.5)**2 + 0.5*(10-8.5)**2 + 0.25*(22-8.5)**2)",
+        "expr": "math.sqrt(0.3*(-12-5.4)**2 + 0.5*(8-5.4)**2 + 0.2*(25-5.4)**2)",
         "unit": "%"
       },
       "vocab_ids": [
@@ -470,39 +470,39 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "An analyst models next year's return on Rumeli Enerji shares with three scenarios: recession (probability 0.25, return -8%), normal growth (probability 0.50, return 10%) and boom (probability 0.25, return 22%). In the same three scenarios, a government bond fund returns 6% in recession, 4% in normal growth and 1% in a boom. Expected returns are 8.5% for the shares and 3.75% for the fund. The covariance between the share and fund returns (in %²) is closest to:",
-      "stem_tr": "Bir analist Rumeli Enerji hissesinin gelecek yılki getirisini üç senaryoyla modelliyor: durgunluk (olasılık 0,25; getiri %-8), normal büyüme (olasılık 0,50; getiri %10) ve canlı büyüme (olasılık 0,25; getiri %22). Aynı üç senaryoda bir devlet tahvili fonu durgunlukta %6, normal büyümede %4 ve canlı büyümede %1 getiri sağlıyor. Beklenen getiri hisse için %8,5, fon için %3,75'tir. Hisse ve fon getirileri arasındaki kovaryans (%² cinsinden) aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst sets three scenarios with probabilities 0.20, 0.50 and 0.30. In these scenarios, Trakya Cam shares (a fictional company) return -10%, 6% and 18%, and a gold fund returns 12%, 3% and -4%. Expected returns are 6.4% for the shares and 2.7% for the gold fund. The covariance between the share and gold fund returns (in %²) is closest to:",
+      "stem_tr": "Bir analist olasılıkları 0,20; 0,50 ve 0,30 olan üç senaryo belirliyor. Bu senaryolarda kurgusal Trakya Cam hissesi %-10, %6 ve %18; bir altın fonu ise %12, %3 ve %-4 getiri sağlıyor. Beklenen getiri hisse için %6,4, altın fonu için %2,7'dir. Hisse ve altın fonu getirileri arasındaki kovaryans (%² cinsinden) aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "-18.38",
-          "tr": "-18,38",
-          "value": -18.38
+          "en": "-53.88",
+          "tr": "-53,88",
+          "value": -53.88
         },
         {
           "key": "B",
-          "en": "18.38",
-          "tr": "18,38",
-          "value": 18.38
+          "en": "53.88",
+          "tr": "53,88",
+          "value": 53.88
         },
         {
           "key": "C",
-          "en": "-24.62",
-          "tr": "-24,62",
-          "value": -24.62
+          "en": "-76.79",
+          "tr": "-76,79",
+          "value": -76.79
         }
       ],
       "answer": "A",
-      "explanation_en": "Cross-products of deviations: (-16.5)(2.25) = -37.125, (1.5)(0.25) = 0.375, (13.5)(-2.75) = -37.125. Covariance = 0.25(-37.125) + 0.50(0.375) + 0.25(-37.125) = -18.375 ≈ -18.38.",
-      "explanation_tr": "Sapmaların çapraz çarpımları: (-16,5)(2,25) = -37,125; (1,5)(0,25) = 0,375; (13,5)(-2,75) = -37,125. Kovaryans = 0,25(-37,125) + 0,50(0,375) + 0,25(-37,125) = -18,375 ≈ -18,38.",
+      "explanation_en": "Share deviations: -16.4, -0.4, 11.6. Gold fund deviations: 9.3, 0.3, -6.7. Cross-products: -152.52, -0.12, -77.72. Covariance = 0.20(-152.52) + 0.50(-0.12) + 0.30(-77.72) = -53.88 (%²).",
+      "explanation_tr": "Hisse sapmaları: -16,4; -0,4; 11,6. Altın fonu sapmaları: 9,3; 0,3; -6,7. Çapraz çarpımlar: -152,52; -0,12; -77,72. Kovaryans = 0,20(-152,52) + 0,50(-0,12) + 0,30(-77,72) = -53,88 (%²).",
       "wrong_option_reasons": {
         "B": {
-          "en": "Gets the sign wrong. The fund does well exactly when the shares do badly, so the covariance must be negative.",
-          "tr": "İşareti yanlış. Fon, hisse kötüyken iyi getiri sağladığı için kovaryans negatif olmalıdır."
+          "en": "Gets the sign wrong. Gold does well exactly when the shares do badly, so the covariance must be negative.",
+          "tr": "İşareti yanlış almış. Altın tam da hisse kötü gittiğinde iyi gidiyor; dolayısıyla kovaryans negatif olmalı."
         },
         "C": {
           "en": "Adds the cross-products and divides by 3, ignoring the scenario probabilities.",
-          "tr": "Çapraz çarpımları toplayıp 3'e bölmüş; senaryo olasılıklarını yok saymış."
+          "tr": "Çapraz çarpımları toplayıp 3'e bölmüş; senaryo olasılıklarını göz ardı etmiş."
         }
       },
       "solution_steps": [
@@ -512,35 +512,35 @@
         },
         {
           "en": "Covariance weights each product of deviations by the scenario probability.",
-          "tr": "Kovaryans, sapma çarpımlarını senaryo olasılığıyla ağırlıklandırır.",
+          "tr": "Kovaryans, sapma çarpımlarının her birini senaryo olasılığıyla ağırlıklandırır.",
           "formula_latex": "Cov(R_A,R_B)=\\sum_i P_i\\left[R_{A,i}-E(R_A)\\right]\\left[R_{B,i}-E(R_B)\\right]"
         },
         {
-          "en": "Share deviations: -16.5, 1.5, 13.5. Fund deviations: 2.25, 0.25, -2.75.",
-          "tr": "Hisse sapmaları: -16,5; 1,5; 13,5. Fon sapmaları: 2,25; 0,25; -2,75.",
+          "en": "Share deviations: -16.4, -0.4, 11.6. Gold fund deviations: 9.3, 0.3, -6.7.",
+          "tr": "Hisse sapmaları: -16,4; -0,4; 11,6. Altın fonu sapmaları: 9,3; 0,3; -6,7.",
           "values": {
-            "E(RA)": 8.5,
-            "E(RB)": 3.75
+            "E(RA)": 6.4,
+            "E(RB)": 2.7
           }
         },
         {
-          "en": "Products: -37.125, 0.375, -37.125. Weighted: -9.281 + 0.188 - 9.281.",
-          "tr": "Çarpımlar: -37,125; 0,375; -37,125. Ağırlıklı: -9,281 + 0,188 - 9,281."
+          "en": "Products: -152.52, -0.12, -77.72. Weighted: -30.50 - 0.06 - 23.32.",
+          "tr": "Çarpımlar: -152,52; -0,12; -77,72. Ağırlıklı: -30,50 - 0,06 - 23,32."
         },
         {
-          "en": "Covariance ≈ -18.38 (%²): the returns move in opposite directions.",
-          "tr": "Kovaryans ≈ -18,38 (%²): getiriler ters yönde hareket ediyor."
+          "en": "Covariance ≈ -53.88 (%²): the returns move in opposite directions.",
+          "tr": "Kovaryans ≈ -53,88 (%²): getiriler ters yönde hareket ediyor."
         }
       ],
       "numeric": {
-        "expr": "0.25*(-8-8.5)*(6-3.75) + 0.5*(10-8.5)*(4-3.75) + 0.25*(22-8.5)*(1-3.75)"
+        "expr": "0.2*(-10-6.4)*(12-2.7) + 0.5*(6-6.4)*(3-2.7) + 0.3*(18-6.4)*(-4-2.7)"
       },
       "vocab_ids": [
         "covariance",
         "deviation",
         "scenario",
-        "government-bond",
         "fund",
+        "probability",
         "closest"
       ],
       "pattern_ids": [
@@ -563,39 +563,39 @@
       "type": "mcq3",
       "difficulty": 3,
       "cognitive": "analyze",
-      "stem_en": "An analyst models next year's return on Rumeli Enerji shares with three scenarios: recession (probability 0.25, return -8%), normal growth (probability 0.50, return 10%) and boom (probability 0.25, return 22%). In the same three scenarios, a government bond fund returns 6% in recession, 4% in normal growth and 1% in a boom. Expected returns are 8.5% for the shares and 3.75% for the fund. The covariance is -18.375 (%²), the share's standard deviation is 10.71% and the fund's standard deviation is 1.785%. The correlation between the two returns is closest to:",
-      "stem_tr": "Bir analist Rumeli Enerji hissesinin gelecek yılki getirisini üç senaryoyla modelliyor: durgunluk (olasılık 0,25; getiri %-8), normal büyüme (olasılık 0,50; getiri %10) ve canlı büyüme (olasılık 0,25; getiri %22). Aynı üç senaryoda bir devlet tahvili fonu durgunlukta %6, normal büyümede %4 ve canlı büyümede %1 getiri sağlıyor. Beklenen getiri hisse için %8,5, fon için %3,75'tir. Kovaryans -18,375 (%²), hissenin standart sapması %10,71 ve fonun standart sapması %1,785'tir. İki getiri arasındaki korelasyon aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "From a scenario analysis, the covariance between the returns of an equity fund and a gold fund is -30 (%²). The standard deviation of the equity fund's return is 12% and that of the gold fund's return is 5%. The correlation between the two returns is closest to:",
+      "stem_tr": "Bir senaryo analizine göre bir hisse fonu ile bir altın fonunun getirileri arasındaki kovaryans -30 (%²)'dir. Hisse fonunun getirisinin standart sapması %12, altın fonununki %5'tir. İki getiri arasındaki korelasyon aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "-0.96",
-          "tr": "-0,96",
-          "value": -0.96
+          "en": "-0.50",
+          "tr": "-0,50",
+          "value": -0.5
         },
         {
           "key": "B",
-          "en": "-1.29",
-          "tr": "-1,29",
-          "value": -1.29
+          "en": "-0.01",
+          "tr": "-0,01",
+          "value": -0.01
         },
         {
           "key": "C",
-          "en": "-0.05",
-          "tr": "-0,05",
-          "value": -0.05
+          "en": "-2.50",
+          "tr": "-2,50",
+          "value": -2.5
         }
       ],
       "answer": "A",
-      "explanation_en": "ρ = Cov / (σA × σB) = -18.375 / (10.71 × 1.785) ≈ -0.96. The two returns move in strongly opposite directions, so the fund is a good diversifier for the shares.",
-      "explanation_tr": "ρ = Kov / (σA × σB) = -18,375 / (10,71 × 1,785) ≈ -0,96. İki getiri güçlü biçimde ters yönde hareket ediyor; bu yüzden fon, hisse için iyi bir çeşitlendirme aracıdır.",
+      "explanation_en": "ρ = Cov / (σA × σB) = -30 / (12 × 5) = -0.50. The returns move in opposite directions about half as strongly as a perfect negative relationship, so the gold fund diversifies the equity fund well.",
+      "explanation_tr": "ρ = Kov / (σA × σB) = -30 / (12 × 5) = -0,50. Getiriler ters yönde hareket ediyor; ilişki tam negatif ilişkinin yaklaşık yarısı kadar güçlü. Altın fonu hisse fonunu iyi çeşitlendirir.",
       "wrong_option_reasons": {
         "B": {
-          "en": "Uses the equally weighted covariance (-24.625). The result is below -1, which is impossible for a correlation.",
-          "tr": "Eşit ağırlıklı kovaryansı (-24,625) kullanmış. Sonuç -1'in altında; korelasyon için bu imkânsızdır."
+          "en": "Divides the covariance by the product of the variances (144 × 25) instead of the standard deviations.",
+          "tr": "Kovaryansı standart sapmalar yerine varyansların çarpımına (144 × 25) bölmüş."
         },
         "C": {
-          "en": "Divides by the product of the variances instead of the standard deviations.",
-          "tr": "Standart sapmaların çarpımı yerine varyansların çarpımına bölmüş."
+          "en": "Divides by only one standard deviation (12). A correlation below -1 is impossible, which signals an error.",
+          "tr": "Yalnızca bir standart sapmaya (12) bölmüş. -1'in altında korelasyon olamaz; bu bir hata işaretidir."
         }
       },
       "solution_steps": [
@@ -605,44 +605,36 @@
         },
         {
           "en": "Correlation scales covariance by both standard deviations, so it is between -1 and +1.",
-          "tr": "Korelasyon, kovaryansı iki standart sapmaya bölerek ölçekler; bu yüzden -1 ile +1 arasındadır.",
+          "tr": "Korelasyon, kovaryansı iki standart sapmayla ölçeklendirir; bu yüzden -1 ile +1 arasındadır.",
           "formula_latex": "\\rho_{A,B}=\\frac{Cov(R_A,R_B)}{\\sigma_A\\sigma_B}"
         },
         {
-          "en": "Substitute: -18.375 / (10.712 × 1.785).",
-          "tr": "Yerine koy: -18,375 / (10,712 × 1,785).",
+          "en": "Substitute: -30 / (12 × 5).",
+          "tr": "Yerine koy: -30 / (12 × 5).",
           "values": {
-            "Cov": -18.375,
-            "sigma_A": 10.712,
-            "sigma_B": 1.785
+            "Cov": -30,
+            "sigma_A": 12,
+            "sigma_B": 5
           }
         },
         {
-          "en": "Denominator ≈ 19.12.",
-          "tr": "Payda ≈ 19,12."
+          "en": "Denominator = 60.",
+          "tr": "Payda = 60."
         },
         {
-          "en": "ρ ≈ -0.96 (no unit).",
-          "tr": "ρ ≈ -0,96 (birimsiz)."
+          "en": "ρ = -0.50 (no unit).",
+          "tr": "ρ = -0,50 (birimsiz)."
         }
       ],
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]",
-          "[2ND] [CE/C]",
-          "X01: 8 [+/-] [ENTER] [↓] Y01: 6 [ENTER] [↓]",
-          "X02: 10 [ENTER] [↓] Y02: 4 [ENTER] [↓]",
-          "X03: 10 [ENTER] [↓] Y03: 4 [ENTER] [↓]",
-          "X04: 22 [ENTER] [↓] Y04: 1 [ENTER]",
-          "[2ND] [8]",
-          "[2ND] [ENTER]  (LIN görünene kadar)",
-          "[↓] ... r = -0.96"
-        ],
-        "note_tr": "Olasılıklar 0,25/0,50/0,25 olduğu için normal senaryoyu iki kez girmek ağırlıkları doğru verir."
+          "12 [×] 5 [=] [STO] 1",
+          "30 [+/-] [÷] [RCL] 1 [=]"
+        ]
       },
       "numeric": {
-        "expr": "(0.25*(-16.5)*2.25 + 0.5*1.5*0.25 + 0.25*13.5*(-2.75)) / (math.sqrt(0.25*16.5**2+0.5*1.5**2+0.25*13.5**2)*math.sqrt(0.25*2.25**2+0.5*0.25**2+0.25*2.75**2))"
+        "expr": "-30/(12*5)"
       },
       "vocab_ids": [
         "correlation",
@@ -955,9 +947,9 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "5 [2ND] [+] (nCr) 3 [=]",
-          "[×] .55 [y^x] 3 [×] .45 [x²] [=]"
-        ]
+          ".55 [y^x] 3 [×] .45 [x²] [×] 10 [=]"
+        ],
+        "note_tr": "10 = 5C3 (5 [2ND] [+] 3 [=] ile bulunur). Zincir (Chn) modunda işlemler soldan sağa yapılır; bu yüzden kombinasyon sayısı en sona çarpılır."
       },
       "numeric": {
         "expr": "100*math.comb(5,3)*0.55**3*0.45**2",
@@ -1348,39 +1340,39 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "An analyst builds a probability tree for a bank share around the next central bank meeting. The probability of a policy rate cut is 0.40 and of a hold is 0.60. If rates are cut, the share returns 20% with probability 0.70 and 5% with probability 0.30. If rates are held, it returns 8% with probability 0.50 and -6% with probability 0.50. Using the total probability rule, the unconditional expected return is closest to:",
-      "stem_tr": "Bir analist, bir sonraki merkez bankası toplantısı öncesinde bir banka hissesi için olasılık ağacı kuruyor. Politika faizinin indirilme olasılığı 0,40, sabit tutulma olasılığı 0,60'tır. Faiz indirilirse hisse 0,70 olasılıkla %20, 0,30 olasılıkla %5 getiri sağlıyor. Faiz sabit kalırsa 0,50 olasılıkla %8, 0,50 olasılıkla %-6 getiri sağlıyor. Toplam olasılık kuralına göre koşulsuz beklenen getiri aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst draws a probability tree for a retailer's share around the monthly inflation release. The probability that inflation comes in above expectations is 0.30; otherwise it comes in at or below expectations. If inflation is above expectations, the share returns -10% with probability 0.60 and 2% with probability 0.40. If not, it returns 12% with probability 0.50 and 4% with probability 0.50. Using the total probability rule, the unconditional expected return is closest to:",
+      "stem_tr": "Bir analist, aylık enflasyon verisi öncesinde bir perakende hissesi için olasılık ağacı çiziyor. Enflasyonun beklentinin üzerinde gelme olasılığı 0,30; aksi hâlde beklenti düzeyinde ya da altında geliyor. Enflasyon beklentinin üzerinde gelirse hisse 0,60 olasılıkla %-10, 0,40 olasılıkla %2 getiri sağlıyor. Aksi hâlde 0,50 olasılıkla %12, 0,50 olasılıkla %4 getiri sağlıyor. Toplam olasılık kuralına göre koşulsuz beklenen getiri aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "8.25%",
-          "tr": "%8,25",
-          "value": 8.25
+          "en": "1.40%",
+          "tr": "%1,40",
+          "value": 1.4
         },
         {
           "key": "B",
-          "en": "6.20%",
-          "tr": "%6,20",
-          "value": 6.2
+          "en": "5.60%",
+          "tr": "%5,60",
+          "value": 5.6
         },
         {
           "key": "C",
-          "en": "6.80%",
-          "tr": "%6,80",
-          "value": 6.8
+          "en": "4.04%",
+          "tr": "%4,04",
+          "value": 4.04
         }
       ],
       "answer": "C",
-      "explanation_en": "E(R | cut) = 15.5% and E(R | hold) = 0.50 × 8% + 0.50 × (-6%) = 1.0%. E(R) = 0.40 × 15.5% + 0.60 × 1.0% = 6.2% + 0.6% = 6.8%.",
-      "explanation_tr": "E(R | indirim) = %15,5 ve E(R | sabit) = 0,50 × %8 + 0,50 × (%-6) = %1,0. E(R) = 0,40 × %15,5 + 0,60 × %1,0 = %6,2 + %0,6 = %6,8.",
+      "explanation_en": "E(R | above) = 0.60(-10%) + 0.40(2%) = -5.2%. E(R | not above) = 0.50(12%) + 0.50(4%) = 8.0%. E(R) = 0.30(-5.2%) + 0.70(8.0%) = -1.56% + 5.60% = 4.04%.",
+      "explanation_tr": "E(R | üzerinde) = 0,60(%-10) + 0,40(%2) = %-5,2. E(R | üzerinde değil) = 0,50(%12) + 0,50(%4) = %8,0. E(R) = 0,30(%-5,2) + 0,70(%8,0) = %-1,56 + %5,60 = %4,04.",
       "wrong_option_reasons": {
         "A": {
-          "en": "Averages the two conditional expectations (15.5% and 1.0%) equally instead of weighting by 0.40 and 0.60.",
-          "tr": "İki koşullu beklentiyi (%15,5 ve %1,0) 0,40 ve 0,60 ile ağırlıklandırmak yerine eşit ortalamış."
+          "en": "Averages the two conditional expectations (-5.2% and 8.0%) equally instead of weighting by 0.30 and 0.70.",
+          "tr": "İki koşullu beklentiyi (%-5,2 ve %8,0) 0,30 ve 0,70 ile ağırlıklandırmak yerine eşit ağırlıkla ortalamış."
         },
         "B": {
-          "en": "Includes only the rate-cut branch (0.40 × 15.5%) and forgets the hold branch.",
-          "tr": "Yalnızca indirim dalını (0,40 × %15,5) almış; sabit kalma dalını unutmuş."
+          "en": "Includes only the 'not above' branch (0.70 × 8.0%) and forgets the high-inflation branch.",
+          "tr": "Yalnızca 'üzerinde değil' dalını (0,70 × %8,0) almış; yüksek enflasyon dalını unutmuş."
         }
       },
       "solution_steps": [
@@ -1394,24 +1386,24 @@
           "formula_latex": "E(R)=E(R\\mid S_1)P(S_1)+E(R\\mid S_2)P(S_2)"
         },
         {
-          "en": "E(R | cut) = 15.5%; E(R | hold) = 0.5 × 8 + 0.5 × (-6) = 1.0%.",
-          "tr": "E(R | indirim) = %15,5; E(R | sabit) = 0,5 × 8 + 0,5 × (-6) = %1,0.",
+          "en": "E(R | above) = 0.6(-10) + 0.4(2) = -5.2%; E(R | not above) = 0.5(12) + 0.5(4) = 8.0%.",
+          "tr": "E(R | üzerinde) = 0,6(-10) + 0,4(2) = %-5,2; E(R | üzerinde değil) = 0,5(12) + 0,5(4) = %8,0.",
           "values": {
-            "P(cut)": 0.4,
-            "P(hold)": 0.6
+            "P(above)": 0.3,
+            "P(not above)": 0.7
           }
         },
         {
-          "en": "0.40 × 15.5 = 6.2; 0.60 × 1.0 = 0.6.",
-          "tr": "0,40 × 15,5 = 6,2; 0,60 × 1,0 = 0,6."
+          "en": "0.30 × (-5.2) = -1.56; 0.70 × 8.0 = 5.60.",
+          "tr": "0,30 × (-5,2) = -1,56; 0,70 × 8,0 = 5,60."
         },
         {
-          "en": "E(R) = 6.8%.",
-          "tr": "E(R) = %6,8."
+          "en": "E(R) = 4.04%.",
+          "tr": "E(R) = %4,04."
         }
       ],
       "numeric": {
-        "expr": "0.4*(0.7*20+0.3*5) + 0.6*(0.5*8+0.5*(-6))",
+        "expr": "0.3*(0.6*(-10)+0.4*2) + 0.7*(0.5*12+0.5*4)",
         "unit": "%"
       },
       "vocab_ids": [
@@ -1442,45 +1434,45 @@
       "type": "mcq3",
       "difficulty": 3,
       "cognitive": "analyze",
-      "stem_en": "An analyst builds a probability tree for a bank share around the next central bank meeting. The probability of a policy rate cut is 0.40 and of a hold is 0.60. If rates are cut, the share returns 20% with probability 0.70 and 5% with probability 0.30. If rates are held, it returns 8% with probability 0.50 and -6% with probability 0.50. The standard deviation of the share's return given a rate cut is closest to:",
-      "stem_tr": "Bir analist, bir sonraki merkez bankası toplantısı öncesinde bir banka hissesi için olasılık ağacı kuruyor. Politika faizinin indirilme olasılığı 0,40, sabit tutulma olasılığı 0,60'tır. Faiz indirilirse hisse 0,70 olasılıkla %20, 0,30 olasılıkla %5 getiri sağlıyor. Faiz sabit kalırsa 0,50 olasılıkla %8, 0,50 olasılıkla %-6 getiri sağlıyor. Faiz indirimi koşulunda hisse getirisinin standart sapması aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst models an airline's share return with a probability tree based on oil prices. The probability that oil prices rise over the quarter is 0.35; otherwise they fall. If oil rises, the share returns -12% with probability 0.40 and -2% with probability 0.60. If oil falls, it returns 16% with probability 0.60 and 4% with probability 0.40. The standard deviation of the share's return given that oil falls is closest to:",
+      "stem_tr": "Bir analist, bir havayolu hissesinin getirisini petrol fiyatlarına dayalı bir olasılık ağacıyla modelliyor. Petrol fiyatlarının çeyrek boyunca yükselme olasılığı 0,35; aksi hâlde düşüyor. Petrol yükselirse hisse 0,40 olasılıkla %-12, 0,60 olasılıkla %-2 getiri sağlıyor. Petrol düşerse 0,60 olasılıkla %16, 0,40 olasılıkla %4 getiri sağlıyor. Petrolün düşmesi koşulunda hisse getirisinin standart sapması aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "6.87%",
-          "tr": "%6,87",
-          "value": 6.87
+          "en": "5.88%",
+          "tr": "%5,88",
+          "value": 5.88
         },
         {
           "key": "B",
-          "en": "8.08%",
-          "tr": "%8,08",
-          "value": 8.08
+          "en": "6.12%",
+          "tr": "%6,12",
+          "value": 6.12
         },
         {
           "key": "C",
-          "en": "11.09%",
-          "tr": "%11,09",
-          "value": 11.09
+          "en": "8.41%",
+          "tr": "%8,41",
+          "value": 8.41
         }
       ],
       "answer": "A",
-      "explanation_en": "Given a cut, the conditional mean is 15.5%. Deviations are 4.5 and -10.5. Conditional variance = 0.70(20.25) + 0.30(110.25) = 47.25 (%²), so the conditional standard deviation = √47.25 ≈ 6.87%.",
-      "explanation_tr": "İndirim koşulunda koşullu ortalama %15,5'tir. Sapmalar 4,5 ve -10,5'tir. Koşullu varyans = 0,70(20,25) + 0,30(110,25) = 47,25 (%²); koşullu standart sapma = √47,25 ≈ %6,87.",
+      "explanation_en": "Given a fall in oil, the conditional mean is 0.60(16%) + 0.40(4%) = 11.2%. Deviations are 4.8 and -7.2. Conditional variance = 0.60(23.04) + 0.40(51.84) = 34.56 (%²), so the conditional standard deviation = √34.56 ≈ 5.88%.",
+      "explanation_tr": "Petrolün düşmesi koşulunda ortalama 0,60(%16) + 0,40(%4) = %11,2'dir. Sapmalar 4,8 ve -7,2. Koşullu varyans = 0,60(23,04) + 0,40(51,84) = 34,56 (%²); koşullu standart sapma = √34,56 ≈ %5,88.",
       "wrong_option_reasons": {
         "B": {
-          "en": "Weights the two squared deviations equally instead of 0.70 and 0.30.",
-          "tr": "İki kare sapmayı 0,70 ve 0,30 yerine eşit ağırlıklandırmış."
+          "en": "Weights the two squared deviations equally instead of 0.60 and 0.40.",
+          "tr": "İki kare sapmayı 0,60 ve 0,40 yerine eşit ağırlıklandırmış."
         },
         "C": {
-          "en": "Measures deviations from the unconditional mean (6.8%) instead of the conditional mean (15.5%).",
-          "tr": "Sapmaları koşullu ortalama (%15,5) yerine koşulsuz ortalamadan (%6,8) ölçmüş."
+          "en": "Measures deviations from the unconditional mean (5.18%) instead of the conditional mean (11.2%).",
+          "tr": "Sapmaları koşullu ortalama (%11,2) yerine koşulsuz ortalamadan (%5,18) ölçmüş."
         }
       },
       "solution_steps": [
         {
-          "en": "We need the conditional standard deviation on the 'cut' branch.",
-          "tr": "'İndirim' dalındaki koşullu standart sapma isteniyor."
+          "en": "We need the conditional standard deviation on the 'oil falls' branch.",
+          "tr": "'Petrol düşer' dalındaki koşullu standart sapma isteniyor."
         },
         {
           "en": "Use conditional probabilities and deviations from the conditional mean.",
@@ -1488,19 +1480,19 @@
           "formula_latex": "\\sigma^2(R\\mid S)=\\sum_i P(R_i\\mid S)\\left[R_i-E(R\\mid S)\\right]^2"
         },
         {
-          "en": "E(R | cut) = 15.5; deviations 4.5 and -10.5.",
-          "tr": "E(R | indirim) = 15,5; sapmalar 4,5 ve -10,5.",
+          "en": "E(R | falls) = 0.6(16) + 0.4(4) = 11.2; deviations 4.8 and -7.2.",
+          "tr": "E(R | düşer) = 0,6(16) + 0,4(4) = 11,2; sapmalar 4,8 ve -7,2.",
           "values": {
-            "E(R|cut)": 15.5
+            "E(R|falls)": 11.2
           }
         },
         {
-          "en": "0.70 × 20.25 + 0.30 × 110.25 = 14.175 + 33.075 = 47.25.",
-          "tr": "0,70 × 20,25 + 0,30 × 110,25 = 14,175 + 33,075 = 47,25."
+          "en": "0.60 × 23.04 + 0.40 × 51.84 = 13.82 + 20.74 = 34.56.",
+          "tr": "0,60 × 23,04 + 0,40 × 51,84 = 13,82 + 20,74 = 34,56."
         },
         {
-          "en": "σ = √47.25 ≈ 6.87%.",
-          "tr": "σ = √47,25 ≈ %6,87."
+          "en": "σ = √34.56 ≈ 5.88%.",
+          "tr": "σ = √34,56 ≈ %5,88."
         }
       ],
       "calculator": {
@@ -1508,15 +1500,15 @@
         "keystrokes": [
           "[2ND] [7]",
           "[2ND] [CE/C]",
-          "20 [ENTER] [↓] 70 [ENTER] [↓]",
-          "5 [ENTER] [↓] 30 [ENTER]",
+          "16 [ENTER] [↓] 60 [ENTER] [↓]",
+          "4 [ENTER] [↓] 40 [ENTER]",
           "[2ND] [8]  (1-V)",
-          "[↓] [↓] x̄ = 15.5",
-          "[↓] [↓] σx = 6.87"
+          "[↓] [↓] x̄ = 11.2",
+          "[↓] [↓] σx = 5.88"
         ]
       },
       "numeric": {
-        "expr": "math.sqrt(0.7*(20-15.5)**2 + 0.3*(5-15.5)**2)",
+        "expr": "math.sqrt(0.6*(16-11.2)**2 + 0.4*(4-11.2)**2)",
         "unit": "%"
       },
       "vocab_ids": [
@@ -1608,70 +1600,70 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "An analyst builds a probability tree for a bank share around the next central bank meeting. The probability of a policy rate cut is 0.40 and of a hold is 0.60. If rates are cut, the share returns 20% with probability 0.70 and 5% with probability 0.30. If rates are held, it returns 8% with probability 0.50 and -6% with probability 0.50. The joint probability that rates are cut and the share returns 20% is closest to:",
-      "stem_tr": "Bir analist, bir sonraki merkez bankası toplantısı öncesinde bir banka hissesi için olasılık ağacı kuruyor. Politika faizinin indirilme olasılığı 0,40, sabit tutulma olasılığı 0,60'tır. Faiz indirilirse hisse 0,70 olasılıkla %20, 0,30 olasılıkla %5 getiri sağlıyor. Faiz sabit kalırsa 0,50 olasılıkla %8, 0,50 olasılıkla %-6 getiri sağlıyor. Faizin indirilmesi ve hissenin %20 getiri sağlaması olaylarının ortak olasılığı aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst builds a probability tree for a target company's share ahead of a regulatory decision on a merger. The probability that the merger is approved is 0.65. If it is approved, the share gains more than 10% with probability 0.80; if it is blocked, the share gains more than 10% with probability 0.05. The joint probability that the merger is approved and the share gains more than 10% is closest to:",
+      "stem_tr": "Bir analist, bir birleşmeye ilişkin düzenleyici karar öncesinde hedef şirketin hissesi için olasılık ağacı kuruyor. Birleşmenin onaylanma olasılığı 0,65'tir. Onaylanırsa hisse 0,80 olasılıkla %10'dan fazla kazandırıyor; engellenirse 0,05 olasılıkla %10'dan fazla kazandırıyor. Birleşmenin onaylanması ve hissenin %10'dan fazla kazandırması olaylarının ortak olasılığı aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "0.70",
-          "tr": "0,70",
-          "value": 0.7
+          "en": "0.80",
+          "tr": "0,80",
+          "value": 0.8
         },
         {
           "key": "B",
-          "en": "0.12",
-          "tr": "0,12",
-          "value": 0.12
+          "en": "0.13",
+          "tr": "0,13",
+          "value": 0.13
         },
         {
           "key": "C",
-          "en": "0.28",
-          "tr": "0,28",
-          "value": 0.28
+          "en": "0.52",
+          "tr": "0,52",
+          "value": 0.52
         }
       ],
       "answer": "C",
-      "explanation_en": "Along a tree path, multiply the probabilities: P(cut and 20%) = P(cut) × P(20% | cut) = 0.40 × 0.70 = 0.28.",
-      "explanation_tr": "Ağaçta bir yol boyunca olasılıklar çarpılır: P(indirim ve %20) = P(indirim) × P(%20 | indirim) = 0,40 × 0,70 = 0,28.",
+      "explanation_en": "Along a tree path, multiply the probabilities: P(approved and gain > 10%) = P(approved) × P(gain > 10% | approved) = 0.65 × 0.80 = 0.52.",
+      "explanation_tr": "Ağaçta bir yol boyunca olasılıklar çarpılır: P(onay ve kazanç > %10) = P(onay) × P(kazanç > %10 | onay) = 0,65 × 0,80 = 0,52.",
       "wrong_option_reasons": {
         "A": {
-          "en": "Gives the conditional probability P(20% | cut), not the joint probability.",
-          "tr": "Ortak olasılığı değil, koşullu olasılığı P(%20 | indirim) vermiş."
+          "en": "Gives the conditional probability P(gain > 10% | approved), not the joint probability.",
+          "tr": "Ortak olasılık yerine koşullu olasılığı P(kazanç > %10 | onay) vermiş."
         },
         "B": {
-          "en": "Multiplies 0.40 by 0.30, which is the joint probability of a cut and a 5% return.",
-          "tr": "0,40'ı 0,30 ile çarpmış; bu, indirim ve %5 getirinin ortak olasılığıdır."
+          "en": "Multiplies 0.65 by 0.20, which is the joint probability of approval and a gain of at most 10%.",
+          "tr": "0,65 ile 0,20'yi çarpmış; bu, onay ve en fazla %10 kazanç olaylarının ortak olasılığıdır."
         }
       },
       "solution_steps": [
         {
-          "en": "We need P(cut and 20%).",
-          "tr": "P(indirim ve %20) isteniyor."
+          "en": "We need P(approved and gain > 10%).",
+          "tr": "P(onay ve kazanç > %10) isteniyor."
         },
         {
           "en": "Multiplication rule: joint = marginal × conditional.",
-          "tr": "Çarpma kuralı: ortak = marjinal × koşullu.",
+          "tr": "Çarpım kuralı: ortak = marjinal × koşullu.",
           "formula_latex": "P(A\\cap B)=P(A)\\,P(B\\mid A)"
         },
         {
-          "en": "P(cut) = 0.40; P(20% | cut) = 0.70.",
-          "tr": "P(indirim) = 0,40; P(%20 | indirim) = 0,70.",
+          "en": "P(approved) = 0.65; P(gain > 10% | approved) = 0.80.",
+          "tr": "P(onay) = 0,65; P(kazanç > %10 | onay) = 0,80.",
           "values": {
-            "P(cut)": 0.4,
-            "P(20|cut)": 0.7
+            "P(approved)": 0.65,
+            "P(gain|approved)": 0.8
           }
         },
         {
-          "en": "0.40 × 0.70 = 0.28.",
-          "tr": "0,40 × 0,70 = 0,28."
+          "en": "0.65 × 0.80 = 0.52.",
+          "tr": "0,65 × 0,80 = 0,52."
         },
         {
-          "en": "Joint probability = 0.28.",
-          "tr": "Ortak olasılık = 0,28."
+          "en": "Joint probability = 0.52.",
+          "tr": "Ortak olasılık = 0,52."
         }
       ],
       "numeric": {
-        "expr": "0.4*0.7"
+        "expr": "0.65*0.8"
       },
       "vocab_ids": [
         "joint-probability",
@@ -1712,9 +1704,9 @@
         },
         {
           "key": "B",
-          "en": "65.62%",
-          "tr": "%65,62",
-          "value": 65.62
+          "en": "65.63%",
+          "tr": "%65,63",
+          "value": 65.63
         },
         {
           "key": "C",
@@ -1768,9 +1760,10 @@
         "device": "BA II Plus",
         "keystrokes": [
           ".45 [×] .7 [=] [STO] 1",
-          "[+] .55 [×] .3 [=]",
+          ".55 [×] .3 [+] [RCL] 1 [=]",
           "[1/x] [×] [RCL] 1 [=]"
-        ]
+        ],
+        "note_tr": "Zincir (Chn) modu: ikinci satır 0,165 + 0,315 = 0,48 verir; tersini alıp ortak olasılıkla çarpınca 0,656 çıkar."
       },
       "numeric": {
         "expr": "100*0.45*0.7/(0.45*0.7+0.55*0.3)",
@@ -1804,45 +1797,45 @@
       "type": "mcq3",
       "difficulty": 1,
       "cognitive": "apply",
-      "stem_en": "Before quarterly results, an analyst believes there is a 45% probability that a fictional retailer, Marmara Gıda, will beat earnings expectations. The company then announces a large store expansion. From past cases, the analyst estimates that firms that beat expectations announce such an expansion 70% of the time, while firms that do not beat expectations announce one 30% of the time. Before the analyst updates the forecast, the unconditional probability that the company announces an expansion is closest to:",
-      "stem_tr": "Çeyrek sonuçlarından önce bir analist, kurgusal perakendeci Marmara Gıda'nın kâr beklentilerini aşma olasılığını %45 olarak görüyor. Şirket ardından büyük bir mağaza genişlemesi açıklıyor. Analist geçmiş vakalardan, beklentiyi aşan şirketlerin %70'inin, aşamayan şirketlerin ise %30'unun böyle bir genişleme açıkladığını tahmin ediyor. Analist tahminini güncellemeden önce şirketin genişleme açıklamasının koşulsuz olasılığı aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "An analyst's prior probability that a fictional cement producer, Anadolu Çimento, will report a quarterly loss is 60%. From past cases, firms that report a loss announce a cut in capital spending 75% of the time, while firms that report a profit announce such a cut 20% of the time. Before any announcement, the unconditional probability that the company announces a cut in capital spending is closest to:",
+      "stem_tr": "Bir analistin, kurgusal çimento üreticisi Anadolu Çimento'nun çeyrek zarar açıklayacağına ilişkin önsel olasılığı %60'tır. Geçmiş vakalara göre zarar açıklayan şirketler %75 oranında, kâr açıklayan şirketler ise %20 oranında yatırım harcamalarında kesinti duyuruyor. Herhangi bir duyuru öncesinde şirketin yatırım harcamalarında kesinti duyurmasının koşulsuz olasılığı aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
-          "en": "50.00%",
-          "tr": "%50,00",
-          "value": 50.0
+          "en": "47.50%",
+          "tr": "%47,50",
+          "value": 47.5
         },
         {
           "key": "B",
-          "en": "48.00%",
-          "tr": "%48,00",
-          "value": 48.0
+          "en": "53.00%",
+          "tr": "%53,00",
+          "value": 53.0
         },
         {
           "key": "C",
-          "en": "31.50%",
-          "tr": "%31,50",
-          "value": 31.5
+          "en": "45.00%",
+          "tr": "%45,00",
+          "value": 45.0
         }
       ],
       "answer": "B",
-      "explanation_en": "By the total probability rule, P(expansion) = 0.45 × 0.70 + 0.55 × 0.30 = 0.315 + 0.165 = 0.48, or 48%.",
-      "explanation_tr": "Toplam olasılık kuralına göre P(genişleme) = 0,45 × 0,70 + 0,55 × 0,30 = 0,315 + 0,165 = 0,48, yani %48.",
+      "explanation_en": "By the total probability rule, P(cut) = 0.60 × 0.75 + 0.40 × 0.20 = 0.45 + 0.08 = 0.53, or 53%.",
+      "explanation_tr": "Toplam olasılık kuralına göre P(kesinti) = 0,60 × 0,75 + 0,40 × 0,20 = 0,45 + 0,08 = 0,53; yani %53.",
       "wrong_option_reasons": {
         "A": {
-          "en": "Averages 70% and 30% equally and ignores the 45%/55% prior weights.",
-          "tr": "%70 ile %30'u eşit ortalamış; %45/%55 önsel ağırlıklarını yok saymış."
+          "en": "Averages 75% and 20% equally and ignores the 60%/40% prior weights.",
+          "tr": "%75 ile %20'yi eşit ağırlıkla ortalamış; %60/%40 önsel ağırlıkları göz ardı etmiş."
         },
         "C": {
-          "en": "Uses only the 'beat' branch (0.45 × 0.70) and forgets firms that do not beat.",
-          "tr": "Yalnızca 'aşma' dalını (0,45 × 0,70) almış; beklentiyi aşamayan şirketleri unutmuş."
+          "en": "Uses only the 'loss' branch (0.60 × 0.75) and forgets firms that report a profit.",
+          "tr": "Yalnızca 'zarar' dalını (0,60 × 0,75) almış; kâr açıklayan şirketleri unutmuş."
         }
       },
       "solution_steps": [
         {
-          "en": "We need P(expansion) before updating.",
-          "tr": "Güncelleme öncesi P(genişleme) isteniyor."
+          "en": "We need P(cut) before any news.",
+          "tr": "Haber öncesinde P(kesinti) isteniyor."
         },
         {
           "en": "Total probability rule over the two prior states.",
@@ -1850,24 +1843,24 @@
           "formula_latex": "P(I)=P(I\\mid E)P(E)+P(I\\mid E^c)P(E^c)"
         },
         {
-          "en": "0.70 × 0.45 + 0.30 × 0.55.",
-          "tr": "0,70 × 0,45 + 0,30 × 0,55.",
+          "en": "0.75 × 0.60 + 0.20 × 0.40.",
+          "tr": "0,75 × 0,60 + 0,20 × 0,40.",
           "values": {
-            "P(E)": 0.45,
-            "P(Ec)": 0.55
+            "P(E)": 0.6,
+            "P(Ec)": 0.4
           }
         },
         {
-          "en": "0.315 + 0.165.",
-          "tr": "0,315 + 0,165."
+          "en": "0.45 + 0.08.",
+          "tr": "0,45 + 0,08."
         },
         {
-          "en": "P(expansion) = 48%.",
-          "tr": "P(genişleme) = %48."
+          "en": "P(cut) = 53%.",
+          "tr": "P(kesinti) = %53."
         }
       ],
       "numeric": {
-        "expr": "100*(0.45*0.7+0.55*0.3)",
+        "expr": "100*(0.6*0.75+0.4*0.2)",
         "unit": "%"
       },
       "vocab_ids": [
@@ -1965,9 +1958,10 @@
         "device": "BA II Plus",
         "keystrokes": [
           ".02 [×] .9 [=] [STO] 1",
-          "[+] .98 [×] .1 [=]",
+          ".98 [×] .1 [+] [RCL] 1 [=]",
           "[1/x] [×] [RCL] 1 [=]"
-        ]
+        ],
+        "note_tr": "Zincir (Chn) modu: ikinci satır 0,098 + 0,018 = 0,116 verir."
       },
       "numeric": {
         "expr": "100*0.02*0.9/(0.02*0.9+0.98*0.1)",

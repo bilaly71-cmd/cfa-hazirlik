@@ -5,7 +5,11 @@
     "level": "L1",
     "topic": "QM",
     "module_id": "QM-09",
-    "los_ids": ["QM-09-a", "QM-09-b", "QM-09-c"],
+    "los_ids": [
+      "QM-09-a",
+      "QM-09-b",
+      "QM-09-c"
+    ],
     "curriculum_year": 2027,
     "title_en": "Simulation of Financial Asset Prices and Returns",
     "title_tr": "Finansal Varlık Fiyat ve Getirilerinin Simülasyonu",
@@ -16,7 +20,12 @@
         "heading_tr": "Formül yetmediğinde",
         "en": "A risk manager at an Istanbul brokerage must estimate how much a client's portfolio of BIST shares, Eurobonds and VİOP futures could lose over the next month. There is no simple formula: the assets interact, some payoffs are non-linear, and returns are not exactly normal. Instead of solving the problem with algebra, she lets the computer 'live' many possible futures and looks at the results. That is simulation. This module covers three ways to create those futures: replaying actual past returns (historical simulation), drawing repeatedly from the historical sample with replacement (bootstrap), and generating random numbers from an assumed distribution (Monte Carlo). Each method has a different view of what the future may look like, and each has limits.",
         "tr": "İstanbul'da bir aracı kurumun risk yöneticisi, bir müşterinin BIST hisseleri, Eurobond ve VİOP vadeli işlem sözleşmelerinden oluşan portföyünün gelecek ay ne kadar kaybedebileceğini tahmin etmek zorunda. Basit bir formül yok: varlıklar birbirini etkiliyor, bazı getiriler doğrusal değil ve getiriler tam olarak normal dağılmıyor. Sorunu cebirle çözmek yerine bilgisayara pek çok olası geleceği 'yaşatır' ve sonuçlara bakar. Simülasyon budur. Bu modül bu gelecekleri üretmenin üç yolunu anlatır: gerçek geçmiş getirileri yeniden oynatmak (tarihsel simülasyon), geçmiş örneklemden iadeli olarak tekrar tekrar çekmek (bootstrap) ve varsayılan bir dağılımdan rastgele sayı üretmek (Monte Carlo). Her yöntemin geleceğe bakışı farklıdır ve her birinin sınırları vardır.",
-        "key_terms": ["simulation", "historical simulation", "bootstrap", "Monte Carlo simulation"]
+        "key_terms": [
+          "simulation",
+          "historical simulation",
+          "bootstrap",
+          "Monte Carlo simulation"
+        ]
       },
       {
         "kind": "definition",
@@ -24,7 +33,13 @@
         "heading_tr": "Tarihsel simülasyon",
         "en": "Historical simulation uses the actual past returns of the assets as the set of possible future outcomes. To simulate one future month, the analyst picks a past month and applies its returns to today's portfolio. Repeating this for every past month gives a distribution of possible portfolio values, from which measures such as value at risk can be read. The method is non-parametric: it assumes no distribution and keeps the real correlations and fat tails that the data contain. Its limits follow from the same fact: it can only produce outcomes that already happened, the result depends heavily on the chosen window, and it assumes the past relationships will hold, which may fail after a regime change such as a new monetary policy framework.",
         "tr": "Tarihsel simülasyon, varlıkların gerçek geçmiş getirilerini olası gelecek sonuçlar kümesi olarak kullanır. Bir gelecek ayı simüle etmek için analist geçmişten bir ay seçer ve o ayın getirilerini bugünkü portföye uygular. Bunu her geçmiş ay için tekrarlamak olası portföy değerlerinin bir dağılımını verir; riske maruz değer gibi ölçüler bu dağılımdan okunur. Yöntem parametrik değildir: hiçbir dağılım varsaymaz ve verideki gerçek korelasyonları ve kalın kuyrukları korur. Sınırları da aynı gerçekten kaynaklanır: yalnızca daha önce gerçekleşmiş sonuçları üretebilir, sonuç seçilen pencereye çok bağlıdır ve geçmiş ilişkilerin süreceğini varsayar; bu da yeni bir para politikası çerçevesi gibi bir rejim değişikliğinden sonra geçersiz olabilir.",
-        "key_terms": ["historical simulation", "non-parametric", "value at risk", "regime change", "look-back window"]
+        "key_terms": [
+          "historical simulation",
+          "non-parametric",
+          "value at risk",
+          "regime change",
+          "look-back window"
+        ]
       },
       {
         "kind": "definition",
@@ -32,7 +47,13 @@
         "heading_tr": "Bootstrap yeniden örnekleme",
         "en": "Bootstrap resampling also starts from the historical sample, but instead of replaying it once in order, it draws observations at random with replacement to build many new samples of the same size. Because an observation can appear several times or not at all, each resample is a little different, and the spread of a statistic across resamples (for example the mean return or the Sharpe ratio) estimates its standard error and confidence interval. Bootstrap is useful when the sampling distribution of a statistic is unknown or hard to derive, and it needs no normality assumption. It is still limited to the information in the sample: it cannot invent outcomes outside the observed range, and simple bootstrap breaks the time order, so serial dependence such as volatility clustering is lost unless block methods are used.",
         "tr": "Bootstrap yeniden örnekleme de tarihsel örneklemden başlar; ancak onu sırayla bir kez oynatmak yerine gözlemleri iadeli olarak rastgele çekip aynı büyüklükte pek çok yeni örneklem kurar. Bir gözlem birkaç kez görünebileceği ya da hiç görünmeyebileceği için her yeniden örneklem biraz farklıdır ve bir istatistiğin (örneğin ortalama getiri ya da Sharpe oranı) yeniden örneklemler arasındaki yayılımı onun standart hatasını ve güven aralığını tahmin eder. Bootstrap, bir istatistiğin örnekleme dağılımı bilinmediğinde ya da türetilmesi zor olduğunda yararlıdır ve normallik varsayımı gerektirmez. Yine de örneklemdeki bilgiyle sınırlıdır: gözlenen aralığın dışında sonuç üretemez ve basit bootstrap zaman sırasını bozar; blok yöntemleri kullanılmazsa oynaklık kümelenmesi gibi seri bağımlılık kaybolur.",
-        "key_terms": ["bootstrap", "resampling", "with replacement", "standard error", "serial dependence"]
+        "key_terms": [
+          "bootstrap",
+          "resampling",
+          "with replacement",
+          "standard error",
+          "serial dependence"
+        ]
       },
       {
         "kind": "definition",
@@ -40,18 +61,29 @@
         "heading_tr": "Monte Carlo simülasyonu",
         "en": "Monte Carlo simulation builds the future from an assumed model rather than from past data. The steps are: (1) specify the variables and the model that links them to the output, for example portfolio value or option payoff; (2) choose a probability distribution for each variable (normal, lognormal, t) and set its parameters such as mean, standard deviation and correlations; (3) draw random numbers from these distributions; (4) compute the output for each draw; (5) repeat many thousands of times and study the resulting distribution. Monte Carlo can model events never seen before, path-dependent payoffs and complex interactions, and it can be used to price securities such as mortgage-backed bonds or Asian options and to test retirement plans. Its weakness is that the output is only as good as the chosen distributions and parameters, it gives a statistical estimate rather than an exact answer, and it can be computationally heavy. Antithetic and other variance-reduction techniques, and the use of a lognormal model for prices so they never go negative, are common refinements.",
         "tr": "Monte Carlo simülasyonu geleceği geçmiş veriden değil, varsayılan bir modelden kurar. Adımlar: (1) değişkenleri ve bunları çıktıya (örneğin portföy değeri ya da opsiyon getirisi) bağlayan modeli belirle; (2) her değişken için bir olasılık dağılımı seç (normal, lognormal, t) ve ortalama, standart sapma, korelasyon gibi parametrelerini ata; (3) bu dağılımlardan rastgele sayılar çek; (4) her çekim için çıktıyı hesapla; (5) bunu binlerce kez tekrarlayıp ortaya çıkan dağılımı incele. Monte Carlo, daha önce hiç görülmemiş olayları, yola bağımlı getirileri ve karmaşık etkileşimleri modelleyebilir; ipotekli konut kredisine dayalı tahviller ya da Asya tipi opsiyonlar gibi menkul kıymetleri fiyatlamada ve emeklilik planlarını sınamada kullanılabilir. Zayıf yanı, çıktının ancak seçilen dağılımlar ve parametreler kadar iyi olması, kesin bir yanıt değil istatistiksel bir tahmin vermesi ve hesaplama yükünün ağır olabilmesidir. Antitetik ve diğer varyans azaltma teknikleri ile fiyatların hiç negatif olmaması için lognormal model kullanımı yaygın iyileştirmelerdir.",
-        "key_terms": ["Monte Carlo simulation", "random draw", "parameter", "path-dependent", "variance reduction"]
+        "key_terms": [
+          "Monte Carlo simulation",
+          "random draw",
+          "parameter",
+          "path-dependent",
+          "variance reduction"
+        ]
       },
       {
         "kind": "example",
         "heading_en": "Example: three ways to stress one portfolio",
         "heading_tr": "Örnek: bir portföyü üç yolla sınamak",
-        "en": "A fund holds 70% in a BIST 100 index fund and 30% in a Eurobond fund, and the manager has 120 months of returns for both. Historical simulation: apply each of the 120 past month pairs to today's weights, sort the 120 portfolio results, and read the 5th worst as a rough 95% monthly value at risk. Bootstrap: draw 120 month pairs with replacement 5,000 times, compute the Sharpe ratio in each resample, and use the 2.5th and 97.5th percentiles as a confidence interval. Monte Carlo: assume monthly returns are jointly normal with the sample means, standard deviations and correlation, generate 10,000 pairs, and look at the distribution of a 12-month path, including scenarios worse than anything in the 120 months of data.",
-        "tr": "Bir fon %70 BIST 100 endeks fonu ve %30 Eurobond fonu tutuyor; yönetici ikisi için de 120 aylık getiriye sahip. Tarihsel simülasyon: 120 geçmiş ay çiftinin her birini bugünkü ağırlıklara uygula, 120 portföy sonucunu sırala ve en kötü 5.'yi kabaca %95 aylık riske maruz değer olarak oku. Bootstrap: 120 ay çiftini iadeli olarak 5.000 kez çek, her yeniden örneklemde Sharpe oranını hesapla ve %2,5 ile %97,5 yüzdeliklerini güven aralığı olarak kullan. Monte Carlo: aylık getirilerin örneklem ortalamaları, standart sapmaları ve korelasyonuyla birlikte normal dağıldığını varsay, 10.000 çift üret ve 12 aylık bir yolun dağılımına bak; buna 120 aylık verideki her şeyden daha kötü senaryolar da dahildir.",
-        "key_terms": ["value at risk", "percentile", "resample", "jointly normal"],
+        "en": "A fund holds 70% in a BIST 100 index fund and 30% in a Eurobond fund, and the manager has 120 months of returns for both. Historical simulation: apply each of the 120 past month pairs to today's weights, sort the 120 portfolio results, and read the 6th worst (5% of 120 = 6) as a rough 95% monthly value at risk. Bootstrap: draw 120 month pairs with replacement 5,000 times, compute the Sharpe ratio in each resample, and use the 2.5th and 97.5th percentiles as a confidence interval. Monte Carlo: assume monthly returns are jointly normal with the sample means, standard deviations and correlation, generate 10,000 pairs, and look at the distribution of a 12-month path, including scenarios worse than anything in the 120 months of data.",
+        "tr": "Bir fon %70 BIST 100 endeks fonu ve %30 Eurobond fonu tutuyor; yönetici ikisi için de 120 aylık getiriye sahip. Tarihsel simülasyon: 120 geçmiş ay çiftinin her birini bugünkü ağırlıklara uygula, 120 portföy sonucunu sırala ve en kötü 6.'yı (120'nin %5'i = 6) kabaca %95 aylık riske maruz değer olarak oku. Bootstrap: 120 ay çiftini iadeli olarak 5.000 kez çek, her yeniden örneklemde Sharpe oranını hesapla ve %2,5 ile %97,5 yüzdeliklerini güven aralığı olarak kullan. Monte Carlo: aylık getirilerin örneklem ortalamaları, standart sapmaları ve korelasyonuyla birlikte normal dağıldığını varsay, 10.000 çift üret ve 12 aylık bir yolun dağılımına bak; buna 120 aylık verideki her şeyden daha kötü senaryolar da dahildir.",
+        "key_terms": [
+          "value at risk",
+          "percentile",
+          "resample",
+          "jointly normal"
+        ],
         "example": {
-          "en": "Historical: 120 outcomes, 5th worst ≈ 95% VaR. Bootstrap: 5,000 resamples of 120 draws with replacement → Sharpe ratio confidence interval. Monte Carlo: 10,000 draws from an assumed joint normal → full 12-month path distribution.",
-          "tr": "Tarihsel: 120 sonuç, en kötü 5. ≈ %95 RMD. Bootstrap: iadeli 120 çekimlik 5.000 yeniden örneklem → Sharpe oranı güven aralığı. Monte Carlo: varsayılan ortak normalden 10.000 çekim → tam 12 aylık yol dağılımı."
+          "en": "Historical: 120 outcomes, 6th worst ≈ 95% VaR. Bootstrap: 5,000 resamples of 120 draws with replacement → Sharpe ratio confidence interval. Monte Carlo: 10,000 draws from an assumed joint normal → full 12-month path distribution.",
+          "tr": "Tarihsel: 120 sonuç, en kötü 6. ≈ %95 RMD. Bootstrap: iadeli 120 çekimlik 5.000 yeniden örneklem → Sharpe oranı güven aralığı. Monte Carlo: varsayılan ortak normalden 10.000 çekim → tam 12 aylık yol dağılımı."
         }
       },
       {
@@ -60,18 +92,49 @@
         "heading_tr": "Üç yöntemin karşılaştırması",
         "en": "The table shows how the methods differ in their source of randomness, their assumptions and their main weakness. The key question on the exam is usually: where do the scenarios come from? Historical simulation replays the past in order; bootstrap reshuffles the past with replacement; Monte Carlo invents the future from a chosen distribution.",
         "tr": "Tablo, yöntemlerin rastgelelik kaynağı, varsayımları ve başlıca zayıflığı açısından nasıl ayrıldığını gösterir. Sınavdaki temel soru genellikle şudur: senaryolar nereden geliyor? Tarihsel simülasyon geçmişi sırayla yeniden oynatır; bootstrap geçmişi iadeli olarak karıştırır; Monte Carlo geleceği seçilmiş bir dağılımdan üretir.",
-        "key_terms": ["source of randomness", "assumption", "weakness"],
+        "key_terms": [
+          "source of randomness",
+          "assumption",
+          "weakness"
+        ],
         "table": {
           "headers": [
-            { "en": "Method", "tr": "Yöntem" },
-            { "en": "Scenarios come from", "tr": "Senaryoların kaynağı" },
-            { "en": "Distribution assumed?", "tr": "Dağılım varsayımı?" },
-            { "en": "Main weakness", "tr": "Başlıca zayıflık" }
+            {
+              "en": "Method",
+              "tr": "Yöntem"
+            },
+            {
+              "en": "Scenarios come from",
+              "tr": "Senaryoların kaynağı"
+            },
+            {
+              "en": "Distribution assumed?",
+              "tr": "Dağılım varsayımı?"
+            },
+            {
+              "en": "Main weakness",
+              "tr": "Başlıca zayıflık"
+            }
           ],
           "rows": [
-            ["Historical simulation / Tarihsel simülasyon", "Actual past returns, in sequence / Gerçek geçmiş getiriler, sırayla", "No / Hayır", "Only past events; window choice / Yalnızca geçmiş olaylar; pencere seçimi"],
-            ["Bootstrap / Bootstrap", "Random draws from the sample with replacement / Örneklemden iadeli rastgele çekim", "No / Hayır", "Cannot leave observed range; breaks time order / Gözlenen aralığın dışına çıkamaz; zaman sırasını bozar"],
-            ["Monte Carlo / Monte Carlo", "Random numbers from a chosen distribution / Seçilen dağılımdan rastgele sayılar", "Yes / Evet", "Results depend on model and parameters / Sonuçlar model ve parametrelere bağlı"]
+            [
+              "Historical simulation / Tarihsel simülasyon",
+              "Actual past returns, in sequence / Gerçek geçmiş getiriler, sırayla",
+              "No / Hayır",
+              "Only past events; window choice / Yalnızca geçmiş olaylar; pencere seçimi"
+            ],
+            [
+              "Bootstrap / Bootstrap",
+              "Random draws from the sample with replacement / Örneklemden iadeli rastgele çekim",
+              "No / Hayır",
+              "Cannot leave observed range; breaks time order / Gözlenen aralığın dışına çıkamaz; zaman sırasını bozar"
+            ],
+            [
+              "Monte Carlo / Monte Carlo",
+              "Random numbers from a chosen distribution / Seçilen dağılımdan rastgele sayılar",
+              "Yes / Evet",
+              "Results depend on model and parameters / Sonuçlar model ve parametrelere bağlı"
+            ]
           ]
         }
       },
@@ -81,7 +144,12 @@
         "heading_tr": "Sık tuzaklar",
         "en": "Do not confuse bootstrap with Monte Carlo: both use random draws, but bootstrap draws from the actual data while Monte Carlo draws from an assumed distribution. 'With replacement' is the defining feature of bootstrap; drawing without replacement would just reproduce the original sample. Historical simulation is not 'assumption-free': it assumes the past window represents the future. Monte Carlo does not give a precise answer; more trials reduce sampling error but cannot fix a wrong model. A simulation of prices should use a lognormal (or continuously compounded normal) model so prices cannot fall below zero. Finally, simulation is a tool for estimating distributions and risk, not a substitute for judgment about the inputs.",
         "tr": "Bootstrap ile Monte Carlo'yu karıştırma: ikisi de rastgele çekim kullanır ama bootstrap gerçek veriden, Monte Carlo varsayılan bir dağılımdan çeker. 'İadeli' çekim bootstrap'in tanımlayıcı özelliğidir; iadesiz çekim yalnızca orijinal örneklemi yeniden üretirdi. Tarihsel simülasyon 'varsayımsız' değildir: geçmiş pencerenin geleceği temsil ettiğini varsayar. Monte Carlo kesin bir yanıt vermez; daha çok deneme örnekleme hatasını azaltır ama yanlış bir modeli düzeltemez. Fiyat simülasyonu, fiyatlar sıfırın altına düşmesin diye lognormal (ya da sürekli bileşik normal) model kullanmalıdır. Son olarak simülasyon dağılımları ve riski tahmin etmeye yarayan bir araçtır; girdilere ilişkin yargının yerine geçmez.",
-        "key_terms": ["with replacement", "assumption", "sampling error", "lognormal"]
+        "key_terms": [
+          "with replacement",
+          "assumption",
+          "sampling error",
+          "lognormal"
+        ]
       }
     ],
     "summary_en": "Simulation creates many possible futures for a portfolio when no closed-form answer exists. Historical simulation replays actual past returns and so keeps real correlations and fat tails but cannot show events that never happened. Bootstrap resampling draws from the sample with replacement to estimate the sampling distribution of a statistic without assuming normality. Monte Carlo simulation draws random numbers from an assumed distribution, which lets it model new events and complex payoffs, but its results depend on the chosen model and parameters.",
@@ -94,9 +162,24 @@
       "Fiyat simülasyonunda normal dağılım kullanıp negatif fiyatlara izin vermek (lognormal kullanılmalı)."
     ],
     "vocab_ids": [
-      "simulation", "historical-simulation", "bootstrap", "resampling", "with-replacement", "monte-carlo-simulation",
-      "random-draw", "parameter", "path-dependent", "regime-change", "look-back-window", "serial-dependence",
-      "sampling-error", "variance-reduction", "value-at-risk", "percentile", "non-parametric", "lognormal-distribution"
+      "simulation",
+      "historical-simulation",
+      "bootstrap",
+      "resampling",
+      "with-replacement",
+      "monte-carlo-simulation",
+      "random-draw",
+      "parameter",
+      "path-dependent",
+      "regime-change",
+      "look-back-window",
+      "serial-dependence",
+      "sampling-error",
+      "variance-reduction",
+      "value-at-risk",
+      "percentile",
+      "non-parametric",
+      "lognormal-distribution"
     ],
     "spk_link": {
       "status": "partial",
@@ -108,393 +191,975 @@
   "questions": [
     {
       "id": "QM-09-a-q01",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Which of the following best describes historical simulation?",
       "stem_tr": "Aşağıdakilerden hangisi tarihsel simülasyonu en iyi tanımlar?",
       "options": [
-        { "key": "A", "en": "Applying the actual returns observed in past periods to today's portfolio to generate possible outcomes.", "tr": "Geçmiş dönemlerde gözlenen gerçek getirileri bugünkü portföye uygulayarak olası sonuçlar üretmek." },
-        { "key": "B", "en": "Drawing random numbers from a normal distribution whose mean and variance are estimated from the past.", "tr": "Ortalaması ve varyansı geçmişten tahmin edilen bir normal dağılımdan rastgele sayılar çekmek." },
-        { "key": "C", "en": "Fitting a regression of portfolio returns on past index returns and extrapolating the trend.", "tr": "Portföy getirilerini geçmiş endeks getirilerine regres edip trendi ileriye uzatmak." }
+        {
+          "key": "A",
+          "en": "Applying the actual returns observed in past periods to today's portfolio to generate possible outcomes.",
+          "tr": "Geçmiş dönemlerde gözlenen gerçek getirileri bugünkü portföye uygulayarak olası sonuçlar üretmek."
+        },
+        {
+          "key": "B",
+          "en": "Drawing random numbers from a normal distribution whose mean and variance are estimated from the past.",
+          "tr": "Ortalaması ve varyansı geçmişten tahmin edilen bir normal dağılımdan rastgele sayılar çekmek."
+        },
+        {
+          "key": "C",
+          "en": "Fitting a regression of portfolio returns on past index returns and extrapolating the trend.",
+          "tr": "Portföy getirilerini geçmiş endeks getirilerine regres edip trendi ileriye uzatmak."
+        }
       ],
       "answer": "A",
       "explanation_en": "Historical simulation uses the realized past returns themselves as the scenario set. No distribution is assumed; each past period becomes one possible future.",
       "explanation_tr": "Tarihsel simülasyon gerçekleşmiş geçmiş getirilerin kendisini senaryo kümesi olarak kullanır. Dağılım varsayılmaz; her geçmiş dönem olası bir gelecek olur.",
       "wrong_option_reasons": {
-        "B": { "en": "That is Monte Carlo simulation with a normal model; historical simulation does not assume a distribution.", "tr": "Bu normal modelli Monte Carlo simülasyonudur; tarihsel simülasyon dağılım varsaymaz." },
-        "C": { "en": "Regression and trend extrapolation are forecasting tools, not simulation of a distribution of outcomes.", "tr": "Regresyon ve trend uzatma tahmin araçlarıdır; sonuç dağılımı simülasyonu değildir." }
+        "B": {
+          "en": "That is Monte Carlo simulation with a normal model; historical simulation does not assume a distribution.",
+          "tr": "Bu normal modelli Monte Carlo simülasyonudur; tarihsel simülasyon dağılım varsaymaz."
+        },
+        "C": {
+          "en": "Regression and trend extrapolation are forecasting tools, not simulation of a distribution of outcomes.",
+          "tr": "Regresyon ve trend uzatma tahmin araçlarıdır; sonuç dağılımı simülasyonu değildir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["historical-simulation", "best-describes", "observe", "generate", "apply"],
-      "pattern_ids": ["best-describes"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "historical-simulation",
+        "best-describes",
+        "observe",
+        "generate",
+        "apply"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-a-q02",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "A risk analyst at a Turkish bank uses the last five years of daily returns in a historical simulation of a portfolio of bank shares and Eurobonds. Which limitation of the method is she most likely to face?",
       "stem_tr": "Bir Türk bankasında risk analisti, banka hisseleri ve Eurobondlardan oluşan bir portföyün tarihsel simülasyonunda son beş yılın günlük getirilerini kullanıyor. Yöntemin hangi sınırlamasıyla karşılaşması en olasıdır?",
       "options": [
-        { "key": "A", "en": "The simulation imposes a normal distribution that understates fat tails.", "tr": "Simülasyon, kalın kuyrukları olduğundan az gösteren bir normal dağılım dayatır." },
-        { "key": "B", "en": "The simulation cannot produce a loss larger than any loss seen in the five-year window.", "tr": "Simülasyon beş yıllık pencerede görülenden daha büyük bir kayıp üretemez." },
-        { "key": "C", "en": "The simulation ignores the historical correlation between bank shares and Eurobonds.", "tr": "Simülasyon banka hisseleri ile Eurobondlar arasındaki tarihsel korelasyonu yok sayar." }
+        {
+          "key": "A",
+          "en": "The simulation imposes a normal distribution that understates fat tails.",
+          "tr": "Simülasyon, kalın kuyrukları olduğundan az gösteren bir normal dağılım dayatır."
+        },
+        {
+          "key": "B",
+          "en": "The simulation cannot produce a loss larger than any loss seen in the five-year window.",
+          "tr": "Simülasyon beş yıllık pencerede görülenden daha büyük bir kayıp üretemez."
+        },
+        {
+          "key": "C",
+          "en": "The simulation ignores the historical correlation between bank shares and Eurobonds.",
+          "tr": "Simülasyon banka hisseleri ile Eurobondlar arasındaki tarihsel korelasyonu yok sayar."
+        }
       ],
       "answer": "B",
       "explanation_en": "Historical simulation can only replay what happened. If the window contains no crisis, the method cannot show one, and the result depends strongly on which window was chosen.",
       "explanation_tr": "Tarihsel simülasyon yalnızca olmuş olanı yeniden oynatabilir. Pencerede kriz yoksa yöntem kriz gösteremez ve sonuç seçilen pencereye güçlü biçimde bağlıdır.",
       "wrong_option_reasons": {
-        "A": { "en": "Historical simulation assumes no distribution; it keeps whatever tails the data have.", "tr": "Tarihsel simülasyon dağılım varsaymaz; verideki kuyrukları olduğu gibi korur." },
-        "C": { "en": "Because the same past day is applied to both assets, the historical co-movement is preserved, which is a strength of the method.", "tr": "Aynı geçmiş gün iki varlığa birlikte uygulandığı için tarihsel birlikte hareket korunur; bu yöntemin güçlü yanıdır." }
+        "A": {
+          "en": "Historical simulation assumes no distribution; it keeps whatever tails the data have.",
+          "tr": "Tarihsel simülasyon dağılım varsaymaz; verideki kuyrukları olduğu gibi korur."
+        },
+        "C": {
+          "en": "Because the same past day is applied to both assets, the historical co-movement is preserved, which is a strength of the method.",
+          "tr": "Aynı geçmiş gün iki varlığa birlikte uygulandığı için tarihsel birlikte hareket korunur; bu yöntemin güçlü yanıdır."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["limitation", "most-likely", "face", "window", "impose", "understate"],
-      "pattern_ids": ["most-likely"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "limitation",
+        "most-likely",
+        "face",
+        "window",
+        "impose",
+        "understate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-a-q03",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "Compared with Monte Carlo simulation, an advantage of historical simulation is that it:",
       "stem_tr": "Monte Carlo simülasyonuyla karşılaştırıldığında tarihsel simülasyonun bir üstünlüğü şudur:",
       "options": [
-        { "key": "A", "en": "can generate outcomes that have never been observed.", "tr": "hiç gözlenmemiş sonuçlar üretebilir." },
-        { "key": "B", "en": "does not require the analyst to specify a probability distribution for returns.", "tr": "analistin getiriler için bir olasılık dağılımı belirlemesini gerektirmez." },
-        { "key": "C", "en": "allows a very large number of trials, which removes sampling error.", "tr": "çok sayıda denemeye izin verir; bu da örnekleme hatasını ortadan kaldırır." }
+        {
+          "key": "A",
+          "en": "can generate outcomes that have never been observed.",
+          "tr": "hiç gözlenmemiş sonuçlar üretebilir."
+        },
+        {
+          "key": "B",
+          "en": "does not require the analyst to specify a probability distribution for returns.",
+          "tr": "analistin getiriler için bir olasılık dağılımı belirlemesini gerektirmez."
+        },
+        {
+          "key": "C",
+          "en": "allows a very large number of trials, which removes sampling error.",
+          "tr": "çok sayıda denemeye izin verir; bu da örnekleme hatasını ortadan kaldırır."
+        }
       ],
       "answer": "B",
       "explanation_en": "Historical simulation is non-parametric: the data supply the distribution, including skew, fat tails and real correlations, so no distributional choice is needed.",
       "explanation_tr": "Tarihsel simülasyon parametrik değildir: dağılımı veri sağlar; çarpıklık, kalın kuyruk ve gerçek korelasyonlar dahil. Dağılım seçimi gerekmez.",
       "wrong_option_reasons": {
-        "A": { "en": "That is an advantage of Monte Carlo, not of historical simulation, which is limited to observed outcomes.", "tr": "Bu Monte Carlo'nun üstünlüğüdür; tarihsel simülasyon gözlenen sonuçlarla sınırlıdır." },
-        "C": { "en": "The number of historical scenarios is fixed by the data length; it is Monte Carlo that can run unlimited trials, and even then sampling error only shrinks, it is not removed.", "tr": "Tarihsel senaryo sayısı veri uzunluğuyla sınırlıdır; sınırsız deneme yapabilen Monte Carlo'dur ve o zaman bile örnekleme hatası yalnızca küçülür, yok olmaz." }
+        "A": {
+          "en": "That is an advantage of Monte Carlo, not of historical simulation, which is limited to observed outcomes.",
+          "tr": "Bu Monte Carlo'nun üstünlüğüdür; tarihsel simülasyon gözlenen sonuçlarla sınırlıdır."
+        },
+        "C": {
+          "en": "The number of historical scenarios is fixed by the data length; it is Monte Carlo that can run unlimited trials, and even then sampling error only shrinks, it is not removed.",
+          "tr": "Tarihsel senaryo sayısı veri uzunluğuyla sınırlıdır; sınırsız deneme yapabilen Monte Carlo'dur ve o zaman bile örnekleme hatası yalnızca küçülür, yok olmaz."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["compared-with", "advantage", "require", "specify", "trial"],
+      "vocab_ids": [
+        "compared-with",
+        "advantage",
+        "require",
+        "specify",
+        "trial"
+      ],
       "pattern_ids": [],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-a-q04",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "In 2021 the Turkish central bank changed its policy approach and the lira's volatility rose sharply. An analyst running a historical simulation in 2026 with a ten-year window of USD/TRY returns is least likely to be concerned that:",
       "stem_tr": "2021'de Türkiye Cumhuriyet Merkez Bankası politika yaklaşımını değiştirdi ve liranın oynaklığı keskin biçimde arttı. 2026'da on yıllık USD/TRY getiri penceresiyle tarihsel simülasyon yapan bir analistin endişe duyması en az olası olan durum şudur:",
       "options": [
-        { "key": "A", "en": "the window mixes two regimes, so the simulated distribution may represent neither the past nor the present well.", "tr": "pencere iki rejimi karıştırır; bu yüzden simüle edilen dağılım ne geçmişi ne bugünü iyi temsil edebilir." },
-        { "key": "B", "en": "a shorter, post-2021 window would be more relevant but would contain far fewer scenarios.", "tr": "daha kısa, 2021 sonrası bir pencere daha ilgili olur ama çok daha az senaryo içerir." },
-        { "key": "C", "en": "the method forces the simulated USD/TRY returns to be normally distributed.", "tr": "yöntem simüle edilen USD/TRY getirilerini normal dağılıma zorlar." }
+        {
+          "key": "A",
+          "en": "the window mixes two regimes, so the simulated distribution may represent neither the past nor the present well.",
+          "tr": "pencere iki rejimi karıştırır; bu yüzden simüle edilen dağılım ne geçmişi ne bugünü iyi temsil edebilir."
+        },
+        {
+          "key": "B",
+          "en": "a shorter, post-2021 window would be more relevant but would contain far fewer scenarios.",
+          "tr": "daha kısa, 2021 sonrası bir pencere daha ilgili olur ama çok daha az senaryo içerir."
+        },
+        {
+          "key": "C",
+          "en": "the method forces the simulated USD/TRY returns to be normally distributed.",
+          "tr": "yöntem simüle edilen USD/TRY getirilerini normal dağılıma zorlar."
+        }
       ],
       "answer": "C",
       "explanation_en": "Historical simulation never imposes normality, so that is not a concern. The real concerns are the window choice: a long window mixes regimes, while a short window has few observations.",
       "explanation_tr": "Tarihsel simülasyon asla normallik dayatmaz; bu bir endişe konusu değildir. Gerçek endişeler pencere seçimidir: uzun pencere rejimleri karıştırır, kısa pencerede ise az gözlem olur.",
       "wrong_option_reasons": {
-        "A": { "en": "This is a genuine limitation: historical simulation assumes the window represents the future, which fails across a regime change.", "tr": "Bu gerçek bir sınırlamadır: tarihsel simülasyon pencerenin geleceği temsil ettiğini varsayar; rejim değişikliğinde bu bozulur." },
-        "B": { "en": "This is the classic trade-off in choosing the look-back window: relevance versus sample size.", "tr": "Bu, geriye bakış penceresi seçimindeki klasik ödünleşimdir: ilgi düzeyi ile örneklem büyüklüğü." }
+        "A": {
+          "en": "This is a genuine limitation: historical simulation assumes the window represents the future, which fails across a regime change.",
+          "tr": "Bu gerçek bir sınırlamadır: tarihsel simülasyon pencerenin geleceği temsil ettiğini varsayar; rejim değişikliğinde bu bozulur."
+        },
+        "B": {
+          "en": "This is the classic trade-off in choosing the look-back window: relevance versus sample size.",
+          "tr": "Bu, geriye bakış penceresi seçimindeki klasik ödünleşimdir: ilgi düzeyi ile örneklem büyüklüğü."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["least-likely", "concern", "regime", "relevant", "volatility", "window"],
-      "pattern_ids": ["least-likely"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "least-likely",
+        "concern",
+        "regime",
+        "relevant",
+        "volatility",
+        "window"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-a-q05",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "A manager has 250 daily returns for a portfolio and runs a historical simulation. To estimate the one-day 95% value at risk, she sorts the 250 simulated portfolio changes from worst to best. The estimate is most appropriately read from approximately the:",
       "stem_tr": "Bir yönetici bir portföy için 250 günlük getiriye sahip ve tarihsel simülasyon yapıyor. Bir günlük %95 riske maruz değeri tahmin etmek için 250 simüle edilmiş portföy değişimini en kötüden en iyiye sıralıyor. Tahmin en uygun olarak yaklaşık şuradan okunur:",
       "options": [
-        { "key": "A", "en": "125th worst outcome.", "tr": "en kötü 125. sonuç." },
-        { "key": "B", "en": "238th worst outcome.", "tr": "en kötü 238. sonuç." },
-        { "key": "C", "en": "13th worst outcome.", "tr": "en kötü 13. sonuç." }
+        {
+          "key": "A",
+          "en": "125th worst outcome.",
+          "tr": "en kötü 125. sonuç."
+        },
+        {
+          "key": "B",
+          "en": "238th worst outcome.",
+          "tr": "en kötü 238. sonuç."
+        },
+        {
+          "key": "C",
+          "en": "13th worst outcome.",
+          "tr": "en kötü 13. sonuç."
+        }
       ],
       "answer": "C",
       "explanation_en": "A 95% VaR is the loss exceeded only 5% of the time. 5% of 250 = 12.5, so the cutoff lies around the 12th-13th worst outcome in the sorted list.",
       "explanation_tr": "%95 RMD, yalnızca zamanın %5'inde aşılan kayıptır. 250'nin %5'i = 12,5; dolayısıyla eşik sıralı listede en kötü 12.-13. sonuç civarındadır.",
       "wrong_option_reasons": {
-        "A": { "en": "The 125th is the median outcome, not a tail measure.", "tr": "125. sonuç medyandır; kuyruk ölçüsü değildir." },
-        "B": { "en": "Counting 95% from the worst end gives a gain in the right tail, not the loss threshold.", "tr": "En kötüden itibaren %95 saymak sağ kuyruktaki bir kazancı verir; kayıp eşiğini değil." }
+        "A": {
+          "en": "The 125th is the median outcome, not a tail measure.",
+          "tr": "125. sonuç medyandır; kuyruk ölçüsü değildir."
+        },
+        "B": {
+          "en": "Counting 95% from the worst end gives a gain in the right tail, not the loss threshold.",
+          "tr": "En kötüden itibaren %95 saymak sağ kuyruktaki bir kazancı verir; kayıp eşiğini değil."
+        }
       },
       "solution_steps": [
-        { "en": "We need the position of the 5% tail cutoff among 250 sorted outcomes.", "tr": "250 sıralı sonuç içinde %5 kuyruk eşiğinin konumu isteniyor." },
-        { "en": "VaR at 95% confidence corresponds to the 5th percentile of the loss distribution.", "tr": "%95 güvenle RMD, kayıp dağılımının %5 yüzdeliğine karşılık gelir." },
-        { "en": "0.05 × 250 = 12.5.", "tr": "0,05 × 250 = 12,5.", "values": { "n": 250, "alpha": 0.05 } },
-        { "en": "Round to the nearby rank in the sorted list.", "tr": "Sıralı listede yakın sıraya yuvarla." },
-        { "en": "About the 13th worst outcome.", "tr": "Yaklaşık en kötü 13. sonuç." }
+        {
+          "en": "We need the position of the 5% tail cutoff among 250 sorted outcomes.",
+          "tr": "250 sıralı sonuç içinde %5 kuyruk eşiğinin konumu isteniyor."
+        },
+        {
+          "en": "VaR at 95% confidence corresponds to the 5th percentile of the loss distribution.",
+          "tr": "%95 güvenle RMD, kayıp dağılımının %5 yüzdeliğine karşılık gelir."
+        },
+        {
+          "en": "0.05 × 250 = 12.5.",
+          "tr": "0,05 × 250 = 12,5.",
+          "values": {
+            "n": 250,
+            "alpha": 0.05
+          }
+        },
+        {
+          "en": "Round to the nearby rank in the sorted list.",
+          "tr": "Sıralı listede yakın sıraya yuvarla."
+        },
+        {
+          "en": "About the 13th worst outcome.",
+          "tr": "Yaklaşık en kötü 13. sonuç."
+        }
       ],
-      "vocab_ids": ["value-at-risk", "sort", "most-appropriate", "outcome", "approximately", "cutoff"],
-      "pattern_ids": ["most-appropriate"],
-      "spk_link": { "status": "partial", "note_tr": "RMD kavramı Düzey 3 risk yönetiminde var; tarihsel yöntemle okuma kısmen yeni." },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "value-at-risk",
+        "sort",
+        "most-appropriate",
+        "outcome",
+        "approximately",
+        "cutoff"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "RMD kavramı Düzey 3 risk yönetiminde var; tarihsel yöntemle okuma kısmen yeni."
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-b-q01",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "The defining feature of bootstrap resampling is that observations are drawn from the original sample:",
       "stem_tr": "Bootstrap yeniden örneklemenin tanımlayıcı özelliği, gözlemlerin orijinal örneklemden şöyle çekilmesidir:",
       "options": [
-        { "key": "A", "en": "without replacement, so that each observation is used exactly once.", "tr": "iadesiz; böylece her gözlem tam bir kez kullanılır." },
-        { "key": "B", "en": "with replacement, so that an observation may appear more than once in a resample.", "tr": "iadeli; böylece bir gözlem bir yeniden örneklemde birden çok kez görünebilir." },
-        { "key": "C", "en": "in their original time order, so that serial correlation is preserved.", "tr": "orijinal zaman sırasında; böylece seri korelasyon korunur." }
+        {
+          "key": "A",
+          "en": "without replacement, so that each observation is used exactly once.",
+          "tr": "iadesiz; böylece her gözlem tam bir kez kullanılır."
+        },
+        {
+          "key": "B",
+          "en": "in their original time order, so that serial correlation is preserved.",
+          "tr": "orijinal zaman sırasında; böylece seri korelasyon korunur."
+        },
+        {
+          "key": "C",
+          "en": "with replacement, so that an observation may appear more than once in a resample.",
+          "tr": "iadeli; böylece bir gözlem bir yeniden örneklemde birden çok kez görünebilir."
+        }
       ],
-      "answer": "B",
+      "answer": "C",
       "explanation_en": "Bootstrap draws n observations with replacement from the n-observation sample. Repeating this many times creates resamples that differ from each other, which is what allows the spread of a statistic to be estimated.",
       "explanation_tr": "Bootstrap, n gözlemli örneklemden iadeli olarak n gözlem çeker. Bunu pek çok kez tekrarlamak birbirinden farklı yeniden örneklemler üretir; bir istatistiğin yayılımını tahmin etmeyi sağlayan budur.",
       "wrong_option_reasons": {
-        "A": { "en": "Drawing n items without replacement from n items just returns the original sample every time.", "tr": "n öğeden iadesiz n öğe çekmek her seferinde orijinal örneklemi geri verir." },
-        "C": { "en": "Simple bootstrap ignores time order; preserving it is the goal of block bootstrap variants, not the defining feature.", "tr": "Basit bootstrap zaman sırasını yok sayar; sırayı korumak blok bootstrap türevlerinin amacıdır, tanımlayıcı özellik değildir." }
+        "A": {
+          "en": "Drawing n items without replacement from n items just returns the original sample every time.",
+          "tr": "n öğeden iadesiz n öğe çekmek her seferinde orijinal örneklemi geri verir."
+        },
+        "B": {
+          "en": "Simple bootstrap ignores time order; preserving it is the goal of block bootstrap variants, not the defining feature.",
+          "tr": "Basit bootstrap zaman sırasını yok sayar; sırayı korumak blok bootstrap türevlerinin amacıdır, tanımlayıcı özellik değildir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["bootstrap", "resampling", "with-replacement", "feature", "appear"],
+      "vocab_ids": [
+        "bootstrap",
+        "resampling",
+        "with-replacement",
+        "feature",
+        "appear"
+      ],
       "pattern_ids": [],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-b-q02",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "An analyst has 60 monthly returns for a small-cap fund and wants a confidence interval for its Sharpe ratio, but the sampling distribution of the Sharpe ratio is not known. The most appropriate approach is to:",
       "stem_tr": "Bir analist küçük ölçekli bir hisse fonu için 60 aylık getiriye sahip ve Sharpe oranı için güven aralığı istiyor; ancak Sharpe oranının örnekleme dağılımı bilinmiyor. En uygun yaklaşım şudur:",
       "options": [
-        { "key": "A", "en": "assume the Sharpe ratio is normally distributed and use ±1.96 standard errors around the sample value.", "tr": "Sharpe oranının normal dağıldığını varsayıp örneklem değeri etrafında ±1,96 standart hata kullanmak." },
-        { "key": "B", "en": "resample the 60 returns with replacement many times, compute the Sharpe ratio each time and take the 2.5th and 97.5th percentiles.", "tr": "60 getiriyi iadeli olarak pek çok kez yeniden örnekleyip her seferinde Sharpe oranını hesaplamak ve %2,5 ile %97,5 yüzdeliklerini almak." },
-        { "key": "C", "en": "replay the 60 months in order and take the lowest and highest monthly Sharpe ratios as the interval.", "tr": "60 ayı sırayla yeniden oynatıp en düşük ve en yüksek aylık Sharpe oranı değerlerini aralık olarak almak." }
+        {
+          "key": "A",
+          "en": "assume the Sharpe ratio is normally distributed and use ±1.96 standard errors around the sample value.",
+          "tr": "Sharpe oranının normal dağıldığını varsayıp örneklem değeri etrafında ±1,96 standart hata kullanmak."
+        },
+        {
+          "key": "B",
+          "en": "resample the 60 returns with replacement many times, compute the Sharpe ratio each time and take the 2.5th and 97.5th percentiles.",
+          "tr": "60 getiriyi iadeli olarak pek çok kez yeniden örnekleyip her seferinde Sharpe oranını hesaplamak ve %2,5 ile %97,5 yüzdeliklerini almak."
+        },
+        {
+          "key": "C",
+          "en": "replay the 60 months in order and take the lowest and highest monthly Sharpe ratios as the interval.",
+          "tr": "60 ayı sırayla yeniden oynatıp en düşük ve en yüksek aylık Sharpe oranı değerlerini aralık olarak almak."
+        }
       ],
       "answer": "B",
       "explanation_en": "Bootstrap is designed for exactly this: when the sampling distribution of a statistic is unknown or hard to derive, the spread of the statistic across resamples estimates its standard error and confidence interval.",
       "explanation_tr": "Bootstrap tam bunun için tasarlanmıştır: bir istatistiğin örnekleme dağılımı bilinmediğinde ya da türetilmesi zor olduğunda, istatistiğin yeniden örneklemler arasındaki yayılımı standart hatasını ve güven aralığını tahmin eder.",
       "wrong_option_reasons": {
-        "A": { "en": "The question states the sampling distribution is unknown; assuming normality defeats the purpose and the standard error itself is not available.", "tr": "Soru örnekleme dağılımının bilinmediğini söylüyor; normallik varsaymak amacı boşa çıkarır ve standart hatanın kendisi de elde yok." },
-        "C": { "en": "A Sharpe ratio is not defined for a single month, and replaying in order gives no measure of estimation uncertainty.", "tr": "Tek bir ay için Sharpe oranı tanımlı değildir ve sırayla oynatmak tahmin belirsizliğinin ölçüsünü vermez." }
+        "A": {
+          "en": "The question states the sampling distribution is unknown; assuming normality defeats the purpose and the standard error itself is not available.",
+          "tr": "Soru örnekleme dağılımının bilinmediğini söylüyor; normallik varsaymak amacı boşa çıkarır ve standart hatanın kendisi de elde yok."
+        },
+        "C": {
+          "en": "A Sharpe ratio is not defined for a single month, and replaying in order gives no measure of estimation uncertainty.",
+          "tr": "Tek bir ay için Sharpe oranı tanımlı değildir ve sırayla oynatmak tahmin belirsizliğinin ölçüsünü vermez."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["sampling-distribution", "most-appropriate", "sharpe-ratio", "percentile", "resample"],
-      "pattern_ids": ["most-appropriate"],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "sampling-distribution",
+        "most-appropriate",
+        "sharpe-ratio",
+        "percentile",
+        "resample"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-b-q03",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "Which statement about bootstrap resampling is least accurate?",
       "stem_tr": "Bootstrap yeniden örnekleme hakkındaki ifadelerden hangisi en az doğrudur?",
       "options": [
-        { "key": "A", "en": "It can produce return scenarios outside the range of the original sample.", "tr": "Orijinal örneklemin aralığı dışında getiri senaryoları üretebilir." },
-        { "key": "B", "en": "It does not require the returns to be normally distributed.", "tr": "Getirilerin normal dağılmasını gerektirmez." },
-        { "key": "C", "en": "Each resample has the same number of observations as the original sample.", "tr": "Her yeniden örneklem orijinal örneklemle aynı sayıda gözlem içerir." }
+        {
+          "key": "A",
+          "en": "It can produce return scenarios outside the range of the original sample.",
+          "tr": "Orijinal örneklemin aralığı dışında getiri senaryoları üretebilir."
+        },
+        {
+          "key": "B",
+          "en": "It does not require the returns to be normally distributed.",
+          "tr": "Getirilerin normal dağılmasını gerektirmez."
+        },
+        {
+          "key": "C",
+          "en": "Each resample has the same number of observations as the original sample.",
+          "tr": "Her yeniden örneklem orijinal örneklemle aynı sayıda gözlem içerir."
+        }
       ],
       "answer": "A",
       "explanation_en": "Bootstrap only rearranges existing observations, so no resample can contain a value that is not already in the data. This is its main limitation; the other two statements are correct.",
       "explanation_tr": "Bootstrap yalnızca mevcut gözlemleri yeniden düzenler; bu yüzden hiçbir yeniden örneklem veride olmayan bir değer içeremez. Bu başlıca sınırlamasıdır; diğer iki ifade doğrudur.",
       "wrong_option_reasons": {
-        "B": { "en": "Correct statement: bootstrap is non-parametric and makes no normality assumption.", "tr": "Doğru ifade: bootstrap parametrik değildir ve normallik varsaymaz." },
-        "C": { "en": "Correct statement: the standard bootstrap draws n observations with replacement from the n-observation sample.", "tr": "Doğru ifade: standart bootstrap n gözlemli örneklemden iadeli n gözlem çeker." }
+        "B": {
+          "en": "Correct statement: bootstrap is non-parametric and makes no normality assumption.",
+          "tr": "Doğru ifade: bootstrap parametrik değildir ve normallik varsaymaz."
+        },
+        "C": {
+          "en": "Correct statement: the standard bootstrap draws n observations with replacement from the n-observation sample.",
+          "tr": "Doğru ifade: standart bootstrap n gözlemli örneklemden iadeli n gözlem çeker."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["least-accurate", "range", "require", "observation", "rearrange"],
-      "pattern_ids": ["least-likely"],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "least-accurate",
+        "range",
+        "require",
+        "observation",
+        "rearrange"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-b-q04",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "A quantitative analyst bootstraps daily BIST 100 returns to estimate the distribution of 20-day cumulative returns. A colleague objects that the results understate the risk of a prolonged sell-off. The colleague's objection is most likely based on the fact that simple bootstrap:",
       "stem_tr": "Bir kantitatif analist 20 günlük birikimli getirilerin dağılımını tahmin etmek için günlük BIST 100 getirilerini bootstrap ile yeniden örnekliyor. Bir meslektaşı sonuçların uzun süreli bir satış dalgasının riskini olduğundan az gösterdiğine itiraz ediyor. Meslektaşın itirazı büyük olasılıkla basit bootstrap'in şu özelliğine dayanır:",
       "options": [
-        { "key": "A", "en": "assumes returns are independent across days, so clusters of consecutive bad days are broken up.", "tr": "getirilerin günler arasında bağımsız olduğunu varsayar; bu yüzden ardışık kötü gün kümeleri dağılır." },
-        { "key": "B", "en": "requires the analyst to pick a volatility parameter, which is usually set too low.", "tr": "analistin bir oynaklık parametresi seçmesini gerektirir ve bu genellikle çok düşük tutulur." },
-        { "key": "C", "en": "removes the largest observed losses because they appear only once in the sample.", "tr": "en büyük gözlenen kayıpları, örneklemde yalnızca bir kez göründükleri için çıkarır." }
+        {
+          "key": "A",
+          "en": "assumes returns are independent across days, so clusters of consecutive bad days are broken up.",
+          "tr": "getirilerin günler arasında bağımsız olduğunu varsayar; bu yüzden ardışık kötü gün kümeleri dağılır."
+        },
+        {
+          "key": "B",
+          "en": "requires the analyst to pick a volatility parameter, which is usually set too low.",
+          "tr": "analistin bir oynaklık parametresi seçmesini gerektirir ve bu genellikle çok düşük tutulur."
+        },
+        {
+          "key": "C",
+          "en": "removes the largest observed losses because they appear only once in the sample.",
+          "tr": "en büyük gözlenen kayıpları, örneklemde yalnızca bir kez göründükleri için çıkarır."
+        }
       ],
       "answer": "A",
       "explanation_en": "Drawing days independently with replacement destroys the time order, so volatility clustering and serial dependence are lost. Long runs of losses become rarer than in reality. Block bootstrap is one way to keep them.",
       "explanation_tr": "Günleri iadeli ve bağımsız çekmek zaman sırasını bozar; böylece oynaklık kümelenmesi ve seri bağımlılık kaybolur. Uzun kayıp serileri gerçekte olduğundan daha nadir çıkar. Blok bootstrap bunları korumanın bir yoludur.",
       "wrong_option_reasons": {
-        "B": { "en": "Bootstrap uses the data directly; it has no volatility parameter to choose. That describes Monte Carlo.", "tr": "Bootstrap veriyi doğrudan kullanır; seçilecek bir oynaklık parametresi yoktur. Bu Monte Carlo'yu anlatır." },
-        "C": { "en": "Large losses are not removed; with replacement they can appear once, several times or not at all in any given resample.", "tr": "Büyük kayıplar çıkarılmaz; iadeli çekimde herhangi bir yeniden örneklemde bir kez, birkaç kez ya da hiç görünebilirler." }
+        "B": {
+          "en": "Bootstrap uses the data directly; it has no volatility parameter to choose. That describes Monte Carlo.",
+          "tr": "Bootstrap veriyi doğrudan kullanır; seçilecek bir oynaklık parametresi yoktur. Bu Monte Carlo'yu anlatır."
+        },
+        "C": {
+          "en": "Large losses are not removed; with replacement they can appear once, several times or not at all in any given resample.",
+          "tr": "Büyük kayıplar çıkarılmaz; iadeli çekimde herhangi bir yeniden örneklemde bir kez, birkaç kez ya da hiç görünebilirler."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["cumulative", "object", "prolonged", "sell-off", "consecutive", "serial-dependence"],
-      "pattern_ids": ["most-likely"],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "cumulative",
+        "object",
+        "prolonged",
+        "sell-off",
+        "consecutive",
+        "serial-dependence"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-b-q05",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Bootstrap resampling and Monte Carlo simulation both use random draws. The key difference is that bootstrap draws from:",
       "stem_tr": "Bootstrap yeniden örnekleme ile Monte Carlo simülasyonunun ikisi de rastgele çekim kullanır. Temel fark, bootstrap'in şuradan çekmesidir:",
       "options": [
-        { "key": "A", "en": "a theoretical distribution chosen by the analyst.", "tr": "analistin seçtiği kuramsal bir dağılım." },
-        { "key": "B", "en": "a uniform distribution between the sample minimum and maximum.", "tr": "örneklem minimumu ile maksimumu arasında bir düzgün dağılım." },
-        { "key": "C", "en": "the observed sample data itself.", "tr": "gözlenen örneklem verisinin kendisi." }
+        {
+          "key": "A",
+          "en": "a theoretical distribution chosen by the analyst.",
+          "tr": "analistin seçtiği kuramsal bir dağılım."
+        },
+        {
+          "key": "B",
+          "en": "a uniform distribution between the sample minimum and maximum.",
+          "tr": "örneklem minimumu ile maksimumu arasında bir düzgün dağılım."
+        },
+        {
+          "key": "C",
+          "en": "the observed sample data itself.",
+          "tr": "gözlenen örneklem verisinin kendisi."
+        }
       ],
       "answer": "C",
       "explanation_en": "Bootstrap treats the empirical sample as the population and resamples from it. Monte Carlo instead draws from a distribution the analyst specifies.",
       "explanation_tr": "Bootstrap ampirik örneklemi ana kütle gibi ele alır ve ondan yeniden örnekler. Monte Carlo ise analistin belirlediği bir dağılımdan çeker.",
       "wrong_option_reasons": {
-        "A": { "en": "That describes Monte Carlo simulation.", "tr": "Bu Monte Carlo simülasyonunu tanımlar." },
-        "B": { "en": "Bootstrap does not spread draws evenly between the extremes; it picks actual observations, each with equal probability.", "tr": "Bootstrap çekimleri uçlar arasında eşit yaymaz; her biri eşit olasılıkla gerçek gözlemleri seçer." }
+        "A": {
+          "en": "That describes Monte Carlo simulation.",
+          "tr": "Bu Monte Carlo simülasyonunu tanımlar."
+        },
+        "B": {
+          "en": "Bootstrap does not spread draws evenly between the extremes; it picks actual observations, each with equal probability.",
+          "tr": "Bootstrap çekimleri uçlar arasında eşit yaymaz; her biri eşit olasılıkla gerçek gözlemleri seçer."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["random-draw", "difference", "theoretical", "observed", "uniform"],
+      "vocab_ids": [
+        "random-draw",
+        "difference",
+        "theoretical",
+        "observed",
+        "uniform"
+      ],
       "pattern_ids": [],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q01",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "In a Monte Carlo simulation of a portfolio's value in one year, the first step is most appropriately to:",
       "stem_tr": "Bir portföyün bir yıl sonraki değerinin Monte Carlo simülasyonunda ilk adım en uygun olarak şudur:",
       "options": [
-        { "key": "A", "en": "generate random numbers and compute the portfolio value for each draw.", "tr": "rastgele sayılar üretip her çekim için portföy değerini hesaplamak." },
-        { "key": "B", "en": "specify the risk factors and the model that links them to the portfolio value, and choose a distribution for each factor.", "tr": "risk faktörlerini ve bunları portföy değerine bağlayan modeli belirlemek, her faktör için bir dağılım seçmek." },
-        { "key": "C", "en": "sort the simulated outcomes and read the required percentile.", "tr": "simüle edilen sonuçları sıralayıp istenen yüzdeliği okumak." }
+        {
+          "key": "A",
+          "en": "generate random numbers and compute the portfolio value for each draw.",
+          "tr": "rastgele sayılar üretip her çekim için portföy değerini hesaplamak."
+        },
+        {
+          "key": "B",
+          "en": "specify the risk factors and the model that links them to the portfolio value, and choose a distribution for each factor.",
+          "tr": "risk faktörlerini ve bunları portföy değerine bağlayan modeli belirlemek, her faktör için bir dağılım seçmek."
+        },
+        {
+          "key": "C",
+          "en": "sort the simulated outcomes and read the required percentile.",
+          "tr": "simüle edilen sonuçları sıralayıp istenen yüzdeliği okumak."
+        }
       ],
       "answer": "B",
       "explanation_en": "The model and the distributional assumptions must be set before any random draw makes sense. Drawing, computing and summarizing come afterwards.",
       "explanation_tr": "Herhangi bir rastgele çekimin anlamlı olması için önce model ve dağılım varsayımları belirlenmelidir. Çekim, hesaplama ve özetleme sonra gelir.",
       "wrong_option_reasons": {
-        "A": { "en": "Random draws need a distribution to draw from; this is a middle step.", "tr": "Rastgele çekim için çekilecek bir dağılım gerekir; bu ara adımdır." },
-        "C": { "en": "Summarizing results is the final step.", "tr": "Sonuçları özetlemek son adımdır." }
+        "A": {
+          "en": "Random draws need a distribution to draw from; this is a middle step.",
+          "tr": "Rastgele çekim için çekilecek bir dağılım gerekir; bu ara adımdır."
+        },
+        "C": {
+          "en": "Summarizing results is the final step.",
+          "tr": "Sonuçları özetlemek son adımdır."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["monte-carlo-simulation", "most-appropriate", "specify", "risk-factor", "link"],
-      "pattern_ids": ["most-appropriate"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "monte-carlo-simulation",
+        "most-appropriate",
+        "specify",
+        "risk-factor",
+        "link"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q02",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "A pension consultant in Ankara wants to estimate the probability that a client's savings will run out before age 90, given uncertain future returns, inflation and the client's lifespan, with withdrawals that change each year. The most suitable method is:",
       "stem_tr": "Ankara'da bir emeklilik danışmanı, belirsiz gelecek getiriler, enflasyon ve müşterinin yaşam süresi ile her yıl değişen çekişler veri iken müşterinin birikimlerinin 90 yaşından önce tükenme olasılığını tahmin etmek istiyor. En uygun yöntem:",
       "options": [
-        { "key": "A", "en": "Monte Carlo simulation, because it can model many interacting variables and path-dependent withdrawals under chosen distributions.", "tr": "Monte Carlo simülasyonu; çünkü birbirini etkileyen pek çok değişkeni ve yola bağımlı çekişleri seçilen dağılımlar altında modelleyebilir." },
-        { "key": "B", "en": "historical simulation, because the client's own past savings history gives the most relevant scenarios.", "tr": "tarihsel simülasyon; çünkü müşterinin kendi geçmiş birikim geçmişi en ilgili senaryoları verir." },
-        { "key": "C", "en": "a closed-form present value formula, because retirement cash flows are an annuity.", "tr": "kapalı formlu bir bugünkü değer formülü; çünkü emeklilik nakit akışları bir anüitedir." }
+        {
+          "key": "A",
+          "en": "Monte Carlo simulation, because it can model many interacting variables and path-dependent withdrawals under chosen distributions.",
+          "tr": "Monte Carlo simülasyonu; çünkü birbirini etkileyen pek çok değişkeni ve yola bağımlı çekişleri seçilen dağılımlar altında modelleyebilir."
+        },
+        {
+          "key": "B",
+          "en": "historical simulation, because the client's own past savings history gives the most relevant scenarios.",
+          "tr": "tarihsel simülasyon; çünkü müşterinin kendi geçmiş birikim geçmişi en ilgili senaryoları verir."
+        },
+        {
+          "key": "C",
+          "en": "a closed-form present value formula, because retirement cash flows are an annuity.",
+          "tr": "kapalı formlu bir bugünkü değer formülü; çünkü emeklilik nakit akışları bir anüitedir."
+        }
       ],
       "answer": "A",
       "explanation_en": "Several uncertain variables, interactions and payoffs that depend on the path of returns are the classic case for Monte Carlo. It can also include scenarios not seen in the past.",
       "explanation_tr": "Birden çok belirsiz değişken, etkileşimler ve getiri yoluna bağlı sonuçlar Monte Carlo için klasik durumdur. Geçmişte görülmemiş senaryoları da içerebilir.",
       "wrong_option_reasons": {
-        "B": { "en": "One person's savings history is far too short and too specific to serve as a scenario set for decades of market and lifespan outcomes.", "tr": "Tek bir kişinin birikim geçmişi onlarca yıllık piyasa ve yaşam süresi sonuçları için senaryo kümesi olamayacak kadar kısa ve özeldir." },
-        "C": { "en": "A single formula cannot handle random returns, random inflation and a random lifespan with changing withdrawals; it gives one number, not a probability.", "tr": "Tek bir formül rastgele getiri, rastgele enflasyon ve değişen çekişlerle rastgele yaşam süresini ele alamaz; olasılık değil tek bir sayı verir." }
+        "B": {
+          "en": "One person's savings history is far too short and too specific to serve as a scenario set for decades of market and lifespan outcomes.",
+          "tr": "Tek bir kişinin birikim geçmişi onlarca yıllık piyasa ve yaşam süresi sonuçları için senaryo kümesi olamayacak kadar kısa ve özeldir."
+        },
+        "C": {
+          "en": "A single formula cannot handle random returns, random inflation and a random lifespan with changing withdrawals; it gives one number, not a probability.",
+          "tr": "Tek bir formül rastgele getiri, rastgele enflasyon ve değişen çekişlerle rastgele yaşam süresini ele alamaz; olasılık değil tek bir sayı verir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["run-out", "lifespan", "withdrawal", "most-suitable", "path-dependent", "interact"],
-      "pattern_ids": ["most-appropriate"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "run-out",
+        "lifespan",
+        "withdrawal",
+        "most-suitable",
+        "path-dependent",
+        "interact"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q03",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "Which of the following is NOT a limitation of Monte Carlo simulation?",
       "stem_tr": "Aşağıdakilerden hangisi Monte Carlo simülasyonunun bir sınırlaması DEĞİLDİR?",
       "options": [
-        { "key": "A", "en": "The results depend on the distributions and parameters the analyst assumes.", "tr": "Sonuçlar analistin varsaydığı dağılım ve parametrelere bağlıdır." },
-        { "key": "B", "en": "It cannot model events that did not occur in the historical data.", "tr": "Tarihsel veride gerçekleşmemiş olayları modelleyemez." },
-        { "key": "C", "en": "It provides a statistical estimate rather than an exact analytical answer.", "tr": "Kesin analitik bir yanıt yerine istatistiksel bir tahmin verir." }
+        {
+          "key": "A",
+          "en": "The results depend on the distributions and parameters the analyst assumes.",
+          "tr": "Sonuçlar analistin varsaydığı dağılım ve parametrelere bağlıdır."
+        },
+        {
+          "key": "B",
+          "en": "It cannot model events that did not occur in the historical data.",
+          "tr": "Tarihsel veride gerçekleşmemiş olayları modelleyemez."
+        },
+        {
+          "key": "C",
+          "en": "It provides a statistical estimate rather than an exact analytical answer.",
+          "tr": "Kesin analitik bir yanıt yerine istatistiksel bir tahmin verir."
+        }
       ],
       "answer": "B",
       "explanation_en": "Modeling events that never happened is a strength of Monte Carlo, because it draws from an assumed distribution rather than from the past. Dependence on assumptions and the lack of an exact answer are its real limitations.",
       "explanation_tr": "Hiç yaşanmamış olayları modellemek Monte Carlo'nun güçlü yanıdır; çünkü geçmişten değil varsayılan bir dağılımdan çeker. Varsayımlara bağımlılık ve kesin yanıt vermemesi gerçek sınırlamalarıdır.",
       "wrong_option_reasons": {
-        "A": { "en": "This is a genuine limitation: a wrong model or wrong parameters produce misleading output no matter how many trials are run.", "tr": "Bu gerçek bir sınırlamadır: yanlış model ya da parametreler, kaç deneme yapılırsa yapılsın yanıltıcı çıktı üretir." },
-        "C": { "en": "This is a genuine limitation: simulation output has sampling error; it approximates rather than solves.", "tr": "Bu gerçek bir sınırlamadır: simülasyon çıktısında örnekleme hatası vardır; çözmez, yaklaşık verir." }
+        "A": {
+          "en": "This is a genuine limitation: a wrong model or wrong parameters produce misleading output no matter how many trials are run.",
+          "tr": "Bu gerçek bir sınırlamadır: yanlış model ya da parametreler, kaç deneme yapılırsa yapılsın yanıltıcı çıktı üretir."
+        },
+        "C": {
+          "en": "This is a genuine limitation: simulation output has sampling error; it approximates rather than solves.",
+          "tr": "Bu gerçek bir sınırlamadır: simülasyon çıktısında örnekleme hatası vardır; çözmez, yaklaşık verir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["limitation", "not-question", "occur", "analytical", "estimate"],
-      "pattern_ids": ["not-question"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "limitation",
+        "not-question",
+        "occur",
+        "analytical",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q04",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "An analyst simulates the price of a BIST share one year ahead by drawing annual returns from a normal distribution with mean 20% and standard deviation 60% and setting price = current price × (1 + return). A reviewer says the model is flawed. The reviewer's concern is most likely that:",
       "stem_tr": "Bir analist bir BIST hissesinin bir yıl sonraki fiyatını, ortalaması %20 ve standart sapması %60 olan normal dağılımdan yıllık getiri çekip fiyat = cari fiyat × (1 + getiri) olarak simüle ediyor. Bir denetçi modelin kusurlu olduğunu söylüyor. Denetçinin endişesi büyük olasılıkla şudur:",
       "options": [
-        { "key": "A", "en": "a normal return with such a high standard deviation allows the simulated price to become negative; a lognormal price model would avoid this.", "tr": "bu kadar yüksek standart sapmalı normal bir getiri simüle edilen fiyatın negatif olmasına izin verir; lognormal fiyat modeli bunu önlerdi." },
-        { "key": "B", "en": "a Monte Carlo simulation cannot be used for a single security; it is only for portfolios.", "tr": "Monte Carlo simülasyonu tek bir menkul kıymet için kullanılamaz; yalnızca portföyler içindir." },
-        { "key": "C", "en": "the mean of 20% is too high to be drawn from a normal distribution.", "tr": "%20 ortalama bir normal dağılımdan çekilemeyecek kadar yüksektir." }
+        {
+          "key": "A",
+          "en": "a normal return with such a high standard deviation allows the simulated price to become negative; a lognormal price model would avoid this.",
+          "tr": "bu kadar yüksek standart sapmalı normal bir getiri simüle edilen fiyatın negatif olmasına izin verir; lognormal fiyat modeli bunu önlerdi."
+        },
+        {
+          "key": "B",
+          "en": "a Monte Carlo simulation cannot be used for a single security; it is only for portfolios.",
+          "tr": "Monte Carlo simülasyonu tek bir menkul kıymet için kullanılamaz; yalnızca portföyler içindir."
+        },
+        {
+          "key": "C",
+          "en": "the mean of 20% is too high to be drawn from a normal distribution.",
+          "tr": "%20 ortalama bir normal dağılımdan çekilemeyecek kadar yüksektir."
+        }
       ],
       "answer": "A",
       "explanation_en": "With mean 20% and σ 60%, a return below -100% is about 2 standard deviations away and will occur in roughly 2% of draws, producing impossible negative prices. Modeling the continuously compounded return as normal (so the price is lognormal) keeps prices positive.",
       "explanation_tr": "Ortalama %20 ve σ %60 iken %-100'ün altında bir getiri yaklaşık 2 standart sapma uzaktadır ve çekimlerin kabaca %2'sinde gerçekleşir; bu da imkânsız negatif fiyatlar üretir. Sürekli bileşik getiriyi normal (dolayısıyla fiyatı lognormal) modellemek fiyatları pozitif tutar.",
       "wrong_option_reasons": {
-        "B": { "en": "Monte Carlo is routinely used for single securities, for example to value options.", "tr": "Monte Carlo tek menkul kıymetler için, örneğin opsiyon değerlemede, rutin olarak kullanılır." },
-        "C": { "en": "A normal distribution can have any mean; the mean is not the problem.", "tr": "Normal dağılımın ortalaması herhangi bir değer olabilir; sorun ortalama değildir." }
+        "B": {
+          "en": "Monte Carlo is routinely used for single securities, for example to value options.",
+          "tr": "Monte Carlo tek menkul kıymetler için, örneğin opsiyon değerlemede, rutin olarak kullanılır."
+        },
+        "C": {
+          "en": "A normal distribution can have any mean; the mean is not the problem.",
+          "tr": "Normal dağılımın ortalaması herhangi bir değer olabilir; sorun ortalama değildir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["flawed", "reviewer", "concern", "negative", "lognormal-distribution", "most-likely"],
-      "pattern_ids": ["most-likely"],
-      "spk_link": { "status": "new" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "flawed",
+        "reviewer",
+        "concern",
+        "negative",
+        "lognormal-distribution",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q05",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "An analyst increases the number of trials in a Monte Carlo valuation of a structured note from 1,000 to 100,000. All else equal, this change is most likely to:",
       "stem_tr": "Bir analist yapılandırılmış bir borçlanma aracının Monte Carlo değerlemesinde deneme sayısını 1.000'den 100.000'e çıkarıyor. Diğer her şey sabitken bu değişiklik büyük olasılıkla:",
       "options": [
-        { "key": "A", "en": "correct any error caused by a wrongly specified volatility parameter.", "tr": "yanlış belirlenmiş bir oynaklık parametresinin yol açtığı hatayı düzeltir." },
-        { "key": "B", "en": "reduce the sampling error of the estimated value but leave model error unchanged.", "tr": "tahmini değerin örnekleme hatasını azaltır ama model hatasını değiştirmez." },
-        { "key": "C", "en": "make the estimate exact, because 100,000 trials cover every possible path.", "tr": "100.000 deneme her olası yolu kapsadığı için tahmini kesinleştirir." }
+        {
+          "key": "A",
+          "en": "correct any error caused by a wrongly specified volatility parameter.",
+          "tr": "yanlış belirlenmiş bir oynaklık parametresinin yol açtığı hatayı düzeltir."
+        },
+        {
+          "key": "B",
+          "en": "reduce the sampling error of the estimated value but leave model error unchanged.",
+          "tr": "tahmini değerin örnekleme hatasını azaltır ama model hatasını değiştirmez."
+        },
+        {
+          "key": "C",
+          "en": "make the estimate exact, because 100,000 trials cover every possible path.",
+          "tr": "100.000 deneme her olası yolu kapsadığı için tahmini kesinleştirir."
+        }
       ],
       "answer": "B",
       "explanation_en": "More trials shrink the standard error of the simulation average (roughly with the square root of the number of trials). They do nothing about errors in the assumed distribution or parameters, and the estimate remains an estimate.",
       "explanation_tr": "Daha fazla deneme simülasyon ortalamasının standart hatasını (kabaca deneme sayısının kareköküyle) küçültür. Varsayılan dağılım ya da parametrelerdeki hatalara etkisi yoktur ve tahmin yine tahmin olarak kalır.",
       "wrong_option_reasons": {
-        "A": { "en": "Trial count cannot fix an input error; garbage in, garbage out.", "tr": "Deneme sayısı bir girdi hatasını düzeltemez; çöp girer, çöp çıkar." },
-        "C": { "en": "The set of possible paths from continuous distributions is infinite; the result stays a statistical estimate.", "tr": "Sürekli dağılımlardan olası yollar kümesi sonsuzdur; sonuç istatistiksel bir tahmin olarak kalır." }
+        "A": {
+          "en": "Trial count cannot fix an input error; garbage in, garbage out.",
+          "tr": "Deneme sayısı bir girdi hatasını düzeltemez; çöp girer, çöp çıkar."
+        },
+        "C": {
+          "en": "The set of possible paths from continuous distributions is infinite; the result stays a statistical estimate.",
+          "tr": "Sürekli dağılımlardan olası yollar kümesi sonsuzdur; sonuç istatistiksel bir tahmin olarak kalır."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["trial", "all-else-equal", "sampling-error", "specify", "structured-note", "most-likely"],
-      "pattern_ids": ["all-else-equal", "most-likely"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "trial",
+        "all-else-equal",
+        "sampling-error",
+        "specify",
+        "structured-note",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     },
     {
       "id": "QM-09-c-q06",
-      "level": "L1", "topic": "QM", "module_id": "QM-09", "los_id": "QM-09-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Monte Carlo simulation is most likely preferred over a closed-form valuation formula when the security's payoff:",
       "stem_tr": "Monte Carlo simülasyonunun kapalı formlu bir değerleme formülüne tercih edilmesi en olası durum, menkul kıymetin getirisinin şu olduğu durumdur:",
       "options": [
-        { "key": "A", "en": "is a fixed coupon paid on known dates.", "tr": "bilinen tarihlerde ödenen sabit bir kupon." },
-        { "key": "B", "en": "is linear in a single normally distributed variable.", "tr": "tek bir normal dağılımlı değişkende doğrusal." },
-        { "key": "C", "en": "depends on the path the underlying price takes over time, as with some mortgage-backed securities.", "tr": "bazı ipoteğe dayalı menkul kıymetlerde olduğu gibi dayanak fiyatın zaman içinde izlediği yola bağlı." }
+        {
+          "key": "A",
+          "en": "is a fixed coupon paid on known dates.",
+          "tr": "bilinen tarihlerde ödenen sabit bir kupon."
+        },
+        {
+          "key": "B",
+          "en": "is linear in a single normally distributed variable.",
+          "tr": "tek bir normal dağılımlı değişkende doğrusal."
+        },
+        {
+          "key": "C",
+          "en": "depends on the path the underlying price takes over time, as with some mortgage-backed securities.",
+          "tr": "bazı ipoteğe dayalı menkul kıymetlerde olduğu gibi dayanak fiyatın zaman içinde izlediği yola bağlı."
+        }
       ],
       "answer": "C",
       "explanation_en": "Path-dependent payoffs usually have no closed-form solution. Monte Carlo generates many price paths and averages the discounted payoff along each one.",
       "explanation_tr": "Yola bağımlı getirilerin genellikle kapalı form çözümü yoktur. Monte Carlo pek çok fiyat yolu üretir ve her birindeki iskontolu getirinin ortalamasını alır.",
       "wrong_option_reasons": {
-        "A": { "en": "Fixed cash flows are valued directly by discounting; simulation adds nothing.", "tr": "Sabit nakit akışları doğrudan iskontolanarak değerlenir; simülasyon bir şey katmaz." },
-        "B": { "en": "A simple linear payoff on one normal variable has an easy analytical expected value.", "tr": "Tek normal değişkende basit doğrusal bir getirinin beklenen değeri kolayca analitik olarak bulunur." }
+        "A": {
+          "en": "Fixed cash flows are valued directly by discounting; simulation adds nothing.",
+          "tr": "Sabit nakit akışları doğrudan iskontolanarak değerlenir; simülasyon bir şey katmaz."
+        },
+        "B": {
+          "en": "A simple linear payoff on one normal variable has an easy analytical expected value.",
+          "tr": "Tek normal değişkende basit doğrusal bir getirinin beklenen değeri kolayca analitik olarak bulunur."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["closed-form", "payoff", "path-dependent", "mortgage-backed-security", "most-likely"],
-      "pattern_ids": ["most-likely"],
-      "spk_link": { "status": "partial" },
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "closed-form",
+        "payoff",
+        "path-dependent",
+        "mortgage-backed-security",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "partial"
+      },
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

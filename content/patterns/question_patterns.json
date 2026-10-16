@@ -1,0 +1,189 @@
+[
+  {
+    "id": "closest-to",
+    "pattern_en": "is closest to",
+    "meaning_tr": "\"En yakın olan\": sayısal sorularda doğru cevabın tam değeri şıklarda olmayabilir; yuvarlama farkı nedeniyle sonucuna EN YAKIN şıkkı seçmen istenir.",
+    "trap_tr": "Yanlış okuma: Öğrenci 1.047,3 hesaplar, şıklarda 1.047 yok, 1.050 var; \"benim sonucum yok, yanlış yaptım\" diye hesabı baştan yapar ve zaman kaybeder. Oysa 1.050 zaten en yakın şıktır. İkinci tuzak: iki şık birbirine yakınsa (ör. 8,2 ve 8,4) ara adımları fazla yuvarlamak yanlış şıkka götürür.",
+    "strategy_tr": "1) Hesabı bitir, sonucu şıklarla karşılaştır; birebir eşleşme bekleme. 2) Ara sonuçları hesap makinesinde tut, erken yuvarlama. 3) Şıklar birbirine çok yakınsa işaret (negatif/pozitif) ve birim (yüzde, bin, milyon) kontrolü yap. 4) Hiçbir şık yakın değilse (ör. iki kat fark) o zaman formülü gözden geçir.",
+    "examples": [
+      { "en": "The present value of the bond is closest to:", "tr": "Tahvilin bugünkü değeri aşağıdakilerden hangisine en yakındır:" },
+      { "en": "The company's return on equity for 2025 is closest to:", "tr": "Şirketin 2025 yılı özkaynak kârlılığı aşağıdakilerden hangisine en yakındır:" },
+      { "en": "The effective annual rate is closest to:", "tr": "Efektif yıllık faiz oranı aşağıdakilerden hangisine en yakındır:" }
+    ],
+    "drills": [
+      {
+        "stem_en": "You calculate 1,047.3. The options are A) 1,000 B) 1,050 C) 1,100. The stem says \"is closest to\". What should you do?",
+        "stem_tr": "Hesabın 1.047,3 çıktı. Şıklar A) 1.000 B) 1.050 C) 1.100. Soru kökü \"is closest to\" diyor. Ne yapmalısın?",
+        "options": [
+          { "en": "Choose B; the exact number does not need to be in the options.", "tr": "B'yi seç; tam sayının şıklarda olması gerekmez." },
+          { "en": "Recalculate from the start because 1,047.3 is not an option.", "tr": "1.047,3 şıklarda olmadığı için baştan hesapla." },
+          { "en": "Choose A because it is a round number.", "tr": "Yuvarlak sayı olduğu için A'yı seç." }
+        ],
+        "answer": 0,
+        "explanation_tr": "\"Closest to\" kalıbı sonucun şıklarla birebir eşleşmeyeceğini baştan söyler. 1.047,3'e en yakın şık 1.050'dir."
+      },
+      {
+        "stem_en": "What does \"is closest to\" tell you about the answer options?",
+        "stem_tr": "\"Is closest to\" ifadesi cevap şıkları hakkında ne söyler?",
+        "options": [
+          { "en": "One option is exactly equal to the answer.", "tr": "Bir şık cevaba tam olarak eşittir." },
+          { "en": "The options are approximate; pick the nearest one.", "tr": "Şıklar yaklaşık değerlerdir; en yakınını seç." },
+          { "en": "All options are wrong and you must write your own number.", "tr": "Tüm şıklar yanlıştır, kendi sayını yazmalısın." }
+        ],
+        "answer": 1,
+        "explanation_tr": "Kalıp, yuvarlama farkını kabul eder; en yakın şık doğru kabul edilir."
+      },
+      {
+        "stem_en": "\"The duration of the bond is closest to:\" Your result is 4.48. Options: A) 4.2 B) 4.5 C) 4.8. Which is correct?",
+        "stem_tr": "\"Tahvilin durasyonu aşağıdakilerden hangisine en yakındır:\" Sonucun 4,48. Şıklar: A) 4,2 B) 4,5 C) 4,8. Hangisi doğru?",
+        "options": [
+          { "en": "A", "tr": "A" },
+          { "en": "B", "tr": "B" },
+          { "en": "C", "tr": "C" }
+        ],
+        "answer": 1,
+        "explanation_tr": "4,48 ile 4,5 arasındaki fark 0,02; diğer şıklara fark 0,28 ve 0,32. En yakın şık B."
+      },
+      {
+        "stem_en": "Your answer is 12.6%, but the options are 6.3%, 12.6%, and 25.2%. The stem says \"closest to\". What is the most useful check before answering?",
+        "stem_tr": "Sonucun %12,6; şıklar %6,3, %12,6 ve %25,2. Kök \"closest to\" diyor. Cevaplamadan önce en faydalı kontrol hangisi?",
+        "options": [
+          { "en": "No check is needed; the exact value is there, so choose it.", "tr": "Kontrol gerekmez; tam değer şıkta var, onu seç." },
+          { "en": "Check for a factor-of-two error (annual vs semiannual), since the wrong options are exactly half and double.", "tr": "Yanlış şıklar tam yarısı ve iki katı; yıllık/yarıyıllık gibi ikiye katlama hatası yapmadığını kontrol et." },
+          { "en": "Choose the middle option because it is always safest.", "tr": "Orta şık her zaman en güvenlidir, onu seç." }
+        ],
+        "answer": 1,
+        "explanation_tr": "Çeldiriciler tipik hatalardan türetilir. Yarısı ve iki katı şıklar, dönem sayısı/faiz çevrimi hatasını hedefler; bir saniyelik kontrol değerlidir."
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "least-likely",
+    "pattern_en": "least likely",
+    "meaning_tr": "\"En az olası\": üç şıktan İKİSİ doğru/olası ifadedir, BİRİ yanlış ya da en az uygundur. Senden yanlış/en zayıf olanı bulman istenir. Yani bu aslında bir \"yanlışı bul\" sorusudur.",
+    "trap_tr": "Yanlış okuma: Öğrenci \"least\" kelimesini gözden kaçırır, \"most likely\" gibi okur ve DOĞRU olan bir ifadeyi işaretler. Örnek: \"Which is least likely to increase bond price?\" sorusunda A) faizlerin düşmesi, B) kredi notunun yükselmesi, C) faizlerin yükselmesi varsa; aceleyle A'yı seçer, oysa A fiyatı artırır, istenen C'dir.",
+    "strategy_tr": "1) Kökte LEAST kelimesini gör görmez altını çiz; \"yanlışı bul\" diye zihninde çevir. 2) Her şıkka D/Y (doğru/yanlış) yaz; tek Y olan cevaptır. 3) İki şık doğru görünüyorsa kalan üçüncü şık cevaptır, emin olmasan bile. 4) Cevabı işaretlemeden önce bir kez daha \"least\" kelimesine bak.",
+    "examples": [
+      { "en": "Which of the following is least likely to increase the price of a bond?", "tr": "Aşağıdakilerden hangisinin bir tahvilin fiyatını artırması en az olasıdır?" },
+      { "en": "An analyst is least likely to violate the Standards by:", "tr": "Bir analistin aşağıdakilerden hangisini yaparak Standartları ihlal etmesi en az olasıdır:" },
+      { "en": "Which statement about diversification is least likely correct?", "tr": "Çeşitlendirme hakkındaki hangi ifadenin doğru olması en az olasıdır?" }
+    ],
+    "drills": [
+      {
+        "stem_en": "\"Which of the following is least likely to increase a bond's price?\" A) A fall in market interest rates. B) A credit rating upgrade. C) A rise in market interest rates. Which option is correct?",
+        "stem_tr": "\"Aşağıdakilerden hangisinin tahvil fiyatını artırması en az olasıdır?\" A) Piyasa faizlerinin düşmesi. B) Kredi notunun yükselmesi. C) Piyasa faizlerinin yükselmesi. Hangi şık doğru?",
+        "options": [
+          { "en": "A", "tr": "A" },
+          { "en": "B", "tr": "B" },
+          { "en": "C", "tr": "C" }
+        ],
+        "answer": 2,
+        "explanation_tr": "A ve B fiyatı artırır (doğru ifadeler). Faiz yükselmesi fiyatı düşürür; dolayısıyla fiyatı artırması EN AZ olası olan C'dir."
+      },
+      {
+        "stem_en": "In a \"least likely\" question, how many of the three options are usually true or appropriate?",
+        "stem_tr": "\"Least likely\" sorusunda üç şıktan genellikle kaçı doğru/uygundur?",
+        "options": [
+          { "en": "None", "tr": "Hiçbiri" },
+          { "en": "One", "tr": "Biri" },
+          { "en": "Two", "tr": "İkisi" }
+        ],
+        "answer": 2,
+        "explanation_tr": "İki şık doğrudur, biri yanlıştır. Yanlış olanı işaretlemen istenir."
+      },
+      {
+        "stem_en": "What is the best way to translate \"least likely\" in your head while reading a stem?",
+        "stem_tr": "Soru kökünü okurken \"least likely\" ifadesini zihninde en iyi nasıl çevirirsin?",
+        "options": [
+          { "en": "\"Find the TRUE statement.\"", "tr": "\"DOĞRU ifadeyi bul.\"" },
+          { "en": "\"Find the FALSE or weakest statement.\"", "tr": "\"YANLIŞ ya da en zayıf ifadeyi bul.\"" },
+          { "en": "\"Find the statement with the biggest number.\"", "tr": "\"En büyük sayılı ifadeyi bul.\"" }
+        ],
+        "answer": 1,
+        "explanation_tr": "\"Least likely\" = en az olası = yanlış olanı bul. Bu çeviri \"most likely\" ile karıştırmayı önler."
+      },
+      {
+        "stem_en": "\"An analyst is least likely to violate the Standards by:\" Two options describe clear violations. The third describes acceptable behaviour. Which one should you choose?",
+        "stem_tr": "\"Bir analistin aşağıdakilerden hangisini yaparak Standartları ihlal etmesi en az olasıdır:\" İki şık açık ihlal, üçüncüsü kabul edilebilir davranış. Hangisini seçmelisin?",
+        "options": [
+          { "en": "One of the two clear violations.", "tr": "İki açık ihlalden biri." },
+          { "en": "The acceptable behaviour.", "tr": "Kabul edilebilir davranış." },
+          { "en": "The option with the longest text.", "tr": "Metni en uzun olan şık." }
+        ],
+        "answer": 1,
+        "explanation_tr": "İhlal etmesi en az olası davranış, kabul edilebilir olandır. İhlal şıkları çeldiricidir."
+      },
+      {
+        "stem_en": "You read the stem quickly and pick an option that is clearly true. Later you notice the word \"least\". What happened?",
+        "stem_tr": "Kökü hızlı okudun ve açıkça doğru olan bir şıkkı seçtin. Sonra \"least\" kelimesini fark ettin. Ne oldu?",
+        "options": [
+          { "en": "You answered correctly; true statements are always the answer.", "tr": "Doğru cevapladın; doğru ifadeler her zaman cevaptır." },
+          { "en": "You fell into the classic trap: a true statement is a distractor in a \"least likely\" question.", "tr": "Klasik tuzağa düştün: \"least likely\" sorusunda doğru ifade çeldiricidir." },
+          { "en": "The question is faulty.", "tr": "Soru hatalıdır." }
+        ],
+        "answer": 1,
+        "explanation_tr": "\"Least\" kelimesini kaçırmak en sık yapılan okuma hatasıdır. Kökteki olumsuz anahtar kelimeleri işaretlemeyi alışkanlık yap."
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "most-likely",
+    "pattern_en": "most likely",
+    "meaning_tr": "\"En olası\": üç şıktan BİRİ doğru/uygun, İKİSİ yanlıştır. CFA bu kalıbı \"kesinlikle doğru\" demek yerine kullanır; çünkü gerçek hayatta istisnalar olabilir. Pratikte \"doğru olanı bul\" demektir.",
+    "trap_tr": "Yanlış okuma: Öğrenci \"most likely\" ifadesini \"ihtimal/olasılık hesabı\" sanır ve sayı aramaya başlar; ya da \"iki şık da olabilir\" diye kararsız kalır. Örnek: \"The analyst most likely violated:\" sorusunda öğrenci \"belki de ihlal etmedi\" diye düşünüp vakit kaybeder; kalıp sadece doğru şıkkın en savunulabilir şık olduğunu söyler.",
+    "strategy_tr": "1) \"Most likely\" gördüğünde \"hangisi doğru?\" diye oku; olasılık hesabı değildir. 2) Yanlış iki şıkkı ele; kalan şık cevaptır. 3) \"Kesin olmayabilir\" diye kaygılanma; en savunulabilir şık doğrudur. 4) Kökte ayrıca least/not/except var mı, bir kez kontrol et.",
+    "examples": [
+      { "en": "If interest rates rise, the price of the bond will most likely:", "tr": "Faiz oranları yükselirse tahvilin fiyatı büyük olasılıkla:" },
+      { "en": "The analyst most likely violated the Standard relating to:", "tr": "Analist büyük olasılıkla hangi Standardı ihlal etmiştir:" }
+    ],
+    "drills": [
+      {
+        "stem_en": "\"If interest rates rise, the price of a fixed-rate bond will most likely:\" A) increase B) decrease C) stay the same. Which is correct?",
+        "stem_tr": "\"Faiz oranları yükselirse sabit kuponlu tahvilin fiyatı büyük olasılıkla:\" A) artar B) düşer C) aynı kalır. Hangisi doğru?",
+        "options": [
+          { "en": "A", "tr": "A" },
+          { "en": "B", "tr": "B" },
+          { "en": "C", "tr": "C" }
+        ],
+        "answer": 1,
+        "explanation_tr": "Faiz ile tahvil fiyatı ters yönlü hareket eder. \"Most likely\" burada sadece \"doğru olan\" demektir; olasılık hesabı yoktur."
+      },
+      {
+        "stem_en": "In a \"most likely\" question, how many options are correct?",
+        "stem_tr": "\"Most likely\" sorusunda kaç şık doğrudur?",
+        "options": [
+          { "en": "Exactly one.", "tr": "Tam olarak bir." },
+          { "en": "Two.", "tr": "İki." },
+          { "en": "It depends on probability.", "tr": "Olasılığa bağlıdır." }
+        ],
+        "answer": 0,
+        "explanation_tr": "Tek doğru şık vardır; diğer ikisi çeldiricidir. Kalıp, ifadeyi yumuşatmak için kullanılır."
+      },
+      {
+        "stem_en": "Why does the exam say \"most likely\" instead of \"will\"?",
+        "stem_tr": "Sınav neden \"will\" (kesin olacak) yerine \"most likely\" der?",
+        "options": [
+          { "en": "Because the answer requires a probability calculation.", "tr": "Çünkü cevap bir olasılık hesabı gerektirir." },
+          { "en": "Because real markets have exceptions; the phrase avoids claiming certainty.", "tr": "Çünkü gerçek piyasalarda istisna olabilir; ifade kesinlik iddiasından kaçınır." },
+          { "en": "Because two options are usually correct.", "tr": "Çünkü genellikle iki şık doğrudur." }
+        ],
+        "answer": 1,
+        "explanation_tr": "Kalıp dilsel bir yumuşatmadır; cevabın tekliği değişmez."
+      },
+      {
+        "stem_en": "\"The portfolio manager most likely violated the Standard on:\" You are sure two options are irrelevant to the case. What should you do?",
+        "stem_tr": "\"Portföy yöneticisi büyük olasılıkla hangi Standardı ihlal etti:\" İki şıkkın olayla ilgisiz olduğundan eminsin. Ne yapmalısın?",
+        "options": [
+          { "en": "Choose the remaining option even if you are not 100% sure it is a violation.", "tr": "%100 emin olmasan da kalan şıkkı seç." },
+          { "en": "Leave the question blank because you are not certain.", "tr": "Emin olmadığın için boş bırak." },
+          { "en": "Choose the option with the most familiar words.", "tr": "En tanıdık kelimeleri içeren şıkkı seç." }
+        ],
+        "answer": 0,
+        "explanation_tr": "Eleme yöntemi burada tam çalışır: iki yanlış elenince kalan en olası şıktır. Sınavda yanlış cevap puan götürmez, boş bırakma."
+      }
+    ],
+    "verified": false
+  }
+]

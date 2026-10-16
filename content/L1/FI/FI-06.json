@@ -1,0 +1,1561 @@
+{
+  "module_id": "FI-06",
+  "lesson": {
+    "id": "FI-06-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-06",
+    "los_ids": [
+      "FI-06-a",
+      "FI-06-b",
+      "FI-06-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Bond Valuation: Prices and Yields",
+    "title_tr": "Tahvil Değerlemesi: Fiyatlar ve Getiriler",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why a bond's price moves",
+        "heading_tr": "Tahvil fiyatı neden hareket eder?",
+        "en": "A bond promises fixed cash flows: coupons and the par value at maturity. The price today is simply what investors pay for these fixed payments. If market interest rates rise, new bonds pay more, so an old bond with a lower coupon must become cheaper to attract buyers. In Türkiye you see this every day: when the TCMB raises the policy rate, prices of fixed-coupon DİBS fall on BIST's debt market and their yields rise. A broker at a fictional firm, Marmara Yatırım, must quote a price for a 5-year government bond between two coupon dates. She needs three numbers: the full price the buyer actually pays, the accrued interest that belongs to the seller, and the flat (clean) price that appears on the screen. This module shows how to compute all of them and how price, coupon, maturity and yield fit together.",
+        "tr": "Bir tahvil sabit nakit akışları vaat eder: kuponlar ve vadede nominal değer. Bugünkü fiyat, yatırımcıların bu sabit ödemeler için ödediği tutardan ibarettir. Piyasa faizleri yükselirse yeni tahviller daha çok öder; bu yüzden düşük kuponlu eski tahvilin alıcı bulmak için ucuzlaması gerekir. Türkiye'de bunu her gün görürsünüz: TCMB politika faizini artırdığında sabit kuponlu DİBS'lerin BIST Borçlanma Araçları Piyasası'ndaki fiyatı düşer, getirisi yükselir. Kurgusal Marmara Yatırım'da çalışan bir aracı, iki kupon tarihi arasında 5 yıllık bir devlet tahviline fiyat vermek zorundadır. Üç sayıya ihtiyacı vardır: alıcının gerçekten ödediği kirli (tam) fiyat, satıcıya ait birikmiş faiz ve ekranda görünen temiz fiyat. Bu modül bunların hepsinin nasıl hesaplandığını ve fiyat, kupon, vade ve getirinin birbirine nasıl bağlandığını gösterir.",
+        "key_terms": [
+          "price",
+          "yield to maturity",
+          "full price",
+          "flat price",
+          "accrued interest"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Yield to maturity and the price formula",
+        "heading_tr": "Vadeye kadar getiri ve fiyat formülü",
+        "en": "The yield to maturity (YTM) is the single discount rate that makes the present value of all remaining cash flows equal to the bond's price. It is an internal rate of return. It assumes the bond is held to maturity, the issuer pays everything on time, and every coupon is reinvested at the same yield. Prices are quoted per 100 of par. A bond trades at a premium when its price is above 100, at par when it equals 100 and at a discount when it is below 100. On a coupon date there is no accrued interest, so the price is just the present value of the coupons and the par value. For a semiannual bond we use the periodic rate (YTM/2) and the number of periods (years × 2); the coupon per period is the annual coupon divided by 2.",
+        "tr": "Vadeye kadar getiri (YTM), kalan tüm nakit akışlarının bugünkü değerini tahvilin fiyatına eşitleyen tek iskonto oranıdır; bir iç verim oranıdır. Tahvilin vadeye kadar tutulduğunu, ihraççının her ödemeyi zamanında yaptığını ve her kuponun aynı getiriyle yeniden yatırıldığını varsayar. Fiyatlar 100 nominal üzerinden kote edilir. Fiyat 100'ün üzerindeyse tahvil primli, 100'e eşitse başabaş (nominalde), 100'ün altındaysa iskontolu işlem görür. Kupon tarihinde birikmiş faiz yoktur; fiyat yalnızca kuponların ve nominalin bugünkü değeridir. Altı aylık kuponlu tahvilde dönemsel oran (YTM/2) ve dönem sayısı (yıl × 2) kullanılır; dönem kuponu yıllık kuponun yarısıdır.",
+        "key_terms": [
+          "yield to maturity",
+          "premium",
+          "discount",
+          "par",
+          "periodic rate"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Price on a coupon date",
+        "heading_tr": "Kupon tarihinde fiyat",
+        "en": "The price is the sum of discounted coupons plus the discounted par value. PMT is the coupon per period, r is the yield per period, N is the number of periods and FV is the par value (100). On the BA II Plus: N, I/Y (periodic rate in percent), PMT, FV, then CPT PV. Remember that I/Y must be the periodic rate unless P/Y is changed. The negative sign on PV only shows that money goes out.",
+        "tr": "Fiyat, iskonto edilmiş kuponların toplamı artı iskonto edilmiş nominal değerdir. PMT dönem kuponu, r dönemsel getiri, N dönem sayısı, FV nominal değerdir (100). BA II Plus'ta: N, I/Y (yüzde cinsinden dönemsel oran), PMT, FV, ardından CPT PV. P/Y değiştirilmediyse I/Y'nin dönemsel oran olması gerektiğini unutmayın. PV'deki eksi işaret yalnızca paranın çıktığını gösterir.",
+        "key_terms": [
+          "present value",
+          "periodic rate",
+          "BA II Plus"
+        ],
+        "formula_latex": "P=\\sum_{t=1}^{N}\\frac{PMT}{(1+r)^t}+\\frac{FV}{(1+r)^N}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Between coupon dates: full price, accrued interest, flat price",
+        "heading_tr": "Kupon tarihleri arasında: kirli fiyat, birikmiş faiz, temiz fiyat",
+        "en": "Between coupon dates the buyer pays the full price (also called the dirty or invoice price). Step 1: find the price on the last coupon date, PV₀, using the YTM. Step 2: move it forward to the settlement date by multiplying by (1+r)^(t/T), where t is the number of days since the last coupon and T is the number of days in the coupon period. Step 3: accrued interest is the coupon per period times t/T. Step 4: flat price = full price − accrued interest. The day-count convention sets t and T: government bonds often use actual/actual, many corporate bonds and Eurobonds use 30/360. Quoted prices on screens are flat prices; the seller receives accrued interest through the full price.",
+        "tr": "Kupon tarihleri arasında alıcı kirli fiyatı (tam ya da fatura fiyatı) öder. Adım 1: YTM ile son kupon tarihindeki fiyatı, PV₀'ı bulun. Adım 2: bunu (1+r)^(t/T) ile çarparak valör tarihine taşıyın; t son kupondan bu yana geçen gün, T kupon dönemindeki gün sayısıdır. Adım 3: birikmiş faiz, dönem kuponu çarpı t/T'dir. Adım 4: temiz fiyat = kirli fiyat − birikmiş faiz. Gün sayım kuralı t ve T'yi belirler: devlet tahvilleri çoğunlukla gerçek/gerçek, pek çok şirket tahvili ve Eurobond 30/360 kullanır. Ekranlardaki kote fiyatlar temiz fiyattır; satıcı birikmiş faizi kirli fiyat içinde alır.",
+        "key_terms": [
+          "full price",
+          "flat price",
+          "accrued interest",
+          "settlement date",
+          "day-count convention"
+        ],
+        "formula_latex": "PV^{Full}=PV_0\\times(1+r)^{t/T},\\quad AI=PMT\\times\\frac{t}{T},\\quad PV^{Flat}=PV^{Full}-AI"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: a DİBS between coupon dates",
+        "heading_tr": "Çözümlü örnek: kupon tarihleri arasında bir DİBS",
+        "en": "A fictional 4-year government bond pays an annual coupon of 20% (per 100 par) and its YTM is 24%. Exactly on a coupon date, N = 4, I/Y = 24, PMT = 20, FV = 100 gives PV₀ = 90.41. Suppose settlement is 90 days after the last coupon with a 360-day coupon period (t/T = 0.25). Full price = 90.41 × 1.24^0.25 = 95.39. Accrued interest = 20 × 0.25 = 5.00. Flat price = 95.39 − 5.00 = 90.39. Note that the flat price (90.39) is almost the same as PV₀ (90.41): the flat price changes little within a coupon period, while the full price grows with accrued interest.",
+        "tr": "Kurgusal 4 yıllık bir devlet tahvili yılda %20 kupon (100 nominal üzerinden) ödüyor ve YTM'si %24. Tam kupon tarihinde N = 4, I/Y = 24, PMT = 20, FV = 100 ile PV₀ = 90,41. Valörün son kupondan 90 gün sonra ve kupon döneminin 360 gün olduğunu varsayalım (t/T = 0,25). Kirli fiyat = 90,41 × 1,24^0,25 = 95,39. Birikmiş faiz = 20 × 0,25 = 5,00. Temiz fiyat = 95,39 − 5,00 = 90,39. Temiz fiyatın (90,39) PV₀'a (90,41) çok yakın olduğuna dikkat edin: temiz fiyat kupon dönemi içinde az değişirken kirli fiyat birikmiş faizle birlikte büyür.",
+        "key_terms": [
+          "full price",
+          "flat price",
+          "accrued interest"
+        ],
+        "example": {
+          "en": "PV₀ = 90.41; full = 90.41 × 1.24^0.25 = 95.39; AI = 5.00; flat = 90.39.",
+          "tr": "PV₀ = 90,41; kirli = 90,41 × 1,24^0,25 = 95,39; BF = 5,00; temiz = 90,39.",
+          "formula_latex": "PV^{Full}=90.41\\times1.24^{0.25}=95.39"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Price-yield relationships",
+        "heading_tr": "Fiyat-getiri ilişkileri",
+        "en": "Four relationships appear in nearly every exam. (1) Inverse effect: price and yield move in opposite directions. (2) Convexity effect: the price-yield curve is convex, so a given fall in yield raises the price more than the same rise in yield lowers it. (3) Coupon effect: for the same maturity and yield, a lower-coupon bond has a larger percentage price change for a given yield change; zero-coupon bonds are the most sensitive. (4) Maturity effect: for the same coupon and yield, a longer-maturity bond usually has a larger percentage price change; the exception is some long-maturity, low-coupon bonds trading at a deep discount. Finally, the constant-yield price trajectory, or pull to par: if the yield does not change, a premium bond's price falls toward 100 and a discount bond's price rises toward 100 as maturity approaches.",
+        "tr": "Dört ilişki hemen her sınavda karşınıza çıkar. (1) Ters yönlü ilişki: fiyat ve getiri zıt yönde hareket eder. (2) Konveksite etkisi: fiyat-getiri eğrisi dışbükeydir; getirideki belirli bir düşüş fiyatı, aynı büyüklükteki yükselişin düşürdüğünden daha fazla artırır. (3) Kupon etkisi: aynı vade ve getiride düşük kuponlu tahvilin yüzde fiyat değişimi daha büyüktür; kuponsuz tahviller en duyarlı olanlardır. (4) Vade etkisi: aynı kupon ve getiride uzun vadeli tahvilin yüzde fiyat değişimi genellikle daha büyüktür; istisna, derin iskontoyla işlem gören bazı uzun vadeli, düşük kuponlu tahvillerdir. Son olarak sabit getiri fiyat yörüngesi, yani nominale yakınsama: getiri değişmezse vade yaklaştıkça primli tahvilin fiyatı 100'e doğru düşer, iskontolu tahvilinki 100'e doğru yükselir.",
+        "key_terms": [
+          "inverse effect",
+          "convexity effect",
+          "coupon effect",
+          "maturity effect",
+          "pull to par",
+          "constant-yield price trajectory"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Relationship",
+              "tr": "İlişki"
+            },
+            {
+              "en": "Statement",
+              "tr": "İfade"
+            }
+          ],
+          "rows": [
+            [
+              "Inverse / Ters yönlü",
+              "Yield up → price down / Getiri artar → fiyat düşer"
+            ],
+            [
+              "Convexity / Konveksite",
+              "Price gain for −Δy > price loss for +Δy / Getiri düşüşünde kazanç, aynı yükselişteki kayıptan büyük"
+            ],
+            [
+              "Coupon / Kupon",
+              "Lower coupon → more sensitive / Düşük kupon → daha duyarlı"
+            ],
+            [
+              "Maturity / Vade",
+              "Longer → usually more sensitive / Uzun vade → genellikle daha duyarlı"
+            ],
+            [
+              "Pull to par / Nominale yakınsama",
+              "Price → 100 as maturity nears (yield constant) / Getiri sabitken fiyat 100'e yaklaşır"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Matrix pricing",
+        "heading_tr": "Matris fiyatlama",
+        "en": "Many bonds rarely trade, and a new issue has no price yet. Matrix pricing estimates a yield from comparable bonds: same credit quality, similar maturity, similar coupon. With two comparable yields at different maturities we use linear interpolation. The estimated yield then gives the price with the usual formula. For a new issue the same idea gives the required spread over the benchmark: average the spreads of comparable bonds and add the spread to the benchmark government yield. Matrix pricing is also used in fund accounting to value illiquid bonds at the end of the day.",
+        "tr": "Pek çok tahvil nadiren işlem görür; yeni bir ihracın ise henüz fiyatı yoktur. Matris fiyatlama, karşılaştırılabilir tahvillerden (aynı kredi kalitesi, benzer vade, benzer kupon) bir getiri tahmin eder. Farklı vadelerdeki iki karşılaştırılabilir getiriyle doğrusal ara değerleme (enterpolasyon) yapılır. Tahmin edilen getiri, alışılmış formülle fiyatı verir. Yeni ihraçta aynı fikir gösterge üzerindeki gerekli getiri farkını verir: karşılaştırılabilir tahvillerin spreadlerinin ortalaması alınır ve gösterge devlet tahvili getirisine eklenir. Matris fiyatlama fon muhasebesinde likit olmayan tahvilleri gün sonunda değerlemek için de kullanılır.",
+        "key_terms": [
+          "matrix pricing",
+          "comparable bond",
+          "linear interpolation",
+          "spread",
+          "benchmark"
+        ],
+        "formula_latex": "y_{T}=y_{1}+\\frac{T-T_{1}}{T_{2}-T_{1}}\\left(y_{2}-y_{1}\\right)"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık tuzaklar",
+        "en": "Using the annual yield as the periodic rate for a semiannual bond is the most common error: divide both the yield and the coupon by 2 and double the number of periods. Do not subtract accrued interest from the price on the last coupon date; subtract it from the full price. Remember that t/T uses the day-count convention given in the question (30/360 vs actual/actual). Pull to par assumes the yield stays constant; if yields change, the price can move away from par. In matrix pricing interpolate yields, not prices, and compare bonds with the same credit rating. Finally, 'price falls more when yield rises' is wrong: because of convexity, the price rises more for a yield fall than it falls for an equal yield rise.",
+        "tr": "Altı aylık kuponlu tahvilde yıllık getiriyi dönemsel oran olarak kullanmak en yaygın hatadır: hem getiriyi hem kuponu 2'ye bölün, dönem sayısını ikiye katlayın. Birikmiş faizi son kupon tarihindeki fiyattan değil, kirli fiyattan çıkarın. t/T'nin sorudaki gün sayım kuralını (30/360 ya da gerçek/gerçek) kullandığını unutmayın. Nominale yakınsama getirinin sabit kaldığını varsayar; getiri değişirse fiyat nominalden uzaklaşabilir. Matris fiyatlamada fiyatları değil getirileri enterpole edin ve aynı kredi notuna sahip tahvilleri karşılaştırın. Son olarak 'getiri yükselince fiyat daha çok düşer' ifadesi yanlıştır: konveksite nedeniyle fiyat, getiri düşüşünde aynı büyüklükteki yükselişte düştüğünden daha fazla yükselir.",
+        "key_terms": [
+          "periodic rate",
+          "accrued interest",
+          "convexity",
+          "matrix pricing"
+        ]
+      }
+    ],
+    "summary_en": "A bond's price is the present value of its coupons and par value discounted at the yield to maturity, using the periodic rate and number of periods. Between coupon dates the full price equals the price at the last coupon date compounded forward by (1+r)^(t/T); accrued interest is the coupon times t/T; the flat price is the full price minus accrued interest. Price and yield move inversely, the relationship is convex, lower coupons and longer maturities increase sensitivity, and prices are pulled to par as maturity nears if the yield is constant. Matrix pricing estimates a yield for an illiquid or new bond by interpolating yields of comparable bonds.",
+    "summary_tr": "Tahvil fiyatı, kuponların ve nominalin vadeye kadar getiriyle, dönemsel oran ve dönem sayısı kullanılarak iskonto edilmiş bugünkü değeridir. Kupon tarihleri arasında kirli fiyat, son kupon tarihindeki fiyatın (1+r)^(t/T) ile ileri taşınmış hâlidir; birikmiş faiz kupon çarpı t/T'dir; temiz fiyat kirli fiyat eksi birikmiş faizdir. Fiyat ve getiri ters yönde hareket eder, ilişki dışbükeydir, düşük kupon ve uzun vade duyarlılığı artırır ve getiri sabitse vade yaklaştıkça fiyat nominale yakınsar. Matris fiyatlama, karşılaştırılabilir tahvillerin getirilerini enterpole ederek likit olmayan ya da yeni bir tahvil için getiri tahmin eder.",
+    "common_traps_tr": [
+      "Altı aylık kuponlu tahvilde I/Y'ye yıllık getiriyi, N'ye yıl sayısını yazmak; ikisi de dönemsel olmalı.",
+      "Birikmiş faizi kirli fiyat yerine son kupon tarihindeki fiyattan çıkarmak.",
+      "Sorudaki gün sayım kuralını (30/360, gerçek/gerçek) göz ardı edip t/T'yi yanlış almak.",
+      "Nominale yakınsamanın getiri değişse de geçerli olduğunu sanmak; yalnızca sabit getiri varsayımında geçerlidir.",
+      "Konveksite etkisini ters hatırlamak: getiri düşüşündeki fiyat artışı, aynı büyüklükteki yükselişteki düşüşten büyüktür.",
+      "Matris fiyatlamada getirileri değil fiyatları enterpole etmek ya da farklı kredi notlu tahvilleri karşılaştırmak."
+    ],
+    "vocab_ids": [
+      "yield-to-maturity",
+      "full-price",
+      "flat-price",
+      "accrued-interest",
+      "settlement-date",
+      "day-count",
+      "premium",
+      "discount",
+      "par",
+      "pull-to-par",
+      "convexity",
+      "matrix-pricing",
+      "interpolation",
+      "comparable",
+      "illiquid",
+      "benchmark",
+      "spread",
+      "coupon-rate"
+    ],
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Tahvil fiyatlama, kirli/temiz fiyat ve matris fiyatlama Düzey 3 Temel Finans Matematiği (Bölüm 8) kapsamındadır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FI-06-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A 3-year bond pays an annual coupon of 8% and has a yield to maturity of 10%. Its price per 100 of par on a coupon date is closest to:",
+      "stem_tr": "3 yıl vadeli bir tahvil yılda %8 kupon ödüyor ve vadeye kadar getirisi %10. Kupon tarihinde 100 nominal üzerinden fiyatı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "95.03",
+          "tr": "95,03",
+          "value": 95.026296
+        },
+        {
+          "key": "B",
+          "en": "100.00",
+          "tr": "100,00",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "90.39",
+          "tr": "90,39",
+          "value": 90.392675
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Price = 8/1.10 + 8/1.10² + 108/1.10³ = 95.03. Coupon below yield, so the bond trades at a discount.",
+      "explanation_tr": "Fiyat = 8/1,10 + 8/1,10² + 108/1,10³ = 95,03. Kupon getirinin altında olduğu için tahvil iskontolu işlem görür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the price when the yield equals the coupon (100); the yield is 10%, not 8%.",
+          "tr": "Bu, getirinin kupona eşit olduğu fiyattır (100); getiri %8 değil %10."
+        },
+        "C": {
+          "en": "This discounts at 12% instead of 10%.",
+          "tr": "Burada %10 yerine %12 ile iskonto edilmiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price on a coupon date given the YTM.",
+          "tr": "YTM verilmişken kupon tarihindeki fiyat isteniyor."
+        },
+        {
+          "en": "Price is the present value of coupons and par at the YTM.",
+          "tr": "Fiyat, kuponların ve nominalin YTM ile bugünkü değeridir.",
+          "formula_latex": "P=\\sum\\frac{8}{1.10^t}+\\frac{100}{1.10^3}"
+        },
+        {
+          "en": "N = 3, I/Y = 10, PMT = 8, FV = 100.",
+          "tr": "N = 3, I/Y = 10, PMT = 8, FV = 100.",
+          "values": {
+            "N": 3,
+            "I/Y": 10,
+            "PMT": 8,
+            "FV": 100
+          }
+        },
+        {
+          "en": "7.273 + 6.612 + 81.142 = 95.026.",
+          "tr": "7,273 + 6,612 + 81,142 = 95,026."
+        },
+        {
+          "en": "Price ≈ 95.03 per 100 of par.",
+          "tr": "Fiyat ≈ 100 nominal başına 95,03."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "3 [N]",
+          "10 [I/Y]",
+          "8 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "bond_price(0.08,0.10,3)"
+      },
+      "vocab_ids": [
+        "yield-to-maturity",
+        "coupon",
+        "par",
+        "closest-to",
+        "discount"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Kupon tarihinde tahvil fiyatlama Düzey 3'te bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 5-year Eurobond pays a 6% coupon semiannually. If its yield to maturity is 7% (semiannual bond basis), its price per 100 of par is closest to:",
+      "stem_tr": "5 yıl vadeli bir Eurobond altı ayda bir ödenen %6 kupon taşıyor. Vadeye kadar getirisi %7 (altı aylık bileşik esas) ise 100 nominal üzerinden fiyatı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "71.91",
+          "tr": "71,91",
+          "value": 71.905674
+        },
+        {
+          "key": "B",
+          "en": "95.84",
+          "tr": "95,84",
+          "value": 95.841697
+        },
+        {
+          "key": "C",
+          "en": "120.79",
+          "tr": "120,79",
+          "value": 120.791513
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Use periodic values: N = 10, I/Y = 3.5, PMT = 3, FV = 100 → PV = 95.84.",
+      "explanation_tr": "Dönemsel değerler kullanılır: N = 10, I/Y = 3,5, PMT = 3, FV = 100 → PV = 95,84.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the annual yield of 7% as the periodic rate with 10 periods (N = 10, I/Y = 7, PMT = 3).",
+          "tr": "Burada yıllık %7 getiri 10 dönemle birlikte dönemsel oran olarak kullanılmış (N = 10, I/Y = 7, PMT = 3)."
+        },
+        "C": {
+          "en": "This uses the full annual coupon of 6 as the semiannual payment.",
+          "tr": "Burada yıllık kupon olan 6, altı aylık ödeme olarak kullanılmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price of a semiannual-pay bond.",
+          "tr": "Altı aylık kuponlu tahvilin fiyatı isteniyor."
+        },
+        {
+          "en": "Convert to periodic values: coupon 6/2 = 3, yield 7/2 = 3.5%, periods 5 × 2 = 10.",
+          "tr": "Dönemsel değerlere çevrilir: kupon 6/2 = 3, getiri 7/2 = %3,5, dönem 5 × 2 = 10.",
+          "formula_latex": "P=\\sum_{t=1}^{10}\\frac{3}{1.035^t}+\\frac{100}{1.035^{10}}"
+        },
+        {
+          "en": "N = 10, I/Y = 3.5, PMT = 3, FV = 100.",
+          "tr": "N = 10, I/Y = 3,5, PMT = 3, FV = 100.",
+          "values": {
+            "N": 10,
+            "I/Y": 3.5,
+            "PMT": 3,
+            "FV": 100
+          }
+        },
+        {
+          "en": "PV of coupons = 24.95; PV of par = 70.89.",
+          "tr": "Kuponların BD = 24,95; nominalin BD = 70,89."
+        },
+        {
+          "en": "Price ≈ 95.84.",
+          "tr": "Fiyat ≈ 95,84."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "10 [N]",
+          "3.5 [I/Y]",
+          "3 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "bond_price(0.06,0.07,5,freq=2)"
+      },
+      "vocab_ids": [
+        "semiannual",
+        "eurobond",
+        "periodic",
+        "yield-to-maturity",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A zero-coupon bond matures in 4 years. Its yield to maturity is 9%, stated on a semiannual bond basis. The price per 100 of par is closest to:",
+      "stem_tr": "Kuponsuz bir tahvilin vadesine 4 yıl var. Vadeye kadar getirisi, altı aylık bileşik esasla %9. 100 nominal üzerinden fiyatı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "70.84",
+          "tr": "70,84",
+          "value": 70.842521
+        },
+        {
+          "key": "B",
+          "en": "83.86",
+          "tr": "83,86",
+          "value": 83.856134
+        },
+        {
+          "key": "C",
+          "en": "70.32",
+          "tr": "70,32",
+          "value": 70.318513
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Semiannual basis means r = 4.5% per period for 8 periods: 100/1.045⁸ = 70.32.",
+      "explanation_tr": "Altı aylık esas, 8 dönem boyunca dönem başına r = %4,5 demektir: 100/1,045⁸ = 70,32.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses annual compounding (100/1.09⁴), ignoring the stated semiannual basis.",
+          "tr": "Bu, belirtilen altı aylık esası göz ardı edip yıllık bileşik kullanır (100/1,09⁴)."
+        },
+        "B": {
+          "en": "This halves the rate but keeps only 4 periods; there are 8 semiannual periods.",
+          "tr": "Burada oran yarıya indirilmiş ama 4 dönem bırakılmış; 8 altı aylık dönem var."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price of a zero-coupon bond.",
+          "tr": "Kuponsuz tahvilin fiyatı isteniyor."
+        },
+        {
+          "en": "With no coupons, price is par discounted over 8 semiannual periods.",
+          "tr": "Kupon olmadığı için fiyat, nominalin 8 altı aylık dönem boyunca iskonto edilmiş hâlidir.",
+          "formula_latex": "P=\\frac{100}{(1+0.045)^{8}}"
+        },
+        {
+          "en": "N = 8, I/Y = 4.5, PMT = 0, FV = 100.",
+          "tr": "N = 8, I/Y = 4,5, PMT = 0, FV = 100.",
+          "values": {
+            "N": 8,
+            "I/Y": 4.5,
+            "PMT": 0,
+            "FV": 100
+          }
+        },
+        {
+          "en": "1.045⁸ = 1.4221.",
+          "tr": "1,045⁸ = 1,4221."
+        },
+        {
+          "en": "Price ≈ 70.32.",
+          "tr": "Fiyat ≈ 70,32."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "8 [N]",
+          "4.5 [I/Y]",
+          "0 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "100/1.045**8"
+      },
+      "vocab_ids": [
+        "zero-coupon",
+        "semiannual",
+        "state",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An annual-pay corporate bond has a 5% coupon and 4 years remain after the last coupon date. Settlement is 90 days after that date and the bond uses a 30/360 day count. If the yield to maturity is 6%, the full price per 100 of par is closest to:",
+      "stem_tr": "Yıllık kuponlu bir şirket tahvilinin kuponu %5 ve son kupon tarihinden sonra 4 yılı kalıyor. Valör, o tarihten 90 gün sonra ve tahvil 30/360 gün sayımı kullanıyor. Vadeye kadar getiri %6 ise 100 nominal üzerinden kirli fiyat en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "96.53",
+          "tr": "96,53",
+          "value": 96.534894
+        },
+        {
+          "key": "B",
+          "en": "96.70",
+          "tr": "96,70",
+          "value": 96.701433
+        },
+        {
+          "key": "C",
+          "en": "97.95",
+          "tr": "97,95",
+          "value": 97.951433
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "PV at last coupon date = 96.53; t/T = 90/360 = 0.25; full price = 96.53 × 1.06^0.25 = 97.95.",
+      "explanation_tr": "Son kupon tarihinde BD = 96,53; t/T = 90/360 = 0,25; kirli fiyat = 96,53 × 1,06^0,25 = 97,95.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the price on the last coupon date; it has not been moved forward to settlement.",
+          "tr": "Bu, son kupon tarihindeki fiyattır; valöre ileri taşınmamış."
+        },
+        "B": {
+          "en": "This is the flat price (full price minus accrued interest of 1.25), not the full price.",
+          "tr": "Bu, temiz fiyattır (kirli fiyat eksi 1,25 birikmiş faiz), kirli fiyat değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the full (invoice) price between coupon dates.",
+          "tr": "Kupon tarihleri arasındaki kirli (fatura) fiyat isteniyor."
+        },
+        {
+          "en": "First price the bond at the last coupon date, then compound forward by t/T.",
+          "tr": "Önce son kupon tarihinde fiyatlanır, sonra t/T kadar ileri bileşiklenir.",
+          "formula_latex": "PV^{Full}=PV_0(1+r)^{t/T}"
+        },
+        {
+          "en": "N = 4, I/Y = 6, PMT = 5, FV = 100 → PV₀ = 96.53; t/T = 90/360 = 0.25.",
+          "tr": "N = 4, I/Y = 6, PMT = 5, FV = 100 → PV₀ = 96,53; t/T = 90/360 = 0,25.",
+          "values": {
+            "PV0": 96.53,
+            "t/T": 0.25,
+            "r": 0.06
+          }
+        },
+        {
+          "en": "1.06^0.25 = 1.01467; 96.53 × 1.01467 = 97.95.",
+          "tr": "1,06^0,25 = 1,01467; 96,53 × 1,01467 = 97,95."
+        },
+        {
+          "en": "Full price ≈ 97.95.",
+          "tr": "Kirli fiyat ≈ 97,95."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "4 [N]",
+          "6 [I/Y]",
+          "5 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]",
+          "[+/-] [×] 1.06 [yˣ] 0.25 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "bond_price(0.05,0.06,4)*1.06**0.25"
+      },
+      "vocab_ids": [
+        "full-price",
+        "settlement-date",
+        "day-count",
+        "remain",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A government bond pays a 7% coupon semiannually and uses an actual/actual day count. Settlement is 72 days into a 182-day coupon period and the full price is 102.35. The flat price is closest to:",
+      "stem_tr": "Bir devlet tahvili altı ayda bir %7 kupon ödüyor ve gerçek/gerçek gün sayımı kullanıyor. Valör, 182 günlük kupon döneminin 72. gününde ve kirli fiyat 102,35. Temiz fiyat en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "99.58",
+          "tr": "99,58",
+          "value": 99.580769
+        },
+        {
+          "key": "B",
+          "en": "100.97",
+          "tr": "100,97",
+          "value": 100.965385
+        },
+        {
+          "key": "C",
+          "en": "103.73",
+          "tr": "103,73",
+          "value": 103.734615
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Accrued interest = 3.5 × 72/182 = 1.385; flat = 102.35 − 1.385 = 100.97.",
+      "explanation_tr": "Birikmiş faiz = 3,5 × 72/182 = 1,385; temiz = 102,35 − 1,385 = 100,97.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the full annual coupon of 7 instead of the semiannual coupon of 3.5 when computing accrued interest.",
+          "tr": "Birikmiş faiz hesabında altı aylık 3,5 yerine yıllık kupon 7 kullanılmış."
+        },
+        "C": {
+          "en": "This adds accrued interest to the full price; the flat price is the full price minus accrued interest.",
+          "tr": "Birikmiş faiz kirli fiyata eklenmiş; temiz fiyat kirli fiyat eksi birikmiş faizdir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the flat (clean) price.",
+          "tr": "Temiz fiyat isteniyor."
+        },
+        {
+          "en": "Flat price = full price − accrued interest; AI = periodic coupon × t/T.",
+          "tr": "Temiz fiyat = kirli fiyat − birikmiş faiz; BF = dönem kuponu × t/T.",
+          "formula_latex": "PV^{Flat}=PV^{Full}-PMT\\times\\frac{t}{T}"
+        },
+        {
+          "en": "PMT = 3.5, t = 72, T = 182, full = 102.35.",
+          "tr": "PMT = 3,5, t = 72, T = 182, kirli = 102,35.",
+          "values": {
+            "PMT": 3.5,
+            "t": 72,
+            "T": 182,
+            "Full": 102.35
+          }
+        },
+        {
+          "en": "AI = 3.5 × 0.3956 = 1.385.",
+          "tr": "BF = 3,5 × 0,3956 = 1,385."
+        },
+        {
+          "en": "Flat price ≈ 100.97.",
+          "tr": "Temiz fiyat ≈ 100,97."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3.5 [×] 72 [÷] 182 [=]",
+          "[STO] 1",
+          "102.35 [−] [RCL] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "102.35-3.5*72/182"
+      },
+      "vocab_ids": [
+        "flat-price",
+        "accrued-interest",
+        "day-count",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-a-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 3-year annual-pay bond with a 7% coupon is priced at 97.50 per 100 of par on a coupon date. Its yield to maturity is closest to:",
+      "stem_tr": "Yıllık kuponu %7 olan 3 yıl vadeli bir tahvil, kupon tarihinde 100 nominal üzerinden 97,50'den fiyatlanıyor. Vadeye kadar getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.18%",
+          "tr": "%7,18",
+          "value": 7.179487
+        },
+        {
+          "key": "B",
+          "en": "7.97%",
+          "tr": "%7,97",
+          "value": 7.969551
+        },
+        {
+          "key": "C",
+          "en": "7.83%",
+          "tr": "%7,83",
+          "value": 7.833333
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Solve 97.50 = 7/(1+y) + 7/(1+y)² + 107/(1+y)³ → y ≈ 7.97%. Price below par, so YTM > coupon.",
+      "explanation_tr": "97,50 = 7/(1+y) + 7/(1+y)² + 107/(1+y)³ çözülür → y ≈ %7,97. Fiyat nominalin altında, dolayısıyla YTM > kupon.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the current yield (7/97.50), which ignores the gain to par at maturity.",
+          "tr": "Bu, cari getiridir (7/97,50); vadede nominale yükselişten gelen kazancı yok sayar."
+        },
+        "C": {
+          "en": "This adds the discount spread evenly over 3 years to the coupon (7 + 2.5/3) without discounting; it is only a rough approximation.",
+          "tr": "Bu, iskontoyu 3 yıla eşit yayıp kupona ekler (7 + 2,5/3); iskonto yapmayan kaba bir yaklaşımdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the YTM given the price.",
+          "tr": "Fiyat verilmişken YTM isteniyor."
+        },
+        {
+          "en": "YTM is the IRR of paying 97.50 today and receiving 7, 7 and 107.",
+          "tr": "YTM, bugün 97,50 ödeyip 7, 7 ve 107 almanın iç verim oranıdır.",
+          "formula_latex": "97.50=\\frac{7}{1+y}+\\frac{7}{(1+y)^2}+\\frac{107}{(1+y)^3}"
+        },
+        {
+          "en": "N = 3, PV = −97.50, PMT = 7, FV = 100.",
+          "tr": "N = 3, PV = −97,50, PMT = 7, FV = 100.",
+          "values": {
+            "N": 3,
+            "PV": -97.5,
+            "PMT": 7,
+            "FV": 100
+          }
+        },
+        {
+          "en": "CPT I/Y gives about 7.97.",
+          "tr": "CPT I/Y yaklaşık 7,97 verir."
+        },
+        {
+          "en": "YTM ≈ 7.97%.",
+          "tr": "YTM ≈ %7,97."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "3 [N]",
+          "97.5 [+/-] [PV]",
+          "7 [PMT]",
+          "100 [FV]",
+          "[CPT] [I/Y]"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-97.5,7,7,107])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "yield-to-maturity",
+        "price",
+        "coupon",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "All else equal, which of the following bonds will most likely show the largest percentage price change for a given change in yield?",
+      "stem_tr": "Diğer her şey aynıyken, getirideki belirli bir değişim için aşağıdaki tahvillerden hangisinin yüzde fiyat değişimi büyük olasılıkla en büyük olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a 10-year zero-coupon bond",
+          "tr": "10 yıllık kuponsuz tahvil"
+        },
+        {
+          "key": "B",
+          "en": "a 10-year 6% coupon bond",
+          "tr": "10 yıllık %6 kuponlu tahvil"
+        },
+        {
+          "key": "C",
+          "en": "a 10-year 12% coupon bond",
+          "tr": "10 yıllık %12 kuponlu tahvil"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Coupon effect: for the same maturity and yield, a lower coupon means more of the value comes from the distant par payment, so the price is more sensitive. The zero-coupon bond is the extreme case.",
+      "explanation_tr": "Kupon etkisi: aynı vade ve getiride düşük kupon, değerin daha büyük kısmının uzaktaki nominal ödemesinden gelmesi demektir; fiyat daha duyarlıdır. Kuponsuz tahvil uç örnektir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A 6% coupon is less sensitive than a zero coupon of the same maturity.",
+          "tr": "%6 kupon, aynı vadeli kuponsuz tahvilden daha az duyarlıdır."
+        },
+        "C": {
+          "en": "The highest coupon returns cash soonest, so it is the least sensitive of the three.",
+          "tr": "En yüksek kupon nakdi en erken döndürür; üçü içinde en az duyarlı olandır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "all-else-equal",
+        "most-likely",
+        "percentage",
+        "zero-coupon",
+        "sensitivity"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A bond's yield to maturity falls by 50 basis points and its price rises by 4.2%. If instead the yield had risen by 50 basis points, the price change would most likely have been:",
+      "stem_tr": "Bir tahvilin vadeye kadar getirisi 50 baz puan düşüyor ve fiyatı %4,2 yükseliyor. Getiri bunun yerine 50 baz puan yükselseydi fiyat değişimi büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a fall of exactly 4.2%",
+          "tr": "tam %4,2 düşüş"
+        },
+        {
+          "key": "B",
+          "en": "a fall of more than 4.2%",
+          "tr": "%4,2'den fazla düşüş"
+        },
+        {
+          "key": "C",
+          "en": "a fall of less than 4.2%",
+          "tr": "%4,2'den az düşüş"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Convexity effect: the price-yield curve is convex, so the price gain from a yield decrease is larger than the price loss from an equal yield increase. The fall would be smaller than 4.2%.",
+      "explanation_tr": "Konveksite etkisi: fiyat-getiri eğrisi dışbükeydir; getiri düşüşündeki fiyat kazancı, aynı büyüklükteki getiri artışındaki fiyat kaybından büyüktür. Düşüş %4,2'den küçük olurdu.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A symmetric change would hold only if the price-yield relationship were a straight line; it is convex.",
+          "tr": "Simetrik değişim ancak fiyat-getiri ilişkisi doğrusal olsaydı geçerli olurdu; ilişki dışbükeydir."
+        },
+        "B": {
+          "en": "This reverses the convexity effect; losses from yield increases are smaller, not larger.",
+          "tr": "Bu, konveksite etkisini tersine çevirir; getiri artışındaki kayıplar daha büyük değil daha küçüktür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "basis-point",
+        "convexity",
+        "instead",
+        "most-likely",
+        "rise"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A 5-year bond with an 18% coupon trades at 108.40 when its yield to maturity is 15.8%. If the yield stays at 15.8% for the next year, the bond's price one year later will most likely be:",
+      "stem_tr": "Kuponu %18 olan 5 yıllık bir tahvil, vadeye kadar getirisi %15,8 iken 108,40'tan işlem görüyor. Getiri gelecek yıl %15,8'de kalırsa tahvilin bir yıl sonraki fiyatı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower than 108.40 but above 100",
+          "tr": "108,40'ın altında ama 100'ün üzerinde"
+        },
+        {
+          "key": "B",
+          "en": "higher than 108.40",
+          "tr": "108,40'ın üzerinde"
+        },
+        {
+          "key": "C",
+          "en": "unchanged at 108.40",
+          "tr": "108,40'ta değişmemiş"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Pull to par: with a constant yield, a premium bond's price falls toward par as maturity approaches. It stays above 100 until maturity.",
+      "explanation_tr": "Nominale yakınsama: sabit getiride primli tahvilin fiyatı vade yaklaştıkça nominale doğru düşer. Vadeye kadar 100'ün üzerinde kalır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The price rises toward par only for a discount bond; this bond trades at a premium.",
+          "tr": "Fiyat yalnızca iskontolu tahvilde nominale doğru yükselir; bu tahvil primli."
+        },
+        "C": {
+          "en": "The price can stay constant only if the bond trades at par; a premium bond must converge to 100.",
+          "tr": "Fiyat ancak tahvil nominalde işlem görüyorsa sabit kalabilir; primli tahvil 100'e yakınsamak zorundadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "pull-to-par",
+        "premium",
+        "approach",
+        "most-likely",
+        "unchanged"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Primli tahvilin nominale yakınsaması Düzey 3 tahvil değerlemede bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Two bonds have the same 8% annual coupon and the same 8% yield to maturity. Bond X matures in 3 years and Bond Y in 15 years. If yields on both rise to 9%, which statement is most accurate?",
+      "stem_tr": "İki tahvilin yıllık kuponu da %8, vadeye kadar getirisi de %8. X tahvilinin vadesi 3 yıl, Y tahvilinin 15 yıl. Her ikisinin getirisi %9'a yükselirse hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both bonds fall by the same percentage because they have the same coupon and yield.",
+          "tr": "Aynı kupon ve getiriye sahip oldukları için iki tahvil de aynı yüzdeyle düşer."
+        },
+        {
+          "key": "B",
+          "en": "Bond Y falls by a larger percentage than Bond X.",
+          "tr": "Y tahvili X tahvilinden daha büyük bir yüzdeyle düşer."
+        },
+        {
+          "key": "C",
+          "en": "Bond X falls by a larger percentage than Bond Y.",
+          "tr": "X tahvili Y tahvilinden daha büyük bir yüzdeyle düşer."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Maturity effect: for the same coupon and yield, the longer-maturity bond has the larger percentage price change. Both start at par; the 15-year bond falls to about 91.9 while the 3-year bond falls only to about 97.5.",
+      "explanation_tr": "Vade etkisi: aynı kupon ve getiride uzun vadeli tahvilin yüzde fiyat değişimi daha büyüktür. İkisi de nominalden başlar; 15 yıllık tahvil yaklaşık 91,9'a düşerken 3 yıllık yalnızca yaklaşık 97,5'e düşer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Maturity matters even when coupon and yield are equal; longer cash flows are discounted over more periods.",
+          "tr": "Kupon ve getiri eşit olsa da vade önemlidir; uzun nakit akışları daha çok dönem iskonto edilir."
+        },
+        "C": {
+          "en": "This reverses the maturity effect; the shorter bond is less sensitive.",
+          "tr": "Bu, vade etkisini tersine çevirir; kısa vadeli tahvil daha az duyarlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "maturity",
+        "most-accurate",
+        "percentage",
+        "rise",
+        "statement"
+      ],
+      "pattern_ids": [
+        "most-accurate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about the maturity effect is least accurate?",
+      "stem_tr": "Vade etkisiyle ilgili aşağıdaki ifadelerden hangisi en az doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "For bonds trading at par or at a premium, a longer maturity always means a larger percentage price change for a given yield change.",
+          "tr": "Nominalde ya da primli işlem gören tahvillerde daha uzun vade, belirli bir getiri değişimi için her zaman daha büyük yüzde fiyat değişimi demektir."
+        },
+        {
+          "key": "B",
+          "en": "The maturity effect holds for every bond regardless of its coupon and price.",
+          "tr": "Vade etkisi kuponundan ve fiyatından bağımsız olarak her tahvil için geçerlidir."
+        },
+        {
+          "key": "C",
+          "en": "Some long-maturity, low-coupon bonds trading at a deep discount can be less sensitive than a shorter bond.",
+          "tr": "Derin iskontoyla işlem gören bazı uzun vadeli, düşük kuponlu tahviller daha kısa vadeli bir tahvilden daha az duyarlı olabilir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The maturity effect has an exception: for some long-maturity, low-coupon bonds trading at a deep discount, sensitivity can fall as maturity lengthens. So it does not hold for every bond.",
+      "explanation_tr": "Vade etkisinin bir istisnası vardır: derin iskontolu bazı uzun vadeli, düşük kuponlu tahvillerde vade uzadıkça duyarlılık düşebilir. Dolayısıyla her tahvil için geçerli değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is accurate; the exception arises only for discount bonds.",
+          "tr": "Bu doğrudur; istisna yalnızca iskontolu tahvillerde ortaya çıkar."
+        },
+        "C": {
+          "en": "This correctly describes the exception to the maturity effect.",
+          "tr": "Bu, vade etkisinin istisnasını doğru biçimde anlatır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-accurate",
+        "regardless-of",
+        "deep-discount",
+        "exception",
+        "sensitivity"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-b-q06",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A bond's coupon rate is 9% and its yield to maturity is 11%. On a coupon date, the bond is most likely trading:",
+      "stem_tr": "Bir tahvilin kupon oranı %9 ve vadeye kadar getirisi %11. Kupon tarihinde tahvil büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "at par",
+          "tr": "nominalde (başabaş) işlem görür"
+        },
+        {
+          "key": "B",
+          "en": "at a premium to par",
+          "tr": "nominale göre primli işlem görür"
+        },
+        {
+          "key": "C",
+          "en": "at a discount to par",
+          "tr": "nominale göre iskontolu işlem görür"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When the coupon rate is below the required yield, investors pay less than par so that the total return equals the yield. Coupon < YTM → discount.",
+      "explanation_tr": "Kupon oranı gerekli getirinin altındaysa yatırımcılar toplam getiri getiriye eşitlensin diye nominalden az öder. Kupon < YTM → iskonto.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "At par requires coupon rate = YTM.",
+          "tr": "Nominalde işlem görmek için kupon oranı = YTM olmalıdır."
+        },
+        "B": {
+          "en": "A premium arises when the coupon rate is above the YTM.",
+          "tr": "Prim, kupon oranı YTM'nin üzerinde olduğunda oluşur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "coupon-rate",
+        "discount",
+        "premium",
+        "par",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An analyst wants to price an illiquid 3-year bond. Two actively traded bonds of the same issuer and rating have yields of 4.20% (2-year) and 5.40% (5-year). Using linear interpolation, the estimated yield for the 3-year bond is closest to:",
+      "stem_tr": "Bir analist likit olmayan 3 yıllık bir tahvili fiyatlamak istiyor. Aynı ihraççı ve notta aktif işlem gören iki tahvilin getirisi %4,20 (2 yıl) ve %5,40 (5 yıl). Doğrusal enterpolasyonla 3 yıllık tahvilin tahmini getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.80%",
+          "tr": "%4,80",
+          "value": 4.8
+        },
+        {
+          "key": "B",
+          "en": "4.60%",
+          "tr": "%4,60",
+          "value": 4.6
+        },
+        {
+          "key": "C",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The 3-year point is 1/3 of the way from 2 to 5 years: 4.20% + (1/3)(5.40% − 4.20%) = 4.60%.",
+      "explanation_tr": "3 yıl noktası 2'den 5'e olan yolun 1/3'ündedir: %4,20 + (1/3)(%5,40 − %4,20) = %4,60.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the simple average, which would be right only for the 3.5-year point.",
+          "tr": "Bu basit ortalamadır; yalnızca 3,5 yıl noktası için doğru olurdu."
+        },
+        "C": {
+          "en": "This uses 2/3 instead of 1/3 of the distance, which gives the 4-year yield.",
+          "tr": "Bu, mesafenin 1/3'ü yerine 2/3'ünü kullanır; 4 yıllık getiriyi verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the interpolated yield at 3 years.",
+          "tr": "3 yıl için enterpole getiri isteniyor."
+        },
+        {
+          "en": "Linear interpolation between the 2-year and 5-year yields.",
+          "tr": "2 yıl ile 5 yıl getirileri arasında doğrusal enterpolasyon.",
+          "formula_latex": "y_3=y_2+\\frac{3-2}{5-2}(y_5-y_2)"
+        },
+        {
+          "en": "y₂ = 4.20, y₅ = 5.40.",
+          "tr": "y₂ = 4,20, y₅ = 5,40.",
+          "values": {
+            "y2": 4.2,
+            "y5": 5.4
+          }
+        },
+        {
+          "en": "4.20 + (1/3)(1.20) = 4.20 + 0.40.",
+          "tr": "4,20 + (1/3)(1,20) = 4,20 + 0,40."
+        },
+        {
+          "en": "Estimated yield ≈ 4.60%.",
+          "tr": "Tahmini getiri ≈ %4,60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5.4 [−] 4.2 [=] [×] 1 [÷] 3 [=] [+] 4.2 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "4.20+(5.40-4.20)*(3-2)/(5-2)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "illiquid",
+        "matrix-pricing",
+        "interpolation",
+        "actively-traded",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Matris fiyatlama / enterpolasyon Düzey 3'te bilinir."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 4-year, 6% annual-pay corporate bond has not traded for months. Comparable bonds yield 5.00% (3-year) and 6.50% (6-year). Using matrix pricing with linear interpolation, the estimated price per 100 of par is closest to:",
+      "stem_tr": "4 yıl vadeli, yıllık %6 kuponlu bir şirket tahvili aylardır işlem görmemiş. Karşılaştırılabilir tahvillerin getirisi %5,00 (3 yıl) ve %6,50 (6 yıl). Doğrusal enterpolasyonlu matris fiyatlamayla 100 nominal üzerinden tahmini fiyat en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "100.87",
+          "tr": "100,87",
+          "value": 100.871259
+        },
+        {
+          "key": "B",
+          "en": "103.55",
+          "tr": "103,55",
+          "value": 103.545951
+        },
+        {
+          "key": "C",
+          "en": "101.75",
+          "tr": "101,75",
+          "value": 101.752575
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "y₄ = 5.00% + (1/3)(1.50%) = 5.50%. Price: N = 4, I/Y = 5.5, PMT = 6, FV = 100 → 101.75.",
+      "explanation_tr": "y₄ = %5,00 + (1/3)(%1,50) = %5,50. Fiyat: N = 4, I/Y = 5,5, PMT = 6, FV = 100 → 101,75.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This prices at the simple average yield (5.75%) instead of the interpolated 5.50%.",
+          "tr": "Bu, enterpole edilmiş %5,50 yerine basit ortalama getiriyle (%5,75) fiyatlar."
+        },
+        "B": {
+          "en": "This uses the 3-year comparable yield (5.00%) without interpolating to 4 years.",
+          "tr": "Bu, 4 yıla enterpole etmeden 3 yıllık karşılaştırılabilir getiriyi (%5,00) kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a matrix price: first the yield, then the price.",
+          "tr": "Matris fiyatı isteniyor: önce getiri, sonra fiyat."
+        },
+        {
+          "en": "Interpolate the yield, then discount the cash flows at it.",
+          "tr": "Getiri enterpole edilir, sonra nakit akışları bu getiriyle iskonto edilir.",
+          "formula_latex": "y_4=5.00+\\frac{4-3}{6-3}(6.50-5.00)=5.50\\%"
+        },
+        {
+          "en": "N = 4, I/Y = 5.5, PMT = 6, FV = 100.",
+          "tr": "N = 4, I/Y = 5,5, PMT = 6, FV = 100.",
+          "values": {
+            "N": 4,
+            "I/Y": 5.5,
+            "PMT": 6,
+            "FV": 100
+          }
+        },
+        {
+          "en": "PV of coupons = 21.03; PV of par = 80.72.",
+          "tr": "Kuponların BD = 21,03; nominalin BD = 80,72."
+        },
+        {
+          "en": "Price ≈ 101.75.",
+          "tr": "Fiyat ≈ 101,75."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "4 [N]",
+          "5.5 [I/Y]",
+          "6 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]"
+        ]
+      },
+      "numeric": {
+        "expr": "bond_price(0.06,(5.0+1.5*(4-3)/(6-3))/100,4)"
+      },
+      "vocab_ids": [
+        "matrix-pricing",
+        "comparable",
+        "interpolation",
+        "estimate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company plans a new 5-year bond. Three outstanding 5-year bonds from issuers with the same credit rating trade at spreads of 180, 210 and 240 basis points over the 5-year government benchmark, which yields 3.10%. Using matrix pricing, the required yield on the new bond is closest to:",
+      "stem_tr": "Bir şirket yeni 5 yıllık tahvil ihraç etmeyi planlıyor. Aynı kredi notuna sahip ihraççıların tedavüldeki üç 5 yıllık tahvili, %3,10 getiren 5 yıllık devlet göstergesinin 180, 210 ve 240 baz puan üzerinde işlem görüyor. Matris fiyatlamayla yeni tahvilin gerekli getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.20%",
+          "tr": "%5,20",
+          "value": 5.2
+        },
+        {
+          "key": "B",
+          "en": "5.50%",
+          "tr": "%5,50",
+          "value": 5.5
+        },
+        {
+          "key": "C",
+          "en": "2.10%",
+          "tr": "%2,10",
+          "value": 2.1
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Average spread = (180 + 210 + 240)/3 = 210 bps = 2.10%. Required yield = 3.10% + 2.10% = 5.20%.",
+      "explanation_tr": "Ortalama spread = (180 + 210 + 240)/3 = 210 bp = %2,10. Gerekli getiri = %3,10 + %2,10 = %5,20.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This uses only the widest spread instead of the average of comparable spreads.",
+          "tr": "Bu, karşılaştırılabilir spreadlerin ortalaması yerine yalnızca en geniş spreadi kullanır."
+        },
+        "C": {
+          "en": "This is the average spread alone; the benchmark yield must be added.",
+          "tr": "Bu yalnızca ortalama spreaddir; gösterge getirisi eklenmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the required yield for a new issue.",
+          "tr": "Yeni ihraç için gerekli getiri isteniyor."
+        },
+        {
+          "en": "Required yield = benchmark yield + average spread of comparable bonds.",
+          "tr": "Gerekli getiri = gösterge getirisi + karşılaştırılabilir tahvillerin ortalama spreadi.",
+          "formula_latex": "y=y_{bench}+\\bar{s}"
+        },
+        {
+          "en": "Benchmark 3.10%; spreads 180, 210, 240 bps.",
+          "tr": "Gösterge %3,10; spreadler 180, 210, 240 bp.",
+          "values": {
+            "benchmark": 3.1,
+            "spreads_bps": "180, 210, 240"
+          }
+        },
+        {
+          "en": "Average spread = 210 bps = 2.10%.",
+          "tr": "Ortalama spread = 210 bp = %2,10."
+        },
+        {
+          "en": "Required yield ≈ 5.20%.",
+          "tr": "Gerekli getiri ≈ %5,20."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "180 [+] 210 [+] 240 [=] [÷] 3 [=] [÷] 100 [=] [+] 3.1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "3.10+((180+210+240)/3)/100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "outstanding",
+        "credit-rating",
+        "spread",
+        "benchmark",
+        "basis-point",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Matrix pricing is most appropriately used to:",
+      "stem_tr": "Matris fiyatlama en uygun biçimde şunun için kullanılır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "estimate the yield of a bond that is illiquid or not yet issued, using comparable bonds",
+          "tr": "likit olmayan ya da henüz ihraç edilmemiş bir tahvilin getirisini karşılaştırılabilir tahvillerle tahmin etmek"
+        },
+        {
+          "key": "B",
+          "en": "compute the accrued interest of a bond between coupon dates",
+          "tr": "kupon tarihleri arasında bir tahvilin birikmiş faizini hesaplamak"
+        },
+        {
+          "key": "C",
+          "en": "determine the exact market price of an actively traded government bond",
+          "tr": "aktif işlem gören bir devlet tahvilinin kesin piyasa fiyatını belirlemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Matrix pricing fills the gap when there is no reliable market price: it borrows yields from similar bonds (same rating, close maturity and coupon) and interpolates.",
+      "explanation_tr": "Matris fiyatlama güvenilir piyasa fiyatı olmadığında boşluğu doldurur: benzer tahvillerden (aynı not, yakın vade ve kupon) getiri ödünç alır ve enterpole eder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Accrued interest comes from the coupon and day count, not from comparable bonds.",
+          "tr": "Birikmiş faiz kupon ve gün sayımından gelir, karşılaştırılabilir tahvillerden değil."
+        },
+        "C": {
+          "en": "An actively traded bond has an observable price; no estimate is needed.",
+          "tr": "Aktif işlem gören tahvilin gözlemlenebilir fiyatı vardır; tahmine gerek yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "matrix-pricing",
+        "illiquid",
+        "most-appropriate",
+        "comparable",
+        "actively-traded"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-06-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-06",
+      "los_id": "FI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst uses matrix pricing for an unrated 7-year bond by averaging the yields of two 7-year bonds rated BBB and one 7-year bond rated AA from different sectors. Which aspect of this approach is least consistent with sound matrix pricing?",
+      "stem_tr": "Bir analist notlandırılmamış 7 yıllık bir tahvil için, farklı sektörlerden BBB notlu iki 7 yıllık tahvil ile AA notlu bir 7 yıllık tahvilin getirilerinin ortalamasını alarak matris fiyatlama yapıyor. Bu yaklaşımın hangi yönü sağlıklı matris fiyatlamayla en az tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "using bonds with the same maturity as the target bond",
+          "tr": "hedef tahville aynı vadeli tahviller kullanılması"
+        },
+        {
+          "key": "B",
+          "en": "averaging yields rather than averaging prices",
+          "tr": "fiyatların değil getirilerin ortalamasının alınması"
+        },
+        {
+          "key": "C",
+          "en": "mixing bonds of different credit quality in the comparable set",
+          "tr": "karşılaştırma kümesinde farklı kredi kalitesindeki tahvillerin karıştırılması"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Comparable bonds must share credit quality; an AA bond yields far less than BBB bonds, so the average is biased. Matching maturity is correct and yields (not prices) are what should be averaged or interpolated.",
+      "explanation_tr": "Karşılaştırılabilir tahvillerin kredi kalitesi aynı olmalıdır; AA notlu tahvil BBB'lerden çok daha düşük getirir, bu yüzden ortalama yanlıdır. Vadenin eşleşmesi doğrudur ve ortalaması ya da enterpolasyonu alınması gereken fiyatlar değil getirilerdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Matching maturity is exactly what matrix pricing requires.",
+          "tr": "Vadenin eşleşmesi matris fiyatlamanın tam da gerektirdiği şeydir."
+        },
+        "B": {
+          "en": "Working with yields is the correct practice; prices depend on coupon and are not comparable directly.",
+          "tr": "Getirilerle çalışmak doğru uygulamadır; fiyatlar kupona bağlıdır ve doğrudan karşılaştırılamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-consistent",
+        "credit-quality",
+        "comparable",
+        "rather-than",
+        "aspect"
+      ],
+      "pattern_ids": [
+        "least-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

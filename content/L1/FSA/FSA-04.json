@@ -1,0 +1,2094 @@
+{
+  "module_id": "FSA-04",
+  "lesson": {
+    "id": "FSA-04-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-04",
+    "los_ids": [
+      "FSA-04-a",
+      "FSA-04-b",
+      "FSA-04-c",
+      "FSA-04-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analyzing Statements of Cash Flows I",
+    "title_tr": "Nakit Akış Tablosunun Analizi I",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why profit is not cash",
+        "heading_tr": "Kâr neden nakit değildir?",
+        "en": "Marmara Mobilya A.S., a fictional furniture maker on Borsa Istanbul, reports a record profit of TRY 90 million. Two months later it cannot pay its suppliers. How? Sales were made on credit, so revenue was recognized but the cash is still in receivables. At the same time the firm bought machines and paid dividends. The statement of cash flows answers the question the income statement cannot: where did the cash come from and where did it go? Banks, bondholders and equity analysts in Türkiye look at this statement closely, especially in high-inflation years when accrual profits and TMS 29 restatements can look very different from the cash in the bank. The statement has three parts: operating, investing and financing activities.",
+        "tr": "Borsa İstanbul'da işlem gören kurgusal mobilya üreticisi Marmara Mobilya A.Ş. 90 milyon TL ile rekor kâr açıklar. İki ay sonra tedarikçilerine ödeme yapamaz. Nasıl olur? Satışlar vadeli yapılmıştır; hasılat kaydedilmiş ama nakit hâlâ alacaklardadır. Aynı dönemde şirket makine almış ve temettü ödemiştir. Nakit akış tablosu, gelir tablosunun cevaplayamadığı soruyu cevaplar: nakit nereden geldi, nereye gitti? Türkiye'de bankalar, tahvil yatırımcıları ve hisse analistleri bu tabloyu yakından izler; özellikle tahakkuk esaslı kârın ve TMS 29 düzeltmelerinin kasadaki nakitten çok farklı görünebildiği yüksek enflasyon yıllarında. Tablo üç bölümden oluşur: işletme, yatırım ve finansman faaliyetleri.",
+        "key_terms": [
+          "statement of cash flows",
+          "accrual",
+          "operating activities",
+          "investing activities",
+          "financing activities"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The three sections and the link to the other statements",
+        "heading_tr": "Üç bölüm ve diğer tablolarla bağlantı",
+        "en": "Operating activities (CFO) cover the day-to-day business: cash from customers, cash paid to suppliers, employees, interest and taxes (classification of some items depends on the framework). Investing activities (CFI) cover buying and selling long-term assets and investments that are not cash equivalents. Financing activities (CFF) cover cash from and to owners and lenders: issuing or repurchasing shares, borrowing, repaying debt and paying dividends. The sum CFO + CFI + CFF (plus any exchange-rate effect) equals the change in cash between the opening and closing balance sheets. Each non-cash balance sheet account links to a section: a change in receivables, inventory or payables affects CFO; a change in PP&E affects CFI; a change in debt or share capital affects CFF. Non-cash transactions, such as acquiring a machine through a lease or converting bonds into shares, are not in the statement; they are disclosed in the notes.",
+        "tr": "İşletme faaliyetleri (İNA) günlük işi kapsar: müşterilerden tahsilat, tedarikçilere, çalışanlara, faize ve vergiye yapılan ödemeler (bazı kalemlerin sınıflandırması çerçeveye bağlıdır). Yatırım faaliyetleri (YNA) uzun vadeli varlıkların ve nakit benzeri olmayan yatırımların alım satımını kapsar. Finansman faaliyetleri (FNA) ortaklarla ve borç verenlerle nakit alışverişidir: pay ihracı veya geri alımı, borçlanma, borç geri ödemesi ve temettü ödemesi. İNA + YNA + FNA toplamı (varsa kur etkisiyle birlikte) açılış ve kapanış bilançoları arasındaki nakit değişimine eşittir. Nakit dışı her bilanço hesabı bir bölüme bağlanır: alacak, stok veya ticari borç değişimi İNA'yı; maddi duran varlık değişimi YNA'yı; borç veya sermaye değişimi FNA'yı etkiler. Kiralama yoluyla makine edinmek ya da tahvilin paya dönüşmesi gibi nakit dışı işlemler tabloda yer almaz; dipnotlarda açıklanır.",
+        "key_terms": [
+          "CFO",
+          "CFI",
+          "CFF",
+          "cash equivalents",
+          "non-cash transaction"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Balance sheet change",
+              "tr": "Bilanço değişimi"
+            },
+            {
+              "en": "Section",
+              "tr": "Bölüm"
+            },
+            {
+              "en": "Cash effect",
+              "tr": "Nakit etkisi"
+            }
+          ],
+          "rows": [
+            [
+              "Increase in receivables / inventory",
+              "CFO",
+              "Use of cash (subtract)"
+            ],
+            [
+              "Increase in payables / accrued liabilities",
+              "CFO",
+              "Source of cash (add)"
+            ],
+            [
+              "Purchase of PP&E",
+              "CFI",
+              "Use of cash"
+            ],
+            [
+              "Proceeds from sale of equipment",
+              "CFI",
+              "Source of cash"
+            ],
+            [
+              "New borrowing / share issue",
+              "CFF",
+              "Source of cash"
+            ],
+            [
+              "Debt repayment / dividends paid / buyback",
+              "CFF",
+              "Use of cash"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Direct and indirect methods",
+        "heading_tr": "Doğrudan ve dolaylı yöntem",
+        "en": "Only the operating section can be presented in two ways. The direct method lists gross cash receipts and payments: cash collected from customers, cash paid to suppliers, cash paid to employees, interest paid, taxes paid. The indirect method starts from net income and adjusts it: add back non-cash charges (depreciation, amortization), remove gains and add losses on sales of long-term assets (their cash belongs in CFI), and adjust for changes in operating working capital accounts. Both methods give the same CFO total. Both IFRS and US GAAP encourage the direct method, but most companies use the indirect method because it is easier to prepare. Under US GAAP, a company that uses the direct method must also present a reconciliation of net income to CFO. The investing and financing sections are always presented as gross inflows and outflows.",
+        "tr": "Yalnızca işletme bölümü iki şekilde sunulabilir. Doğrudan yöntem brüt nakit giriş ve çıkışlarını listeler: müşterilerden tahsilat, tedarikçilere ödeme, çalışanlara ödeme, ödenen faiz, ödenen vergi. Dolaylı yöntem net kârdan başlar ve düzeltir: nakit dışı giderleri (amortisman, itfa) geri ekler, duran varlık satış kazançlarını çıkarır ve zararlarını ekler (bunların nakdi YNA'dadır), işletme sermayesi hesaplarındaki değişimleri yansıtır. İki yöntem aynı İNA toplamını verir. UFRS de US GAAP de doğrudan yöntemi teşvik eder; ancak hazırlaması daha kolay olduğu için çoğu şirket dolaylı yöntemi kullanır. US GAAP'te doğrudan yöntemi kullanan şirket ayrıca net kârdan İNA'ya mutabakat sunmak zorundadır. Yatırım ve finansman bölümleri her zaman brüt giriş ve çıkış olarak sunulur.",
+        "key_terms": [
+          "direct method",
+          "indirect method",
+          "reconciliation",
+          "non-cash charge",
+          "working capital"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Indirect method: from net income to CFO",
+        "heading_tr": "Dolaylı yöntem: net kârdan İNA'ya",
+        "en": "Start with net income. Add non-cash expenses such as depreciation and amortization. Subtract gains and add losses on the sale of non-current assets. Then adjust for working capital: an increase in an operating asset (receivables, inventory, prepaid expenses) is subtracted, a decrease is added; an increase in an operating liability (payables, accrued expenses, unearned revenue, taxes payable) is added, a decrease is subtracted. A simple memory rule: assets move against cash, liabilities move with cash.",
+        "tr": "Net kârla başla. Amortisman ve itfa gibi nakit dışı giderleri ekle. Duran varlık satış kazançlarını çıkar, zararlarını ekle. Sonra işletme sermayesini düzelt: işletme varlığındaki artış (alacak, stok, peşin ödenmiş gider) çıkarılır, azalış eklenir; işletme yükümlülüğündeki artış (ticari borç, tahakkuk, ertelenmiş hasılat, ödenecek vergi) eklenir, azalış çıkarılır. Basit ezber kuralı: varlıklar nakdin tersine, yükümlülükler nakitle aynı yönde hareket eder.",
+        "key_terms": [
+          "depreciation",
+          "gain on sale",
+          "operating asset",
+          "operating liability"
+        ],
+        "formula_latex": "CFO = NI + \\text{Dep} - \\text{Gains} + \\text{Losses} - \\Delta \\text{Operating assets} + \\Delta \\text{Operating liabilities}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Direct method: the main lines",
+        "heading_tr": "Doğrudan yöntem: ana kalemler",
+        "en": "Each income statement line is converted into cash by using the related balance sheet account. Cash from customers = revenue minus the increase in receivables (plus the increase in unearned revenue). Cash paid to suppliers = cost of goods sold plus the increase in inventory minus the increase in accounts payable. Cash paid for operating expenses = operating expenses (excluding depreciation) plus the increase in prepaid expenses minus the increase in accrued liabilities. Cash paid for interest = interest expense minus the increase in interest payable (and adjusted for discount or premium amortization). Cash paid for taxes = tax expense minus the increase in taxes payable minus the increase in deferred tax liabilities. Decreases work in the opposite direction.",
+        "tr": "Gelir tablosundaki her kalem, ilgili bilanço hesabı kullanılarak nakde çevrilir. Müşterilerden tahsilat = hasılat − alacak artışı (+ ertelenmiş hasılat artışı). Tedarikçilere ödeme = satışların maliyeti + stok artışı − ticari borç artışı. Faaliyet giderleri için ödeme = faaliyet giderleri (amortisman hariç) + peşin ödenmiş gider artışı − tahakkuk etmiş yükümlülük artışı. Ödenen faiz = faiz gideri − ödenecek faiz artışı (iskonto/prim itfası düzeltilir). Ödenen vergi = vergi gideri − ödenecek vergi artışı − ertelenmiş vergi yükümlülüğü artışı. Azalışlar ters yönde çalışır.",
+        "key_terms": [
+          "cash collected from customers",
+          "cash paid to suppliers",
+          "purchases",
+          "unearned revenue"
+        ],
+        "formula_latex": "\\begin{aligned} \\text{Cash from customers} &= \\text{Revenue} - \\Delta AR + \\Delta \\text{Unearned rev.} \\\\ \\text{Cash to suppliers} &= COGS + \\Delta \\text{Inventory} - \\Delta AP \\end{aligned}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: both methods, same answer",
+        "heading_tr": "Çözümlü örnek: iki yöntem, aynı sonuç",
+        "en": "Marmara Mobilya (TRY million): revenue 1,200; COGS 700; other operating expenses 200 of which depreciation 80; interest expense 40; tax expense 60; net income 200. Balance sheet changes: receivables +50, inventory −20, accounts payable +30, interest payable +5, taxes payable −10. Indirect: CFO = 200 + 80 − 50 + 20 + 30 + 5 − 10 = 275. Direct: cash from customers = 1,200 − 50 = 1,150; cash to suppliers = 700 − 20 − 30 = 650; cash for other expenses = 200 − 80 = 120; interest paid = 40 − 5 = 35; taxes paid = 60 + 10 = 70. CFO = 1,150 − 650 − 120 − 35 − 70 = 275. The totals match; only the presentation differs.",
+        "tr": "Marmara Mobilya (milyon TL): hasılat 1.200; SMM 700; diğer faaliyet giderleri 200 (bunun 80'i amortisman); faiz gideri 40; vergi gideri 60; net kâr 200. Bilanço değişimleri: alacaklar +50, stoklar −20, ticari borçlar +30, ödenecek faiz +5, ödenecek vergi −10. Dolaylı: İNA = 200 + 80 − 50 + 20 + 30 + 5 − 10 = 275. Doğrudan: müşterilerden tahsilat = 1.200 − 50 = 1.150; tedarikçilere ödeme = 700 − 20 − 30 = 650; diğer giderler için nakit = 200 − 80 = 120; ödenen faiz = 40 − 5 = 35; ödenen vergi = 60 + 10 = 70. İNA = 1.150 − 650 − 120 − 35 − 70 = 275. Toplamlar eşleşir; yalnızca sunum farklıdır.",
+        "key_terms": [
+          "net income",
+          "interest payable",
+          "taxes payable"
+        ],
+        "example": {
+          "en": "CFO (indirect) = 200 + 80 − 50 + 20 + 30 + 5 − 10 = 275; CFO (direct) = 1,150 − 650 − 120 − 35 − 70 = 275",
+          "tr": "İNA (dolaylı) = 200 + 80 − 50 + 20 + 30 + 5 − 10 = 275; İNA (doğrudan) = 1.150 − 650 − 120 − 35 − 70 = 275"
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "IFRS versus US GAAP classification",
+        "heading_tr": "UFRS ile US GAAP sınıflandırması",
+        "en": "The two frameworks differ on where interest, dividends and taxes go. Under US GAAP the rules are fixed: interest paid, interest received and dividends received are operating; dividends paid are financing; all income taxes paid are operating. Under IFRS the company chooses, but must be consistent: interest paid can be operating or financing; interest received and dividends received can be operating or investing; dividends paid can be operating or financing. Taxes paid are operating under IFRS unless they can be specifically identified with an investing or financing transaction. Under IFRS, bank overdrafts repayable on demand that are part of cash management may be included in cash and cash equivalents; under US GAAP overdraft changes are financing. These choices change CFO, so an analyst comparing an IFRS firm with a US GAAP firm often reclassifies interest and dividends before computing ratios such as CFO/debt or free cash flow.",
+        "tr": "İki çerçeve faiz, temettü ve verginin nereye gideceğinde ayrılır. US GAAP'te kurallar sabittir: ödenen faiz, alınan faiz ve alınan temettü işletme; ödenen temettü finansman; ödenen tüm gelir vergileri işletme faaliyetidir. UFRS'de şirket seçer ama tutarlı olmalıdır: ödenen faiz işletme veya finansman; alınan faiz ve alınan temettü işletme veya yatırım; ödenen temettü işletme veya finansman olabilir. Ödenen vergiler UFRS'de, bir yatırım veya finansman işlemiyle özel olarak ilişkilendirilemiyorsa işletme faaliyetidir. UFRS'de talep üzerine geri ödenebilen ve nakit yönetiminin parçası olan banka kredili mevduat hesapları nakit ve nakit benzerlerine dâhil edilebilir; US GAAP'te bu değişimler finansman faaliyetidir. Bu seçimler İNA'yı değiştirir; bu yüzden UFRS firmasını US GAAP firmasıyla karşılaştıran analist, İNA/borç veya serbest nakit akışı gibi oranları hesaplamadan önce faiz ve temettüyü çoğu zaman yeniden sınıflandırır.",
+        "key_terms": [
+          "interest paid",
+          "dividends received",
+          "dividends paid",
+          "bank overdraft",
+          "consistent"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Item",
+              "tr": "Kalem"
+            },
+            {
+              "en": "US GAAP",
+              "tr": "US GAAP"
+            },
+            {
+              "en": "IFRS",
+              "tr": "UFRS"
+            }
+          ],
+          "rows": [
+            [
+              "Interest paid",
+              "CFO",
+              "CFO or CFF"
+            ],
+            [
+              "Interest received",
+              "CFO",
+              "CFO or CFI"
+            ],
+            [
+              "Dividends received",
+              "CFO",
+              "CFO or CFI"
+            ],
+            [
+              "Dividends paid",
+              "CFF",
+              "CFO or CFF"
+            ],
+            [
+              "Income taxes paid",
+              "CFO",
+              "CFO (unless tied to CFI/CFF)"
+            ],
+            [
+              "Bank overdraft",
+              "CFF",
+              "May be part of cash equivalents"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık tuzaklar",
+        "en": "First, a gain on the sale of equipment is subtracted in the indirect method; the full proceeds go to CFI. Students often add the gain or forget the proceeds. Second, the sign of working capital changes: an increase in inventory uses cash even though it is an asset you own. Third, depreciation is added back only because it was deducted in net income; it is not a source of cash. Fourth, a company that pays interest can report higher CFO under IFRS simply by classifying it as financing, so compare classification policies before comparing CFO. Fifth, the change in cash must equal CFO + CFI + CFF; if a question gives you three sections and an opening balance, you can check the closing cash. Finally, non-cash investing and financing activities (a share-for-share acquisition, a finance lease) are disclosed, not reported in the statement.",
+        "tr": "Birincisi, dolaylı yöntemde ekipman satış kazancı çıkarılır; satış bedelinin tamamı YNA'ya gider. Öğrenciler sıkça kazancı ekler ya da bedeli unutur. İkincisi, işletme sermayesi değişimlerinin işareti: stok artışı, sahip olduğun bir varlık olsa da nakit kullanır. Üçüncüsü, amortisman yalnızca net kârda düşüldüğü için geri eklenir; bir nakit kaynağı değildir. Dördüncüsü, faiz ödeyen şirket UFRS'de bunu finansman olarak sınıflandırarak daha yüksek İNA gösterebilir; İNA'ları karşılaştırmadan önce sınıflandırma politikalarını karşılaştır. Beşincisi, nakit değişimi İNA + YNA + FNA'ya eşit olmalıdır; soru üç bölümü ve açılış bakiyesini veriyorsa kapanış nakdini kontrol edebilirsin. Son olarak, nakit dışı yatırım ve finansman faaliyetleri (pay karşılığı satın alma, finansal kiralama) tabloda raporlanmaz, dipnotta açıklanır.",
+        "key_terms": [
+          "proceeds",
+          "gain on sale",
+          "classification policy"
+        ]
+      }
+    ],
+    "summary_en": "The statement of cash flows explains the change in cash between two balance sheets through operating, investing and financing activities. The operating section can be shown by the direct method (gross receipts and payments) or the indirect method (net income adjusted for non-cash items, gains and losses, and working capital changes); the total is the same. Under US GAAP interest and dividends received and interest paid are operating and dividends paid are financing; IFRS allows choices, which analysts must reclassify before comparing companies. Non-cash transactions are disclosed, not reported in the statement.",
+    "summary_tr": "Nakit akış tablosu iki bilanço arasındaki nakit değişimini işletme, yatırım ve finansman faaliyetleriyle açıklar. İşletme bölümü doğrudan yöntemle (brüt tahsilat ve ödemeler) ya da dolaylı yöntemle (net kârın nakit dışı kalemler, kazanç/zarar ve işletme sermayesi değişimleriyle düzeltilmesi) gösterilebilir; toplam aynıdır. US GAAP'te alınan faiz ve temettü ile ödenen faiz işletme, ödenen temettü finansman faaliyetidir; UFRS seçime izin verir ve analist şirketleri karşılaştırmadan önce yeniden sınıflandırmalıdır. Nakit dışı işlemler tabloda raporlanmaz, dipnotta açıklanır.",
+    "common_traps_tr": [
+      "Satış kazancı dolaylı yöntemde ÇIKARILIR; satış bedelinin tamamı yatırım faaliyetindedir.",
+      "İşletme varlığı artışı nakdi azaltır, işletme yükümlülüğü artışı nakdi artırır; işareti ters çevirme.",
+      "Amortisman geri eklenir ama nakit kaynağı değildir; doğrudan yöntemde hiç görünmez.",
+      "US GAAP'te ödenen faiz işletme, ödenen temettü finansmandır; UFRS'de her ikisi için seçim vardır.",
+      "Doğrudan ve dolaylı yöntem farklı İNA toplamı vermez; yalnızca sunum farklıdır.",
+      "Nakit dışı işlemler (finansal kiralama, pay karşılığı satın alma) nakit akış tablosunda yer almaz."
+    ],
+    "vocab_ids": [
+      "statement-of-cash-flows",
+      "operating-activities",
+      "investing-activities",
+      "financing-activities",
+      "direct-method",
+      "indirect-method",
+      "non-cash",
+      "add-back",
+      "gain-on-sale",
+      "proceeds",
+      "working-capital",
+      "accounts-receivable",
+      "payable",
+      "unearned-revenue",
+      "reconciliation",
+      "bank-overdraft",
+      "classification",
+      "consistent"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Nakit akış tablosu ve dolaylı yöntem SPK Düzey 3 Finansal Tablo Analizi (1016) ile örtüşür; UFRS/US GAAP sınıflandırma farkları ve doğrudan yönteme dönüştürme yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-04-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes the link between the statement of cash flows and the balance sheet?",
+      "stem_tr": "Aşağıdakilerden hangisi nakit akış tablosu ile bilanço arasındaki bağlantıyı en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The total of the three cash flow sections equals the change in cash between two consecutive balance sheets.",
+          "tr": "Üç nakit akış bölümünün toplamı, ardışık iki bilanço arasındaki nakit değişimine eşittir."
+        },
+        {
+          "key": "B",
+          "en": "The total of the three cash flow sections equals net income for the period.",
+          "tr": "Üç nakit akış bölümünün toplamı dönemin net kârına eşittir."
+        },
+        {
+          "key": "C",
+          "en": "Operating cash flow equals the change in total current assets.",
+          "tr": "İşletme nakit akışı toplam dönen varlıklardaki değişime eşittir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "CFO + CFI + CFF (plus any exchange-rate effect) explains the change in the cash balance from the opening to the closing balance sheet.",
+      "explanation_tr": "İNA + YNA + FNA (varsa kur etkisiyle) açılış bilançosundan kapanış bilançosuna nakit bakiyesindeki değişimi açıklar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Net income is an accrual measure; it differs from cash flow by non-cash items and working capital changes.",
+          "tr": "Net kâr tahakkuk esaslı bir ölçüdür; nakit dışı kalemler ve işletme sermayesi değişimleriyle nakit akışından ayrılır."
+        },
+        "C": {
+          "en": "Current assets include cash itself and inventory; CFO is net income adjusted for non-cash items and operating working capital, not a change in current assets.",
+          "tr": "Dönen varlıklar nakdin kendisini ve stokları da içerir; İNA, dönen varlık değişimi değil, nakit dışı kalemler ve işletme sermayesi için düzeltilmiş net kârdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "consecutive",
+        "statement-of-cash-flows",
+        "link"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Nakit akış tablosunun bilançoyla mutabakatı SPK 1016'da var."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Karadeniz Findik A.S. reports net income of TRY 500 million but operating cash flow of only TRY 200 million. Depreciation was small. The gap is most likely explained by:",
+      "stem_tr": "Karadeniz Fındık A.Ş. 500 milyon TL net kâr açıklamış, ancak işletme nakit akışı yalnızca 200 milyon TL olmuştur. Amortisman küçüktür. Bu fark en olası olarak aşağıdakilerden hangisiyle açıklanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a large decrease in inventory.",
+          "tr": "stoklardaki büyük bir azalış."
+        },
+        {
+          "key": "B",
+          "en": "a large increase in accounts receivable.",
+          "tr": "ticari alacaklardaki büyük bir artış."
+        },
+        {
+          "key": "C",
+          "en": "a large increase in accounts payable.",
+          "tr": "ticari borçlardaki büyük bir artış."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "An increase in receivables means revenue was recognized but cash was not yet collected, so CFO is below net income.",
+      "explanation_tr": "Alacak artışı, hasılatın kaydedildiği ama nakdin henüz tahsil edilmediği anlamına gelir; bu yüzden İNA net kârın altında kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A decrease in inventory releases cash and would push CFO above net income.",
+          "tr": "Stok azalışı nakit serbest bırakır ve İNA'yı net kârın üstüne iter."
+        },
+        "C": {
+          "en": "An increase in payables means the firm delayed payments, which raises CFO relative to net income.",
+          "tr": "Ticari borç artışı ödemelerin ertelendiğini gösterir; bu İNA'yı net kâra göre yükseltir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "gap",
+        "accounts-receivable",
+        "collect",
+        "recognize"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In the statement of cash flows, an increase in accrued liabilities during the year is most appropriately treated as:",
+      "stem_tr": "Nakit akış tablosunda yıl içinde tahakkuk etmiş yükümlülüklerdeki artış en uygun şekilde nasıl ele alınır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a use of cash in investing activities.",
+          "tr": "yatırım faaliyetlerinde nakit kullanımı."
+        },
+        {
+          "key": "B",
+          "en": "a use of cash in operating activities.",
+          "tr": "işletme faaliyetlerinde nakit kullanımı."
+        },
+        {
+          "key": "C",
+          "en": "a source of cash in operating activities.",
+          "tr": "işletme faaliyetlerinde nakit kaynağı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Accrued liabilities are an operating liability. An increase means expenses were recognized but not yet paid, so cash was conserved: a source of cash within CFO.",
+      "explanation_tr": "Tahakkuk etmiş yükümlülükler bir işletme yükümlülüğüdür. Artış, giderin kaydedildiğini ama henüz ödenmediğini gösterir; nakit korunmuştur, yani İNA içinde nakit kaynağıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Accrued liabilities are not long-term assets; they belong to the operating section.",
+          "tr": "Tahakkuk etmiş yükümlülükler duran varlık değildir; işletme bölümüne aittir."
+        },
+        "B": {
+          "en": "An increase in an operating liability adds to cash; a decrease would be a use of cash.",
+          "tr": "İşletme yükümlülüğündeki artış nakit ekler; azalış nakit kullanımı olurdu."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "accrued",
+        "source-of-cash",
+        "use-of-cash",
+        "conserve"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is least likely to appear in the body of the statement of cash flows?",
+      "stem_tr": "Aşağıdakilerden hangisinin nakit akış tablosunun gövdesinde yer alması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Cash paid to repurchase the company's own shares.",
+          "tr": "Şirketin kendi paylarını geri almak için ödediği nakit."
+        },
+        {
+          "key": "B",
+          "en": "Equipment acquired in exchange for a long-term note payable to the seller.",
+          "tr": "Satıcıya düzenlenen uzun vadeli bir borç senedi karşılığında edinilen ekipman."
+        },
+        {
+          "key": "C",
+          "en": "Proceeds from the sale of a factory building.",
+          "tr": "Bir fabrika binasının satışından elde edilen nakit."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Acquiring an asset by issuing a note involves no cash. Such non-cash investing and financing activities are disclosed in the notes or a supplementary schedule, not in the statement itself.",
+      "explanation_tr": "Borç senedi düzenleyerek varlık edinmek nakit içermez. Bu tür nakit dışı yatırım ve finansman faaliyetleri tablonun kendisinde değil, dipnotta veya ek çizelgede açıklanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A share buyback is a cash outflow in financing activities.",
+          "tr": "Pay geri alımı finansman faaliyetlerinde nakit çıkışıdır."
+        },
+        "C": {
+          "en": "Sale proceeds from a long-term asset are a cash inflow in investing activities.",
+          "tr": "Duran varlık satış bedeli yatırım faaliyetlerinde nakit girişidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "disclose",
+        "in-exchange-for",
+        "note-payable",
+        "supplementary"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Ege Tekstil A.S. shows the following for the year: cash from operating activities TRY 180 million, cash used in investing activities TRY 240 million, cash from financing activities TRY 90 million, and no exchange-rate effect. Opening cash was TRY 75 million. Closing cash is closest to:",
+      "stem_tr": "Ege Tekstil A.Ş.'nin yıl verileri: işletme faaliyetlerinden nakit 180 milyon TL, yatırım faaliyetlerinde kullanılan nakit 240 milyon TL, finansman faaliyetlerinden nakit 90 milyon TL; kur etkisi yok. Açılış nakdi 75 milyon TL'dir. Kapanış nakdi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 45 million",
+          "tr": "45 milyon TL",
+          "value": 45
+        },
+        {
+          "key": "B",
+          "en": "TRY 105 million",
+          "tr": "105 milyon TL",
+          "value": 105
+        },
+        {
+          "key": "C",
+          "en": "TRY 585 million",
+          "tr": "585 milyon TL",
+          "value": 585
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Change in cash = 180 − 240 + 90 = +30. Closing cash = 75 + 30 = 105.",
+      "explanation_tr": "Nakit değişimi = 180 − 240 + 90 = +30. Kapanış nakdi = 75 + 30 = 105.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracting the financing inflow (180 − 240 − 90 = −150) treats a source of cash as a use.",
+          "tr": "Finansman girişini çıkarmak (180 − 240 − 90 = −150) nakit kaynağını kullanım gibi ele alır."
+        },
+        "C": {
+          "en": "Adding all three figures as inflows ignores that investing was a cash outflow.",
+          "tr": "Üç rakamı da giriş olarak toplamak yatırımın nakit çıkışı olduğunu göz ardı eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: closing cash balance.",
+          "tr": "İstenen: kapanış nakit bakiyesi."
+        },
+        {
+          "en": "Rule: Closing cash = Opening cash + CFO + CFI + CFF.",
+          "tr": "Kural: Kapanış nakdi = Açılış nakdi + İNA + YNA + FNA.",
+          "formula_latex": "\\text{Cash}_{end} = \\text{Cash}_{beg} + CFO + CFI + CFF"
+        },
+        {
+          "en": "Substitute: 75 + 180 − 240 + 90.",
+          "tr": "Yerine koy: 75 + 180 − 240 + 90.",
+          "values": {
+            "Opening": 75,
+            "CFO": 180,
+            "CFI": -240,
+            "CFF": 90
+          }
+        },
+        {
+          "en": "Change in cash = +30; closing cash = 105.",
+          "tr": "Nakit değişimi = +30; kapanış nakdi = 105."
+        },
+        {
+          "en": "Result: TRY 105 million.",
+          "tr": "Sonuç: 105 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "75",
+          "[+]",
+          "180",
+          "[-]",
+          "240",
+          "[+]",
+          "90",
+          "[=]"
+        ],
+        "note_tr": "Dört işlem yeterli."
+      },
+      "numeric": {
+        "expr": "75 + 180 - 240 + 90",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "closing",
+        "opening",
+        "exchange-rate-effect"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bosphorus Lojistik A.S. reports net income of TRY 840 million, depreciation of TRY 120 million and a gain of TRY 30 million on the sale of a truck. During the year receivables increased by TRY 60 million, inventory decreased by TRY 25 million and accounts payable increased by TRY 40 million. Operating cash flow under the indirect method is closest to:",
+      "stem_tr": "Bosphorus Lojistik A.Ş. 840 milyon TL net kâr, 120 milyon TL amortisman ve bir kamyon satışından 30 milyon TL kazanç raporlamıştır. Yıl içinde alacaklar 60 milyon TL artmış, stoklar 25 milyon TL azalmış ve ticari borçlar 40 milyon TL artmıştır. Dolaylı yönteme göre işletme nakit akışı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 815 million",
+          "tr": "815 milyon TL",
+          "value": 815
+        },
+        {
+          "key": "B",
+          "en": "TRY 885 million",
+          "tr": "885 milyon TL",
+          "value": 885
+        },
+        {
+          "key": "C",
+          "en": "TRY 935 million",
+          "tr": "935 milyon TL",
+          "value": 935
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "CFO = 840 + 120 − 30 − 60 + 25 + 40 = 935. The gain is removed because the truck sale proceeds belong in investing activities.",
+      "explanation_tr": "İNA = 840 + 120 − 30 − 60 + 25 + 40 = 935. Kamyon satış bedeli yatırım faaliyetlerine ait olduğu için kazanç çıkarılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omitting the depreciation add-back (840 − 30 − 60 + 25 + 40 = 815) leaves a non-cash expense deducted from cash flow.",
+          "tr": "Amortisman geri eklemesini atlamak (840 − 30 − 60 + 25 + 40 = 815) nakit dışı bir gideri nakit akışından düşülmüş bırakır."
+        },
+        "B": {
+          "en": "Subtracting the inventory decrease (840 + 120 − 30 − 60 − 25 + 40 = 885) reverses the sign; a decrease in inventory releases cash.",
+          "tr": "Stok azalışını çıkarmak (885) işareti ters çevirir; stok azalışı nakit serbest bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: CFO by the indirect method.",
+          "tr": "İstenen: dolaylı yöntemle İNA."
+        },
+        {
+          "en": "Formula: NI + depreciation − gains − ΔOperating assets + ΔOperating liabilities.",
+          "tr": "Formül: Net kâr + amortisman − kazançlar − Δİşletme varlıkları + Δİşletme yükümlülükleri.",
+          "formula_latex": "CFO = NI + Dep - Gain - \\Delta AR - \\Delta Inv + \\Delta AP"
+        },
+        {
+          "en": "Substitute: 840 + 120 − 30 − 60 + 25 + 40.",
+          "tr": "Yerine koy: 840 + 120 − 30 − 60 + 25 + 40.",
+          "values": {
+            "NI": 840,
+            "Dep": 120,
+            "Gain": 30,
+            "ΔAR": 60,
+            "ΔInv": -25,
+            "ΔAP": 40
+          }
+        },
+        {
+          "en": "Intermediate: 840 + 120 − 30 = 930; working capital net effect = −60 + 25 + 40 = +5.",
+          "tr": "Ara sonuç: 840 + 120 − 30 = 930; işletme sermayesi net etkisi = −60 + 25 + 40 = +5."
+        },
+        {
+          "en": "Result: CFO = 935 million TRY.",
+          "tr": "Sonuç: İNA = 935 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "840",
+          "[+]",
+          "120",
+          "[-]",
+          "30",
+          "[-]",
+          "60",
+          "[+]",
+          "25",
+          "[+]",
+          "40",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "840 + 120 - 30 - 60 + 25 + 40",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "gain-on-sale",
+        "indirect-method",
+        "add-back"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Dolaylı yöntem düzeltmeleri SPK 1016 ile örtüşür."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A US GAAP company purchased equipment for TRY 300 million, sold old machinery with a carrying amount of TRY 50 million for TRY 80 million, bought long-term bonds of another issuer for TRY 40 million and received dividends of TRY 10 million from an equity investment. Net cash used in investing activities is closest to:",
+      "stem_tr": "US GAAP'e göre raporlayan bir şirket 300 milyon TL'ye ekipman almış, defter değeri 50 milyon TL olan eski makineleri 80 milyon TL'ye satmış, başka bir ihraççının uzun vadeli tahvillerini 40 milyon TL'ye almış ve bir özkaynak yatırımından 10 milyon TL temettü tahsil etmiştir. Yatırım faaliyetlerinde kullanılan net nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 250 million",
+          "tr": "250 milyon TL",
+          "value": 250
+        },
+        {
+          "key": "B",
+          "en": "TRY 260 million",
+          "tr": "260 milyon TL",
+          "value": 260
+        },
+        {
+          "key": "C",
+          "en": "TRY 290 million",
+          "tr": "290 milyon TL",
+          "value": 290
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "CFI = −300 + 80 − 40 = −260. The full sale proceeds (80) are the investing inflow; the gain of 30 is irrelevant here. Dividends received are operating under US GAAP.",
+      "explanation_tr": "YNA = −300 + 80 − 40 = −260. Satış bedelinin tamamı (80) yatırım girişidir; 30'luk kazanç burada ilgisizdir. Alınan temettü US GAAP'te işletme faaliyetidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Including the TRY 10 million dividend as an investing inflow is an IFRS option, not the US GAAP treatment.",
+          "tr": "10 milyon TL temettüyü yatırım girişi saymak UFRS seçeneğidir, US GAAP uygulaması değildir."
+        },
+        "C": {
+          "en": "Using the carrying amount (50) instead of the cash proceeds (80) understates the inflow.",
+          "tr": "Nakit bedel (80) yerine defter değerini (50) kullanmak girişi düşük gösterir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: net cash used in investing activities (US GAAP).",
+          "tr": "İstenen: yatırım faaliyetlerinde kullanılan net nakit (US GAAP)."
+        },
+        {
+          "en": "Identify investing items: equipment purchase (−300), machinery proceeds (+80), bond purchase (−40). Dividends received → CFO.",
+          "tr": "Yatırım kalemlerini belirle: ekipman alımı (−300), makine satış bedeli (+80), tahvil alımı (−40). Alınan temettü → İNA."
+        },
+        {
+          "en": "Substitute: −300 + 80 − 40.",
+          "tr": "Yerine koy: −300 + 80 − 40.",
+          "values": {
+            "Equipment": -300,
+            "Proceeds": 80,
+            "Bonds": -40
+          }
+        },
+        {
+          "en": "Result: net cash used = 260 million TRY.",
+          "tr": "Sonuç: kullanılan net nakit = 260 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300",
+          "[+/-]",
+          "[+]",
+          "80",
+          "[-]",
+          "40",
+          "[=]"
+        ],
+        "note_tr": "Sonuç −260; soru 'kullanılan nakit' sorduğu için 260 yazılır."
+      },
+      "numeric": {
+        "expr": "abs(-300 + 80 - 40)",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "carrying-amount",
+        "proceeds",
+        "issuer",
+        "irrelevant"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "During the year Trakya Enerji A.S. (US GAAP) issued bonds for TRY 500 million, repaid a bank loan of TRY 200 million, paid dividends of TRY 90 million, repurchased its own shares for TRY 60 million and paid interest of TRY 45 million. Net cash from financing activities is closest to:",
+      "stem_tr": "Trakya Enerji A.Ş. (US GAAP) yıl içinde 500 milyon TL tahvil ihraç etmiş, 200 milyon TL banka kredisi geri ödemiş, 90 milyon TL temettü ödemiş, 60 milyon TL'ye kendi paylarını geri almış ve 45 milyon TL faiz ödemiştir. Finansman faaliyetlerinden net nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 105 million",
+          "tr": "105 milyon TL",
+          "value": 105
+        },
+        {
+          "key": "B",
+          "en": "TRY 150 million",
+          "tr": "150 milyon TL",
+          "value": 150
+        },
+        {
+          "key": "C",
+          "en": "TRY 240 million",
+          "tr": "240 milyon TL",
+          "value": 240
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "CFF = 500 − 200 − 90 − 60 = 150. Interest paid is an operating outflow under US GAAP.",
+      "explanation_tr": "FNA = 500 − 200 − 90 − 60 = 150. Ödenen faiz US GAAP'te işletme çıkışıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Deducting interest paid (150 − 45 = 105) is only possible under IFRS if the company chose that policy; under US GAAP interest is operating.",
+          "tr": "Ödenen faizi düşmek (105) yalnızca UFRS'de şirket o politikayı seçmişse mümkündür; US GAAP'te faiz işletme faaliyetidir."
+        },
+        "C": {
+          "en": "Forgetting the dividend payment (500 − 200 − 60 = 240) omits a financing outflow.",
+          "tr": "Temettü ödemesini unutmak (240) bir finansman çıkışını atlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: net financing cash flow.",
+          "tr": "İstenen: net finansman nakit akışı."
+        },
+        {
+          "en": "Financing items: bond issue +500, loan repayment −200, dividends −90, buyback −60. Interest paid → CFO (US GAAP).",
+          "tr": "Finansman kalemleri: tahvil ihracı +500, kredi geri ödemesi −200, temettü −90, geri alım −60. Ödenen faiz → İNA (US GAAP)."
+        },
+        {
+          "en": "Substitute: 500 − 200 − 90 − 60.",
+          "tr": "Yerine koy: 500 − 200 − 90 − 60.",
+          "values": {
+            "Bonds": 500,
+            "Loan": -200,
+            "Dividends": -90,
+            "Buyback": -60
+          }
+        },
+        {
+          "en": "Result: CFF = 150 million TRY.",
+          "tr": "Sonuç: FNA = 150 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "500",
+          "[-]",
+          "200",
+          "[-]",
+          "90",
+          "[-]",
+          "60",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "500 - 200 - 90 - 60",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "repay",
+        "repurchase",
+        "issue",
+        "outflow"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Antalya Turizm A.S. reports revenue of TRY 2,400 million. Accounts receivable were TRY 310 million at the start of the year and TRY 370 million at the end. Under the direct method, cash collected from customers is closest to:",
+      "stem_tr": "Antalya Turizm A.Ş. 2.400 milyon TL hasılat raporlamıştır. Ticari alacaklar yıl başında 310 milyon TL, yıl sonunda 370 milyon TL'dir. Doğrudan yönteme göre müşterilerden tahsil edilen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2,340 million",
+          "tr": "2.340 milyon TL",
+          "value": 2340
+        },
+        {
+          "key": "B",
+          "en": "TRY 2,400 million",
+          "tr": "2.400 milyon TL",
+          "value": 2400
+        },
+        {
+          "key": "C",
+          "en": "TRY 2,460 million",
+          "tr": "2.460 milyon TL",
+          "value": 2460
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Receivables rose by 60, so part of the revenue was not collected: cash from customers = 2,400 − 60 = 2,340.",
+      "explanation_tr": "Alacaklar 60 arttı; hasılatın bir kısmı tahsil edilmedi: müşterilerden tahsilat = 2.400 − 60 = 2.340.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Revenue equals cash only if receivables are unchanged.",
+          "tr": "Hasılat, yalnızca alacaklar değişmediyse nakde eşittir."
+        },
+        "C": {
+          "en": "Adding the increase in receivables reverses the sign; growing receivables mean less cash collected.",
+          "tr": "Alacak artışını eklemek işareti ters çevirir; artan alacak daha az tahsilat demektir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash collected from customers.",
+          "tr": "İstenen: müşterilerden tahsil edilen nakit."
+        },
+        {
+          "en": "Formula: Revenue − increase in receivables.",
+          "tr": "Formül: Hasılat − alacak artışı.",
+          "formula_latex": "\\text{Cash from customers} = \\text{Revenue} - \\Delta AR"
+        },
+        {
+          "en": "ΔAR = 370 − 310 = 60; cash = 2,400 − 60.",
+          "tr": "ΔAlacak = 370 − 310 = 60; nakit = 2.400 − 60.",
+          "values": {
+            "Revenue": 2400,
+            "AR begin": 310,
+            "AR end": 370
+          }
+        },
+        {
+          "en": "Result: TRY 2,340 million.",
+          "tr": "Sonuç: 2.340 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2400",
+          "[-]",
+          "370",
+          "[+]",
+          "310",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "2400 - (370 - 310)",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "collect",
+        "direct-method",
+        "revenue"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Konya Un A.S. reports cost of goods sold of TRY 1,500 million. During the year inventory increased by TRY 80 million and accounts payable increased by TRY 30 million. Cash paid to suppliers is closest to:",
+      "stem_tr": "Konya Un A.Ş. 1.500 milyon TL satışların maliyeti raporlamıştır. Yıl içinde stoklar 80 milyon TL, ticari borçlar 30 milyon TL artmıştır. Tedarikçilere ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1,450 million",
+          "tr": "1.450 milyon TL",
+          "value": 1450
+        },
+        {
+          "key": "B",
+          "en": "TRY 1,550 million",
+          "tr": "1.550 milyon TL",
+          "value": 1550
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,610 million",
+          "tr": "1.610 milyon TL",
+          "value": 1610
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Purchases = COGS + increase in inventory = 1,500 + 80 = 1,580. Cash paid = purchases − increase in payables = 1,580 − 30 = 1,550.",
+      "explanation_tr": "Alımlar = SMM + stok artışı = 1.500 + 80 = 1.580. Ödenen nakit = alımlar − ticari borç artışı = 1.580 − 30 = 1.550.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reversing both signs (1,500 − 80 + 30) treats the inventory build-up as a cash source and the payables increase as a payment.",
+          "tr": "Her iki işareti ters çevirmek (1.500 − 80 + 30) stok birikimini nakit kaynağı, borç artışını ödeme gibi ele alır."
+        },
+        "C": {
+          "en": "Adding the payables increase (1,500 + 80 + 30) ignores that unpaid purchases save cash.",
+          "tr": "Borç artışını eklemek (1.500 + 80 + 30) ödenmemiş alımların nakit tasarrufu sağladığını göz ardı eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash paid to suppliers (direct method).",
+          "tr": "İstenen: tedarikçilere ödenen nakit (doğrudan yöntem)."
+        },
+        {
+          "en": "Formula: COGS + ΔInventory − ΔAccounts payable.",
+          "tr": "Formül: SMM + ΔStok − ΔTicari borç.",
+          "formula_latex": "\\text{Cash to suppliers} = COGS + \\Delta Inv - \\Delta AP"
+        },
+        {
+          "en": "Substitute: 1,500 + 80 − 30.",
+          "tr": "Yerine koy: 1.500 + 80 − 30.",
+          "values": {
+            "COGS": 1500,
+            "ΔInv": 80,
+            "ΔAP": 30
+          }
+        },
+        {
+          "en": "Purchases = 1,580; cash paid = 1,550.",
+          "tr": "Alımlar = 1.580; ödenen nakit = 1.550."
+        },
+        {
+          "en": "Result: TRY 1,550 million.",
+          "tr": "Sonuç: 1.550 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1500",
+          "[+]",
+          "80",
+          "[-]",
+          "30",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1500 + 80 - 30",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "supplier",
+        "purchases",
+        "cost-of-goods-sold",
+        "build-up"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-b-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Izmir Liman A.S. reports interest expense of TRY 120 million, which includes TRY 8 million of amortization of a bond discount. Interest payable decreased by TRY 15 million during the year. Cash paid for interest is closest to:",
+      "stem_tr": "İzmir Liman A.Ş. 120 milyon TL faiz gideri raporlamıştır; bu tutar 8 milyon TL tahvil iskontosu itfasını içerir. Ödenecek faiz yıl içinde 15 milyon TL azalmıştır. Faiz için ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 97 million",
+          "tr": "97 milyon TL",
+          "value": 97
+        },
+        {
+          "key": "B",
+          "en": "TRY 127 million",
+          "tr": "127 milyon TL",
+          "value": 127
+        },
+        {
+          "key": "C",
+          "en": "TRY 143 million",
+          "tr": "143 milyon TL",
+          "value": 143
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Discount amortization is a non-cash part of interest expense, so remove it: 120 − 8 = 112. A decrease in interest payable means the firm paid more than it expensed: 112 + 15 = 127.",
+      "explanation_tr": "İskonto itfası faiz giderinin nakit dışı kısmıdır; çıkar: 120 − 8 = 112. Ödenecek faizin azalması şirketin giderden fazlasını ödediğini gösterir: 112 + 15 = 127.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracting the payable decrease (120 − 8 − 15) reverses the sign; a falling liability means extra cash paid.",
+          "tr": "Borç azalışını çıkarmak (120 − 8 − 15) işareti ters çevirir; azalan yükümlülük fazladan nakit ödendiğini gösterir."
+        },
+        "C": {
+          "en": "Adding the discount amortization (120 + 8 + 15) treats a non-cash charge as a cash payment.",
+          "tr": "İskonto itfasını eklemek (120 + 8 + 15) nakit dışı gideri nakit ödeme gibi ele alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash interest paid.",
+          "tr": "İstenen: nakden ödenen faiz."
+        },
+        {
+          "en": "Formula: interest expense − non-cash discount amortization + decrease in interest payable.",
+          "tr": "Formül: faiz gideri − nakit dışı iskonto itfası + ödenecek faiz azalışı.",
+          "formula_latex": "\\text{Interest paid} = \\text{Int. exp.} - \\text{Disc. amort.} + \\text{Decrease in int. payable}"
+        },
+        {
+          "en": "Substitute: 120 − 8 + 15.",
+          "tr": "Yerine koy: 120 − 8 + 15.",
+          "values": {
+            "Interest expense": 120,
+            "Discount amortization": 8,
+            "Decrease in payable": 15
+          }
+        },
+        {
+          "en": "Result: TRY 127 million.",
+          "tr": "Sonuç: 127 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "120",
+          "[-]",
+          "8",
+          "[+]",
+          "15",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "120 - 8 + 15",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "bond-discount",
+        "amortization",
+        "interest-payable",
+        "non-cash"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An analyst converts an indirect-method statement into the direct format. Revenue is TRY 5,000 million, accounts receivable increased by TRY 200 million and unearned revenue increased by TRY 50 million. Cash received from customers is closest to:",
+      "stem_tr": "Bir analist dolaylı yöntemle hazırlanmış tabloyu doğrudan biçime dönüştürüyor. Hasılat 5.000 milyon TL, ticari alacaklar 200 milyon TL ve ertelenmiş hasılat 50 milyon TL artmıştır. Müşterilerden alınan nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 4,750 million",
+          "tr": "4.750 milyon TL",
+          "value": 4750
+        },
+        {
+          "key": "B",
+          "en": "TRY 4,800 million",
+          "tr": "4.800 milyon TL",
+          "value": 4800
+        },
+        {
+          "key": "C",
+          "en": "TRY 4,850 million",
+          "tr": "4.850 milyon TL",
+          "value": 4850
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cash from customers = 5,000 − 200 + 50 = 4,850. Higher receivables reduce cash; higher unearned revenue means customers paid in advance for revenue not yet recognized.",
+      "explanation_tr": "Müşterilerden nakit = 5.000 − 200 + 50 = 4.850. Alacak artışı nakdi azaltır; ertelenmiş hasılat artışı müşterilerin henüz kaydedilmemiş hasılat için peşin ödediğini gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracting the unearned revenue increase (5,000 − 200 − 50) treats advance payments as a cash use.",
+          "tr": "Ertelenmiş hasılat artışını çıkarmak (5.000 − 200 − 50) peşin tahsilatı nakit kullanımı sayar."
+        },
+        "B": {
+          "en": "Ignoring the unearned revenue increase (5,000 − 200 = 4,800) misses cash that customers paid in advance.",
+          "tr": "Ertelenmiş hasılat artışını göz ardı etmek (5.000 − 200 = 4.800) müşterilerin peşin ödediği nakdi atlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash received from customers.",
+          "tr": "İstenen: müşterilerden alınan nakit."
+        },
+        {
+          "en": "Formula: Revenue − ΔAR + ΔUnearned revenue.",
+          "tr": "Formül: Hasılat − ΔAlacak + ΔErtelenmiş hasılat.",
+          "formula_latex": "\\text{Cash from customers} = \\text{Rev} - \\Delta AR + \\Delta \\text{Unearned}"
+        },
+        {
+          "en": "Substitute: 5,000 − 200 + 50.",
+          "tr": "Yerine koy: 5.000 − 200 + 50.",
+          "values": {
+            "Revenue": 5000,
+            "ΔAR": 200,
+            "ΔUnearned": 50
+          }
+        },
+        {
+          "en": "Result: TRY 4,850 million.",
+          "tr": "Sonuç: 4.850 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000",
+          "[-]",
+          "200",
+          "[+]",
+          "50",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "5000 - 200 + 50",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "convert",
+        "unearned-revenue",
+        "in-advance"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Sakarya Otomotiv A.S. reports cost of goods sold of TRY 3,000 million. Inventory decreased by TRY 120 million and accounts payable decreased by TRY 90 million during the year. In a direct-method presentation, cash paid to suppliers is closest to:",
+      "stem_tr": "Sakarya Otomotiv A.Ş. 3.000 milyon TL satışların maliyeti raporlamıştır. Yıl içinde stoklar 120 milyon TL, ticari borçlar 90 milyon TL azalmıştır. Doğrudan yöntem sunumunda tedarikçilere ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2,970 million",
+          "tr": "2.970 milyon TL",
+          "value": 2970
+        },
+        {
+          "key": "B",
+          "en": "TRY 3,030 million",
+          "tr": "3.030 milyon TL",
+          "value": 3030
+        },
+        {
+          "key": "C",
+          "en": "TRY 3,210 million",
+          "tr": "3.210 milyon TL",
+          "value": 3210
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Purchases = 3,000 − 120 = 2,880 (the firm sold from stock). Cash paid = 2,880 + 90 = 2,970 because paying down payables uses cash.",
+      "explanation_tr": "Alımlar = 3.000 − 120 = 2.880 (şirket stoktan sattı). Ödenen nakit = 2.880 + 90 = 2.970; çünkü ticari borcu azaltmak nakit kullanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "3,000 + 120 − 90 = 3,030 reverses both signs: it treats the inventory decrease as extra purchases and the payables decrease as a cash saving.",
+          "tr": "3.000 + 120 − 90 = 3.030 her iki işareti ters çevirir: stok azalışını ek alım, borç azalışını nakit tasarrufu sayar."
+        },
+        "C": {
+          "en": "Adding both changes (3,000 + 120 + 90) treats the inventory decrease as extra purchases.",
+          "tr": "Her iki değişimi eklemek (3.000 + 120 + 90) stok azalışını ek alım gibi ele alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash paid to suppliers.",
+          "tr": "İstenen: tedarikçilere ödenen nakit."
+        },
+        {
+          "en": "Formula: COGS + ΔInventory − ΔAP, where both changes are negative here.",
+          "tr": "Formül: SMM + ΔStok − ΔTicari borç; burada iki değişim de negatif.",
+          "formula_latex": "\\text{Cash to suppliers} = COGS + \\Delta Inv - \\Delta AP"
+        },
+        {
+          "en": "Substitute: 3,000 + (−120) − (−90) = 3,000 − 120 + 90.",
+          "tr": "Yerine koy: 3.000 + (−120) − (−90) = 3.000 − 120 + 90.",
+          "values": {
+            "COGS": 3000,
+            "ΔInv": -120,
+            "ΔAP": -90
+          }
+        },
+        {
+          "en": "Result: TRY 2,970 million.",
+          "tr": "Sonuç: 2.970 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3000",
+          "[-]",
+          "120",
+          "[+]",
+          "90",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "3000 - 120 + 90",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "pay-down",
+        "presentation",
+        "decrease"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Selling, general and administrative expenses of Kapadokya Otel A.S. total TRY 900 million, including depreciation of TRY 150 million. Prepaid expenses increased by TRY 20 million and accrued liabilities increased by TRY 35 million. Cash paid for operating expenses in a direct-method statement is closest to:",
+      "stem_tr": "Kapadokya Otel A.Ş.'nin satış, genel ve yönetim giderleri 150 milyon TL amortisman dâhil 900 milyon TL'dir. Peşin ödenmiş giderler 20 milyon TL, tahakkuk etmiş yükümlülükler 35 milyon TL artmıştır. Doğrudan yöntem tablosunda faaliyet giderleri için ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 735 million",
+          "tr": "735 milyon TL",
+          "value": 735
+        },
+        {
+          "key": "B",
+          "en": "TRY 805 million",
+          "tr": "805 milyon TL",
+          "value": 805
+        },
+        {
+          "key": "C",
+          "en": "TRY 885 million",
+          "tr": "885 milyon TL",
+          "value": 885
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Remove the non-cash depreciation: 900 − 150 = 750. Add the prepaid increase (cash paid ahead) and subtract the accrued liabilities increase (expense not yet paid): 750 + 20 − 35 = 735.",
+      "explanation_tr": "Nakit dışı amortismanı çıkar: 900 − 150 = 750. Peşin ödenmiş gider artışını ekle (önceden ödenen nakit), tahakkuk artışını çıkar (henüz ödenmemiş gider): 750 + 20 − 35 = 735.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Adding the accrued liabilities increase (750 + 20 + 35 = 805) treats unpaid expenses as paid.",
+          "tr": "Tahakkuk artışını eklemek (805) ödenmemiş gideri ödenmiş sayar."
+        },
+        "C": {
+          "en": "Keeping depreciation in the total (900 + 20 − 35 = 885) treats a non-cash charge as a cash payment.",
+          "tr": "Amortismanı toplamda bırakmak (885) nakit dışı gideri nakit ödeme sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash paid for operating expenses.",
+          "tr": "İstenen: faaliyet giderleri için ödenen nakit."
+        },
+        {
+          "en": "Formula: (SG&A − depreciation) + ΔPrepaid − ΔAccrued liabilities.",
+          "tr": "Formül: (SGYG − amortisman) + ΔPeşin ödenmiş − ΔTahakkuk.",
+          "formula_latex": "\\text{Cash opex} = (SG\\&A - Dep) + \\Delta Prepaid - \\Delta Accrued"
+        },
+        {
+          "en": "Substitute: (900 − 150) + 20 − 35.",
+          "tr": "Yerine koy: (900 − 150) + 20 − 35.",
+          "values": {
+            "SG&A": 900,
+            "Dep": 150,
+            "ΔPrepaid": 20,
+            "ΔAccrued": 35
+          }
+        },
+        {
+          "en": "Result: TRY 735 million.",
+          "tr": "Sonuç: 735 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900",
+          "[-]",
+          "150",
+          "[+]",
+          "20",
+          "[-]",
+          "35",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "900 - 150 + 20 - 35",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "prepaid",
+        "accrued",
+        "ahead-of",
+        "selling-general-and-administrative"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Bursa Makine A.S. reports income tax expense of TRY 240 million. Taxes payable increased by TRY 30 million and the deferred tax liability increased by TRY 20 million. Cash paid for income taxes is closest to:",
+      "stem_tr": "Bursa Makine A.Ş. 240 milyon TL gelir vergisi gideri raporlamıştır. Ödenecek vergi 30 milyon TL, ertelenmiş vergi yükümlülüğü 20 milyon TL artmıştır. Gelir vergisi için ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 190 million",
+          "tr": "190 milyon TL",
+          "value": 190
+        },
+        {
+          "key": "B",
+          "en": "TRY 220 million",
+          "tr": "220 milyon TL",
+          "value": 220
+        },
+        {
+          "key": "C",
+          "en": "TRY 290 million",
+          "tr": "290 milyon TL",
+          "value": 290
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both liability increases represent tax expense that was not paid in cash: 240 − 30 − 20 = 190.",
+      "explanation_tr": "Her iki yükümlülük artışı da nakden ödenmemiş vergi giderini temsil eder: 240 − 30 − 20 = 190.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Deducting only the deferred tax increase (240 − 20 = 220) ignores that the rise in taxes payable is also unpaid expense; both increases must be deducted.",
+          "tr": "Yalnızca ertelenmiş vergi artışını düşmek (240 − 20 = 220) ödenecek vergi artışının da ödenmemiş gider olduğunu atlar; her iki artış da çıkarılmalıdır."
+        },
+        "C": {
+          "en": "Adding both increases (240 + 30 + 20) treats deferred and unpaid taxes as cash payments.",
+          "tr": "Her iki artışı eklemek (240 + 30 + 20) ertelenmiş ve ödenmemiş vergiyi nakit ödeme sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: cash taxes paid.",
+          "tr": "İstenen: nakden ödenen vergi."
+        },
+        {
+          "en": "Formula: tax expense − ΔTaxes payable − ΔDeferred tax liability.",
+          "tr": "Formül: vergi gideri − ΔÖdenecek vergi − ΔErtelenmiş vergi yükümlülüğü.",
+          "formula_latex": "\\text{Taxes paid} = \\text{Tax exp.} - \\Delta \\text{Taxes payable} - \\Delta DTL"
+        },
+        {
+          "en": "Substitute: 240 − 30 − 20.",
+          "tr": "Yerine koy: 240 − 30 − 20.",
+          "values": {
+            "Tax expense": 240,
+            "ΔTaxes payable": 30,
+            "ΔDTL": 20
+          }
+        },
+        {
+          "en": "Result: TRY 190 million.",
+          "tr": "Sonuç: 190 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "240",
+          "[-]",
+          "30",
+          "[-]",
+          "20",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "240 - 30 - 20",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "taxes-payable",
+        "deferred-tax-liability",
+        "represent"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with the indirect method, converting a company's operating section to the direct method will most likely result in total operating cash flow that is:",
+      "stem_tr": "Dolaylı yöntemle karşılaştırıldığında, bir şirketin işletme bölümünü doğrudan yönteme dönüştürmek toplam işletme nakit akışının en olası olarak nasıl olmasına yol açar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher, because depreciation is no longer added back.",
+          "tr": "daha yüksek; çünkü amortisman artık geri eklenmez."
+        },
+        {
+          "key": "B",
+          "en": "lower, because gains on asset sales are shown gross.",
+          "tr": "daha düşük; çünkü varlık satış kazançları brüt gösterilir."
+        },
+        {
+          "key": "C",
+          "en": "the same, because only the presentation of the components changes.",
+          "tr": "aynı; çünkü yalnızca bileşenlerin sunumu değişir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Both methods arrive at the same CFO total. The direct method shows gross receipts and payments; the indirect method shows the reconciliation from net income.",
+      "explanation_tr": "İki yöntem de aynı İNA toplamına ulaşır. Doğrudan yöntem brüt tahsilat ve ödemeleri, dolaylı yöntem net kârdan mutabakatı gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Depreciation never appears in the direct method, but it is not a cash item in either method, so the total is unchanged.",
+          "tr": "Amortisman doğrudan yöntemde hiç görünmez; ama iki yöntemde de nakit kalemi değildir, toplam değişmez."
+        },
+        "B": {
+          "en": "Gains on asset sales are excluded from CFO under both methods; the proceeds are investing cash flows.",
+          "tr": "Varlık satış kazançları iki yöntemde de İNA dışındadır; bedel yatırım nakit akışıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "component",
+        "presentation",
+        "arrive-at"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-c-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Mersin Gida A.S. uses the indirect method and reports: net income TRY 600 million; depreciation TRY 100 million; increase in receivables TRY 40 million; decrease in inventory TRY 20 million; increase in accounts payable TRY 30 million. Its income statement shows revenue TRY 4,000 million and cost of goods sold TRY 2,500 million. In a direct-method presentation, cash paid to suppliers is closest to:",
+      "stem_tr": "Mersin Gıda A.Ş. dolaylı yöntem kullanır ve şunları raporlar: net kâr 600 milyon TL; amortisman 100 milyon TL; alacak artışı 40 milyon TL; stok azalışı 20 milyon TL; ticari borç artışı 30 milyon TL. Gelir tablosunda hasılat 4.000 milyon TL, satışların maliyeti 2.500 milyon TL'dir. Doğrudan yöntem sunumunda tedarikçilere ödenen nakit aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2,450 million",
+          "tr": "2.450 milyon TL",
+          "value": 2450
+        },
+        {
+          "key": "B",
+          "en": "TRY 2,510 million",
+          "tr": "2.510 milyon TL",
+          "value": 2510
+        },
+        {
+          "key": "C",
+          "en": "TRY 2,550 million",
+          "tr": "2.550 milyon TL",
+          "value": 2550
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cash to suppliers = COGS + ΔInventory − ΔAP = 2,500 − 20 − 30 = 2,450. Check: cash from customers = 4,000 − 40 = 3,960; CFO indirect = 600 + 100 − 40 + 20 + 30 = 710, consistent with 3,960 − 2,450 − other cash expenses.",
+      "explanation_tr": "Tedarikçilere nakit = SMM + ΔStok − ΔTicari borç = 2.500 − 20 − 30 = 2.450. Kontrol: müşterilerden nakit = 4.000 − 40 = 3.960; dolaylı İNA = 600 + 100 − 40 + 20 + 30 = 710; 3.960 − 2.450 − diğer nakit giderlerle tutarlı.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "2,500 − 20 + 30 = 2,510 subtracts the payables increase with the wrong sign; unpaid purchases reduce cash paid.",
+          "tr": "2.500 − 20 + 30 = 2.510 borç artışını yanlış işaretle alır; ödenmemiş alımlar ödenen nakdi azaltır."
+        },
+        "C": {
+          "en": "2,500 + 20 + 30 = 2,550 treats the inventory decrease as additional purchases.",
+          "tr": "2.500 + 20 + 30 = 2.550 stok azalışını ek alım gibi ele alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: direct-method cash paid to suppliers from indirect-method data.",
+          "tr": "İstenen: dolaylı yöntem verisinden doğrudan yöntem tedarikçi ödemesi."
+        },
+        {
+          "en": "Formula: COGS + ΔInventory − ΔAccounts payable.",
+          "tr": "Formül: SMM + ΔStok − ΔTicari borç.",
+          "formula_latex": "\\text{Cash to suppliers} = COGS + \\Delta Inv - \\Delta AP"
+        },
+        {
+          "en": "Substitute: 2,500 + (−20) − 30.",
+          "tr": "Yerine koy: 2.500 + (−20) − 30.",
+          "values": {
+            "COGS": 2500,
+            "ΔInv": -20,
+            "ΔAP": 30
+          }
+        },
+        {
+          "en": "Intermediate: purchases = 2,480; cash paid = 2,450. Net income and depreciation are not needed for this line.",
+          "tr": "Ara sonuç: alımlar = 2.480; ödenen nakit = 2.450. Bu kalem için net kâr ve amortisman gerekmez."
+        },
+        {
+          "en": "Result: TRY 2,450 million.",
+          "tr": "Sonuç: 2.450 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2500",
+          "[-]",
+          "20",
+          "[-]",
+          "30",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "2500 - 20 - 30",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "consistent-with",
+        "additional",
+        "line-item"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under US GAAP, interest paid on long-term debt is classified in the statement of cash flows as:",
+      "stem_tr": "US GAAP'e göre uzun vadeli borca ödenen faiz nakit akış tablosunda nasıl sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "an operating activity.",
+          "tr": "işletme faaliyeti."
+        },
+        {
+          "key": "B",
+          "en": "a financing activity.",
+          "tr": "finansman faaliyeti."
+        },
+        {
+          "key": "C",
+          "en": "either an operating or a financing activity, at the company's choice.",
+          "tr": "şirketin seçimine göre işletme veya finansman faaliyeti."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "US GAAP requires interest paid to be reported in operating activities because it is a component of net income.",
+      "explanation_tr": "US GAAP ödenen faizin işletme faaliyetlerinde raporlanmasını zorunlu kılar; çünkü net kârın bir bileşenidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Financing classification of interest paid is an IFRS option, not permitted under US GAAP.",
+          "tr": "Ödenen faizin finansman olarak sınıflandırılması UFRS seçeneğidir; US GAAP'te izin verilmez."
+        },
+        "C": {
+          "en": "The choice exists under IFRS; US GAAP has no choice.",
+          "tr": "Seçim UFRS'de vardır; US GAAP'te seçim yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "classify",
+        "require",
+        "component"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "US GAAP sınıflandırma kuralları SPK müfredatında yoktur."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, dividends paid to shareholders are most appropriately classified as:",
+      "stem_tr": "UFRS'ye göre pay sahiplerine ödenen temettü en uygun şekilde nasıl sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a financing activity only.",
+          "tr": "yalnızca finansman faaliyeti."
+        },
+        {
+          "key": "B",
+          "en": "an operating activity only.",
+          "tr": "yalnızca işletme faaliyeti."
+        },
+        {
+          "key": "C",
+          "en": "either an operating or a financing activity, applied consistently.",
+          "tr": "tutarlı uygulanmak kaydıyla işletme veya finansman faaliyeti."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "IAS 7 lets a company present dividends paid as financing (cost of obtaining capital) or operating (to show ability to pay dividends from operations), as long as the policy is consistent.",
+      "explanation_tr": "UMS 7 ödenen temettünün finansman (sermaye edinme maliyeti) ya da işletme (faaliyetlerden temettü ödeme gücünü göstermek için) olarak sunulmasına izin verir; yeter ki politika tutarlı olsun.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Financing-only is the US GAAP rule, not IFRS.",
+          "tr": "Yalnızca finansman US GAAP kuralıdır, UFRS değil."
+        },
+        "B": {
+          "en": "Operating is one of the two IFRS options; it is not the only one.",
+          "tr": "İşletme iki UFRS seçeneğinden biridir; tek seçenek değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "shareholder",
+        "apply",
+        "consistently"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Anadolu Cam A.S. reports under IFRS and classifies interest paid of TRY 80 million as a financing activity. An analyst wants to compare its operating cash flow with a US GAAP competitor. The analyst should most appropriately:",
+      "stem_tr": "Anadolu Cam A.Ş. UFRS'ye göre raporlar ve 80 milyon TL ödenen faizi finansman faaliyeti olarak sınıflandırır. Bir analist şirketin işletme nakit akışını US GAAP'e tabi bir rakiple karşılaştırmak istiyor. Analist en uygun şekilde ne yapmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "increase Anadolu Cam's CFO by TRY 80 million.",
+          "tr": "Anadolu Cam'ın İNA'sını 80 milyon TL artırmalıdır."
+        },
+        {
+          "key": "B",
+          "en": "decrease Anadolu Cam's CFO by TRY 80 million.",
+          "tr": "Anadolu Cam'ın İNA'sını 80 milyon TL azaltmalıdır."
+        },
+        {
+          "key": "C",
+          "en": "make no adjustment, because both frameworks treat interest the same way.",
+          "tr": "iki çerçeve faizi aynı şekilde ele aldığı için düzeltme yapmamalıdır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Under US GAAP interest paid is an operating outflow. To make the IFRS firm comparable, move the TRY 80 million from financing into operating, which lowers CFO by 80.",
+      "explanation_tr": "US GAAP'te ödenen faiz işletme çıkışıdır. UFRS firmasını karşılaştırılabilir kılmak için 80 milyon TL finansmandan işletmeye taşınır; bu İNA'yı 80 düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Moving an outflow into CFO reduces CFO; it does not increase it.",
+          "tr": "Bir çıkışı İNA'ya taşımak İNA'yı azaltır, artırmaz."
+        },
+        "C": {
+          "en": "The frameworks differ: IFRS allows financing classification, US GAAP requires operating.",
+          "tr": "Çerçeveler farklıdır: UFRS finansman sınıflandırmasına izin verir, US GAAP işletmeyi zorunlu kılar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "competitor",
+        "comparable",
+        "adjustment",
+        "framework"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Under IFRS, cash paid for income taxes is most consistent with being classified as:",
+      "stem_tr": "UFRS'ye göre gelir vergisi için ödenen nakit en çok hangi sınıflandırmayla tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "an operating activity, unless it can be specifically identified with an investing or financing transaction.",
+          "tr": "bir yatırım veya finansman işlemiyle özel olarak ilişkilendirilemedikçe işletme faaliyeti."
+        },
+        {
+          "key": "B",
+          "en": "a financing activity in all cases.",
+          "tr": "her durumda finansman faaliyeti."
+        },
+        {
+          "key": "C",
+          "en": "an investing activity in all cases.",
+          "tr": "her durumda yatırım faaliyeti."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "IAS 7 classifies taxes paid as operating unless they can be specifically identified with financing or investing activities; US GAAP always classifies them as operating.",
+      "explanation_tr": "UMS 7 ödenen vergileri, finansman veya yatırım faaliyetleriyle özel olarak ilişkilendirilemedikçe işletme faaliyeti sayar; US GAAP her zaman işletme sayar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Taxes are generally linked to operations, not financing.",
+          "tr": "Vergiler genellikle finansmana değil faaliyetlere bağlıdır."
+        },
+        "C": {
+          "en": "Only tax directly tied to an investing transaction (e.g., on a disposal gain) could go to investing; not all taxes.",
+          "tr": "Yalnızca bir yatırım işlemine doğrudan bağlı vergi (ör. elden çıkarma kazancı) yatırıma gidebilir; tüm vergiler değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "specifically",
+        "identify",
+        "transaction"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Under IFRS, which classification of dividends received from an equity investment is least likely to be acceptable?",
+      "stem_tr": "UFRS'ye göre bir özkaynak yatırımından alınan temettünün hangi sınıflandırması en az olasılıkla kabul edilebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Operating activity",
+          "tr": "İşletme faaliyeti"
+        },
+        {
+          "key": "B",
+          "en": "Investing activity",
+          "tr": "Yatırım faaliyeti"
+        },
+        {
+          "key": "C",
+          "en": "Financing activity",
+          "tr": "Finansman faaliyeti"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "IFRS allows dividends received to be classified as operating or investing. Financing is for cash flows with the company's own capital providers, so dividends received cannot go there.",
+      "explanation_tr": "UFRS alınan temettünün işletme veya yatırım olarak sınıflandırılmasına izin verir. Finansman, şirketin kendi sermaye sağlayıcılarıyla nakit akışları içindir; alınan temettü oraya gidemez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Operating is permitted under IFRS and required under US GAAP.",
+          "tr": "İşletme UFRS'de izinli, US GAAP'te zorunludur."
+        },
+        "B": {
+          "en": "Investing is an IFRS option because the dividend is a return on an investment.",
+          "tr": "Yatırım, temettü bir yatırımın getirisi olduğu için UFRS seçeneğidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "acceptable",
+        "capital-provider",
+        "equity"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-04-d-q06",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Two otherwise identical firms report CFO of TRY 400 million. Firm X follows US GAAP. Firm Y follows IFRS, classifies interest paid of TRY 50 million as financing and dividends received of TRY 20 million as investing. After the analyst restates Firm Y to the US GAAP classification, Firm Y's CFO is closest to:",
+      "stem_tr": "Diğer her yönüyle aynı iki şirket 400 milyon TL İNA raporlamaktadır. X Şirketi US GAAP uygular. Y Şirketi UFRS uygular; 50 milyon TL ödenen faizi finansman, 20 milyon TL alınan temettüyü yatırım olarak sınıflandırır. Analist Y Şirketini US GAAP sınıflandırmasına göre yeniden düzenledikten sonra Y'nin İNA'sı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 330 million",
+          "tr": "330 milyon TL",
+          "value": 330
+        },
+        {
+          "key": "B",
+          "en": "TRY 350 million",
+          "tr": "350 milyon TL",
+          "value": 350
+        },
+        {
+          "key": "C",
+          "en": "TRY 370 million",
+          "tr": "370 milyon TL",
+          "value": 370
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Under US GAAP both items are operating: interest paid lowers CFO (−50) and dividends received raise it (+20). Restated CFO = 400 − 50 + 20 = 370.",
+      "explanation_tr": "US GAAP'te iki kalem de işletme faaliyetidir: ödenen faiz İNA'yı düşürür (−50), alınan temettü yükseltir (+20). Düzeltilmiş İNA = 400 − 50 + 20 = 370.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracting both items (400 − 50 − 20) treats the dividend received as an outflow.",
+          "tr": "Her iki kalemi çıkarmak (400 − 50 − 20) alınan temettüyü çıkış gibi ele alır."
+        },
+        "B": {
+          "en": "Moving only the interest (400 − 50 = 350) forgets that dividends received also move into operating activities under US GAAP.",
+          "tr": "Yalnızca faizi taşımak (400 − 50 = 350) alınan temettünün de US GAAP'te işletme faaliyetine taşındığını unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "What is asked: Firm Y's CFO under US GAAP classification.",
+          "tr": "İstenen: Y Şirketinin US GAAP sınıflandırmasıyla İNA'sı."
+        },
+        {
+          "en": "Rule: US GAAP puts interest paid and dividends received in operating activities.",
+          "tr": "Kural: US GAAP ödenen faizi ve alınan temettüyü işletme faaliyetine koyar."
+        },
+        {
+          "en": "Substitute: 400 − 50 (interest moved in) + 20 (dividends moved in).",
+          "tr": "Yerine koy: 400 − 50 (faiz taşındı) + 20 (temettü taşındı).",
+          "values": {
+            "Reported CFO": 400,
+            "Interest paid": -50,
+            "Dividends received": 20
+          }
+        },
+        {
+          "en": "Result: TRY 370 million.",
+          "tr": "Sonuç: 370 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "400",
+          "[-]",
+          "50",
+          "[+]",
+          "20",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "400 - 50 + 20",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "otherwise",
+        "identical",
+        "restate",
+        "direction"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -5,7 +5,13 @@
     "level": "L1",
     "topic": "FSA",
     "module_id": "FSA-03",
-    "los_ids": ["FSA-03-a", "FSA-03-b", "FSA-03-c", "FSA-03-d", "FSA-03-e"],
+    "los_ids": [
+      "FSA-03-a",
+      "FSA-03-b",
+      "FSA-03-c",
+      "FSA-03-d",
+      "FSA-03-e"
+    ],
     "curriculum_year": 2027,
     "title_en": "Analyzing Balance Sheets",
     "title_tr": "Bilançonun Analizi",
@@ -16,7 +22,13 @@
         "heading_tr": "Bilanço neden dikkatli okunmalı?",
         "en": "Ege Yazilim A.S., a fictional software company listed on Borsa Istanbul, shows total assets of TRY 2 billion. Half of that is goodwill and software it bought from other firms. Another company with the same total assets may hold mostly cash and factories. The balance sheet gives a picture of what a company owns and owes at one date, but the numbers come from different measurement bases: some items are at historical cost, some at fair value, and some valuable things (an internally built brand, a skilled team) are not on the sheet at all. In Türkiye, TMS 29 inflation accounting since the 2023 year-end also restates non-monetary items such as PP&E and equity, so the same asset can look very different between two years. An analyst reads the balance sheet with the notes, not alone.",
         "tr": "Borsa İstanbul'da işlem gören kurgusal bir yazılım şirketi olan Ege Yazılım A.Ş.'nin toplam varlıkları 2 milyar TL'dir. Bunun yarısı şerefiye ve başka şirketlerden satın alınan yazılımlardan oluşur. Aynı toplam varlığa sahip başka bir şirket ise çoğunlukla nakit ve fabrika tutuyor olabilir. Bilanço, şirketin belirli bir tarihte neye sahip olduğunu ve ne borçlu olduğunu gösterir; ancak rakamlar farklı ölçüm esaslarından gelir: bazı kalemler tarihi maliyetle, bazıları gerçeğe uygun değerle ölçülür, bazı değerli şeyler (şirket içinde yaratılan marka, yetenekli bir ekip) ise bilançoda hiç yer almaz. Türkiye'de 2023 yıl sonundan beri uygulanan TMS 29 enflasyon muhasebesi, maddi duran varlıklar ve özkaynak gibi parasal olmayan kalemleri yeniden ifade eder; bu nedenle aynı varlık iki yıl arasında çok farklı görünebilir. Analist bilançoyu tek başına değil, dipnotlarla birlikte okur.",
-        "key_terms": ["balance sheet", "historical cost", "fair value", "goodwill", "measurement basis"]
+        "key_terms": [
+          "balance sheet",
+          "historical cost",
+          "fair value",
+          "goodwill",
+          "measurement basis"
+        ]
       },
       {
         "kind": "definition",
@@ -24,18 +36,50 @@
         "heading_tr": "Maddi olmayan duran varlıklar: belirlenebilir ve belirlenemez",
         "en": "An intangible asset has no physical form but gives future economic benefit. An identifiable intangible can be separated from the company (sold, licensed) or arises from a contract or legal right: patents, licences, customer lists, software. Goodwill is the only non-identifiable intangible. Purchased intangibles are recorded at cost. Internally generated intangibles are mostly expensed: research is always expensed under IFRS and US GAAP; development costs are capitalized under IFRS only when technical and commercial feasibility is shown, and expensed under US GAAP (with an exception for some software). Internally created brands, customer lists and mastheads are never capitalized. Finite-life intangibles are amortized (usually straight-line) and tested for impairment when there is an indicator; indefinite-life intangibles (for example a licence that renews without cost) are not amortized but are tested for impairment at least annually.",
         "tr": "Maddi olmayan duran varlık fiziksel biçimi olmayan ancak gelecekte ekonomik fayda sağlayan bir varlıktır. Belirlenebilir bir maddi olmayan varlık şirketten ayrılabilir (satılabilir, lisanslanabilir) ya da bir sözleşmeden veya yasal haktan doğar: patentler, lisanslar, müşteri listeleri, yazılım. Şerefiye ise belirlenemeyen tek maddi olmayan varlıktır. Satın alınan maddi olmayan varlıklar maliyetle kaydedilir. İşletme içinde yaratılan maddi olmayan varlıklar çoğunlukla giderleştirilir: araştırma UFRS ve US GAAP'te her zaman giderdir; geliştirme maliyetleri UFRS'de yalnızca teknik ve ticari fizibilite gösterildiğinde aktifleştirilir, US GAAP'te ise (bazı yazılımlar hariç) giderleştirilir. İşletme içinde yaratılan markalar, müşteri listeleri ve yayın adları asla aktifleştirilmez. Sınırlı ömürlü maddi olmayan varlıklar itfa edilir (genellikle doğrusal) ve bir gösterge varsa değer düşüklüğü testine tabi tutulur; sınırsız ömürlü olanlar (örneğin maliyetsiz yenilenen bir lisans) itfa edilmez ama en az yılda bir değer düşüklüğü testinden geçirilir.",
-        "key_terms": ["intangible asset", "identifiable", "development costs", "amortization", "indefinite life", "impairment"],
+        "key_terms": [
+          "intangible asset",
+          "identifiable",
+          "development costs",
+          "amortization",
+          "indefinite life",
+          "impairment"
+        ],
         "table": {
           "headers": [
-            {"en": "Cost type", "tr": "Maliyet türü"},
-            {"en": "IFRS", "tr": "UFRS"},
-            {"en": "US GAAP", "tr": "US GAAP"}
+            {
+              "en": "Cost type",
+              "tr": "Maliyet türü"
+            },
+            {
+              "en": "IFRS",
+              "tr": "UFRS"
+            },
+            {
+              "en": "US GAAP",
+              "tr": "US GAAP"
+            }
           ],
           "rows": [
-            ["Research / Araştırma", "Expense / Gider", "Expense / Gider"],
-            ["Development (criteria met) / Geliştirme (koşullar sağlandı)", "Capitalize / Aktifleştir", "Expense (software exception) / Gider (yazılım istisnası)"],
-            ["Purchased patent / Satın alınan patent", "Capitalize at cost / Maliyetle aktifleştir", "Capitalize at cost / Maliyetle aktifleştir"],
-            ["Internal brand / İç marka", "Never / Asla", "Never / Asla"]
+            [
+              "Research / Araştırma",
+              "Expense / Gider",
+              "Expense / Gider"
+            ],
+            [
+              "Development (criteria met) / Geliştirme (koşullar sağlandı)",
+              "Capitalize / Aktifleştir",
+              "Expense (software exception) / Gider (yazılım istisnası)"
+            ],
+            [
+              "Purchased patent / Satın alınan patent",
+              "Capitalize at cost / Maliyetle aktifleştir",
+              "Capitalize at cost / Maliyetle aktifleştir"
+            ],
+            [
+              "Internal brand / İç marka",
+              "Never / Asla",
+              "Never / Asla"
+            ]
           ]
         }
       },
@@ -45,7 +89,13 @@
         "heading_tr": "Şerefiye: nasıl doğar, nasıl test edilir?",
         "en": "Goodwill appears only in a business combination. It equals the purchase price minus the fair value of the identifiable net assets acquired (assets minus liabilities, both at fair value). Accounting goodwill is therefore a residual, not a measured asset. Economic goodwill is the value of reputation, synergies and skilled people; it is not on the balance sheet unless bought. Goodwill is not amortized. It is tested for impairment at least once a year at the level of the cash-generating unit (IFRS) or reporting unit (US GAAP). An impairment loss reduces the asset and net income but does not touch cash; it is never reversed. Analysts often remove goodwill from assets and equity when comparing firms that grew by acquisition with firms that grew internally, because only the first group carries goodwill.",
         "tr": "Şerefiye yalnızca bir işletme birleşmesinde ortaya çıkar. Satın alma bedeli ile edinilen belirlenebilir net varlıkların gerçeğe uygun değeri (varlıklar eksi yükümlülükler, her ikisi gerçeğe uygun değerle) arasındaki farka eşittir. Dolayısıyla muhasebe şerefiyesi ölçülen bir varlık değil, bir bakiyedir. Ekonomik şerefiye ise itibar, sinerji ve yetenekli insanların değeridir; satın alınmadıkça bilançoda yer almaz. Şerefiye itfa edilmez. En az yılda bir kez nakit üreten birim (UFRS) ya da raporlama birimi (US GAAP) düzeyinde değer düşüklüğü testine tabi tutulur. Değer düşüklüğü zararı varlığı ve net kârı azaltır ama nakde dokunmaz; asla geri çevrilmez. Analistler satın alma yoluyla büyüyen şirketleri içeriden büyüyenlerle karşılaştırırken şerefiyeyi varlıklardan ve özkaynaktan sıklıkla çıkarır, çünkü şerefiye yalnızca ilk grupta vardır.",
-        "key_terms": ["goodwill", "business combination", "identifiable net assets", "cash-generating unit", "impairment"]
+        "key_terms": [
+          "goodwill",
+          "business combination",
+          "identifiable net assets",
+          "cash-generating unit",
+          "impairment"
+        ]
       },
       {
         "kind": "formula",
@@ -54,7 +104,11 @@
         "en": "Goodwill is the purchase price paid minus the fair value of identifiable net assets. Book values are irrelevant; the acquirer must first revalue every identifiable asset and liability to fair value, including intangibles that the target never recorded (such as its brand).",
         "tr": "Şerefiye, ödenen satın alma bedeli eksi belirlenebilir net varlıkların gerçeğe uygun değeridir. Defter değerleri önemsizdir; alıcı önce her belirlenebilir varlık ve yükümlülüğü, hedef şirketin hiç kaydetmediği maddi olmayan varlıklar (marka gibi) dahil, gerçeğe uygun değere taşımalıdır.",
         "formula_latex": "\\text{Goodwill} = \\text{Purchase price} - \\left(FV_{\\text{identifiable assets}} - FV_{\\text{liabilities}}\\right)",
-        "key_terms": ["purchase price", "fair value", "net assets"]
+        "key_terms": [
+          "purchase price",
+          "fair value",
+          "net assets"
+        ]
       },
       {
         "kind": "definition",
@@ -62,17 +116,45 @@
         "heading_tr": "Finansal araçlar: sınıflandırma ve ölçüm",
         "en": "A financial instrument is a contract that creates a financial asset for one party and a financial liability or equity instrument for another. Financial assets are measured either at amortized cost or at fair value. Under IFRS 9, a debt instrument is at amortized cost if the business model is to hold it to collect contractual cash flows and the cash flows are solely payments of principal and interest. A debt instrument held both to collect and to sell is at fair value through other comprehensive income (FVOCI): unrealized gains go to OCI, interest to profit or loss. Everything else, including all derivatives and trading securities, is at fair value through profit or loss (FVTPL). Equity investments are normally FVTPL, with an irrevocable option to FVOCI (no recycling to profit on sale). US GAAP uses similar categories (held-to-maturity, available-for-sale, trading) but requires equity securities to be at fair value through net income. Financial liabilities are usually at amortized cost; derivatives and held-for-trading liabilities are at fair value.",
         "tr": "Finansal araç, bir taraf için finansal varlık, diğer taraf için finansal yükümlülük veya özkaynak aracı doğuran sözleşmedir. Finansal varlıklar ya itfa edilmiş maliyetle ya da gerçeğe uygun değerle ölçülür. UFRS 9'a göre bir borçlanma aracı, iş modeli sözleşmeye bağlı nakit akışlarını tahsil etmek için elde tutmaksa ve nakit akışları yalnızca anapara ve faiz ödemelerinden oluşuyorsa itfa edilmiş maliyetle ölçülür. Hem tahsil hem satış amacıyla tutulan borçlanma aracı, gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan (GUD-DKG) sınıfındadır: gerçekleşmemiş kazançlar diğer kapsamlı gelire, faiz kâr veya zarara gider. Diğer her şey, tüm türevler ve alım-satım amaçlı menkul kıymetler dahil, gerçeğe uygun değer farkı kâr veya zarara yansıtılan (GUD-KZ) sınıfındadır. Özkaynak yatırımları normalde GUD-KZ'dir; geri alınamaz bir seçimle GUD-DKG olabilir (satışta kâra aktarım yoktur). US GAAP benzer kategoriler kullanır (vadeye kadar elde tutulacak, satılmaya hazır, alım-satım amaçlı) ancak özkaynak araçlarının gerçeğe uygun değer farkının net kâra yansıtılmasını zorunlu kılar. Finansal yükümlülükler genellikle itfa edilmiş maliyetle; türevler ve alım-satım amaçlı yükümlülükler gerçeğe uygun değerle ölçülür.",
-        "key_terms": ["financial instrument", "amortized cost", "fair value through profit or loss", "fair value through OCI", "other comprehensive income", "derivative"],
+        "key_terms": [
+          "financial instrument",
+          "amortized cost",
+          "fair value through profit or loss",
+          "fair value through OCI",
+          "other comprehensive income",
+          "derivative"
+        ],
         "table": {
           "headers": [
-            {"en": "Category (IFRS 9)", "tr": "Kategori (UFRS 9)"},
-            {"en": "Balance sheet", "tr": "Bilanço"},
-            {"en": "Unrealized gain/loss", "tr": "Gerçekleşmemiş kazanç/zarar"}
+            {
+              "en": "Category (IFRS 9)",
+              "tr": "Kategori (UFRS 9)"
+            },
+            {
+              "en": "Balance sheet",
+              "tr": "Bilanço"
+            },
+            {
+              "en": "Unrealized gain/loss",
+              "tr": "Gerçekleşmemiş kazanç/zarar"
+            }
           ],
           "rows": [
-            ["Amortized cost / İtfa edilmiş maliyet", "Amortized cost / İtfa edilmiş maliyet", "Not recognized / Kaydedilmez"],
-            ["FVOCI / GUD-DKG", "Fair value / Gerçeğe uygun değer", "OCI (equity) / DKG (özkaynak)"],
-            ["FVTPL / GUD-KZ", "Fair value / Gerçeğe uygun değer", "Profit or loss / Kâr veya zarar"]
+            [
+              "Amortized cost / İtfa edilmiş maliyet",
+              "Amortized cost / İtfa edilmiş maliyet",
+              "Not recognized / Kaydedilmez"
+            ],
+            [
+              "FVOCI / GUD-DKG",
+              "Fair value / Gerçeğe uygun değer",
+              "OCI (equity) / DKG (özkaynak)"
+            ],
+            [
+              "FVTPL / GUD-KZ",
+              "Fair value / Gerçeğe uygun değer",
+              "Profit or loss / Kâr veya zarar"
+            ]
           ]
         }
       },
@@ -82,7 +164,14 @@
         "heading_tr": "Uzun vadeli yükümlülükler",
         "en": "Non-current liabilities are due after more than one year or one operating cycle. The main items are long-term borrowings (bonds, bank loans), lease liabilities, deferred tax liabilities, pension obligations and provisions. Bonds are carried at amortized cost: the carrying amount starts at the issue proceeds and moves toward face value as the discount or premium is amortized using the effective interest rate. Interest expense equals carrying amount times the market rate at issue, not the coupon. A deferred tax liability arises when the tax base of an asset is below its carrying amount. Disclosures show maturities of debt, interest rates, covenants and the fair value of debt. If a company breaches a covenant and the lender can demand repayment, the debt may need to be shown as current.",
         "tr": "Uzun vadeli yükümlülükler bir yıldan veya bir faaliyet döngüsünden sonra ödenecek borçlardır. Başlıca kalemler uzun vadeli borçlanmalar (tahviller, banka kredileri), kira yükümlülükleri, ertelenmiş vergi yükümlülükleri, emeklilik yükümlülükleri ve karşılıklardır. Tahviller itfa edilmiş maliyetle taşınır: defter değeri ihraç gelirinden başlar ve iskonto veya prim efektif faiz oranıyla itfa edildikçe nominal değere yaklaşır. Faiz gideri, defter değeri çarpı ihraçtaki piyasa faizine eşittir, kupona değil. Bir varlığın vergi değeri defter değerinin altındaysa ertelenmiş vergi yükümlülüğü doğar. Açıklamalar borcun vadelerini, faiz oranlarını, sözleşme şartlarını (covenant) ve borcun gerçeğe uygun değerini gösterir. Şirket bir sözleşme şartını ihlal ederse ve kredi veren geri ödeme talep edebiliyorsa borcun kısa vadeli gösterilmesi gerekebilir.",
-        "key_terms": ["non-current liability", "amortized cost", "effective interest rate", "covenant", "deferred tax liability", "provision"]
+        "key_terms": [
+          "non-current liability",
+          "amortized cost",
+          "effective interest rate",
+          "covenant",
+          "deferred tax liability",
+          "provision"
+        ]
       },
       {
         "kind": "formula",
@@ -91,7 +180,14 @@
         "en": "A common-size (vertical) balance sheet shows each item as a percentage of total assets. This removes the size effect so that companies of different sizes and the same company over time can be compared. Liquidity ratios measure the ability to pay short-term obligations; solvency ratios measure the use of debt. Current ratio = current assets / current liabilities. Quick ratio = (cash + marketable securities + receivables) / current liabilities, which excludes inventories and prepaid items. Cash ratio = (cash + marketable securities) / current liabilities. Debt-to-equity = total debt / total equity; debt-to-capital = total debt / (total debt + total equity); financial leverage = total assets / total equity.",
         "tr": "Dikey (common-size) bilanço her kalemi toplam varlıkların yüzdesi olarak gösterir. Bu, büyüklük etkisini ortadan kaldırır; böylece farklı boyuttaki şirketler ve aynı şirketin yıllar içindeki durumu karşılaştırılabilir. Likidite oranları kısa vadeli yükümlülükleri ödeme gücünü, ödeme gücü (solvency) oranları borç kullanımını ölçer. Cari oran = dönen varlıklar / kısa vadeli yükümlülükler. Asit-test oranı = (nakit + menkul kıymetler + alacaklar) / kısa vadeli yükümlülükler; stoklar ve peşin ödenmiş kalemler dışarıda kalır. Nakit oranı = (nakit + menkul kıymetler) / kısa vadeli yükümlülükler. Borç/özkaynak = toplam borç / toplam özkaynak; borç/sermaye = toplam borç / (toplam borç + toplam özkaynak); finansal kaldıraç = toplam varlıklar / toplam özkaynak.",
         "formula_latex": "\\text{Current ratio}=\\frac{CA}{CL},\\quad \\text{Quick ratio}=\\frac{\\text{Cash}+\\text{Mkt. sec.}+\\text{Receivables}}{CL},\\quad \\frac{D}{E}=\\frac{\\text{Total debt}}{\\text{Total equity}}",
-        "key_terms": ["common-size", "current ratio", "quick ratio", "cash ratio", "debt-to-equity", "financial leverage"]
+        "key_terms": [
+          "common-size",
+          "current ratio",
+          "quick ratio",
+          "cash ratio",
+          "debt-to-equity",
+          "financial leverage"
+        ]
       },
       {
         "kind": "example",
@@ -104,7 +200,11 @@
           "tr": "Cari oran 1,75; asit-test 1,00; nakit oranı 0,375; B/Ö 0,857.",
           "formula_latex": "\\frac{700}{400}=1.75,\\qquad \\frac{400}{400}=1.00,\\qquad \\frac{600}{700}=0.857"
         },
-        "key_terms": ["current assets", "current liabilities", "total debt"]
+        "key_terms": [
+          "current assets",
+          "current liabilities",
+          "total debt"
+        ]
       },
       {
         "kind": "traps",
@@ -112,7 +212,11 @@
         "heading_tr": "Sık tuzaklar",
         "en": "(1) Goodwill is computed against fair value of net assets, not book value. (2) Goodwill and indefinite-life intangibles are not amortized; they are impairment-tested. (3) The quick ratio excludes inventories; many candidates include them. (4) 'Total debt' in solvency ratios means interest-bearing debt, not all liabilities, unless the question says otherwise. (5) FVOCI unrealized gains do not pass through net income; FVTPL gains do. (6) Internally developed brands are expensed under both frameworks; only development costs under IFRS may be capitalized. (7) A common-size balance sheet divides by total assets, not by sales.",
         "tr": "(1) Şerefiye net varlıkların defter değerine değil, gerçeğe uygun değerine göre hesaplanır. (2) Şerefiye ve sınırsız ömürlü maddi olmayan varlıklar itfa edilmez; değer düşüklüğü testine tabidir. (3) Asit-test oranı stokları dışarıda bırakır; birçok aday stokları dahil eder. (4) Ödeme gücü oranlarındaki 'toplam borç', soru aksini söylemedikçe faiz getiren borçtur, tüm yükümlülükler değil. (5) GUD-DKG gerçekleşmemiş kazançları net kârdan geçmez; GUD-KZ kazançları geçer. (6) İşletme içinde geliştirilen markalar her iki çerçevede de giderleştirilir; yalnızca UFRS'de geliştirme maliyetleri aktifleştirilebilir. (7) Dikey bilanço satışlara değil, toplam varlıklara böler.",
-        "key_terms": ["book value", "interest-bearing debt", "unrealized gain"]
+        "key_terms": [
+          "book value",
+          "interest-bearing debt",
+          "unrealized gain"
+        ]
       }
     ],
     "summary_en": "The balance sheet mixes measurement bases, so an analyst must read the notes. Identifiable intangibles are capitalized when purchased and mostly expensed when created internally; IFRS allows development costs to be capitalized. Goodwill is the residual of purchase price over fair value of identifiable net assets, is not amortized and is tested for impairment yearly. Financial assets are measured at amortized cost, FVOCI or FVTPL depending on business model and cash flows. Non-current liabilities such as bonds are carried at amortized cost using the effective interest rate. Common-size balance sheets and liquidity and solvency ratios make firms comparable.",
@@ -125,656 +229,1916 @@
       "Araştırma her iki çerçevede gider; geliştirme yalnızca UFRS'de koşullu olarak aktifleştirilir.",
       "Dikey bilançoda payda toplam varlıktır; hasılatla bölme gelir tablosuna aittir."
     ],
-    "vocab_ids": ["intangible-asset", "identifiable", "goodwill", "impairment", "amortize", "indefinite", "fair-value", "amortized-cost", "fvoci", "fvtpl", "business-combination", "residual", "covenant", "provision", "effective-interest-rate", "common-size", "current-ratio", "quick-ratio", "solvency", "liquidity"],
-    "spk_link": {"status": "partial", "note_tr": "Dikey analiz ve likidite oranları SPK Düzey 3 (1007, 1016) ile örtüşür; UFRS 9 sınıflandırma ayrıntıları, şerefiye testi ve US GAAP farkları yenidir."},
+    "vocab_ids": [
+      "intangible-asset",
+      "identifiable",
+      "goodwill",
+      "impairment",
+      "amortize",
+      "indefinite",
+      "fair-value",
+      "amortized-cost",
+      "fvoci",
+      "fvtpl",
+      "business-combination",
+      "excess",
+      "covenant",
+      "provision",
+      "effective-interest-rate",
+      "common-size",
+      "current-ratio",
+      "quick-ratio",
+      "solvency",
+      "liquidity"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Dikey analiz ve likidite oranları SPK Düzey 3 (1007, 1016) ile örtüşür; UFRS 9 sınıflandırma ayrıntıları, şerefiye testi ve US GAAP farkları yenidir."
+    },
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
       "id": "FSA-03-a-q01",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Which of the following is most likely to be recognized as an intangible asset on a company's balance sheet?",
       "stem_tr": "Aşağıdakilerden hangisinin bir şirketin bilançosunda maddi olmayan duran varlık olarak muhasebeleştirilmesi en olasıdır?",
       "options": [
-        {"key": "A", "en": "A brand name the company built through years of advertising", "tr": "Şirketin yıllarca reklamla oluşturduğu bir marka adı"},
-        {"key": "B", "en": "A patent purchased from another company", "tr": "Başka bir şirketten satın alınan bir patent"},
-        {"key": "C", "en": "The skills and experience of the company's engineers", "tr": "Şirket mühendislerinin bilgi ve deneyimi"}
+        {
+          "key": "A",
+          "en": "A brand name the company built through years of advertising",
+          "tr": "Şirketin yıllarca reklamla oluşturduğu bir marka adı"
+        },
+        {
+          "key": "B",
+          "en": "A patent purchased from another company",
+          "tr": "Başka bir şirketten satın alınan bir patent"
+        },
+        {
+          "key": "C",
+          "en": "The skills and experience of the company's engineers",
+          "tr": "Şirket mühendislerinin bilgi ve deneyimi"
+        }
       ],
       "answer": "B",
       "explanation_en": "A purchased patent is an identifiable intangible acquired in a transaction, so it is recorded at cost. Internally built brands and employee skills are not capitalized under either IFRS or US GAAP.",
       "explanation_tr": "Satın alınan patent bir işlemle edinilmiş belirlenebilir bir maddi olmayan varlıktır; maliyetle kaydedilir. İşletme içinde oluşturulan markalar ve çalışan yetkinlikleri ne UFRS'de ne US GAAP'te aktifleştirilir.",
       "wrong_option_reasons": {
-        "A": {"en": "Internally generated brands are expensed as incurred; only purchased brands are capitalized.", "tr": "İşletme içinde yaratılan markalar oluştukça giderleştirilir; yalnızca satın alınan markalar aktifleştirilir."},
-        "C": {"en": "Human capital is not controlled by the company and fails the asset definition.", "tr": "İnsan sermayesi şirketin kontrolünde değildir ve varlık tanımını karşılamaz."}
+        "A": {
+          "en": "Internally generated brands are expensed as incurred; only purchased brands are capitalized.",
+          "tr": "İşletme içinde yaratılan markalar oluştukça giderleştirilir; yalnızca satın alınan markalar aktifleştirilir."
+        },
+        "C": {
+          "en": "Human capital is not controlled by the company and fails the asset definition.",
+          "tr": "İnsan sermayesi şirketin kontrolünde değildir ve varlık tanımını karşılamaz."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["intangible-asset", "patent", "brand", "recognize"],
-      "pattern_ids": ["most-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "intangible-asset",
+        "patent",
+        "brand",
+        "recognize"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-a-q02",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Anadolu Biyotek A.S. reports under IFRS. During the year it spent TRY 40 million on basic research and TRY 25 million on development of a product after technical and commercial feasibility had been established. The amount it should capitalize as an intangible asset is closest to:",
       "stem_tr": "Anadolu Biyotek A.Ş. UFRS'ye göre raporlama yapmaktadır. Yıl içinde temel araştırmaya 40 milyon TL, teknik ve ticari fizibilitesi kanıtlandıktan sonra bir ürünün geliştirilmesine 25 milyon TL harcamıştır. Maddi olmayan duran varlık olarak aktifleştirmesi gereken tutar aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "TRY 0", "tr": "0 TL", "value": 0},
-        {"key": "B", "en": "TRY 25 million", "tr": "25 milyon TL", "value": 25},
-        {"key": "C", "en": "TRY 65 million", "tr": "65 milyon TL", "value": 65}
+        {
+          "key": "A",
+          "en": "TRY 0",
+          "tr": "0 TL",
+          "value": 0
+        },
+        {
+          "key": "B",
+          "en": "TRY 25 million",
+          "tr": "25 milyon TL",
+          "value": 25
+        },
+        {
+          "key": "C",
+          "en": "TRY 65 million",
+          "tr": "65 milyon TL",
+          "value": 65
+        }
       ],
       "answer": "B",
       "explanation_en": "Under IFRS research is expensed, while development costs that meet the feasibility criteria are capitalized. Only the TRY 25 million development spend qualifies.",
       "explanation_tr": "UFRS'de araştırma giderleştirilir; fizibilite koşullarını karşılayan geliştirme maliyetleri aktifleştirilir. Yalnızca 25 milyon TL'lik geliştirme harcaması uygundur.",
       "wrong_option_reasons": {
-        "A": {"en": "Zero would be the US GAAP answer (except certain software), not IFRS.", "tr": "Sıfır, UFRS'nin değil US GAAP'in (belirli yazılımlar hariç) cevabı olurdu."},
-        "C": {"en": "Research costs are never capitalized under IFRS.", "tr": "Araştırma maliyetleri UFRS'de hiçbir zaman aktifleştirilmez."}
+        "A": {
+          "en": "Zero would be the US GAAP answer (except certain software), not IFRS.",
+          "tr": "Sıfır, UFRS'nin değil US GAAP'in (belirli yazılımlar hariç) cevabı olurdu."
+        },
+        "C": {
+          "en": "Research costs are never capitalized under IFRS.",
+          "tr": "Araştırma maliyetleri UFRS'de hiçbir zaman aktifleştirilmez."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: the capitalized amount under IFRS.", "tr": "İstenen: UFRS'ye göre aktifleştirilecek tutar."},
-        {"en": "Rule: research = expense; development after feasibility = asset.", "tr": "Kural: araştırma = gider; fizibilite sonrası geliştirme = varlık."},
-        {"en": "Capitalized = 25; the 40 of research goes to the income statement.", "tr": "Aktifleştirilen = 25; 40'lık araştırma gelir tablosuna gider.", "values": {"Research": 40, "Development": 25}},
-        {"en": "Result: TRY 25 million.", "tr": "Sonuç: 25 milyon TL."}
+        {
+          "en": "What is asked: the capitalized amount under IFRS.",
+          "tr": "İstenen: UFRS'ye göre aktifleştirilecek tutar."
+        },
+        {
+          "en": "Rule: research = expense; development after feasibility = asset.",
+          "tr": "Kural: araştırma = gider; fizibilite sonrası geliştirme = varlık."
+        },
+        {
+          "en": "Capitalized = 25; the 40 of research goes to the income statement.",
+          "tr": "Aktifleştirilen = 25; 40'lık araştırma gelir tablosuna gider.",
+          "values": {
+            "Research": 40,
+            "Development": 25
+          }
+        },
+        {
+          "en": "Result: TRY 25 million.",
+          "tr": "Sonuç: 25 milyon TL."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["25", "[=]"], "note_tr": "Hesap yok; kural sorusu."},
-      "numeric": {"expr": "25", "unit": "TRY million"},
-      "vocab_ids": ["feasibility", "development", "capitalize", "establish"],
-      "pattern_ids": ["closest-to"],
-      "spk_link": {"status": "known", "note_tr": "TMS 38 araştırma-geliştirme ayrımı SPK 1016'da var."},
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "25",
+          "[=]"
+        ],
+        "note_tr": "Hesap yok; kural sorusu."
+      },
+      "numeric": {
+        "expr": "25",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "feasibility",
+        "development",
+        "capitalize",
+        "establish"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "TMS 38 araştırma-geliştirme ayrımı SPK 1016'da var."
+      },
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-a-q03",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "An intangible asset with an indefinite useful life is most appropriately:",
       "stem_tr": "Sınırsız yararlı ömre sahip bir maddi olmayan duran varlık için en uygun uygulama aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "amortized over a maximum of 40 years", "tr": "en fazla 40 yılda itfa edilir"},
-        {"key": "B", "en": "expensed immediately because its life cannot be estimated", "tr": "ömrü tahmin edilemediği için hemen giderleştirilir"},
-        {"key": "C", "en": "not amortized but tested for impairment at least annually", "tr": "itfa edilmez ancak en az yılda bir değer düşüklüğü testine tabi tutulur"}
+        {
+          "key": "A",
+          "en": "amortized over a maximum of 40 years",
+          "tr": "en fazla 40 yılda itfa edilir"
+        },
+        {
+          "key": "B",
+          "en": "expensed immediately because its life cannot be estimated",
+          "tr": "ömrü tahmin edilemediği için hemen giderleştirilir"
+        },
+        {
+          "key": "C",
+          "en": "not amortized but tested for impairment at least annually",
+          "tr": "itfa edilmez ancak en az yılda bir değer düşüklüğü testine tabi tutulur"
+        }
       ],
       "answer": "C",
       "explanation_en": "Indefinite-life intangibles (like goodwill) are not amortized. Instead they are reviewed for impairment at least once a year and whenever an indicator exists.",
       "explanation_tr": "Sınırsız ömürlü maddi olmayan varlıklar (şerefiye gibi) itfa edilmez. Bunun yerine en az yılda bir ve bir gösterge ortaya çıktığında değer düşüklüğü açısından gözden geçirilir.",
       "wrong_option_reasons": {
-        "A": {"en": "Fixed maximum amortization periods are an old rule; indefinite-life assets are not amortized at all.", "tr": "Sabit azami itfa süresi eski bir kuraldır; sınırsız ömürlü varlıklar hiç itfa edilmez."},
-        "B": {"en": "A purchased asset with future benefits is capitalized, not expensed.", "tr": "Gelecekte fayda sağlayan satın alınmış bir varlık giderleştirilmez, aktifleştirilir."}
+        "A": {
+          "en": "Fixed maximum amortization periods are an old rule; indefinite-life assets are not amortized at all.",
+          "tr": "Sabit azami itfa süresi eski bir kuraldır; sınırsız ömürlü varlıklar hiç itfa edilmez."
+        },
+        "B": {
+          "en": "A purchased asset with future benefits is capitalized, not expensed.",
+          "tr": "Gelecekte fayda sağlayan satın alınmış bir varlık giderleştirilmez, aktifleştirilir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["indefinite", "useful-life", "amortize", "annually"],
-      "pattern_ids": ["most-appropriate"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "indefinite",
+        "useful-life",
+        "amortize",
+        "annually"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-a-q04",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "Two otherwise identical software companies spend the same amount on product development that meets the IFRS capitalization criteria. Company X reports under IFRS and Company Y under US GAAP. In the year of the spending, compared with Y, X will most likely report:",
       "stem_tr": "Diğer her yönüyle aynı iki yazılım şirketi, UFRS aktifleştirme koşullarını karşılayan ürün geliştirmeye aynı tutarı harcar. X şirketi UFRS'ye, Y şirketi US GAAP'e göre raporlar. Harcama yılında Y'ye kıyasla X'in raporlaması en olası olan aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "higher net income and higher operating cash flow", "tr": "daha yüksek net kâr ve daha yüksek işletme nakit akışı"},
-        {"key": "B", "en": "higher net income and lower operating cash flow", "tr": "daha yüksek net kâr ve daha düşük işletme nakit akışı"},
-        {"key": "C", "en": "lower net income and higher total assets", "tr": "daha düşük net kâr ve daha yüksek toplam varlık"}
+        {
+          "key": "A",
+          "en": "lower net income and higher total assets",
+          "tr": "daha düşük net kâr ve daha yüksek toplam varlık"
+        },
+        {
+          "key": "B",
+          "en": "higher net income and lower operating cash flow",
+          "tr": "daha yüksek net kâr ve daha düşük işletme nakit akışı"
+        },
+        {
+          "key": "C",
+          "en": "higher net income and higher operating cash flow",
+          "tr": "daha yüksek net kâr ve daha yüksek işletme nakit akışı"
+        }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation_en": "Capitalizing (IFRS) moves the cost out of this year's expenses, so net income is higher, and the cash outflow is classified as investing rather than operating, so operating cash flow is also higher. Total assets are higher as well.",
       "explanation_tr": "Aktifleştirme (UFRS) maliyeti bu yılın giderlerinden çıkarır; net kâr yükselir. Nakit çıkışı işletme yerine yatırım faaliyeti olarak sınıflanır; bu nedenle işletme nakit akışı da yüksektir. Toplam varlıklar da daha yüksektir.",
       "wrong_option_reasons": {
-        "B": {"en": "Operating cash flow is higher, not lower, because the outflow is shifted to investing.", "tr": "Nakit çıkışı yatırıma kaydığı için işletme nakit akışı düşük değil, yüksektir."},
-        "C": {"en": "Net income is higher in the year of capitalization; only later years show lower income via amortization.", "tr": "Aktifleştirme yılında net kâr daha yüksektir; itfa yoluyla düşük kâr sonraki yıllarda görülür."}
+        "A": {
+          "en": "Net income is higher in the year of capitalization; only later years show lower income via amortization.",
+          "tr": "Aktifleştirme yılında net kâr daha yüksektir; itfa yoluyla düşük kâr sonraki yıllarda görülür."
+        },
+        "B": {
+          "en": "Operating cash flow is higher, not lower, because the outflow is shifted to investing.",
+          "tr": "Nakit çıkışı yatırıma kaydığı için işletme nakit akışı düşük değil, yüksektir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["otherwise", "identical", "capitalize", "operating-activities", "investing-activities"],
-      "pattern_ids": ["most-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "otherwise",
+        "identical",
+        "capitalize",
+        "operating-activities",
+        "investing-activities"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-a-q05",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-a", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Which statement about the amortization of intangible assets is least accurate?",
       "stem_tr": "Maddi olmayan duran varlıkların itfası hakkında aşağıdaki ifadelerden hangisi en az doğrudur?",
       "options": [
-        {"key": "A", "en": "Finite-life intangibles are amortized over their useful lives, usually on a straight-line basis.", "tr": "Sınırlı ömürlü maddi olmayan varlıklar genellikle doğrusal yöntemle yararlı ömürleri boyunca itfa edilir."},
-        {"key": "B", "en": "Amortization of intangibles is a non-cash expense that reduces net income.", "tr": "Maddi olmayan varlık itfası net kârı azaltan nakit dışı bir giderdir."},
-        {"key": "C", "en": "All intangible assets, including goodwill, must be amortized over no more than 20 years.", "tr": "Şerefiye dahil tüm maddi olmayan varlıklar en fazla 20 yılda itfa edilmelidir."}
+        {
+          "key": "A",
+          "en": "Finite-life intangibles are amortized over their useful lives, usually on a straight-line basis.",
+          "tr": "Sınırlı ömürlü maddi olmayan varlıklar genellikle doğrusal yöntemle yararlı ömürleri boyunca itfa edilir."
+        },
+        {
+          "key": "B",
+          "en": "Amortization of intangibles is a non-cash expense that reduces net income.",
+          "tr": "Maddi olmayan varlık itfası net kârı azaltan nakit dışı bir giderdir."
+        },
+        {
+          "key": "C",
+          "en": "All intangible assets, including goodwill, must be amortized over no more than 20 years.",
+          "tr": "Şerefiye dahil tüm maddi olmayan varlıklar en fazla 20 yılda itfa edilmelidir."
+        }
       ],
       "answer": "C",
       "explanation_en": "Goodwill and other indefinite-life intangibles are not amortized; they are tested for impairment. Only finite-life intangibles are amortized.",
       "explanation_tr": "Şerefiye ve diğer sınırsız ömürlü maddi olmayan varlıklar itfa edilmez; değer düşüklüğü testine tabidir. Yalnızca sınırlı ömürlüler itfa edilir.",
       "wrong_option_reasons": {
-        "A": {"en": "This is the correct treatment for finite-life intangibles.", "tr": "Bu, sınırlı ömürlü varlıklar için doğru uygulamadır."},
-        "B": {"en": "Amortization is indeed non-cash and lowers reported income.", "tr": "İtfa gerçekten nakit dışıdır ve raporlanan kârı düşürür."}
+        "A": {
+          "en": "This is the correct treatment for finite-life intangibles.",
+          "tr": "Bu, sınırlı ömürlü varlıklar için doğru uygulamadır."
+        },
+        "B": {
+          "en": "Amortization is indeed non-cash and lowers reported income.",
+          "tr": "İtfa gerçekten nakit dışıdır ve raporlanan kârı düşürür."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["least-accurate", "straight-line", "non-cash", "finite"],
-      "pattern_ids": ["least-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "least-accurate",
+        "straight-line",
+        "non-cash",
+        "finite"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-b-q01",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Bosphorus Holding pays TRY 900 million to acquire 100% of Trakya Kimya. At the acquisition date, the fair value of Trakya's identifiable assets is TRY 1,100 million and the fair value of its liabilities is TRY 350 million. The book value of Trakya's equity is TRY 600 million. Goodwill recognized by Bosphorus is closest to:",
       "stem_tr": "Boğaziçi Holding, Trakya Kimya'nın %100'ünü satın almak için 900 milyon TL öder. Edinim tarihinde Trakya'nın belirlenebilir varlıklarının gerçeğe uygun değeri 1.100 milyon TL, yükümlülüklerinin gerçeğe uygun değeri 350 milyon TL'dir. Trakya'nın özkaynağının defter değeri 600 milyon TL'dir. Boğaziçi'nin muhasebeleştireceği şerefiye aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "TRY 150 million", "tr": "150 milyon TL", "value": 150},
-        {"key": "B", "en": "TRY 300 million", "tr": "300 milyon TL", "value": 300},
-        {"key": "C", "en": "TRY 550 million", "tr": "550 milyon TL", "value": 550}
+        {
+          "key": "A",
+          "en": "TRY 150 million",
+          "tr": "150 milyon TL",
+          "value": 150
+        },
+        {
+          "key": "B",
+          "en": "TRY 300 million",
+          "tr": "300 milyon TL",
+          "value": 300
+        },
+        {
+          "key": "C",
+          "en": "TRY 550 million",
+          "tr": "550 milyon TL",
+          "value": 550
+        }
       ],
       "answer": "A",
       "explanation_en": "Goodwill = price - fair value of identifiable net assets = 900 - (1,100 - 350) = 900 - 750 = TRY 150 million. The book value of equity is irrelevant.",
       "explanation_tr": "Şerefiye = bedel − belirlenebilir net varlıkların gerçeğe uygun değeri = 900 − (1.100 − 350) = 900 − 750 = 150 milyon TL. Özkaynağın defter değeri önemsizdir.",
       "wrong_option_reasons": {
-        "B": {"en": "900 - 600 uses book value of equity instead of fair value of net assets.", "tr": "900 − 600, net varlıkların gerçeğe uygun değeri yerine özkaynağın defter değerini kullanır."},
-        "C": {"en": "900 - 350 ignores the identifiable assets entirely.", "tr": "900 − 350 belirlenebilir varlıkları tamamen göz ardı eder."}
+        "B": {
+          "en": "900 - 600 uses book value of equity instead of fair value of net assets.",
+          "tr": "900 − 600, net varlıkların gerçeğe uygun değeri yerine özkaynağın defter değerini kullanır."
+        },
+        "C": {
+          "en": "900 - 350 ignores the identifiable assets entirely.",
+          "tr": "900 − 350 belirlenebilir varlıkları tamamen göz ardı eder."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: goodwill on acquisition.", "tr": "İstenen: edinimde şerefiye."},
-        {"en": "Formula: Goodwill = Purchase price - (FV assets - FV liabilities).", "tr": "Formül: Şerefiye = Satın alma bedeli − (GUD varlıklar − GUD yükümlülükler).", "formula_latex": "GW = P - (FV_A - FV_L)"},
-        {"en": "FV net assets = 1,100 - 350 = 750.", "tr": "GUD net varlıklar = 1.100 − 350 = 750.", "values": {"FV assets": 1100, "FV liabilities": 350, "Price": 900}},
-        {"en": "Goodwill = 900 - 750 = 150.", "tr": "Şerefiye = 900 − 750 = 150."},
-        {"en": "Result: TRY 150 million.", "tr": "Sonuç: 150 milyon TL."}
+        {
+          "en": "What is asked: goodwill on acquisition.",
+          "tr": "İstenen: edinimde şerefiye."
+        },
+        {
+          "en": "Formula: Goodwill = Purchase price - (FV assets - FV liabilities).",
+          "tr": "Formül: Şerefiye = Satın alma bedeli − (GUD varlıklar − GUD yükümlülükler).",
+          "formula_latex": "GW = P - (FV_A - FV_L)"
+        },
+        {
+          "en": "FV net assets = 1,100 - 350 = 750.",
+          "tr": "GUD net varlıklar = 1.100 − 350 = 750.",
+          "values": {
+            "FV assets": 1100,
+            "FV liabilities": 350,
+            "Price": 900
+          }
+        },
+        {
+          "en": "Goodwill = 900 - 750 = 150.",
+          "tr": "Şerefiye = 900 − 750 = 150."
+        },
+        {
+          "en": "Result: TRY 150 million.",
+          "tr": "Sonuç: 150 milyon TL."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["1100", "[−]", "350", "[=]", "[STO] [1]", "900", "[−]", "[RCL] [1]", "[=]"]},
-      "numeric": {"expr": "900-(1100-350)", "unit": "TRY million"},
-      "vocab_ids": ["acquire", "identifiable", "fair-value", "book-value", "irrelevant"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1100",
+          "[−]",
+          "350",
+          "[=]",
+          "[STO] [1]",
+          "900",
+          "[−]",
+          "[RCL] [1]",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "900-(1100-350)",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "acquire",
+        "identifiable",
+        "fair-value",
+        "book-value",
+        "irrelevant"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-b-q02",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Goodwill is best described as:",
       "stem_tr": "Şerefiye en iyi aşağıdakilerden hangisiyle tanımlanır?",
       "options": [
-        {"key": "A", "en": "the fair value of a company's reputation, estimated by management each year", "tr": "yönetimin her yıl tahmin ettiği, şirketin itibarının gerçeğe uygun değeri"},
-        {"key": "B", "en": "an identifiable intangible asset that is amortized over its useful life", "tr": "yararlı ömrü boyunca itfa edilen belirlenebilir bir maddi olmayan duran varlık"},
-        {"key": "C", "en": "the excess of the purchase price in a business combination over the fair value of identifiable net assets acquired", "tr": "bir işletme birleşmesinde satın alma bedelinin edinilen belirlenebilir net varlıkların gerçeğe uygun değerini aşan kısmı"}
+        {
+          "key": "A",
+          "en": "the fair value of a company's reputation, estimated by management each year",
+          "tr": "yönetimin her yıl tahmin ettiği, şirketin itibarının gerçeğe uygun değeri"
+        },
+        {
+          "key": "B",
+          "en": "an identifiable intangible asset that is amortized over its useful life",
+          "tr": "yararlı ömrü boyunca itfa edilen belirlenebilir bir maddi olmayan duran varlık"
+        },
+        {
+          "key": "C",
+          "en": "the excess of the purchase price in a business combination over the fair value of identifiable net assets acquired",
+          "tr": "bir işletme birleşmesinde satın alma bedelinin edinilen belirlenebilir net varlıkların gerçeğe uygun değerini aşan kısmı"
+        }
       ],
       "answer": "C",
       "explanation_en": "Accounting goodwill is a residual from an acquisition. It is non-identifiable and is not amortized.",
       "explanation_tr": "Muhasebe şerefiyesi bir satın almadan kalan bakiyedir. Belirlenemez niteliktedir ve itfa edilmez.",
       "wrong_option_reasons": {
-        "A": {"en": "Economic goodwill of this kind is not recorded unless it is purchased.", "tr": "Bu türden ekonomik şerefiye satın alınmadıkça kaydedilmez."},
-        "B": {"en": "Goodwill is the one non-identifiable intangible and is not amortized.", "tr": "Şerefiye belirlenemeyen tek maddi olmayan varlıktır ve itfa edilmez."}
+        "A": {
+          "en": "Economic goodwill of this kind is not recorded unless it is purchased.",
+          "tr": "Bu türden ekonomik şerefiye satın alınmadıkça kaydedilmez."
+        },
+        "B": {
+          "en": "Goodwill is the one non-identifiable intangible and is not amortized.",
+          "tr": "Şerefiye belirlenemeyen tek maddi olmayan varlıktır ve itfa edilmez."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["best-describes", "excess", "business-combination", "reputation"],
-      "pattern_ids": ["best-describes"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "best-describes",
+        "excess",
+        "business-combination",
+        "reputation"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-b-q03",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "A company records a goodwill impairment loss of TRY 80 million. All else equal, which of the following is least likely to be affected?",
       "stem_tr": "Bir şirket 80 milyon TL şerefiye değer düşüklüğü zararı kaydeder. Diğer her şey sabitken aşağıdakilerden hangisinin etkilenmesi en az olasıdır?",
       "options": [
-        {"key": "A", "en": "Cash flow from operating activities", "tr": "İşletme faaliyetlerinden nakit akışı"},
-        {"key": "B", "en": "Net income", "tr": "Net kâr"},
-        {"key": "C", "en": "Total shareholders' equity", "tr": "Toplam özkaynak"}
+        {
+          "key": "A",
+          "en": "Cash flow from operating activities",
+          "tr": "İşletme faaliyetlerinden nakit akışı"
+        },
+        {
+          "key": "B",
+          "en": "Net income",
+          "tr": "Net kâr"
+        },
+        {
+          "key": "C",
+          "en": "Total shareholders' equity",
+          "tr": "Toplam özkaynak"
+        }
       ],
       "answer": "A",
       "explanation_en": "An impairment is a non-cash charge. It lowers net income and therefore equity, but no cash leaves the company, so operating cash flow is unchanged.",
       "explanation_tr": "Değer düşüklüğü nakit dışı bir giderdir. Net kârı ve dolayısıyla özkaynağı azaltır, ancak şirketten nakit çıkmaz; işletme nakit akışı değişmez.",
       "wrong_option_reasons": {
-        "B": {"en": "The loss runs through the income statement and reduces net income.", "tr": "Zarar gelir tablosundan geçer ve net kârı azaltır."},
-        "C": {"en": "Lower retained earnings mean lower equity.", "tr": "Daha düşük dağıtılmamış kâr, daha düşük özkaynak demektir."}
+        "B": {
+          "en": "The loss runs through the income statement and reduces net income.",
+          "tr": "Zarar gelir tablosundan geçer ve net kârı azaltır."
+        },
+        "C": {
+          "en": "Lower retained earnings mean lower equity.",
+          "tr": "Daha düşük dağıtılmamış kâr, daha düşük özkaynak demektir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["all-else-equal", "least-likely", "non-cash", "affect"],
-      "pattern_ids": ["least-likely", "all-else-equal"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "all-else-equal",
+        "least-likely",
+        "non-cash",
+        "affect"
+      ],
+      "pattern_ids": [
+        "least-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-b-q04",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "An analyst compares Firm G, which grew through several acquisitions, with Firm H, which grew only internally. Both have the same net income and the same reported total equity. The analyst's most appropriate adjustment before comparing return on equity is to:",
       "stem_tr": "Bir analist, birkaç satın almayla büyüyen G şirketini yalnızca içeriden büyüyen H şirketiyle karşılaştırır. İkisinin net kârı ve raporlanan toplam özkaynağı aynıdır. Özkaynak kârlılığını karşılaştırmadan önce analistin yapacağı en uygun düzeltme aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "add estimated economic goodwill to Firm H's equity", "tr": "H şirketinin özkaynağına tahmini ekonomik şerefiye eklemek"},
-        {"key": "B", "en": "subtract goodwill from Firm G's assets and equity", "tr": "G şirketinin varlıklarından ve özkaynağından şerefiyeyi düşmek"},
-        {"key": "C", "en": "amortize Firm G's goodwill over ten years and reduce its net income", "tr": "G şirketinin şerefiyesini on yılda itfa edip net kârını azaltmak"}
+        {
+          "key": "A",
+          "en": "add estimated economic goodwill to Firm H's equity",
+          "tr": "H şirketinin özkaynağına tahmini ekonomik şerefiye eklemek"
+        },
+        {
+          "key": "B",
+          "en": "subtract goodwill from Firm G's assets and equity",
+          "tr": "G şirketinin varlıklarından ve özkaynağından şerefiyeyi düşmek"
+        },
+        {
+          "key": "C",
+          "en": "amortize Firm G's goodwill over ten years and reduce its net income",
+          "tr": "G şirketinin şerefiyesini on yılda itfa edip net kârını azaltmak"
+        }
       ],
       "answer": "B",
       "explanation_en": "Only the acquisitive firm carries goodwill, which inflates its asset and equity base. Removing goodwill from G's balance sheet puts both firms on a comparable footing.",
       "explanation_tr": "Yalnızca satın almayla büyüyen şirketin bilançosunda şerefiye vardır ve bu, varlık ve özkaynak tabanını şişirir. G'nin bilançosundan şerefiyeyi çıkarmak iki şirketi karşılaştırılabilir hale getirir.",
       "wrong_option_reasons": {
-        "A": {"en": "Economic goodwill cannot be estimated reliably and is never put on the balance sheet.", "tr": "Ekonomik şerefiye güvenilir biçimde tahmin edilemez ve asla bilançoya konmaz."},
-        "C": {"en": "Goodwill is not amortized under current standards; inventing an amortization distorts income further.", "tr": "Mevcut standartlarda şerefiye itfa edilmez; uydurma bir itfa kârı daha da bozar."}
+        "A": {
+          "en": "Economic goodwill cannot be estimated reliably and is never put on the balance sheet.",
+          "tr": "Ekonomik şerefiye güvenilir biçimde tahmin edilemez ve asla bilançoya konmaz."
+        },
+        "C": {
+          "en": "Goodwill is not amortized under current standards; inventing an amortization distorts income further.",
+          "tr": "Mevcut standartlarda şerefiye itfa edilmez; uydurma bir itfa kârı daha da bozar."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["most-appropriate", "acquisition", "inflate", "comparable"],
-      "pattern_ids": ["most-appropriate"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "most-appropriate",
+        "acquisition",
+        "inflate",
+        "comparable"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-b-q05",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-b", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Marmara Perakende acquires a rival for TRY 500 million. The rival's book value of net assets is TRY 320 million. Fair value adjustments at the acquisition date are: land is worth TRY 60 million more than book value, and a customer list not recorded by the rival is valued at TRY 40 million. Goodwill is closest to:",
       "stem_tr": "Marmara Perakende bir rakibini 500 milyon TL'ye satın alır. Rakibin net varlıklarının defter değeri 320 milyon TL'dir. Edinim tarihindeki gerçeğe uygun değer düzeltmeleri: arsa defter değerinden 60 milyon TL daha değerlidir ve rakibin kaydetmediği bir müşteri listesi 40 milyon TL olarak değerlenir. Şerefiye aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "TRY 180 million", "tr": "180 milyon TL", "value": 180},
-        {"key": "B", "en": "TRY 120 million", "tr": "120 milyon TL", "value": 120},
-        {"key": "C", "en": "TRY 80 million", "tr": "80 milyon TL", "value": 80}
+        {
+          "key": "A",
+          "en": "TRY 180 million",
+          "tr": "180 milyon TL",
+          "value": 180
+        },
+        {
+          "key": "B",
+          "en": "TRY 120 million",
+          "tr": "120 milyon TL",
+          "value": 120
+        },
+        {
+          "key": "C",
+          "en": "TRY 80 million",
+          "tr": "80 milyon TL",
+          "value": 80
+        }
       ],
       "answer": "C",
       "explanation_en": "Fair value of identifiable net assets = 320 + 60 + 40 = 420. Goodwill = 500 - 420 = TRY 80 million. The customer list is identifiable, so it reduces goodwill.",
       "explanation_tr": "Belirlenebilir net varlıkların gerçeğe uygun değeri = 320 + 60 + 40 = 420. Şerefiye = 500 − 420 = 80 milyon TL. Müşteri listesi belirlenebilirdir; bu nedenle şerefiyeyi azaltır.",
       "wrong_option_reasons": {
-        "A": {"en": "500 - 320 ignores both fair value adjustments.", "tr": "500 − 320 her iki gerçeğe uygun değer düzeltmesini de yok sayar."},
-        "B": {"en": "500 - 380 includes the land adjustment but treats the customer list as part of goodwill.", "tr": "500 − 380 arsa düzeltmesini dahil eder ama müşteri listesini şerefiyenin parçası sayar."}
+        "A": {
+          "en": "500 - 320 ignores both fair value adjustments.",
+          "tr": "500 − 320 her iki gerçeğe uygun değer düzeltmesini de yok sayar."
+        },
+        "B": {
+          "en": "500 - 380 includes the land adjustment but treats the customer list as part of goodwill.",
+          "tr": "500 − 380 arsa düzeltmesini dahil eder ama müşteri listesini şerefiyenin parçası sayar."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: goodwill.", "tr": "İstenen: şerefiye."},
-        {"en": "Formula: GW = price - FV of identifiable net assets; identifiable intangibles not on the target's books must be added.", "tr": "Formül: Şerefiye = bedel − belirlenebilir net varlıkların GUD'u; hedefin kayıtlarında olmayan belirlenebilir maddi olmayan varlıklar eklenir.", "formula_latex": "GW = 500 - (320 + 60 + 40)"},
-        {"en": "FV net assets = 320 + 60 + 40 = 420.", "tr": "GUD net varlıklar = 320 + 60 + 40 = 420.", "values": {"Book NA": 320, "Land step-up": 60, "Customer list": 40}},
-        {"en": "Result: 500 - 420 = TRY 80 million.", "tr": "Sonuç: 500 − 420 = 80 milyon TL."}
+        {
+          "en": "What is asked: goodwill.",
+          "tr": "İstenen: şerefiye."
+        },
+        {
+          "en": "Formula: GW = price - FV of identifiable net assets; identifiable intangibles not on the target's books must be added.",
+          "tr": "Formül: Şerefiye = bedel − belirlenebilir net varlıkların GUD'u; hedefin kayıtlarında olmayan belirlenebilir maddi olmayan varlıklar eklenir.",
+          "formula_latex": "GW = 500 - (320 + 60 + 40)"
+        },
+        {
+          "en": "FV net assets = 320 + 60 + 40 = 420.",
+          "tr": "GUD net varlıklar = 320 + 60 + 40 = 420.",
+          "values": {
+            "Book NA": 320,
+            "Land step-up": 60,
+            "Customer list": 40
+          }
+        },
+        {
+          "en": "Result: 500 - 420 = TRY 80 million.",
+          "tr": "Sonuç: 500 − 420 = 80 milyon TL."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["320", "[+]", "60", "[+]", "40", "[=]", "[+/-]", "[+]", "500", "[=]"]},
-      "numeric": {"expr": "500-(320+60+40)", "unit": "TRY million"},
-      "vocab_ids": ["rival", "customer-list", "adjustment", "book-value"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "320",
+          "[+]",
+          "60",
+          "[+]",
+          "40",
+          "[=]",
+          "[+/-]",
+          "[+]",
+          "500",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "500-(320+60+40)",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "rival",
+        "customer-list",
+        "adjustment",
+        "book-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-c-q01",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Under IFRS 9, a debt security that a company holds in a business model whose objective is to collect contractual cash flows, and whose cash flows are solely payments of principal and interest, is most likely measured at:",
       "stem_tr": "UFRS 9'a göre, bir şirketin sözleşmeye bağlı nakit akışlarını tahsil etme amaçlı iş modelinde tuttuğu ve nakit akışları yalnızca anapara ve faiz ödemelerinden oluşan bir borçlanma aracı en olası biçimde hangi esasla ölçülür?",
       "options": [
-        {"key": "A", "en": "amortized cost", "tr": "itfa edilmiş maliyet"},
-        {"key": "B", "en": "fair value through profit or loss", "tr": "gerçeğe uygun değer farkı kâr veya zarara yansıtılan"},
-        {"key": "C", "en": "fair value through other comprehensive income", "tr": "gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan"}
+        {
+          "key": "A",
+          "en": "amortized cost",
+          "tr": "itfa edilmiş maliyet"
+        },
+        {
+          "key": "B",
+          "en": "fair value through profit or loss",
+          "tr": "gerçeğe uygun değer farkı kâr veya zarara yansıtılan"
+        },
+        {
+          "key": "C",
+          "en": "fair value through other comprehensive income",
+          "tr": "gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan"
+        }
       ],
       "answer": "A",
       "explanation_en": "The 'hold to collect' business model with SPPI cash flows is the amortized cost category.",
       "explanation_tr": "Yalnızca anapara ve faiz nakit akışlı 'tahsil amaçlı elde tutma' iş modeli, itfa edilmiş maliyet kategorisidir.",
       "wrong_option_reasons": {
-        "B": {"en": "FVTPL is the residual category, used for trading assets and derivatives.", "tr": "GUD-KZ, alım-satım amaçlı varlıklar ve türevler için kullanılan kalan kategoridir."},
-        "C": {"en": "FVOCI applies when the model is both to collect and to sell.", "tr": "GUD-DKG, iş modeli hem tahsil hem satış olduğunda uygulanır."}
+        "B": {
+          "en": "FVTPL is the residual category, used for trading assets and derivatives.",
+          "tr": "GUD-KZ, alım-satım amaçlı varlıklar ve türevler için kullanılan kalan kategoridir."
+        },
+        "C": {
+          "en": "FVOCI applies when the model is both to collect and to sell.",
+          "tr": "GUD-DKG, iş modeli hem tahsil hem satış olduğunda uygulanır."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["business-model", "contractual", "solely", "principal"],
-      "pattern_ids": ["most-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "business-model",
+        "contractual",
+        "solely",
+        "principal"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-c-q02",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Kapadokya Sigorta holds a portfolio of government bonds classified as fair value through other comprehensive income. During the year the bonds' market value rose by TRY 12 million and the company received TRY 5 million of coupon interest. The effect on net income for the year is closest to:",
       "stem_tr": "Kapadokya Sigorta, gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan olarak sınıflandırılmış bir devlet tahvili portföyü tutmaktadır. Yıl içinde tahvillerin piyasa değeri 12 milyon TL artmış ve şirket 5 milyon TL kupon faizi almıştır. Yıl için net kâra etkisi aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "TRY 17 million", "tr": "17 milyon TL", "value": 17},
-        {"key": "B", "en": "TRY 12 million", "tr": "12 milyon TL", "value": 12},
-        {"key": "C", "en": "TRY 5 million", "tr": "5 milyon TL", "value": 5}
+        {
+          "key": "A",
+          "en": "TRY 17 million",
+          "tr": "17 milyon TL",
+          "value": 17
+        },
+        {
+          "key": "B",
+          "en": "TRY 12 million",
+          "tr": "12 milyon TL",
+          "value": 12
+        },
+        {
+          "key": "C",
+          "en": "TRY 5 million",
+          "tr": "5 milyon TL",
+          "value": 5
+        }
       ],
       "answer": "C",
       "explanation_en": "For FVOCI debt, interest income goes to profit or loss, while the unrealized fair value gain goes to other comprehensive income. Net income rises by the TRY 5 million of interest only.",
       "explanation_tr": "GUD-DKG borçlanma aracında faiz geliri kâr veya zarara, gerçekleşmemiş gerçeğe uygun değer kazancı diğer kapsamlı gelire gider. Net kâr yalnızca 5 milyon TL faiz kadar artar.",
       "wrong_option_reasons": {
-        "A": {"en": "Including the unrealized gain in net income would be the FVTPL treatment.", "tr": "Gerçekleşmemiş kazancı net kâra dahil etmek GUD-KZ uygulaması olurdu."},
-        "B": {"en": "The fair value change goes to OCI, not net income; the interest is what hits net income.", "tr": "Gerçeğe uygun değer değişimi net kâra değil DKG'ye gider; net kâra giren faizdir."}
+        "A": {
+          "en": "Including the unrealized gain in net income would be the FVTPL treatment.",
+          "tr": "Gerçekleşmemiş kazancı net kâra dahil etmek GUD-KZ uygulaması olurdu."
+        },
+        "B": {
+          "en": "The fair value change goes to OCI, not net income; the interest is what hits net income.",
+          "tr": "Gerçeğe uygun değer değişimi net kâra değil DKG'ye gider; net kâra giren faizdir."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: the net income effect.", "tr": "İstenen: net kâra etki."},
-        {"en": "Rule: FVOCI → interest in P&L, unrealized gain in OCI.", "tr": "Kural: GUD-DKG → faiz kâr/zararda, gerçekleşmemiş kazanç DKG'de."},
-        {"en": "Net income effect = interest = 5; OCI effect = 12.", "tr": "Net kâr etkisi = faiz = 5; DKG etkisi = 12.", "values": {"Interest": 5, "FV gain": 12}},
-        {"en": "Result: TRY 5 million.", "tr": "Sonuç: 5 milyon TL."}
+        {
+          "en": "What is asked: the net income effect.",
+          "tr": "İstenen: net kâra etki."
+        },
+        {
+          "en": "Rule: FVOCI → interest in P&L, unrealized gain in OCI.",
+          "tr": "Kural: GUD-DKG → faiz kâr/zararda, gerçekleşmemiş kazanç DKG'de."
+        },
+        {
+          "en": "Net income effect = interest = 5; OCI effect = 12.",
+          "tr": "Net kâr etkisi = faiz = 5; DKG etkisi = 12.",
+          "values": {
+            "Interest": 5,
+            "FV gain": 12
+          }
+        },
+        {
+          "en": "Result: TRY 5 million.",
+          "tr": "Sonuç: 5 milyon TL."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["5", "[=]"], "note_tr": "Hesap yok; sınıflandırma kuralı."},
-      "numeric": {"expr": "5", "unit": "TRY million"},
-      "vocab_ids": ["portfolio", "unrealized", "coupon", "other-comprehensive-income"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5",
+          "[=]"
+        ],
+        "note_tr": "Hesap yok; sınıflandırma kuralı."
+      },
+      "numeric": {
+        "expr": "5",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "portfolio",
+        "unrealized",
+        "coupon",
+        "other-comprehensive-income"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-c-q03",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "Which of the following financial assets is least likely to be measured at fair value through profit or loss?",
       "stem_tr": "Aşağıdaki finansal varlıklardan hangisinin gerçeğe uygun değer farkı kâr veya zarara yansıtılarak ölçülmesi en az olasıdır?",
       "options": [
-        {"key": "A", "en": "An interest rate swap used by the treasury department", "tr": "Hazine bölümünün kullandığı bir faiz oranı swapı"},
-        {"key": "B", "en": "A bank loan receivable held to collect its contractual payments", "tr": "Sözleşmeye bağlı ödemelerini tahsil etmek için tutulan bir banka kredisi alacağı"},
-        {"key": "C", "en": "Shares bought last week to profit from short-term price moves", "tr": "Kısa vadeli fiyat hareketlerinden kazanç için geçen hafta alınan paylar"}
+        {
+          "key": "A",
+          "en": "An interest rate swap used by the treasury department",
+          "tr": "Hazine bölümünün kullandığı bir faiz oranı swapı"
+        },
+        {
+          "key": "B",
+          "en": "A bank loan receivable held to collect its contractual payments",
+          "tr": "Sözleşmeye bağlı ödemelerini tahsil etmek için tutulan bir banka kredisi alacağı"
+        },
+        {
+          "key": "C",
+          "en": "Shares bought last week to profit from short-term price moves",
+          "tr": "Kısa vadeli fiyat hareketlerinden kazanç için geçen hafta alınan paylar"
+        }
       ],
       "answer": "B",
       "explanation_en": "A loan held to collect contractual cash flows is measured at amortized cost. Derivatives and trading equities are at FVTPL.",
       "explanation_tr": "Sözleşmeye bağlı nakit akışlarını tahsil amacıyla tutulan kredi itfa edilmiş maliyetle ölçülür. Türevler ve alım-satım amaçlı paylar GUD-KZ'dir.",
       "wrong_option_reasons": {
-        "A": {"en": "All derivatives are measured at fair value with changes in profit or loss (unless hedge accounting applies).", "tr": "Tüm türevler, (riskten korunma muhasebesi uygulanmadıkça) değişimleri kâr veya zarara yansıtılarak gerçeğe uygun değerle ölçülür."},
-        "C": {"en": "Trading securities are the classic FVTPL item.", "tr": "Alım-satım amaçlı menkul kıymetler klasik GUD-KZ kalemidir."}
+        "A": {
+          "en": "All derivatives are measured at fair value with changes in profit or loss (unless hedge accounting applies).",
+          "tr": "Tüm türevler, (riskten korunma muhasebesi uygulanmadıkça) değişimleri kâr veya zarara yansıtılarak gerçeğe uygun değerle ölçülür."
+        },
+        "C": {
+          "en": "Trading securities are the classic FVTPL item.",
+          "tr": "Alım-satım amaçlı menkul kıymetler klasik GUD-KZ kalemidir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["least-likely", "swap", "receivable", "treasury"],
-      "pattern_ids": ["least-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "least-likely",
+        "swap",
+        "receivable",
+        "treasury"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-c-q04",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "A company holds an equity investment that is not for trading. Under IFRS it has made the irrevocable election to present changes in fair value in other comprehensive income. Under US GAAP the same investment would most likely be reported with fair value changes in:",
       "stem_tr": "Bir şirket alım-satım amaçlı olmayan bir özkaynak yatırımı tutmaktadır. UFRS'de gerçeğe uygun değer değişimlerini diğer kapsamlı gelirde sunmak için geri alınamaz seçim yapmıştır. US GAAP'te aynı yatırım en olası biçimde gerçeğe uygun değer değişimleri nerede raporlanarak sunulur?",
       "options": [
-        {"key": "A", "en": "net income", "tr": "net kâr"},
-        {"key": "B", "en": "other comprehensive income, with recycling to net income on sale", "tr": "satışta net kâra aktarılmak üzere diğer kapsamlı gelir"},
-        {"key": "C", "en": "neither; it would be carried at cost less impairment", "tr": "hiçbiri; maliyet eksi değer düşüklüğü ile taşınır"}
+        {
+          "key": "A",
+          "en": "net income",
+          "tr": "net kâr"
+        },
+        {
+          "key": "B",
+          "en": "other comprehensive income, with recycling to net income on sale",
+          "tr": "satışta net kâra aktarılmak üzere diğer kapsamlı gelir"
+        },
+        {
+          "key": "C",
+          "en": "neither; it would be carried at cost less impairment",
+          "tr": "hiçbiri; maliyet eksi değer düşüklüğü ile taşınır"
+        }
       ],
       "answer": "A",
       "explanation_en": "US GAAP requires equity securities with readily determinable fair values to be measured at fair value through net income; there is no OCI option for equities.",
       "explanation_tr": "US GAAP, gerçeğe uygun değeri kolayca belirlenebilen özkaynak araçlarının gerçeğe uygun değer farkının net kâra yansıtılmasını zorunlu kılar; özkaynak araçları için DKG seçeneği yoktur.",
       "wrong_option_reasons": {
-        "B": {"en": "Recycling applies to available-for-sale debt under US GAAP, not to equity securities.", "tr": "Aktarım (recycling) US GAAP'te satılmaya hazır borçlanma araçları için geçerlidir, özkaynak araçları için değil."},
-        "C": {"en": "Cost measurement is only a practical exception for equities without a readily determinable fair value.", "tr": "Maliyetle ölçüm yalnızca gerçeğe uygun değeri kolayca belirlenemeyen paylar için pratik bir istisnadır."}
+        "B": {
+          "en": "Recycling applies to available-for-sale debt under US GAAP, not to equity securities.",
+          "tr": "Aktarım (recycling) US GAAP'te satılmaya hazır borçlanma araçları için geçerlidir, özkaynak araçları için değil."
+        },
+        "C": {
+          "en": "Cost measurement is only a practical exception for equities without a readily determinable fair value.",
+          "tr": "Maliyetle ölçüm yalnızca gerçeğe uygun değeri kolayca belirlenemeyen paylar için pratik bir istisnadır."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["irrevocable", "election", "readily", "recycling"],
-      "pattern_ids": ["most-likely"],
-      "spk_link": {"status": "new", "note_tr": "US GAAP özkaynak aracı kuralı SPK müfredatında yok."},
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "irrevocable",
+        "election",
+        "readily",
+        "recycling"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "spk_link": {
+        "status": "new",
+        "note_tr": "US GAAP özkaynak aracı kuralı SPK müfredatında yok."
+      },
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-c-q05",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-c", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "A trading portfolio of equities was bought for TRY 200 million. At year-end its market value is TRY 230 million; no shares were sold. The carrying amount on the balance sheet and the amount recognized in net income, respectively, are:",
       "stem_tr": "Alım-satım amaçlı bir pay portföyü 200 milyon TL'ye alınmıştır. Yıl sonunda piyasa değeri 230 milyon TL'dir; hiçbir pay satılmamıştır. Bilançodaki defter değeri ve net kârda muhasebeleştirilen tutar sırasıyla aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "TRY 200 million; TRY 0", "tr": "200 milyon TL; 0 TL"},
-        {"key": "B", "en": "TRY 230 million; TRY 30 million", "tr": "230 milyon TL; 30 milyon TL"},
-        {"key": "C", "en": "TRY 230 million; TRY 0 (gain in OCI)", "tr": "230 milyon TL; 0 TL (kazanç DKG'de)"}
+        {
+          "key": "A",
+          "en": "TRY 200 million; TRY 0",
+          "tr": "200 milyon TL; 0 TL"
+        },
+        {
+          "key": "B",
+          "en": "TRY 230 million; TRY 30 million",
+          "tr": "230 milyon TL; 30 milyon TL"
+        },
+        {
+          "key": "C",
+          "en": "TRY 230 million; TRY 0 (gain in OCI)",
+          "tr": "230 milyon TL; 0 TL (kazanç DKG'de)"
+        }
       ],
       "answer": "B",
       "explanation_en": "Trading securities are FVTPL: the balance sheet shows fair value (230) and the unrealized gain of 30 is recognized in profit or loss even though nothing was sold.",
       "explanation_tr": "Alım-satım amaçlı menkul kıymetler GUD-KZ'dir: bilanço gerçeğe uygun değeri (230) gösterir ve hiçbir şey satılmamış olsa bile 30'luk gerçekleşmemiş kazanç kâr veya zararda muhasebeleştirilir.",
       "wrong_option_reasons": {
-        "A": {"en": "Cost measurement with no gain is the amortized cost logic, not applicable to trading equities.", "tr": "Kazançsız maliyet ölçümü itfa edilmiş maliyet mantığıdır; alım-satım amaçlı paylara uygulanmaz."},
-        "C": {"en": "OCI treatment is for FVOCI instruments, not trading securities.", "tr": "DKG uygulaması GUD-DKG araçları içindir, alım-satım amaçlı menkul kıymetler için değil."}
+        "A": {
+          "en": "Cost measurement with no gain is the amortized cost logic, not applicable to trading equities.",
+          "tr": "Kazançsız maliyet ölçümü itfa edilmiş maliyet mantığıdır; alım-satım amaçlı paylara uygulanmaz."
+        },
+        "C": {
+          "en": "OCI treatment is for FVOCI instruments, not trading securities.",
+          "tr": "DKG uygulaması GUD-DKG araçları içindir, alım-satım amaçlı menkul kıymetler için değil."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["respectively", "carrying-amount", "unrealized", "trading"],
-      "pattern_ids": ["respectively"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "respectively",
+        "carrying-amount",
+        "unrealized",
+        "trading"
+      ],
+      "pattern_ids": [
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-d-q01",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-d", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
       "stem_en": "Which of the following is NOT typically classified as a non-current liability?",
       "stem_tr": "Aşağıdakilerden hangisi tipik olarak uzun vadeli yükümlülük olarak sınıflandırılMAZ?",
       "options": [
-        {"key": "A", "en": "Accounts payable to suppliers due in 45 days", "tr": "45 gün içinde ödenecek satıcılara ticari borçlar"},
-        {"key": "B", "en": "A ten-year bond issued two years ago", "tr": "İki yıl önce ihraç edilmiş on yıllık bir tahvil"},
-        {"key": "C", "en": "A deferred tax liability expected to reverse in five years", "tr": "Beş yıl içinde tersine dönmesi beklenen bir ertelenmiş vergi yükümlülüğü"}
+        {
+          "key": "A",
+          "en": "Accounts payable to suppliers due in 45 days",
+          "tr": "45 gün içinde ödenecek satıcılara ticari borçlar"
+        },
+        {
+          "key": "B",
+          "en": "A ten-year bond issued two years ago",
+          "tr": "İki yıl önce ihraç edilmiş on yıllık bir tahvil"
+        },
+        {
+          "key": "C",
+          "en": "A deferred tax liability expected to reverse in five years",
+          "tr": "Beş yıl içinde tersine dönmesi beklenen bir ertelenmiş vergi yükümlülüğü"
+        }
       ],
       "answer": "A",
       "explanation_en": "Trade payables due within one year are current liabilities. Long-term bonds and deferred tax liabilities are non-current.",
-      "explanation_tr": "Bir yıl içinde ödenecek ticari borçlar kısa vadeli yükümlülüktür. Uzun vadeli tahviller ve ertelenmiş vergi yükümlülükleri uzun vadelidir."
-      ,
+      "explanation_tr": "Bir yıl içinde ödenecek ticari borçlar kısa vadeli yükümlülüktür. Uzun vadeli tahviller ve ertelenmiş vergi yükümlülükleri uzun vadelidir.",
       "wrong_option_reasons": {
-        "B": {"en": "Eight years remain to maturity, so the bond is non-current (except the portion due within a year).", "tr": "Vadeye sekiz yıl kalmıştır; tahvil (bir yıl içinde ödenecek kısmı hariç) uzun vadelidir."},
-        "C": {"en": "Under IFRS deferred tax liabilities are always presented as non-current.", "tr": "UFRS'de ertelenmiş vergi yükümlülükleri her zaman uzun vadeli olarak sunulur."}
+        "B": {
+          "en": "Eight years remain to maturity, so the bond is non-current (except the portion due within a year).",
+          "tr": "Vadeye sekiz yıl kalmıştır; tahvil (bir yıl içinde ödenecek kısmı hariç) uzun vadelidir."
+        },
+        "C": {
+          "en": "Under IFRS deferred tax liabilities are always presented as non-current.",
+          "tr": "UFRS'de ertelenmiş vergi yükümlülükleri her zaman uzun vadeli olarak sunulur."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["not-question", "classify", "payable", "reverse"],
-      "pattern_ids": ["not-question"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "not-question",
+        "classify",
+        "payable",
+        "reverse"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-d-q02",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-d", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Tuna Enerji issues a 3-year bond with face value TRY 100 million and a 6% annual coupon when the market rate for similar bonds is 8%. The bond is carried at amortized cost. The interest expense in the first year is closest to:",
       "stem_tr": "Tuna Enerji, benzer tahvillerin piyasa faizi %8 iken nominal değeri 100 milyon TL ve yıllık kuponu %6 olan 3 yıllık bir tahvil ihraç eder. Tahvil itfa edilmiş maliyetle taşınmaktadır. İlk yılın faiz gideri aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "TRY 6.00 million", "tr": "6,00 milyon TL", "value": 6.0},
-        {"key": "B", "en": "TRY 7.59 million", "tr": "7,59 milyon TL", "value": 7.59},
-        {"key": "C", "en": "TRY 8.00 million", "tr": "8,00 milyon TL", "value": 8.0}
+        {
+          "key": "A",
+          "en": "TRY 6.00 million",
+          "tr": "6,00 milyon TL",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 7.59 million",
+          "tr": "7,59 milyon TL",
+          "value": 7.59
+        },
+        {
+          "key": "C",
+          "en": "TRY 8.00 million",
+          "tr": "8,00 milyon TL",
+          "value": 8.0
+        }
       ],
       "answer": "B",
       "explanation_en": "Issue price = PV of coupons and face at 8% = 6/1.08 + 6/1.08^2 + 106/1.08^3 = 94.85. Interest expense = 94.85 x 8% = TRY 7.59 million. The coupon paid is 6; the 1.59 difference is discount amortization.",
       "explanation_tr": "İhraç fiyatı = kuponların ve nominalin %8'le bugünkü değeri = 6/1,08 + 6/1,08² + 106/1,08³ = 94,85. Faiz gideri = 94,85 × %8 = 7,59 milyon TL. Ödenen kupon 6'dır; 1,59'luk fark iskonto itfasıdır.",
       "wrong_option_reasons": {
-        "A": {"en": "6 is the cash coupon, not the effective interest expense.", "tr": "6, nakit kupondur; efektif faiz gideri değil."},
-        "C": {"en": "8 applies the market rate to face value instead of to the carrying amount.", "tr": "8, piyasa faizini defter değerine değil nominal değere uygular."}
+        "A": {
+          "en": "6 is the cash coupon, not the effective interest expense.",
+          "tr": "6, nakit kupondur; efektif faiz gideri değil."
+        },
+        "C": {
+          "en": "8 applies the market rate to face value instead of to the carrying amount.",
+          "tr": "8, piyasa faizini defter değerine değil nominal değere uygular."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: year-1 interest expense under the effective interest method.", "tr": "İstenen: efektif faiz yöntemiyle 1. yıl faiz gideri."},
-        {"en": "First find the issue price: PV of cash flows at the market rate.", "tr": "Önce ihraç fiyatı: nakit akışlarının piyasa faiziyle bugünkü değeri.", "formula_latex": "P_0=\\sum_{t=1}^{3}\\frac{6}{1.08^t}+\\frac{100}{1.08^3}", "values": {"Coupon": 6, "Face": 100, "Market rate": "8%", "n": 3}},
-        {"en": "P0 = 5.556 + 5.144 + 84.147 = 94.85.", "tr": "P0 = 5,556 + 5,144 + 84,147 = 94,85."},
-        {"en": "Interest expense = 94.85 x 0.08 = 7.59.", "tr": "Faiz gideri = 94,85 × 0,08 = 7,59.", "formula_latex": "\\text{Int. exp.}=P_0\\times r_{mkt}"},
-        {"en": "Result: TRY 7.59 million.", "tr": "Sonuç: 7,59 milyon TL."}
+        {
+          "en": "What is asked: year-1 interest expense under the effective interest method.",
+          "tr": "İstenen: efektif faiz yöntemiyle 1. yıl faiz gideri."
+        },
+        {
+          "en": "First find the issue price: PV of cash flows at the market rate.",
+          "tr": "Önce ihraç fiyatı: nakit akışlarının piyasa faiziyle bugünkü değeri.",
+          "formula_latex": "P_0=\\sum_{t=1}^{3}\\frac{6}{1.08^t}+\\frac{100}{1.08^3}",
+          "values": {
+            "Coupon": 6,
+            "Face": 100,
+            "Market rate": "8%",
+            "n": 3
+          }
+        },
+        {
+          "en": "P0 = 5.556 + 5.144 + 84.147 = 94.85.",
+          "tr": "P0 = 5,556 + 5,144 + 84,147 = 94,85."
+        },
+        {
+          "en": "Interest expense = 94.85 x 0.08 = 7.59.",
+          "tr": "Faiz gideri = 94,85 × 0,08 = 7,59.",
+          "formula_latex": "\\text{Int. exp.}=P_0\\times r_{mkt}"
+        },
+        {
+          "en": "Result: TRY 7.59 million.",
+          "tr": "Sonuç: 7,59 milyon TL."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["[2ND] [FV]", "3 [N]", "8 [I/Y]", "6 [PMT]", "100 [FV]", "[CPT] [PV]", "[×]", "0.08", "[=]"], "note_tr": "PV −94,85 çıkar; mutlak değerle çarp."},
-      "numeric": {"expr": "abs(pv(0.08,3,6,100))*0.08", "unit": "TRY million"},
-      "vocab_ids": ["face-value", "coupon", "amortized-cost", "effective-interest-rate", "discount"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [FV]",
+          "3 [N]",
+          "8 [I/Y]",
+          "6 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]",
+          "[×]",
+          "0.08",
+          "[=]"
+        ],
+        "note_tr": "PV −94,85 çıkar; mutlak değerle çarp."
+      },
+      "numeric": {
+        "expr": "abs(pv(0.08,3,6,100))*0.08",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "face-value",
+        "coupon",
+        "amortized-cost",
+        "effective-interest-rate",
+        "discount"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-d-q03",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-d", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "A company has breached a debt covenant at the balance sheet date and the lender has the right to demand immediate repayment. The most appropriate presentation of the loan is:",
       "stem_tr": "Bir şirket bilanço tarihinde bir borç sözleşmesi şartını ihlal etmiştir ve kredi verenin derhal geri ödeme talep etme hakkı vardır. Kredinin en uygun sunumu aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "as a non-current liability, because the original maturity is beyond one year", "tr": "orijinal vadesi bir yıldan uzun olduğu için uzun vadeli yükümlülük olarak"},
-        {"key": "B", "en": "as a current liability, unless the lender waived the right before the balance sheet date", "tr": "kredi veren bilanço tarihinden önce bu haktan feragat etmedikçe kısa vadeli yükümlülük olarak"},
-        {"key": "C", "en": "off balance sheet, with disclosure in the notes only", "tr": "yalnızca dipnotlarda açıklanarak bilanço dışında"}
+        {
+          "key": "A",
+          "en": "as a non-current liability, because the original maturity is beyond one year",
+          "tr": "orijinal vadesi bir yıldan uzun olduğu için uzun vadeli yükümlülük olarak"
+        },
+        {
+          "key": "B",
+          "en": "as a current liability, unless the lender waived the right before the balance sheet date",
+          "tr": "kredi veren bilanço tarihinden önce bu haktan feragat etmedikçe kısa vadeli yükümlülük olarak"
+        },
+        {
+          "key": "C",
+          "en": "off balance sheet, with disclosure in the notes only",
+          "tr": "yalnızca dipnotlarda açıklanarak bilanço dışında"
+        }
       ],
       "answer": "B",
       "explanation_en": "If the debt becomes payable on demand because of a covenant breach, the company no longer has an unconditional right to defer settlement, so the loan is current unless a waiver was obtained in time.",
       "explanation_tr": "Sözleşme ihlali nedeniyle borç talep üzerine ödenebilir hale gelirse şirketin ödemeyi erteleme konusunda koşulsuz hakkı kalmaz; zamanında feragat alınmadıkça kredi kısa vadelidir.",
       "wrong_option_reasons": {
-        "A": {"en": "Original maturity does not matter once the lender can call the loan.", "tr": "Kredi veren krediyi geri çağırabildiğinde orijinal vade önemini yitirir."},
-        "C": {"en": "A recognized liability cannot be moved off the balance sheet.", "tr": "Muhasebeleştirilmiş bir yükümlülük bilanço dışına çıkarılamaz."}
+        "A": {
+          "en": "Original maturity does not matter once the lender can call the loan.",
+          "tr": "Kredi veren krediyi geri çağırabildiğinde orijinal vade önemini yitirir."
+        },
+        "C": {
+          "en": "A recognized liability cannot be moved off the balance sheet.",
+          "tr": "Muhasebeleştirilmiş bir yükümlülük bilanço dışına çıkarılamaz."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["breach", "covenant", "waive", "on-demand", "unconditional"],
-      "pattern_ids": ["most-appropriate"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "breach",
+        "covenant",
+        "waive",
+        "on-demand",
+        "unconditional"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-d-q04",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-d", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
       "stem_en": "A bond was issued at a premium and is carried at amortized cost. Over the life of the bond, which of the following best describes the pattern of the carrying amount and the interest expense?",
       "stem_tr": "Bir tahvil primli ihraç edilmiş ve itfa edilmiş maliyetle taşınmaktadır. Tahvilin ömrü boyunca defter değerinin ve faiz giderinin seyrini en iyi tanımlayan ifade aşağıdakilerden hangisidir?",
       "options": [
-        {"key": "A", "en": "The carrying amount falls toward face value and interest expense declines each year.", "tr": "Defter değeri nominal değere doğru düşer ve faiz gideri her yıl azalır."},
-        {"key": "B", "en": "The carrying amount rises toward face value and interest expense increases each year.", "tr": "Defter değeri nominal değere doğru yükselir ve faiz gideri her yıl artar."},
-        {"key": "C", "en": "The carrying amount stays at face value and interest expense equals the coupon.", "tr": "Defter değeri nominal değerde kalır ve faiz gideri kupona eşittir."}
+        {
+          "key": "A",
+          "en": "The carrying amount falls toward face value and interest expense declines each year.",
+          "tr": "Defter değeri nominal değere doğru düşer ve faiz gideri her yıl azalır."
+        },
+        {
+          "key": "B",
+          "en": "The carrying amount rises toward face value and interest expense increases each year.",
+          "tr": "Defter değeri nominal değere doğru yükselir ve faiz gideri her yıl artar."
+        },
+        {
+          "key": "C",
+          "en": "The carrying amount stays at face value and interest expense equals the coupon.",
+          "tr": "Defter değeri nominal değerde kalır ve faiz gideri kupona eşittir."
+        }
       ],
       "answer": "A",
       "explanation_en": "A premium bond starts above face value. Interest expense (carrying amount x market rate) is less than the coupon, so the difference reduces the carrying amount each year, and the expense falls as the base falls.",
-      "explanation_tr": "Primli tahvil nominal değerin üzerinden başlar. Faiz gideri (defter değeri × piyasa faizi) kupondan küçüktür; fark her yıl defter değerini azaltır ve taban küçüldükçe gider düşer."
-      ,
+      "explanation_tr": "Primli tahvil nominal değerin üzerinden başlar. Faiz gideri (defter değeri × piyasa faizi) kupondan küçüktür; fark her yıl defter değerini azaltır ve taban küçüldükçe gider düşer.",
       "wrong_option_reasons": {
-        "B": {"en": "This is the pattern for a discount bond.", "tr": "Bu, iskontolu tahvilin seyridir."},
-        "C": {"en": "Only a bond issued at par has constant carrying amount and expense equal to the coupon.", "tr": "Yalnızca nominalden ihraç edilen tahvilde defter değeri sabit ve gider kupona eşittir."}
+        "B": {
+          "en": "This is the pattern for a discount bond.",
+          "tr": "Bu, iskontolu tahvilin seyridir."
+        },
+        "C": {
+          "en": "Only a bond issued at par has constant carrying amount and expense equal to the coupon.",
+          "tr": "Yalnızca nominalden ihraç edilen tahvilde defter değeri sabit ve gider kupona eşittir."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["best-describes", "premium", "toward", "decline"],
-      "pattern_ids": ["best-describes"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "best-describes",
+        "premium",
+        "toward",
+        "decline"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-d-q05",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-d", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "recall",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
       "stem_en": "Which disclosure about long-term debt is most useful for an analyst who wants to assess refinancing risk?",
       "stem_tr": "Yeniden finansman riskini değerlendirmek isteyen bir analist için uzun vadeli borçla ilgili aşağıdaki açıklamalardan hangisi en yararlıdır?",
       "options": [
-        {"key": "A", "en": "The schedule of principal repayments due in each of the next five years", "tr": "Gelecek beş yılın her birinde ödenecek anapara geri ödeme takvimi"},
-        {"key": "B", "en": "The name of the auditor who reviewed the debt balances", "tr": "Borç bakiyelerini inceleyen denetçinin adı"},
-        {"key": "C", "en": "The historical cost of the assets financed with the debt", "tr": "Borçla finanse edilen varlıkların tarihi maliyeti"}
+        {
+          "key": "A",
+          "en": "The historical cost of the assets financed with the debt",
+          "tr": "Borçla finanse edilen varlıkların tarihi maliyeti"
+        },
+        {
+          "key": "B",
+          "en": "The name of the auditor who reviewed the debt balances",
+          "tr": "Borç bakiyelerini inceleyen denetçinin adı"
+        },
+        {
+          "key": "C",
+          "en": "The schedule of principal repayments due in each of the next five years",
+          "tr": "Gelecek beş yılın her birinde ödenecek anapara geri ödeme takvimi"
+        }
       ],
-      "answer": "A",
+      "answer": "C",
       "explanation_en": "Maturity schedules show when large repayments fall due and therefore when the company may need to refinance. This is the core input for refinancing risk.",
       "explanation_tr": "Vade takvimi büyük geri ödemelerin ne zaman düşeceğini, dolayısıyla şirketin ne zaman yeniden finansmana ihtiyaç duyabileceğini gösterir. Yeniden finansman riskinin temel girdisi budur.",
       "wrong_option_reasons": {
-        "B": {"en": "The auditor's identity says nothing about when debt must be repaid.", "tr": "Denetçinin kimliği borcun ne zaman ödeneceği hakkında bir şey söylemez."},
-        "C": {"en": "The cost of financed assets does not reveal the timing of debt repayment.", "tr": "Finanse edilen varlıkların maliyeti geri ödemenin zamanlamasını göstermez."}
+        "A": {
+          "en": "The cost of financed assets does not reveal the timing of debt repayment.",
+          "tr": "Finanse edilen varlıkların maliyeti geri ödemenin zamanlamasını göstermez."
+        },
+        "B": {
+          "en": "The auditor's identity says nothing about when debt must be repaid.",
+          "tr": "Denetçinin kimliği borcun ne zaman ödeneceği hakkında bir şey söylemez."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["refinance", "schedule", "repayment", "assess"],
-      "pattern_ids": ["most-appropriate"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "refinance",
+        "schedule",
+        "repayment",
+        "assess"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-e-q01",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-e", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 1, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
       "stem_en": "Selected balance sheet data for Adalar Tekstil: cash TRY 50, receivables TRY 120, inventories TRY 180, prepaid expenses TRY 10, current liabilities TRY 200 (all in millions). The current ratio is closest to:",
       "stem_tr": "Adalar Tekstil'in seçilmiş bilanço verileri: nakit 50 TL, alacaklar 120 TL, stoklar 180 TL, peşin ödenmiş giderler 10 TL, kısa vadeli yükümlülükler 200 TL (tümü milyon). Cari oran aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "0.85", "tr": "0,85", "value": 0.85},
-        {"key": "B", "en": "1.75", "tr": "1,75", "value": 1.75},
-        {"key": "C", "en": "1.80", "tr": "1,80", "value": 1.80}
+        {
+          "key": "A",
+          "en": "0.85",
+          "tr": "0,85",
+          "value": 0.85
+        },
+        {
+          "key": "B",
+          "en": "1.75",
+          "tr": "1,75",
+          "value": 1.75
+        },
+        {
+          "key": "C",
+          "en": "1.80",
+          "tr": "1,80",
+          "value": 1.8
+        }
       ],
       "answer": "C",
       "explanation_en": "Current assets = 50 + 120 + 180 + 10 = 360. Current ratio = 360 / 200 = 1.80.",
       "explanation_tr": "Dönen varlıklar = 50 + 120 + 180 + 10 = 360. Cari oran = 360 / 200 = 1,80.",
       "wrong_option_reasons": {
-        "A": {"en": "0.85 is the quick ratio (excludes inventories and prepaids).", "tr": "0,85 asit-test oranıdır (stoklar ve peşin ödemeler hariç)."},
-        "B": {"en": "1.75 omits prepaid expenses, which are part of current assets.", "tr": "1,75 dönen varlıkların parçası olan peşin ödenmiş giderleri atlar."}
+        "A": {
+          "en": "0.85 is the quick ratio (excludes inventories and prepaids).",
+          "tr": "0,85 asit-test oranıdır (stoklar ve peşin ödemeler hariç)."
+        },
+        "B": {
+          "en": "1.75 omits prepaid expenses, which are part of current assets.",
+          "tr": "1,75 dönen varlıkların parçası olan peşin ödenmiş giderleri atlar."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: current ratio.", "tr": "İstenen: cari oran."},
-        {"en": "Formula: CA / CL; all current assets are included.", "tr": "Formül: DV / KVY; tüm dönen varlıklar dahildir.", "formula_latex": "\\frac{CA}{CL}"},
-        {"en": "CA = 50 + 120 + 180 + 10 = 360.", "tr": "DV = 50 + 120 + 180 + 10 = 360.", "values": {"Cash": 50, "Receivables": 120, "Inventories": 180, "Prepaid": 10, "CL": 200}},
-        {"en": "Result: 360 / 200 = 1.80.", "tr": "Sonuç: 360 / 200 = 1,80."}
+        {
+          "en": "What is asked: current ratio.",
+          "tr": "İstenen: cari oran."
+        },
+        {
+          "en": "Formula: CA / CL; all current assets are included.",
+          "tr": "Formül: DV / KVY; tüm dönen varlıklar dahildir.",
+          "formula_latex": "\\frac{CA}{CL}"
+        },
+        {
+          "en": "CA = 50 + 120 + 180 + 10 = 360.",
+          "tr": "DV = 50 + 120 + 180 + 10 = 360.",
+          "values": {
+            "Cash": 50,
+            "Receivables": 120,
+            "Inventories": 180,
+            "Prepaid": 10,
+            "CL": 200
+          }
+        },
+        {
+          "en": "Result: 360 / 200 = 1.80.",
+          "tr": "Sonuç: 360 / 200 = 1,80."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["50", "[+]", "120", "[+]", "180", "[+]", "10", "[=]", "[÷]", "200", "[=]"]},
-      "numeric": {"expr": "(50+120+180+10)/200"},
-      "vocab_ids": ["prepaid", "current-ratio", "selected"],
-      "pattern_ids": ["closest-to"],
-      "spk_link": {"status": "known", "note_tr": "Cari oran SPK 1007 mali analizde var."},
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50",
+          "[+]",
+          "120",
+          "[+]",
+          "180",
+          "[+]",
+          "10",
+          "[=]",
+          "[÷]",
+          "200",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(50+120+180+10)/200"
+      },
+      "vocab_ids": [
+        "prepaid",
+        "current-ratio",
+        "selected"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Cari oran SPK 1007 mali analizde var."
+      },
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-e-q02",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-e", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Using the same data for Adalar Tekstil (cash TRY 50, receivables TRY 120, inventories TRY 180, prepaid expenses TRY 10, current liabilities TRY 200, in millions), the quick ratio is closest to:",
       "stem_tr": "Adalar Tekstil için aynı veriler kullanılarak (nakit 50 TL, alacaklar 120 TL, stoklar 180 TL, peşin ödenmiş giderler 10 TL, kısa vadeli yükümlülükler 200 TL, milyon), asit-test oranı aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "0.25", "tr": "0,25", "value": 0.25},
-        {"key": "B", "en": "0.85", "tr": "0,85", "value": 0.85},
-        {"key": "C", "en": "0.90", "tr": "0,90", "value": 0.90}
+        {
+          "key": "A",
+          "en": "0.25",
+          "tr": "0,25",
+          "value": 0.25
+        },
+        {
+          "key": "B",
+          "en": "0.85",
+          "tr": "0,85",
+          "value": 0.85
+        },
+        {
+          "key": "C",
+          "en": "0.90",
+          "tr": "0,90",
+          "value": 0.9
+        }
       ],
       "answer": "B",
       "explanation_en": "Quick ratio = (cash + receivables) / CL = (50 + 120) / 200 = 0.85. Inventories and prepaid expenses are excluded.",
       "explanation_tr": "Asit-test oranı = (nakit + alacaklar) / KVY = (50 + 120) / 200 = 0,85. Stoklar ve peşin ödenmiş giderler hariçtir.",
       "wrong_option_reasons": {
-        "A": {"en": "0.25 is the cash ratio; receivables belong in the quick ratio.", "tr": "0,25 nakit oranıdır; alacaklar asit-test oranına dahildir."},
-        "C": {"en": "0.90 wrongly includes prepaid expenses, which cannot be turned into cash.", "tr": "0,90 nakde çevrilemeyen peşin ödenmiş giderleri yanlış biçimde dahil eder."}
+        "A": {
+          "en": "0.25 is the cash ratio; receivables belong in the quick ratio.",
+          "tr": "0,25 nakit oranıdır; alacaklar asit-test oranına dahildir."
+        },
+        "C": {
+          "en": "0.90 wrongly includes prepaid expenses, which cannot be turned into cash.",
+          "tr": "0,90 nakde çevrilemeyen peşin ödenmiş giderleri yanlış biçimde dahil eder."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: quick ratio.", "tr": "İstenen: asit-test oranı."},
-        {"en": "Formula: (cash + marketable securities + receivables) / CL.", "tr": "Formül: (nakit + menkul kıymetler + alacaklar) / KVY.", "formula_latex": "\\frac{50+120}{200}"},
-        {"en": "Numerator = 170; ratio = 170 / 200 = 0.85.", "tr": "Pay = 170; oran = 170 / 200 = 0,85.", "values": {"Cash": 50, "Receivables": 120, "CL": 200}},
-        {"en": "Result: 0.85.", "tr": "Sonuç: 0,85."}
+        {
+          "en": "What is asked: quick ratio.",
+          "tr": "İstenen: asit-test oranı."
+        },
+        {
+          "en": "Formula: (cash + marketable securities + receivables) / CL.",
+          "tr": "Formül: (nakit + menkul kıymetler + alacaklar) / KVY.",
+          "formula_latex": "\\frac{50+120}{200}"
+        },
+        {
+          "en": "Numerator = 170; ratio = 170 / 200 = 0.85.",
+          "tr": "Pay = 170; oran = 170 / 200 = 0,85.",
+          "values": {
+            "Cash": 50,
+            "Receivables": 120,
+            "CL": 200
+          }
+        },
+        {
+          "en": "Result: 0.85.",
+          "tr": "Sonuç: 0,85."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["50", "[+]", "120", "[=]", "[÷]", "200", "[=]"]},
-      "numeric": {"expr": "(50+120)/200"},
-      "vocab_ids": ["quick-ratio", "exclude", "marketable"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50",
+          "[+]",
+          "120",
+          "[=]",
+          "[÷]",
+          "200",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(50+120)/200"
+      },
+      "vocab_ids": [
+        "quick-ratio",
+        "exclude",
+        "marketable"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-e-q03",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-e", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
       "stem_en": "Göksu Makine has total assets of TRY 2,400 million, interest-bearing debt of TRY 900 million, other liabilities of TRY 500 million and equity of TRY 1,000 million. Its debt-to-capital ratio is closest to:",
       "stem_tr": "Göksu Makine'nin toplam varlıkları 2.400 milyon TL, faiz getiren borcu 900 milyon TL, diğer yükümlülükleri 500 milyon TL ve özkaynağı 1.000 milyon TL'dir. Borç/sermaye oranı aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "0.47", "tr": "0,47", "value": 0.474},
-        {"key": "B", "en": "0.58", "tr": "0,58", "value": 0.583},
-        {"key": "C", "en": "0.90", "tr": "0,90", "value": 0.90}
+        {
+          "key": "A",
+          "en": "0.47",
+          "tr": "0,47",
+          "value": 0.474
+        },
+        {
+          "key": "B",
+          "en": "0.58",
+          "tr": "0,58",
+          "value": 0.583
+        },
+        {
+          "key": "C",
+          "en": "0.90",
+          "tr": "0,90",
+          "value": 0.9
+        }
       ],
       "answer": "A",
       "explanation_en": "Debt-to-capital = debt / (debt + equity) = 900 / (900 + 1,000) = 0.474. Only interest-bearing debt is used.",
       "explanation_tr": "Borç/sermaye = borç / (borç + özkaynak) = 900 / (900 + 1.000) = 0,474. Yalnızca faiz getiren borç kullanılır.",
       "wrong_option_reasons": {
-        "B": {"en": "0.58 is total liabilities / total assets (1,400 / 2,400), a different ratio.", "tr": "0,58 toplam yükümlülük / toplam varlık (1.400 / 2.400) oranıdır; farklı bir orandır."},
-        "C": {"en": "0.90 is debt-to-equity (900 / 1,000), not debt-to-capital.", "tr": "0,90 borç/özkaynak oranıdır (900 / 1.000), borç/sermaye değil."}
+        "B": {
+          "en": "0.58 is total liabilities / total assets (1,400 / 2,400), a different ratio.",
+          "tr": "0,58 toplam yükümlülük / toplam varlık (1.400 / 2.400) oranıdır; farklı bir orandır."
+        },
+        "C": {
+          "en": "0.90 is debt-to-equity (900 / 1,000), not debt-to-capital.",
+          "tr": "0,90 borç/özkaynak oranıdır (900 / 1.000), borç/sermaye değil."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: debt-to-capital.", "tr": "İstenen: borç/sermaye."},
-        {"en": "Formula: D / (D + E) with D = interest-bearing debt.", "tr": "Formül: B / (B + Ö); B = faiz getiren borç.", "formula_latex": "\\frac{D}{D+E}=\\frac{900}{900+1000}"},
-        {"en": "900 / 1,900 = 0.4737.", "tr": "900 / 1.900 = 0,4737.", "values": {"Debt": 900, "Equity": 1000}},
-        {"en": "Result: about 0.47.", "tr": "Sonuç: yaklaşık 0,47."}
+        {
+          "en": "What is asked: debt-to-capital.",
+          "tr": "İstenen: borç/sermaye."
+        },
+        {
+          "en": "Formula: D / (D + E) with D = interest-bearing debt.",
+          "tr": "Formül: B / (B + Ö); B = faiz getiren borç.",
+          "formula_latex": "\\frac{D}{D+E}=\\frac{900}{900+1000}"
+        },
+        {
+          "en": "900 / 1,900 = 0.4737.",
+          "tr": "900 / 1.900 = 0,4737.",
+          "values": {
+            "Debt": 900,
+            "Equity": 1000
+          }
+        },
+        {
+          "en": "Result: about 0.47.",
+          "tr": "Sonuç: yaklaşık 0,47."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["900", "[÷]", "(", "900", "[+]", "1000", ")", "[=]"]},
-      "numeric": {"expr": "900/(900+1000)"},
-      "vocab_ids": ["interest-bearing", "debt-to-capital", "solvency"],
-      "pattern_ids": ["closest-to"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900",
+          "[÷]",
+          "(",
+          "900",
+          "[+]",
+          "1000",
+          ")",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "900/(900+1000)"
+      },
+      "vocab_ids": [
+        "interest-bearing",
+        "debt-to-capital",
+        "solvency"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-e-q04",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-e", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 2, "cognitive": "analyze",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
       "stem_en": "In a common-size balance sheet, Firm P shows inventories at 32% of total assets while its industry peers average 15%. The most likely interpretation is that Firm P:",
       "stem_tr": "Dikey bilançoda P şirketi stokları toplam varlıkların %32'si olarak gösterirken sektör ortalaması %15'tir. En olası yorum, P şirketinin:",
       "options": [
-        {"key": "A", "en": "has a stronger quick ratio than its peers", "tr": "emsallerinden daha güçlü bir asit-test oranına sahip olmasıdır"},
-        {"key": "B", "en": "may be carrying slow-moving or excess inventory, which deserves further analysis", "tr": "yavaş dönen ya da fazla stok taşıyor olabileceği ve bunun daha fazla analiz gerektirdiğidir"},
-        {"key": "C", "en": "is larger than its peers in absolute terms", "tr": "mutlak büyüklük olarak emsallerinden daha büyük olmasıdır"}
+        {
+          "key": "A",
+          "en": "has a stronger quick ratio than its peers",
+          "tr": "emsallerinden daha güçlü bir asit-test oranına sahip olmasıdır"
+        },
+        {
+          "key": "B",
+          "en": "may be carrying slow-moving or excess inventory, which deserves further analysis",
+          "tr": "yavaş dönen ya da fazla stok taşıyor olabileceği ve bunun daha fazla analiz gerektirdiğidir"
+        },
+        {
+          "key": "C",
+          "en": "is larger than its peers in absolute terms",
+          "tr": "mutlak büyüklük olarak emsallerinden daha büyük olmasıdır"
+        }
       ],
       "answer": "B",
       "explanation_en": "Common-size analysis removes size, so a much higher inventory share points to a structural difference (different business model, obsolete stock, overproduction) that the analyst should investigate.",
       "explanation_tr": "Dikey analiz büyüklüğü devre dışı bırakır; bu nedenle çok daha yüksek stok payı analistin araştırması gereken yapısal bir farka (farklı iş modeli, eskimiş stok, aşırı üretim) işaret eder.",
       "wrong_option_reasons": {
-        "A": {"en": "Inventory is excluded from the quick ratio; a high inventory share says nothing positive about it.", "tr": "Stok asit-test oranına dahil değildir; yüksek stok payı bu oran hakkında olumlu bir şey söylemez."},
-        "C": {"en": "Percentages of total assets carry no information about absolute size.", "tr": "Toplam varlık yüzdeleri mutlak büyüklük hakkında bilgi taşımaz."}
+        "A": {
+          "en": "Inventory is excluded from the quick ratio; a high inventory share says nothing positive about it.",
+          "tr": "Stok asit-test oranına dahil değildir; yüksek stok payı bu oran hakkında olumlu bir şey söylemez."
+        },
+        "C": {
+          "en": "Percentages of total assets carry no information about absolute size.",
+          "tr": "Toplam varlık yüzdeleri mutlak büyüklük hakkında bilgi taşımaz."
+        }
       },
       "solution_steps": [],
-      "vocab_ids": ["peer", "slow-moving", "excess", "deserve", "interpretation"],
-      "pattern_ids": ["most-likely"],
-      "source_basis": "original", "verified": false
+      "vocab_ids": [
+        "peer",
+        "slow-moving",
+        "excess",
+        "deserve",
+        "interpretation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FSA-03-e-q05",
-      "level": "L1", "topic": "FSA", "module_id": "FSA-03", "los_id": "FSA-03-e", "curriculum_year": 2027,
-      "type": "mcq3", "difficulty": 3, "cognitive": "apply",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
       "stem_en": "Yıldız Gıda has total assets of TRY 5,000 million and total equity of TRY 2,000 million. Management plans to use TRY 500 million of cash to repay debt. All else equal, after the repayment the financial leverage ratio (total assets / total equity) is closest to:",
       "stem_tr": "Yıldız Gıda'nın toplam varlıkları 5.000 milyon TL, toplam özkaynağı 2.000 milyon TL'dir. Yönetim 500 milyon TL nakdi borç geri ödemesinde kullanmayı planlamaktadır. Diğer her şey sabitken, geri ödemeden sonra finansal kaldıraç oranı (toplam varlık / toplam özkaynak) aşağıdakilerden hangisine en yakındır?",
       "options": [
-        {"key": "A", "en": "2.25", "tr": "2,25", "value": 2.25},
-        {"key": "B", "en": "2.50", "tr": "2,50", "value": 2.50},
-        {"key": "C", "en": "3.00", "tr": "3,00", "value": 3.00}
+        {
+          "key": "A",
+          "en": "2.25",
+          "tr": "2,25",
+          "value": 2.25
+        },
+        {
+          "key": "B",
+          "en": "2.50",
+          "tr": "2,50",
+          "value": 2.5
+        },
+        {
+          "key": "C",
+          "en": "3.00",
+          "tr": "3,00",
+          "value": 3.0
+        }
       ],
       "answer": "A",
       "explanation_en": "Repaying debt with cash reduces both assets and liabilities by 500; equity is unchanged. Leverage = (5,000 - 500) / 2,000 = 2.25, down from 2.50.",
       "explanation_tr": "Nakitle borç ödemek hem varlıkları hem yükümlülükleri 500 azaltır; özkaynak değişmez. Kaldıraç = (5.000 − 500) / 2.000 = 2,25; önceki 2,50'den düşer.",
       "wrong_option_reasons": {
-        "B": {"en": "2.50 is the leverage before the repayment.", "tr": "2,50 geri ödeme öncesi kaldıraçtır."},
-        "C": {"en": "3.00 would require equity to fall to 1,500, but repaying debt does not change equity.", "tr": "3,00 için özkaynağın 1.500'e düşmesi gerekirdi; oysa borç ödemek özkaynağı değiştirmez."}
+        "B": {
+          "en": "2.50 is the leverage before the repayment.",
+          "tr": "2,50 geri ödeme öncesi kaldıraçtır."
+        },
+        "C": {
+          "en": "3.00 would require equity to fall to 1,500, but repaying debt does not change equity.",
+          "tr": "3,00 için özkaynağın 1.500'e düşmesi gerekirdi; oysa borç ödemek özkaynağı değiştirmez."
+        }
       },
       "solution_steps": [
-        {"en": "What is asked: leverage after the transaction.", "tr": "İstenen: işlem sonrası kaldıraç."},
-        {"en": "Repaying debt: assets -500, liabilities -500, equity unchanged.", "tr": "Borç ödeme: varlık −500, yükümlülük −500, özkaynak aynı."},
-        {"en": "Leverage = 4,500 / 2,000.", "tr": "Kaldıraç = 4.500 / 2.000.", "formula_latex": "\\frac{5000-500}{2000}", "values": {"Assets": 5000, "Repayment": 500, "Equity": 2000}},
-        {"en": "Result: 2.25.", "tr": "Sonuç: 2,25."}
+        {
+          "en": "What is asked: leverage after the transaction.",
+          "tr": "İstenen: işlem sonrası kaldıraç."
+        },
+        {
+          "en": "Repaying debt: assets -500, liabilities -500, equity unchanged.",
+          "tr": "Borç ödeme: varlık −500, yükümlülük −500, özkaynak aynı."
+        },
+        {
+          "en": "Leverage = 4,500 / 2,000.",
+          "tr": "Kaldıraç = 4.500 / 2.000.",
+          "formula_latex": "\\frac{5000-500}{2000}",
+          "values": {
+            "Assets": 5000,
+            "Repayment": 500,
+            "Equity": 2000
+          }
+        },
+        {
+          "en": "Result: 2.25.",
+          "tr": "Sonuç: 2,25."
+        }
       ],
-      "calculator": {"device": "BA II Plus", "keystrokes": ["5000", "[−]", "500", "[=]", "[÷]", "2000", "[=]"]},
-      "numeric": {"expr": "(5000-500)/2000"},
-      "vocab_ids": ["all-else-equal", "repay", "leverage", "unchanged"],
-      "pattern_ids": ["closest-to", "all-else-equal"],
-      "source_basis": "original", "verified": false
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000",
+          "[−]",
+          "500",
+          "[=]",
+          "[÷]",
+          "2000",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(5000-500)/2000"
+      },
+      "vocab_ids": [
+        "all-else-equal",
+        "repay",
+        "leverage",
+        "unchanged"
+      ],
+      "pattern_ids": [
+        "closest-to",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
