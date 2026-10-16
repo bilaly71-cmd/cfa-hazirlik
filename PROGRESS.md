@@ -1,6 +1,6 @@
 # PROGRESS
 
-SIRADAKİ ADIM: Fable 5.1 ajanları çalışıyor (dil katmanı, ETH-a/b, FSA-r1/r2, EQ-r1, FI-r1, QM-b, reviewer R1, araştırma birleştirme). Bitenler commit'lenecek; sonra kuyruk: FI 10-13 & 16-19, EQ 08-12, FSA 11-12, QM 01-05, ECO, CI, DER, AI, PM, etik vakaları+formüller+BA II Plus; her paket için reviewer. Ajan sayısını ≤10 tut (20 paralel ajan kotayı 30 dk'da bitirdi).
+SIRADAKİ ADIM: Fable ajanları çalışıyor: R2 (FSA-06, FSA-10, EQ-07), R3 (FI-08/09/14/15), R4 (ETH-01..04) denetçileri; ETH-c (ETH-05..10), FSA-r3 (03,04,09,11,12), dil katmanı (GEN, FIN-everyday, kalıplar). Bitenleri commit'le + `npm run build-content`. Kuyruk: denetim (FI-02..05, FSA-02/07/08, EQ-03, QM-06..10), üretim (FI 06-07,10-13,16-19; EQ 04-06,08-12; QM 01-05,11; ECO; CI; DER; AI; PM; etik vakaları+formüller+BA II Plus). Aynı anda ≤6 ajan (≥10 paralel ajan kotayı ~30 dk'da bitiriyor).
 
 ## Nasıl devam edilir (yeni oturum için)
 - İçerik kuralları: `docs/CONTENT_SPEC.md`; üretici görev şablonu: `docs/GEN_PROMPT.md`; denetçi: `docs/REVIEW_SPEC.md`.
@@ -8,7 +8,7 @@ SIRADAKİ ADIM: Fable 5.1 ajanları çalışıyor (dil katmanı, ETH-a/b, FSA-r1
 - `npm run validate-content`, `npm run verify-numeric`, `npm run build-content` (uygulamaya yalnızca doğrulanmışlar girer), `npm test`.
 
 ## Durum
-- [x] Faz 0 ham araştırma: docs/research/A_lojistik (57 kaynak), B_turkiye_spk (+spk_map.json), C_mufredat (+L1/L2/L3.json, 2027: 102 modül/340 LOS), D_strateji+D_kesifler (~72 kaynak). Birleştirme (RESEARCH/SOURCES/REHBER) YAPILMADI.
+- [x] Faz 0 ham araştırma: docs/research/A_lojistik (57 kaynak), B_turkiye_spk (+spk_map.json), C_mufredat (+L1/L2/L3.json, 2027: 102 modül/340 LOS), D_strateji+D_kesifler (~72 kaynak). Birleştirildi: docs/RESEARCH.md, SOURCES.md (182 tekil kaynak), CFA_REHBERI_TR.md, KESIFLER.md, content/exam_info/info.json.
 - [x] Faz 1 — Expo SDK 58 iskeleti, zod şeması, FSRS, skor/mock, kelime eşleme, glossary lint, dışa aktarma, 23 birim testi
 - [x] Faz 2 altyapı — validate/build/ngram (scripts/content.ts), verify_numeric.py
 - [~] Faz 2 içerik — üretici ajanlar başlatıldı: FSA, FI, EQ, ETH, QM, ECO, CI, DER, AI, PM (tüm 102 modül) + glossary/GEN kelime/soru kalıpları + etik vakaları/formüller/BA II Plus. Oturum kesildiğinde ~172 soru diskteydi, hepsi verified:false.
