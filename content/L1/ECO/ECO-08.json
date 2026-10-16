@@ -57,8 +57,8 @@
         "kind": "example",
         "heading_en": "Worked example: a one-year forward USD/TRY",
         "heading_tr": "Çözümlü örnek: bir yıllık vadeli USD/TRY",
-        "en": "Spot USD/TRY is 34.00. The one-year lira rate is 45% and the dollar rate is 5%. F = 34.00 x 1.45 / 1.05 = 46.95. The dollar trades at a forward premium of 46.95 / 34.00 - 1 = 38.1%, and the lira at a forward discount of 1 - 34.00 / 46.95 = 27.6%. Note that the 38.1% is not the simple interest gap of 40 percentage points.",
-        "tr": "Spot USD/TRY 34,00'dır. Bir yıllık lira faizi %45, dolar faizi %5'tir. F = 34,00 x 1,45 / 1,05 = 46,95. Dolar, 46,95 / 34,00 - 1 = %38,1 vadeli primle işlem görür; lira ise 1 - 34,00 / 46,95 = %27,6 vadeli iskontoyla. %38,1'in, 40 puanlık basit faiz farkı olmadığına dikkat edin.",
+        "en": "Use hypothetical numbers: spot USD/TRY is 34.00, the one-year lira rate is 45% and the dollar rate is 5%. F = 34.00 x 1.45 / 1.05 = 46.95. The dollar trades at a forward premium of 46.95 / 34.00 - 1 = 38.1%, and the lira at a forward discount of 1 - 34.00 / 46.95 = 27.6%. Note that the 38.1% is not the simple interest gap of 40 percentage points.",
+        "tr": "Varsayımsal sayılar kullanalım: spot USD/TRY 34,00, bir yıllık lira faizi %45, dolar faizi %5'tir. F = 34,00 x 1,45 / 1,05 = 46,95. Dolar, 46,95 / 34,00 - 1 = %38,1 vadeli primle işlem görür; lira ise 1 - 34,00 / 46,95 = %27,6 vadeli iskontoyla. %38,1'in, 40 puanlık basit faiz farkı olmadığına dikkat edin.",
         "key_terms": [],
         "example": {
           "en": "F = 34.00 x 1.45 / 1.05 = 46.95",
@@ -103,7 +103,11 @@
       "day-count"
     ],
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
@@ -189,7 +193,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-a-q02",
@@ -274,7 +282,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-a-q03",
@@ -359,7 +371,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-a-q04",
@@ -444,7 +460,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-a-q05",
@@ -531,7 +551,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-b-q01",
@@ -543,8 +567,8 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "Spot USD/TRY is 34.00. The one-year lira interest rate is 45% and the one-year dollar rate is 5%. Using covered interest parity, the one-year forward USD/TRY is closest to:",
-      "stem_tr": "Spot USD/TRY 34,00'dır. Bir yıllık lira faizi %45, bir yıllık dolar faizi %5'tir. Kapalı faiz paritesiyle bir yıllık vadeli USD/TRY en yakın olarak:",
+      "stem_en": "Assume hypothetical rates. Spot USD/TRY is 34.00. The one-year lira interest rate is 45% and the one-year dollar rate is 5%. Using covered interest parity, the one-year forward USD/TRY is closest to:",
+      "stem_tr": "Varsayımsal faiz oranları kabul edin. Spot USD/TRY 34,00'dır. Bir yıllık lira faizi %45, bir yıllık dolar faizi %5'tir. Kapalı faiz paritesiyle bir yıllık vadeli USD/TRY en yakın olarak:",
       "options": [
         {
           "key": "A",
@@ -616,7 +640,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-b-q02",
@@ -703,7 +731,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-b-q03",
@@ -758,7 +790,11 @@
         "if-then"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-b-q04",
@@ -770,8 +806,8 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "Spot USD/TRY is 34.00 and the one-year forward is 46.95. The forward premium on the US dollar relative to the lira is closest to:",
-      "stem_tr": "Spot USD/TRY 34,00 ve bir yıllık vadeli kur 46,95'tir. Doların liraya göre vadeli primi en yakın olarak:",
+      "stem_en": "In a hypothetical case, spot USD/TRY is 34.00 and the one-year forward is 46.95. The forward premium on the US dollar relative to the lira is closest to:",
+      "stem_tr": "Varsayımsal bir durumda, spot USD/TRY 34,00 ve bir yıllık vadeli kur 46,95'tir. Doların liraya göre vadeli primi en yakın olarak:",
       "options": [
         {
           "key": "A",
@@ -844,7 +880,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "ECO-08-b-q05",
@@ -856,8 +896,8 @@
       "type": "mcq3",
       "difficulty": 3,
       "cognitive": "analyze",
-      "stem_en": "Spot USD/TRY is 34.00; the CIP-consistent one-year forward is 46.95, but the market forward is 48.00. Rates are 45% (TRY) and 5% (USD). The arbitrage that exploits this is most likely to:",
-      "stem_tr": "Spot USD/TRY 34,00; CIP ile tutarlı bir yıllık vadeli kur 46,95'tir, ancak piyasadaki vadeli kur 48,00'dır. Faizler %45 (TL) ve %5 (USD)'dir. Bunu değerlendiren arbitraj büyük olasılıkla şunları yapar:",
+      "stem_en": "Assume hypothetical rates. Spot USD/TRY is 34.00; the CIP-consistent one-year forward is 46.95, but the market forward is 48.00. Rates are 45% (TRY) and 5% (USD). The arbitrage that exploits this is most likely to:",
+      "stem_tr": "Varsayımsal faiz oranları kabul edin. Spot USD/TRY 34,00; CIP ile tutarlı bir yıllık vadeli kur 46,95'tir, ancak piyasadaki vadeli kur 48,00'dır. Faizler %45 (TL) ve %5 (USD)'dir. Bunu değerlendiren arbitraj büyük olasılıkla şunları yapar:",
       "options": [
         {
           "key": "A",
@@ -898,7 +938,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
