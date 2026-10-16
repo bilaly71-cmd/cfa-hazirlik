@@ -961,7 +961,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "AI-02-b-q06",
@@ -1023,7 +1027,7 @@
         "keystrokes": [
           "50 [×] 0.015 [=] (0.75)",
           "12 [-] 0.75 [=] [×] 0.2 [=] (2.25)",
-          "62 [-] 0.75 [-] 2.25 [-] 50 [=] [÷] 50 [=]"
+          "62 [-] 0.75 [-] 2.25 [-] 50 [=] [÷] 50 [×] 100 [=] (18.0)"
         ]
       },
       "numeric": {
@@ -1051,7 +1055,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
