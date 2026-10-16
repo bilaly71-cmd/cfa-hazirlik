@@ -1,6 +1,6 @@
 # PROGRESS
 
-SIRADAKİ ADIM: Fable ajanları çalışıyor: R2 (FSA-06, FSA-10, EQ-07), R3 (FI-08/09/14/15), R4 (ETH-01..04) denetçileri; ETH-c (ETH-05..10), FSA-r3 (03,04,09,11,12), dil katmanı (GEN, FIN-everyday, kalıplar). Bitenleri commit'le + `npm run build-content`. Kuyruk: denetim (FI-02..05, FSA-02/07/08, EQ-03, QM-06..10), üretim (FI 06-07,10-13,16-19; EQ 04-06,08-12; QM 01-05,11; ECO; CI; DER; AI; PM; etik vakaları+formüller+BA II Plus). Aynı anda ≤6 ajan (≥10 paralel ajan kotayı ~30 dk'da bitiriyor).
+SIRADAKİ ADIM: Sonnet ajanları çalışıyor (ETH 05-10 denetimi; QM 06-10+FSA-04+FI-06 denetimi; ECO+CI üretimi). Bitince commit + `npm run build-content` + push. Kuyruk: FSA-09/11/12, FI-07/10-13/16-19, EQ-04..06/08..12, QM-01..05/11, DER, AI, PM, etik vakaları+formüller+BA II Plus+soru kalıpları (content/patterns yok!), 2 mock hedefi (≥360 doğrulanmış soru gerek). Aynı anda ≤3 ajan, model sonnet (maliyet). YAYIN: repo github.com/bilaly71-cmd/cfa-hazirlik (private); Pages özel repoda ücretsiz planda çalışmıyor → kullanıcı kararı (repoyu public yap veya yerelde `npm run web`).
 
 ## Nasıl devam edilir (yeni oturum için)
 - İçerik kuralları: `docs/CONTENT_SPEC.md`; üretici görev şablonu: `docs/GEN_PROMPT.md`; denetçi: `docs/REVIEW_SPEC.md`.

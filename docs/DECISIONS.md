@@ -7,3 +7,4 @@
 - 2026-10-16 · KaTeX CSS fontları base64 gömülü tek TS modülünde (src/components/katex-css.ts); web'de <style>, native'de WebView · offline formül render, font yolu sorunu yok.
 - 2026-10-16 · Not: private repoda GitHub Pages için GitHub Pro (veya org planı) gerekir; yoksa Pages'i public repo ile ya da Expo Go/yerel ağ ile kullan · GitHub kısıtı.
 - 2026-10-16 · `build-content --preview` doğrulanmamış içeriği yalnızca yerel UI testi için pakete alır; commit edilen bundle daima yalnızca doğrulanmış içerik içerir.
+- 2026-10-16 · Kullanıcı isteğiyle ajanlar Sonnet 5.5'e (maliyet) geçirildi, aynı anda ≤3 ajan · kota tasarrufu.
