@@ -1,0 +1,1528 @@
+{
+  "module_id": "EQ-06",
+  "lesson": {
+    "id": "EQ-06-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-06",
+    "los_ids": [
+      "EQ-06-a",
+      "EQ-06-b",
+      "EQ-06-c",
+      "EQ-06-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Discounted Cash Flow (DCF) and Growth Models",
+    "title_tr": "İndirgenmiş Nakit Akışı (İNA) ve Büyüme Modelleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A share is a claim on future cash",
+        "heading_tr": "Pay, gelecekteki nakit üzerinde bir haktır",
+        "en": "Why would anyone pay 30 TL for a share? Because it is expected to bring cash in the future: dividends, or cash the firm could pay out. DCF valuation adds up those future cash flows after discounting them, because 1 TL later is worth less than 1 TL today. Think of a fictional BIST electricity distributor, Akdeniz Dağıtım, that pays a growing dividend every year. If you can forecast the dividend and choose a fair required return, you can estimate what the share is worth today. The idea is simple; the difficulty is in the forecasts.",
+        "tr": "Biri neden bir paya 30 TL ödesin? Çünkü pay gelecekte nakit getirmesi beklenen bir varlıktır: temettüler veya şirketin dağıtabileceği nakit. İNA değerlemesi bu gelecekteki nakit akışlarını iskonto ederek toplar; çünkü ileride alınacak 1 TL bugünkü 1 TL'den daha az değerlidir. Her yıl artan temettü ödeyen kurgusal bir BIST elektrik dağıtım şirketi olan Akdeniz Dağıtım'ı düşünün. Temettüyü tahmin edip adil bir getiri beklentisi seçebilirseniz payın bugünkü değerini kestirebilirsiniz. Fikir basittir; zorluk tahminlerdedir.",
+        "key_terms": [
+          "discounted cash flow",
+          "required return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Which cash flow, which discount rate?",
+        "heading_tr": "Hangi nakit akışı, hangi iskonto oranı?",
+        "en": "Dividend discount model (DDM): dividends, discounted at the cost of equity. Free cash flow to equity (FCFE): cash available to common shareholders after reinvestment and debt payments, discounted at the cost of equity. Free cash flow to the firm (FCFF): cash available to all capital providers, discounted at the weighted average cost of capital (WACC); the result is firm value, and you subtract debt to get equity value. Residual income: book value of equity plus the present value of earnings above the equity charge. The present value process: understand the business, forecast cash flows, choose the model, convert forecasts to a value, and apply the result. Match the cash flow with its discount rate.",
+        "tr": "Temettü indirgeme modeli (TİM): temettüler, özkaynak maliyetiyle iskonto edilir. Özkaynağa serbest nakit akışı (FCFE): yeniden yatırım ve borç ödemelerinden sonra adi pay sahiplerine kalan nakit; özkaynak maliyetiyle iskonto edilir. Firmaya serbest nakit akışı (FCFF): tüm sermaye sağlayıcılarına kalan nakit; ağırlıklı ortalama sermaye maliyetiyle (AOSM) iskonto edilir, sonuç firma değeridir ve özkaynak değeri için borç çıkarılır. Artık gelir: özkaynağın defter değeri artı özkaynak maliyetinin üzerindeki kârların bugünkü değeri. Bugünkü değer süreci: işi anlamak, nakit akışlarını tahmin etmek, modeli seçmek, tahminleri değere çevirmek ve sonucu uygulamaktır. Nakit akışını kendi iskonto oranıyla eşleştirin.",
+        "key_terms": [
+          "DDM",
+          "FCFE",
+          "FCFF",
+          "WACC",
+          "residual income"
+        ],
+        "formula_latex": "FCFE=FCFF-Int(1-t)+\\text{Net borrowing}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Constant growth (Gordon) and multistage models",
+        "heading_tr": "Sabit büyüme (Gordon) ve çok aşamalı modeller",
+        "en": "Gordon growth model: V0 = D1 / (r − g) = D0 (1 + g) / (r − g), valid only if g < r and growth is stable forever. Rearranged, r = D1 / V0 + g. Sustainable growth: g = retention rate × ROE. Multistage model: forecast dividends explicitly for the high-growth years, find the terminal value at the end of that period with the Gordon formula, and discount everything. Variables: D0, D1 = last and next dividend, r = required return, g = growth rate.",
+        "tr": "Gordon büyüme modeli: V0 = D1 / (r − g) = D0 (1 + g) / (r − g); yalnızca g < r ve büyüme sonsuza dek sabitse geçerlidir. Düzenlenirse r = D1 / V0 + g. Sürdürülebilir büyüme: g = kâr tutma oranı × ROE. Çok aşamalı model: yüksek büyüme yıllarının temettülerini tek tek tahmin eder, bu dönemin sonundaki terminal değeri Gordon formülüyle bulur ve hepsini iskonto eder. Değişkenler: D0, D1 = son ve gelecek temettü, r = getiri beklentisi, g = büyüme oranı.",
+        "key_terms": [
+          "Gordon growth model",
+          "terminal value",
+          "sustainable growth"
+        ],
+        "formula_latex": "V_0=\\frac{D_1}{r-g},\\quad V_n=\\frac{D_{n+1}}{r-g}"
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Preferred shares",
+        "heading_tr": "İmtiyazlı paylar",
+        "en": "A plain preferred share pays a fixed dividend forever, so it is a perpetuity: V = D / r. A call feature lets the issuer buy the share back, which limits upside, so a callable preferred is worth less than a plain one. A put feature lets the holder sell back at a set price, so a putable preferred is worth more. A convertible preferred can be turned into common shares; its value is at least the higher of its straight preferred value and its conversion value (conversion ratio × common price).",
+        "tr": "Sade imtiyazlı pay sonsuza kadar sabit temettü öder; yani bir sonsuz anüitedir: V = D / r. Geri çağırma hakkı ihraççının payı geri almasına izin verir, yükseliş potansiyelini sınırlar; bu yüzden geri çağrılabilir imtiyazlı pay sade olandan daha az değerlidir. Satma hakkı sahibe payı belirli fiyattan geri satma imkânı verir; satılabilir imtiyazlı pay daha değerlidir. Dönüştürülebilir imtiyazlı pay adi paya çevrilebilir; değeri, sade imtiyazlı pay değeri ile dönüştürme değerinin (dönüştürme oranı × adi pay fiyatı) büyüğünden az olamaz.",
+        "key_terms": [
+          "perpetuity",
+          "callable preferred",
+          "convertible preferred"
+        ],
+        "formula_latex": "V_{pref}=\\frac{D}{r}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Numeric illustration.",
+        "tr": "Sayısal gösterim.",
+        "key_terms": [],
+        "example": {
+          "en": "Akdeniz Dağıtım just paid D0 = 2.00 TL. Dividends should grow 5% forever; the required return is 11%. D1 = 2.00 × 1.05 = 2.10. V0 = 2.10 / (0.11 − 0.05) = 35.00 TL. A preferred share of the same firm pays 5 TL a year, required return 8%: V = 5 / 0.08 = 62.50 TL.",
+          "tr": "Akdeniz Dağıtım az önce D0 = 2,00 TL ödedi. Temettülerin sonsuza dek %5 artması bekleniyor; getiri beklentisi %11. D1 = 2,00 × 1,05 = 2,10. V0 = 2,10 / (0,11 − 0,05) = 35,00 TL. Aynı şirketin yılda 5 TL ödeyen imtiyazlı payı için getiri beklentisi %8: V = 5 / 0,08 = 62,50 TL."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Weaknesses and traps",
+        "heading_tr": "Zayıf yönler ve tuzaklar",
+        "en": "The Gordon model needs g < r and is very sensitive: when r − g is small, a tiny change in g moves value a lot. It does not suit firms with unstable growth or no dividends. Multistage models handle changing growth but need more forecasts, and an abrupt drop from high to terminal growth is unrealistic. Terminal growth should not exceed the long-run growth of the economy. Do not use D0 where the formula needs D1, and do not discount FCFF at the cost of equity.",
+        "tr": "Gordon modeli g < r gerektirir ve çok duyarlıdır: r − g küçükken g'deki küçük değişiklik değeri çok oynatır. Büyümesi istikrarsız veya temettü ödemeyen şirketlere uygun değildir. Çok aşamalı modeller değişen büyümeyi yönetir ama daha çok tahmin ister; yüksek büyümeden terminal büyümeye ani düşüş gerçekçi değildir. Terminal büyüme, ekonominin uzun dönem büyümesini aşmamalıdır. Formülün D1 istediği yerde D0 kullanmayın; FCFF'yi özkaynak maliyetiyle iskonto etmeyin.",
+        "key_terms": [
+          "r − g",
+          "D0 vs D1"
+        ]
+      }
+    ],
+    "summary_en": "DCF models discount expected cash flows: dividends and FCFE at the cost of equity, FCFF at WACC. The Gordon model gives V0 = D1/(r − g) and needs g < r. Multistage models add an explicit high-growth stage and a terminal value. Preferred shares are perpetuities; call features lower and put features raise value.",
+    "summary_tr": "İNA modelleri beklenen nakit akışlarını iskonto eder: temettü ve FCFE özkaynak maliyetiyle, FCFF AOSM ile. Gordon modeli V0 = D1/(r − g) verir ve g < r gerektirir. Çok aşamalı modeller açık bir yüksek büyüme aşaması ve terminal değer ekler. İmtiyazlı paylar sonsuz anüitedir; geri çağırma hakkı değeri düşürür, satma hakkı artırır.",
+    "common_traps_tr": [
+      "D0 ile D1'i karıştırmak.",
+      "FCFF'yi özkaynak maliyetiyle iskonto etmek.",
+      "g ≥ r iken Gordon formülünü kullanmak.",
+      "Terminal değeri iskonto etmeyi unutmak.",
+      "Geri çağrılabilir imtiyazlı payı sade payla aynı değerlemek."
+    ],
+    "vocab_ids": [
+      "discounted-cash-flow",
+      "required-return",
+      "free-cash-flow",
+      "wacc",
+      "terminal-value",
+      "perpetuity",
+      "gordon-growth-model",
+      "retention-rate",
+      "sustainable-growth",
+      "callable",
+      "convertible",
+      "conversion-ratio",
+      "residual-income",
+      "net-borrowing",
+      "dividend-discount-model",
+      "preferred-share"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te iskonto ve temettü indirgeme mantığı temel düzeyde vardır; FCFE/FCFF, çok aşamalı büyüme ve imtiyazlı pay değerlemesi CFA'ya özgü ayrıntıdır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-06-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which pairing of cash flow and discount rate is most appropriate?",
+      "stem_tr": "Hangi nakit akışı ve iskonto oranı eşleştirmesi en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Free cash flow to the firm discounted at the weighted average cost of capital",
+          "tr": "Firmaya serbest nakit akışının ağırlıklı ortalama sermaye maliyetiyle iskonto edilmesi"
+        },
+        {
+          "key": "B",
+          "en": "Free cash flow to the firm discounted at the cost of equity",
+          "tr": "Firmaya serbest nakit akışının özkaynak maliyetiyle iskonto edilmesi"
+        },
+        {
+          "key": "C",
+          "en": "Dividends discounted at the weighted average cost of capital",
+          "tr": "Temettülerin ağırlıklı ortalama sermaye maliyetiyle iskonto edilmesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FCFF belongs to all capital providers, so its required return is WACC. Equity cash flows use the cost of equity.",
+      "explanation_tr": "FCFF tüm sermaye sağlayıcılarına aittir; getiri beklentisi AOSM'dir. Özkaynağa ait nakit akışları özkaynak maliyetini kullanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "FCFF is a firm-level flow; discounting at the cost of equity mismatches risk.",
+          "tr": "FCFF firma düzeyinde bir akıştır; özkaynak maliyetiyle iskonto riski uyumsuz bırakır."
+        },
+        "C": {
+          "en": "Dividends go to shareholders only, so the cost of equity is the matching rate.",
+          "tr": "Temettüler yalnızca pay sahiplerine gider; eşleşen oran özkaynak maliyetidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "free-cash-flow",
+        "wacc",
+        "discount-rate",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-06-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The residual income model is best described as estimating equity value as:",
+      "stem_tr": "Artık gelir modeli, özkaynak değerini en iyi şöyle tahmin eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the present value of dividends only.",
+          "tr": "yalnızca temettülerin bugünkü değeri."
+        },
+        {
+          "key": "B",
+          "en": "firm value computed from FCFF minus preferred shares only.",
+          "tr": "yalnızca FCFF'den hesaplanan firma değeri eksi imtiyazlı paylar."
+        },
+        {
+          "key": "C",
+          "en": "book value of equity plus the present value of expected residual income.",
+          "tr": "özkaynağın defter değeri artı beklenen artık gelirin bugünkü değeri."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Residual income is net income minus a charge for equity capital. Value = book value + PV of that excess income.",
+      "explanation_tr": "Artık gelir, net kâr eksi özkaynak sermaye maliyetidir. Değer = defter değeri + bu fazla gelirin bugünkü değeri.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes the dividend discount model.",
+          "tr": "Bu, temettü indirgeme modelini tanımlar."
+        },
+        "B": {
+          "en": "That is an incomplete description of FCFF valuation; debt must also be subtracted.",
+          "tr": "Bu, FCFF değerlemesinin eksik tanımıdır; borç da çıkarılmalıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "residual-income",
+        "book-value",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-06-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm's FCFF is 500 million TL. Interest expense is 80 million TL, the tax rate is 25% and net borrowing is 100 million TL. FCFE (TL million) is closest to:",
+      "stem_tr": "Bir şirketin FCFF'si 500 milyon TL. Faiz gideri 80 milyon TL, vergi oranı %25 ve net borçlanma 100 milyon TL. FCFE (milyon TL) en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "520.0",
+          "tr": "520,0",
+          "value": 520.0
+        },
+        {
+          "key": "B",
+          "en": "540.0",
+          "tr": "540,0",
+          "value": 540.0
+        },
+        {
+          "key": "C",
+          "en": "440.0",
+          "tr": "440,0",
+          "value": 440.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "FCFE = FCFF − Interest × (1 − t) + net borrowing = 500 − 80 × 0.75 + 100 = 540.",
+      "explanation_tr": "FCFE = FCFF − Faiz × (1 − v) + net borçlanma = 500 − 80 × 0,75 + 100 = 540.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "520 subtracts the pre-tax interest of 80 and ignores the tax shield (500 − 80 + 100).",
+          "tr": "520 vergi öncesi 80 faizi çıkarır ve vergi kalkanını yok sayar (500 − 80 + 100)."
+        },
+        "C": {
+          "en": "440 subtracts net borrowing instead of adding it.",
+          "tr": "440 net borçlanmayı eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Convert FCFF into FCFE.",
+          "tr": "FCFF'yi FCFE'ye çevirin."
+        },
+        {
+          "en": "Subtract after-tax interest and add net borrowing.",
+          "tr": "Vergi sonrası faizi çıkarın, net borçlanmayı ekleyin.",
+          "formula_latex": "FCFE=FCFF-Int(1-t)+NB"
+        },
+        {
+          "en": "500 − 60 + 100 = 540.",
+          "tr": "500 − 60 + 100 = 540."
+        }
+      ],
+      "vocab_ids": [
+        "fcfe",
+        "fcff",
+        "tax-shield",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "500-80*(1-0.25)+100",
+        "unit": "TL million"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80",
+          "[×]",
+          "0.75",
+          "[=]",
+          "[+/−]",
+          "[+]",
+          "500",
+          "[+]",
+          "100",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "In a DCF valuation of equity, which step most likely comes right after forecasting the company's cash flows?",
+      "stem_tr": "Özkaynağın İNA değerlemesinde, şirketin nakit akışlarını tahmin etmenin hemen ardından hangi adım en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Announcing the intrinsic value to the market",
+          "tr": "İçsel değeri piyasaya duyurmak"
+        },
+        {
+          "key": "B",
+          "en": "Selecting the model and discounting the forecasts at the matching rate",
+          "tr": "Modeli seçmek ve tahminleri eşleşen oranla iskonto etmek"
+        },
+        {
+          "key": "C",
+          "en": "Understanding the company's business",
+          "tr": "Şirketin işini anlamak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The process is: understand the business, forecast, choose the model and discount, then apply the conclusion.",
+      "explanation_tr": "Süreç: işi anlamak, tahmin etmek, modeli seçip iskonto etmek, sonucu uygulamaktır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Announcing a value is not a step of the valuation process itself.",
+          "tr": "Değeri duyurmak değerleme sürecinin bir adımı değildir."
+        },
+        "C": {
+          "en": "Understanding the business comes before forecasting, not after.",
+          "tr": "İşi anlamak tahminden önce gelir, sonra değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forecast",
+        "discount",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-06-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is the LEAST likely reason to prefer FCFE over the dividend discount model for a company that pays low dividends?",
+      "stem_tr": "Düşük temettü ödeyen bir şirket için FCFE'yi temettü indirgeme modeline tercih etmenin AZ OLASI nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "FCFE is always lower than dividends, so it is more conservative.",
+          "tr": "FCFE her zaman temettüden düşüktür, bu yüzden daha tutucudur."
+        },
+        {
+          "key": "B",
+          "en": "Dividends do not reflect the cash the firm could actually pay out.",
+          "tr": "Temettüler şirketin gerçekte dağıtabileceği nakdi yansıtmaz."
+        },
+        {
+          "key": "C",
+          "en": "Management has discretion over the dividend payout.",
+          "tr": "Yönetimin temettü dağıtımı üzerinde takdir yetkisi vardır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FCFE is not always lower than dividends; it can be higher or lower. The other two are standard reasons to use FCFE.",
+      "explanation_tr": "FCFE her zaman temettüden düşük değildir; yüksek veya düşük olabilir. Diğer ikisi FCFE kullanmanın standart nedenleridir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Dividends can lag the cash available, which is a reason to use FCFE.",
+          "tr": "Temettüler mevcut nakdin gerisinde kalabilir; bu FCFE kullanma nedenidir."
+        },
+        "C": {
+          "en": "Payout discretion makes dividends a weak guide to value, favoring FCFE.",
+          "tr": "Dağıtım takdiri, temettüyü zayıf bir değer göstergesi yapar ve FCFE'yi öne çıkarır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discretion",
+        "conservative",
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "least-likely"
+      ]
+    },
+    {
+      "id": "EQ-06-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Akdeniz Dağıtım just paid a dividend of 2.00 TL per share. Dividends are expected to grow 5% a year forever and the required return is 11%. The value per share is closest to:",
+      "stem_tr": "Akdeniz Dağıtım az önce pay başına 2,00 TL temettü ödedi. Temettülerin sonsuza dek yılda %5 artması bekleniyor ve getiri beklentisi %11. Pay başına değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "33.33 TL",
+          "tr": "33,33 TL",
+          "value": 33.33
+        },
+        {
+          "key": "B",
+          "en": "19.09 TL",
+          "tr": "19,09 TL",
+          "value": 19.09
+        },
+        {
+          "key": "C",
+          "en": "35.00 TL",
+          "tr": "35,00 TL",
+          "value": 35.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "D1 = 2.00 × 1.05 = 2.10. V0 = 2.10 / (0.11 − 0.05) = 35.00 TL.",
+      "explanation_tr": "D1 = 2,00 × 1,05 = 2,10. V0 = 2,10 / (0,11 − 0,05) = 35,00 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "33.33 TL uses D0 instead of D1 in the numerator.",
+          "tr": "33,33 TL payda D1 yerine D0 kullanır."
+        },
+        "B": {
+          "en": "19.09 TL divides D1 by the required return alone and ignores growth.",
+          "tr": "19,09 TL D1'i yalnızca getiri beklentisine böler ve büyümeyi yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the value with the Gordon model.",
+          "tr": "Gordon modeliyle değeri bulun."
+        },
+        {
+          "en": "The model needs next year's dividend D1 = D0 × (1 + g).",
+          "tr": "Model gelecek yılın temettüsü D1 = D0 × (1 + g) ister.",
+          "formula_latex": "V_0=\\frac{D_0(1+g)}{r-g}"
+        },
+        {
+          "en": "D1 = 2.10; V0 = 2.10 / 0.06 = 35.00.",
+          "tr": "D1 = 2,10; V0 = 2,10 / 0,06 = 35,00."
+        }
+      ],
+      "vocab_ids": [
+        "gordon-growth-model",
+        "dividend",
+        "required-return",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "2*1.05/(0.11-0.05)",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2",
+          "[×]",
+          "1.05",
+          "[=]",
+          "[÷]",
+          "0.06",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share trades at 50 TL. The next dividend is expected to be 2.50 TL and dividends should grow at 4% forever. The implied required return is closest to:",
+      "stem_tr": "Bir pay 50 TL'den işlem görüyor. Gelecek temettünün 2,50 TL olması ve temettülerin sonsuza dek %4 büyümesi bekleniyor. Ima edilen getiri beklentisi en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "r = D1 / V0 + g = 2.50 / 50 + 0.04 = 9.0%.",
+      "explanation_tr": "r = D1 / V0 + g = 2,50 / 50 + 0,04 = %9,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "5.0% is only the dividend yield and leaves out growth.",
+          "tr": "%5,0 yalnızca temettü verimidir, büyümeyi içermez."
+        },
+        "B": {
+          "en": "4.0% is only the growth rate.",
+          "tr": "%4,0 yalnızca büyüme oranıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the implied required return.",
+          "tr": "Ima edilen getiri beklentisini bulun."
+        },
+        {
+          "en": "Rearrange the Gordon model: r = D1/V0 + g.",
+          "tr": "Gordon modelini düzenleyin: r = D1/V0 + g.",
+          "formula_latex": "r=\\frac{D_1}{V_0}+g"
+        },
+        {
+          "en": "2.50 / 50 = 5.0%; 5.0% + 4.0% = 9.0%.",
+          "tr": "2,50 / 50 = %5,0; %5,0 + %4,0 = %9,0."
+        }
+      ],
+      "vocab_ids": [
+        "implied",
+        "required-return",
+        "dividend-yield",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(2.5/50+0.04)*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2.5",
+          "[÷]",
+          "50",
+          "[+]",
+          "0.04",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST company just paid D0 = 1.00 TL. Dividends grow 20% a year for two years, then 6% forever. The required return is 12%. The value per share is closest to:",
+      "stem_tr": "Kurgusal bir BIST şirketi az önce D0 = 1,00 TL ödedi. Temettüler iki yıl boyunca yılda %20, sonra sonsuza dek %6 büyüyor. Getiri beklentisi %12. Pay başına değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "21.35 TL",
+          "tr": "21,35 TL",
+          "value": 21.35
+        },
+        {
+          "key": "B",
+          "en": "22.50 TL",
+          "tr": "22,50 TL",
+          "value": 22.5
+        },
+        {
+          "key": "C",
+          "en": "24.93 TL",
+          "tr": "24,93 TL",
+          "value": 24.93
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "D1 = 1.20, D2 = 1.44, D3 = 1.5264. V2 = 1.5264 / 0.06 = 25.44. V0 = 1.20/1.12 + (1.44 + 25.44)/1.12² = 1.07 + 21.43 = 22.50 TL.",
+      "explanation_tr": "D1 = 1,20, D2 = 1,44, D3 = 1,5264. V2 = 1,5264 / 0,06 = 25,44. V0 = 1,20/1,12 + (1,44 + 25,44)/1,12² = 1,07 + 21,43 = 22,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "21.35 TL computes the terminal value with D2 instead of D3.",
+          "tr": "21,35 TL terminal değeri D3 yerine D2 ile hesaplar."
+        },
+        "C": {
+          "en": "24.93 TL discounts the terminal value for only one year.",
+          "tr": "24,93 TL terminal değeri yalnızca bir yıl iskonto eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Value the two-stage dividend stream.",
+          "tr": "İki aşamalı temettü akışını değerleyin."
+        },
+        {
+          "en": "Find D1 to D3, then the terminal value at year 2 using D3.",
+          "tr": "D1'den D3'e kadar bulun, sonra D3 ile 2. yıl sonundaki terminal değeri hesaplayın.",
+          "formula_latex": "V_2=\\frac{D_3}{r-g_L}"
+        },
+        {
+          "en": "V2 = 1.5264 / 0.06 = 25.44; discount D1 one year and D2 + V2 two years.",
+          "tr": "V2 = 1,5264 / 0,06 = 25,44; D1'i bir yıl, D2 + V2'yi iki yıl iskonto edin."
+        },
+        {
+          "en": "1.07 + 21.43 = 22.50 TL.",
+          "tr": "1,07 + 21,43 = 22,50 TL."
+        }
+      ],
+      "vocab_ids": [
+        "two-stage",
+        "terminal-value",
+        "dividend",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "1.2/1.12+(1.44+1.44*1.06/(0.12-0.06))/1.12**2",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF]",
+          "[2ND]",
+          "[CLR",
+          "WORK]",
+          "0",
+          "[ENTER]",
+          "[↓]",
+          "1.2",
+          "[ENTER]",
+          "[↓]",
+          "[↓]",
+          "26.88",
+          "[ENTER]",
+          "[↓]",
+          "[NPV]",
+          "12",
+          "[ENTER]",
+          "[↓]",
+          "[CPT]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company's last EPS was 3.00 TL, ROE is 15% and it retains 60% of earnings. Dividends will grow at the sustainable rate forever, and the required return is 14%. The value per share is closest to:",
+      "stem_tr": "Bir şirketin son HBK'sı 3,00 TL, ROE %15 ve kârın %60'ını tutuyor. Temettüler sonsuza dek sürdürülebilir büyüme oranında artacak ve getiri beklentisi %14. Pay başına değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "26.16 TL",
+          "tr": "26,16 TL",
+          "value": 26.16
+        },
+        {
+          "key": "B",
+          "en": "23.85 TL",
+          "tr": "23,85 TL",
+          "value": 23.85
+        },
+        {
+          "key": "C",
+          "en": "24.00 TL",
+          "tr": "24,00 TL",
+          "value": 24.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "g = 0.60 × 15% = 9%. D1 = 3.00 × 1.09 × 0.40 = 1.308. V0 = 1.308 / (0.14 − 0.09) = 26.16 TL.",
+      "explanation_tr": "g = 0,60 × %15 = %9. D1 = 3,00 × 1,09 × 0,40 = 1,308. V0 = 1,308 / (0,14 − 0,09) = 26,16 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "23.85 TL uses the payout ratio (40%) instead of retention to compute g.",
+          "tr": "23,85 TL g hesabında tutma oranı yerine dağıtım oranını (%40) kullanır."
+        },
+        "C": {
+          "en": "24.00 TL does not grow the EPS by 1.09 before applying the payout.",
+          "tr": "24,00 TL dağıtım oranını uygulamadan önce HBK'yı 1,09 ile büyütmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the sustainable growth rate, then D1, then the value.",
+          "tr": "Sürdürülebilir büyümeyi, sonra D1'i, sonra değeri bulun."
+        },
+        {
+          "en": "g = retention × ROE.",
+          "tr": "g = tutma oranı × ROE.",
+          "formula_latex": "g=b\\times ROE"
+        },
+        {
+          "en": "g = 0.60 × 0.15 = 0.09; D1 = 3.00 × 1.09 × 0.40 = 1.308.",
+          "tr": "g = 0,60 × 0,15 = 0,09; D1 = 3,00 × 1,09 × 0,40 = 1,308."
+        },
+        {
+          "en": "V0 = 1.308 / 0.05 = 26.16 TL.",
+          "tr": "V0 = 1,308 / 0,05 = 26,16 TL."
+        }
+      ],
+      "vocab_ids": [
+        "sustainable-growth",
+        "retention-rate",
+        "payout-ratio",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "3*1.09*0.4/(0.14-0.09)",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.6",
+          "[×]",
+          "0.15",
+          "[=]",
+          "[STO]",
+          "1",
+          "3",
+          "[×]",
+          "(",
+          "1",
+          "[+]",
+          "[RCL]",
+          "1",
+          ")",
+          "[×]",
+          "0.4",
+          "[÷]",
+          "(",
+          "0.14",
+          "[−]",
+          "[RCL]",
+          "1",
+          ")",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The constant-growth (Gordon) model is most appropriate for valuing which type of company?",
+      "stem_tr": "Sabit büyüme (Gordon) modeli en çok hangi tür şirketi değerlemek için uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A mature company with stable dividends growing at a steady rate",
+          "tr": "Temettüleri istikrarlı bir oranda artan olgun bir şirket"
+        },
+        {
+          "key": "B",
+          "en": "A start-up expected to grow very fast for a decade",
+          "tr": "On yıl boyunca çok hızlı büyümesi beklenen yeni kurulmuş bir şirket"
+        },
+        {
+          "key": "C",
+          "en": "A company with no dividends and negative earnings",
+          "tr": "Temettü ödemeyen ve zarar eden bir şirket"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The model assumes growth is constant forever, which fits stable, mature dividend payers.",
+      "explanation_tr": "Model büyümenin sonsuza dek sabit kaldığını varsayar; bu da istikrarlı, olgun temettü ödeyenlere uyar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Fast growth that will later slow needs a multistage model.",
+          "tr": "Sonradan yavaşlayacak hızlı büyüme çok aşamalı model gerektirir."
+        },
+        "C": {
+          "en": "With no dividends the model has no cash flow to discount.",
+          "tr": "Temettü yoksa modelin iskonto edeceği nakit akışı yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "constant-growth",
+        "mature",
+        "steady",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-06-c-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT a weakness of the Gordon growth model?",
+      "stem_tr": "Aşağıdakilerden hangisi Gordon büyüme modelinin zayıf yönü DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It requires the growth rate to be below the required return.",
+          "tr": "Büyüme oranının getiri beklentisinin altında olmasını gerektirir."
+        },
+        {
+          "key": "B",
+          "en": "The result is very sensitive to the difference between r and g.",
+          "tr": "Sonuç r ile g arasındaki farka çok duyarlıdır."
+        },
+        {
+          "key": "C",
+          "en": "It values a share using the time value of money.",
+          "tr": "Payı paranın zaman değerini kullanarak değerler."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Using the time value of money is a strength of DCF models, not a weakness.",
+      "explanation_tr": "Paranın zaman değerini kullanmak İNA modellerinin güçlü yönüdür, zayıflığı değil.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is a real restriction: with g ≥ r the formula breaks down.",
+          "tr": "Bu gerçek bir kısıttır: g ≥ r olduğunda formül çöker."
+        },
+        "B": {
+          "en": "This is a real weakness: small input errors cause large value errors.",
+          "tr": "Bu gerçek bir zayıflıktır: küçük girdi hataları büyük değer hatalarına yol açar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "weakness",
+        "growth-rate",
+        "sensitive",
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "not-question"
+      ]
+    },
+    {
+      "id": "EQ-06-c-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Required return is 10% and dividend growth is 9.5%. If the analyst raises growth to 9.9%, the Gordon value most likely:",
+      "stem_tr": "Getiri beklentisi %10 ve temettü büyümesi %9,5. Analist büyümeyi %9,9'a çıkarırsa Gordon değeri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "rises by about 4%, in line with the change in g.",
+          "tr": "g'deki değişimle uyumlu olarak yaklaşık %4 artar."
+        },
+        {
+          "key": "B",
+          "en": "rises by a very large multiple, showing the model's sensitivity.",
+          "tr": "çok büyük bir katla artar; bu modelin duyarlılığını gösterir."
+        },
+        {
+          "key": "C",
+          "en": "is unchanged because growth is already above dividend yield.",
+          "tr": "büyüme zaten temettü veriminin üzerinde olduğu için değişmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The denominator r − g falls from 0.5% to 0.1%, so the value becomes five times larger.",
+      "explanation_tr": "Payda r − g %0,5'ten %0,1'e düşer; değer beş kat artar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The change in g is small, but the effect on r − g is large: value moves far more than 4%.",
+          "tr": "g'deki değişim küçüktür ama r − g üzerindeki etkisi büyüktür: değer %4'ten çok daha fazla oynar."
+        },
+        "C": {
+          "en": "The result depends on r − g; the dividend yield is irrelevant to this point.",
+          "tr": "Sonuç r − g'ye bağlıdır; temettü verimi bu noktada önemsizdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "denominator",
+        "sensitivity",
+        "growth",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-06-c-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A multistage model that cuts growth from 25% straight to 4% in year six is most consistent with which weakness?",
+      "stem_tr": "Büyümeyi altıncı yılda doğrudan %25'ten %4'e indiren çok aşamalı bir model en çok hangi zayıflıkla uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The model cannot include more than one growth rate.",
+          "tr": "Model birden fazla büyüme oranı içeremez."
+        },
+        {
+          "key": "B",
+          "en": "Abrupt changes in growth are unrealistic; competition usually fades growth gradually.",
+          "tr": "Büyümedeki ani değişimler gerçekçi değildir; rekabet büyümeyi genellikle kademeli olarak azaltır."
+        },
+        {
+          "key": "C",
+          "en": "The model ignores the required return.",
+          "tr": "Model getiri beklentisini yok sayar."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Real growth tends to fade; a cliff in the forecast can distort value. A gradual or three-stage fade is more realistic.",
+      "explanation_tr": "Gerçek büyüme azalma eğilimindedir; tahmindeki uçurum değeri bozabilir. Kademeli veya üç aşamalı düşüş daha gerçekçidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multistage models exist precisely to include several growth rates.",
+          "tr": "Çok aşamalı modeller tam olarak birden çok büyüme oranı içermek için vardır."
+        },
+        "C": {
+          "en": "The required return is the discount rate in every DCF model.",
+          "tr": "Getiri beklentisi her İNA modelinde iskonto oranıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "abrupt",
+        "multistage",
+        "fade",
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "EQ-06-c-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst uses a terminal growth rate of 9% for a firm in an economy whose long-run nominal growth is about 5%. The most appropriate comment is that the terminal growth rate:",
+      "stem_tr": "Bir analist, uzun dönem nominal büyümesi yaklaşık %5 olan bir ekonomideki firma için %9 terminal büyüme oranı kullanıyor. En uygun yorum terminal büyüme oranının:",
+      "options": [
+        {
+          "key": "A",
+          "en": "is too high because a firm cannot outgrow the economy forever.",
+          "tr": "çok yüksek olduğudur; çünkü bir firma sonsuza dek ekonomiden hızlı büyüyemez."
+        },
+        {
+          "key": "B",
+          "en": "is acceptable because terminal values need high growth.",
+          "tr": "kabul edilebilir olduğudur; çünkü terminal değerler yüksek büyüme ister."
+        },
+        {
+          "key": "C",
+          "en": "does not matter because terminal value is small.",
+          "tr": "önemsiz olduğudur; çünkü terminal değer küçüktür."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Forever-growth above the economy implies the firm eventually becomes larger than the economy. Terminal value is usually most of the total value, so the error is material.",
+      "explanation_tr": "Ekonominin üzerinde sonsuz büyüme, firmanın sonunda ekonomiden büyük olması anlamına gelir. Terminal değer genellikle toplam değerin çoğunu oluşturur; hata önemlidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "High perpetual growth is not needed and inflates value.",
+          "tr": "Yüksek sürekli büyüme gerekli değildir ve değeri şişirir."
+        },
+        "C": {
+          "en": "Terminal value usually forms most of the total value, so it matters a lot.",
+          "tr": "Terminal değer genellikle toplam değerin çoğunu oluşturur; bu yüzden çok önemlidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "terminal-growth",
+        "outgrow",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-06-c-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which company is most likely a poor candidate for the Gordon growth model?",
+      "stem_tr": "Hangi şirket Gordon büyüme modeli için büyük olasılıkla zayıf bir adaydır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A regulated utility with steady dividend growth of 3%.",
+          "tr": "Temettü büyümesi istikrarlı %3 olan düzenlemeye tabi bir kamu hizmeti şirketi."
+        },
+        {
+          "key": "B",
+          "en": "A mature food producer with a stable payout ratio.",
+          "tr": "Dağıtım oranı istikrarlı olgun bir gıda üreticisi."
+        },
+        {
+          "key": "C",
+          "en": "A firm whose earnings and dividends are growing 30% this year and will slow sharply.",
+          "tr": "Kâr ve temettüleri bu yıl %30 büyüyen ve sonra belirgin yavaşlayacak bir firma."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The model assumes one steady growth rate forever. Strong growth that will slow needs a multistage model.",
+      "explanation_tr": "Model sonsuza dek tek bir istikrarlı büyüme oranı varsayar. Yavaşlayacak güçlü büyüme çok aşamalı model gerektirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Steady 3% growth suits the Gordon model well.",
+          "tr": "İstikrarlı %3 büyüme Gordon modeline iyi uyar."
+        },
+        "B": {
+          "en": "Stable payout and maturity are the model's ideal conditions.",
+          "tr": "İstikrarlı dağıtım ve olgunluk modelin ideal koşullarıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "steady",
+        "slow",
+        "candidate",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-06-d-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A non-callable, non-convertible preferred share pays a fixed dividend of 5.00 TL per year and the required return is 8%. Its value is closest to:",
+      "stem_tr": "Geri çağrılamaz ve dönüştürülemez bir imtiyazlı pay yılda 5,00 TL sabit temettü ödüyor ve getiri beklentisi %8. Değeri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.40 TL",
+          "tr": "0,40 TL",
+          "value": 0.4
+        },
+        {
+          "key": "B",
+          "en": "400.00 TL",
+          "tr": "400,00 TL",
+          "value": 400.0
+        },
+        {
+          "key": "C",
+          "en": "62.50 TL",
+          "tr": "62,50 TL",
+          "value": 62.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A plain preferred is a perpetuity: V = 5.00 / 0.08 = 62.50 TL.",
+      "explanation_tr": "Sade imtiyazlı pay bir sonsuz anüitedir: V = 5,00 / 0,08 = 62,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.40 TL multiplies the dividend by the rate instead of dividing.",
+          "tr": "0,40 TL böleceği yerde temettüyü oranla çarpar."
+        },
+        "B": {
+          "en": "400.00 TL mistakes 8% for 1.25% (5 / 0.0125).",
+          "tr": "400,00 TL %8'i %1,25 sanır (5 / 0,0125)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Value the preferred share.",
+          "tr": "İmtiyazlı payı değerleyin."
+        },
+        {
+          "en": "Fixed dividends forever make a perpetuity.",
+          "tr": "Sonsuza dek sabit temettü bir sonsuz anüitedir.",
+          "formula_latex": "V=\\frac{D}{r}"
+        },
+        {
+          "en": "5.00 / 0.08 = 62.50.",
+          "tr": "5,00 / 0,08 = 62,50."
+        }
+      ],
+      "vocab_ids": [
+        "preferred-share",
+        "perpetuity",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "5/0.08",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5",
+          "[÷]",
+          "0.08",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-d-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A plain preferred share pays 4.00 TL per year. The required return rises from 8% to 10%. The change in its value is closest to:",
+      "stem_tr": "Sade bir imtiyazlı pay yılda 4,00 TL ödüyor. Getiri beklentisi %8'den %10'a çıkıyor. Değerindeki değişim en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.00%",
+          "tr": "%25,00",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "-20.00%",
+          "tr": "%-20,00",
+          "value": -20.0
+        },
+        {
+          "key": "C",
+          "en": "-2.00%",
+          "tr": "%-2,00",
+          "value": -2.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Old value = 4 / 0.08 = 50. New value = 4 / 0.10 = 40. Change = −20%.",
+      "explanation_tr": "Eski değer = 4 / 0,08 = 50. Yeni değer = 4 / 0,10 = 40. Değişim = −%20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "+25% inverts the ratio (50 / 40 − 1).",
+          "tr": "+%25 oranı tersine çevirir (50 / 40 − 1)."
+        },
+        "C": {
+          "en": "−2% uses the change in the rate (percentage points) as the change in value.",
+          "tr": "−%2 faiz oranındaki değişimi (puan olarak) değer değişimi sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Compare the value before and after the rate change.",
+          "tr": "Faiz değişiminden önceki ve sonraki değeri kıyaslayın."
+        },
+        {
+          "en": "Value both times with V = D / r.",
+          "tr": "İki durumda da V = D / r ile değerleyin.",
+          "formula_latex": "V=\\frac{D}{r}"
+        },
+        {
+          "en": "4 / 0.08 = 50; 4 / 0.10 = 40.",
+          "tr": "4 / 0,08 = 50; 4 / 0,10 = 40."
+        },
+        {
+          "en": "(40 − 50) / 50 = −20%.",
+          "tr": "(40 − 50) / 50 = −%20."
+        }
+      ],
+      "vocab_ids": [
+        "required-return",
+        "perpetuity",
+        "decline",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(4/0.10-4/0.08)/(4/0.08)*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4",
+          "[÷]",
+          "0.1",
+          "[−]",
+          "50",
+          "[=]",
+          "[÷]",
+          "50",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-d-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, compared with an otherwise identical plain preferred share, a callable preferred share is most likely worth:",
+      "stem_tr": "Diğer her şey eşitken, aynı özelliklere sahip sade imtiyazlı paya kıyasla geri çağrılabilir imtiyazlı pay büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "less, because the issuer can redeem it when rates fall.",
+          "tr": "daha az değerlidir; çünkü faizler düştüğünde ihraççı onu geri alabilir."
+        },
+        {
+          "key": "B",
+          "en": "more, because the holder gets an extra right.",
+          "tr": "daha çok değerlidir; çünkü sahibine ek bir hak verir."
+        },
+        {
+          "key": "C",
+          "en": "the same, because the dividend is identical.",
+          "tr": "aynı değerdedir; çünkü temettü aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The call right belongs to the issuer. It caps price appreciation and creates reinvestment risk, so investors pay less.",
+      "explanation_tr": "Geri çağırma hakkı ihraççıya aittir. Fiyat artışını sınırlar ve yeniden yatırım riski yaratır; yatırımcı daha az öder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The call right favors the issuer, not the holder; a put would favor the holder.",
+          "tr": "Geri çağırma hakkı ihraççı lehinedir, sahibi lehine değildir; satma hakkı sahibi lehine olurdu."
+        },
+        "C": {
+          "en": "The embedded option changes the value even if the dividend is the same.",
+          "tr": "Dahil edilmiş opsiyon, temettü aynı olsa bile değeri değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "callable",
+        "issuer",
+        "redeem",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "all-else-equal"
+      ]
+    },
+    {
+      "id": "EQ-06-d-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A convertible preferred share can be converted into 2.5 common shares. The common share trades at 48 TL. The same preferred, valued as a plain preferred, is worth 100 TL. Its minimum value is closest to:",
+      "stem_tr": "Dönüştürülebilir bir imtiyazlı pay 2,5 adi paya dönüştürülebilir. Adi pay 48 TL'den işlem görüyor. Aynı imtiyazlı pay sade imtiyazlı pay olarak değerlendiğinde 100 TL ediyor. Asgari değeri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "120.00 TL",
+          "tr": "120,00 TL",
+          "value": 120.0
+        },
+        {
+          "key": "B",
+          "en": "100.00 TL",
+          "tr": "100,00 TL",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "220.00 TL",
+          "tr": "220,00 TL",
+          "value": 220.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Conversion value = 2.5 × 48 = 120 TL, which is above the straight value of 100, so the minimum value is 120 TL.",
+      "explanation_tr": "Dönüştürme değeri = 2,5 × 48 = 120 TL; sade değer olan 100'ün üzerindedir, bu yüzden asgari değer 120 TL'dir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "100 TL ignores the higher conversion value.",
+          "tr": "100 TL daha yüksek dönüştürme değerini yok sayar."
+        },
+        "C": {
+          "en": "220 TL adds the two values instead of taking the higher one.",
+          "tr": "220 TL iki değeri toplar, yüksek olanı almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the minimum value of the convertible preferred.",
+          "tr": "Dönüştürülebilir imtiyazlı payın asgari değerini bulun."
+        },
+        {
+          "en": "Compare conversion value with straight preferred value.",
+          "tr": "Dönüştürme değerini sade imtiyazlı pay değeriyle kıyaslayın.",
+          "formula_latex": "V\\ge\\max(CR\\times P_{cs},\\,V_{straight})"
+        },
+        {
+          "en": "2.5 × 48 = 120 > 100, so the floor is 120 TL.",
+          "tr": "2,5 × 48 = 120 > 100; taban değer 120 TL."
+        }
+      ],
+      "vocab_ids": [
+        "convertible",
+        "conversion-ratio",
+        "floor",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "max(2.5*48,100)",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2.5",
+          "[×]",
+          "48",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-06-d-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A putable preferred share compared with an otherwise identical plain preferred share is most likely valued:",
+      "stem_tr": "Satılabilir bir imtiyazlı pay, aynı özelliklere sahip sade imtiyazlı paya kıyasla büyük olasılıkla nasıl değerlenir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower, because the issuer must pay a fee.",
+          "tr": "daha düşük; çünkü ihraççı bir ücret ödemek zorundadır."
+        },
+        {
+          "key": "B",
+          "en": "the same, because options have no value on preferred shares.",
+          "tr": "aynı; çünkü opsiyonların imtiyazlı paylarda değeri yoktur."
+        },
+        {
+          "key": "C",
+          "en": "higher, because the holder can sell it back at a set price if its value falls.",
+          "tr": "daha yüksek; çünkü değeri düşerse sahibi onu belirli fiyattan geri satabilir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The put gives the holder downside protection, a valuable right that adds value.",
+      "explanation_tr": "Satma hakkı sahibine aşağı yönlü koruma sağlar; bu değerli bir haktır ve değeri artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A put is a right of the holder, not a cost to the holder.",
+          "tr": "Satma hakkı sahibin hakkıdır, sahibe maliyet değildir."
+        },
+        "B": {
+          "en": "Embedded options are priced into the share; the put has positive value.",
+          "tr": "Gömülü opsiyonlar fiyata yansır; satma hakkının değeri pozitiftir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "putable",
+        "downside",
+        "protection",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}

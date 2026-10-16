@@ -1,0 +1,1128 @@
+{
+  "module_id": "EQ-08",
+  "lesson": {
+    "id": "EQ-08-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-08",
+    "los_ids": [
+      "EQ-08-a",
+      "EQ-08-b",
+      "EQ-08-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Financial Statement Forecasting in Equity Valuation",
+    "title_tr": "Pay Değerlemesinde Finansal Tablo Tahmini",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "From last year's accounts to next year's value",
+        "heading_tr": "Geçen yılın tablolarından gelecek yılın değerine",
+        "en": "A valuation model needs forecasts: how much will the company sell, at what margin, and how much will it invest? Analysts build a forecast model in a spreadsheet that links the income statement, balance sheet and cash flow statement. Think of a fictional BIST white-goods maker, Ege Beyaz Eşya. If you forecast higher sales, you also need more inventory and receivables, which uses cash and may need new debt. A linked model keeps these effects consistent, so the forecast cannot say profit rises while cash and the balance sheet ignore it.",
+        "tr": "Bir değerleme modeli tahmin ister: şirket ne kadar satacak, hangi marjla, ne kadar yatırım yapacak? Analistler gelir tablosunu, bilançoyu ve nakit akış tablosunu birbirine bağlayan bir tahmin modelini elektronik tabloda kurar. Kurgusal bir BIST beyaz eşya üreticisi olan Ege Beyaz Eşya'yı düşünün. Satış tahminini artırırsanız daha çok stok ve alacak da gerekir; bu nakit kullanır ve yeni borç gerektirebilir. Bağlantılı model bu etkileri tutarlı tutar; böylece tahmin, kâr artarken nakdi ve bilançoyu yok sayamaz.",
+        "key_terms": [
+          "forecast model",
+          "integrated model"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Building an integrated forecast",
+        "heading_tr": "Bütünleşik tahminin kurulması",
+        "en": "An integrated model is built in steps. First, forecast revenue, from drivers such as volume and price (bottom-up) or from market size and market share (top-down). Second, forecast costs and margins using history and the cost structure (fixed versus variable). Third, forecast working capital, capital expenditure, depreciation and financing. Fourth, link the statements: net income flows to retained earnings, cash from the cash flow statement flows to the balance sheet, and the balance sheet must balance. Finally, run scenarios (base, best, worst) and sensitivity tests, and use the outputs in the valuation model. Models help check consistency, test assumptions and show which inputs drive value.",
+        "tr": "Bütünleşik model adım adım kurulur. Önce gelir tahmin edilir: hacim ve fiyat gibi belirleyicilerden (aşağıdan yukarı) ya da pazar büyüklüğü ve pazar payından (yukarıdan aşağı). İkinci olarak maliyet ve marjlar, geçmiş veri ve maliyet yapısı (sabit/değişken) kullanılarak tahmin edilir. Üçüncü olarak işletme sermayesi, yatırım harcamaları, amortisman ve finansman tahmin edilir. Dördüncü olarak tablolar bağlanır: net kâr birikmiş kârlara, nakit akış tablosundaki nakit bilançoya akar ve bilanço dengelenmelidir. Son olarak senaryolar (temel, iyi, kötü) ve duyarlılık testleri çalıştırılır; çıktılar değerleme modelinde kullanılır. Modeller tutarlılığı denetlemeye, varsayımları sınamaya ve değeri hangi girdilerin belirlediğini göstermeye yarar.",
+        "key_terms": [
+          "bottom-up",
+          "top-down",
+          "scenario analysis",
+          "sensitivity analysis"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Choosing a model structure that fits the company",
+        "heading_tr": "Şirkete uygun model yapısını seçmek",
+        "en": "The structure should reflect how the business creates value. For a bank, debt is raw material, so use equity-based models (dividends, FCFE, residual income), not FCFF. For a firm with changing leverage, FCFF is cleaner because it is independent of financing. For a cyclical firm, use multi-year forecasts and normalized (mid-cycle) earnings instead of one peak or trough year. For a conglomerate with different segments, forecast each segment and add them (sum-of-the-parts). For a stable dividend payer, a simple dividend discount model may be enough. Too much detail makes errors hard to find; too little detail hides drivers.",
+        "tr": "Yapı, işletmenin değeri nasıl yarattığını yansıtmalıdır. Banka için borç ham maddedir; bu yüzden FCFF değil, özkaynak esaslı modeller (temettü, FCFE, artık gelir) kullanılır. Kaldıraç düzeyi değişen firmada FCFF daha temizdir, çünkü finansmandan bağımsızdır. Döngüsel firmada tek bir zirve ya da dip yılı yerine çok yıllı tahmin ve normalleştirilmiş (döngü ortası) kâr kullanılır. Farklı bölümleri olan bir holdingde her bölüm ayrı tahmin edilip toplanır (parçaların toplamı). İstikrarlı temettü ödeyen firmada basit bir temettü indirgeme modeli yeterli olabilir. Çok fazla ayrıntı hataları bulmayı zorlaştırır; çok az ayrıntı belirleyicileri gizler.",
+        "key_terms": [
+          "normalized earnings",
+          "sum-of-the-parts",
+          "cyclical"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "From forecasts to equity value",
+        "heading_tr": "Tahminlerden pay değerine",
+        "en": "Convert forecasts into value in two ways. With FCFF: discount FCFF at WACC (plus a terminal value, from a growth formula or an exit multiple) to get enterprise value, then subtract debt, preferred shares and non-controlling interest and add cash to get equity value. With FCFE: discount FCFE at the cost of equity to get equity value directly. Divide by shares outstanding for value per share, and compare it with the market price. Scenario-weighted value is the probability-weighted average of scenario values.",
+        "tr": "Tahminleri iki yolla değere çevirirsiniz. FCFF ile: FCFF'yi AOSM ile (ve büyüme formülü veya çıkış çarpanıyla bulunan terminal değerle) iskonto edip firma değerini bulursunuz; sonra borcu, imtiyazlı payı ve kontrol gücü olmayan payları çıkarıp nakdi ekleyerek özkaynak değerine ulaşırsınız. FCFE ile: FCFE'yi özkaynak maliyetiyle iskonto edip özkaynak değerini doğrudan bulursunuz. Pay başına değer için dolaşımdaki pay sayısına bölün ve piyasa fiyatıyla kıyaslayın. Senaryo ağırlıklı değer, senaryo değerlerinin olasılık ağırlıklı ortalamasıdır.",
+        "key_terms": [
+          "equity bridge",
+          "exit multiple",
+          "scenario-weighted value"
+        ],
+        "formula_latex": "V_{equity}=EV-D-PS-NCI+Cash,\\quad V_{scen}=\\sum p_i V_i"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Numeric illustration.",
+        "tr": "Sayısal gösterim.",
+        "key_terms": [],
+        "example": {
+          "en": "A model gives Ege Beyaz Eşya an enterprise value of 3,000 million TL. Debt is 900, cash 250, non-controlling interest 60 and preferred shares 40 (million TL). Equity value = 3,000 − 900 + 250 − 60 − 40 = 2,250 million TL. With 100 million shares, value per share = 22.50 TL. If the share trades at 18.75 TL, the model suggests 20% upside, but only if the forecasts hold.",
+          "tr": "Bir model Ege Beyaz Eşya için 3.000 milyon TL firma değeri veriyor. Borç 900, nakit 250, kontrol gücü olmayan paylar 60 ve imtiyazlı pay 40 (milyon TL). Özkaynak değeri = 3.000 − 900 + 250 − 60 − 40 = 2.250 milyon TL. 100 milyon pay ile pay başına değer = 22,50 TL. Pay 18,75 TL'den işlem görüyorsa model %20 yükseliş potansiyeli gösterir; ancak bu yalnızca tahminler tutarsa geçerlidir."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not forget to subtract debt after discounting FCFF. Do not use FCFF for banks. Do not forecast sales without forecasting the working capital and capital expenditure needed to support them. Do not base a cyclical firm's value on a peak-year margin. Do not trust one scenario: show a range. Do not let the balance sheet fail to balance; the plug (usually cash or debt) hides errors.",
+        "tr": "FCFF'yi iskonto ettikten sonra borcu çıkarmayı unutmayın. Banka için FCFF kullanmayın. Satışı destekleyecek işletme sermayesi ve yatırım harcamasını tahmin etmeden satış tahmin etmeyin. Döngüsel firmanın değerini zirve yılı marjına dayandırmayın. Tek senaryoya güvenmeyin; aralık gösterin. Bilançonun dengelenmemesine izin vermeyin; denge kalemi (çoğunlukla nakit veya borç) hataları gizler.",
+        "key_terms": [
+          "equity bridge",
+          "peak margin"
+        ]
+      }
+    ],
+    "summary_en": "Integrated forecasts link the three statements and are built from revenue drivers, margins, working capital, capex and financing. The model structure must suit the company: equity-based for banks, FCFF for changing leverage, normalized earnings for cyclicals, sum-of-the-parts for conglomerates. Outputs convert to equity value through discounting and the equity bridge, and scenarios show the range.",
+    "summary_tr": "Bütünleşik tahminler üç tabloyu bağlar; gelir belirleyicileri, marjlar, işletme sermayesi, yatırım ve finansmandan kurulur. Model yapısı şirkete uymalıdır: banka için özkaynak esaslı, kaldıracı değişen firma için FCFF, döngüsel firma için normalleştirilmiş kâr, holding için parçaların toplamı. Çıktılar iskonto ve özkaynak köprüsüyle pay değerine çevrilir; senaryolar aralığı gösterir.",
+    "common_traps_tr": [
+      "Borcu çıkarmadan FCFF değerini özkaynak değeri saymak.",
+      "Bankalarda FCFF kullanmak.",
+      "Satışı destekleyecek yatırımı tahmin etmemek.",
+      "Zirve yılı marjını kalıcı saymak.",
+      "Tek senaryoyla sonuçlanmak."
+    ],
+    "vocab_ids": [
+      "forecast",
+      "integrated-model",
+      "bottom-up",
+      "top-down",
+      "scenario-analysis",
+      "sensitivity-analysis",
+      "working-capital",
+      "capital-expenditure",
+      "normalized-earnings",
+      "cyclical",
+      "sum-of-the-parts",
+      "exit-multiple",
+      "net-debt",
+      "margin",
+      "retained-earnings",
+      "probability-weighted"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3 finansal tablo analizini kapsar; bütünleşik tahmin modeli kurma, senaryo analizi ve değerleme çıktısına bağlama CFA'ya özgü uygulamadır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-08-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An integrated financial statement forecast model is best described as a model in which:",
+      "stem_tr": "Bütünleşik finansal tablo tahmin modeli en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the income statement, balance sheet and cash flow statement are linked and consistent.",
+          "tr": "gelir tablosu, bilanço ve nakit akış tablosu birbirine bağlı ve tutarlıdır."
+        },
+        {
+          "key": "B",
+          "en": "only the income statement is forecast, using last year's growth.",
+          "tr": "yalnızca gelir tablosu, geçen yılın büyümesi kullanılarak tahmin edilir."
+        },
+        {
+          "key": "C",
+          "en": "the share price is forecast from past price charts.",
+          "tr": "pay fiyatı geçmiş fiyat grafiklerinden tahmin edilir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Linked statements keep the forecast consistent: profit feeds retained earnings, cash flows feed the balance sheet.",
+      "explanation_tr": "Bağlantılı tablolar tahmini tutarlı tutar: kâr birikmiş kârlara, nakit akışları bilançoya akar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "An income statement alone cannot show cash or balance sheet effects.",
+          "tr": "Tek başına gelir tablosu nakit veya bilanço etkilerini gösteremez."
+        },
+        "C": {
+          "en": "Price charts are not a financial statement model.",
+          "tr": "Fiyat grafikleri bir finansal tablo modeli değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "integrated-model",
+        "consistent",
+        "forecast",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-08-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a typical forecast model, which item is most likely forecast first because many other items depend on it?",
+      "stem_tr": "Tipik bir tahmin modelinde, birçok kalem ona bağlı olduğu için hangi kalem büyük olasılıkla ilk tahmin edilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Net income",
+          "tr": "Net kâr"
+        },
+        {
+          "key": "B",
+          "en": "Retained earnings",
+          "tr": "Birikmiş kârlar"
+        },
+        {
+          "key": "C",
+          "en": "Revenue",
+          "tr": "Gelir (satışlar)"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Costs, working capital and capital expenditure are driven by the level of sales, so revenue is forecast first.",
+      "explanation_tr": "Maliyetler, işletme sermayesi ve yatırım harcaması satış düzeyine bağlıdır; bu yüzden önce gelir tahmin edilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Net income is the result of revenue and costs, so it comes later.",
+          "tr": "Net kâr gelir ve maliyetlerin sonucudur; bu yüzden sonra gelir."
+        },
+        "B": {
+          "en": "Retained earnings come from net income and payouts and are forecast near the end.",
+          "tr": "Birikmiş kârlar net kâr ve dağıtımdan oluşur; sona doğru tahmin edilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "revenue",
+        "depend-on",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-08-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst forecasts the sales of a fictional BIST retailer by estimating the number of stores, sales per store and store openings. This approach is best described as:",
+      "stem_tr": "Bir analist kurgusal bir BIST perakendecisinin satışlarını mağaza sayısı, mağaza başına satış ve yeni mağaza açılışlarını tahmin ederek öngörüyor. Bu yaklaşım en iyi hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "top-down.",
+          "tr": "yukarıdan aşağı."
+        },
+        {
+          "key": "B",
+          "en": "bottom-up.",
+          "tr": "aşağıdan yukarı."
+        },
+        {
+          "key": "C",
+          "en": "a sum-of-the-parts valuation.",
+          "tr": "parçaların toplamı değerlemesi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Bottom-up builds company sales from company-level drivers. Top-down starts with market size and share.",
+      "explanation_tr": "Aşağıdan yukarı yaklaşım şirket satışlarını şirket düzeyindeki belirleyicilerden kurar. Yukarıdan aşağı yaklaşım pazar büyüklüğü ve payla başlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Top-down would start from total retail market size and the company's share.",
+          "tr": "Yukarıdan aşağı yaklaşım toplam perakende pazar büyüklüğü ve şirketin payıyla başlardı."
+        },
+        "C": {
+          "en": "Sum-of-the-parts values separate business segments; this is a revenue forecasting method.",
+          "tr": "Parçaların toplamı ayrı iş bölümlerini değerler; burada anlatılan bir gelir tahmin yöntemidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bottom-up",
+        "store",
+        "driver",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-08-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A forecast raises sales growth but leaves inventory, receivables and capital expenditure unchanged. The model most likely:",
+      "stem_tr": "Bir tahmin satış büyümesini artırıyor ancak stok, alacak ve yatırım harcamasını değiştirmiyor. Model büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "understates free cash flow and value.",
+          "tr": "serbest nakit akışını ve değeri olduğundan düşük gösterir."
+        },
+        {
+          "key": "B",
+          "en": "overstates free cash flow and value.",
+          "tr": "serbest nakit akışını ve değeri olduğundan yüksek gösterir."
+        },
+        {
+          "key": "C",
+          "en": "is unaffected, because sales do not need investment.",
+          "tr": "etkilenmez; çünkü satışlar yatırım gerektirmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Higher sales normally need more working capital and capex, which reduce free cash flow. Leaving them out inflates cash flow.",
+      "explanation_tr": "Daha yüksek satışlar genellikle daha çok işletme sermayesi ve yatırım gerektirir; bunlar serbest nakit akışını azaltır. Dışarıda bırakmak nakit akışını şişirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omitted investment needs cause an overstatement, not an understatement.",
+          "tr": "İhmal edilen yatırım ihtiyacı fazla gösterime yol açar, eksik gösterime değil."
+        },
+        "C": {
+          "en": "Growth usually requires more working capital and capex.",
+          "tr": "Büyüme genellikle daha çok işletme sermayesi ve yatırım gerektirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "working-capital",
+        "capital-expenditure",
+        "overstate",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-08-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst wants to see which assumptions drive value most and what the value is in poor and strong economic conditions. The most appropriate tools are:",
+      "stem_tr": "Bir analist hangi varsayımların değeri en çok belirlediğini ve kötü ve güçlü ekonomik koşullarda değerin ne olduğunu görmek istiyor. En uygun araçlar hangileridir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "sensitivity analysis and scenario analysis.",
+          "tr": "duyarlılık analizi ve senaryo analizi."
+        },
+        {
+          "key": "B",
+          "en": "a single base case with no ranges.",
+          "tr": "aralık içermeyen tek bir temel senaryo."
+        },
+        {
+          "key": "C",
+          "en": "historical average growth applied to all years.",
+          "tr": "tüm yıllara uygulanan geçmiş ortalama büyüme."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Sensitivity analysis changes one input at a time; scenarios change several together (base, best, worst).",
+      "explanation_tr": "Duyarlılık analizi girdileri tek tek değiştirir; senaryolar birkaçını birlikte değiştirir (temel, iyi, kötü).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A single case hides uncertainty and ranks nothing.",
+          "tr": "Tek senaryo belirsizliği gizler ve hiçbir şeyi sıralamaz."
+        },
+        "C": {
+          "en": "Historical averages ignore changing conditions and give no range.",
+          "tr": "Geçmiş ortalamalar değişen koşulları yok sayar ve aralık vermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sensitivity-analysis",
+        "scenario-analysis",
+        "assumption",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-08-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which valuation model is least suitable when valuing a bank?",
+      "stem_tr": "Banka değerlenirken hangi değerleme modeli en az uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Residual income",
+          "tr": "Artık gelir"
+        },
+        {
+          "key": "B",
+          "en": "Dividend discount model",
+          "tr": "Temettü indirgeme modeli"
+        },
+        {
+          "key": "C",
+          "en": "FCFF discounted at WACC",
+          "tr": "AOSM ile iskonto edilen FCFF"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "For a bank, debt is part of operations (raw material), so FCFF and WACC are not meaningful; equity-based models are used.",
+      "explanation_tr": "Banka için borç faaliyetin parçasıdır (ham maddedir); FCFF ve AOSM anlamlı değildir, özkaynak esaslı modeller kullanılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Residual income is an equity-based model that works well for banks.",
+          "tr": "Artık gelir bankalar için iyi çalışan özkaynak esaslı bir modeldir."
+        },
+        "B": {
+          "en": "Dividend-based models are common for banks.",
+          "tr": "Temettü esaslı modeller bankalarda yaygındır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bank",
+        "debt",
+        "equity-based",
+        "least-suitable"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-08-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST cement producer's margins swing widely with the construction cycle. Which forecasting approach is most appropriate?",
+      "stem_tr": "Kurgusal bir BIST çimento üreticisinin marjları inşaat döngüsüyle çok oynuyor. Hangi tahmin yaklaşımı en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Extrapolating the latest peak-year margin forever",
+          "tr": "Son zirve yılı marjını sonsuza dek uzatmak"
+        },
+        {
+          "key": "B",
+          "en": "Using only last year's earnings as the base",
+          "tr": "Tek taban olarak yalnızca geçen yılın kârını kullanmak"
+        },
+        {
+          "key": "C",
+          "en": "Multi-year forecasts using normalized, mid-cycle earnings",
+          "tr": "Normalleştirilmiş, döngü ortası kâr kullanan çok yıllı tahminler"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "For cyclical firms the current year may be a peak or trough; normalized earnings give a fairer long-run view.",
+      "explanation_tr": "Döngüsel firmalarda cari yıl zirve veya dip olabilir; normalleştirilmiş kâr daha adil bir uzun dönem görünümü verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Extrapolating a peak overstates value.",
+          "tr": "Zirveyi uzatmak değeri şişirir."
+        },
+        "B": {
+          "en": "One year can be a peak or trough and may mislead.",
+          "tr": "Tek yıl zirve veya dip olabilir ve yanıltabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cyclical",
+        "normalized-earnings",
+        "mid-cycle",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-08-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST holding owns an airline, a bank and a food company. The model structure that most likely fits is to:",
+      "stem_tr": "Kurgusal bir BIST holdingi bir havayolu, bir banka ve bir gıda şirketine sahip. En olası uygun model yapısı hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "apply a single growth rate to the whole group.",
+          "tr": "tüm gruba tek bir büyüme oranı uygulamak."
+        },
+        {
+          "key": "B",
+          "en": "forecast and value each segment separately, then add them (sum-of-the-parts).",
+          "tr": "her bölümü ayrı ayrı tahmin edip değerlemek, sonra toplamak (parçaların toplamı)."
+        },
+        {
+          "key": "C",
+          "en": "use the airline's margins for all businesses.",
+          "tr": "tüm işler için havayolunun marjlarını kullanmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Different businesses have different growth, margins and risks, so separate segment models are more accurate.",
+      "explanation_tr": "Farklı işlerin büyüme, marj ve riskleri farklıdır; bu yüzden ayrı bölüm modelleri daha doğrudur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A single growth rate hides large differences between segments.",
+          "tr": "Tek büyüme oranı bölümler arasındaki büyük farkları gizler."
+        },
+        "C": {
+          "en": "Margins differ by industry; borrowing one is wrong.",
+          "tr": "Marjlar sektöre göre değişir; birinin marjını ödünç almak yanlıştır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "conglomerate",
+        "segment",
+        "sum-of-the-parts",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-08-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A company expects its debt-to-equity ratio to change a lot over the next five years. Which choice is most consistent with this?",
+      "stem_tr": "Bir şirket önümüzdeki beş yılda borç/özkaynak oranının çok değişmesini bekliyor. Hangi tercih bununla en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Use FCFF discounted at WACC, because it does not depend on financing changes.",
+          "tr": "FCFF'yi AOSM ile iskonto etmek; çünkü finansman değişikliklerine bağlı değildir."
+        },
+        {
+          "key": "B",
+          "en": "Use FCFE with a constant net-borrowing assumption.",
+          "tr": "Sabit net borçlanma varsayımıyla FCFE kullanmak."
+        },
+        {
+          "key": "C",
+          "en": "Use a constant required return on equity throughout.",
+          "tr": "Boyunca sabit bir özkaynak getiri beklentisi kullanmak."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FCFF is before financing flows, so changing leverage does not distort it, though WACC weights should be handled carefully.",
+      "explanation_tr": "FCFF finansman akışlarından öncedir; kaldıraç değişimi onu bozmaz, ancak AOSM ağırlıklarına dikkat edilmelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A constant net-borrowing assumption conflicts with changing leverage.",
+          "tr": "Sabit net borçlanma varsayımı değişen kaldıraçla çelişir."
+        },
+        "C": {
+          "en": "Cost of equity rises with leverage, so a constant rate is inconsistent.",
+          "tr": "Özkaynak maliyeti kaldıraçla artar; sabit oran tutarsızdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "fcff",
+        "financing",
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "EQ-08-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is the LEAST likely benefit of adding more and more line-item detail to a forecast model?",
+      "stem_tr": "Bir tahmin modeline giderek daha fazla kalem ayrıntısı eklemenin AZ OLASI yararı aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Errors become easier to find and fix.",
+          "tr": "Hataların bulunması ve düzeltilmesi kolaylaşır."
+        },
+        {
+          "key": "B",
+          "en": "Important value drivers can be modeled explicitly.",
+          "tr": "Önemli değer belirleyicileri açıkça modellenebilir."
+        },
+        {
+          "key": "C",
+          "en": "Assumptions can be tied to specific business activities.",
+          "tr": "Varsayımlar belirli iş faaliyetlerine bağlanabilir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Excess detail usually makes a model harder to audit; errors become harder to find.",
+      "explanation_tr": "Aşırı ayrıntı modeli denetlemeyi zorlaştırır; hataları bulmak güçleşir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Explicit drivers are a real benefit of appropriate detail.",
+          "tr": "Açık belirleyiciler uygun ayrıntının gerçek bir yararıdır."
+        },
+        "C": {
+          "en": "Linking assumptions to activities is a real benefit of detail.",
+          "tr": "Varsayımları faaliyetlere bağlamak ayrıntının gerçek bir yararıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "detail",
+        "line-item",
+        "audit",
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "least-likely"
+      ]
+    },
+    {
+      "id": "EQ-08-c-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A model gives enterprise value of 3,000 million TL. Debt is 900, cash 250, non-controlling interest 60 and preferred shares 40 (TL million), with 100 million shares. Equity value per share is closest to:",
+      "stem_tr": "Bir model 3.000 milyon TL firma değeri veriyor. Borç 900, nakit 250, kontrol gücü olmayan paylar 60 ve imtiyazlı pay 40 (milyon TL); pay sayısı 100 milyon. Pay başına özkaynak değeri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "23.50 TL",
+          "tr": "23,50 TL",
+          "value": 23.5
+        },
+        {
+          "key": "B",
+          "en": "30.00 TL",
+          "tr": "30,00 TL",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "22.50 TL",
+          "tr": "22,50 TL",
+          "value": 22.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Equity = 3,000 − 900 + 250 − 60 − 40 = 2,250. Per share = 2,250 / 100 = 22.50 TL.",
+      "explanation_tr": "Özkaynak = 3.000 − 900 + 250 − 60 − 40 = 2.250. Pay başına = 2.250 / 100 = 22,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "23.50 TL omits the non-controlling interest and the preferred shares.",
+          "tr": "23,50 TL kontrol gücü olmayan payları ve imtiyazlı payı çıkarmayı unutur."
+        },
+        "B": {
+          "en": "30.00 TL divides enterprise value by shares without any adjustment.",
+          "tr": "30,00 TL firma değerini hiçbir düzeltme yapmadan paya böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Convert enterprise value to equity value per share.",
+          "tr": "Firma değerini pay başına özkaynak değerine çevirin."
+        },
+        {
+          "en": "Subtract debt, NCI and preferred shares; add cash.",
+          "tr": "Borcu, kontrol gücü olmayan payları ve imtiyazlı payı çıkarın; nakdi ekleyin.",
+          "formula_latex": "V_{eq}=EV-D-NCI-PS+Cash"
+        },
+        {
+          "en": "3,000 − 900 + 250 − 60 − 40 = 2,250; 2,250 / 100 = 22.50.",
+          "tr": "3.000 − 900 + 250 − 60 − 40 = 2.250; 2.250 / 100 = 22,50."
+        }
+      ],
+      "vocab_ids": [
+        "equity-bridge",
+        "enterprise-value",
+        "net-debt",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(3000-900+250-60-40)/100",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3000",
+          "[−]",
+          "900",
+          "[+]",
+          "250",
+          "[−]",
+          "60",
+          "[−]",
+          "40",
+          "[=]",
+          "[÷]",
+          "100",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-08-c-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A forecast model gives FCFE of 100 million TL in year 1 and 110 million TL in year 2. After year 2, FCFE grows 4% forever. The cost of equity is 10% and there are 50 million shares. Value per share is closest to:",
+      "stem_tr": "Bir tahmin modeli 1. yıl için 100 milyon TL, 2. yıl için 110 milyon TL FCFE veriyor. 2. yıldan sonra FCFE sonsuza dek %4 büyüyor. Özkaynak maliyeti %10 ve pay sayısı 50 milyon. Pay başına değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "33.94 TL",
+          "tr": "33,94 TL",
+          "value": 33.94
+        },
+        {
+          "key": "B",
+          "en": "35.15 TL",
+          "tr": "35,15 TL",
+          "value": 35.15
+        },
+        {
+          "key": "C",
+          "en": "1757.58 TL",
+          "tr": "1757,58 TL",
+          "value": 1757.58
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "V2 = 110 × 1.04 / (0.10 − 0.04) = 1,906.67. PV = 100/1.10 + (110 + 1,906.67)/1.21 = 90.91 + 1,666.67 = 1,757.58. Per share = 35.15 TL.",
+      "explanation_tr": "V2 = 110 × 1,04 / (0,10 − 0,04) = 1.906,67. BD = 100/1,10 + (110 + 1.906,67)/1,21 = 90,91 + 1.666,67 = 1.757,58. Pay başına = 35,15 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This choice uses FCFE2 instead of FCFE3 in the terminal value formula.",
+          "tr": "Bu şık terminal değer formülünde FCFE3 yerine FCFE2 kullanır."
+        },
+        "C": {
+          "en": "This choice is the total equity value in TL million; it forgets to divide by shares.",
+          "tr": "Bu şık milyon TL cinsinden toplam özkaynak değeridir; pay sayısına bölmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Discount the FCFE and the terminal value, then divide by shares.",
+          "tr": "FCFE'yi ve terminal değeri iskonto edin, sonra paya bölün."
+        },
+        {
+          "en": "Terminal value at year 2 uses FCFE3 = FCFE2 × 1.04.",
+          "tr": "2. yıl sonundaki terminal değer FCFE3 = FCFE2 × 1,04 kullanır.",
+          "formula_latex": "V_2=\\frac{FCFE_2(1+g)}{r-g}"
+        },
+        {
+          "en": "V2 = 1,906.67; total PV = 1,757.58 million TL.",
+          "tr": "V2 = 1.906,67; toplam BD = 1.757,58 milyon TL."
+        },
+        {
+          "en": "1,757.58 / 50 = 35.15 TL.",
+          "tr": "1.757,58 / 50 = 35,15 TL."
+        }
+      ],
+      "vocab_ids": [
+        "fcfe",
+        "terminal-value",
+        "per-share",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(100/1.1+(110+110*1.04/(0.10-0.04))/1.1**2)/50",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF]",
+          "[2ND]",
+          "[CLR",
+          "WORK]",
+          "0",
+          "[ENTER]",
+          "[↓]",
+          "100",
+          "[ENTER]",
+          "[↓]",
+          "[↓]",
+          "2016.67",
+          "[ENTER]",
+          "[↓]",
+          "[NPV]",
+          "10",
+          "[ENTER]",
+          "[↓]",
+          "[CPT]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-08-c-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Three scenarios give value per share of 12 TL (bear, 25% probability), 18 TL (base, 50%) and 26 TL (bull, 25%). The probability-weighted value is closest to:",
+      "stem_tr": "Üç senaryo pay başına 12 TL (kötü, %25 olasılık), 18 TL (temel, %50) ve 26 TL (iyi, %25) değer veriyor. Olasılık ağırlıklı değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "18.67 TL",
+          "tr": "18,67 TL",
+          "value": 18.67
+        },
+        {
+          "key": "B",
+          "en": "18.50 TL",
+          "tr": "18,50 TL",
+          "value": 18.5
+        },
+        {
+          "key": "C",
+          "en": "18.00 TL",
+          "tr": "18,00 TL",
+          "value": 18.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "0.25 × 12 + 0.50 × 18 + 0.25 × 26 = 3.00 + 9.00 + 6.50 = 18.50 TL.",
+      "explanation_tr": "0,25 × 12 + 0,50 × 18 + 0,25 × 26 = 3,00 + 9,00 + 6,50 = 18,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "18.67 TL takes the simple average of the three values and ignores the probabilities.",
+          "tr": "18,67 TL olasılıkları yok sayıp üç değerin basit ortalamasını alır."
+        },
+        "C": {
+          "en": "18.00 TL uses only the base case.",
+          "tr": "18,00 TL yalnızca temel senaryoyu kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Weight each scenario value by its probability.",
+          "tr": "Her senaryo değerini olasılığıyla ağırlıklandırın."
+        },
+        {
+          "en": "Sum the products.",
+          "tr": "Çarpımları toplayın.",
+          "formula_latex": "V=\\sum p_iV_i"
+        },
+        {
+          "en": "3.00 + 9.00 + 6.50 = 18.50 TL.",
+          "tr": "3,00 + 9,00 + 6,50 = 18,50 TL."
+        }
+      ],
+      "vocab_ids": [
+        "scenario",
+        "probability-weighted",
+        "base-case",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "0.25*12+0.5*18+0.25*26",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.25",
+          "[×]",
+          "12",
+          "[+]",
+          "0.5",
+          "[×]",
+          "18",
+          "[+]",
+          "0.25",
+          "[×]",
+          "26",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-08-c-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A model forecasts FCFF of 100, 120 and 140 million TL for years 1-3 and an exit enterprise value of 6 × year-3 EBITDA, where EBITDA is 400 million TL. WACC is 10%, net debt is 500 million TL and there are 80 million shares. Value per share is closest to:",
+      "stem_tr": "Bir model 1-3. yıllar için 100, 120 ve 140 milyon TL FCFF ve çıkış firma değeri olarak 3. yıl FAVÖK'ünün 6 katını (FAVÖK 400 milyon TL) öngörüyor. AOSM %10, net borç 500 milyon TL ve pay sayısı 80 milyon. Pay başına değer en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "19.98 TL",
+          "tr": "19,98 TL",
+          "value": 19.98
+        },
+        {
+          "key": "B",
+          "en": "26.23 TL",
+          "tr": "26,23 TL",
+          "value": 26.23
+        },
+        {
+          "key": "C",
+          "en": "27.44 TL",
+          "tr": "27,44 TL",
+          "value": 27.44
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Exit EV = 2,400. EV = 100/1.1 + 120/1.1² + (140 + 2,400)/1.1³ = 90.91 + 99.17 + 1,908.34 = 2,098.42. Equity = 2,098.42 − 500 = 1,598.42; per share = 19.98 TL.",
+      "explanation_tr": "Çıkış FD = 2.400. FD = 100/1,1 + 120/1,1² + (140 + 2.400)/1,1³ = 90,91 + 99,17 + 1.908,34 = 2.098,42. Özkaynak = 2.098,42 − 500 = 1.598,42; pay başına = 19,98 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "26.23 TL forgets to subtract net debt (2,098.42 / 80).",
+          "tr": "26,23 TL net borcu çıkarmayı unutur (2.098,42 / 80)."
+        },
+        "C": {
+          "en": "This choice adds the exit value without discounting it for three years.",
+          "tr": "Bu şık çıkış değerini üç yıl iskonto etmeden ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Discount FCFF and the exit value to get enterprise value.",
+          "tr": "FCFF'yi ve çıkış değerini iskonto ederek firma değerini bulun."
+        },
+        {
+          "en": "Exit EV = multiple × EBITDA, received at year 3.",
+          "tr": "Çıkış FD = çarpan × FAVÖK; 3. yılda elde edilir.",
+          "formula_latex": "EV_3=6\\times400=2400"
+        },
+        {
+          "en": "EV = 2,098.42; subtract net debt 500 → 1,598.42.",
+          "tr": "FD = 2.098,42; net borç 500 çıkarılır → 1.598,42."
+        },
+        {
+          "en": "1,598.42 / 80 = 19.98 TL.",
+          "tr": "1.598,42 / 80 = 19,98 TL."
+        }
+      ],
+      "vocab_ids": [
+        "exit-multiple",
+        "fcff",
+        "net-debt",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(100/1.1+120/1.1**2+(140+6*400)/1.1**3-500)/80",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF]",
+          "[2ND]",
+          "[CLR",
+          "WORK]",
+          "0",
+          "[ENTER]",
+          "[↓]",
+          "100",
+          "[ENTER]",
+          "[↓]",
+          "[↓]",
+          "120",
+          "[ENTER]",
+          "[↓]",
+          "[↓]",
+          "2540",
+          "[ENTER]",
+          "[↓]",
+          "[NPV]",
+          "10",
+          "[ENTER]",
+          "[↓]",
+          "[CPT]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-08-c-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-08",
+      "los_id": "EQ-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A model gives a value of 22.50 TL per share while the share trades at 18.75 TL. The analyst should most likely interpret this as:",
+      "stem_tr": "Bir model pay başına 22,50 TL değer verirken pay 18,75 TL'den işlem görüyor. Analist bunu büyük olasılıkla nasıl yorumlamalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a guaranteed 20% return within one year.",
+          "tr": "bir yıl içinde garantili %20 getiri."
+        },
+        {
+          "key": "B",
+          "en": "proof that the market price is wrong.",
+          "tr": "piyasa fiyatının yanlış olduğunun kanıtı."
+        },
+        {
+          "key": "C",
+          "en": "20% above the market price, which is valid only if the forecast assumptions hold.",
+          "tr": "piyasa fiyatının %20 üzerinde; bu yalnızca tahmin varsayımları tutarsa geçerlidir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "22.50 / 18.75 − 1 = 20% upside versus the model, but it depends on inputs and may reflect model error.",
+      "explanation_tr": "22,50 / 18,75 − 1 = modele göre %20 yükseliş potansiyeli; ancak girdilere bağlıdır ve model hatasını yansıtabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Model values are estimates; nothing is guaranteed.",
+          "tr": "Model değerleri tahmindir; hiçbir şey garanti değildir."
+        },
+        "B": {
+          "en": "A gap could equally be an input error; it is not proof of mispricing.",
+          "tr": "Fark girdi hatası da olabilir; yanlış fiyatlamanın kanıtı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "upside",
+        "assumption",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}
