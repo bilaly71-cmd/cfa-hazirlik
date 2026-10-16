@@ -1,0 +1,437 @@
+{
+  "module_id": "DER-01",
+  "vignettes": [
+    {
+      "id": "L2-DER-01-v01",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "curriculum_year": 2027,
+      "title_en": "Pricing Forwards and Swaps in a High-Rate Market",
+      "title_tr": "Yüksek Faizli Piyasada Forward ve Swap Fiyatlaması",
+      "text_en": "Elif Yavuz manages the derivatives desk of the fictional brokerage Karaköy Yatırım. Turkish lira rates are high: the one-year effective annual risk-free rate is 40%. Elif prices four instruments for clients.\nFirst, a six-month forward on the stock of Akdeniz Enerji, which trades at TRY 100. The stock pays one dividend of TRY 3 in exactly three months, and there are no other cash flows or costs. Rates are compounded annually, so a six-month period has a growth factor of (1 + r)^0.5.\nSecond, a client holds a long position in a six-month forward on the same stock that was signed three months ago at a forward price of TRY 118. The stock now trades at TRY 112, and the dividend has already been paid.\nThird, a forward rate agreement (FRA) that starts in 90 days and ends in 270 days. The add-on spot rates (annualised, 360-day year) are 42% for 90 days and 45% for 270 days.\nFourth, a three-year annual-pay plain vanilla swap, for which the zero-coupon spot rates are 40%, 42% and 43% for one, two and three years.\nA dealer quotes the six-month forward on Akdeniz Enerji at TRY 118.00.",
+      "text_tr": "Elif Yavuz, kurgusal Karaköy Yatırım aracı kurumunun türev masasını yönetiyor. Türk lirası faizleri yüksek: bir yıllık efektif yıllık risksiz faiz %40. Elif müşteriler için dört enstrümanı fiyatlıyor.\nBirincisi, TL 100'den işlem gören Akdeniz Enerji hissesi üzerine altı aylık bir forward. Hisse tam üç ay sonra TL 3 temettü ödüyor; başka nakit akışı veya maliyet yok. Faizler yıllık bileşik; altı aylık dönemin büyüme çarpanı (1 + r)^0,5.\nİkincisi, bir müşteri aynı hisse üzerine üç ay önce TL 118 forward fiyatıyla imzalanmış altı aylık forward'da uzun pozisyona sahip. Hisse şimdi TL 112'den işlem görüyor ve temettü zaten ödendi.\nÜçüncüsü, 90 gün sonra başlayıp 270 günde biten bir vadeli faiz sözleşmesi (FRA). Basit (add-on) spot faizler (yıllık, 360 gün): 90 gün için %42, 270 gün için %45.\nDördüncüsü, yıllık ödemeli üç yıllık düz vanilya swap; sıfır kuponlu spot faizler bir, iki ve üç yıl için %40, %42 ve %43.\nBir bayi Akdeniz Enerji'nin altı aylık forward'ını TL 118,00'den fiyatlıyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Inputs",
+          "title_tr": "Gösterge 1: Girdiler",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Annual risk-free rate",
+              "40%"
+            ],
+            [
+              "Spot price / dividend (3 months)",
+              "TRY 100 / TRY 3"
+            ],
+            [
+              "Existing forward price / current spot",
+              "TRY 118 / TRY 112"
+            ],
+            [
+              "FRA: 90-day and 270-day add-on rates",
+              "42% / 45%"
+            ],
+            [
+              "Swap zero rates (1, 2, 3 years)",
+              "40% / 42% / 43%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-DER-01-v01-q1",
+        "L2-DER-01-v01-q2",
+        "L2-DER-01-v01-q3",
+        "L2-DER-01-v01-q4",
+        "L2-DER-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-DER-01-v01-q1",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-DER-01-v01",
+      "stem_en": "The no-arbitrage price of the six-month forward on Akdeniz Enerji is closest to:",
+      "stem_tr": "Akdeniz Enerji üzerine altı aylık forward'ın arbitrajsız fiyatı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "115.06",
+          "tr": "115,06",
+          "value": 115.06
+        },
+        {
+          "key": "B",
+          "en": "118.32",
+          "tr": "118,32",
+          "value": 118.32
+        },
+        {
+          "key": "C",
+          "en": "121.58",
+          "tr": "121,58",
+          "value": 121.58
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "PV of dividend = 3/1.40^0.25 = 2.76. F = (100 - 2.76) x 1.40^0.5 = 115.06. The dividend belongs to the stock holder, not the forward holder, so it lowers the forward price.",
+      "explanation_tr": "Temettünün bugünkü değeri = 3/1,40^0,25 = 2,76. F = (100 - 2,76) x 1,40^0,5 = 115,06. Temettü forward sahibine değil hisse sahibine aittir, bu yüzden forward fiyatını düşürür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It ignores the dividend and just compounds the spot price.",
+          "tr": "Temettüyü yok sayar, yalnızca spot fiyatı bileşikler."
+        },
+        "C": {
+          "en": "It adds the present value of the dividend instead of subtracting it.",
+          "tr": "Temettünün bugünkü değerini çıkarmak yerine ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the fair forward price.",
+          "tr": "Adil forward fiyatı isteniyor."
+        },
+        {
+          "en": "F = (S0 - PV of dividends) x (1 + r)^T.",
+          "tr": "F = (S0 - temettülerin bugünkü değeri) x (1 + r)^T."
+        },
+        {
+          "en": "PV of dividend = 2.76; (100 - 2.76) x 1.1832.",
+          "tr": "Temettünün bugünkü değeri = 2,76; (100 - 2,76) x 1,1832."
+        },
+        {
+          "en": "Result: 115.06.",
+          "tr": "Sonuç: 115,06."
+        }
+      ],
+      "numeric": {
+        "expr": "(100-3/(1.40**0.25))*(1.40**0.5)"
+      },
+      "vocab_ids": [
+        "forward-contract",
+        "present-value-of-dividends",
+        "dividend",
+        "no-arbitrage",
+        "spot-price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-01-v01-q2",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-DER-01-v01",
+      "stem_en": "Given the dealer's quote of TRY 118.00, the best action for an arbitrageur is to:",
+      "stem_tr": "Bayinin TL 118,00 fiyatı göz önüne alındığında, bir arbitrajcı için en iyi eylem şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Buy the forward and short sell the stock",
+          "tr": "Forward'ı al ve hisseyi açığa sat"
+        },
+        {
+          "key": "B",
+          "en": "Sell the forward, buy the stock with borrowed money and lock in a riskless profit",
+          "tr": "Forward'ı sat, hisseyi borçlanarak al ve risksiz kâr kilitle"
+        },
+        {
+          "key": "C",
+          "en": "Do nothing, because the forward price does not depend on the spot price",
+          "tr": "Hiçbir şey yapma, çünkü forward fiyatı spot fiyata bağlı değildir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The quote of 118.00 exceeds the fair forward price of 115.06. Sell the overpriced forward, buy the stock financed at the risk-free rate, and deliver it at expiry for a riskless gain of about 2.94.",
+      "explanation_tr": "118,00'lik fiyat, 115,06'lik adil forward fiyatını aşıyor. Pahalı forward'ı sat, hisseyi risksiz faizle borçlanarak al ve vadede teslim ederek yaklaşık 2,94 risksiz kazanç sağla.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That strategy profits only if the forward is cheap. Here the forward is priced above the fair value, so the opposite trade is needed.",
+          "tr": "Bu strateji yalnızca forward ucuzsa kazandırır. Burada forward gerçeğe uygun değerin üzerinde fiyatlanıyor; ters işlem gerekir."
+        },
+        "C": {
+          "en": "The forward price is tied to the spot price through the cost of carry, which is why mispricing can be exploited.",
+          "tr": "Forward fiyatı spot fiyata taşıma maliyeti üzerinden bağlıdır; bu yüzden yanlış fiyatlama değerlendirilebilir."
+        }
+      },
+      "vocab_ids": [
+        "arbitrage",
+        "no-arbitrage",
+        "forward-contract",
+        "short-sell",
+        "spot-price"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-01-v01-q3",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-DER-01-v01",
+      "stem_en": "The current value of the client's long forward (signed at 118), per unit of stock, is closest to:",
+      "stem_tr": "Müşterinin uzun forward pozisyonunun (118'den imzalı) hisse başına güncel değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "-6.00",
+          "tr": "-6,00",
+          "value": -6.0
+        },
+        {
+          "key": "B",
+          "en": "12.27",
+          "tr": "12,27",
+          "value": 12.27
+        },
+        {
+          "key": "C",
+          "en": "3.52",
+          "tr": "3,52",
+          "value": 3.52
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Value = S_t - F0/(1 + r)^(T - t) = 112 - 118/1.40^0.25 = 3.52. The position has a gain because the spot rose and the delivery price is discounted.",
+      "explanation_tr": "Değer = S_t - F0/(1 + r)^(T - t) = 112 - 118/1,40^0,25 = 3,52. Spot yükseldiği ve teslim fiyatı iskonto edildiği için pozisyon kazançlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It subtracts the forward price from spot without discounting the forward price.",
+          "tr": "Forward fiyatını iskonto etmeden spottan çıkarır."
+        },
+        "B": {
+          "en": "It discounts for six months, but only three months remain.",
+          "tr": "Altı ay iskonto eder; oysa yalnızca üç ay kalmıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the value of the long forward now.",
+          "tr": "Uzun forward'ın bugünkü değeri isteniyor."
+        },
+        {
+          "en": "V = S_t - PV of the forward price over the remaining life.",
+          "tr": "V = S_t - forward fiyatının kalan ömür boyunca bugünkü değeri."
+        },
+        {
+          "en": "118 / 1.40^0.25 = 108.48.",
+          "tr": "118 / 1,40^0,25 = 108,48."
+        },
+        {
+          "en": "Result: 112 - 108.48 = 3.52.",
+          "tr": "Sonuç: 112 - 108,48 = 3,52."
+        }
+      ],
+      "numeric": {
+        "expr": "112-118/(1.40**0.25)"
+      },
+      "vocab_ids": [
+        "forward-value",
+        "mark-to-market",
+        "spot-price",
+        "discount-factor",
+        "forward-contract"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-01-v01-q4",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-DER-01-v01",
+      "stem_en": "The FRA rate for a 90-day-into-270-day contract (180-day forward period) is closest to:",
+      "stem_tr": "90 gün sonra başlayıp 270 günde biten (180 günlük forward dönemi) FRA oranı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "42.08%",
+          "tr": "42,08%",
+          "value": 42.08
+        },
+        {
+          "key": "B",
+          "en": "45.00%",
+          "tr": "45,00%",
+          "value": 45.0
+        },
+        {
+          "key": "C",
+          "en": "43.50%",
+          "tr": "43,50%",
+          "value": 43.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FRA rate = [(1 + 0.45 x 270/360)/(1 + 0.42 x 90/360) - 1] x 360/180 = [(1.3375/1.105) - 1] x 2 = 42.08%.",
+      "explanation_tr": "FRA oranı = [(1 + 0,45 x 270/360)/(1 + 0,42 x 90/360) - 1] x 360/180 = [(1,3375/1,105) - 1] x 2 = %42,08.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It uses the 270-day rate itself as the forward rate.",
+          "tr": "270 günlük faizi forward faiz olarak kullanır."
+        },
+        "C": {
+          "en": "It averages the two spot rates instead of extracting the implied forward rate.",
+          "tr": "İma edilen forward faizi çıkarmak yerine iki spot faizin ortalamasını alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the implied FRA rate.",
+          "tr": "İma edilen FRA oranı isteniyor."
+        },
+        {
+          "en": "(1 + L270 x 270/360) = (1 + L90 x 90/360)(1 + FRA x 180/360).",
+          "tr": "(1 + L270 x 270/360) = (1 + L90 x 90/360)(1 + FRA x 180/360)."
+        },
+        {
+          "en": "1.3375 / 1.105 = 1.2104; subtract 1 and multiply by 2.",
+          "tr": "1,3375 / 1,105 = 1,2104; 1 çıkar ve 2 ile çarp."
+        },
+        {
+          "en": "Result: 42.08%.",
+          "tr": "Sonuç: %42,08."
+        }
+      ],
+      "numeric": {
+        "expr": "((1+0.45*270/360)/(1+0.42*90/360)-1)*360/180*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forward-rate-agreement",
+        "forward-rate",
+        "spot-rate",
+        "notional",
+        "add-on-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-01-v01-q5",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-DER-01-v01",
+      "stem_en": "Using the zero-coupon spot rates, the annual fixed rate of the three-year plain vanilla swap is closest to:",
+      "stem_tr": "Sıfır kuponlu spot faizler kullanılarak üç yıllık düz vanilya swap'ın yıllık sabit faizi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "41.67%",
+          "tr": "41,67%",
+          "value": 41.67
+        },
+        {
+          "key": "B",
+          "en": "42.39%",
+          "tr": "42,39%",
+          "value": 42.39
+        },
+        {
+          "key": "C",
+          "en": "43.00%",
+          "tr": "43,00%",
+          "value": 43.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Swap rate = (1 - DF3) / sum of DFs = (1 - 0.3420) / 1.5522 = 42.39%. The fixed leg must have the same present value as a floating-rate bond.",
+      "explanation_tr": "Swap faizi = (1 - DF3) / iskonto faktörleri toplamı = (1 - 0,3420) / 1,5522 = %42,39. Sabit bacak, değişken faizli tahville aynı bugünkü değere sahip olmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It averages the spot rates instead of using discount factors.",
+          "tr": "Spot faizlerin ortalamasını alır, iskonto faktörlerini kullanmaz."
+        },
+        "C": {
+          "en": "It uses the three-year spot rate as the swap rate.",
+          "tr": "Üç yıllık spot faizi swap faizi olarak kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the fixed swap rate.",
+          "tr": "Sabit swap faizi isteniyor."
+        },
+        {
+          "en": "Swap rate = (1 - DF_n) / sum of DF_i.",
+          "tr": "Swap faizi = (1 - DF_n) / DF_i toplamı."
+        },
+        {
+          "en": "DFs: 0.7143, 0.4959, 0.3420; sum = 1.5522.",
+          "tr": "İskonto faktörleri: 0,7143, 0,4959, 0,3420; toplam = 1,5522."
+        },
+        {
+          "en": "Result: 42.39%.",
+          "tr": "Sonuç: %42,39."
+        }
+      ],
+      "numeric": {
+        "expr": "(1-1/1.43**3)/(1/1.40+1/1.42**2+1/1.43**3)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "swap-rate",
+        "discount-factor",
+        "interest-rate-swap",
+        "spot-rate",
+        "notional"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

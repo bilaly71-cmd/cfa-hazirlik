@@ -1,0 +1,429 @@
+{
+  "module_id": "DER-02",
+  "vignettes": [
+    {
+      "id": "L2-DER-02-v01",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "curriculum_year": 2027,
+      "title_en": "Valuing Options on a Cement Stock",
+      "title_tr": "Bir Çimento Hissesi Üzerine Opsiyon Değerlemesi",
+      "text_en": "Sinan Özdemir is a derivatives analyst at the fictional firm Boyabat Menkul. He values options on the stock of Güneş Çimento, which trades at TRY 100 and pays no dividends. Over the next period (one year) the stock is expected to move either up by a factor of 1.25 or down by a factor of 0.80. The one-period risk-free rate is 5%. The options are European, have a strike price of TRY 100 and expire at the end of the period.\nSinan uses a one-period binomial model. He first computes the stock prices at the end of the period (TRY 125 in the up state and TRY 80 in the down state) and the option payoffs in each state. His assistant, Pınar, has already found that the call is worth TRY 13.23 today.\nA client has sold 2,000 call options and wants to hedge the position by trading the stock. Pınar asks whether the same logic, with the stock rising and the option holder exercising early, would make an American call on this stock worth more than the European call.\nFinally, Sinan wants to check the put price without building a second tree, using put-call parity for European options on a stock with no dividends.",
+      "text_tr": "Sinan Özdemir, kurgusal Boyabat Menkul'de türev analistidir. Güneş Çimento hissesi üzerine opsiyonları değerliyor; hisse TL 100'den işlem görüyor ve temettü ödemiyor. Bir sonraki dönemde (bir yıl) hissenin ya 1,25 çarpanıyla yukarı ya da 0,80 çarpanıyla aşağı gitmesi bekleniyor. Bir dönemlik risksiz faiz %5. Opsiyonlar Avrupa tipi, kullanım fiyatı TL 100 ve dönem sonunda vadesi doluyor.\nSinan tek dönemli iki terimli (binomial) model kullanıyor. Önce dönem sonu hisse fiyatlarını (yukarı durumda TL 125, aşağı durumda TL 80) ve her durumda opsiyon getirisini hesaplıyor. Asistanı Pınar çağrı opsiyonunun bugün TL 13,23 değerinde olduğunu zaten bulmuş.\nBir müşteri 2,000 adet çağrı opsiyonu sattı ve pozisyonu hisse alıp satarak korumak istiyor. Pınar, hisse yükselirken opsiyon sahibinin erken kullanım yapmasının bu hisse üzerine bir Amerikan çağrı opsiyonunu Avrupa çağrısından daha değerli yapıp yapmayacağını soruyor.\nSon olarak Sinan, ikinci bir ağaç kurmadan, temettüsüz hisse üzerine Avrupa opsiyonları için put-call paritesini kullanarak satım opsiyonu fiyatını kontrol etmek istiyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: One-period tree",
+          "title_tr": "Gösterge 1: Tek dönemli ağaç",
+          "headers": [
+            "State",
+            "Stock price",
+            "Call payoff (K = 100)",
+            "Put payoff (K = 100)"
+          ],
+          "rows": [
+            [
+              "Up",
+              "125",
+              "25",
+              "0"
+            ],
+            [
+              "Down",
+              "80",
+              "0",
+              "20"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-DER-02-v01-q1",
+        "L2-DER-02-v01-q2",
+        "L2-DER-02-v01-q3",
+        "L2-DER-02-v01-q4",
+        "L2-DER-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-DER-02-v01-q1",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-DER-02-v01",
+      "stem_en": "The risk-neutral probability of the up move is closest to:",
+      "stem_tr": "Yukarı hareketin risk nötr olasılığı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.556",
+          "tr": "0,556",
+          "value": 0.556
+        },
+        {
+          "key": "B",
+          "en": "0.444",
+          "tr": "0,444",
+          "value": 0.444
+        },
+        {
+          "key": "C",
+          "en": "0.610",
+          "tr": "0,610",
+          "value": 0.61
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "pi = (1 + r - d)/(u - d) = (1.05 - 0.80)/(1.25 - 0.80) = 0.556. It is not the real-world probability; it is the weight that makes the stock earn the risk-free rate.",
+      "explanation_tr": "pi = (1 + r - d)/(u - d) = (1,05 - 0,80)/(1,25 - 0,80) = 0,556. Gerçek dünya olasılığı değildir; hissenin risksiz faizi kazanmasını sağlayan ağırlıktır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It subtracts the risk-free rate from the up move instead of from the growth factor.",
+          "tr": "Faizi büyüme çarpanından değil, yukarı hareketten çıkarır."
+        },
+        "C": {
+          "en": "It weights the up factor by u/(u + d), which ignores the risk-free rate.",
+          "tr": "Yukarı çarpanı u/(u + d) ile ağırlıklar; risksiz faizi yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the risk-neutral probability of an up move.",
+          "tr": "Yukarı hareketin risk nötr olasılığı isteniyor."
+        },
+        {
+          "en": "pi = (1 + r - d)/(u - d).",
+          "tr": "pi = (1 + r - d)/(u - d)."
+        },
+        {
+          "en": "(1.05 - 0.80)/(1.25 - 0.80) = 0.25/0.45.",
+          "tr": "(1,05 - 0,80)/(1,25 - 0,80) = 0,25/0,45."
+        },
+        {
+          "en": "Result: 0.556.",
+          "tr": "Sonuç: 0,556."
+        }
+      ],
+      "numeric": {
+        "expr": "(1.05-0.80)/(1.25-0.80)"
+      },
+      "vocab_ids": [
+        "risk-neutral-probability",
+        "binomial-model",
+        "up-move",
+        "down-move",
+        "risk-neutral"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-02-v01-q2",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-DER-02-v01",
+      "stem_en": "The value of the European call today is closest to:",
+      "stem_tr": "Avrupa çağrı opsiyonunun bugünkü değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.89",
+          "tr": "13,89",
+          "value": 13.89
+        },
+        {
+          "key": "B",
+          "en": "13.23",
+          "tr": "13,23",
+          "value": 13.23
+        },
+        {
+          "key": "C",
+          "en": "11.90",
+          "tr": "11,90",
+          "value": 11.9
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "C = [pi x Cu + (1 - pi) x Cd]/(1 + r) = [0.5556 x 25 + 0]/1.05 = 13.23.",
+      "explanation_tr": "C = [pi x Cu + (1 - pi) x Cd]/(1 + r) = [0,5556 x 25 + 0]/1,05 = 13,23.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It forgets to discount the expected payoff by one period.",
+          "tr": "Beklenen getiriyi bir dönem iskonto etmeyi unutur."
+        },
+        "C": {
+          "en": "It uses real-world probabilities of 50/50 instead of the risk-neutral probability.",
+          "tr": "Risk nötr olasılık yerine 50/50'lik gerçek dünya olasılıklarını kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the call value today.",
+          "tr": "Çağrı opsiyonunun bugünkü değeri isteniyor."
+        },
+        {
+          "en": "Discount the risk-neutral expected payoff at the risk-free rate.",
+          "tr": "Risk nötr beklenen getiriyi risksiz faizle iskonto et."
+        },
+        {
+          "en": "Cu = 25, Cd = 0; pi = 0.5556.",
+          "tr": "Cu = 25, Cd = 0; pi = 0,5556."
+        },
+        {
+          "en": "Result: 13.23.",
+          "tr": "Sonuç: 13,23."
+        }
+      ],
+      "numeric": {
+        "expr": "((1.05-0.80)/(1.25-0.80)*25+(1-(1.05-0.80)/(1.25-0.80))*0)/1.05"
+      },
+      "vocab_ids": [
+        "call-option",
+        "binomial-model",
+        "risk-neutral-probability",
+        "discount",
+        "payoff"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-02-v01-q3",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-DER-02-v01",
+      "stem_en": "Using put-call parity with the call value of TRY 13.23, the value of the European put is closest to:",
+      "stem_tr": "13,23 TL'lik çağrı değeriyle put-call paritesini kullanarak Avrupa satım opsiyonunun değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.23",
+          "tr": "13,23",
+          "value": 13.23
+        },
+        {
+          "key": "B",
+          "en": "17.99",
+          "tr": "17,99",
+          "value": 17.99
+        },
+        {
+          "key": "C",
+          "en": "8.47",
+          "tr": "8,47",
+          "value": 8.47
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "P = C + K/(1 + r) - S = 13.23 + 95.24 - 100 = 8.47. This matches a direct tree calculation: 0.4444 x 20 / 1.05 = 8.47.",
+      "explanation_tr": "P = C + K/(1 + r) - S = 13,23 + 95,24 - 100 = 8,47. Bu, doğrudan ağaç hesabıyla uyuşur: 0,4444 x 20 / 1,05 = 8,47.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It forgets to discount the strike price.",
+          "tr": "Kullanım fiyatını iskonto etmeyi unutur."
+        },
+        "B": {
+          "en": "It reverses the signs of the stock and the discounted strike.",
+          "tr": "Hisse ile iskonto edilmiş kullanım fiyatının işaretlerini ters çevirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the put value from parity.",
+          "tr": "Parite ile satım opsiyonu değeri isteniyor."
+        },
+        {
+          "en": "P = C + K/(1 + r) - S.",
+          "tr": "P = C + K/(1 + r) - S."
+        },
+        {
+          "en": "13.23 + 95.24 - 100.",
+          "tr": "13,23 + 95,24 - 100."
+        },
+        {
+          "en": "Result: 8.47.",
+          "tr": "Sonuç: 8,47."
+        }
+      ],
+      "numeric": {
+        "expr": "13.23+100/1.05-100"
+      },
+      "vocab_ids": [
+        "put-call-parity",
+        "european-option",
+        "put",
+        "exercise-price",
+        "present-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-02-v01-q4",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-DER-02-v01",
+      "stem_en": "To delta-hedge the 2,000 short calls, the client should hold a number of shares closest to:",
+      "stem_tr": "2,000 adet satılmış çağrıyı delta nötr yapmak için müşterinin tutması gereken hisse sayısı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1111.1",
+          "tr": "1111,1",
+          "value": 1111.1
+        },
+        {
+          "key": "B",
+          "en": "400.0",
+          "tr": "400,0",
+          "value": 400.0
+        },
+        {
+          "key": "C",
+          "en": "888.9",
+          "tr": "888,9",
+          "value": 888.9
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Hedge ratio = (Cu - Cd)/(Su - Sd) = 25/45 = 0.5556. For 2,000 short calls, hold 2,000 x 0.5556 = 1111.1 shares (long).",
+      "explanation_tr": "Hedge oranı = (Cu - Cd)/(Su - Sd) = 25/45 = 0,5556. 2,000 satılmış çağrı için 2,000 x 0,5556 = 1111,1 hisse (uzun) tutulmalıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It uses the up-state payoff divided by the up-state price instead of the ratio of payoff spread to price spread.",
+          "tr": "Getiri farkının fiyat farkına oranı yerine yukarı durum getirisini yukarı durum fiyatına böler."
+        },
+        "C": {
+          "en": "It uses (1 - hedge ratio), which is not the hedge ratio.",
+          "tr": "Hedge oranı yerine (1 - hedge oranı) kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the number of shares for the hedge.",
+          "tr": "Hedge için gereken hisse sayısı isteniyor."
+        },
+        {
+          "en": "Hedge ratio = (Cu - Cd)/(Su - Sd).",
+          "tr": "Hedge oranı = (Cu - Cd)/(Su - Sd)."
+        },
+        {
+          "en": "25/45 = 0.5556; times 2,000.",
+          "tr": "25/45 = 0,5556; 2,000 ile çarp."
+        },
+        {
+          "en": "Result: 1111.1 shares.",
+          "tr": "Sonuç: 1111,1 hisse."
+        }
+      ],
+      "numeric": {
+        "expr": "2000*(25/(125-80))"
+      },
+      "vocab_ids": [
+        "hedge-ratio",
+        "hedged-portfolio",
+        "call-option",
+        "short-position",
+        "hedge"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-DER-02-v01-q5",
+      "level": "L2",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-DER-02-v01",
+      "stem_en": "Regarding Pınar's question, an American call on this stock compared with the European call is most likely:",
+      "stem_tr": "Pınar'ın sorusuna gelince, bu hisse üzerine bir Amerikan çağrısı Avrupa çağrısıyla karşılaştırıldığında büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Worth more, because early exercise always captures the intrinsic value sooner",
+          "tr": "Daha değerlidir; çünkü erken kullanım içsel değeri her zaman daha erken yakalar"
+        },
+        {
+          "key": "B",
+          "en": "Worth the same, because with no dividends early exercise is not optimal",
+          "tr": "Aynı değerdedir; temettü yoksa erken kullanım optimal değildir"
+        },
+        {
+          "key": "C",
+          "en": "Worth less, because the American feature adds a restriction",
+          "tr": "Daha az değerlidir; çünkü Amerikan özelliği bir kısıt ekler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Before expiry the call is worth more than its intrinsic value, because of the time value and the interest earned on the strike. So early exercise has no benefit, and the American and European calls are equal.",
+      "explanation_tr": "Vadeden önce çağrı, zaman değeri ve kullanım fiyatı üzerinden kazanılan faiz nedeniyle içsel değerinden daha değerlidir. Erken kullanımın faydası yoktur; Amerikan ve Avrupa çağrıları eşit değerdedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Exercising early gives up the remaining time value and the interest on the unpaid strike; with no dividends the call is worth more unexercised.",
+          "tr": "Erken kullanım kalan zaman değerinden ve ödenmeyen kullanım fiyatının faizinden vazgeçmek demektir; temettü yoksa çağrı kullanılmadan daha değerlidir."
+        },
+        "C": {
+          "en": "An American option has all the rights of a European option plus the early exercise right, so it can never be worth less.",
+          "tr": "Amerikan opsiyonu Avrupa opsiyonunun tüm haklarına ek olarak erken kullanım hakkına sahiptir; asla daha az değerli olamaz."
+        }
+      },
+      "vocab_ids": [
+        "american-option",
+        "european-option",
+        "early-exercise",
+        "intrinsic-value",
+        "time-value"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

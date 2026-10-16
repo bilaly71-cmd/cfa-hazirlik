@@ -47,7 +47,11 @@
         "L2-EQ-05-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -114,7 +118,11 @@
         "required-return"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "6-0.10*40",
         "unit": "TL"
@@ -183,7 +191,11 @@
         "payout-ratio"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "6.6-0.10*(40+6*0.5)",
         "unit": "TL"
@@ -256,7 +268,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "40+2.0/1.1+2.3/1.1**2+2.3*0.6/(1.1-0.6)/1.1**2",
         "unit": "TL"
@@ -296,8 +312,8 @@
         }
       ],
       "answer": "C",
-      "explanation_en": "Intrinsic P/B = 46.00 / 40.00 = 1.15, while the market P/B is 52 / 40 = 1.30. The market pays more than the model value, so the shares look overvalued by about 12%.",
-      "explanation_tr": "İçsel PD/DD = 46,00 / 40,00 = 1,15; piyasa PD/DD'si 52 / 40 = 1,30'dur. Piyasa model değerinden fazlasını ödüyor; hisse yaklaşık %12 pahalı görünür.",
+      "explanation_en": "Intrinsic P/B = 46.00 / 40.00 = 1.15, while the market P/B is 52 / 40 = 1.30. The market price is about 13% above the model value, so the shares look overvalued.",
+      "explanation_tr": "İçsel PD/DD = 46,00 / 40,00 = 1,15; piyasa PD/DD'si 52 / 40 = 1,30'dur. Piyasa fiyatı model değerinin yaklaşık %13 üzerindedir; hisse pahalı görünür.",
       "wrong_option_reasons": {
         "A": {
           "en": "52/40 is the market P/B, not the model's; and 1.30 against an intrinsic P/B of 1.15 means the stock is expensive.",
@@ -326,7 +342,11 @@
         "market-price"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(40+2.0/1.1+2.3/1.1**2+2.3*0.6/(1.1-0.6)/1.1**2)/40"
       }
@@ -382,7 +402,11 @@
         "terminal-value"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

@@ -47,7 +47,11 @@
         "L2-FSA-01-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -122,7 +126,11 @@
         "fair-value"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "300+0.3*80-0.3*20-0.3*100/10",
         "unit": "TL million"
@@ -195,7 +203,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "0.3*80-0.3*100/10",
         "unit": "TL million"
@@ -268,7 +280,11 @@
         "excess"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "300-0.3*800-0.3*100",
         "unit": "TL million"
@@ -341,7 +357,11 @@
         "non-cash"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "-(0.3*80-0.3*100/10)+0.3*20",
         "unit": "TL million"
@@ -364,19 +384,19 @@
         {
           "key": "A",
           "en": "1.11",
-          "tr": "1.11",
+          "tr": "1,11",
           "value": 1.111111
         },
         {
           "key": "B",
-          "en": "0.80 (versus 0.67)",
-          "tr": "0.80 (0.67 yerine)",
+          "en": "0.80",
+          "tr": "0,80",
           "value": 0.8
         },
         {
           "key": "C",
           "en": "0.67",
-          "tr": "0.67",
+          "tr": "0,67",
           "value": 0.666667
         }
       ],
@@ -410,7 +430,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(600+0.3*400)/900"
       }

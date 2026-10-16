@@ -9,7 +9,7 @@
       "curriculum_year": 2027,
       "title_en": "Karadeniz Çelik ESG Valuation",
       "title_tr": "Karadeniz Çelik ÇSY Değerlemesi",
-      "text_en": "Karadeniz Çelik is a Turkish steel producer. An equity analyst wants to integrate environmental, social and governance (ESG) factors into her valuation. Free cash flow next year is expected to be TL 100 million before any carbon cost. It is expected to grow at 3% a year, and the discount rate is 8%. The plants emit 2.0 million tonnes of CO2 equivalent a year, and the analyst assumes a carbon price of TL 25 per tonne, with all emissions priced from next year. The tax rate is 20%, and the carbon cost is deductible. The analyst also builds an ESG score from three pillars: environment 55, social 70 and governance 80 (all out of 100), with weights of 40%, 25% and 35%. Governance information shows that only 3 of the 9 board members are independent and that the company has significant related-party transactions with the controlling family. The analyst's employer has a policy that excluded companies from some sectors altogether, but she is asked to value the firm anyway.",
+      "text_en": "Karadeniz Çelik is a Turkish steel producer. An equity analyst wants to integrate environmental, social and governance (ESG) factors into her valuation. Free cash flow next year is expected to be TL 100 million before any carbon cost. It is expected to grow at 3% a year, and the discount rate is 8%. The plants emit 2.0 million tonnes of CO2 equivalent a year, and the analyst assumes a carbon price of TL 25 per tonne, with all emissions priced from next year. The tax rate is 20%, and the carbon cost is deductible. The analyst also builds an ESG score from three pillars: environment 55, social 70 and governance 80 (all out of 100), with weights of 40%, 25% and 35%. Governance information shows that only 3 of the 9 board members are independent and that the company has significant related-party transactions with the controlling family. The analyst's employer has a policy that excludes companies from some sectors altogether, but she is asked to value the firm anyway.",
       "text_tr": "Karadeniz Çelik bir Türk çelik üreticisidir. Bir hisse analisti değerlemesine çevresel, sosyal ve yönetişim (ÇSY) faktörlerini entegre etmek istiyor. Gelecek yıl serbest nakit akışının, herhangi bir karbon maliyetinden önce 100 milyon TL olması bekleniyor. Akışın yılda %3 büyümesi ve iskonto oranının %8 olması öngörülüyor. Tesisler yılda 2,0 milyon ton CO2 eşdeğeri salıyor; analist ton başına 25 TL karbon fiyatı varsayıyor ve tüm emisyonların gelecek yıldan itibaren fiyatlandığını kabul ediyor. Vergi oranı %20'dir ve karbon maliyeti indirilebilir. Analist ayrıca üç sütundan bir ÇSY puanı oluşturuyor: çevre 55, sosyal 70 ve yönetişim 80 (hepsi 100 üzerinden); ağırlıklar %40, %25 ve %35'tir. Yönetişim bilgileri, 9 yönetim kurulu üyesinden yalnızca 3'ünün bağımsız olduğunu ve şirketin kontrol eden aile ile önemli ilişkili taraf işlemleri bulunduğunu gösteriyor. Analistin çalıştığı kurumun, bazı sektörleri tamamen dışlayan bir politikası vardır; yine de ondan firmayı değerlemesi istenmiştir.",
       "tables": [
         {
@@ -47,7 +47,11 @@
         "L2-CI-02-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -110,7 +114,11 @@
         "exceed"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "0.4*55+0.25*70+0.35*80"
       }
@@ -178,7 +186,11 @@
         "respectively"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "2.0*25*(1-0.2)",
         "unit": "TL million"
@@ -201,7 +213,7 @@
         {
           "key": "A",
           "en": "TL -1,000 million",
-          "tr": "-1,000 milyon TL",
+          "tr": "-1.000 milyon TL",
           "value": -1000.0
         },
         {
@@ -251,7 +263,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(100-40)/(0.08-0.03)-100/(0.08-0.03)",
         "unit": "TL million"
@@ -308,7 +324,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "L2-CI-02-v01-q5",
@@ -361,7 +381,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

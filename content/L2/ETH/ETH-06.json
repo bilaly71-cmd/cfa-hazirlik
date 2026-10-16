@@ -1,0 +1,328 @@
+{
+  "module_id": "ETH-06",
+  "vignettes": [
+    {
+      "id": "L2-ETH-06-v01",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "curriculum_year": 2027,
+      "title_en": "Research process at Tuz Securities",
+      "title_tr": "Tuz Menkul’de araştırma süreci",
+      "text_en": "Elif Bulut is a CFA charterholder and an equity research analyst at Tuz Securities, a fictional brokerage. She covers Yıldız Enerji, a power producer. Her latest report sets a target price of TRY 48 and a buy rating.\n\nTo value the company, Elif used a discounted cash flow model built by an external vendor. She did not review the model's assumptions or test its sensitivity. The vendor's model assumes that the average electricity price will rise 12% per year for ten years, and she did not check how that assumption compares with the historical data or with the company's own guidance.\n\nIn the summary section of the report, Elif wrote: \"Yıldız Enerji's shares are guaranteed to rise at least 40% over the next year.\" The body of the report does not mention that her forecast depends heavily on the electricity price assumption or that a drop of 10% in prices would cut the target by about a third.\n\nIn addition, earlier this year Tuz Securities changed its process for selecting stocks for client portfolios, from a long-term fundamental approach to a short-term momentum approach. Clients were not informed.\n\nFinally, after publishing the report, Elif deleted the spreadsheets, vendor model outputs and notes she used in the analysis, because the storage on her laptop was nearly full. She kept only the final PDF. A client later asks to see how the target price was derived, and the firm's regulator has opened a routine inquiry.",
+      "text_tr": "Elif Bulut, bir CFA unvan sahibidir ve kurgusal aracı kurum Tuz Menkul'de hisse senedi araştırma analistidir. Bir elektrik üreticisi olan Yıldız Enerji'yi takip ediyor. Son raporu 48 TL hedef fiyat ve al derecesi belirliyor.\n\nŞirketi değerlemek için Elif, harici bir sağlayıcının hazırladığı indirgenmiş nakit akışı modelini kullandı. Modelin varsayımlarını incelemedi ve duyarlılığını test etmedi. Sağlayıcının modeli, ortalama elektrik fiyatının on yıl boyunca yılda %12 artacağını varsayıyor ve Elif bu varsayımın tarihsel verilerle veya şirketin kendi beklentisiyle nasıl karşılaştığını kontrol etmedi.\n\nRaporun özet bölümünde Elif şunu yazdı: \"Yıldız Enerji hisselerinin önümüzdeki yıl en az %40 yükselmesi garantidir.\" Raporun gövdesinde tahminin elektrik fiyatı varsayımına büyük ölçüde bağlı olduğu veya fiyatlarda %10'luk bir düşüşün hedefi yaklaşık üçte bir oranında düşüreceği belirtilmiyor.\n\nBuna ek olarak, bu yılın başında Tuz Menkul müşteri portföyleri için hisse seçme sürecini uzun vadeli temel analiz yaklaşımından kısa vadeli momentum yaklaşımına değiştirdi. Müşterilere bilgi verilmedi.\n\nSon olarak, raporu yayımladıktan sonra Elif analizde kullandığı hesap tablolarını, sağlayıcı model çıktılarını ve notlarını, dizüstü bilgisayarının depolama alanı dolmak üzere olduğu için sildi. Yalnızca nihai PDF'yi sakladı. Daha sonra bir müşteri hedef fiyatın nasıl türetildiğini görmek istiyor ve firmanın düzenleyicisi rutin bir inceleme başlatmış durumda.",
+      "tables": [],
+      "question_ids": [
+        "L2-ETH-06-v01-q1",
+        "L2-ETH-06-v01-q2",
+        "L2-ETH-06-v01-q3",
+        "L2-ETH-06-v01-q4",
+        "L2-ETH-06-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-ETH-06-v01-q1",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "los_id": "ETH-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ETH-06-v01",
+      "stem_en": "Using the vendor model without reviewing its assumptions is most likely:",
+      "stem_tr": "Sağlayıcı modelini varsayımlarını incelemeden kullanmak büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a failure of Standard V(A), because she did not perform sufficient due diligence to have a reasonable and adequate basis for her recommendation.",
+          "tr": "Standart V(A) başarısızlığıdır; çünkü tavsiyesi için makul ve yeterli bir dayanağa sahip olmak üzere yeterli özen göstermemiştir."
+        },
+        {
+          "key": "B",
+          "en": "acceptable, since a recognized external vendor built the model.",
+          "tr": "kabul edilebilirdir; çünkü model tanınmış bir dış sağlayıcı tarafından oluşturulmuştur."
+        },
+        {
+          "key": "C",
+          "en": "acceptable if she mentions the vendor's name in the report.",
+          "tr": "raporda sağlayıcının adını belirtirse kabul edilebilirdir."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Members may rely on third-party research or models only after making reasonable inquiry into their assumptions and methods.",
+          "tr": "Üyeler üçüncü taraf araştırmalara veya modellere ancak varsayımları ve yöntemleri hakkında makul inceleme yaptıktan sonra güvenebilir."
+        },
+        "C": {
+          "en": "Naming the vendor does not replace the analyst's own diligence about the model's assumptions.",
+          "tr": "Sağlayıcının adını anmak, modelin varsayımlarına ilişkin analistin kendi özen yükümlülüğünün yerini almaz."
+        }
+      },
+      "explanation_en": "Standard V(A) requires diligence, independence and thoroughness in analysis, and a reasonable and adequate basis supported by research. Reliance on third-party models requires reasonable review.",
+      "explanation_tr": "Standart V(A), analizde özen, bağımsızlık ve titizlik ile araştırmayla desteklenen makul ve yeterli bir dayanak gerektirir. Üçüncü taraf modellere güvenmek makul bir inceleme gerektirir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "diligence",
+        "reasonable-basis",
+        "record-retention",
+        "research-report",
+        "recommendation",
+        "due-diligence",
+        "misrepresentation",
+        "disclosure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "L2-ETH-06-v01-q2",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "los_id": "ETH-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-ETH-06-v01",
+      "stem_en": "The statement that the shares are 'guaranteed to rise at least 40%' most likely violates:",
+      "stem_tr": "Hisselerin 'en az %40 yükselmesinin garanti' olduğu ifadesi büyük olasılıkla şunu ihlal eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "no standard, because it is a marketing sentence and not part of the analysis.",
+          "tr": "hiçbir standardı; çünkü bu bir pazarlama cümlesidir ve analizin parçası değildir."
+        },
+        {
+          "key": "B",
+          "en": "Standard V(B), because it does not distinguish fact from opinion and conveys certainty about an uncertain forecast.",
+          "tr": "Standart V(B); çünkü olguyu görüşten ayırmaz ve belirsiz bir tahmin hakkında kesinlik izlenimi verir."
+        },
+        {
+          "key": "C",
+          "en": "Standard V(C), because summary sections must be retained for seven years.",
+          "tr": "Standart V(C); çünkü özet bölümleri yedi yıl saklanmalıdır."
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Any communication of a recommendation to clients must follow the Standard, including summary statements.",
+          "tr": "Bir tavsiyenin müşterilere iletildiği her iletişim, özet ifadeler dahil, Standarda uymalıdır."
+        },
+        "C": {
+          "en": "The problem is the content of the statement, not record retention.",
+          "tr": "Sorun ifadenin içeriğidir, kayıt saklama değil."
+        }
+      },
+      "explanation_en": "Standard V(B) requires that communications distinguish fact from opinion and avoid presenting forecasts as certainties. No investment outcome can be guaranteed.",
+      "explanation_tr": "Standart V(B), iletişimde olgu ile görüşün ayrılmasını ve tahminlerin kesinlik gibi sunulmamasını gerektirir. Hiçbir yatırım sonucu garanti edilemez.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "diligence",
+        "reasonable-basis",
+        "record-retention",
+        "research-report",
+        "recommendation",
+        "due-diligence",
+        "misrepresentation",
+        "disclosure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "L2-ETH-06-v01-q3",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "los_id": "ETH-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ETH-06-v01",
+      "stem_en": "Regarding the omission of the electricity price sensitivity from the report body, the most appropriate conclusion is that Elif:",
+      "stem_tr": "Elektrik fiyatı duyarlılığının rapor gövdesinde yer almamasına ilişkin en uygun sonuç, Elif'in:",
+      "options": [
+        {
+          "key": "A",
+          "en": "was correct, because only the final conclusion needs to be communicated to clients.",
+          "tr": "haklı olduğudur; çünkü müşterilere yalnızca nihai sonucun iletilmesi gerekir."
+        },
+        {
+          "key": "B",
+          "en": "was correct, because including sensitivity would cause confusion among clients.",
+          "tr": "haklı olduğudur; çünkü duyarlılığı eklemek müşterilerde kafa karışıklığına neden olur."
+        },
+        {
+          "key": "C",
+          "en": "should have included the significant factors and limitations of her analysis so that clients can evaluate the recommendation.",
+          "tr": "müşterilerin tavsiyeyi değerlendirebilmesi için analizinin önemli unsurlarını ve sınırlamalarını eklemesi gerektiğidir."
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Standard V(B) requires disclosure of the basic format and general principles of the investment process and significant limitations.",
+          "tr": "Standart V(B), yatırım sürecinin temel biçimi ve genel ilkeleri ile önemli sınırlamaların açıklanmasını gerektirir."
+        },
+        "B": {
+          "en": "Potential confusion is not a reason to omit a factor that drives the result; clear explanation is expected.",
+          "tr": "Olası kafa karışıklığı, sonucu belirleyen bir unsuru dışarıda bırakmak için gerekçe değildir; açık bir açıklama beklenir."
+        }
+      },
+      "explanation_en": "A material dependence on one assumption is a significant limitation that clients need in order to judge the target price.",
+      "explanation_tr": "Tek bir varsayıma önemli bağımlılık, müşterilerin hedef fiyatı değerlendirmesi için ihtiyaç duyduğu önemli bir sınırlamadır.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "diligence",
+        "reasonable-basis",
+        "record-retention",
+        "research-report",
+        "recommendation",
+        "due-diligence",
+        "misrepresentation",
+        "disclosure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "L2-ETH-06-v01-q4",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "los_id": "ETH-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ETH-06-v01",
+      "stem_en": "Tuz Securities' change from a fundamental to a momentum selection process without informing clients is most likely:",
+      "stem_tr": "Tuz Menkul'ün müşterilere haber vermeden temel analizden momentum seçim sürecine geçmesi büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a failure to communicate to clients, under Standard V(B), a change that could affect the investment process they rely on.",
+          "tr": "Standart V(B) uyarınca, müşterilerin dayandığı yatırım sürecini etkileyebilecek bir değişikliğin müşterilere iletilmemesidir."
+        },
+        {
+          "key": "B",
+          "en": "acceptable, because firms may change their process at any time without notice.",
+          "tr": "kabul edilebilirdir; çünkü firmalar süreçlerini istedikleri zaman haber vermeden değiştirebilir."
+        },
+        {
+          "key": "C",
+          "en": "acceptable if the new process produces higher returns.",
+          "tr": "yeni süreç daha yüksek getiri sağlıyorsa kabul edilebilirdir."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Members must promptly disclose changes that might materially affect the investment process.",
+          "tr": "Üyeler, yatırım sürecini önemli ölçüde etkileyebilecek değişiklikleri derhal açıklamalıdır."
+        },
+        "C": {
+          "en": "Disclosure is required regardless of results because clients chose the manager for the stated process.",
+          "tr": "Müşteriler yöneticiyi belirtilen süreç nedeniyle seçtiğinden, sonuçlardan bağımsız olarak açıklama gerekir."
+        }
+      },
+      "explanation_en": "Standard V(B) requires disclosure to clients of the basic format and principles of the investment process, and prompt notice when they change in a way that could be material.",
+      "explanation_tr": "Standart V(B), yatırım sürecinin temel biçimi ve ilkelerinin müşterilere açıklanmasını ve önemli olabilecek biçimde değiştiklerinde derhal bilgi verilmesini gerektirir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "diligence",
+        "reasonable-basis",
+        "record-retention",
+        "research-report",
+        "recommendation",
+        "due-diligence",
+        "misrepresentation",
+        "disclosure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "L2-ETH-06-v01-q5",
+      "level": "L2",
+      "topic": "ETH",
+      "module_id": "ETH-06",
+      "los_id": "ETH-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-ETH-06-v01",
+      "stem_en": "Elif's deletion of her spreadsheets and notes, keeping only the final PDF, is most likely:",
+      "stem_tr": "Elif'in hesap tablolarını ve notlarını silip yalnızca nihai PDF'yi saklaması büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "acceptable, because the published report contains all that regulators need.",
+          "tr": "kabul edilebilirdir; çünkü yayımlanan rapor düzenleyicilerin ihtiyaç duyduğu her şeyi içerir."
+        },
+        {
+          "key": "B",
+          "en": "a violation of Standard V(C), because records that support the research must be maintained, with seven years a recommended minimum.",
+          "tr": "Standart V(C) ihlalidir; çünkü araştırmayı destekleyen kayıtlar tutulmalıdır ve önerilen asgari süre yedi yıldır."
+        },
+        {
+          "key": "C",
+          "en": "acceptable if the vendor holds copies of its model outputs.",
+          "tr": "sağlayıcı model çıktılarının kopyalarını tutuyorsa kabul edilebilirdir."
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Supporting spreadsheets and notes are needed to show how the conclusion was reached and are part of the record to be kept.",
+          "tr": "Destekleyici hesap tabloları ve notlar sonucun nasıl çıkarıldığını göstermek için gereklidir ve saklanacak kaydın parçasıdır."
+        },
+        "C": {
+          "en": "The member or firm is responsible for keeping the records that support its own recommendation.",
+          "tr": "Kendi tavsiyesini destekleyen kayıtları tutmak üyenin veya firmanın sorumluluğundadır."
+        }
+      },
+      "explanation_en": "Standard V(C) requires developing and maintaining appropriate records to support investment analysis, recommendations and actions, in line with local requirements.",
+      "explanation_tr": "Standart V(C), yatırım analizini, tavsiyeleri ve eylemleri destekleyen uygun kayıtların, yerel gerekliliklere uygun şekilde oluşturulmasını ve tutulmasını gerektirir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "diligence",
+        "reasonable-basis",
+        "record-retention",
+        "research-report",
+        "recommendation",
+        "due-diligence",
+        "misrepresentation",
+        "disclosure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}

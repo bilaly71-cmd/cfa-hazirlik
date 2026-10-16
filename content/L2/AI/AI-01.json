@@ -1,0 +1,415 @@
+{
+  "module_id": "AI-01",
+  "vignettes": [
+    {
+      "id": "L2-AI-01-v01",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "curriculum_year": 2027,
+      "title_en": "Rolling Brent Futures in Contango",
+      "title_tr": "Contango'da Brent Vadelilerini Yenilemek",
+      "text_en": "Cem Aydoğan manages a commodity sleeve at the fictional pension fund Anadolu Emekli Fonu. The fund holds a fully collateralised long position in Brent crude oil futures through a rolling programme: it holds the front-month contract, and a few days before expiry it sells it and buys the next contract. Margin is covered by Treasury bills that pay 4.0% per year, which is 1.0% for the quarter.\nAt the start of the quarter the spot price of Brent is USD 80.00. The front-month futures price is USD 80.40 and the second-month futures price is USD 81.60. At the end of the quarter, the spot price is USD 82.00. The fund approximates the quarterly total return as the sum of the spot return, the roll yield and the collateral yield.\nCem also looks at the one-year futures contract. The one-year futures price is USD 83.20. He assumes a one-year risk-free rate of 4.0% and annual storage costs of 2.0% of the spot price, and he uses the approximation F = S x (1 + r + storage cost - convenience yield).\nFinally, an analyst in the team, Dilek, notes that after a pipeline outage crude inventories fell sharply and the futures curve for Brent turned downward-sloping. She asks Cem what this implies for investors who roll long positions.",
+      "text_tr": "Cem Aydoğan, kurgusal Anadolu Emekli Fonu'nun emtia portföyünü yönetiyor. Fon, Brent ham petrol vadeli işlemlerinde tam teminatlı uzun pozisyonu bir yenileme (roll) programıyla tutuyor: yakın vadeli kontratı tutuyor, vadeden birkaç gün önce satıp sonraki kontratı alıyor. Teminat, yıllık %4,0 (çeyrek için %1,0) faiz ödeyen hazine bonolarıyla karşılanıyor.\nÇeyreğin başında Brent spot fiyatı 80,00 USD. Yakın vadeli fiyat 80,40 USD, ikinci vade fiyatı 81,60 USD. Çeyrek sonunda spot fiyat 82,00 USD. Fon çeyreklik toplam getiriyi spot getiri, roll getirisi ve teminat getirisinin toplamı olarak yaklaşık hesaplıyor.\nCem ayrıca bir yıllık vadeli kontrata bakıyor. Bir yıllık vadeli fiyat 83,20 USD. Bir yıllık risksiz faizi %4,0 ve yıllık depolama maliyetini spot fiyatın %2,0'ı varsayıyor; F = S x (1 + r + depolama maliyeti - kolaylık getirisi) yaklaşımını kullanıyor.\nSon olarak ekipteki analist Dilek, bir boru hattı kesintisinden sonra ham petrol stoklarının keskin biçimde azaldığını ve Brent vadeli eğrisinin aşağı eğimli hale geldiğini belirtiyor. Uzun pozisyonu yenileyen yatırımcılar için bunun ne anlama geldiğini soruyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Brent prices (USD per barrel)",
+          "title_tr": "Gösterge 1: Brent fiyatları (varil başına USD)",
+          "headers": [
+            "Item",
+            "Start of quarter",
+            "End of quarter"
+          ],
+          "rows": [
+            [
+              "Spot",
+              "80.00",
+              "82.00"
+            ],
+            [
+              "Front-month futures",
+              "80.40",
+              "-"
+            ],
+            [
+              "Second-month futures",
+              "81.60",
+              "-"
+            ],
+            [
+              "1-year futures",
+              "83.20",
+              "-"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-AI-01-v01-q1",
+        "L2-AI-01-v01-q2",
+        "L2-AI-01-v01-q3",
+        "L2-AI-01-v01-q4",
+        "L2-AI-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-AI-01-v01-q1",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "los_id": "AI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "set_id": "L2-AI-01-v01",
+      "stem_en": "At the start of the quarter, the Brent futures market structure is best described as:",
+      "stem_tr": "Çeyrek başında Brent vadeli piyasa yapısı en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Contango, because the longer-dated futures price is above the nearer-dated price",
+          "tr": "Contango; çünkü uzun vadeli fiyat yakın vadeli fiyatın üzerindedir"
+        },
+        {
+          "key": "B",
+          "en": "Backwardation, because futures prices are above the spot price",
+          "tr": "Backwardation; çünkü vadeli fiyatlar spot fiyatın üzerindedir"
+        },
+        {
+          "key": "C",
+          "en": "A flat curve, because the spot price changed by only 2.5%",
+          "tr": "Düz eğri; çünkü spot fiyat yalnızca %2,5 değişti"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The second-month price (81.60) is above the front-month price (80.40), and both exceed the spot price (80.00). This upward slope is contango.",
+      "explanation_tr": "İkinci vade fiyatı (81,60) yakın vade fiyatının (80,40) üzerindedir ve ikisi de spot fiyatı (80,00) aşar. Bu yukarı eğim contango'dur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Backwardation means longer-dated futures prices are below nearer-dated ones; futures above spot is the sign of contango.",
+          "tr": "Backwardation, uzun vadeli fiyatların yakın vadelilerin altında olması demektir; vadelilerin spotun üzerinde olması contango işaretidir."
+        },
+        "C": {
+          "en": "The shape of the curve comes from comparing futures prices of different maturities, not from the later spot move.",
+          "tr": "Eğrinin şekli farklı vadelerin vadeli fiyatlarının karşılaştırılmasından gelir, sonraki spot hareketinden değil."
+        }
+      },
+      "vocab_ids": [
+        "contango",
+        "backwardation",
+        "spot-price",
+        "futures",
+        "cost-of-carry"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-01-v01-q2",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "los_id": "AI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-01-v01",
+      "stem_en": "The roll yield for the quarter, using the front-month and second-month prices, is closest to:",
+      "stem_tr": "Yakın vade ve ikinci vade fiyatlarıyla çeyreğin roll getirisi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.49%",
+          "tr": "1,49%",
+          "value": 1.49
+        },
+        {
+          "key": "B",
+          "en": "-1.49%",
+          "tr": "-1,49%",
+          "value": -1.49
+        },
+        {
+          "key": "C",
+          "en": "1.20%",
+          "tr": "1,20%",
+          "value": 1.2
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Roll yield = (front - next)/front = (80.40 - 81.60)/80.40 = -1.49%. The fund sells the cheaper contract and buys a dearer one, which is a drag.",
+      "explanation_tr": "Roll getirisi = (yakın - sonraki)/yakın = (80,40 - 81,60)/80,40 = %-1,49. Fon ucuz kontratı satıp pahalıyı alır; bu bir yüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It has the wrong sign: in contango the roll yield is negative.",
+          "tr": "İşareti yanlıştır: contango'da roll getirisi negatiftir."
+        },
+        "C": {
+          "en": "It reports the price difference in USD rather than a percentage of the front-month price.",
+          "tr": "Farkı yakın vade fiyatının yüzdesi olarak değil, USD cinsinden bildirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the roll yield.",
+          "tr": "Roll getirisi isteniyor."
+        },
+        {
+          "en": "Roll yield = (near futures - far futures)/near futures.",
+          "tr": "Roll getirisi = (yakın vadeli - uzak vadeli)/yakın vadeli."
+        },
+        {
+          "en": "(80.40 - 81.60)/80.40.",
+          "tr": "(80,40 - 81,60)/80,40."
+        },
+        {
+          "en": "Result: -1.49%.",
+          "tr": "Sonuç: %-1,49."
+        }
+      ],
+      "numeric": {
+        "expr": "(80.40-81.60)/80.40*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "roll-yield",
+        "contango",
+        "front-month-contract",
+        "futures",
+        "spot-price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-01-v01-q3",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "los_id": "AI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-01-v01",
+      "stem_en": "Approximating total return as the sum of the spot return, the roll yield and the collateral yield, the fund's quarterly return is closest to:",
+      "stem_tr": "Toplam getiri spot getiri, roll getirisi ve teminat getirisinin toplamı olarak yaklaşıklanırsa fonun çeyreklik getirisi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.50%",
+          "tr": "3,50%",
+          "value": 3.5
+        },
+        {
+          "key": "B",
+          "en": "4.99%",
+          "tr": "4,99%",
+          "value": 4.99
+        },
+        {
+          "key": "C",
+          "en": "2.01%",
+          "tr": "2,01%",
+          "value": 2.01
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Spot return = 82.00/80.00 - 1 = 2.50%; roll yield = -1.49%; collateral yield = 1.00%. Total = 2.01%.",
+      "explanation_tr": "Spot getiri = 82,00/80,00 - 1 = %2,50; roll getirisi = %-1,49; teminat getirisi = %1,00. Toplam = %2,01.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It leaves out the negative roll yield.",
+          "tr": "Negatif roll getirisini dışarıda bırakır."
+        },
+        "B": {
+          "en": "It adds the roll yield as a positive number instead of subtracting the drag.",
+          "tr": "Roll getirisini yük olarak çıkarmak yerine pozitif olarak ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the approximate quarterly total return.",
+          "tr": "Yaklaşık çeyreklik toplam getiri isteniyor."
+        },
+        {
+          "en": "Total return = spot return + roll yield + collateral yield.",
+          "tr": "Toplam getiri = spot getiri + roll getirisi + teminat getirisi."
+        },
+        {
+          "en": "2.50% + (-1.49%) + 1.00%.",
+          "tr": "%2,50 + (%-1,49) + %1,00."
+        },
+        {
+          "en": "Result: 2.01%.",
+          "tr": "Sonuç: %2,01."
+        }
+      ],
+      "numeric": {
+        "expr": "(82.00/80.00-1)*100+(80.40-81.60)/80.40*100+1.0",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "total-return",
+        "roll-yield",
+        "collateral-yield",
+        "treasury-bill",
+        "spot-price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-01-v01-q4",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "los_id": "AI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-AI-01-v01",
+      "stem_en": "From the one-year futures price, the implied annual convenience yield (as a percentage of the spot price) is closest to:",
+      "stem_tr": "Bir yıllık vadeli fiyattan ima edilen yıllık kolaylık getirisi (spot fiyatın yüzdesi olarak) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.0%",
+          "tr": "2,0%",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "6.0%",
+          "tr": "6,0%",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "4.0%",
+          "tr": "4,0%",
+          "value": 4.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "F/S - 1 = 83.20/80.00 - 1 = 4.0%. Convenience yield = r + storage - (F/S - 1) = 4.0 + 2.0 - 4.0 = 2.0%. Holders of physical oil enjoy a benefit of 2.0% a year.",
+      "explanation_tr": "F/S - 1 = 83,20/80,00 - 1 = %4,0. Kolaylık getirisi = r + depolama - (F/S - 1) = 4,0 + 2,0 - 4,0 = %2,0. Fiziksel petrolü elinde tutanlar yılda %2,0'lik bir fayda görür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It reports the sum of the interest rate and storage cost, which is the cost of carry before the convenience yield.",
+          "tr": "Faiz ile depolama maliyeti toplamını bildirir; bu, kolaylık getirisi öncesi taşıma maliyetidir."
+        },
+        "C": {
+          "en": "It reports the futures premium over spot, which is only one input.",
+          "tr": "Spota göre vadeli primini bildirir; bu yalnızca bir girdidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the implied convenience yield.",
+          "tr": "İma edilen kolaylık getirisi isteniyor."
+        },
+        {
+          "en": "F = S x (1 + r + storage - convenience yield), so convenience yield = r + storage - (F/S - 1).",
+          "tr": "F = S x (1 + r + depolama - kolaylık getirisi); dolayısıyla kolaylık getirisi = r + depolama - (F/S - 1)."
+        },
+        {
+          "en": "4.0% + 2.0% - 4.0%.",
+          "tr": "%4,0 + %2,0 - %4,0."
+        },
+        {
+          "en": "Result: 2.0%.",
+          "tr": "Sonuç: %2,0."
+        }
+      ],
+      "numeric": {
+        "expr": "(0.04+0.02-(83.20/80.00-1))*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "convenience-yield",
+        "cost-of-carry",
+        "storage-cost",
+        "futures",
+        "spot-price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-01-v01-q5",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-01",
+      "los_id": "AI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-01-v01",
+      "stem_en": "Dilek notes that low inventories after the outage turned the curve downward-sloping. For investors who roll long futures positions, this most likely implies:",
+      "stem_tr": "Dilek, kesintiden sonra düşük stokların eğriyi aşağı eğimli yaptığını belirtiyor. Uzun vadeli pozisyonu yenileyen yatırımcılar için bu en çok neyi ima eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A negative roll yield, because the fund buys a more expensive contract each time",
+          "tr": "Negatif roll getirisi; çünkü fon her seferinde daha pahalı bir kontrat alır"
+        },
+        {
+          "key": "B",
+          "en": "A positive roll yield, because a high convenience yield pushes distant prices below nearer ones",
+          "tr": "Pozitif roll getirisi; çünkü yüksek kolaylık getirisi uzak fiyatları yakın fiyatların altına iter"
+        },
+        {
+          "key": "C",
+          "en": "No roll yield, because inventories do not affect futures prices",
+          "tr": "Roll getirisi yoktur; çünkü stoklar vadeli fiyatları etkilemez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A downward-sloping curve is backwardation. A high convenience yield makes nearby oil valuable, so the far contract trades lower; rolling long positions then earns a positive roll yield.",
+      "explanation_tr": "Aşağı eğimli eğri backwardation'dır. Yüksek kolaylık getirisi yakın petrolü değerli yapar, uzak kontrat daha düşük işlem görür; uzun pozisyonu yenilemek pozitif roll getirisi sağlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes contango. In backwardation the fund sells the dearer near contract and buys the cheaper next one.",
+          "tr": "Bu contango'yu tanımlar. Backwardation'da fon pahalı yakın kontratı satıp ucuz sonraki kontratı alır."
+        },
+        "C": {
+          "en": "Low inventories raise the value of having the physical commodity now (convenience yield), which lowers futures relative to spot.",
+          "tr": "Düşük stoklar fiziksel emtiaya şimdi sahip olmanın değerini (kolaylık getirisi) artırır; bu, vadelileri spota göre düşürür."
+        }
+      },
+      "vocab_ids": [
+        "backwardation",
+        "convenience-yield",
+        "roll-yield",
+        "inventory",
+        "futures"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

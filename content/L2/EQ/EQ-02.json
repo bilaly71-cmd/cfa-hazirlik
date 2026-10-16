@@ -47,7 +47,11 @@
         "L2-EQ-02-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -110,7 +114,11 @@
         "growth"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "0.15*0.4*100",
         "unit": "%"
@@ -184,7 +192,11 @@
         "growth"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "2.5*1.12**3*1.06/(0.11-0.06)",
         "unit": "TL"
@@ -258,7 +270,11 @@
         "discount-rate"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "2.5*1.12/1.11+2.5*1.12**2/1.11**2+(2.5*1.12**3+2.5*1.12**3*1.06/(0.11-0.06))/1.11**3",
         "unit": "TL"
@@ -323,7 +339,11 @@
         "required-return"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "0.6/(0.11-0.06)"
       }
@@ -336,50 +356,74 @@
       "los_id": "EQ-02-set",
       "curriculum_year": 2027,
       "type": "item_set",
-      "difficulty": 2,
+      "difficulty": 3,
       "cognitive": "analyze",
       "set_id": "L2-EQ-02-v01",
-      "stem_en": "Regarding the colleague who wants Ova to retain more earnings, the most accurate statement is that a higher retention rate:",
-      "stem_tr": "Ova'nın daha fazla kâr tutmasını isteyen meslektaşla ilgili en doğru ifade, daha yüksek tutma oranının şunu yapmasıdır:",
+      "stem_en": "If Ova raised its retention rate to 60% (ROE stays at 15% and the required return at 11%), the stable-growth justified leading P/E would be:",
+      "stem_tr": "Ova tutma oranını %60'a çıkarırsa (ÖKK %15, istenen getiri %11 kalır), istikrarlı büyüme gerekçeli ileri F/K şu olur:",
       "options": [
         {
           "key": "A",
-          "en": "raises g, and creates value only if the new investments earn an ROE above the 11% required return",
-          "tr": "g'yi artırır ve yalnızca yeni yatırımlar %11 istenen getirinin üzerinde ÖKK sağlarsa değer yaratır"
+          "en": "20.0",
+          "tr": "20,0",
+          "value": 20.0
         },
         {
           "key": "B",
-          "en": "always raises value because growth is faster",
-          "tr": "büyüme hızlandığı için her zaman değeri artırır"
+          "en": "12.0",
+          "tr": "12,0",
+          "value": 12.0
         },
         {
           "key": "C",
-          "en": "has no effect on value because dividends are irrelevant",
-          "tr": "temettüler önemsiz olduğundan değere etki etmez"
+          "en": "30.0",
+          "tr": "30,0",
+          "value": 30.0
         }
       ],
       "answer": "A",
-      "explanation_en": "More retention lowers the near-term dividend but raises g = ROE x b. With ROE of 15% above r of 11%, extra retained funds earn more than investors require, so value can rise. If ROE were below r, retention would hurt.",
-      "explanation_tr": "Daha fazla tutma yakın vadeli temettüyü azaltır ancak g = ÖKK x b'yi artırır. ÖKK %15, r %11'in üzerinde olduğundan ilave tutulan fonlar yatırımcının istediğinden fazla kazandırır; değer artabilir. ÖKK, r'nin altında olsaydı tutma zarar verirdi.",
+      "explanation_en": "With 60% retention, g = 15% x 60% = 9% and the payout falls to 40%. Justified P/E = 0.40 / (0.11 - 0.09) = 20.0, up from 12.0. Retention adds value here only because ROE (15%) is above the required return (11%).",
+      "explanation_tr": "%60 tutmada g = %15 x %60 = %9 olur ve dağıtım oranı %40'a düşer. Gerekçeli F/K = 0,40 / (0,11 - 0,09) = 20,0; önceki 12,0'dan yüksektir. Tutma burada yalnızca ÖKK (%15) istenen getirinin (%11) üzerinde olduğu için değer katar.",
       "wrong_option_reasons": {
         "B": {
-          "en": "Growth funded by investments earning less than the required return would destroy value.",
-          "tr": "İstenen getirinin altında kazandıran yatırımlarla finanse edilen büyüme değeri yok eder."
+          "en": "Assumes retention has no effect on the P/E, ignoring the higher g and the lower payout.",
+          "tr": "Tutmanın F/K'ya etkisi olmadığını varsayar; daha yüksek g'yi ve daha düşük dağıtım oranını göz ardı eder."
         },
         "C": {
-          "en": "Under the DDM, value depends on dividends and growth, which retention changes.",
-          "tr": "TİM'de değer, tutmanın değiştirdiği temettü ve büyümeye bağlıdır."
+          "en": "Raises g to 9% but keeps the old 60% payout in the numerator (0.60 / 0.02).",
+          "tr": "g'yi %9'a çıkarır ama payda eski %60 dağıtım oranını korur (0,60 / 0,02)."
         }
       },
-      "solution_steps": [],
+      "solution_steps": [
+        {
+          "en": "g = 0.15 x 0.60 = 0.09",
+          "tr": "g = 0,15 x 0,60 = 0,09"
+        },
+        {
+          "en": "Payout = 1 - 0.60 = 0.40",
+          "tr": "Dağıtım oranı = 1 - 0,60 = 0,40"
+        },
+        {
+          "en": "P/E = 0.40 / (0.11 - 0.09) = 20.0",
+          "tr": "F/K = 0,40 / (0,11 - 0,09) = 20,0"
+        }
+      ],
       "vocab_ids": [
         "return-on-equity",
         "required-return",
-        "dividend",
-        "assume"
+        "retention-rate",
+        "dividend"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
+      "numeric": {
+        "expr": "0.4/(0.11-0.09)",
+        "unit": "x"
+      }
     }
   ]
 }

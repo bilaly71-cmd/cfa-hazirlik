@@ -1,0 +1,409 @@
+{
+  "module_id": "ECO-02",
+  "vignettes": [
+    {
+      "id": "L2-ECO-02-v01",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "curriculum_year": 2027,
+      "title_en": "Sources of Growth in Doğuova",
+      "title_tr": "Doğuova'nın Büyüme Kaynakları",
+      "text_en": "Ayşe Korkmaz is an economist at the fictional research institute Anadolu Ekonomi Enstitüsü. She is studying the sources of growth in the fictional country of Doğuova, which has a Cobb-Douglas production function with a capital share of 0.35 and a labour share of 0.65. Over the last decade, Doğuova's real output grew 5.0% a year, the capital stock grew 6.0% a year and the labour input grew 1.5% a year (Exhibit 1).\nDoğuova invests heavily in machinery and construction, and policy makers argue that more investment alone will keep per-capita income rising quickly. Ayşe doubts this. She compares Doğuova with Baltavia, a neighbouring country with a similar savings rate but much higher spending on research, education and patents. Baltavia's per-capita income growth has not slowed as its capital stock has grown.\nAyşe also needs a forecast of the sustainable (potential) growth rate for the next five years. She expects the labour force to grow by 1.0% a year and labour productivity to grow by 2.8% a year. She plans to present the neoclassical (Solow) view, in which countries with less capital per worker should grow faster if they share the same technology and savings rate.",
+      "text_tr": "Ayşe Korkmaz, kurgusal Anadolu Ekonomi Enstitüsü'nde iktisatçıdır. Sermaye payı 0,35 ve emek payı 0,65 olan bir Cobb-Douglas üretim fonksiyonuna sahip kurgusal Doğuova ülkesinin büyüme kaynaklarını inceliyor. Son on yılda Doğuova'nın reel çıktısı yılda %5,0, sermaye stoku yılda %6,0 ve emek girdisi yılda %1,5 büyüdü (Gösterge 1).\nDoğuova makine ve inşaata yoğun yatırım yapıyor ve politika yapıcılar yalnızca daha fazla yatırımın kişi başı geliri hızla artırmaya devam ettireceğini savunuyor. Ayşe buna şüpheyle bakıyor. Doğuova'yı, benzer tasarruf oranına ama araştırma, eğitim ve patentlere çok daha yüksek harcama yapan komşu Baltavia ile karşılaştırıyor. Baltavia'nın sermaye stoku büyürken kişi başı gelir büyümesi yavaşlamadı.\nAyşe ayrıca önümüzdeki beş yıl için sürdürülebilir (potansiyel) büyüme oranı tahminine ihtiyaç duyuyor. İşgücünün yılda %1,0, emek verimliliğinin yılda %2,8 büyümesini bekliyor. Aynı teknolojiyi ve tasarruf oranını paylaşan ülkelerde işçi başına sermayesi az olanların daha hızlı büyümesi gerektiğini söyleyen neoklasik (Solow) görüşü sunmayı planlıyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Doğuova growth data (annual averages)",
+          "title_tr": "Gösterge 1: Doğuova büyüme verileri (yıllık ortalamalar)",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Real output growth",
+              "5.0%"
+            ],
+            [
+              "Capital stock growth",
+              "6.0%"
+            ],
+            [
+              "Labour input growth",
+              "1.5%"
+            ],
+            [
+              "Capital share / labour share",
+              "0.35 / 0.65"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-ECO-02-v01-q1",
+        "L2-ECO-02-v01-q2",
+        "L2-ECO-02-v01-q3",
+        "L2-ECO-02-v01-q4",
+        "L2-ECO-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-ECO-02-v01-q1",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "los_id": "ECO-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ECO-02-v01",
+      "stem_en": "Using the growth accounting equation, total factor productivity (TFP) growth in Doğuova is closest to:",
+      "stem_tr": "Büyüme muhasebesi denklemine göre Doğuova'da toplam faktör verimliliği (TFP) büyümesi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.93%",
+          "tr": "1,93%",
+          "value": 1.93
+        },
+        {
+          "key": "B",
+          "en": "-2.50%",
+          "tr": "-2,50%",
+          "value": -2.5
+        },
+        {
+          "key": "C",
+          "en": "0.57%",
+          "tr": "0,57%",
+          "value": 0.57
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "TFP growth = 5.0 - 0.35(6.0) - 0.65(1.5) = 5.0 - 2.10 - 0.975 = 1.925%. This residual captures technology and efficiency gains.",
+      "explanation_tr": "TFP büyümesi = 5,0 - 0,35(6,0) - 0,65(1,5) = 5,0 - 2,10 - 0,975 = %1,925. Bu artık teknoloji ve verimlilik kazançlarını yakalar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It subtracts the full growth of capital and labour without weighting by their income shares.",
+          "tr": "Sermaye ve emek büyümesinin tamamını gelir paylarıyla ağırlıklandırmadan çıkarır."
+        },
+        "C": {
+          "en": "It swaps the weights, applying the labour share to capital growth and the capital share to labour growth.",
+          "tr": "Ağırlıkları değiştirir: emek payını sermaye büyümesine, sermaye payını emek büyümesine uygular."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the TFP growth rate.",
+          "tr": "TFP büyüme oranı isteniyor."
+        },
+        {
+          "en": "TFP growth = output growth - α x capital growth - (1 - α) x labour growth.",
+          "tr": "TFP büyümesi = çıktı büyümesi - α x sermaye büyümesi - (1 - α) x emek büyümesi."
+        },
+        {
+          "en": "5.0 - 2.10 - 0.975.",
+          "tr": "5,0 - 2,10 - 0,975."
+        },
+        {
+          "en": "Result: 1.93%.",
+          "tr": "Sonuç: %1,93."
+        }
+      ],
+      "numeric": {
+        "expr": "5.0-0.35*6.0-0.65*1.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "total-factor-productivity",
+        "growth",
+        "capital-deepening",
+        "labor-productivity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-02-v01-q2",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "los_id": "ECO-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-ECO-02-v01",
+      "stem_en": "The share of Doğuova's output growth that comes from capital accumulation is closest to:",
+      "stem_tr": "Doğuova'nın çıktı büyümesinin sermaye birikiminden gelen payı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "120.0%",
+          "tr": "120,0%",
+          "value": 120.0
+        },
+        {
+          "key": "B",
+          "en": "42.0%",
+          "tr": "42,0%",
+          "value": 42.0
+        },
+        {
+          "key": "C",
+          "en": "38.5%",
+          "tr": "38,5%",
+          "value": 38.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Capital contribution = 0.35 x 6.0 = 2.10 percentage points, which is 2.10/5.0 = 42.0% of output growth. Capital deepening alone is not the main driver.",
+      "explanation_tr": "Sermaye katkısı = 0,35 x 6,0 = 2,10 yüzde puan; bu, çıktı büyümesinin 2,10/5,0 = %42,0'idir. Tek başına sermaye derinleşmesi ana itici güç değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It divides capital growth by output growth without the capital share weight of 0.35.",
+          "tr": "Sermaye büyümesini 0,35'lik sermaye payı ağırlığı olmadan çıktı büyümesine böler."
+        },
+        "C": {
+          "en": "This is the share from TFP, not from capital.",
+          "tr": "Bu sermayenin değil, TFP'nin payıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the share of output growth due to capital.",
+          "tr": "Çıktı büyümesinde sermayeden gelen pay isteniyor."
+        },
+        {
+          "en": "Capital contribution = α x g_K; share = contribution / g_Y.",
+          "tr": "Sermaye katkısı = α x g_K; pay = katkı / g_Y."
+        },
+        {
+          "en": "0.35 x 6.0 = 2.10; 2.10 / 5.0.",
+          "tr": "0,35 x 6,0 = 2,10; 2,10 / 5,0."
+        },
+        {
+          "en": "Result: 42.0%.",
+          "tr": "Sonuç: %42,0."
+        }
+      ],
+      "numeric": {
+        "expr": "0.35*6.0/5.0*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "capital-deepening",
+        "total-factor-productivity",
+        "growth",
+        "allocation",
+        "asset"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-02-v01-q3",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "los_id": "ECO-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-ECO-02-v01",
+      "stem_en": "Based on the sustainable growth inputs, potential GDP growth is closest to:",
+      "stem_tr": "Sürdürülebilir büyüme girdilerine göre potansiyel GSYH büyümesi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.8%",
+          "tr": "2,8%",
+          "value": 2.8
+        },
+        {
+          "key": "B",
+          "en": "1.8%",
+          "tr": "1,8%",
+          "value": 1.8
+        },
+        {
+          "key": "C",
+          "en": "3.8%",
+          "tr": "3,8%",
+          "value": 3.8
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Potential growth = growth in labour force + growth in labour productivity = 1.0 + 2.8 = 3.8%.",
+      "explanation_tr": "Potansiyel büyüme = işgücü büyümesi + emek verimliliği büyümesi = 1,0 + 2,8 = %3,8.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It ignores growth in the labour force and uses productivity growth only.",
+          "tr": "İşgücü büyümesini yok sayar, yalnızca verimlilik büyümesini kullanır."
+        },
+        "B": {
+          "en": "It subtracts labour force growth instead of adding it.",
+          "tr": "İşgücü büyümesini eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find potential GDP growth.",
+          "tr": "Potansiyel GSYH büyümesi isteniyor."
+        },
+        {
+          "en": "Potential growth = labour force growth + labour productivity growth.",
+          "tr": "Potansiyel büyüme = işgücü büyümesi + emek verimliliği büyümesi."
+        },
+        {
+          "en": "1.0 + 2.8.",
+          "tr": "1,0 + 2,8."
+        },
+        {
+          "en": "Result: 3.8%.",
+          "tr": "Sonuç: %3,8."
+        }
+      ],
+      "numeric": {
+        "expr": "1.0+2.8",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "potential",
+        "labor-productivity",
+        "growth",
+        "forecast",
+        "sustainable-growth"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-02-v01-q4",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "los_id": "ECO-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-ECO-02-v01",
+      "stem_en": "In the neoclassical (Solow) model, why can capital deepening alone not sustain fast per-capita growth in Doğuova?",
+      "stem_tr": "Neoklasik (Solow) modelinde, sermaye derinleşmesi tek başına Doğuova'da hızlı kişi başı büyümeyi neden sürdüremez?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Because capital has no effect on output in the long run",
+          "tr": "Çünkü sermayenin uzun vadede çıktıya etkisi yoktur"
+        },
+        {
+          "key": "B",
+          "en": "Because the labour share is larger than the capital share",
+          "tr": "Çünkü emek payı sermaye payından büyüktür"
+        },
+        {
+          "key": "C",
+          "en": "Because of diminishing returns to capital, so growth fades toward the steady state unless TFP rises",
+          "tr": "Sermayenin azalan getirisi nedeniyle büyüme, TFP artmadıkça kalıcı dengeye doğru yavaşlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With diminishing returns, rising capital per worker adds less output each time. Permanent growth in output per worker then needs growth in TFP, that is, better technology.",
+      "explanation_tr": "Azalan getiri varken işçi başına sermayenin artması her seferinde daha az çıktı ekler. İşçi başına çıktıda kalıcı büyüme için TFP, yani daha iyi teknoloji gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Capital does raise output; the point is that each extra unit adds less than the last, not that it adds nothing.",
+          "tr": "Sermaye çıktıyı artırır; mesele her ek birimin bir öncekinden daha az katkı yapmasıdır, hiç katkı yapmaması değil."
+        },
+        "B": {
+          "en": "The size of the shares affects the weights, not the diminishing returns that slow growth in the steady state.",
+          "tr": "Payların büyüklüğü ağırlıkları etkiler, kalıcı dengede büyümeyi yavaşlatan azalan getirileri değil."
+        }
+      },
+      "vocab_ids": [
+        "diminishing-returns",
+        "steady-state",
+        "capital-deepening",
+        "total-factor-productivity",
+        "convergence"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-02-v01-q5",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-02",
+      "los_id": "ECO-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-ECO-02-v01",
+      "stem_en": "Baltavia's experience of undiminished per-capita growth despite heavy capital accumulation is most consistent with which theory?",
+      "stem_tr": "Baltavia'nın yoğun sermaye birikimine rağmen azalmayan kişi başı büyüme deneyimi en çok hangi kuramla uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Absolute convergence, in which all countries reach the same income at the same speed",
+          "tr": "Tüm ülkelerin aynı hızla aynı gelire ulaştığı mutlak yakınsama"
+        },
+        {
+          "key": "B",
+          "en": "Endogenous growth theory, in which research and human capital create spillovers and avoid diminishing returns",
+          "tr": "Araştırma ve beşeri sermayenin yayılma etkisi yaratıp azalan getiriyi önlediği içsel büyüme kuramı"
+        },
+        {
+          "key": "C",
+          "en": "The neoclassical model with a constant level of technology",
+          "tr": "Teknoloji düzeyinin sabit olduğu neoklasik model"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Endogenous growth models treat knowledge and human capital as producing increasing or non-diminishing returns, so growth can continue without fading.",
+      "explanation_tr": "İçsel büyüme modelleri bilgi ve beşeri sermayeyi artan veya azalmayan getiri üreten unsurlar olarak ele alır; büyüme zayıflamadan sürebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Absolute convergence concerns catch-up between countries and says nothing about sustained growth driven by innovation in one country.",
+          "tr": "Mutlak yakınsama ülkeler arası yakalamayla ilgilidir; tek bir ülkede yenilikle sürdürülen büyüme hakkında bir şey söylemez."
+        },
+        "C": {
+          "en": "With constant technology, growth per worker would fade, which is the opposite of Baltavia's experience.",
+          "tr": "Teknoloji sabitse işçi başına büyüme azalırdı; bu Baltavia'nın deneyiminin tersidir."
+        }
+      },
+      "vocab_ids": [
+        "endogenous-growth",
+        "convergence",
+        "catch-up",
+        "diminishing-returns",
+        "research"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

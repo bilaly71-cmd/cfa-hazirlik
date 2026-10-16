@@ -1,0 +1,411 @@
+{
+  "module_id": "AI-02",
+  "vignettes": [
+    {
+      "id": "L2-AI-02-v01",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "curriculum_year": 2027,
+      "title_en": "Buying an Office Building in Levent",
+      "title_tr": "Levent'te Ofis Binası Satın Almak",
+      "text_en": "Hakan Yurt is an analyst at the fictional real estate investment firm Nişantaşı Gayrimenkul Yatırım. His client, a pension fund, is considering buying a fully let office building in the Levent district of Istanbul directly, financed partly with a bank loan. The building has a gross potential rent of TRY 12 million a year. The market vacancy and collection loss is 8% of gross potential rent, and the owner pays operating expenses of TRY 3 million a year (property tax, insurance, maintenance and management). The market capitalization rate for comparable office buildings is 9.0%.\nThe client would borrow TRY 55 million at an interest-only rate of 12% a year. Hakan notes that the TCMB policy rate is high, so mortgage costs are high compared with property yields.\nThe pension fund's consultant argues that direct real estate is a low-risk asset because the appraisal-based index of private property shows a standard deviation of returns that is much lower than that of listed stocks. Hakan points out that the index is built on periodic appraisals rather than frequent transactions.\nHakan's task is to find the net operating income, estimate the value with the direct capitalization method, assess the lender's coverage test and comment on the use of leverage and on the risk numbers.",
+      "text_tr": "Hakan Yurt, kurgusal Nişantaşı Gayrimenkul Yatırım şirketinde analisttir. Müşterisi olan bir emeklilik fonu, İstanbul Levent'te tamamı kiralanmış bir ofis binasını doğrudan, kısmen banka kredisiyle satın almayı düşünüyor. Binanın yıllık brüt potansiyel kirası 12 milyon TL. Piyasa boşluk ve tahsilat kaybı brüt potansiyel kiranın %8'i ve malik yılda 3 milyon TL işletme gideri ödüyor (emlak vergisi, sigorta, bakım ve yönetim). Benzer ofis binaları için piyasa kapitalizasyon oranı %9,0.\nMüşteri yıllık %12 faizle ve yalnızca faiz ödemeli 55 milyon TL borçlanacak. Hakan, TCMB politika faizinin yüksek olduğunu, bu nedenle ipotek maliyetlerinin mülk getirilerine göre yüksek kaldığını not ediyor.\nEmeklilik fonunun danışmanı, özel mülk için ekspertiz temelli endeksin getiri standart sapmasının borsadaki hisselerinkinden çok daha düşük olduğunu belirterek doğrudan gayrimenkulün düşük riskli bir varlık olduğunu savunuyor. Hakan, endeksin sık işlemler yerine dönemsel ekspertizlerle oluşturulduğuna dikkat çekiyor.\nHakan'ın görevi net işletme gelirini bulmak, doğrudan kapitalizasyon yöntemiyle değeri tahmin etmek, kredi verenin karşılama testini değerlendirmek ve kaldıraç kullanımı ile risk rakamları hakkında yorum yapmaktır.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Property and financing data",
+          "title_tr": "Gösterge 1: Mülk ve finansman verileri",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Gross potential rent",
+              "TRY 12,000,000"
+            ],
+            [
+              "Vacancy and collection loss",
+              "8%"
+            ],
+            [
+              "Operating expenses",
+              "TRY 3,000,000"
+            ],
+            [
+              "Market cap rate",
+              "9.0%"
+            ],
+            [
+              "Loan (interest only) / rate",
+              "TRY 55,000,000 / 12%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-AI-02-v01-q1",
+        "L2-AI-02-v01-q2",
+        "L2-AI-02-v01-q3",
+        "L2-AI-02-v01-q4",
+        "L2-AI-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-AI-02-v01-q1",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-AI-02-v01",
+      "stem_en": "The first-year net operating income (NOI) of the building is closest to:",
+      "stem_tr": "Binanın ilk yıl net işletme geliri (NOI) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 8.04 million",
+          "tr": "8,04 milyon TL",
+          "value": 8.04
+        },
+        {
+          "key": "B",
+          "en": "TRY 9.00 million",
+          "tr": "9,00 milyon TL",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 1.44 million",
+          "tr": "1,44 milyon TL",
+          "value": 1.44
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Effective gross income = 12.0 x (1 - 0.08) = 11.04 million. NOI = 11.04 - 3.00 = 8.04 million.",
+      "explanation_tr": "Efektif brüt gelir = 12,0 x (1 - 0,08) = 11,04 milyon. NOI = 11,04 - 3,00 = 8,04 milyon.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It ignores the vacancy and collection loss.",
+          "tr": "Boşluk ve tahsilat kaybını yok sayar."
+        },
+        "C": {
+          "en": "It deducts interest payments, but NOI is measured before financing costs.",
+          "tr": "Faiz ödemelerini düşer; oysa NOI finansman maliyetlerinden önce ölçülür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the first-year NOI.",
+          "tr": "İlk yıl NOI isteniyor."
+        },
+        {
+          "en": "NOI = gross potential rent x (1 - vacancy) - operating expenses.",
+          "tr": "NOI = brüt potansiyel kira x (1 - boşluk) - işletme giderleri."
+        },
+        {
+          "en": "12.0 x 0.92 - 3.0 = 11.04 - 3.0.",
+          "tr": "12,0 x 0,92 - 3,0 = 11,04 - 3,0."
+        },
+        {
+          "en": "Result: TRY 8.04 million.",
+          "tr": "Sonuç: 8,04 milyon TL."
+        }
+      ],
+      "numeric": {
+        "expr": "(12_000_000*(1-0.08)-3_000_000)/1e6"
+      },
+      "vocab_ids": [
+        "net-operating-income",
+        "vacancy",
+        "gross-potential-rent",
+        "lease",
+        "appraisal"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-02-v01-q2",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-02-v01",
+      "stem_en": "Using direct capitalization at the market cap rate of 9.0%, the building's value is closest to:",
+      "stem_tr": "%9,0'lık piyasa kapitalizasyon oranıyla doğrudan kapitalizasyon kullanılırsa binanın değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0.72 million",
+          "tr": "0,72 milyon TL",
+          "value": 0.72
+        },
+        {
+          "key": "B",
+          "en": "TRY 89.33 million",
+          "tr": "89,33 milyon TL",
+          "value": 89.33
+        },
+        {
+          "key": "C",
+          "en": "TRY 100.00 million",
+          "tr": "100,00 milyon TL",
+          "value": 100.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Value = NOI / cap rate = 8.04 / 0.09 = 89.33 million.",
+      "explanation_tr": "Değer = NOI / kapitalizasyon oranı = 8,04 / 0,09 = 89,33 milyon.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It multiplies NOI by the cap rate instead of dividing.",
+          "tr": "NOI'yi kapitalizasyon oranına bölmek yerine çarpar."
+        },
+        "C": {
+          "en": "It capitalizes an income figure that ignores vacancy and collection loss.",
+          "tr": "Boşluk ve tahsilat kaybını yok sayan bir gelir rakamını kapitalize eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the value using direct capitalization.",
+          "tr": "Doğrudan kapitalizasyon ile değer isteniyor."
+        },
+        {
+          "en": "Value = NOI / cap rate.",
+          "tr": "Değer = NOI / kapitalizasyon oranı."
+        },
+        {
+          "en": "8.04 / 0.09.",
+          "tr": "8,04 / 0,09."
+        },
+        {
+          "en": "Result: TRY 89.33 million.",
+          "tr": "Sonuç: 89,33 milyon TL."
+        }
+      ],
+      "numeric": {
+        "expr": "(12_000_000*(1-0.08)-3_000_000)/0.09/1e6"
+      },
+      "vocab_ids": [
+        "cap-rate",
+        "net-operating-income",
+        "valuation",
+        "appraisal",
+        "loan-to-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-02-v01-q3",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-02-v01",
+      "stem_en": "The debt service coverage ratio (NOI divided by interest-only payments) is closest to:",
+      "stem_tr": "Borç servis karşılama oranı (NOI bölü yalnızca faiz ödemeleri) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.82",
+          "tr": "0,82",
+          "value": 0.82
+        },
+        {
+          "key": "B",
+          "en": "1.62",
+          "tr": "1,62",
+          "value": 1.62
+        },
+        {
+          "key": "C",
+          "en": "1.22",
+          "tr": "1,22",
+          "value": 1.22
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Debt service = 55.0 x 12% = 6.60 million. DSCR = 8.04 / 6.60 = 1.22. The loan-to-value ratio is 61.6%.",
+      "explanation_tr": "Borç servisi = 55,0 x %12 = 6,60 milyon. DSCR = 8,04 / 6,60 = 1,22. Kredi/değer oranı %61,6.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It inverts the ratio: debt service divided by NOI.",
+          "tr": "Oranı ters çevirir: borç servisi bölü NOI."
+        },
+        "B": {
+          "en": "This is the inverse of the loan-to-value ratio, not the coverage ratio.",
+          "tr": "Bu kredi/değer oranının tersidir, karşılama oranı değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the DSCR.",
+          "tr": "DSCR isteniyor."
+        },
+        {
+          "en": "DSCR = NOI / debt service.",
+          "tr": "DSCR = NOI / borç servisi."
+        },
+        {
+          "en": "8.04 / 6.60.",
+          "tr": "8,04 / 6,60."
+        },
+        {
+          "en": "Result: 1.22.",
+          "tr": "Sonuç: 1,22."
+        }
+      ],
+      "numeric": {
+        "expr": "(12_000_000*(1-0.08)-3_000_000)/(55_000_000*0.12)"
+      },
+      "vocab_ids": [
+        "debt-service-coverage-ratio",
+        "loan-to-value",
+        "net-operating-income",
+        "leverage",
+        "interest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-02-v01-q4",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-02-v01",
+      "stem_en": "The cap rate of 9.0% is below the 12% loan rate. Which statement about using the loan is most appropriate?",
+      "stem_tr": "%9,0'lık kapitalizasyon oranı %12'lik kredi faizinin altındadır. Krediyi kullanmak hakkında hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "This is negative leverage; adding debt lowers the expected return on equity unless the property value grows enough.",
+          "tr": "Bu negatif kaldıraçtır; mülk değeri yeterince artmadıkça borç eklemek beklenen öz sermaye getirisini düşürür."
+        },
+        {
+          "key": "B",
+          "en": "This is positive leverage, because any borrowing raises equity returns.",
+          "tr": "Bu pozitif kaldıraçtır; çünkü her borçlanma öz sermaye getirisini artırır."
+        },
+        {
+          "key": "C",
+          "en": "Leverage has no effect because the loan is interest only.",
+          "tr": "Kredi yalnızca faiz ödemeli olduğu için kaldıracın etkisi yoktur."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With a going-in yield of 9.0% (cap rate) and a borrowing cost of 12%, each lira borrowed costs more than it earns. The investor must rely on rent and value growth to compensate.",
+      "explanation_tr": "%9,0'lık giriş getirisi (kapitalizasyon oranı) ve %12'lik borçlanma maliyetiyle ödünç alınan her lira kazandırdığından fazlaya mal olur. Yatırımcı telafi için kira ve değer artışına güvenmek zorundadır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Leverage raises equity returns only if the property's return exceeds the cost of debt; here the current yield is lower than the loan rate.",
+          "tr": "Kaldıraç, mülkün getirisi borç maliyetini aşarsa öz sermaye getirisini artırır; burada cari getiri kredi faizinden düşüktür."
+        },
+        "C": {
+          "en": "Interest-only loans still carry interest costs and increase the risk of the equity; the structure does not remove the effect.",
+          "tr": "Yalnızca faiz ödemeli krediler de faiz maliyeti taşır ve öz sermaye riskini artırır; yapı etkiyi ortadan kaldırmaz."
+        }
+      },
+      "vocab_ids": [
+        "leverage",
+        "negative-leverage",
+        "cap-rate",
+        "interest",
+        "mortgage"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-02-v01-q5",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-02-v01",
+      "stem_en": "Hakan's concern about the consultant's volatility comparison is best described as:",
+      "stem_tr": "Hakan'ın danışmanın oynaklık karşılaştırmasına yönelik kaygısı en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Survivorship bias: the index only contains properties that were sold at a gain.",
+          "tr": "Hayatta kalma yanlılığı: endeks yalnızca kârla satılan mülkleri içerir."
+        },
+        {
+          "key": "B",
+          "en": "Appraisal smoothing: appraisal-based indexes understate true volatility and correlation with other assets.",
+          "tr": "Ekspertiz yumuşatması: ekspertiz temelli endeksler gerçek oynaklığı ve diğer varlıklarla korelasyonu olduğundan düşük gösterir."
+        },
+        {
+          "key": "C",
+          "en": "Inflation illusion: nominal rents rise with the CPI and cause volatility.",
+          "tr": "Enflasyon yanılsaması: nominal kiralar TÜFE ile artar ve oynaklık yaratır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Appraisers rely on past transactions and adjust values slowly, so the reported returns look smooth. The true risk of private real estate is higher than the index suggests.",
+      "explanation_tr": "Ekspertiz uzmanları geçmiş işlemlere dayanır ve değerleri yavaş ayarlar; bu yüzden bildirilen getiriler düzgün görünür. Özel gayrimenkulün gerçek riski endeksin gösterdiğinden yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Survivorship bias concerns funds that disappear from a database; the issue here is slow, smoothed valuations.",
+          "tr": "Hayatta kalma yanlılığı veri tabanından kaybolan fonlarla ilgilidir; buradaki sorun yavaş, yumuşatılmış değerlemelerdir."
+        },
+        "C": {
+          "en": "Inflation can affect rents, but the point is that appraisals, not transactions, lag market prices and reduce measured variability.",
+          "tr": "Enflasyon kiraları etkileyebilir ama mesele, işlemler değil ekspertizlerin piyasa fiyatlarını geriden izleyip ölçülen değişkenliği azaltmasıdır."
+        }
+      },
+      "vocab_ids": [
+        "appraisal-smoothing",
+        "appraisal",
+        "volatility",
+        "correlation",
+        "survivorship-bias"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -37,7 +37,11 @@
         "L2-FSA-03-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -100,7 +104,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "10*37",
         "unit": "TL million"
@@ -173,7 +181,11 @@
         "respectively"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "50*(40-35)+10*(40-37)",
         "unit": "TL million"
@@ -246,7 +258,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(100*37-60*35)/(100*37)*100",
         "unit": "%"
@@ -315,7 +331,11 @@
         "exposure"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "-(35-20)*(40-35)",
         "unit": "TL million"
@@ -329,50 +349,74 @@
       "los_id": "FSA-03-set",
       "curriculum_year": 2027,
       "type": "item_set",
-      "difficulty": 2,
-      "cognitive": "analyze",
+      "difficulty": 3,
+      "cognitive": "apply",
       "set_id": "L2-FSA-03-v01",
-      "stem_en": "Which statement about EuroPak's ratios in Ege's statements is most accurate?",
-      "stem_tr": "EuroPak'ın Ege tablolarındaki oranları hakkında hangi ifade en doğrudur?",
+      "stem_en": "EuroPak's return on year-end equity is 16.7% in euros (EUR 10 million / EUR 60 million). In Ege's statements, using translated net income and translated year-end equity, it is closest to:",
+      "stem_tr": "EuroPak'ın dönem sonu özkaynağına göre kârlılığı euro cinsinden %16,7'dir (10 milyon EUR / 60 milyon EUR). Ege'nin tablolarında, çevrilmiş net kâr ve çevrilmiş dönem sonu özkaynak kullanıldığında bu oran yaklaşık olarak şudur:",
       "options": [
         {
           "key": "A",
-          "en": "The net profit margin is unchanged from the euro figure because net income and sales are both translated at the average rate",
-          "tr": "Net kâr marjı euro rakamıyla aynıdır, çünkü net kâr ve satışlar ikisi de ortalama kurla çevrilir"
+          "en": "15.4%",
+          "tr": "%15,4",
+          "value": 15.4166667
         },
         {
           "key": "B",
-          "en": "Return on equity is unchanged from the euro figure",
-          "tr": "Özkaynak kârlılığı euro rakamıyla aynıdır"
+          "en": "16.7%",
+          "tr": "%16,7",
+          "value": 16.6666667
         },
         {
           "key": "C",
-          "en": "The debt-to-equity ratio is distorted because liabilities use the year-end rate and equity the average rate",
-          "tr": "Borç/özkaynak oranı bozulur, çünkü yükümlülükler dönem sonu, özkaynak ortalama kurla çevrilir"
+          "en": "21.1%",
+          "tr": "%21,1",
+          "value": 21.1428571
         }
       ],
       "answer": "A",
-      "explanation_en": "Under the current rate method, all income statement items use the average rate and all balance sheet items the closing rate. Ratios using only one statement stay the same; ratios mixing the two (like ROE) change.",
-      "explanation_tr": "Cari kur yönteminde tüm gelir tablosu kalemleri ortalama, tüm bilanço kalemleri kapanış kuruyla çevrilir. Tek tablodan hesaplanan oranlar aynı kalır; iki tabloyu karıştıran oranlar (ÖKK gibi) değişir.",
+      "explanation_en": "Under the current rate method, net income is translated at the average rate (10 x 37 = TL 370 million) and year-end equity at the closing rate (60 x 40 = TL 2,400 million). The ratio is 370 / 2,400 = 15.4%, below the euro figure. Ratios that mix an income statement item with a balance sheet item change after translation.",
+      "explanation_tr": "Cari kur yönteminde net kâr ortalama kurla (10 x 37 = 370 milyon TL), dönem sonu özkaynak ise kapanış kuruyla (60 x 40 = 2.400 milyon TL) çevrilir. Oran 370 / 2.400 = %15,4 olur ve euro rakamının altındadır. Gelir tablosu ile bilanço kalemini birleştiren oranlar çeviriden sonra değişir.",
       "wrong_option_reasons": {
         "B": {
-          "en": "Net income is translated at the average rate, equity at the year-end rate, so ROE differs.",
-          "tr": "Net kâr ortalama kurla, özkaynak dönem sonu kuruyla çevrilir; dolayısıyla ÖKK farklıdır."
+          "en": "Assumes the euro ratio carries over unchanged, but the numerator uses the average rate and the denominator the closing rate.",
+          "tr": "Euro oranının değişmeden aktarıldığını varsayar; oysa pay ortalama kurla, payda kapanış kuruyla çevrilir."
         },
         "C": {
-          "en": "Both liabilities and net assets are translated at the year-end rate, so the balance-sheet ratio is unchanged.",
-          "tr": "Hem yükümlülükler hem net varlıklar dönem sonu kuruyla çevrilir; bilanço oranı değişmez."
+          "en": "Divides translated net income by opening equity at the opening rate (370 / 1,750), which is not year-end equity.",
+          "tr": "Çevrilmiş net kârı açılış kuruyla dönem başı özkaynağa böler (370 / 1.750); bu, dönem sonu özkaynak değildir."
         }
       },
-      "solution_steps": [],
+      "solution_steps": [
+        {
+          "en": "Translated net income: 10 x 37 = 370",
+          "tr": "Çevrilmiş net kâr: 10 x 37 = 370"
+        },
+        {
+          "en": "Translated year-end equity: 60 x 40 = 2,400",
+          "tr": "Çevrilmiş dönem sonu özkaynak: 60 x 40 = 2.400"
+        },
+        {
+          "en": "370 / 2,400 = 15.4%",
+          "tr": "370 / 2.400 = %15,4"
+        }
+      ],
       "vocab_ids": [
         "ratio",
         "closing",
-        "distort",
+        "return-on-equity",
         "assume"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
+      "numeric": {
+        "expr": "10*37/(60*40)*100",
+        "unit": "%"
+      }
     }
   ]
 }

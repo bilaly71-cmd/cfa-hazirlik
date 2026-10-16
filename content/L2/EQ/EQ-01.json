@@ -42,7 +42,11 @@
         "L2-EQ-01-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -114,7 +118,11 @@
         "intrinsic-value"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(40*8+25*6-120)/35",
         "unit": "TL"
@@ -180,7 +188,11 @@
         "expected-return"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(9.2-8+0.3)/8*100",
         "unit": "%"
@@ -203,7 +215,7 @@
         {
           "key": "A",
           "en": "-5.75%",
-          "tr": "%-5,75",
+          "tr": "-%5,75",
           "value": -5.75
         },
         {
@@ -246,7 +258,11 @@
         "mispricing"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(9.2-8+0.3)/8*100-13",
         "unit": "%"
@@ -316,7 +332,11 @@
         "conclusion"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "(40*7+25*6-120)/35",
         "unit": "TL"
@@ -331,50 +351,70 @@
       "curriculum_year": 2027,
       "type": "item_set",
       "difficulty": 2,
-      "cognitive": "analyze",
+      "cognitive": "apply",
       "set_id": "L2-EQ-01-v01",
-      "stem_en": "Forecasting each segment's EBITDA and then adding up the results is best described as:",
-      "stem_tr": "Her bölümün FAVÖK'ünü tahmin edip sonuçları toplamak en iyi şu şekilde tanımlanır:",
+      "stem_en": "By what percentage of the TL 8.00 market price does the sum-of-the-parts value per share exceed that price?",
+      "stem_tr": "Parçaların toplamı yöntemiyle bulunan hisse başına değer, 8,00 TL'lik piyasa fiyatını fiyatın yüzde kaçı kadar aşar?",
       "options": [
         {
           "key": "A",
-          "en": "A top-down forecasting approach",
-          "tr": "Yukarıdan aşağıya (top-down) tahmin yaklaşımı"
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
         },
         {
           "key": "B",
-          "en": "A bottom-up forecasting approach",
-          "tr": "Aşağıdan yukarıya (bottom-up) tahmin yaklaşımı"
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
         },
         {
           "key": "C",
-          "en": "A relative valuation screen",
-          "tr": "Göreli değerleme taraması"
+          "en": "125.0%",
+          "tr": "%125,0",
+          "value": 125.0
         }
       ],
       "answer": "B",
-      "explanation_en": "Bottom-up forecasting builds firm-level figures from the individual parts (segments, products) and aggregates them. The analyst then uses market multiples as the valuation tool.",
-      "explanation_tr": "Aşağıdan yukarıya tahmin, şirket düzeyindeki rakamları tek tek parçalardan (bölüm, ürün) kurar ve toplar. Analist daha sonra piyasa çarpanlarını değerleme aracı olarak kullanır.",
+      "explanation_en": "Value per share is TL 10.00. The excess over the price is (10.00 - 8.00) / 8.00 = 25.0% of the market price, so the stock looks undervalued.",
+      "explanation_tr": "Hisse başına değer 10,00 TL'dir. Fiyatın üzerindeki fazlalık (10,00 - 8,00) / 8,00 = piyasa fiyatının %25,0'ıdır; hisse ucuz görünür.",
       "wrong_option_reasons": {
         "A": {
-          "en": "A top-down approach starts from economy- or industry-level forecasts and works down to the company.",
-          "tr": "Yukarıdan aşağıya yaklaşım ekonomi veya sektör düzeyinde tahminlerle başlar ve şirkete iner."
+          "en": "Divides the difference by the value (2 / 10) instead of by the market price.",
+          "tr": "Farkı piyasa fiyatına değil değere böler (2 / 10)."
         },
         "C": {
-          "en": "A screen filters stocks; here the analyst is building a company-specific forecast.",
-          "tr": "Tarama hisseleri eler; burada analist şirkete özgü bir tahmin kuruyor."
+          "en": "Reports the ratio of value to price (10 / 8) instead of the excess over the price.",
+          "tr": "Fiyatı aşan kısmı değil, değerin fiyata oranını (10 / 8) verir."
         }
       },
-      "solution_steps": [],
+      "solution_steps": [
+        {
+          "en": "Value per share: (40 x 8 + 25 x 6 - 120) / 35 = 10.00",
+          "tr": "Hisse başına değer: (40 x 8 + 25 x 6 - 120) / 35 = 10,00"
+        },
+        {
+          "en": "(10.00 - 8.00) / 8.00 = 25.0%",
+          "tr": "(10,00 - 8,00) / 8,00 = %25,0"
+        }
+      ],
       "vocab_ids": [
-        "bottom-up",
-        "forecast",
+        "valuation",
         "segment",
-        "top-down",
-        "valuation"
+        "forecast",
+        "undervalued",
+        "sum-of-the-parts"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
+      "numeric": {
+        "expr": "((40*8+25*6-120)/35/8-1)*100",
+        "unit": "%"
+      }
     }
   ]
 }

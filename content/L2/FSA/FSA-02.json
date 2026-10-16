@@ -9,8 +9,8 @@
       "curriculum_year": 2027,
       "title_en": "Kuzey Enerji Pension and Option Plans",
       "title_tr": "Kuzey Enerji Emeklilik ve Opsiyon Planları",
-      "text_en": "Kuzey Enerji reports under IFRS and sponsors a defined benefit pension plan. The discount rate is 6%. At the start of 2026 the projected benefit obligation (PBO) was TL 500 million and plan assets were TL 450 million. During 2026 the current service cost was TL 40 million, the company contributed TL 30 million, and retirees received benefits of TL 25 million from the plan. Actuarial assumptions changed and created an actuarial loss of TL 15 million. The actual return on plan assets was TL 36 million. Separately, on 1 January 2026 Kuzey granted 200,000 share options with a fair value of TL 5.00 each to its managers. The options vest at the end of four years of service, and management expects 10% of the options to be forfeited. An analyst is also testing how sensitive the PBO is to the discount rate. The plan is closed to new members and the assumptions are set by an independent actuary.",
-      "text_tr": "Kuzey Enerji, UFRS'ye göre raporlama yapar ve tanımlanmış fayda planı yürütür. İskonto oranı %6'dır. 2026 başında projeksiyon fayda yükümlülüğü (PBO) 500 milyon TL, plan varlıkları 450 milyon TL idi. 2026'da cari hizmet maliyeti 40 milyon TL, şirket katkısı 30 milyon TL, emeklilere plandan ödenen fayda 25 milyon TL olmuştur. Aktüeryal varsayımlar değişmiş ve 15 milyon TL aktüeryal zarar doğmuştur. Plan varlıklarının fiili getirisi 36 milyon TL'dir. Ayrıca Kuzey, 1 Ocak 2026'da yöneticilerine gerçeğe uygun değeri opsiyon başına 5,00 TL olan 200.000 hisse opsiyonu vermiştir. Opsiyonlar dört yıllık hizmet sonunda hak edilir ve yönetim opsiyonların %10'unun kullanılmayacağını (iptal) bekler. Analist ayrıca PBO'nun iskonto oranına duyarlılığını test ediyor. Plan yeni üyelere kapalıdır ve varsayımları bağımsız bir aktüer belirler.",
+      "text_en": "Kuzey Enerji reports under IFRS and sponsors a defined benefit pension plan. The discount rate is 6%. At the start of 2026 the projected benefit obligation (PBO) was TL 500 million and plan assets were TL 450 million. During 2026 the current service cost was TL 40 million, the company contributed TL 30 million, and retirees received benefits of TL 25 million from the plan. Actuarial assumptions changed and created an actuarial loss of TL 15 million. The actual return on plan assets was TL 36 million. Separately, on 1 January 2026 Kuzey granted 200,000 share options with a fair value of TL 5.00 each to its managers. The options vest at the end of four years of service, and management expects 10% of the options to be forfeited. An analyst is also testing how sensitive the 2026 pension cost is to the discount rate. The plan is closed to new members and the assumptions are set by an independent actuary.",
+      "text_tr": "Kuzey Enerji, UFRS'ye göre raporlama yapar ve tanımlanmış fayda planı yürütür. İskonto oranı %6'dır. 2026 başında projeksiyon fayda yükümlülüğü (PBO) 500 milyon TL, plan varlıkları 450 milyon TL idi. 2026'da cari hizmet maliyeti 40 milyon TL, şirket katkısı 30 milyon TL, emeklilere plandan ödenen fayda 25 milyon TL olmuştur. Aktüeryal varsayımlar değişmiş ve 15 milyon TL aktüeryal zarar doğmuştur. Plan varlıklarının fiili getirisi 36 milyon TL'dir. Ayrıca Kuzey, 1 Ocak 2026'da yöneticilerine gerçeğe uygun değeri opsiyon başına 5,00 TL olan 200.000 hisse opsiyonu vermiştir. Opsiyonlar dört yıllık hizmet sonunda hak edilir ve yönetim opsiyonların %10'unun kullanılmayacağını (iptal) bekler. Analist ayrıca 2026 emeklilik maliyetinin iskonto oranına duyarlılığını test ediyor. Plan yeni üyelere kapalıdır ve varsayımları bağımsız bir aktüer belirler.",
       "tables": [
         {
           "title_en": "Pension plan data, 2026 (TL million)",
@@ -52,7 +52,11 @@
         "L2-FSA-02-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -123,7 +127,11 @@
         "asset"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "450+30-25+36-(500+40+0.06*500-25+15)",
         "unit": "TL million"
@@ -192,7 +200,11 @@
         "assume"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "40+0.06*(500-450)",
         "unit": "TL million"
@@ -265,7 +277,11 @@
         "funded-status"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "40+0.06*(500-450)+15-(36-0.06*450)",
         "unit": "TL million"
@@ -334,7 +350,11 @@
         "exceed"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "numeric": {
         "expr": "200000*0.9*5/4/1000",
         "unit": "TL thousand"
@@ -348,42 +368,58 @@
       "los_id": "FSA-02-set",
       "curriculum_year": 2027,
       "type": "item_set",
-      "difficulty": 2,
-      "cognitive": "analyze",
+      "difficulty": 3,
+      "cognitive": "apply",
       "set_id": "L2-FSA-02-v01",
-      "stem_en": "If the analyst raises the discount rate from 6% to 7%, holding other assumptions constant, the most likely effect is that the:",
-      "stem_tr": "Analist, diğer varsayımlar sabitken iskonto oranını %6'dan %7'ye çıkarırsa en olası etki şudur:",
+      "stem_en": "Suppose the discount rate for 2026 had been 7% instead of 6%, with all other data unchanged. Under IFRS, the pension cost recognized in profit or loss would be:",
+      "stem_tr": "2026 için iskonto oranı %6 yerine %7 olsaydı ve diğer tüm veriler aynı kalsaydı, UFRS'ye göre kâr veya zararda muhasebeleştirilen emeklilik maliyeti şu olurdu:",
       "options": [
         {
           "key": "A",
-          "en": "PBO increases because interest cost is higher",
-          "tr": "PBO artar, çünkü faiz maliyeti yükselir"
+          "en": "TL 75.0 million",
+          "tr": "75,0 milyon TL",
+          "value": 75.0
         },
         {
           "key": "B",
-          "en": "PBO decreases because future benefits are discounted more heavily",
-          "tr": "PBO azalır, çünkü gelecekteki faydalar daha yüksek oranla iskonto edilir"
+          "en": "TL 43.5 million",
+          "tr": "43,5 milyon TL",
+          "value": 43.5
         },
         {
           "key": "C",
-          "en": "PBO is unchanged because benefits are already fixed",
-          "tr": "PBO değişmez, çünkü faydalar zaten sabittir"
+          "en": "TL 43.0 million",
+          "tr": "43,0 milyon TL",
+          "value": 43.0
         }
       ],
       "answer": "B",
-      "explanation_en": "The PBO is the present value of expected future benefits. A higher discount rate lowers that present value, so the PBO falls (and the funded status improves).",
-      "explanation_tr": "PBO, beklenen gelecek faydaların bugünkü değeridir. Daha yüksek iskonto oranı bu bugünkü değeri düşürür; PBO azalır (fonlanma durumu iyileşir).",
+      "explanation_en": "Under IFRS the net interest is the discount rate times the opening net liability (PBO minus plan assets): 7% x (500 - 450) = 3.5. Adding the service cost of 40 gives 43.5. The higher rate also lowers the PBO, but that change is a remeasurement that goes to OCI.",
+      "explanation_tr": "UFRS'de net faiz, iskonto oranı ile dönem başı net yükümlülüğün (PBO eksi plan varlıkları) çarpımıdır: %7 x (500 - 450) = 3,5. Cari hizmet maliyeti 40 eklenince 43,5 olur. Yüksek oran PBO'yu da düşürür, ancak bu değişim DKG'ye giden bir yeniden ölçüm kalemidir.",
       "wrong_option_reasons": {
         "A": {
-          "en": "Interest cost rises, but the lower present value of the benefits dominates; the obligation falls.",
-          "tr": "Faiz maliyeti artar, ancak faydaların daha düşük bugünkü değeri baskındır; yükümlülük azalır."
+          "en": "Applies the rate to the whole PBO (7% x 500 = 35) and ignores the interest income on plan assets; IFRS uses the net amount.",
+          "tr": "Oranı PBO tamamına uygular (%7 x 500 = 35) ve plan varlıklarının faiz gelirini göz ardı eder; UFRS net tutarı kullanır."
         },
         "C": {
-          "en": "The PBO is a present value, so it depends directly on the discount rate.",
-          "tr": "PBO bir bugünkü değerdir; iskonto oranına doğrudan bağlıdır."
+          "en": "Ignores the change in the discount rate, which raises the net interest component from 3.0 to 3.5.",
+          "tr": "İskonto oranı değişikliğini göz ardı eder; bu değişiklik net faiz bileşenini 3,0'dan 3,5'e çıkarır."
         }
       },
-      "solution_steps": [],
+      "solution_steps": [
+        {
+          "en": "Net liability at start: 500 - 450 = 50",
+          "tr": "Dönem başı net yükümlülük: 500 - 450 = 50"
+        },
+        {
+          "en": "Net interest at 7%: 0.07 x 50 = 3.5",
+          "tr": "%7 ile net faiz: 0,07 x 50 = 3,5"
+        },
+        {
+          "en": "Total: 40 + 3.5 = 43.5",
+          "tr": "Toplam: 40 + 3,5 = 43,5"
+        }
+      ],
       "vocab_ids": [
         "discount-rate",
         "present-value",
@@ -392,7 +428,15 @@
         "assumption"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
+      "numeric": {
+        "expr": "40+0.07*(500-450)",
+        "unit": "TL million"
+      }
     }
   ]
 }
