@@ -8,6 +8,7 @@ import patternsJson from './bundle/patterns.json';
 import questionsJson from './bundle/questions.json';
 import spkJson from './bundle/spk.json';
 import syllabusJson from './bundle/syllabus.json';
+import vignettesJson from './bundle/vignettes.json';
 import vocabJson from './bundle/vocab.json';
 
 import type {
@@ -22,10 +23,13 @@ import type {
   SyllabusTopic,
   TopicId,
   VocabTerm,
+  Vignette,
 } from '@/lib/schema';
 import { buildVocabIndex } from '@/lib/tokenize';
 
 export const questions = questionsJson as unknown as Question[];
+export type VignetteWithQuestions = Vignette & { questions: Question[] };
+export const vignettes = vignettesJson as unknown as VignetteWithQuestions[];
 export const lessons = lessonsJson as unknown as Lesson[];
 export const vocab = vocabJson as unknown as VocabTerm[];
 export const patterns = patternsJson as unknown as QuestionPattern[];

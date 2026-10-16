@@ -115,6 +115,26 @@ export const LessonSection = z.object({
     .optional(),
 });
 
+/** L2 vignette (item set): ortak metin + 3-6 soru. Sorular Question şemasındadır (type 'item_set', set_id = vignette id). */
+export const Vignette = z.object({
+  id: z.string(),
+  level: Level,
+  topic: TopicId,
+  module_id: z.string(),
+  curriculum_year: z.number().int(),
+  title_en: z.string().min(1),
+  title_tr: z.string().min(1),
+  text_en: z.string().min(1),
+  text_tr: z.string().min(1),
+  tables: z
+    .array(z.object({ title_en: z.string(), title_tr: z.string(), headers: z.array(z.string()), rows: z.array(z.array(z.string())) }))
+    .default([]),
+  question_ids: z.array(z.string()).min(1),
+  source_basis: z.literal('original'),
+  verified: Verified,
+});
+export type Vignette = z.infer<typeof Vignette>;
+
 export const Lesson = z.object({
   id: z.string(),
   level: Level,

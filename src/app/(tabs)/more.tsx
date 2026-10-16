@@ -6,6 +6,7 @@ const ITEMS: { href: Href; icon: string; title: string; sub: string }[] = [
   { href: '/stats', icon: '📊', title: 'İstatistik', sub: 'Konu doğruluğu, süre, hazırlık skoru, mock geçmişi' },
   { href: '/formulas', icon: '∑', title: 'Formül kartları', sub: 'Özgün L1 formül özeti' },
   { href: '/calculator', icon: '🧮', title: 'BA II Plus rehberi', sub: 'TVM, CF/NPV/IRR, istatistik, amortisman, tahvil' },
+  { href: '/vignettes', icon: '📑', title: 'L2 vignette soruları', sub: 'Olay metni + bağlı sorular (Level II formatı)' },
   { href: '/exam-info', icon: 'ℹ️', title: 'Sınav bilgisi', sub: 'Ücretler, tarihler, kurallar, kaynaklar' },
   { href: '/patterns', icon: '🧩', title: 'Soru kalıpları', sub: 'least likely, closest to, NOT …' },
   { href: '/ethics', icon: '⚖️', title: 'Etik vakaları', sub: 'Standards I–VII' },

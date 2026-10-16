@@ -19,6 +19,7 @@ import {
   QuestionPattern,
   Syllabus,
   VocabTerm,
+  Vignette,
 } from '../src/lib/schema';
 
 const ROOT = path.resolve(__dirname, '..');
@@ -100,6 +101,19 @@ function loadAll(onlyFile?: string) {
     for (const q of parseArr(Question, f, data.questions ?? [])) questions.push({ ...q, _file: rel(f) });
   }
 
+  const vignettes: Vignette[] = [];
+  for (const f of listJson(C('L2'))) {
+    if (onlyFile && path.resolve(onlyFile) !== path.resolve(f)) continue;
+    let data: { vignettes?: unknown[] };
+    try {
+      data = readJson(f);
+    } catch (e) {
+      errors.push({ file: rel(f), msg: `JSON okunamadı: ${(e as Error).message}` });
+      continue;
+    }
+    for (const v of parseArr(Vignette, f, data.vignettes ?? [])) vignettes.push(v);
+  }
+
   const vocab: VocabTerm[] = [];
   const seenVocab = new Map<string, string>();
   for (const f of listJson(C('vocab'))) {
@@ -122,6 +136,7 @@ function loadAll(onlyFile?: string) {
     lessons,
     questions,
     vocab,
+    vignettes,
     patterns: extra(QuestionPattern, 'patterns'),
     ethics: extra(EthicsCase, 'ethics_cases'),
     formulas: extra(Formula, 'formulas'),
@@ -140,8 +155,8 @@ function crossChecks(d: ReturnType<typeof loadAll>, partial: boolean) {
   for (const q of d.questions) {
     if (ids.has(q.id)) errors.push({ file: q._file, id: q.id, msg: `soru kimliği tekrar (${ids.get(q.id)})` });
     ids.set(q.id, q._file);
-    if (losIds.size && !losIds.has(q.los_id)) errors.push({ file: q._file, id: q.id, msg: `los_id müfredatta yok: ${q.los_id}` });
-    if (modIds.size && !modIds.has(q.module_id)) errors.push({ file: q._file, id: q.id, msg: `module_id müfredatta yok: ${q.module_id}` });
+    if (q.level === 'L1' && losIds.size && !losIds.has(q.los_id)) errors.push({ file: q._file, id: q.id, msg: `los_id müfredatta yok: ${q.los_id}` });
+    if (q.level === 'L1' && modIds.size && !modIds.has(q.module_id)) errors.push({ file: q._file, id: q.id, msg: `module_id müfredatta yok: ${q.module_id}` });
     if (!q.los_id.startsWith(q.module_id)) errors.push({ file: q._file, id: q.id, msg: 'los_id module_id ile başlamıyor' });
     if (q.level === 'L1' && (q.vocab_ids.length < 3 || q.vocab_ids.length > 8))
       warnings.push({ file: q._file, id: q.id, msg: `vocab_ids sayısı ${q.vocab_ids.length} (3-8 beklenir)` });
@@ -167,6 +182,12 @@ function crossChecks(d: ReturnType<typeof loadAll>, partial: boolean) {
       if (n / qs.length > 0.45) warnings.push({ file: f, msg: `cevap dengesizliği: ${k} = %${Math.round((n / qs.length) * 100)}` });
   }
 
+  const qIds = new Set(d.questions.map((q) => q.id));
+  for (const v of d.vignettes) {
+    for (const id of v.question_ids) if (!qIds.has(id) && !partial) errors.push({ file: v.id, msg: `vignette sorusu yok: ${id}` });
+    const own = d.questions.filter((q) => q.set_id === v.id).length;
+    if (own !== v.question_ids.length && !partial) warnings.push({ file: v.id, msg: `set_id ile eşleşen soru ${own} ≠ question_ids ${v.question_ids.length}` });
+  }
   const lint: LintIssue[] = [];
   if (d.glossary.length) for (const x of [...d.questions, ...d.lessons, ...d.vocab]) lint.push(...lintObject(x.id, x, d.glossary));
   for (const l of lint.slice(0, 200))
@@ -207,9 +228,12 @@ function writeBundle(d: ReturnType<typeof loadAll>) {
     const { _file, ...rest } = x;
     return rest;
   };
-  const qs = d.questions.filter(isVerified).map(strip);
+  const qs = d.questions.filter((q) => q.level === 'L1').filter(isVerified).map(strip);
   w('questions.json', qs);
-  w('lessons.json', d.lessons.filter(isVerified));
+  const l2q = d.questions.filter((q) => q.level === 'L2').filter(isVerified).map(strip);
+  const vOk = d.vignettes.filter(isVerified);
+  w('vignettes.json', vOk.map((v) => ({ ...v, questions: l2q.filter((q) => q.set_id === v.id) })).filter((v) => v.questions.length));
+  w('lessons.json', d.lessons.filter((l) => l.level === 'L1').filter(isVerified));
   w('vocab.json', d.vocab.filter(isVerified));
   w('patterns.json', d.patterns.filter(isVerified));
   w('ethics.json', d.ethics.filter(isVerified));
