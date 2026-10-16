@@ -1,0 +1,472 @@
+{
+  "module_id": "QM-02",
+  "vignettes": [
+    {
+      "id": "L2-QM-02-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "curriculum_year": 2027,
+      "title_en": "Pricing Apartments in an Istanbul District",
+      "title_tr": "İstanbul'da Bir İlçede Daire Fiyatlaması",
+      "text_en": "Defne Karaca is a valuation analyst at the fictional Marmara Gayrimenkul. She models the price per square metre (TRY thousand) of 80 apartments sold in one Istanbul district. The independent variables are the building age in years (AGE), the walking distance to the nearest metro station in km (DIST), a dummy variable equal to 1 if the apartment has a sea view (VIEW), and the floor area in square metres (AREA). Exhibit 1 shows the estimates. The critical t-value at the 5% level with 75 degrees of freedom is about 1.99, and the 5% critical F-value for 2 and 75 degrees of freedom is about 3.12.\nDefne wonders whether AGE and DIST together add explanatory power. She re-estimates the model without them. The unrestricted model has a residual sum of squares (SSE) of 1850 and the restricted model has an SSE of 2310. The total sum of squares is 5400.\nShe also checks diagnostics. Observation 17, a small flat 4.1 km from the metro, has leverage 0.31 and Cook's distance 0.62. Observation 52 has a large studentized residual but leverage of only 0.06 and Cook's distance of 0.08. A common rule treats leverage above 3(k + 1)/n and Cook's distance above the square root of k/n as signals.",
+      "text_tr": "Defne Karaca, kurgusal Marmara Gayrimenkul'de değerleme analistidir. İstanbul'un bir ilçesinde satılan 80 dairenin metrekare fiyatını (bin TL) modelliyor. Bağımsız değişkenler: bina yaşı (AGE, yıl), en yakın metro istasyonuna yürüyüş mesafesi (DIST, km), deniz manzarası varsa 1 değerini alan kukla değişken (VIEW) ve brüt alan (AREA, m²). Tahminler Gösterge 1'de. 75 serbestlik derecesinde %5 kritik t değeri yaklaşık 1,99, 2 ve 75 serbestlik derecesi için %5 kritik F değeri yaklaşık 3,12'dir.\nDefne, AGE ve DIST'in birlikte açıklama gücü katıp katmadığını merak ediyor. Modeli bunlar olmadan yeniden tahmin ediyor. Kısıtsız modelin kalıntı kareler toplamı (SSE) 1850, kısıtlı modelinki 2310. Toplam kareler toplamı 5400.\nAyrıca tanı kontrolleri yapıyor. Metroya 4,1 km uzaklıktaki küçük bir daire olan 17. gözlemin kaldıraç değeri 0,31, Cook uzaklığı 0,62. 52. gözlemin standartlaştırılmış kalıntısı büyük ama kaldıraç değeri yalnızca 0,06, Cook uzaklığı 0,08. Yaygın kurala göre kaldıraç 3(k + 1)/n'nin, Cook uzaklığı ise k/n'nin kareköküne eşik olarak bakılır.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Unrestricted regression (n = 80)",
+          "title_tr": "Gösterge 1: Kısıtsız regresyon (n = 80)",
+          "headers": [
+            "Variable",
+            "Coefficient",
+            "Standard error"
+          ],
+          "rows": [
+            [
+              "Intercept",
+              "38.0",
+              "6.2"
+            ],
+            [
+              "AGE",
+              "-0.45",
+              "0.12"
+            ],
+            [
+              "DIST",
+              "-3.20",
+              "0.95"
+            ],
+            [
+              "VIEW",
+              "7.80",
+              "2.60"
+            ],
+            [
+              "AREA",
+              "0.040",
+              "0.025"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-02-v01-q1",
+        "L2-QM-02-v01-q2",
+        "L2-QM-02-v01-q3",
+        "L2-QM-02-v01-q4",
+        "L2-QM-02-v01-q5",
+        "L2-QM-02-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-02-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "According to Exhibit 1, holding the other variables constant, a sea view is associated with a price per square metre that is:",
+      "stem_tr": "Gösterge 1'e göre diğer değişkenler sabitken deniz manzarası, metrekare fiyatında şu farkla ilişkilidir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 7.8 thousand higher, on average",
+          "tr": "Ortalama 7,8 bin TL daha yüksek"
+        },
+        {
+          "key": "B",
+          "en": "7.8% higher, on average",
+          "tr": "Ortalama %7,8 daha yüksek"
+        },
+        {
+          "key": "C",
+          "en": "TRY 38.0 thousand higher, on average",
+          "tr": "Ortalama 38,0 bin TL daha yüksek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The coefficient on a dummy variable is the average difference versus the base group, in the units of the dependent variable.",
+      "explanation_tr": "Kukla değişken katsayısı, temel gruba göre ortalama farktır ve bağımlı değişkenin birimindedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The dummy coefficient is in the units of the dependent variable (TRY thousand per m²), not a percentage.",
+          "tr": "Kukla değişken katsayısı bağımlı değişkenin birimindedir (bin TL/m²), yüzde değildir."
+        },
+        "C": {
+          "en": "38.0 is the intercept, the price for the base case without a sea view and with all other variables at zero.",
+          "tr": "38,0 kesişimdir; manzarasız ve diğer değişkenlerin sıfır olduğu temel durumun fiyatıdır."
+        }
+      },
+      "vocab_ids": [
+        "dummy-variable",
+        "coefficient",
+        "intercept",
+        "dependent-variable",
+        "average"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-02-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "The lower bound of the 95% confidence interval for the DIST coefficient is closest to:",
+      "stem_tr": "DIST katsayısı için %95 güven aralığının alt sınırı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "-4.15",
+          "tr": "-4,15",
+          "value": -4.15
+        },
+        {
+          "key": "B",
+          "en": "-5.09",
+          "tr": "-5,09",
+          "value": -5.09
+        },
+        {
+          "key": "C",
+          "en": "-1.31",
+          "tr": "-1,31",
+          "value": -1.31
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Lower bound = -3.20 - 1.99 x 0.95 = -5.09. The upper bound is -1.31. Zero is outside the interval, so DIST is significant.",
+      "explanation_tr": "Alt sınır = -3,20 - 1,99 x 0,95 = -5,09. Üst sınır -1,31. Sıfır aralığın dışında, yani DIST anlamlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It subtracts only one standard error rather than the critical value times the standard error.",
+          "tr": "Kritik değer çarpı standart hata yerine yalnızca bir standart hata çıkarır."
+        },
+        "C": {
+          "en": "This is the upper bound, not the lower bound.",
+          "tr": "Bu üst sınırdır, alt sınır değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the lower bound of the 95% confidence interval.",
+          "tr": "%95 güven aralığının alt sınırı isteniyor."
+        },
+        {
+          "en": "Bound = coefficient - t-critical x standard error.",
+          "tr": "Sınır = katsayı - kritik t x standart hata."
+        },
+        {
+          "en": "-3.20 - 1.99 x 0.95 = -3.20 - 1.89.",
+          "tr": "-3,20 - 1,99 x 0,95 = -3,20 - 1,89."
+        },
+        {
+          "en": "Result: -5.09.",
+          "tr": "Sonuç: -5,09."
+        }
+      ],
+      "numeric": {
+        "expr": "-3.20-1.99*0.95"
+      },
+      "vocab_ids": [
+        "confidence-interval",
+        "critical-value",
+        "standard-error",
+        "coefficient",
+        "significant"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-02-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "Using the SSE values, the F-statistic for testing whether AGE and DIST are jointly zero is closest to:",
+      "stem_tr": "SSE değerlerini kullanarak AGE ve DIST'in birlikte sıfır olup olmadığını sınayan F istatistiği en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.25",
+          "tr": "0,25",
+          "value": 0.25
+        },
+        {
+          "key": "B",
+          "en": "18.65",
+          "tr": "18,65",
+          "value": 18.65
+        },
+        {
+          "key": "C",
+          "en": "9.32",
+          "tr": "9,32",
+          "value": 9.32
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F = [(SSE_r - SSE_u)/q] / [SSE_u/(n - k - 1)] = [(2310 - 1850)/2] / [1850/75] = 9.32.",
+      "explanation_tr": "F = [(SSE_k - SSE_ks)/q] / [SSE_ks/(n - k - 1)] = [(2310 - 1850)/2] / [1850/75] = 9,32.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It omits the degrees-of-freedom adjustments (q and n - k - 1).",
+          "tr": "Serbestlik derecesi düzeltmelerini (q ve n - k - 1) atlar."
+        },
+        "B": {
+          "en": "It divides by 1 instead of by the number of restrictions q = 2.",
+          "tr": "Kısıt sayısı q = 2 yerine 1'e böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the F-statistic for the joint test.",
+          "tr": "Ortak testin F istatistiği isteniyor."
+        },
+        {
+          "en": "F = [(SSE_r - SSE_u)/q] / [SSE_u/(n-k-1)].",
+          "tr": "F = [(SSE_k - SSE_ks)/q] / [SSE_ks/(n-k-1)]."
+        },
+        {
+          "en": "(2310 - 1850)/2 = 230; 1850/75 = 24.67.",
+          "tr": "(2310 - 1850)/2 = 230; 1850/75 = 24,67."
+        },
+        {
+          "en": "Result: F is about 9.32.",
+          "tr": "Sonuç: F yaklaşık 9,32."
+        }
+      ],
+      "numeric": {
+        "expr": "((2310-1850)/2)/(1850/75)"
+      },
+      "vocab_ids": [
+        "null-hypothesis",
+        "degrees-of-freedom",
+        "variance",
+        "test-statistic"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-02-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "Given the F-statistic of 9.32 and the 5% critical value of about 3.12, Defne should conclude that:",
+      "stem_tr": "9,32 F istatistiği ve yaklaşık 3,12 olan %5 kritik değer göz önüne alındığında Defne şu sonuca varmalıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "AGE and DIST are jointly significant, so at least one of them improves the model.",
+          "tr": "AGE ve DIST birlikte anlamlıdır; en az biri modeli iyileştirir."
+        },
+        {
+          "key": "B",
+          "en": "AGE and DIST are jointly insignificant, so both can be dropped.",
+          "tr": "AGE ve DIST birlikte anlamsızdır; ikisi de çıkarılabilir."
+        },
+        {
+          "key": "C",
+          "en": "The test is invalid because DIST and AGE have different units.",
+          "tr": "Test geçersizdir çünkü DIST ve AGE farklı birimlerdedir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "F is greater than the critical value, so we reject the null that both coefficients are zero.",
+      "explanation_tr": "F kritik değerden büyüktür; iki katsayının da sıfır olduğu boş hipotez reddedilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The F-statistic is well above 3.12, so the null that both coefficients are zero is rejected.",
+          "tr": "F istatistiği 3,12'nin çok üzerindedir; iki katsayının da sıfır olduğu boş hipotez reddedilir."
+        },
+        "C": {
+          "en": "The F-test of restrictions does not require the variables to share units; the test depends only on the change in SSE.",
+          "tr": "Kısıt F testi değişkenlerin aynı birimde olmasını gerektirmez; yalnızca SSE değişimine bağlıdır."
+        }
+      },
+      "vocab_ids": [
+        "reject",
+        "null-hypothesis",
+        "significant",
+        "test-statistic",
+        "critical-value"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-02-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "The leverage thresholds are 3(k + 1)/n = 0.1875 and the Cook's distance threshold is sqrt(k/n) = 0.224. Which observation is most likely both a high-leverage point and influential?",
+      "stem_tr": "Kaldıraç eşiği 3(k + 1)/n = 0,1875, Cook uzaklığı eşiği sqrt(k/n) = 0,224. Hangi gözlem hem yüksek kaldıraçlı hem etkili olma ihtimali en yüksek olandır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Observation 52: its large studentized residual alone makes it influential.",
+          "tr": "52. gözlem: büyük standartlaştırılmış kalıntısı tek başına onu etkili yapar."
+        },
+        {
+          "key": "B",
+          "en": "Observation 17: leverage 0.31 and Cook's distance 0.62 both exceed the thresholds.",
+          "tr": "17. gözlem: kaldıraç 0,31 ve Cook uzaklığı 0,62 ikisi de eşiği aşar."
+        },
+        {
+          "key": "C",
+          "en": "Neither observation, because the thresholds apply only to time series.",
+          "tr": "İkisi de değil, çünkü eşikler yalnızca zaman serilerine uygulanır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Observation 17 exceeds both cut-offs (0.31 > 0.1875; 0.62 > 0.224). Observation 52 exceeds neither.",
+      "explanation_tr": "17. gözlem iki eşiği de aşar (0,31 > 0,1875; 0,62 > 0,224). 52. gözlem hiçbirini aşmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Its leverage (0.06) and Cook's distance (0.08) are both below the thresholds, so it is an outlier in y but not influential.",
+          "tr": "Kaldıraç (0,06) ve Cook uzaklığı (0,08) eşiklerin altındadır; y bakımından aykırı ama etkili değildir."
+        },
+        "C": {
+          "en": "Leverage and Cook's distance rules apply to cross-sectional regressions like this one.",
+          "tr": "Kaldıraç ve Cook uzaklığı kuralları bu gibi kesit regresyonlarına uygulanır."
+        }
+      },
+      "vocab_ids": [
+        "leverage",
+        "cook-s-distance",
+        "outlier",
+        "influence",
+        "significant"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-02-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-02-v01",
+      "stem_en": "Defne finds that the R-squared of the unrestricted model is closest to which value?",
+      "stem_tr": "Defne, kısıtsız modelin R-karesinin en yakın hangi değer olduğunu buluyor?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.343",
+          "tr": "0,343",
+          "value": 0.343
+        },
+        {
+          "key": "B",
+          "en": "0.572",
+          "tr": "0,572",
+          "value": 0.572
+        },
+        {
+          "key": "C",
+          "en": "0.657",
+          "tr": "0,657",
+          "value": 0.657
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "R-squared = 1 - SSE/SST = 1 - 1850/5400 = 0.657.",
+      "explanation_tr": "R-kare = 1 - SSE/SST = 1 - 1850/5400 = 0,657.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It reports SSE/SST, which is the unexplained share (1 - R-squared).",
+          "tr": "SSE/SST'yi bildirir; bu açıklanamayan paydır (1 - R-kare)."
+        },
+        "B": {
+          "en": "It uses the restricted model's SSE, not the unrestricted model's.",
+          "tr": "Kısıtsız model yerine kısıtlı modelin SSE'sini kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the R-squared of the unrestricted model.",
+          "tr": "Kısıtsız modelin R-karesi isteniyor."
+        },
+        {
+          "en": "R-squared = 1 - SSE/SST.",
+          "tr": "R-kare = 1 - SSE/SST."
+        },
+        {
+          "en": "1 - 1850/5400 = 1 - 0.3426.",
+          "tr": "1 - 1850/5400 = 1 - 0,3426."
+        },
+        {
+          "en": "Result: 0.657.",
+          "tr": "Sonuç: 0,657."
+        }
+      ],
+      "numeric": {
+        "expr": "1-1850/5400"
+      },
+      "vocab_ids": [
+        "r-squared",
+        "residual",
+        "explain",
+        "variance"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

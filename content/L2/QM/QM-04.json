@@ -1,0 +1,463 @@
+{
+  "module_id": "QM-04",
+  "vignettes": [
+    {
+      "id": "L2-QM-04-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "curriculum_year": 2027,
+      "title_en": "Default Model for Small Manufacturers",
+      "title_tr": "Küçük İmalatçılar için Temerrüt Modeli",
+      "text_en": "Ece Yıldırım is a credit analyst at the fictional lender Anadolu SME Bank. She builds a logistic regression to estimate the probability that a small manufacturing firm defaults within one year. The dependent variable is 1 if the firm defaulted and 0 otherwise. The independent variables are leverage (LEV, net debt divided by EBITDA, in times), interest coverage (COV, EBIT divided by interest expense, in times) and an export dummy (EXP, equal to 1 if more than half of sales are exported). Exhibit 1 shows the estimates from 400 firm-years.\nEce scores a candidate, Demir Plastik, which has LEV of 6.0, COV of 1.5 and no export sales (EXP = 0). The bank flags a loan for review if the predicted default probability is above a cutoff of 0.15.\nEce also considers adding a categorical variable for the firm's sector, which has four categories (food, textile, metal, plastics). A junior analyst suggests creating four dummy variables, one for each sector, and keeping the intercept.\nFinally, Ece tests whether COV and EXP together add explanatory power. The log-likelihood of the full model is -112.4, and the log-likelihood of the model without COV and EXP is -120.9. The 5% chi-square critical value with 2 degrees of freedom is 5.99.",
+      "text_tr": "Ece Yıldırım, kurgusal kredi kuruluşu Anadolu KOBİ Bank'ta kredi analistidir. Küçük bir imalat firmasının bir yıl içinde temerrüde düşme olasılığını tahmin etmek için lojistik regresyon kuruyor. Bağımlı değişken, firma temerrüde düştüyse 1, aksi halde 0'dır. Bağımsız değişkenler: kaldıraç (LEV, net borç/FAVÖK, kat), faiz karşılama (COV, FVÖK/faiz gideri, kat) ve ihracat kuklası (EXP, satışların yarısından fazlası ihracatsa 1). Gösterge 1, 400 firma-yılından elde edilen tahminleri gösteriyor.\nEce, LEV değeri 6,0, COV değeri 1,5 olan ve ihracat satışı bulunmayan (EXP = 0) aday firma Demir Plastik'i skorluyor. Banka, tahmini temerrüt olasılığı 0,15 eşiğinin üzerindeyse krediyi incelemeye alıyor.\nEce ayrıca firmanın sektörü için dört kategorili (gıda, tekstil, metal, plastik) bir kategorik değişken eklemeyi düşünüyor. Genç bir analist her sektör için bir tane olmak üzere dört kukla değişken yaratıp kesişimi korumayı öneriyor.\nSon olarak Ece, COV ve EXP'in birlikte açıklama gücü katıp katmadığını sınıyor. Tam modelin log-olabilirliği -112,4, COV ve EXP olmayan modelinki -120,9. 2 serbestlik derecesiyle %5 kritik ki-kare değeri 5,99.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Logistic regression estimates",
+          "title_tr": "Gösterge 1: Lojistik regresyon tahminleri",
+          "headers": [
+            "Variable",
+            "Coefficient"
+          ],
+          "rows": [
+            [
+              "Intercept",
+              "-4.10"
+            ],
+            [
+              "LEV",
+              "0.55"
+            ],
+            [
+              "COV",
+              "-0.40"
+            ],
+            [
+              "EXP",
+              "-0.70"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-04-v01-q1",
+        "L2-QM-04-v01-q2",
+        "L2-QM-04-v01-q3",
+        "L2-QM-04-v01-q4",
+        "L2-QM-04-v01-q5",
+        "L2-QM-04-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-04-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "For Demir Plastik, the predicted probability of default is closest to:",
+      "stem_tr": "Demir Plastik için tahmini temerrüt olasılığı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.198",
+          "tr": "0,198",
+          "value": 0.198
+        },
+        {
+          "key": "B",
+          "en": "0.247",
+          "tr": "0,247",
+          "value": 0.247
+        },
+        {
+          "key": "C",
+          "en": "0.802",
+          "tr": "0,802",
+          "value": 0.802
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "z = -4.10 + 0.55(6.0) - 0.40(1.5) - 0.70(0) = -1.40. Probability = 1/(1 + e^{-z}) = 0.198.",
+      "explanation_tr": "z = -4,10 + 0,55(6,0) - 0,40(1,5) - 0,70(0) = -1,40. Olasılık = 1/(1 + e^(-z)) = 0,198.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It reports the odds, e^z, not the probability.",
+          "tr": "Olasılığı değil odds'u (e^z) bildirir."
+        },
+        "C": {
+          "en": "It uses the wrong sign on z, which gives the probability of not defaulting.",
+          "tr": "z'nin işaretini ters alır; bu temerrüde düşmeme olasılığıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the predicted default probability.",
+          "tr": "Tahmini temerrüt olasılığı isteniyor."
+        },
+        {
+          "en": "z = b0 + b1 LEV + b2 COV + b3 EXP; p = 1/(1 + e^-z).",
+          "tr": "z = b0 + b1 LEV + b2 COV + b3 EXP; p = 1/(1 + e^-z)."
+        },
+        {
+          "en": "z = -4.10 + 3.30 - 0.60 = -1.40.",
+          "tr": "z = -4,10 + 3,30 - 0,60 = -1,40."
+        },
+        {
+          "en": "Result: p = 0.198.",
+          "tr": "Sonuç: p = 0,198."
+        }
+      ],
+      "numeric": {
+        "expr": "1/(1+math.exp(-(-4.10+0.55*6-0.40*1.5)))"
+      },
+      "vocab_ids": [
+        "logistic-regression",
+        "probability",
+        "probability-of-default",
+        "coefficient",
+        "predicted-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-04-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "Based on the predicted probability and the 0.15 cutoff, the bank's rule would:",
+      "stem_tr": "Tahmini olasılık ve 0,15 eşiğine göre bankanın kuralı şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Approve it automatically because the probability is below 50%",
+          "tr": "Olasılık %50'nin altında olduğu için otomatik onaylar"
+        },
+        {
+          "key": "B",
+          "en": "Flag the loan for review",
+          "tr": "Krediyi incelemeye alır"
+        },
+        {
+          "key": "C",
+          "en": "Reject it because the coefficient on EXP is negative",
+          "tr": "EXP katsayısı negatif olduğu için reddeder"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The predicted probability 0.198 is above the cutoff of 0.15, so the loan is flagged.",
+      "explanation_tr": "Tahmini olasılık 0,198, 0,15 eşiğinin üzerinde; kredi incelemeye alınır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The bank's cutoff is 0.15, not 0.50; the predicted probability of 0.198 is above 0.15.",
+          "tr": "Bankanın eşiği 0,50 değil 0,15'tir; 0,198'lik tahmini olasılık 0,15'in üzerindedir."
+        },
+        "C": {
+          "en": "The sign of one coefficient does not decide the outcome; the full score z does, and EXP = 0 for this firm.",
+          "tr": "Tek bir katsayının işareti sonucu belirlemez; bunu toplam skor z belirler ve bu firma için EXP = 0'dır."
+        }
+      },
+      "vocab_ids": [
+        "cutoff-probability",
+        "probability",
+        "flag",
+        "accept",
+        "automatically"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-04-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "A one-unit increase in LEV, holding COV and EXP constant, multiplies the odds of default by a factor closest to:",
+      "stem_tr": "COV ve EXP sabitken LEV'de bir birim artış, temerrüt odds'unu en yakın hangi çarpanla çarpar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.55",
+          "tr": "1,55",
+          "value": 1.55
+        },
+        {
+          "key": "B",
+          "en": "0.55",
+          "tr": "0,55",
+          "value": 0.55
+        },
+        {
+          "key": "C",
+          "en": "1.73",
+          "tr": "1,73",
+          "value": 1.73
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The odds ratio is e^0.55 = 1.73. Each extra turn of leverage raises the odds of default by about 73%.",
+      "explanation_tr": "Odds oranı e^0,55 = 1,73. Kaldıraçta her ek kat, temerrüt odds'unu yaklaşık %73 artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It adds the coefficient to 1, which is a linear-probability reading.",
+          "tr": "Katsayıyı 1'e ekler; bu doğrusal olasılık okumasıdır."
+        },
+        "B": {
+          "en": "It treats the coefficient as the factor itself instead of exponentiating it.",
+          "tr": "Katsayıyı üstel almadan doğrudan çarpan olarak kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the factor by which the odds change.",
+          "tr": "Odds'un değiştiği çarpan isteniyor."
+        },
+        {
+          "en": "In a logit model the coefficient is the change in log odds, so the factor is e^b.",
+          "tr": "Logit modelinde katsayı log odds değişimidir; çarpan e^b'dir."
+        },
+        {
+          "en": "e^0.55.",
+          "tr": "e^0,55."
+        },
+        {
+          "en": "Result: 1.73.",
+          "tr": "Sonuç: 1,73."
+        }
+      ],
+      "numeric": {
+        "expr": "math.exp(0.55)"
+      },
+      "vocab_ids": [
+        "odds",
+        "log-odds",
+        "logistic-regression",
+        "coefficient",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-04-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "Which statement about the junior analyst's proposal to use four sector dummies and keep the intercept is correct?",
+      "stem_tr": "Genç analistin dört sektör kuklası kullanıp kesişimi koruma önerisi hakkında hangi ifade doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It creates perfect multicollinearity; three dummies should be used.",
+          "tr": "Mükemmel çoklu doğrusal bağlantı yaratır; üç kukla kullanılmalıdır."
+        },
+        {
+          "key": "B",
+          "en": "It is correct because every category needs its own dummy.",
+          "tr": "Doğrudur çünkü her kategorinin kendi kuklası olmalıdır."
+        },
+        {
+          "key": "C",
+          "en": "It is correct only if the dependent variable is binary.",
+          "tr": "Yalnızca bağımlı değişken ikili ise doğrudur."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With four categories and an intercept, use three dummies; the omitted sector becomes the base group and the dummy coefficients show differences from it.",
+      "explanation_tr": "Dört kategori ve kesişim varken üç kukla kullanılır; dışarıda kalan sektör temel grup olur ve kukla katsayıları ondan farkı gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "With an intercept, n categories need n - 1 dummies; the four dummies always sum to 1, which duplicates the intercept.",
+          "tr": "Kesişim varken n kategori için n - 1 kukla gerekir; dört kukla her zaman 1'e toplanır ve kesişimi tekrar eder."
+        },
+        "C": {
+          "en": "The problem exists in any regression with an intercept, whether the dependent variable is binary or continuous.",
+          "tr": "Sorun, bağımlı değişken ikili de sürekli de olsa kesişimli her regresyonda vardır."
+        }
+      },
+      "vocab_ids": [
+        "dummy-variable",
+        "multicollinearity",
+        "intercept",
+        "coefficient"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-04-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "The likelihood ratio statistic, -2 x (LL restricted - LL unrestricted), for testing COV and EXP together is closest to:",
+      "stem_tr": "COV ve EXP'i birlikte sınayan olabilirlik oranı istatistiği, -2 x (LL kısıtlı - LL kısıtsız), en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.5",
+          "tr": "8,5",
+          "value": 8.5
+        },
+        {
+          "key": "B",
+          "en": "17.0",
+          "tr": "17,0",
+          "value": 17.0
+        },
+        {
+          "key": "C",
+          "en": "466.6",
+          "tr": "466,6",
+          "value": 466.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "LR = -2 x (-120.9 - (-112.4)) = 17.0. It exceeds 5.99, so COV and EXP are jointly significant.",
+      "explanation_tr": "LR = -2 x (-120,9 - (-112,4)) = 17,0. 5,99'u aşar; COV ve EXP birlikte anlamlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It forgets to multiply the log-likelihood difference by 2.",
+          "tr": "Log-olabilirlik farkını 2 ile çarpmayı unutur."
+        },
+        "C": {
+          "en": "It adds the two log-likelihoods instead of taking their difference.",
+          "tr": "İki log-olabilirliği farklarını almak yerine toplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the likelihood ratio statistic.",
+          "tr": "Olabilirlik oranı istatistiği isteniyor."
+        },
+        {
+          "en": "LR = -2 x (LL restricted - LL unrestricted).",
+          "tr": "LR = -2 x (LL kısıtlı - LL kısıtsız)."
+        },
+        {
+          "en": "-2 x (-120.9 + 112.4) = -2 x (-8.5).",
+          "tr": "-2 x (-120,9 + 112,4) = -2 x (-8,5)."
+        },
+        {
+          "en": "Result: 17.0.",
+          "tr": "Sonuç: 17,0."
+        }
+      ],
+      "numeric": {
+        "expr": "-2*(-120.9-(-112.4))"
+      },
+      "vocab_ids": [
+        "likelihood-ratio-test",
+        "likelihood",
+        "null-hypothesis",
+        "reject",
+        "critical-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-04-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-04-v01",
+      "stem_en": "Which interpretation of the EXP coefficient of -0.70 is most appropriate?",
+      "stem_tr": "-0,70'lik EXP katsayısının hangi yorumu en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Exporters are 0.70 percentage points less likely to default.",
+          "tr": "İhracatçıların temerrüde düşme olasılığı 0,70 yüzde puanı daha düşüktür."
+        },
+        {
+          "key": "B",
+          "en": "Exports cause lower default risk in every firm.",
+          "tr": "İhracat her firmada temerrüt riskini düşürür."
+        },
+        {
+          "key": "C",
+          "en": "Exporters have lower log odds of default by 0.70, holding LEV and COV constant.",
+          "tr": "LEV ve COV sabitken ihracatçıların temerrüt log odds'u 0,70 daha düşüktür."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In a logit model, the coefficient on a dummy is the change in log odds relative to the base group; the odds are multiplied by e^-0.70 = 0.50.",
+      "explanation_tr": "Logit modelinde kukla katsayısı temel gruba göre log odds değişimidir; odds e^-0,70 = 0,50 ile çarpılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "In a logit model the coefficient changes the log odds, so the change in probability depends on the other variables and is not constant.",
+          "tr": "Logit modelinde katsayı log odds'u değiştirir; olasılık değişimi diğer değişkenlere bağlıdır ve sabit değildir."
+        },
+        "B": {
+          "en": "A regression coefficient shows an association in the sample, not a guaranteed causal effect for every firm.",
+          "tr": "Regresyon katsayısı örneklemdeki ilişkiyi gösterir; her firma için kesin nedensel etkiyi göstermez."
+        }
+      },
+      "vocab_ids": [
+        "log-odds",
+        "dummy-variable",
+        "coefficient",
+        "association",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

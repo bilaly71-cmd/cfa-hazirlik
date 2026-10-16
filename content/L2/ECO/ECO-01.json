@@ -1,0 +1,407 @@
+{
+  "module_id": "ECO-01",
+  "vignettes": [
+    {
+      "id": "L2-ECO-01-v01",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "curriculum_year": 2027,
+      "title_en": "A Carry Trade in USD/TRY",
+      "title_tr": "USD/TRY'de Carry Trade",
+      "text_en": "Murat Tekin is a currency strategist at the fictional bank Galata Menkul. He is analysing USD/TRY, quoted as TRY per 1 USD (USD is the foreign currency and TRY the domestic currency). The spot rate is 40.00. The one-year TRY interest rate is 45.0% and the one-year USD interest rate is 4.5%. Expected annual inflation is 35.0% in Turkey and 3.0% in the United States.\nA client, Zeynep Arslan, runs a small family office. She proposes a carry trade: borrow USD 1,000 for one year at 4.5%, convert it into TRY at the spot rate, invest in a one-year TRY deposit at 45.0%, and convert the proceeds back into USD at the spot rate prevailing in one year, without hedging. Murat points out that the TRY has lost value in most years and that foreign investors hold much of the Turkish bond market.\nHe also notes that Turkey runs a persistent current account deficit that is financed mostly by short-term portfolio inflows, while foreign exchange reserves are limited. Murat uses covered interest rate parity for the forward rate and relative purchasing power parity for a long-run expected spot rate. Zeynep asks what happens if the spot rate in one year is 52.00.",
+      "text_tr": "Murat Tekin, kurgusal Galata Menkul bankasında döviz stratejistidir. USD/TRY paritesini inceliyor; kur 1 USD için TL cinsinden verilmiştir (USD yabancı para, TL yerli para). Spot kur 40,00. Bir yıllık TL faizi %45,0, bir yıllık USD faizi %4,5. Beklenen yıllık enflasyon Türkiye'de %35,0, ABD'de %3,0.\nBir müşteri olan Zeynep Arslan küçük bir aile ofisi yönetiyor. Bir carry trade öneriyor: bir yıl için %4,5'ten 1,000 USD borçlanmak, spot kurdan TL'ye çevirmek, bir yıllık %45,0 faizli TL mevduata yatırmak ve bir yıl sonraki spot kurdan, riskten korunmadan, USD'ye geri çevirmek. Murat, TL'nin çoğu yıl değer kaybettiğini ve yabancı yatırımcıların Türk tahvil piyasasının büyük bölümünü elinde tuttuğunu belirtiyor.\nAyrıca Türkiye'nin kalıcı bir cari açık verdiğini, bunun çoğunlukla kısa vadeli portföy girişleriyle finanse edildiğini ve döviz rezervlerinin sınırlı olduğunu not ediyor. Murat forward kur için örtülü faiz paritesini, uzun vadeli beklenen spot kur için göreli satın alma gücü paritesini kullanıyor. Zeynep, bir yıl sonraki spot kur 52,00 olursa ne olacağını soruyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Market inputs",
+          "title_tr": "Gösterge 1: Piyasa girdileri",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Spot USD/TRY (TRY per USD)",
+              "40.00"
+            ],
+            [
+              "1-year TRY rate",
+              "45.0%"
+            ],
+            [
+              "1-year USD rate",
+              "4.5%"
+            ],
+            [
+              "Expected inflation: Turkey / US",
+              "35.0% / 3.0%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-ECO-01-v01-q1",
+        "L2-ECO-01-v01-q2",
+        "L2-ECO-01-v01-q3",
+        "L2-ECO-01-v01-q4",
+        "L2-ECO-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-ECO-01-v01-q1",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "los_id": "ECO-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ECO-01-v01",
+      "stem_en": "Using covered interest rate parity, the one-year forward USD/TRY rate is closest to:",
+      "stem_tr": "Örtülü faiz paritesine göre bir yıllık forward USD/TRY kuru en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "55.50",
+          "tr": "55,50",
+          "value": 55.5
+        },
+        {
+          "key": "B",
+          "en": "56.20",
+          "tr": "56,20",
+          "value": 56.2
+        },
+        {
+          "key": "C",
+          "en": "28.83",
+          "tr": "28,83",
+          "value": 28.83
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "F = S x (1 + r_domestic)/(1 + r_foreign) = 40.00 x 1.45/1.045 = 55.50. The higher TRY rate implies a forward premium for USD.",
+      "explanation_tr": "F = S x (1 + r_yerli)/(1 + r_yabancı) = 40,00 x 1,45/1,045 = 55,50. Yüksek TL faizi USD için forward primi anlamına gelir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It subtracts the interest rates instead of using the ratio of (1 + rate) terms.",
+          "tr": "Faizleri (1 + faiz) oranı yerine çıkararak kullanır."
+        },
+        "C": {
+          "en": "It inverts the ratio, which would be right only if the quote were USD per TRY.",
+          "tr": "Oranı ters çevirir; bu ancak kur TL başına USD olarak verilseydi doğru olurdu."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the forward rate (TRY per USD).",
+          "tr": "Forward kur (USD başına TL) isteniyor."
+        },
+        {
+          "en": "F = S x (1 + r_d)/(1 + r_f) for a quote of domestic per foreign.",
+          "tr": "Yerli/yabancı kotasyonu için F = S x (1 + r_y)/(1 + r_yb)."
+        },
+        {
+          "en": "40.00 x 1.45 / 1.045.",
+          "tr": "40,00 x 1,45 / 1,045."
+        },
+        {
+          "en": "Result: 55.50.",
+          "tr": "Sonuç: 55,50."
+        }
+      ],
+      "numeric": {
+        "expr": "40.00*(1.45)/(1.045)"
+      },
+      "vocab_ids": [
+        "covered-interest-parity",
+        "forward-rate",
+        "spot-rate",
+        "forward-premium",
+        "no-arbitrage"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-01-v01-q2",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "los_id": "ECO-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-ECO-01-v01",
+      "stem_en": "The forward rate relative to spot implies that the TRY trades at a:",
+      "stem_tr": "Forward kurun spot kura göre durumu, TL'nin şu durumda işlem gördüğünü ima eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Forward premium against the USD of about 38.8%",
+          "tr": "USD karşısında yaklaşık %38,8 forward primde"
+        },
+        {
+          "key": "B",
+          "en": "Forward discount against the USD of about 38.8%",
+          "tr": "USD karşısında yaklaşık %38,8 forward iskontoda"
+        },
+        {
+          "key": "C",
+          "en": "Forward discount against the USD of about 10.0%",
+          "tr": "USD karşısında yaklaşık %10,0 forward iskontoda"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "F/S - 1 = 55.50/40.00 - 1 = 38.8%. More TRY are needed to buy one USD in the future, so the TRY is at a forward discount against the USD.",
+      "explanation_tr": "F/S - 1 = 55,50/40,00 - 1 = %38,8. Gelecekte bir USD için daha çok TL gerekir; TL, USD karşısında forward iskontodadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The TRY has the higher interest rate, so it must trade at a forward discount; it is the USD that is at a premium.",
+          "tr": "Faizi yüksek olan TL'dir, bu yüzden forward iskontoda işlem görmelidir; primde olan USD'dir."
+        },
+        "C": {
+          "en": "The 10% figure is the simple interest-rate gap in the wrong place; the size of the discount is F/S - 1 = 38.8%.",
+          "tr": "Yüzde 10 rakamı yanlış kurulmuş basit faiz farkıdır; iskonto büyüklüğü F/S - 1 = %38,8'dir."
+        }
+      },
+      "vocab_ids": [
+        "forward-discount",
+        "forward-premium",
+        "interest-rate-parity",
+        "forward-rate",
+        "depreciation"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-01-v01-q3",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "los_id": "ECO-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-ECO-01-v01",
+      "stem_en": "Using relative purchasing power parity and the expected inflation rates, the expected spot USD/TRY rate in one year is closest to:",
+      "stem_tr": "Göreli satın alma gücü paritesi ve beklenen enflasyon oranlarına göre bir yıl sonraki beklenen spot USD/TRY kuru en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "52.80",
+          "tr": "52,80",
+          "value": 52.8
+        },
+        {
+          "key": "B",
+          "en": "55.50",
+          "tr": "55,50",
+          "value": 55.5
+        },
+        {
+          "key": "C",
+          "en": "52.43",
+          "tr": "52,43",
+          "value": 52.43
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "E(S1) = S x (1 + inflation_TR)/(1 + inflation_US) = 40.00 x 1.35/1.03 = 52.43. The TRY is expected to depreciate by about 31% in USD terms.",
+      "explanation_tr": "E(S1) = S x (1 + enflasyon_TR)/(1 + enflasyon_ABD) = 40,00 x 1,35/1,03 = 52,43. TL'nin USD karşısında yaklaşık %31 değer kaybetmesi beklenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It subtracts the inflation rates instead of using the ratio of (1 + inflation) terms.",
+          "tr": "Enflasyon oranlarını (1 + enflasyon) oranı yerine çıkararak kullanır."
+        },
+        "B": {
+          "en": "This is the forward rate from interest rate parity, not the PPP-based expected spot rate.",
+          "tr": "Bu faiz paritesinden gelen forward kurdur, PPP temelli beklenen spot kur değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the expected spot rate from relative PPP.",
+          "tr": "Göreli PPP'den beklenen spot kur isteniyor."
+        },
+        {
+          "en": "E(S1) = S x (1 + inflation_domestic)/(1 + inflation_foreign).",
+          "tr": "E(S1) = S x (1 + enflasyon_yerli)/(1 + enflasyon_yabancı)."
+        },
+        {
+          "en": "40.00 x 1.35/1.03.",
+          "tr": "40,00 x 1,35/1,03."
+        },
+        {
+          "en": "Result: 52.43.",
+          "tr": "Sonuç: 52,43."
+        }
+      ],
+      "numeric": {
+        "expr": "40.00*1.35/1.03"
+      },
+      "vocab_ids": [
+        "purchasing-power-parity",
+        "real-exchange-rate",
+        "nominal-exchange-rate",
+        "depreciation",
+        "inflation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-01-v01-q4",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "los_id": "ECO-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-ECO-01-v01",
+      "stem_en": "If the spot rate in one year is 52.00, the carry trade on USD 1,000 produces a profit in USD, after repaying the loan with interest, closest to:",
+      "stem_tr": "Bir yıl sonraki spot kur 52,00 olursa, 1,000 USD'lik carry trade krediyi faiziyle geri ödedikten sonra USD cinsinden yaklaşık ne kadar kâr getirir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "70.4",
+          "tr": "70,4",
+          "value": 70.4
+        },
+        {
+          "key": "B",
+          "en": "405.0",
+          "tr": "405,0",
+          "value": 405.0
+        },
+        {
+          "key": "C",
+          "en": "115.4",
+          "tr": "115,4",
+          "value": 115.4
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "USD 1,000 buys TRY 40,000, grows to TRY 58,000, and converts to USD 1,115.4 at 52.00. The loan costs USD 1,045. Profit = 70.4.",
+      "explanation_tr": "1,000 USD, 40,000 TL alır; 58,000 TL'ye büyür ve 52,00 kurundan 1,115,4 USD eder. Kredi maliyeti 1,045 USD. Kâr = 70,4.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It ignores the TRY depreciation and subtracts the two interest rates only.",
+          "tr": "TL'deki değer kaybını yok sayıp yalnızca iki faizi çıkarır."
+        },
+        "C": {
+          "en": "It forgets to repay the USD loan with 4.5% interest and uses only the 1,000 principal.",
+          "tr": "USD krediyi %4,5 faiziyle geri ödemeyi unutur, yalnızca 1,000 anaparayı çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the USD profit on the unhedged carry trade.",
+          "tr": "Riskten korunmasız carry trade'in USD kârı isteniyor."
+        },
+        {
+          "en": "Convert USD 1,000 to TRY, add 45% interest and convert back at the new spot.",
+          "tr": "1,000 USD'yi TL'ye çevir, %45 faiz ekle, yeni spot kurdan geri çevir."
+        },
+        {
+          "en": "1,000 x 1.45 x 40 / 52 - 1,000 x 1.045.",
+          "tr": "1,000 x 1,45 x 40 / 52 - 1,000 x 1,045."
+        },
+        {
+          "en": "Result: USD 70.4.",
+          "tr": "Sonuç: 70,4 USD."
+        }
+      ],
+      "numeric": {
+        "expr": "1000*((1.45)*40/52-1.045)"
+      },
+      "vocab_ids": [
+        "carry-trade",
+        "spot-rate",
+        "depreciation",
+        "currency-risk",
+        "profit-or-loss"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-ECO-01-v01-q5",
+      "level": "L2",
+      "topic": "ECO",
+      "module_id": "ECO-01",
+      "los_id": "ECO-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-ECO-01-v01",
+      "stem_en": "Considering Turkey's current account deficit financed by short-term inflows and limited reserves, which statement about Zeynep's carry trade is most appropriate?",
+      "stem_tr": "Türkiye'nin kısa vadeli girişlerle finanse edilen cari açığı ve sınırlı rezervleri göz önüne alındığında, Zeynep'in carry trade'i hakkında hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It is risk-free because covered interest rate parity guarantees the forward rate.",
+          "tr": "Risksizdir çünkü örtülü faiz paritesi forward kuru garanti eder."
+        },
+        {
+          "key": "B",
+          "en": "It will always lose, because relative PPP always holds in the short run.",
+          "tr": "Her zaman kaybettirir çünkü göreli PPP kısa vadede her zaman geçerlidir."
+        },
+        {
+          "key": "C",
+          "en": "It can earn the interest gap in calm years, but it faces sharp loss risk if inflows reverse and the TRY falls abruptly.",
+          "tr": "Sakin yıllarda faiz farkını kazanabilir, ancak girişler tersine dönüp TL ani değer kaybederse keskin zarar riski taşır."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Because uncovered interest parity often fails, carry trades can earn the interest gap for a while, but the return profile has crash risk when capital flows suddenly reverse.",
+      "explanation_tr": "Örtülmemiş faiz paritesi sıkça tutmadığı için carry trade bir süre faiz farkını kazandırabilir; ancak sermaye akımları aniden tersine dönerse getiri profili çöküş riski taşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Covered parity applies only if the position is hedged with a forward. This trade is unhedged, so it carries currency risk.",
+          "tr": "Örtülü parite yalnızca pozisyon forward ile korunmuşsa geçerlidir. Bu işlem korunmasızdır, dolayısıyla kur riski taşır."
+        },
+        "B": {
+          "en": "PPP is a long-run tendency and often fails in the short run; carry trades have sometimes earned the interest gap.",
+          "tr": "PPP uzun vadeli bir eğilimdir ve kısa vadede sıkça tutmaz; carry trade bazen faiz farkını kazandırmıştır."
+        }
+      },
+      "vocab_ids": [
+        "uncovered-interest-parity",
+        "capital-flows",
+        "current-account",
+        "carry-trade",
+        "crash"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

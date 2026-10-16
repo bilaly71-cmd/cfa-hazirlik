@@ -1,0 +1,398 @@
+{
+  "module_id": "FSA-02",
+  "vignettes": [
+    {
+      "id": "L2-FSA-02-v01",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "curriculum_year": 2027,
+      "title_en": "Kuzey Enerji Pension and Option Plans",
+      "title_tr": "Kuzey Enerji Emeklilik ve Opsiyon Planları",
+      "text_en": "Kuzey Enerji reports under IFRS and sponsors a defined benefit pension plan. The discount rate is 6%. At the start of 2026 the projected benefit obligation (PBO) was TL 500 million and plan assets were TL 450 million. During 2026 the current service cost was TL 40 million, the company contributed TL 30 million, and retirees received benefits of TL 25 million from the plan. Actuarial assumptions changed and created an actuarial loss of TL 15 million. The actual return on plan assets was TL 36 million. Separately, on 1 January 2026 Kuzey granted 200,000 share options with a fair value of TL 5.00 each to its managers. The options vest at the end of four years of service, and management expects 10% of the options to be forfeited. An analyst is also testing how sensitive the PBO is to the discount rate. The plan is closed to new members and the assumptions are set by an independent actuary.",
+      "text_tr": "Kuzey Enerji, UFRS'ye göre raporlama yapar ve tanımlanmış fayda planı yürütür. İskonto oranı %6'dır. 2026 başında projeksiyon fayda yükümlülüğü (PBO) 500 milyon TL, plan varlıkları 450 milyon TL idi. 2026'da cari hizmet maliyeti 40 milyon TL, şirket katkısı 30 milyon TL, emeklilere plandan ödenen fayda 25 milyon TL olmuştur. Aktüeryal varsayımlar değişmiş ve 15 milyon TL aktüeryal zarar doğmuştur. Plan varlıklarının fiili getirisi 36 milyon TL'dir. Ayrıca Kuzey, 1 Ocak 2026'da yöneticilerine gerçeğe uygun değeri opsiyon başına 5,00 TL olan 200.000 hisse opsiyonu vermiştir. Opsiyonlar dört yıllık hizmet sonunda hak edilir ve yönetim opsiyonların %10'unun kullanılmayacağını (iptal) bekler. Analist ayrıca PBO'nun iskonto oranına duyarlılığını test ediyor. Plan yeni üyelere kapalıdır ve varsayımları bağımsız bir aktüer belirler.",
+      "tables": [
+        {
+          "title_en": "Pension plan data, 2026 (TL million)",
+          "title_tr": "Emeklilik planı verileri, 2026 (milyon TL)",
+          "headers": [
+            "Item",
+            "PBO",
+            "Plan assets"
+          ],
+          "rows": [
+            [
+              "Beginning balance",
+              "500",
+              "450"
+            ],
+            [
+              "Service cost / contributions",
+              "40",
+              "30"
+            ],
+            [
+              "Benefits paid",
+              "25",
+              "25"
+            ],
+            [
+              "Actuarial loss / actual return",
+              "15",
+              "36"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FSA-02-v01-q1",
+        "L2-FSA-02-v01-q2",
+        "L2-FSA-02-v01-q3",
+        "L2-FSA-02-v01-q4",
+        "L2-FSA-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FSA-02-v01-q1",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-02-v01",
+      "stem_en": "What is the funded status of the plan at 31 December 2026?",
+      "stem_tr": "Planın 31 Aralık 2026 itibarıyla fonlanma durumu nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Underfunded by TL 69 million",
+          "tr": "69 milyon TL yetersiz fonlanmış",
+          "value": -69.0
+        },
+        {
+          "key": "B",
+          "en": "Underfunded by TL 54 million",
+          "tr": "54 milyon TL yetersiz fonlanmış",
+          "value": -54.0
+        },
+        {
+          "key": "C",
+          "en": "Underfunded by TL 105 million",
+          "tr": "105 milyon TL yetersiz fonlanmış",
+          "value": -105.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "PBO = 500 + 40 service + 30 interest (6% x 500) - 25 benefits + 15 loss = 560. Plan assets = 450 + 30 + 36 - 25 = 491. Funded status = 491 - 560 = -69.",
+      "explanation_tr": "PBO = 500 + 40 hizmet + 30 faiz (%6 x 500) - 25 fayda + 15 zarar = 560. Plan varlıkları = 450 + 30 + 36 - 25 = 491. Fonlanma durumu = 491 - 560 = -69.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Leaves out the actuarial loss of 15 from the PBO roll-forward.",
+          "tr": "PBO ilerletmesinde 15'lik aktüeryal zararı dışarıda bırakır."
+        },
+        "C": {
+          "en": "Omits the actual return on plan assets of 36 from the asset roll-forward.",
+          "tr": "Varlık ilerletmesinde 36'lık fiili getiriyi atlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "PBO end = 560",
+          "tr": "Dönem sonu PBO = 560"
+        },
+        {
+          "en": "Plan assets end = 491",
+          "tr": "Dönem sonu plan varlıkları = 491"
+        },
+        {
+          "en": "491 - 560 = -69",
+          "tr": "491 - 560 = -69"
+        }
+      ],
+      "vocab_ids": [
+        "pension-fund",
+        "obligation",
+        "discount-rate",
+        "asset"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "450+30-25+36-(500+40+0.06*500-25+15)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-02-v01-q2",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-02-v01",
+      "stem_en": "Under IFRS, the pension cost recognized in profit or loss for 2026 is:",
+      "stem_tr": "UFRS'ye göre 2026'da kâr veya zararda muhasebeleştirilen emeklilik maliyeti şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 70 million",
+          "tr": "70 milyon TL",
+          "value": 70.0
+        },
+        {
+          "key": "B",
+          "en": "TL 43 million",
+          "tr": "43 milyon TL",
+          "value": 43.0
+        },
+        {
+          "key": "C",
+          "en": "TL 49 million",
+          "tr": "49 milyon TL",
+          "value": 49.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "P&L cost = current service cost 40 + net interest 0.06 x (500 - 450) = 3, total 43. Remeasurements go to OCI.",
+      "explanation_tr": "Kâr/zarar maliyeti = cari hizmet maliyeti 40 + net faiz 0,06 x (500 - 450) = 3; toplam 43. Yeniden ölçümler DKG'ye gider.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses gross interest cost on the PBO; IFRS uses net interest on the net liability (PBO less assets).",
+          "tr": "PBO üzerinden brüt faiz maliyetini kullanır; UFRS net yükümlülük (PBO eksi varlıklar) üzerinden net faiz kullanır."
+        },
+        "C": {
+          "en": "Includes remeasurements (loss 15, gain 9), which IFRS records in other comprehensive income, not profit or loss.",
+          "tr": "Yeniden ölçümleri (zarar 15, kazanç 9) içerir; UFRS bunları kâr/zararda değil, diğer kapsamlı gelirde izler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Net interest: 0.06 x (500 - 450) = 3",
+          "tr": "Net faiz: 0,06 x (500 - 450) = 3"
+        },
+        {
+          "en": "40 + 3 = 43",
+          "tr": "40 + 3 = 43"
+        }
+      ],
+      "vocab_ids": [
+        "profit-or-loss",
+        "remeasurement",
+        "pension-fund",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "40+0.06*(500-450)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-02-v01-q3",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-02-v01",
+      "stem_en": "Total periodic pension cost (profit or loss plus OCI) for 2026 is closest to:",
+      "stem_tr": "2026 toplam dönemsel emeklilik maliyeti (kâr/zarar artı DKG) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 67 million",
+          "tr": "67 milyon TL",
+          "value": 67.0
+        },
+        {
+          "key": "B",
+          "en": "TL 58 million",
+          "tr": "58 milyon TL",
+          "value": 58.0
+        },
+        {
+          "key": "C",
+          "en": "TL 49 million",
+          "tr": "49 milyon TL",
+          "value": 49.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Total cost = P&L cost 43 + actuarial loss 15 - return on assets above interest income (36 - 27 = 9) = 49. Check: funded status moved from -50 to -69 (change -19); -49 + 30 contribution = -19.",
+      "explanation_tr": "Toplam maliyet = kâr/zarar maliyeti 43 + aktüeryal zarar 15 - faiz gelirini aşan varlık getirisi (36 - 27 = 9) = 49. Kontrol: fonlanma durumu -50'den -69'a indi (-19); -49 + 30 katkı = -19.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the asset gain of 9 instead of subtracting it; a gain reduces total cost.",
+          "tr": "9'luk varlık kazancını düşmek yerine ekler; kazanç toplam maliyeti azaltır."
+        },
+        "B": {
+          "en": "Includes the actuarial loss but ignores the gain on plan assets above interest income (36 - 27 = 9).",
+          "tr": "Aktüeryal zararı içerir ancak faiz gelirini aşan varlık kazancını (36 - 27 = 9) dikkate almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Interest income on assets: 0.06 x 450 = 27",
+          "tr": "Varlıklarda faiz geliri: 0,06 x 450 = 27"
+        },
+        {
+          "en": "Asset remeasurement gain: 36 - 27 = 9",
+          "tr": "Varlık yeniden ölçüm kazancı: 36 - 27 = 9"
+        },
+        {
+          "en": "43 + 15 - 9 = 49",
+          "tr": "43 + 15 - 9 = 49"
+        }
+      ],
+      "vocab_ids": [
+        "pension-fund",
+        "actuarial",
+        "contribution",
+        "funded-status"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "40+0.06*(500-450)+15-(36-0.06*450)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-02-v01-q4",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-02-v01",
+      "stem_en": "What compensation expense (TL thousands) does Kuzey recognize for the options in 2026?",
+      "stem_tr": "Kuzey, opsiyonlar için 2026'da kaç bin TL tutarında ücret gideri muhasebeleştirir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 225 thousand",
+          "tr": "225 bin TL",
+          "value": 225.0
+        },
+        {
+          "key": "B",
+          "en": "TL 250 thousand",
+          "tr": "250 bin TL",
+          "value": 250.0
+        },
+        {
+          "key": "C",
+          "en": "TL 900 thousand",
+          "tr": "900 bin TL",
+          "value": 900.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Total expense = 200,000 x (1 - 10%) x TL 5 = TL 900,000, spread over 4 years = TL 225,000 per year.",
+      "explanation_tr": "Toplam gider = 200.000 x (1 - %10) x 5 TL = 900.000 TL; 4 yıla yayılınca yılda 225.000 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores the expected 10% forfeitures.",
+          "tr": "Beklenen %10 iptali dikkate almaz."
+        },
+        "C": {
+          "en": "Expenses the whole grant in one year instead of spreading it over the 4-year vesting period.",
+          "tr": "Hibenin tamamını, 4 yıllık hak ediş süresine yaymak yerine tek yılda gider yazar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "200,000 x 0.9 x 5 = 900,000",
+          "tr": "200.000 x 0,9 x 5 = 900.000"
+        },
+        {
+          "en": "900,000 / 4 = 225,000",
+          "tr": "900.000 / 4 = 225.000"
+        }
+      ],
+      "vocab_ids": [
+        "option",
+        "grant-date",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "200000*0.9*5/4/1000",
+        "unit": "TL thousand"
+      }
+    },
+    {
+      "id": "L2-FSA-02-v01-q5",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-02",
+      "los_id": "FSA-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-02-v01",
+      "stem_en": "If the analyst raises the discount rate from 6% to 7%, holding other assumptions constant, the most likely effect is that the:",
+      "stem_tr": "Analist, diğer varsayımlar sabitken iskonto oranını %6'dan %7'ye çıkarırsa en olası etki şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "PBO increases because interest cost is higher",
+          "tr": "PBO artar, çünkü faiz maliyeti yükselir"
+        },
+        {
+          "key": "B",
+          "en": "PBO decreases because future benefits are discounted more heavily",
+          "tr": "PBO azalır, çünkü gelecekteki faydalar daha yüksek oranla iskonto edilir"
+        },
+        {
+          "key": "C",
+          "en": "PBO is unchanged because benefits are already fixed",
+          "tr": "PBO değişmez, çünkü faydalar zaten sabittir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The PBO is the present value of expected future benefits. A higher discount rate lowers that present value, so the PBO falls (and the funded status improves).",
+      "explanation_tr": "PBO, beklenen gelecek faydaların bugünkü değeridir. Daha yüksek iskonto oranı bu bugünkü değeri düşürür; PBO azalır (fonlanma durumu iyileşir).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Interest cost rises, but the lower present value of the benefits dominates; the obligation falls.",
+          "tr": "Faiz maliyeti artar, ancak faydaların daha düşük bugünkü değeri baskındır; yükümlülük azalır."
+        },
+        "C": {
+          "en": "The PBO is a present value, so it depends directly on the discount rate.",
+          "tr": "PBO bir bugünkü değerdir; iskonto oranına doğrudan bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discount-rate",
+        "present-value",
+        "obligation",
+        "sensitivity",
+        "assumption"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

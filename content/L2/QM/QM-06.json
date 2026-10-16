@@ -1,0 +1,437 @@
+{
+  "module_id": "QM-06",
+  "vignettes": [
+    {
+      "id": "L2-QM-06-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "curriculum_year": 2027,
+      "title_en": "Fraud Detection at a Participation Bank",
+      "title_tr": "Bir Katılım Bankasında Sahtekârlık Tespiti",
+      "text_en": "Burak Çelik leads the data science team at the fictional bank Ege Katılım. The team has built a supervised classifier to flag fraudulent card transactions. The model was tested on 1,000 labelled transactions, and the results are in Exhibit 1: of the 75 transactions that were truly fraudulent, the model caught 45; it also flagged 15 genuine transactions as fraud.\nBurak worries about two things. First, the head of risk says the model has 95.5% accuracy and is therefore excellent. Burak notes that only 7.5% of the transactions are fraudulent. Second, Burak compares three candidate algorithms using the training error and the validation error (Exhibit 2). The model builder wants to pick the deep decision tree because it has the lowest training error.\nA third idea is to apply a LASSO penalty to a logistic model with 200 customer features. A junior colleague also asks whether an unsupervised method such as k-means clustering could replace the classifier. Burak explains that the fraud labels are available and that the goal is to predict a known outcome.",
+      "text_tr": "Burak Çelik, kurgusal Ege Katılım bankasının veri bilimi ekibini yönetiyor. Ekip, sahte kart işlemlerini işaretlemek için gözetimli bir sınıflandırıcı kurdu. Model, etiketli 1,000 işlemde test edildi ve sonuçlar Gösterge 1'de: gerçekten sahte olan 75 işlemin 45'ini model yakaladı; ayrıca 15 gerçek işlemi sahte olarak işaretledi.\nBurak iki noktadan endişeli. Birincisi, risk başkanı modelin %95,5 doğruluğa sahip olduğunu ve bu yüzden mükemmel olduğunu söylüyor. Burak, işlemlerin yalnızca %7,5'inin sahte olduğunu not ediyor. İkincisi, Burak üç aday algoritmayı eğitim hatası ve doğrulama hatasıyla karşılaştırıyor (Gösterge 2). Model kurucu, eğitim hatası en düşük olduğu için derin karar ağacını seçmek istiyor.\nÜçüncü fikir, 200 müşteri özelliğine sahip bir lojistik modele LASSO cezası uygulamak. Genç bir meslektaş ayrıca k-ortalamalar kümelemesi gibi gözetimsiz bir yöntemin sınıflandırıcının yerini alıp alamayacağını soruyor. Burak, sahtekârlık etiketlerinin mevcut olduğunu ve amacın bilinen bir sonucu tahmin etmek olduğunu açıklıyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Confusion matrix (n = 1,000)",
+          "title_tr": "Gösterge 1: Karışıklık matrisi (n = 1.000)",
+          "headers": [
+            "",
+            "Predicted fraud",
+            "Predicted genuine"
+          ],
+          "rows": [
+            [
+              "Actual fraud",
+              "45",
+              "30"
+            ],
+            [
+              "Actual genuine",
+              "15",
+              "910"
+            ]
+          ]
+        },
+        {
+          "title_en": "Exhibit 2: Candidate models",
+          "title_tr": "Gösterge 2: Aday modeller",
+          "headers": [
+            "Model",
+            "Training error",
+            "Validation error"
+          ],
+          "rows": [
+            [
+              "A: shallow tree",
+              "12%",
+              "14%"
+            ],
+            [
+              "B: deep tree",
+              "1%",
+              "18%"
+            ],
+            [
+              "C: very simple model",
+              "20%",
+              "21%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-06-v01-q1",
+        "L2-QM-06-v01-q2",
+        "L2-QM-06-v01-q3",
+        "L2-QM-06-v01-q4",
+        "L2-QM-06-v01-q5",
+        "L2-QM-06-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-06-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "Using Exhibit 1, the precision of the model is closest to:",
+      "stem_tr": "Gösterge 1'e göre modelin kesinliği (precision) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.75",
+          "tr": "0,75",
+          "value": 0.75
+        },
+        {
+          "key": "B",
+          "en": "0.60",
+          "tr": "0,60",
+          "value": 0.6
+        },
+        {
+          "key": "C",
+          "en": "0.95",
+          "tr": "0,95",
+          "value": 0.955
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Precision = TP / (TP + FP) = 45 / (45 + 15) = 0.75. Of the transactions flagged as fraud, 75% were truly fraud.",
+      "explanation_tr": "Kesinlik = TP / (TP + FP) = 45 / (45 + 15) = 0,75. Sahte işaretlenen işlemlerin %75'i gerçekten sahteydi.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is recall: it divides true positives by actual fraud cases (45/75).",
+          "tr": "Bu duyarlılıktır: gerçek pozitifleri gerçek sahtekârlık sayısına böler (45/75)."
+        },
+        "C": {
+          "en": "This is accuracy, which includes the true negatives.",
+          "tr": "Bu doğruluktur; gerçek negatifleri de içerir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the precision.",
+          "tr": "Kesinlik isteniyor."
+        },
+        {
+          "en": "Precision = TP / (TP + FP).",
+          "tr": "Kesinlik = TP / (TP + FP)."
+        },
+        {
+          "en": "45 / 60.",
+          "tr": "45 / 60."
+        },
+        {
+          "en": "Result: 0.75.",
+          "tr": "Sonuç: 0,75."
+        }
+      ],
+      "numeric": {
+        "expr": "45/(45+15)"
+      },
+      "vocab_ids": [
+        "precision",
+        "confusion-matrix",
+        "false-positive",
+        "supervised-learning",
+        "fraud"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-06-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "The recall of the model and the F1 score are closest to:",
+      "stem_tr": "Modelin duyarlılığı (recall) ve F1 skoru en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Recall 0.75; F1 0.675",
+          "tr": "Duyarlılık 0,75; F1 0,675"
+        },
+        {
+          "key": "B",
+          "en": "Recall 0.60; F1 0.667",
+          "tr": "Duyarlılık 0,60; F1 0,667"
+        },
+        {
+          "key": "C",
+          "en": "Recall 0.955; F1 0.955",
+          "tr": "Duyarlılık 0,955; F1 0,955"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Recall = TP / (TP + FN) = 45 / 75 = 0.60. F1 = 2 x P x R / (P + R) = 2 x 0.75 x 0.60 / 1.35 = 0.667. The model misses 40% of the frauds.",
+      "explanation_tr": "Duyarlılık = TP / (TP + FN) = 45 / 75 = 0,60. F1 = 2 x P x R / (P + R) = 2 x 0,75 x 0,60 / 1,35 = 0,667. Model sahtekârlıkların %40'ını kaçırıyor.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It swaps recall with precision and uses the arithmetic average instead of the harmonic mean for F1.",
+          "tr": "Duyarlılık ile kesinliği karıştırır ve F1 için harmonik ortalama yerine aritmetik ortalama kullanır."
+        },
+        "C": {
+          "en": "It reports accuracy for both measures; accuracy includes the many true negatives.",
+          "tr": "İkisi için de doğruluğu bildirir; doğruluk çok sayıdaki gerçek negatifi de içerir."
+        }
+      },
+      "vocab_ids": [
+        "recall",
+        "f1-score",
+        "false-negative",
+        "precision",
+        "confusion-matrix"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-06-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "Which statement about the risk head's claim that 95.5% accuracy shows the model is excellent is most appropriate?",
+      "stem_tr": "Risk başkanının %95,5 doğruluğun modelin mükemmel olduğunu gösterdiği yönündeki iddiası hakkında hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Accuracy is the best measure because it uses all 1,000 observations.",
+          "tr": "Doğruluk en iyi ölçüdür çünkü 1,000 gözlemin hepsini kullanır."
+        },
+        {
+          "key": "B",
+          "en": "Accuracy should be replaced by the training error, which is more reliable.",
+          "tr": "Doğruluk yerine daha güvenilir olan eğitim hatası kullanılmalıdır."
+        },
+        {
+          "key": "C",
+          "en": "Accuracy is misleading with imbalanced classes; a model that never flags fraud would score 92.5%.",
+          "tr": "Dengesiz sınıflarda doğruluk yanıltıcıdır; hiç sahtekârlık işaretlemeyen bir model %92,5 alırdı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Only 7.5% of cases are fraud, so predicting 'genuine' for everything would give 92.5% accuracy. Precision, recall and F1 are more informative.",
+      "explanation_tr": "Vakaların yalnızca %7,5'i sahtekârlık; her şeye 'gerçek' demek %92,5 doğruluk verirdi. Kesinlik, duyarlılık ve F1 daha bilgilendiricidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Using all observations is the weakness here: the many genuine transactions dominate the score and hide the poor recall of 0.60.",
+          "tr": "Tüm gözlemleri kullanmak burada zayıflıktır: çok sayıdaki gerçek işlem skoru domine eder ve 0,60'lık düşük duyarlılığı gizler."
+        },
+        "B": {
+          "en": "Training error is optimistic because the model has already seen those data; it is not a better evaluation measure.",
+          "tr": "Eğitim hatası iyimserdir çünkü model bu verileri zaten görmüştür; daha iyi bir değerlendirme ölçüsü değildir."
+        }
+      },
+      "vocab_ids": [
+        "confusion-matrix",
+        "precision",
+        "recall",
+        "accurate",
+        "fraud"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-06-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "Based on Exhibit 2, which conclusion is most appropriate?",
+      "stem_tr": "Gösterge 2'ye göre hangi sonuç en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Model B is overfit; Model A is likely to generalize best.",
+          "tr": "Model B aşırı uyumludur; Model A büyük olasılıkla en iyi genelleyecektir."
+        },
+        {
+          "key": "B",
+          "en": "Model B is best because its training error is lowest.",
+          "tr": "Model B en iyisidir çünkü eğitim hatası en düşüktür."
+        },
+        {
+          "key": "C",
+          "en": "Model C is best because the gap between its errors is the smallest.",
+          "tr": "Model C en iyisidir çünkü hataları arasındaki fark en küçüktür."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Model B has a large gap (1% vs 18%), a sign of overfitting. Model A has the lowest validation error (14%), so it is expected to perform best on new data.",
+      "explanation_tr": "Model B'de büyük fark (%1'e karşı %18) aşırı uyum işaretidir. Model A'nın doğrulama hatası en düşüktür (%14); yeni verilerde en iyi performansı beklenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Training error rewards memorizing the data. Model B's validation error is higher than Model A's, which shows it generalizes worse.",
+          "tr": "Eğitim hatası veriyi ezberlemeyi ödüllendirir. Model B'nin doğrulama hatası Model A'dan yüksektir; yani daha kötü genelleştirir."
+        },
+        "C": {
+          "en": "A small gap is not enough: Model C has the highest validation error, so it underfits.",
+          "tr": "Küçük fark yeterli değildir: Model C'nin doğrulama hatası en yüksektir; yetersiz uyum yapar."
+        }
+      },
+      "vocab_ids": [
+        "overfitting",
+        "training-set",
+        "out-of-sample",
+        "machine-learning",
+        "error-term"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-06-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "Applying a LASSO penalty to the logistic model with 200 features would most likely:",
+      "stem_tr": "200 özellikli lojistik modele LASSO cezası uygulamak büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Increase the number of features that the model uses.",
+          "tr": "Modelin kullandığı özellik sayısını artırır."
+        },
+        {
+          "key": "B",
+          "en": "Shrink some coefficients exactly to zero, which reduces overfitting and selects features.",
+          "tr": "Bazı katsayıları tam sıfıra çeker; aşırı uyumu azaltır ve özellik seçer."
+        },
+        {
+          "key": "C",
+          "en": "Convert the model into an unsupervised method.",
+          "tr": "Modeli gözetimsiz yönteme dönüştürür."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "LASSO adds a penalty on the sum of absolute coefficient values, so weak features get zero coefficients. This is regularization.",
+      "explanation_tr": "LASSO, mutlak katsayı değerleri toplamına ceza ekler; zayıf özellikler sıfır katsayı alır. Bu düzenlileştirmedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The penalty grows with coefficient size, so it discourages complexity and reduces the number of active features.",
+          "tr": "Ceza katsayı büyüklüğüyle artar; karmaşıklığı caydırır ve etkin özellik sayısını azaltır."
+        },
+        "C": {
+          "en": "LASSO is a penalty on a supervised model; labels are still used to fit it.",
+          "tr": "LASSO gözetimli bir modele uygulanan cezadır; model kurulurken etiketler yine kullanılır."
+        }
+      },
+      "vocab_ids": [
+        "regularization",
+        "penalty",
+        "feature",
+        "overfitting",
+        "machine-learning"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-06-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "set_id": "L2-QM-06-v01",
+      "stem_en": "The colleague suggests k-means clustering instead of the classifier. Which response is most appropriate?",
+      "stem_tr": "Meslektaş sınıflandırıcı yerine k-ortalamalar kümelemesini öneriyor. Hangi yanıt en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Suitable: clustering predicts labelled outcomes better than supervised methods.",
+          "tr": "Uygun: kümeleme etiketli sonuçları gözetimli yöntemlerden daha iyi tahmin eder."
+        },
+        {
+          "key": "B",
+          "en": "Suitable: k-means requires the labels to be one-hot encoded and then is supervised.",
+          "tr": "Uygun: k-ortalamalar için etiketlerin one-hot kodlanması gerekir ve sonra gözetimli olur."
+        },
+        {
+          "key": "C",
+          "en": "Not suitable: clustering is unsupervised and does not use the known fraud labels.",
+          "tr": "Uygun değil: kümeleme gözetimsizdir ve bilinen sahtekârlık etiketlerini kullanmaz."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Unsupervised learning finds structure without labels. With known fraud labels, a supervised classifier is the right tool for a prediction goal.",
+      "explanation_tr": "Gözetimsiz öğrenme etiket olmadan yapı bulur. Sahtekârlık etiketleri biliniyorsa tahmin amacı için doğru araç gözetimli sınıflandırıcıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Supervised methods use the labels to learn the outcome, so they are generally preferred when labels exist.",
+          "tr": "Gözetimli yöntemler sonucu öğrenmek için etiketleri kullanır; etiket varken genellikle tercih edilir."
+        },
+        "B": {
+          "en": "k-means never uses labels as a target; it groups observations only by similarity of features.",
+          "tr": "K-ortalamalar etiketi hedef olarak hiç kullanmaz; gözlemleri yalnızca özellik benzerliğine göre gruplar."
+        }
+      },
+      "vocab_ids": [
+        "unsupervised-learning",
+        "supervised-learning",
+        "cross-validation",
+        "classification",
+        "machine-learning"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

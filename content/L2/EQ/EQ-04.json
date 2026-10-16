@@ -1,0 +1,373 @@
+{
+  "module_id": "EQ-04",
+  "vignettes": [
+    {
+      "id": "L2-EQ-04-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "curriculum_year": 2027,
+      "title_en": "Toros Plastik Peer Multiples",
+      "title_tr": "Toros Plastik Emsal Çarpanları",
+      "text_en": "An analyst is valuing Toros Plastik, a Turkish packaging firm, using peer multiples. She selects four comparable listed firms. Their forward price-to-earnings ratios (P/E) are 10, 12, 13 and 25, and their EV/EBITDA multiples are 7, 8, 8 and 9. Toros forecasts earnings per share (EPS) of TL 4.00, EBITDA of TL 150 million, net debt of TL 300 million and has 50 million shares outstanding. Toros has a return on equity (ROE) of 14%, a required return on equity of 10% and a long-term sustainable growth rate of 4%. The analyst notes that the firm with the P/E of 25 has temporarily depressed earnings after a plant fire. She also observes that Toros has much more debt than most peers, so she wants a multiple that is not affected by differences in leverage. Finally, she will compare the market price of TL 52 with the values from the different methods.",
+      "text_tr": "Bir analist, Türk ambalaj firması Toros Plastik'i emsal çarpanlarla değerliyor. Dört benzer halka açık firma seçiyor. Bunların ileri fiyat/kazanç (F/K) oranları 10, 12, 13 ve 25; FD/FAVÖK çarpanları 7, 8, 8 ve 9'dur. Toros'un hisse başına kâr (HBK) tahmini 4,00 TL, FAVÖK tahmini 150 milyon TL, net borcu 300 milyon TL ve 50 milyon hissesi vardır. Toros'un özkaynak kârlılığı %14, istenen özkaynak getirisi %10 ve uzun vadeli sürdürülebilir büyümesi %4'tür. Analist, F/K'sı 25 olan firmanın bir fabrika yangını sonrasında kârının geçici olarak düşük olduğunu not ediyor. Toros'un çoğu emsalinden çok daha fazla borcu olduğunu da gözlemliyor; bu nedenle kaldıraç farklarından etkilenmeyen bir çarpan istiyor. Son olarak, 52 TL'lik piyasa fiyatını farklı yöntemlerin değerleriyle karşılaştıracak.",
+      "tables": [
+        {
+          "title_en": "Peer multiples",
+          "title_tr": "Emsal çarpanları",
+          "headers": [
+            "Peer",
+            "Forward P/E",
+            "EV/EBITDA"
+          ],
+          "rows": [
+            [
+              "P1",
+              "10",
+              "7"
+            ],
+            [
+              "P2",
+              "12",
+              "8"
+            ],
+            [
+              "P3",
+              "13",
+              "8"
+            ],
+            [
+              "P4",
+              "25",
+              "9"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-04-v01-q1",
+        "L2-EQ-04-v01-q2",
+        "L2-EQ-04-v01-q3",
+        "L2-EQ-04-v01-q4",
+        "L2-EQ-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-04-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-04-v01",
+      "stem_en": "Using the median peer forward P/E, the value per share is:",
+      "stem_tr": "Medyan emsal ileri F/K ile hisse başına değer şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 50.00",
+          "tr": "50,00 TL",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "TL 60.00",
+          "tr": "60,00 TL",
+          "value": 60.0
+        },
+        {
+          "key": "C",
+          "en": "TL 40.00",
+          "tr": "40,00 TL",
+          "value": 40.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The median of 10, 12, 13 and 25 is (12 + 13) / 2 = 12.5. Value = 12.5 x 4.00 = TL 50.00. The median is less affected by the unusual 25.",
+      "explanation_tr": "10, 12, 13 ve 25'in medyanı (12 + 13) / 2 = 12,5'tir. Değer = 12,5 x 4,00 = 50,00 TL. Medyan, sıra dışı 25'ten daha az etkilenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses the mean P/E (15), which is pulled up by the outlier of 25.",
+          "tr": "25'lik aykırı değerin yukarı çektiği ortalama F/K'yı (15) kullanır."
+        },
+        "C": {
+          "en": "Uses the lowest P/E instead of the median.",
+          "tr": "Medyan yerine en düşük F/K'yı kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Median = 12.5",
+          "tr": "Medyan = 12,5"
+        },
+        {
+          "en": "12.5 x 4 = 50.00",
+          "tr": "12,5 x 4 = 50,00"
+        }
+      ],
+      "vocab_ids": [
+        "median",
+        "outlier",
+        "peer",
+        "multiple"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "12.5*4",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-04-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-04-v01",
+      "stem_en": "Using the median EV/EBITDA, the equity value per share is:",
+      "stem_tr": "Medyan FD/FAVÖK ile hisse başına özkaynak değeri şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 24.00",
+          "tr": "24,00 TL",
+          "value": 24.0
+        },
+        {
+          "key": "B",
+          "en": "TL 18.00",
+          "tr": "18,00 TL",
+          "value": 18.0
+        },
+        {
+          "key": "C",
+          "en": "TL 30.00",
+          "tr": "30,00 TL",
+          "value": 30.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Enterprise value = 8 x 150 = 1,200. Equity = 1,200 - 300 = 900. Per share = 900 / 50 = TL 18.00.",
+      "explanation_tr": "Firma değeri = 8 x 150 = 1.200. Özkaynak = 1.200 - 300 = 900. Hisse başına = 900 / 50 = 18,00 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Does not subtract net debt from enterprise value.",
+          "tr": "Net borcu firma değerinden düşmez."
+        },
+        "C": {
+          "en": "Adds net debt to get equity value.",
+          "tr": "Özkaynak değerine ulaşmak için net borcu ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "EV = 1,200",
+          "tr": "FD = 1.200"
+        },
+        {
+          "en": "Equity = 900",
+          "tr": "Özkaynak = 900"
+        },
+        {
+          "en": "900 / 50 = 18.00",
+          "tr": "900 / 50 = 18,00"
+        }
+      ],
+      "vocab_ids": [
+        "enterprise-value",
+        "ebitda",
+        "net-debt",
+        "multiple"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(8*150-300)/50",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-04-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-04-v01",
+      "stem_en": "The justified price-to-book ratio (P/B) for Toros is:",
+      "stem_tr": "Toros için gerekçeli piyasa değeri/defter değeri (PD/DD) oranı şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.67",
+          "tr": "0,67",
+          "value": 0.666667
+        },
+        {
+          "key": "B",
+          "en": "1.40",
+          "tr": "1,40",
+          "value": 1.4
+        },
+        {
+          "key": "C",
+          "en": "1.67",
+          "tr": "1,67",
+          "value": 1.666667
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Justified P/B = (ROE - g) / (r - g) = (0.14 - 0.04) / (0.10 - 0.04) = 1.67. A firm earning ROE above its required return deserves a P/B above 1.",
+      "explanation_tr": "Gerekçeli PD/DD = (ÖKK - g) / (r - g) = (0,14 - 0,04) / (0,10 - 0,04) = 1,67. İstenen getirinin üzerinde ÖKK kazanan firma 1'in üzerinde bir PD/DD hak eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses (ROE - r) in the numerator; the formula uses (ROE - g).",
+          "tr": "Payda (ÖKK - r) kullanır; formül (ÖKK - g) kullanır."
+        },
+        "B": {
+          "en": "Ignores growth; the justified P/B is (ROE - g) / (r - g).",
+          "tr": "Büyümeyi yok sayar; gerekçeli PD/DD (ÖKK - g) / (r - g)'dir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(0.14 - 0.04) / (0.10 - 0.04) = 1.67",
+          "tr": "(0,14 - 0,04) / (0,10 - 0,04) = 1,67"
+        }
+      ],
+      "vocab_ids": [
+        "price-to-book",
+        "justified-multiple",
+        "return-on-equity",
+        "growth",
+        "required-return"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(0.14-0.04)/(0.10-0.04)"
+      }
+    },
+    {
+      "id": "L2-EQ-04-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-04-v01",
+      "stem_en": "Why is EV/EBITDA a better choice than P/E for comparing Toros with its peers?",
+      "stem_tr": "Toros'u emsalleriyle karşılaştırmak için FD/FAVÖK neden F/K'dan daha iyi bir seçimdir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Enterprise value and EBITDA are both measured before the effect of capital structure, so leverage differences matter less",
+          "tr": "Firma değeri ve FAVÖK sermaye yapısının etkisinden önce ölçülür; bu yüzden kaldıraç farkları daha az önem taşır"
+        },
+        {
+          "key": "B",
+          "en": "EBITDA is always positive and P/E is not",
+          "tr": "FAVÖK her zaman pozitiftir, F/K değildir"
+        },
+        {
+          "key": "C",
+          "en": "EV/EBITDA captures differences in dividend policy",
+          "tr": "FD/FAVÖK temettü politikası farklarını yakalar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Interest expense is deducted before EPS, so high leverage distorts P/E. EV includes debt and EBITDA is before interest, so the multiple is more comparable across firms with different debt levels.",
+      "explanation_tr": "Faiz gideri HBK'dan önce düşüldüğünden yüksek kaldıraç F/K'yı bozar. FD borcu içerir ve FAVÖK faizden öncedir; bu nedenle çarpan, borç düzeyleri farklı firmalar arasında daha karşılaştırılabilirdir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is not the main reason here; negative earnings are not the issue for Toros.",
+          "tr": "Burada asıl neden bu değildir; Toros için sorun negatif kâr değildir."
+        },
+        "C": {
+          "en": "Dividend policy does not enter EV/EBITDA.",
+          "tr": "Temettü politikası FD/FAVÖK'e girmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "enterprise-value",
+        "leverage",
+        "ebitda",
+        "capital-structure"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-EQ-04-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-04-v01",
+      "stem_en": "Comparing the TL 52 market price with the two values (TL 50.00 from P/E and TL 18.00 from EV/EBITDA), the analyst should conclude that:",
+      "stem_tr": "52 TL'lik piyasa fiyatını iki değerle (F/K'dan 50,00 TL, FD/FAVÖK'ten 18,00 TL) karşılaştıran analist şu sonuca varmalıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "The stock is overvalued because one method gives TL 18.00",
+          "tr": "Bir yöntem 18,00 TL verdiği için hisse pahalıdır"
+        },
+        {
+          "key": "B",
+          "en": "The methods give widely different values, so she should investigate the inputs (such as the peer set and the earnings used) before drawing a conclusion",
+          "tr": "Yöntemler çok farklı değerler verdiği için bir sonuca varmadan önce girdileri (emsal grubu ve kullanılan kâr gibi) incelemelidir"
+        },
+        {
+          "key": "C",
+          "en": "The stock is fairly valued because TL 52 is close to TL 50.00",
+          "tr": "Hisse adil fiyatlanmıştır, çünkü 52 TL, 50,00 TL'ye yakındır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The P/E method gives TL 50.00 but EV/EBITDA gives TL 18.00. Net debt of 300 is large relative to EV of 1,200, so a small multiple change moves equity value a lot. The analyst should review peer selection and normalized earnings.",
+      "explanation_tr": "F/K yöntemi 50,00 TL, FD/FAVÖK 18,00 TL verir. 300'lük net borç, 1.200'lük FD'ye göre büyüktür; küçük bir çarpan değişimi özkaynak değerini çok oynatır. Analist emsal seçimini ve normalleştirilmiş kârı gözden geçirmelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "One low result does not outweigh the others; the gap itself signals an input problem.",
+          "tr": "Tek bir düşük sonuç diğerlerini geçersiz kılmaz; farkın kendisi girdi sorununa işaret eder."
+        },
+        "C": {
+          "en": "Only the P/E result is close; the EV/EBITDA result is far from the price.",
+          "tr": "Yalnızca F/K sonucu yakındır; FD/FAVÖK sonucu fiyattan çok uzaktır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "multiple",
+        "overvalued",
+        "peer",
+        "normalized-earnings"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "module_id": "FSA-06",
+  "vignettes": [
+    {
+      "id": "L2-FSA-06-v01",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "curriculum_year": 2027,
+      "title_en": "Neon Lojistik DuPont Review",
+      "title_tr": "Neon Lojistik DuPont İncelemesi",
+      "text_en": "An analyst compares Neon Lojistik with a listed peer, Rota Taşımacılık, to explain differences in return on equity (ROE). Neon's 2026 figures (TL millions) are: revenue 800, EBIT 100, interest expense 20, pretax income 80, net income 60, average total assets 600 and average equity 300. The analyst uses the five-step DuPont decomposition: tax burden, interest burden, EBIT margin, asset turnover and financial leverage. Rota's ratios are in the table below. Neon also has operating leases that are not on its balance sheet. The present value of the future lease payments is estimated at TL 150 million. The analyst wants to treat the leases as debt by adding 150 to both assets and liabilities, while leaving net income and equity unchanged. Finally, she wants to know whether Neon's higher ROE comes from better operations or just from taking more risk, and she plans to report the answer to the investment committee.",
+      "text_tr": "Bir analist, özkaynak kârlılığı (ÖKK) farklarını açıklamak için Neon Lojistik'i borsada işlem gören emsali Rota Taşımacılık ile karşılaştırıyor. Neon'un 2026 rakamları (milyon TL): hasılat 800, FVÖK 100, faiz gideri 20, vergi öncesi kâr 80, net kâr 60, ortalama toplam varlıklar 600 ve ortalama özkaynak 300. Analist beş adımlı DuPont ayrıştırmasını kullanıyor: vergi yükü, faiz yükü, FVÖK marjı, varlık devir hızı ve finansal kaldıraç. Rota'nın oranları aşağıdaki tablodadır. Neon'un bilanço dışı faaliyet kiralamaları da vardır. Gelecekteki kira ödemelerinin bugünkü değeri 150 milyon TL tahmin ediliyor. Analist, kiralamaları borç olarak ele almak için hem varlıklara hem yükümlülüklere 150 ekleyecek, net kâr ve özkaynağı değiştirmeyecek. Son olarak, Neon'un daha yüksek ÖKK'sinin daha iyi operasyonlardan mı yoksa yalnızca daha fazla risk almaktan mı geldiğini öğrenmek ve yanıtı yatırım komitesine sunmak istiyor.",
+      "tables": [
+        {
+          "title_en": "Rota Taşımacılık DuPont components",
+          "title_tr": "Rota Taşımacılık DuPont bileşenleri",
+          "headers": [
+            "Component",
+            "Rota"
+          ],
+          "rows": [
+            [
+              "Tax burden",
+              "0.75"
+            ],
+            [
+              "Interest burden",
+              "0.90"
+            ],
+            [
+              "EBIT margin",
+              "10.0%"
+            ],
+            [
+              "Asset turnover",
+              "1.20"
+            ],
+            [
+              "Financial leverage",
+              "2.00"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FSA-06-v01-q1",
+        "L2-FSA-06-v01-q2",
+        "L2-FSA-06-v01-q3",
+        "L2-FSA-06-v01-q4",
+        "L2-FSA-06-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FSA-06-v01-q1",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-06-v01",
+      "stem_en": "Neon's ROE from the five-step DuPont decomposition is:",
+      "stem_tr": "Beş adımlı DuPont ayrıştırmasına göre Neon'un ÖKK'si şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        },
+        {
+          "key": "C",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "0.75 (tax burden) x 0.80 (interest burden) x 12.5% (EBIT margin) x 1.333 (turnover) x 2.0 (leverage) = 20.0%. Direct check: 60 / 300 = 20%.",
+      "explanation_tr": "0,75 (vergi yükü) x 0,80 (faiz yükü) x %12,5 (FVÖK marjı) x 1,333 (devir hızı) x 2,0 (kaldıraç) = %20,0. Doğrudan kontrol: 60 / 300 = %20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omits the interest burden (pretax income / EBIT = 0.80).",
+          "tr": "Faiz yükünü (vergi öncesi kâr / FVÖK = 0,80) atlar."
+        },
+        "C": {
+          "en": "This is the return on assets, not return on equity.",
+          "tr": "Bu varlık kârlılığıdır, özkaynak kârlılığı değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Tax burden 60/80 = 0.75",
+          "tr": "Vergi yükü 60/80 = 0,75"
+        },
+        {
+          "en": "Interest burden 80/100 = 0.80",
+          "tr": "Faiz yükü 80/100 = 0,80"
+        },
+        {
+          "en": "EBIT margin 12.5%, turnover 1.333, leverage 2.0",
+          "tr": "FVÖK marjı %12,5, devir 1,333, kaldıraç 2,0"
+        },
+        {
+          "en": "Product = 20.0%",
+          "tr": "Çarpım = %20,0"
+        }
+      ],
+      "vocab_ids": [
+        "dupont-analysis",
+        "return-on-equity",
+        "leverage",
+        "margin",
+        "turnover"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(60/80)*(80/100)*(100/800)*(800/600)*(600/300)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-06-v01-q2",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-06-v01",
+      "stem_en": "Compared with Rota, which component explains most of Neon's higher ROE?",
+      "stem_tr": "Rota ile karşılaştırıldığında Neon'un daha yüksek ÖKK'sini en çok hangi bileşen açıklar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Financial leverage (2.0 versus 2.0)",
+          "tr": "Finansal kaldıraç (2,0'a karşı 2,0)"
+        },
+        {
+          "key": "B",
+          "en": "Interest burden (0.80 versus 0.90)",
+          "tr": "Faiz yükü (0,80'e karşı 0,90)"
+        },
+        {
+          "key": "C",
+          "en": "EBIT margin (12.5% versus 10.0%)",
+          "tr": "FVÖK marjı (%12,5'e karşı %10,0)"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Neon's EBIT margin is 25% higher than Rota's (12.5 / 10.0); its asset turnover is 11% higher (1.333 / 1.20). Leverage and tax are equal and the interest burden is lower. Operating profitability is the main source of the advantage (Neon 20.0% versus Rota 16.2%).",
+      "explanation_tr": "Neon'un FVÖK marjı Rota'nınkinden %25 yüksek (12,5 / 10,0); varlık devir hızı %11 yüksek (1,333 / 1,20). Kaldıraç ve vergi eşit, faiz yükü daha olumsuz. Avantajın ana kaynağı operasyonel kârlılıktır (Neon %20,0, Rota %16,2).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Leverage is identical for the two firms, so it explains none of the difference.",
+          "tr": "Kaldıraç iki şirkette aynıdır; farkın hiçbirini açıklamaz."
+        },
+        "B": {
+          "en": "Neon's interest burden is worse (lower), so it reduces, not raises, Neon's ROE relative to Rota.",
+          "tr": "Neon'un faiz yükü daha kötüdür (daha düşük); Rota'ya göre Neon'un ÖKK'sini artırmaz, azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "margin",
+        "leverage",
+        "dupont-analysis",
+        "peer"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FSA-06-v01-q3",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-06-v01",
+      "stem_en": "Neon's interest coverage ratio (EBIT / interest expense) is:",
+      "stem_tr": "Neon'un faiz karşılama oranı (FVÖK / faiz gideri) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.0",
+          "tr": "5,0",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "4.0",
+          "tr": "4,0",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "3.0",
+          "tr": "3,0",
+          "value": 3.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Interest coverage = EBIT / interest expense = 100 / 20 = 5.0 times.",
+      "explanation_tr": "Faiz karşılama oranı = FVÖK / faiz gideri = 100 / 20 = 5,0 kat.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses pretax income, which is already after interest expense.",
+          "tr": "Faiz giderinden sonraki vergi öncesi kârı kullanır."
+        },
+        "C": {
+          "en": "Uses net income, which is after interest and tax.",
+          "tr": "Faiz ve vergiden sonraki net kârı kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "100 / 20 = 5.0",
+          "tr": "100 / 20 = 5,0"
+        }
+      ],
+      "vocab_ids": [
+        "coverage-ratio",
+        "interest",
+        "ebit",
+        "solvency",
+        "ratio"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "100/20"
+      }
+    },
+    {
+      "id": "L2-FSA-06-v01-q4",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-06-v01",
+      "stem_en": "After capitalizing the leases, Neon's total liabilities-to-equity ratio is:",
+      "stem_tr": "Kiralamalar aktifleştirildikten sonra Neon'un toplam yükümlülük/özkaynak oranı şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.00",
+          "tr": "1,00",
+          "value": 1.0
+        },
+        {
+          "key": "B",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "0.50",
+          "tr": "0,50",
+          "value": 0.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Existing liabilities are 600 - 300 = 300. Adding the lease liability of 150 gives 450. 450 / 300 = 1.50, up from 1.00.",
+      "explanation_tr": "Mevcut yükümlülükler 600 - 300 = 300'dür. 150'lik kira yükümlülüğü eklenince 450 olur. 450 / 300 = 1,50; önceden 1,00 idi.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the ratio before adjustment; the lease liability of 150 is not included.",
+          "tr": "Bu, düzeltme öncesi orandır; 150'lik kira yükümlülüğü dahil değildir."
+        },
+        "C": {
+          "en": "Counts only the lease liability and omits existing liabilities of 300.",
+          "tr": "Yalnızca kira yükümlülüğünü sayar; mevcut 300'lük yükümlülükleri atlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Liabilities: 600 - 300 = 300",
+          "tr": "Yükümlülükler: 600 - 300 = 300"
+        },
+        {
+          "en": "(300 + 150) / 300 = 1.50",
+          "tr": "(300 + 150) / 300 = 1,50"
+        }
+      ],
+      "vocab_ids": [
+        "lease",
+        "liability",
+        "leverage",
+        "adjust"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(300+150)/300"
+      }
+    },
+    {
+      "id": "L2-FSA-06-v01-q5",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-06",
+      "los_id": "FSA-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-06-v01",
+      "stem_en": "After the lease adjustment, Neon's return on assets (net income / average assets) becomes:",
+      "stem_tr": "Kira düzeltmesinden sonra Neon'un varlık kârlılığı (net kâr / ortalama varlıklar) şu olur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "13.3%",
+          "tr": "%13,3",
+          "value": 13.333333
+        },
+        {
+          "key": "C",
+          "en": "8.0%",
+          "tr": "%8,0",
+          "value": 8.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Adjusted assets = 600 + 150 = 750, so ROA = 60 / 750 = 8.0% (versus 10.0%). ROE stays 20% because net income and equity are unchanged; the leverage rises from 2.0 to 2.5 and the apparent ROE advantage is partly financial risk.",
+      "explanation_tr": "Düzeltilmiş varlıklar = 600 + 150 = 750; ROA = 60 / 750 = %8,0 (önceden %10,0). Net kâr ve özkaynak değişmediği için ÖKK %20 kalır; kaldıraç 2,0'dan 2,5'e çıkar ve görünen ÖKK avantajının bir kısmı finansal risktir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the unadjusted ROA; assets rise by 150 after capitalization.",
+          "tr": "Bu düzeltilmemiş ROA'dır; aktifleştirme sonrası varlıklar 150 artar."
+        },
+        "B": {
+          "en": "Subtracts the lease asset; capitalizing leases adds to assets.",
+          "tr": "Kira varlığını düşer; kiraların aktifleştirilmesi varlıkları artırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Adjusted assets: 600 + 150 = 750",
+          "tr": "Düzeltilmiş varlıklar: 600 + 150 = 750"
+        },
+        {
+          "en": "60 / 750 = 8.0%",
+          "tr": "60 / 750 = %8,0"
+        }
+      ],
+      "vocab_ids": [
+        "lease",
+        "capitalize",
+        "leverage",
+        "risk"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "60/(600+150)*100",
+        "unit": "%"
+      }
+    }
+  ]
+}

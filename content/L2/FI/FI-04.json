@@ -1,0 +1,391 @@
+{
+  "module_id": "FI-04",
+  "vignettes": [
+    {
+      "id": "L2-FI-04-v01",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "curriculum_year": 2027,
+      "title_en": "Credit exposure review at Karadeniz Bank",
+      "title_tr": "Karadeniz Banka’da kredi riski incelemesi",
+      "text_en": "Ayşe Demir is a credit risk analyst at Karadeniz Bank, a fictional bank. She reviews a term loan to Doğu Çelik, a fictional steel producer. The bank's exposure at default is TRY 40 million. Ayşe estimates a one-year probability of default of 2.50% and a recovery rate of 55%.\n\nAyşe also looks at a one-year zero-coupon bond of Doğu Çelik with a face value of 100. The risk-free one-year rate is 4.00%. She uses a simple model in which the bond pays the full face value if there is no default and pays only the recovery amount (55% of face value) if default occurs, with the payoff discounted at the risk-free rate. She wants to compute the credit valuation adjustment (CVA), defined here as the difference between the risk-free bond value and the risky bond value.\n\nFor longer horizons, the bank uses a reduced-form model with a constant annual hazard rate of 3.00%. Ayşe uses this model to estimate default over three years.\n\nFinally, her colleague Barış wants to use a structural model. In the model, the equity of Doğu Çelik is treated as a call option on the firm's assets, with the strike price equal to the face value of the firm's debt. Barış asks how an increase in the volatility of the firm's assets would affect the model's values, with all other inputs unchanged.",
+      "text_tr": "Ayşe Demir, kurgusal bir banka olan Karadeniz Banka'da kredi riski analistidir. Kurgusal bir çelik üreticisi olan Doğu Çelik'e verilen vadeli krediyi inceliyor. Bankanın temerrüt anındaki riski 40 milyon TL'dir. Ayşe, bir yıllık temerrüt olasılığını %2,50 ve geri kazanım oranını %55 olarak tahmin ediyor.\n\nAyşe ayrıca Doğu Çelik'in nominal değeri 100 olan bir yıllık sıfır kuponlu tahvilini inceliyor. Bir yıllık risksiz faiz %4,00'dır. Basit bir model kullanıyor: temerrüt yoksa tahvil nominal değerin tamamını, temerrüt olursa yalnızca geri kazanım tutarını (nominal değerin %55'i) öder ve getiri risksiz faizle iskonto edilir. Kredi değerleme düzeltmesini (CVA) burada risksiz tahvil değeri ile riskli tahvil değeri arasındaki fark olarak hesaplamak istiyor.\n\nDaha uzun vadeler için banka, yıllık sabit %3,00 tehlike oranı (hazard rate) taşıyan indirgenmiş formlu bir model kullanıyor. Ayşe bu modeli üç yıllık temerrüdü tahmin etmek için kullanıyor.\n\nSon olarak meslektaşı Barış, yapısal bir model kullanmak istiyor. Modelde Doğu Çelik'in özkaynağı, kullanım fiyatı firmanın borcunun nominal değerine eşit olan, firma varlıkları üzerine bir alım opsiyonu olarak ele alınır. Barış, diğer tüm girdiler sabitken firma varlıklarının volatilitesindeki artışın modelin değerlerini nasıl etkileyeceğini soruyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-FI-04-v01-q1",
+        "L2-FI-04-v01-q2",
+        "L2-FI-04-v01-q3",
+        "L2-FI-04-v01-q4",
+        "L2-FI-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FI-04-v01-q1",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FI-04-v01",
+      "stem_en": "The expected loss on the term loan is closest to:",
+      "stem_tr": "Vadeli kredideki beklenen zarar en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1.00 million",
+          "tr": "1,00 milyon TL",
+          "value": 1.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 0.45 million",
+          "tr": "0,45 milyon TL",
+          "value": 0.45
+        },
+        {
+          "key": "C",
+          "en": "TRY 0.55 million",
+          "tr": "0,55 milyon TL",
+          "value": 0.55
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores the recovery rate; expected loss uses loss given default, not the full exposure.",
+          "tr": "Geri kazanım oranını yok sayar; beklenen zarar tam risk tutarını değil temerrüt halinde kaybı kullanır."
+        },
+        "C": {
+          "en": "This multiplies by the recovery rate instead of the loss given default (1 - 55% = 45%).",
+          "tr": "Temerrüt halinde kayıp (1 - %55 = %45) yerine geri kazanım oranıyla çarpar."
+        }
+      },
+      "explanation_en": "Expected loss is PD × LGD × EAD = 0.025 × 0.45 × 40 = TRY 0.45 million.",
+      "explanation_tr": "Beklenen zarar PD × LGD × EAD = 0,025 × 0,45 × 40 = 0,45 milyon TL'dir.",
+      "solution_steps": [
+        {
+          "en": "Expected loss = PD × LGD × EAD.",
+          "tr": "Beklenen zarar = PD × LGD × EAD."
+        },
+        {
+          "en": "LGD = 1 - recovery rate = 1 - 0.55 = 0.45.",
+          "tr": "LGD = 1 - geri kazanım oranı = 1 - 0,55 = 0,45."
+        },
+        {
+          "en": "EL = 0.025 × 0.45 × 40.",
+          "tr": "EL = 0,025 × 0,45 × 40."
+        },
+        {
+          "en": "EL = TRY 0.45 million.",
+          "tr": "EL = 0,45 milyon TL."
+        }
+      ],
+      "vocab_ids": [
+        "probability-of-default",
+        "loss-given-default",
+        "recovery-rate",
+        "expected-loss"
+      ],
+      "numeric": {
+        "expr": "40*0.025*(1-0.55)"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-04-v01-q2",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-04-v01",
+      "stem_en": "The approximate credit spread implied by the bank's probability of default and loss given default is closest to:",
+      "stem_tr": "Bankanın temerrüt olasılığı ve temerrüt halinde kaybın ima ettiği yaklaşık kredi marjı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "250.0 bp",
+          "tr": "250,0 bp",
+          "value": 250.0
+        },
+        {
+          "key": "B",
+          "en": "137.5 bp",
+          "tr": "137,5 bp",
+          "value": 137.5
+        },
+        {
+          "key": "C",
+          "en": "112.5 bp",
+          "tr": "112,5 bp",
+          "value": 112.5
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores recovery; the spread compensates for expected loss, not just default probability.",
+          "tr": "Geri kazanımı yok sayar; marj yalnızca temerrüt olasılığını değil beklenen zararı karşılar."
+        },
+        "B": {
+          "en": "This uses the recovery rate instead of the loss given default.",
+          "tr": "Temerrüt halinde kayıp yerine geri kazanım oranını kullanır."
+        }
+      },
+      "explanation_en": "The spread should compensate for expected loss: 2.50% × 45% = 1.125%, or about 112.5 bp.",
+      "explanation_tr": "Marj beklenen zararı karşılamalıdır: %2,50 × %45 = %1,125, yani yaklaşık 112,5 bp.",
+      "solution_steps": [
+        {
+          "en": "A first approximation of the credit spread is PD × LGD.",
+          "tr": "Kredi marjının ilk yaklaşımı PD × LGD'dir."
+        },
+        {
+          "en": "LGD = 45 percent.",
+          "tr": "LGD = %45."
+        },
+        {
+          "en": "Spread ≈ 0.025 × 0.45 = 0.01125.",
+          "tr": "Marj ≈ 0,025 × 0,45 = 0,01125."
+        },
+        {
+          "en": "0.01125 = 112.5 basis points.",
+          "tr": "0,01125 = 112,5 baz puan."
+        }
+      ],
+      "vocab_ids": [
+        "probability-of-default",
+        "loss-given-default",
+        "recovery-rate",
+        "expected-loss"
+      ],
+      "numeric": {
+        "expr": "0.025*(1-0.55)*10000",
+        "unit": "bp"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-04-v01-q3",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-04-v01",
+      "stem_en": "The CVA per 100 face value of the one-year bond is closest to:",
+      "stem_tr": "Bir yıllık tahvil için 100 nominal değer başına CVA en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.08",
+          "tr": "1,08",
+          "value": 1.081731
+        },
+        {
+          "key": "B",
+          "en": "1.12",
+          "tr": "1,12",
+          "value": 1.125
+        },
+        {
+          "key": "C",
+          "en": "2.50",
+          "tr": "2,50",
+          "value": 2.5
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the undiscounted expected loss; CVA here is the discounted difference in values.",
+          "tr": "Bu, iskonto edilmemiş beklenen zarardır; buradaki CVA iskonto edilmiş değer farkıdır."
+        },
+        "C": {
+          "en": "This ignores the recovery of 55 in default.",
+          "tr": "Temerrütte elde edilen 55'lik geri kazanımı yok sayar."
+        }
+      },
+      "explanation_en": "Discounting the expected loss of 1.125 at 4.00% gives a CVA of about 1.08.",
+      "explanation_tr": "1,125'lik beklenen zararın %4,00 ile iskonto edilmesi yaklaşık 1,08'lik bir CVA verir.",
+      "solution_steps": [
+        {
+          "en": "CVA = risk-free value - risky value.",
+          "tr": "CVA = risksiz değer - riskli değer."
+        },
+        {
+          "en": "Risk-free value = 100/1.04 = 96.15.",
+          "tr": "Risksiz değer = 100/1,04 = 96,15."
+        },
+        {
+          "en": "Expected payoff = 0.975 × 100 + 0.025 × 55 = 98.875; PV = 98.875/1.04 = 95.07.",
+          "tr": "Beklenen getiri = 0,975 × 100 + 0,025 × 55 = 98,875; bugünkü değer = 98,875/1,04 = 95,07."
+        },
+        {
+          "en": "CVA = 96.15 - 95.07 = 1.08.",
+          "tr": "CVA = 96,15 - 95,07 = 1,08."
+        }
+      ],
+      "vocab_ids": [
+        "probability-of-default",
+        "loss-given-default",
+        "recovery-rate",
+        "expected-loss"
+      ],
+      "numeric": {
+        "expr": "100/1.04-(100*(1-0.025)+55*0.025)/1.04"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-04-v01-q4",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-04-v01",
+      "stem_en": "With a constant annual hazard rate of 3.00%, the cumulative probability of default over three years is closest to:",
+      "stem_tr": "Yıllık sabit %3,00 tehlike oranıyla üç yıllık kümülatif temerrüt olasılığı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        },
+        {
+          "key": "B",
+          "en": "8.73%",
+          "tr": "%8,73",
+          "value": 8.7327
+        },
+        {
+          "key": "C",
+          "en": "91.27%",
+          "tr": "%91,27",
+          "value": 91.2673
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Summing the annual rates ignores that the default can occur only if the firm has survived earlier years.",
+          "tr": "Yıllık oranları toplamak, temerrüdün ancak önceki yıllarda hayatta kalan firmada olabileceğini yok sayar."
+        },
+        "C": {
+          "en": "This is the three-year survival probability, not the probability of default.",
+          "tr": "Bu, üç yıllık hayatta kalma olasılığıdır, temerrüt olasılığı değildir."
+        }
+      },
+      "explanation_en": "The survival probability is 0.97^3 = 91.27%, so the cumulative default probability is about 8.73%.",
+      "explanation_tr": "Hayatta kalma olasılığı 0,97^3 = %91,27'dir; kümülatif temerrüt olasılığı yaklaşık %8,73'tür.",
+      "solution_steps": [
+        {
+          "en": "Survival over three years = (1 - hazard)^3.",
+          "tr": "Üç yıllık hayatta kalma = (1 - tehlike oranı)^3."
+        },
+        {
+          "en": "0.97^3 = 0.9127.",
+          "tr": "0,97^3 = 0,9127."
+        },
+        {
+          "en": "Cumulative default probability = 1 - 0.9127.",
+          "tr": "Kümülatif temerrüt olasılığı = 1 - 0,9127."
+        },
+        {
+          "en": "= 8.73 percent.",
+          "tr": "= %8,73."
+        }
+      ],
+      "vocab_ids": [
+        "probability-of-default",
+        "loss-given-default",
+        "recovery-rate",
+        "expected-loss"
+      ],
+      "numeric": {
+        "expr": "(1-0.97**3)*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-04-v01-q5",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-04",
+      "los_id": "FI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-04-v01",
+      "stem_en": "In the structural model, a higher volatility of the firm's assets, all else equal, most likely:",
+      "stem_tr": "Yapısal modelde, diğer her şey sabitken firma varlıklarının volatilitesindeki artış büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "decreases the value of equity because the firm becomes riskier.",
+          "tr": "özkaynak değerini düşürür çünkü firma daha riskli hale gelir."
+        },
+        {
+          "key": "B",
+          "en": "increases the value of the risky debt, since the debt holders are paid first.",
+          "tr": "riskli borcun değerini artırır çünkü borç verenlere önce ödeme yapılır."
+        },
+        {
+          "key": "C",
+          "en": "increases the value of equity and decreases the value of the risky debt, widening the credit spread.",
+          "tr": "özkaynak değerini artırır, riskli borcun değerini düşürür ve kredi marjını genişletir."
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equity is a call option; higher volatility raises option value.",
+          "tr": "Özkaynak bir alım opsiyonudur; volatilite arttıkça opsiyon değeri yükselir."
+        },
+        "B": {
+          "en": "Debt holders are effectively short a put on the assets, so higher volatility lowers debt value.",
+          "tr": "Borç verenler fiilen varlıklar üzerine bir satış opsiyonu satmış durumdadır; volatilite arttıkça borç değeri düşer."
+        }
+      },
+      "explanation_en": "Equity holders own a call option on the assets, so volatility raises its value. Debt is the risk-free value minus a put on the assets, so the put gains value and risky debt loses value.",
+      "explanation_tr": "Özkaynak sahipleri varlıklar üzerine bir alım opsiyonuna sahiptir; volatilite değerini artırır. Borç, risksiz değerden varlıklar üzerindeki satış opsiyonunun çıkarılmasıdır; satış opsiyonu değer kazanır ve riskli borç değer kaybeder.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "probability-of-default",
+        "loss-given-default",
+        "recovery-rate",
+        "expected-loss",
+        "volatility"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}

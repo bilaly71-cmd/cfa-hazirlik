@@ -1,0 +1,367 @@
+{
+  "module_id": "CI-02",
+  "vignettes": [
+    {
+      "id": "L2-CI-02-v01",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "curriculum_year": 2027,
+      "title_en": "Karadeniz Çelik ESG Valuation",
+      "title_tr": "Karadeniz Çelik ÇSY Değerlemesi",
+      "text_en": "Karadeniz Çelik is a Turkish steel producer. An equity analyst wants to integrate environmental, social and governance (ESG) factors into her valuation. Free cash flow next year is expected to be TL 100 million before any carbon cost. It is expected to grow at 3% a year, and the discount rate is 8%. The plants emit 2.0 million tonnes of CO2 equivalent a year, and the analyst assumes a carbon price of TL 25 per tonne, with all emissions priced from next year. The tax rate is 20%, and the carbon cost is deductible. The analyst also builds an ESG score from three pillars: environment 55, social 70 and governance 80 (all out of 100), with weights of 40%, 25% and 35%. Governance information shows that only 3 of the 9 board members are independent and that the company has significant related-party transactions with the controlling family. The analyst's employer has a policy that excluded companies from some sectors altogether, but she is asked to value the firm anyway.",
+      "text_tr": "Karadeniz Çelik bir Türk çelik üreticisidir. Bir hisse analisti değerlemesine çevresel, sosyal ve yönetişim (ÇSY) faktörlerini entegre etmek istiyor. Gelecek yıl serbest nakit akışının, herhangi bir karbon maliyetinden önce 100 milyon TL olması bekleniyor. Akışın yılda %3 büyümesi ve iskonto oranının %8 olması öngörülüyor. Tesisler yılda 2,0 milyon ton CO2 eşdeğeri salıyor; analist ton başına 25 TL karbon fiyatı varsayıyor ve tüm emisyonların gelecek yıldan itibaren fiyatlandığını kabul ediyor. Vergi oranı %20'dir ve karbon maliyeti indirilebilir. Analist ayrıca üç sütundan bir ÇSY puanı oluşturuyor: çevre 55, sosyal 70 ve yönetişim 80 (hepsi 100 üzerinden); ağırlıklar %40, %25 ve %35'tir. Yönetişim bilgileri, 9 yönetim kurulu üyesinden yalnızca 3'ünün bağımsız olduğunu ve şirketin kontrol eden aile ile önemli ilişkili taraf işlemleri bulunduğunu gösteriyor. Analistin çalıştığı kurumun, bazı sektörleri tamamen dışlayan bir politikası vardır; yine de ondan firmayı değerlemesi istenmiştir.",
+      "tables": [
+        {
+          "title_en": "ESG scoring",
+          "title_tr": "ÇSY puanlaması",
+          "headers": [
+            "Pillar",
+            "Score",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Environment",
+              "55",
+              "40%"
+            ],
+            [
+              "Social",
+              "70",
+              "25%"
+            ],
+            [
+              "Governance",
+              "80",
+              "35%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-CI-02-v01-q1",
+        "L2-CI-02-v01-q2",
+        "L2-CI-02-v01-q3",
+        "L2-CI-02-v01-q4",
+        "L2-CI-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-CI-02-v01-q1",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-CI-02-v01",
+      "stem_en": "The weighted ESG score is:",
+      "stem_tr": "Ağırlıklı ÇSY puanı şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "68.3",
+          "tr": "68,3",
+          "value": 68.333333
+        },
+        {
+          "key": "B",
+          "en": "68.8",
+          "tr": "68,8",
+          "value": 68.75
+        },
+        {
+          "key": "C",
+          "en": "67.5",
+          "tr": "67,5",
+          "value": 67.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "0.40 x 55 + 0.25 x 70 + 0.35 x 80 = 22.0 + 17.5 + 28.0 = 67.5.",
+      "explanation_tr": "0,40 x 55 + 0,25 x 70 + 0,35 x 80 = 22,0 + 17,5 + 28,0 = 67,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses equal weights instead of the stated weights.",
+          "tr": "Belirtilen ağırlıklar yerine eşit ağırlık kullanır."
+        },
+        "B": {
+          "en": "Swaps the environment and governance weights.",
+          "tr": "Çevre ve yönetişim ağırlıklarını değiştirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "22.0 + 17.5 + 28.0 = 67.5",
+          "tr": "22,0 + 17,5 + 28,0 = 67,5"
+        }
+      ],
+      "vocab_ids": [
+        "esg",
+        "weight",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "0.4*55+0.25*70+0.35*80"
+      }
+    },
+    {
+      "id": "L2-CI-02-v01-q2",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-02-v01",
+      "stem_en": "The after-tax annual carbon cost (TL million) is:",
+      "stem_tr": "Yıllık vergi sonrası karbon maliyeti (milyon TL) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 40 million",
+          "tr": "40 milyon TL",
+          "value": 40.0
+        },
+        {
+          "key": "B",
+          "en": "TL 50 million",
+          "tr": "50 milyon TL",
+          "value": 50.0
+        },
+        {
+          "key": "C",
+          "en": "TL 60 million",
+          "tr": "60 milyon TL",
+          "value": 60.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Pretax carbon cost = 2.0 million t x TL 25 = TL 50 million. After tax = 50 x (1 - 0.20) = TL 40 million.",
+      "explanation_tr": "Vergi öncesi karbon maliyeti = 2,0 milyon ton x 25 TL = 50 milyon TL. Vergi sonrası = 50 x (1 - 0,20) = 40 milyon TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the pretax cost; the cost is tax-deductible.",
+          "tr": "Bu vergi öncesi maliyettir; maliyet indirilebilir."
+        },
+        "C": {
+          "en": "Increases the cost by the tax rate instead of reducing it by the tax shield.",
+          "tr": "Maliyeti vergi kalkanıyla azaltmak yerine vergi oranı kadar artırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "2.0 x 25 = 50",
+          "tr": "2,0 x 25 = 50"
+        },
+        {
+          "en": "50 x 0.80 = 40",
+          "tr": "50 x 0,80 = 40"
+        }
+      ],
+      "vocab_ids": [
+        "after-tax",
+        "assume",
+        "exceed",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "2.0*25*(1-0.2)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-02-v01-q3",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-CI-02-v01",
+      "stem_en": "The change in firm value (TL million) from including the carbon cost in free cash flow is:",
+      "stem_tr": "Karbon maliyetinin serbest nakit akışına dahil edilmesiyle firma değerindeki değişim (milyon TL) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL -1,000 million",
+          "tr": "-1,000 milyon TL",
+          "value": -1000.0
+        },
+        {
+          "key": "B",
+          "en": "TL -800 million",
+          "tr": "-800 milyon TL",
+          "value": -800.0
+        },
+        {
+          "key": "C",
+          "en": "TL -500 million",
+          "tr": "-500 milyon TL",
+          "value": -500.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Value before = 100 / (0.08 - 0.03) = 2,000. Value after = (100 - 40) / 0.05 = 1,200. Change = -800, a 40% reduction.",
+      "explanation_tr": "Önceki değer = 100 / (0,08 - 0,03) = 2.000. Sonraki değer = (100 - 40) / 0,05 = 1.200. Değişim = -800; yüzde 40 azalış.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the pretax carbon cost; the cash flow impact is after tax.",
+          "tr": "Vergi öncesi karbon maliyetini kullanır; nakit akışı etkisi vergi sonrasıdır."
+        },
+        "C": {
+          "en": "Ignores growth: the value change is 40 / (r - g), not 40 / r.",
+          "tr": "Büyümeyi yok sayar: değer değişimi 40 / (r - g)'dir, 40 / r değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Before: 100 / 0.05 = 2,000",
+          "tr": "Önce: 100 / 0,05 = 2.000"
+        },
+        {
+          "en": "After: 60 / 0.05 = 1,200",
+          "tr": "Sonra: 60 / 0,05 = 1.200"
+        },
+        {
+          "en": "Change = -800",
+          "tr": "Değişim = -800"
+        }
+      ],
+      "vocab_ids": [
+        "free-cash-flow",
+        "growth",
+        "discount-rate",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(100-40)/(0.08-0.03)-100/(0.08-0.03)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-02-v01-q4",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-02-v01",
+      "stem_en": "By adjusting cash flows for the carbon cost, the analyst is applying which approach?",
+      "stem_tr": "Analist, nakit akışlarını karbon maliyeti için düzelterek hangi yaklaşımı uyguluyor?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Negative screening",
+          "tr": "Negatif eleme"
+        },
+        {
+          "key": "B",
+          "en": "Thematic investing",
+          "tr": "Tematik yatırım"
+        },
+        {
+          "key": "C",
+          "en": "ESG integration into the valuation model",
+          "tr": "Değerleme modeline ÇSY entegrasyonu"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "ESG integration means including material ESG risks directly in the financial analysis, for example through cash flow forecasts or discount rates. The carbon cost is a material environmental risk.",
+      "explanation_tr": "ÇSY entegrasyonu, önemli ÇSY risklerini nakit akışı tahminleri veya iskonto oranları gibi yollarla doğrudan finansal analize katmaktır. Karbon maliyeti önemli bir çevresel risktir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Negative screening excludes companies or sectors; the analyst is keeping the company and changing its forecasts.",
+          "tr": "Negatif eleme şirketleri veya sektörleri dışlar; analist şirketi tutuyor ve tahminlerini değiştiriyor."
+        },
+        "B": {
+          "en": "Thematic investing targets a specific ESG theme, such as clean energy; here a conventional firm is being valued.",
+          "tr": "Tematik yatırım temiz enerji gibi belirli bir ÇSY temasını hedefler; burada geleneksel bir firma değerleniyor."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "esg",
+        "thematic",
+        "material",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-CI-02-v01-q5",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-02",
+      "los_id": "CI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-02-v01",
+      "stem_en": "Which governance finding is the clearest red flag for minority shareholders?",
+      "stem_tr": "Hangi yönetişim bulgusu azınlık hissedarları için en açık uyarı işaretidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Only a third of the board is independent while related-party transactions with the controlling family are significant",
+          "tr": "Yönetim kurulunun yalnızca üçte biri bağımsızken kontrol eden aile ile önemli ilişkili taraf işlemlerinin bulunması"
+        },
+        {
+          "key": "B",
+          "en": "The company has carbon emissions",
+          "tr": "Şirketin karbon emisyonu vardır"
+        },
+        {
+          "key": "C",
+          "en": "The governance pillar has the highest score",
+          "tr": "Yönetişim sütunu en yüksek puana sahiptir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Low board independence combined with related-party dealings with the controlling shareholders raises the risk that decisions favor insiders over minority investors. Emissions are an environmental, not a governance, factor.",
+      "explanation_tr": "Düşük yönetim kurulu bağımsızlığı ile kontrol eden ortaklarla ilişkili taraf işlemleri, kararların azınlık yatırımcılar yerine içeridekilerin lehine verilmesi riskini artırır. Emisyonlar yönetişim değil, çevresel bir faktördür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is an environmental factor, not a governance factor.",
+          "tr": "Bu bir çevresel faktördür, yönetişim faktörü değildir."
+        },
+        "C": {
+          "en": "A high pillar score can hide specific red flags; the details are what matter.",
+          "tr": "Yüksek sütun puanı belirli uyarı işaretlerini gizleyebilir; önemli olan ayrıntılardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "independent",
+        "minority",
+        "board",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

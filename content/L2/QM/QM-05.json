@@ -1,0 +1,521 @@
+{
+  "module_id": "QM-05",
+  "vignettes": [
+    {
+      "id": "L2-QM-05-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "curriculum_year": 2027,
+      "title_en": "Revenue Growth, Share Prices and Volatility",
+      "title_tr": "Gelir Büyümesi, Hisse Fiyatları ve Oynaklık",
+      "text_en": "Kerem Aksoy is a quantitative analyst at the fictional asset manager Pera Portföy. He models the year-on-year growth rate of quarterly revenue (%) of a listed retailer using 80 quarters of data. His AR(1) model, estimated by ordinary least squares, is: growth(t) = 0.60 + 0.70 x growth(t-1) + error. The latest observed growth rate is 3.5%.\nKerem checks the residuals. The first-order residual autocorrelation is 0.35, and the standard error of a residual autocorrelation is 1/sqrt(T), where T is the number of observations. The critical t-value is about 1.99.\nSeparately, Kerem studies the retailer's share price level. A regression of the price on its own lag gives a slope of 0.97 with a standard error of 0.02. In the Dickey-Fuller framework, he tests the slope minus 1 against the critical value of -2.86 (5% level, one-sided). He suspects the price series is a random walk.\nKerem compares two forecasting models on five out-of-sample quarters. Forecast errors (actual minus forecast, in percentage points) are 0.5, -1.0, 0.8, -0.4 and 1.1 for Model A, and 0.9, -1.2, 1.1, -0.7 and 1.6 for Model B.\nFinally, he regresses the squared residuals of the retailer's daily returns on their own lag and obtains: squared error(t) = 0.80 + 0.45 x squared error(t-1). The slope has a t-statistic of 3.2. Yesterday's squared error was 1.6.",
+      "text_tr": "Kerem Aksoy, kurgusal portföy yönetim şirketi Pera Portföy'de kantitatif analisttir. Borsada işlem gören bir perakendecinin çeyreklik gelirinin yıllık büyüme oranını (%) 80 çeyreklik veriyle modelliyor. En küçük kareler yöntemiyle tahmin ettiği AR(1) modeli: büyüme(t) = 0,60 + 0,70 x büyüme(t-1) + hata. Son gözlenen büyüme oranı %3,5.\nKerem kalıntıları kontrol ediyor. Birinci derece kalıntı otokorelasyonu 0,35 ve bir kalıntı otokorelasyonunun standart hatası 1/sqrt(T)'dir; T gözlem sayısıdır. Kritik t değeri yaklaşık 1,99.\nAyrıca Kerem perakendecinin hisse fiyat düzeyini inceliyor. Fiyatın kendi gecikmesine regresyonu 0,97 eğim ve 0,02 standart hata veriyor. Dickey-Fuller çerçevesinde eğim eksi 1'i -2,86'lık kritik değerle (%5 düzeyi, tek yönlü) karşılaştırıyor. Fiyat serisinin rassal yürüyüş olduğundan şüpheleniyor.\nKerem iki tahmin modelini beş örneklem dışı çeyrekte karşılaştırıyor. Tahmin hataları (gerçekleşen eksi tahmin, yüzde puan): Model A için 0,5, -1,0, 0,8, -0,4 ve 1,1; Model B için 0,9, -1,2, 1,1, -0,7 ve 1,6.\nSon olarak perakendecinin günlük getirilerinin kalıntı karelerini kendi gecikmesine regresyona sokuyor: hata karesi(t) = 0,80 + 0,45 x hata karesi(t-1). Eğimin t istatistiği 3,2. Dünkü hata karesi 1,6'dır.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Summary inputs",
+          "title_tr": "Gösterge 1: Özet girdiler",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "AR(1) intercept / slope",
+              "0.60 / 0.70"
+            ],
+            [
+              "Latest growth",
+              "3.5%"
+            ],
+            [
+              "Residual autocorrelation lag 1 (T = 80)",
+              "0.35"
+            ],
+            [
+              "Price on lagged price: slope / s.e.",
+              "0.97 / 0.02"
+            ],
+            [
+              "Dickey-Fuller critical value (5%)",
+              "-2.86"
+            ],
+            [
+              "ARCH regression: intercept / slope (t = 3.2)",
+              "0.80 / 0.45"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-05-v01-q1",
+        "L2-QM-05-v01-q2",
+        "L2-QM-05-v01-q3",
+        "L2-QM-05-v01-q4",
+        "L2-QM-05-v01-q5",
+        "L2-QM-05-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-05-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "The mean-reverting level of the AR(1) growth model is closest to:",
+      "stem_tr": "AR(1) büyüme modelinin ortalamaya dönüş düzeyi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.0%",
+          "tr": "2,0%",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "0.6%",
+          "tr": "0,6%",
+          "value": 0.6
+        },
+        {
+          "key": "C",
+          "en": "0.3%",
+          "tr": "0,3%",
+          "value": 0.35
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Mean-reverting level = b0 / (1 - b1) = 0.60 / (1 - 0.70) = 2.0%. Growth above 2.0% is expected to fall back toward it.",
+      "explanation_tr": "Ortalamaya dönüş düzeyi = b0 / (1 - b1) = 0,60 / (1 - 0,70) = %2,0. %2,0'ın üzerindeki büyümenin buna doğru gerilemesi beklenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It reports the intercept itself and ignores the slope.",
+          "tr": "Eğimi yok sayıp kesişimi aynen bildirir."
+        },
+        "C": {
+          "en": "It divides by (1 + slope) instead of (1 - slope).",
+          "tr": "(1 - eğim) yerine (1 + eğim) ile böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the mean-reverting level.",
+          "tr": "Ortalamaya dönüş düzeyi isteniyor."
+        },
+        {
+          "en": "Level = b0 / (1 - b1).",
+          "tr": "Düzey = b0 / (1 - b1)."
+        },
+        {
+          "en": "0.60 / 0.30.",
+          "tr": "0,60 / 0,30."
+        },
+        {
+          "en": "Result: 2.0%.",
+          "tr": "Sonuç: %2,0."
+        }
+      ],
+      "numeric": {
+        "expr": "0.60/(1-0.70)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "mean-reversion",
+        "intercept",
+        "slope",
+        "time-series",
+        "covariance-stationary"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-05-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "Using the latest growth of 3.5%, the two-quarters-ahead forecast of growth is closest to:",
+      "stem_tr": "3,5%'lik son büyümeyi kullanarak iki çeyrek sonrası büyüme tahmini en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.05%",
+          "tr": "3,05%",
+          "value": 3.05
+        },
+        {
+          "key": "B",
+          "en": "2.31%",
+          "tr": "2,31%",
+          "value": 2.31
+        },
+        {
+          "key": "C",
+          "en": "2.73%",
+          "tr": "2,73%",
+          "value": 2.73
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "One step: 0.60 + 0.70 x 3.5 = 3.05. Two steps: 0.60 + 0.70 x 3.05 = 2.73%. The forecast moves toward the mean of 2.0%.",
+      "explanation_tr": "Bir adım: 0,60 + 0,70 x 3,5 = 3,05. İki adım: 0,60 + 0,70 x 3,05 = %2,73. Tahmin 2,0'lık ortalamaya doğru hareket eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is only the one-quarter-ahead forecast.",
+          "tr": "Bu yalnızca bir çeyrek sonrası tahmindir."
+        },
+        "B": {
+          "en": "It plugs the slope in twice but drops the intercept from the second step.",
+          "tr": "Eğimi iki kez kullanır ama ikinci adımda kesişimi atar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the two-step-ahead forecast.",
+          "tr": "İki adım sonrası tahmin isteniyor."
+        },
+        {
+          "en": "Chain forecast: x(t+2) = b0 + b1 x(t+1) using the first forecast.",
+          "tr": "Zincir tahmin: x(t+2) = b0 + b1 x(t+1), ilk tahmini kullanarak."
+        },
+        {
+          "en": "x(t+1) = 3.05; x(t+2) = 0.60 + 0.70 x 3.05.",
+          "tr": "x(t+1) = 3,05; x(t+2) = 0,60 + 0,70 x 3,05."
+        },
+        {
+          "en": "Result: 2.73%.",
+          "tr": "Sonuç: %2,73."
+        }
+      ],
+      "numeric": {
+        "expr": "0.60+0.70*(0.60+0.70*3.5)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "forecast",
+        "forecast-horizon",
+        "mean-reversion",
+        "lag",
+        "time-series"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-05-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "The t-statistic for the first-order residual autocorrelation is closest to which value, and what does it imply for the AR(1) model?",
+      "stem_tr": "Birinci derece kalıntı otokorelasyonunun t istatistiği en yakın hangi değerdir ve AR(1) modeli için ne ima eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.13; the AR(1) model is misspecified, so a lag should be added",
+          "tr": "3,13; AR(1) modeli yanlış tanımlanmıştır, bir gecikme eklenmelidir"
+        },
+        {
+          "key": "B",
+          "en": "0.35; the AR(1) model is adequate",
+          "tr": "0,35; AR(1) modeli yeterlidir"
+        },
+        {
+          "key": "C",
+          "en": "1.57; the AR(1) model is adequate",
+          "tr": "1,57; AR(1) modeli yeterlidir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Standard error = 1/sqrt(80) = 0.112; t = 0.35 / 0.112 = 3.13 > 1.99. The residuals are serially correlated, so the model should include more lags.",
+      "explanation_tr": "Standart hata = 1/sqrt(80) = 0,112; t = 0,35 / 0,112 = 3,13 > 1,99. Kalıntılar seri korelasyonludur; modele daha fazla gecikme eklenmelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.35 is the autocorrelation, not the t-statistic. Dividing by the standard error 1/sqrt(80) = 0.112 gives 3.13, which exceeds 1.99.",
+          "tr": "0,35 otokorelasyondur, t istatistiği değil. Standart hata 1/sqrt(80) = 0,112 ile bölünce 3,13 çıkar ve 1,99'u aşar."
+        },
+        "C": {
+          "en": "This halves the correct t-statistic and wrongly calls the model adequate; the true value of 3.13 is significant.",
+          "tr": "Doğru t istatistiğini yarıya böler ve modeli yanlışlıkla yeterli sayar; gerçek değer 3,13 anlamlıdır."
+        }
+      },
+      "vocab_ids": [
+        "autocorrelation",
+        "residual",
+        "standard-error",
+        "t-statistic",
+        "serial-dependence"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-05-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "The Dickey-Fuller test statistic for the share price regression is closest to:",
+      "stem_tr": "Hisse fiyatı regresyonu için Dickey-Fuller test istatistiği en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "48.50",
+          "tr": "48,50",
+          "value": 48.5
+        },
+        {
+          "key": "B",
+          "en": "-1.50",
+          "tr": "-1,50",
+          "value": -1.5
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "DF statistic = (0.97 - 1) / 0.02 = -1.50. This is above the critical value -2.86, so we fail to reject the unit root: the series is likely a random walk and should be first-differenced.",
+      "explanation_tr": "DF istatistiği = (0,97 - 1) / 0,02 = -1,50. Bu, -2,86'lık kritik değerin üzerindedir; birim kök reddedilemez: seri büyük olasılıkla rassal yürüyüştür ve birinci farkı alınmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It divides the slope itself by the standard error and omits the subtraction of 1.",
+          "tr": "Eğimden 1 çıkarmadan doğrudan standart hataya böler."
+        },
+        "C": {
+          "en": "It reverses the sign: it should be (slope - 1), a negative number.",
+          "tr": "İşareti ters çevirir; ifade (eğim - 1) olmalı ve negatif çıkmalıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the Dickey-Fuller statistic.",
+          "tr": "Dickey-Fuller istatistiği isteniyor."
+        },
+        {
+          "en": "DF = (b1 - 1) / standard error.",
+          "tr": "DF = (b1 - 1) / standart hata."
+        },
+        {
+          "en": "(0.97 - 1) / 0.02 = -0.03 / 0.02.",
+          "tr": "(0,97 - 1) / 0,02 = -0,03 / 0,02."
+        },
+        {
+          "en": "Result: -1.50.",
+          "tr": "Sonuç: -1,50."
+        }
+      ],
+      "numeric": {
+        "expr": "(0.97-1)/0.02"
+      },
+      "vocab_ids": [
+        "unit-root",
+        "random-walk",
+        "first-difference",
+        "fail-to-reject",
+        "critical-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-05-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "The out-of-sample root mean squared error (RMSE) of Model A is closest to:",
+      "stem_tr": "Model A'nın örneklem dışı hata kareler ortalamasının karekökü (RMSE) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.760",
+          "tr": "0,760",
+          "value": 0.76
+        },
+        {
+          "key": "B",
+          "en": "0.652",
+          "tr": "0,652",
+          "value": 0.652
+        },
+        {
+          "key": "C",
+          "en": "0.807",
+          "tr": "0,807",
+          "value": 0.807
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Squared errors sum to 3.26; mean = 0.652; RMSE = sqrt(0.652) = 0.807. Model B has RMSE 1.141, so Model A is more accurate out of sample.",
+      "explanation_tr": "Kare hataların toplamı 3,26; ortalama 0,652; RMSE = sqrt(0,652) = 0,807. Model B'nin RMSE değeri 1,141; Model A örneklem dışında daha isabetlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It averages the absolute errors (MAE) rather than the squared errors.",
+          "tr": "Kare hatalar yerine mutlak hataların ortalamasını (MAE) alır."
+        },
+        "B": {
+          "en": "It stops at the mean squared error and forgets the square root.",
+          "tr": "Ortalama kare hatada durur, karekökü unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find Model A's RMSE.",
+          "tr": "Model A'nın RMSE değeri isteniyor."
+        },
+        {
+          "en": "RMSE = sqrt(mean of squared errors).",
+          "tr": "RMSE = kare hataların ortalamasının karekökü."
+        },
+        {
+          "en": "(0.25 + 1.00 + 0.64 + 0.16 + 1.21)/5 = 0.652.",
+          "tr": "(0,25 + 1,00 + 0,64 + 0,16 + 1,21)/5 = 0,652."
+        },
+        {
+          "en": "Result: sqrt(0.652) = 0.807.",
+          "tr": "Sonuç: sqrt(0,652) = 0,807."
+        }
+      ],
+      "numeric": {
+        "expr": "math.sqrt((0.5**2+1.0**2+0.8**2+0.4**2+1.1**2)/5)"
+      },
+      "vocab_ids": [
+        "root-mean-squared-error",
+        "out-of-sample",
+        "forecast",
+        "compare"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-05-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-QM-05-v01",
+      "stem_en": "Given the ARCH regression and yesterday's squared error of 1.6, the forecast of next period's error variance is closest to:",
+      "stem_tr": "ARCH regresyonu ve dünkü 1,6'lık hata karesi göz önüne alındığında bir sonraki dönemin hata varyansı tahmini en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.72",
+          "tr": "0,72",
+          "value": 0.72
+        },
+        {
+          "key": "B",
+          "en": "1.52",
+          "tr": "1,52",
+          "value": 1.52
+        },
+        {
+          "key": "C",
+          "en": "0.58",
+          "tr": "0,58",
+          "value": 0.58
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The t-statistic of 3.2 shows ARCH(1) effects. Forecast variance = 0.80 + 0.45 x 1.6 = 1.52.",
+      "explanation_tr": "3,2'lik t istatistiği ARCH(1) etkisini gösterir. Varyans tahmini = 0,80 + 0,45 x 1,6 = 1,52.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It leaves out the intercept 0.80.",
+          "tr": "0,80'lik kesişimi atlar."
+        },
+        "C": {
+          "en": "It multiplies the three numbers together instead of using a0 + a1 x error squared.",
+          "tr": "a0 + a1 x hata karesi yerine üç sayıyı çarpar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the forecast conditional variance.",
+          "tr": "Koşullu varyans tahmini isteniyor."
+        },
+        {
+          "en": "Variance(t+1) = a0 + a1 x squared error(t).",
+          "tr": "Varyans(t+1) = a0 + a1 x hata karesi(t)."
+        },
+        {
+          "en": "0.80 + 0.45 x 1.6 = 0.80 + 0.72.",
+          "tr": "0,80 + 0,45 x 1,6 = 0,80 + 0,72."
+        },
+        {
+          "en": "Result: 1.52.",
+          "tr": "Sonuç: 1,52."
+        }
+      ],
+      "numeric": {
+        "expr": "0.80+0.45*1.6"
+      },
+      "vocab_ids": [
+        "volatility",
+        "variance",
+        "forecast",
+        "residual",
+        "autocorrelation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

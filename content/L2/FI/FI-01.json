@@ -1,0 +1,437 @@
+{
+  "module_id": "FI-01",
+  "vignettes": [
+    {
+      "id": "L2-FI-01-v01",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "curriculum_year": 2027,
+      "title_en": "Term structure review at Marmara Asset Management",
+      "title_tr": "Marmara Portföy’de getiri eğrisi değerlendirmesi",
+      "text_en": "Selin Aydın is a fixed-income portfolio manager at Marmara Asset Management, a fictional Istanbul-based firm. She is reviewing a government yield curve before a committee meeting. The market quotes annual-pay spot rates for zero-coupon bonds, shown in the table. Selin holds a 3-year, 5.00% annual-pay government bond with a face value of 100. She plans to hold it for exactly one year and then sell it. She assumes that the spot curve will be unchanged on the sale date, so that the bond, then a 2-year bond, is valued with today's 1-year and 2-year spot rates.\n\nHer colleague, Emre Koç, argues that the upward-sloping curve proves that investors expect short-term rates to rise by exactly the amount implied by forward rates. Selin disagrees and says that a liquidity premium may be part of the forward rates.\n\nSelin also manages a small portfolio whose effective duration is 2.80 and effective convexity is 9.00. She wants to estimate the effect of a parallel upward shift of 50 basis points in the benchmark curve. She notes that all rates in the exercise are annual and compounded once per year.",
+      "text_tr": "Selin Aydın, kurgusal, İstanbul merkezli Marmara Portföy'de sabit getirili portföy yöneticisidir. Komite toplantısı öncesinde bir devlet getiri eğrisini inceliyor. Piyasa, sıfır kuponlu tahviller için yılda bir bileşikleşen spot faizleri tabloda gösterildiği gibi kote ediyor. Selin, nominal değeri 100 olan, 3 yıl vadeli, yıllık %5,00 kuponlu bir devlet tahviline sahip. Tahvili tam bir yıl elde tutup satmayı planlıyor. Satış tarihinde spot eğrinin değişmemiş olacağını, dolayısıyla o tarihte 2 yıl vadeli olan tahvilin bugünkü 1 yıllık ve 2 yıllık spot faizlerle değerleneceğini varsayıyor.\n\nMeslektaşı Emre Koç, yukarı eğimli eğrinin kısa vadeli faizlerin forward faizlerin ima ettiği tutarda artacağını beklediklerini kanıtladığını savunuyor. Selin katılmıyor ve forward faizlerde likidite priminin de bulunabileceğini söylüyor.\n\nSelin ayrıca etkin durasyonu 2,80 ve etkin konveksitesi 9,00 olan küçük bir portföyü yönetiyor. Gösterge eğrideki 50 baz puanlık paralel yukarı kaymanın etkisini tahmin etmek istiyor. Alıştırmadaki tüm faizlerin yıllık ve yılda bir kez bileşikleşen olduğunu belirtiyor.",
+      "tables": [
+        {
+          "title_en": "Spot rates",
+          "title_tr": "Spot faizler",
+          "headers": [
+            "Maturity",
+            "Spot rate"
+          ],
+          "rows": [
+            [
+              "1 year",
+              "3.00%"
+            ],
+            [
+              "2 years",
+              "3.50%"
+            ],
+            [
+              "3 years",
+              "4.00%"
+            ],
+            [
+              "4 years",
+              "4.40%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FI-01-v01-q1",
+        "L2-FI-01-v01-q2",
+        "L2-FI-01-v01-q3",
+        "L2-FI-01-v01-q4",
+        "L2-FI-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FI-01-v01-q1",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-01-v01",
+      "stem_en": "Using the spot rates in the table, the 1-year forward rate starting one year from today (the 1y1y rate) is closest to:",
+      "stem_tr": "Tablodaki spot faizler kullanılarak, bir yıl sonra başlayan 1 yıllık forward faiz (1y1y) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.002427
+        },
+        {
+          "key": "B",
+          "en": "3.25%",
+          "tr": "%3,25",
+          "value": 3.25
+        },
+        {
+          "key": "C",
+          "en": "1.40%",
+          "tr": "%1,40",
+          "value": 1.4
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This averages the two spot rates; the 2-year spot is a compounded, not arithmetic, average of the 1-year rates.",
+          "tr": "Bu, iki spot faizin ortalamasıdır; 2 yıllık spot, 1 yıllık faizlerin aritmetik değil bileşik ortalamasıdır."
+        },
+        "C": {
+          "en": "Subtracting the 1-year spot from the 4-year spot is not a forward calculation and uses the wrong maturities.",
+          "tr": "4 yıllık spottan 1 yıllık spotu çıkarmak forward hesabı değildir ve yanlış vadeleri kullanır."
+        }
+      },
+      "explanation_en": "The 2-year spot compounds to 1.071225; dividing by the 1-year growth factor of 1.03 gives 1.04, so the forward rate is about 4.00%.",
+      "explanation_tr": "2 yıllık spot 1,071225'e bileşikleşir; 1 yıllık büyüme faktörü 1,03'e bölününce 1,04 çıkar, yani forward faiz yaklaşık %4,00'dır.",
+      "solution_steps": [
+        {
+          "en": "We need the rate for a 1-year loan starting in one year.",
+          "tr": "Bir yıl sonra başlayan 1 yıllık borçlanma faizi isteniyor."
+        },
+        {
+          "en": "(1+S2)^2 = (1+S1)(1+f), so f = (1+S2)^2/(1+S1) - 1.",
+          "tr": "(1+S2)^2 = (1+S1)(1+f), dolayısıyla f = (1+S2)^2/(1+S1) - 1."
+        },
+        {
+          "en": "f = 1.035^2 / 1.03 - 1 = 1.071225 / 1.03 - 1.",
+          "tr": "f = 1,035^2 / 1,03 - 1 = 1,071225 / 1,03 - 1."
+        },
+        {
+          "en": "f = 4.00 percent.",
+          "tr": "f = %4,00."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "yield-curve",
+        "duration",
+        "convexity",
+        "basis-point",
+        "liquidity-premium",
+        "compounding"
+      ],
+      "numeric": {
+        "expr": "((1.035**2)/1.03-1)*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-01-v01-q2",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-01-v01",
+      "stem_en": "The value today of Selin's 3-year, 5.00% annual-pay bond (face 100), discounted at the spot rates in the table, is closest to:",
+      "stem_tr": "Selin'in 3 yıl vadeli, yıllık %5,00 kuponlu tahvilinin (nominal 100) tablodaki spot faizlerle iskonto edilen bugünkü değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "104.23",
+          "tr": "104,23",
+          "value": 104.225907
+        },
+        {
+          "key": "B",
+          "en": "102.87",
+          "tr": "102,87",
+          "value": 102.86654
+        },
+        {
+          "key": "C",
+          "en": "105.66",
+          "tr": "105,66",
+          "value": 105.657223
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This discounts the final cash flow with the 2-year spot rate; the third cash flow must use the 3-year spot rate.",
+          "tr": "Son nakit akışını 2 yıllık spot faizle iskonto eder; üçüncü nakit akışı 3 yıllık spot faizle iskonto edilmelidir."
+        },
+        "C": {
+          "en": "This uses the 1-year spot rate (3.00%) for all flows, which overstates the price.",
+          "tr": "Tüm akışlar için 1 yıllık spot faizin (%3,00) kullanılması fiyatı olduğundan yüksek gösterir."
+        }
+      },
+      "explanation_en": "Each cash flow is discounted at the spot rate for its own maturity, giving about 102.87.",
+      "explanation_tr": "Her nakit akışı kendi vadesine ait spot faizle iskonto edilir; sonuç yaklaşık 102,87'dir.",
+      "solution_steps": [
+        {
+          "en": "Value the bond as a sum of present values of its cash flows.",
+          "tr": "Tahvil, nakit akışlarının bugünkü değerlerinin toplamı olarak değerlenir."
+        },
+        {
+          "en": "PV = 5/(1+S1) + 5/(1+S2)^2 + 105/(1+S3)^3.",
+          "tr": "PV = 5/(1+S1) + 5/(1+S2)^2 + 105/(1+S3)^3."
+        },
+        {
+          "en": "5/1.03 = 4.8544; 5/1.035^2 = 4.6677; 105/1.04^3 = 93.3446.",
+          "tr": "5/1,03 = 4,8544; 5/1,035^2 = 4,6677; 105/1,04^3 = 93,3446."
+        },
+        {
+          "en": "Sum = 102.87.",
+          "tr": "Toplam = 102,87."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "yield-curve",
+        "duration",
+        "convexity",
+        "basis-point",
+        "liquidity-premium",
+        "compounding"
+      ],
+      "numeric": {
+        "expr": "5/1.03+5/1.035**2+105/1.04**3"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-01-v01-q3",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-01-v01",
+      "stem_en": "If Selin's assumption about an unchanged curve holds, her holding-period return over the one year (coupon plus price change) is closest to:",
+      "stem_tr": "Selin'in eğrinin değişmediği varsayımı gerçekleşirse, bir yıllık elde tutma getirisi (kupon artı fiyat değişimi) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        },
+        {
+          "key": "B",
+          "en": "0.01%",
+          "tr": "%0,01",
+          "value": 0.006273
+        },
+        {
+          "key": "C",
+          "en": "4.87%",
+          "tr": "%4,87",
+          "value": 4.86694
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Using the 4.00% 3-year spot rate as the return ignores the roll-down and the actual price path.",
+          "tr": "4,00'lik 3 yıllık spot faizi getiri saymak roll-down etkisini ve gerçek fiyat patikasını yok sayar."
+        },
+        "B": {
+          "en": "This is the price change only; it forgets to add the coupon received during the year.",
+          "tr": "Bu yalnızca fiyat değişimidir; yıl içinde alınan kuponu eklemeyi unutur."
+        }
+      },
+      "explanation_en": "Rolling down to the lower 1- and 2-year spot rates leaves the price roughly unchanged, so the return is the 5.00 coupon plus a small gain, about 4.87%.",
+      "explanation_tr": "Daha düşük 1 ve 2 yıllık spot faizlere kayma fiyatı yaklaşık aynı bırakır; getiri 5,00 kupon artı küçük bir kazançla yaklaşık %4,87 olur.",
+      "solution_steps": [
+        {
+          "en": "Find the starting price and the price in one year.",
+          "tr": "Başlangıç fiyatı ve bir yıl sonraki fiyat bulunur."
+        },
+        {
+          "en": "P0 = 102.87 from the 3-year valuation.",
+          "tr": "P0 = 102,87 (3 yıllık değerleme)."
+        },
+        {
+          "en": "P1 = 5/1.03 + 105/1.035^2 = 4.8544 + 98.0231 = 102.88.",
+          "tr": "P1 = 5/1,03 + 105/1,035^2 = 4,8544 + 98,0231 = 102,88."
+        },
+        {
+          "en": "Return = (102.88 + 5)/102.87 - 1 = 4.87 percent.",
+          "tr": "Getiri = (102,88 + 5)/102,87 - 1 = %4,87."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "yield-curve",
+        "duration",
+        "convexity",
+        "basis-point",
+        "liquidity-premium",
+        "compounding"
+      ],
+      "numeric": {
+        "expr": "((5/1.03+105/1.035**2)+5)/(5/1.03+5/1.035**2+105/1.04**3)*100-100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-01-v01-q4",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-01-v01",
+      "stem_en": "Regarding the disagreement between Emre and Selin, which statement is most consistent with the liquidity preference theory?",
+      "stem_tr": "Emre ile Selin arasındaki anlaşmazlık konusunda, likidite tercihi teorisiyle en tutarlı ifade hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Forward rates exceed the market's expected future short rates because investors demand extra yield for longer maturities.",
+          "tr": "Forward faizler, yatırımcılar uzun vadeler için ek getiri talep ettiğinden piyasanın beklenen gelecek kısa faizlerinden yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "Forward rates equal expected future spot rates exactly, so the curve is a pure forecast.",
+          "tr": "Forward faizler beklenen gelecek spot faizlere tam eşittir, dolayısıyla eğri saf bir tahmindir."
+        },
+        {
+          "key": "C",
+          "en": "Investors prefer a specific maturity and will not move to other maturities unless rates rise.",
+          "tr": "Yatırımcılar belirli bir vadeyi tercih eder ve faizler artmadıkça başka vadeye geçmez."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That is the pure expectations theory, which Selin is questioning.",
+          "tr": "Bu saf beklentiler teorisidir; Selin tam da bunu sorguluyor."
+        },
+        "C": {
+          "en": "That describes the preferred habitat idea, not liquidity preference.",
+          "tr": "Bu, tercih edilen habitat fikrini anlatır; likidite tercihi değildir."
+        }
+      },
+      "explanation_en": "Liquidity preference theory adds a premium that rises with maturity, so forward rates are the expected future rate plus that premium. An upward slope can therefore appear even with flat expectations.",
+      "explanation_tr": "Likidite tercihi teorisi vadeyle artan bir prim ekler; forward faiz, beklenen gelecek faiz artı bu primdir. Beklentiler yatay olsa bile eğri yukarı eğimli olabilir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "yield-curve",
+        "duration",
+        "convexity",
+        "basis-point",
+        "liquidity-premium",
+        "compounding"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "L2-FI-01-v01-q5",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-01",
+      "los_id": "FI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-01-v01",
+      "stem_en": "Using duration and convexity, the approximate percentage change in the value of the portfolio for the +50 bp parallel shift is closest to:",
+      "stem_tr": "Durasyon ve konveksite kullanılarak, +50 bp paralel kayma için portföy değerindeki yaklaşık yüzde değişim en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.41%",
+          "tr": "%1,41",
+          "value": 1.41125
+        },
+        {
+          "key": "B",
+          "en": "-1.39%",
+          "tr": "%-1,39",
+          "value": -1.38875
+        },
+        {
+          "key": "C",
+          "en": "-0.27%",
+          "tr": "%-0,27",
+          "value": -0.275
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The sign is wrong: rising rates reduce the price, so the duration effect is negative.",
+          "tr": "İşaret yanlış: faiz artışı fiyatı düşürür, durasyon etkisi negatiftir."
+        },
+        "C": {
+          "en": "The shift was entered as 0.5 instead of 0.005; basis points must be converted to decimals.",
+          "tr": "Kayma 0,005 yerine 0,5 girilmiş; baz puanlar ondalığa çevrilmelidir."
+        }
+      },
+      "explanation_en": "The duration effect is -1.40% and the convexity effect adds about +0.01%, for a net change of about -1.39%.",
+      "explanation_tr": "Durasyon etkisi %-1,40, konveksite etkisi yaklaşık +%0,01; net değişim yaklaşık %-1,39'dur.",
+      "solution_steps": [
+        {
+          "en": "Estimate %ΔP for a +0.50% shift.",
+          "tr": "+%0,50 kayma için %ΔP tahmin edilir."
+        },
+        {
+          "en": "%ΔP ≈ -D×Δy + 0.5×C×(Δy)^2.",
+          "tr": "%ΔP ≈ -D×Δy + 0,5×C×(Δy)^2."
+        },
+        {
+          "en": "= -2.80×0.005 + 0.5×9.00×0.000025 = -0.0140 + 0.0001125.",
+          "tr": "= -2,80×0,005 + 0,5×9,00×0,000025 = -0,0140 + 0,0001125."
+        },
+        {
+          "en": "= -1.39 percent.",
+          "tr": "= %-1,39."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "yield-curve",
+        "duration",
+        "convexity",
+        "basis-point",
+        "liquidity-premium",
+        "compounding"
+      ],
+      "numeric": {
+        "expr": "(-2.80*0.005+0.5*9.00*0.005**2)*100"
+      },
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

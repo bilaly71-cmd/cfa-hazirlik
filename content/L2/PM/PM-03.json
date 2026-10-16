@@ -1,0 +1,392 @@
+{
+  "module_id": "PM-03",
+  "vignettes": [
+    {
+      "id": "L2-PM-03-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "curriculum_year": 2027,
+      "title_en": "ETF selection at Marmara Pension Fund",
+      "title_tr": "Marmara Emeklilik Fonu’nda ETF seçimi",
+      "text_en": "Burak Çetin manages the equity sleeve of Marmara Pension Fund, a fictional pension fund. He wants to use an exchange-traded fund (ETF) that tracks a large-company equity index. At the close of trading yesterday, the ETF's net asset value (NAV) was 52.40 per share, while the ETF traded at 52.70 on the exchange. The bid-ask spread of the ETF was 0.04 around a mid-price of 52.50.\n\nAn authorized participant (AP) can create or redeem ETF shares in creation units of 50,000 shares in exchange for the underlying basket of securities. Burak wants to understand how the AP keeps the market price near NAV. For this exercise, assume that the AP can trade the basket at the NAV-implied value and ignore all trading costs.\n\nBurak also compares past performance. Over the past year, the ETF returned 8.15% while its index returned 8.60%. The ETF's annual expense ratio is 0.35%. He will hold the ETF for two years. For the cost of holding, he adds the expense ratio for two years and the cost of crossing the bid-ask spread once, measured as the full spread relative to the mid-price.\n\nFinally, Burak's colleague Cansu argues that ETFs are generally more tax-efficient than comparable mutual funds because of the in-kind creation and redemption process. Burak wants to check this view.",
+      "text_tr": "Burak Çetin, kurgusal bir emeklilik fonu olan Marmara Emeklilik Fonu'nun hisse senedi portföyünü yönetir. Büyük şirketlerden oluşan bir hisse endeksini izleyen bir borsa yatırım fonu (ETF) kullanmak istiyor. Dün işlem kapanışında ETF'nin net varlık değeri (NAV) pay başına 52,40 iken ETF borsada 52,70'ten işlem gördü. ETF'nin alış-satış farkı, 52,50 orta fiyat çevresinde 0,04'tür.\n\nYetkili katılımcı (AP), ETF paylarını 50.000 paylık yaratma birimleri halinde dayanak sepetle takas ederek yaratabilir veya itfa edebilir. Burak, AP'nin piyasa fiyatını NAV'a yakın tutmasını anlamak istiyor. Bu alıştırmada AP'nin sepeti NAV'ın ima ettiği değerden işlem yapabildiğini ve tüm işlem maliyetlerinin yok sayıldığını varsayın.\n\nBurak ayrıca geçmiş performansı karşılaştırıyor. Geçen yıl ETF %8,15 getirirken endeksi %8,60 getirdi. ETF'nin yıllık gider oranı %0,35'tir. ETF'yi iki yıl elde tutacak. Elde tutma maliyeti için iki yıllık gider oranını ve alış-satış farkını bir kez geçmenin maliyetini (farkın tamamı, orta fiyata oranla) topluyor.\n\nSon olarak Burak'ın meslektaşı Cansu, ayni yaratma ve itfa süreci nedeniyle ETF'lerin benzer yatırım fonlarına göre genellikle daha vergi etkin olduğunu savunuyor. Burak bu görüşü kontrol etmek istiyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-PM-03-v01-q1",
+        "L2-PM-03-v01-q2",
+        "L2-PM-03-v01-q3",
+        "L2-PM-03-v01-q4",
+        "L2-PM-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-03-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "los_id": "PM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-03-v01",
+      "stem_en": "The ETF's premium to NAV is closest to:",
+      "stem_tr": "ETF'nin NAV'a göre primi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.30%",
+          "tr": "%0,30",
+          "value": 0.3
+        },
+        {
+          "key": "B",
+          "en": "0.57%",
+          "tr": "%0,57",
+          "value": 0.572519
+        },
+        {
+          "key": "C",
+          "en": "0.38%",
+          "tr": "%0,38",
+          "value": 0.380952
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the premium in currency units per share, not a percentage of NAV.",
+          "tr": "Bu, pay başına parasal prim tutarıdır; NAV'ın yüzdesi değildir."
+        },
+        "C": {
+          "en": "This uses the mid-price instead of the NAV as the reference value.",
+          "tr": "Referans değer olarak NAV yerine orta fiyatı kullanır."
+        }
+      },
+      "explanation_en": "The premium is 0.30 / 52.40 = 0.57%.",
+      "explanation_tr": "Prim 0,30 / 52,40 = %0,57'dir.",
+      "solution_steps": [
+        {
+          "en": "Premium = (market price - NAV) / NAV.",
+          "tr": "Prim = (piyasa fiyatı - NAV) / NAV."
+        },
+        {
+          "en": "Market price - NAV = 52.70 - 52.40 = 0.30.",
+          "tr": "Piyasa fiyatı - NAV = 52,70 - 52,40 = 0,30."
+        },
+        {
+          "en": "0.30 / 52.40.",
+          "tr": "0,30 / 52,40."
+        },
+        {
+          "en": "Premium = 0.57 percent.",
+          "tr": "Prim = %0,57."
+        }
+      ],
+      "vocab_ids": [
+        "etf",
+        "net-asset-value",
+        "premium",
+        "bid-ask-spread"
+      ],
+      "numeric": {
+        "expr": "(52.70-52.40)/52.40*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-03-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "los_id": "PM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-03-v01",
+      "stem_en": "Ignoring costs, the AP's profit from one creation unit in the premium arbitrage is closest to:",
+      "stem_tr": "Maliyetler yok sayıldığında, prim arbitrajında bir yaratma birimi için AP'nin kârı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "10,000",
+          "tr": "10.000",
+          "value": 10000.0
+        },
+        {
+          "key": "B",
+          "en": "1,500",
+          "tr": "1.500",
+          "value": 1500.0
+        },
+        {
+          "key": "C",
+          "en": "15,000",
+          "tr": "15.000",
+          "value": 15000.0
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the mid-price rather than NAV as the cost of the basket.",
+          "tr": "Sepetin maliyeti olarak NAV yerine orta fiyatı kullanır."
+        },
+        "B": {
+          "en": "This uses a creation unit of 5,000 shares instead of 50,000.",
+          "tr": "50.000 yerine 5.000 paylık yaratma birimi kullanır."
+        }
+      },
+      "explanation_en": "Earning 0.30 per share on 50,000 shares gives 15,000. New supply of shares pushes the market price back toward NAV.",
+      "explanation_tr": "50.000 pay üzerinden pay başına 0,30 kazanmak 15.000 eder. Yeni pay arzı piyasa fiyatını NAV'a doğru geri iter.",
+      "solution_steps": [
+        {
+          "en": "The AP buys the basket at NAV, delivers it for new ETF shares, and sells the shares at market price.",
+          "tr": "AP sepeti NAV'dan alır, yeni ETF paylarıyla takas eder ve payları piyasa fiyatından satar."
+        },
+        {
+          "en": "Profit per share = 52.70 - 52.40 = 0.30.",
+          "tr": "Pay başına kâr = 52,70 - 52,40 = 0,30."
+        },
+        {
+          "en": "Creation unit = 50,000 shares.",
+          "tr": "Yaratma birimi = 50.000 pay."
+        },
+        {
+          "en": "Profit = 15,000.",
+          "tr": "Kâr = 15.000."
+        }
+      ],
+      "vocab_ids": [
+        "etf",
+        "net-asset-value",
+        "premium",
+        "bid-ask-spread"
+      ],
+      "numeric": {
+        "expr": "(52.70-52.40)*50000"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-03-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "los_id": "PM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-03-v01",
+      "stem_en": "The part of the ETF's tracking difference over the past year that is NOT explained by the expense ratio is closest to:",
+      "stem_tr": "ETF'nin geçen yılki izleme farkının gider oranıyla AÇIKLANMAYAN kısmı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.10%",
+          "tr": "%0,10",
+          "value": 0.1
+        },
+        {
+          "key": "B",
+          "en": "0.45%",
+          "tr": "%0,45",
+          "value": 0.45
+        },
+        {
+          "key": "C",
+          "en": "0.80%",
+          "tr": "%0,80",
+          "value": 0.8
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the entire tracking difference, including the part explained by the expense ratio.",
+          "tr": "Gider oranıyla açıklanan kısım dahil, izleme farkının tamamıdır."
+        },
+        "C": {
+          "en": "Adding the expense ratio is wrong; it should be subtracted because it explains part of the shortfall.",
+          "tr": "Gider oranını eklemek yanlıştır; eksikliğin bir bölümünü açıkladığı için çıkarılmalıdır."
+        }
+      },
+      "explanation_en": "The ETF lagged its index by 0.45%; the expense ratio explains 0.35%, leaving 0.10%, which may reflect trading costs and sampling.",
+      "explanation_tr": "ETF endeksinin %0,45 gerisinde kaldı; gider oranı %0,35'ini açıklar, kalan %0,10 işlem maliyetleri ve örneklemeyi yansıtabilir.",
+      "solution_steps": [
+        {
+          "en": "Tracking difference = index return - ETF return = 8.60% - 8.15%.",
+          "tr": "İzleme farkı = endeks getirisi - ETF getirisi = %8,60 - %8,15."
+        },
+        {
+          "en": "= 0.45%.",
+          "tr": "= %0,45."
+        },
+        {
+          "en": "Subtract the expense ratio of 0.35%.",
+          "tr": "%0,35 gider oranı çıkarılır."
+        },
+        {
+          "en": "Unexplained = 0.10 percent.",
+          "tr": "Açıklanmayan = %0,10."
+        }
+      ],
+      "vocab_ids": [
+        "etf",
+        "net-asset-value",
+        "premium",
+        "bid-ask-spread"
+      ],
+      "numeric": {
+        "expr": "(8.60-8.15)-0.35",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-03-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "los_id": "PM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-03-v01",
+      "stem_en": "Burak's total cost of holding the ETF for two years as defined above is closest to:",
+      "stem_tr": "Burak'ın yukarıda tanımlandığı şekilde ETF'yi iki yıl elde tutma toplam maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.43%",
+          "tr": "%0,43",
+          "value": 0.42619
+        },
+        {
+          "key": "B",
+          "en": "0.78%",
+          "tr": "%0,78",
+          "value": 0.77619
+        },
+        {
+          "key": "C",
+          "en": "0.70%",
+          "tr": "%0,70",
+          "value": 0.7
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This counts the expense ratio for one year instead of two.",
+          "tr": "Gider oranını iki yıl yerine bir yıl sayar."
+        },
+        "C": {
+          "en": "This leaves out the cost of crossing the bid-ask spread.",
+          "tr": "Alış-satış farkını geçme maliyetini dışarıda bırakır."
+        }
+      },
+      "explanation_en": "Two years of expenses (0.70%) plus the spread cost (0.076%) give about 0.78%.",
+      "explanation_tr": "İki yıllık giderler (%0,70) ile fark maliyeti (%0,076) yaklaşık %0,78 eder.",
+      "solution_steps": [
+        {
+          "en": "Total cost = 2 × expense ratio + spread / mid-price.",
+          "tr": "Toplam maliyet = 2 × gider oranı + fark / orta fiyat."
+        },
+        {
+          "en": "2 × 0.35% = 0.70%.",
+          "tr": "2 × %0,35 = %0,70."
+        },
+        {
+          "en": "0.04 / 52.50 = 0.076%.",
+          "tr": "0,04 / 52,50 = %0,076."
+        },
+        {
+          "en": "Total = 0.78 percent.",
+          "tr": "Toplam = %0,78."
+        }
+      ],
+      "vocab_ids": [
+        "etf",
+        "net-asset-value",
+        "premium",
+        "bid-ask-spread"
+      ],
+      "numeric": {
+        "expr": "0.35*2+0.04/52.50*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-03-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-03",
+      "los_id": "PM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-03-v01",
+      "stem_en": "Regarding Cansu's view, the most appropriate conclusion is that:",
+      "stem_tr": "Cansu'nun görüşüne ilişkin en uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "it is incorrect, because ETFs must sell securities for cash to meet every redemption.",
+          "tr": "yanlıştır; çünkü ETF'ler her itfayı karşılamak için menkul kıymet satıp nakit yaratmak zorundadır."
+        },
+        {
+          "key": "B",
+          "en": "it is correct only because ETFs never distribute income to investors.",
+          "tr": "yalnızca ETF'ler yatırımcılara asla gelir dağıtmadığı için doğrudur."
+        },
+        {
+          "key": "C",
+          "en": "it is generally correct, because redeeming shares in kind allows the ETF to hand over low-cost-basis securities and so avoid realizing taxable gains.",
+          "tr": "genel olarak doğrudur; çünkü ayni itfa, ETF'nin düşük maliyetli menkul kıymetleri teslim etmesine ve böylece vergilendirilebilir kazanç gerçekleştirmekten kaçınmasına izin verir."
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Most ETF redemptions are done in kind, which is the source of the tax advantage.",
+          "tr": "ETF itfalarının çoğu ayni yapılır ve vergi avantajının kaynağı budur."
+        },
+        "B": {
+          "en": "ETFs can distribute dividends and interest; the advantage relates to capital gains realized by the fund.",
+          "tr": "ETF'ler temettü ve faiz dağıtabilir; avantaj, fonun gerçekleştirdiği sermaye kazançlarıyla ilgilidir."
+        }
+      },
+      "explanation_en": "In-kind redemption lets the fund transfer appreciated securities out of the portfolio without selling them, which reduces realized capital gains passed on to remaining holders.",
+      "explanation_tr": "Ayni itfa, fonun değer kazanmış menkul kıymetleri satmadan portföyden çıkarmasına izin verir ve kalan yatırımcılara yansıyan gerçekleşmiş sermaye kazançlarını azaltır.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "etf",
+        "net-asset-value",
+        "premium",
+        "bid-ask-spread",
+        "in-kind"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    }
+  ]
+}

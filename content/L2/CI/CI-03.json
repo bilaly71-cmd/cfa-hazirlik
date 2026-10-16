@@ -1,0 +1,382 @@
+{
+  "module_id": "CI-03",
+  "vignettes": [
+    {
+      "id": "L2-CI-03-v01",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "curriculum_year": 2027,
+      "title_en": "Pamuk Tekstil Project Cost of Capital",
+      "title_tr": "Pamuk Tekstil Proje Sermaye Maliyeti",
+      "text_en": "Pamuk Tekstil, a Turkish textile exporter, is evaluating a project in a new, more leveraged business line. The analyst finds a listed pure-play peer with a levered equity beta of 1.30, a debt-to-equity ratio (D/E) of 0.50 and a tax rate of 25%. Pamuk will finance the new project at a target D/E of 0.80 and the tax rate is also 25%. The risk-free rate is 5.0% and the equity risk premium is 5.5%. Because the project sells into emerging markets, the analyst adds a country risk premium of 2.0% directly to the cost of equity. Pamuk can borrow at 9.0% before tax. The project requires raising TL 100 million of new equity, and the issue has flotation costs of 3% of the amount raised. One manager proposes adding the flotation cost to the cost of equity, and another wants to ignore it as it is small. Assume the debt beta is zero.",
+      "text_tr": "Pamuk Tekstil, bir Türk tekstil ihracatçısıdır ve yeni, daha kaldıraçlı bir iş kolunda bir projeyi değerlendiriyor. Analist, kaldıraçlı özkaynak betası 1,30, borç/özkaynak oranı (B/Ö) 0,50 ve vergi oranı %25 olan borsada işlem gören saf bir emsal buluyor. Pamuk yeni projeyi 0,80'lik hedef B/Ö ile finanse edecek ve vergi oranı yine %25'tir. Risksiz oran %5,0, hisse senedi risk primi %5,5'tir. Proje gelişmekte olan piyasalara sattığından analist, özkaynak maliyetine doğrudan %2,0 ülke risk primi ekliyor. Pamuk vergi öncesi %9,0'dan borçlanabilir. Proje, 100 milyon TL tutarında yeni özkaynak çıkarılmasını gerektiriyor ve ihracın maliyeti toplanan tutarın %3'ü kadardır. Bir yönetici ihraç maliyetinin özkaynak maliyetine eklenmesini, bir diğeri ise küçük olduğu için yok sayılmasını öneriyor. Borç betasının sıfır olduğunu varsayın.",
+      "tables": [
+        {
+          "title_en": "Inputs",
+          "title_tr": "Girdiler",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Peer beta / D/E / tax",
+              "1.30 / 0.50 / 25%"
+            ],
+            [
+              "Target D/E",
+              "0.80"
+            ],
+            [
+              "Rf / ERP / CRP",
+              "5.0% / 5.5% / 2.0%"
+            ],
+            [
+              "Pretax cost of debt",
+              "9.0%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-CI-03-v01-q1",
+        "L2-CI-03-v01-q2",
+        "L2-CI-03-v01-q3",
+        "L2-CI-03-v01-q4",
+        "L2-CI-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-CI-03-v01-q1",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "los_id": "CI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-03-v01",
+      "stem_en": "The unlevered (asset) beta of the peer is closest to:",
+      "stem_tr": "Emsalin kaldıraçsız (varlık) betası yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.867",
+          "tr": "0,867",
+          "value": 0.866667
+        },
+        {
+          "key": "B",
+          "en": "0.945",
+          "tr": "0,945",
+          "value": 0.945455
+        },
+        {
+          "key": "C",
+          "en": "1.788",
+          "tr": "1,788",
+          "value": 1.7875
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Unlevered beta = 1.30 / (1 + (1 - 0.25) x 0.50) = 1.30 / 1.375 = 0.945.",
+      "explanation_tr": "Kaldıraçsız beta = 1,30 / (1 + (1 - 0,25) x 0,50) = 1,30 / 1,375 = 0,945.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores the tax shield (1 - t) in the unlevering formula.",
+          "tr": "Kaldıraçtan arındırma formülündeki vergi kalkanını (1 - t) yok sayar."
+        },
+        "C": {
+          "en": "This relevers rather than unlevers.",
+          "tr": "Bu kaldıraçtan arındırmaz, kaldıraç ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "1 + 0.75 x 0.50 = 1.375",
+          "tr": "1 + 0,75 x 0,50 = 1,375"
+        },
+        {
+          "en": "1.30 / 1.375 = 0.945",
+          "tr": "1,30 / 1,375 = 0,945"
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "leverage",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "1.30/(1+(1-0.25)*0.50)"
+      }
+    },
+    {
+      "id": "L2-CI-03-v01-q2",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "los_id": "CI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-03-v01",
+      "stem_en": "The project's beta, relevered at the target D/E of 0.80, is closest to:",
+      "stem_tr": "Hedef B/Ö 0,80 ile yeniden kaldıraçlanan proje betası yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.702",
+          "tr": "1,702",
+          "value": 1.701818
+        },
+        {
+          "key": "B",
+          "en": "2.080",
+          "tr": "2,080",
+          "value": 2.08
+        },
+        {
+          "key": "C",
+          "en": "1.513",
+          "tr": "1,513",
+          "value": 1.512727
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Relevered beta = 0.945 x (1 + 0.75 x 0.80) = 0.945 x 1.60 = 1.513.",
+      "explanation_tr": "Yeniden kaldıraçlanmış beta = 0,945 x (1 + 0,75 x 0,80) = 0,945 x 1,60 = 1,513.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omits the (1 - t) tax factor when relevering.",
+          "tr": "Kaldıraç eklerken (1 - t) vergi faktörünü atlar."
+        },
+        "B": {
+          "en": "Relevers the peer's levered beta without first removing the peer's own leverage.",
+          "tr": "Emsalin kaldıraçlı betasını, önce emsalin kendi kaldıracını çıkarmadan yeniden kaldıraçlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "0.945 x 1.60 = 1.513",
+          "tr": "0,945 x 1,60 = 1,513"
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "target",
+        "capital-structure",
+        "leverage"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "1.30/(1+(1-0.25)*0.50)*(1+(1-0.25)*0.80)"
+      }
+    },
+    {
+      "id": "L2-CI-03-v01-q3",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "los_id": "CI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-03-v01",
+      "stem_en": "The project's cost of equity (including the country risk premium) is closest to:",
+      "stem_tr": "Projenin özkaynak maliyeti (ülke risk primi dahil) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.32%",
+          "tr": "%15,32",
+          "value": 15.32
+        },
+        {
+          "key": "B",
+          "en": "14.15%",
+          "tr": "%14,15",
+          "value": 14.15
+        },
+        {
+          "key": "C",
+          "en": "13.32%",
+          "tr": "%13,32",
+          "value": 13.32
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cost of equity = 5.0% + 1.513 x 5.5% + 2.0% = 5.0 + 8.32 + 2.0 = 15.32%.",
+      "explanation_tr": "Özkaynak maliyeti = %5,0 + 1,513 x %5,5 + %2,0 = 5,0 + 8,32 + 2,0 = %15,32.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses the peer's levered beta of 1.30 rather than the project's relevered beta.",
+          "tr": "Projenin yeniden kaldıraçlanmış betası yerine emsalin kaldıraçlı betası 1,30'u kullanır."
+        },
+        "C": {
+          "en": "Leaves out the 2.0% country risk premium.",
+          "tr": "%2,0 ülke risk primini dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "1.513 x 5.5% = 8.32%",
+          "tr": "1,513 x %5,5 = %8,32"
+        },
+        {
+          "en": "5.0 + 8.32 + 2.0 = 15.32%",
+          "tr": "5,0 + 8,32 + 2,0 = %15,32"
+        }
+      ],
+      "vocab_ids": [
+        "cost-of-equity",
+        "capm",
+        "risk-free",
+        "equity-risk-premium"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "5.0+1.30/(1+(1-0.25)*0.50)*(1+(1-0.25)*0.80)*5.5+2.0",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-CI-03-v01-q4",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "los_id": "CI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-CI-03-v01",
+      "stem_en": "The project's WACC at the target D/E of 0.80 is closest to:",
+      "stem_tr": "Hedef B/Ö 0,80 ile projenin AOSM'si yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.51%",
+          "tr": "%12,51",
+          "value": 12.511111
+        },
+        {
+          "key": "B",
+          "en": "11.51%",
+          "tr": "%11,51",
+          "value": 11.511111
+        },
+        {
+          "key": "C",
+          "en": "11.04%",
+          "tr": "%11,04",
+          "value": 11.035
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Weights: E/V = 1 / 1.8 = 55.6%, D/V = 0.8 / 1.8 = 44.4%. After-tax cost of debt = 9.0% x 0.75 = 6.75%. WACC = 0.556 x 15.32% + 0.444 x 6.75% = 8.51% + 3.00% = 11.51%.",
+      "explanation_tr": "Ağırlıklar: Ö/D = 1 / 1,8 = %55,6; B/D = 0,8 / 1,8 = %44,4. Vergi sonrası borç maliyeti = %9,0 x 0,75 = %6,75. AOSM = 0,556 x %15,32 + 0,444 x %6,75 = %8,51 + %3,00 = %11,51.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the pretax cost of debt; WACC uses the after-tax cost.",
+          "tr": "Vergi öncesi borç maliyetini kullanır; AOSM vergi sonrası maliyeti kullanır."
+        },
+        "C": {
+          "en": "Uses 50/50 weights; D/E of 0.80 implies a debt weight of 0.8 / 1.8 = 44.4%.",
+          "tr": "%50/%50 ağırlık kullanır; B/Ö 0,80, borç ağırlığını 0,8 / 1,8 = %44,4 yapar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Weights 55.6% / 44.4%",
+          "tr": "Ağırlıklar %55,6 / %44,4"
+        },
+        {
+          "en": "After-tax Kd = 6.75%",
+          "tr": "Vergi sonrası Kd = %6,75"
+        },
+        {
+          "en": "WACC = 11.51%",
+          "tr": "AOSM = %11,51"
+        }
+      ],
+      "vocab_ids": [
+        "wacc",
+        "after-tax",
+        "cost-of-debt",
+        "capital-structure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(1/1.8)*(5.0+1.30/(1+(1-0.25)*0.50)*(1+(1-0.25)*0.80)*5.5+2.0)+(0.8/1.8)*9.0*(1-0.25)",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-CI-03-v01-q5",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-03",
+      "los_id": "CI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-03-v01",
+      "stem_en": "How should the flotation cost on the TL 100 million equity issue be treated in the project analysis?",
+      "stem_tr": "100 milyon TL'lik özkaynak ihracındaki ihraç maliyeti proje analizinde nasıl ele alınmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "By adding 3% to the cost of equity",
+          "tr": "Özkaynak maliyetine %3 ekleyerek"
+        },
+        {
+          "key": "B",
+          "en": "By ignoring it, since 3% is small",
+          "tr": "Yok sayarak, çünkü %3 küçüktür"
+        },
+        {
+          "key": "C",
+          "en": "As a project cash outflow (about TL 3 million) at the start, not as an adjustment to the cost of equity",
+          "tr": "Projenin başında bir nakit çıkışı (yaklaşık 3 milyon TL) olarak; özkaynak maliyetine yapılan bir düzeltme olarak değil"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Flotation costs are paid once when the capital is raised. The theoretically correct treatment is to subtract them from the project's NPV (or add them to the initial outlay): 3% x 100 = TL 3 million.",
+      "explanation_tr": "İhraç maliyetleri sermaye toplanırken bir kez ödenir. Teorik olarak doğru yöntem, bunları projenin NPV'sinden düşmek (veya ilk yatırım tutarına eklemek) gerekir: %3 x 100 = 3 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Flotation costs are a one-time cash cost, not a continuing cost; adding to the discount rate would overstate their effect.",
+          "tr": "İhraç maliyeti sürekli değil, tek seferlik bir nakit maliyettir; iskonto oranına eklemek etkisini abartır."
+        },
+        "B": {
+          "en": "A TL 3 million cash cost reduces NPV and should be included.",
+          "tr": "3 milyon TL'lik nakit maliyet NPV'yi azaltır ve dahil edilmelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cost-of-equity",
+        "assume",
+        "exceed",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

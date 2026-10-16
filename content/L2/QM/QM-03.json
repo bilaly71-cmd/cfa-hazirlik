@@ -1,0 +1,452 @@
+{
+  "module_id": "QM-03",
+  "vignettes": [
+    {
+      "id": "L2-QM-03-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "curriculum_year": 2027,
+      "title_en": "Diagnosing a Sales Growth Model",
+      "title_tr": "Satış Büyümesi Modelinin Tanısı",
+      "text_en": "Aylin Demir works in the research team of the fictional food company Anadolu Gıda. She models quarterly sales growth (%) using 48 quarters of data. The independent variables are real GDP growth (GDP, %), CPI inflation (CPI, %) and average wage growth (WAGE, %). The regression R-squared is 0.81 and the F-test is highly significant, but the t-statistics are only 3.10 for GDP, 1.20 for CPI and 0.85 for WAGE (critical t-value about 2.01). CPI and WAGE move closely together in Turkey, and a regression of CPI on GDP and WAGE gives an R-squared of 0.92.\nAylin runs two diagnostic tests on the residuals. The Durbin-Watson statistic is 0.95. For a sample of 48 observations and 3 independent variables, the Durbin-Watson lower and upper critical values at the 5% level are 1.42 and 1.67. She also runs a Breusch-Pagan test: regressing the squared residuals on the independent variables gives an R-squared of 0.21. The 5% critical chi-square value with 3 degrees of freedom is 7.81.\nHer colleague points out that the model leaves out labour productivity, which is positively related to sales growth and positively correlated with WAGE. Aylin must decide what these results imply for the reliability of her model.",
+      "text_tr": "Aylin Demir, kurgusal gıda şirketi Anadolu Gıda'nın araştırma ekibinde çalışıyor. 48 çeyreklik veriyle çeyreklik satış büyümesini (%) modelliyor. Bağımsız değişkenler: reel GSYH büyümesi (GDP, %), TÜFE enflasyonu (CPI, %) ve ortalama ücret artışı (WAGE, %). Regresyonun R-karesi 0,81 ve F testi çok anlamlı; ancak t istatistikleri GDP için 3,10, CPI için 1,20, WAGE için 0,85 (kritik t değeri yaklaşık 2,01). Türkiye'de CPI ile WAGE yakından birlikte hareket ediyor; CPI'nın GDP ve WAGE üzerine regresyonu 0,92 R-kare veriyor.\nAylin kalıntılar üzerinde iki tanı testi yapıyor. Durbin-Watson istatistiği 0,95. 48 gözlem ve 3 bağımsız değişken için %5 düzeyinde Durbin-Watson alt ve üst kritik değerleri 1,42 ve 1,67. Ayrıca Breusch-Pagan testi yapıyor: kalıntı karelerinin bağımsız değişkenlere regresyonu 0,21 R-kare veriyor. 3 serbestlik derecesiyle %5 kritik ki-kare değeri 7,81.\nMeslektaşı modelin işgücü verimliliğini dışarıda bıraktığını, verimliliğin satış büyümesiyle pozitif, WAGE ile de pozitif ilişkili olduğunu belirtiyor. Aylin bu sonuçların modelin güvenilirliği için ne anlama geldiğine karar vermeli.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Diagnostics summary",
+          "title_tr": "Gösterge 1: Tanı özeti",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "n / k",
+              "48 / 3"
+            ],
+            [
+              "R-squared",
+              "0.81"
+            ],
+            [
+              "t-statistics (GDP, CPI, WAGE)",
+              "3.10, 1.20, 0.85"
+            ],
+            [
+              "R-squared of CPI on GDP and WAGE",
+              "0.92"
+            ],
+            [
+              "Durbin-Watson (dL, dU)",
+              "0.95 (1.42, 1.67)"
+            ],
+            [
+              "Breusch-Pagan auxiliary R-squared",
+              "0.21"
+            ],
+            [
+              "Chi-square critical value (5%, df = 3)",
+              "7.81"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-03-v01-q1",
+        "L2-QM-03-v01-q2",
+        "L2-QM-03-v01-q3",
+        "L2-QM-03-v01-q4",
+        "L2-QM-03-v01-q5",
+        "L2-QM-03-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-03-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "The variance inflation factor (VIF) for CPI is closest to:",
+      "stem_tr": "CPI için varyans şişirme faktörü (VIF) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.5",
+          "tr": "12,5",
+          "value": 12.5
+        },
+        {
+          "key": "B",
+          "en": "1.1",
+          "tr": "1,1",
+          "value": 1.09
+        },
+        {
+          "key": "C",
+          "en": "11.5",
+          "tr": "11,5",
+          "value": 11.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "VIF = 1/(1 - R2_j) = 1/(1 - 0.92) = 12.5, above the common cut-off of 5 or 10, which signals serious multicollinearity.",
+      "explanation_tr": "VIF = 1/(1 - R2_j) = 1/(1 - 0,92) = 12,5; yaygın 5 veya 10 eşiğinin üzerindedir ve ciddi çoklu doğrusal bağlantıya işaret eder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It uses 1/R-squared rather than 1/(1 - R-squared).",
+          "tr": "1/(1 - R-kare) yerine 1/R-kare kullanır."
+        },
+        "C": {
+          "en": "It computes R-squared/(1 - R-squared), which is not the VIF.",
+          "tr": "R-kare/(1 - R-kare) hesaplar; bu VIF değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the VIF of CPI.",
+          "tr": "CPI'nın VIF değeri isteniyor."
+        },
+        {
+          "en": "VIF = 1/(1 - R-squared of CPI on the other regressors).",
+          "tr": "VIF = 1/(1 - CPI'nın diğer değişkenlere regresyonunun R-karesi)."
+        },
+        {
+          "en": "1/(1 - 0.92) = 1/0.08.",
+          "tr": "1/(1 - 0,92) = 1/0,08."
+        },
+        {
+          "en": "Result: 12.5.",
+          "tr": "Sonuç: 12,5."
+        }
+      ],
+      "numeric": {
+        "expr": "1/(1-0.92)"
+      },
+      "vocab_ids": [
+        "variance-inflation-factor",
+        "multicollinearity",
+        "r-squared",
+        "regression",
+        "coefficient"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-03-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "A high R-squared and a significant F-test, but insignificant t-statistics for CPI and WAGE, are most consistent with:",
+      "stem_tr": "Yüksek R-kare ve anlamlı F testi, ama CPI ve WAGE için anlamsız t istatistikleri en çok neyle uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Heteroskedasticity, which makes the slope estimates biased",
+          "tr": "Değişen varyans; eğim tahminlerini yanlı yapar"
+        },
+        {
+          "key": "B",
+          "en": "A correctly specified model, because a significant F-test overrides the t-tests",
+          "tr": "Doğru tanımlanmış bir model; çünkü anlamlı F testi t testlerini geçersiz kılar"
+        },
+        {
+          "key": "C",
+          "en": "Multicollinearity, which inflates standard errors but leaves the slope estimates unbiased",
+          "tr": "Çoklu doğrusal bağlantı; standart hataları şişirir ama eğim tahminlerini yanlı yapmaz"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When regressors are highly correlated the model fits well overall, but the individual coefficients are imprecise because their standard errors are inflated.",
+      "explanation_tr": "Bağımsız değişkenler yüksek korelasyonluysa model genel olarak iyi uyar ama standart hatalar şiştiği için bireysel katsayılar kesin değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Heteroskedasticity makes the standard errors unreliable but leaves the slope estimates unbiased; it does not create this pattern of high R-squared with weak t-statistics.",
+          "tr": "Değişen varyans standart hataları güvenilmez yapar ama eğim tahminlerini yanlı yapmaz; yüksek R-kare ve zayıf t kalıbını yaratmaz."
+        },
+        "B": {
+          "en": "The F-test shows that at least one slope is non-zero. It does not say each variable is individually well estimated.",
+          "tr": "F testi en az bir eğimin sıfırdan farklı olduğunu gösterir; her değişkenin ayrı ayrı iyi tahmin edildiğini göstermez."
+        }
+      },
+      "vocab_ids": [
+        "multicollinearity",
+        "standard-error",
+        "unbiased",
+        "heteroskedasticity",
+        "inflate"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-03-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "Using the Durbin-Watson statistic of 0.95 and the critical values, Aylin should conclude that the residuals show:",
+      "stem_tr": "0,95'lik Durbin-Watson istatistiği ve kritik değerlere göre Aylin kalıntıların şunu gösterdiği sonucuna varmalıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Positive serial correlation",
+          "tr": "Pozitif seri korelasyon"
+        },
+        {
+          "key": "B",
+          "en": "No evidence of serial correlation",
+          "tr": "Seri korelasyon kanıtı yok"
+        },
+        {
+          "key": "C",
+          "en": "An inconclusive result",
+          "tr": "Sonuçsuz bir test"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "DW = 0.95 < dL = 1.42, so we reject the null of no positive serial correlation. The implied first-order autocorrelation is about 1 - 0.95/2 = 0.53.",
+      "explanation_tr": "DW = 0,95 < dL = 1,42; pozitif seri korelasyon olmadığı boş hipotezi reddedilir. Ima edilen birinci derece otokorelasyon yaklaşık 1 - 0,95/2 = 0,53.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The statistic is below the lower critical value 1.42, so the null of no positive serial correlation is rejected.",
+          "tr": "İstatistik 1,42'lik alt kritik değerin altındadır; pozitif seri korelasyon olmadığı boş hipotezi reddedilir."
+        },
+        "C": {
+          "en": "The inconclusive range is between 1.42 and 1.67; 0.95 lies below it.",
+          "tr": "Sonuçsuz bölge 1,42 ile 1,67 arasıdır; 0,95 bunun altındadır."
+        }
+      },
+      "vocab_ids": [
+        "durbin-watson-statistic",
+        "serial-correlation",
+        "autocorrelation",
+        "reject",
+        "null-hypothesis"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-03-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "The Breusch-Pagan test statistic (n x R-squared of the auxiliary regression) is closest to:",
+      "stem_tr": "Breusch-Pagan test istatistiği (n x yardımcı regresyonun R-karesi) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.21",
+          "tr": "0,21",
+          "value": 0.21
+        },
+        {
+          "key": "B",
+          "en": "10.08",
+          "tr": "10,08",
+          "value": 10.08
+        },
+        {
+          "key": "C",
+          "en": "37.92",
+          "tr": "37,92",
+          "value": 37.92
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "BP = n x R2 = 48 x 0.21 = 10.08. This exceeds the 5% critical value of 7.81, so the null of homoskedasticity is rejected.",
+      "explanation_tr": "BP = n x R2 = 48 x 0,21 = 10,08. Bu, %5 kritik değeri 7,81'i aşar; sabit varyans boş hipotezi reddedilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It reports the auxiliary R-squared itself and forgets to multiply by n.",
+          "tr": "Yardımcı R-karenin kendisini bildirir, n ile çarpmayı unutur."
+        },
+        "C": {
+          "en": "It multiplies n by (1 - R-squared) instead of by R-squared.",
+          "tr": "n'yi R-kare yerine (1 - R-kare) ile çarpar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the Breusch-Pagan statistic.",
+          "tr": "Breusch-Pagan istatistiği isteniyor."
+        },
+        {
+          "en": "BP = n x R-squared of the regression of squared residuals on the regressors.",
+          "tr": "BP = n x kalıntı karelerinin bağımsız değişkenlere regresyonunun R-karesi."
+        },
+        {
+          "en": "48 x 0.21.",
+          "tr": "48 x 0,21."
+        },
+        {
+          "en": "Result: 10.08.",
+          "tr": "Sonuç: 10,08."
+        }
+      ],
+      "numeric": {
+        "expr": "48*0.21"
+      },
+      "vocab_ids": [
+        "heteroskedasticity",
+        "test-statistic",
+        "reject",
+        "null-hypothesis",
+        "critical-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-03-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "Given both serial correlation and heteroskedasticity, which correction is most appropriate for valid inference on the coefficients?",
+      "stem_tr": "Hem seri korelasyon hem değişen varyans varken katsayılar üzerinde geçerli çıkarım için en uygun düzeltme hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "White-corrected standard errors only",
+          "tr": "Yalnızca White düzeltmeli standart hatalar"
+        },
+        {
+          "key": "B",
+          "en": "Dropping WAGE from the model",
+          "tr": "Modelden WAGE'i çıkarmak"
+        },
+        {
+          "key": "C",
+          "en": "Standard errors robust to both, such as Newey-West",
+          "tr": "İkisine de dayanıklı standart hatalar, örneğin Newey-West"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Newey-West standard errors adjust for both serial correlation and heteroskedasticity, so the t-tests become reliable.",
+      "explanation_tr": "Newey-West standart hataları hem seri korelasyonu hem değişen varyansı düzeltir; t testleri güvenilir hale gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "White-corrected errors address heteroskedasticity but not serial correlation.",
+          "tr": "White düzeltmesi değişen varyansı giderir, seri korelasyonu gidermez."
+        },
+        "B": {
+          "en": "Dropping a variable is a response to multicollinearity, not to the residual problems found in the tests; it can also cause omitted variable bias.",
+          "tr": "Değişken çıkarmak çoklu doğrusal bağlantıya yönelik bir çaredir, testlerde bulunan kalıntı sorunlarına değil; ayrıca dışlanan değişken yanlılığı yaratabilir."
+        }
+      },
+      "vocab_ids": [
+        "standard-error",
+        "serial-correlation",
+        "heteroskedasticity",
+        "adjust",
+        "appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-03-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-03-v01",
+      "stem_en": "Labour productivity is omitted, is positively related to sales growth and is positively correlated with WAGE. The WAGE coefficient is most likely:",
+      "stem_tr": "İşgücü verimliliği dışarıda; satış büyümesiyle pozitif, WAGE ile pozitif korelasyonlu. WAGE katsayısı büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Biased downward",
+          "tr": "Aşağı yönlü yanlı"
+        },
+        {
+          "key": "B",
+          "en": "Biased upward",
+          "tr": "Yukarı yönlü yanlı"
+        },
+        {
+          "key": "C",
+          "en": "Unbiased but with larger standard errors",
+          "tr": "Yansız ama standart hataları daha büyük"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The omitted variable's effect and its correlation with WAGE are both positive, so WAGE picks up part of productivity's effect and its coefficient is biased upward.",
+      "explanation_tr": "Dışlanan değişkenin etkisi ve WAGE ile korelasyonu pozitiftir; WAGE verimliliğin etkisinin bir kısmını üstlenir ve katsayısı yukarı yönlü yanlı olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The omitted variable has a positive effect and positive correlation with WAGE, so the bias is positive, not negative.",
+          "tr": "Dışlanan değişkenin etkisi pozitif ve WAGE ile korelasyonu pozitiftir; yanlılık negatif değil pozitiftir."
+        },
+        "C": {
+          "en": "This describes multicollinearity. An omitted correlated variable biases the coefficient.",
+          "tr": "Bu çoklu doğrusal bağlantıyı tanımlar. İlişkili bir değişkenin dışlanması katsayıyı yanlı yapar."
+        }
+      },
+      "vocab_ids": [
+        "omitted-variable-bias",
+        "biased",
+        "unbiased",
+        "positive-correlation",
+        "coefficient"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

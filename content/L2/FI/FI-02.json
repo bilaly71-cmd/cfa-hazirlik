@@ -1,0 +1,426 @@
+{
+  "module_id": "FI-02",
+  "vignettes": [
+    {
+      "id": "L2-FI-02-v01",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "curriculum_year": 2027,
+      "title_en": "Binomial tree valuation at Boğaz Securities",
+      "title_tr": "Boğaz Menkul’de binom ağaç değerlemesi",
+      "text_en": "Deniz Arslan is a fixed-income analyst at Boğaz Securities, a fictional broker in Istanbul. She values an option-free government bond with a binomial interest rate tree. The tree gives one-year forward rates at each node, and the up and down moves at each date have equal probability of 50%. The tree is meant to be calibrated to the current government spot curve.\n\nThe bond she values has three years to maturity, a face value of 100, and a 4.00% annual coupon. Cash flows occur at the end of each year. Deniz values the bond by backward induction: at each node she takes the average of the two possible next-period values, each plus the coupon, and discounts it at the one-year rate at that node.\n\nDeniz also checks whether the tree is consistent with the market. The one-year spot rate is 3.00% and the two-year spot rate is 3.50%. In addition, a dealer quotes a separate 2-year government bond with a 5.00% annual coupon at a price of 100.50. Deniz believes that if the quoted price differs from the value implied by spot rates, a risk-free profit may exist because the bond can be stripped into its separate cash flows. Her colleague Kerem says that increasing the assumed interest rate volatility in a tree calibrated to the same curve will clearly lower the value of an option-free bond.",
+      "text_tr": "Deniz Arslan, İstanbul'daki kurgusal bir aracı kurum olan Boğaz Menkul'de sabit getirili analisttir. Opsiyonsuz bir devlet tahvilini binom faiz ağacıyla değerliyor. Ağaç her düğümde bir yıllık forward faizleri verir ve her tarihte yukarı ve aşağı hareketin olasılığı %50'dir. Ağacın güncel devlet spot eğrisine kalibre edilmiş olması amaçlanıyor.\n\nDeğerlediği tahvilin vadesine üç yıl var, nominal değeri 100 ve yıllık kuponu %4,00'dır. Nakit akışları her yılın sonunda gerçekleşir. Deniz tahvili geriye doğru indirgeme ile değerliyor: her düğümde bir sonraki dönemin iki olası değerinin (her biri kuponla birlikte) ortalamasını alıp o düğümdeki bir yıllık faizle iskonto ediyor.\n\nDeniz ayrıca ağacın piyasayla tutarlı olup olmadığını kontrol ediyor. Bir yıllık spot faiz %3,00, iki yıllık spot faiz %3,50'dir. Buna ek olarak bir bayi, yıllık %5,00 kuponlu ayrı bir 2 yıllık devlet tahvilini 100,50 fiyattan kote ediyor. Deniz, kote fiyat spot faizlerin ima ettiği değerden farklıysa tahvil ayrı nakit akışlarına bölünebileceği için risksiz kâr oluşabileceğini düşünüyor. Meslektaşı Kerem, aynı eğriye kalibre edilmiş bir ağaçta varsayılan faiz volatilitesini artırmanın opsiyonsuz tahvil değerini belirgin biçimde düşüreceğini söylüyor.",
+      "tables": [
+        {
+          "title_en": "Binomial interest rate tree (one-year rates)",
+          "title_tr": "Binom faiz ağacı (bir yıllık faizler)",
+          "headers": [
+            "Date",
+            "Upper node",
+            "Middle node",
+            "Lower node"
+          ],
+          "rows": [
+            [
+              "Year 0",
+              "3.00%",
+              "—",
+              "—"
+            ],
+            [
+              "Year 1",
+              "4.20%",
+              "—",
+              "3.40%"
+            ],
+            [
+              "Year 2",
+              "5.00%",
+              "4.00%",
+              "3.20%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FI-02-v01-q1",
+        "L2-FI-02-v01-q2",
+        "L2-FI-02-v01-q3",
+        "L2-FI-02-v01-q4",
+        "L2-FI-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FI-02-v01-q1",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-FI-02-v01",
+      "stem_en": "Using the tree and backward induction, the value today of the 3-year, 4.00% bond is closest to:",
+      "stem_tr": "Ağaç ve geriye doğru indirgeme kullanılarak, 3 yıl vadeli %4,00 kuponlu tahvilin bugünkü değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "101.12",
+          "tr": "101,12",
+          "value": 101.119509
+        },
+        {
+          "key": "B",
+          "en": "102.83",
+          "tr": "102,83",
+          "value": 102.828611
+        },
+        {
+          "key": "C",
+          "en": "97.28",
+          "tr": "97,28",
+          "value": 97.276752
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This discounts all flows at the root 3.00% rate and ignores the higher future rates in the tree.",
+          "tr": "Tüm akışları kök düğümdeki %3,00 faizle iskonto eder ve ağaçtaki daha yüksek gelecek faizleri yok sayar."
+        },
+        "C": {
+          "en": "This discounts every flow at the highest year-2 rate (5.00%), which understates the value.",
+          "tr": "Her akışı yıl 2'deki en yüksek faizle (%5,00) iskonto eder; değeri olduğundan düşük bulur."
+        }
+      },
+      "explanation_en": "Backward induction through the three dates gives a value of about 101.12.",
+      "explanation_tr": "Üç tarih boyunca geriye doğru indirgeme yaklaşık 101,12 değerini verir.",
+      "solution_steps": [
+        {
+          "en": "Work backward from the year-3 cash flow of 104 at the year-2 nodes.",
+          "tr": "Yıl 3 nakit akışı 104'ten başlayarak yıl 2 düğümlerinden geriye gidilir."
+        },
+        {
+          "en": "Year-2 node values: 104/1.05 = 99.05; 104/1.04 = 100.00; 104/1.032 = 100.78.",
+          "tr": "Yıl 2 düğüm değerleri: 104/1,05 = 99,05; 104/1,04 = 100,00; 104/1,032 = 100,78."
+        },
+        {
+          "en": "Year-1 nodes: upper = [0.5(99.05+4)+0.5(100.00+4)]/1.042 = 99.35; lower = [0.5(104.00)+0.5(104.78)]/1.034 = 100.96.",
+          "tr": "Yıl 1 düğümleri: üst = [0,5(99,05+4)+0,5(100,00+4)]/1,042 = 99,35; alt = [0,5(104,00)+0,5(104,78)]/1,034 = 100,96."
+        },
+        {
+          "en": "Year 0: [0.5(99.35+4)+0.5(100.96+4)]/1.03 = 101.12.",
+          "tr": "Yıl 0: [0,5(99,35+4)+0,5(100,96+4)]/1,03 = 101,12."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "forward-rate",
+        "volatility",
+        "coupon"
+      ],
+      "numeric": {
+        "expr": "(0.5*((0.5*(104/1.05+4)+0.5*(104/1.04+4))/1.042+4)+0.5*((0.5*(104/1.04+4)+0.5*(104/1.032+4))/1.034+4))/1.03"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-02-v01-q2",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-02-v01",
+      "stem_en": "The value of the bond at the upper node in year 1 (the 4.20% node), after the year-1 coupon is excluded, is closest to:",
+      "stem_tr": "Yıl 1'deki üst düğümde (%4,20 düğümü), yıl 1 kuponu hariç tutulduğunda, tahvilin değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "100.96",
+          "tr": "100,96",
+          "value": 100.955123
+        },
+        {
+          "key": "B",
+          "en": "99.35",
+          "tr": "99,35",
+          "value": 99.351065
+        },
+        {
+          "key": "C",
+          "en": "95.51",
+          "tr": "95,51",
+          "value": 95.512293
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the lower-node value (3.40% node), not the upper node.",
+          "tr": "Bu, alt düğümün (%3,40 düğümü) değeridir; üst düğüm değildir."
+        },
+        "C": {
+          "en": "This forgets to add the 4.00 coupon paid at year 2 to each next-period value.",
+          "tr": "Yıl 2'de ödenen 4,00 kuponu bir sonraki dönem değerlerine eklemeyi unutur."
+        }
+      },
+      "explanation_en": "Averaging 103.05 and 104.00 gives 103.52; dividing by 1.042 gives 99.35.",
+      "explanation_tr": "103,05 ve 104,00'ın ortalaması 103,52'dir; 1,042'ye bölününce 99,35 bulunur.",
+      "solution_steps": [
+        {
+          "en": "Find the value at the 4.20% node in year 1.",
+          "tr": "Yıl 1'deki %4,20 düğümünün değeri bulunur."
+        },
+        {
+          "en": "The next nodes are the 5.00% and 4.00% nodes; their values are 99.05 and 100.00.",
+          "tr": "Sonraki düğümler %5,00 ve %4,00 düğümleridir; değerleri 99,05 ve 100,00'dür."
+        },
+        {
+          "en": "Add the coupon of 4 to each, average, and discount at 4.20%.",
+          "tr": "Her birine 4 kupon eklenir, ortalama alınır ve %4,20 ile iskonto edilir."
+        },
+        {
+          "en": "[0.5(103.05)+0.5(104.00)]/1.042 = 99.35.",
+          "tr": "[0,5(103,05)+0,5(104,00)]/1,042 = 99,35."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "forward-rate",
+        "volatility",
+        "coupon"
+      ],
+      "numeric": {
+        "expr": "(0.5*(104/1.05+4)+0.5*(104/1.04+4))/1.042"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-02-v01-q3",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-02-v01",
+      "stem_en": "The 2-year spot rate implied by the tree (from the price of a 2-year zero-coupon bond computed with the tree) is closest to:",
+      "stem_tr": "Ağacın ima ettiği 2 yıllık spot faiz (ağaçla hesaplanan 2 yıllık sıfır kuponlu tahvil fiyatından) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.50%",
+          "tr": "%3,50",
+          "value": 3.5
+        },
+        {
+          "key": "B",
+          "en": "3.80%",
+          "tr": "%3,80",
+          "value": 3.8
+        },
+        {
+          "key": "C",
+          "en": "3.40%",
+          "tr": "%3,40",
+          "value": 3.398459
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the market 2-year spot rate, not the value implied by the tree; the tree is not exactly calibrated.",
+          "tr": "Bu piyasadaki 2 yıllık spot faizdir, ağacın ima ettiği değer değildir; ağaç tam kalibre değildir."
+        },
+        "B": {
+          "en": "This averages the two year-1 forward rates; spot rates come from discount factors, not from averaging tree rates.",
+          "tr": "Yıl 1'deki iki forward faizin ortalamasıdır; spot faizler ağaç faizlerinin ortalamasından değil iskonto faktörlerinden çıkar."
+        }
+      },
+      "explanation_en": "The tree-implied 2-year spot rate is about 3.40%, below the market 3.50%, so the tree is not fully calibrated to the curve.",
+      "explanation_tr": "Ağacın ima ettiği 2 yıllık spot faiz yaklaşık %3,40'tır ve piyasadaki %3,50'nin altındadır; yani ağaç eğriye tam kalibre değildir.",
+      "solution_steps": [
+        {
+          "en": "Compute the 2-year zero price using the tree.",
+          "tr": "Ağaçla 2 yıllık sıfır kuponlu tahvil fiyatı hesaplanır."
+        },
+        {
+          "en": "Year-1 values of 100: 1/1.042 = 0.95969 and 1/1.034 = 0.96712.",
+          "tr": "Yıl 1'de 1 TL'nin değeri: 1/1,042 = 0,95969 ve 1/1,034 = 0,96712."
+        },
+        {
+          "en": "Price = 0.5(0.95969 + 0.96712)/1.03 = 0.93535.",
+          "tr": "Fiyat = 0,5(0,95969 + 0,96712)/1,03 = 0,93535."
+        },
+        {
+          "en": "Spot = (1/0.93535)^0.5 - 1 = 3.40 percent, below the market 3.50 percent.",
+          "tr": "Spot = (1/0,93535)^0,5 - 1 = %3,40; piyasadaki %3,50'nin altındadır."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "forward-rate",
+        "volatility",
+        "coupon"
+      ],
+      "numeric": {
+        "expr": "((1/(0.5*(1/1.042+1/1.034)/1.03))**0.5-1)*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-02-v01-q4",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-02-v01",
+      "stem_en": "Using spot rates, the risk-free profit per 100 face value from buying the quoted 2-year, 5.00% bond and selling its strips is closest to:",
+      "stem_tr": "Spot faizler kullanılarak, kote 2 yıllık %5,00 kuponlu tahvili alıp ayrıştırılmış parçalarını satmaktan elde edilecek, 100 nominal başına risksiz kâr en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.37",
+          "tr": "2,37",
+          "value": 2.372992
+        },
+        {
+          "key": "B",
+          "en": "2.87",
+          "tr": "2,87",
+          "value": 2.872992
+        },
+        {
+          "key": "C",
+          "en": "102.87",
+          "tr": "102,87",
+          "value": 102.872992
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This subtracts 100 (par) instead of the quoted price of 100.50.",
+          "tr": "Kote fiyat 100,50 yerine 100 (nominal) çıkarılmıştır."
+        },
+        "C": {
+          "en": "This is the strip value, not the profit; the purchase price must be subtracted.",
+          "tr": "Bu, parçaların toplam değeridir, kâr değildir; alış fiyatı çıkarılmalıdır."
+        }
+      },
+      "explanation_en": "The bond is cheap relative to its strips: the strips are worth 102.87 while the bond costs 100.50, a gain of about 2.37.",
+      "explanation_tr": "Tahvil parçalarına göre ucuzdur: parçalar 102,87 değerindeyken tahvil 100,50'ye satılıyor; kazanç yaklaşık 2,37'dir.",
+      "solution_steps": [
+        {
+          "en": "Compare the stripped value with the quoted price.",
+          "tr": "Ayrıştırılmış değer kote fiyatla karşılaştırılır."
+        },
+        {
+          "en": "Strip value = 5/1.03 + 105/1.035^2 = 4.85 + 98.02 = 102.87.",
+          "tr": "Parça değeri = 5/1,03 + 105/1,035^2 = 4,85 + 98,02 = 102,87."
+        },
+        {
+          "en": "The bond costs 100.50, so buying it and selling the strips earns 102.87 - 100.50.",
+          "tr": "Tahvil 100,50'ye mal olur; alıp parçaları satmak 102,87 - 100,50 kazandırır."
+        },
+        {
+          "en": "Profit = 2.37 per 100 face.",
+          "tr": "Kâr = 100 nominal başına 2,37."
+        }
+      ],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "forward-rate",
+        "volatility",
+        "coupon"
+      ],
+      "numeric": {
+        "expr": "5/1.03+105/1.035**2-100.5"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-02-v01-q5",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-02",
+      "los_id": "FI-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-02-v01",
+      "stem_en": "Regarding Kerem's statement about volatility, the most appropriate response is that:",
+      "stem_tr": "Kerem'in volatilite hakkındaki ifadesine en uygun yanıt hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a higher volatility always raises the value of an option-free bond through convexity.",
+          "tr": "daha yüksek volatilite, konveksite yoluyla opsiyonsuz tahvil değerini her zaman artırır."
+        },
+        {
+          "key": "B",
+          "en": "a tree recalibrated to the same spot curve still returns the same value for an option-free bond, so volatility does not materially change it.",
+          "tr": "aynı spot eğriye yeniden kalibre edilen bir ağaç opsiyonsuz tahvil için aynı değeri verir; dolayısıyla volatilite değeri önemli ölçüde değiştirmez."
+        },
+        {
+          "key": "C",
+          "en": "the bond value falls because the tree's up moves are larger than the down moves.",
+          "tr": "tahvil değeri düşer çünkü ağaçtaki yukarı hareketler aşağı hareketlerden büyüktür."
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Calibration to the same curve removes this effect for an option-free bond; convexity matters only when embedded options exist.",
+          "tr": "Aynı eğriye kalibrasyon, opsiyonsuz tahvil için bu etkiyi ortadan kaldırır; konveksite ancak gömülü opsiyon varsa belirleyicidir."
+        },
+        "C": {
+          "en": "Up and down moves are set so that the tree reprices the benchmark; they do not create a systematic loss in an option-free bond.",
+          "tr": "Yukarı ve aşağı hareketler ağacın gösterge tahvilleri doğru fiyatlaması için ayarlanır; opsiyonsuz tahvilde sistematik kayıp yaratmaz."
+        }
+      },
+      "explanation_en": "In a tree calibrated to the market curve, an option-free bond is priced consistently with its spot-rate value, whatever the volatility. Volatility changes values only for bonds with embedded options.",
+      "explanation_tr": "Piyasa eğrisine kalibre edilmiş bir ağaçta opsiyonsuz tahvil, volatiliteden bağımsız olarak spot faiz değeriyle tutarlı fiyatlanır. Volatilite yalnızca gömülü opsiyonlu tahvillerin değerini değiştirir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage",
+        "spot-rate",
+        "forward-rate",
+        "volatility",
+        "coupon",
+        "embedded-option"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    }
+  ]
+}

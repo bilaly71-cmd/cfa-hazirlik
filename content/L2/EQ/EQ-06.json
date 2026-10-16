@@ -1,0 +1,372 @@
+{
+  "module_id": "EQ-06",
+  "vignettes": [
+    {
+      "id": "L2-EQ-06-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "curriculum_year": 2027,
+      "title_en": "Bozkurt Makine Private Valuation",
+      "title_tr": "Bozkurt Makine Halka Kapalı Değerleme",
+      "text_en": "Bozkurt Makine is a family-owned Turkish machinery manufacturer that is not listed. A private equity investor is considering buying a 15% minority stake from one of the founders and hires an analyst to value it. The company reported pretax earnings of TL 14.0 million. The analyst finds that the owner pays himself TL 1.5 million above a market salary, and that earnings include a one-off legal settlement gain of TL 2.0 million. She uses normalized earnings in her valuation work. Using a discounted cash flow model on a control basis, she values the whole equity at TL 90 million, assuming that the buyer can run the firm freely. Transaction studies show that control premiums average 25%. The analyst also applies a discount for lack of marketability (DLOM) of 25%, because a 15% stake in a private company is difficult to sell. The valuation purpose is fair market value. The sale would be negotiated privately between the founder and the investor.",
+      "text_tr": "Bozkurt Makine, aile şirketi olan, borsada işlem görmeyen bir Türk makine üreticisidir. Bir özel sermaye yatırımcısı, kurucu ortaklardan birinden %15 azınlık payı almayı düşünüyor ve değerleme için bir analist görevlendiriyor. Şirket 14,0 milyon TL vergi öncesi kâr raporlamıştır. Analist, şirket sahibinin kendine piyasa maaşından 1,5 milyon TL fazla ödediğini ve kârın 2,0 milyon TL'lik tek seferlik bir dava uzlaşması kazancı içerdiğini görüyor. Değerleme çalışmasında normalleştirilmiş kâr kullanıyor. İndirgenmiş nakit akışı modelini kontrol bazında kullanarak, alıcının firmayı özgürce yönetebileceğini varsayıp tüm özkaynağı 90 milyon TL buluyor. İşlem çalışmaları kontrol primlerinin ortalama %25 olduğunu gösteriyor. Analist ayrıca pazarlanabilirlik iskontosu (PAİ) olarak %25 uyguluyor, çünkü halka kapalı bir şirkette %15'lik payı satmak zordur. Değerleme amacı gerçeğe uygun piyasa değeridir. Satış, kurucu ile yatırımcı arasında özel görüşmeyle yapılacaktır.",
+      "tables": [
+        {
+          "title_en": "Valuation inputs",
+          "title_tr": "Değerleme girdileri",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Reported pretax earnings (TL m)",
+              "14.0"
+            ],
+            [
+              "Owner excess compensation (TL m)",
+              "1.5"
+            ],
+            [
+              "One-off gain (TL m)",
+              "2.0"
+            ],
+            [
+              "Control premium / DLOM",
+              "25% / 25%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-06-v01-q1",
+        "L2-EQ-06-v01-q2",
+        "L2-EQ-06-v01-q3",
+        "L2-EQ-06-v01-q4",
+        "L2-EQ-06-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-06-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-06-v01",
+      "stem_en": "Normalized pretax earnings are:",
+      "stem_tr": "Normalleştirilmiş vergi öncesi kâr şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 17.5 million",
+          "tr": "17.5 milyon TL",
+          "value": 17.5
+        },
+        {
+          "key": "B",
+          "en": "TL 13.5 million",
+          "tr": "13.5 milyon TL",
+          "value": 13.5
+        },
+        {
+          "key": "C",
+          "en": "TL 10.5 million",
+          "tr": "10.5 milyon TL",
+          "value": 10.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Add back the above-market owner compensation (+1.5) and remove the one-off gain (-2.0): 14.0 + 1.5 - 2.0 = 13.5.",
+      "explanation_tr": "Piyasa üzeri sahip ücretini geri ekleyin (+1,5) ve tek seferlik kazancı çıkarın (-2,0): 14,0 + 1,5 - 2,0 = 13,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the one-off gain; non-recurring gains must be removed.",
+          "tr": "Tek seferlik kazancı ekler; tekrarlanmayan kazançlar çıkarılmalıdır."
+        },
+        "C": {
+          "en": "Subtracts the excess compensation; paying above-market salary lowered reported earnings, so it is added back.",
+          "tr": "Fazla ücreti düşer; piyasa üzeri maaş raporlanan kârı azalttığından geri eklenir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "14.0 + 1.5 = 15.5",
+          "tr": "14,0 + 1,5 = 15,5"
+        },
+        {
+          "en": "15.5 - 2.0 = 13.5",
+          "tr": "15,5 - 2,0 = 13,5"
+        }
+      ],
+      "vocab_ids": [
+        "normalized-earnings",
+        "compensation",
+        "add-back",
+        "private-company"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "14.0+1.5-2.0",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-EQ-06-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-06-v01",
+      "stem_en": "The discount for lack of control (DLOC) implied by a 25% control premium is:",
+      "stem_tr": "%25 kontrol priminin ima ettiği kontrol eksikliği iskontosu (KEİ) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "33.3%",
+          "tr": "%33,3",
+          "value": 33.333333
+        },
+        {
+          "key": "C",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "DLOC = 1 - 1 / (1 + control premium) = 1 - 1 / 1.25 = 20%.",
+      "explanation_tr": "KEİ = 1 - 1 / (1 + kontrol primi) = 1 - 1 / 1,25 = %20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats the premium as the discount; the DLOC is 1 - 1 / (1 + premium).",
+          "tr": "Primi iskonto sayar; KEİ = 1 - 1 / (1 + prim)'dir."
+        },
+        "B": {
+          "en": "Uses a 50% premium instead of the stated 25%.",
+          "tr": "Belirtilen %25 yerine %50 prim kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "1 / 1.25 = 0.80",
+          "tr": "1 / 1,25 = 0,80"
+        },
+        {
+          "en": "1 - 0.80 = 20%",
+          "tr": "1 - 0,80 = %20"
+        }
+      ],
+      "vocab_ids": [
+        "discount",
+        "control",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(1-1/1.25)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-EQ-06-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-06-v01",
+      "stem_en": "The value of the 15% non-marketable minority stake is:",
+      "stem_tr": "%15'lik pazarlanamaz azınlık payının değeri şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 8.1 million",
+          "tr": "8.1 milyon TL",
+          "value": 8.1
+        },
+        {
+          "key": "B",
+          "en": "TL 7.43 million",
+          "tr": "7.43 milyon TL",
+          "value": 7.425
+        },
+        {
+          "key": "C",
+          "en": "TL 13.5 million",
+          "tr": "13.5 milyon TL",
+          "value": 13.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Pro rata value = 15% x 90 = 13.5. After DLOC: 13.5 x 0.80 = 10.8. After DLOM: 10.8 x 0.75 = TL 8.1 million.",
+      "explanation_tr": "Orantılı değer = %15 x 90 = 13,5. KEİ sonrası: 13,5 x 0,80 = 10,8. PAİ sonrası: 10,8 x 0,75 = 8,1 milyon TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Adds the two discounts; discounts must be applied one after the other (multiplicatively).",
+          "tr": "İki iskontoyu toplar; iskontolar birbiri ardına (çarpımsal) uygulanmalıdır."
+        },
+        "C": {
+          "en": "Applies neither the DLOC nor the DLOM.",
+          "tr": "Ne KEİ ne PAİ uygular."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "15% x 90 = 13.5",
+          "tr": "%15 x 90 = 13,5"
+        },
+        {
+          "en": "13.5 x 0.80 = 10.8",
+          "tr": "13,5 x 0,80 = 10,8"
+        },
+        {
+          "en": "10.8 x 0.75 = 8.1",
+          "tr": "10,8 x 0,75 = 8,1"
+        }
+      ],
+      "vocab_ids": [
+        "marketability",
+        "discount",
+        "private-company",
+        "pro-rata"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "90*0.15*(1-0.20)*(1-0.25)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-EQ-06-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-06-v01",
+      "stem_en": "Which statement about the DCF value of TL 90 million is most accurate?",
+      "stem_tr": "90 milyon TL'lik DCF değeri hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It already includes both DLOC and DLOM",
+          "tr": "KEİ ve PAİ'yi zaten içerir"
+        },
+        {
+          "key": "B",
+          "en": "It is a control-basis, marketable value, so a minority, non-marketable stake needs adjustment",
+          "tr": "Kontrol bazlı, pazarlanabilir bir değerdir; bu nedenle azınlık ve pazarlanamaz bir pay için düzeltme gerekir"
+        },
+        {
+          "key": "C",
+          "en": "It can be used for the 15% stake without adjustment",
+          "tr": "Düzeltme yapılmadan %15'lik pay için kullanılabilir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Control and liquidity are valued separately. The DCF assumes control (free to change policy) and ready sale, so a minority stake in a private company needs both discounts.",
+      "explanation_tr": "Kontrol ve likidite ayrı değerlenir. DCF kontrolü (politikayı değiştirme özgürlüğü) ve hazır satışı varsayar; halka kapalı bir şirketteki azınlık payı için iki iskonto da gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The analyst assumed free control and ignored marketability, so neither discount is included.",
+          "tr": "Analist özgür kontrol varsaydı ve pazarlanabilirliği göz ardı etti; ikisi de dahil değildir."
+        },
+        "C": {
+          "en": "A minority holder cannot control cash flows or sell quickly, so its stake is worth less than the pro rata value.",
+          "tr": "Azınlık hissedarı nakit akışlarını kontrol edemez ve hızlı satamaz; payı orantılı değerden daha azdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "control",
+        "marketability",
+        "discount",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-EQ-06-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-06",
+      "los_id": "EQ-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-06-v01",
+      "stem_en": "The valuation purpose is fair market value. Compared with an investment value for this particular investor, fair market value:",
+      "stem_tr": "Değerleme amacı gerçeğe uygun piyasa değeridir. Bu yatırımcıya özgü yatırım değeriyle karşılaştırıldığında gerçeğe uygun piyasa değeri:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Always equals the investment value",
+          "tr": "Her zaman yatırım değerine eşittir"
+        },
+        {
+          "key": "B",
+          "en": "Includes the buyer's specific synergies and financing",
+          "tr": "Alıcıya özgü sinerjileri ve finansmanı içerir"
+        },
+        {
+          "key": "C",
+          "en": "Is the price between a hypothetical willing buyer and seller, without investor-specific synergies",
+          "tr": "Yatırımcıya özgü sinerjiler olmadan, varsayımsal istekli bir alıcı ile satıcı arasındaki fiyattır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Fair market value uses a hypothetical, informed and willing buyer and seller. Investment value reflects the benefits to one specific investor, for example synergies or special financing.",
+      "explanation_tr": "Gerçeğe uygun piyasa değeri varsayımsal, bilgili ve istekli bir alıcı ve satıcıyı esas alır. Yatırım değeri, belirli bir yatırımcıya sağlanan faydaları (ör. sinerji veya özel finansman) yansıtır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Investment value includes the investor's own synergies and requirements, so the two can differ.",
+          "tr": "Yatırım değeri yatırımcının kendi sinerjilerini ve gereksinimlerini içerir; ikisi farklı olabilir."
+        },
+        "B": {
+          "en": "These belong to investment value, not to fair market value.",
+          "tr": "Bunlar gerçeğe uygun piyasa değerine değil, yatırım değerine aittir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "fair-value",
+        "private-company",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

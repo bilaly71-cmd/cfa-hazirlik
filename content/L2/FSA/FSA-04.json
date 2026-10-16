@@ -1,0 +1,373 @@
+{
+  "module_id": "FSA-04",
+  "vignettes": [
+    {
+      "id": "L2-FSA-04-v01",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "curriculum_year": 2027,
+      "title_en": "Anadolu Bank Credit Review",
+      "title_tr": "Anadolu Bank Kredi İncelemesi",
+      "text_en": "An analyst is reviewing Anadolu Bank, a mid-sized Turkish commercial bank, before a credit committee meeting. Year-end figures are in TL millions. Tier 1 capital is 120 and risk-weighted assets are 1,000. Gross loans are 800, of which 40 are non-performing; the loan loss allowance is 32. Last year non-performing loans were 30 and the allowance was 38. Net interest income was 55 on average interest-earning assets of 1,100. High-quality liquid assets total 180 and expected net cash outflows over the next 30 days are 150. The bank's loan loss provision expense fell from 18 last year to 9 this year, and management says that the lower charge shows better asset quality. The analyst notes that reported net income rose 22% mainly because of the lower provision expense. Total deposits are 1,000, so the loan-to-deposit ratio is 80%. The analyst applies a CAMELS-type framework covering capital, asset quality, management, earnings, liquidity and sensitivity.",
+      "text_tr": "Bir analist, kredi komitesi toplantısından önce orta ölçekli bir Türk ticari bankası olan Anadolu Bank'ı inceliyor. Yıl sonu rakamları milyon TL'dir. Ana sermaye (Tier 1) 120, risk ağırlıklı varlıklar 1.000'dir. Brüt krediler 800 olup bunun 40'ı takipteki kredidir; kredi zarar karşılığı 32'dir. Geçen yıl takipteki krediler 30, karşılık 38 idi. Net faiz geliri, ortalama 1.100'lük faiz getirili varlıklar üzerinden 55'tir. Yüksek kaliteli likit varlıklar 180, önümüzdeki 30 gün için beklenen net nakit çıkışları 150'dir. Bankanın kredi zarar karşılığı gideri geçen yıl 18'den bu yıl 9'a düşmüş; yönetim düşük giderin varlık kalitesindeki iyileşmeyi gösterdiğini söylüyor. Analist, raporlanan net kârın %22 artmasının esas olarak düşük karşılık giderinden kaynaklandığını not ediyor. Toplam mevduat 1.000 olup kredi/mevduat oranı %80'dir. Analist; sermaye, varlık kalitesi, yönetim, kazançlar, likidite ve duyarlılığı kapsayan CAMELS tipi bir çerçeve kullanıyor.",
+      "tables": [
+        {
+          "title_en": "Anadolu Bank key data (TL million)",
+          "title_tr": "Anadolu Bank temel veriler (milyon TL)",
+          "headers": [
+            "Item",
+            "This year",
+            "Last year"
+          ],
+          "rows": [
+            [
+              "Non-performing loans",
+              "40",
+              "30"
+            ],
+            [
+              "Loan loss allowance",
+              "32",
+              "38"
+            ],
+            [
+              "Provision expense",
+              "9",
+              "18"
+            ],
+            [
+              "Net interest income",
+              "55",
+              "n/a"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FSA-04-v01-q1",
+        "L2-FSA-04-v01-q2",
+        "L2-FSA-04-v01-q3",
+        "L2-FSA-04-v01-q4",
+        "L2-FSA-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FSA-04-v01-q1",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-04-v01",
+      "stem_en": "What is the Tier 1 capital ratio?",
+      "stem_tr": "Ana sermaye (Tier 1) oranı nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.0%",
+          "tr": "%12,0",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "15.0%",
+          "tr": "%15,0",
+          "value": 15.0
+        },
+        {
+          "key": "C",
+          "en": "10.9%",
+          "tr": "%10,9",
+          "value": 10.909091
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Tier 1 ratio = 120 / 1,000 = 12.0% of risk-weighted assets.",
+      "explanation_tr": "Tier 1 oranı = 120 / 1.000 = risk ağırlıklı varlıkların %12,0'ı.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by gross loans; the regulatory ratio uses risk-weighted assets.",
+          "tr": "Brüt kredilere böler; düzenleyici oran risk ağırlıklı varlıkları kullanır."
+        },
+        "C": {
+          "en": "Divides by average earning assets, which is not the regulatory denominator.",
+          "tr": "Ortalama getirili varlıklara böler; bu düzenleyici payda değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "120 / 1,000 = 12.0%",
+          "tr": "120 / 1.000 = %12,0"
+        }
+      ],
+      "vocab_ids": [
+        "capital",
+        "ratio",
+        "bank",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "120/1000*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-04-v01-q2",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-04-v01",
+      "stem_en": "What is the net interest margin (NIM)?",
+      "stem_tr": "Net faiz marjı (NIM) nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.9%",
+          "tr": "%6,9",
+          "value": 6.875
+        },
+        {
+          "key": "B",
+          "en": "5.0%",
+          "tr": "%5,0",
+          "value": 5.0
+        },
+        {
+          "key": "C",
+          "en": "5.5%",
+          "tr": "%5,5",
+          "value": 5.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "NIM = net interest income / average interest-earning assets = 55 / 1,100 = 5.0%.",
+      "explanation_tr": "NIM = net faiz geliri / ortalama faiz getirili varlıklar = 55 / 1.100 = %5,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses gross loans, not average interest-earning assets.",
+          "tr": "Ortalama faiz getirili varlıklar yerine brüt kredileri kullanır."
+        },
+        "C": {
+          "en": "Uses deposits; NIM is measured against interest-earning assets.",
+          "tr": "Mevduatı kullanır; NIM faiz getirili varlıklara göre ölçülür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "55 / 1,100 = 5.0%",
+          "tr": "55 / 1.100 = %5,0"
+        }
+      ],
+      "vocab_ids": [
+        "margin",
+        "bank",
+        "interest",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "55/1100*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-04-v01-q3",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-04-v01",
+      "stem_en": "The allowance as a percentage of non-performing loans (coverage ratio) is:",
+      "stem_tr": "Karşılığın takipteki kredilere oranı (karşılık oranı) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.0%",
+          "tr": "%4,0",
+          "value": 4.0
+        },
+        {
+          "key": "B",
+          "en": "5.0%",
+          "tr": "%5,0",
+          "value": 5.0
+        },
+        {
+          "key": "C",
+          "en": "80.0%",
+          "tr": "%80,0",
+          "value": 80.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Coverage = allowance / non-performing loans = 32 / 40 = 80%. Last year it was 38 / 30 = 127%, so coverage fell sharply.",
+      "explanation_tr": "Karşılık oranı = karşılık / takipteki krediler = 32 / 40 = %80. Geçen yıl 38 / 30 = %127 idi; yani oran keskin düştü.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by gross loans, giving the allowance-to-loans ratio, not coverage.",
+          "tr": "Brüt kredilere bölerek karşılık/kredi oranını verir; karşılık oranını değil."
+        },
+        "B": {
+          "en": "This is the NPL ratio, not the coverage ratio.",
+          "tr": "Bu, takipteki kredi oranıdır; karşılık oranı değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "32 / 40 = 80%",
+          "tr": "32 / 40 = %80"
+        }
+      ],
+      "vocab_ids": [
+        "allowance",
+        "provision",
+        "coverage",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "32/40*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-04-v01-q4",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-04-v01",
+      "stem_en": "The liquidity coverage ratio (LCR) is:",
+      "stem_tr": "Likidite karşılama oranı (LKO) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "120%",
+          "tr": "%120",
+          "value": 120.0
+        },
+        {
+          "key": "B",
+          "en": "83%",
+          "tr": "%83",
+          "value": 83.333333
+        },
+        {
+          "key": "C",
+          "en": "22%",
+          "tr": "%22",
+          "value": 22.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "LCR = high-quality liquid assets / net cash outflows over 30 days = 180 / 150 = 120%, above the 100% minimum, so short-term liquidity looks adequate.",
+      "explanation_tr": "LKO = yüksek kaliteli likit varlıklar / 30 günlük net nakit çıkışları = 180 / 150 = %120; %100 asgarinin üzerinde olduğundan kısa vadeli likidite yeterli görünür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Inverts the ratio; high-quality liquid assets go in the numerator.",
+          "tr": "Oranı ters çevirir; yüksek kaliteli likit varlıklar paya yazılır."
+        },
+        "C": {
+          "en": "Divides liquid assets by loans, which is not the LCR.",
+          "tr": "Likit varlıkları kredilere böler; bu LKO değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "180 / 150 = 120%",
+          "tr": "180 / 150 = %120"
+        }
+      ],
+      "vocab_ids": [
+        "liquidity",
+        "outflow",
+        "minimum",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "180/150*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-04-v01-q5",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-04",
+      "los_id": "FSA-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-04-v01",
+      "stem_en": "Which conclusion about the bank's earnings quality is best supported by the data?",
+      "stem_tr": "Bankanın kazanç kalitesi hakkında veriler en çok hangi sonucu destekler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Earnings quality improved because the lower provision expense raised net income by 22%",
+          "tr": "Kazanç kalitesi iyileşmiştir, çünkü düşük karşılık gideri net kârı %22 artırmıştır"
+        },
+        {
+          "key": "B",
+          "en": "Earnings may be overstated: provisions fell while non-performing loans rose and coverage dropped from about 127% to 80%",
+          "tr": "Kazançlar fazla gösterilmiş olabilir: takipteki krediler artarken karşılıklar düştü ve karşılık oranı yaklaşık %127'den %80'e geriledi"
+        },
+        {
+          "key": "C",
+          "en": "The data are inconclusive because the liquidity coverage ratio is above 100%",
+          "tr": "Veriler sonuçsuzdur, çünkü likidite karşılama oranı %100'ün üzerindedir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Non-performing loans rose from 30 to 40 while the allowance fell from 38 to 32 and provision expense halved. Under-provisioning boosts current profit, so earnings quality is questionable.",
+      "explanation_tr": "Takipteki krediler 30'dan 40'a çıkarken karşılık 38'den 32'ye ve karşılık gideri yarıya düştü. Yetersiz karşılık cari kârı şişirir; kazanç kalitesi sorgulanabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A profit increase driven by a lower provision, while problem loans rise, is a warning sign, not an improvement.",
+          "tr": "Sorunlu krediler artarken düşük karşılıktan gelen kâr artışı iyileşme değil, uyarı işaretidir."
+        },
+        "C": {
+          "en": "The LCR measures liquidity, not asset quality or provisioning; the loan data are enough to raise a concern.",
+          "tr": "LKO likiditeyi ölçer, varlık kalitesini veya karşılık politikasını değil; kredi verileri endişe doğurmaya yeter."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "earnings-quality",
+        "provision",
+        "overstate",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "module_id": "EQ-01",
+  "vignettes": [
+    {
+      "id": "L2-EQ-01-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "curriculum_year": 2027,
+      "title_en": "Sera Holding Sum-of-the-Parts",
+      "title_tr": "Sera Holding Parçaların Toplamı",
+      "text_en": "Sera Holding is a Turkish conglomerate with two segments and 35 million shares outstanding. An analyst follows the standard valuation process: understand the business, forecast results segment by segment, choose a valuation model, convert forecasts into a value, and then act on the conclusion. She uses a sum-of-the-parts model. Segment A (packaging) has forecast EBITDA of TL 40 million and comparable firms trade at 8 times EBITDA. Segment B (logistics) has forecast EBITDA of TL 25 million and comparable firms trade at 6 times EBITDA. Net debt at the holding level is TL 120 million. The shares trade at TL 8.00. The analyst expects the price to be TL 9.20 in one year and the company to pay a dividend of TL 0.30 per share. Her required return on the stock is 13%. Her manager asks her to test how sensitive the conclusion is to the multiple for Segment A.",
+      "text_tr": "Sera Holding, iki bölümü ve 35 milyon hissesi olan bir Türk holdingidir. Bir analist standart değerleme sürecini izler: işi anla, bölüm bazında tahmin yap, değerleme modelini seç, tahminleri değere çevir ve sonucu uygula. Parçaların toplamı modelini kullanır. A bölümünün (ambalaj) tahmini FAVÖK'ü 40 milyon TL; benzer şirketler FAVÖK'ün 8 katı üzerinden işlem görüyor. B bölümünün (lojistik) tahmini FAVÖK'ü 25 milyon TL; benzer şirketler 6 kat üzerinden işlem görüyor. Holding düzeyindeki net borç 120 milyon TL'dir. Hisse 8,00 TL'den işlem görüyor. Analist bir yıl sonra fiyatın 9,20 TL olmasını ve şirketin hisse başına 0,30 TL temettü ödemesini bekliyor. Hisse için istediği getiri %13'tür. Yöneticisi, sonucun A bölümü çarpanına ne kadar duyarlı olduğunu test etmesini istiyor.",
+      "tables": [
+        {
+          "title_en": "Sum-of-the-parts inputs",
+          "title_tr": "Parçaların toplamı girdileri",
+          "headers": [
+            "Segment",
+            "EBITDA (TL m)",
+            "Peer EV/EBITDA"
+          ],
+          "rows": [
+            [
+              "A: Packaging",
+              "40",
+              "8.0x"
+            ],
+            [
+              "B: Logistics",
+              "25",
+              "6.0x"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-01-v01-q1",
+        "L2-EQ-01-v01-q2",
+        "L2-EQ-01-v01-q3",
+        "L2-EQ-01-v01-q4",
+        "L2-EQ-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-01-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-01-v01",
+      "stem_en": "What is the sum-of-the-parts equity value per share?",
+      "stem_tr": "Parçaların toplamı yöntemiyle hisse başına özkaynak değeri nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 10.00",
+          "tr": "10,00 TL",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "TL 13.43",
+          "tr": "13,43 TL",
+          "value": 13.428571
+        },
+        {
+          "key": "C",
+          "en": "TL 16.86",
+          "tr": "16,86 TL",
+          "value": 16.857143
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Enterprise value = 40 x 8 + 25 x 6 = 470. Less net debt 120 = equity 350. Per share = 350 / 35 = TL 10.00.",
+      "explanation_tr": "Firma değeri = 40 x 8 + 25 x 6 = 470. Net borç 120 düşülünce özkaynak 350. Hisse başına = 350 / 35 = 10,00 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides enterprise value by shares; net debt must be subtracted first to reach equity value.",
+          "tr": "Firma değerini hisse sayısına böler; özkaynak değerine ulaşmak için önce net borç düşülmelidir."
+        },
+        "C": {
+          "en": "Adds net debt instead of subtracting it.",
+          "tr": "Net borcu düşmek yerine ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "EV = 320 + 150 = 470",
+          "tr": "FD = 320 + 150 = 470"
+        },
+        {
+          "en": "Equity = 470 - 120 = 350",
+          "tr": "Özkaynak = 470 - 120 = 350"
+        },
+        {
+          "en": "350 / 35 = 10.00",
+          "tr": "350 / 35 = 10,00"
+        }
+      ],
+      "vocab_ids": [
+        "enterprise-value",
+        "net-debt",
+        "multiple",
+        "segment",
+        "intrinsic-value"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(40*8+25*6-120)/35",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-01-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-01-v01",
+      "stem_en": "The analyst's expected holding period return is:",
+      "stem_tr": "Analistin beklenen elde tutma dönemi getirisi şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.00%",
+          "tr": "%15,00",
+          "value": 15.0
+        },
+        {
+          "key": "B",
+          "en": "18.75%",
+          "tr": "%18,75",
+          "value": 18.75
+        },
+        {
+          "key": "C",
+          "en": "16.30%",
+          "tr": "%16,30",
+          "value": 16.304348
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Holding period return = (P1 - P0 + D1) / P0 = (9.20 - 8.00 + 0.30) / 8.00 = 18.75%.",
+      "explanation_tr": "Elde tutma getirisi = (P1 - P0 + D1) / P0 = (9,20 - 8,00 + 0,30) / 8,00 = %18,75.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Leaves out the dividend, which is part of the total return.",
+          "tr": "Toplam getirinin parçası olan temettüyü dışarıda bırakır."
+        },
+        "C": {
+          "en": "Divides by the ending price; the return base is the beginning price.",
+          "tr": "Dönem sonu fiyata böler; getiri tabanı başlangıç fiyatıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(9.20 - 8.00 + 0.30) / 8.00 = 18.75%",
+          "tr": "(9,20 - 8,00 + 0,30) / 8,00 = %18,75"
+        }
+      ],
+      "vocab_ids": [
+        "holding-period-return",
+        "return",
+        "dividend",
+        "price",
+        "expected-return"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(9.2-8+0.3)/8*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-EQ-01-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-01-v01",
+      "stem_en": "The expected return minus the required return (the expected alpha) is:",
+      "stem_tr": "Beklenen getiri eksi istenen getiri (beklenen alfa) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "-5.75%",
+          "tr": "%-5,75",
+          "value": -5.75
+        },
+        {
+          "key": "B",
+          "en": "2.00%",
+          "tr": "%2,00",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "5.75%",
+          "tr": "%5,75",
+          "value": 5.75
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expected return 18.75% less required return 13% = +5.75%. The stock offers a return above its required return, so it appears undervalued.",
+      "explanation_tr": "Beklenen getiri %18,75 eksi istenen getiri %13 = +%5,75. Hisse, istenen getirisinin üzerinde getiri sunuyor; değerinin altında görünür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reverses the subtraction; alpha is expected minus required return.",
+          "tr": "Çıkarmayı ters yapar; alfa beklenen getiri eksi istenen getiridir."
+        },
+        "B": {
+          "en": "Excludes the dividend from the expected return.",
+          "tr": "Temettüyü beklenen getiriden hariç tutar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "18.75% - 13% = 5.75%",
+          "tr": "%18,75 - %13 = %5,75"
+        }
+      ],
+      "vocab_ids": [
+        "required-return",
+        "alpha",
+        "undervalued",
+        "expected-return",
+        "mispricing"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(9.2-8+0.3)/8*100-13",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-EQ-01-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-01-v01",
+      "stem_en": "If the multiple for Segment A is cut from 8x to 7x, the value per share is closest to:",
+      "stem_tr": "A bölümü çarpanı 8x'ten 7x'e indirilirse hisse başına değer yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 8.86",
+          "tr": "8,86 TL",
+          "value": 8.857143
+        },
+        {
+          "key": "B",
+          "en": "TL 12.29",
+          "tr": "12,29 TL",
+          "value": 12.285714
+        },
+        {
+          "key": "C",
+          "en": "TL 8.14",
+          "tr": "8,14 TL",
+          "value": 8.142857
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "EV = 40 x 7 + 25 x 6 = 430. Equity = 430 - 120 = 310. Per share = 310 / 35 = TL 8.86, still above the TL 8.00 price, so the undervaluation conclusion survives this sensitivity test.",
+      "explanation_tr": "FD = 40 x 7 + 25 x 6 = 430. Özkaynak = 430 - 120 = 310. Hisse başına = 310 / 35 = 8,86 TL; yine de 8,00 TL fiyatın üzerindedir. Dolayısıyla düşük değerleme sonucu bu duyarlılık testinden sağlam çıkar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Forgets to subtract net debt.",
+          "tr": "Net borcu düşmeyi unutur."
+        },
+        "C": {
+          "en": "Also cuts Segment B's multiple, which was not changed.",
+          "tr": "Değiştirilmeyen B bölümü çarpanını da düşürür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "EV = 280 + 150 = 430",
+          "tr": "FD = 280 + 150 = 430"
+        },
+        {
+          "en": "(430 - 120) / 35 = 8.86",
+          "tr": "(430 - 120) / 35 = 8,86"
+        }
+      ],
+      "vocab_ids": [
+        "sensitivity-analysis",
+        "multiple",
+        "enterprise-value",
+        "undervalued",
+        "conclusion"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(40*7+25*6-120)/35",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-01-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-01",
+      "los_id": "EQ-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-01-v01",
+      "stem_en": "Forecasting each segment's EBITDA and then adding up the results is best described as:",
+      "stem_tr": "Her bölümün FAVÖK'ünü tahmin edip sonuçları toplamak en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "A top-down forecasting approach",
+          "tr": "Yukarıdan aşağıya (top-down) tahmin yaklaşımı"
+        },
+        {
+          "key": "B",
+          "en": "A bottom-up forecasting approach",
+          "tr": "Aşağıdan yukarıya (bottom-up) tahmin yaklaşımı"
+        },
+        {
+          "key": "C",
+          "en": "A relative valuation screen",
+          "tr": "Göreli değerleme taraması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Bottom-up forecasting builds firm-level figures from the individual parts (segments, products) and aggregates them. The analyst then uses market multiples as the valuation tool.",
+      "explanation_tr": "Aşağıdan yukarıya tahmin, şirket düzeyindeki rakamları tek tek parçalardan (bölüm, ürün) kurar ve toplar. Analist daha sonra piyasa çarpanlarını değerleme aracı olarak kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A top-down approach starts from economy- or industry-level forecasts and works down to the company.",
+          "tr": "Yukarıdan aşağıya yaklaşım ekonomi veya sektör düzeyinde tahminlerle başlar ve şirkete iner."
+        },
+        "C": {
+          "en": "A screen filters stocks; here the analyst is building a company-specific forecast.",
+          "tr": "Tarama hisseleri eler; burada analist şirkete özgü bir tahmin kuruyor."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bottom-up",
+        "forecast",
+        "segment",
+        "top-down",
+        "valuation"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

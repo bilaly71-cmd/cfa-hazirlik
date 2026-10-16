@@ -1,0 +1,459 @@
+{
+  "module_id": "QM-07",
+  "vignettes": [
+    {
+      "id": "L2-QM-07-v01",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "curriculum_year": 2027,
+      "title_en": "Reading Central Bank Statements with Text Analytics",
+      "title_tr": "Metin Analitiğiyle Merkez Bankası Metinlerini Okumak",
+      "text_en": "Deniz Arıkan works on the quantitative research team of the fictional investment house Haliç Yatırım. Her team is building a model that reads the quarterly statements of a central bank and classifies each as 'hawkish' (positive class) or 'not hawkish'. The corpus has 500 labelled statements.\nThe project plan has five steps: (1) problem formulation, (2) data curation, (3) text preparation and wrangling, (4) data exploration, and (5) model training. In step 3 the team removes HTML tags and punctuation, lowercases the text, removes stop words, splits the text into tokens and applies stemming. Before splitting the data into training and test sets, a junior analyst computes the mean and standard deviation of every numeric feature on the full sample and rescales all features.\nThe team scores the classifier on the test statements (Exhibit 1). Deniz also builds a feature from term frequency-inverse document frequency (TF-IDF). For the word 'inflation', TF is its count divided by the number of tokens in the document (6 of 200 tokens), and IDF is the natural log of the total number of documents divided by the number of documents that contain the word (1,000 and 100 documents).\nFinally, Deniz studies the feature 'statement length in words'. In the sample, the mean is 180 words, the standard deviation is 40, the minimum is 40 and the maximum is 400. One statement has 260 words.",
+      "text_tr": "Deniz Arıkan, kurgusal yatırım kuruluşu Haliç Yatırım'ın kantitatif araştırma ekibinde çalışıyor. Ekibi, bir merkez bankasının çeyreklik metinlerini okuyup her birini 'şahin' (pozitif sınıf) veya 'şahin değil' olarak sınıflandıran bir model kuruyor. Derlemde 500 etiketli metin var.\nProje planı beş adımdan oluşuyor: (1) problem tanımı, (2) veri derleme, (3) metin hazırlama ve düzenleme, (4) veri keşfi ve (5) model eğitimi. 3. adımda ekip HTML etiketlerini ve noktalamayı kaldırıyor, metni küçük harfe çeviriyor, durak sözcükleri çıkarıyor, metni belirteçlere (token) ayırıyor ve kök bulma uyguluyor. Veriyi eğitim ve test kümelerine bölmeden önce genç bir analist tüm sayısal özelliklerin ortalamasını ve standart sapmasını tüm örneklemde hesaplıyor ve özelliklerin hepsini yeniden ölçekliyor.\nEkip, sınıflandırıcıyı test metinlerinde puanlıyor (Gösterge 1). Deniz ayrıca terim sıklığı-ters belge sıklığı (TF-IDF) ile bir özellik üretiyor. 'inflation' kelimesi için TF, kelimenin sayısının belgedeki belirteç sayısına bölünmesidir (200 belirteçte 6); IDF ise toplam belge sayısının kelimeyi içeren belge sayısına oranının doğal logaritmasıdır (1,000 ve 100 belge).\nSon olarak Deniz 'metin uzunluğu (kelime)' özelliğini inceliyor. Örneklemde ortalama 180 kelime, standart sapma 40, minimum 40 ve maksimum 400. Bir metin 260 kelimedir.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Test results (positive class = hawkish)",
+          "title_tr": "Gösterge 1: Test sonuçları (pozitif sınıf = şahin)",
+          "headers": [
+            "",
+            "Predicted hawkish",
+            "Predicted not hawkish"
+          ],
+          "rows": [
+            [
+              "Actual hawkish",
+              "120",
+              "30"
+            ],
+            [
+              "Actual not hawkish",
+              "40",
+              "310"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-QM-07-v01-q1",
+        "L2-QM-07-v01-q2",
+        "L2-QM-07-v01-q3",
+        "L2-QM-07-v01-q4",
+        "L2-QM-07-v01-q5",
+        "L2-QM-07-v01-q6"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-QM-07-v01-q1",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "Which of the following actions belongs to step 3 (text preparation) as described, rather than to an earlier or later step?",
+      "stem_tr": "Aşağıdakilerden hangisi tanımlandığı şekliyle öncesindeki veya sonrasındaki bir adıma değil, 3. adıma (metin hazırlama) aittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Removing stop words and applying stemming",
+          "tr": "Durak sözcükleri çıkarmak ve kök bulma uygulamak"
+        },
+        {
+          "key": "B",
+          "en": "Choosing the hawkish label as the target",
+          "tr": "Hedef olarak şahin etiketini seçmek"
+        },
+        {
+          "key": "C",
+          "en": "Fitting the classifier on the training set",
+          "tr": "Sınıflandırıcıyı eğitim kümesinde kurmak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cleansing steps such as removing HTML tags, punctuation and stop words, tokenization and stemming prepare unstructured text for analysis and belong to text preparation.",
+      "explanation_tr": "HTML etiketlerini, noktalamayı ve durak sözcükleri çıkarmak, belirteçlere ayırma ve kök bulma gibi temizlik adımları yapılandırılmamış metni analize hazırlar ve metin hazırlamaya aittir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Defining the target and the goal is part of problem formulation, step 1.",
+          "tr": "Hedefi ve amacı tanımlamak problem tanımının, yani 1. adımın parçasıdır."
+        },
+        "C": {
+          "en": "Fitting the model is part of model training, step 5.",
+          "tr": "Modeli kurmak model eğitiminin, yani 5. adımın parçasıdır."
+        }
+      },
+      "vocab_ids": [
+        "tokenization",
+        "stemming",
+        "stop-words",
+        "natural-language-processing",
+        "corpus"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-07-v01-q2",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "The F1 score of the classifier in Exhibit 1 is closest to:",
+      "stem_tr": "Gösterge 1'deki sınıflandırıcının F1 skoru en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.860",
+          "tr": "0,860",
+          "value": 0.86
+        },
+        {
+          "key": "B",
+          "en": "0.774",
+          "tr": "0,774",
+          "value": 0.774
+        },
+        {
+          "key": "C",
+          "en": "0.800",
+          "tr": "0,800",
+          "value": 0.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Precision = 120/160 = 0.75; recall = 120/150 = 0.80; F1 = 2 x 0.75 x 0.80 / 1.55 = 0.774.",
+      "explanation_tr": "Kesinlik = 120/160 = 0,75; duyarlılık = 120/150 = 0,80; F1 = 2 x 0,75 x 0,80 / 1,55 = 0,774.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is accuracy (430/500), which counts the true negatives.",
+          "tr": "Bu doğruluktur (430/500); gerçek negatifleri de sayar."
+        },
+        "C": {
+          "en": "This is recall alone (120/150) and ignores precision.",
+          "tr": "Bu yalnızca duyarlılıktır (120/150); kesinliği yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the F1 score.",
+          "tr": "F1 skoru isteniyor."
+        },
+        {
+          "en": "F1 = 2PR/(P + R), with P = TP/(TP + FP) and R = TP/(TP + FN).",
+          "tr": "F1 = 2PR/(P + R); P = TP/(TP + FP), R = TP/(TP + FN)."
+        },
+        {
+          "en": "P = 120/160 = 0.75; R = 120/150 = 0.80.",
+          "tr": "P = 120/160 = 0,75; R = 120/150 = 0,80."
+        },
+        {
+          "en": "Result: 0.774.",
+          "tr": "Sonuç: 0,774."
+        }
+      ],
+      "numeric": {
+        "expr": "2*(120/160)*(120/150)/((120/160)+(120/150))"
+      },
+      "vocab_ids": [
+        "precision",
+        "recall",
+        "f1-score",
+        "confusion-matrix",
+        "sentiment"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-07-v01-q3",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "The TF-IDF value for 'inflation' is closest to:",
+      "stem_tr": "'inflation' kelimesi için TF-IDF değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.030",
+          "tr": "0,030",
+          "value": 0.03
+        },
+        {
+          "key": "B",
+          "en": "0.300",
+          "tr": "0,300",
+          "value": 0.3
+        },
+        {
+          "key": "C",
+          "en": "0.069",
+          "tr": "0,069",
+          "value": 0.069
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "TF = 6/200 = 0.03; IDF = ln(1,000/100) = 2.303; TF-IDF = 0.03 x 2.303 = 0.069.",
+      "explanation_tr": "TF = 6/200 = 0,03; IDF = ln(1,000/100) = 2,303; TF-IDF = 0,03 x 2,303 = 0,069.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is only the term frequency, with no IDF.",
+          "tr": "Bu yalnızca terim sıklığıdır, IDF yoktur."
+        },
+        "B": {
+          "en": "It uses the ratio 1,000/100 = 10 directly instead of its natural log.",
+          "tr": "1,000/100 = 10 oranını doğal logaritma almadan doğrudan kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the TF-IDF of 'inflation'.",
+          "tr": "'inflation' için TF-IDF isteniyor."
+        },
+        {
+          "en": "TF-IDF = TF x ln(N / documents containing the word).",
+          "tr": "TF-IDF = TF x ln(N / kelimeyi içeren belge sayısı)."
+        },
+        {
+          "en": "TF = 6/200 = 0.03; IDF = ln(10) = 2.303.",
+          "tr": "TF = 6/200 = 0,03; IDF = ln(10) = 2,303."
+        },
+        {
+          "en": "Result: 0.069.",
+          "tr": "Sonuç: 0,069."
+        }
+      ],
+      "numeric": {
+        "expr": "(6/200)*math.log(1000/100)"
+      },
+      "vocab_ids": [
+        "bag-of-words",
+        "corpus",
+        "natural-language-processing",
+        "tokenization",
+        "feature"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-07-v01-q4",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "The junior analyst computed the mean and standard deviation on the full sample before the train-test split. This practice is most likely to cause:",
+      "stem_tr": "Genç analist ortalama ve standart sapmayı eğitim-test bölmesinden önce tüm örneklemde hesapladı. Bu uygulama en çok neye yol açar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Data leakage, so the test results look better than real out-of-sample performance",
+          "tr": "Veri sızıntısı; test sonuçları gerçek örneklem dışı performanstan daha iyi görünür"
+        },
+        {
+          "key": "B",
+          "en": "Underfitting, because the training set becomes too small",
+          "tr": "Yetersiz uyum; eğitim kümesi çok küçülür"
+        },
+        {
+          "key": "C",
+          "en": "Class imbalance, because the labels are changed",
+          "tr": "Sınıf dengesizliği; çünkü etiketler değişir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Test-set information (its mean and spread) was used to prepare the training data, so the test set is no longer truly unseen. Scaling parameters should be learned from the training set only.",
+      "explanation_tr": "Test kümesinin bilgisi (ortalama ve yayılım) eğitim verisini hazırlamak için kullanıldı; test kümesi artık gerçekten görülmemiş değildir. Ölçekleme parametreleri yalnızca eğitim kümesinden öğrenilmelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Computing statistics on the full data does not shrink the training set; the problem is that test information enters the training process.",
+          "tr": "İstatistiği tüm veride hesaplamak eğitim kümesini küçültmez; sorun test bilgisinin eğitim sürecine girmesidir."
+        },
+        "C": {
+          "en": "Rescaling features does not alter the class labels or their proportions.",
+          "tr": "Özellikleri yeniden ölçeklemek sınıf etiketlerini veya oranlarını değiştirmez."
+        }
+      },
+      "vocab_ids": [
+        "data-leakage",
+        "out-of-sample",
+        "overfitting",
+        "training-set",
+        "machine-learning"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-07-v01-q5",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "For the statement with 260 words, the min-max normalized value of the length feature is closest to:",
+      "stem_tr": "260 kelimelik metin için uzunluk özelliğinin min-maks normalleştirilmiş değeri en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.000",
+          "tr": "2,000",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "0.611",
+          "tr": "0,611",
+          "value": 0.611
+        },
+        {
+          "key": "C",
+          "en": "0.650",
+          "tr": "0,650",
+          "value": 0.65
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Normalized = (x - min) / (max - min) = (260 - 40) / (400 - 40) = 0.611. Standardized z would be (260 - 180)/40 = 2.00.",
+      "explanation_tr": "Normalleştirilmiş = (x - min) / (max - min) = (260 - 40) / (400 - 40) = 0,611. Standartlaştırılmış z ise (260 - 180)/40 = 2,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the standardized z-score, (260 - 180)/40, not the min-max value.",
+          "tr": "Bu min-maks değeri değil, standartlaştırılmış z skorudur: (260 - 180)/40."
+        },
+        "C": {
+          "en": "It divides by the maximum only and ignores the minimum.",
+          "tr": "Yalnızca maksimuma böler, minimumu yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the min-max normalized value.",
+          "tr": "Min-maks normalleştirilmiş değer isteniyor."
+        },
+        {
+          "en": "Normalized = (x - min)/(max - min).",
+          "tr": "Normalleştirilmiş = (x - min)/(max - min)."
+        },
+        {
+          "en": "(260 - 40)/(400 - 40) = 220/360.",
+          "tr": "(260 - 40)/(400 - 40) = 220/360."
+        },
+        {
+          "en": "Result: 0.611.",
+          "tr": "Sonuç: 0,611."
+        }
+      ],
+      "numeric": {
+        "expr": "(260-40)/(400-40)"
+      },
+      "vocab_ids": [
+        "standardization",
+        "normalization",
+        "outlier",
+        "feature",
+        "scale"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-QM-07-v01-q6",
+      "level": "L2",
+      "topic": "QM",
+      "module_id": "QM-07",
+      "los_id": "QM-07-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-QM-07-v01",
+      "stem_en": "Which preparation choice for the feature 'statement length' is most appropriate if a few statements are extremely long outliers?",
+      "stem_tr": "Birkaç metin aşırı uzun aykırı değerse 'metin uzunluğu' özelliği için hangi hazırlık seçimi en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Min-max normalization, because it removes the effect of outliers",
+          "tr": "Min-maks normalleştirme; çünkü aykırı değerlerin etkisini kaldırır"
+        },
+        {
+          "key": "B",
+          "en": "Dropping the feature, because outliers can never be handled",
+          "tr": "Özelliği tamamen çıkarmak; çünkü aykırı değerler hiçbir zaman işlenemez"
+        },
+        {
+          "key": "C",
+          "en": "Standardization or winsorization, because min-max scaling is distorted by outliers",
+          "tr": "Standartlaştırma veya winsorization; çünkü min-maks ölçekleme aykırı değerlerden bozulur"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Min-max normalization depends on the extremes, so outliers distort it. Standardization is less distorted, and trimming or winsorizing limits the outliers.",
+      "explanation_tr": "Min-maks normalleştirme uç değerlere bağlıdır, bu yüzden aykırı değerler onu bozar. Standartlaştırma daha az bozulur; kırpma veya winsorization aykırı değerleri sınırlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Min-max scaling uses the minimum and maximum, so a single extreme value compresses all other observations into a narrow range.",
+          "tr": "Min-maks ölçekleme minimum ve maksimumu kullanır; tek bir uç değer diğer tüm gözlemleri dar bir aralığa sıkıştırır."
+        },
+        "B": {
+          "en": "Outliers can be trimmed, winsorized or handled by robust scaling; the feature need not be dropped.",
+          "tr": "Aykırı değerler kırpılabilir, winsorize edilebilir veya dayanıklı ölçeklemeyle işlenebilir; özelliği çıkarmak gerekmez."
+        }
+      },
+      "vocab_ids": [
+        "outlier",
+        "standardization",
+        "normalization",
+        "winsorization",
+        "feature"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

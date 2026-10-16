@@ -1,0 +1,380 @@
+{
+  "module_id": "CI-04",
+  "vignettes": [
+    {
+      "id": "L2-CI-04-v01",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "curriculum_year": 2027,
+      "title_en": "Tekin Holding Restructuring",
+      "title_tr": "Tekin Holding Yeniden Yapılanma",
+      "text_en": "Tekin Holding is a Turkish conglomerate with two divisions and a market enterprise value (EV) of TL 910 million, which equals 7 times the combined EBITDA of TL 130 million. Division A (food) has EBITDA of TL 80 million and comparable pure-play firms trade at 9 times EBITDA. Division B (textiles) has EBITDA of TL 50 million and comparable firms trade at 6 times EBITDA. Activist investors say that the conglomerate is valued at a discount and demand a restructuring. Management is considering selling Division B for TL 380 million in cash. Division B has a tax basis of TL 250 million, and gains are taxed at 25%. A second option is to spin off Division B to existing shareholders. A third option is an equity carve-out of a minority stake in Division B through an initial public offering. Management wants to know how much value each option could unlock and which one raises cash.",
+      "text_tr": "Tekin Holding, iki bölümü ve piyasa firma değeri (FD) 910 milyon TL olan bir Türk holdingidir; bu, toplam 130 milyon TL FAVÖK'ün 7 katıdır. A bölümünün (gıda) FAVÖK'ü 80 milyon TL; benzer saf firmalar FAVÖK'ün 9 katı üzerinden işlem görüyor. B bölümünün (tekstil) FAVÖK'ü 50 milyon TL; benzer firmalar 6 katı üzerinden işlem görüyor. Aktivist yatırımcılar holdingin iskontolu değerlendiğini söyleyerek yeniden yapılanma talep ediyor. Yönetim, B bölümünü 380 milyon TL nakit karşılığında satmayı düşünüyor. B bölümünün vergi bazı 250 milyon TL'dir ve kazançlar %25 vergilendirilir. İkinci seçenek B bölümünü mevcut hissedarlara kâr payı yoluyla ayırmaktır (spin-off). Üçüncü seçenek, halka arz yoluyla B bölümünün azınlık payının satılması (equity carve-out)dır. Yönetim, her seçeneğin ne kadar değer açığa çıkarabileceğini ve hangisinin nakit sağladığını bilmek istiyor.",
+      "tables": [
+        {
+          "title_en": "Division data (TL million)",
+          "title_tr": "Bölüm verileri (milyon TL)",
+          "headers": [
+            "Division",
+            "EBITDA",
+            "Pure-play multiple"
+          ],
+          "rows": [
+            [
+              "A: Food",
+              "80",
+              "9x"
+            ],
+            [
+              "B: Textiles",
+              "50",
+              "6x"
+            ],
+            [
+              "Conglomerate EV",
+              "130",
+              "7x (910)"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-CI-04-v01-q1",
+        "L2-CI-04-v01-q2",
+        "L2-CI-04-v01-q3",
+        "L2-CI-04-v01-q4",
+        "L2-CI-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-CI-04-v01-q1",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-CI-04-v01",
+      "stem_en": "The sum-of-the-parts enterprise value is:",
+      "stem_tr": "Parçaların toplamı firma değeri şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 1,020 million",
+          "tr": "1,020 milyon TL",
+          "value": 1020.0
+        },
+        {
+          "key": "B",
+          "en": "TL 1,170 million",
+          "tr": "1,170 milyon TL",
+          "value": 1170.0
+        },
+        {
+          "key": "C",
+          "en": "TL 910 million",
+          "tr": "910 milyon TL",
+          "value": 910.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A: 80 x 9 = 720. B: 50 x 6 = 300. Sum = TL 1,020 million.",
+      "explanation_tr": "A: 80 x 9 = 720. B: 50 x 6 = 300. Toplam = 1.020 milyon TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Applies the higher division multiple to total EBITDA.",
+          "tr": "Yüksek bölüm çarpanını toplam FAVÖK'e uygular."
+        },
+        "C": {
+          "en": "This is the current market EV, not the sum of the parts.",
+          "tr": "Bu, mevcut piyasa FD'sidir; parçaların toplamı değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "720 + 300 = 1,020",
+          "tr": "720 + 300 = 1.020"
+        }
+      ],
+      "vocab_ids": [
+        "sum-of-the-parts",
+        "enterprise-value",
+        "multiple",
+        "conglomerate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "80*9+50*6",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-04-v01-q2",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-04-v01",
+      "stem_en": "The conglomerate discount relative to the sum of the parts is:",
+      "stem_tr": "Parçaların toplamına göre holding iskontosu şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.1%",
+          "tr": "%12,1",
+          "value": 12.087912
+        },
+        {
+          "key": "B",
+          "en": "10.8%",
+          "tr": "%10,8",
+          "value": 10.784314
+        },
+        {
+          "key": "C",
+          "en": "-10.8%",
+          "tr": "%-10,8",
+          "value": -10.784314
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Discount = (1,020 - 910) / 1,020 = 10.8%.",
+      "explanation_tr": "İskonto = (1.020 - 910) / 1.020 = %10,8.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by the market EV; the discount is measured against the sum-of-the-parts value.",
+          "tr": "Piyasa FD'sine böler; iskonto parçaların toplamı değerine göre ölçülür."
+        },
+        "C": {
+          "en": "Gives the wrong sign; the conglomerate trades below the sum of the parts.",
+          "tr": "İşareti yanlış verir; holding parçaların toplamının altında işlem görüyor."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(1,020 - 910) / 1,020 = 10.8%",
+          "tr": "(1.020 - 910) / 1.020 = %10,8"
+        }
+      ],
+      "vocab_ids": [
+        "sum-of-the-parts",
+        "discount",
+        "restructuring",
+        "value"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(1020-910)/1020*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-CI-04-v01-q3",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-04-v01",
+      "stem_en": "The after-tax proceeds from selling Division B (TL million) are:",
+      "stem_tr": "B bölümünün satışından vergi sonrası elde edilecek tutar (milyon TL) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 380.0 million",
+          "tr": "380.0 milyon TL",
+          "value": 380.0
+        },
+        {
+          "key": "B",
+          "en": "TL 285.0 million",
+          "tr": "285.0 milyon TL",
+          "value": 285.0
+        },
+        {
+          "key": "C",
+          "en": "TL 347.5 million",
+          "tr": "347.5 milyon TL",
+          "value": 347.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Gain = 380 - 250 = 130. Tax = 25% x 130 = 32.5. After-tax proceeds = 380 - 32.5 = TL 347.5 million.",
+      "explanation_tr": "Kazanç = 380 - 250 = 130. Vergi = %25 x 130 = 32,5. Vergi sonrası tutar = 380 - 32,5 = 347,5 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores the tax on the gain.",
+          "tr": "Kazanç üzerindeki vergiyi göz ardı eder."
+        },
+        "B": {
+          "en": "Taxes the whole price instead of only the gain over the tax basis.",
+          "tr": "Yalnızca vergi bazını aşan kazanç yerine tüm fiyatı vergilendirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Gain 130, tax 32.5",
+          "tr": "Kazanç 130, vergi 32,5"
+        },
+        {
+          "en": "380 - 32.5 = 347.5",
+          "tr": "380 - 32,5 = 347,5"
+        }
+      ],
+      "vocab_ids": [
+        "proceeds",
+        "capital-gain",
+        "after-tax",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "380-0.25*(380-250)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-04-v01-q4",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-04-v01",
+      "stem_en": "The minimum sale price (TL million) at which the after-tax proceeds equal Division B's standalone value of 300 is closest to:",
+      "stem_tr": "Vergi sonrası tutarın B bölümünün bağımsız değeri olan 300'e eşit olduğu asgari satış fiyatı (milyon TL) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 316.7 million",
+          "tr": "316.7 milyon TL",
+          "value": 316.666667
+        },
+        {
+          "key": "B",
+          "en": "TL 300.0 million",
+          "tr": "300.0 milyon TL",
+          "value": 300.0
+        },
+        {
+          "key": "C",
+          "en": "TL 400.0 million",
+          "tr": "400.0 milyon TL",
+          "value": 400.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Set P - 0.25 x (P - 250) = 300. Then 0.75 P = 300 - 62.5 = 237.5, so P = TL 316.7 million. At the offer of 380, the sale creates value of 347.5 - 300 = 47.5.",
+      "explanation_tr": "P - 0,25 x (P - 250) = 300 denklemini kurun. 0,75 P = 300 - 62,5 = 237,5; P = 316,7 milyon TL. 380'lik teklifte satış 347,5 - 300 = 47,5 değer yaratır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores tax; a price of 300 would produce after-tax proceeds below 300.",
+          "tr": "Vergiyi yok sayar; 300'lük fiyat 300'ün altında vergi sonrası tutar verir."
+        },
+        "C": {
+          "en": "Treats the whole price as taxable; the tax applies only to the gain above the basis of 250.",
+          "tr": "Fiyatın tamamını vergilendirir; vergi yalnızca 250'lik bazı aşan kazanca uygulanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "P - 0.25 (P - 250) = 300",
+          "tr": "P - 0,25 (P - 250) = 300"
+        },
+        {
+          "en": "0.75 P = 237.5",
+          "tr": "0,75 P = 237,5"
+        },
+        {
+          "en": "P = 316.7",
+          "tr": "P = 316,7"
+        }
+      ],
+      "vocab_ids": [
+        "proceeds",
+        "assume",
+        "exceed",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(300-0.25*250)/0.75",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-04-v01-q5",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-04-v01",
+      "stem_en": "Which statement correctly compares a spin-off with an equity carve-out of Division B?",
+      "stem_tr": "B bölümü için spin-off ile equity carve-out'un karşılaştırılması hangi ifadeyle doğru yapılmıştır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A spin-off raises cash for the parent through an IPO",
+          "tr": "Spin-off, halka arz yoluyla ana ortaklığa nakit sağlar"
+        },
+        {
+          "key": "B",
+          "en": "A carve-out sells a minority stake to new investors and raises cash for the parent, whereas a spin-off distributes shares to existing shareholders and raises no cash",
+          "tr": "Carve-out, azınlık payını yeni yatırımcılara satar ve ana ortaklığa nakit sağlar; spin-off ise payları mevcut hissedarlara dağıtır ve nakit sağlamaz"
+        },
+        {
+          "key": "C",
+          "en": "Both create a new company that the parent fully controls with no outside investors",
+          "tr": "İkisi de ana ortaklığın tamamen kontrol ettiği, dış yatırımcısı olmayan yeni bir şirket yaratır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In a carve-out the parent usually keeps control and receives IPO proceeds. In a spin-off, shareholders receive shares pro rata, the parent gets no cash and the two companies become separate.",
+      "explanation_tr": "Carve-out'ta ana ortaklık genellikle kontrolü korur ve halka arz gelirini alır. Spin-off'ta hissedarlar payları oransal olarak alır, ana ortaklığa nakit girmez ve iki şirket birbirinden ayrılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes a carve-out; a spin-off gives shares to existing holders without payment.",
+          "tr": "Bu bir carve-out'u tanımlar; spin-off payları ödeme olmadan mevcut hissedarlara verir."
+        },
+        "C": {
+          "en": "A spin-off moves ownership to the existing shareholders, and a carve-out brings outside investors.",
+          "tr": "Spin-off mülkiyeti mevcut hissedarlara kaydırır; carve-out dış yatırımcıları getirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "restructuring",
+        "shareholder",
+        "assume",
+        "exceed"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

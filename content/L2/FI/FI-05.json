@@ -1,0 +1,392 @@
+{
+  "module_id": "FI-05",
+  "vignettes": [
+    {
+      "id": "L2-FI-05-v01",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "curriculum_year": 2027,
+      "title_en": "Credit default swap decisions at Ege Capital",
+      "title_tr": "Ege Sermaye’de kredi temerrüt swapı kararları",
+      "text_en": "Mert Çelik is a credit portfolio manager at Ege Capital, a fictional asset manager. The firm holds a corporate bond of Kuzey Enerji, a fictional energy company, and wants to manage the credit risk with a single-name credit default swap (CDS). The CDS has a notional amount of TRY 10 million and trades under standard terms with a fixed coupon of 1.00% per year. The market CDS spread for the reference entity is currently 1.80%. The effective spread duration of the CDS is 4.2.\n\nMert follows the usual market convention that the difference between the market spread and the fixed coupon is settled through an upfront payment, using the approximation that the upfront percentage equals the spread difference multiplied by the effective spread duration. He plans to buy protection.\n\nA month later the CDS spread widens to 2.30%. Mert wants to estimate the mark-to-market gain using the same duration. Later, an analyst assumes a recovery rate of 40% and wants to extract the market-implied annual probability of default (hazard rate) using the approximation that the spread equals the hazard rate multiplied by loss given default.\n\nFinally, Kuzey Enerji defaults. The recovery rate on the reference obligation turns out to be 40%. Mert's colleague Leyla says that an investor who sells protection in a CDS has an exposure that is economically very similar to a long position in a bond of the reference entity.",
+      "text_tr": "Mert Çelik, kurgusal bir varlık yönetim şirketi olan Ege Sermaye'de kredi portföy yöneticisidir. Şirket, kurgusal bir enerji şirketi olan Kuzey Enerji'nin kurumsal tahvilini elinde tutuyor ve kredi riskini tek isimli bir kredi temerrüt swapı (CDS) ile yönetmek istiyor. CDS'nin nominal tutarı 10 milyon TL'dir ve yıllık %1,00 sabit kuponlu standart koşullarla işlem görür. Referans kuruluş için güncel piyasa CDS marjı %1,80'dir. CDS'nin etkin marj durasyonu 4,2'dir.\n\nMert, piyasa marjı ile sabit kupon arasındaki farkın peşin ödeme ile kapatıldığı olağan piyasa uygulamasını izliyor; peşin yüzdenin marj farkı çarpı etkin marj durasyonuna eşit olduğu yaklaşımını kullanıyor. Koruma satın almayı planlıyor.\n\nBir ay sonra CDS marjı %2,30'a genişliyor. Mert aynı durasyonu kullanarak piyasa değeri kazancını tahmin etmek istiyor. Daha sonra bir analist %40 geri kazanım oranı varsayıp, marjın tehlike oranı çarpı temerrüt halinde kayba eşit olduğu yaklaşımıyla piyasanın ima ettiği yıllık temerrüt olasılığını (tehlike oranını) çıkarmak istiyor.\n\nSon olarak Kuzey Enerji temerrüde düşüyor. Referans yükümlülükteki geri kazanım oranı %40 çıkıyor. Mert'in meslektaşı Leyla, CDS'de koruma satan yatırımcının pozisyonunun ekonomik olarak referans kuruluşun tahvilinde uzun pozisyona çok benzediğini söylüyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-FI-05-v01-q1",
+        "L2-FI-05-v01-q2",
+        "L2-FI-05-v01-q3",
+        "L2-FI-05-v01-q4",
+        "L2-FI-05-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FI-05-v01-q1",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "los_id": "FI-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-05-v01",
+      "stem_en": "The upfront payment that Mert pays to buy protection is closest to:",
+      "stem_tr": "Mert'in koruma satın almak için ödeyeceği peşin tutar en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 336,000",
+          "tr": "336.000 TL",
+          "value": 336000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 756,000",
+          "tr": "756.000 TL",
+          "value": 756000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 80,000",
+          "tr": "80.000 TL",
+          "value": 80000.0
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This uses the whole spread instead of the difference between the spread and the 1.00% coupon.",
+          "tr": "Marj ile %1,00 kupon arasındaki fark yerine marjın tamamını kullanır."
+        },
+        "C": {
+          "en": "This omits the multiplication by the effective spread duration.",
+          "tr": "Etkin marj durasyonu ile çarpmayı atlar."
+        }
+      },
+      "explanation_en": "Because the market spread is above the coupon, the buyer pays upfront: 0.80% × 4.2 = 3.36% of 10 million, or TRY 336,000.",
+      "explanation_tr": "Piyasa marjı kuponun üzerinde olduğu için alıcı peşin öder: 10 milyonun %0,80 × 4,2 = %3,36'sı, yani 336.000 TL.",
+      "solution_steps": [
+        {
+          "en": "Upfront % ≈ (CDS spread - fixed coupon) × effective spread duration.",
+          "tr": "Peşin % ≈ (CDS marjı - sabit kupon) × etkin marj durasyonu."
+        },
+        {
+          "en": "(1.80% - 1.00%) × 4.2 = 3.36%.",
+          "tr": "(%1,80 - %1,00) × 4,2 = %3,36."
+        },
+        {
+          "en": "Multiply by notional of 10,000,000.",
+          "tr": "10.000.000 nominal ile çarpılır."
+        },
+        {
+          "en": "Upfront = TRY 336,000, paid by the protection buyer.",
+          "tr": "Peşin ödeme = 336.000 TL, koruma alıcısı öder."
+        }
+      ],
+      "vocab_ids": [
+        "credit-default-swap",
+        "credit-event",
+        "recovery-rate",
+        "notional"
+      ],
+      "numeric": {
+        "expr": "(0.018-0.01)*4.2*10000000",
+        "unit": "TRY"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-05-v01-q2",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "los_id": "FI-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-05-v01",
+      "stem_en": "After the spread widens to 2.30%, the approximate mark-to-market gain on Mert's protection position is closest to:",
+      "stem_tr": "Marj %2,30'a genişledikten sonra Mert'in koruma pozisyonundaki yaklaşık piyasa değeri kazancı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 546,000",
+          "tr": "546.000 TL",
+          "value": 546000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 210,000",
+          "tr": "210.000 TL",
+          "value": 210000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY -210,000",
+          "tr": "-210.000 TL",
+          "value": -210000.0
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This measures the change from the coupon rather than from the spread at which Mert bought.",
+          "tr": "Değişimi Mert'in alım yaptığı marjdan değil, kupondan ölçer."
+        },
+        "C": {
+          "en": "The sign is wrong: a protection buyer gains when spreads widen.",
+          "tr": "İşaret yanlış: koruma alıcısı marjlar genişleyince kazanır."
+        }
+      },
+      "explanation_en": "A wider spread raises the value of protection: 0.50% × 4.2 × 10 million = TRY 210,000 gain for the buyer.",
+      "explanation_tr": "Genişleyen marj korumanın değerini artırır: 10 milyon × %0,50 × 4,2 = alıcı için 210.000 TL kazanç.",
+      "solution_steps": [
+        {
+          "en": "Gain ≈ change in spread × effective spread duration × notional.",
+          "tr": "Kazanç ≈ marj değişimi × etkin marj durasyonu × nominal."
+        },
+        {
+          "en": "Spread change = 2.30% - 1.80% = 0.50%.",
+          "tr": "Marj değişimi = %2,30 - %1,80 = %0,50."
+        },
+        {
+          "en": "0.0050 × 4.2 × 10,000,000.",
+          "tr": "0,0050 × 4,2 × 10.000.000."
+        },
+        {
+          "en": "Gain = TRY 210,000.",
+          "tr": "Kazanç = 210.000 TL."
+        }
+      ],
+      "vocab_ids": [
+        "credit-default-swap",
+        "credit-event",
+        "recovery-rate",
+        "notional"
+      ],
+      "numeric": {
+        "expr": "(0.023-0.018)*4.2*10000000",
+        "unit": "TRY"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-05-v01-q3",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "los_id": "FI-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FI-05-v01",
+      "stem_en": "Using spread ≈ hazard rate × LGD with a 40% recovery rate, the annual hazard rate implied by the 1.80% spread is closest to:",
+      "stem_tr": "Marj ≈ tehlike oranı × LGD ve %40 geri kazanım oranı kullanıldığında, %1,80 marjın ima ettiği yıllık tehlike oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.08%",
+          "tr": "%1,08",
+          "value": 1.08
+        },
+        {
+          "key": "B",
+          "en": "4.50%",
+          "tr": "%4,50",
+          "value": 4.5
+        },
+        {
+          "key": "C",
+          "en": "3.00%",
+          "tr": "%3,00",
+          "value": 3.0
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This multiplies the spread by LGD rather than dividing by it.",
+          "tr": "Marjı LGD'ye bölmek yerine LGD ile çarpar."
+        },
+        "B": {
+          "en": "This divides by the recovery rate instead of the loss given default (1 - 40% = 60%).",
+          "tr": "Temerrüt halinde kayıp (1 - %40 = %60) yerine geri kazanım oranına böler."
+        }
+      },
+      "explanation_en": "Dividing the spread by LGD of 60% gives an annual hazard rate of 3.00%.",
+      "explanation_tr": "Marjın %60'lık LGD'ye bölünmesi yıllık %3,00 tehlike oranı verir.",
+      "solution_steps": [
+        {
+          "en": "Spread ≈ λ × LGD, so λ ≈ spread / LGD.",
+          "tr": "Marj ≈ λ × LGD, dolayısıyla λ ≈ marj / LGD."
+        },
+        {
+          "en": "LGD = 1 - 0.40 = 0.60.",
+          "tr": "LGD = 1 - 0,40 = 0,60."
+        },
+        {
+          "en": "λ = 1.80% / 0.60.",
+          "tr": "λ = %1,80 / 0,60."
+        },
+        {
+          "en": "λ = 3.00 percent per year.",
+          "tr": "λ = yıllık %3,00."
+        }
+      ],
+      "vocab_ids": [
+        "credit-default-swap",
+        "credit-event",
+        "recovery-rate",
+        "notional"
+      ],
+      "numeric": {
+        "expr": "1.80/(1-0.40)",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-05-v01-q4",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "los_id": "FI-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-05-v01",
+      "stem_en": "After Kuzey Enerji's default, the settlement payment that the protection seller must make on the TRY 10 million notional is closest to:",
+      "stem_tr": "Kuzey Enerji'nin temerrüdünden sonra, koruma satıcısının 10 milyon TL nominal üzerinden yapması gereken uzlaşma ödemesi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 6,000,000",
+          "tr": "6.000.000 TL",
+          "value": 6000000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 4,000,000",
+          "tr": "4.000.000 TL",
+          "value": 4000000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 10,000,000",
+          "tr": "10.000.000 TL",
+          "value": 10000000.0
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the recovery value, not the loss that the protection seller compensates.",
+          "tr": "Bu, geri kazanım değeridir; koruma satıcısının tazmin ettiği zarar değildir."
+        },
+        "C": {
+          "en": "The seller pays the notional only if the recovery were zero; here bondholders recover 40%.",
+          "tr": "Satıcı nominali yalnızca geri kazanım sıfırsa öder; burada tahvil sahipleri %40 geri kazanır."
+        }
+      },
+      "explanation_en": "The seller covers the 60% loss: TRY 6,000,000.",
+      "explanation_tr": "Satıcı %60'lık zararı karşılar: 6.000.000 TL.",
+      "solution_steps": [
+        {
+          "en": "The protection seller pays notional × (1 - recovery rate).",
+          "tr": "Koruma satıcısı nominal × (1 - geri kazanım oranı) öder."
+        },
+        {
+          "en": "1 - 0.40 = 0.60.",
+          "tr": "1 - 0,40 = 0,60."
+        },
+        {
+          "en": "0.60 × 10,000,000.",
+          "tr": "0,60 × 10.000.000."
+        },
+        {
+          "en": "Payment = TRY 6,000,000.",
+          "tr": "Ödeme = 6.000.000 TL."
+        }
+      ],
+      "vocab_ids": [
+        "credit-default-swap",
+        "credit-event",
+        "recovery-rate",
+        "notional"
+      ],
+      "numeric": {
+        "expr": "10000000*(1-0.40)",
+        "unit": "TRY"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-05-v01-q5",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-05",
+      "los_id": "FI-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-05-v01",
+      "stem_en": "Is Leyla's statement about selling protection correct?",
+      "stem_tr": "Leyla'nın koruma satışı hakkındaki ifadesi doğru mudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "No, because the seller gains when the reference entity's credit quality deteriorates.",
+          "tr": "Hayır, çünkü satıcı referans kuruluşun kredi kalitesi bozulduğunda kazanır."
+        },
+        {
+          "key": "B",
+          "en": "Yes, because the seller earns the premium while bearing the loss if a credit event occurs, much like a bondholder earning a spread.",
+          "tr": "Evet, çünkü satıcı prim kazanırken kredi olayı gerçekleşirse zararı üstlenir; bu, marj kazanan bir tahvil sahibine benzer."
+        },
+        {
+          "key": "C",
+          "en": "No, because the seller has no credit exposure to the reference entity.",
+          "tr": "Hayır, çünkü satıcının referans kuruluşa kredi riski yoktur."
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It is the protection buyer who gains when credit quality deteriorates.",
+          "tr": "Kredi kalitesi bozulduğunda kazanan koruma alıcısıdır."
+        },
+        "C": {
+          "en": "The seller bears the loss at a credit event, so it has exposure to the reference entity.",
+          "tr": "Satıcı kredi olayında zararı üstlenir, dolayısıyla referans kuruluşa karşı riski vardır."
+        }
+      },
+      "explanation_en": "The protection seller receives a premium, loses if a credit event happens, and gains if the spread tightens. This payoff resembles a long position in a bond of the reference entity (funded at the risk-free rate).",
+      "explanation_tr": "Koruma satıcısı prim alır, kredi olayında kaybeder ve marj daraldığında kazanır. Bu getiri profili, referans kuruluşun tahvilinde (risksiz faizle finanse edilen) uzun pozisyona benzer.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-default-swap",
+        "credit-event",
+        "recovery-rate",
+        "notional"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    }
+  ]
+}

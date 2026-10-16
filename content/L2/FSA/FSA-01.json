@@ -1,0 +1,419 @@
+{
+  "module_id": "FSA-01",
+  "vignettes": [
+    {
+      "id": "L2-FSA-01-v01",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "curriculum_year": 2027,
+      "title_en": "Altan's Stake in Bora Makine",
+      "title_tr": "Altan'ın Bora Makine Payı",
+      "text_en": "Altan Holding (reporting currency: TL millions) bought 30% of Bora Makine on 1 January 2026 for TL 300 million and gained a seat on Bora's board, so it has significant influence. Bora's identifiable net assets had a book value of TL 800 million. Book values equaled fair values except for equipment, which was undervalued by TL 100 million and has a remaining useful life of 10 years. Any remaining excess of the purchase price is goodwill. During 2026 Bora reported net income of TL 80 million and paid dividends of TL 20 million. Altan classifies dividends received as operating cash flow and uses the indirect method. A junior analyst wants to see how Altan's leverage would look under proportionate consolidation. Bora has TL 400 million of debt. Altan's own debt is TL 600 million and its equity is TL 900 million (assume equity is the same under both methods). This is Altan's only equity-method holding.",
+      "text_tr": "Altan Holding (raporlama para birimi: milyon TL), 1 Ocak 2026'da Bora Makine'nin %30'unu 300 milyon TL'ye satın aldı ve yönetim kurulunda koltuk kazandı; dolayısıyla önemli etkisi vardır. Bora'nın tanımlanabilir net varlıklarının defter değeri 800 milyon TL'dir. Defter değerleri gerçeğe uygun değerlere eşittir; yalnızca ekipman 100 milyon TL düşük değerlenmiştir ve kalan faydalı ömrü 10 yıldır. Satın alma bedelinin kalan fazlası şerefiyedir. 2026'da Bora 80 milyon TL net kâr bildirmiş ve 20 milyon TL temettü ödemiştir. Altan, alınan temettüleri işletme nakit akışı olarak sınıflar ve dolaylı yöntemi kullanır. Genç bir analist, orantılı konsolidasyonda Altan'ın kaldıracının nasıl görüneceğini görmek istiyor. Bora'nın 400 milyon TL borcu var. Altan'ın kendi borcu 600 milyon TL, özkaynağı 900 milyon TL'dir (özkaynağın iki yöntemde aynı olduğunu varsayın). Bu, Altan'ın tek özkaynak yöntemi iştirakidir.",
+      "tables": [
+        {
+          "title_en": "Purchase price allocation inputs (TL million)",
+          "title_tr": "Satın alma bedeli dağıtımı girdileri (milyon TL)",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Price paid for 30%",
+              "300"
+            ],
+            [
+              "Book value of Bora net assets",
+              "800"
+            ],
+            [
+              "Equipment undervaluation (100%)",
+              "100"
+            ],
+            [
+              "Bora net income / dividends",
+              "80 / 20"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FSA-01-v01-q1",
+        "L2-FSA-01-v01-q2",
+        "L2-FSA-01-v01-q3",
+        "L2-FSA-01-v01-q4",
+        "L2-FSA-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FSA-01-v01-q1",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-01-v01",
+      "stem_en": "What is the carrying amount of Altan's investment in Bora at 31 December 2026 under the equity method?",
+      "stem_tr": "Özkaynak yöntemine göre Altan'ın Bora'daki yatırımının 31 Aralık 2026 itibarıyla defter değeri nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 315 million",
+          "tr": "315 milyon TL",
+          "value": 315.0
+        },
+        {
+          "key": "B",
+          "en": "TL 318 million",
+          "tr": "318 milyon TL",
+          "value": 318.0
+        },
+        {
+          "key": "C",
+          "en": "TL 324 million",
+          "tr": "324 milyon TL",
+          "value": 324.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Start with cost, add the share of income (30% x 80 = 24), subtract dividends received (30% x 20 = 6) and subtract the excess depreciation (30% x 100 / 10 = 3). 300 + 24 - 6 - 3 = 315.",
+      "explanation_tr": "Maliyetle başlayın, gelir payını ekleyin (%30 x 80 = 24), alınan temettüleri (%30 x 20 = 6) ve fazla amortismanı (%30 x 100 / 10 = 3) düşün. 300 + 24 - 6 - 3 = 315.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores the extra depreciation on the undervalued equipment.",
+          "tr": "Düşük değerli ekipmanın ek amortismanını göz ardı eder."
+        },
+        "C": {
+          "en": "Does not deduct dividends received, which reduce the investment balance.",
+          "tr": "Alınan temettüleri düşmez; temettüler yatırım bakiyesini azaltır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Share of income: 0.30 x 80 = 24",
+          "tr": "Gelir payı: 0,30 x 80 = 24"
+        },
+        {
+          "en": "Dividends: 0.30 x 20 = 6",
+          "tr": "Temettü: 0,30 x 20 = 6"
+        },
+        {
+          "en": "Excess depreciation: 0.30 x 100 / 10 = 3",
+          "tr": "Fazla amortisman: 0,30 x 100 / 10 = 3"
+        },
+        {
+          "en": "300 + 24 - 6 - 3 = 315",
+          "tr": "300 + 24 - 6 - 3 = 315"
+        }
+      ],
+      "vocab_ids": [
+        "goodwill",
+        "dividend",
+        "impairment",
+        "fair-value"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "300+0.3*80-0.3*20-0.3*100/10",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-01-v01-q2",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-01-v01",
+      "stem_en": "What equity income does Altan report in its 2026 income statement?",
+      "stem_tr": "Altan 2026 gelir tablosunda ne kadar özkaynak yöntemi geliri raporlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 24 million",
+          "tr": "24 milyon TL",
+          "value": 24.0
+        },
+        {
+          "key": "B",
+          "en": "TL 21 million",
+          "tr": "21 milyon TL",
+          "value": 21.0
+        },
+        {
+          "key": "C",
+          "en": "TL 6 million",
+          "tr": "6 milyon TL",
+          "value": 6.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity income = 30% x 80 less excess depreciation of 3 = 21. Dividends are not income; they reduce the investment account.",
+      "explanation_tr": "Özkaynak yöntemi geliri = %30 x 80 eksi 3 fazla amortisman = 21. Temettüler gelir değildir; yatırım hesabını azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omits the depreciation of the equipment fair-value excess.",
+          "tr": "Ekipman gerçeğe uygun değer farkının amortismanını atlar."
+        },
+        "C": {
+          "en": "This is the dividend received. Under the equity method income is recognized as earned, not when dividends are paid.",
+          "tr": "Bu alınan temettüdür. Özkaynak yönteminde gelir, temettü ödendiğinde değil kazanıldıkça muhasebeleştirilir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "0.30 x 80 = 24",
+          "tr": "0,30 x 80 = 24"
+        },
+        {
+          "en": "Less 0.30 x 100 / 10 = 3",
+          "tr": "Eksi 0,30 x 100 / 10 = 3"
+        },
+        {
+          "en": "24 - 3 = 21",
+          "tr": "24 - 3 = 21"
+        }
+      ],
+      "vocab_ids": [
+        "dividend",
+        "net-income",
+        "depreciation",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "0.3*80-0.3*100/10",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-01-v01-q3",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-01-v01",
+      "stem_en": "What is the goodwill implied in the purchase price?",
+      "stem_tr": "Satın alma bedeline içerilen şerefiye nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 60 million",
+          "tr": "60 milyon TL",
+          "value": 60.0
+        },
+        {
+          "key": "B",
+          "en": "TL -40 million",
+          "tr": "-40 milyon TL",
+          "value": -40.0
+        },
+        {
+          "key": "C",
+          "en": "TL 30 million",
+          "tr": "30 milyon TL",
+          "value": 30.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Price 300 less share of book value (240) less share of equipment undervaluation (30) = 30.",
+      "explanation_tr": "Bedel 300 eksi defter değeri payı (240) eksi ekipman düşük değerleme payı (30) = 30.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats the whole excess over book value as goodwill; part of it is the equipment fair-value adjustment.",
+          "tr": "Defter değerinin üzerindeki tüm farkı şerefiye sayar; bir kısmı ekipman gerçeğe uygun değer düzeltmesidir."
+        },
+        "B": {
+          "en": "Subtracts the full 100 instead of Altan's 30% share of the undervaluation.",
+          "tr": "Düşük değerlemenin Altan'a düşen %30'u yerine 100'ün tamamını düşer."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "30% x 800 = 240",
+          "tr": "%30 x 800 = 240"
+        },
+        {
+          "en": "30% x 100 = 30",
+          "tr": "%30 x 100 = 30"
+        },
+        {
+          "en": "300 - 240 - 30 = 30",
+          "tr": "300 - 240 - 30 = 30"
+        }
+      ],
+      "vocab_ids": [
+        "goodwill",
+        "fair-value",
+        "book-value",
+        "excess"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "300-0.3*800-0.3*100",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-01-v01-q4",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-01-v01",
+      "stem_en": "In Altan's indirect-method operating cash flow, the net adjustment related to Bora is closest to:",
+      "stem_tr": "Altan'ın dolaylı yöntemle işletme nakit akışında Bora ile ilgili net düzeltme yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL -15 million (deduction)",
+          "tr": "-15 milyon TL (indirim)",
+          "value": -15.0
+        },
+        {
+          "key": "B",
+          "en": "TL -21 million",
+          "tr": "-21 milyon TL",
+          "value": -21.0
+        },
+        {
+          "key": "C",
+          "en": "+TL 15 million",
+          "tr": "+15 milyon TL",
+          "value": 15.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net income includes non-cash equity income of 21, which is deducted. Dividends received of 6 are cash in operating activities, so they are added. Net: -21 + 6 = -15.",
+      "explanation_tr": "Net kâr 21'lik nakit olmayan özkaynak geliri içerir; bu düşülür. Alınan 6'lık temettü işletme faaliyetlerinde nakittir; eklenir. Net: -21 + 6 = -15.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Removes the non-cash equity income but forgets to add back the cash dividends received.",
+          "tr": "Nakit olmayan özkaynak yöntemi gelirini çıkarır ancak alınan nakit temettüleri geri eklemeyi unutur."
+        },
+        "C": {
+          "en": "Reverses the signs: equity income is non-cash and must be deducted, dividends added.",
+          "tr": "İşaretleri ters çevirir: özkaynak yöntemi geliri nakit değildir, düşülmeli; temettü eklenmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Deduct equity income: -21",
+          "tr": "Özkaynak gelirini düş: -21"
+        },
+        {
+          "en": "Add dividends received: +6",
+          "tr": "Alınan temettüyü ekle: +6"
+        },
+        {
+          "en": "-21 + 6 = -15",
+          "tr": "-21 + 6 = -15"
+        }
+      ],
+      "vocab_ids": [
+        "cash-flow",
+        "dividend",
+        "indirect-method",
+        "non-cash"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "-(0.3*80-0.3*100/10)+0.3*20",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-01-v01-q5",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-01",
+      "los_id": "FSA-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-01-v01",
+      "stem_en": "Compared with the equity method, proportionate consolidation would give Altan a debt-to-equity ratio of:",
+      "stem_tr": "Özkaynak yöntemiyle karşılaştırıldığında, orantılı konsolidasyon Altan'ın borç/özkaynak oranını şuna getirir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.11",
+          "tr": "1.11",
+          "value": 1.111111
+        },
+        {
+          "key": "B",
+          "en": "0.80 (versus 0.67)",
+          "tr": "0.80 (0.67 yerine)",
+          "value": 0.8
+        },
+        {
+          "key": "C",
+          "en": "0.67",
+          "tr": "0.67",
+          "value": 0.666667
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Proportionate consolidation adds 30% x 400 = 120 of debt: (600 + 120) / 900 = 0.80, higher than 0.67 under the equity method. Net income and equity do not change.",
+      "explanation_tr": "Orantılı konsolidasyon 0,30 x 400 = 120 borç ekler: (600 + 120) / 900 = 0,80; özkaynak yöntemindeki 0,67'den yüksektir. Net kâr ve özkaynak değişmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds 100% of Bora's debt; proportionate consolidation adds only Altan's 30% share.",
+          "tr": "Bora'nın borcunun %100'ünü ekler; orantılı konsolidasyon yalnızca Altan'ın %30'luk payını ekler."
+        },
+        "C": {
+          "en": "This is the equity-method ratio: Bora's debt stays off Altan's balance sheet.",
+          "tr": "Bu özkaynak yöntemi oranıdır: Bora'nın borcu Altan'ın bilançosunda görünmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Share of Bora debt: 0.30 x 400 = 120",
+          "tr": "Bora borcu payı: 0,30 x 400 = 120"
+        },
+        {
+          "en": "(600 + 120) / 900 = 0.80",
+          "tr": "(600 + 120) / 900 = 0,80"
+        }
+      ],
+      "vocab_ids": [
+        "leverage",
+        "debt",
+        "ratio",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(600+0.3*400)/900"
+      }
+    }
+  ]
+}

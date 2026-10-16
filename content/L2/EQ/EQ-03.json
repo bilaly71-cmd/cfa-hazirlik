@@ -1,0 +1,391 @@
+{
+  "module_id": "EQ-03",
+  "vignettes": [
+    {
+      "id": "L2-EQ-03-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "curriculum_year": 2027,
+      "title_en": "Doruk Çimento FCFF and FCFE",
+      "title_tr": "Doruk Çimento FSNA-F ve FSNA-Ö",
+      "text_en": "Doruk Çimento plans to expand and an analyst wants to value its equity using free cash flow models. For the latest year, EBIT is TL 200 million, the tax rate is 25%, depreciation and amortization are TL 60 million, capital expenditure is TL 90 million, and the increase in net working capital is TL 20 million. Interest expense is TL 30 million, and the company borrowed a net TL 40 million during the year. The analyst expects free cash flow to the firm (FCFF) to grow at 4% a year forever from the latest level. The weighted average cost of capital (WACC) is 9%. Market value of debt is TL 500 million, and there are 100 million shares. The company intends to change its capital structure over the next few years by repaying debt and issuing equity. The analyst must choose between valuing the firm with FCFF and the equity with free cash flow to equity (FCFE).",
+      "text_tr": "Doruk Çimento genişlemeyi planlıyor ve bir analist özkaynak değerini serbest nakit akışı modelleriyle bulmak istiyor. Son yıl için FVÖK 200 milyon TL, vergi oranı %25, amortisman ve itfa payı 60 milyon TL, yatırım harcaması 90 milyon TL, net işletme sermayesi artışı 20 milyon TL'dir. Faiz gideri 30 milyon TL olup şirket yıl içinde net 40 milyon TL borçlanmıştır. Analist, firmaya serbest nakit akışının (FSNA-F) son seviyeden başlayarak sonsuza kadar yılda %4 büyümesini bekliyor. Ağırlıklı ortalama sermaye maliyeti (AOSM) %9'dur. Borcun piyasa değeri 500 milyon TL, hisse sayısı 100 milyondur. Şirket önümüzdeki yıllarda borç ödeyip özkaynak ihraç ederek sermaye yapısını değiştirmeyi planlıyor. Analist, firmayı FSNA-F ile mi, özkaynağı ise özkaynağa serbest nakit akışı (FSNA-Ö) ile mi değerleyeceğine karar vermelidir.",
+      "tables": [
+        {
+          "title_en": "Latest-year data (TL million)",
+          "title_tr": "Son yıl verileri (milyon TL)",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "EBIT",
+              "200"
+            ],
+            [
+              "D&A",
+              "60"
+            ],
+            [
+              "Capex",
+              "90"
+            ],
+            [
+              "Increase in NWC",
+              "20"
+            ],
+            [
+              "Interest / net borrowing",
+              "30 / 40"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-03-v01-q1",
+        "L2-EQ-03-v01-q2",
+        "L2-EQ-03-v01-q3",
+        "L2-EQ-03-v01-q4",
+        "L2-EQ-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-03-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "los_id": "EQ-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-03-v01",
+      "stem_en": "What is the latest-year FCFF?",
+      "stem_tr": "Son yılın FSNA-F'si nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 150 million",
+          "tr": "150 milyon TL",
+          "value": 150.0
+        },
+        {
+          "key": "B",
+          "en": "TL 100 million",
+          "tr": "100 milyon TL",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "TL -20 million",
+          "tr": "-20 milyon TL",
+          "value": -20.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "FCFF = EBIT(1 - t) + D&A - capex - increase in NWC = 150 + 60 - 90 - 20 = 100.",
+      "explanation_tr": "FSNA-F = FVÖK(1 - t) + amortisman - yatırım harcaması - NİS artışı = 150 + 60 - 90 - 20 = 100.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Does not tax-effect EBIT.",
+          "tr": "FVÖK'ü vergiye tabi tutmaz."
+        },
+        "C": {
+          "en": "Subtracts depreciation, which is a non-cash charge and must be added back.",
+          "tr": "Nakit olmayan amortismanı düşer; amortisman geri eklenmelidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "EBIT(1 - 0.25) = 150",
+          "tr": "FVÖK(1 - 0,25) = 150"
+        },
+        {
+          "en": "150 + 60 - 90 - 20 = 100",
+          "tr": "150 + 60 - 90 - 20 = 100"
+        }
+      ],
+      "vocab_ids": [
+        "free-cash-flow",
+        "ebit",
+        "working-capital",
+        "capital-expenditure",
+        "depreciation"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "200*0.75+60-90-20",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-EQ-03-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "los_id": "EQ-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-03-v01",
+      "stem_en": "What is the latest-year FCFE?",
+      "stem_tr": "Son yılın FSNA-Ö'sü nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 110.0 million",
+          "tr": "110.0 milyon TL",
+          "value": 110.0
+        },
+        {
+          "key": "B",
+          "en": "TL 37.5 million",
+          "tr": "37.5 milyon TL",
+          "value": 37.5
+        },
+        {
+          "key": "C",
+          "en": "TL 117.5 million",
+          "tr": "117.5 milyon TL",
+          "value": 117.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "FCFE = FCFF - interest x (1 - t) + net borrowing = 100 - 22.5 + 40 = 117.5.",
+      "explanation_tr": "FSNA-Ö = FSNA-F - faiz x (1 - t) + net borçlanma = 100 - 22,5 + 40 = 117,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracts interest without the tax shield; FCFE uses after-tax interest.",
+          "tr": "Faizi vergi kalkanı olmadan düşer; FSNA-Ö vergi sonrası faizi kullanır."
+        },
+        "B": {
+          "en": "Subtracts net borrowing; new debt is a cash inflow to equity holders.",
+          "tr": "Net borçlanmayı düşer; yeni borç özkaynak sahipleri için nakit girişidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "After-tax interest: 30 x 0.75 = 22.5",
+          "tr": "Vergi sonrası faiz: 30 x 0,75 = 22,5"
+        },
+        {
+          "en": "100 - 22.5 + 40 = 117.5",
+          "tr": "100 - 22,5 + 40 = 117,5"
+        }
+      ],
+      "vocab_ids": [
+        "free-cash-flow",
+        "interest",
+        "net-borrowing",
+        "tax-shield",
+        "equity"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "200*0.75+60-90-20-30*0.75+40",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-EQ-03-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "los_id": "EQ-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-03-v01",
+      "stem_en": "The value of the firm using the constant-growth FCFF model is:",
+      "stem_tr": "Sabit büyümeli FSNA-F modeline göre firma değeri şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 2,080 million",
+          "tr": "2,080 milyon TL",
+          "value": 2080.0
+        },
+        {
+          "key": "B",
+          "en": "TL 2,000 million",
+          "tr": "2,000 milyon TL",
+          "value": 2000.0
+        },
+        {
+          "key": "C",
+          "en": "TL 800 million",
+          "tr": "800 milyon TL",
+          "value": 800.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Firm value = FCFF1 / (WACC - g) = 100 x 1.04 / (0.09 - 0.04) = TL 2,080 million.",
+      "explanation_tr": "Firma değeri = FSNA-F1 / (AOSM - g) = 100 x 1,04 / (0,09 - 0,04) = 2.080 milyon TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses the latest FCFF instead of next year's FCFF (100 x 1.04).",
+          "tr": "Gelecek yılın FSNA-F'si (100 x 1,04) yerine son yılın FSNA-F'sini kullanır."
+        },
+        "C": {
+          "en": "Adds g to WACC; the denominator is WACC - g.",
+          "tr": "g'yi AOSM'ye ekler; payda AOSM - g'dir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "FCFF1 = 104",
+          "tr": "FSNA-F1 = 104"
+        },
+        {
+          "en": "104 / 0.05 = 2,080",
+          "tr": "104 / 0,05 = 2.080"
+        }
+      ],
+      "vocab_ids": [
+        "wacc",
+        "growth",
+        "terminal-growth",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "100*1.04/(0.09-0.04)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-EQ-03-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "los_id": "EQ-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-03-v01",
+      "stem_en": "The equity value per share implied by the FCFF valuation is:",
+      "stem_tr": "FSNA-F değerlemesinin ima ettiği hisse başına özkaynak değeri şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 20.80",
+          "tr": "20,80 TL",
+          "value": 20.8
+        },
+        {
+          "key": "B",
+          "en": "TL 15.80",
+          "tr": "15,80 TL",
+          "value": 15.8
+        },
+        {
+          "key": "C",
+          "en": "TL 25.80",
+          "tr": "25,80 TL",
+          "value": 25.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity = firm value - debt = 2,080 - 500 = 1,580. Per share = 1,580 / 100 = TL 15.80.",
+      "explanation_tr": "Özkaynak = firma değeri - borç = 2.080 - 500 = 1.580. Hisse başına = 1.580 / 100 = 15,80 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Does not subtract the market value of debt.",
+          "tr": "Borcun piyasa değerini düşmez."
+        },
+        "C": {
+          "en": "Adds debt instead of subtracting it.",
+          "tr": "Borcu düşmek yerine ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "2,080 - 500 = 1,580",
+          "tr": "2.080 - 500 = 1.580"
+        },
+        {
+          "en": "1,580 / 100 = 15.80",
+          "tr": "1.580 / 100 = 15,80"
+        }
+      ],
+      "vocab_ids": [
+        "debt",
+        "per-share",
+        "valuation",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(100*1.04/(0.09-0.04)-500)/100",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-03-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-03",
+      "los_id": "EQ-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-03-v01",
+      "stem_en": "Given Doruk's planned change in capital structure, which approach is more suitable and why?",
+      "stem_tr": "Doruk'un planlanan sermaye yapısı değişikliği göz önüne alındığında hangi yaklaşım daha uygundur ve neden?",
+      "options": [
+        {
+          "key": "A",
+          "en": "FCFE, because it is always easier to forecast than FCFF",
+          "tr": "FSNA-Ö, çünkü her zaman FSNA-F'den daha kolay tahmin edilir"
+        },
+        {
+          "key": "B",
+          "en": "Either is fine, because both always give identical values",
+          "tr": "İkisi de uygundur, çünkü her zaman aynı değeri verir"
+        },
+        {
+          "key": "C",
+          "en": "FCFF, because it is independent of the changing debt level, whereas FCFE would require forecasting net borrowing each year",
+          "tr": "FSNA-F, çünkü değişen borç düzeyinden bağımsızdır; FSNA-Ö ise her yıl net borçlanmanın tahminini gerektirir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "FCFF is before debt flows, so it is not affected by net borrowing. With a changing capital structure FCFE would depend on a series of uncertain debt repayments and issuances. The trade-off is that WACC must reflect the target structure.",
+      "explanation_tr": "FSNA-F borç akışlarından önceki bir akıştır; net borçlanmadan etkilenmez. Sermaye yapısı değişirken FSNA-Ö, belirsiz bir dizi borç geri ödemesi ve ihracına bağlı olur. Karşılığında AOSM hedef yapıyı yansıtmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "FCFE is harder to forecast when leverage is changing, since it depends on borrowing and repayments.",
+          "tr": "Kaldıraç değişirken FSNA-Ö daha zor tahmin edilir; çünkü borçlanma ve geri ödemelere bağlıdır."
+        },
+        "B": {
+          "en": "The two models match only if all assumptions are fully consistent, and FCFE needs many more debt forecasts when leverage changes.",
+          "tr": "İki model yalnızca tüm varsayımlar tamamen tutarlıysa örtüşür; kaldıraç değişirken FSNA-Ö çok daha fazla borç tahmini gerektirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capital-structure",
+        "free-cash-flow",
+        "net-borrowing",
+        "wacc",
+        "leverage"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

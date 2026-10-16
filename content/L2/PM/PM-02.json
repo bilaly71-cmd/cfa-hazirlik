@@ -1,0 +1,417 @@
+{
+  "module_id": "PM-02",
+  "vignettes": [
+    {
+      "id": "L2-PM-02-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "curriculum_year": 2027,
+      "title_en": "Active management evaluation at Bosphorus Funds",
+      "title_tr": "Boğaziçi Fonlar’da aktif yönetim değerlendirmesi",
+      "text_en": "Okan Tekin is an investment committee member at Bosphorus Funds, a fictional Istanbul-based asset manager. The committee is evaluating an active equity fund managed by Defne Aksoy. Over the past year, the fund returned 11.20% while its benchmark returned 9.00%. The fund's tracking risk (the standard deviation of active returns) was 4.00%.\n\nDefne explains her process. She estimates that her forecasts have an information coefficient (IC) of 0.06, and she makes about 50 independent decisions a year. Because of long-only and position limits, her transfer coefficient is 0.80.\n\nThe committee also wants to know how much active risk the fund should take. The benchmark has an expected Sharpe ratio of 0.40 and a standard deviation of 14.00%. The committee believes that the manager's information ratio is 0.30 and wants to choose the active risk that maximizes the portfolio's Sharpe ratio, using sigma-A* = (IR / SR-B) × sigma-B.\n\nFinally, Okan examines the fund's holdings in a simplified four-stock universe to compute active share. The weights of the fund and the benchmark are in the table. Okan suspects the fund may be a \"closet indexer\", a fund that charges active fees while resembling the benchmark.",
+      "text_tr": "Okan Tekin, İstanbul merkezli kurgusal bir varlık yöneticisi olan Boğaziçi Fonlar'da yatırım komitesi üyesidir. Komite, Defne Aksoy'un yönettiği aktif bir hisse senedi fonunu değerlendiriyor. Geçen yıl fon %11,20 getiri sağlarken gösterge endeksi %9,00 getirdi. Fonun izleme riski (aktif getirilerin standart sapması) %4,00 oldu.\n\nDefne sürecini açıklıyor. Tahminlerinin bilgi katsayısının (IC) 0,06 olduğunu ve yılda yaklaşık 50 bağımsız karar verdiğini tahmin ediyor. Sadece uzun pozisyon ve pozisyon sınırları nedeniyle transfer katsayısı 0,80'dir.\n\nKomite ayrıca fonun ne kadar aktif risk alması gerektiğini bilmek istiyor. Gösterge endeksinin beklenen Sharpe oranı 0,40 ve standart sapması %14,00'tür. Komite, yöneticinin bilgi oranının 0,30 olduğuna inanıyor ve σ_A* = (IR / SR_B) × σ_B formülünü kullanarak portföyün Sharpe oranını en çoklayan aktif riski seçmek istiyor.\n\nSon olarak Okan, aktif payı (active share) hesaplamak için fonun portföyünü basitleştirilmiş dört hisselik bir evrende inceliyor. Fon ve gösterge ağırlıkları tabloda. Okan, fonun aktif yönetim ücreti alıp gösterge endeksine benzeyen bir \"closet indexer\" olabileceğinden şüpheleniyor.",
+      "tables": [
+        {
+          "title_en": "Weights",
+          "title_tr": "Ağırlıklar",
+          "headers": [
+            "Stock",
+            "Fund",
+            "Benchmark"
+          ],
+          "rows": [
+            [
+              "A",
+              "30%",
+              "20%"
+            ],
+            [
+              "B",
+              "25%",
+              "30%"
+            ],
+            [
+              "C",
+              "25%",
+              "10%"
+            ],
+            [
+              "D",
+              "20%",
+              "40%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-PM-02-v01-q1",
+        "L2-PM-02-v01-q2",
+        "L2-PM-02-v01-q3",
+        "L2-PM-02-v01-q4",
+        "L2-PM-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-02-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-02-v01",
+      "stem_en": "The fund's information ratio for the past year is closest to:",
+      "stem_tr": "Fonun geçen yıl bilgi oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.80",
+          "tr": "2,80",
+          "value": 2.8
+        },
+        {
+          "key": "B",
+          "en": "0.24",
+          "tr": "0,24",
+          "value": 0.244444
+        },
+        {
+          "key": "C",
+          "en": "0.55",
+          "tr": "0,55",
+          "value": 0.55
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the fund's total return instead of the active return over the benchmark.",
+          "tr": "Gösterge üzerindeki aktif getiri yerine fonun toplam getirisini kullanır."
+        },
+        "B": {
+          "en": "This divides the active return by the benchmark return rather than by tracking risk.",
+          "tr": "Aktif getiriyi izleme riskine değil gösterge getirisine böler."
+        }
+      },
+      "explanation_en": "The 2.20% active return divided by 4.00% tracking risk gives an information ratio of 0.55.",
+      "explanation_tr": "%2,20 aktif getirinin %4,00 izleme riskine bölünmesi 0,55 bilgi oranı verir.",
+      "solution_steps": [
+        {
+          "en": "IR = active return / tracking risk.",
+          "tr": "IR = aktif getiri / izleme riski."
+        },
+        {
+          "en": "Active return = 11.20% - 9.00% = 2.20%.",
+          "tr": "Aktif getiri = %11,20 - %9,00 = %2,20."
+        },
+        {
+          "en": "IR = 2.20 / 4.00.",
+          "tr": "IR = 2,20 / 4,00."
+        },
+        {
+          "en": "IR = 0.55.",
+          "tr": "IR = 0,55."
+        }
+      ],
+      "vocab_ids": [
+        "benchmark",
+        "assume",
+        "therefore"
+      ],
+      "numeric": {
+        "expr": "(11.2-9.0)/4.0"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-02-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-02-v01",
+      "stem_en": "Using the full fundamental law with the transfer coefficient, the expected information ratio is closest to:",
+      "stem_tr": "Transfer katsayısı dahil tam temel yasa kullanılarak beklenen bilgi oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.34",
+          "tr": "0,34",
+          "value": 0.339411
+        },
+        {
+          "key": "B",
+          "en": "0.42",
+          "tr": "0,42",
+          "value": 0.424264
+        },
+        {
+          "key": "C",
+          "en": "2.40",
+          "tr": "2,40",
+          "value": 2.4
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the basic form without the transfer coefficient, so it overstates the achievable IR.",
+          "tr": "Transfer katsayısı olmayan temel biçimdir; ulaşılabilir IR'ı olduğundan yüksek gösterir."
+        },
+        "C": {
+          "en": "This uses breadth instead of the square root of breadth.",
+          "tr": "Genişliğin karekökü yerine genişliği kullanır."
+        }
+      },
+      "explanation_en": "The transfer coefficient scales the IR down to 0.80 × 0.06 × 7.07 = 0.34.",
+      "explanation_tr": "Transfer katsayısı IR'ı 0,80 × 0,06 × 7,07 = 0,34'e düşürür.",
+      "solution_steps": [
+        {
+          "en": "IR ≈ TC × IC × √BR.",
+          "tr": "IR ≈ TC × IC × √BR."
+        },
+        {
+          "en": "√50 = 7.071.",
+          "tr": "√50 = 7,071."
+        },
+        {
+          "en": "0.80 × 0.06 × 7.071.",
+          "tr": "0,80 × 0,06 × 7,071."
+        },
+        {
+          "en": "IR = 0.34.",
+          "tr": "IR = 0,34."
+        }
+      ],
+      "vocab_ids": [
+        "benchmark",
+        "assume",
+        "therefore"
+      ],
+      "numeric": {
+        "expr": "0.8*0.06*50**0.5"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-02-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-02-v01",
+      "stem_en": "The active risk that maximizes the portfolio's Sharpe ratio is closest to:",
+      "stem_tr": "Portföyün Sharpe oranını en çoklayan aktif risk en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "18.7%",
+          "tr": "%18,7",
+          "value": 18.666667
+        },
+        {
+          "key": "B",
+          "en": "10.5%",
+          "tr": "%10,5",
+          "value": 10.5
+        },
+        {
+          "key": "C",
+          "en": "4.2%",
+          "tr": "%4,2",
+          "value": 4.2
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The ratio is inverted; the formula uses IR divided by the benchmark Sharpe ratio.",
+          "tr": "Oran ters alınmış; formül IR'ın gösterge Sharpe oranına bölünmesini kullanır."
+        },
+        "C": {
+          "en": "This leaves out the division by the benchmark Sharpe ratio.",
+          "tr": "Gösterge Sharpe oranına bölmeyi atlar."
+        }
+      },
+      "explanation_en": "With IR 0.30 and a benchmark Sharpe ratio of 0.40, the optimal active risk is 0.75 times the benchmark risk, or 10.5%.",
+      "explanation_tr": "IR 0,30 ve gösterge Sharpe oranı 0,40 iken optimal aktif risk, gösterge riskinin 0,75 katı, yani %10,5'tir.",
+      "solution_steps": [
+        {
+          "en": "σA* = (IR / SR_B) × σ_B.",
+          "tr": "σA* = (IR / SR_B) × σ_B."
+        },
+        {
+          "en": "IR / SR_B = 0.30 / 0.40 = 0.75.",
+          "tr": "IR / SR_B = 0,30 / 0,40 = 0,75."
+        },
+        {
+          "en": "σA* = 0.75 × 14.00%.",
+          "tr": "σA* = 0,75 × %14,00."
+        },
+        {
+          "en": "σA* = 10.5 percent.",
+          "tr": "σA* = %10,5."
+        }
+      ],
+      "vocab_ids": [
+        "benchmark",
+        "assume",
+        "therefore"
+      ],
+      "numeric": {
+        "expr": "0.30/0.40*14.0",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-02-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-02-v01",
+      "stem_en": "The fund's active share, using the weights in the table, is closest to:",
+      "stem_tr": "Tablodaki ağırlıklar kullanılarak fonun aktif payı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0%",
+          "tr": "%50,0",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "0.0%",
+          "tr": "%0,0",
+          "value": 0.0
+        },
+        {
+          "key": "C",
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Omitting the factor of one-half double-counts the differences (each overweight is matched by an underweight).",
+          "tr": "Yarım çarpanını atlamak farkları iki kez sayar (her fazla ağırlık bir eksik ağırlıkla eşleşir)."
+        },
+        "B": {
+          "en": "Netting overweights and underweights cancels the differences; absolute differences must be used.",
+          "tr": "Fazla ve eksik ağırlıkları netleştirmek farkları sıfırlar; mutlak farklar kullanılmalıdır."
+        }
+      },
+      "explanation_en": "The absolute weight differences sum to 50 percentage points; half of that gives an active share of 25%.",
+      "explanation_tr": "Mutlak ağırlık farklarının toplamı 50 yüzde puandır; yarısı %25 aktif pay verir.",
+      "solution_steps": [
+        {
+          "en": "Active share = 1/2 × Σ|w_fund - w_bench|.",
+          "tr": "Aktif pay = 1/2 × Σ|w_fon - w_gösterge|."
+        },
+        {
+          "en": "Absolute differences: 10, 5, 15, 20 percentage points.",
+          "tr": "Mutlak farklar: 10, 5, 15, 20 yüzde puan."
+        },
+        {
+          "en": "Sum = 50; half = 25.",
+          "tr": "Toplam = 50; yarısı = 25."
+        },
+        {
+          "en": "Active share = 25 percent.",
+          "tr": "Aktif pay = %25."
+        }
+      ],
+      "vocab_ids": [
+        "benchmark",
+        "assume",
+        "therefore"
+      ],
+      "numeric": {
+        "expr": "0.5*(abs(0.30-0.20)+abs(0.25-0.30)+abs(0.25-0.10)+abs(0.20-0.40))*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-02-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-02",
+      "los_id": "PM-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-02-v01",
+      "stem_en": "Based on the active share of 25% and the tracking risk of 4.00%, Okan's concern about a closet indexer is best described as:",
+      "stem_tr": "%25 aktif pay ve %4,00 izleme riskine göre, Okan'ın closet indexer endişesi en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "partly supported, because a low active share suggests that the fund holds a portfolio similar to its benchmark, so the active fee may not be justified.",
+          "tr": "kısmen desteklenir; düşük aktif pay fonun gösterge endeksine benzer bir portföy tuttuğunu düşündürür ve bu durumda aktif yönetim ücreti haklı olmayabilir."
+        },
+        {
+          "key": "B",
+          "en": "rejected, because a tracking risk of 4.00% shows that the fund is very different from the benchmark.",
+          "tr": "reddedilir; çünkü %4,00 izleme riski fonun gösterge endeksinden çok farklı olduğunu gösterir."
+        },
+        {
+          "key": "C",
+          "en": "confirmed, because active share below 50% always proves that the manager adds no value.",
+          "tr": "kesinleşir; çünkü %50'nin altındaki aktif pay yöneticinin hiç değer katmadığını her zaman kanıtlar."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Tracking risk can be high because of factor tilts even if few holdings differ; low active share still points to similarity in holdings.",
+          "tr": "İzleme riski, birkaç pozisyon farklı olsa bile faktör eğilimleri yüzünden yüksek olabilir; düşük aktif pay yine de pozisyon benzerliğine işaret eder."
+        },
+        "C": {
+          "en": "Active share alone cannot prove the absence of skill; it is only a signal that should be combined with other measures such as IR.",
+          "tr": "Aktif pay tek başına beceri yokluğunu kanıtlayamaz; bilgi oranı gibi diğer ölçülerle birlikte değerlendirilmesi gereken bir işarettir."
+        }
+      },
+      "explanation_en": "Active share measures how different the holdings are. A 25% reading is low, so the concern is partly supported; it is not proof, since the realized information ratio of 0.55 is respectable.",
+      "explanation_tr": "Aktif pay portföy farkını ölçer. %25 düşük bir değerdir, dolayısıyla endişe kısmen desteklenir; ancak gerçekleşen 0,55 bilgi oranı makul olduğundan bu bir kanıt değildir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "benchmark",
+        "assume",
+        "therefore"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    }
+  ]
+}

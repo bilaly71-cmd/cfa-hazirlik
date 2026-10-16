@@ -1,0 +1,382 @@
+{
+  "module_id": "CI-01",
+  "vignettes": [
+    {
+      "id": "L2-CI-01-v01",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "curriculum_year": 2027,
+      "title_en": "Akdeniz Enerji Buyback and Dividend",
+      "title_tr": "Akdeniz Enerji Geri Alım ve Temettü",
+      "text_en": "Akdeniz Enerji, a listed Turkish power company, has net income of TL 240 million and 100 million shares outstanding. The shares trade at TL 36 and the book value of equity is TL 3,000 million (TL 30 per share). The board is considering a TL 120 million share repurchase financed entirely with new debt. The debt costs 8% before tax and the tax rate is 25%. Management says that the buyback will lift earnings per share (EPS). The company also needs TL 300 million for capital expenditure next year. It follows a residual dividend policy and wants to finance new investment with 40% debt and 60% equity, using retained earnings as the equity source. An investor, who prefers steady income, worries that the company may cut its regular dividend, and asks whether a repurchase sends a different signal from a cash dividend. Assume that the repurchase happens at the current market price and that the earnings of the company are otherwise unchanged.",
+      "text_tr": "Akdeniz Enerji, borsada işlem gören bir Türk enerji şirketidir; net kârı 240 milyon TL, dolaşımdaki hisse sayısı 100 milyondur. Hisseler 36 TL'den işlem görüyor ve özkaynağın defter değeri 3.000 milyon TL'dir (hisse başına 30 TL). Yönetim kurulu, tamamı yeni borçla finanse edilecek 120 milyon TL'lik bir pay geri alımını değerlendiriyor. Borcun vergi öncesi maliyeti %8, vergi oranı %25'tir. Yönetim, geri alımın hisse başına kârı (HBK) artıracağını söylüyor. Şirketin gelecek yıl yatırım harcaması için 300 milyon TL'ye ihtiyacı var. Artık temettü politikası izliyor ve yeni yatırımı %40 borç, %60 özkaynakla finanse etmek istiyor; özkaynak kaynağı olarak dağıtılmayan kârı kullanacak. İstikrarlı gelir isteyen bir yatırımcı, şirketin düzenli temettüsünü kesmesinden endişe ediyor ve geri alımın nakit temettüden farklı bir sinyal verip vermediğini soruyor. Geri alımın güncel piyasa fiyatından yapıldığını ve şirketin kazançlarının başka açıdan değişmediğini varsayın.",
+      "tables": [
+        {
+          "title_en": "Buyback inputs",
+          "title_tr": "Geri alım girdileri",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Net income",
+              "TL 240 m"
+            ],
+            [
+              "Shares / price",
+              "100 m / TL 36"
+            ],
+            [
+              "Buyback / debt cost",
+              "TL 120 m / 8% pre-tax"
+            ],
+            [
+              "Capex / target debt",
+              "TL 300 m / 40%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-CI-01-v01-q1",
+        "L2-CI-01-v01-q2",
+        "L2-CI-01-v01-q3",
+        "L2-CI-01-v01-q4",
+        "L2-CI-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-CI-01-v01-q1",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "los_id": "CI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-CI-01-v01",
+      "stem_en": "How many shares (millions) would the company repurchase?",
+      "stem_tr": "Şirket kaç milyon hisse geri alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.33",
+          "tr": "3,33",
+          "value": 3.333333
+        },
+        {
+          "key": "B",
+          "en": "4.00",
+          "tr": "4,00",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "0.50",
+          "tr": "0,50",
+          "value": 0.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Shares repurchased = 120 / 36 = 3.33 million, leaving 96.67 million shares.",
+      "explanation_tr": "Geri alınan hisse = 120 / 36 = 3,33 milyon; geriye 96,67 milyon hisse kalır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by book value per share; the repurchase occurs at the market price.",
+          "tr": "Hisse başı defter değerine böler; geri alım piyasa fiyatından yapılır."
+        },
+        "C": {
+          "en": "Divides by net income, which is not a share price.",
+          "tr": "Net kâra böler; bu bir hisse fiyatı değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "120 / 36 = 3.33",
+          "tr": "120 / 36 = 3,33"
+        }
+      ],
+      "vocab_ids": [
+        "share-repurchase",
+        "market-price",
+        "shares-outstanding",
+        "buyback",
+        "per-share"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "120/36",
+        "unit": "million shares"
+      }
+    },
+    {
+      "id": "L2-CI-01-v01-q2",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "los_id": "CI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-CI-01-v01",
+      "stem_en": "EPS after the debt-financed buyback is closest to:",
+      "stem_tr": "Borçla finanse edilen geri alım sonrası HBK yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 2.483",
+          "tr": "2,483 TL",
+          "value": 2.482759
+        },
+        {
+          "key": "B",
+          "en": "TL 2.408",
+          "tr": "2,408 TL",
+          "value": 2.408276
+        },
+        {
+          "key": "C",
+          "en": "TL 2.383",
+          "tr": "2,383 TL",
+          "value": 2.383448
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "After-tax interest = 120 x 8% x (1 - 0.25) = 7.2, so net income = 232.8. Shares = 96.67 million. EPS = 232.8 / 96.67 = TL 2.408, versus TL 2.40 before: only a very small increase.",
+      "explanation_tr": "Vergi sonrası faiz = 120 x %8 x (1 - 0,25) = 7,2; net kâr = 232,8. Hisse sayısı 96,67 milyon. HBK = 232,8 / 96,67 = 2,408 TL; önceki 2,40 TL'ye göre çok küçük bir artış.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores the after-tax interest on the new debt.",
+          "tr": "Yeni borcun vergi sonrası faizini göz ardı eder."
+        },
+        "C": {
+          "en": "Deducts interest without the tax shield.",
+          "tr": "Faizi vergi kalkanı olmadan düşer."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Net income = 240 - 7.2 = 232.8",
+          "tr": "Net kâr = 240 - 7,2 = 232,8"
+        },
+        {
+          "en": "Shares = 100 - 3.33 = 96.67",
+          "tr": "Hisse = 100 - 3,33 = 96,67"
+        },
+        {
+          "en": "232.8 / 96.67 = 2.408",
+          "tr": "232,8 / 96,67 = 2,408"
+        }
+      ],
+      "vocab_ids": [
+        "earnings-per-share",
+        "after-tax",
+        "interest",
+        "share-repurchase"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(240-120*0.08*(1-0.25))/(100-120/36)",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-CI-01-v01-q3",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "los_id": "CI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-01-v01",
+      "stem_en": "Book value per share after the repurchase is closest to:",
+      "stem_tr": "Geri alım sonrası hisse başına defter değeri yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 31.03",
+          "tr": "31,03 TL",
+          "value": 31.034483
+        },
+        {
+          "key": "B",
+          "en": "TL 30.00",
+          "tr": "30,00 TL",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "TL 29.79",
+          "tr": "29,79 TL",
+          "value": 29.793103
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Equity falls to 3,000 - 120 = 2,880 and shares to 96.67 million, so BVPS = TL 29.79, lower than TL 30. Buying shares above book value reduces BVPS.",
+      "explanation_tr": "Özkaynak 3.000 - 120 = 2.880'e, hisse sayısı 96,67 milyona düşer; HDBV = 29,79 TL, yani 30 TL'den düşüktür. Hisseyi defter değerinin üzerinde almak HBDD'yi azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Does not reduce equity by the amount paid for the repurchase.",
+          "tr": "Özkaynağı geri alım için ödenen tutar kadar azaltmaz."
+        },
+        "B": {
+          "en": "Book value per share changes: the price paid (36) exceeds book value per share (30).",
+          "tr": "Hisse başı defter değeri değişir: ödenen fiyat (36), hisse başı defter değerini (30) aşıyor."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(3,000 - 120) / 96.67 = 29.79",
+          "tr": "(3.000 - 120) / 96,67 = 29,79"
+        }
+      ],
+      "vocab_ids": [
+        "book-value",
+        "per-share",
+        "repurchase",
+        "equity",
+        "market-price"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(3000-120)/(100-120/36)",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-CI-01-v01-q4",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "los_id": "CI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-CI-01-v01",
+      "stem_en": "Under the residual dividend policy, the dividend (TL million) is:",
+      "stem_tr": "Artık temettü politikasında temettü (milyon TL) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 60 million",
+          "tr": "60 milyon TL",
+          "value": 60.0
+        },
+        {
+          "key": "B",
+          "en": "TL 120 million",
+          "tr": "120 milyon TL",
+          "value": 120.0
+        },
+        {
+          "key": "C",
+          "en": "TL -60 million",
+          "tr": "-60 milyon TL",
+          "value": -60.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Equity needed = 60% x 300 = 180. Dividend = earnings - equity needed = 240 - 180 = TL 60 million.",
+      "explanation_tr": "Gereken özkaynak = %60 x 300 = 180. Temettü = kâr - gereken özkaynak = 240 - 180 = 60 milyon TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses the debt share (40%) instead of the equity share (60%) of the investment.",
+          "tr": "Yatırımın özkaynak payı (%60) yerine borç payını (%40) kullanır."
+        },
+        "C": {
+          "en": "Finances the whole capex from retained earnings; 40% is funded by debt.",
+          "tr": "Yatırım harcamasının tamamını dağıtılmayan kârla finanse eder; %40'ı borçla karşılanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Equity share of capex: 180",
+          "tr": "Yatırımın özkaynak payı: 180"
+        },
+        {
+          "en": "240 - 180 = 60",
+          "tr": "240 - 180 = 60"
+        }
+      ],
+      "vocab_ids": [
+        "residual",
+        "retained-earnings",
+        "capital-expenditure",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "240-0.6*300",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-CI-01-v01-q5",
+      "level": "L2",
+      "topic": "CI",
+      "module_id": "CI-01",
+      "los_id": "CI-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-CI-01-v01",
+      "stem_en": "For the investor who wants steady income, which statement is most accurate?",
+      "stem_tr": "İstikrarlı gelir isteyen yatırımcı için hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The residual policy gives the most stable dividends of all policies",
+          "tr": "Artık politika, tüm politikalar arasında en istikrarlı temettüyü verir"
+        },
+        {
+          "key": "B",
+          "en": "A residual dividend policy makes dividends vary with investment needs, and cutting a regular dividend is usually read as a stronger negative signal than skipping a buyback",
+          "tr": "Artık temettü politikası temettüleri yatırım ihtiyaçlarına göre değiştirir; düzenli temettü kesmek genellikle geri alımı atlamaktan daha güçlü bir olumsuz sinyal olarak okunur"
+        },
+        {
+          "key": "C",
+          "en": "Buybacks are legally required to be steady",
+          "tr": "Geri alımların istikrarlı olması yasal zorunluluktur"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Investment needs and earnings change each year, so residual dividends fluctuate. Companies tend to avoid cutting regular dividends, but buybacks are flexible, which is why they are often used for variable payouts.",
+      "explanation_tr": "Yatırım ihtiyaçları ve kazançlar her yıl değiştiğinden artık temettüler dalgalanır. Şirketler düzenli temettüyü kesmekten kaçınma eğilimindedir; geri alımlar esnektir ve bu nedenle değişken dağıtımlar için sıkça kullanılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Residual dividends are volatile because they depend on the investment plan and earnings.",
+          "tr": "Artık temettüler yatırım planı ve kazançlara bağlı olduğundan oynaktır."
+        },
+        "C": {
+          "en": "Buybacks are discretionary and can be changed without the negative signal of a dividend cut.",
+          "tr": "Geri alımlar isteğe bağlıdır ve temettü kesintisinin olumsuz sinyali olmadan değiştirilebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "signal",
+        "income",
+        "buyback",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

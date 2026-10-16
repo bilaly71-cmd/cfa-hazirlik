@@ -1,0 +1,402 @@
+{
+  "module_id": "PM-01",
+  "vignettes": [
+    {
+      "id": "L2-PM-01-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "curriculum_year": 2027,
+      "title_en": "Capital market expectations at Toros Wealth",
+      "title_tr": "Toros Varlık’ta sermaye piyasası beklentileri",
+      "text_en": "Gül Özkan is a strategist at Toros Wealth, a fictional wealth management firm. She prepares capital market expectations for a developed-market economy ahead of the annual asset allocation review.\n\nFor equities, she uses the Grinold-Kroner approach. The market's dividend yield is 2.80%. The number of shares outstanding is expected to fall by 0.60% per year because of net buybacks. Expected inflation is 2.50%, and expected real earnings growth is 1.80% per year. The market's price-to-earnings (P/E) ratio is 16.0 today and is expected to rise to 16.8 over the next five years, and she annualizes this repricing as a compound change.\n\nFor a government bond portfolio, she starts from a yield to maturity of 5.90%. She expects a roll-down return of 0.25% per year. The portfolio has a modified duration of 6.0, and she expects spreads to widen by 5 basis points over the horizon. She expects credit losses of 0.35% per year.\n\nThe central bank's policy rate is 6.00%. Gül uses the Taylor rule: policy rate = neutral real rate + inflation + 0.5 × (inflation - inflation target) + 0.5 × (output gap). The neutral real rate is 1.50%, inflation is 3.50%, the inflation target is 2.00%, and the output gap is -1.00%. The risk-free rate is 3.50%.",
+      "text_tr": "Gül Özkan, kurgusal bir servet yönetimi şirketi olan Toros Varlık'ta stratejisttir. Yıllık varlık dağılımı toplantısı öncesinde gelişmiş piyasa ekonomisi için sermaye piyasası beklentilerini hazırlıyor.\n\nHisse senetleri için Grinold-Kroner yaklaşımını kullanıyor. Piyasanın temettü verimi %2,80'dir. Net geri alımlar nedeniyle dolaşımdaki hisse sayısının yılda %0,60 azalması bekleniyor. Beklenen enflasyon %2,50, beklenen reel kazanç büyümesi yıllık %1,80'dir. Piyasanın fiyat/kazanç (F/K) oranı bugün 16,0'dır ve önümüzdeki beş yılda 16,8'e çıkması bekleniyor; Gül bu yeniden fiyatlamayı bileşik değişim olarak yıllıklandırıyor.\n\nDevlet tahvili portföyü için %5,90 vadeye kadar getiriden başlıyor. Yıllık %0,25 roll-down getirisi bekliyor. Portföyün değiştirilmiş durasyonu 6,0'dır ve marjların ufuk boyunca 5 baz puan genişlemesini bekliyor. Yıllık %0,35 kredi zararı bekliyor.\n\nMerkez bankasının politika faizi %6,00'dır. Gül Taylor kuralını kullanıyor: politika faizi = nötr reel faiz + enflasyon + 0,5 × (enflasyon - enflasyon hedefi) + 0,5 × (üretim açığı). Nötr reel faiz %1,50, enflasyon %3,50, enflasyon hedefi %2,00 ve üretim açığı -%1,00'dir. Risksiz faiz oranı %3,50'dir.",
+      "tables": [],
+      "question_ids": [
+        "L2-PM-01-v01-q1",
+        "L2-PM-01-v01-q2",
+        "L2-PM-01-v01-q3",
+        "L2-PM-01-v01-q4",
+        "L2-PM-01-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-01-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "los_id": "PM-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-01-v01",
+      "stem_en": "The expected equity return using the Grinold-Kroner approach is closest to:",
+      "stem_tr": "Grinold-Kroner yaklaşımıyla beklenen hisse senedi getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.68%",
+          "tr": "%8,68",
+          "value": 8.68058
+        },
+        {
+          "key": "B",
+          "en": "7.70%",
+          "tr": "%7,70",
+          "value": 7.7
+        },
+        {
+          "key": "C",
+          "en": "7.48%",
+          "tr": "%7,48",
+          "value": 7.48058
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This leaves out the annualized repricing return from the rise in the P/E ratio.",
+          "tr": "F/K artışından gelen yıllıklandırılmış yeniden fiyatlama getirisini dışarıda bırakır."
+        },
+        "C": {
+          "en": "The share count falls, so the net buyback adds to the return; subtracting it uses the wrong sign.",
+          "tr": "Hisse sayısı azalıyor, dolayısıyla net geri alım getiriyi artırır; çıkarmak yanlış işaret kullanmaktır."
+        }
+      },
+      "explanation_en": "Adding the five components gives 8.68%: 2.80 + 0.60 + 2.50 + 1.80 + 0.98.",
+      "explanation_tr": "Beş bileşenin toplamı %8,68 eder: 2,80 + 0,60 + 2,50 + 1,80 + 0,98.",
+      "solution_steps": [
+        {
+          "en": "Expected return = dividend yield + net buyback effect + inflation + real growth + repricing.",
+          "tr": "Beklenen getiri = temettü verimi + net geri alım etkisi + enflasyon + reel büyüme + yeniden fiyatlama."
+        },
+        {
+          "en": "Repricing = (16.8/16.0)^(1/5) - 1 = 0.98% per year.",
+          "tr": "Yeniden fiyatlama = (16,8/16,0)^(1/5) - 1 = yılda %0,98."
+        },
+        {
+          "en": "Sum = 2.80 + 0.60 + 2.50 + 1.80 + 0.98.",
+          "tr": "Toplam = 2,80 + 0,60 + 2,50 + 1,80 + 0,98."
+        },
+        {
+          "en": "E(R) = 8.68 percent.",
+          "tr": "E(R) = %8,68."
+        }
+      ],
+      "vocab_ids": [
+        "dividend-yield",
+        "share-repurchase",
+        "inflation",
+        "yield-to-maturity",
+        "policy-rate",
+        "risk-free-rate"
+      ],
+      "numeric": {
+        "expr": "2.8+0.6+2.5+1.8+((16.8/16.0)**(1/5)-1)*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-01-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "los_id": "PM-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-01-v01",
+      "stem_en": "The expected annual return on the government bond portfolio is closest to:",
+      "stem_tr": "Devlet tahvili portföyünün beklenen yıllık getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.80%",
+          "tr": "%5,80",
+          "value": 5.8
+        },
+        {
+          "key": "B",
+          "en": "5.50%",
+          "tr": "%5,50",
+          "value": 5.5
+        },
+        {
+          "key": "C",
+          "en": "6.10%",
+          "tr": "%6,10",
+          "value": 6.1
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This ignores the price loss from the expected spread widening (-duration × change in spread).",
+          "tr": "Beklenen marj genişlemesinden kaynaklanan fiyat kaybını (-durasyon × marj değişimi) yok sayar."
+        },
+        "C": {
+          "en": "The sign on the spread change is wrong: spread widening reduces bond prices.",
+          "tr": "Marj değişiminin işareti yanlış: marj genişlemesi tahvil fiyatlarını düşürür."
+        }
+      },
+      "explanation_en": "The yield and roll-down are reduced by the price effect of spread widening (0.30%) and the credit loss (0.35%), leaving 5.50%.",
+      "explanation_tr": "Getiri ve roll-down, marj genişlemesinin fiyat etkisi (%0,30) ve kredi zararı (%0,35) ile azalır; sonuç %5,50'dir.",
+      "solution_steps": [
+        {
+          "en": "E(R) = yield + roll-down - duration × Δspread - credit losses.",
+          "tr": "E(R) = getiri + roll-down - durasyon × Δmarj - kredi zararı."
+        },
+        {
+          "en": "Spread effect = -6.0 × 0.0005 = -0.30%.",
+          "tr": "Marj etkisi = -6,0 × 0,0005 = -%0,30."
+        },
+        {
+          "en": "E(R) = 5.90 + 0.25 - 0.30 - 0.35.",
+          "tr": "E(R) = 5,90 + 0,25 - 0,30 - 0,35."
+        },
+        {
+          "en": "E(R) = 5.50 percent.",
+          "tr": "E(R) = %5,50."
+        }
+      ],
+      "vocab_ids": [
+        "dividend-yield",
+        "share-repurchase",
+        "inflation",
+        "yield-to-maturity",
+        "policy-rate",
+        "risk-free-rate"
+      ],
+      "numeric": {
+        "expr": "5.90+0.25-6.0*0.0005*100-0.35",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-01-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "los_id": "PM-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-01-v01",
+      "stem_en": "The policy rate implied by the Taylor rule is closest to:",
+      "stem_tr": "Taylor kuralının ima ettiği politika faizi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.25%",
+          "tr": "%6,25",
+          "value": 6.25
+        },
+        {
+          "key": "B",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "C",
+          "en": "5.25%",
+          "tr": "%5,25",
+          "value": 5.25
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The output gap is negative (-1.00%); using +1.00% overstates the rate.",
+          "tr": "Üretim açığı negatiftir (-%1,00); +%1,00 kullanmak faizi olduğundan yüksek bulur."
+        },
+        "B": {
+          "en": "This omits both the inflation-gap and output-gap terms.",
+          "tr": "Hem enflasyon farkı hem üretim açığı terimlerini atlar."
+        }
+      },
+      "explanation_en": "The rule gives 1.50 + 3.50 + 0.75 - 0.50 = 5.25%.",
+      "explanation_tr": "Kural 1,50 + 3,50 + 0,75 - 0,50 = %5,25 verir.",
+      "solution_steps": [
+        {
+          "en": "Policy rate = r* + π + 0.5(π - π*) + 0.5(gap).",
+          "tr": "Politika faizi = r* + π + 0,5(π - π*) + 0,5(açık)."
+        },
+        {
+          "en": "0.5 × (3.50 - 2.00) = 0.75; 0.5 × (-1.00) = -0.50.",
+          "tr": "0,5 × (3,50 - 2,00) = 0,75; 0,5 × (-1,00) = -0,50."
+        },
+        {
+          "en": "Rate = 1.50 + 3.50 + 0.75 - 0.50.",
+          "tr": "Faiz = 1,50 + 3,50 + 0,75 - 0,50."
+        },
+        {
+          "en": "Rate = 5.25 percent.",
+          "tr": "Faiz = %5,25."
+        }
+      ],
+      "vocab_ids": [
+        "dividend-yield",
+        "share-repurchase",
+        "inflation",
+        "yield-to-maturity",
+        "policy-rate",
+        "risk-free-rate"
+      ],
+      "numeric": {
+        "expr": "1.5+3.5+0.5*(3.5-2.0)+0.5*(-1.0)",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-01-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "los_id": "PM-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-01-v01",
+      "stem_en": "Comparing the actual policy rate of 6.00% with the Taylor-rule rate, the stance of monetary policy is most consistent with:",
+      "stem_tr": "Fiili politika faizi %6,00 ile Taylor kuralı faizi karşılaştırıldığında, para politikası duruşuyla en tutarlı ifade hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "restrictive policy, which is more likely to slow growth and lower inflation pressure than to stimulate demand.",
+          "tr": "kısıtlayıcı politika; talebi canlandırmaktan çok büyümeyi yavaşlatma ve enflasyon baskısını azaltma olasılığı daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "accommodative policy, because the policy rate is above the neutral real rate.",
+          "tr": "genişletici politika, çünkü politika faizi nötr reel faizin üzerindedir."
+        },
+        {
+          "key": "C",
+          "en": "neutral policy, because the difference of 0.75 percentage points is within rounding.",
+          "tr": "nötr politika, çünkü 0,75 puanlık fark yuvarlama aralığındadır."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The comparison should be made with the full Taylor-rule rate (5.25%), not only the real neutral rate; the actual rate is above it, so policy is restrictive.",
+          "tr": "Karşılaştırma yalnızca reel nötr faizle değil tam Taylor kuralı faiziyle (%5,25) yapılmalıdır; fiili faiz bunun üzerindedir, yani politika kısıtlayıcıdır."
+        },
+        "C": {
+          "en": "A gap of 75 basis points between the actual and rule-based rates is not rounding noise.",
+          "tr": "Fiili faiz ile kural faizi arasındaki 75 baz puanlık fark yuvarlama gürültüsü değildir."
+        }
+      },
+      "explanation_en": "The actual rate is 75 basis points above the rule-implied rate, which indicates a tighter-than-rule stance.",
+      "explanation_tr": "Fiili faiz kuralın ima ettiği faizin 75 baz puan üzerindedir; bu, kuraldan daha sıkı bir duruşa işaret eder.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "dividend-yield",
+        "share-repurchase",
+        "inflation",
+        "yield-to-maturity",
+        "policy-rate",
+        "risk-free-rate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "L2-PM-01-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-01",
+      "los_id": "PM-01-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-01-v01",
+      "stem_en": "The equity risk premium implied by the Grinold-Kroner return and the risk-free rate is closest to:",
+      "stem_tr": "Grinold-Kroner getirisi ve risksiz faiz oranının ima ettiği hisse senedi risk primi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.20%",
+          "tr": "%4,20",
+          "value": 4.2
+        },
+        {
+          "key": "B",
+          "en": "5.18%",
+          "tr": "%5,18",
+          "value": 5.18058
+        },
+        {
+          "key": "C",
+          "en": "3.50%",
+          "tr": "%3,50",
+          "value": 3.5
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This leaves out the repricing component of the expected equity return.",
+          "tr": "Beklenen hisse getirisinin yeniden fiyatlama bileşenini atlar."
+        },
+        "C": {
+          "en": "This is the risk-free rate itself, not the premium over it.",
+          "tr": "Bu risksiz faizin kendisidir, onun üzerindeki prim değildir."
+        }
+      },
+      "explanation_en": "Subtracting the 3.50% risk-free rate from the 8.68% expected return leaves a premium of about 5.18%.",
+      "explanation_tr": "%8,68 beklenen getiriden %3,50 risksiz faizin çıkarılması yaklaşık %5,18 prim bırakır.",
+      "solution_steps": [
+        {
+          "en": "Equity risk premium = expected equity return - risk-free rate.",
+          "tr": "Hisse senedi risk primi = beklenen hisse getirisi - risksiz faiz."
+        },
+        {
+          "en": "Expected equity return = 8.68%.",
+          "tr": "Beklenen hisse getirisi = %8,68."
+        },
+        {
+          "en": "ERP = 8.68 - 3.50.",
+          "tr": "ERP = 8,68 - 3,50."
+        },
+        {
+          "en": "ERP = 5.18 percent.",
+          "tr": "ERP = %5,18."
+        }
+      ],
+      "vocab_ids": [
+        "dividend-yield",
+        "share-repurchase",
+        "inflation",
+        "yield-to-maturity",
+        "policy-rate",
+        "risk-free-rate"
+      ],
+      "numeric": {
+        "expr": "(2.8+0.6+2.5+1.8+((16.8/16.0)**(1/5)-1)*100)-3.5",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

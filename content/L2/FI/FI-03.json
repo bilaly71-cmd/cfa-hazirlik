@@ -1,0 +1,426 @@
+{
+  "module_id": "FI-03",
+  "vignettes": [
+    {
+      "id": "L2-FI-03-v01",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "curriculum_year": 2027,
+      "title_en": "Callable bond at Anadolu Bank Treasury",
+      "title_tr": "Anadolu Banka Hazine’de çağrılabilir tahvil",
+      "text_en": "Cem Yıldız is a treasury analyst at Anadolu Bank, a fictional Turkish bank. He is valuing a 3-year, 5.00% annual-coupon corporate bond issued by an industrial company. The bond is callable at par (100) on each of the next two coupon dates, after the coupon of that date has been paid. If the value of the bond at a node would be above 100, the issuer calls it and the value is set to 100.\n\nCem builds a binomial tree of one-year rates with equal probabilities for up and down moves. The root rate is 3.50%. The year-1 rates are 5.00% and 4.00%. The year-2 rates are 6.50%, 5.00%, and 3.50%. He computes the value of the bond without the call option (straight bond) and with the call option by backward induction.\n\nCem also gathers market data on the callable bond. If the benchmark curve shifts down by 25 basis points, the price of the callable bond is 101.52. If the curve shifts up by 25 basis points, the price is 100.58. The current price is 101.13. The bond's zero-volatility spread (Z-spread) over the benchmark is 148 basis points. Cem estimates the option cost in spread terms at 52 basis points. His manager asks him to explain how the price of a callable bond reacts when yields fall far below the coupon rate.",
+      "text_tr": "Cem Yıldız, kurgusal bir Türk bankası olan Anadolu Banka'da hazine analistidir. Sanayi şirketinin ihraç ettiği, 3 yıl vadeli, yıllık %5,00 kuponlu bir kurumsal tahvili değerliyor. Tahvil, önümüzdeki iki kupon tarihinde, o tarihteki kupon ödendikten sonra nominal değerden (100) çağrılabilir. Bir düğümde tahvilin değeri 100'ün üzerine çıkacaksa ihraççı tahvili çağırır ve değer 100 olarak alınır.\n\nCem, yukarı ve aşağı hareketlerin olasılıkları eşit olan bir bir yıllık faiz binom ağacı kuruyor. Kök faiz %3,50'dir. Yıl 1 faizleri %5,00 ve %4,00'dır. Yıl 2 faizleri %6,50, %5,00 ve %3,50'dir. Tahvilin alım opsiyonu olmayan (düz tahvil) değerini ve alım opsiyonlu değerini geriye doğru indirgeme ile hesaplıyor.\n\nCem ayrıca çağrılabilir tahvile ilişkin piyasa verilerini topluyor. Gösterge eğri 25 baz puan aşağı kayarsa çağrılabilir tahvilin fiyatı 101,52'dir. Eğri 25 baz puan yukarı kayarsa fiyat 100,58'dir. Güncel fiyat 101,13'tür. Tahvilin gösterge eğriye göre sıfır volatilite marjı (Z-spread) 148 baz puandır. Cem, opsiyon maliyetini marj cinsinden 52 baz puan olarak tahmin ediyor. Yöneticisi ondan, verimler kupon oranının çok altına düştüğünde çağrılabilir tahvil fiyatının nasıl tepki verdiğini açıklamasını istiyor.",
+      "tables": [
+        {
+          "title_en": "Binomial interest rate tree (one-year rates)",
+          "title_tr": "Binom faiz ağacı (bir yıllık faizler)",
+          "headers": [
+            "Date",
+            "Upper node",
+            "Middle node",
+            "Lower node"
+          ],
+          "rows": [
+            [
+              "Year 0",
+              "3.50%",
+              "—",
+              "—"
+            ],
+            [
+              "Year 1",
+              "5.00%",
+              "—",
+              "4.00%"
+            ],
+            [
+              "Year 2",
+              "6.50%",
+              "5.00%",
+              "3.50%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FI-03-v01-q1",
+        "L2-FI-03-v01-q2",
+        "L2-FI-03-v01-q3",
+        "L2-FI-03-v01-q4",
+        "L2-FI-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FI-03-v01-q1",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-FI-03-v01",
+      "stem_en": "Using the tree and the call rule, the value today of the callable bond is closest to:",
+      "stem_tr": "Ağaç ve çağrı kuralı kullanılarak, çağrılabilir tahvilin bugünkü değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "101.93",
+          "tr": "101,93",
+          "value": 101.926384
+        },
+        {
+          "key": "B",
+          "en": "100.00",
+          "tr": "100,00",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "101.13",
+          "tr": "101,13",
+          "value": 101.12527
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the value of the straight (non-callable) bond; it ignores the issuer's call rights.",
+          "tr": "Bu, düz (çağrılamaz) tahvilin değeridir; ihraççının çağrı hakkını yok sayar."
+        },
+        "B": {
+          "en": "Par is not the answer; the callable bond is capped at 100 only at nodes where it would be called, not at the root.",
+          "tr": "Nominal değer cevap değildir; çağrılabilir tahvil yalnızca çağrılacağı düğümlerde 100 ile sınırlanır, kök düğümde değil."
+        }
+      },
+      "explanation_en": "Capping at the call price in the lower nodes reduces the value from 101.93 (straight) to about 101.13.",
+      "explanation_tr": "Alt düğümlerde çağrı fiyatıyla sınırlama, değeri 101,93'ten (düz tahvil) yaklaşık 101,13'e düşürür.",
+      "solution_steps": [
+        {
+          "en": "Apply the call cap of 100 at each node on years 1 and 2.",
+          "tr": "Yıl 1 ve 2'deki her düğümde 100'lük çağrı sınırı uygulanır."
+        },
+        {
+          "en": "Year 2: 105/1.065 = 98.59; 105/1.05 = 100.00; 105/1.035 = 101.45, capped at 100.",
+          "tr": "Yıl 2: 105/1,065 = 98,59; 105/1,05 = 100,00; 105/1,035 = 101,45 → 100'e sınırlanır."
+        },
+        {
+          "en": "Year 1: upper = 99.33 (no call); lower = 100.96, capped at 100.",
+          "tr": "Yıl 1: üst = 99,33 (çağrı yok); alt = 100,96 → 100'e sınırlanır."
+        },
+        {
+          "en": "Year 0: [0.5(99.33+5)+0.5(100+5)]/1.035 = 101.13.",
+          "tr": "Yıl 0: [0,5(99,33+5)+0,5(100+5)]/1,035 = 101,13."
+        }
+      ],
+      "vocab_ids": [
+        "callable-bond",
+        "call-option",
+        "z-spread",
+        "option-adjusted-spread",
+        "effective-duration",
+        "convexity"
+      ],
+      "numeric": {
+        "expr": "(0.5*(min((0.5*(min(105/(1+0.065),100)+5)+0.5*(min(105/(1+0.05),100)+5))/1.05,100)+5)+0.5*(min((0.5*(min(105/(1+0.05),100)+5)+0.5*(min(105/(1+0.035),100)+5))/1.04,100)+5))/1.035"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-03-v01-q2",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-03-v01",
+      "stem_en": "The value of the embedded call option (to the issuer) is closest to:",
+      "stem_tr": "Gömülü alım opsiyonunun (ihraççı açısından) değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.80",
+          "tr": "0,80",
+          "value": 0.801114
+        },
+        {
+          "key": "B",
+          "en": "1.93",
+          "tr": "1,93",
+          "value": 1.926384
+        },
+        {
+          "key": "C",
+          "en": "1.13",
+          "tr": "1,13",
+          "value": 1.12527
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This compares the straight bond with par rather than with the callable bond value.",
+          "tr": "Düz tahvili çağrılabilir tahvil değeriyle değil nominal değerle karşılaştırır."
+        },
+        "C": {
+          "en": "This is the callable bond's premium to par, not the option value.",
+          "tr": "Bu, çağrılabilir tahvilin nominale göre primidir; opsiyon değeri değildir."
+        }
+      },
+      "explanation_en": "The investor is short the call, so the callable bond is worth less than the straight bond by the option value of about 0.80.",
+      "explanation_tr": "Yatırımcı alım opsiyonunu satmış konumundadır; bu nedenle çağrılabilir tahvil, düz tahvilden yaklaşık 0,80 opsiyon değeri kadar daha ucuzdur.",
+      "solution_steps": [
+        {
+          "en": "Option value = straight bond value - callable bond value.",
+          "tr": "Opsiyon değeri = düz tahvil değeri - çağrılabilir tahvil değeri."
+        },
+        {
+          "en": "Straight value from the tree (no cap): 101.93.",
+          "tr": "Ağaçtan düz tahvil değeri (sınırsız): 101,93."
+        },
+        {
+          "en": "Callable value: 101.13.",
+          "tr": "Çağrılabilir tahvil değeri: 101,13."
+        },
+        {
+          "en": "Call option value = 101.93 - 101.13 = 0.80.",
+          "tr": "Çağrı opsiyonu değeri = 101,93 - 101,13 = 0,80."
+        }
+      ],
+      "vocab_ids": [
+        "callable-bond",
+        "call-option",
+        "z-spread",
+        "option-adjusted-spread",
+        "effective-duration",
+        "convexity"
+      ],
+      "numeric": {
+        "expr": "((0.5*((0.5*((105/(1+0.065))+5)+0.5*((105/(1+0.05))+5))/1.05+5)+0.5*((0.5*((105/(1+0.05))+5)+0.5*((105/(1+0.035))+5))/1.04+5))/1.035)-((0.5*(min((0.5*(min(105/(1+0.065),100)+5)+0.5*(min(105/(1+0.05),100)+5))/1.05,100)+5)+0.5*(min((0.5*(min(105/(1+0.05),100)+5)+0.5*(min(105/(1+0.035),100)+5))/1.04,100)+5))/1.035)"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-03-v01-q3",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-FI-03-v01",
+      "stem_en": "The effective duration of the callable bond is closest to:",
+      "stem_tr": "Çağrılabilir tahvilin etkin durasyonu en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.72",
+          "tr": "3,72",
+          "value": 3.717987
+        },
+        {
+          "key": "B",
+          "en": "1.86",
+          "tr": "1,86",
+          "value": 1.858993
+        },
+        {
+          "key": "C",
+          "en": "0.93",
+          "tr": "0,93",
+          "value": 0.929497
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This omits the factor 2 in the denominator, doubling the duration.",
+          "tr": "Paydaki 2 çarpanı atlanmıştır; durasyon iki katına çıkar."
+        },
+        "C": {
+          "en": "This uses a 50 bp shift (0.005) instead of the 25 bp shift in the data.",
+          "tr": "Verideki 25 bp yerine 50 bp (0,005) kayma kullanılmıştır."
+        }
+      },
+      "explanation_en": "Effective duration is the price change between the down and up scenarios per unit of yield change, which gives about 1.86.",
+      "explanation_tr": "Etkin durasyon, aşağı ve yukarı senaryolar arasındaki fiyat değişiminin birim verim değişimine oranıdır; yaklaşık 1,86 bulunur.",
+      "solution_steps": [
+        {
+          "en": "Effective duration = (P- - P+)/(2 × P0 × Δy).",
+          "tr": "Etkin durasyon = (P- - P+)/(2 × P0 × Δy)."
+        },
+        {
+          "en": "P- = 101.52, P+ = 100.58, P0 = 101.13, Δy = 0.0025.",
+          "tr": "P- = 101,52, P+ = 100,58, P0 = 101,13, Δy = 0,0025."
+        },
+        {
+          "en": "(101.52 - 100.58) = 0.94; denominator = 2 × 101.13 × 0.0025 = 0.5057.",
+          "tr": "(101,52 - 100,58) = 0,94; payda = 2 × 101,13 × 0,0025 = 0,5057."
+        },
+        {
+          "en": "Duration = 1.86.",
+          "tr": "Durasyon = 1,86."
+        }
+      ],
+      "vocab_ids": [
+        "callable-bond",
+        "call-option",
+        "z-spread",
+        "option-adjusted-spread",
+        "effective-duration",
+        "convexity"
+      ],
+      "numeric": {
+        "expr": "(101.52-100.58)/(2*101.13*0.0025)"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-03-v01-q4",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FI-03-v01",
+      "stem_en": "The option-adjusted spread (OAS) of the callable bond is closest to:",
+      "stem_tr": "Çağrılabilir tahvilin opsiyon düzeltmeli marjı (OAS) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "200 bp",
+          "tr": "200 bp",
+          "value": 200.0
+        },
+        {
+          "key": "B",
+          "en": "52 bp",
+          "tr": "52 bp",
+          "value": 52.0
+        },
+        {
+          "key": "C",
+          "en": "96 bp",
+          "tr": "96 bp",
+          "value": 96.0
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adding the option cost is wrong; the call option reduces the spread an investor really earns.",
+          "tr": "Opsiyon maliyetini eklemek yanlıştır; alım opsiyonu yatırımcının gerçekte kazandığı marjı düşürür."
+        },
+        "B": {
+          "en": "This is the option cost, not the OAS.",
+          "tr": "Bu opsiyon maliyetidir, OAS değildir."
+        }
+      },
+      "explanation_en": "For a callable bond the Z-spread includes compensation for the call risk, so OAS is lower: 148 - 52 = 96 bp.",
+      "explanation_tr": "Çağrılabilir tahvilde Z-spread çağrı riskinin tazminatını da içerir, dolayısıyla OAS daha düşüktür: 148 - 52 = 96 bp.",
+      "solution_steps": [
+        {
+          "en": "OAS = Z-spread - option cost.",
+          "tr": "OAS = Z-spread - opsiyon maliyeti."
+        },
+        {
+          "en": "Z-spread = 148 bp; option cost = 52 bp.",
+          "tr": "Z-spread = 148 bp; opsiyon maliyeti = 52 bp."
+        },
+        {
+          "en": "OAS = 148 - 52 = 96 bp.",
+          "tr": "OAS = 148 - 52 = 96 bp."
+        }
+      ],
+      "vocab_ids": [
+        "callable-bond",
+        "call-option",
+        "z-spread",
+        "option-adjusted-spread",
+        "effective-duration",
+        "convexity"
+      ],
+      "numeric": {
+        "expr": "148-52",
+        "unit": "bp"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-FI-03-v01-q5",
+      "level": "L2",
+      "topic": "FI",
+      "module_id": "FI-03",
+      "los_id": "FI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FI-03-v01",
+      "stem_en": "In answer to Cem's manager, as yields fall far below the coupon rate the callable bond most likely shows:",
+      "stem_tr": "Cem'in yöneticisine yanıt olarak, verimler kupon oranının çok altına düştüğünde çağrılabilir tahvil büyük olasılıkla şunu gösterir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative effective convexity, because price appreciation is limited by the call price.",
+          "tr": "negatif etkin konveksite, çünkü fiyat artışı çağrı fiyatıyla sınırlıdır."
+        },
+        {
+          "key": "B",
+          "en": "positive effective convexity that is larger than that of a straight bond.",
+          "tr": "düz tahvilinkinden büyük pozitif etkin konveksite."
+        },
+        {
+          "key": "C",
+          "en": "effective duration that rises as yields fall.",
+          "tr": "verimler düştükçe artan etkin durasyon."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes a putable bond, whose put floors the price when yields rise.",
+          "tr": "Bu, verimler artarken satış opsiyonunun fiyatı desteklediği satılabilir tahvili anlatır."
+        },
+        "C": {
+          "en": "Callable bond duration falls as yields fall, because the call becomes more likely and shortens expected life.",
+          "tr": "Verimler düşerken çağrı olasılığı arttığı ve beklenen ömür kısaldığı için çağrılabilir tahvilin durasyonu azalır."
+        }
+      },
+      "explanation_en": "When yields are low the issuer is likely to call, so the price rises less than for a straight bond. Compression of price gains is the definition of negative convexity.",
+      "explanation_tr": "Verimler düşükken ihraççının çağırma olasılığı yüksektir, dolayısıyla fiyat düz tahvile göre daha az artar. Fiyat kazançlarının sıkışması negatif konveksitenin tanımıdır.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "callable-bond",
+        "call-option",
+        "z-spread",
+        "option-adjusted-spread",
+        "effective-duration",
+        "convexity"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}

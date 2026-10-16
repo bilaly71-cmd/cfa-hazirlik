@@ -1,0 +1,385 @@
+{
+  "module_id": "EQ-02",
+  "vignettes": [
+    {
+      "id": "L2-EQ-02-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "curriculum_year": 2027,
+      "title_en": "Ova Gıda Two-Stage DDM",
+      "title_tr": "Ova Gıda İki Aşamalı TİM",
+      "text_en": "Ova Gıda is a profitable Turkish food producer. Its last dividend (D0) was TL 2.50 per share. Analysts expect dividends to grow at 12% a year for the next three years, because the company is expanding into new regions. After year 3, growth is expected to settle at the sustainable growth rate. The company's return on equity (ROE) is 15% and it retains 40% of earnings. The required return on equity is 11%. Next year's earnings per share is forecast at TL 5.00. A colleague argues that Ova should retain more earnings to grow faster, while another colleague says that the model cannot be used for firms that grow unevenly. The analyst decides to use a two-stage dividend discount model (DDM) with a Gordon growth terminal value at the end of year 3. She also wants a quick check using a stable-growth justified price-to-earnings ratio (P/E) based on a 60% payout.",
+      "text_tr": "Ova Gıda, kârlı bir Türk gıda üreticisidir. Son temettüsü (D0) hisse başına 2,50 TL'dir. Analistler, şirket yeni bölgelere genişlediği için temettülerin önümüzdeki üç yıl boyunca yılda %12 artmasını bekliyor. 3. yıldan sonra büyümenin sürdürülebilir büyüme oranına oturması bekleniyor. Şirketin özkaynak kârlılığı (ÖKK) %15 olup kârının %40'ını dağıtmayıp tutuyor. İstenen özkaynak getirisi %11'dir. Gelecek yılın hisse başına kârı 5,00 TL öngörülüyor. Bir meslektaş, Ova'nın daha hızlı büyümek için daha fazla kâr tutması gerektiğini savunuyor; bir diğeri modelin düzensiz büyüyen şirketlerde kullanılamayacağını söylüyor. Analist, 3. yıl sonunda Gordon büyüme modeliyle uç değer içeren iki aşamalı temettü iskonto modeli (TİM) kullanmaya karar veriyor. Ayrıca %60 dağıtım oranına dayalı, istikrarlı büyüme gerekçeli fiyat/kazanç (F/K) oranıyla hızlı bir kontrol yapmak istiyor.",
+      "tables": [
+        {
+          "title_en": "Inputs",
+          "title_tr": "Girdiler",
+          "headers": [
+            "Input",
+            "Value"
+          ],
+          "rows": [
+            [
+              "D0",
+              "TL 2.50"
+            ],
+            [
+              "Stage 1 growth (years 1-3)",
+              "12%"
+            ],
+            [
+              "ROE / retention",
+              "15% / 40%"
+            ],
+            [
+              "Required return",
+              "11%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-02-v01-q1",
+        "L2-EQ-02-v01-q2",
+        "L2-EQ-02-v01-q3",
+        "L2-EQ-02-v01-q4",
+        "L2-EQ-02-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-02-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "los_id": "EQ-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-02-v01",
+      "stem_en": "What is the sustainable growth rate used after year 3?",
+      "stem_tr": "3. yıldan sonra kullanılacak sürdürülebilir büyüme oranı nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.0%",
+          "tr": "%9,0",
+          "value": 9.0
+        },
+        {
+          "key": "B",
+          "en": "4.4%",
+          "tr": "%4,4",
+          "value": 4.4
+        },
+        {
+          "key": "C",
+          "en": "6.0%",
+          "tr": "%6,0",
+          "value": 6.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "g = ROE x retention rate = 15% x 40% = 6.0%.",
+      "explanation_tr": "g = ÖKK x tutma oranı = %15 x %40 = %6,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the payout ratio instead of the retention ratio.",
+          "tr": "Tutma oranı yerine dağıtım oranını kullanır."
+        },
+        "B": {
+          "en": "Uses the required return instead of ROE.",
+          "tr": "ÖKK yerine istenen getiriyi kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "0.15 x 0.40 = 6.0%",
+          "tr": "0,15 x 0,40 = %6,0"
+        }
+      ],
+      "vocab_ids": [
+        "sustainable-growth",
+        "return-on-equity",
+        "payout-ratio",
+        "growth"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "0.15*0.4*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-EQ-02-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "los_id": "EQ-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-02-v01",
+      "stem_en": "The terminal value of the shares at the end of year 3 (D4 / (r - g)) is closest to:",
+      "stem_tr": "3. yıl sonunda hisselerin uç değeri (D4 / (r - g)) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 74.46",
+          "tr": "74,46 TL",
+          "value": 74.461184
+        },
+        {
+          "key": "B",
+          "en": "TL 70.25",
+          "tr": "70,25 TL",
+          "value": 70.2464
+        },
+        {
+          "key": "C",
+          "en": "TL -372.31",
+          "tr": "-372,31 TL",
+          "value": -372.30592
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "D3 = 2.50 x 1.12^3 = 3.512. D4 = 3.512 x 1.06 = 3.723. Terminal value = 3.723 / (0.11 - 0.06) = TL 74.46.",
+      "explanation_tr": "D3 = 2,50 x 1,12^3 = 3,512. D4 = 3,512 x 1,06 = 3,723. Uç değer = 3,723 / (0,11 - 0,06) = 74,46 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses D3 instead of D4 in the numerator.",
+          "tr": "Pay olarak D4 yerine D3 kullanır."
+        },
+        "C": {
+          "en": "Uses the stage 1 growth rate of 12% as the terminal growth rate, which exceeds the required return.",
+          "tr": "Uç büyüme olarak 1. aşama büyümesi %12'yi kullanır; bu istenen getiriyi aşar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "D3 = 3.512",
+          "tr": "D3 = 3,512"
+        },
+        {
+          "en": "D4 = 3.512 x 1.06 = 3.723",
+          "tr": "D4 = 3,512 x 1,06 = 3,723"
+        },
+        {
+          "en": "TV = 3.723 / 0.05 = 74.46",
+          "tr": "UD = 3,723 / 0,05 = 74,46"
+        }
+      ],
+      "vocab_ids": [
+        "terminal-value",
+        "gordon-growth-model",
+        "required-return",
+        "dividend",
+        "growth"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "2.5*1.12**3*1.06/(0.11-0.06)",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-02-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "los_id": "EQ-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-02-v01",
+      "stem_en": "The intrinsic value per share today under the two-stage DDM is closest to:",
+      "stem_tr": "İki aşamalı TİM'e göre bugünkü hisse başına içsel değer yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 54.45",
+          "tr": "54,45 TL",
+          "value": 54.445376
+        },
+        {
+          "key": "B",
+          "en": "TL 62.08",
+          "tr": "62,08 TL",
+          "value": 62.081325
+        },
+        {
+          "key": "C",
+          "en": "TL 74.46",
+          "tr": "74,46 TL",
+          "value": 74.461184
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "PV of dividends: 2.80/1.11 + 3.136/1.11^2 = 2.523 + 2.545 = 5.068. PV of (D3 + TV) = (3.512 + 74.46) / 1.11^3 = 57.01. Value = TL 62.08.",
+      "explanation_tr": "Temettülerin bugünkü değeri: 2,80/1,11 + 3,136/1,11^2 = 2,523 + 2,545 = 5,068. (D3 + UD)'nin bugünkü değeri = (3,512 + 74,46) / 1,11^3 = 57,01. Değer = 62,08 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Discounts only the terminal value and omits the dividends of years 1-3 and D3.",
+          "tr": "Yalnızca uç değeri iskonto eder; 1-3. yıl temettülerini atlar."
+        },
+        "C": {
+          "en": "Does not discount the terminal value back to today.",
+          "tr": "Uç değeri bugüne iskonto etmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "D1 = 2.80, D2 = 3.136, D3 = 3.512",
+          "tr": "D1 = 2,80, D2 = 3,136, D3 = 3,512"
+        },
+        {
+          "en": "TV3 = 74.46",
+          "tr": "UD3 = 74,46"
+        },
+        {
+          "en": "Discount all at 11% and sum = 62.08",
+          "tr": "Hepsini %11 ile iskonto edip topla = 62,08"
+        }
+      ],
+      "vocab_ids": [
+        "two-stage",
+        "present-value",
+        "intrinsic-value",
+        "dividend-discount-model",
+        "discount-rate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "2.5*1.12/1.11+2.5*1.12**2/1.11**2+(2.5*1.12**3+2.5*1.12**3*1.06/(0.11-0.06))/1.11**3",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-02-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "los_id": "EQ-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-02-v01",
+      "stem_en": "The stable-growth justified leading P/E (60% payout, g = 6%, r = 11%) is:",
+      "stem_tr": "İstikrarlı büyüme gerekçeli ileri F/K (%60 dağıtım, g = %6, r = %11) şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.0",
+          "tr": "8,0",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "12.7",
+          "tr": "12,7",
+          "value": 12.72
+        },
+        {
+          "key": "C",
+          "en": "12.0",
+          "tr": "12,0",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Leading P/E = payout / (r - g) = 0.60 / (0.11 - 0.06) = 12.0. With forecast EPS of 5.00 this implies TL 60 for a stable-growth firm.",
+      "explanation_tr": "İleri F/K = dağıtım / (r - g) = 0,60 / (0,11 - 0,06) = 12,0. 5,00 TL'lik EPS tahminiyle istikrarlı büyüyen bir firma için 60 TL anlamına gelir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the retention ratio (40%) instead of the payout ratio.",
+          "tr": "Dağıtım oranı yerine tutma oranını (%40) kullanır."
+        },
+        "B": {
+          "en": "This is the trailing P/E formula (includes 1 + g); the question asks for the leading P/E.",
+          "tr": "Bu geriye dönük F/K formülüdür (1 + g içerir); soru ileri F/K'yı sorar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "0.60 / 0.05 = 12.0",
+          "tr": "0,60 / 0,05 = 12,0"
+        }
+      ],
+      "vocab_ids": [
+        "justified-multiple",
+        "payout-ratio",
+        "growth",
+        "required-return"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "0.6/(0.11-0.06)"
+      }
+    },
+    {
+      "id": "L2-EQ-02-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-02",
+      "los_id": "EQ-02-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-02-v01",
+      "stem_en": "Regarding the colleague who wants Ova to retain more earnings, the most accurate statement is that a higher retention rate:",
+      "stem_tr": "Ova'nın daha fazla kâr tutmasını isteyen meslektaşla ilgili en doğru ifade, daha yüksek tutma oranının şunu yapmasıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "raises g, and creates value only if the new investments earn an ROE above the 11% required return",
+          "tr": "g'yi artırır ve yalnızca yeni yatırımlar %11 istenen getirinin üzerinde ÖKK sağlarsa değer yaratır"
+        },
+        {
+          "key": "B",
+          "en": "always raises value because growth is faster",
+          "tr": "büyüme hızlandığı için her zaman değeri artırır"
+        },
+        {
+          "key": "C",
+          "en": "has no effect on value because dividends are irrelevant",
+          "tr": "temettüler önemsiz olduğundan değere etki etmez"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "More retention lowers the near-term dividend but raises g = ROE x b. With ROE of 15% above r of 11%, extra retained funds earn more than investors require, so value can rise. If ROE were below r, retention would hurt.",
+      "explanation_tr": "Daha fazla tutma yakın vadeli temettüyü azaltır ancak g = ÖKK x b'yi artırır. ÖKK %15, r %11'in üzerinde olduğundan ilave tutulan fonlar yatırımcının istediğinden fazla kazandırır; değer artabilir. ÖKK, r'nin altında olsaydı tutma zarar verirdi.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Growth funded by investments earning less than the required return would destroy value.",
+          "tr": "İstenen getirinin altında kazandıran yatırımlarla finanse edilen büyüme değeri yok eder."
+        },
+        "C": {
+          "en": "Under the DDM, value depends on dividends and growth, which retention changes.",
+          "tr": "TİM'de değer, tutmanın değiştirdiği temettü ve büyümeye bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "return-on-equity",
+        "required-return",
+        "dividend",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

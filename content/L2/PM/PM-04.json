@@ -1,0 +1,386 @@
+{
+  "module_id": "PM-04",
+  "vignettes": [
+    {
+      "id": "L2-PM-04-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "curriculum_year": 2027,
+      "title_en": "Factor analysis at Kızılırmak Investments",
+      "title_tr": "Kızılırmak Yatırım’da faktör analizi",
+      "text_en": "Ece Yalçın is a portfolio analyst at Kızılırmak Investments, a fictional investment firm. She uses a four-factor model to explain the returns of an equity fund against its benchmark. The factors are market, value, momentum, and size. Her forecasts of the factor risk premiums are 5.50% for market, 2.00% for value, 3.00% for momentum, and 1.50% for size. The risk-free rate is 4.00%.\n\nThe fund's sensitivities to the four factors are 1.05, 0.40, -0.10 and 0.30, respectively. The benchmark's sensitivities are 1.00, 0.00, 0.10 and 0.00.\n\nEce also analyzes risk. The fund's active risk (tracking risk) is 4.00% (an active variance of 16.00 in squared percent). Her factor model attributes 11.20 of the active variance to the active factor risk.\n\nOver the past year, the fund's realized active return was 1.80%. Ece wants to compute the information ratio. Her colleague Tarık says that Ece's model, with factors such as value (book-to-market) and size built from company attributes, is a fundamental factor model, while a model that uses factors such as GDP growth and inflation surprises is a macroeconomic factor model.",
+      "text_tr": "Ece Yalçın, kurgusal bir yatırım şirketi olan Kızılırmak Yatırım'da portföy analistidir. Bir hisse senedi fonunun getirilerini gösterge endeksine göre açıklamak için dört faktörlü bir model kullanıyor. Faktörler piyasa, değer, momentum ve büyüklüktür. Faktör risk primi tahminleri piyasa için %5,50, değer için %2,00, momentum için %3,00 ve büyüklük için %1,50'dir. Risksiz faiz oranı %4,00'dır.\n\nFonun dört faktöre duyarlılıkları sırasıyla 1,05, 0,40, -0,10 ve 0,30'dur. Gösterge endeksinin duyarlılıkları 1,00, 0,00, 0,10 ve 0,00'dır.\n\nEce riski de analiz ediyor. Fonun aktif riski (izleme riski) %4,00'dır (karesel yüzde cinsinden aktif varyans 16,00). Faktör modeli, aktif varyansın 11,20'sini aktif faktör riskine atfediyor.\n\nGeçen yıl fonun gerçekleşen aktif getirisi %1,80 oldu. Ece bilgi oranını hesaplamak istiyor. Meslektaşı Tarık, Ece'nin değer (defter değeri/piyasa değeri) ve büyüklük gibi şirket özelliklerinden oluşturulan faktörlere dayanan modelinin temel (fundamental) faktör modeli, GDP büyümesi ve enflasyon sürprizleri gibi faktörleri kullanan bir modelin ise makroekonomik faktör modeli olduğunu söylüyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-PM-04-v01-q1",
+        "L2-PM-04-v01-q2",
+        "L2-PM-04-v01-q3",
+        "L2-PM-04-v01-q4",
+        "L2-PM-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-04-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "los_id": "PM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-04-v01",
+      "stem_en": "The expected return of the fund according to the four-factor model is closest to:",
+      "stem_tr": "Dört faktörlü modele göre fonun beklenen getirisi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.72%",
+          "tr": "%10,72",
+          "value": 10.725
+        },
+        {
+          "key": "B",
+          "en": "6.73%",
+          "tr": "%6,73",
+          "value": 6.725
+        },
+        {
+          "key": "C",
+          "en": "11.33%",
+          "tr": "%11,33",
+          "value": 11.325
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This omits the risk-free rate; the factor premiums are excess returns.",
+          "tr": "Risksiz faizi atlar; faktör primleri aşırı getirilerdir."
+        },
+        "C": {
+          "en": "The momentum sensitivity is negative (-0.10); using +0.10 is the wrong sign.",
+          "tr": "Momentum duyarlılığı negatiftir (-0,10); +0,10 kullanmak yanlış işarettir."
+        }
+      },
+      "explanation_en": "The factor premiums contribute 6.725% on top of the 4.00% risk-free rate, giving about 10.73%.",
+      "explanation_tr": "Faktör primleri %4,00 risksiz faizin üzerine %6,725 ekler; sonuç yaklaşık %10,73'tür.",
+      "solution_steps": [
+        {
+          "en": "E(R) = Rf + Σ β_i × λ_i.",
+          "tr": "E(R) = Rf + Σ β_i × λ_i."
+        },
+        {
+          "en": "Factor contributions: 5.775 + 0.80 - 0.30 + 0.45 = 6.725.",
+          "tr": "Faktör katkıları: 5,775 + 0,80 - 0,30 + 0,45 = 6,725."
+        },
+        {
+          "en": "Add Rf of 4.00%.",
+          "tr": "%4,00 Rf eklenir."
+        },
+        {
+          "en": "E(R) = 10.73 percent.",
+          "tr": "E(R) = %10,73."
+        }
+      ],
+      "vocab_ids": [
+        "risk-premium",
+        "momentum",
+        "assume"
+      ],
+      "numeric": {
+        "expr": "4.0+1.05*5.5+0.40*2.0-0.10*3.0+0.30*1.5",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-04-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "los_id": "PM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-04-v01",
+      "stem_en": "The expected active return from the fund's factor tilts relative to the benchmark is closest to:",
+      "stem_tr": "Fonun gösterge endeksine göre faktör eğilimlerinden beklenen aktif getiri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.725%",
+          "tr": "%6,725",
+          "value": 6.725
+        },
+        {
+          "key": "B",
+          "en": "0.925%",
+          "tr": "%0,925",
+          "value": 0.925
+        },
+        {
+          "key": "C",
+          "en": "0.475%",
+          "tr": "%0,475",
+          "value": 0.475
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the fund's full sensitivities instead of the differences from the benchmark.",
+          "tr": "Gösterge farkları yerine fonun tüm duyarlılıklarını kullanır."
+        },
+        "C": {
+          "en": "This leaves out the size factor tilt.",
+          "tr": "Büyüklük faktörü eğilimini dışarıda bırakır."
+        }
+      },
+      "explanation_en": "Differences in sensitivities times the premiums sum to 0.275 + 0.80 - 0.60 + 0.45 = 0.925%.",
+      "explanation_tr": "Duyarlılık farkları ile primlerin çarpımı toplamı 0,275 + 0,80 - 0,60 + 0,45 = %0,925 eder.",
+      "solution_steps": [
+        {
+          "en": "Active return = Σ (β_fund - β_bench) × λ.",
+          "tr": "Aktif getiri = Σ (β_fon - β_gösterge) × λ."
+        },
+        {
+          "en": "Market: 0.05 × 5.5 = 0.275; value: 0.40 × 2.0 = 0.80.",
+          "tr": "Piyasa: 0,05 × 5,5 = 0,275; değer: 0,40 × 2,0 = 0,80."
+        },
+        {
+          "en": "Momentum: -0.20 × 3.0 = -0.60; size: 0.30 × 1.5 = 0.45.",
+          "tr": "Momentum: -0,20 × 3,0 = -0,60; büyüklük: 0,30 × 1,5 = 0,45."
+        },
+        {
+          "en": "Sum = 0.925 percent.",
+          "tr": "Toplam = %0,925."
+        }
+      ],
+      "vocab_ids": [
+        "risk-premium",
+        "momentum",
+        "assume"
+      ],
+      "numeric": {
+        "expr": "(1.05-1.00)*5.5+(0.40-0.00)*2.0+(-0.10-0.10)*3.0+(0.30-0.00)*1.5",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-04-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "los_id": "PM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-04-v01",
+      "stem_en": "The active specific (residual) risk, as a standard deviation, is closest to:",
+      "stem_tr": "Standart sapma olarak aktif özgül (artık) risk en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.80%",
+          "tr": "%4,80",
+          "value": 4.8
+        },
+        {
+          "key": "B",
+          "en": "3.35%",
+          "tr": "%3,35",
+          "value": 3.34664
+        },
+        {
+          "key": "C",
+          "en": "2.19%",
+          "tr": "%2,19",
+          "value": 2.19089
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the active specific variance, not its standard deviation.",
+          "tr": "Bu aktif özgül varyanstır, standart sapması değildir."
+        },
+        "B": {
+          "en": "This is the standard deviation of the active factor risk, not the specific risk.",
+          "tr": "Bu, aktif faktör riskinin standart sapmasıdır; özgül risk değildir."
+        }
+      },
+      "explanation_en": "Variances add, not standard deviations: 4.80 is the specific variance, and its square root is about 2.19%.",
+      "explanation_tr": "Varyanslar toplanır, standart sapmalar değil: 4,80 özgül varyanstır ve karekökü yaklaşık %2,19'dur.",
+      "solution_steps": [
+        {
+          "en": "Active variance = active factor variance + active specific variance.",
+          "tr": "Aktif varyans = aktif faktör varyansı + aktif özgül varyans."
+        },
+        {
+          "en": "Specific variance = 16.00 - 11.20 = 4.80.",
+          "tr": "Özgül varyans = 16,00 - 11,20 = 4,80."
+        },
+        {
+          "en": "Standard deviation = √4.80.",
+          "tr": "Standart sapma = √4,80."
+        },
+        {
+          "en": "= 2.19 percent.",
+          "tr": "= %2,19."
+        }
+      ],
+      "vocab_ids": [
+        "risk-premium",
+        "momentum",
+        "assume"
+      ],
+      "numeric": {
+        "expr": "(16.0-11.2)**0.5",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-04-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "los_id": "PM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-04-v01",
+      "stem_en": "The fund's realized information ratio is closest to:",
+      "stem_tr": "Fonun gerçekleşen bilgi oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.45",
+          "tr": "0,45",
+          "value": 0.45
+        },
+        {
+          "key": "B",
+          "en": "0.11",
+          "tr": "0,11",
+          "value": 0.1125
+        },
+        {
+          "key": "C",
+          "en": "2.22",
+          "tr": "2,22",
+          "value": 2.222222
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides by the active variance rather than the active risk (standard deviation).",
+          "tr": "Aktif risk (standart sapma) yerine aktif varyansa böler."
+        },
+        "C": {
+          "en": "The ratio is inverted.",
+          "tr": "Oran ters alınmıştır."
+        }
+      },
+      "explanation_en": "Dividing 1.80% by 4.00% gives an information ratio of 0.45.",
+      "explanation_tr": "%1,80'in %4,00'a bölünmesi 0,45 bilgi oranı verir.",
+      "solution_steps": [
+        {
+          "en": "IR = active return / active risk.",
+          "tr": "IR = aktif getiri / aktif risk."
+        },
+        {
+          "en": "Active return = 1.80%; active risk = 4.00%.",
+          "tr": "Aktif getiri = %1,80; aktif risk = %4,00."
+        },
+        {
+          "en": "IR = 1.80 / 4.00.",
+          "tr": "IR = 1,80 / 4,00."
+        },
+        {
+          "en": "IR = 0.45.",
+          "tr": "IR = 0,45."
+        }
+      ],
+      "vocab_ids": [
+        "risk-premium",
+        "momentum",
+        "assume"
+      ],
+      "numeric": {
+        "expr": "1.8/4.0"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-04-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-04",
+      "los_id": "PM-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-04-v01",
+      "stem_en": "Tarık's classification is best described as:",
+      "stem_tr": "Tarık'ın sınıflandırması en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "incorrect, because value and size factors are statistical factors extracted from return data.",
+          "tr": "yanlış; çünkü değer ve büyüklük faktörleri getiri verisinden çıkarılan istatistiksel faktörlerdir."
+        },
+        {
+          "key": "B",
+          "en": "correct, because fundamental models use company attributes while macroeconomic models use surprises in economy-wide variables.",
+          "tr": "doğru; çünkü temel modeller şirket özelliklerini, makroekonomik modeller ekonomi geneli değişkenlerdeki sürprizleri kullanır."
+        },
+        {
+          "key": "C",
+          "en": "incorrect, because macroeconomic factor models use only the market portfolio return.",
+          "tr": "yanlış; çünkü makroekonomik faktör modelleri yalnızca piyasa portföyü getirisini kullanır."
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Statistical factors are extracted from the covariance of returns without economic labels; value and size are built from company attributes.",
+          "tr": "İstatistiksel faktörler ekonomik etiket olmadan getiri kovaryansından çıkarılır; değer ve büyüklük şirket özelliklerinden oluşturulur."
+        },
+        "C": {
+          "en": "Macroeconomic models use surprises in several variables, such as GDP growth and inflation.",
+          "tr": "Makroekonomik modeller GDP büyümesi ve enflasyon gibi birçok değişkendeki sürprizleri kullanır."
+        }
+      },
+      "explanation_en": "Fundamental models use security attributes (such as book-to-market and size); macroeconomic models use economic surprises; statistical models extract factors from returns.",
+      "explanation_tr": "Temel modeller menkul kıymet özelliklerini (defter/piyasa değeri ve büyüklük gibi), makroekonomik modeller ekonomik sürprizleri, istatistiksel modeller ise getirilerden çıkarılan faktörleri kullanır.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-premium",
+        "momentum",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    }
+  ]
+}

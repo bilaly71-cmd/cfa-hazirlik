@@ -1,0 +1,378 @@
+{
+  "module_id": "FSA-03",
+  "vignettes": [
+    {
+      "id": "L2-FSA-03-v01",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "curriculum_year": 2027,
+      "title_en": "Ege Holding's Euro Subsidiaries",
+      "title_tr": "Ege Holding'in Euro İştirakleri",
+      "text_en": "Ege Holding reports in Turkish lira (TL) and owns two euro-area subsidiaries. EuroPak's functional currency is the euro, so Ege translates it with the current rate method. Delta Trading keeps its books in euros, but its functional currency is the lira (it is an extension of the parent), so Ege remeasures it with the temporal method. Exchange rates were TL 35.0 per EUR at the start of 2026, TL 37.0 on average, and TL 40.0 at year-end. EuroPak earned net income of EUR 10 million in 2026 and had net assets of EUR 50 million at the start of the year (assume no dividends). Delta had sales of EUR 100 million and cost of goods sold of EUR 60 million. Its inventory was bought when the rate was TL 35.0, and sales occurred at the average rate. Delta's monetary assets were EUR 20 million and monetary liabilities EUR 35 million, and both stayed constant during the year.",
+      "text_tr": "Ege Holding, Türk lirası (TL) cinsinden raporlama yapar ve iki euro bölgesi iştirakine sahiptir. EuroPak'ın işlevsel para birimi euro olduğundan Ege, onu cari kur yöntemiyle çevirir. Delta Trading defterlerini euro tutar ancak işlevsel para birimi liradır (ana ortaklığın uzantısıdır); bu nedenle Ege onu zamansal yöntemle yeniden ölçer. Kurlar 2026 başında 35,0 TL/EUR, ortalama 37,0 TL/EUR ve yıl sonunda 40,0 TL/EUR'dur. EuroPak 2026'da 10 milyon EUR net kâr elde etmiş ve yıl başında 50 milyon EUR net varlığa sahiptir (temettü yok varsayın). Delta'nın satışları 100 milyon EUR, satılan malın maliyeti 60 milyon EUR'dur. Stokları kur 35,0 TL iken alınmış, satışlar ortalama kurla yapılmıştır. Delta'nın parasal varlıkları 20 milyon EUR, parasal yükümlülükleri 35 milyon EUR olup yıl boyunca sabit kalmıştır.",
+      "tables": [
+        {
+          "title_en": "Exchange rates (TL per EUR)",
+          "title_tr": "Döviz kurları (TL/EUR)",
+          "headers": [
+            "Start of year",
+            "Average",
+            "End of year"
+          ],
+          "rows": [
+            [
+              "35.0",
+              "37.0",
+              "40.0"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-FSA-03-v01-q1",
+        "L2-FSA-03-v01-q2",
+        "L2-FSA-03-v01-q3",
+        "L2-FSA-03-v01-q4",
+        "L2-FSA-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-FSA-03-v01-q1",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-03-v01",
+      "stem_en": "Under the current rate method, EuroPak's 2026 net income in Ege's consolidated statements is:",
+      "stem_tr": "Cari kur yönteminde EuroPak'ın 2026 net kârı Ege'nin konsolide tablolarında şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 400 million",
+          "tr": "400 milyon TL",
+          "value": 400.0
+        },
+        {
+          "key": "B",
+          "en": "TL 350 million",
+          "tr": "350 milyon TL",
+          "value": 350.0
+        },
+        {
+          "key": "C",
+          "en": "TL 370 million",
+          "tr": "370 milyon TL",
+          "value": 370.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Revenue and expenses are translated at the average rate: EUR 10 million x 37.0 = TL 370 million.",
+      "explanation_tr": "Gelir ve giderler ortalama kurla çevrilir: 10 milyon EUR x 37,0 = 370 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the year-end rate; income statement items are translated at the average rate.",
+          "tr": "Dönem sonu kurunu kullanır; gelir tablosu kalemleri ortalama kurla çevrilir."
+        },
+        "B": {
+          "en": "Uses the beginning rate, which is not the rate prevailing during the year.",
+          "tr": "Yıl başı kurunu kullanır; bu kur yıl boyunca geçerli olan kur değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "10 x 37.0 = 370",
+          "tr": "10 x 37,0 = 370"
+        }
+      ],
+      "vocab_ids": [
+        "exchange-rate",
+        "average",
+        "net-income",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "10*37",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-03-v01-q2",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-03-v01",
+      "stem_en": "The 2026 cumulative translation adjustment (OCI) for EuroPak is closest to:",
+      "stem_tr": "EuroPak için 2026 kümülatif çeviri farkı (DKG) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 280 million",
+          "tr": "280 milyon TL",
+          "value": 280.0
+        },
+        {
+          "key": "B",
+          "en": "TL 250 million",
+          "tr": "250 milyon TL",
+          "value": 250.0
+        },
+        {
+          "key": "C",
+          "en": "TL 300 million",
+          "tr": "300 milyon TL",
+          "value": 300.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Opening net assets gain 50 x (40 - 35) = 250. Net income is in the income statement at 37 but in equity at 40, so 10 x (40 - 37) = 30. CTA = 280. It goes to OCI, not net income.",
+      "explanation_tr": "Açılış net varlıkları 50 x (40 - 35) = 250 kazanç doğurur. Net kâr gelir tablosunda 37 ile, özkaynakta 40 ile yer alır: 10 x (40 - 37) = 30. Çeviri farkı = 280; net kâra değil DKG'ye gider.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Includes only the opening net assets; income is earned during the year and translated at 37 but ends up at 40, giving an additional gain.",
+          "tr": "Yalnızca açılış net varlıklarını içerir; gelir yıl içinde 37 kurla çevrilir ama 40 kuruyla taşınır, ek bir kazanç doğurur."
+        },
+        "C": {
+          "en": "Applies the full rate change to income that was translated at the average rate; only 40 - 37 applies to income.",
+          "tr": "Tam kur değişimini ortalama kurla çevrilmiş gelire uygular; gelir için yalnızca 40 - 37 geçerlidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Opening: 50 x 5 = 250",
+          "tr": "Açılış: 50 x 5 = 250"
+        },
+        {
+          "en": "Income: 10 x 3 = 30",
+          "tr": "Gelir: 10 x 3 = 30"
+        },
+        {
+          "en": "250 + 30 = 280",
+          "tr": "250 + 30 = 280"
+        }
+      ],
+      "vocab_ids": [
+        "appreciate",
+        "assume",
+        "exceed",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "50*(40-35)+10*(40-37)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-03-v01-q3",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-03-v01",
+      "stem_en": "Under the temporal method, Delta's gross margin in Ege's statements is closest to:",
+      "stem_tr": "Zamansal yöntemde Delta'nın Ege tablolarındaki brüt kâr marjı yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "40.0%",
+          "tr": "%40,0",
+          "value": 40.0
+        },
+        {
+          "key": "B",
+          "en": "43.2%",
+          "tr": "%43,2",
+          "value": 43.243243
+        },
+        {
+          "key": "C",
+          "en": "35.1%",
+          "tr": "%35,1",
+          "value": 35.135135
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Sales: 100 x 37.0 = TL 3,700 million. COGS at the historical rate: 60 x 35.0 = TL 2,100 million. Gross profit 1,600 / 3,700 = 43.2%, above the 40% euro margin because the euro rose.",
+      "explanation_tr": "Satışlar: 100 x 37,0 = 3.700 milyon TL. Tarihsel kurla SMM: 60 x 35,0 = 2.100 milyon TL. Brüt kâr 1.600 / 3.700 = %43,2; euro değerlendiği için euro marjı olan %40'ın üzerindedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the margin in euros. Temporal translation uses the historical rate for inventory costs, so the margin changes.",
+          "tr": "Bu, euro cinsinden marjdır. Zamansal çeviri stok maliyetinde tarihsel kur kullandığından marj değişir."
+        },
+        "C": {
+          "en": "Translates cost of goods sold at the year-end rate; the temporal method uses the historical rate when the inventory was purchased.",
+          "tr": "Satılan malın maliyetini dönem sonu kuruyla çevirir; zamansal yöntem stokun alındığı tarihsel kuru kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Sales: 100 x 37 = 3,700",
+          "tr": "Satışlar: 100 x 37 = 3.700"
+        },
+        {
+          "en": "COGS: 60 x 35 = 2,100",
+          "tr": "SMM: 60 x 35 = 2.100"
+        },
+        {
+          "en": "(3,700 - 2,100) / 3,700 = 43.2%",
+          "tr": "(3.700 - 2.100) / 3.700 = %43,2"
+        }
+      ],
+      "vocab_ids": [
+        "gross-margin",
+        "inventory",
+        "remeasurement",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(100*37-60*35)/(100*37)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "L2-FSA-03-v01-q4",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-FSA-03-v01",
+      "stem_en": "Delta's remeasurement result for 2026 (monetary items, constant balances) is closest to:",
+      "stem_tr": "Delta'nın 2026 yeniden ölçüm sonucu (parasal kalemler, sabit bakiyeler) yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "A loss of TL 45 million in net income",
+          "tr": "Net kârda 45 milyon TL zarar",
+          "value": -45.0
+        },
+        {
+          "key": "B",
+          "en": "A gain of TL 75 million in OCI",
+          "tr": "DKG'de 75 milyon TL kazanç",
+          "value": 75.0
+        },
+        {
+          "key": "C",
+          "en": "A loss of TL 75 million in net income",
+          "tr": "Net kârda 75 milyon TL zarar",
+          "value": -75.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Delta has a net monetary liability of EUR 15 million. The euro rose from 35 to 40, so the liability costs 15 x 5 = TL 75 million more. The loss is recorded in net income under the temporal method.",
+      "explanation_tr": "Delta'nın 15 milyon EUR net parasal yükümlülüğü vardır. Euro 35'ten 40'a çıktığı için yükümlülük 15 x 5 = 75 milyon TL daha pahalı hale gelir. Zamansal yöntemde zarar net kârda gösterilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the average rate change (40 - 37); with constant balances, the exposure is measured over the move from 35 to 40.",
+          "tr": "Ortalama kur değişimini (40 - 37) kullanır; sabit bakiyelerde maruz kalma, 35'ten 40'a hareket üzerinden ölçülür."
+        },
+        "B": {
+          "en": "Under the temporal method remeasurement results go to net income, not OCI, and a net liability position loses when the foreign currency appreciates.",
+          "tr": "Zamansal yöntemde yeniden ölçüm sonuçları DKG'ye değil net kâra gider; net yükümlülük pozisyonu yabancı para değerlenince zarar eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Net monetary liability: 35 - 20 = 15",
+          "tr": "Net parasal yükümlülük: 35 - 20 = 15"
+        },
+        {
+          "en": "15 x (40 - 35) = 75 loss",
+          "tr": "15 x (40 - 35) = 75 zarar"
+        }
+      ],
+      "vocab_ids": [
+        "liability",
+        "remeasurement",
+        "appreciate",
+        "exposure"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "-(35-20)*(40-35)",
+        "unit": "TL million"
+      }
+    },
+    {
+      "id": "L2-FSA-03-v01-q5",
+      "level": "L2",
+      "topic": "FSA",
+      "module_id": "FSA-03",
+      "los_id": "FSA-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-FSA-03-v01",
+      "stem_en": "Which statement about EuroPak's ratios in Ege's statements is most accurate?",
+      "stem_tr": "EuroPak'ın Ege tablolarındaki oranları hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The net profit margin is unchanged from the euro figure because net income and sales are both translated at the average rate",
+          "tr": "Net kâr marjı euro rakamıyla aynıdır, çünkü net kâr ve satışlar ikisi de ortalama kurla çevrilir"
+        },
+        {
+          "key": "B",
+          "en": "Return on equity is unchanged from the euro figure",
+          "tr": "Özkaynak kârlılığı euro rakamıyla aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "The debt-to-equity ratio is distorted because liabilities use the year-end rate and equity the average rate",
+          "tr": "Borç/özkaynak oranı bozulur, çünkü yükümlülükler dönem sonu, özkaynak ortalama kurla çevrilir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Under the current rate method, all income statement items use the average rate and all balance sheet items the closing rate. Ratios using only one statement stay the same; ratios mixing the two (like ROE) change.",
+      "explanation_tr": "Cari kur yönteminde tüm gelir tablosu kalemleri ortalama, tüm bilanço kalemleri kapanış kuruyla çevrilir. Tek tablodan hesaplanan oranlar aynı kalır; iki tabloyu karıştıran oranlar (ÖKK gibi) değişir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Net income is translated at the average rate, equity at the year-end rate, so ROE differs.",
+          "tr": "Net kâr ortalama kurla, özkaynak dönem sonu kuruyla çevrilir; dolayısıyla ÖKK farklıdır."
+        },
+        "C": {
+          "en": "Both liabilities and net assets are translated at the year-end rate, so the balance-sheet ratio is unchanged.",
+          "tr": "Hem yükümlülükler hem net varlıklar dönem sonu kuruyla çevrilir; bilanço oranı değişmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "ratio",
+        "closing",
+        "distort",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

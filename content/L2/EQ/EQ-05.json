@@ -1,0 +1,388 @@
+{
+  "module_id": "EQ-05",
+  "vignettes": [
+    {
+      "id": "L2-EQ-05-v01",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "curriculum_year": 2027,
+      "title_en": "Yıldız Mobilya Residual Income",
+      "title_tr": "Yıldız Mobilya Artık Gelir",
+      "text_en": "Yıldız Mobilya is a Turkish furniture maker that has negative free cash flow because it is building a new factory, so dividends are small and a free cash flow model is hard to use. An analyst chooses the residual income model instead. Book value per share (B0) is TL 40.00. Forecast earnings per share are TL 6.00 for next year (E1) and TL 6.60 for the year after (E2). The company pays out 50% of earnings as dividends, and clean surplus accounting applies. The required return on equity is 10%. The analyst believes that residual income will not disappear at once. After year 2, she assumes that residual income declines with a persistence factor of 0.6: each year's residual income equals 60% of the previous year's. The shares trade at TL 52.00. She will compare the intrinsic value from the model with the market price and with the book value.",
+      "text_tr": "Yıldız Mobilya, yeni bir fabrika kurduğu için serbest nakit akışı negatif olan bir Türk mobilya üreticisidir; temettüler küçüktür ve serbest nakit akışı modeli kullanmak zordur. Analist bunun yerine artık gelir modelini seçer. Hisse başına defter değeri (B0) 40,00 TL'dir. Hisse başına kâr tahminleri gelecek yıl için 6,00 TL (E1), sonraki yıl için 6,60 TL (E2)'dir. Şirket kârının %50'sini temettü olarak dağıtır ve temiz fazla (clean surplus) muhasebesi geçerlidir. İstenen özkaynak getirisi %10'dur. Analist artık gelirin bir anda kaybolmayacağını düşünür. 2. yıldan sonra artık gelirin 0,6'lık bir kalıcılık katsayısıyla azaldığını varsayar: her yılın artık geliri bir önceki yılın %60'ına eşittir. Hisse 52,00 TL'den işlem görüyor. Modelden bulduğu içsel değeri hem piyasa fiyatı hem de defter değeriyle karşılaştıracak.",
+      "tables": [
+        {
+          "title_en": "Forecasts per share (TL)",
+          "title_tr": "Hisse başına tahminler (TL)",
+          "headers": [
+            "Item",
+            "Year 1",
+            "Year 2"
+          ],
+          "rows": [
+            [
+              "EPS",
+              "6.00",
+              "6.60"
+            ],
+            [
+              "Payout ratio",
+              "50%",
+              "50%"
+            ],
+            [
+              "Required return",
+              "10%",
+              "10%"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-EQ-05-v01-q1",
+        "L2-EQ-05-v01-q2",
+        "L2-EQ-05-v01-q3",
+        "L2-EQ-05-v01-q4",
+        "L2-EQ-05-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-EQ-05-v01-q1",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-05-v01",
+      "stem_en": "What is the residual income per share in year 1?",
+      "stem_tr": "1. yılda hisse başına artık gelir nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 5.40",
+          "tr": "5,40 TL",
+          "value": 5.4
+        },
+        {
+          "key": "B",
+          "en": "TL 6.00",
+          "tr": "6,00 TL",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "TL 2.00",
+          "tr": "2,00 TL",
+          "value": 2.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "RI1 = E1 - r x B0 = 6.00 - 0.10 x 40.00 = TL 2.00.",
+      "explanation_tr": "AG1 = E1 - r x B0 = 6,00 - 0,10 x 40,00 = 2,00 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Charges the equity cost on earnings rather than on beginning book value.",
+          "tr": "Sermaye maliyetini başlangıç defter değeri yerine kâr üzerinden hesaplar."
+        },
+        "B": {
+          "en": "This is earnings; residual income is earnings minus the equity charge.",
+          "tr": "Bu kârdır; artık gelir kârdan sermaye maliyeti düşülmüş halidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Equity charge = 0.10 x 40 = 4.00",
+          "tr": "Sermaye maliyeti = 0,10 x 40 = 4,00"
+        },
+        {
+          "en": "6.00 - 4.00 = 2.00",
+          "tr": "6,00 - 4,00 = 2,00"
+        }
+      ],
+      "vocab_ids": [
+        "residual-income",
+        "book-value",
+        "earnings",
+        "required-return"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "6-0.10*40",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-05-v01-q2",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-05-v01",
+      "stem_en": "What is the residual income per share in year 2?",
+      "stem_tr": "2. yılda hisse başına artık gelir nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 2.30",
+          "tr": "2,30 TL",
+          "value": 2.3
+        },
+        {
+          "key": "B",
+          "en": "TL 2.60",
+          "tr": "2,60 TL",
+          "value": 2.6
+        },
+        {
+          "key": "C",
+          "en": "TL 2.00",
+          "tr": "2,00 TL",
+          "value": 2.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "B1 = B0 + E1 - D1 = 40 + 6 - 3 = 43. RI2 = 6.60 - 0.10 x 43 = TL 2.30.",
+      "explanation_tr": "B1 = B0 + E1 - D1 = 40 + 6 - 3 = 43. AG2 = 6,60 - 0,10 x 43 = 2,30 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses B0 instead of B1; book value grows by retained earnings.",
+          "tr": "B1 yerine B0 kullanır; defter değeri tutulan kârla büyür."
+        },
+        "C": {
+          "en": "Adds all earnings to book value; only retained earnings (50%) are added.",
+          "tr": "Tüm kârı defter değerine ekler; yalnızca tutulan kâr (%50) eklenir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "B1 = 40 + 3 = 43",
+          "tr": "B1 = 40 + 3 = 43"
+        },
+        {
+          "en": "6.60 - 4.30 = 2.30",
+          "tr": "6,60 - 4,30 = 2,30"
+        }
+      ],
+      "vocab_ids": [
+        "book-value",
+        "retained-earnings",
+        "residual-income",
+        "payout-ratio"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "6.6-0.10*(40+6*0.5)",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-05-v01-q3",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "set_id": "L2-EQ-05-v01",
+      "stem_en": "The intrinsic value per share is closest to:",
+      "stem_tr": "Hisse başına içsel değer yaklaşık olarak şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TL 43.72",
+          "tr": "43,72 TL",
+          "value": 43.719008
+        },
+        {
+          "key": "B",
+          "en": "TL 46.00",
+          "tr": "46,00 TL",
+          "value": 46.0
+        },
+        {
+          "key": "C",
+          "en": "TL 46.48",
+          "tr": "46,48 TL",
+          "value": 46.479008
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "PV of RI1 = 2.00 / 1.10 = 1.818. PV of RI2 = 2.30 / 1.21 = 1.901. Continuing value at year 2 = 2.30 x 0.6 / (1.10 - 0.6) = 2.76, PV = 2.281. Value = 40 + 1.818 + 1.901 + 2.281 = TL 46.00.",
+      "explanation_tr": "AG1'in BD'si = 2,00 / 1,10 = 1,818. AG2'nin BD'si = 2,30 / 1,21 = 1,901. 2. yıldaki devam değeri = 2,30 x 0,6 / (1,10 - 0,6) = 2,76; BD = 2,281. Değer = 40 + 1,818 + 1,901 + 2,281 = 46,00 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Leaves out the value of residual income after year 2.",
+          "tr": "2. yıldan sonraki artık gelirin değerini dışarıda bırakır."
+        },
+        "C": {
+          "en": "Does not discount the post-year-2 value back from year 2.",
+          "tr": "2. yıl sonrası değeri 2. yıldan bugüne iskonto etmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "PV RI1 + RI2 = 1.818 + 1.901",
+          "tr": "AG1 + AG2 BD = 1,818 + 1,901"
+        },
+        {
+          "en": "Continuing value PV = 2.281",
+          "tr": "Devam değeri BD = 2,281"
+        },
+        {
+          "en": "40 + 6.00 = 46.00",
+          "tr": "40 + 6,00 = 46,00"
+        }
+      ],
+      "vocab_ids": [
+        "residual-income",
+        "present-value",
+        "intrinsic-value",
+        "assume"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "40+2.0/1.1+2.3/1.1**2+2.3*0.6/(1.1-0.6)/1.1**2",
+        "unit": "TL"
+      }
+    },
+    {
+      "id": "L2-EQ-05-v01-q4",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-05-v01",
+      "stem_en": "The model's implied price-to-book ratio, and its message relative to the TL 52.00 market price, are:",
+      "stem_tr": "Modelin ima ettiği PD/DD oranı ve 52,00 TL piyasa fiyatına göre mesajı şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.30; the stock is undervalued",
+          "tr": "1,30; hisse ucuzdur",
+          "value": 1.3
+        },
+        {
+          "key": "B",
+          "en": "0.87; the stock is fairly valued",
+          "tr": "0,87; hisse adil fiyatlanmıştır",
+          "value": 0.869565
+        },
+        {
+          "key": "C",
+          "en": "1.15; the market price is above intrinsic value",
+          "tr": "1,15; piyasa fiyatı içsel değerin üzerinde",
+          "value": 1.15
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Intrinsic P/B = 46.00 / 40.00 = 1.15, while the market P/B is 52 / 40 = 1.30. The market pays more than the model value, so the shares look overvalued by about 12%.",
+      "explanation_tr": "İçsel PD/DD = 46,00 / 40,00 = 1,15; piyasa PD/DD'si 52 / 40 = 1,30'dur. Piyasa model değerinden fazlasını ödüyor; hisse yaklaşık %12 pahalı görünür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "52/40 is the market P/B, not the model's; and 1.30 against an intrinsic P/B of 1.15 means the stock is expensive.",
+          "tr": "52/40 piyasa PD/DD'sidir, modelinki değil; 1,30'un 1,15'lik içsel PD/DD karşısında olması hissenin pahalı olduğunu gösterir."
+        },
+        "B": {
+          "en": "Inverts the ratio; intrinsic value is the numerator.",
+          "tr": "Oranı ters çevirir; içsel değer paydadır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "46 / 40 = 1.15",
+          "tr": "46 / 40 = 1,15"
+        },
+        {
+          "en": "52 / 40 = 1.30",
+          "tr": "52 / 40 = 1,30"
+        }
+      ],
+      "vocab_ids": [
+        "price-to-book",
+        "overvalued",
+        "intrinsic-value",
+        "book-value",
+        "market-price"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "numeric": {
+        "expr": "(40+2.0/1.1+2.3/1.1**2+2.3*0.6/(1.1-0.6)/1.1**2)/40"
+      }
+    },
+    {
+      "id": "L2-EQ-05-v01-q5",
+      "level": "L2",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-EQ-05-v01",
+      "stem_en": "Why is the residual income model a reasonable choice for Yıldız at this stage?",
+      "stem_tr": "Yıldız için artık gelir modeli bu aşamada neden makul bir seçimdir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Value is mostly captured by the current book value, so the model works when free cash flows and dividends are negative or low",
+          "tr": "Değerin büyük kısmı mevcut defter değerinde yakalanır; bu nedenle serbest nakit akışı ve temettü negatif veya düşükken de çalışır"
+        },
+        {
+          "key": "B",
+          "en": "It does not depend on the quality of accounting at all",
+          "tr": "Muhasebe kalitesine hiç bağlı değildir"
+        },
+        {
+          "key": "C",
+          "en": "It values the firm using only the terminal value",
+          "tr": "Firmayı yalnızca uç değerle değerler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Because B0 (40.00) already forms most of the value (46.00), the forecast error and terminal value problems are smaller than in a DCF model for a firm with temporarily negative free cash flow. The drawback is the dependence on accounting quality.",
+      "explanation_tr": "B0 (40,00) değerin (46,00) çoğunu zaten oluşturduğundan, geçici olarak negatif serbest nakit akışı olan bir firmada tahmin hatası ve uç değer sorunları DCF modeline göre daha küçüktür. Dezavantajı muhasebe kalitesine bağımlılıktır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The model relies on book value and clean surplus accounting, so accounting quality matters a lot.",
+          "tr": "Model defter değerine ve temiz fazla muhasebesine dayanır; muhasebe kalitesi çok önemlidir."
+        },
+        "C": {
+          "en": "In RI models, a large share of value comes from the current book value, which reduces reliance on the terminal value.",
+          "tr": "Artık gelir modellerinde değerin büyük kısmı mevcut defter değerinden gelir; bu uç değere bağımlılığı azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "residual-income",
+        "book-value",
+        "free-cash-flow",
+        "terminal-value"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

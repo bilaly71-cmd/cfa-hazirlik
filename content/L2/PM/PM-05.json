@@ -1,0 +1,397 @@
+{
+  "module_id": "PM-05",
+  "vignettes": [
+    {
+      "id": "L2-PM-05-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "curriculum_year": 2027,
+      "title_en": "Market risk report at Altay Capital",
+      "title_tr": "Altay Sermaye’de piyasa riski raporu",
+      "text_en": "Hakan Polat is the risk manager at Altay Capital, a fictional asset manager. He prepares the market risk report for a TRY 80 million equity portfolio. He estimates value at risk (VaR) using the parametric (variance-covariance) method with a normal distribution. The portfolio's daily return standard deviation is 1.10%, and he assumes a mean return of zero. The critical value is 1.645 for a 95% confidence level and 2.326 for a 99% confidence level. He scales daily VaR to a longer horizon with the square root of time.\n\nThe firm also has two sub-portfolios, one in domestic stocks and one in foreign stocks. The 1-day 95% VaR of the domestic sub-portfolio is TRY 1.20 million, and of the foreign sub-portfolio TRY 0.90 million. The correlation between their returns is 0.30. Hakan wants the VaR of the combined portfolio using the same normal-distribution approach.\n\nFor backtesting, he uses 250 trading days of data for the 1-day 95% VaR model.\n\nHakan notes that part of the portfolio will soon include equity options, and the committee's chair asks whether VaR alone is adequate. He explains that the committee should also consider other measures, such as expected shortfall and stress tests.",
+      "text_tr": "Hakan Polat, kurgusal bir varlık yöneticisi olan Altay Sermaye'de risk yöneticisidir. 80 milyon TL'lik bir hisse senedi portföyü için piyasa riski raporunu hazırlıyor. Riske maruz değeri (VaR) normal dağılım varsayan parametrik (varyans-kovaryans) yöntemle tahmin ediyor. Portföyün günlük getiri standart sapması %1,10'dur ve ortalama getiriyi sıfır varsayıyor. Kritik değer %95 güven düzeyi için 1,645, %99 güven düzeyi için 2,326'dır. Günlük VaR'ı daha uzun ufka zamanın karekökü ile ölçekliyor.\n\nŞirketin ayrıca biri yurtiçi, biri yurtdışı hisselerden oluşan iki alt portföyü var. Yurtiçi alt portföyün 1 günlük %95 VaR'ı 1,20 milyon TL, yurtdışı alt portföyün 0,90 milyon TL'dir. Getirileri arasındaki korelasyon 0,30'dur. Hakan, aynı normal dağılım yaklaşımıyla birleşik portföyün VaR'ını istiyor.\n\nGeriye dönük testte, 1 günlük %95 VaR modeli için 250 işlem günlük veri kullanıyor.\n\nHakan, portföyün bir bölümünün yakında hisse senedi opsiyonları içereceğini belirtiyor ve komite başkanı yalnızca VaR'ın yeterli olup olmadığını soruyor. Hakan, komitenin beklenen kayıp (expected shortfall) ve stres testleri gibi diğer ölçüleri de dikkate alması gerektiğini açıklıyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-PM-05-v01-q1",
+        "L2-PM-05-v01-q2",
+        "L2-PM-05-v01-q3",
+        "L2-PM-05-v01-q4",
+        "L2-PM-05-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-05-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "los_id": "PM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-05-v01",
+      "stem_en": "The 1-day 95% parametric VaR of the TRY 80 million portfolio is closest to:",
+      "stem_tr": "80 milyon TL'lik portföyün 1 günlük %95 parametrik VaR'ı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2.05 million",
+          "tr": "2,05 milyon TL",
+          "value": 2.04688
+        },
+        {
+          "key": "B",
+          "en": "TRY 0.88 million",
+          "tr": "0,88 milyon TL",
+          "value": 0.88
+        },
+        {
+          "key": "C",
+          "en": "TRY 1.45 million",
+          "tr": "1,45 milyon TL",
+          "value": 1.4476
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the 99% critical value instead of the 95% critical value.",
+          "tr": "%95 kritik değeri yerine %99 kritik değerini kullanır."
+        },
+        "B": {
+          "en": "This omits the critical value (z-score).",
+          "tr": "Kritik değeri (z-skoru) atlar."
+        }
+      },
+      "explanation_en": "With a 1.645 critical value, the daily VaR is 1.645 × 1.10% × 80 = TRY 1.45 million.",
+      "explanation_tr": "1,645 kritik değeriyle günlük VaR 1,645 × %1,10 × 80 = 1,45 milyon TL'dir.",
+      "solution_steps": [
+        {
+          "en": "VaR = z × σ × portfolio value (mean assumed zero).",
+          "tr": "VaR = z × σ × portföy değeri (ortalama sıfır varsayılır)."
+        },
+        {
+          "en": "1.645 × 0.011 = 0.018095.",
+          "tr": "1,645 × 0,011 = 0,018095."
+        },
+        {
+          "en": "0.018095 × 80 million.",
+          "tr": "0,018095 × 80 milyon."
+        },
+        {
+          "en": "VaR = TRY 1.45 million.",
+          "tr": "VaR = 1,45 milyon TL."
+        }
+      ],
+      "vocab_ids": [
+        "value-at-risk",
+        "confidence-level",
+        "stress-test",
+        "correlation",
+        "standard-deviation"
+      ],
+      "numeric": {
+        "expr": "1.645*0.011*80",
+        "unit": "TRY million"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-05-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "los_id": "PM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-05-v01",
+      "stem_en": "The 10-day 99% VaR, scaling with the square root of time, is closest to:",
+      "stem_tr": "Zamanın karekökü ile ölçeklenen 10 günlük %99 VaR en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 6.47 million",
+          "tr": "6,47 milyon TL",
+          "value": 6.472803
+        },
+        {
+          "key": "B",
+          "en": "TRY 20.47 million",
+          "tr": "20,47 milyon TL",
+          "value": 20.4688
+        },
+        {
+          "key": "C",
+          "en": "TRY 4.58 million",
+          "tr": "4,58 milyon TL",
+          "value": 4.577713
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Scaling by 10 instead of the square root of 10 overstates the VaR.",
+          "tr": "10'un karekökü yerine 10 ile ölçeklemek VaR'ı olduğundan yüksek gösterir."
+        },
+        "C": {
+          "en": "This uses the 95% critical value rather than the 99% value.",
+          "tr": "%99 değeri yerine %95 kritik değerini kullanır."
+        }
+      },
+      "explanation_en": "The 1-day 99% VaR of about TRY 2.05 million scaled by √10 gives about TRY 6.47 million.",
+      "explanation_tr": "Yaklaşık 2,05 milyon TL olan 1 günlük %99 VaR'ın √10 ile ölçeklenmesi yaklaşık 6,47 milyon TL verir.",
+      "solution_steps": [
+        {
+          "en": "10-day VaR = z × σ_daily × √10 × value.",
+          "tr": "10 günlük VaR = z × σ_günlük × √10 × değer."
+        },
+        {
+          "en": "1-day 99% VaR = 2.326 × 0.011 × 80 = 2.047.",
+          "tr": "1 günlük %99 VaR = 2,326 × 0,011 × 80 = 2,047."
+        },
+        {
+          "en": "√10 = 3.162.",
+          "tr": "√10 = 3,162."
+        },
+        {
+          "en": "10-day VaR = 6.47 million TRY.",
+          "tr": "10 günlük VaR = 6,47 milyon TL."
+        }
+      ],
+      "vocab_ids": [
+        "value-at-risk",
+        "confidence-level",
+        "stress-test",
+        "correlation",
+        "standard-deviation"
+      ],
+      "numeric": {
+        "expr": "2.326*0.011*80*10**0.5",
+        "unit": "TRY million"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-05-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "los_id": "PM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-05-v01",
+      "stem_en": "The 1-day 95% VaR of the combined portfolio of the two sub-portfolios is closest to:",
+      "stem_tr": "İki alt portföyden oluşan birleşik portföyün 1 günlük %95 VaR'ı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2.10 million",
+          "tr": "2,10 milyon TL",
+          "value": 2.1
+        },
+        {
+          "key": "B",
+          "en": "TRY 1.70 million",
+          "tr": "1,70 milyon TL",
+          "value": 1.702351
+        },
+        {
+          "key": "C",
+          "en": "TRY 1.50 million",
+          "tr": "1,50 milyon TL",
+          "value": 1.5
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adding VaRs assumes a correlation of 1.0, which ignores diversification.",
+          "tr": "VaR'ları toplamak korelasyonu 1,0 varsayar ve çeşitlendirmeyi yok sayar."
+        },
+        "C": {
+          "en": "This assumes zero correlation and leaves out the covariance term.",
+          "tr": "Sıfır korelasyon varsayar ve kovaryans terimini dışarıda bırakır."
+        }
+      },
+      "explanation_en": "With a correlation of 0.30, the combined VaR (1.70) is lower than the simple sum (2.10) because of diversification.",
+      "explanation_tr": "0,30 korelasyonla birleşik VaR (1,70), çeşitlendirme nedeniyle basit toplamdan (2,10) düşüktür.",
+      "solution_steps": [
+        {
+          "en": "Combined VaR = √(VaR1² + VaR2² + 2ρ·VaR1·VaR2).",
+          "tr": "Birleşik VaR = √(VaR1² + VaR2² + 2ρ·VaR1·VaR2)."
+        },
+        {
+          "en": "1.44 + 0.81 + 2 × 0.30 × 1.20 × 0.90 = 1.44 + 0.81 + 0.648.",
+          "tr": "1,44 + 0,81 + 2 × 0,30 × 1,20 × 0,90 = 1,44 + 0,81 + 0,648."
+        },
+        {
+          "en": "Sum = 2.898.",
+          "tr": "Toplam = 2,898."
+        },
+        {
+          "en": "√2.898 = 1.70.",
+          "tr": "√2,898 = 1,70."
+        }
+      ],
+      "vocab_ids": [
+        "value-at-risk",
+        "confidence-level",
+        "stress-test",
+        "correlation",
+        "standard-deviation"
+      ],
+      "numeric": {
+        "expr": "(1.2**2+0.9**2+2*0.3*1.2*0.9)**0.5",
+        "unit": "TRY million"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-05-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "los_id": "PM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-05-v01",
+      "stem_en": "If the 95% VaR model is correct, the expected number of exceptions (days with losses larger than VaR) over the 250-day backtest is closest to:",
+      "stem_tr": "%95 VaR modeli doğruysa, 250 günlük geriye dönük testte beklenen aşım sayısı (kaybın VaR'dan büyük olduğu gün sayısı) en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "237.5",
+          "tr": "237,5",
+          "value": 237.5
+        },
+        {
+          "key": "B",
+          "en": "2.5",
+          "tr": "2,5",
+          "value": 2.5
+        },
+        {
+          "key": "C",
+          "en": "12.5",
+          "tr": "12,5",
+          "value": 12.5
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the confidence level rather than the tail probability.",
+          "tr": "Kuyruk olasılığı yerine güven düzeyini kullanır."
+        },
+        "B": {
+          "en": "This uses a 1% tail, which applies to 99% VaR.",
+          "tr": "%99 VaR için geçerli olan %1'lik kuyruğu kullanır."
+        }
+      },
+      "explanation_en": "A 95% VaR should be exceeded on 5% of days, which is 12.5 days out of 250.",
+      "explanation_tr": "%95 VaR günlerin %5'inde aşılmalıdır; bu, 250 günde 12,5 gündür.",
+      "solution_steps": [
+        {
+          "en": "Exceptions are expected in the tail: 1 - confidence level = 5%.",
+          "tr": "Aşımlar kuyrukta beklenir: 1 - güven düzeyi = %5."
+        },
+        {
+          "en": "250 × 0.05.",
+          "tr": "250 × 0,05."
+        },
+        {
+          "en": "= 12.5 days.",
+          "tr": "= 12,5 gün."
+        },
+        {
+          "en": "About 12 to 13 exceptions are expected.",
+          "tr": "Yaklaşık 12-13 aşım beklenir."
+        }
+      ],
+      "vocab_ids": [
+        "value-at-risk",
+        "confidence-level",
+        "stress-test",
+        "correlation",
+        "standard-deviation"
+      ],
+      "numeric": {
+        "expr": "250*0.05"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-05-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-05",
+      "los_id": "PM-05-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-05-v01",
+      "stem_en": "In answer to the committee chair, VaR alone is most likely inadequate for the portfolio with options because:",
+      "stem_tr": "Komite başkanına yanıt olarak, opsiyon içeren portföy için yalnızca VaR büyük olasılıkla yetersizdir çünkü:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the normal-distribution parametric VaR assumes linear exposures and does not describe losses beyond the VaR threshold, whereas options are non-linear and tails matter.",
+          "tr": "normal dağılımlı parametrik VaR doğrusal risk maruziyetleri varsayar ve VaR eşiğinin ötesindeki kayıpları tanımlamaz; oysa opsiyonlar doğrusal değildir ve kuyruklar önemlidir."
+        },
+        {
+          "key": "B",
+          "en": "VaR cannot be computed for any portfolio that contains derivatives.",
+          "tr": "türev içeren hiçbir portföy için VaR hesaplanamaz."
+        },
+        {
+          "key": "C",
+          "en": "expected shortfall is always smaller than VaR at the same confidence level.",
+          "tr": "beklenen kayıp aynı güven düzeyinde her zaman VaR'dan küçüktür."
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "VaR can be estimated with historical or Monte Carlo methods for derivative portfolios; the problem is the parametric method's assumptions.",
+          "tr": "Türev portföyleri için VaR tarihsel veya Monte Carlo yöntemleriyle tahmin edilebilir; sorun parametrik yöntemin varsayımlarıdır."
+        },
+        "C": {
+          "en": "Expected shortfall is the average loss beyond VaR, so it is at least as large as VaR.",
+          "tr": "Beklenen kayıp VaR'ın ötesindeki ortalama kayıptır, dolayısıyla en az VaR kadar büyüktür."
+        }
+      },
+      "explanation_en": "Parametric VaR relies on linearity and normality. Options create non-linear payoffs and fat tails, so expected shortfall, Monte Carlo or historical simulation, and stress tests give a fuller picture.",
+      "explanation_tr": "Parametrik VaR doğrusallık ve normallik varsayımına dayanır. Opsiyonlar doğrusal olmayan getiriler ve kalın kuyruklar yaratır; bu nedenle beklenen kayıp, Monte Carlo veya tarihsel simülasyon ve stres testleri daha eksiksiz bir tablo verir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "value-at-risk",
+        "confidence-level",
+        "stress-test",
+        "correlation",
+        "standard-deviation",
+        "monte-carlo-simulation"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    }
+  ]
+}

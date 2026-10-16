@@ -1,0 +1,396 @@
+{
+  "module_id": "PM-06",
+  "vignettes": [
+    {
+      "id": "L2-PM-06-v01",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "curriculum_year": 2027,
+      "title_en": "Strategy backtest review at Kuzey Quant",
+      "title_tr": "Kuzey Quant’ta strateji geriye dönük test incelemesi",
+      "text_en": "Sinem Kaya is a quantitative researcher at Kuzey Quant, a fictional systematic investment firm. A junior analyst, Volkan, presents a new momentum strategy for Turkish equities. Volkan tested 40 different combinations of look-back windows and thresholds on ten years of data. He reports only the best combination, which had an in-sample annualized Sharpe ratio of 1.10. When Sinem tests the same rule on a later period that was not used for optimization, the Sharpe ratio is 0.40.\n\nSinem asks about the statistics. If each test uses a 5% significance level and the tests are independent, she wants to know the probability of finding at least one false positive among 40 tests when no strategy has real skill. She also wants the Bonferroni-adjusted significance level to apply to each test so that the overall level remains 5%.\n\nFor portfolio planning, the firm runs a Monte Carlo simulation of the strategy's terminal wealth. The simulated terminal wealth has a standard deviation of TRY 12 million across 10,000 independent runs.\n\nFinally, Volkan reports a monthly Sharpe ratio of 0.14 and wants to annualize it. Sinem tells him to annualize by multiplying by the square root of 12, assuming monthly returns are independent over time.",
+      "text_tr": "Sinem Kaya, kurgusal bir sistematik yatırım şirketi olan Kuzey Quant'ta nicel araştırmacıdır. Genç analist Volkan, Türk hisseleri için yeni bir momentum stratejisi sunuyor. Volkan, on yıllık veri üzerinde 40 farklı geriye bakış penceresi ve eşik kombinasyonunu test etmiş. Yalnızca en iyi kombinasyonu raporluyor; bu kombinasyonun örneklem içi yıllık Sharpe oranı 1,10'dur. Sinem aynı kuralı optimizasyonda kullanılmamış daha sonraki bir dönemde test ettiğinde Sharpe oranı 0,40 çıkıyor.\n\nSinem istatistikleri soruyor. Her test %5 anlamlılık düzeyi kullanıyorsa ve testler bağımsızsa, hiçbir stratejinin gerçek becerisi yokken 40 testte en az bir yanlış pozitif bulma olasılığını bilmek istiyor. Ayrıca toplam düzeyin %5'te kalması için her teste uygulanacak Bonferroni düzeltmeli anlamlılık düzeyini de istiyor.\n\nPortföy planlaması için şirket, stratejinin nihai servetine yönelik Monte Carlo simülasyonu çalıştırıyor. Simüle edilen nihai servetin standart sapması 10.000 bağımsız çalıştırma boyunca 12 milyon TL'dir.\n\nSon olarak Volkan aylık 0,14 Sharpe oranı raporluyor ve bunu yıllıklandırmak istiyor. Sinem, aylık getirilerin zaman içinde bağımsız olduğunu varsayarak 12'nin kareköküyle çarparak yıllıklandırmasını söylüyor.",
+      "tables": [],
+      "question_ids": [
+        "L2-PM-06-v01-q1",
+        "L2-PM-06-v01-q2",
+        "L2-PM-06-v01-q3",
+        "L2-PM-06-v01-q4",
+        "L2-PM-06-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-PM-06-v01-q1",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-06-v01",
+      "stem_en": "The probability of at least one false positive among the 40 independent tests at a 5% significance level is closest to:",
+      "stem_tr": "%5 anlamlılık düzeyinde 40 bağımsız testte en az bir yanlış pozitif olasılığı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "200.0%",
+          "tr": "%200,0",
+          "value": 200.0
+        },
+        {
+          "key": "B",
+          "en": "87.1%",
+          "tr": "%87,1",
+          "value": 87.148784
+        },
+        {
+          "key": "C",
+          "en": "12.9%",
+          "tr": "%12,9",
+          "value": 12.851216
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Summing the probabilities gives a value above 100%, which is impossible for a probability.",
+          "tr": "Olasılıkları toplamak %100'ün üzerinde bir değer verir; olasılık için imkansızdır."
+        },
+        "C": {
+          "en": "This is the probability of no false positive at all, not at least one.",
+          "tr": "Bu hiç yanlış pozitif olmama olasılığıdır, en az bir olma olasılığı değildir."
+        }
+      },
+      "explanation_en": "With 40 tests the chance of at least one false discovery is 1 - 0.95^40, or about 87.1%.",
+      "explanation_tr": "40 testte en az bir yanlış keşif şansı 1 - 0,95^40, yani yaklaşık %87,1'dir.",
+      "solution_steps": [
+        {
+          "en": "P(at least one) = 1 - P(none).",
+          "tr": "P(en az bir) = 1 - P(hiç)."
+        },
+        {
+          "en": "P(none) = 0.95^40 = 0.1285.",
+          "tr": "P(hiç) = 0,95^40 = 0,1285."
+        },
+        {
+          "en": "1 - 0.1285.",
+          "tr": "1 - 0,1285."
+        },
+        {
+          "en": "= 87.1 percent.",
+          "tr": "= %87,1."
+        }
+      ],
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "monte-carlo-simulation",
+        "sharpe-ratio",
+        "significance-level"
+      ],
+      "numeric": {
+        "expr": "(1-0.95**40)*100",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-06-v01-q2",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-06-v01",
+      "stem_en": "The Bonferroni-adjusted significance level for each of the 40 tests is closest to:",
+      "stem_tr": "40 testin her biri için Bonferroni düzeltmeli anlamlılık düzeyi en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "200.000%",
+          "tr": "%200,000",
+          "value": 200.0
+        },
+        {
+          "key": "B",
+          "en": "0.250%",
+          "tr": "%0,250",
+          "value": 0.25
+        },
+        {
+          "key": "C",
+          "en": "0.125%",
+          "tr": "%0,125",
+          "value": 0.125
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This multiplies instead of dividing, producing a level above 100%.",
+          "tr": "Bölmek yerine çarpar ve %100'ün üzerinde bir düzey üretir."
+        },
+        "B": {
+          "en": "This doubles the correct level, which would not keep the overall level at 5%.",
+          "tr": "Doğru düzeyi iki katına çıkarır; toplam düzeyi %5'te tutmaz."
+        }
+      },
+      "explanation_en": "Dividing 5% by 40 tests gives 0.125% per test.",
+      "explanation_tr": "%5'in 40 teste bölünmesi test başına %0,125 verir.",
+      "solution_steps": [
+        {
+          "en": "Bonferroni level = overall level / number of tests.",
+          "tr": "Bonferroni düzeyi = toplam düzey / test sayısı."
+        },
+        {
+          "en": "5% / 40.",
+          "tr": "%5 / 40."
+        },
+        {
+          "en": "= 0.125 percent.",
+          "tr": "= %0,125."
+        },
+        {
+          "en": "Each test is judged at 0.125%.",
+          "tr": "Her test %0,125'te değerlendirilir."
+        }
+      ],
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "monte-carlo-simulation",
+        "sharpe-ratio",
+        "significance-level"
+      ],
+      "numeric": {
+        "expr": "5/40",
+        "unit": "%"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-06-v01-q3",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-PM-06-v01",
+      "stem_en": "The standard error of the Monte Carlo estimate of mean terminal wealth is closest to:",
+      "stem_tr": "Ortalama nihai servetin Monte Carlo tahmininin standart hatası en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0.12 million",
+          "tr": "0,12 milyon TL",
+          "value": 0.12
+        },
+        {
+          "key": "B",
+          "en": "TRY 0.00 million",
+          "tr": "0,00 milyon TL",
+          "value": 0.0012
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,200.00 million",
+          "tr": "1.200,00 milyon TL",
+          "value": 1200.0
+        }
+      ],
+      "answer": "A",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides by N instead of the square root of N.",
+          "tr": "N'nin karekökü yerine N'ye böler."
+        },
+        "C": {
+          "en": "This multiplies by the square root of N, which makes the error larger instead of smaller.",
+          "tr": "N'nin karekökü ile çarpar; hata küçülmek yerine büyür."
+        }
+      },
+      "explanation_en": "The standard error shrinks with the square root of the number of runs: 12 / 100 = TRY 0.12 million.",
+      "explanation_tr": "Standart hata çalıştırma sayısının karekökü ile küçülür: 12 / 100 = 0,12 milyon TL.",
+      "solution_steps": [
+        {
+          "en": "Standard error = σ / √N.",
+          "tr": "Standart hata = σ / √N."
+        },
+        {
+          "en": "σ = 12 million; √10,000 = 100.",
+          "tr": "σ = 12 milyon; √10.000 = 100."
+        },
+        {
+          "en": "12 / 100.",
+          "tr": "12 / 100."
+        },
+        {
+          "en": "= TRY 0.12 million.",
+          "tr": "= 0,12 milyon TL."
+        }
+      ],
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "monte-carlo-simulation",
+        "sharpe-ratio",
+        "significance-level"
+      ],
+      "numeric": {
+        "expr": "12/10000**0.5",
+        "unit": "TRY million"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-06-v01-q4",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-PM-06-v01",
+      "stem_en": "The annualized Sharpe ratio implied by the monthly Sharpe ratio of 0.14 is closest to:",
+      "stem_tr": "Aylık 0,14 Sharpe oranının ima ettiği yıllıklandırılmış Sharpe oranı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.68",
+          "tr": "1,68",
+          "value": 1.68
+        },
+        {
+          "key": "B",
+          "en": "0.48",
+          "tr": "0,48",
+          "value": 0.484974
+        },
+        {
+          "key": "C",
+          "en": "0.04",
+          "tr": "0,04",
+          "value": 0.040415
+        }
+      ],
+      "answer": "B",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multiplying by 12 ignores that the standard deviation scales with the square root of time.",
+          "tr": "12 ile çarpmak, standart sapmanın zamanın karekökü ile ölçeklendiğini yok sayar."
+        },
+        "C": {
+          "en": "Dividing by the square root of 12 moves in the wrong direction.",
+          "tr": "12'nin köküne bölmek yanlış yönde bir dönüşümdür."
+        }
+      },
+      "explanation_en": "Mean return scales with 12 and standard deviation with √12, so the Sharpe ratio scales with √12: 0.14 × 3.464 = 0.49.",
+      "explanation_tr": "Ortalama getiri 12 ile, standart sapma √12 ile ölçeklenir; Sharpe oranı √12 ile ölçeklenir: 0,14 × 3,464 = 0,49.",
+      "solution_steps": [
+        {
+          "en": "Sharpe ratio scales with √(periods per year).",
+          "tr": "Sharpe oranı √(yıldaki dönem sayısı) ile ölçeklenir."
+        },
+        {
+          "en": "√12 = 3.464.",
+          "tr": "√12 = 3,464."
+        },
+        {
+          "en": "0.14 × 3.464.",
+          "tr": "0,14 × 3,464."
+        },
+        {
+          "en": "= 0.485.",
+          "tr": "= 0,485."
+        }
+      ],
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "monte-carlo-simulation",
+        "sharpe-ratio",
+        "significance-level"
+      ],
+      "numeric": {
+        "expr": "0.14*12**0.5"
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-PM-06-v01-q5",
+      "level": "L2",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-PM-06-v01",
+      "stem_en": "The drop in the Sharpe ratio from 1.10 in-sample to 0.40 out-of-sample is most consistent with:",
+      "stem_tr": "Sharpe oranının örneklem içi 1,10'dan örneklem dışı 0,40'a düşmesiyle en tutarlı ifade hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a look-ahead bias that made the out-of-sample test look worse than reality.",
+          "tr": "gerçekten daha kötü görünmesine yol açan bir ileriye bakış yanlılığı."
+        },
+        {
+          "key": "B",
+          "en": "a sign that the strategy is robust, because both Sharpe ratios are positive.",
+          "tr": "stratejinin sağlam olduğunun işareti, çünkü iki Sharpe oranı da pozitif."
+        },
+        {
+          "key": "C",
+          "en": "overfitting caused by selecting the best of many tested parameter sets, which is a form of data mining.",
+          "tr": "denenen birçok parametre kümesi arasından en iyisinin seçilmesinin yol açtığı aşırı uyum; bu bir veri madenciliği biçimidir."
+        }
+      ],
+      "answer": "C",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Look-ahead bias makes a backtest look better, not worse.",
+          "tr": "İleriye bakış yanlılığı geriye dönük testi daha iyi gösterir, daha kötü değil."
+        },
+        "B": {
+          "en": "A large drop from in-sample to out-of-sample suggests weaker real skill than the reported best result.",
+          "tr": "Örneklem içinden dışına büyük düşüş, gerçek becerinin raporlanan en iyi sonuçtan daha zayıf olduğunu düşündürür."
+        }
+      },
+      "explanation_en": "Reporting only the best of 40 trials selects partly for luck. The falling performance on new data is the typical signature of overfitting, and out-of-sample or walk-forward tests are the remedy.",
+      "explanation_tr": "40 denemenin yalnızca en iyisini raporlamak kısmen şansı seçer. Yeni verideki düşen performans aşırı uyumun tipik işaretidir; çözüm örneklem dışı veya ileriye doğru (walk-forward) testlerdir.",
+      "solution_steps": [],
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "monte-carlo-simulation",
+        "sharpe-ratio",
+        "significance-level"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    }
+  ]
+}
