@@ -1,0 +1,2143 @@
+{
+  "module_id": "PM-06",
+  "lesson": {
+    "id": "PM-06-lesson",
+    "level": "L1",
+    "topic": "PM",
+    "module_id": "PM-06",
+    "los_ids": [
+      "PM-06-a",
+      "PM-06-b",
+      "PM-06-c",
+      "PM-06-d",
+      "PM-06-e",
+      "PM-06-f",
+      "PM-06-g"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Risk Management",
+    "title_tr": "Risk Yönetimine Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Risk is not a thing to remove, it is a thing to manage",
+        "heading_tr": "Risk ortadan kaldırılacak bir şey değil, yönetilecek bir şeydir",
+        "en": "A Turkish exporter sells furniture in euros but pays workers and suppliers in lira. If the lira moves sharply, profit can disappear. A bank lends to thousands of borrowers and knows that some will not pay. A fund holds illiquid bonds and must pay redemptions. None of them can remove risk: taking risk is how they earn returns. The real question is whether they take the right amount and the right kind of risk. Risk management is the discipline of deciding how much risk is acceptable, measuring the risk actually taken, and adjusting it so that the two match. This module gives the language and steps of that discipline, from governance to hedging.",
+        "tr": "Türk bir ihracatçı mobilyayı avro ile satıyor ama çalışanlarına ve tedarikçilerine lira ile ödeme yapıyor. Lira sert hareket ederse kâr yok olabilir. Bir banka binlerce borçluya kredi veriyor ve bazılarının ödemeyeceğini biliyor. Bir fon likit olmayan tahvil tutuyor ve geri alımları ödemek zorunda. Hiçbiri riski ortadan kaldıramaz: risk almak getiri kazanmanın yoludur. Asıl soru, doğru miktarda ve doğru türde risk alıp almadıklarıdır. Risk yönetimi, ne kadar riskin kabul edilebilir olduğuna karar verme, fiilen alınan riski ölçme ve ikisinin eşleşmesi için riski ayarlama disiplinidir. Bu modül, yönetişimden riskten korunmaya kadar bu disiplinin dilini ve adımlarını verir.",
+        "key_terms": [
+          "risk management",
+          "risk tolerance",
+          "governance"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Risk management and its framework",
+        "heading_tr": "Risk yönetimi ve çerçevesi",
+        "en": "Risk management is the process of identifying the level of risk an entity wants, measuring the level it has, and taking actions to bring the two into line, aiming at its objectives. It is not about eliminating risk and it is not only about avoiding losses. A risk management framework is the infrastructure, processes and analytics that support this. Its components: risk governance (structure, accountability, reporting); risk identification and measurement; risk limits (including tolerance and budgeting); risk mitigation and management (modifying exposures); performance measurement and monitoring; and strategic analysis (reviewing whether the risk-taking supports strategy). The framework should cover the entire enterprise, the risks of all activities, and be reviewed and improved.",
+        "tr": "Risk yönetimi, bir kuruluşun istediği risk düzeyini belirleme, sahip olduğu düzeyi ölçme ve ikisini hedefleri doğrultusunda uyumlu hale getirecek eylemleri yapma sürecidir. Riski ortadan kaldırmakla ilgili değildir ve yalnızca zarardan kaçınmakla ilgili de değildir. Risk yönetimi çerçevesi, bunu destekleyen altyapı, süreçler ve analizlerdir. Bileşenleri: risk yönetişimi (yapı, hesap verebilirlik, raporlama); risk belirleme ve ölçme; risk limitleri (tolerans ve bütçeleme dahil); risk azaltma ve yönetme (maruziyetleri değiştirme); performans ölçümü ve izleme; ve stratejik analiz (risk almanın stratejiyi destekleyip desteklemediğini gözden geçirme). Çerçeve tüm kuruluşu ve tüm faaliyetlerin risklerini kapsamalı, gözden geçirilmeli ve geliştirilmelidir.",
+        "key_terms": [
+          "risk management framework",
+          "risk limits",
+          "monitoring",
+          "strategic analysis"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Governance, risk tolerance and risk budgeting",
+        "heading_tr": "Yönişim, risk toleransı ve risk bütçeleme",
+        "en": "Risk governance is the top-level system of oversight, accountability and decision rights for risk. Effective governance has a board-level view, clear roles, independent risk functions (for example a chief risk officer), a risk culture, consistent policies across the enterprise (enterprise risk management, ERM), and good reporting. Risk tolerance is how much risk the entity is willing and able to take. It is set by the board or senior management, shapes limits and the choice of strategies, and is based on both ability (capital, liquidity, liabilities) and willingness. Risk budgeting allocates the total acceptable risk among units, strategies or portfolios, for example by assigning each unit a share of the value at risk or tracking error budget, to use risk where it is best rewarded.",
+        "tr": "Risk yönişimi, riskle ilgili gözetim, hesap verebilirlik ve karar haklarının üst düzey sistemidir. Etkili yönişimde yönetim kurulu düzeyinde bir bakış, açık roller, bağımsız risk fonksiyonları (örneğin risk yöneticisi, CRO), bir risk kültürü, kuruluş genelinde tutarlı politikalar (kurumsal risk yönetimi, ERM) ve iyi raporlama bulunur. Risk toleransı, kuruluşun ne kadar risk almak istediği ve alabildiğidir. Yönetim kurulu ya da üst yönetim tarafından belirlenir, limitleri ve strateji seçimini şekillendirir ve hem kapasiteye (sermaye, likidite, yükümlülükler) hem isteğe dayanır. Risk bütçeleme, kabul edilebilir toplam riski birimler, stratejiler ya da portföyler arasında dağıtır; örneğin her birime riske maruz değer ya da izleme hatası bütçesinden bir pay vererek, riski en iyi ödüllendirildiği yerde kullanmak için.",
+        "key_terms": [
+          "risk governance",
+          "enterprise risk management",
+          "risk budgeting",
+          "value at risk"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Sources of risk and how they interact",
+        "heading_tr": "Risk kaynakları ve etkileşimi",
+        "en": "Financial risks: market risk (prices, rates, exchange rates), credit risk (default and downgrade), liquidity risk (inability to trade or fund at a fair price). Non-financial risks: operational risk (people, processes, systems), model risk (wrong model or inputs), settlement risk, regulatory and legal risk, tax risk, sovereign risk, ESG and reputation risk. Risks interact: a market fall can reduce collateral values (credit), make assets hard to sell (liquidity) and trigger margin calls that force more selling. Understanding these links is essential because stress often hits several risks together.",
+        "tr": "Finansal riskler: piyasa riski (fiyatlar, faizler, kurlar), kredi riski (temerrüt ve not düşürülmesi), likidite riski (adil fiyattan işlem yapamama ya da fonlama bulamama). Finansal olmayan riskler: operasyonel risk (insan, süreç, sistem), model riski (yanlış model ya da girdi), takas riski, düzenleyici ve hukuki risk, vergi riski, ülke riski, ÇSY ve itibar riski. Riskler etkileşir: piyasadaki düşüş teminat değerlerini azaltabilir (kredi), varlıkların satılmasını zorlaştırabilir (likidite) ve daha fazla satışı zorlayan teminat tamamlama çağrılarını tetikleyebilir. Bu bağlantıları anlamak şarttır; çünkü stres çoğu zaman birkaç riski birlikte vurur.",
+        "key_terms": [
+          "market risk",
+          "credit risk",
+          "liquidity risk",
+          "operational risk",
+          "model risk"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Measuring and modifying risk",
+        "heading_tr": "Riski ölçme ve değiştirme",
+        "en": "Measures: standard deviation, beta and duration (sensitivities), value at risk (VaR: a loss that will not be exceeded with a given probability over a time period), scenario analysis and stress tests (impact of extreme events). Parametric VaR ≈ (z × σ − μ) × portfolio value, where z is 1.65 for 95% and 2.33 for 99% (one-tailed). Methods to modify risk: prevent or avoid (do not undertake the activity), accept (take the risk, often by self-insuring or diversifying), transfer (pass the risk to another party, as with insurance), shift (change the distribution of outcomes, for example with derivatives, to reduce the chance or size of loss). The best method depends on cost, effectiveness, the entity's risk tolerance and whether the risk is rewarded.",
+        "tr": "Ölçüler: standart sapma, beta ve durasyon (duyarlılıklar), riske maruz değer (VaR: belirli bir sürede belirli bir olasılıkla aşılmayacak zarar), senaryo analizi ve stres testleri (aşırı olayların etkisi). Parametrik VaR ≈ (z × σ − μ) × portföy değeri; burada z, %95 için 1,65, %99 için 2,33'tür (tek kuyruklu). Riski değiştirme yöntemleri: önleme ya da kaçınma (faaliyete hiç girmemek), kabul (riski almak; çoğu zaman kendi sigortası ya da çeşitlendirmeyle), transfer (riski başka bir tarafa devretmek; sigorta gibi), kaydırma (sonuçların dağılımını, örneğin türevlerle, zarar olasılığını ya da büyüklüğünü azaltacak biçimde değiştirmek). En iyi yöntem maliyete, etkinliğe, kuruluşun risk toleransına ve riskin ödüllendirilip ödüllendirilmediğine bağlıdır.",
+        "key_terms": [
+          "standard deviation",
+          "beta",
+          "scenario analysis",
+          "stress test",
+          "self-insurance"
+        ],
+        "formula_latex": "VaR\\approx (z\\,\\sigma-\\mu)\\times V"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A one-month 95% VaR",
+        "heading_tr": "Bir aylık %95 VaR",
+        "en": "A portfolio of 100 million has a monthly expected return of 1% and a monthly standard deviation of 5%.",
+        "tr": "100 milyonluk bir portföyün aylık beklenen getirisi %1 ve aylık standart sapması %5'tir.",
+        "key_terms": [],
+        "example": {
+          "en": "VaR(95%) = (1.65 × 5% − 1%) × 100 = (8.25% − 1%) × 100 = 7.25 million. There is a 5% chance of losing more than 7.25 million in a month.",
+          "tr": "VaR(%95) = (1,65 × %5 − %1) × 100 = (%8,25 − %1) × 100 = 7,25 milyon. Bir ayda 7,25 milyondan fazla kaybetme olasılığı %5'tir.",
+          "formula_latex": "VaR=(1.65\\times5\\%-1\\%)\\times100=7.25"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common mistakes",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Risk management is not risk elimination. Risk tolerance is not a single number to be minimized: it is the amount the entity is willing and able to take. Risk budgeting allocates risk, it does not allocate capital in equal parts. VaR does not state the maximum possible loss; losses beyond VaR can be much larger. Transferring risk (insurance) differs from shifting it (changing the distribution with derivatives). Operational and model risks are non-financial but can cause financial loss. Do not forget that risks interact and rise together in stress.",
+        "tr": "Risk yönetimi risk ortadan kaldırma değildir. Risk toleransı en aza indirilecek tek bir sayı değildir: kuruluşun almak istediği ve alabildiği miktardır. Risk bütçeleme riski dağıtır; sermayeyi eşit parçalara bölmez. VaR mümkün olan azami zararı belirtmez; VaR'ı aşan zararlar çok daha büyük olabilir. Riski transfer etmek (sigorta), kaydırmaktan (türevlerle dağılımı değiştirmek) farklıdır. Operasyonel ve model riskleri finansal olmayan risklerdir ama finansal zarara yol açabilir. Stres anında risklerin etkileştiğini ve birlikte arttığını unutmayın.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Risk management aligns the risk an entity takes with the risk it is willing and able to bear. A framework covers governance, identification and measurement, limits, mitigation, monitoring and strategy. Risk tolerance and budgeting guide how risk is taken. Risks are financial and non-financial and interact; they can be prevented, accepted, transferred or shifted using measures such as VaR and stress tests.",
+    "summary_tr": "Risk yönetimi, kuruluşun aldığı riski taşımak istediği ve taşıyabildiği riskle uyumlu kılar. Çerçeve yönişimi, belirleme ve ölçmeyi, limitleri, azaltmayı, izlemeyi ve stratejiyi kapsar. Risk toleransı ve bütçeleme riskin nasıl alınacağını yönlendirir. Riskler finansal ve finansal olmayan türdedir ve etkileşir; VaR ve stres testleri gibi ölçülerle önlenebilir, kabul edilebilir, transfer edilebilir ya da kaydırılabilir.",
+    "common_traps_tr": [
+      "Risk yönetimi riski ortadan kaldırmak değildir.",
+      "VaR azami zararı göstermez.",
+      "Transfer (sigorta) ile kaydırma (türev) farklıdır.",
+      "Risk toleransı kapasite ve isteğe dayanır.",
+      "Risk bütçeleme riski birimler arasında dağıtır.",
+      "Riskler stres anında birlikte artar."
+    ],
+    "vocab_ids": [
+      "risk-management",
+      "risk-tolerance",
+      "risk-governance",
+      "risk-budgeting",
+      "value-at-risk",
+      "stress-test",
+      "scenario-analysis",
+      "operational-risk",
+      "liquidity-risk",
+      "credit-risk",
+      "market-risk",
+      "model-risk",
+      "hedge",
+      "self-insurance"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Risk yönetimi ve VaR Düzey 3'ten tanıdık; risk yönişimi, bütçeleme ve değiştirme yöntemleri kısmen yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "PM-06-a-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Risk management is best defined as the process of:",
+      "stem_tr": "Risk yönetimi en iyi şu sürecin adı olarak tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "identifying the risk level an entity wants, measuring the risk it has, and acting to bring the two into line",
+          "tr": "kuruluşun istediği risk düzeyini belirleme, sahip olduğu riski ölçme ve ikisini uyumlu kılacak biçimde harekete geçme"
+        },
+        {
+          "key": "B",
+          "en": "eliminating all risk from every activity",
+          "tr": "her faaliyetten tüm riski ortadan kaldırma"
+        },
+        {
+          "key": "C",
+          "en": "maximizing returns without considering risk",
+          "tr": "riski dikkate almadan getiriyi maksimize etme"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The aim is to align actual risk with the desired, acceptable level to support the objectives, not to eliminate risk.",
+      "explanation_tr": "Amaç, hedefleri desteklemek için fiili riski istenen, kabul edilebilir düzeyle uyumlu kılmaktır; riski ortadan kaldırmak değil.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Eliminating all risk would also eliminate return opportunities.",
+          "tr": "Tüm riski ortadan kaldırmak getiri fırsatlarını da ortadan kaldırırdı."
+        },
+        "C": {
+          "en": "Ignoring risk contradicts risk management.",
+          "tr": "Riski göz ardı etmek risk yönetimiyle çelişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-management",
+        "identify",
+        "measure",
+        "acceptable"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-a-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT an objective of risk management?",
+      "stem_tr": "Aşağıdakilerden hangisi risk yönetiminin amaçlarından BİRİ DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Ensuring risk taken is consistent with the entity's objectives and tolerance",
+          "tr": "Alınan riskin kuruluşun hedefleri ve toleransıyla tutarlı olmasını sağlamak"
+        },
+        {
+          "key": "B",
+          "en": "Guaranteeing that no loss will ever occur",
+          "tr": "Hiçbir zararın asla gerçekleşmeyeceğini garanti etmek"
+        },
+        {
+          "key": "C",
+          "en": "Making risk visible to decision-makers",
+          "tr": "Riski karar vericilere görünür kılmak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "No process can guarantee zero loss. Risk management aims at consistency between risk and objectives.",
+      "explanation_tr": "Hiçbir süreç sıfır zararı garanti edemez. Risk yönetimi, risk ile hedefler arasında tutarlılığı amaçlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Consistency with objectives and tolerance is a core aim.",
+          "tr": "Hedeflere ve toleransa uyum temel bir amaçtır."
+        },
+        "C": {
+          "en": "Making risk visible supports decision-making and is an objective.",
+          "tr": "Riski görünür kılmak karar vermeyi destekler ve bir amaçtır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-management",
+        "guarantee",
+        "loss"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-a-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish exporter earns euros but pays costs in lira. Its treasury measures the exposure and decides how much of it to hedge according to board-approved limits. This is best described as:",
+      "stem_tr": "Euro kazanan ama maliyetlerini lira ile ödeyen bir Türk ihracatçının hazine birimi maruziyeti ölçüyor ve ne kadarını yönetim kurulunun onayladığı limitlere göre riskten koruyacağına karar veriyor. Bu en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "speculation, since any hedging is gambling",
+          "tr": "spekülasyon; çünkü her türlü riskten korunma kumardır"
+        },
+        {
+          "key": "B",
+          "en": "risk elimination, since all currency risk disappears",
+          "tr": "risk ortadan kaldırma; çünkü tüm kur riski yok olur"
+        },
+        {
+          "key": "C",
+          "en": "risk management, since it measures the exposure and adjusts it to the acceptable level",
+          "tr": "risk yönetimi; çünkü maruziyeti ölçer ve kabul edilebilir düzeye ayarlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The firm identifies, measures and modifies risk within a policy. Hedging cuts risk to an agreed level, not necessarily to zero.",
+      "explanation_tr": "Firma riski bir politika çerçevesinde belirler, ölçer ve değiştirir. Riskten korunma riski kararlaştırılan düzeye indirir; zorunlu olarak sıfıra değil.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Hedging to reduce an existing risk is not speculation.",
+          "tr": "Mevcut riski azaltmak için riskten korunma spekülasyon değildir."
+        },
+        "B": {
+          "en": "Partial hedges leave some risk, so it is not elimination.",
+          "tr": "Kısmi riskten korunmalar bir miktar risk bırakır; bu ortadan kaldırma değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "exporter",
+        "currency-risk",
+        "hedge",
+        "exposure",
+        "treasury"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-a-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A manager argues that the safest portfolio is always the one with the least measured risk. The most appropriate response from a risk management view is that:",
+      "stem_tr": "Bir yönetici en güvenli portföyün her zaman ölçülen riski en düşük olan olduğunu savunuyor. Risk yönetimi açısından en uygun yanıt nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "risk should always be minimized",
+          "tr": "risk her zaman en aza indirilmelidir"
+        },
+        {
+          "key": "B",
+          "en": "the right level of risk depends on objectives and tolerance, and too little risk may fail to meet return goals",
+          "tr": "doğru risk düzeyi hedeflere ve toleransa bağlıdır; çok az risk getiri hedeflerini karşılamayabilir"
+        },
+        {
+          "key": "C",
+          "en": "risk should always be maximized",
+          "tr": "risk her zaman en üst düzeye çıkarılmalıdır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Risk is taken to earn return. The goal is the appropriate level, not the lowest.",
+      "explanation_tr": "Risk, getiri kazanmak için alınır. Amaç en düşük düzey değil, uygun düzeydir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Minimizing risk may make objectives unreachable.",
+          "tr": "Riski en aza indirmek hedefleri ulaşılmaz kılabilir."
+        },
+        "C": {
+          "en": "Maximizing risk ignores tolerance and limits.",
+          "tr": "Riski azami yapmak tolerans ve limitleri yok sayar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "minimize",
+        "appropriate",
+        "least"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-a-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following best shows that risk management should be enterprise-wide?",
+      "stem_tr": "Aşağıdakilerden hangisi risk yönetiminin kuruluş genelinde olması gerektiğini en iyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Each unit should manage its own risk without sharing information",
+          "tr": "Her birim bilgi paylaşmadan kendi riskini yönetmelidir"
+        },
+        {
+          "key": "B",
+          "en": "Risk exists only in trading units",
+          "tr": "Risk yalnızca işlem birimlerinde bulunur"
+        },
+        {
+          "key": "C",
+          "en": "Risks in different units can add up or offset each other, so they must be viewed together",
+          "tr": "Farklı birimlerdeki riskler birbirine eklenebilir ya da birbirini dengeleyebilir; bu yüzden birlikte görülmelidir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Aggregate risk differs from the sum of units' views because of correlations and concentrations.",
+      "explanation_tr": "Toplam risk, korelasyonlar ve yoğunlaşmalar nedeniyle birimlerin görüşlerinin toplamından farklıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Isolated risk management misses concentration and correlation.",
+          "tr": "Yalıtılmış risk yönetimi yoğunlaşmayı ve korelasyonu gözden kaçırır."
+        },
+        "B": {
+          "en": "Risk exists in all activities, not only in trading.",
+          "tr": "Risk yalnızca işlem birimlerinde değil, tüm faaliyetlerde vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "units",
+        "correlation",
+        "offset"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-b-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a component of a risk management framework?",
+      "stem_tr": "Aşağıdakilerden hangisi bir risk yönetimi çerçevesinin bileşenidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Risk governance, risk identification and measurement, and risk limits",
+          "tr": "Risk yönişimi, risk belirleme ve ölçme ve risk limitleri"
+        },
+        {
+          "key": "B",
+          "en": "Only a list of past losses",
+          "tr": "Yalnızca geçmiş zararların bir listesi"
+        },
+        {
+          "key": "C",
+          "en": "A guarantee of positive returns",
+          "tr": "Pozitif getiri garantisi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A framework includes governance, identification and measurement, limits, mitigation, monitoring and strategic analysis.",
+      "explanation_tr": "Çerçeve yönişimi, belirleme ve ölçmeyi, limitleri, azaltmayı, izlemeyi ve stratejik analizi içerir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A list of past losses alone is not a framework.",
+          "tr": "Geçmiş zararların listesi tek başına bir çerçeve değildir."
+        },
+        "C": {
+          "en": "No framework guarantees returns.",
+          "tr": "Hiçbir çerçeve getiriyi garanti etmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "framework",
+        "component",
+        "guarantee"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-b-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The component of the framework that checks, after the fact, whether the risk taken supports the strategy and whether the process needs improvement is:",
+      "stem_tr": "Çerçevenin, alınan riskin stratejiyi destekleyip desteklemediğini ve sürecin iyileştirilmesi gerekip gerekmediğini sonradan kontrol eden bileşeni hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "risk identification",
+          "tr": "risk belirleme"
+        },
+        {
+          "key": "B",
+          "en": "risk transfer",
+          "tr": "risk transferi"
+        },
+        {
+          "key": "C",
+          "en": "performance measurement, monitoring and strategic analysis",
+          "tr": "performans ölçümü, izleme ve stratejik analiz"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Monitoring and strategic analysis review outcomes and feed back into risk decisions.",
+      "explanation_tr": "İzleme ve stratejik analiz sonuçları gözden geçirir ve risk kararlarına geri besler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Identification finds the risks at the start.",
+          "tr": "Belirleme riskleri başlangıçta bulur."
+        },
+        "B": {
+          "en": "Transfer is a way of changing risk, not of reviewing the process.",
+          "tr": "Transfer riski değiştirmenin bir yoludur; süreci gözden geçirmek değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "monitoring",
+        "strategy",
+        "framework"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-b-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A risk team lists all risks of a bank, estimates their size and compares them to the board's limits. These tasks belong to which framework components?",
+      "stem_tr": "Bir risk ekibi bir bankanın tüm risklerini listeliyor, büyüklüklerini tahmin ediyor ve yönetim kurulunun limitleriyle karşılaştırıyor. Bu görevler hangi çerçeve bileşenlerine aittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Risk identification and measurement, and risk limits",
+          "tr": "Risk belirleme ve ölçme ve risk limitleri"
+        },
+        {
+          "key": "B",
+          "en": "Risk transfer only",
+          "tr": "Yalnızca risk transferi"
+        },
+        {
+          "key": "C",
+          "en": "Strategic analysis only",
+          "tr": "Yalnızca stratejik analiz"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Listing and estimating risks is identification and measurement; comparing them with limits connects to risk limits.",
+      "explanation_tr": "Riskleri listelemek ve tahmin etmek belirleme ve ölçmedir; limitlerle karşılaştırmak risk limitleriyle bağlantılıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Transfer is an action taken after measurement.",
+          "tr": "Transfer ölçümden sonra yapılan bir eylemdir."
+        },
+        "C": {
+          "en": "Strategic analysis is a later review of how risk-taking supports strategy.",
+          "tr": "Stratejik analiz, risk almanın stratejiyi nasıl desteklediğinin sonraki bir gözden geçirmesidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "board",
+        "framework",
+        "transfer"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-b-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm's risk reports are produced only by the traders whose positions they describe. Which framework weakness does this most clearly show?",
+      "stem_tr": "Bir firmanın risk raporlarını yalnızca pozisyonları anlatılan işlemciler hazırlıyor. Bu hangi çerçeve zayıflığını en açık biçimde gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A measurement strength",
+          "tr": "Bir ölçüm gücü"
+        },
+        {
+          "key": "B",
+          "en": "A governance weakness, because risk reporting is not independent of risk-takers",
+          "tr": "Bir yönişim zayıflığı; çünkü risk raporlaması risk alanlardan bağımsız değil"
+        },
+        {
+          "key": "C",
+          "en": "An improvement in transparency",
+          "tr": "Şeffaflıkta bir iyileşme"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Independent risk reporting is a governance principle; self-reporting creates conflicts of interest.",
+      "explanation_tr": "Bağımsız risk raporlaması bir yönişim ilkesidir; kendi kendine raporlama çıkar çatışması yaratır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Self-reported measurement is less reliable, not a strength.",
+          "tr": "Kendi kendine raporlanan ölçüm daha az güvenilirdir; bir güç değildir."
+        },
+        "C": {
+          "en": "Self-reporting weakens, not improves, transparency.",
+          "tr": "Kendi kendine raporlama şeffaflığı iyileştirmez, zayıflatır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "independent",
+        "conflict-of-interest",
+        "describe"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-b-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Why should a risk management framework be reviewed and updated regularly?",
+      "stem_tr": "Bir risk yönetimi çerçevesi neden düzenli olarak gözden geçirilmeli ve güncellenmelidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Because risks, markets, strategies and regulations change over time",
+          "tr": "Çünkü riskler, piyasalar, stratejiler ve düzenlemeler zamanla değişir"
+        },
+        {
+          "key": "B",
+          "en": "Because a framework is never useful for long",
+          "tr": "Çünkü bir çerçeve hiçbir zaman uzun süre yararlı olmaz"
+        },
+        {
+          "key": "C",
+          "en": "Because updating removes the need for governance",
+          "tr": "Çünkü güncelleme yönişim ihtiyacını ortadan kaldırır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A framework must keep pace with the entity's changing exposures and the environment.",
+      "explanation_tr": "Bir çerçeve kuruluşun değişen maruziyetlerine ve çevreye ayak uydurmalıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Frameworks remain useful when maintained.",
+          "tr": "Çerçeveler bakımı yapıldığında yararlı kalır."
+        },
+        "C": {
+          "en": "Governance is always needed.",
+          "tr": "Yönişime her zaman ihtiyaç vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "update",
+        "framework",
+        "change"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-c-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a feature of effective risk governance?",
+      "stem_tr": "Aşağıdakilerden hangisi etkili risk yönişiminin bir özelliğidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Risk decisions made informally by individual traders",
+          "tr": "Risk kararlarının bireysel işlemciler tarafından gayriresmî alınması"
+        },
+        {
+          "key": "B",
+          "en": "Clear accountability, board-level oversight and an independent risk function",
+          "tr": "Net hesap verebilirlik, yönetim kurulu düzeyinde gözetim ve bağımsız bir risk fonksiyonu"
+        },
+        {
+          "key": "C",
+          "en": "Reporting risk only after losses occur",
+          "tr": "Riskin yalnızca zarar oluştuktan sonra raporlanması"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Governance sets roles, authority and oversight so that risk-taking is controlled and consistent with policy.",
+      "explanation_tr": "Yönişim rolleri, yetkiyi ve gözetimi belirler; böylece risk alma kontrollü olur ve politikayla tutarlı kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Informal individual decisions weaken control.",
+          "tr": "Gayriresmî bireysel kararlar kontrolü zayıflatır."
+        },
+        "C": {
+          "en": "Reporting only after losses is reactive and ineffective.",
+          "tr": "Yalnızca zarar sonrası raporlama tepkiseldir ve etkisizdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-governance",
+        "independent",
+        "chief-risk-officer",
+        "board"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-c-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Enterprise risk management (ERM) is best described as:",
+      "stem_tr": "Kurumsal risk yönetimi (ERM) en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "managing only credit risk",
+          "tr": "yalnızca kredi riskinin yönetilmesi"
+        },
+        {
+          "key": "B",
+          "en": "each business unit managing its own risk separately",
+          "tr": "her iş biriminin kendi riskini ayrı ayrı yönetmesi"
+        },
+        {
+          "key": "C",
+          "en": "an enterprise-wide, integrated approach that looks at all risks together",
+          "tr": "tüm riskleri birlikte ele alan, kuruluş geneline yayılmış bütünleşik bir yaklaşım"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "ERM integrates risk management across all units and risk types and links it to strategy.",
+      "explanation_tr": "ERM, risk yönetimini tüm birimler ve risk türleri arasında bütünleştirir ve stratejiyle ilişkilendirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "ERM covers all types of risk, not only credit.",
+          "tr": "ERM yalnızca kredi değil, tüm risk türlerini kapsar."
+        },
+        "B": {
+          "en": "ERM is integrated, not fragmented.",
+          "tr": "ERM bütünleşiktir; parçalı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "enterprise-risk-management",
+        "units",
+        "strategy",
+        "approach"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-c-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which arrangement most likely weakens risk governance?",
+      "stem_tr": "Hangi düzenleme risk yönişimini en olası biçimde zayıflatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The chief risk officer reports directly to the board",
+          "tr": "Risk yöneticisinin (CRO) doğrudan yönetim kuruluna rapor vermesi"
+        },
+        {
+          "key": "B",
+          "en": "The risk manager reports to the head of the trading desk whose risks are being measured",
+          "tr": "Risk yöneticisinin, riskleri ölçülen işlem masasının başına rapor vermesi"
+        },
+        {
+          "key": "C",
+          "en": "A risk committee regularly reviews exposures against limits",
+          "tr": "Bir risk komitesinin maruziyetleri düzenli olarak limitlerle karşılaştırarak gözden geçirmesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Independence is a core governance principle. A risk manager who reports to the risk-taker may be pressured.",
+      "explanation_tr": "Bağımsızlık temel bir yönişim ilkesidir. Risk alana rapor veren bir risk yöneticisi baskı altında kalabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Direct board reporting supports independence.",
+          "tr": "Doğrudan yönetim kuruluna raporlama bağımsızlığı destekler."
+        },
+        "C": {
+          "en": "Regular committee review supports control.",
+          "tr": "Düzenli komite gözden geçirmesi kontrolü destekler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "independence",
+        "board",
+        "pressure"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-c-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm's board approves a clear risk policy, but employees are paid only for short-term profits with no regard to risk. Which statement is most accurate?",
+      "stem_tr": "Bir firmanın yönetim kurulu net bir risk politikasını onaylıyor; ancak çalışanlara riske bakılmaksızın yalnızca kısa vadeli kâr için ödeme yapılıyor. Hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Governance is strong because a policy exists",
+          "tr": "Bir politika olduğu için yönişim güçlüdür"
+        },
+        {
+          "key": "B",
+          "en": "Incentives are irrelevant to risk-taking",
+          "tr": "Teşvikler risk almayla ilgisizdir"
+        },
+        {
+          "key": "C",
+          "en": "Incentives conflict with the risk policy, so risk governance, including risk culture, is weak",
+          "tr": "Teşvikler risk politikasıyla çelişir; bu yüzden risk kültürü dahil risk yönişimi zayıftır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Compensation drives behavior. Incentives that ignore risk undermine policy and culture.",
+      "explanation_tr": "Ücret davranışı yönlendirir. Riski göz ardı eden teşvikler politikayı ve kültürü zayıflatır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A policy alone does not ensure good governance if incentives push the other way.",
+          "tr": "Teşvikler ters yönde itiyorsa tek başına bir politika iyi yönişimi sağlamaz."
+        },
+        "B": {
+          "en": "Incentives strongly influence risk-taking.",
+          "tr": "Teşvikler risk almayı güçlü biçimde etkiler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "compensation",
+        "short-term",
+        "policy"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-c-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Risk governance primarily differs from risk management day-to-day activities because governance:",
+      "stem_tr": "Risk yönişimi, günlük risk yönetimi faaliyetlerinden esas olarak şu yönüyle ayrılır; yönişim:",
+      "options": [
+        {
+          "key": "A",
+          "en": "sets the structure, authority and oversight within which risk decisions are made",
+          "tr": "risk kararlarının alındığı yapıyı, yetkiyi ve gözetimi belirler"
+        },
+        {
+          "key": "B",
+          "en": "executes each trade",
+          "tr": "her işlemi gerçekleştirir"
+        },
+        {
+          "key": "C",
+          "en": "calculates daily prices",
+          "tr": "günlük fiyatları hesaplar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Governance is the top-level system of oversight and accountability for risk.",
+      "explanation_tr": "Yönişim, riske ilişkin üst düzey gözetim ve hesap verebilirlik sistemidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Executing trades is an operational activity.",
+          "tr": "İşlemleri gerçekleştirmek operasyonel bir faaliyettir."
+        },
+        "C": {
+          "en": "Daily price calculation is an operational task.",
+          "tr": "Günlük fiyat hesaplama operasyonel bir görevdir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "authority",
+        "daily",
+        "management"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-d-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Risk tolerance of an organization is best described as:",
+      "stem_tr": "Bir kuruluşun risk toleransı en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the lowest risk that can be achieved",
+          "tr": "ulaşılabilecek en düşük risk"
+        },
+        {
+          "key": "B",
+          "en": "the average risk of all competitors",
+          "tr": "tüm rakiplerin ortalama riski"
+        },
+        {
+          "key": "C",
+          "en": "the amount of risk the organization is willing and able to take to pursue its objectives",
+          "tr": "kuruluşun hedeflerine ulaşmak için almak istediği ve alabildiği risk miktarı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Tolerance combines willingness and ability, and guides limits and strategy choices.",
+      "explanation_tr": "Tolerans isteği ve kapasiteyi birleştirir ve limitleri ile strateji seçimlerini yönlendirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Risk tolerance is not minimizing risk.",
+          "tr": "Risk toleransı riski en aza indirmek değildir."
+        },
+        "B": {
+          "en": "Tolerance depends on the organization's own situation, not competitors' average.",
+          "tr": "Tolerans, rakiplerin ortalamasına değil kuruluşun kendi durumuna bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-tolerance",
+        "willing",
+        "strategy"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-d-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A bank's board lowers its risk tolerance after a period of capital stress. The most likely effect on risk management is that:",
+      "stem_tr": "Bir bankanın yönetim kurulu sermaye stresi döneminden sonra risk toleransını düşürüyor. Risk yönetimi üzerindeki en olası etki nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "limits become tighter and more exposures are reduced or hedged",
+          "tr": "limitler sıkılaşır ve daha fazla maruziyet azaltılır ya da riskten korunur"
+        },
+        {
+          "key": "B",
+          "en": "limits are loosened to take more risk",
+          "tr": "limitler daha fazla risk almak üzere gevşetilir"
+        },
+        {
+          "key": "C",
+          "en": "risk measurement is no longer needed",
+          "tr": "risk ölçümüne artık ihtiyaç kalmaz"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Lower tolerance translates into tighter limits and more mitigation.",
+      "explanation_tr": "Daha düşük tolerans daha sıkı limitlere ve daha fazla azaltmaya dönüşür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Lower tolerance means tighter, not looser, limits.",
+          "tr": "Daha düşük tolerans limitlerin gevşemesi değil sıkılaşması demektir."
+        },
+        "C": {
+          "en": "Measurement is still needed to check compliance with the lower limits.",
+          "tr": "Daha düşük limitlere uyumu kontrol etmek için ölçüm yine gereklidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-tolerance",
+        "capital",
+        "hedge"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-d-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which factor most directly determines a firm's ability (not willingness) to take risk?",
+      "stem_tr": "Bir firmanın risk alma isteğini değil kapasitesini en doğrudan hangi etken belirler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The risk preferences of its chief executive",
+          "tr": "Genel müdürünün risk tercihleri"
+        },
+        {
+          "key": "B",
+          "en": "Its capital and liquidity buffers relative to potential losses",
+          "tr": "Olası zararlara göre sermaye ve likidite tamponları"
+        },
+        {
+          "key": "C",
+          "en": "The mood of the market",
+          "tr": "Piyasanın havası"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Ability is about financial capacity to absorb losses. Preferences and mood relate to willingness.",
+      "explanation_tr": "Kapasite, zararları karşılayacak mali güçle ilgilidir. Tercihler ve hava istekle ilgilidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Executive preferences affect willingness.",
+          "tr": "Yöneticinin tercihleri isteği etkiler."
+        },
+        "C": {
+          "en": "Market mood does not determine capacity.",
+          "tr": "Piyasanın havası kapasiteyi belirlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "ability",
+        "capital",
+        "liquidity",
+        "capacity"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-d-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm has high willingness to take risk but its capital is thin. The risk limits should most appropriately reflect:",
+      "stem_tr": "Bir firmanın risk alma isteği yüksek ama sermayesi zayıf. Risk limitleri en uygun biçimde neyi yansıtmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the lower capacity, so limits should be conservative",
+          "tr": "daha düşük kapasiteyi; bu yüzden limitler muhafazakâr olmalıdır"
+        },
+        {
+          "key": "B",
+          "en": "the higher willingness only",
+          "tr": "yalnızca yüksek isteği"
+        },
+        {
+          "key": "C",
+          "en": "no limits",
+          "tr": "hiç limit yok"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Risk tolerance is constrained by the lower of willingness and ability.",
+      "explanation_tr": "Risk toleransı, istek ve kapasiteden düşük olanla sınırlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Limits based only on willingness could exceed what capital can absorb.",
+          "tr": "Yalnızca isteğe dayalı limitler sermayenin karşılayabileceğini aşabilir."
+        },
+        "C": {
+          "en": "Limits are essential to keep risk within tolerance.",
+          "tr": "Limitler riski tolerans içinde tutmak için gereklidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "willingness",
+        "capacity",
+        "conservative",
+        "capital"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-d-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Who typically sets the organization's risk tolerance?",
+      "stem_tr": "Kuruluşun risk toleransını genellikle kim belirler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Individual traders on their own",
+          "tr": "Bireysel işlemciler kendi başlarına"
+        },
+        {
+          "key": "B",
+          "en": "The board of directors or senior management",
+          "tr": "Yönetim kurulu ya da üst yönetim"
+        },
+        {
+          "key": "C",
+          "en": "External customers",
+          "tr": "Dış müşteriler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Risk tolerance is a top-level decision that is then translated into limits and budgets.",
+      "explanation_tr": "Risk toleransı üst düzey bir karardır ve sonra limitlere ve bütçelere dönüştürülür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Traders operate within the tolerance, they do not set it.",
+          "tr": "İşlemciler toleransın içinde çalışır; belirlemezler."
+        },
+        "C": {
+          "en": "Customers are affected by it but do not set it.",
+          "tr": "Müşteriler bundan etkilenir ama belirlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-tolerance",
+        "board",
+        "management"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-e-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Risk budgeting is best described as:",
+      "stem_tr": "Risk bütçeleme en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "setting aside cash to pay for losses",
+          "tr": "zararları ödemek için nakit ayırmak"
+        },
+        {
+          "key": "B",
+          "en": "eliminating all risk from a portfolio",
+          "tr": "bir portföyden tüm riski ortadan kaldırmak"
+        },
+        {
+          "key": "C",
+          "en": "allocating the total acceptable risk among units, strategies or portfolios",
+          "tr": "kabul edilebilir toplam riski birimler, stratejiler ya da portföyler arasında dağıtmak"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A risk budget divides the acceptable risk, for example by VaR or tracking error, across risk-takers.",
+      "explanation_tr": "Risk bütçesi, kabul edilebilir riski, örneğin VaR ya da izleme hatasıyla, risk alanlar arasında böler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Setting aside cash is a reserve, not a risk budget.",
+          "tr": "Nakit ayırmak bir rezerv oluşturmaktır; risk bütçesi değildir."
+        },
+        "B": {
+          "en": "Budgeting allocates risk; it does not eliminate it.",
+          "tr": "Bütçeleme riski dağıtır; ortadan kaldırmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-budgeting",
+        "allocate",
+        "units"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-e-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "analyze",
+      "stem_en": "A fund has a total tracking error budget of 4% and splits it equally among three managers even though one manager consistently adds much more return per unit of risk. Which statement is most appropriate?",
+      "stem_tr": "Bir fonun toplam izleme hatası bütçesi %4'tür ve bunu, birinin birim risk başına çok daha fazla getiri sağlamasına rağmen üç yönetici arasında eşit böler. Hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Equal splitting is always optimal",
+          "tr": "Eşit bölme her zaman optimaldir"
+        },
+        {
+          "key": "B",
+          "en": "A budget that gives more risk to the better manager may use risk more efficiently",
+          "tr": "Daha iyi yöneticiye daha fazla risk veren bir bütçe riski daha verimli kullanabilir"
+        },
+        {
+          "key": "C",
+          "en": "Budgets should never be changed",
+          "tr": "Bütçeler asla değiştirilmemelidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The purpose of risk budgeting is to spend risk where it is best rewarded, within total tolerance.",
+      "explanation_tr": "Risk bütçelemenin amacı, riski toplam tolerans içinde en iyi ödüllendirildiği yerde harcamaktır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equal splitting ignores differences in reward per unit of risk.",
+          "tr": "Eşit bölme, birim risk başına ödüldeki farkları yok sayar."
+        },
+        "C": {
+          "en": "Budgets should be reviewed as conditions change.",
+          "tr": "Bütçeler koşullar değiştikçe gözden geçirilmelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-budgeting",
+        "tracking-error",
+        "manager"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-e-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm has three units with stand-alone VaRs of 4, 5 and 6 million. Because the units' losses are not perfectly correlated, the firm's total VaR is most likely:",
+      "stem_tr": "Bir firmanın üç biriminin tek başına VaR değerleri 4, 5 ve 6 milyondur. Birimlerin zararları mükemmel korelasyonlu olmadığı için firmanın toplam VaR değeri en olası biçimde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "exactly 15 million",
+          "tr": "tam olarak 15 milyondur"
+        },
+        {
+          "key": "B",
+          "en": "more than 15 million",
+          "tr": "15 milyondan fazladır"
+        },
+        {
+          "key": "C",
+          "en": "less than 15 million, because of diversification",
+          "tr": "çeşitlendirme nedeniyle 15 milyondan azdır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "VaR is not additive. Diversification across imperfectly correlated units lowers the total.",
+      "explanation_tr": "VaR toplanabilir değildir. Kusurlu korelasyonlu birimler arasındaki çeşitlendirme toplamı düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adding to exactly 15 would need perfect correlation.",
+          "tr": "Tam 15 olması mükemmel korelasyon gerektirirdi."
+        },
+        "B": {
+          "en": "Total VaR exceeding the sum would be unusual under diversification.",
+          "tr": "Çeşitlendirme altında toplam VaR'ın toplamı aşması olağandışı olurdu."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "value-at-risk",
+        "diversification",
+        "correlation",
+        "units"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-e-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a benefit of risk budgeting?",
+      "stem_tr": "Aşağıdakilerden hangisi risk bütçelemenin en olası yararıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It links total risk tolerance to the risk taken by each unit and shows where risk is used",
+          "tr": "Toplam risk toleransını her birimin aldığı riske bağlar ve riskin nerede kullanıldığını gösterir"
+        },
+        {
+          "key": "B",
+          "en": "It guarantees that every unit makes a profit",
+          "tr": "Her birimin kâr etmesini garanti eder"
+        },
+        {
+          "key": "C",
+          "en": "It removes the need for limits",
+          "tr": "Limit ihtiyacını ortadan kaldırır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Budgets make risk allocation explicit and compare risk used with returns.",
+      "explanation_tr": "Bütçeler risk dağılımını açık kılar ve kullanılan riski getirilerle karşılaştırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "No process guarantees profit.",
+          "tr": "Hiçbir süreç kâr garanti etmez."
+        },
+        "C": {
+          "en": "Budgets work together with limits.",
+          "tr": "Bütçeler limitlerle birlikte çalışır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-budgeting",
+        "benefit",
+        "allocation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-e-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Where does risk budgeting most clearly belong in the risk governance structure?",
+      "stem_tr": "Risk bütçeleme risk yönişimi yapısında en açık biçimde nereye aittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "As a replacement for risk tolerance",
+          "tr": "Risk toleransının yerine geçen bir şey olarak"
+        },
+        {
+          "key": "B",
+          "en": "As an accounting entry for past losses",
+          "tr": "Geçmiş zararlar için bir muhasebe kaydı olarak"
+        },
+        {
+          "key": "C",
+          "en": "As a tool that translates the board's risk tolerance into limits for each unit",
+          "tr": "Yönetim kurulunun risk toleransını her birim için limitlere çeviren bir araç olarak"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Tolerance is set at the top; budgeting distributes it to units and strategies.",
+      "explanation_tr": "Tolerans en üstte belirlenir; bütçeleme bunu birimlere ve stratejilere dağıtır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Budgeting implements tolerance; it does not replace it.",
+          "tr": "Bütçeleme toleransı uygular; yerine geçmez."
+        },
+        "B": {
+          "en": "It is forward-looking, not an entry for past losses.",
+          "tr": "İleriye dönüktür; geçmiş zararların kaydı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-budgeting",
+        "risk-governance",
+        "risk-tolerance"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-f-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is classified as a financial risk?",
+      "stem_tr": "Aşağıdakilerden hangisi finansal risk olarak sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Credit risk",
+          "tr": "Kredi riski"
+        },
+        {
+          "key": "B",
+          "en": "Operational risk",
+          "tr": "Operasyonel risk"
+        },
+        {
+          "key": "C",
+          "en": "Legal risk",
+          "tr": "Hukuki risk"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Market, credit and liquidity risks are financial risks. Operational and legal risks are non-financial.",
+      "explanation_tr": "Piyasa, kredi ve likidite riskleri finansal risklerdir. Operasyonel ve hukuki riskler finansal olmayan risklerdir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Operational risk is non-financial.",
+          "tr": "Operasyonel risk finansal değildir."
+        },
+        "C": {
+          "en": "Legal risk is non-financial.",
+          "tr": "Hukuki risk finansal değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-risk",
+        "operational-risk",
+        "market-risk"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-f-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A fund manager enters trades with the wrong sign because of a data entry error and loses money. This is most consistent with:",
+      "stem_tr": "Bir fon yöneticisi veri girişi hatası nedeniyle işlemleri ters işaretle giriyor ve para kaybediyor. Bu en çok hangisiyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "credit risk",
+          "tr": "kredi riski"
+        },
+        {
+          "key": "B",
+          "en": "operational risk",
+          "tr": "operasyonel risk"
+        },
+        {
+          "key": "C",
+          "en": "sovereign risk",
+          "tr": "ülke riski"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Operational risk arises from failures of people, processes and systems.",
+      "explanation_tr": "Operasyonel risk insan, süreç ve sistem hatalarından kaynaklanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Credit risk concerns counterparties failing to pay.",
+          "tr": "Kredi riski karşı tarafların ödememesiyle ilgilidir."
+        },
+        "C": {
+          "en": "Sovereign risk concerns governments' ability or willingness to pay.",
+          "tr": "Ülke riski hükümetlerin ödeme gücü ya da isteğiyle ilgilidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "operational-risk",
+        "consistent",
+        "credit"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-f-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A pricing model used to value complex derivatives has a coding error that understates risk. This is most consistent with:",
+      "stem_tr": "Karmaşık türevleri değerlemek için kullanılan bir fiyatlama modelinde riski olduğundan düşük gösteren bir kodlama hatası var. Bu en çok hangisiyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "model risk",
+          "tr": "model riski"
+        },
+        {
+          "key": "B",
+          "en": "liquidity risk",
+          "tr": "likidite riski"
+        },
+        {
+          "key": "C",
+          "en": "market risk only",
+          "tr": "yalnızca piyasa riski"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Model risk arises from incorrect models, assumptions or inputs.",
+      "explanation_tr": "Model riski hatalı modellerden, varsayımlardan ya da girdilerden kaynaklanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Liquidity risk concerns the ability to trade or fund.",
+          "tr": "Likidite riski işlem yapabilme ya da fonlama bulabilmeyle ilgilidir."
+        },
+        "C": {
+          "en": "The cause here is the model, so it is model risk, not just market risk.",
+          "tr": "Buradaki neden modeldir; bu yüzden yalnızca piyasa riski değil, model riskidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "model-risk",
+        "understate",
+        "risk"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-f-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A sharp market fall reduces the value of collateral, triggers margin calls and forces a fund to sell illiquid assets at low prices. This best illustrates:",
+      "stem_tr": "Sert bir piyasa düşüşü teminat değerini azaltıyor, teminat tamamlama çağrılarını tetikliyor ve bir fonu likit olmayan varlıkları düşük fiyatlardan satmaya zorluyor. Bu en iyi neyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "that risks are always independent",
+          "tr": "risklerin her zaman bağımsız olduğunu"
+        },
+        {
+          "key": "B",
+          "en": "the interaction of market, credit and liquidity risks",
+          "tr": "piyasa, kredi ve likidite risklerinin etkileşimi"
+        },
+        {
+          "key": "C",
+          "en": "that only operational risk matters",
+          "tr": "yalnızca operasyonel riskin önemli olduğunu"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A single shock turns into several linked problems, which is why risks must be viewed together.",
+      "explanation_tr": "Tek bir şok birbirine bağlı birkaç soruna dönüşür; bu yüzden riskler birlikte görülmelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The example shows risks are linked, not independent.",
+          "tr": "Örnek risklerin bağımsız değil, birbirine bağlı olduğunu gösterir."
+        },
+        "C": {
+          "en": "Market, credit and liquidity risks are all involved here.",
+          "tr": "Burada piyasa, kredi ve likidite riskleri birlikte rol oynar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "margin-call",
+        "collateral",
+        "liquidity-risk",
+        "market-risk",
+        "credit-risk"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-f-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a non-financial risk?",
+      "stem_tr": "Aşağıdakilerden hangisi finansal olmayan bir risktir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Interest rate risk",
+          "tr": "Faiz oranı riski"
+        },
+        {
+          "key": "B",
+          "en": "Credit spread risk",
+          "tr": "Kredi marjı riski"
+        },
+        {
+          "key": "C",
+          "en": "Regulatory risk",
+          "tr": "Düzenleyici risk"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Regulatory risk arises from changes in rules or from non-compliance. Interest rate and credit spread risks are financial.",
+      "explanation_tr": "Düzenleyici risk kuralların değişmesinden ya da uyumsuzluktan doğar. Faiz oranı ve kredi marjı riskleri finansaldır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Interest rate risk is a financial market risk.",
+          "tr": "Faiz oranı riski finansal bir piyasa riskidir."
+        },
+        "B": {
+          "en": "Credit spread risk is a financial risk.",
+          "tr": "Kredi marjı riski finansal bir risktir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-spread",
+        "credit",
+        "interest"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q01",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio of 100 million has a monthly expected return of 1% and a monthly standard deviation of 5%. Using the parametric method with z = 1.65, the one-month 95% VaR is closest to:",
+      "stem_tr": "100 milyonluk bir portföyün aylık beklenen getirisi %1 ve aylık standart sapması %5'tir. z = 1,65 ile parametrik yöntemde bir aylık %95 VaR aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.25 million",
+          "tr": "8,25 milyon",
+          "value": 8.25
+        },
+        {
+          "key": "B",
+          "en": "7.25 million",
+          "tr": "7,25 milyon",
+          "value": 7.25
+        },
+        {
+          "key": "C",
+          "en": "9.25 million",
+          "tr": "9,25 milyon",
+          "value": 9.25
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "VaR = (1.65 × 5% − 1%) × 100 = (8.25% − 1%) × 100 = 7.25 million.",
+      "explanation_tr": "VaR = (1,65 × %5 − %1) × 100 = (%8,25 − %1) × 100 = 7,25 milyon.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "8.25 million ignores the expected return (1.65 × 5% × 100).",
+          "tr": "8,25 milyon beklenen getiriyi yok sayar (1,65 × %5 × 100)."
+        },
+        "C": {
+          "en": "9.25 million adds the expected return instead of subtracting it.",
+          "tr": "9,25 milyon beklenen getiriyi çıkarmak yerine ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the one-month 95% VaR.",
+          "tr": "Bir aylık %95 VaR isteniyor."
+        },
+        {
+          "en": "Use parametric VaR with z for 95% one-tailed.",
+          "tr": "%95 tek kuyruklu z ile parametrik VaR kullanılır.",
+          "formula_latex": "VaR=(z\\sigma-\\mu)V"
+        },
+        {
+          "en": "z = 1.65; σ = 5%; μ = 1%; V = 100.",
+          "tr": "z = 1,65; σ = %5; μ = %1; V = 100.",
+          "values": {
+            "z": 1.65,
+            "sigma": 0.05,
+            "mu": 0.01,
+            "V": 100
+          }
+        },
+        {
+          "en": "(0.0825 − 0.01) × 100 = 7.25 million.",
+          "tr": "(0,0825 − 0,01) × 100 = 7,25 milyon."
+        }
+      ],
+      "vocab_ids": [
+        "value-at-risk",
+        "standard-deviation",
+        "expected-return",
+        "confidence-level",
+        "closest"
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.65 [×] 0.05 [-] 0.01 [=] → 0.0725",
+          "[×] 100 [=] → 7.25"
+        ],
+        "note_tr": "Basit aritmetik."
+      },
+      "numeric": {
+        "expr": "(1.65*0.05-0.01)*100",
+        "unit": "million"
+      },
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q02",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement about value at risk (VaR) is most accurate?",
+      "stem_tr": "Riske maruz değer (VaR) hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It is the maximum possible loss",
+          "tr": "Mümkün olan azami zarardır"
+        },
+        {
+          "key": "B",
+          "en": "It guarantees that losses will never exceed the stated amount",
+          "tr": "Zararların belirtilen tutarı asla aşmayacağını garanti eder"
+        },
+        {
+          "key": "C",
+          "en": "It gives a loss level that is expected to be exceeded only with a small probability over a period, but it does not show how large losses beyond it can be",
+          "tr": "Bir dönemde yalnızca küçük bir olasılıkla aşılması beklenen zarar düzeyini verir; ancak bunun ötesindeki zararların ne kadar büyük olabileceğini göstermez"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A 95% VaR is exceeded 5% of the time. The tail beyond VaR can be much larger, so stress tests are also used.",
+      "explanation_tr": "%95 VaR zamanın %5'inde aşılır. VaR'ın ötesindeki kuyruk çok daha büyük olabilir; bu yüzden stres testleri de kullanılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "VaR is not the maximum possible loss.",
+          "tr": "VaR mümkün olan azami zarar değildir."
+        },
+        "B": {
+          "en": "VaR offers no guarantee against larger losses.",
+          "tr": "VaR daha büyük zararlara karşı garanti vermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "value-at-risk",
+        "probability",
+        "tail",
+        "stress-test",
+        "exceed"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q03",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A firm buys insurance against fire damage to its warehouse. In terms of how risk is modified, this is best described as:",
+      "stem_tr": "Bir firma deposunun yangın hasarına karşı sigorta yaptırıyor. Riskin nasıl değiştirildiği açısından bu en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "risk transfer",
+          "tr": "risk transferi"
+        },
+        {
+          "key": "B",
+          "en": "risk avoidance",
+          "tr": "risk önleme (kaçınma)"
+        },
+        {
+          "key": "C",
+          "en": "risk acceptance",
+          "tr": "risk kabul"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Insurance passes the financial consequence of the risk to the insurer in exchange for a premium.",
+      "explanation_tr": "Sigorta, riskin mali sonucunu prim karşılığında sigortacıya devreder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Avoidance would mean not holding a warehouse.",
+          "tr": "Kaçınma depo bulundurmamak anlamına gelirdi."
+        },
+        "C": {
+          "en": "Acceptance would mean bearing the loss itself.",
+          "tr": "Kabul zararı kendisi taşımak anlamına gelirdi."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "insurance",
+        "transfer",
+        "premium"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q04",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An importer uses currency forwards to fix the lira cost of a future dollar payment, changing the distribution of possible outcomes. This is best described as:",
+      "stem_tr": "Bir ithalatçı gelecekteki bir dolar ödemesinin lira maliyetini sabitlemek için vadeli döviz sözleşmeleri kullanıyor ve olası sonuçların dağılımını değiştiriyor. Bu en iyi şöyle tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "risk prevention",
+          "tr": "risk önleme"
+        },
+        {
+          "key": "B",
+          "en": "self-insurance",
+          "tr": "kendi kendini sigortalama"
+        },
+        {
+          "key": "C",
+          "en": "risk shifting using derivatives",
+          "tr": "türevlerle risk kaydırma"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Derivatives can change the outcome distribution without transferring ownership of the underlying risk to an insurer. This is shifting.",
+      "explanation_tr": "Türevler, riskin sahipliğini bir sigortacıya devretmeden sonuç dağılımını değiştirebilir. Buna kaydırma denir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Prevention would mean not undertaking the import at all.",
+          "tr": "Önleme ithalatı hiç yapmamak olurdu."
+        },
+        "B": {
+          "en": "Self-insurance means keeping reserves to absorb the loss.",
+          "tr": "Kendi kendini sigortalama zararı karşılamak için rezerv tutmaktır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward",
+        "hedge",
+        "distribution",
+        "currency-risk"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q05",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A bank decides not to enter a new market with severe regulatory and reputational uncertainty. Which risk modification method is this?",
+      "stem_tr": "Bir banka ciddi düzenleyici ve itibar belirsizliği olan yeni bir pazara girmemeye karar veriyor. Bu hangi risk değiştirme yöntemidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Prevention or avoidance",
+          "tr": "Önleme ya da kaçınma"
+        },
+        {
+          "key": "B",
+          "en": "Transfer",
+          "tr": "Transfer"
+        },
+        {
+          "key": "C",
+          "en": "Acceptance",
+          "tr": "Kabul"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Choosing not to undertake the activity avoids the risk altogether, together with its potential return.",
+      "explanation_tr": "Faaliyete girmemeyi seçmek riski, olası getirisiyle birlikte tümden önler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Transfer passes risk to another party.",
+          "tr": "Transfer riski başka bir tarafa devreder."
+        },
+        "C": {
+          "en": "Acceptance would mean entering and bearing the risk.",
+          "tr": "Kabul, girip riski taşımak anlamına gelirdi."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market",
+        "uncertainty",
+        "transfer"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "PM-06-g-q06",
+      "level": "L1",
+      "topic": "PM",
+      "module_id": "PM-06",
+      "los_id": "PM-06-g",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "analyze",
+      "stem_en": "When choosing among methods to modify a risk, the most appropriate approach is to compare:",
+      "stem_tr": "Bir riski değiştirme yöntemleri arasında seçim yaparken en uygun yaklaşım şunları karşılaştırmaktır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "only the cheapest method regardless of effect",
+          "tr": "etkisine bakmaksızın yalnızca en ucuz yöntemi"
+        },
+        {
+          "key": "B",
+          "en": "the cost of each method with its effectiveness and the entity's risk tolerance",
+          "tr": "her yöntemin maliyetini, etkinliğini ve kuruluşun risk toleransını"
+        },
+        {
+          "key": "C",
+          "en": "only the most complex method",
+          "tr": "yalnızca en karmaşık yöntemi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The right method balances cost against benefit and fit with tolerance.",
+      "explanation_tr": "Doğru yöntem maliyeti fayda ve toleransla uyum karşısında dengeler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The cheapest method may not reduce risk enough.",
+          "tr": "En ucuz yöntem riski yeterince azaltmayabilir."
+        },
+        "C": {
+          "en": "Complexity is not a criterion.",
+          "tr": "Karmaşıklık bir ölçüt değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-tolerance",
+        "compare",
+        "approach"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

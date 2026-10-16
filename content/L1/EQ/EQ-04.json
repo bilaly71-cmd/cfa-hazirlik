@@ -1,0 +1,1160 @@
+{
+  "module_id": "EQ-04",
+  "lesson": {
+    "id": "EQ-04-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-04",
+    "los_ids": [
+      "EQ-04-a",
+      "EQ-04-b",
+      "EQ-04-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Sources of Equity Returns",
+    "title_tr": "Pay Getirisinin Kaynakları",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Where does a shareholder's return come from?",
+        "heading_tr": "Pay sahibinin getirisi nereden gelir?",
+        "en": "A share gives you two kinds of return: the price can change, and the company can pay you cash. Suppose you buy a share of a fictional BIST company, Marmara Gıda, for 50 TL. A year later it trades at 56 TL and you have received 2 TL in dividends. Your gain comes from price change (6 TL) and from income (2 TL). Companies can also return cash by buying back shares, and they can change the share count with splits. These actions change how value is shared, but they do not create value by themselves.",
+        "tr": "Pay size iki tür getiri sağlar: fiyat değişebilir ve şirket size nakit ödeyebilir. Kurgusal bir BIST şirketi olan Marmara Gıda'nın payını 50 TL'den aldığınızı düşünün. Bir yıl sonra pay 56 TL'den işlem görüyor ve 2 TL temettü almışsınız. Kazancınız fiyat değişiminden (6 TL) ve gelirden (2 TL) oluşur. Şirketler ayrıca pay geri alımıyla nakit iade edebilir, bölünmelerle pay sayısını değiştirebilir. Bu işlemler değerin paylaşımını değiştirir, ancak tek başına değer yaratmaz.",
+        "key_terms": [
+          "price return",
+          "dividend",
+          "total return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Dividends, buybacks and splits",
+        "heading_tr": "Temettü, pay geri alımı ve bölünmeler",
+        "en": "A cash dividend is a payment per share out of earnings. A share buyback (repurchase) uses cash to buy the firm's own shares, so fewer shares remain outstanding; earnings per share rises, all else equal. A stock split (for example 2-for-1) increases the number of shares and lowers the price proportionally; market capitalization and each investor's ownership percentage do not change. A reverse split (for example 1-for-2) reduces the share count and raises the price, often to move the price into a normal trading range or to avoid delisting. Stock splits are not cash events. Firms use buybacks for flexibility, because a dividend cut is punished by the market while a buyback can simply be stopped, and sometimes to signal that management thinks the shares are undervalued.",
+        "tr": "Nakit temettü, kazançtan pay başına yapılan ödemedir. Pay geri alımında şirket kendi paylarını almak için nakit kullanır; dolaşımdaki pay sayısı azalır ve diğer her şey sabitken pay başına kazanç artar. Pay bölünmesinde (örneğin 2'ye 1) pay sayısı artar, fiyat orantılı olarak düşer; piyasa değeri ve yatırımcının sahiplik yüzdesi değişmez. Ters bölünmede (örneğin 1'e 2) pay sayısı azalır, fiyat yükselir; amaç çoğu zaman fiyatı normal işlem aralığına getirmek veya işlem görmeden çıkarılmayı önlemektir. Bölünmeler nakit hareketi değildir. Şirketler esnekliği nedeniyle geri alımı tercih eder: temettü kesintisini piyasa cezalandırır, geri alım ise durdurulabilir; bazen de yönetimin payı ucuz bulduğunu göstermek için kullanılır.",
+        "key_terms": [
+          "cash dividend",
+          "share repurchase",
+          "stock split",
+          "reverse split"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The dividend calendar",
+        "heading_tr": "Temettü takvimi",
+        "en": "Four dates matter. Declaration date: the board announces the dividend, and it becomes a liability of the firm. Ex-dividend date (ex-date): buyers on or after this date do not receive the dividend; the share price typically falls by about the dividend amount. Record date: the date on which the company checks its register to see who owns the shares. Payment date: the cash is paid. The usual order is declaration, ex-date, record, payment. With a short settlement cycle the ex-date falls on or just before the record date. In Turkey, shareholders at the end of the record day, as shown in the central depository (MKK) records, receive the dividend.",
+        "tr": "Dört tarih önemlidir. İlan tarihi: yönetim kurulu temettüyü duyurur ve temettü şirketin yükümlülüğü olur. Ex-dividend (hak kullanım/kupon kesim) tarihi: bu tarihte ve sonrasında pay alanlar temettüyü alamaz; pay fiyatı genellikle temettü tutarı kadar düşer. Hak sahipliği tespit (kayıt) tarihi: şirketin kayıtlarına bakarak payların kimde olduğunu belirlediği gündür. Ödeme tarihi: nakit ödenir. Olağan sıra ilan, ex-date, kayıt, ödemedir. Takas süresi kısa olduğunda ex-date kayıt tarihine denk gelir veya hemen öncesindedir. Türkiye'de kayıt günü sonunda MKK kayıtlarında pay sahibi görünenler temettüyü alır.",
+        "key_terms": [
+          "declaration date",
+          "ex-dividend date",
+          "record date",
+          "payment date"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Price return and total return",
+        "heading_tr": "Fiyat getirisi ve toplam getiri",
+        "en": "Price return measures only the change in price. Total return adds the dividends received. Dividend yield is the dividend divided by the starting price, so total return equals price return plus dividend yield. If a split happens, adjust the starting price (divide by the split factor) before computing returns. Variables: P0 = price at the start, P1 = price at the end, D = dividends per share received during the holding period.",
+        "tr": "Fiyat getirisi yalnızca fiyat değişimini ölçer. Toplam getiri, alınan temettüleri de ekler. Temettü verimi, temettünün başlangıç fiyatına bölünmesidir; dolayısıyla toplam getiri = fiyat getirisi + temettü verimidir. Bölünme olduysa getiriyi hesaplamadan önce başlangıç fiyatını bölünme oranına bölerek düzeltin. Değişkenler: P0 = başlangıç fiyatı, P1 = dönem sonu fiyatı, D = elde tutma süresince alınan pay başına temettü.",
+        "key_terms": [
+          "price return",
+          "total return",
+          "dividend yield"
+        ],
+        "formula_latex": "R_{price}=\\frac{P_1-P_0}{P_0},\\quad R_{total}=\\frac{P_1-P_0+D}{P_0}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Numeric illustration.",
+        "tr": "Sayısal gösterim.",
+        "key_terms": [],
+        "example": {
+          "en": "You buy Marmara Gıda at 50 TL. After a 2-for-1 split the price is 28 TL, and during the year you received 0.60 TL per post-split share. Adjusted P0 = 50 / 2 = 25 TL. Price return = (28 − 25) / 25 = 12.0%. Dividend yield = 0.60 / 25 = 2.4%. Total return = 14.4%. Without the split adjustment you would wrongly compute a price return of −44%.",
+          "tr": "Marmara Gıda'yı 50 TL'den alıyorsunuz. 2'ye 1 bölünmeden sonra fiyat 28 TL ve yıl içinde bölünme sonrası pay başına 0,60 TL temettü aldınız. Düzeltilmiş P0 = 50 / 2 = 25 TL. Fiyat getirisi = (28 − 25) / 25 = %12,0. Temettü verimi = 0,60 / 25 = %2,4. Toplam getiri = %14,4. Bölünme düzeltmesi yapmazsanız fiyat getirisini yanlışlıkla −%44 bulursunuz."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not treat a split as a loss: the price falls but the number of shares rises. Do not forget that the ex-date, not the record date, decides who is paid under a short settlement cycle. Remember that a buyback is not a dividend, but both return cash. Use the starting price, not the ending price, as the denominator. Dividends are part of total return even when the price falls.",
+        "tr": "Bölünmeyi zarar saymayın: fiyat düşer ama pay sayısı artar. Kısa takas döngüsünde temettüyü alıp almayacağınızı kayıt tarihi değil ex-date belirler. Geri alım temettü değildir, ama ikisi de nakit iade eder. Paydada dönem sonu değil başlangıç fiyatını kullanın. Fiyat düşse bile temettü toplam getirinin parçasıdır.",
+        "key_terms": [
+          "ex-date",
+          "split adjustment"
+        ]
+      }
+    ],
+    "summary_en": "Shareholders earn price return and dividend income. Dividends, buybacks and splits change how value is paid or divided but do not create value alone. Key dates run: declaration, ex-date, record, payment. Total return equals price return plus dividend yield, using split-adjusted prices.",
+    "summary_tr": "Pay sahipleri fiyat getirisi ve temettü geliri kazanır. Temettü, geri alım ve bölünme değerin nasıl ödendiğini veya bölündüğünü değiştirir, tek başına değer yaratmaz. Tarih sırası: ilan, ex-date, kayıt, ödeme. Toplam getiri, bölünmeye göre düzeltilmiş fiyatlarla fiyat getirisi artı temettü verimidir.",
+    "common_traps_tr": [
+      "Bölünmede başlangıç fiyatını düzeltmeyi unutmak.",
+      "Ex-date ile kayıt tarihini karıştırmak.",
+      "Paydada dönem sonu fiyatını kullanmak.",
+      "Geri alımı pay sahibine nakit ödemesi yapılmayan bir işlem sanmak.",
+      "Bölünmenin piyasa değerini değiştirdiğini düşünmek."
+    ],
+    "vocab_ids": [
+      "dividend",
+      "total-return",
+      "price-return",
+      "stock-split",
+      "share-repurchase",
+      "ex-dividend-date",
+      "record-date",
+      "declaration-date",
+      "payment-date",
+      "dividend-yield",
+      "reverse-split",
+      "outstanding-shares",
+      "earnings-per-share",
+      "signal",
+      "undervalued",
+      "holding-period"
+    ],
+    "spk_link": {
+      "status": "known",
+      "note_tr": "SPK Düzey 3'te temettü, bedelli/bedelsiz sermaye artırımı ve pay getirisi kavramları işlenir; toplam getiri hesabı ve pay geri alımının etkisi daha çok vurgulanır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-04-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A company announces a 2-for-1 stock split. Which of the following best describes the immediate effect, all else equal?",
+      "stem_tr": "Bir şirket 2'ye 1 pay bölünmesi duyuruyor. Diğer her şey sabitken, aşağıdakilerden hangisi doğrudan etkiyi en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The number of shares doubles and the price per share halves.",
+          "tr": "Pay sayısı iki katına çıkar, pay başına fiyat yarıya iner."
+        },
+        {
+          "key": "B",
+          "en": "The number of shares halves and the price per share doubles.",
+          "tr": "Pay sayısı yarıya iner, pay başına fiyat iki katına çıkar."
+        },
+        {
+          "key": "C",
+          "en": "The firm's market capitalization doubles.",
+          "tr": "Şirketin piyasa değeri iki katına çıkar."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In a 2-for-1 split each old share becomes two shares. Price halves, so market capitalization and each holder's ownership percentage are unchanged.",
+      "explanation_tr": "2'ye 1 bölünmede her eski pay iki pay olur. Fiyat yarıya iner; piyasa değeri ve sahiplik yüzdesi değişmez.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This describes a 1-for-2 reverse split, not a split.",
+          "tr": "Bu, bölünme değil 1'e 2 ters bölünmedir."
+        },
+        "C": {
+          "en": "A split changes the number of shares, not the value of the firm; no cash is paid.",
+          "tr": "Bölünme pay sayısını değiştirir, şirket değerini değil; nakit ödenmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "stock-split",
+        "outstanding-shares",
+        "immediate",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-04-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A fictional BIST company with a very low share price carries out a 1-for-10 reverse split. The most likely reason is to:",
+      "stem_tr": "Hisse fiyatı çok düşük olan kurgusal bir BIST şirketi 1'e 10 ters bölünme yapıyor. En olası neden aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "pay cash to shareholders.",
+          "tr": "pay sahiplerine nakit ödemek."
+        },
+        {
+          "key": "B",
+          "en": "increase the number of shares available to retail investors.",
+          "tr": "küçük yatırımcıların erişebileceği pay sayısını artırmak."
+        },
+        {
+          "key": "C",
+          "en": "raise the share price into a more normal trading range.",
+          "tr": "pay fiyatını daha normal bir işlem aralığına yükseltmek."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A reverse split cuts the share count and lifts the price. Firms use it for cosmetic reasons or to keep a listing.",
+      "explanation_tr": "Ters bölünme pay sayısını azaltır, fiyatı yükseltir. Şirketler bunu görünüm nedeniyle ya da kotasyonu korumak için kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A reverse split involves no cash payment.",
+          "tr": "Ters bölünmede nakit ödemesi yoktur."
+        },
+        "B": {
+          "en": "A reverse split decreases, not increases, the number of shares.",
+          "tr": "Ters bölünme pay sayısını artırmaz, azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reverse-split",
+        "range",
+        "delist",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-04-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company uses cash to repurchase 5% of its outstanding shares at the market price. All else equal, which statement is most likely correct?",
+      "stem_tr": "Bir şirket nakit kullanarak dolaşımdaki paylarının %5'ini piyasa fiyatından geri alıyor. Diğer her şey sabitken hangi ifade en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Earnings per share is unchanged because net income is unchanged.",
+          "tr": "Net kâr değişmediği için pay başına kazanç değişmez."
+        },
+        {
+          "key": "B",
+          "en": "Earnings per share rises because fewer shares remain outstanding.",
+          "tr": "Dolaşımdaki pay sayısı azaldığı için pay başına kazanç artar."
+        },
+        {
+          "key": "C",
+          "en": "Shareholders who keep their shares receive a cash payment.",
+          "tr": "Paylarını elinde tutan pay sahipleri nakit ödemesi alır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net income is spread over fewer shares, so EPS rises (although lost interest on the used cash can offset part of it).",
+      "explanation_tr": "Net kâr daha az pay arasında bölüşülür; pay başına kazanç artar (kullanılan nakdin faiz kaybı etkinin bir kısmını dengeleyebilir).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "EPS is net income divided by shares; fewer shares raise EPS.",
+          "tr": "HBK, net kârın pay sayısına bölünmesidir; pay sayısı azalınca HBK artar."
+        },
+        "C": {
+          "en": "Only shareholders who sell in the buyback receive cash.",
+          "tr": "Nakit yalnızca geri alımda satan pay sahiplerine gider."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "share-repurchase",
+        "outstanding-shares",
+        "earnings-per-share",
+        "retain"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "all-else-equal"
+      ]
+    },
+    {
+      "id": "EQ-04-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Management pays out a special cash dividend instead of raising the regular dividend. This choice is most consistent with:",
+      "stem_tr": "Yönetim, olağan temettüyü artırmak yerine özel nakit temettü dağıtıyor. Bu tercih en çok hangisiyle uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a plan to lower the number of shares outstanding.",
+          "tr": "dolaşımdaki pay sayısını azaltma planıyla."
+        },
+        {
+          "key": "B",
+          "en": "a wish to avoid committing to a higher payment in future years.",
+          "tr": "gelecek yıllarda daha yüksek bir ödemeyi taahhüt etmekten kaçınma isteğiyle."
+        },
+        {
+          "key": "C",
+          "en": "an attempt to raise the share price through a lower share count.",
+          "tr": "daha az pay sayısı yoluyla fiyatı artırma girişimiyle."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A special dividend is a one-off payment. It gives cash back without signalling a permanent higher payout, which the market would expect to continue.",
+      "explanation_tr": "Özel temettü tek seferliktir. Piyasanın süreklilik bekleyeceği kalıcı bir artış sinyali vermeden nakit iade eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reducing the share count is the purpose of a buyback, not a dividend.",
+          "tr": "Pay sayısını azaltmak geri alımın amacıdır, temettünün değil."
+        },
+        "C": {
+          "en": "A cash dividend does not change the number of shares.",
+          "tr": "Nakit temettü pay sayısını değiştirmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "special-dividend",
+        "commit",
+        "regular",
+        "signal"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "EQ-04-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A share trades at 90 TL. The company completes a 3-for-2 stock split. The new share price is closest to:",
+      "stem_tr": "Bir pay 90 TL'den işlem görüyor. Şirket 3'e 2 pay bölünmesi yapıyor. Yeni pay fiyatı en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "60.00 TL",
+          "tr": "60,00 TL",
+          "value": 60.0
+        },
+        {
+          "key": "B",
+          "en": "135.00 TL",
+          "tr": "135,00 TL",
+          "value": 135.0
+        },
+        {
+          "key": "C",
+          "en": "30.00 TL",
+          "tr": "30,00 TL",
+          "value": 30.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Each 2 old shares become 3 new shares, so price falls by the factor 2/3: 90 × 2/3 = 60 TL.",
+      "explanation_tr": "Her 2 eski pay 3 yeni pay olur; fiyat 2/3 katına düşer: 90 × 2/3 = 60 TL.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "135.00 TL multiplies the price by 3/2, which is the wrong direction.",
+          "tr": "135,00 TL fiyatı 3/2 ile çarpar; yön yanlıştır."
+        },
+        "C": {
+          "en": "30.00 TL assumes the price is divided by 3 (as in a 3-for-1 split).",
+          "tr": "30,00 TL fiyatın 3'e bölündüğünü varsayar (3'e 1 bölünme gibi)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the new price after a 3-for-2 split.",
+          "tr": "3'e 2 bölünme sonrası yeni fiyatı bulun."
+        },
+        {
+          "en": "Share count rises by 3/2, so price falls by 2/3.",
+          "tr": "Pay sayısı 3/2 katına çıkar, fiyat 2/3 katına düşer.",
+          "formula_latex": "P_{new}=P_{old}\\times\\frac{2}{3}"
+        },
+        {
+          "en": "90 × 2 / 3 = 60.",
+          "tr": "90 × 2 / 3 = 60."
+        }
+      ],
+      "vocab_ids": [
+        "stock-split",
+        "factor",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "90*2/3",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "90",
+          "[×]",
+          "2",
+          "[÷]",
+          "3",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-04-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following lists the dividend dates in their usual chronological order?",
+      "stem_tr": "Aşağıdakilerden hangisi temettü tarihlerini olağan kronolojik sırasıyla verir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Ex-dividend, declaration, payment, record",
+          "tr": "Ex-dividend, ilan, ödeme, kayıt"
+        },
+        {
+          "key": "B",
+          "en": "Declaration, record, payment, ex-dividend",
+          "tr": "İlan, kayıt, ödeme, ex-dividend"
+        },
+        {
+          "key": "C",
+          "en": "Declaration, ex-dividend, record, payment",
+          "tr": "İlan, ex-dividend, kayıt, ödeme"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The board declares, the ex-date follows, then the record date, then cash is paid.",
+      "explanation_tr": "Yönetim kurulu ilan eder, ardından ex-date gelir, sonra kayıt tarihi, en son nakit ödenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The ex-date cannot come before the declaration, and payment comes last.",
+          "tr": "Ex-date ilandan önce gelemez; ödeme en sondadır."
+        },
+        "B": {
+          "en": "The ex-date is on or just before the record date, never after payment.",
+          "tr": "Ex-date kayıt tarihinde veya hemen öncesindedir; ödemeden sonra olamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "chronological",
+        "declare",
+        "record-date",
+        "payment-date"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-04-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The ex-dividend date is best described as the first day on which:",
+      "stem_tr": "Ex-dividend tarihi en iyi hangi günü tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the board announces the dividend.",
+          "tr": "yönetim kurulunun temettüyü duyurduğu gün."
+        },
+        {
+          "key": "B",
+          "en": "the company sends the cash to shareholders.",
+          "tr": "şirketin nakdi pay sahiplerine gönderdiği gün."
+        },
+        {
+          "key": "C",
+          "en": "a buyer of the share is not entitled to the declared dividend.",
+          "tr": "pay alan kişinin ilan edilen temettüye hak kazanmadığı ilk gün."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "From the ex-date onward new buyers do not receive the dividend, so the price usually drops by about that amount.",
+      "explanation_tr": "Ex-date ve sonrasında yeni alıcılar temettü alamaz; fiyat genellikle bu tutar kadar düşer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the declaration date.",
+          "tr": "Bu ilan tarihidir."
+        },
+        "B": {
+          "en": "That is the payment date.",
+          "tr": "Bu ödeme tarihidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "entitled",
+        "declared",
+        "ex-dividend-date",
+        "announce"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-04-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST company, Ege Enerji, declares a dividend of 1.50 TL per share. The share closes at 30.00 TL the day before the ex-date. Ignoring other factors, the opening price on the ex-date is most likely:",
+      "stem_tr": "Kurgusal BIST şirketi Ege Enerji pay başına 1,50 TL temettü ilan ediyor. Pay, ex-date öncesi gün 30,00 TL'den kapanıyor. Diğer etkiler yok sayıldığında ex-date açılış fiyatı en olası olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "about 31.50 TL.",
+          "tr": "yaklaşık 31,50 TL."
+        },
+        {
+          "key": "B",
+          "en": "about 28.50 TL.",
+          "tr": "yaklaşık 28,50 TL."
+        },
+        {
+          "key": "C",
+          "en": "about 30.00 TL.",
+          "tr": "yaklaşık 30,00 TL."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The share no longer carries the right to the 1.50 TL, so the price falls by about that amount: 30.00 − 1.50 = 28.50 TL.",
+      "explanation_tr": "Pay artık 1,50 TL'lik hakkı taşımaz; fiyat yaklaşık bu kadar düşer: 30,00 − 1,50 = 28,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A price rise has no basis; the dividend leaves the firm.",
+          "tr": "Fiyat artışının dayanağı yok; temettü şirketten çıkar."
+        },
+        "C": {
+          "en": "An unchanged price ignores the cash leaving the firm.",
+          "tr": "Fiyatın değişmemesi şirketten çıkan nakdi yok sayar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "ex-dividend-date",
+        "ignore",
+        "opening-price",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-04-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Investor Ayşe buys shares on the ex-dividend date, and the record date is one day later. Investor Burak bought the same shares two days before the ex-date and still holds them. Who most likely receives the dividend?",
+      "stem_tr": "Yatırımcı Ayşe payları ex-dividend tarihinde alıyor ve kayıt tarihi bir gün sonra. Yatırımcı Burak aynı payları ex-date'ten iki gün önce almış ve hâlâ elinde tutuyor. Temettüyü büyük olasılıkla kim alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Burak only",
+          "tr": "Yalnızca Burak"
+        },
+        {
+          "key": "B",
+          "en": "Ayşe only",
+          "tr": "Yalnızca Ayşe"
+        },
+        {
+          "key": "C",
+          "en": "Both Ayşe and Burak",
+          "tr": "Hem Ayşe hem Burak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Buyers on or after the ex-date are not entitled. Burak owned the shares before the ex-date and therefore receives the dividend.",
+      "explanation_tr": "Ex-date ve sonrasında alanlar hak kazanmaz. Burak payları ex-date'ten önce aldığı için temettüyü alır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ayşe bought on the ex-date, so she is not entitled even though the record date is later.",
+          "tr": "Ayşe ex-date'te aldığı için kayıt tarihi sonra olsa bile hak kazanmaz."
+        },
+        "C": {
+          "en": "Only holders from before the ex-date are paid; Ayşe is not.",
+          "tr": "Yalnızca ex-date öncesi sahipler ödeme alır; Ayşe almaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "entitled",
+        "ex-dividend-date",
+        "record-date",
+        "investor"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-04-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about the dividend calendar is NOT correct?",
+      "stem_tr": "Temettü takvimiyle ilgili aşağıdaki ifadelerden hangisi doğru DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The dividend becomes a liability of the firm on the record date.",
+          "tr": "Temettü, kayıt tarihinde şirketin yükümlülüğü olur."
+        },
+        {
+          "key": "B",
+          "en": "The share price typically falls by about the dividend on the ex-date.",
+          "tr": "Pay fiyatı ex-date'te genellikle temettü kadar düşer."
+        },
+        {
+          "key": "C",
+          "en": "The record date is when the company identifies the holders of its shares.",
+          "tr": "Kayıt tarihi, şirketin paylarının sahiplerini belirlediği gündür."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The dividend becomes a liability when the board declares it, not on the record date.",
+      "explanation_tr": "Temettü, yönetim kurulu ilan ettiğinde yükümlülük olur; kayıt tarihinde değil.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is correct: the price drop reflects cash leaving the firm.",
+          "tr": "Bu doğrudur: fiyat düşüşü şirketten çıkan nakdi yansıtır."
+        },
+        "C": {
+          "en": "This is correct; it is the purpose of the record date.",
+          "tr": "Bu doğrudur; kayıt tarihinin amacı budur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "liability",
+        "declare",
+        "statement",
+        "correct"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "not-question"
+      ]
+    },
+    {
+      "id": "EQ-04-c-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a share at 50 TL. One year later the price is 56 TL and no dividend was paid. The price return is closest to:",
+      "stem_tr": "Bir yatırımcı payı 50 TL'den alıyor. Bir yıl sonra fiyat 56 TL ve temettü ödenmemiş. Fiyat getirisi en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.71%",
+          "tr": "%10,71",
+          "value": 10.71
+        },
+        {
+          "key": "B",
+          "en": "16.00%",
+          "tr": "%16,00",
+          "value": 16.0
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Price return = (56 − 50) / 50 = 12.0%.",
+      "explanation_tr": "Fiyat getirisi = (56 − 50) / 50 = %12,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "10.7% divides the gain by the ending price instead of the starting price.",
+          "tr": "%10,7 kazancı başlangıç yerine dönem sonu fiyatına böler."
+        },
+        "B": {
+          "en": "16.0% would add a dividend that was not paid.",
+          "tr": "%16,0 ödenmemiş bir temettüyü ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the price return.",
+          "tr": "Fiyat getirisini bulun."
+        },
+        {
+          "en": "Price return divides the price change by the starting price.",
+          "tr": "Fiyat getirisi, fiyat değişimini başlangıç fiyatına böler.",
+          "formula_latex": "R=\\frac{P_1-P_0}{P_0}"
+        },
+        {
+          "en": "(56 − 50) / 50 = 0.12 = 12.0%.",
+          "tr": "(56 − 50) / 50 = 0,12 = %12,0."
+        }
+      ],
+      "vocab_ids": [
+        "price-return",
+        "closest-to",
+        "starting-price"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(56-50)/50*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "56",
+          "[−]",
+          "50",
+          "[=]",
+          "[÷]",
+          "50",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-04-c-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share bought at 40 TL is worth 38 TL a year later and paid dividends of 3.20 TL during the year. The total return is closest to:",
+      "stem_tr": "40 TL'den alınan pay bir yıl sonra 38 TL ediyor ve yıl içinde 3,20 TL temettü ödemiş. Toplam getiri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-5.00%",
+          "tr": "%-5,00",
+          "value": -5.0
+        },
+        {
+          "key": "B",
+          "en": "3.00%",
+          "tr": "%3,00",
+          "value": 3.0
+        },
+        {
+          "key": "C",
+          "en": "8.00%",
+          "tr": "%8,00",
+          "value": 8.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Total return = (38 − 40 + 3.20) / 40 = 1.20 / 40 = 3.0%.",
+      "explanation_tr": "Toplam getiri = (38 − 40 + 3,20) / 40 = 1,20 / 40 = %3,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "−5.0% is only the price return and ignores the dividend.",
+          "tr": "−%5,0 yalnızca fiyat getirisidir, temettüyü yok sayar."
+        },
+        "C": {
+          "en": "8.0% is only the dividend yield and ignores the price loss.",
+          "tr": "%8,0 yalnızca temettü verimidir, fiyat kaybını yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the total return.",
+          "tr": "Toplam getiriyi bulun."
+        },
+        {
+          "en": "Total return = price change plus dividends, divided by the starting price.",
+          "tr": "Toplam getiri = fiyat değişimi artı temettü, başlangıç fiyatına bölünür.",
+          "formula_latex": "R=\\frac{P_1-P_0+D}{P_0}"
+        },
+        {
+          "en": "(38 − 40 + 3.20) / 40 = 0.03 = 3.0%.",
+          "tr": "(38 − 40 + 3,20) / 40 = 0,03 = %3,0."
+        }
+      ],
+      "vocab_ids": [
+        "total-return",
+        "dividend",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(38-40+3.2)/40*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "38",
+          "[−]",
+          "40",
+          "[+]",
+          "3.2",
+          "[=]",
+          "[÷]",
+          "40",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-04-c-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a share at 50 TL. The company then does a 2-for-1 split. At year-end the price is 28 TL, and the investor received dividends of 0.60 TL per post-split share. The total return is closest to:",
+      "stem_tr": "Bir yatırımcı payı 50 TL'den alıyor. Şirket ardından 2'ye 1 bölünme yapıyor. Yıl sonunda fiyat 28 TL ve yatırımcı bölünme sonrası pay başına 0,60 TL temettü almış. Toplam getiri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-42.80%",
+          "tr": "%-42,80",
+          "value": -42.8
+        },
+        {
+          "key": "B",
+          "en": "14.40%",
+          "tr": "%14,40",
+          "value": 14.4
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Adjusted P0 = 50 / 2 = 25. Total return = (28 − 25 + 0.60) / 25 = 14.4%.",
+      "explanation_tr": "Düzeltilmiş P0 = 50 / 2 = 25. Toplam getiri = (28 − 25 + 0,60) / 25 = %14,4.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "−42.8% compares the new price with the unadjusted 50 TL.",
+          "tr": "−%42,8 yeni fiyatı düzeltilmemiş 50 TL ile kıyaslar."
+        },
+        "C": {
+          "en": "12.0% leaves out the dividend.",
+          "tr": "%12,0 temettüyü dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the total return after the split.",
+          "tr": "Bölünme sonrası toplam getiriyi bulun."
+        },
+        {
+          "en": "Adjust the starting price for the split first.",
+          "tr": "Önce başlangıç fiyatını bölünmeye göre düzeltin.",
+          "formula_latex": "P_0^{adj}=50/2=25"
+        },
+        {
+          "en": "(28 − 25 + 0.60) / 25 = 0.144 = 14.4%.",
+          "tr": "(28 − 25 + 0,60) / 25 = 0,144 = %14,4."
+        }
+      ],
+      "vocab_ids": [
+        "stock-split",
+        "total-return",
+        "adjust",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(28-50/2+0.6)/(50/2)*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50",
+          "[÷]",
+          "2",
+          "[=]",
+          "[STO]",
+          "1",
+          "28",
+          "[−]",
+          "[RCL]",
+          "1",
+          "[+]",
+          "0.6",
+          "[=]",
+          "[÷]",
+          "[RCL]",
+          "1",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-04-c-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share bought at 25 TL pays quarterly dividends of 0.50 TL and 0.60 TL over the first two quarters only, and is worth 26.40 TL at the end of the period. The total return is closest to:",
+      "stem_tr": "25 TL'den alınan pay, yalnızca ilk iki çeyrekte 0,50 TL ve 0,60 TL çeyreklik temettü ödüyor ve dönem sonunda 26,40 TL ediyor. Toplam getiri en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "5.60%",
+          "tr": "%5,60",
+          "value": 5.6
+        },
+        {
+          "key": "C",
+          "en": "4.40%",
+          "tr": "%4,40",
+          "value": 4.4
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Dividends = 1.10. Total return = (26.40 − 25 + 1.10) / 25 = 2.50 / 25 = 10.0%.",
+      "explanation_tr": "Temettüler = 1,10. Toplam getiri = (26,40 − 25 + 1,10) / 25 = 2,50 / 25 = %10,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "5.6% counts the price gain only.",
+          "tr": "%5,6 yalnızca fiyat kazancını sayar."
+        },
+        "C": {
+          "en": "4.4% counts the dividends only.",
+          "tr": "%4,4 yalnızca temettüleri sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the total return including both dividends.",
+          "tr": "İki temettüyü de içeren toplam getiriyi bulun."
+        },
+        {
+          "en": "Add the dividends: 0.50 + 0.60 = 1.10.",
+          "tr": "Temettüleri toplayın: 0,50 + 0,60 = 1,10.",
+          "formula_latex": "D=0.50+0.60"
+        },
+        {
+          "en": "(1.40 + 1.10) / 25 = 10.0%.",
+          "tr": "(1,40 + 1,10) / 25 = %10,0."
+        }
+      ],
+      "vocab_ids": [
+        "total-return",
+        "quarterly",
+        "dividend",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "(26.4-25+0.5+0.6)/25*100",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "26.4",
+          "[−]",
+          "25",
+          "[+]",
+          "1.1",
+          "[=]",
+          "[÷]",
+          "25",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-04-c-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-04",
+      "los_id": "EQ-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share's total return for the year was 11.0% and its dividend yield (based on the starting price) was 3.5%. The starting price was 60.00 TL. The ending price is closest to:",
+      "stem_tr": "Bir payın yıllık toplam getirisi %11,0 ve (başlangıç fiyatına göre) temettü verimi %3,5'tir. Başlangıç fiyatı 60,00 TL idi. Dönem sonu fiyatı en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "66.60 TL",
+          "tr": "66,60 TL",
+          "value": 66.6
+        },
+        {
+          "key": "B",
+          "en": "62.10 TL",
+          "tr": "62,10 TL",
+          "value": 62.1
+        },
+        {
+          "key": "C",
+          "en": "64.50 TL",
+          "tr": "64,50 TL",
+          "value": 64.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Price return = 11.0% − 3.5% = 7.5%. Ending price = 60 × 1.075 = 64.50 TL.",
+      "explanation_tr": "Fiyat getirisi = %11,0 − %3,5 = %7,5. Dönem sonu fiyatı = 60 × 1,075 = 64,50 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "66.60 TL treats the whole 11.0% as price return and ignores the dividend.",
+          "tr": "66,60 TL, %11,0'in tamamını fiyat getirisi sayar ve temettüyü yok sayar."
+        },
+        "B": {
+          "en": "62.10 TL uses only the dividend yield of 3.5%.",
+          "tr": "62,10 TL yalnızca %3,5'lik temettü verimini kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the ending price from the total return.",
+          "tr": "Toplam getiriden dönem sonu fiyatını bulun."
+        },
+        {
+          "en": "Total return = price return + dividend yield.",
+          "tr": "Toplam getiri = fiyat getirisi + temettü verimi.",
+          "formula_latex": "R_{price}=R_{total}-\\frac{D}{P_0}"
+        },
+        {
+          "en": "Price return = 11.0% − 3.5% = 7.5%; P1 = 60 × 1.075 = 64.50.",
+          "tr": "Fiyat getirisi = %11,0 − %3,5 = %7,5; P1 = 60 × 1,075 = 64,50."
+        }
+      ],
+      "vocab_ids": [
+        "total-return",
+        "dividend-yield",
+        "ending-price",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "60*(1+0.11-0.035)",
+        "unit": "TL"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.11",
+          "[−]",
+          "0.035",
+          "[+]",
+          "1",
+          "[=]",
+          "[×]",
+          "60",
+          "[=]"
+        ]
+      }
+    }
+  ]
+}

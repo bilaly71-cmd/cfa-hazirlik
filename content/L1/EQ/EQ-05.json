@@ -1,0 +1,1050 @@
+{
+  "module_id": "EQ-05",
+  "lesson": {
+    "id": "EQ-05-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-05",
+    "los_ids": [
+      "EQ-05-a",
+      "EQ-05-b",
+      "EQ-05-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Equity Valuation",
+    "title_tr": "Pay Değerlemesine Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Price is what you pay, value is what you get",
+        "heading_tr": "Fiyat ödediğiniz, değer elde ettiğinizdir",
+        "en": "Every day the market quotes a price for a share. But is the price right? Valuation tries to estimate the intrinsic value: what the share is worth based on the cash flows and risks of the business. Imagine a fictional BIST bakery chain, Karadeniz Fırın, trading at 40 TL. After careful analysis you estimate its intrinsic value at 46 TL. If you are right, the share is undervalued and a purchase may earn more than its required return. If you are wrong, the 'bargain' is only an error in your model. Equity analysts, portfolio managers and corporate finance teams all need this skill.",
+        "tr": "Piyasa her gün bir pay için fiyat açıklar. Ama fiyat doğru mu? Değerleme, işletmenin nakit akışlarına ve risklerine dayanarak payın gerçekte ne değerde olduğunu, yani içsel değeri tahmin etmeye çalışır. Kurgusal bir BIST fırın zinciri olan Karadeniz Fırın'ın 40 TL'den işlem gördüğünü düşünün. Dikkatli analizle içsel değerini 46 TL buluyorsunuz. Haklıysanız pay düşük değerlenmiştir ve alım, getiri beklentinizin üzerinde kazandırabilir. Haksızsanız 'fırsat' yalnızca modelinizdeki hatadır. Pay analistleri, portföy yöneticileri ve kurumsal finans ekipleri bu beceriye ihtiyaç duyar.",
+        "key_terms": [
+          "intrinsic value",
+          "market price",
+          "undervalued"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Intrinsic value, market price and the gap",
+        "heading_tr": "İçsel değer, piyasa fiyatı ve aradaki fark",
+        "en": "Market price is the price at which the share trades now. Intrinsic value is the value an informed analyst would estimate with a model. If intrinsic value is above price, the share is undervalued; if below, it is overvalued; if equal, it is fairly valued. In an efficient market, prices reflect available information, so large and lasting gaps are rare. A gap can come from true mispricing or from analyst error: the model inputs (growth, margins, required return) are estimates. Analysts therefore treat intrinsic value as a range, and they use a margin of safety.",
+        "tr": "Piyasa fiyatı, payın şu anda işlem gördüğü fiyattır. İçsel değer, bilgili bir analistin bir modelle tahmin ettiği değerdir. İçsel değer fiyatın üzerindeyse pay düşük değerlenmiştir; altındaysa yüksek değerlenmiştir; eşitse adil değerlenmiştir. Etkin bir piyasada fiyatlar mevcut bilgiyi yansıttığı için büyük ve kalıcı farklar nadirdir. Fark gerçek bir yanlış fiyatlamadan ya da analist hatasından kaynaklanabilir: model girdileri (büyüme, marjlar, getiri beklentisi) tahmindir. Bu yüzden analistler içsel değeri bir aralık olarak ele alır ve güvenlik marjı kullanır.",
+        "key_terms": [
+          "intrinsic value",
+          "overvalued",
+          "fairly valued",
+          "margin of safety"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Book value, market capitalization and enterprise value",
+        "heading_tr": "Defter değeri, piyasa değeri ve firma değeri",
+        "en": "Book value of equity is assets minus liabilities in the balance sheet; it reflects historical cost and accounting rules. Market capitalization is share price times shares outstanding; it is the market's value of equity. Enterprise value (EV) is the value of the whole operating business: market capitalization plus debt, preferred shares and non-controlling interest, minus cash and short-term investments. EV is a better base when comparing companies with different capital structures. None of the three is intrinsic value, but each gives a signal about it.",
+        "tr": "Özkaynağın defter değeri, bilançodaki varlıklar eksi yükümlülüklerdir; tarihsel maliyeti ve muhasebe kurallarını yansıtır. Piyasa değeri, pay fiyatı çarpı dolaşımdaki pay sayısıdır; piyasanın özkaynağa biçtiği değerdir. Firma değeri (FD), operasyonel işin tamamının değeridir: piyasa değeri artı borç, imtiyazlı pay ve kontrol gücü olmayan paylar, eksi nakit ve kısa vadeli yatırımlar. Sermaye yapıları farklı şirketleri kıyaslarken FD daha uygun bir tabandır. Üçü de içsel değer değildir, ama her biri içsel değer hakkında sinyal verir.",
+        "key_terms": [
+          "book value",
+          "market capitalization",
+          "enterprise value"
+        ],
+        "formula_latex": "EV=MC+D+PS+NCI-Cash"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Three families of valuation models",
+        "heading_tr": "Üç değerleme modeli ailesi",
+        "en": "Present value models (discounted cash flow, DCF) value the share as the present value of expected dividends or free cash flow. They are theoretically sound but need many forecasts and are sensitive to the discount rate and growth. Multiples models compare a price or EV with earnings, book value, sales or cash flow, usually relative to peers. They are simple and market-based, but they only give a relative answer and can copy market errors. Asset-based models value the firm as assets minus liabilities, at fair values. They suit asset-heavy firms, holding companies or firms near liquidation, but they miss intangible value and future growth.",
+        "tr": "Bugünkü değer modelleri (indirgenmiş nakit akışı, İNA) payı beklenen temettülerin veya serbest nakit akışının bugünkü değeri olarak değerler. Kuramsal olarak sağlamdır ama çok sayıda tahmin ister ve iskonto oranı ile büyümeye duyarlıdır. Çarpan modelleri bir fiyatı veya FD'yi kâr, defter değeri, satış ya da nakit akışıyla, çoğunlukla emsallere göre kıyaslar. Basit ve piyasa temellidir; ancak yalnızca göreli yanıt verir ve piyasa hatalarını kopyalayabilir. Varlık esaslı modeller şirketi, varlıklar eksi yükümlülükler olarak gerçeğe uygun değerlerle değerler. Varlık yoğun şirketlere, holdinglere veya tasfiyeye yakın şirketlere uygundur; ancak maddi olmayan değeri ve gelecekteki büyümeyi kaçırır.",
+        "key_terms": [
+          "present value model",
+          "multiples",
+          "asset-based valuation"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Numeric illustration.",
+        "tr": "Sayısal gösterim.",
+        "key_terms": [],
+        "example": {
+          "en": "Fictional company Doğu Çelik has 80 million shares at 25 TL, debt of 700 million TL, preferred shares of 50 million TL, non-controlling interest of 30 million TL and cash of 280 million TL. Market capitalization = 80 × 25 = 2,000 million TL. EV = 2,000 + 700 + 50 + 30 − 280 = 2,500 million TL. If book value of equity is 1,600 million TL, book value per share is 20 TL and P/B = 25 / 20 = 1.25.",
+          "tr": "Kurgusal Doğu Çelik'in 80 milyon payı 25 TL'den işlem görüyor; borcu 700 milyon TL, imtiyazlı payı 50 milyon TL, kontrol gücü olmayan payı 30 milyon TL, nakdi 280 milyon TL. Piyasa değeri = 80 × 25 = 2.000 milyon TL. FD = 2.000 + 700 + 50 + 30 − 280 = 2.500 milyon TL. Özkaynağın defter değeri 1.600 milyon TL ise pay başına defter değeri 20 TL ve PD/DD = 25 / 20 = 1,25."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not add cash in EV: cash is subtracted. Do not confuse book value (accounting) with intrinsic value (economic). Do not read a cheap multiple as proof of undervaluation without checking risk and growth. Do not assume a model gives a precise number; it gives an estimate with uncertainty. Do not use market capitalization to compare firms with very different debt without considering EV.",
+        "tr": "FD hesabında nakdi eklemeyin: nakit çıkarılır. Defter değerini (muhasebe) içsel değerle (ekonomik) karıştırmayın. Risk ve büyümeye bakmadan düşük çarpanı düşük değerlemenin kanıtı saymayın. Bir modelin kesin sayı verdiğini varsaymayın; belirsizliği olan bir tahmin verir. Borcu çok farklı şirketleri kıyaslarken FD'yi düşünmeden yalnızca piyasa değerine bakmayın.",
+        "key_terms": [
+          "EV",
+          "book value vs intrinsic value"
+        ]
+      }
+    ],
+    "summary_en": "Intrinsic value is the analyst's estimate of worth; market price is what the market pays. A gap may be mispricing or model error. Book value, market capitalization and enterprise value are signals, not intrinsic value. Valuation models are present value, multiples and asset-based, each with strengths and weaknesses.",
+    "summary_tr": "İçsel değer analistin değer tahminidir; piyasa fiyatı piyasanın ödediği tutardır. Fark yanlış fiyatlamadan veya model hatasından kaynaklanabilir. Defter değeri, piyasa değeri ve firma değeri içsel değer değil, sinyaldir. Değerleme modelleri bugünkü değer, çarpan ve varlık esaslıdır; her birinin güçlü ve zayıf yönleri vardır.",
+    "common_traps_tr": [
+      "FD hesabında nakdi eklemek.",
+      "Defter değerini içsel değerle karıştırmak.",
+      "Düşük çarpanı otomatik olarak ucuzluk saymak.",
+      "Model çıktısını kesin sayı sanmak.",
+      "Sermaye yapısı farklı şirketlerde yalnızca piyasa değerine bakmak."
+    ],
+    "vocab_ids": [
+      "intrinsic-value",
+      "market-price",
+      "undervalued",
+      "overvalued",
+      "book-value",
+      "market-capitalization",
+      "enterprise-value",
+      "present-value",
+      "multiple",
+      "margin-of-safety",
+      "non-controlling-interest",
+      "net-debt",
+      "efficient-market",
+      "mispricing",
+      "asset-based-valuation",
+      "required-return"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te piyasa değeri, PD/DD ve FD/FAVÖK temel düzeyde işlenir; içsel değer-piyasa fiyatı ayrımı ve değerleme modeli aileleri daha çok CFA'ya özgüdür."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-05-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Intrinsic value of a share is best described as:",
+      "stem_tr": "Bir payın içsel değeri en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the value implied by the company's expected cash flows and risk.",
+          "tr": "şirketin beklenen nakit akışları ve riskinin ima ettiği değer."
+        },
+        {
+          "key": "B",
+          "en": "the price at which the share last traded.",
+          "tr": "payın son işlem gördüğü fiyat."
+        },
+        {
+          "key": "C",
+          "en": "the book value of equity per share in the balance sheet.",
+          "tr": "bilançodaki pay başına özkaynak defter değeri."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Intrinsic value is what the share is worth given the business's fundamentals, estimated with a valuation model.",
+      "explanation_tr": "İçsel değer, payın işletmenin temel göstergelerine göre değerinin bir değerleme modeliyle tahmin edilmesidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The last traded price is the market price, not intrinsic value.",
+          "tr": "Son işlem fiyatı piyasa fiyatıdır, içsel değer değildir."
+        },
+        "C": {
+          "en": "Book value reflects accounting records, not expected future cash flows.",
+          "tr": "Defter değeri muhasebe kayıtlarını yansıtır, beklenen gelecek nakit akışlarını değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "intrinsic-value",
+        "cash-flow",
+        "expected",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-05-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An analyst estimates the intrinsic value of a share at 46 TL while it trades at 40 TL. The analyst most likely concludes that the share is:",
+      "stem_tr": "Bir analist bir payın içsel değerini 46 TL olarak tahmin ediyor; pay 40 TL'den işlem görüyor. Analist büyük olasılıkla payın şöyle olduğu sonucuna varır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "overvalued.",
+          "tr": "yüksek değerlenmiş."
+        },
+        {
+          "key": "B",
+          "en": "fairly valued.",
+          "tr": "adil değerlenmiş."
+        },
+        {
+          "key": "C",
+          "en": "undervalued.",
+          "tr": "düşük değerlenmiş."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Estimated value above market price means the market is paying less than the analyst thinks the share is worth: undervalued.",
+      "explanation_tr": "Tahmini değer piyasa fiyatının üzerindeyse piyasa, analistin değer bulduğundan azını ödüyordur: düşük değerlenmiş.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Overvalued would require intrinsic value below price.",
+          "tr": "Yüksek değerleme için içsel değerin fiyatın altında olması gerekir."
+        },
+        "B": {
+          "en": "A fairly valued share would require the two numbers to be about equal.",
+          "tr": "Adil değerlenmiş pay için iki sayının yaklaşık eşit olması gerekir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "undervalued",
+        "estimate",
+        "trade",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-05-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In a highly efficient market, a large gap between an analyst's intrinsic value estimate and the market price is most consistent with:",
+      "stem_tr": "Çok etkin bir piyasada, analistin içsel değer tahmini ile piyasa fiyatı arasındaki büyük fark en çok hangisiyle uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a gap that will certainly close within days.",
+          "tr": "birkaç gün içinde kesinlikle kapanacak bir farkla."
+        },
+        {
+          "key": "B",
+          "en": "a possible error in the analyst's inputs or model.",
+          "tr": "analistin girdilerinde veya modelinde olası bir hata."
+        },
+        {
+          "key": "C",
+          "en": "proof that the market price ignores all public information.",
+          "tr": "piyasa fiyatının tüm kamusal bilgiyi yok saydığının kanıtıyla."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "If prices reflect information well, large gaps are unlikely to be real mispricing; the analyst should recheck forecasts and discount rate.",
+      "explanation_tr": "Fiyatlar bilgiyi iyi yansıtıyorsa büyük farkların gerçek yanlış fiyatlama olması düşük olasılıktır; analist tahminlerini ve iskonto oranını yeniden kontrol etmelidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No gap closes with certainty or on a fixed schedule.",
+          "tr": "Hiçbir fark kesinlikle ya da sabit bir takvimle kapanmaz."
+        },
+        "C": {
+          "en": "Efficient markets use public information; this statement contradicts efficiency.",
+          "tr": "Etkin piyasalar kamusal bilgiyi kullanır; bu ifade etkinlikle çelişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "efficient-market",
+        "gap",
+        "input",
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-consistent"
+      ]
+    },
+    {
+      "id": "EQ-05-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst finds a share 25% below her estimate of intrinsic value, but her growth and discount rate inputs are uncertain. The most appropriate response is to:",
+      "stem_tr": "Bir analist, bir payı kendi içsel değer tahmininin %25 altında buluyor; ancak büyüme ve iskonto oranı girdileri belirsiz. En uygun yanıt hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "buy immediately because a 25% gap must be mispricing.",
+          "tr": "%25'lik fark yanlış fiyatlama olmalı diye hemen almak."
+        },
+        {
+          "key": "B",
+          "en": "test the result with a range of reasonable inputs before acting.",
+          "tr": "harekete geçmeden önce sonucu makul girdi aralıklarıyla sınamak."
+        },
+        {
+          "key": "C",
+          "en": "ignore the model because intrinsic value cannot be estimated.",
+          "tr": "içsel değer tahmin edilemez diye modeli yok saymak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Sensitivity analysis shows whether undervaluation survives plausible changes in inputs; a margin of safety protects against estimation error.",
+      "explanation_tr": "Duyarlılık analizi, düşük değerlemenin girdilerdeki makul değişikliklere dayanıp dayanmadığını gösterir; güvenlik marjı tahmin hatasına karşı korur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A large gap can simply reflect an input error; acting at once ignores that risk.",
+          "tr": "Büyük fark girdi hatasını da yansıtabilir; hemen harekete geçmek bu riski görmezden gelir."
+        },
+        "C": {
+          "en": "Estimates are imperfect but still useful; abandoning valuation is not a solution.",
+          "tr": "Tahminler kusurlu ama yine de yararlıdır; değerlemeyi bırakmak çözüm değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sensitivity",
+        "uncertain",
+        "margin-of-safety",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-05-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is the LEAST likely explanation for a persistent gap between a share's market price and an analyst's intrinsic value estimate?",
+      "stem_tr": "Bir payın piyasa fiyatı ile analistin içsel değer tahmini arasındaki kalıcı farkın AZ OLASI açıklaması aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The market price equals the book value per share exactly.",
+          "tr": "Piyasa fiyatının pay başına defter değerine tam olarak eşit olması."
+        },
+        {
+          "key": "B",
+          "en": "The analyst's growth forecast is more optimistic than the market's.",
+          "tr": "Analistin büyüme tahmininin piyasanınkinden daha iyimser olması."
+        },
+        {
+          "key": "C",
+          "en": "The market uses a higher required return for the share than the analyst.",
+          "tr": "Piyasanın pay için analistten daha yüksek bir getiri beklentisi kullanması."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Book value and market price are unrelated by definition; their equality explains nothing about an intrinsic value gap. The other two are typical sources of disagreement.",
+      "explanation_tr": "Defter değeri ve piyasa fiyatı tanım gereği ilişkisizdir; eşitlikleri içsel değer farkını açıklamaz. Diğer ikisi tipik görüş ayrılığı kaynaklarıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Different growth forecasts are a leading cause of valuation gaps.",
+          "tr": "Farklı büyüme tahminleri değerleme farklarının başlıca nedenidir."
+        },
+        "C": {
+          "en": "Different required returns change present values and create gaps.",
+          "tr": "Farklı getiri beklentileri bugünkü değerleri değiştirir ve fark yaratır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "persistent",
+        "explanation",
+        "growth-forecast",
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "least-likely"
+      ]
+    },
+    {
+      "id": "EQ-05-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Market capitalization of a company is best described as:",
+      "stem_tr": "Bir şirketin piyasa değeri en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "total assets minus total liabilities in the balance sheet.",
+          "tr": "bilançodaki toplam varlıklar eksi toplam yükümlülükler."
+        },
+        {
+          "key": "B",
+          "en": "market value of equity plus net debt.",
+          "tr": "özkaynağın piyasa değeri artı net borç."
+        },
+        {
+          "key": "C",
+          "en": "share price multiplied by the number of shares outstanding.",
+          "tr": "pay fiyatının dolaşımdaki pay sayısıyla çarpımı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Market capitalization is the market's value of the equity: price × shares outstanding.",
+      "explanation_tr": "Piyasa değeri, piyasanın özkaynağa biçtiği değerdir: fiyat × dolaşımdaki pay sayısı.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes the book value of equity.",
+          "tr": "Bu özkaynağın defter değeridir."
+        },
+        "B": {
+          "en": "That describes (roughly) enterprise value, not market capitalization.",
+          "tr": "Bu (kabaca) firma değeridir, piyasa değeri değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market-capitalization",
+        "multiply",
+        "outstanding-shares",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-05-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Doğu Çelik has 80 million shares outstanding at 25 TL each. Its market capitalization (TL million) is closest to:",
+      "stem_tr": "Doğu Çelik'in dolaşımda 80 milyon payı var ve her biri 25 TL. Piyasa değeri (milyon TL) en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "105.0",
+          "tr": "105,0",
+          "value": 105.0
+        },
+        {
+          "key": "B",
+          "en": "3.2",
+          "tr": "3,2",
+          "value": 3.2
+        },
+        {
+          "key": "C",
+          "en": "2000.0",
+          "tr": "2000,0",
+          "value": 2000.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Market capitalization = 80 million × 25 TL = 2,000 million TL.",
+      "explanation_tr": "Piyasa değeri = 80 milyon × 25 TL = 2.000 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "105 adds the share count and the price instead of multiplying.",
+          "tr": "105, çarpmak yerine pay sayısı ile fiyatı toplar."
+        },
+        "B": {
+          "en": "3.2 divides 80 by 25.",
+          "tr": "3,2, 80'i 25'e böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the market capitalization.",
+          "tr": "Piyasa değerini bulun."
+        },
+        {
+          "en": "Multiply shares outstanding by the share price.",
+          "tr": "Dolaşımdaki pay sayısını pay fiyatıyla çarpın.",
+          "formula_latex": "MC=P\\times N"
+        },
+        {
+          "en": "80 × 25 = 2,000 million TL.",
+          "tr": "80 × 25 = 2.000 milyon TL."
+        }
+      ],
+      "vocab_ids": [
+        "market-capitalization",
+        "share-price",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "80*25",
+        "unit": "TL million"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80",
+          "[×]",
+          "25",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-05-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Doğu Çelik has a market capitalization of 2,000 million TL, debt of 700, preferred shares of 50, non-controlling interest of 30 and cash of 280 (all TL million). Its enterprise value (TL million) is closest to:",
+      "stem_tr": "Doğu Çelik'in piyasa değeri 2.000 milyon TL, borcu 700, imtiyazlı payı 50, kontrol gücü olmayan payı 30 ve nakdi 280'dir (hepsi milyon TL). Firma değeri (milyon TL) en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2780.0",
+          "tr": "2780,0",
+          "value": 2780.0
+        },
+        {
+          "key": "B",
+          "en": "2500.0",
+          "tr": "2500,0",
+          "value": 2500.0
+        },
+        {
+          "key": "C",
+          "en": "2420.0",
+          "tr": "2420,0",
+          "value": 2420.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "EV = 2,000 + 700 + 50 + 30 − 280 = 2,500 million TL.",
+      "explanation_tr": "FD = 2.000 + 700 + 50 + 30 − 280 = 2.500 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "2,780 adds cash instead of subtracting it.",
+          "tr": "2.780 nakdi çıkarmak yerine ekler."
+        },
+        "C": {
+          "en": "2,420 leaves out the preferred shares and non-controlling interest.",
+          "tr": "2.420 imtiyazlı payı ve kontrol gücü olmayan payları dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the enterprise value.",
+          "tr": "Firma değerini bulun."
+        },
+        {
+          "en": "Add all capital claims and subtract cash.",
+          "tr": "Tüm sermaye taleplerini ekleyin, nakdi çıkarın.",
+          "formula_latex": "EV=MC+D+PS+NCI-Cash"
+        },
+        {
+          "en": "2,000 + 700 + 50 + 30 − 280 = 2,500.",
+          "tr": "2.000 + 700 + 50 + 30 − 280 = 2.500."
+        }
+      ],
+      "vocab_ids": [
+        "enterprise-value",
+        "non-controlling-interest",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "2000+700+50+30-280",
+        "unit": "TL million"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2000",
+          "[+]",
+          "700",
+          "[+]",
+          "50",
+          "[+]",
+          "30",
+          "[−]",
+          "280",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-05-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Doğu Çelik has book value of equity of 1,600 million TL, 80 million shares and a share price of 25 TL. Its price-to-book (P/B) ratio is closest to:",
+      "stem_tr": "Doğu Çelik'in özkaynak defter değeri 1.600 milyon TL, pay sayısı 80 milyon ve pay fiyatı 25 TL'dir. Fiyat/defter değeri (PD/DD) oranı en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.25",
+          "tr": "1,25",
+          "value": 1.25
+        },
+        {
+          "key": "B",
+          "en": "0.80",
+          "tr": "0,80",
+          "value": 0.8
+        },
+        {
+          "key": "C",
+          "en": "20.00",
+          "tr": "20,00",
+          "value": 20.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Book value per share = 1,600 / 80 = 20 TL. P/B = 25 / 20 = 1.25.",
+      "explanation_tr": "Pay başına defter değeri = 1.600 / 80 = 20 TL. PD/DD = 25 / 20 = 1,25.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "0.80 inverts the ratio (book value divided by price).",
+          "tr": "0,80 oranı tersine çevirir (defter değeri bölü fiyat)."
+        },
+        "C": {
+          "en": "20.00 is the book value per share, not the multiple.",
+          "tr": "20,00 pay başına defter değeridir, çarpan değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find P/B.",
+          "tr": "PD/DD'yi bulun."
+        },
+        {
+          "en": "Divide book value by shares to get BVPS, then divide price by BVPS.",
+          "tr": "Defter değerini pay sayısına bölüp BVPS'yi bulun, sonra fiyatı BVPS'ye bölün.",
+          "formula_latex": "P/B=\\frac{P}{BVPS}"
+        },
+        {
+          "en": "BVPS = 1,600 / 80 = 20; P/B = 25 / 20 = 1.25.",
+          "tr": "BVPS = 1.600 / 80 = 20; PD/DD = 25 / 20 = 1,25."
+        }
+      ],
+      "vocab_ids": [
+        "price-to-book",
+        "book-value",
+        "ratio",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "25/(1600/80)",
+        "unit": "x"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1600",
+          "[÷]",
+          "80",
+          "[=]",
+          "[STO]",
+          "1",
+          "25",
+          "[÷]",
+          "[RCL]",
+          "1",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-05-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares two fictional BIST retailers with similar operations but very different debt. Which measure is most appropriate to compare the value of their whole operating businesses?",
+      "stem_tr": "Bir analist, benzer faaliyetlere ama çok farklı borca sahip iki kurgusal BIST perakendecisini kıyaslıyor. Faaliyetlerin tamamının değerini kıyaslamak için hangi ölçü en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Enterprise value",
+          "tr": "Firma değeri"
+        },
+        {
+          "key": "B",
+          "en": "Market capitalization",
+          "tr": "Piyasa değeri"
+        },
+        {
+          "key": "C",
+          "en": "Book value of equity",
+          "tr": "Özkaynak defter değeri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "EV adds debt and other claims and subtracts cash, so it values the operations independently of how they are financed.",
+      "explanation_tr": "FD borcu ve diğer talepleri ekler, nakdi çıkarır; böylece faaliyetleri finansman biçiminden bağımsız değerler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Market capitalization values only the equity, so a heavily indebted firm looks smaller.",
+          "tr": "Piyasa değeri yalnızca özkaynağı değerler; çok borçlu şirket olduğundan küçük görünür."
+        },
+        "C": {
+          "en": "Book value of equity is an accounting figure and ignores debt claims.",
+          "tr": "Özkaynak defter değeri muhasebe rakamıdır ve borç taleplerini yok sayar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "enterprise-value",
+        "capital-structure",
+        "operations",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-05-c-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT one of the main families of equity valuation models?",
+      "stem_tr": "Aşağıdakilerden hangisi pay değerleme modellerinin ana ailelerinden biri DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Present value (discounted cash flow) models",
+          "tr": "Bugünkü değer (indirgenmiş nakit akışı) modelleri"
+        },
+        {
+          "key": "B",
+          "en": "Asset-based models",
+          "tr": "Varlık esaslı modeller"
+        },
+        {
+          "key": "C",
+          "en": "Technical charting models",
+          "tr": "Teknik grafik modelleri"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The three families are present value, multiples and asset-based. Chart reading is not a valuation model of intrinsic value.",
+      "explanation_tr": "Üç aile bugünkü değer, çarpan ve varlık esaslıdır. Grafik okuma bir içsel değer modeli değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Present value models are one of the main families.",
+          "tr": "Bugünkü değer modelleri ana ailelerden biridir."
+        },
+        "B": {
+          "en": "Asset-based models are one of the main families.",
+          "tr": "Varlık esaslı modeller ana ailelerden biridir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "family",
+        "technical-analysis",
+        "asset-based-valuation",
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "EQ-05-c-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which description best fits a multiples-based valuation?",
+      "stem_tr": "Hangi tanım çarpan esaslı değerlemeye en iyi uyar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Discounting future dividends at the required return.",
+          "tr": "Gelecekteki temettüleri getiri beklentisiyle iskonto etmek."
+        },
+        {
+          "key": "B",
+          "en": "Comparing a price or enterprise value with a fundamental such as earnings, usually relative to peers.",
+          "tr": "Bir fiyatı veya firma değerini kâr gibi bir temel göstergeyle, çoğunlukla emsallere göre kıyaslamak."
+        },
+        {
+          "key": "C",
+          "en": "Adding up the fair values of assets and subtracting liabilities.",
+          "tr": "Varlıkların gerçeğe uygun değerlerini toplayıp yükümlülükleri çıkarmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Multiples relate market value to a fundamental and compare it with benchmarks.",
+      "explanation_tr": "Çarpanlar piyasa değerini bir temel göstergeyle ilişkilendirir ve ölçütlerle kıyaslar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes a present value (DDM) model.",
+          "tr": "Bu bir bugünkü değer (TİM) modelini tanımlar."
+        },
+        "C": {
+          "en": "This describes an asset-based model.",
+          "tr": "Bu bir varlık esaslı modeli tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "multiples",
+        "fundamental",
+        "peer-group",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-05-c-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fictional BIST investment holding company's main assets are stakes in listed subsidiaries and cash. Which valuation approach is most appropriate?",
+      "stem_tr": "Kurgusal bir BIST yatırım holdinginin ana varlıkları halka açık iştirak payları ve nakittir. Hangi değerleme yaklaşımı en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A multi-year free cash flow model of its own operations.",
+          "tr": "Kendi faaliyetlerinin çok yıllı serbest nakit akışı modeli."
+        },
+        {
+          "key": "B",
+          "en": "Asset-based, using fair values of the holdings.",
+          "tr": "Varlık esaslı; iştiraklerin gerçeğe uygun değerlerini kullanarak."
+        },
+        {
+          "key": "C",
+          "en": "Price-to-sales relative to industrial peers.",
+          "tr": "Sanayi emsallerine göre fiyat/satış."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A holding's value is largely the market or fair value of its stakes, which an asset-based approach captures directly.",
+      "explanation_tr": "Holdingin değeri büyük ölçüde iştiraklerinin piyasa veya gerçeğe uygun değeridir; varlık esaslı yaklaşım bunu doğrudan yakalar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A holding has little operating cash flow of its own to forecast.",
+          "tr": "Holdingin tahmin edilecek kendi faaliyet nakit akışı azdır."
+        },
+        "C": {
+          "en": "Sales are not a meaningful driver for a company that mainly holds stakes.",
+          "tr": "Esas olarak iştirak payı tutan şirket için satışlar anlamlı bir belirleyici değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "holding-company",
+        "asset-based-valuation",
+        "fair-value",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    },
+    {
+      "id": "EQ-05-c-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which weakness of present value (DCF) models is most likely?",
+      "stem_tr": "Bugünkü değer (İNA) modellerinin hangi zayıflığı en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Value is very sensitive to small changes in the discount rate and growth rate.",
+          "tr": "Değer, iskonto oranı ve büyüme oranındaki küçük değişikliklere çok duyarlıdır."
+        },
+        {
+          "key": "B",
+          "en": "They cannot be applied to companies that pay dividends.",
+          "tr": "Temettü ödeyen şirketlere uygulanamazlar."
+        },
+        {
+          "key": "C",
+          "en": "They ignore the time value of money.",
+          "tr": "Paranın zaman değerini yok sayarlar."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Because terminal value depends on r − g, small input changes can move value a lot; this is the main practical weakness.",
+      "explanation_tr": "Terminal değer r − g'ye bağlı olduğundan küçük girdi değişiklikleri değeri çok oynatabilir; ana pratik zayıflık budur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "DCF models are applied to dividend payers, for example the dividend discount model.",
+          "tr": "İNA modelleri, örneğin temettü indirgeme modeli gibi, temettü ödeyenlere uygulanır."
+        },
+        "C": {
+          "en": "Discounting is exactly how DCF models account for the time value of money.",
+          "tr": "İskonto etmek İNA modellerinin paranın zaman değerini hesaba katma biçimidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discount-rate",
+        "sensitive",
+        "terminal-value",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-05-c-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-05",
+      "los_id": "EQ-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A mature, stable, dividend-paying fictional BIST utility has predictable cash flows. Which approach is most appropriate to estimate its intrinsic value?",
+      "stem_tr": "Olgun, istikrarlı, temettü ödeyen ve nakit akışları öngörülebilir kurgusal bir BIST elektrik şirketinin içsel değerini tahmin etmek için hangi yaklaşım en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An asset-based model at liquidation values.",
+          "tr": "Tasfiye değerleriyle bir varlık esaslı model."
+        },
+        {
+          "key": "B",
+          "en": "Price-to-sales only, ignoring cash flows.",
+          "tr": "Nakit akışlarını yok sayıp yalnızca fiyat/satış."
+        },
+        {
+          "key": "C",
+          "en": "A present value model such as the dividend discount model.",
+          "tr": "Temettü indirgeme modeli gibi bir bugünkü değer modeli."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Predictable dividends and cash flows make forecasts reliable, which suits present value models.",
+      "explanation_tr": "Öngörülebilir temettü ve nakit akışları tahminleri güvenilir kılar; bu bugünkü değer modellerine uygundur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Liquidation values suit a firm that is being wound up, not a going concern.",
+          "tr": "Tasfiye değerleri faaliyetine devam eden değil, tasfiye edilen şirkete uygundur."
+        },
+        "B": {
+          "en": "Ignoring cash flows discards the information that best describes this firm.",
+          "tr": "Nakit akışlarını yok saymak bu şirketi en iyi tanımlayan bilgiyi atmaktır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "dividend-discount-model",
+        "predictable",
+        "utility",
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-appropriate"
+      ]
+    }
+  ]
+}
