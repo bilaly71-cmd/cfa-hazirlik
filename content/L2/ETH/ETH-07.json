@@ -10,7 +10,7 @@
       "title_en": "Conflicts at Ege Investment",
       "title_tr": "Ege Yatırım’da çıkar çatışmaları",
       "text_en": "Ali Çınar is a CFA charterholder who works for Ege Investment, a fictional firm, as both a research analyst and a portfolio manager for discretionary client accounts. Several conflict-of-interest questions have arisen.\n\nAli personally owns 2% of Karya Tekstil, a listed textile company that he covers in research reports. He has not disclosed this holding to Ege Investment or to his clients. Karya Tekstil's chief executive has also joined Ege Investment's advisory board.\n\nAli plans to recommend Karya Tekstil to clients as a buy. His reports are distributed to clients on Monday morning. On Friday afternoon, Ali bought additional Karya shares for his personal account, expecting the price to rise after the recommendation. He also plans to place an order for a large block of Karya for the client accounts on Monday after the recommendation goes out.\n\nAli's spouse, Nesrin, holds an account in which he has a beneficial interest. On Thursday, Nesrin participated in the IPO of Gökova Gıda, a company that Ali covers, although Ege Investment's client accounts could not obtain an allocation.\n\nFinally, Mavi Aracı, a brokerage firm, offers Ali a fee equal to 0.3% of assets for each new client he refers to Mavi for custody and execution services. Ali has already referred three clients, and has not told Ege Investment or the clients about the fee.",
-      "text_tr": "Ali Çınar bir CFA unvan sahibidir ve kurgusal bir firma olan Ege Yatırım'da hem araştırma analisti hem de portföy yönetimi yetkili müşteri hesapları için portföy yöneticisi olarak çalışıyor. Birkaç çıkar çatışması sorusu ortaya çıktı.\n\nAli, araştırma raporlarında takip ettiği borsada işlem gören tekstil şirketi Karya Tekstil'in %2'sine kişisel olarak sahip. Bu payı ne Ege Yatırım'a ne de müşterilerine açıkladı. Karya Tekstil'in genel müdürü de Ege Yatırım'ın danışma kuruluna katıldı.\n\nAli, Karya Tekstil'i müşterilere al olarak önermeyi planlıyor. Raporları müşterilere pazartesi sabahı dağıtılıyor. Cuma öğleden sonra Ali, tavsiyeden sonra fiyatın yükseleceğini bekleyerek kişisel hesabı için ek Karya hissesi aldı. Ayrıca tavsiye çıktıktan sonra pazartesi günü müşteri hesapları için büyük bir Karya bloku emri vermeyi planlıyor.\n\nAli'nin eşi Nesrin'in, Ali'nin menfaat sahibi olduğu bir hesabı var. Perşembe günü Nesrin, Ali'nin takip ettiği bir şirket olan Gökova Gıda'nın halka arzına katıldı; oysa Ege Yatırım'ın müşteri hesapları tahsis alamadı.\n\nSon olarak aracı kurum Mavi Aracı, saklama ve işlem hizmetleri için Mavi'ye yönlendirdiği her yeni müşteri için Ali'ye varlıkların %0,3'ü kadar ücret teklif ediyor. Ali şimdiden üç müşteri yönlendirdi ve ücreti ne Ege Yatırım'a ne de müşterilere bildirdi.",
+      "text_tr": "Ali Çınar bir CFA unvan sahibidir ve kurgusal bir firma olan Ege Yatırım'da hem araştırma analisti hem de takdir yetkili (discretionary) müşteri hesapları için portföy yöneticisi olarak çalışıyor. Birkaç çıkar çatışması sorusu ortaya çıktı.\n\nAli, araştırma raporlarında takip ettiği borsada işlem gören tekstil şirketi Karya Tekstil'in %2'sine kişisel olarak sahip. Bu payı ne Ege Yatırım'a ne de müşterilerine açıkladı. Karya Tekstil'in genel müdürü de Ege Yatırım'ın danışma kuruluna katıldı.\n\nAli, Karya Tekstil'i müşterilere al olarak önermeyi planlıyor. Raporları müşterilere pazartesi sabahı dağıtılıyor. Cuma öğleden sonra Ali, tavsiyeden sonra fiyatın yükseleceğini bekleyerek kişisel hesabı için ek Karya hissesi aldı. Ayrıca tavsiye çıktıktan sonra pazartesi günü müşteri hesapları için büyük bir Karya bloku emri vermeyi planlıyor.\n\nAli'nin eşi Nesrin'in, Ali'nin menfaat sahibi olduğu bir hesabı var. Perşembe günü Nesrin, Ali'nin takip ettiği bir şirket olan Gökova Gıda'nın halka arzına katıldı; oysa Ege Yatırım'ın müşteri hesapları tahsis alamadı.\n\nSon olarak aracı kurum Mavi Aracı, saklama ve işlem hizmetleri için Mavi'ye yönlendirdiği her yeni müşteri için Ali'ye varlıkların %0,3'ü kadar ücret teklif ediyor. Ali şimdiden üç müşteri yönlendirdi ve ücreti ne Ege Yatırım'a ne de müşterilere bildirdi.",
       "tables": [],
       "question_ids": [
         "L2-ETH-07-v01-q1",
@@ -20,7 +20,11 @@
         "L2-ETH-07-v01-q5"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ],
   "questions": [
@@ -79,7 +83,11 @@
         "loyalty"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "pattern_ids": [
         "most-appropriate"
       ]
@@ -139,7 +147,11 @@
         "loyalty"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "pattern_ids": [
         "most-likely"
       ]
@@ -165,8 +177,8 @@
         },
         {
           "key": "B",
-          "en": "a conflict that Ali should have disclosed and cleared with compliance under the firm's policy on limited offerings, because beneficial-interest accounts are covered.",
-          "tr": "firmanın sınırlı arzlara ilişkin politikası uyarınca Ali'nin açıklaması ve uyumdan onay alması gereken bir çatışmadır; çünkü menfaat sahibi olunan hesaplar kapsam içindedir."
+          "en": "a conflict under Standard VI(B) that Ali should have disclosed and pre-cleared with compliance, because accounts in which he has a beneficial interest are covered.",
+          "tr": "Standart VI(B) kapsamında, Ali'nin açıklaması ve uyumdan ön onay alması gereken bir çatışmadır; çünkü menfaat sahibi olduğu hesaplar kapsam içindedir."
         },
         {
           "key": "C",
@@ -199,7 +211,11 @@
         "loyalty"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "pattern_ids": [
         "most-likely"
       ]
@@ -230,8 +246,8 @@
         },
         {
           "key": "C",
-          "en": "disclose the arrangement to Ege Investment and to the referred and prospective clients before any further referrals, and for the past referrals disclose promptly.",
-          "tr": "düzenlemeyi Ege Yatırım'a ve yönlendirilen ve potansiyel müşterilere yeni yönlendirmelerden önce açıklamak, geçmiş yönlendirmeler için de derhal açıklamaktır."
+          "en": "disclose the arrangement to Ege Investment and to referred and prospective clients before making any further referrals, and promptly disclose it for the three past referrals.",
+          "tr": "düzenlemeyi yeni yönlendirmeler yapmadan önce Ege Yatırım'a ve yönlendirilen ve potansiyel müşterilere açıklamak, üç geçmiş yönlendirme için de derhal açıklamaktır."
         }
       ],
       "answer": "C",
@@ -259,7 +275,11 @@
         "loyalty"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "pattern_ids": [
         "most-appropriate"
       ]
@@ -319,7 +339,11 @@
         "loyalty"
       ],
       "source_basis": "original",
-      "verified": false,
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      },
       "pattern_ids": [
         "most-appropriate"
       ]
