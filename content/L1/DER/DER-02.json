@@ -1,0 +1,1148 @@
+{
+  "module_id": "DER-02",
+  "lesson": {
+    "id": "DER-02-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-02",
+    "los_ids": [
+      "DER-02-a",
+      "DER-02-b",
+      "DER-02-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Forward Commitment and Contingent Claim Features and Instruments",
+    "title_tr": "Kesin Yükümlülük ve Şarta Bağlı Hak Doğuran Türev Araçlar",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Obligation or choice",
+        "heading_tr": "Yükümlülük mü, seçenek mi?",
+        "en": "Every derivative answers one question: must you do the trade, or may you choose? A forward commitment is a promise: both sides must trade at the agreed price. A contingent claim pays only if something happens: the holder can choose to use it or not. Think of a firm rent contract with a fixed price (forward) versus a paid option to rent a flat at a fixed price if you still want it (option). A Turkish importer can lock a USD/TRY rate with a forward, or buy a USD call and keep the chance to buy cheaper. The first costs nothing upfront. The second costs a premium.",
+        "tr": "Her türev bir soruya yanıt verir: işlemi yapmak zorunda mısınız, yoksa seçme hakkınız mı var? Kesin yükümlülük bir sözdür: iki taraf da kararlaştırılan fiyattan işlem yapmak zorundadır. Şarta bağlı hak ise bir şey olursa ödeme yapar: sahibi kullanıp kullanmamayı seçebilir. Sabit fiyatlı bağlayıcı bir kira sözleşmesini (forward) ve istersen sabit fiyattan daire kiralama hakkını veren ücretli bir opsiyonu düşünün. Türk bir ithalatçı USD/TRY kurunu forward ile sabitleyebilir veya bir dolar alım opsiyonu alıp daha ucuza alma şansını koruyabilir. Birincisi peşin maliyet getirmez; ikincisi prim gerektirir.",
+        "key_terms": [
+          "forward commitment",
+          "contingent claim"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The five main instruments",
+        "heading_tr": "Beş ana araç",
+        "en": "A forward contract is a private agreement to buy or sell an underlying at a fixed price on a future date. A futures contract is the standardized, exchange-traded version, marked to market daily. A swap is a series of exchanges of cash flows; the interest rate swap exchanges fixed for floating payments. An option gives the buyer the right, not the obligation, to buy (call) or sell (put) at a strike price; the buyer pays a premium and the writer accepts the obligation. A European option can be exercised only at expiry; an American option at any time up to expiry. A credit derivative, mainly the credit default swap (CDS), pays the buyer if a credit event such as default occurs.",
+        "tr": "Forward sözleşme, bir dayanak varlığın gelecekteki bir tarihte sabit fiyattan alınıp satılması için yapılan özel bir anlaşmadır. Vadeli işlem (futures) bunun standart, borsada işlem gören ve günlük piyasa değerine getirilen halidir. Swap, bir dizi nakit akışı takasıdır; faiz swapı sabit ödemeleri değişken ödemelerle değiştirir. Opsiyon, alıcıya kullanım fiyatından almak (alım opsiyonu) veya satmak (satım opsiyonu) için hak verir, yükümlülük vermez; alıcı prim öder, yazan taraf yükümlülüğü üstlenir. Avrupa tipi opsiyon yalnızca vadede, Amerikan tipi opsiyon vadeye kadar her zaman kullanılabilir. Kredi türevi, özellikle kredi temerrüt swapı (CDS), temerrüt gibi bir kredi olayı olursa alıcıya ödeme yapar.",
+        "key_terms": [
+          "forward contract",
+          "futures contract",
+          "swap",
+          "call option",
+          "put option",
+          "credit default swap",
+          "European option"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Option payoff and profit",
+        "heading_tr": "Opsiyon payoff'u ve kârı",
+        "en": "At expiry, the payoff is the value of exercise and the profit is the payoff adjusted for the premium. For a long call: payoff = max(0, S_T − X), profit = payoff − c_0, breakeven = X + c_0. For a long put: payoff = max(0, X − S_T), profit = payoff − p_0, breakeven = X − p_0. The writer has the opposite sign: the short call payoff is −max(0, S_T − X) and the short call profit is c_0 − max(0, S_T − X). The buyer's maximum loss is the premium. The call writer's maximum loss is unlimited; the put writer's maximum loss is X − p_0 (when the price falls to zero).",
+        "tr": "Vadede payoff kullanma değeridir; kâr ise payoff'un primle düzeltilmiş halidir. Uzun alım opsiyonunda: payoff = max(0, S_T − X), kâr = payoff − c_0, başabaş = X + c_0. Uzun satım opsiyonunda: payoff = max(0, X − S_T), kâr = payoff − p_0, başabaş = X − p_0. Yazanın işareti terstir: kısa alım payoff'u −max(0, S_T − X), kısa alım kârı c_0 − max(0, S_T − X)'tir. Alıcının azami zararı primdir. Alım opsiyonunu yazanın azami zararı sınırsızdır; satım opsiyonunu yazanın azami zararı (fiyat sıfıra düşerse) X − p_0'dır.",
+        "key_terms": [
+          "payoff",
+          "profit",
+          "breakeven",
+          "premium"
+        ],
+        "formula_latex": "\\text{Long call profit}=\\max(0,S_T-X)-c_0,\\quad \\text{Long put profit}=\\max(0,X-S_T)-p_0"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Profit of a long call",
+        "heading_tr": "Uzun alım opsiyonunun kârı",
+        "en": "A fund buys a call on a share with X = TRY 40 and pays c_0 = TRY 2.50. If the share ends at TRY 47, the payoff is 47 − 40 = 7.00 and the profit is 7.00 − 2.50 = TRY 4.50. If the share ends at TRY 38, the call expires worthless: the payoff is 0 and the profit is −TRY 2.50, the premium. The breakeven price is 40 + 2.50 = TRY 42.50. Between 40 and 42.50 the call is exercised but the total result is still a loss.",
+        "tr": "Bir fon, X = 40 TRY olan bir paya alım opsiyonu alıyor ve c_0 = 2,50 TRY ödüyor. Pay 47 TRY'den bitirirse payoff 47 − 40 = 7,00, kâr 7,00 − 2,50 = 4,50 TRY olur. Pay 38 TRY'den biterse opsiyon değersiz sona erer: payoff 0, kâr −2,50 TRY, yani primdir. Başabaş fiyatı 40 + 2,50 = 42,50 TRY'dir. 40 ile 42,50 arasında opsiyon kullanılır ama toplam sonuç yine de zarardır.",
+        "key_terms": [
+          "breakeven",
+          "expires worthless"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Payoff and profit are different: profit subtracts the premium for the buyer and adds it for the writer. Do not give options a forward-like linear payoff. Remember that an option buyer has a right, the writer has an obligation. Do not call futures contingent claims: they are forward commitments. Margin on futures is a deposit, not a premium. A swap is a commitment: no one can choose to skip a payment. Check sign carefully for the short side: a short call loses when the price rises.",
+        "tr": "Payoff ile kâr farklıdır: kâr, alıcı için primi düşer, yazan için ekler. Opsiyonlara forward gibi doğrusal payoff atfetmeyin. Opsiyon alıcısının hakkı, yazanın yükümlülüğü vardır. Vadeli işlemler şarta bağlı hak değil, kesin yükümlülüktür. Vadeli işlemdeki teminat bir güvencedir, prim değildir. Swap bir yükümlülüktür: kimse ödemeyi atlayamaz. Kısa tarafta işaretlere dikkat edin: kısa alım opsiyonu fiyat yükselince zarar eder.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Forwards, futures and swaps are forward commitments with two-sided obligations. Options and credit derivatives are contingent claims. Option buyers pay a premium and have a right. Payoff at expiry for a long call is max(0, S_T − X) and profit subtracts the premium.",
+    "summary_tr": "Forward, vadeli işlem ve swap, iki yönlü yükümlülük taşıyan kesin yükümlülüklerdir. Opsiyonlar ve kredi türevleri şarta bağlı haklardır. Opsiyon alıcıları prim öder ve hak sahibidir. Uzun alım opsiyonunun vadedeki payoff'u max(0, S_T − X)'tir ve kâr primi düşer.",
+    "common_traps_tr": [
+      "Payoff ile kârı karıştırmayın: kâr, primi hesaba katar.",
+      "Opsiyon alıcısının azami zararı primdir; alım opsiyonunu yazanın zararı sınırsızdır.",
+      "Vadeli işlem şarta bağlı hak değil, kesin yükümlülüktür.",
+      "Kısa pozisyonda işaretler tersine döner; prim yazan için gelirdir.",
+      "Teminat (margin) opsiyon primi değildir."
+    ],
+    "vocab_ids": [
+      "derivative",
+      "forward",
+      "futures",
+      "swap",
+      "option",
+      "call",
+      "put",
+      "strike",
+      "premium",
+      "payoff",
+      "breakeven",
+      "writer",
+      "forward-commitment",
+      "contingent-claim",
+      "credit-default-swap",
+      "european-option"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Forward, futures, swap ve opsiyon yapıları SPK Düzey 3 ve Türev sınavında bilinir; payoff hesapları kısmen bilinir."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-02-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A contract in which two parties agree to exchange a series of cash flows over several periods, such as fixed-rate payments for floating-rate payments, is a:",
+      "stem_tr": "İki tarafın, sabit faiz ödemelerini değişken faiz ödemeleriyle takas etmek gibi, birkaç dönem boyunca bir dizi nakit akışını değiştirmeyi kararlaştırdığı sözleşme aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "swap",
+          "tr": "swap"
+        },
+        {
+          "key": "B",
+          "en": "futures contract",
+          "tr": "vadeli işlem sözleşmesi"
+        },
+        {
+          "key": "C",
+          "en": "credit default swap",
+          "tr": "kredi temerrüt swapı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A swap is a series of exchanges of cash flows. The classic example is the interest rate swap, which exchanges fixed and floating payments.",
+      "explanation_tr": "Swap, bir dizi nakit akışı takasıdır. Klasik örnek, sabit ve değişken ödemeleri değiştiren faiz swapıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A futures contract fixes one price for one future date, not a series of exchanges.",
+          "tr": "Vadeli işlem sözleşmesi tek bir gelecek tarih için tek bir fiyat belirler; bir dizi takas içermez."
+        },
+        "C": {
+          "en": "A CDS exchanges a premium for protection against a credit event. It is a specific credit derivative, not a general exchange of fixed and floating flows.",
+          "tr": "CDS, kredi olayına karşı korumayı primle değiştirir; sabit ve değişken akışların genel takası değil, belirli bir kredi türevidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap",
+        "series",
+        "fixed-rate",
+        "floating-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The buyer of a put option has the:",
+      "stem_tr": "Satım opsiyonu alıcısının sahip olduğu şey aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "right, but not the obligation, to buy the underlying at the strike price",
+          "tr": "dayanak varlığı kullanım fiyatından alma hakkı (yükümlülüğü değil)"
+        },
+        {
+          "key": "B",
+          "en": "right, but not the obligation, to sell the underlying at the strike price",
+          "tr": "dayanak varlığı kullanım fiyatından satma hakkı (yükümlülüğü değil)"
+        },
+        {
+          "key": "C",
+          "en": "obligation to sell the underlying at the strike price",
+          "tr": "dayanak varlığı kullanım fiyatından satma yükümlülüğü"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The put buyer pays a premium and gets the right to sell. Whether to use the right is the buyer's decision.",
+      "explanation_tr": "Satım opsiyonu alıcısı prim öder ve satma hakkı kazanır. Hakkın kullanılması alıcının kararıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes the buyer of a call option.",
+          "tr": "Bu, alım opsiyonu alıcısının tanımıdır."
+        },
+        "C": {
+          "en": "An obligation to sell belongs to the writer of a call or to a forward seller. The put buyer has a right.",
+          "tr": "Satma yükümlülüğü alım opsiyonunu yazana veya forward satıcısına aittir; satım opsiyonu alıcısının hakkı vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "put",
+        "strike",
+        "right",
+        "obligation"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Alım ve satım opsiyonu hakları SPK Türev sınavında temel konudur."
+      }
+    },
+    {
+      "id": "DER-02-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following most accurately describes a futures contract compared with a forward contract?",
+      "stem_tr": "Aşağıdakilerden hangisi vadeli işlem sözleşmesini forward sözleşmeyle karşılaştırırken en doğru ifadedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A futures contract is privately negotiated and settled only at expiry",
+          "tr": "Vadeli işlem sözleşmesi özel olarak müzakere edilir ve yalnızca vadede uzlaştırılır"
+        },
+        {
+          "key": "B",
+          "en": "A futures contract gives the buyer the right but not the obligation to buy",
+          "tr": "Vadeli işlem sözleşmesi alıcıya alma hakkı verir, yükümlülük vermez"
+        },
+        {
+          "key": "C",
+          "en": "A futures contract is standardized, exchange-traded and marked to market daily",
+          "tr": "Vadeli işlem sözleşmesi standarttır, borsada işlem görür ve günlük olarak piyasa değerine getirilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Futures are the exchange-traded version of a forward: standard terms, a clearinghouse and daily settlement of gains and losses.",
+      "explanation_tr": "Futures, forward'ın borsada işlem gören halidir: standart koşullar, takas kuruluşu ve kâr zararın günlük uzlaşması.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Private negotiation and settlement at expiry describe a typical forward, not a futures contract.",
+          "tr": "Özel müzakere ve vadede uzlaşma, vadeli işlemi değil tipik bir forward'ı tanımlar."
+        },
+        "B": {
+          "en": "That describes a call option. Futures create an obligation for both sides.",
+          "tr": "Bu bir alım opsiyonunu tanımlar; vadeli işlemde her iki taraf için yükümlülük doğar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "futures",
+        "forward",
+        "marked-to-market",
+        "standardized"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank pays a periodic premium to a protection seller. If the borrower named in the contract defaults, the protection seller compensates the bank for the loss. The bank is most likely using a:",
+      "stem_tr": "Bir banka, koruma satıcısına düzenli prim ödüyor. Sözleşmede adı geçen borçlu temerrüde düşerse koruma satıcısı bankanın zararını tazmin ediyor. Banka büyük olasılıkla hangi aracı kullanıyor?",
+      "options": [
+        {
+          "key": "A",
+          "en": "interest rate swap",
+          "tr": "faiz swapı"
+        },
+        {
+          "key": "B",
+          "en": "credit default swap",
+          "tr": "kredi temerrüt swapı"
+        },
+        {
+          "key": "C",
+          "en": "European call option",
+          "tr": "Avrupa tipi alım opsiyonu"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A CDS is a credit derivative: the buyer pays a periodic spread and receives a payment if a specified credit event occurs.",
+      "explanation_tr": "CDS bir kredi türevidir: alıcı düzenli spread öder ve belirli bir kredi olayı olursa ödeme alır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "An interest rate swap exchanges fixed and floating interest, not a premium for default protection.",
+          "tr": "Faiz swapı sabit ve değişken faizi değiştirir; temerrüt korumasına karşılık prim ödemez."
+        },
+        "C": {
+          "en": "A call option gives the right to buy the underlying and does not pay on a credit event.",
+          "tr": "Alım opsiyonu dayanak varlığı alma hakkı verir ve kredi olayında ödeme yapmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-default-swap",
+        "protection",
+        "default",
+        "compensate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about options and credit derivatives is most accurate?",
+      "stem_tr": "Opsiyonlar ve kredi türevleri hakkında aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The buyer of an option has a maximum loss that is unlimited",
+          "tr": "Opsiyon alıcısının azami zararı sınırsızdır"
+        },
+        {
+          "key": "B",
+          "en": "A credit derivative pays out only if the underlying share price rises",
+          "tr": "Kredi türevi yalnızca dayanak hisse fiyatı yükselirse ödeme yapar"
+        },
+        {
+          "key": "C",
+          "en": "The writer of an option receives a premium and accepts a possible obligation to perform",
+          "tr": "Opsiyonu yazan prim alır ve ifa etme olasılığı olan bir yükümlülüğü üstlenir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The option writer takes the premium in exchange for the risk of being exercised against. The buyer's loss is limited to the premium.",
+      "explanation_tr": "Opsiyonu yazan, kullanılma riski karşılığında primi alır. Alıcının zararı primle sınırlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The buyer can lose at most the premium paid, so the loss is limited.",
+          "tr": "Alıcı en fazla ödediği primi kaybedebilir; zarar sınırlıdır."
+        },
+        "B": {
+          "en": "Credit derivatives pay on a credit event such as default, not on a share price rise.",
+          "tr": "Kredi türevleri temerrüt gibi bir kredi olayında ödeme yapar; pay fiyatı artışında değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "writer",
+        "premium",
+        "exercise",
+        "credit-event"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a call option on a share with a strike price of TRY 50 for a premium of TRY 3.20. At expiry the share price is TRY 58. The investor's profit per share is closest to:",
+      "stem_tr": "Bir yatırımcı, kullanım fiyatı 50 TRY olan bir pay üzerine 3,20 TRY prim ödeyerek alım opsiyonu satın alıyor. Vadede pay fiyatı 58 TRY. Yatırımcının pay başına kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 4.80",
+          "tr": "TRY 4,80",
+          "value": 4.8
+        },
+        {
+          "key": "B",
+          "en": "TRY 8.00",
+          "tr": "TRY 8,00",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 11.20",
+          "tr": "TRY 11,20",
+          "value": 11.2
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Payoff = max(0, 58 − 50) = 8.00. Profit = 8.00 − 3.20 = TRY 4.80.",
+      "explanation_tr": "Payoff = max(0, 58 − 50) = 8,00. Kâr = 8,00 − 3,20 = 4,80 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The payoff is TRY 8.00, but profit also subtracts the premium paid.",
+          "tr": "Payoff 8,00 TRY'dir; ancak kârdan ödenen prim da düşülmelidir."
+        },
+        "C": {
+          "en": "The premium is a cost to the buyer and is subtracted, not added.",
+          "tr": "Prim alıcı için maliyettir; eklenmez, düşülür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the profit of a long call at expiry.",
+          "tr": "Uzun alım opsiyonunun vade sonu kârı isteniyor."
+        },
+        {
+          "en": "Profit equals the payoff minus the premium paid.",
+          "tr": "Kâr, payoff eksi ödenen primdir.",
+          "formula_latex": "\\text{Profit}=\\max(0,S_T-X)-c_0"
+        },
+        {
+          "en": "Substitute S_T = 58, X = 50, c_0 = 3.20.",
+          "tr": "S_T = 58, X = 50, c_0 = 3,20 değerlerini koy.",
+          "values": {
+            "S_T": 58,
+            "X": 50,
+            "c0": 3.2
+          }
+        },
+        {
+          "en": "Payoff = 8.00.",
+          "tr": "Payoff = 8,00."
+        },
+        {
+          "en": "Profit = TRY 4.80 per share.",
+          "tr": "Kâr = pay başına 4,80 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "payoff",
+        "profit",
+        "strike",
+        "premium",
+        "expiry"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "58 [-] 50 [=]  (8)",
+          "[-] 3.2 [=]  (4.8)"
+        ]
+      },
+      "numeric": {
+        "expr": "max(0,58-50)-3.2",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-02-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a put option with a strike price of TRY 80 for a premium of TRY 4.50. At expiry the underlying share price is TRY 71. The profit per share is closest to:",
+      "stem_tr": "Bir yatırımcı kullanım fiyatı 80 TRY olan satım opsiyonunu 4,50 TRY prim ödeyerek satın alıyor. Vadede dayanak pay fiyatı 71 TRY. Pay başına kâr aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 9.00",
+          "tr": "TRY 9,00",
+          "value": 9.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 13.50",
+          "tr": "TRY 13,50",
+          "value": 13.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 4.50",
+          "tr": "TRY 4,50",
+          "value": 4.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Payoff = max(0, 80 − 71) = 9.00. Profit = 9.00 − 4.50 = TRY 4.50.",
+      "explanation_tr": "Payoff = max(0, 80 − 71) = 9,00. Kâr = 9,00 − 4,50 = 4,50 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the payoff only. The premium paid must be subtracted.",
+          "tr": "Bu yalnızca payoff'tur; ödenen prim düşülmelidir."
+        },
+        "B": {
+          "en": "Adding the premium treats it as income. For the buyer it is a cost.",
+          "tr": "Primi eklemek onu gelir saymaktır; alıcı için prim maliyettir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the profit of a long put at expiry.",
+          "tr": "Uzun satım opsiyonunun vade sonu kârı isteniyor."
+        },
+        {
+          "en": "Profit equals the payoff minus the premium.",
+          "tr": "Kâr, payoff eksi primdir.",
+          "formula_latex": "\\text{Profit}=\\max(0,X-S_T)-p_0"
+        },
+        {
+          "en": "Substitute X = 80, S_T = 71, p_0 = 4.50.",
+          "tr": "X = 80, S_T = 71, p_0 = 4,50 değerlerini koy.",
+          "values": {
+            "X": 80,
+            "S_T": 71,
+            "p0": 4.5
+          }
+        },
+        {
+          "en": "Payoff = 9.00.",
+          "tr": "Payoff = 9,00."
+        },
+        {
+          "en": "Profit = TRY 4.50 per share.",
+          "tr": "Kâr = pay başına 4,50 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "payoff",
+        "profit",
+        "strike",
+        "premium",
+        "expiry"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [-] 71 [=]  (9)",
+          "[-] 4.5 [=]  (4.5)"
+        ]
+      },
+      "numeric": {
+        "expr": "max(0,80-71)-4.5",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-02-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor writes (sells) a call option with a strike price of TRY 120 and receives a premium of TRY 7. At expiry the share price is TRY 135. The profit per share to the call writer is closest to:",
+      "stem_tr": "Bir yatırımcı kullanım fiyatı 120 TRY olan alım opsiyonunu yazıyor (satıyor) ve 7 TRY prim alıyor. Vadede pay fiyatı 135 TRY. Opsiyonu yazanın pay başına kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY -8.00",
+          "tr": "TRY -8,00",
+          "value": -8.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 8.00",
+          "tr": "TRY 8,00",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "TRY -15.00",
+          "tr": "TRY -15,00",
+          "value": -15.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The writer pays max(0, 135 − 120) = 15 and keeps the 7 premium. Profit = 7 − 15 = −TRY 8.",
+      "explanation_tr": "Yazan max(0, 135 − 120) = 15 öder ve 7 primi elinde tutar. Kâr = 7 − 15 = −8 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the profit of the call buyer. The writer has the opposite sign.",
+          "tr": "Bu, alım opsiyonu alıcısının kârıdır; yazanın işareti ters olur."
+        },
+        "C": {
+          "en": "This ignores the premium that the writer received.",
+          "tr": "Bu, yazanın aldığı primi göz ardı eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the profit of a short call.",
+          "tr": "Kısa alım opsiyonunun kârı isteniyor."
+        },
+        {
+          "en": "The short call profit is the premium received minus the payoff paid.",
+          "tr": "Kısa alım opsiyonu kârı, alınan prim eksi ödenen payoff'tur.",
+          "formula_latex": "\\text{Profit}=c_0-\\max(0,S_T-X)"
+        },
+        {
+          "en": "Substitute c_0 = 7, S_T = 135, X = 120.",
+          "tr": "c_0 = 7, S_T = 135, X = 120 değerlerini koy.",
+          "values": {
+            "c0": 7,
+            "S_T": 135,
+            "X": 120
+          }
+        },
+        {
+          "en": "Payoff paid = 15.",
+          "tr": "Ödenen payoff = 15."
+        },
+        {
+          "en": "Profit = 7 − 15 = −TRY 8 per share.",
+          "tr": "Kâr = 7 − 15 = pay başına −8 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "payoff",
+        "profit",
+        "strike",
+        "premium",
+        "expiry",
+        "writer"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "135 [-] 120 [=]  (15)",
+          "[+/-] [+] 7 [=]  (-8)"
+        ]
+      },
+      "numeric": {
+        "expr": "7-max(0,135-120)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-02-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor writes a put option with a strike price of TRY 60 and receives a premium of TRY 2.80. At expiry the share price is TRY 52. The profit per share to the put writer is closest to:",
+      "stem_tr": "Bir yatırımcı kullanım fiyatı 60 TRY olan satım opsiyonunu yazıyor ve 2,80 TRY prim alıyor. Vadede pay fiyatı 52 TRY. Satım opsiyonunu yazanın pay başına kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 5.20",
+          "tr": "TRY 5,20",
+          "value": 5.2
+        },
+        {
+          "key": "B",
+          "en": "TRY -5.20",
+          "tr": "TRY -5,20",
+          "value": -5.2
+        },
+        {
+          "key": "C",
+          "en": "TRY -8.00",
+          "tr": "TRY -8,00",
+          "value": -8.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The writer pays max(0, 60 − 52) = 8 and keeps the 2.80 premium. Profit = 2.80 − 8 = −TRY 5.20.",
+      "explanation_tr": "Yazan max(0, 60 − 52) = 8 öder ve 2,80 primi tutar. Kâr = 2,80 − 8 = −5,20 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the profit of the put buyer, not of the writer.",
+          "tr": "Bu, satım opsiyonu alıcısının kârıdır; yazanın değil."
+        },
+        "C": {
+          "en": "This forgets the premium that the writer keeps.",
+          "tr": "Bu, yazanın elinde tuttuğu primi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the profit of a short put.",
+          "tr": "Kısa satım opsiyonunun kârı isteniyor."
+        },
+        {
+          "en": "Profit equals the premium received minus the payoff paid.",
+          "tr": "Kâr, alınan prim eksi ödenen payoff'tur.",
+          "formula_latex": "\\text{Profit}=p_0-\\max(0,X-S_T)"
+        },
+        {
+          "en": "Substitute p_0 = 2.80, X = 60, S_T = 52.",
+          "tr": "p_0 = 2,80, X = 60, S_T = 52 değerlerini koy.",
+          "values": {
+            "p0": 2.8,
+            "X": 60,
+            "S_T": 52
+          }
+        },
+        {
+          "en": "Payoff paid = 8.",
+          "tr": "Ödenen payoff = 8."
+        },
+        {
+          "en": "Profit = −TRY 5.20 per share.",
+          "tr": "Kâr = pay başına −5,20 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "payoff",
+        "profit",
+        "strike",
+        "premium",
+        "expiry",
+        "writer"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "60 [-] 52 [=]  (8)",
+          "[+/-] [+] 2.8 [=]  (-5.2)"
+        ]
+      },
+      "numeric": {
+        "expr": "2.8-max(0,60-52)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-02-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An investor buys a put option with a strike price of TRY 250 for a premium of TRY 12. The share price at expiry at which the investor breaks even is closest to:",
+      "stem_tr": "Bir yatırımcı kullanım fiyatı 250 TRY olan satım opsiyonunu 12 TRY prim ödeyerek satın alıyor. Yatırımcının başabaş noktası olan vade sonu pay fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 238.00",
+          "tr": "TRY 238,00",
+          "value": 238.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 262.00",
+          "tr": "TRY 262,00",
+          "value": 262.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 226.00",
+          "tr": "TRY 226,00",
+          "value": 226.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The long put profits only when X − S_T exceeds the premium. Breakeven: S_T = X − p_0 = 250 − 12 = TRY 238.",
+      "explanation_tr": "Uzun satım yalnızca X − S_T primi aştığında kâr eder. Başabaş: S_T = X − p_0 = 250 − 12 = 238 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The put buyer needs the price to fall below the strike by the premium. Adding the premium is the call breakeven formula.",
+          "tr": "Satım alıcısının, fiyatın kullanım fiyatının prim kadar altına düşmesi gerekir; primi eklemek alım opsiyonunun başabaş formülüdür."
+        },
+        "C": {
+          "en": "The premium is subtracted only once.",
+          "tr": "Prim yalnızca bir kez düşülür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the breakeven share price of a long put.",
+          "tr": "Uzun satım opsiyonunun başabaş pay fiyatı isteniyor."
+        },
+        {
+          "en": "Breakeven occurs where payoff equals the premium.",
+          "tr": "Başabaş, payoff'un primle eşit olduğu noktadır.",
+          "formula_latex": "S_T^{*}=X-p_0"
+        },
+        {
+          "en": "Substitute X = 250 and p_0 = 12.",
+          "tr": "X = 250 ve p_0 = 12 değerlerini koy.",
+          "values": {
+            "X": 250,
+            "p0": 12
+          }
+        },
+        {
+          "en": "Result: TRY 238.",
+          "tr": "Sonuç: 238 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "payoff",
+        "profit",
+        "strike",
+        "premium",
+        "expiry",
+        "breakeven"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "250 [-] 12 [=]  (238)"
+        ]
+      },
+      "numeric": {
+        "expr": "250-12",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-02-c-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a forward commitment?",
+      "stem_tr": "Aşağıdakilerden hangisi kesin yükümlülüktür (forward commitment)?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A call option",
+          "tr": "Bir alım opsiyonu"
+        },
+        {
+          "key": "B",
+          "en": "A futures contract",
+          "tr": "Bir vadeli işlem sözleşmesi"
+        },
+        {
+          "key": "C",
+          "en": "A put option",
+          "tr": "Bir satım opsiyonu"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Forwards, futures and swaps are forward commitments: both sides must perform. Options are contingent claims.",
+      "explanation_tr": "Forward, vadeli işlem ve swap kesin yükümlülüklerdir: iki taraf da ifa etmek zorundadır. Opsiyonlar şarta bağlı haklardır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A call option is a contingent claim: the buyer may choose not to exercise.",
+          "tr": "Alım opsiyonu şarta bağlı bir haktır; alıcı kullanmama seçeneğine sahiptir."
+        },
+        "C": {
+          "en": "A put option is a contingent claim and gives a right, not an obligation.",
+          "tr": "Satım opsiyonu şarta bağlı bir haktır; yükümlülük değil hak verir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-commitment",
+        "contingent-claim",
+        "obligation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-c-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which instrument usually requires the buyer to pay an upfront premium?",
+      "stem_tr": "Hangi araç genellikle alıcının peşin prim ödemesini gerektirir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A forward contract",
+          "tr": "Bir forward sözleşme"
+        },
+        {
+          "key": "B",
+          "en": "A futures contract",
+          "tr": "Bir vadeli işlem sözleşmesi"
+        },
+        {
+          "key": "C",
+          "en": "An option",
+          "tr": "Bir opsiyon"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The option buyer pays a premium for the right. Forwards and futures need no premium; futures need margin.",
+      "explanation_tr": "Opsiyon alıcısı hak için prim öder. Forward ve vadeli işlem için prim gerekmez; vadeli işlemde teminat gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A forward is normally entered at zero cost. The price is built into the forward price.",
+          "tr": "Forward genellikle sıfır maliyetle yapılır; fiyat forward fiyatının içindedir."
+        },
+        "B": {
+          "en": "A futures contract has margin but no premium. Margin is a performance deposit, not a price.",
+          "tr": "Vadeli işlemde teminat vardır ama prim yoktur; teminat bir ifa güvencesidir, fiyat değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "premium",
+        "upfront",
+        "margin"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-c-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The payoff of a long forward position is linear in the underlying price, while the payoff of a long call is not. The best explanation is that:",
+      "stem_tr": "Uzun forward pozisyonunun payoff'u dayanak varlık fiyatına göre doğrusaldır; uzun alım opsiyonunun payoff'u ise değildir. En iyi açıklama hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the forward buyer pays a premium that bends the payoff",
+          "tr": "forward alıcısı payoff'u bükecek bir prim öder"
+        },
+        {
+          "key": "B",
+          "en": "the call holder can walk away when the exercise is unprofitable",
+          "tr": "alım opsiyonu sahibi, kullanmak zarar getirdiğinde vazgeçebilir"
+        },
+        {
+          "key": "C",
+          "en": "the call is settled in cash while the forward is physically settled",
+          "tr": "alım opsiyonu nakden, forward ise fiziki olarak uzlaştırılır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A call payoff is max(0, S_T − X). The option to walk away creates the kink. A forward payoff is S_T − F_0 with no choice.",
+      "explanation_tr": "Alım opsiyonu payoff'u max(0, S_T − X)'tir; vazgeçme hakkı kırılmayı yaratır. Forward payoff'u S_T − F_0'dır ve seçenek içermez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A forward needs no premium, and a premium would only shift the payoff, not bend it.",
+          "tr": "Forward prim gerektirmez; prim olsa bile payoff'u büker değil, yalnızca kaydırır."
+        },
+        "C": {
+          "en": "The settlement method does not decide the shape of the payoff.",
+          "tr": "Uzlaşma yöntemi payoff'un şeklini belirlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "linear",
+        "payoff",
+        "asymmetric",
+        "walk-away"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-c-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A manufacturer wants to lock in a purchase price of a commodity and also wants to benefit if the market price falls. Which instrument best fits both aims?",
+      "stem_tr": "Bir üretici, bir emtianın alış fiyatını sabitlemek ve piyasa fiyatı düşerse bundan yararlanmak istiyor. Hangi araç her iki amaca da en iyi uyar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A long forward contract",
+          "tr": "Uzun bir forward sözleşme"
+        },
+        {
+          "key": "B",
+          "en": "A short put option",
+          "tr": "Kısa bir satım opsiyonu"
+        },
+        {
+          "key": "C",
+          "en": "A long call option",
+          "tr": "Uzun bir alım opsiyonu"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The call caps the purchase cost at the strike plus premium, yet the buyer can buy cheaper in the market if the price falls.",
+      "explanation_tr": "Alım opsiyonu alış maliyetini kullanım fiyatı artı primle sınırlar; fiyat düşerse alıcı piyasadan daha ucuza alabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A forward locks the price but the buyer must still buy at the fixed price even if the market falls.",
+          "tr": "Forward fiyatı sabitler ama piyasa düşse bile alıcı sabit fiyattan almak zorundadır."
+        },
+        "B": {
+          "en": "The short put adds downside risk when prices fall and does not cap the purchase price.",
+          "tr": "Kısa satım, fiyatlar düşünce aşağı yönlü risk ekler ve alış fiyatını sınırlamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "lock-in",
+        "cap",
+        "benefit",
+        "commodity"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-02-c-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-02",
+      "los_id": "DER-02-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following statements about the risk of the two groups of instruments is most accurate?",
+      "stem_tr": "İki araç grubunun riskine ilişkin aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A forward commitment can produce a loss that is larger than any upfront cost, while the maximum loss of an option buyer is the premium",
+          "tr": "Kesin yükümlülük, peşin maliyetten büyük zarar doğurabilir; opsiyon alıcısının azami zararı ise primdir"
+        },
+        {
+          "key": "B",
+          "en": "The maximum loss of a forward buyer is limited to the margin deposited",
+          "tr": "Forward alıcısının azami zararı yatırılan teminatla sınırlıdır"
+        },
+        {
+          "key": "C",
+          "en": "An option buyer must perform if the writer defaults",
+          "tr": "Opsiyon alıcısı, yazan temerrüde düşerse ifa etmek zorundadır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Forward commitments have two-sided obligations, so losses can be large. The option buyer's downside is limited to the premium.",
+      "explanation_tr": "Kesin yükümlülüklerde iki yönlü yükümlülük vardır, bu yüzden zarar büyük olabilir. Opsiyon alıcısının aşağı yönlü riski primle sınırlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Margin is not a loss limit. Losses can exceed the margin, which is why margin calls exist.",
+          "tr": "Teminat bir zarar sınırı değildir; zarar teminatı aşabilir, teminat tamamlama çağrılarının nedeni budur."
+        },
+        "C": {
+          "en": "The buyer has a right, not an obligation. The writer's default is a counterparty risk for the buyer.",
+          "tr": "Alıcının hakkı vardır, yükümlülüğü yoktur; yazanın temerrüdü alıcı için karşı taraf riskidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "maximum-loss",
+        "margin",
+        "counterparty-risk",
+        "downside"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

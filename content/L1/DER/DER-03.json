@@ -1,0 +1,702 @@
+{
+  "module_id": "DER-03",
+  "lesson": {
+    "id": "DER-03-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-03",
+    "los_ids": [
+      "DER-03-a",
+      "DER-03-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Derivative Benefits, Risks, and Issuer and Investor Uses",
+    "title_tr": "Türevlerin Faydaları, Riskleri ve İhraççı ile Yatırımcı Kullanımları",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A tool, not a bet",
+        "heading_tr": "Bir araç, bahis değil",
+        "en": "A derivative is like a sharp knife: very useful for a chef and dangerous for a beginner. A Turkish exporter uses a USD/TRY forward to fix next quarter's revenue. A fund adjusts its equity exposure in one trade with BIST 30 futures. A speculator may use the same contract to bet on direction with borrowed-like leverage. The tool is the same, the purpose is different. That is why the exam asks you to know both the benefits and the risks, and to match each use to the right user: issuer, investor or intermediary.",
+        "tr": "Türev keskin bir bıçak gibidir: aşçı için çok yararlı, acemi için tehlikelidir. Türk bir ihracatçı gelecek çeyrek gelirini sabitlemek için USD/TRY forward kullanır. Bir fon, hisse senedi pozisyonunu BIST 30 vadeli işlemiyle tek işlemde ayarlar. Bir spekülatör aynı sözleşmeyi, borçlanmış gibi kaldıraçla yön tahmini için kullanabilir. Araç aynı, amaç farklıdır. Bu yüzden sınav hem faydaları hem riskleri bilmenizi ve her kullanımı doğru kullanıcıyla (ihraççı, yatırımcı, aracı) eşleştirmenizi ister.",
+        "key_terms": [
+          "hedging",
+          "speculation",
+          "leverage"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Benefits and risks",
+        "heading_tr": "Faydalar ve riskler",
+        "en": "Benefits: (1) risk allocation, moving risk to those who want it; (2) information discovery, since derivative prices reflect expectations and often react quickly; (3) operational advantages, such as lower transaction costs, higher liquidity and easy short positions; (4) market efficiency, because arbitrage keeps prices aligned. Risks: (1) leverage and speculative use, which can create large losses from small moves; (2) complexity and lack of transparency, especially in OTC markets; (3) basis risk, when the derivative does not track the exposure perfectly; (4) counterparty credit risk and liquidity risk. Derivatives do not create or destroy risk overall; they move it.",
+        "tr": "Faydalar: (1) riskin onu isteyenlere aktarıldığı risk dağıtımı; (2) türev fiyatlarının beklentileri yansıtması ve çoğunlukla hızlı tepki vermesi nedeniyle bilgi keşfi; (3) düşük işlem maliyeti, yüksek likidite ve kolay açığa satış gibi operasyonel avantajlar; (4) arbitrajın fiyatları uyumlu tuttuğu piyasa etkinliği. Riskler: (1) küçük hareketlerden büyük zarar doğurabilen kaldıraç ve spekülatif kullanım; (2) özellikle tezgâhüstü piyasada karmaşıklık ve şeffaflık eksikliği; (3) türevin pozisyonu tam izlememesi durumunda baz riski; (4) karşı taraf kredi riski ve likidite riski. Türevler toplamda riski yaratmaz veya yok etmez; aktarır.",
+        "key_terms": [
+          "risk allocation",
+          "information discovery",
+          "basis risk",
+          "counterparty risk",
+          "liquidity risk"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "How issuers and investors use them",
+        "heading_tr": "İhraççılar ve yatırımcılar nasıl kullanır?",
+        "en": "Issuers, such as corporations, use derivatives mainly to hedge risks that come from their business and financing: a floating-rate borrower can use an interest rate swap to fix its cost; an exporter can sell currency forward; a producer can lock in a commodity price. Hedge accounting can match the derivative's gains and losses with those of the hedged item to reduce artificial earnings volatility. Investors use derivatives to hedge portfolio risk, to adjust exposure quickly and cheaply, to gain exposure to markets that are hard to reach, and sometimes to speculate. Intermediaries such as dealers make markets and manage their own net risk.",
+        "tr": "Şirketler gibi ihraççılar türevleri esas olarak iş ve finansmanlarından doğan riskleri azaltmak için kullanır: değişken faizli borçlu maliyetini sabitlemek için faiz swapı, ihracatçı döviz satımı için forward, üretici emtia fiyatını sabitlemek için vadeli işlem kullanabilir. Riskten korunma muhasebesi, türevin kâr zararını korunan kalemle eşleştirerek yapay kâr oynaklığını azaltabilir. Yatırımcılar türevleri portföy riskini azaltmak, pozisyonu hızlı ve ucuz ayarlamak, erişimi zor piyasalara girmek ve bazen spekülasyon yapmak için kullanır. Aracı kurumlar gibi piyasa yapıcılar ise piyasa oluşturur ve kendi net risklerini yönetir.",
+        "key_terms": [
+          "hedge accounting",
+          "exposure management",
+          "issuer"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "User",
+              "tr": "Kullanıcı"
+            },
+            {
+              "en": "Typical purpose",
+              "tr": "Tipik amaç"
+            },
+            {
+              "en": "Example",
+              "tr": "Örnek"
+            }
+          ],
+          "rows": [
+            [
+              "Issuer",
+              "Hedge business and financing risk",
+              "Exporter sells USD/EUR forward"
+            ],
+            [
+              "Investor",
+              "Adjust exposure, hedge, speculate",
+              "Fund buys BIST 30 futures"
+            ],
+            [
+              "Dealer",
+              "Make markets, manage net risk",
+              "Bank quotes forwards to clients"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "example",
+        "heading_en": "Exposure change with futures",
+        "heading_tr": "Vadeli işlemle pozisyon değişimi",
+        "en": "A fund has TRY 500 million, split 50% equities and 50% bonds. The manager wants 60% equity for a few weeks. Selling TRY 50 million of bonds and buying TRY 50 million of shares means many trades, spreads and later reversal costs. Instead, the manager buys BIST 30 futures with a notional of about TRY 50 million. The fund has equity exposure of about 60% while the bonds stay in place. When the view ends, the manager closes the futures. The risks are basis risk and the need to meet margin calls.",
+        "tr": "Bir fonun 500 milyon TRY varlığı var; %50 pay senedi, %50 tahvil. Yönetici birkaç hafta için %60 pay senedi istiyor. 50 milyon TRY tahvili satıp 50 milyon TRY pay almak birçok işlem, fark ve sonradan geri dönüş maliyeti demektir. Bunun yerine yönetici yaklaşık 50 milyon TRY nominal tutarlı BIST 30 vadeli işlemi alır. Tahviller yerinde dururken fonun pay senedi pozisyonu yaklaşık %60 olur. Görüş sona erince yönetici vadeli işlemi kapatır. Riskler baz riski ve teminat tamamlama çağrılarını karşılama ihtiyacıdır.",
+        "key_terms": [
+          "exposure",
+          "notional",
+          "basis risk"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not say derivatives eliminate risk: they transfer it, and hedging usually costs something. Do not confuse hedge accounting (a reporting treatment) with hedging (an economic action). Do not assume all derivative use is speculation: issuers mainly hedge. Leverage is a benefit in cost terms but a risk in loss terms; read the question to see which side it asks. Counterparty credit risk is mainly an OTC issue, as clearinghouses reduce it in listed markets.",
+        "tr": "Türevlerin riski yok ettiğini söylemeyin: riski aktarırlar ve korunmanın genellikle bir maliyeti vardır. Riskten korunma muhasebesini (raporlama yöntemi) riskten korunmayla (ekonomik eylem) karıştırmayın. Her türev kullanımının spekülasyon olduğunu varsaymayın: ihraççılar esas olarak korunur. Kaldıraç maliyet açısından bir fayda, zarar açısından bir risktir; sorunun hangi tarafı sorduğuna bakın. Karşı taraf kredi riski ağırlıklı olarak tezgâhüstü bir sorundur; kote piyasada takas kuruluşu bunu azaltır.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Derivatives allocate risk, help discover information, lower costs and improve efficiency. Their risks are leverage, complexity, basis, counterparty and liquidity risk. Issuers mostly hedge operating and financing risks, and hedge accounting reduces earnings volatility. Investors use derivatives to hedge, manage exposure or speculate.",
+    "summary_tr": "Türevler riski dağıtır, bilgi keşfine yardım eder, maliyeti düşürür ve etkinliği artırır. Riskleri kaldıraç, karmaşıklık, baz, karşı taraf ve likidite riskidir. İhraççılar çoğunlukla faaliyet ve finansman risklerinden korunur; riskten korunma muhasebesi kâr oynaklığını azaltır. Yatırımcılar türevleri korunma, pozisyon yönetimi veya spekülasyon için kullanır.",
+    "common_traps_tr": [
+      "Türev riski yok etmez; aktarır ve korunmanın maliyeti vardır.",
+      "Riskten korunma (hedging) ekonomik bir işlemdir; riskten korunma muhasebesi raporlama yöntemidir.",
+      "Kaldıraç aynı anda hem fayda (düşük maliyet) hem risk (büyük zarar) olabilir.",
+      "Karşı taraf kredi riski ağırlıkla tezgâhüstü piyasalarda görülür.",
+      "İhraççıların kullanımı ağırlıkla riskten korunmadır."
+    ],
+    "vocab_ids": [
+      "derivative",
+      "hedge",
+      "hedging",
+      "leverage",
+      "speculate",
+      "risk-allocation",
+      "information-discovery",
+      "basis-risk",
+      "counterparty-risk",
+      "liquidity-risk",
+      "issuer",
+      "hedge-accounting",
+      "exposure",
+      "complexity",
+      "transparency",
+      "transaction-cost"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Türevlerin kullanım amaçları SPK Türev lisansıyla örtüşür; riskten korunma muhasebesi kısmen bilinir."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-03-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a benefit of derivatives?",
+      "stem_tr": "Aşağıdakilerden hangisi türevlerin bir faydasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They allow risk to be transferred to parties who are willing to bear it",
+          "tr": "Riskin, onu taşımaya istekli taraflara aktarılmasını sağlarlar"
+        },
+        {
+          "key": "B",
+          "en": "They remove all market risk from a portfolio at no cost",
+          "tr": "Bir portföyden tüm piyasa riskini maliyetsiz biçimde ortadan kaldırırlar"
+        },
+        {
+          "key": "C",
+          "en": "They guarantee a higher return than the underlying",
+          "tr": "Dayanak varlıktan daha yüksek getiri garanti ederler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Risk allocation is a main benefit: hedgers pass risk to speculators or other hedgers with opposite needs.",
+      "explanation_tr": "Risk dağıtımı ana faydalardan biridir: riskten korunanlar riski, karşıt ihtiyacı olan spekülatörlere veya diğer taraflara aktarır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Derivatives move risk; they do not delete it, and hedging has a cost, such as a premium or lost upside.",
+          "tr": "Türevler riski ortadan kaldırmaz, aktarır; korunmanın da prim veya kaçırılan getiri gibi bir maliyeti vardır."
+        },
+        "C": {
+          "en": "No derivative guarantees extra return. Leverage increases both gains and losses.",
+          "tr": "Hiçbir türev ek getiri garanti etmez; kaldıraç hem kârı hem zararı büyütür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "benefit",
+        "transfer",
+        "risk",
+        "willing"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Türevlerin riskten korunma ve risk transferi işlevi SPK sınavında bilinir."
+      }
+    },
+    {
+      "id": "DER-03-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Derivative markets often react faster than spot markets to new information. This is an example of which benefit?",
+      "stem_tr": "Türev piyasaları yeni bilgiye genellikle spot piyasalardan daha hızlı tepki verir. Bu, hangi faydanın örneğidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Counterparty protection",
+          "tr": "Karşı taraf koruması"
+        },
+        {
+          "key": "B",
+          "en": "Information discovery",
+          "tr": "Fiyat ve bilgi keşfi"
+        },
+        {
+          "key": "C",
+          "en": "Accounting simplification",
+          "tr": "Muhasebe kolaylığı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Low transaction costs and leverage attract informed traders, so derivative prices can show new information early.",
+      "explanation_tr": "Düşük işlem maliyeti ve kaldıraç bilgili yatırımcıları çeker; bu yüzden türev fiyatları yeni bilgiyi erken gösterebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Counterparty protection is linked to clearing and collateral, not to how fast prices reflect information.",
+          "tr": "Karşı taraf koruması takas ve teminatla ilgilidir; fiyatların bilgiyi ne kadar hızlı yansıttığıyla değil."
+        },
+        "C": {
+          "en": "Derivatives usually make accounting more complex, and this is not a price discovery effect.",
+          "tr": "Türevler çoğunlukla muhasebeyi karmaşıklaştırır ve bu bir fiyat keşfi etkisi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "information",
+        "discovery",
+        "spot",
+        "react"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund manager buys BIST 30 futures instead of 30 individual shares to change equity exposure quickly. Which benefit does this most directly illustrate?",
+      "stem_tr": "Bir fon yöneticisi, hisse senedi pozisyonunu hızla değiştirmek için 30 ayrı pay yerine BIST 30 vadeli işlem sözleşmesi alıyor. Bu durum hangi faydayı en doğrudan gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Hedge accounting",
+          "tr": "Riskten korunma muhasebesi"
+        },
+        {
+          "key": "B",
+          "en": "Elimination of basis risk",
+          "tr": "Baz riskinin ortadan kalkması"
+        },
+        {
+          "key": "C",
+          "en": "Operational advantages such as lower transaction costs and higher liquidity",
+          "tr": "Düşük işlem maliyeti ve yüksek likidite gibi operasyonel avantajlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "One liquid contract replaces 30 trades, so costs and execution time fall.",
+      "explanation_tr": "Tek bir likit sözleşme 30 işlemin yerini tutar; maliyet ve işlem süresi düşer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Hedge accounting is a reporting treatment. The manager is simply changing exposure at low cost.",
+          "tr": "Riskten korunma muhasebesi bir raporlama yöntemidir; yönetici yalnızca düşük maliyetle pozisyon ayarlamaktadır."
+        },
+        "B": {
+          "en": "Futures can create basis risk, since the futures price may not track the index perfectly. It is not eliminated.",
+          "tr": "Vadeli işlemler baz riski yaratabilir; fiyat endeksi mükemmel izlemeyebilir. Baz riski ortadan kalkmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "operational",
+        "transaction-cost",
+        "liquidity",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst warns that a client's derivative position is hard to understand and that its payoff may move far more than the invested amount. Which risks does the analyst most likely highlight?",
+      "stem_tr": "Bir analist, müşterinin türev pozisyonunun anlaşılmasının zor olduğunu ve payoff'unun yatırılan tutardan çok daha fazla oynayabileceğini belirtiyor. Analist hangi riskleri öne çıkarıyor olabilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Dividend risk and voting risk",
+          "tr": "Temettü riski ve oy hakkı riski"
+        },
+        {
+          "key": "B",
+          "en": "Complexity and leverage-related risk",
+          "tr": "Karmaşıklık ve kaldıraçla ilgili risk"
+        },
+        {
+          "key": "C",
+          "en": "Settlement risk only",
+          "tr": "Yalnızca uzlaşma riski"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Complexity and leverage mean a small move in the underlying can create large gains or losses and can hide the true risk.",
+      "explanation_tr": "Karmaşıklık ve kaldıraç, dayanak varlıktaki küçük bir hareketin büyük kâr veya zarar yaratmasına ve gerçek riskin gizlenmesine yol açabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "These are share ownership matters. They do not describe a hard-to-understand leveraged payoff.",
+          "tr": "Bunlar pay sahipliği konularıdır; anlaşılması zor kaldıraçlı bir payoff'u anlatmaz."
+        },
+        "C": {
+          "en": "Settlement risk is about failure to deliver or pay. The warning is about complexity and amplified losses.",
+          "tr": "Uzlaşma riski teslim veya ödeme başarısızlığıdır; uyarı ise karmaşıklık ve büyüyen zararlarla ilgilidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "complexity",
+        "leverage",
+        "amplify",
+        "warn"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company hedges its USD debt with an OTC forward. The USD/TRY rate then falls sharply and the forward loses value, while the bank fails. Which two risks are most clearly shown?",
+      "stem_tr": "Bir şirket USD borcunu tezgâhüstü forward ile koruyor. USD/TRY kuru sonra sert düşüyor ve forward değer kaybederken banka batıyor. Bu durumda hangi iki risk en açık biçimde görülür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Liquidity risk and tax risk",
+          "tr": "Likidite riski ve vergi riski"
+        },
+        {
+          "key": "B",
+          "en": "Basis risk and model risk",
+          "tr": "Baz riski ve model riski"
+        },
+        {
+          "key": "C",
+          "en": "Market risk and counterparty credit risk",
+          "tr": "Piyasa riski ve karşı taraf kredi riski"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The forward moved with the exchange rate (market risk) and the bank could not perform (counterparty credit risk).",
+      "explanation_tr": "Forward kurla birlikte hareket etti (piyasa riski) ve banka yükümlülüğünü yerine getiremedi (karşı taraf kredi riski).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The facts mention a price move and a failed counterparty, not liquidity or tax issues.",
+          "tr": "Verilenler fiyat hareketi ve batan bir karşı tarafı anlatır; likidite veya vergi sorunlarını değil."
+        },
+        "B": {
+          "en": "Nothing in the facts relates to a mismatch between the hedge and the exposure or to a pricing model.",
+          "tr": "Verilenlerde korunma aracı ile pozisyon arasında bir uyumsuzluk veya fiyatlama modeli sorunu yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "counterparty-risk",
+        "market-risk",
+        "fail",
+        "sharply"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A corporation that borrows at a floating rate and wants predictable interest costs would most likely use derivatives to:",
+      "stem_tr": "Değişken faizle borçlanan ve faiz maliyetlerini öngörülebilir kılmak isteyen bir şirket türevleri büyük olasılıkla neden kullanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "hedge interest rate risk",
+          "tr": "faiz oranı riskinden korunmak için"
+        },
+        {
+          "key": "B",
+          "en": "speculate on its own share price",
+          "tr": "kendi pay fiyatı üzerinde spekülasyon yapmak için"
+        },
+        {
+          "key": "C",
+          "en": "increase its tax liability",
+          "tr": "vergi yükümlülüğünü artırmak için"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "An interest rate swap or similar contract can turn floating payments into fixed ones, which fixes interest costs.",
+      "explanation_tr": "Faiz swapı veya benzer bir sözleşme değişken ödemeleri sabite çevirerek faiz maliyetini sabitler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The stated goal is predictable costs, which is hedging, not speculation.",
+          "tr": "Belirtilen amaç öngörülebilir maliyettir; bu spekülasyon değil, riskten korunmadır."
+        },
+        "C": {
+          "en": "Increasing tax is not a goal of hedging.",
+          "tr": "Vergi yükümlülüğünü artırmak bir korunma amacı değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hedge",
+        "floating-rate",
+        "predictable",
+        "interest-rate-swap"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes hedge accounting?",
+      "stem_tr": "Aşağıdakilerden hangisi riskten korunma muhasebesini en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A legal rule that forbids firms from using derivatives",
+          "tr": "Şirketlerin türev kullanmasını yasaklayan hukuki bir kural"
+        },
+        {
+          "key": "B",
+          "en": "A method to increase the notional of a derivative",
+          "tr": "Bir türevin nominal tutarını artırma yöntemi"
+        },
+        {
+          "key": "C",
+          "en": "An accounting treatment that matches the gains and losses of a hedging derivative with those of the hedged item",
+          "tr": "Korunma amaçlı türevin kâr ve zararlarını korunan kalemin kâr ve zararlarıyla eşleştiren bir muhasebe yöntemi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Matching reduces artificial earnings volatility that would arise if the derivative were marked to market while the hedged item was not.",
+      "explanation_tr": "Eşleştirme, türev piyasa değerine göre yansıtılırken korunan kalem yansıtılmasa doğacak yapay kâr oynaklığını azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Hedge accounting is not a prohibition. It is a reporting approach for qualifying hedges.",
+          "tr": "Riskten korunma muhasebesi bir yasak değil, nitelikli korunmalar için bir raporlama yaklaşımıdır."
+        },
+        "B": {
+          "en": "It does not change the contract. It changes how results are reported.",
+          "tr": "Sözleşmeyi değiştirmez; sonuçların nasıl raporlandığını değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hedge-accounting",
+        "hedged-item",
+        "volatility",
+        "earnings"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "partial",
+        "note_tr": "Riskten korunma muhasebesi (TFRS 9 / IFRS 9) SPK sınavında kısmen bilinir."
+      }
+    },
+    {
+      "id": "DER-03-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A pension fund wants to raise its equity exposure from 50% to 60% for a few weeks without selling bonds. The fund most likely uses derivatives for:",
+      "stem_tr": "Bir emeklilik fonu, tahvil satmadan birkaç haftalığına pay senedi pozisyonunu %50'den %60'a çıkarmak istiyor. Fon türevleri büyük olasılıkla ne için kullanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "exposure management",
+          "tr": "pozisyon (risk maruziyeti) yönetimi için"
+        },
+        {
+          "key": "B",
+          "en": "issuing new debt",
+          "tr": "yeni borç ihraç etmek için"
+        },
+        {
+          "key": "C",
+          "en": "hedge accounting",
+          "tr": "riskten korunma muhasebesi için"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Investors use derivatives, often equity index futures, to adjust exposure quickly and cheaply without trading the underlying portfolio.",
+      "explanation_tr": "Yatırımcılar türevleri, çoğunlukla endeks vadeli işlemleriyle, altta yatan portföyü işleme sokmadan pozisyonu hızlı ve ucuz biçimde ayarlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Issuing debt is a financing action and has nothing to do with changing exposure with derivatives.",
+          "tr": "Borç ihracı bir finansman işlemidir; türevlerle pozisyon değiştirmeyle ilgisi yoktur."
+        },
+        "C": {
+          "en": "Hedge accounting is a reporting treatment for hedges. The fund is taking more risk, not hedging.",
+          "tr": "Riskten korunma muhasebesi korunmalar için bir raporlama yöntemidir; fon korunmuyor, daha fazla risk alıyor."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "exposure",
+        "adjust",
+        "equity",
+        "pension-fund"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with investors, issuers (such as non-financial companies) are most likely to use derivatives primarily to:",
+      "stem_tr": "Yatırımcılarla kıyaslandığında, ihraççılar (finansal olmayan şirketler gibi) türevleri öncelikle ne için kullanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "profit from short-term price forecasts",
+          "tr": "kısa vadeli fiyat tahminlerinden kâr etmek için"
+        },
+        {
+          "key": "B",
+          "en": "manage risks that arise from their operations and financing",
+          "tr": "faaliyetlerinden ve finansmanlarından doğan riskleri yönetmek için"
+        },
+        {
+          "key": "C",
+          "en": "create new voting rights",
+          "tr": "yeni oy hakları yaratmak için"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Issuers face interest rate, currency and commodity risks from their business and use derivatives to reduce them.",
+      "explanation_tr": "İhraççılar iş süreçlerinden doğan faiz, kur ve emtia riskleriyle karşılaşır ve bunları azaltmak için türev kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is speculative trading. It is not the primary issuer use.",
+          "tr": "Bu spekülatif işlemdir; ihraççıların öncelikli kullanımı değildir."
+        },
+        "C": {
+          "en": "Derivatives do not create voting rights in the company.",
+          "tr": "Türevler şirkette oy hakkı yaratmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "issuer",
+        "operations",
+        "financing",
+        "manage"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-03-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-03",
+      "los_id": "DER-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish exporter hedges expected euro receipts with a forward. Which is the best description of the effect on the exporter's reported earnings if hedge accounting is not applied?",
+      "stem_tr": "Bir Türk ihracatçı beklenen euro tahsilatını forward ile koruyor. Riskten korunma muhasebesi uygulanmazsa, bunun ihracatçının raporlanan kârı üzerindeki etkisi en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Earnings may be more volatile because the derivative is marked to market before the hedged receipt is recorded",
+          "tr": "Kâr daha oynak olabilir; çünkü türev, korunan tahsilat kaydedilmeden önce piyasa değerine getirilir"
+        },
+        {
+          "key": "B",
+          "en": "Earnings become less volatile because the derivative is recorded at cost",
+          "tr": "Kâr daha az oynak olur; çünkü türev maliyet bedeliyle kaydedilir"
+        },
+        {
+          "key": "C",
+          "en": "Earnings are unaffected because forwards have zero value at inception",
+          "tr": "Kâr etkilenmez; çünkü forward başlangıçta sıfır değere sahiptir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Without matching, the derivative's gain or loss appears in earnings now, while the hedged item is recognised later, creating mismatch and volatility.",
+      "explanation_tr": "Eşleştirme olmadığında türevin kâr veya zararı hemen kâra yansır, korunan kalem ise daha sonra kaydedilir; bu da uyumsuzluk ve oynaklık yaratır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Derivatives are generally measured at fair value, not at cost, so this argument fails.",
+          "tr": "Türevler genellikle maliyetle değil gerçeğe uygun değerle ölçülür; bu yüzden bu argüman geçersizdir."
+        },
+        "C": {
+          "en": "The zero value applies only at inception. Later value changes flow through earnings.",
+          "tr": "Sıfır değer yalnızca başlangıç için geçerlidir; sonraki değer değişimleri kâra yansır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "fair-value",
+        "mismatch",
+        "earnings",
+        "recognise"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

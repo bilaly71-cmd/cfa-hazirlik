@@ -74,16 +74,16 @@
         "kind": "example",
         "heading_en": "Worked example: a DİBS between coupon dates",
         "heading_tr": "Çözümlü örnek: kupon tarihleri arasında bir DİBS",
-        "en": "A fictional 4-year government bond pays an annual coupon of 20% (per 100 par) and its YTM is 24%. Exactly on a coupon date, N = 4, I/Y = 24, PMT = 20, FV = 100 gives PV₀ = 90.41. Suppose settlement is 90 days after the last coupon with a 360-day coupon period (t/T = 0.25). Full price = 90.41 × 1.24^0.25 = 95.39. Accrued interest = 20 × 0.25 = 5.00. Flat price = 95.39 − 5.00 = 90.39. Note that the flat price (90.39) is almost the same as PV₀ (90.41): the flat price changes little within a coupon period, while the full price grows with accrued interest.",
-        "tr": "Kurgusal 4 yıllık bir devlet tahvili yılda %20 kupon (100 nominal üzerinden) ödüyor ve YTM'si %24. Tam kupon tarihinde N = 4, I/Y = 24, PMT = 20, FV = 100 ile PV₀ = 90,41. Valörün son kupondan 90 gün sonra ve kupon döneminin 360 gün olduğunu varsayalım (t/T = 0,25). Kirli fiyat = 90,41 × 1,24^0,25 = 95,39. Birikmiş faiz = 20 × 0,25 = 5,00. Temiz fiyat = 95,39 − 5,00 = 90,39. Temiz fiyatın (90,39) PV₀'a (90,41) çok yakın olduğuna dikkat edin: temiz fiyat kupon dönemi içinde az değişirken kirli fiyat birikmiş faizle birlikte büyür.",
+        "en": "A fictional 4-year government bond pays an annual coupon of 20% (per 100 par) and its YTM is 24%. Exactly on a coupon date, N = 4, I/Y = 24, PMT = 20, FV = 100 gives PV₀ = 90.38. Suppose settlement is 90 days after the last coupon with a 360-day coupon period (t/T = 0.25). Full price = 90.38 × 1.24^0.25 = 95.38. Accrued interest = 20 × 0.25 = 5.00. Flat price = 95.38 − 5.00 = 90.38. Note that the flat price (90.38) is practically the same as PV₀ (90.38): the flat price changes little within a coupon period, while the full price grows with accrued interest.",
+        "tr": "Kurgusal 4 yıllık bir devlet tahvili yılda %20 kupon (100 nominal üzerinden) ödüyor ve YTM'si %24. Tam kupon tarihinde N = 4, I/Y = 24, PMT = 20, FV = 100 ile PV₀ = 90,38. Valörün son kupondan 90 gün sonra ve kupon döneminin 360 gün olduğunu varsayalım (t/T = 0,25). Kirli fiyat = 90,38 × 1,24^0,25 = 95,38. Birikmiş faiz = 20 × 0,25 = 5,00. Temiz fiyat = 95,38 − 5,00 = 90,38. Temiz fiyatın (90,38) PV₀'a (90,38) pratikte eşit olduğuna dikkat edin: temiz fiyat kupon dönemi içinde az değişirken kirli fiyat birikmiş faizle birlikte büyür.",
         "key_terms": [
           "full price",
           "flat price",
           "accrued interest"
         ],
         "example": {
-          "en": "PV₀ = 90.41; full = 90.41 × 1.24^0.25 = 95.39; AI = 5.00; flat = 90.39.",
-          "tr": "PV₀ = 90,41; kirli = 90,41 × 1,24^0,25 = 95,39; BF = 5,00; temiz = 90,39.",
+          "en": "PV₀ = 90.38; full = 90.38 × 1.24^0.25 = 95.38; AI = 5.00; flat = 90.38.",
+          "tr": "PV₀ = 90,38; kirli = 90,38 × 1,24^0,25 = 95,38; BF = 5,00; temiz = 90,38.",
           "formula_latex": "PV^{Full}=90.41\\times1.24^{0.25}=95.39"
         }
       },
@@ -200,7 +200,11 @@
       "note_tr": "Tahvil fiyatlama, kirli/temiz fiyat ve matris fiyatlama Düzey 3 Temel Finans Matematiği (Bölüm 8) kapsamındadır."
     },
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
@@ -306,7 +310,11 @@
         "note_tr": "Kupon tarihinde tahvil fiyatlama Düzey 3'te bilinir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-a-q02",
@@ -407,7 +415,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-a-q03",
@@ -507,7 +519,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-a-q04",
@@ -608,7 +624,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-a-q05",
@@ -705,7 +725,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-a-q06",
@@ -806,7 +830,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q01",
@@ -863,7 +891,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q02",
@@ -919,7 +951,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q03",
@@ -931,23 +967,23 @@
       "type": "mcq3",
       "difficulty": 1,
       "cognitive": "recall",
-      "stem_en": "A 5-year bond with an 18% coupon trades at 108.40 when its yield to maturity is 15.8%. If the yield stays at 15.8% for the next year, the bond's price one year later will most likely be:",
-      "stem_tr": "Kuponu %18 olan 5 yıllık bir tahvil, vadeye kadar getirisi %15,8 iken 108,40'tan işlem görüyor. Getiri gelecek yıl %15,8'de kalırsa tahvilin bir yıl sonraki fiyatı büyük olasılıkla:",
+      "stem_en": "A 5-year bond with an 18% coupon trades at 107.24 when its yield to maturity is 15.8%. If the yield stays at 15.8% for the next year, the bond's price one year later will most likely be:",
+      "stem_tr": "Kuponu %18 olan 5 yıllık bir tahvil, vadeye kadar getirisi %15,8 iken 107,24'tan işlem görüyor. Getiri gelecek yıl %15,8'de kalırsa tahvilin bir yıl sonraki fiyatı büyük olasılıkla:",
       "options": [
         {
           "key": "A",
-          "en": "lower than 108.40 but above 100",
-          "tr": "108,40'ın altında ama 100'ün üzerinde"
+          "en": "lower than 107.24 but above 100",
+          "tr": "107,24'ın altında ama 100'ün üzerinde"
         },
         {
           "key": "B",
-          "en": "higher than 108.40",
-          "tr": "108,40'ın üzerinde"
+          "en": "higher than 107.24",
+          "tr": "107,24'ın üzerinde"
         },
         {
           "key": "C",
-          "en": "unchanged at 108.40",
-          "tr": "108,40'ta değişmemiş"
+          "en": "unchanged at 107.24",
+          "tr": "107,24'ta değişmemiş"
         }
       ],
       "answer": "A",
@@ -979,7 +1015,11 @@
         "note_tr": "Primli tahvilin nominale yakınsaması Düzey 3 tahvil değerlemede bilinir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q04",
@@ -1035,7 +1075,11 @@
         "most-accurate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q05",
@@ -1091,7 +1135,11 @@
         "least-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-b-q06",
@@ -1147,7 +1195,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-c-q01",
@@ -1246,7 +1298,11 @@
         "note_tr": "Matris fiyatlama / enterpolasyon Düzey 3'te bilinir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-c-q02",
@@ -1347,7 +1403,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-c-q03",
@@ -1443,7 +1503,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-c-q04",
@@ -1499,7 +1563,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-06-c-q05",
@@ -1555,7 +1623,11 @@
         "least-consistent"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

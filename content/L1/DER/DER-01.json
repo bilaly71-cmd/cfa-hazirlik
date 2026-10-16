@@ -1,0 +1,705 @@
+{
+  "module_id": "DER-01",
+  "lesson": {
+    "id": "DER-01-lesson",
+    "level": "L1",
+    "topic": "DER",
+    "module_id": "DER-01",
+    "los_ids": [
+      "DER-01-a",
+      "DER-01-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Derivative Instrument and Derivative Market Features",
+    "title_tr": "Türev Araç ve Türev Piyasası Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why derivatives exist",
+        "heading_tr": "Türevler neden var?",
+        "en": "Imagine a Turkish exporter who will receive euros in six months, or a fund manager who wants to hold BIST 30 exposure for two weeks without buying 30 shares. Both need a tool that moves risk or exposure cheaply. A derivative is that tool. Its value comes from something else, so it lets one party pass risk to another party who wants it. Türkiye has a listed derivatives market, VİOP, run by Borsa İstanbul with Takasbank as the central counterparty. Banks also trade many OTC contracts with clients. Both markets use the same ideas that the CFA exam tests.",
+        "tr": "Altı ay sonra euro tahsil edecek bir Türk ihracatçıyı veya 30 hisse almadan iki haftalığına BIST 30 pozisyonu isteyen bir fon yöneticisini düşünün. İkisi de riski veya pozisyonu ucuza aktaracak bir araca ihtiyaç duyar. Türev bu araçtır. Değeri başka bir şeyden geldiği için, riski onu isteyen bir tarafa devretmeyi sağlar. Türkiye'de Borsa İstanbul tarafından işletilen, Takasbank'ın merkezi karşı taraf olduğu kote bir türev piyasası (VİOP) vardır. Bankalar da müşterileriyle çok sayıda tezgâhüstü sözleşme yapar. İki piyasa da CFA sınavının sorduğu aynı fikirleri kullanır.",
+        "key_terms": [
+          "derivative",
+          "VİOP",
+          "central counterparty"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Derivative and its basic features",
+        "heading_tr": "Türev ve temel özellikleri",
+        "en": "A derivative is a financial contract whose value depends on the performance of an underlying. The underlying can be a share, an index, a bond, a currency, a commodity, an interest rate or even a credit event. Basic contract terms are: the underlying, the expiration date, the size (notional or contract size), the price or rate fixed in the contract, and the settlement method. With physical delivery, the underlying is delivered at expiry. With cash settlement, only the value difference is paid in cash. Most index derivatives, such as the BIST 30 futures, are cash settled because delivering an index is not practical.",
+        "tr": "Türev, değeri bir dayanak varlığın performansına bağlı olan finansal sözleşmedir. Dayanak; pay, endeks, tahvil, döviz, emtia, faiz oranı hatta bir kredi olayı olabilir. Temel sözleşme koşulları şunlardır: dayanak varlık, vade tarihi, büyüklük (nominal tutar veya sözleşme büyüklüğü), sözleşmede belirlenen fiyat veya oran ve uzlaşma yöntemi. Fiziki teslimde dayanak varlık vadede teslim edilir. Nakdi uzlaşmada yalnızca değer farkı nakit ödenir. BIST 30 vadeli işlemi gibi endeks türevlerinin çoğu, endeksi teslim etmek mümkün olmadığı için nakdi uzlaşmalıdır.",
+        "key_terms": [
+          "underlying asset",
+          "expiration",
+          "notional",
+          "cash settlement",
+          "physical delivery"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Exchange-traded and OTC markets",
+        "heading_tr": "Organize ve tezgâhüstü piyasalar",
+        "en": "Exchange-traded derivatives are standardized: the exchange fixes the size, the expiration dates and the settlement. A clearinghouse or central counterparty becomes the buyer to every seller and the seller to every buyer, collects margin and settles gains and losses daily. This lowers counterparty risk and keeps the market transparent and regulated. OTC derivatives are privately negotiated between two parties, so they can be customized to exact needs. The cost is higher counterparty credit risk, less transparency and lower liquidity, since closing a position usually needs the same dealer. After the 2008 crisis, many standard OTC contracts moved to central clearing.",
+        "tr": "Organize piyasada işlem gören türevler standarttır: büyüklüğü, vade tarihlerini ve uzlaşmayı borsa belirler. Takas kuruluşu veya merkezi karşı taraf her satıcıya karşı alıcı, her alıcıya karşı satıcı olur, teminat toplar ve kâr ile zararları günlük olarak uzlaştırır. Bu, karşı taraf riskini azaltır ve piyasayı şeffaf ve düzenli tutar. Tezgâhüstü türevler iki taraf arasında özel olarak müzakere edilir; bu yüzden tam ihtiyaca göre özelleştirilebilir. Bedeli daha yüksek karşı taraf kredi riski, daha az şeffaflık ve daha düşük likiditedir; çünkü pozisyonu kapatmak çoğunlukla aynı kurumla işlem yapmayı gerektirir. 2008 krizinden sonra standart tezgâhüstü sözleşmelerin birçoğu merkezi takasa taşındı.",
+        "key_terms": [
+          "clearinghouse",
+          "standardized",
+          "customized",
+          "counterparty risk"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Feature",
+              "tr": "Özellik"
+            },
+            {
+              "en": "Exchange-traded",
+              "tr": "Organize"
+            },
+            {
+              "en": "OTC",
+              "tr": "Tezgâhüstü"
+            }
+          ],
+          "rows": [
+            [
+              "Terms",
+              "Standard",
+              "Customized"
+            ],
+            [
+              "Counterparty risk",
+              "Low (clearinghouse)",
+              "Higher (bilateral)"
+            ],
+            [
+              "Transparency",
+              "High, regulated",
+              "Lower, private"
+            ],
+            [
+              "Daily margin",
+              "Required",
+              "Depends on agreement"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "example",
+        "heading_en": "Choosing the market",
+        "heading_tr": "Piyasa seçimi",
+        "en": "A Turkish importer must pay USD 1.37 million on a specific date that is not a listed expiry. A listed USD/TRY futures contract has fixed size and fixed expiry months, so the importer would have a size and date mismatch. A bank can write an OTC forward for exactly USD 1.37 million on the exact date. The importer accepts that the bank may fail to perform. The listed contract is cheaper and safer in credit terms but less precise. The OTC contract is exact but exposes the importer to counterparty credit risk. The choice depends on which problem matters more.",
+        "tr": "Bir Türk ithalatçı, kote bir vade olmayan belirli bir tarihte 1,37 milyon ABD doları ödemek zorundadır. Kote USD/TRY vadeli işlem sözleşmesinin büyüklüğü ve vade ayları sabit olduğu için ithalatçıda tutar ve tarih uyumsuzluğu kalır. Banka ise tam 1,37 milyon dolar için tam tarihli bir tezgâhüstü forward yazabilir. İthalatçı, bankanın yükümlülüğünü yerine getirememe riskini kabul eder. Kote sözleşme kredi açısından daha ucuz ve güvenlidir ama daha az hassastır. Tezgâhüstü sözleşme hassastır ama ithalatçıyı karşı taraf kredi riskine maruz bırakır. Seçim, hangi sorunun daha önemli olduğuna bağlıdır.",
+        "key_terms": [
+          "OTC forward",
+          "mismatch"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Exam traps",
+        "heading_tr": "Sınav tuzakları",
+        "en": "Do not say that a derivative gives ownership of the underlying: the holder usually has no dividends or voting rights. Do not mix up the price of the derivative (a premium or contract price) with the price of the underlying. Do not assume that exchange-traded means no risk: the clearinghouse reduces counterparty risk but market risk remains. Remember that customization belongs to OTC and standardization to exchanges. Finally, when a question says no delivery, it points to cash settlement, not to a missing settlement method.",
+        "tr": "Türevin dayanak varlığın mülkiyetini verdiğini söylemeyin: sahibi çoğunlukla temettü veya oy hakkına sahip değildir. Türevin fiyatını (prim veya sözleşme fiyatı) dayanak varlığın fiyatıyla karıştırmayın. Organize piyasa risk yok demek değildir: takas kuruluşu karşı taraf riskini azaltır ama piyasa riski devam eder. Özelleştirme tezgâhüstüne, standartlaştırma borsaya aittir. Son olarak, soru teslim yok diyorsa bu nakdi uzlaşmayı gösterir; uzlaşma yönteminin olmadığını değil.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A derivative is a contract whose value depends on an underlying. Its main terms are the underlying, expiration, size, price and settlement method, which can be cash or physical. Exchange-traded derivatives are standardized and cleared by a central counterparty. OTC derivatives are customized but carry more counterparty risk.",
+    "summary_tr": "Türev, değeri bir dayanak varlığa bağlı olan sözleşmedir. Ana koşulları dayanak varlık, vade, büyüklük, fiyat ve nakdi veya fiziki olabilen uzlaşma yöntemidir. Organize piyasa türevleri standarttır ve merkezi karşı taraf tarafından takas edilir. Tezgâhüstü türevler özelleştirilebilir ama daha fazla karşı taraf riski taşır.",
+    "common_traps_tr": [
+      "Türev, dayanak varlığın sahipliğini değil, değer hareketine maruziyeti verir.",
+      "Nakdi uzlaşmada dayanak varlık teslim edilmez; yalnızca fark ödenir.",
+      "Takas kuruluşu karşı taraf riskini azaltır ama piyasa riskini ortadan kaldırmaz.",
+      "Tezgâhüstü = özelleştirme + daha yüksek karşı taraf riski; organize = standart + takas güvencesi."
+    ],
+    "vocab_ids": [
+      "derivative",
+      "underlying",
+      "contract",
+      "settle",
+      "cash-settled",
+      "physical-delivery",
+      "expiration",
+      "notional",
+      "clearinghouse",
+      "central-counterparty",
+      "over-the-counter",
+      "exchange-traded",
+      "standardized",
+      "customized",
+      "counterparty-risk",
+      "leverage"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Türev piyasaları, VİOP ve takas yapısı SPK Düzey 3 ve Türev lisansıyla örtüşür."
+    }
+  },
+  "questions": [
+    {
+      "id": "DER-01-a-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following best describes a derivative?",
+      "stem_tr": "Aşağıdakilerden hangisi türev aracı en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A contract whose value depends on the performance of an underlying asset or rate",
+          "tr": "Değeri dayanak varlık veya oran performansına bağlı olan sözleşme"
+        },
+        {
+          "key": "B",
+          "en": "A security that represents ownership in a company",
+          "tr": "Bir şirketteki ortaklık payını temsil eden menkul kıymet"
+        },
+        {
+          "key": "C",
+          "en": "A loan in which the borrower pays interest to the lender",
+          "tr": "Borçlunun borç verene faiz ödediği kredi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A derivative gets its value from an underlying, such as a share, an index, a currency, a commodity or an interest rate.",
+      "explanation_tr": "Türevin değeri; hisse, endeks, döviz, emtia veya faiz gibi bir dayanak varlıktan gelir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes a common share, which has its own value and is not derived from another asset.",
+          "tr": "Bu tanım hisse senedini anlatır; hisse senedinin değeri başka bir varlıktan türetilmez."
+        },
+        "C": {
+          "en": "A loan is a debt claim. Its value is not derived from an underlying asset.",
+          "tr": "Kredi bir borç alacağıdır; değeri bir dayanak varlıktan türetilmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "derivative",
+        "underlying",
+        "ownership"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Türev araç tanımı SPK Düzey 3 ve Türev sınavında temel konudur."
+      }
+    },
+    {
+      "id": "DER-01-a-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A BIST 30 futures contract on VİOP has the BIST 30 index as its:",
+      "stem_tr": "VİOP'taki BIST 30 vadeli işlem sözleşmesinde BIST 30 endeksi sözleşmenin neyidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "premium",
+          "tr": "primi"
+        },
+        {
+          "key": "B",
+          "en": "underlying",
+          "tr": "dayanak varlığı"
+        },
+        {
+          "key": "C",
+          "en": "settlement price",
+          "tr": "uzlaşma fiyatı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The index is the underlying: the futures price moves with the index level.",
+      "explanation_tr": "Endeks dayanak varlıktır; vadeli işlem fiyatı endeks seviyesiyle birlikte hareket eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The premium is the price paid for an option. It is not the asset that determines the contract's value.",
+          "tr": "Prim, opsiyon için ödenen bedeldir; sözleşmenin değerini belirleyen varlık değildir."
+        },
+        "C": {
+          "en": "The settlement price is the price used to settle the contract. It is not the asset from which value is derived.",
+          "tr": "Uzlaşma fiyatı sözleşmenin kapatılmasında kullanılan fiyattır; değerin türetildiği varlık değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "underlying",
+        "index",
+        "settlement"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-a-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A dealer and a client agree that a contract will be settled by a single payment of the price difference in TRY, and no shares change hands. This contract is:",
+      "stem_tr": "Bir aracı kurum ile müşterisi, sözleşmenin TRY cinsinden fiyat farkının tek ödemeyle kapatılmasını ve hiçbir payın el değiştirmemesini kararlaştırıyor. Bu sözleşme:",
+      "options": [
+        {
+          "key": "A",
+          "en": "physically settled",
+          "tr": "fiziki teslimlidir"
+        },
+        {
+          "key": "B",
+          "en": "a contract with no settlement",
+          "tr": "uzlaşması olmayan bir sözleşmedir"
+        },
+        {
+          "key": "C",
+          "en": "cash settled",
+          "tr": "nakdi uzlaşmalıdır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cash settlement means that only the value difference is paid in cash and the underlying is not delivered.",
+      "explanation_tr": "Nakdi uzlaşmada yalnızca değer farkı nakit ödenir, dayanak varlık teslim edilmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With physical delivery the underlying itself changes hands. Here only the price difference is paid.",
+          "tr": "Fiziki teslimde dayanak varlığın kendisi el değiştirir; burada yalnızca fiyat farkı ödenir."
+        },
+        "B": {
+          "en": "Every derivative contract has a settlement method, either cash or physical delivery.",
+          "tr": "Her türev sözleşmenin bir uzlaşma yöntemi vardır: nakdi veya fiziki teslim."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "settle",
+        "cash-settled",
+        "physical-delivery",
+        "price-difference"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-a-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is least likely a basic contract term that the parties to a derivative must define?",
+      "stem_tr": "Aşağıdakilerden hangisinin, bir türevin tarafları tarafından belirlenmesi gereken temel sözleşme koşullarından biri olması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The expiration date",
+          "tr": "Vade (sona erme) tarihi"
+        },
+        {
+          "key": "B",
+          "en": "The credit rating of the exchange's founders",
+          "tr": "Borsa kurucularının kredi notu"
+        },
+        {
+          "key": "C",
+          "en": "The notional amount or contract size",
+          "tr": "Nominal tutar veya sözleşme büyüklüğü"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Underlying, expiration, size, price and settlement method are the main terms. The founders' credit rating is not a contract term.",
+      "explanation_tr": "Dayanak varlık, vade, büyüklük, fiyat ve uzlaşma yöntemi ana koşullardır. Kurucuların kredi notu sözleşme koşulu değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Expiration is a basic term. It says when the contract ends.",
+          "tr": "Vade temel bir koşuldur; sözleşmenin ne zaman sona ereceğini söyler."
+        },
+        "C": {
+          "en": "Contract size is a basic term. It decides how much exposure the contract gives.",
+          "tr": "Sözleşme büyüklüğü temel bir koşuldur; sözleşmenin ne kadar pozisyon sağladığını belirler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "term",
+        "expiration",
+        "notional",
+        "least"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-a-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A trader buys a derivative for a small premium and its value changes much more than the price of the underlying in percentage terms. Which feature of derivatives does this show?",
+      "stem_tr": "Bir yatırımcı küçük bir primle bir türev satın alıyor ve türevin değeri, yüzde olarak dayanak varlığın fiyatından çok daha fazla değişiyor. Bu durum türevlerin hangi özelliğini gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Physical delivery, because the buyer receives the asset immediately",
+          "tr": "Fiziki teslim; çünkü alıcı varlığı hemen teslim alır"
+        },
+        {
+          "key": "B",
+          "en": "Ownership rights, because the holder receives dividends and votes",
+          "tr": "Ortaklık hakları; çünkü sahibi temettü alır ve oy kullanır"
+        },
+        {
+          "key": "C",
+          "en": "Leverage, because a small investment gives exposure to a large underlying value",
+          "tr": "Kaldıraç; çünkü küçük bir yatırım büyük bir dayanak değere maruziyet sağlar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A small cost for a large exposure creates leverage, so percentage gains and losses are magnified.",
+      "explanation_tr": "Büyük bir pozisyon için küçük bir bedel kaldıraç yaratır; yüzde kâr ve zararlar büyür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Immediate delivery of the asset is not a feature of derivatives, and delivery does not explain larger percentage moves.",
+          "tr": "Varlığın hemen teslimi türevlerin özelliği değildir ve daha büyük yüzde hareketlerini açıklamaz."
+        },
+        "B": {
+          "en": "A derivative holder usually has no dividend or voting rights on the underlying.",
+          "tr": "Türev sahibi çoğunlukla dayanak varlığın temettü veya oy haklarına sahip değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "premium",
+        "exposure",
+        "magnify"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-b-q01",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is typically a feature of exchange-traded derivatives rather than OTC derivatives?",
+      "stem_tr": "Aşağıdakilerden hangisi tezgâhüstü türevlerden çok organize piyasada işlem gören türevlerin tipik bir özelliğidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Standardized contracts cleared through a central counterparty",
+          "tr": "Merkezi karşı taraf üzerinden takas edilen standart sözleşmeler"
+        },
+        {
+          "key": "B",
+          "en": "Contract terms fully customized for each party",
+          "tr": "Her taraf için tamamen özelleştirilmiş sözleşme koşulları"
+        },
+        {
+          "key": "C",
+          "en": "Private negotiation with no regulatory reporting",
+          "tr": "Düzenleyici raporlama olmadan özel müzakere"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Exchanges list standard contracts and a clearinghouse or central counterparty stands between buyer and seller. This is why VİOP contracts are standardized and cleared by Takasbank.",
+      "explanation_tr": "Borsalar standart sözleşmeler listeler ve alıcı ile satıcının arasına bir takas kuruluşu veya merkezi karşı taraf girer. VİOP sözleşmelerinin standart olması ve Takasbank tarafından takas edilmesi bu yüzdendir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Customization is the main trait of OTC contracts, not of exchange-traded contracts.",
+          "tr": "Özelleştirme, organize piyasa sözleşmelerinin değil tezgâhüstü sözleşmelerin ana özelliğidir."
+        },
+        "C": {
+          "en": "Exchange-traded contracts are traded in a regulated, transparent market, not privately.",
+          "tr": "Organize piyasa sözleşmeleri özel olarak değil, düzenli ve şeffaf bir piyasada işlem görür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "exchange-traded",
+        "standardized",
+        "clearinghouse",
+        "central-counterparty",
+        "over-the-counter"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "spk_link": {
+        "status": "known",
+        "note_tr": "VİOP işleyişi ve Takasbank'ın merkezi karşı taraf rolü SPK sınavında bilinir."
+      }
+    },
+    {
+      "id": "DER-01-b-q02",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Compared with an exchange-traded contract, an OTC derivative between a bank and a corporate client most likely has:",
+      "stem_tr": "Banka ile kurumsal müşteri arasındaki tezgâhüstü bir türev, organize piyasa sözleşmesine kıyasla büyük olasılıkla neye sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "lower counterparty credit risk and less flexible terms",
+          "tr": "daha düşük karşı taraf kredi riski ve daha az esnek koşullara"
+        },
+        {
+          "key": "B",
+          "en": "daily price limits and standard contract sizes",
+          "tr": "günlük fiyat limitlerine ve standart sözleşme büyüklüklerine"
+        },
+        {
+          "key": "C",
+          "en": "higher counterparty credit risk but more flexible terms",
+          "tr": "daha yüksek karşı taraf kredi riski ancak daha esnek koşullara"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "OTC contracts are customized and privately negotiated, but each party bears the risk that the other side defaults.",
+      "explanation_tr": "Tezgâhüstü sözleşmeler özelleştirilmiş ve özel müzakereyle belirlenmiştir; ancak her taraf diğerinin temerrüt riskini taşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "OTC contracts have no clearinghouse guarantee by default, so counterparty risk is higher, not lower.",
+          "tr": "Tezgâhüstü sözleşmelerde varsayılan olarak takas kuruluşu garantisi yoktur; karşı taraf riski düşük değil, yüksektir."
+        },
+        "B": {
+          "en": "Price limits and fixed sizes belong to exchange-traded contracts.",
+          "tr": "Fiyat limitleri ve sabit büyüklükler organize piyasa sözleşmelerine aittir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "counterparty-risk",
+        "flexible",
+        "customized",
+        "default"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-b-q03",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "In an exchange-traded derivatives market, the role of the clearinghouse is best described as:",
+      "stem_tr": "Organize bir türev piyasasında takas kuruluşunun rolü en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "becoming the buyer to every seller and the seller to every buyer",
+          "tr": "her satıcıya karşı alıcı, her alıcıya karşı satıcı olmak"
+        },
+        {
+          "key": "B",
+          "en": "setting the underlying asset's price in the spot market",
+          "tr": "dayanak varlık spot piyasa fiyatını belirlemek"
+        },
+        {
+          "key": "C",
+          "en": "customizing each contract to the needs of the parties",
+          "tr": "her sözleşmeyi tarafların ihtiyaçlarına göre özelleştirmek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "By standing between the two sides, the clearinghouse guarantees performance and reduces counterparty risk. It also collects margin.",
+      "explanation_tr": "İki tarafın arasına girerek takas kuruluşu yükümlülüklerin yerine getirilmesini garanti eder ve karşı taraf riskini azaltır. Ayrıca teminat toplar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The clearinghouse does not set spot prices. Supply and demand do.",
+          "tr": "Takas kuruluşu spot fiyatları belirlemez; fiyatı arz ve talep belirler."
+        },
+        "C": {
+          "en": "Customization is typical for OTC contracts. A clearinghouse works with standardized contracts.",
+          "tr": "Özelleştirme tezgâhüstü sözleşmelerin özelliğidir; takas kuruluşu standart sözleşmelerle çalışır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "clearinghouse",
+        "guarantee",
+        "stand-between",
+        "margin"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-b-q04",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish exporter wants to hedge a payment of an unusual size and date that no listed contract matches exactly. The exporter is most likely to use:",
+      "stem_tr": "Bir Türk ihracatçı, hiçbir kote sözleşmenin tam olarak karşılamadığı olağandışı büyüklük ve tarihli bir tahsilatı riskten korumak istiyor. İhracatçının en olası tercihi hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a listed futures contract with a fixed size and date",
+          "tr": "sabit büyüklük ve tarihli kote bir vadeli işlem sözleşmesi"
+        },
+        {
+          "key": "B",
+          "en": "an OTC forward negotiated with a bank",
+          "tr": "bankayla müzakere edilen tezgâhüstü bir forward"
+        },
+        {
+          "key": "C",
+          "en": "buying the shares of the bank",
+          "tr": "bankanın paylarını satın almak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Only OTC contracts can be tailored to the exact amount and date, which suits a special hedging need.",
+      "explanation_tr": "Yalnızca tezgâhüstü sözleşmeler tutar ve tarihe göre özelleştirilebilir; bu da özel bir korunma ihtiyacına uygundur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A listed futures contract has fixed terms and may leave an unhedged amount or date mismatch.",
+          "tr": "Kote bir vadeli işlem sözleşmesinin koşulları sabittir ve korunmasız tutar veya tarih uyumsuzluğu bırakabilir."
+        },
+        "C": {
+          "en": "Owning bank shares does not hedge the exporter's currency exposure.",
+          "tr": "Banka payı almak ihracatçının kur riskini korumaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "hedge",
+        "tailor",
+        "mismatch",
+        "exporter"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "DER-01-b-q05",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "After a large market fall, an investor holds a position that loses value each day. Which statement about the exchange-traded versus OTC structure is most accurate?",
+      "stem_tr": "Piyasadaki sert düşüşün ardından bir yatırımcının pozisyonu her gün değer kaybediyor. Organize piyasa ile tezgâhüstü yapıyı karşılaştıran aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The exchange position requires daily settlement and margin, so losses are paid in as they occur",
+          "tr": "Organize piyasa pozisyonu günlük uzlaşma ve teminat gerektirir; böylece zararlar oluştukça ödenir"
+        },
+        {
+          "key": "B",
+          "en": "The exchange position builds up losses until expiry, when all are paid together",
+          "tr": "Organize piyasa pozisyonu zararları vadeye kadar biriktirir ve hepsi birlikte ödenir"
+        },
+        {
+          "key": "C",
+          "en": "The OTC position always needs more margin than the exchange position",
+          "tr": "Tezgâhüstü pozisyon her zaman organize piyasa pozisyonundan fazla teminat gerektirir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Daily mark-to-market and margin calls keep exchange-traded credit risk low, since losses cannot grow unpaid.",
+      "explanation_tr": "Günlük piyasa değerine getirme ve teminat tamamlama çağrıları, zararlar ödenmeden büyüyemediği için borsa riskini düşük tutar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Exchanges mark positions to market every day. Accumulating until expiry is more typical of unmargined OTC forwards.",
+          "tr": "Borsalar pozisyonları her gün piyasa değerine getirir; vadeye kadar biriktirme daha çok teminatsız tezgâhüstü forwardlara özgüdür."
+        },
+        "C": {
+          "en": "OTC margin depends on the bilateral agreement. The statement is not true in general.",
+          "tr": "Tezgâhüstü teminat ikili anlaşmaya bağlıdır; ifade genel olarak doğru değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "mark-to-market",
+        "margin-call",
+        "daily-settlement",
+        "accumulate"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

@@ -108,7 +108,7 @@
         "heading_en": "Common traps",
         "heading_tr": "Sık tuzaklar",
         "en": "Do not average standard deviations; only expected returns are a simple weighted average. Do not forget the factor 2 in the cross term, and do not square the covariance. When correlation is given, multiply it by both standard deviations before using it as covariance. Variance units are percent squared, so take the square root at the end, not before. In the utility formula, A multiplies the variance, not the standard deviation, and the 0.5 is part of the formula. The CML uses total risk (σ); the security market line, covered in Portfolio Management, uses beta. Only portfolios above the global minimum-variance portfolio are efficient.",
-        "tr": "Standart sapmaların ortalamasını alma; yalnızca beklenen getiriler basit ağırlıklı ortalamadır. Çapraz terimdeki 2 çarpanını unutma ve kovaryansın karesini alma. Korelasyon verilmişse kovaryans olarak kullanmadan önce iki standart sapmayla çarp. Varyansın birimi yüzde karedir; kareköğü en sonda al, önce değil. Fayda formülünde A, standart sapmayı değil varyansı çarpar ve 0,5 formülün parçasıdır. CML toplam riski (σ) kullanır; Portföy Yönetimi'nde görülen menkul kıymet piyasası doğrusu betayı kullanır. Yalnızca küresel minimum varyanslı portföyün üstündeki portföyler etkindir.",
+        "tr": "Standart sapmaların ortalamasını alma; yalnızca beklenen getiriler basit ağırlıklı ortalamadır. Çapraz terimdeki 2 çarpanını unutma ve kovaryansın karesini alma. Korelasyon verilmişse kovaryans olarak kullanmadan önce iki standart sapmayla çarp. Varyansın birimi yüzde karedir; karekökü en sonda al, önce değil. Fayda formülünde A, standart sapmayı değil varyansı çarpar ve 0,5 formülün parçasıdır. CML toplam riski (σ) kullanır; Portföy Yönetimi'nde görülen menkul kıymet piyasası doğrusu betayı kullanır. Yalnızca küresel minimum varyanslı portföyün üstündeki portföyler etkindir.",
         "key_terms": [
           "weighted average",
           "cross term",
@@ -121,7 +121,7 @@
     "common_traps_tr": [
       "Portföy standart sapmasını, standart sapmaların ağırlıklı ortalaması sanmak (yalnızca ρ = +1 için doğrudur).",
       "Varyans formülündeki 2w₁w₂Cov teriminde 2'yi unutmak ya da korelasyonu σ₁σ₂ ile çarpmadan kovaryans yerine koymak.",
-      "Varyansı (yüzde kare) standart sapma gibi okumak; kareköğü almayı unutmak.",
+      "Varyansı (yüzde kare) standart sapma gibi okumak; karekökü almayı unutmak.",
       "Minimum varyans sınırının alt kolundaki portföyleri etkin saymak.",
       "Fayda formülünde U = E(R) - 0,5Aσ² yerine σ kullanmak veya 0,5'i atlamak.",
       "CML (toplam risk, σ) ile SML'yi (sistematik risk, beta) karıştırmak."
@@ -131,7 +131,7 @@
       "expected-return",
       "covariance",
       "correlation",
-      "diversification",
+      "diversify",
       "minimum-variance-portfolio",
       "efficient-frontier",
       "dominated",
@@ -151,7 +151,11 @@
       "note_tr": "Portföy getirisi/riski, etkin sınır, CAL/CML SPK Düzey 3 Portföy Yönetimi (1012) konusunda vardır; formüller aynıdır."
     },
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
@@ -255,7 +259,11 @@
         "note_tr": "Düzey 3 Portföy Yönetimi'nde aynı hesap."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-a-q02",
@@ -349,7 +357,7 @@
       "vocab_ids": [
         "standard-deviation",
         "correlation",
-        "equal-weights",
+        "equal-weighted",
         "closest"
       ],
       "pattern_ids": [
@@ -359,7 +367,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-a-q03",
@@ -459,7 +471,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-a-q04",
@@ -559,7 +575,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-a-q05",
@@ -654,7 +674,7 @@
         "standard-deviation",
         "correlation",
         "negative",
-        "diversification",
+        "diversify",
         "closest"
       ],
       "pattern_ids": [
@@ -664,7 +684,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-a-q06",
@@ -724,7 +748,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q01",
@@ -826,7 +854,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q02",
@@ -925,7 +957,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q03",
@@ -984,7 +1020,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q04",
@@ -1089,7 +1129,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q05",
@@ -1148,7 +1192,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-b-q06",
@@ -1208,7 +1256,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q01",
@@ -1308,7 +1360,11 @@
         "note_tr": "Fayda fonksiyonu Düzey 3'te kavramsal geçer; sayısal hesap yeni olabilir."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q02",
@@ -1411,7 +1467,11 @@
         "note_tr": "CML denklemi Düzey 3 Portföy Yönetimi'nde vardır."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q03",
@@ -1510,7 +1570,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q04",
@@ -1569,7 +1633,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q05",
@@ -1629,7 +1697,11 @@
         "note_tr": "Ayrım teoremi Düzey 3 Portföy Yönetimi'nde geçer."
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-08-c-q06",
@@ -1731,7 +1803,11 @@
         "status": "known"
       },
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
