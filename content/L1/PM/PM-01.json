@@ -91,8 +91,8 @@
         "kind": "traps",
         "heading_en": "Common mistakes",
         "heading_tr": "Sık yapılan hatalar",
-        "en": "Do not average standard deviations to get portfolio risk. Use the sample formula (n − 1) when data are a sample. Covariance has no fixed scale; correlation is scaled from −1 to +1. A lower correlation helps only if the weights stay the same. The efficient frontier is only the upper part. Utility depends on risk aversion A: do not forget the factor 0.5. Real return is not nominal minus inflation exactly; use the division formula for accuracy. The arithmetic mean overstates the compound growth.",
-        "tr": "Portföy riskini bulmak için standart sapmaların ortalamasını almayın. Veri bir örneklemse örneklem formülünü (n − 1) kullanın. Kovaryansın sabit bir ölçeği yoktur; korelasyon −1 ile +1 arasına ölçeklenmiştir. Düşük korelasyon yalnızca ağırlıklar aynı kalıyorsa yardımcı olur. Etkin sınır yalnızca üst kısımdır. Fayda risk aversiyonu A'ya bağlıdır: 0,5 çarpanını unutmayın. Reel getiri tam olarak nominal eksi enflasyon değildir; doğruluk için bölme formülünü kullanın. Aritmetik ortalama bileşik büyümeyi olduğundan yüksek gösterir.",
+        "en": "Do not average standard deviations to get portfolio risk. Use the sample formula (n − 1) when data are a sample. Covariance has no fixed scale; correlation is scaled from −1 to +1. Diversification benefit grows as correlation falls and disappears only at ρ = +1. The efficient frontier is only the upper part. Utility depends on risk aversion A: do not forget the factor 0.5. Real return is not nominal minus inflation exactly; use the division formula for accuracy. The arithmetic mean overstates the compound growth.",
+        "tr": "Portföy riskini bulmak için standart sapmaların ortalamasını almayın. Veri bir örneklemse örneklem formülünü (n − 1) kullanın. Kovaryansın sabit bir ölçeği yoktur; korelasyon −1 ile +1 arasına ölçeklenmiştir. Çeşitlendirme faydası korelasyon düştükçe artar ve yalnızca ρ = +1 iken ortadan kalkar. Etkin sınır yalnızca üst kısımdır. Fayda risk aversiyonu A'ya bağlıdır: 0,5 çarpanını unutmayın. Reel getiri tam olarak nominal eksi enflasyon değildir; doğruluk için bölme formülünü kullanın. Aritmetik ortalama bileşik büyümeyi olduğundan yüksek gösterir.",
         "key_terms": []
       }
     ],
@@ -123,7 +123,11 @@
       "standard-deviation"
     ],
     "source_basis": "original",
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    },
     "spk_link": {
       "status": "known",
       "note_tr": "Ortalama, varyans ve çeşitlendirme Düzey 3'ten tanıdık; fayda fonksiyonu ve etkin sınır hesapları kısmen yeni."
@@ -182,7 +186,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-a-q02",
@@ -274,7 +282,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-a-q03",
@@ -323,14 +335,17 @@
         "sampling-error",
         "guarantee",
         "forecast",
-        "premium",
-        "future"
+        "premium"
       ],
       "pattern_ids": [
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-a-q04",
@@ -387,7 +402,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-a-q05",
@@ -441,7 +460,11 @@
         "not-question"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-b-q01",
@@ -489,13 +512,17 @@
       "vocab_ids": [
         "expected-return",
         "premium",
-        "risk-neutral"
+        "risk-neutral-investor"
       ],
       "pattern_ids": [
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-b-q02",
@@ -549,7 +576,11 @@
         "most-consistent"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-b-q03",
@@ -644,7 +675,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-b-q04",
@@ -734,7 +769,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-b-q05",
@@ -780,7 +819,7 @@
       },
       "solution_steps": [],
       "vocab_ids": [
-        "risk-neutral",
+        "risk-neutral-investor",
         "expected-return",
         "standard-deviation",
         "lower"
@@ -789,7 +828,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-c-q01",
@@ -883,7 +926,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-c-q02",
@@ -976,7 +1023,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-c-q03",
@@ -1067,7 +1118,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-c-q04",
@@ -1158,7 +1213,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-c-q05",
@@ -1251,7 +1310,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-d-q01",
@@ -1330,12 +1393,18 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]  (DATA)",
-          "[2ND] [CLR WORK]",
-          "8 [ENTER] [↓] 5 [ENTER] [↓] ...",
-          " [2ND] [8] ... Sx = 7.07; Sx² = 50"
+          "[2ND] [STAT]  (ekranda \"1-V\" görünmeli; değilse [2ND] [SET] ile 1-V seçin)",
+          "[2ND] [DATA]  (X01 satırı)",
+          "[2ND] [CLR WORK]  (eski verileri sil)",
+          "8 [ENTER] [↓] [↓]  (X01 = 8; Y01 sıklığı 1 kalır)",
+          "12 [ENTER] [↓] [↓]",
+          "4 [+/-] [ENTER] [↓] [↓]",
+          "10 [ENTER] [↓] [↓]",
+          "14 [ENTER]",
+          "[2ND] [STAT]  ([↓] ile gez: n = 5, X̄ = 8, Sx = 7.0711)",
+          "[x²]  (ekrandaki Sx karesi) → 50"
         ],
-        "note_tr": "Sx örneklem standart sapmasıdır; karesi örneklem varyansıdır."
+        "note_tr": "Sx örneklem standart sapmasıdır; karesi örneklem varyansıdır (n − 1 ile). σx ise anakütle (n ile) sapmasıdır, bu soruda kullanılmaz."
       },
       "numeric": {
         "expr": "var_s([8,12,-4,10,14])"
@@ -1344,7 +1413,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-d-q02",
@@ -1423,13 +1496,17 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]  (DATA)",
-          "[2ND] [CLR WORK]",
-          "X01 = 8 [ENTER] [↓] Y01 = 5 [ENTER] [↓] ... (her çift için)",
-          "[2ND] [8]  (STAT), [2ND] [ENTER] ile 2-V LIN seç",
-          "[↓] ile n, x̄, Sx, σx, ȳ, Sy, σy, r değerlerine bak"
+          "[2ND] [STAT]  ([2ND] [SET] ile \"LIN\" modunu seçin; 2 değişkenli veri)",
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "8 [ENTER] [↓] 5 [ENTER] [↓]  (X01, Y01)",
+          "12 [ENTER] [↓] 9 [ENTER] [↓]",
+          "4 [+/-] [ENTER] [↓] 1 [+/-] [ENTER] [↓]",
+          "10 [ENTER] [↓] 7 [ENTER] [↓]",
+          "14 [ENTER] [↓] 10 [ENTER]",
+          "[2ND] [STAT] ve [↓] ile gez: Sx = 7.0711, Sy = 4.3589, r = 0.9896",
+          "0.9896 [×] 7.0711 [×] 4.3589 [=] → 30.5"
         ],
-        "note_tr": "Cov = r × Sx × Sy ile bulunur: 0.9896 × 7.071 × 4.359 = 30.5."
+        "note_tr": "BA II Plus kovaryansı doğrudan vermez: Cov = r × Sx × Sy."
       },
       "numeric": {
         "expr": "cov_s([8,12,-4,10,14],[5,9,-1,7,10])"
@@ -1438,7 +1515,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-d-q03",
@@ -1512,19 +1593,21 @@
         "covariance",
         "standard-deviation",
         "sample",
-        "closest",
-        "linear"
+        "closest"
       ],
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]  (DATA)",
-          "[2ND] [CLR WORK]",
-          "X01 = 8 [ENTER] [↓] Y01 = 5 [ENTER] [↓] ... (her çift için)",
-          "[2ND] [8]  (STAT), [2ND] [ENTER] ile 2-V LIN seç",
-          "[↓] ile n, x̄, Sx, σx, ȳ, Sy, σy, r değerlerine bak"
+          "[2ND] [STAT]  ([2ND] [SET] ile \"LIN\" modunu seçin; 2 değişkenli veri)",
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "8 [ENTER] [↓] 5 [ENTER] [↓]  (X01, Y01)",
+          "12 [ENTER] [↓] 9 [ENTER] [↓]",
+          "4 [+/-] [ENTER] [↓] 1 [+/-] [ENTER] [↓]",
+          "10 [ENTER] [↓] 7 [ENTER] [↓]",
+          "14 [ENTER] [↓] 10 [ENTER]",
+          "[2ND] [STAT] ve [↓] ile r satırına gidin → r = 0.9896 ≈ 0.99"
         ],
-        "note_tr": "Ekranda r doğrudan görünür: 0.99."
+        "note_tr": "Korelasyon r, istatistik sayfasında doğrudan görünür (LIN modu)."
       },
       "numeric": {
         "expr": "corr([8,12,-4,10,14],[5,9,-1,7,10])"
@@ -1533,7 +1616,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-d-q04",
@@ -1626,7 +1713,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-d-q05",
@@ -1717,7 +1808,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-e-q01",
@@ -1813,7 +1908,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-e-q02",
@@ -1907,7 +2006,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-e-q03",
@@ -2000,7 +2103,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-e-q04",
@@ -2091,7 +2198,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-e-q05",
@@ -2184,7 +2295,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-f-q01",
@@ -2239,7 +2354,11 @@
         "most-consistent"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-f-q02",
@@ -2293,7 +2412,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-f-q03",
@@ -2349,7 +2472,11 @@
         "all-else-equal"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-f-q04",
@@ -2442,7 +2569,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-f-q05",
@@ -2497,7 +2628,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-g-q01",
@@ -2551,7 +2686,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-g-q02",
@@ -2605,7 +2744,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-g-q03",
@@ -2697,7 +2840,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-g-q04",
@@ -2752,7 +2899,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "PM-01-g-q05",
@@ -2806,7 +2957,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
