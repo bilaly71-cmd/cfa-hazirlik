@@ -1,0 +1,785 @@
+{
+  "module_id": "FI-11",
+  "lesson": {
+    "id": "FI-11-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-11",
+    "los_ids": [
+      "FI-11-a",
+      "FI-11-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Yield-Based Bond Duration Measures and Properties",
+    "title_tr": "Getiri Esaslı Durasyon Ölçüleri ve Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "How much does the price move?",
+        "heading_tr": "Fiyat ne kadar oynar?",
+        "en": "A portfolio manager at a Turkish brokerage holds fixed-rate DİBS. When the TCMB changes its policy rate, bond yields move and prices follow. The manager needs one number that says how sensitive a bond is to a change in its own yield. Macaulay duration measures time. Modified duration converts that time into a price sensitivity, and money duration and PVBP convert it into currency amounts.",
+        "tr": "Bir Türk aracı kurumunda portföy yöneticisi sabit faizli DİBS tutuyor. TCMB politika faizini değiştirince tahvil getirileri hareket eder ve fiyatlar onu izler. Yöneticinin, bir tahvilin kendi getirisindeki değişime ne kadar duyarlı olduğunu gösteren tek bir sayıya ihtiyacı vardır. Macaulay durasyonu zamanı ölçer. Düzeltilmiş durasyon bu süreyi fiyat duyarlılığına, parasal durasyon ve PVBP ise para tutarına çevirir.",
+        "key_terms": [
+          "modified duration",
+          "money duration",
+          "PVBP"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Modified duration, money duration and PVBP",
+        "heading_tr": "Düzeltilmiş durasyon, parasal durasyon ve PVBP",
+        "en": "Modified duration (ModDur) is Macaulay duration divided by (1 + YTM per period). It estimates the percentage price change for a 1-unit change in yield. Money duration (MoneyDur) is ModDur × the full price of the position. It gives the approximate currency loss or gain per 100% yield change. PVBP (price value of a basis point) is the money change in price for a 1 bp yield change: PVBP = MoneyDur × 0.0001. In the US, it is also called DV01.",
+        "tr": "Düzeltilmiş durasyon (ModDur), Macaulay durasyonunun (1 + dönemlik YTM) değerine bölünmesiyle bulunur. Getiride 1 birimlik değişime karşılık yüzde fiyat değişimini tahmin eder. Parasal durasyon (MoneyDur), ModDur × pozisyonun tam fiyatıdır. Getiride %100'lük değişim başına yaklaşık para kaybını veya kazancını verir. PVBP (bir baz puanın fiyat değeri), getirideki 1 bp'lik değişimin para cinsinden fiyat etkisidir: PVBP = MoneyDur × 0,0001. ABD'de DV01 olarak da adlandırılır.",
+        "key_terms": [
+          "modified duration",
+          "money duration",
+          "PVBP",
+          "DV01"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Core formulas",
+        "heading_tr": "Temel formüller",
+        "en": "ModDur = MacDur / (1 + y/m), where m is the number of periods per year. Approximate price change: %ΔPV ≈ −ModDur × Δy. Money duration: MoneyDur = ModDur × PV (full price of the position). PVBP = MoneyDur × 0.0001. The sign is negative: yields up, price down. This linear estimate works for small yield changes; larger changes need convexity (next module).",
+        "tr": "ModDur = MacDur / (1 + y/m); burada m yıllık dönem sayısıdır. Yaklaşık fiyat değişimi: %ΔPV ≈ −ModDur × Δy. Parasal durasyon: MoneyDur = ModDur × PV (pozisyonun tam fiyatı). PVBP = MoneyDur × 0,0001. İşaret negatiftir: getiri artınca fiyat düşer. Bu doğrusal tahmin küçük getiri değişimlerinde işe yarar; büyük değişimlerde konveksite gerekir (sonraki modül).",
+        "key_terms": [
+          "modified duration"
+        ],
+        "formula_latex": "\\%\\Delta PV\\approx-\\text{ModDur}\\times\\Delta y,\\quad \\text{PVBP}=\\text{ModDur}\\times PV\\times 0.0001"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A TRY 5 million position",
+        "heading_tr": "5 milyon TL'lik pozisyon",
+        "en": "A position has a par amount of TRY 5,000,000, a full price of 98.50 and a ModDur of 4.20. Position value = TRY 4,925,000. MoneyDur = 4.20 × 4,925,000 = TRY 20,685,000. PVBP = 20,685,000 × 0.0001 = TRY 2,068.5. So a 1 bp rise in yield lowers the position value by about TRY 2,068.5, and a 25 bp rise by about TRY 51,700.",
+        "tr": "Bir pozisyonun nominal tutarı 5.000.000 TL, tam fiyatı 98,50 ve ModDur değeri 4,20'dir. Pozisyon değeri = 4.925.000 TL. MoneyDur = 4,20 × 4.925.000 = 20.685.000 TL. PVBP = 20.685.000 × 0,0001 = 2.068,5 TL. Yani getirideki 1 bp'lik artış pozisyon değerini yaklaşık 2.068,5 TL, 25 bp'lik artış ise yaklaşık 51.700 TL düşürür.",
+        "key_terms": [
+          "PVBP",
+          "money duration"
+        ],
+        "example": {
+          "en": "PVBP = 4.20 × 4,925,000 × 0.0001 = 2,068.5.",
+          "tr": "PVBP = 4,20 × 4.925.000 × 0,0001 = 2.068,5."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Maturity, coupon and yield effects — and traps",
+        "heading_tr": "Vade, kupon ve getiri etkileri — ve tuzaklar",
+        "en": "All else equal, interest rate risk is higher when (1) maturity is longer, (2) the coupon is lower, and (3) the yield level is lower. A zero-coupon bond has the highest duration for its maturity. For a par bond, duration rises with maturity but at a decreasing rate. Traps: using MacDur instead of ModDur for price change, forgetting the minus sign, and mixing basis points with percent (1 bp = 0.0001).",
+        "tr": "Diğer her şey sabitken faiz oranı riski (1) vade uzunsa, (2) kupon düşükse ve (3) getiri düzeyi düşükse daha yüksektir. Sıfır kuponlu tahvil, vadesi için en yüksek durasyona sahiptir. Nominalden işlem gören tahvilde durasyon vadeyle artar ama azalan hızla. Tuzaklar: fiyat değişimi için ModDur yerine MacDur kullanmak, eksi işaretini unutmak ve baz puan ile yüzdeyi karıştırmak (1 bp = 0,0001).",
+        "key_terms": [
+          "interest rate risk",
+          "basis point"
+        ]
+      }
+    ],
+    "summary_en": "Modified duration equals Macaulay duration divided by (1 + y/m) and estimates the percentage price change for a yield change: %ΔP ≈ −ModDur × Δy. Money duration is ModDur times the position value, and PVBP is money duration times 0.0001. Interest rate risk is higher for longer maturity, lower coupon and lower yield.",
+    "summary_tr": "Düzeltilmiş durasyon, Macaulay durasyonunun (1 + y/m) değerine bölünmesine eşittir ve getiri değişimine karşılık yüzde fiyat değişimini tahmin eder: %ΔP ≈ −ModDur × Δy. Parasal durasyon, ModDur ile pozisyon değerinin çarpımıdır; PVBP ise parasal durasyon × 0,0001'dir. Faiz oranı riski vade uzadıkça, kupon düştükçe ve getiri düştükçe artar.",
+    "common_traps_tr": [
+      "Fiyat değişimini ModDur yerine MacDur ile hesaplamak.",
+      "ModDur'un işaretini unutmak: getiri artınca fiyat düşer.",
+      "Baz puanı (0,0001) yüzdeyle (0,01) karıştırmak.",
+      "Parasal durasyonu nominal tutar yerine tam fiyatla değil par değerle çarpmak.",
+      "Vade uzadıkça durasyonun her zaman aynı hızla arttığını sanmak."
+    ],
+    "vocab_ids": [
+      "modified-duration",
+      "money-duration",
+      "pvbp",
+      "macaulay-duration",
+      "basis-point",
+      "interest-rate-risk",
+      "full-price",
+      "par-amount",
+      "sensitivity",
+      "zero-coupon",
+      "yield",
+      "dv01"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Durasyon SPK Düzey 3'te tanıdık; PVBP ve parasal durasyon daha ayrıntılı."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-11-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Modified duration is best described as:",
+      "stem_tr": "Düzeltilmiş durasyon en iyi şekilde aşağıdakilerden hangisiyle tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Macaulay duration multiplied by one plus the yield per period.",
+          "tr": "Macaulay durasyonunun, bir artı dönemlik getiriyle çarpılması."
+        },
+        {
+          "key": "B",
+          "en": "Macaulay duration divided by one plus the yield per period.",
+          "tr": "Macaulay durasyonunun, bir artı dönemlik getiriye bölünmesi."
+        },
+        {
+          "key": "C",
+          "en": "The full price of the bond multiplied by Macaulay duration.",
+          "tr": "Tahvilin tam fiyatının Macaulay durasyonuyla çarpılması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "ModDur = MacDur / (1 + y/m). It converts the time measure into a price sensitivity measure.",
+      "explanation_tr": "ModDur = MacDur / (1 + y/m). Zaman ölçüsünü fiyat duyarlılığı ölçüsüne çevirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multiplying would make modified duration larger than Macaulay duration, but it is always smaller.",
+          "tr": "Çarpmak düzeltilmiş durasyonu Macaulay durasyonundan büyük yapar; oysa her zaman daha küçüktür."
+        },
+        "C": {
+          "en": "That is a money-type measure (similar to money duration), not modified duration.",
+          "tr": "Bu, para tipi bir ölçüdür (parasal durasyona benzer); düzeltilmiş durasyon değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "modified-duration",
+        "best-describes",
+        "divided-by",
+        "full-price",
+        "macaulay-duration"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bond has a Macaulay duration of 6.40 years and a yield to maturity of 5.0% (annual rate, semiannual compounding). Its modified duration is closest to:",
+      "stem_tr": "Bir tahvilin Macaulay durasyonu 6,40 yıl ve vadeye kadar getirisi %5,0'dır (yıllık oran, yarıyıllık bileşik). Düzeltilmiş durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.10",
+          "tr": "6,10",
+          "value": 6.0952
+        },
+        {
+          "key": "B",
+          "en": "6.40",
+          "tr": "6,40",
+          "value": 6.4
+        },
+        {
+          "key": "C",
+          "en": "6.24",
+          "tr": "6,24",
+          "value": 6.2439
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "ModDur = 6.40 / 1.025 = 6.24.",
+      "explanation_tr": "ModDur = 6,40 / 1,025 = 6,24.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides by 1 + the annual yield; with semiannual compounding the divisor is 1 + y/2.",
+          "tr": "Bu, 1 + yıllık getiriye böler; yarıyıllık bileşikte bölen 1 + y/2'dir."
+        },
+        "B": {
+          "en": "This is the Macaulay duration itself; no adjustment was made.",
+          "tr": "Bu, Macaulay durasyonunun kendisidir; düzeltme yapılmamıştır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: modified duration from Macaulay duration.",
+          "tr": "İstenen: Macaulay durasyonundan düzeltilmiş durasyon."
+        },
+        {
+          "en": "Formula: ModDur = MacDur / (1 + y/m), with m = 2",
+          "tr": "Formül: ModDur = MacDur / (1 + y/m), m = 2",
+          "formula_latex": "\\text{ModDur}=\\frac{\\text{MacDur}}{1+y/m}"
+        },
+        {
+          "en": "6.40 / 1.025 = 6.24 years",
+          "tr": "6,40 / 1,025 = 6,24 yıl"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6.4 [÷] 1.025 [=]"
+        ],
+        "note_tr": "Sadece bölme işlemi; TVM tuşu gerekmez."
+      },
+      "numeric": {
+        "expr": "6.4/(1+0.05/2)"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "macaulay-duration",
+        "semiannual",
+        "closest-to",
+        "compounding"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor holds TRY 5,000,000 par of a bond with a full price of 98.50 and a modified duration of 4.20. The PVBP of the position is closest to:",
+      "stem_tr": "Bir yatırımcı, tam fiyatı 98,50 ve düzeltilmiş durasyonu 4,20 olan bir tahvilden 5.000.000 TL nominal tutar taşımaktadır. Pozisyonun PVBP değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2068.5 TRY",
+          "tr": "2068,5 TRY",
+          "value": 2068.5
+        },
+        {
+          "key": "B",
+          "en": "2100.0 TRY",
+          "tr": "2100,0 TRY",
+          "value": 2100.0
+        },
+        {
+          "key": "C",
+          "en": "206850.0 TRY",
+          "tr": "206850,0 TRY",
+          "value": 206850.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Position value = 4,925,000. MoneyDur = 4.20 × 4,925,000 = 20,685,000. PVBP = 20,685,000 × 0.0001 = 2,068.5.",
+      "explanation_tr": "Pozisyon değeri = 4.925.000. MoneyDur = 4,20 × 4.925.000 = 20.685.000. PVBP = 20.685.000 × 0,0001 = 2.068,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This uses the par amount instead of the market value (par × full price/100).",
+          "tr": "Bu, piyasa değeri (nominal × tam fiyat/100) yerine nominal tutarı kullanır."
+        },
+        "C": {
+          "en": "This applies a 1% yield change instead of 1 bp (0.0001).",
+          "tr": "Bu, 1 bp (0,0001) yerine %1'lik getiri değişimini uygular."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: money change in value for a 1 bp yield change.",
+          "tr": "İstenen: getirideki 1 bp'lik değişime karşılık para cinsinden değer değişimi."
+        },
+        {
+          "en": "PVBP = ModDur × position value × 0.0001",
+          "tr": "PVBP = ModDur × pozisyon değeri × 0,0001",
+          "formula_latex": "\\text{PVBP}=\\text{ModDur}\\times PV\\times0.0001"
+        },
+        {
+          "en": "4.20 × 4,925,000 × 0.0001 = 2,068.5 TRY",
+          "tr": "4,20 × 4.925.000 × 0,0001 = 2.068,5 TL"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4.2 [×] 4925000 [×] 0.0001 [=]"
+        ],
+        "note_tr": "Tek satırlık çarpma."
+      },
+      "numeric": {
+        "expr": "4.20*5000000*0.985*0.0001",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "pvbp",
+        "basis-point",
+        "full-price",
+        "par-amount",
+        "closest-to",
+        "position"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has a Macaulay duration of 6.50 years and a yield to maturity of 5.0% (annual compounding). If its yield rises by 35 bps, the approximate percentage price change is closest to:",
+      "stem_tr": "Bir tahvilin Macaulay durasyonu 6,50 yıl ve vadeye kadar getirisi %5,0'dır (yıllık bileşik). Getirisi 35 bp artarsa yaklaşık yüzde fiyat değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.17%",
+          "tr": "2,17%",
+          "value": 2.1667
+        },
+        {
+          "key": "B",
+          "en": "-2.17%",
+          "tr": "-2,17%",
+          "value": -2.1667
+        },
+        {
+          "key": "C",
+          "en": "-2.27%",
+          "tr": "-2,27%",
+          "value": -2.275
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "ModDur = 6.50/1.05 = 6.19. %ΔPV ≈ −6.19 × 0.0035 = −2.17%.",
+      "explanation_tr": "ModDur = 6,50/1,05 = 6,19. %ΔPV ≈ −6,19 × 0,0035 = −%2,17.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The sign is wrong: a yield increase lowers the price.",
+          "tr": "İşaret yanlıştır: getiri artışı fiyatı düşürür."
+        },
+        "C": {
+          "en": "This uses Macaulay duration instead of modified duration.",
+          "tr": "Bu, düzeltilmiş durasyon yerine Macaulay durasyonunu kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: approximate % price change for +35 bps.",
+          "tr": "İstenen: +35 bp için yaklaşık % fiyat değişimi."
+        },
+        {
+          "en": "Convert to ModDur: 6.50 / 1.05 = 6.19",
+          "tr": "ModDur'a çevir: 6,50 / 1,05 = 6,19"
+        },
+        {
+          "en": "%ΔPV ≈ −ModDur × Δy = −6.19 × 0.0035 = −2.17%",
+          "tr": "%ΔPV ≈ −ModDur × Δy = −6,19 × 0,0035 = −%2,17",
+          "formula_latex": "\\%\\Delta PV\\approx-\\text{ModDur}\\times\\Delta y"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6.5 [÷] 1.05 [=]",
+          "[×] 0.35 [+/-] [=]"
+        ],
+        "note_tr": "Δy yüzde cinsinden 0,35 alındığı için sonuç doğrudan yüzde fiyat değişimidir."
+      },
+      "numeric": {
+        "expr": "-(6.5/1.05)*0.35",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "approximate",
+        "basis-point",
+        "closest-to",
+        "rise"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bond A has a PVBP of TRY 520 and Bond B has a PVBP of TRY 310 for the positions held. Both yields rise by 25 bps. Which statement is most likely correct?",
+      "stem_tr": "Elde tutulan pozisyonlar için A tahvilinin PVBP değeri 520 TL, B tahvilinin 310 TL'dir. Her iki tahvilin getirisi 25 bp artmaktadır. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Position A gains about TRY 13,000 and position B about TRY 7,750.",
+          "tr": "A pozisyonu yaklaşık 13.000 TL, B pozisyonu yaklaşık 7.750 TL kazanır."
+        },
+        {
+          "key": "B",
+          "en": "Position A loses about TRY 520 and position B about TRY 310.",
+          "tr": "A pozisyonu yaklaşık 520 TL, B pozisyonu yaklaşık 310 TL kaybeder."
+        },
+        {
+          "key": "C",
+          "en": "Position A loses about TRY 13,000 and position B about TRY 7,750.",
+          "tr": "A pozisyonu yaklaşık 13.000 TL, B pozisyonu yaklaşık 7.750 TL kaybeder."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Money change ≈ −PVBP × bps: A: 520 × 25 = 13,000; B: 310 × 25 = 7,750. Both are losses because yields rose.",
+      "explanation_tr": "Para cinsinden değişim ≈ −PVBP × bp: A: 520 × 25 = 13.000; B: 310 × 25 = 7.750. Getiriler yükseldiği için ikisi de kayıptır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Rising yields lower prices, so both positions lose value.",
+          "tr": "Getiriler yükselince fiyatlar düşer; iki pozisyon da değer kaybeder."
+        },
+        "B": {
+          "en": "PVBP is the loss for 1 bp; for 25 bps it must be multiplied by 25.",
+          "tr": "PVBP 1 bp için kayıptır; 25 bp için 25 ile çarpılmalıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "pvbp",
+        "most-likely",
+        "rise",
+        "position",
+        "basis-point"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "All else equal, which bond has the highest modified duration?",
+      "stem_tr": "Diğer her şey eşitken hangi tahvilin düzeltilmiş durasyonu en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A 10-year bond with a 2% coupon.",
+          "tr": "Kuponu %2 olan 10 yıl vadeli tahvil."
+        },
+        {
+          "key": "B",
+          "en": "A 10-year bond with a 7% coupon.",
+          "tr": "Kuponu %7 olan 10 yıl vadeli tahvil."
+        },
+        {
+          "key": "C",
+          "en": "A 5-year bond with a 2% coupon.",
+          "tr": "Kuponu %2 olan 5 yıl vadeli tahvil."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Duration increases with maturity and decreases with the coupon. The 10-year, 2% coupon bond combines the long maturity with the low coupon.",
+      "explanation_tr": "Durasyon vadeyle artar, kuponla azalır. 10 yıllık %2 kuponlu tahvil uzun vadeyi düşük kuponla birleştirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A higher coupon returns cash earlier and reduces duration.",
+          "tr": "Yüksek kupon nakdi daha erken geri verir ve durasyonu azaltır."
+        },
+        "C": {
+          "en": "A shorter maturity reduces duration.",
+          "tr": "Kısa vade durasyonu azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "modified-duration",
+        "all-else-equal",
+        "coupon",
+        "maturity",
+        "highest"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For a coupon bond, an increase in the yield to maturity, all else equal, will most likely cause its duration to:",
+      "stem_tr": "Kuponlu bir tahvilde, diğer her şey eşitken vadeye kadar getirinin artması durasyonu büyük olasılıkla nasıl etkiler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "increase.",
+          "tr": "artırır."
+        },
+        {
+          "key": "B",
+          "en": "decrease.",
+          "tr": "azaltır."
+        },
+        {
+          "key": "C",
+          "en": "remain unchanged.",
+          "tr": "değiştirmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A higher yield discounts far-away cash flows more heavily, so the weighted-average time shortens. Duration and yield are inversely related.",
+      "explanation_tr": "Yüksek getiri uzak nakit akışlarını daha çok iskonto eder; ağırlıklı ortalama süre kısalır. Durasyon ve getiri ters orantılıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher yields reduce the present value of distant cash flows more, so their weight falls.",
+          "tr": "Yüksek getiri uzak nakit akışlarının bugünkü değerini daha fazla azaltır; ağırlıkları düşer."
+        },
+        "C": {
+          "en": "Duration depends on yield because PV weights depend on yield.",
+          "tr": "Bugünkü değer ağırlıkları getiriye bağlı olduğu için durasyon da getiriye bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "yield-to-maturity",
+        "duration",
+        "all-else-equal",
+        "most-likely",
+        "inversely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 10-year bond has a 6% annual coupon, a face value of 100 and a yield to maturity of 6%. Its modified duration is closest to:",
+      "stem_tr": "10 yıl vadeli bir tahvilin yıllık kuponu %6, nominal değeri 100 ve vadeye kadar getirisi %6'dır. Düzeltilmiş durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.80 years",
+          "tr": "7,80 years",
+          "value": 7.8017
+        },
+        {
+          "key": "B",
+          "en": "10.00 years",
+          "tr": "10,00 years",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "7.36 years",
+          "tr": "7,36 years",
+          "value": 7.3601
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Price = 100 (par). MacDur = 7.802; ModDur = 7.802/1.06 = 7.360.",
+      "explanation_tr": "Fiyat = 100 (nominal). MacDur = 7,802; ModDur = 7,802/1,06 = 7,360.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the Macaulay duration; it has not been divided by 1.06.",
+          "tr": "Bu, Macaulay durasyonudur; 1,06'ya bölünmemiştir."
+        },
+        "B": {
+          "en": "This is the maturity, which is the duration only for a zero-coupon bond.",
+          "tr": "Bu vadedir; yalnızca sıfır kuponlu tahvilde durasyona eşittir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: modified duration of a par bond.",
+          "tr": "İstenen: nominalden işlem gören tahvilin düzeltilmiş durasyonu."
+        },
+        {
+          "en": "Compute MacDur from PV-weighted times (10-year bond, coupon 6, yield 6%).",
+          "tr": "PV ağırlıklı sürelerden MacDur hesapla (10 yıl, kupon 6, getiri %6)."
+        },
+        {
+          "en": "MacDur = 7.802; ModDur = 7.802 / 1.06 = 7.360",
+          "tr": "MacDur = 7,802; ModDur = 7,802 / 1,06 = 7,360"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "(PV_t ve t·PV_t elle hesaplanır)",
+          "7.802 [÷] 1.06 [=]"
+        ],
+        "note_tr": "Durasyon için tuş yok; ağırlıklı toplamı elle bulup 1,06'ya bölün."
+      },
+      "numeric": {
+        "expr": "mod_duration(0.06,0.06,10)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "modified-duration",
+        "par",
+        "coupon",
+        "closest-to",
+        "macaulay-duration"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish investor compares a 20-year fixed DİBS with a 2% coupon and a 3-year DİBS with a 30% coupon at similar yields. Which statement is most likely correct?",
+      "stem_tr": "Türk bir yatırımcı benzer getirili, kuponu %2 olan 20 yıllık sabit kuponlu DİBS ile kuponu %30 olan 3 yıllık DİBS'i karşılaştırıyor. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The 20-year, 2% bond has much higher interest rate risk.",
+          "tr": "20 yıllık %2 kuponlu tahvilin faiz oranı riski çok daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "The 3-year, 30% bond has much higher interest rate risk.",
+          "tr": "3 yıllık %30 kuponlu tahvilin faiz oranı riski çok daha yüksektir."
+        },
+        {
+          "key": "C",
+          "en": "Both have about the same interest rate risk because yields are similar.",
+          "tr": "Getiriler benzer olduğu için ikisinin faiz oranı riski yaklaşık aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Long maturity and low coupon both raise duration, so the 20-year 2% bond is far more sensitive to yield changes.",
+      "explanation_tr": "Uzun vade ve düşük kupon durasyonu artırır; 20 yıllık %2 kuponlu tahvil getiri değişimlerine çok daha duyarlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Short maturity and high coupon both reduce duration.",
+          "tr": "Kısa vade ve yüksek kupon durasyonu azaltır."
+        },
+        "C": {
+          "en": "Similar yields do not equalize duration; maturity and coupon differ a lot.",
+          "tr": "Benzer getiri durasyonu eşitlemez; vade ve kupon çok farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "interest-rate-risk",
+        "most-likely",
+        "coupon",
+        "maturity",
+        "similar"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-11-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-11",
+      "los_id": "FI-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "For a bond that trades at par, as maturity increases, modified duration:",
+      "stem_tr": "Nominal değerden işlem gören bir tahvilde vade uzadıkça düzeltilmiş durasyon:",
+      "options": [
+        {
+          "key": "A",
+          "en": "increases at a constant rate without limit.",
+          "tr": "sınırsız ve sabit hızla artar."
+        },
+        {
+          "key": "B",
+          "en": "increases at a decreasing rate toward a limit.",
+          "tr": "bir sınıra doğru azalan hızla artar."
+        },
+        {
+          "key": "C",
+          "en": "decreases because longer cash flows are discounted more.",
+          "tr": "uzun nakit akışları daha çok iskonto edildiği için azalır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "For a par bond, duration keeps increasing with maturity but each extra year adds less, because distant cash flows have small present values. Duration approaches a limit.",
+      "explanation_tr": "Nominalden işlem gören tahvilde durasyon vadeyle artmaya devam eder ama her ek yıl daha az ekler, çünkü uzak nakit akışlarının bugünkü değeri küçüktür. Durasyon bir sınıra yaklaşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Duration does not grow linearly with maturity for a coupon bond; the extra distant cash flows have small PV.",
+          "tr": "Kuponlu tahvilde durasyon vadeyle doğrusal artmaz; ek uzak nakit akışlarının bugünkü değeri küçüktür."
+        },
+        "C": {
+          "en": "Longer maturity raises duration; extra discounting only slows the rise.",
+          "tr": "Uzun vade durasyonu artırır; ek iskonto yalnızca artışı yavaşlatır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "par",
+        "modified-duration",
+        "maturity",
+        "limit",
+        "decreasing-rate"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
