@@ -54,10 +54,10 @@
       },
       {
         "kind": "example",
-        "heading_en": "A callable bond",
-        "heading_tr": "Çağrılabilir tahvil örneği",
-        "en": "A callable bond has PV₀ = 102.0. After a 50 bp parallel fall in the benchmark curve, PV₋ = 104.2. After a 50 bp rise, PV₊ = 99.9. EffDur = (104.2 − 99.9) / (2 × 102.0 × 0.005) = 4.3 / 1.02 = 4.22. Effective convexity = (104.2 + 99.9 − 204.0) / (102.0 × 0.005²) = 0.1 / 0.00255 = 39.2.",
-        "tr": "Çağrılabilir bir tahvilin PV₀ değeri 102,0'dır. Gösterge eğri 50 bp paralel düşünce PV₋ = 104,2; 50 bp yükselince PV₊ = 99,9'dur. EffDur = (104,2 − 99,9) / (2 × 102,0 × 0,005) = 4,3 / 1,02 = 4,22. Efektif konveksite = (104,2 + 99,9 − 204,0) / (102,0 × 0,005²) = 0,1 / 0,00255 = 39,2.",
+        "heading_en": "An effective duration example",
+        "heading_tr": "Efektif durasyon örneği",
+        "en": "A bond with an embedded option has PV₀ = 102.0. After a 50 bp parallel fall in the benchmark curve, PV₋ = 104.2. After a 50 bp rise, PV₊ = 99.9. EffDur = (104.2 − 99.9) / (2 × 102.0 × 0.005) = 4.3 / 1.02 = 4.22. Effective convexity = (104.2 + 99.9 − 204.0) / (102.0 × 0.005²) = 0.1 / 0.00255 = 39.2.",
+        "tr": "Gömülü opsiyonlu bir tahvilin PV₀ değeri 102,0'dır. Gösterge eğri 50 bp paralel düşünce PV₋ = 104,2; 50 bp yükselince PV₊ = 99,9'dur. EffDur = (104,2 − 99,9) / (2 × 102,0 × 0,005) = 4,3 / 1,02 = 4,22. Efektif konveksite = (104,2 + 99,9 − 204,0) / (102,0 × 0,005²) = 0,1 / 0,00255 = 39,2.",
         "key_terms": [
           "effective duration"
         ],
@@ -103,7 +103,11 @@
       "analytical-duration"
     ],
     "source_basis": "original",
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    },
     "spk_link": {
       "status": "new",
       "note_tr": "Gömülü opsiyonlu tahvil ve efektif durasyon SPK Düzey 3'te yok denecek kadar azdır."
@@ -161,7 +165,11 @@
         "modified-duration"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-a-q02",
@@ -216,7 +224,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-a-q03",
@@ -272,7 +284,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-a-q04",
@@ -328,7 +344,11 @@
         "all-else-equal"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-a-q05",
@@ -383,7 +403,11 @@
         "most-consistent"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-b-q01",
@@ -395,8 +419,8 @@
       "type": "mcq3",
       "difficulty": 1,
       "cognitive": "apply",
-      "stem_en": "A callable bond is priced at 102.0. If the benchmark yield curve shifts down by 50 bps, its price is 104.2; if it shifts up by 50 bps, its price is 99.9. The effective duration is closest to:",
-      "stem_tr": "Çağrılabilir bir tahvilin fiyatı 102,0'dır. Gösterge getiri eğrisi 50 bp aşağı kayarsa fiyatı 104,2; 50 bp yukarı kayarsa 99,9 olur. Efektif durasyon aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "A bond with an embedded option is priced at 102.0. If the benchmark yield curve shifts down by 50 bps, its price is 104.2; if it shifts up by 50 bps, its price is 99.9. The effective duration is closest to:",
+      "stem_tr": "Gömülü opsiyonlu bir tahvilin fiyatı 102,0'dır. Gösterge getiri eğrisi 50 bp aşağı kayarsa fiyatı 104,2; 50 bp yukarı kayarsa 99,9 olur. Efektif durasyon aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
@@ -459,7 +483,7 @@
       },
       "vocab_ids": [
         "effective-duration",
-        "callable-bond",
+        "embedded-option",
         "closest-to",
         "benchmark-yield-curve",
         "shift"
@@ -468,7 +492,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-b-q02",
@@ -552,7 +580,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-b-q03",
@@ -617,10 +649,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 39 [×] 0.01 [x²] [=] [STO] 1",
           "4.2 [×] 0.01 [+/-] [=]",
-          "[+] 0.5 [×] 39 [×] 0.01 [x²] [=]"
+          "[+] [RCL] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Sonucu 100 ile çarpın."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Sonuç −4,00 (%)."
       },
       "numeric": {
         "expr": "(-4.2*0.01+0.5*39*0.01**2)*100",
@@ -637,7 +671,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-b-q04",
@@ -701,11 +739,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 60 [×] 0.02 [x²] [=] [STO] 1",
           "3 [×] 0.02 [=]",
-          "[-] 0.5 [×] 60 [×] 0.02 [x²] [=]",
-          "[+] 1 [=] [×] 102 [=]"
+          "[-] [RCL] 1 [+] 1 [=]",
+          "[×] 102 [=]"
         ],
-        "note_tr": "Negatif konveksite getiri düşüşünde bile fiyat kazancını azaltır."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Negatif konveksite (−60) olduğu için düzeltme çıkarılır; sonuç 106,90."
       },
       "numeric": {
         "expr": "102*(1+3.0*0.02+0.5*(-60)*0.02**2)"
@@ -720,7 +759,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-b-q05",
@@ -803,7 +846,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-c-q01",
@@ -859,7 +906,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-c-q02",
@@ -924,10 +975,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "0.5 [×] 0.002 [+/-] [=]",
-          "[+] 2.8 [×] 0.003 [=]"
+          "2.8 [×] 0.003 [=] [STO] 1",
+          "0.5 [×] 0.002 [=] [+/-]",
+          "[+] [RCL] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Her vadeyi ayrı hesaplayıp toplayın; 5 yıllık terim sıfırdır."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Sonuç +0,74 (%). 5 yıllık terim sıfırdır."
       },
       "numeric": {
         "expr": "(-(0.5*0.002)-(1.2*0)-(2.8*(-0.003)))*100",
@@ -944,7 +997,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-c-q03",
@@ -995,7 +1052,11 @@
         "parallel-shift"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-c-q04",
@@ -1052,7 +1113,11 @@
         "all-else-equal"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-c-q05",
@@ -1108,7 +1173,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-d-q01",
@@ -1163,7 +1232,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-d-q02",
@@ -1219,7 +1292,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-d-q03",
@@ -1275,7 +1352,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-d-q04",
@@ -1330,7 +1411,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-13-d-q05",
@@ -1385,7 +1470,11 @@
         "least-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

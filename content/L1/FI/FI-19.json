@@ -74,8 +74,8 @@
         "kind": "example",
         "heading_en": "Speed and payment",
         "heading_tr": "Hız ve ödeme",
-        "en": "A single monthly mortality (SMM) of 0.5% is equal to a CPR of 1 − (1 − 0.005)^12 = 5.84% per year. For a TRY 1,000,000 loan, 15 years, monthly rate 1.8%, the level payment is about TRY 18,755. In month 1, interest = 1,000,000 × 0.018 = 18,000, so principal repaid is only about 755. PSA: 100 PSA means CPR rises 0.2% per month to 6% at month 30. 150 PSA is 1.5 times this speed.",
-        "tr": "%0,5'lik tek aylık oran (SMM), yıllık 1 − (1 − 0,005)^12 = %5,84 CPR'ye eşittir. 1.000.000 TL'lik, 15 yıl vadeli, aylık faizi %1,8 olan bir kredide eşit taksit yaklaşık 18.755 TL'dir. 1. ayda faiz = 1.000.000 × 0,018 = 18.000; yani ödenen anapara yalnızca yaklaşık 755'tir. PSA: 100 PSA, CPR'nin ayda %0,2 artarak 30. ayda %6'ya ulaşması demektir. 150 PSA bu hızın 1,5 katıdır.",
+        "en": "A single monthly mortality (SMM) of 0.5% is equal to a CPR of 1 − (1 − 0.005)^12 = 5.84% per year. For a TRY 1,000,000 loan, 15 years, monthly rate 1.8%, the level payment is about TRY 18,756. In month 1, interest = 1,000,000 × 0.018 = 18,000, so principal repaid is only about 756. PSA: 100 PSA means CPR rises 0.2% per month to 6% at month 30. 150 PSA is 1.5 times this speed.",
+        "tr": "%0,5'lik tek aylık oran (SMM), yıllık 1 − (1 − 0,005)^12 = %5,84 CPR'ye eşittir. 1.000.000 TL'lik, 15 yıl vadeli, aylık faizi %1,8 olan bir kredide eşit taksit yaklaşık 18.756 TL'dir. 1. ayda faiz = 1.000.000 × 0,018 = 18.000; yani ödenen anapara yalnızca yaklaşık 756'dır. PSA: 100 PSA, CPR'nin ayda %0,2 artarak 30. ayda %6'ya ulaşması demektir. 150 PSA bu hızın 1,5 katıdır.",
         "key_terms": [
           "SMM",
           "CPR",
@@ -127,7 +127,11 @@
       "psa"
     ],
     "source_basis": "original",
-    "verified": false,
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    },
     "spk_link": {
       "status": "new",
       "note_tr": "Konut finansmanı ve ipotek SPK Düzey 3'te yüzeysel; erken ödeme riski ve CMO yapıları CFA'ya özgüdür."
@@ -188,7 +192,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-a-q02",
@@ -244,7 +252,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-a-q03",
@@ -300,7 +312,11 @@
         "respectively"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-a-q04",
@@ -385,7 +401,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-a-q05",
@@ -467,7 +487,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-b-q01",
@@ -519,7 +543,11 @@
         "principal"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-b-q02",
@@ -606,7 +634,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-b-q03",
@@ -618,8 +650,8 @@
       "type": "mcq3",
       "difficulty": 2,
       "cognitive": "apply",
-      "stem_en": "Using the same loan (TRY 1,000,000; monthly rate 1.8%; level payment of about TRY 18,755), the principal repaid in the first monthly payment is closest to:",
-      "stem_tr": "Aynı kredi için (1.000.000 TL; aylık faiz %1,8; yaklaşık 18.755 TL eşit taksit) ilk aylık ödemede geri ödenen anapara aşağıdakilerden hangisine en yakındır?",
+      "stem_en": "Using the same loan (TRY 1,000,000; monthly rate 1.8%; level payment of about TRY 18,756), the principal repaid in the first monthly payment is closest to:",
+      "stem_tr": "Aynı kredi için (1.000.000 TL; aylık faiz %1,8; yaklaşık 18.756 TL eşit taksit) ilk aylık ödemede geri ödenen anapara aşağıdakilerden hangisine en yakındır?",
       "options": [
         {
           "key": "A",
@@ -670,10 +702,15 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "(taksit: 18,755)",
-          "18755 [-] 18000 [=]"
+          "[2ND] [CLR TVM]",
+          "180 [N]",
+          "1.8 [I/Y]",
+          "1000000 [PV]",
+          "0 [FV]",
+          "[CPT] [PMT]",
+          "[+/-] [-] 18000 [=]"
         ],
-        "note_tr": "Önce taksiti TVM ile bulun, sonra ilk ay faizini çıkarın."
+        "note_tr": "Önce taksiti TVM ile bulun (PMT = −18.756,03; işaret çevrilir), sonra ilk ay faizini (18.000) çıkarın: yaklaşık 756."
       },
       "numeric": {
         "expr": "abs(pmt(0.018,180,1000000))-1000000*0.018",
@@ -688,7 +725,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-b-q04",
@@ -745,7 +786,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-b-q05",
@@ -799,7 +844,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-c-q01",
@@ -851,7 +900,11 @@
         "deduct"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-c-q02",
@@ -933,7 +986,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-c-q03",
@@ -989,7 +1046,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-c-q04",
@@ -1045,7 +1106,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-c-q05",
@@ -1097,7 +1162,11 @@
         "net-of"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-d-q01",
@@ -1153,7 +1222,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-d-q02",
@@ -1205,7 +1278,11 @@
         "collateral"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-d-q03",
@@ -1289,7 +1366,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-d-q04",
@@ -1345,7 +1426,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "FI-19-d-q05",
@@ -1401,7 +1486,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }
