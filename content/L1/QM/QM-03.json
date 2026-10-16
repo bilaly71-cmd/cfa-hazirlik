@@ -1,0 +1,906 @@
+{
+  "module_id": "QM-03",
+  "lesson": {
+    "id": "QM-03-lesson",
+    "level": "L1",
+    "topic": "QM",
+    "module_id": "QM-03",
+    "los_ids": [
+      "QM-03-a",
+      "QM-03-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Benchmarking Returns",
+    "title_tr": "Getirilerin Gösterge ile Kıyaslanması",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Judging performance fairly",
+        "heading_tr": "Performansı adil değerlendirmek",
+        "en": "Two Turkish pension funds both started the year with TL 100 million. One manager received a large new contribution just before a market fall; the other did not. Who managed better? The answer depends on whether we judge the manager's skill or the client's actual experience. Then, to see if a manager beat the market, we need a benchmark, usually an index such as the BIST 100. But indexes differ in how they weight their members, and the weighting changes what the index tells us.",
+        "tr": "İki Türk emeklilik fonu yıla 100 milyon TL ile başladı. Bir yönetici piyasa düşmeden hemen önce büyük bir yeni katkı aldı, diğeri almadı. Hangisi daha iyi yönetti? Yanıt, yöneticinin becerisini mi yoksa müşterinin fiilen yaşadığı sonucu mu ölçtüğümüze bağlıdır. Ardından yöneticinin piyasayı geçip geçmediğini görmek için bir gösterge, genellikle BIST 100 gibi bir endeks gerekir. Ancak endeksler üyelerini farklı ağırlıklandırır ve ağırlıklandırma endeksin bize söylediğini değiştirir.",
+        "key_terms": [
+          "benchmark",
+          "money-weighted return",
+          "time-weighted return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Money-weighted vs time-weighted return",
+        "heading_tr": "Para ağırlıklı ve zaman ağırlıklı getiri",
+        "en": "The money-weighted return (MWR) is the internal rate of return of the portfolio's cash flows: it treats deposits and withdrawals as part of the investment and is sensitive to their timing and size. It shows the return the client actually earned. The time-weighted return (TWR) breaks the period into sub-periods at every cash flow, computes each sub-period's HPR and links them by compounding. It removes the effect of flows, so it measures the manager's performance when the manager does not control the flows. TWR is the standard for comparing managers. If funds are added before good periods and removed before bad ones, MWR is above TWR.",
+        "tr": "Para ağırlıklı getiri (MWR), portföyün nakit akışlarının iç verim oranıdır: para yatırma ve çekmeyi yatırımın parçası sayar ve bunların zamanlamasına ve büyüklüğüne duyarlıdır. Müşterinin fiilen kazandığı getiriyi gösterir. Zaman ağırlıklı getiri (ZAG/TWR) dönemi her nakit akışında alt dönemlere böler, her alt dönemin HPR'sini hesaplar ve bileşik olarak zincirler. Nakit akışlarının etkisini ortadan kaldırır; bu nedenle yönetici akışları kontrol etmiyorsa yöneticinin performansını ölçer. Yöneticileri kıyaslamak için standart TWR'dir. Para iyi dönemlerden önce eklenip kötü dönemlerden önce çekilirse MWR, TWR'nin üzerindedir.",
+        "key_terms": [
+          "money-weighted return",
+          "time-weighted return",
+          "sub-period"
+        ],
+        "formula_latex": "0=CF_0+\\sum_{t=1}^{n}\\frac{CF_t}{(1+MWR)^t},\\qquad TWR=\\prod_{k=1}^{K}(1+HPR_k)-1"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: TWR and MWR",
+        "heading_tr": "Çözümlü örnek: TWR ve MWR",
+        "en": "A client starts with TL 100,000. At the end of year 1 the account is worth TL 110,000 (HPR +10%), and the client adds TL 40,000, so TL 150,000 is invested. At the end of year 2 the account is worth TL 135,000 (HPR -10%). TWR = 1.10 × 0.90 - 1 = -1.0% over two years. For MWR, solve -100,000 - 40,000 / (1 + r) + 135,000 / (1 + r)^2 = 0, giving r of about -2.10% per year. The client added more money before the losing year, so the money-weighted result is worse than the time-weighted one. On the BA II Plus use CF and IRR.",
+        "tr": "Bir müşteri 100.000 TL ile başlar. 1. yıl sonunda hesap 110.000 TL'dir (HPR %+10) ve müşteri 40.000 TL ekler; böylece 150.000 TL yatırımdadır. 2. yıl sonunda hesap 135.000 TL'dir (HPR %-10). TWR = 1,10 × 0,90 - 1 = iki yılda %-1,0. MWR için -100.000 - 40.000 / (1 + r) + 135.000 / (1 + r)^2 = 0 çözülür; r yıllık yaklaşık %-2,10 çıkar. Müşteri kaybettiren yıldan önce daha fazla para eklediği için para ağırlıklı sonuç zaman ağırlıklıdan kötüdür. BA II Plus'ta CF ve IRR kullanılır.",
+        "key_terms": [
+          "money-weighted return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Index weighting schemes",
+        "heading_tr": "Endeks ağırlıklandırma yöntemleri",
+        "en": "A price-weighted index (like the Dow) sums the prices of members and divides by a divisor; a high-priced share has more weight, regardless of company size. An equal-weighted index gives each member the same weight, so small firms matter as much as large ones; it needs frequent rebalancing back to equal weights and tends to tilt toward smaller firms. A market-capitalization-weighted index weights each member by its market value (often float-adjusted); it is self-adjusting, buys no extra trades when prices move, and gives more weight to recently risen shares, a possible momentum bias. A fundamental-weighted index uses measures such as sales, earnings, book value or dividends, so weights do not depend on price. Reconstitution means adding or removing members; rebalancing means resetting weights.",
+        "tr": "Fiyat ağırlıklı endeks (Dow gibi) üyelerin fiyatlarını toplayıp bir bölenle böler; şirketin büyüklüğü ne olursa olsun yüksek fiyatlı pay daha çok ağırlık taşır. Eşit ağırlıklı endeks her üyeye aynı ağırlığı verir; küçük şirketler büyükler kadar önemlidir. Ağırlıkları eşite döndürmek için sık yeniden dengeleme gerekir ve küçük şirketlere kayma eğilimi gösterir. Piyasa değeri ağırlıklı endeks her üyeyi piyasa değeriyle (çoğunlukla halka açık kısma göre düzeltilmiş) ağırlıklandırır; kendi kendini ayarlar, fiyatlar değişince ek işlem gerektirmez ve yakın zamanda yükselmiş paylara daha çok ağırlık verir; bu bir momentum yanlılığı olabilir. Temel göstergelere dayalı endeks satış, kâr, defter değeri veya temettü gibi ölçüler kullanır; ağırlıklar fiyata bağlı değildir. Kompozisyon değişikliği üye ekleme veya çıkarmadır; yeniden dengeleme ağırlıkları sıfırlamaktır.",
+        "key_terms": [
+          "price-weighted index",
+          "equal-weighted index",
+          "market-capitalization-weighted index",
+          "fundamental weighting",
+          "rebalancing",
+          "reconstitution"
+        ],
+        "formula_latex": "\\text{Index}_{PW}=\\frac{\\sum P_i}{D},\\qquad R_{index}=\\sum_i w_i R_i"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: index return and divisor",
+        "heading_tr": "Çözümlü örnek: endeks getirisi ve bölen",
+        "en": "Price-weighted index: prices 50, 30, 20 rise to 56, 27, 22. The sum goes from 100 to 105, so the index return is +5.0%. Market-cap weights 60%, 30%, 10% with stock returns +10%, -5%, +20% give 0.6 × 10 + 0.3 × (-5) + 0.1 × 20 = 6.5%, while equal weights give 8.33%. When a member of a price-weighted index splits, the divisor falls so the index level does not jump: with prices 80, 40, 30 and divisor 3 the level is 50; after the 80 share splits 2-for-1 the sum is 110, so the new divisor is 110 / 50 = 2.2.",
+        "tr": "Fiyat ağırlıklı endeks: 50, 30, 20 olan fiyatlar 56, 27, 22'ye çıkar. Toplam 100'den 105'e gider; endeks getirisi %+5,0'tir. %60, %30, %10 piyasa değeri ağırlıkları ve %+10, %-5, %+20 pay getirileri 0,6 × 10 + 0,3 × (-5) + 0,1 × 20 = %6,5 verir; eşit ağırlık ise %8,33 verir. Fiyat ağırlıklı endekste bir üye bölününce endeks düzeyi sıçramasın diye bölen düşer: fiyatlar 80, 40, 30 ve bölen 3 iken düzey 50'dir; 80'lik pay 2'ye 1 bölününce toplam 110 olur, yeni bölen 110 / 50 = 2,2'dir.",
+        "key_terms": [
+          "divisor"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Do not use TWR to describe the investor's own experience when the investor controlled the flows, and do not use MWR to rank managers who did not control them. In a TWR you must value the portfolio at each cash flow date. In price-weighted indexes, a split changes weights and requires a new divisor. Equal-weighted indexes are not 'passive' without cost: rebalancing means trading. Market-cap weighting is not the same as equal weighting of returns; apply weights to each return.",
+        "tr": "Yatırımcı akışları kendisi kontrol ediyorsa onun deneyimini TWR ile anlatma; akışları kontrol etmeyen yöneticileri sıralamak için MWR kullanma. TWR'de portföyü her nakit akışı tarihinde değerlemen gerekir. Fiyat ağırlıklı endekslerde bölünme ağırlıkları değiştirir ve yeni bölen gerektirir. Eşit ağırlıklı endeks maliyetsiz 'pasif' değildir; yeniden dengeleme işlem demektir. Piyasa değeri ağırlıklı getiri, getirilerin eşit ağırlıklı ortalaması değildir; her getiriye kendi ağırlığı uygulanır.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "The time-weighted return removes the effect of cash flows and is the standard for judging managers; the money-weighted return is the IRR of the flows and shows the client's actual experience. Index weighting (price, equal, market-cap, fundamental) shapes what the index measures, how often it rebalances and which risks it hides.",
+    "summary_tr": "Zaman ağırlıklı getiri nakit akışlarının etkisini kaldırır ve yöneticileri değerlendirmede standarttır; para ağırlıklı getiri akışların iç verim oranıdır ve müşterinin fiili deneyimini gösterir. Endeks ağırlıklandırma yöntemi (fiyat, eşit, piyasa değeri, temel göstergeler) endeksin neyi ölçtüğünü, ne sıklıkla yeniden dengelendiğini ve hangi riskleri gizlediğini belirler.",
+    "common_traps_tr": [
+      "Yöneticileri sıralarken MWR kullanmak; akışlar yöneticinin kontrolünde değildir.",
+      "TWR'de alt dönem getirilerini toplamak veya aritmetik ortalamasını almak; bileşik zincirleme gerekir.",
+      "Fiyat ağırlıklı endekste bölünme sonrası böleni güncellememek.",
+      "Eşit ağırlıklı endeksin yeniden dengeleme maliyetini unutmak.",
+      "Piyasa değeri ağırlıklı getiride ağırlıkları yanlış getiriyle eşleştirmek."
+    ],
+    "vocab_ids": [
+      "money-weighted-return",
+      "time-weighted-return",
+      "sub-period",
+      "benchmark",
+      "price-weighted-index",
+      "equal-weighted-index",
+      "market-capitalization-weighted-index",
+      "fundamental-weighting",
+      "rebalancing",
+      "reconstitution",
+      "divisor",
+      "stock-split"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Endeks ve portföy getirisi Düzey 3'ten tanıdık; MWR/TWR ayrımı ve ağırlıklandırma yöntemlerinin etkileri kısmen yeni."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "QM-03-a-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A pension fund board wants to compare two external managers who have no control over when clients add or withdraw money. Which measure is most appropriate?",
+      "stem_tr": "Bir emeklilik fonu kurulu, müşterilerin ne zaman para ekleyeceği veya çekeceği üzerinde kontrolü olmayan iki dış yöneticiyi karşılaştırmak istiyor. Hangi ölçü en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Time-weighted return",
+          "tr": "Zaman ağırlıklı getiri"
+        },
+        {
+          "key": "B",
+          "en": "Money-weighted return",
+          "tr": "Para ağırlıklı getiri"
+        },
+        {
+          "key": "C",
+          "en": "Arithmetic mean of the ending values",
+          "tr": "Bitiş değerlerinin aritmetik ortalaması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "TWR removes the effect of cash flows by linking sub-period returns, so it isolates manager skill.",
+      "explanation_tr": "TWR, alt dönem getirilerini zincirleyerek nakit akışlarının etkisini ortadan kaldırır; yönetici becerisini ayrıştırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It is distorted by the timing and size of client flows, which the managers do not control.",
+          "tr": "Yöneticilerin kontrol etmediği müşteri akışlarının zamanlaması ve büyüklüğünden etkilenir."
+        },
+        "C": {
+          "en": "Ending values mix performance with contributions and are not a return measure.",
+          "tr": "Bitiş değerleri performansı katkılarla karıştırır ve bir getiri ölçüsü değildir."
+        }
+      },
+      "vocab_ids": [
+        "time-weighted-return",
+        "manager",
+        "most-appropriate",
+        "compare",
+        "skill"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-a-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio starts at TL 100,000. After year 1 it is worth TL 110,000 and the client then adds TL 40,000. After year 2 it is worth TL 135,000. The two-year time-weighted return is closest to:",
+      "stem_tr": "Bir portföy 100.000 TL ile başlıyor. 1. yıl sonunda değeri 110.000 TL ve müşteri ardından 40.000 TL ekliyor. 2. yıl sonunda değer 135.000 TL. İki yıllık zaman ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.00%",
+          "tr": "%0,00",
+          "value": 0.0
+        },
+        {
+          "key": "B",
+          "en": "-1.00%",
+          "tr": "%-1,00",
+          "value": -1.0
+        },
+        {
+          "key": "C",
+          "en": "-10.00%",
+          "tr": "%-10,00",
+          "value": -10.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Year-1 HPR = 110,000 / 100,000 - 1 = +10%. Year-2 HPR = 135,000 / (110,000 + 40,000) - 1 = -10%. TWR = 1.10 × 0.90 - 1 = -1.0%.",
+      "explanation_tr": "1. yıl HPR = 110.000 / 100.000 - 1 = %+10. 2. yıl HPR = 135.000 / (110.000 + 40.000) - 1 = %-10. TWR = 1,10 × 0,90 - 1 = %-1,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Averages +10% and -10% arithmetically; compounding gives a slight loss.",
+          "tr": "+%10 ve -%10'u aritmetik ortalamayla bulmuş; bileşik hesap küçük bir kayıp verir."
+        },
+        "C": {
+          "en": "Uses only the second sub-period and ignores the first.",
+          "tr": "Yalnızca ikinci alt dönemi kullanmış, birincisini yok saymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the manager's return, which ignores the client's flow.",
+          "tr": "Müşteri akışını yok sayan yönetici getirisi isteniyor."
+        },
+        {
+          "en": "Compute each sub-period HPR using the value after the flow as the new starting value.",
+          "tr": "Her alt dönem HPR'sini, akıştan sonraki değeri yeni başlangıç değeri alarak hesapla.",
+          "formula_latex": "TWR=\\prod(1+HPR_k)-1"
+        },
+        {
+          "en": "HPR1 = 110,000/100,000 - 1 = 10%; HPR2 = 135,000/150,000 - 1 = -10%.",
+          "tr": "HPR1 = 110.000/100.000 - 1 = %10; HPR2 = 135.000/150.000 - 1 = %-10.",
+          "values": {
+            "V1": 110000,
+            "flow": 40000,
+            "V2": 135000
+          }
+        },
+        {
+          "en": "Link: 1.10 × 0.90 = 0.99.",
+          "tr": "Zincirle: 1,10 × 0,90 = 0,99."
+        },
+        {
+          "en": "TWR = -1.0%.",
+          "tr": "TWR = %-1,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.10 [×] 135000 [÷] 150000 [=]  (0.99)",
+          "[-] 1 [=]  (-0.01)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.10*(135000/150000)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "time-weighted-return",
+        "sub-period",
+        "contribution",
+        "closest",
+        "link"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-a-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same cash flows (-100,000 at t = 0, -40,000 at t = 1, and an ending value of 135,000 at t = 2), the money-weighted return per year is closest to:",
+      "stem_tr": "Aynı nakit akışları kullanılarak (t = 0'da -100.000, t = 1'de -40.000 ve t = 2'de 135.000 bitiş değeri) yıllık para ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-1.00%",
+          "tr": "%-1,00",
+          "value": -1.0
+        },
+        {
+          "key": "B",
+          "en": "-5.00%",
+          "tr": "%-5,00",
+          "value": -5.0
+        },
+        {
+          "key": "C",
+          "en": "-2.10%",
+          "tr": "%-2,10",
+          "value": -2.1
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "MWR is the IRR of -100,000, -40,000 and +135,000. Solving gives about -2.10% per year, worse than the TWR because the extra TL 40,000 was added before the losing year.",
+      "explanation_tr": "MWR, -100.000, -40.000 ve +135.000 akışlarının iç verim oranıdır. Çözüm yılda yaklaşık %-2,10 verir; ek 40.000 TL kaybettiren yıldan önce eklendiği için TWR'den kötüdür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the time-weighted return, not the IRR of the flows.",
+          "tr": "Bu zaman ağırlıklı getiridir, nakit akışlarının iç verim oranı değildir."
+        },
+        "B": {
+          "en": "Computes the net gain (135,000 - 140,000) over the initial TL 100,000 only, ignoring timing.",
+          "tr": "Net kazancı (135.000 - 140.000) yalnızca ilk 100.000 TL'ye bölmüş, zamanlamayı yok saymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return that equates the present value of the flows to zero.",
+          "tr": "Akışların bugünkü değerini sıfır yapan getiri isteniyor."
+        },
+        {
+          "en": "Use the IRR of the cash flow stream.",
+          "tr": "Nakit akışı serisinin iç verim oranını kullan.",
+          "formula_latex": "0=-100000-\\frac{40000}{1+r}+\\frac{135000}{(1+r)^2}"
+        },
+        {
+          "en": "Enter CF0 = -100,000, CF1 = -40,000, CF2 = +135,000.",
+          "tr": "CF0 = -100.000, CF1 = -40.000, CF2 = +135.000 gir.",
+          "values": {
+            "CF0": -100000,
+            "CF1": -40000,
+            "CF2": 135000
+          }
+        },
+        {
+          "en": "IRR = -2.10% per year.",
+          "tr": "IRR = yıllık %-2,10."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WRK]",
+          "-100000 [ENTER] [↓]",
+          "[↓] 40000 [+/-] [ENTER] [↓] [↓]",
+          "135000 [ENTER]",
+          "[IRR] [CPT]  (-2.10)"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-100000,-40000,135000])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "money-weighted-return",
+        "cash-flow",
+        "closest",
+        "timing"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-a-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A fund's time-weighted return for the year was 8% and the client's money-weighted return was 12%. This is most consistent with the client:",
+      "stem_tr": "Bir fonun yıllık zaman ağırlıklı getirisi %8, müşterinin para ağırlıklı getirisi ise %12'dir. Bu durum en çok müşterinin şunu yaptığıyla tutarlıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "adding money before periods of high returns and withdrawing before periods of low returns",
+          "tr": "yüksek getirili dönemlerden önce para ekleyip düşük getirili dönemlerden önce para çekmesi"
+        },
+        {
+          "key": "B",
+          "en": "adding money before periods of low returns",
+          "tr": "düşük getirili dönemlerden önce para eklemesi"
+        },
+        {
+          "key": "C",
+          "en": "making no deposits or withdrawals",
+          "tr": "hiç para yatırıp çekmemesi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "MWR above TWR means that larger balances were invested during the better sub-periods, which happens when money was added before good periods and removed before bad ones.",
+      "explanation_tr": "MWR'nin TWR'nin üzerinde olması, daha iyi alt dönemlerde daha büyük bakiyelerin yatırımda olduğunu gösterir; bu, para iyi dönemlerden önce eklenip kötü dönemlerden önce çekildiğinde olur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This would pull the MWR below the TWR.",
+          "tr": "Bu, MWR'yi TWR'nin altına çeker."
+        },
+        "C": {
+          "en": "With no flows, MWR and TWR would be (almost) equal.",
+          "tr": "Akış yoksa MWR ile TWR (neredeyse) eşit olurdu."
+        }
+      },
+      "vocab_ids": [
+        "money-weighted-return",
+        "time-weighted-return",
+        "consistent",
+        "deposit"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-a-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A portfolio is worth TL 200 at the start. It is TL 210 just before a TL 90 contribution; it is TL 285 just before a TL 45 withdrawal; and it is TL 264 at the end. The time-weighted return over the whole period is closest to:",
+      "stem_tr": "Bir portföyün başlangıç değeri 200 TL'dir. 90 TL'lik katkıdan hemen önce 210 TL; 45 TL'lik çekimden hemen önce 285 TL; sonunda ise 264 TL'dir. Tüm dönem için zaman ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "9.73%",
+          "tr": "%9,73",
+          "value": 9.73
+        },
+        {
+          "key": "C",
+          "en": "3.33%",
+          "tr": "%3,33",
+          "value": 3.33
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Sub-periods: 210/200 = 1.05; 285/(210+90) = 0.95; 264/(285-45) = 1.10. TWR = 1.05 × 0.95 × 1.10 - 1 = 9.73%.",
+      "explanation_tr": "Alt dönemler: 210/200 = 1,05; 285/(210+90) = 0,95; 264/(285-45) = 1,10. TWR = 1,05 × 0,95 × 1,10 - 1 = %9,73.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the sub-period returns (5% - 5% + 10%) instead of compounding them.",
+          "tr": "Alt dönem getirilerini (%5 - %5 + %10) bileşik zincirlemek yerine toplamış."
+        },
+        "C": {
+          "en": "Takes the arithmetic average of the sub-period returns, not their compounded product.",
+          "tr": "Alt dönem getirilerinin bileşik çarpımı yerine aritmetik ortalamasını almış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the TWR, so value the portfolio at each cash flow.",
+          "tr": "TWR isteniyor; portföyü her nakit akışında değerle."
+        },
+        {
+          "en": "Compute each sub-period growth factor with the post-flow value as the new base.",
+          "tr": "Her alt dönem büyüme çarpanını, akış sonrası değeri yeni baz alarak hesapla.",
+          "formula_latex": "TWR=\\prod\\frac{V_{end,k}}{V_{start,k}}-1"
+        },
+        {
+          "en": "Sub-period 1: 210/200 = 1.05. Sub-period 2: 285/300 = 0.95. Sub-period 3: 264/240 = 1.10.",
+          "tr": "Alt dönem 1: 210/200 = 1,05. Alt dönem 2: 285/300 = 0,95. Alt dönem 3: 264/240 = 1,10.",
+          "values": {
+            "base2": 300,
+            "base3": 240
+          }
+        },
+        {
+          "en": "Product = 1.05 × 0.95 × 1.10 = 1.09725.",
+          "tr": "Çarpım = 1,05 × 0,95 × 1,10 = 1,09725."
+        },
+        {
+          "en": "TWR = 9.73%.",
+          "tr": "TWR = %9,73."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.05 [×] 0.95 [×] 1.10 [=]  (1.09725)",
+          "[-] 1 [=]  (0.0973)"
+        ]
+      },
+      "numeric": {
+        "expr": "(210/200*285/300*264/240-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "time-weighted-return",
+        "contribution",
+        "withdrawal",
+        "closest",
+        "just-before",
+        "link"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-b-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a price-weighted index, which share has the greatest influence on the index return, all else equal?",
+      "stem_tr": "Fiyat ağırlıklı endekste, diğer her şey eşitken endeks getirisi üzerinde hangi pay en büyük etkiye sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The share with the largest market capitalization",
+          "tr": "Piyasa değeri en büyük olan pay"
+        },
+        {
+          "key": "B",
+          "en": "The share with the smallest number of shares outstanding",
+          "tr": "Dolaşımdaki pay sayısı en az olan pay"
+        },
+        {
+          "key": "C",
+          "en": "The share with the highest price per share",
+          "tr": "Pay başına fiyatı en yüksek olan pay"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A price-weighted index sums prices, so a high-priced share carries more weight regardless of the company's size.",
+      "explanation_tr": "Fiyat ağırlıklı endeks fiyatları toplar; bu yüzden şirketin büyüklüğü ne olursa olsun yüksek fiyatlı pay daha çok ağırlık taşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes a market-cap-weighted index.",
+          "tr": "Bu, piyasa değeri ağırlıklı endeksi anlatır."
+        },
+        "B": {
+          "en": "Share count does not matter in a price-weighted index; only the price level does.",
+          "tr": "Fiyat ağırlıklı endekste pay sayısı değil yalnızca fiyat düzeyi önemlidir."
+        }
+      },
+      "vocab_ids": [
+        "price-weighted-index",
+        "all-else-equal",
+        "market-capitalization",
+        "outstanding",
+        "influence"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-b-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A price-weighted index has three shares priced at 50, 30 and 20 at the start, and 56, 27 and 22 at the end of the year (no splits or dividends). The index return is closest to:",
+      "stem_tr": "Fiyat ağırlıklı endeksin üç payı başlangıçta 50, 30 ve 20; yıl sonunda 56, 27 ve 22 fiyatındadır (bölünme veya temettü yok). Endeks getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Sum of prices rises from 100 to 105, so the return is 105 / 100 - 1 = 5.0%.",
+      "explanation_tr": "Fiyatlar toplamı 100'den 105'e çıkar; getiri 105 / 100 - 1 = %5,0'tir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Averages the three individual returns (12%, -10%, 10%), which is an equal-weighted result.",
+          "tr": "Üç ayrı getirinin (%12, %-10, %10) ortalamasını almış; bu eşit ağırlıklı bir sonuçtur."
+        },
+        "C": {
+          "en": "Uses the return of the highest-priced share only.",
+          "tr": "Yalnızca en yüksek fiyatlı payın getirisini kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the percentage change of a price-weighted index.",
+          "tr": "Fiyat ağırlıklı endeksin yüzde değişimi isteniyor."
+        },
+        {
+          "en": "The index is the sum of prices over a constant divisor, so the divisor cancels in the return.",
+          "tr": "Endeks, sabit bölen üzerinden fiyat toplamıdır; getiride bölen sadeleşir.",
+          "formula_latex": "R=\\frac{\\sum P_1}{\\sum P_0}-1"
+        },
+        {
+          "en": "Sum at start = 100; sum at end = 105.",
+          "tr": "Başlangıç toplamı = 100; bitiş toplamı = 105.",
+          "values": {
+            "S0": 100,
+            "S1": 105
+          }
+        },
+        {
+          "en": "R = 5.0%.",
+          "tr": "R = %5,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "56 [+] 27 [+] 22 [=] [÷] 100 [=]  (1.05)",
+          "[-] 1 [=]  (0.05)"
+        ]
+      },
+      "numeric": {
+        "expr": "(56+27+22)/(50+30+20)*100-100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "price-weighted-index",
+        "divisor",
+        "closest",
+        "index",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-b-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A market-capitalization-weighted index has three shares with market values of TL 600 million, TL 300 million and TL 100 million. Their returns are +10%, -5% and +20%, respectively. The index return is closest to:",
+      "stem_tr": "Piyasa değeri ağırlıklı bir endeksin üç payının piyasa değerleri 600 milyon TL, 300 milyon TL ve 100 milyon TL'dir. Getirileri sırasıyla %+10, %-5 ve %+20'dir. Endeks getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.33%",
+          "tr": "%8,33",
+          "value": 8.33
+        },
+        {
+          "key": "B",
+          "en": "6.50%",
+          "tr": "%6,50",
+          "value": 6.5
+        },
+        {
+          "key": "C",
+          "en": "11.50%",
+          "tr": "%11,50",
+          "value": 11.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Weights are 60%, 30% and 10%. R = 0.6 × 10 + 0.3 × (-5) + 0.1 × 20 = 6.0 - 1.5 + 2.0 = 6.5%.",
+      "explanation_tr": "Ağırlıklar %60, %30 ve %10'dur. R = 0,6 × 10 + 0,3 × (-5) + 0,1 × 20 = 6,0 - 1,5 + 2,0 = %6,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies equal weights to the three returns.",
+          "tr": "Üç getiriye eşit ağırlık uygulamış."
+        },
+        "C": {
+          "en": "Applies the weights in reverse order (10%, 30%, 60%).",
+          "tr": "Ağırlıkları ters sırayla (%10, %30, %60) uygulamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cap-weighted return.",
+          "tr": "Piyasa değeri ağırlıklı getiri isteniyor."
+        },
+        {
+          "en": "Weight each return by its market value share.",
+          "tr": "Her getiriyi piyasa değeri payıyla ağırlıklandır.",
+          "formula_latex": "R=\\sum w_iR_i"
+        },
+        {
+          "en": "w = 600/1000, 300/1000, 100/1000.",
+          "tr": "w = 600/1000, 300/1000, 100/1000.",
+          "values": {
+            "w1": 0.6,
+            "w2": 0.3,
+            "w3": 0.1
+          }
+        },
+        {
+          "en": "6.0 - 1.5 + 2.0 = 6.5.",
+          "tr": "6,0 - 1,5 + 2,0 = 6,5."
+        },
+        {
+          "en": "R = 6.5%.",
+          "tr": "R = %6,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.6 [×] 10 [+] 0.3 [×] 5 [+/-] [+] 0.1 [×] 20 [=]  (6.5)"
+        ],
+        "note_tr": "Alternatif: [2ND] [7] ile veri girip [2ND] [8] ağırlıklı ortalama (frekans = ağırlık)."
+      },
+      "numeric": {
+        "expr": "0.6*10+0.3*-5+0.1*20",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "market-capitalization-weighted-index",
+        "weight",
+        "respectively",
+        "closest",
+        "market-value"
+      ],
+      "pattern_ids": [
+        "closest-to",
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-b-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a market-capitalization-weighted index of the same shares, an equal-weighted index is most likely to have:",
+      "stem_tr": "Aynı payların piyasa değeri ağırlıklı endeksiyle karşılaştırıldığında eşit ağırlıklı endeksin en olası özelliği hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a greater tilt toward the largest companies",
+          "tr": "en büyük şirketlere daha fazla kayma"
+        },
+        {
+          "key": "B",
+          "en": "no need for rebalancing because weights are fixed",
+          "tr": "ağırlıklar sabit olduğu için yeniden dengeleme ihtiyacının olmaması"
+        },
+        {
+          "key": "C",
+          "en": "a greater tilt toward small companies and higher turnover from rebalancing",
+          "tr": "küçük şirketlere daha fazla kayma ve yeniden dengelemeden kaynaklanan daha yüksek devir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Equal weighting overweights small firms relative to their size and must trade back to equal weights after prices move, which raises turnover.",
+      "explanation_tr": "Eşit ağırlık küçük şirketleri büyüklüklerine göre fazla ağırlıklandırır ve fiyatlar değişince ağırlıkları eşite döndürmek için işlem yapmak gerekir; bu devri artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equal weights give small companies more, not less, weight than market-cap weights do.",
+          "tr": "Eşit ağırlık, küçük şirketlere piyasa değeri ağırlığından daha fazla ağırlık verir."
+        },
+        "B": {
+          "en": "Prices move, so weights drift from equal and must be reset regularly.",
+          "tr": "Fiyatlar değişir, ağırlıklar eşitlikten sapar ve düzenli olarak sıfırlanmalıdır."
+        }
+      },
+      "vocab_ids": [
+        "equal-weighted-index",
+        "rebalancing",
+        "turnover",
+        "tilt",
+        "compared-with"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-03-b-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A price-weighted index has three shares priced at 80, 40 and 30, with a divisor of 3 (index level 50). The 80 share splits 2-for-1 and its price falls to 40. The new divisor that keeps the index at 50 is closest to:",
+      "stem_tr": "Fiyat ağırlıklı endeksin üç payı 80, 40 ve 30 fiyatındadır; bölen 3'tür (endeks düzeyi 50). 80'lik pay 2'ye 1 bölünür ve fiyatı 40'a düşer. Endeksi 50'de tutan yeni bölen aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.20",
+          "tr": "2,20",
+          "value": 2.2
+        },
+        {
+          "key": "B",
+          "en": "3.00",
+          "tr": "3,00",
+          "value": 3.0
+        },
+        {
+          "key": "C",
+          "en": "2.75",
+          "tr": "2,75",
+          "value": 2.75
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "New price sum = 40 + 40 + 30 = 110. To keep the level at 50, divisor = 110 / 50 = 2.2.",
+      "explanation_tr": "Yeni fiyat toplamı = 40 + 40 + 30 = 110. Düzeyi 50'de tutmak için bölen = 110 / 50 = 2,2.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Leaves the divisor unchanged, so the index would drop with the split.",
+          "tr": "Böleni değiştirmemiş; bölünmeyle endeks düşerdi."
+        },
+        "C": {
+          "en": "Divides the new price sum (110) by 40 instead of the unchanged index level 50.",
+          "tr": "Yeni fiyat toplamını (110) değişmeyen endeks düzeyi 50 yerine 40'a bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the divisor that leaves the index level unchanged after the split.",
+          "tr": "Bölünmeden sonra endeks düzeyini değiştirmeyen bölen isteniyor."
+        },
+        {
+          "en": "New divisor = new price sum / old index level.",
+          "tr": "Yeni bölen = yeni fiyat toplamı / eski endeks düzeyi.",
+          "formula_latex": "D_{new}=\\frac{\\sum P_{new}}{\\text{Index}_{old}}"
+        },
+        {
+          "en": "New sum = 40 + 40 + 30 = 110; old level = 50.",
+          "tr": "Yeni toplam = 40 + 40 + 30 = 110; eski düzey = 50.",
+          "values": {
+            "sum": 110,
+            "level": 50
+          }
+        },
+        {
+          "en": "D = 110 / 50 = 2.2.",
+          "tr": "D = 110 / 50 = 2,2."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "40 [+] 40 [+] 30 [=] [÷] 50 [=]  (2.2)"
+        ]
+      },
+      "numeric": {
+        "expr": "(40+40+30)/50"
+      },
+      "vocab_ids": [
+        "divisor",
+        "stock-split",
+        "price-weighted-index",
+        "closest",
+        "unchanged"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

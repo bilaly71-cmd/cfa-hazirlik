@@ -1,0 +1,1147 @@
+{
+  "module_id": "FI-10",
+  "lesson": {
+    "id": "FI-10-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-10",
+    "los_ids": [
+      "FI-10-a",
+      "FI-10-b",
+      "FI-10-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Interest Rate Risk and Return",
+    "title_tr": "Faiz Oranı Riski ve Getiri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why a bond return is not just its yield",
+        "heading_tr": "Tahvil getirisi neden sadece YTM değildir",
+        "en": "When you buy a bond and sell it later, your return depends on three things: the coupons you collect, the interest you earn by reinvesting those coupons, and the price at which you sell. If market rates change, the second and third parts move in opposite directions. A Turkish investor who buys a 5-year fixed-coupon DİBS and plans to sell after 3 years faces exactly this trade-off. The yield to maturity promises a return only if every coupon is reinvested at that same yield and the bond is held to maturity.",
+        "tr": "Bir tahvili alıp daha sonra sattığınızda getiriniz üç şeye bağlıdır: tahsil ettiğiniz kuponlar, bu kuponları yeniden yatırarak kazandığınız faiz ve satış fiyatı. Piyasa faizleri değişirse ikinci ve üçüncü parça zıt yönde hareket eder. 5 yıllık sabit kuponlu bir DİBS alıp 3 yıl sonra satmayı planlayan Türk yatırımcı tam olarak bu dengeyle karşılaşır. Vadeye kadar getiri (YTM), ancak her kupon aynı getiriyle yeniden yatırılırsa ve tahvil vadeye kadar tutulursa vaat ettiği getiriyi verir.",
+        "key_terms": [
+          "reinvestment risk",
+          "price risk",
+          "horizon"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Return components and the two risks",
+        "heading_tr": "Getiri bileşenleri ve iki risk",
+        "en": "A fixed-rate bond held to a horizon has three return components: (1) coupon payments, (2) reinvestment income, which is interest earned on the coupons received before the horizon, and (3) the redemption or sale price, where the price change is a capital gain or loss. Price risk is the risk that the sale price falls when yields rise. Reinvestment risk is the risk that coupons are reinvested at lower rates when yields fall. A zero-coupon bond held to maturity has no reinvestment risk because it pays no coupons.",
+        "tr": "Bir ufuk (elde tutma süresi) boyunca tutulan sabit faizli tahvilin üç getiri bileşeni vardır: (1) kupon ödemeleri, (2) yeniden yatırım geliri; yani ufuktan önce alınan kuponların kazandırdığı faiz, (3) itfa ya da satış fiyatı; buradaki fiyat değişimi sermaye kazancı veya kaybıdır. Fiyat riski, getiriler yükselince satış fiyatının düşme riskidir. Yeniden yatırım riski, getiriler düşünce kuponların daha düşük faizle yeniden yatırılması riskidir. Vadeye kadar tutulan sıfır kuponlu tahvilde kupon olmadığı için yeniden yatırım riski yoktur.",
+        "key_terms": [
+          "reinvestment income",
+          "capital gain",
+          "zero-coupon bond"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Horizon return and Macaulay duration",
+        "heading_tr": "Elde tutma getirisi ve Macaulay durasyonu",
+        "en": "Horizon yield = (Total future value / Purchase price)^(1/H) − 1, where total future value = coupons + reinvestment income + sale price. Macaulay duration is the weighted average time to receipt of the bond's cash flows, using the present value of each cash flow as weight: MacDur = Σ t × PV(CF_t) / Price. For a zero-coupon bond MacDur equals its maturity. Higher coupon and higher yield both lower MacDur; longer maturity raises it. If rates shift once, in parallel, right after purchase, price risk and reinvestment risk offset when the horizon equals MacDur.",
+        "tr": "Ufuk getirisi = (Toplam gelecek değer / Alış fiyatı)^(1/H) − 1; burada toplam gelecek değer = kuponlar + yeniden yatırım geliri + satış fiyatıdır. Macaulay durasyonu, tahvilin nakit akışlarının alınma zamanlarının ağırlıklı ortalamasıdır; ağırlık her nakit akışının bugünkü değeridir: MacDur = Σ t × PV(NA_t) / Fiyat. Sıfır kuponlu tahvilde MacDur vadeye eşittir. Yüksek kupon ve yüksek getiri MacDur'u düşürür; uzun vade yükseltir. Faizler satın almadan hemen sonra bir kez ve paralel kayarsa, ufuk MacDur'a eşit olduğunda fiyat riski ile yeniden yatırım riski birbirini götürür.",
+        "key_terms": [
+          "Macaulay duration",
+          "weighted average"
+        ],
+        "formula_latex": "\\text{MacDur}=\\frac{\\sum_{t} t\\cdot PV(CF_t)}{P_0}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A two-year bond",
+        "heading_tr": "İki yıllık bir tahvil",
+        "en": "A 2-year bond has a 6% annual coupon and a 6% yield, so it is priced at 100. PV of the first coupon = 6/1.06 = 5.660; PV of the last cash flow = 106/1.06² = 94.340. Weights are 5.66% and 94.34%. MacDur = 1 × 0.0566 + 2 × 0.9434 = 1.943 years. It is shorter than the 2-year maturity because the coupon arrives early.",
+        "tr": "2 yıllık bir tahvilin yıllık kuponu %6 ve getirisi %6'dır; fiyatı 100'dür. İlk kuponun bugünkü değeri = 6/1,06 = 5,660; son nakit akışının bugünkü değeri = 106/1,06² = 94,340. Ağırlıklar %5,66 ve %94,34'tür. MacDur = 1 × 0,0566 + 2 × 0,9434 = 1,943 yıl. Kupon erken geldiği için vadeden (2 yıl) kısadır.",
+        "key_terms": [
+          "Macaulay duration"
+        ],
+        "example": {
+          "en": "MacDur = (1 × 5.660 + 2 × 94.340)/100 = 1.943 years.",
+          "tr": "MacDur = (1 × 5,660 + 2 × 94,340)/100 = 1,943 yıl."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "What to watch out for",
+        "heading_tr": "Dikkat edilecekler",
+        "en": "Do not confuse the yield promised at purchase with the realised return: they differ when coupons are reinvested at other rates or the bond is sold before maturity. If the horizon is longer than MacDur, reinvestment risk dominates, so a rate rise helps the investor. If the horizon is shorter than MacDur, price risk dominates, so a rate rise hurts. For semiannual bonds, divide the period-based duration by 2 to express it in years.",
+        "tr": "Alım anında vaat edilen getiri ile gerçekleşen getiriyi karıştırmayın; kuponlar başka faizle yeniden yatırılırsa ya da tahvil vadeden önce satılırsa ikisi farklı olur. Ufuk MacDur'dan uzunsa yeniden yatırım riski baskındır; dolayısıyla faiz artışı yatırımcıya yarar. Ufuk MacDur'dan kısaysa fiyat riski baskındır; faiz artışı zarar verir. Yarıyıllık kuponlu tahvillerde dönem bazlı durasyonu yıla çevirmek için 2'ye bölün.",
+        "key_terms": [
+          "price risk",
+          "reinvestment risk"
+        ]
+      }
+    ],
+    "summary_en": "A bond's return over a holding period has three parts: coupons, reinvestment income and the sale price. Rising yields lower the price but raise reinvestment income, and falling yields do the opposite. Macaulay duration is the PV-weighted average time to cash flows. When the horizon equals Macaulay duration, the two risks roughly offset for a one-time parallel shift.",
+    "summary_tr": "Bir tahvilin elde tutma dönemi getirisinin üç parçası vardır: kuponlar, yeniden yatırım geliri ve satış fiyatı. Getiriler yükselince fiyat düşer ama yeniden yatırım geliri artar; getiriler düşünce tersi olur. Macaulay durasyonu, nakit akışlarının bugünkü değer ağırlıklı ortalama süresidir. Ufuk Macaulay durasyonuna eşit olduğunda, tek seferlik paralel kaymada iki risk kabaca birbirini götürür.",
+    "common_traps_tr": [
+      "YTM'nin her zaman gerçekleşen getiri olduğunu sanmak.",
+      "Yeniden yatırım gelirini kupon toplamına dahil edip çifte saymak.",
+      "Sıfır kuponlu tahvilde de yeniden yatırım riski olduğunu düşünmek.",
+      "Ufuk MacDur'dan uzunken faiz artışının zarar verdiğini sanmak.",
+      "Yarıyıllık dönem sayısını yıl olarak okumak (durasyonu 2'ye bölmeyi unutmak)."
+    ],
+    "vocab_ids": [
+      "coupon",
+      "reinvestment-risk",
+      "price-risk",
+      "horizon",
+      "macaulay-duration",
+      "reinvestment-income",
+      "capital-gain",
+      "zero-coupon",
+      "yield-to-maturity",
+      "weighted-average",
+      "duration",
+      "realised-return",
+      "parallel-shift",
+      "immunization"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "DİBS kupon ve getiri SPK Düzey 3'ten tanıdık; yeniden yatırım geliri ve Macaulay durasyonu daha ayrıntılı."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-10-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Reinvestment income on a fixed-rate bond is best described as the:",
+      "stem_tr": "Sabit faizli bir tahvilde yeniden yatırım geliri en iyi şekilde aşağıdakilerden hangisiyle tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "interest earned on coupons received before the horizon and reinvested.",
+          "tr": "Ufuktan önce alınan ve yeniden yatırılan kuponların kazandırdığı faiz."
+        },
+        {
+          "key": "B",
+          "en": "gain from selling the bond above its purchase price.",
+          "tr": "Tahvilin alış fiyatının üzerinde satılmasından doğan kazanç."
+        },
+        {
+          "key": "C",
+          "en": "difference between the coupon rate and the yield to maturity.",
+          "tr": "Kupon oranı ile vadeye kadar getiri arasındaki fark."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Reinvestment income is interest on interest: each coupon received before the horizon earns the market rate until the horizon date.",
+      "explanation_tr": "Yeniden yatırım geliri faizin faizidir: ufuktan önce alınan her kupon, ufuk tarihine kadar piyasa faizini kazanır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That is a capital gain, which is the price-change component.",
+          "tr": "Bu, fiyat değişimi bileşeni olan sermaye kazancıdır."
+        },
+        "C": {
+          "en": "That difference decides whether the bond trades at a premium or discount; it is not income from reinvesting.",
+          "tr": "Bu fark tahvilin primli mi iskontolu mu işlem gördüğünü belirler; yeniden yatırım geliri değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reinvest",
+        "coupon",
+        "best-describes",
+        "horizon",
+        "capital-gain"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a 3-year, 5% annual-coupon bond at par (100) and holds it to maturity. Coupons are reinvested at 6%. The annualized horizon return is closest to:",
+      "stem_tr": "Bir yatırımcı 3 yıl vadeli, yıllık %5 kuponlu tahvili nominal değerden (100) alır ve vadeye kadar tutar. Kuponlar %6 ile yeniden yatırılır. Yıllıklandırılmış ufuk getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00%",
+          "tr": "5,00%",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "5.05%",
+          "tr": "5,05%",
+          "value": 5.047
+        },
+        {
+          "key": "C",
+          "en": "4.77%",
+          "tr": "4,77%",
+          "value": 4.769
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Future value = coupons with interest + principal = 115.918. Horizon yield = (1.15918)^(1/3) − 1 ≈ 5.07%, above 5% because coupons earn 6%.",
+      "explanation_tr": "Gelecek değer = faizli kuponlar + anapara = 115,918. Ufuk getirisi = (1,15918)^(1/3) − 1 ≈ %5,07; kuponlar %6 kazandığı için %5'in üzerindedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the original yield; it assumes reinvestment at 5%.",
+          "tr": "Bu, kuponların %5 ile yeniden yatırıldığını varsayan başlangıç getirisidir."
+        },
+        "C": {
+          "en": "This ignores reinvestment income and counts only the coupons themselves.",
+          "tr": "Bu, yeniden yatırım gelirini yok sayar ve yalnızca kuponları sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Future value of coupons at 6%: 5 × (1.06² + 1.06 + 1) = 15.918",
+          "tr": "Kuponların %6 ile gelecek değeri: 5 × (1,06² + 1,06 + 1) = 15,918"
+        },
+        {
+          "en": "Add principal: 15.918 + 100 = 115.918",
+          "tr": "Anaparayı ekle: 15,918 + 100 = 115,918"
+        },
+        {
+          "en": "Horizon yield = (115.918/100)^(1/3) − 1 ≈ 5.07%",
+          "tr": "Ufuk getirisi = (115,918/100)^(1/3) − 1 ≈ %5,07",
+          "formula_latex": "r=\\left(\\frac{FV}{P_0}\\right)^{1/H}-1"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "3 [N]",
+          "-100 [PV]",
+          "115.918 [FV]",
+          "[CPT] [I/Y]"
+        ],
+        "note_tr": "Önce kuponların gelecek değerini bulun (5 × 3,1836 + 100 = 115,918), sonra I/Y'yi hesaplayın."
+      },
+      "numeric": {
+        "expr": "(((5*(1.06**2+1.06+1)+100)/100)**(1/3)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "coupon",
+        "reinvest",
+        "horizon",
+        "annualized",
+        "future-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 4-year bond pays a 6% annual coupon on a face value of 100. All coupons are reinvested at 4% until maturity. Reinvestment income over the 4 years is closest to:",
+      "stem_tr": "4 yıl vadeli bir tahvil, 100 nominal değer üzerinden yıllık %6 kupon öder. Tüm kuponlar vadeye kadar %4 ile yeniden yatırılır. 4 yıl boyunca yeniden yatırım geliri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.48",
+          "tr": "25,48",
+          "value": 25.4788
+        },
+        {
+          "key": "B",
+          "en": "24.00",
+          "tr": "24,00",
+          "value": 24.0
+        },
+        {
+          "key": "C",
+          "en": "1.48",
+          "tr": "1,48",
+          "value": 1.4788
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Future value of the coupons is 25.479. Subtracting the 24 of coupons received leaves 1.479 of reinvestment income.",
+      "explanation_tr": "Kuponların gelecek değeri 25,479'dur. Alınan 24 kupon düşülünce yeniden yatırım geliri 1,479 kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the future value of the coupons; it includes the 24 of coupons themselves, so it overstates the income.",
+          "tr": "Bu, kuponların gelecek değeridir; 24'lük kuponların kendisini de içerir, geliri olduğundan büyük gösterir."
+        },
+        "B": {
+          "en": "This is the sum of the coupons without any interest on them.",
+          "tr": "Bu, üzerlerine faiz hesaplanmamış kupon toplamıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Future value of 6 per year for 4 years at 4%: 6 × (1.04⁴ − 1)/0.04 = 25.479",
+          "tr": "4 yıl boyunca yılda 6'nın %4'te gelecek değeri: 6 × (1,04⁴ − 1)/0,04 = 25,479",
+          "formula_latex": "FV=C\\,\\frac{(1+r)^n-1}{r}"
+        },
+        {
+          "en": "Total coupons received = 6 × 4 = 24",
+          "tr": "Alınan toplam kupon = 6 × 4 = 24"
+        },
+        {
+          "en": "Reinvestment income = 25.479 − 24 = 1.479",
+          "tr": "Yeniden yatırım geliri = 25,479 − 24 = 1,479"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "4 [N]",
+          "4 [I/Y]",
+          "0 [PV]",
+          "-6 [PMT]",
+          "[CPT] [FV]",
+          "[-] 24 [=]"
+        ],
+        "note_tr": "CPT FV sonucu 25,479 olur; kupon toplamını (24) çıkarınca yeniden yatırım geliri bulunur."
+      },
+      "numeric": {
+        "expr": "6*((1.04**4-1)/0.04)-24"
+      },
+      "vocab_ids": [
+        "reinvest",
+        "coupon",
+        "annuity",
+        "closest-to",
+        "income"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 3-year, 7% annual-coupon bond is bought at par (100) and sold after 2 years. Coupons are reinvested at 5%. At the sale date the bond has 1 year left and a yield of 6%. The annualized horizon return is closest to:",
+      "stem_tr": "3 yıl vadeli, yıllık %7 kuponlu bir tahvil nominal değerden (100) alınır ve 2 yıl sonra satılır. Kuponlar %5 ile yeniden yatırılır. Satış tarihinde tahvilin 1 yıl vadesi kalmıştır ve getirisi %6'dır. Yıllıklandırılmış ufuk getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.37%",
+          "tr": "7,37%",
+          "value": 7.3748
+        },
+        {
+          "key": "B",
+          "en": "7.21%",
+          "tr": "7,21%",
+          "value": 7.2117
+        },
+        {
+          "key": "C",
+          "en": "7.00%",
+          "tr": "7,00%",
+          "value": 7.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Sale price = 107/1.06 = 100.943. Coupons at year 2 = 7 × 1.05 + 7 = 14.35. Total = 115.293; return = (1.15293)^(1/2) − 1 ≈ 7.37%.",
+      "explanation_tr": "Satış fiyatı = 107/1,06 = 100,943. 2. yılda kuponlar = 7 × 1,05 + 7 = 14,35. Toplam = 115,293; getiri = (1,15293)^(1/2) − 1 ≈ %7,37.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This ignores reinvestment income (coupons are simply added up).",
+          "tr": "Bu, yeniden yatırım gelirini yok sayar (kuponlar sadece toplanır)."
+        },
+        "C": {
+          "en": "This is the coupon rate and original yield; it ignores the price change and reinvestment effects.",
+          "tr": "Bu, kupon oranı ve başlangıç getirisidir; fiyat değişimini ve yeniden yatırım etkisini yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Sale price with 1 year left at 6%: 107/1.06 = 100.943",
+          "tr": "1 yıl kala %6 ile satış fiyatı: 107/1,06 = 100,943"
+        },
+        {
+          "en": "Coupons with reinvestment: 7 × 1.05 + 7 = 14.35",
+          "tr": "Yeniden yatırımlı kuponlar: 7 × 1,05 + 7 = 14,35"
+        },
+        {
+          "en": "Total value = 115.293; horizon yield = (115.293/100)^(1/2) − 1 ≈ 7.37%",
+          "tr": "Toplam değer = 115,293; ufuk getirisi = (115,293/100)^(1/2) − 1 ≈ %7,37"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "1 [N]",
+          "6 [I/Y]",
+          "7 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]",
+          "[2ND] [CLR TVM]",
+          "2 [N]",
+          "-100 [PV]",
+          "115.293 [FV]",
+          "[CPT] [I/Y]"
+        ],
+        "note_tr": "İlk blok satış fiyatını verir (−100,943); kupon FV'sini (14,35) ekleyip toplamı (115,293) ikinci blokta kullanın."
+      },
+      "numeric": {
+        "expr": "(((7*1.05+7)+107/1.06)/100)**0.5*100-100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "reinvest",
+        "coupon",
+        "sale",
+        "horizon",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An investor holds a fixed-rate bond for a horizon shorter than its maturity. Immediately after purchase, market yields rise and stay higher. Compared with no change in yields, which statement is most likely correct?",
+      "stem_tr": "Bir yatırımcı sabit faizli tahvili vadesinden kısa bir ufukla elde tutar. Alımdan hemen sonra piyasa getirileri yükselir ve yüksek kalır. Getirilerin değişmediği duruma kıyasla aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both the sale price and reinvestment income are higher.",
+          "tr": "Hem satış fiyatı hem yeniden yatırım geliri daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "The sale price is lower, but reinvestment income is higher.",
+          "tr": "Satış fiyatı daha düşüktür, ancak yeniden yatırım geliri daha yüksektir."
+        },
+        {
+          "key": "C",
+          "en": "The sale price is higher, but reinvestment income is lower.",
+          "tr": "Satış fiyatı daha yüksektir, ancak yeniden yatırım geliri daha düşüktür."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Prices and yields move in opposite directions, so the sale price falls. Higher rates mean coupons are reinvested at higher rates, so reinvestment income rises.",
+      "explanation_tr": "Fiyat ve getiri ters yönde hareket eder; satış fiyatı düşer. Daha yüksek faiz, kuponların daha yüksek faizle yeniden yatırılması demektir; yeniden yatırım geliri artar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher yields raise reinvestment income but lower bond prices, so both cannot be higher.",
+          "tr": "Yüksek getiriler yeniden yatırım gelirini artırır ama tahvil fiyatlarını düşürür; ikisi birden yüksek olamaz."
+        },
+        "C": {
+          "en": "This describes falling yields, not rising yields.",
+          "tr": "Bu, yükselen değil düşen getirilerin etkisidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "reinvest",
+        "horizon",
+        "most-likely",
+        "immediately",
+        "yield"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For a one-time, parallel yield change right after purchase, price risk and reinvestment risk approximately offset when the investment horizon is equal to the bond's:",
+      "stem_tr": "Satın almadan hemen sonra tek seferlik paralel bir getiri değişiminde, yatırım ufku tahvilin hangi büyüklüğüne eşit olduğunda fiyat riski ile yeniden yatırım riski yaklaşık olarak birbirini götürür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "maturity.",
+          "tr": "vadesi."
+        },
+        {
+          "key": "B",
+          "en": "coupon payment frequency.",
+          "tr": "kupon ödeme sıklığı."
+        },
+        {
+          "key": "C",
+          "en": "Macaulay duration.",
+          "tr": "Macaulay durasyonu."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When the horizon equals Macaulay duration, the price loss from a rate rise is roughly matched by extra reinvestment income, and vice versa.",
+      "explanation_tr": "Ufuk Macaulay durasyonuna eşit olduğunda faiz artışından doğan fiyat kaybı, ek yeniden yatırım geliriyle kabaca dengelenir; faiz düşüşünde de tersi geçerlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Only for a zero-coupon bond does maturity equal Macaulay duration; for coupon bonds, maturity is longer.",
+          "tr": "Vade yalnızca sıfır kuponlu tahvilde Macaulay durasyonuna eşittir; kuponlu tahvilde vade daha uzundur."
+        },
+        "B": {
+          "en": "Payment frequency changes the number of periods but is not the offsetting horizon.",
+          "tr": "Ödeme sıklığı dönem sayısını değiştirir ama dengeleyen ufuk değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "offset",
+        "horizon",
+        "macaulay-duration",
+        "approximately",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor with an 8-year horizon buys a bond with a Macaulay duration of 6 years. Yields rise immediately after purchase and stay higher. Which risk dominates, and what is the likely result for the realised return versus the original yield to maturity?",
+      "stem_tr": "8 yıllık ufku olan bir yatırımcı Macaulay durasyonu 6 yıl olan bir tahvil alır. Getiriler alımdan hemen sonra yükselir ve yüksek kalır. Hangi risk baskındır ve gerçekleşen getiri başlangıçtaki vadeye kadar getiriyle kıyaslandığında muhtemel sonuç nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Reinvestment risk dominates; realised return is above the original yield.",
+          "tr": "Yeniden yatırım riski baskındır; gerçekleşen getiri başlangıç getirisinin üzerindedir."
+        },
+        {
+          "key": "B",
+          "en": "Price risk dominates; realised return is below the original yield.",
+          "tr": "Fiyat riski baskındır; gerçekleşen getiri başlangıç getirisinin altındadır."
+        },
+        {
+          "key": "C",
+          "en": "The two risks offset; realised return equals the original yield.",
+          "tr": "İki risk birbirini götürür; gerçekleşen getiri başlangıç getirisine eşittir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The horizon (8) exceeds Macaulay duration (6), so the extra coupon reinvestment income outweighs the price loss. The realised return is higher than the original yield.",
+      "explanation_tr": "Ufuk (8), Macaulay durasyonunu (6) aştığı için ek kupon yeniden yatırım geliri fiyat kaybını aşar. Gerçekleşen getiri başlangıç getirisinden yüksektir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Price risk dominates only when the horizon is shorter than Macaulay duration.",
+          "tr": "Fiyat riski yalnızca ufuk Macaulay durasyonundan kısa olduğunda baskındır."
+        },
+        "C": {
+          "en": "Offsetting occurs only if the horizon equals Macaulay duration (6 years), not 8.",
+          "tr": "Dengeleme yalnızca ufuk Macaulay durasyonuna (6 yıl) eşit olduğunda olur, 8 yılda olmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "horizon",
+        "dominate",
+        "realised-return",
+        "reinvestment-risk",
+        "macaulay-duration"
+      ],
+      "pattern_ids": [
+        "if-then"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has a Macaulay duration of 5 years, and the investor's horizon is 3 years. Yields fall immediately after purchase and stay lower. Which statement is LEAST likely to be correct?",
+      "stem_tr": "Bir tahvilin Macaulay durasyonu 5 yıl, yatırımcının ufku 3 yıldır. Getiriler alımdan hemen sonra düşer ve düşük kalır. Aşağıdaki ifadelerden hangisinin doğru olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Price risk dominates because the horizon is shorter than Macaulay duration.",
+          "tr": "Ufuk Macaulay durasyonundan kısa olduğu için fiyat riski baskındır."
+        },
+        {
+          "key": "B",
+          "en": "Reinvestment risk dominates, so the realised return falls below the original yield.",
+          "tr": "Yeniden yatırım riski baskındır; bu nedenle gerçekleşen getiri başlangıç getirisinin altına düşer."
+        },
+        {
+          "key": "C",
+          "en": "The sale price at the horizon is higher than it would have been without the yield fall.",
+          "tr": "Ufuktaki satış fiyatı, getiri düşüşü olmasaydı olacağından yüksektir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With a 3-year horizon and 5-year duration, price risk dominates. Falling yields lift the price more than they cut reinvestment income, so the realised return is above the original yield. The statement in the answer is therefore wrong.",
+      "explanation_tr": "3 yıllık ufuk ve 5 yıllık durasyonda fiyat riski baskındır. Getiri düşüşü fiyatı, yeniden yatırım gelirini azalttığından daha çok artırır; gerçekleşen getiri başlangıç getirisinin üzerindedir. Bu nedenle cevaptaki ifade yanlıştır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This statement is correct: horizon < MacDur means price effects dominate.",
+          "tr": "Bu ifade doğrudur: ufuk < MacDur ise fiyat etkisi baskındır."
+        },
+        "C": {
+          "en": "This statement is correct: lower yields raise the price of the bond that is sold.",
+          "tr": "Bu ifade doğrudur: düşük getiriler satılan tahvilin fiyatını yükseltir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "least-likely",
+        "price-risk",
+        "horizon",
+        "dominate",
+        "reinvestment-risk"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A zero-coupon bond is held to maturity. Which statement about its reinvestment risk is correct?",
+      "stem_tr": "Sıfır kuponlu bir tahvil vadeye kadar tutuluyor. Yeniden yatırım riskiyle ilgili hangi ifade doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Reinvestment risk is the highest among all bonds.",
+          "tr": "Yeniden yatırım riski tüm tahviller arasında en yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "Reinvestment risk exists but only if yields rise.",
+          "tr": "Yeniden yatırım riski vardır, ancak yalnızca getiriler yükselirse ortaya çıkar."
+        },
+        {
+          "key": "C",
+          "en": "There is no reinvestment risk because there are no coupons to reinvest.",
+          "tr": "Yeniden yatırılacak kupon olmadığı için yeniden yatırım riski yoktur."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A zero-coupon bond pays a single cash flow at maturity. Held to maturity, its return equals the purchase yield, so only price risk matters if it is sold early.",
+      "explanation_tr": "Sıfır kuponlu tahvil vadede tek bir nakit akışı öder. Vadeye kadar tutulursa getirisi alım getirisine eşittir; erken satılırsa yalnızca fiyat riski söz konusu olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The reverse is true: with no coupons, nothing is reinvested.",
+          "tr": "Tersi doğrudur: kupon yoksa yeniden yatırılan bir şey de yoktur."
+        },
+        "B": {
+          "en": "With no interim cash flows there is no reinvestment risk at all, in either direction.",
+          "tr": "Ara nakit akışı olmadığı için her iki yönde de yeniden yatırım riski yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "zero-coupon",
+        "reinvestment-risk",
+        "coupon",
+        "maturity",
+        "interim"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A pension fund must pay a single liability in 7 years and wants to limit the effect of a one-time parallel yield shift. All bonds below have the same yield. Which is the most appropriate choice?",
+      "stem_tr": "Bir emeklilik fonu 7 yıl sonra tek bir yükümlülük ödeyecektir ve tek seferlik paralel getiri kaymasının etkisini sınırlamak istemektedir. Aşağıdaki tahvillerin hepsinin getirisi aynıdır. Hangisi en uygun seçimdir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A coupon bond with a Macaulay duration of 7 years.",
+          "tr": "Macaulay durasyonu 7 yıl olan kuponlu bir tahvil."
+        },
+        {
+          "key": "B",
+          "en": "A 10-year zero-coupon bond.",
+          "tr": "10 yıl vadeli sıfır kuponlu bir tahvil."
+        },
+        {
+          "key": "C",
+          "en": "A coupon bond with a Macaulay duration of 3 years.",
+          "tr": "Macaulay durasyonu 3 yıl olan kuponlu bir tahvil."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Matching Macaulay duration to the 7-year horizon makes price risk and reinvestment risk offset for a parallel shift. This is the basic idea of immunization.",
+      "explanation_tr": "Macaulay durasyonunu 7 yıllık ufka eşitlemek, paralel kaymada fiyat riski ile yeniden yatırım riskini birbirini götürür hale getirir. Bu, bağışıklama (immunization) fikrinin temelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Its Macaulay duration is 10 years, longer than the horizon, so price risk dominates at the 7-year date.",
+          "tr": "Macaulay durasyonu 10 yıldır, ufuktan uzundur; 7. yılda fiyat riski baskın olur."
+        },
+        "C": {
+          "en": "Its duration is far below 7 years, so reinvestment risk dominates.",
+          "tr": "Durasyonu 7 yılın çok altındadır; yeniden yatırım riski baskın olur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "liability",
+        "immunization",
+        "most-appropriate",
+        "horizon",
+        "pension-fund"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A 2-year bond has a 6% annual coupon, a face value of 100 and a yield to maturity of 6%. Its Macaulay duration is closest to:",
+      "stem_tr": "2 yıl vadeli bir tahvilin yıllık kuponu %6, nominal değeri 100 ve vadeye kadar getirisi %6'dır. Macaulay durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.000 years",
+          "tr": "2,000 years",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "1.943 years",
+          "tr": "1,943 years",
+          "value": 1.9434
+        },
+        {
+          "key": "C",
+          "en": "1.833 years",
+          "tr": "1,833 years",
+          "value": 1.8334
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The bond sells at par (100). Weights are 5.66% for year 1 and 94.34% for year 2, so MacDur = 1.943 years.",
+      "explanation_tr": "Tahvil nominal değerden (100) işlem görür. Ağırlıklar 1. yıl için %5,66, 2. yıl için %94,34'tür; MacDur = 1,943 yıl.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This equals the maturity, which applies only to a zero-coupon bond.",
+          "tr": "Bu, vadeye eşittir ve yalnızca sıfır kuponlu tahvil için geçerlidir."
+        },
+        "C": {
+          "en": "This is modified duration (Macaulay ÷ 1.06), not Macaulay duration.",
+          "tr": "Bu, Macaulay durasyonu değil düzeltilmiş durasyondur (Macaulay ÷ 1,06)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: Macaulay duration, the PV-weighted average time of cash flows.",
+          "tr": "İstenen: nakit akışlarının bugünkü değer ağırlıklı ortalama süresi olan Macaulay durasyonu."
+        },
+        {
+          "en": "PVs: 6/1.06 = 5.660; 106/1.06² = 94.340; price = 100",
+          "tr": "Bugünkü değerler: 6/1,06 = 5,660; 106/1,06² = 94,340; fiyat = 100"
+        },
+        {
+          "en": "MacDur = (1 × 5.660 + 2 × 94.340)/100 = 1.943 years",
+          "tr": "MacDur = (1 × 5,660 + 2 × 94,340)/100 = 1,943 yıl",
+          "formula_latex": "\\text{MacDur}=\\frac{\\sum t\\,PV_t}{P}"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [÷] 1.06 [=]",
+          "106 [÷] 1.06 [x²] [=]",
+          "[×] 2 ..."
+        ],
+        "note_tr": "BA II Plus'ta durasyon tuşu yoktur; bugünkü değerleri tek tek hesaplayıp ağırlıklı toplamı alın."
+      },
+      "numeric": {
+        "expr": "macaulay(0.06,0.06,2)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "macaulay-duration",
+        "weighted-average",
+        "coupon",
+        "closest-to",
+        "par"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A 4-year zero-coupon bond has a Macaulay duration that is:",
+      "stem_tr": "4 yıl vadeli sıfır kuponlu bir tahvilin Macaulay durasyonu:",
+      "options": [
+        {
+          "key": "A",
+          "en": "less than 4 years.",
+          "tr": "4 yıldan kısadır."
+        },
+        {
+          "key": "B",
+          "en": "greater than 4 years.",
+          "tr": "4 yıldan uzundur."
+        },
+        {
+          "key": "C",
+          "en": "equal to 4 years.",
+          "tr": "4 yıla eşittir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "All of a zero-coupon bond's value arrives at maturity, so its weighted-average time is the maturity itself: 4 years.",
+      "explanation_tr": "Sıfır kuponlu tahvilin tüm değeri vadede gelir; ağırlıklı ortalama süre vadenin kendisidir: 4 yıl.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Only coupon bonds have a duration below maturity, because they return cash earlier.",
+          "tr": "Yalnızca kuponlu tahvillerin durasyonu vadeden kısadır, çünkü nakdi daha erken geri verirler."
+        },
+        "B": {
+          "en": "Duration cannot exceed maturity for a plain bond with no negative cash flows.",
+          "tr": "Negatif nakit akışı olmayan sade bir tahvilde durasyon vadeyi aşamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "zero-coupon",
+        "macaulay-duration",
+        "maturity",
+        "equal",
+        "duration"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 3-year bond pays a 5% coupon semiannually, has a face value of 100 and a yield to maturity of 6% (annual rate, semiannual compounding). Its Macaulay duration in years is closest to:",
+      "stem_tr": "3 yıl vadeli bir tahvil %5 kuponu yarıyıllık öder, nominal değeri 100 ve vadeye kadar getirisi %6'dır (yıllık oran, yarıyıllık bileşik). Macaulay durasyonu (yıl cinsinden) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.82 years",
+          "tr": "2,82 years",
+          "value": 2.82
+        },
+        {
+          "key": "B",
+          "en": "5.64 years",
+          "tr": "5,64 years",
+          "value": 5.64
+        },
+        {
+          "key": "C",
+          "en": "2.86 years",
+          "tr": "2,86 years",
+          "value": 2.8573
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Using 6 semiannual periods at 3% per period, the duration is 5.640 periods. Dividing by 2 gives 2.820 years.",
+      "explanation_tr": "Dönem başına %3 ve 6 yarıyıllık dönemle durasyon 5,640 dönemdir. 2'ye bölünce 2,820 yıl bulunur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the duration in semiannual periods, not in years.",
+          "tr": "Bu, yıl değil yarıyıllık dönem cinsinden durasyondur."
+        },
+        "C": {
+          "en": "This treats the coupons as annual, ignoring semiannual payment and compounding.",
+          "tr": "Bu, kuponları yıllık varsayar; yarıyıllık ödemeyi ve bileşiği yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: Macaulay duration in years with semiannual cash flows.",
+          "tr": "İstenen: yarıyıllık nakit akışlı tahvilin yıl cinsinden Macaulay durasyonu."
+        },
+        {
+          "en": "Per period: coupon 2.5, rate 3%, 6 periods; duration in periods = Σ t·PV_t / P",
+          "tr": "Dönem başına: kupon 2,5, faiz %3, 6 dönem; dönem cinsinden durasyon = Σ t·PV_t / P"
+        },
+        {
+          "en": "Periods result 5.640; divide by 2 → 2.820 years",
+          "tr": "Dönem sonucu 5,640; 2'ye bölünür → 2,820 yıl"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "6 [N]",
+          "3 [I/Y]",
+          "2.5 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]",
+          "(PV_t ve t·PV_t toplamı ayrı hesaplanır; sonucu 2 ile bölün)"
+        ],
+        "note_tr": "Fiyat TVM ile bulunur (−97,29 civarı); ağırlıklı toplam elle hesaplanır."
+      },
+      "numeric": {
+        "expr": "macaulay(0.05,0.06,3,2)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "macaulay-duration",
+        "semiannual",
+        "compounding",
+        "closest-to",
+        "period"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Three bonds have the same maturity and yield. Bond X pays no coupon, Bond Y pays a 4% coupon and Bond Z pays an 8% coupon. Which has the shortest Macaulay duration?",
+      "stem_tr": "Üç tahvilin vadesi ve getirisi aynıdır. X tahvili kupon ödemez, Y tahvili %4, Z tahvili %8 kupon öder. Hangisinin Macaulay durasyonu en kısadır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Bond X.",
+          "tr": "X tahvili."
+        },
+        {
+          "key": "B",
+          "en": "Bond Z.",
+          "tr": "Z tahvili."
+        },
+        {
+          "key": "C",
+          "en": "Bond Y.",
+          "tr": "Y tahvili."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A higher coupon returns more cash early, which pulls the weighted-average time forward. So, all else equal, the 8% coupon bond has the shortest Macaulay duration.",
+      "explanation_tr": "Yüksek kupon nakdin daha büyük kısmını erken verir ve ağırlıklı ortalama süreyi öne çeker. Diğer her şey sabitken %8 kuponlu tahvilin Macaulay durasyonu en kısadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Bond X has the longest duration, equal to its maturity.",
+          "tr": "X tahvilinin durasyonu en uzundur ve vadesine eşittir."
+        },
+        "C": {
+          "en": "Bond Y has a duration between X and Z.",
+          "tr": "Y tahvilinin durasyonu X ile Z arasındadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "coupon",
+        "macaulay-duration",
+        "all-else-equal",
+        "shortest",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-10-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-10",
+      "los_id": "FI-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A Turkish corporate issues a 5-year bond with a 30% annual coupon and a face value of 100. The yield to maturity is 32%. Its Macaulay duration is closest to:",
+      "stem_tr": "Bir Türk şirketi, yıllık %30 kuponlu ve 100 nominal değerli 5 yıl vadeli tahvil ihraç eder. Vadeye kadar getirisi %32'dir. Macaulay durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00 years",
+          "tr": "5,00 years",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "2.37 years",
+          "tr": "2,37 years",
+          "value": 2.3688
+        },
+        {
+          "key": "C",
+          "en": "3.13 years",
+          "tr": "3,13 years",
+          "value": 3.1268
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With a 30% coupon and a 32% yield, the PV-weighted time is well below 5 years: about 3.1 years. High interest rates shorten duration.",
+      "explanation_tr": "%30 kupon ve %32 getiriyle bugünkü değer ağırlıklı süre 5 yıldan çok kısadır: yaklaşık 3,1 yıl. Yüksek faiz durasyonu kısaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the maturity; it ignores that the high coupons return cash early.",
+          "tr": "Bu vadedir; yüksek kuponların nakdi erken geri verdiğini yok sayar."
+        },
+        "B": {
+          "en": "This is modified duration, which divides Macaulay duration by 1.32.",
+          "tr": "Bu, Macaulay durasyonunu 1,32'ye bölen düzeltilmiş durasyondur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: Macaulay duration, using PV weights at the 32% yield.",
+          "tr": "İstenen: %32 getiriyle bugünkü değer ağırlıklarıyla Macaulay durasyonu."
+        },
+        {
+          "en": "Cash flows: 30, 30, 30, 30, 130; discount each at 1.32^t and compute Σ t·PV_t / P",
+          "tr": "Nakit akışları: 30, 30, 30, 30, 130; her birini 1,32^t ile iskonto edin ve Σ t·PV_t / P hesaplayın",
+          "formula_latex": "\\text{MacDur}=\\frac{\\sum t\\,PV_t}{P}"
+        },
+        {
+          "en": "Result ≈ 3.13 years (price ≈ 95.31)",
+          "tr": "Sonuç ≈ 3,13 yıl (fiyat ≈ 95,31)"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "5 [N]",
+          "32 [I/Y]",
+          "30 [PMT]",
+          "100 [FV]",
+          "[CPT] [PV]",
+          "(her NA için t × PV elle toplanır)"
+        ],
+        "note_tr": "Yüksek faiz ortamında kuponlar ağırlıklı ortalamayı öne çeker."
+      },
+      "numeric": {
+        "expr": "macaulay(0.30,0.32,5)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "macaulay-duration",
+        "coupon",
+        "high-yield",
+        "closest-to",
+        "weighted-average"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
