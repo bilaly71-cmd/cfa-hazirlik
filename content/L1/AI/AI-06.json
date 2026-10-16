@@ -1087,6 +1087,175 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "AI-06-a-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is least likely a typical characteristic of a hedge fund?",
+      "stem_tr": "Aşağıdakilerden hangisinin tipik bir serbest fon özelliği olma ihtimali en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Investors can redeem their units every day at net asset value",
+          "tr": "Yatırımcılar paylarını her gün net varlık değeriyle itfa ettirebilir"
+        },
+        {
+          "key": "B",
+          "en": "Use of short selling and leverage",
+          "tr": "Açığa satış ve kaldıraç kullanımı"
+        },
+        {
+          "key": "C",
+          "en": "Performance-based fees in addition to a management fee",
+          "tr": "Yönetim ücretine ek olarak performansa dayalı ücretler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Hedge funds usually have lock-ups, notice periods and gates, not daily redemption.",
+      "explanation_tr": "Serbest fonlarda genellikle kilit süresi, bildirim süresi ve gate bulunur; günlük itfa yoktur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Short selling and leverage are common hedge fund tools.",
+          "tr": "Açığa satış ve kaldıraç yaygın serbest fon araçlarıdır."
+        },
+        "C": {
+          "en": "Performance fees are a standard feature.",
+          "tr": "Performans ücretleri standart bir özelliktir."
+        }
+      },
+      "vocab_ids": [
+        "hedge-fund",
+        "redemption",
+        "leverage",
+        "short",
+        "liquidity"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-b-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A hedge fund requires a one-year lock-up and 90 days' notice before redemptions. The most likely reason for these terms is to:",
+      "stem_tr": "Bir serbest fon, itfadan önce bir yıllık kilit süresi ve 90 gün önceden bildirim talep ediyor. Bu koşulların en olası nedeni nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "guarantee investors a minimum return",
+          "tr": "yatırımcılara asgari getiri garanti etmek"
+        },
+        {
+          "key": "B",
+          "en": "let the manager hold less liquid positions without being forced to sell during redemptions",
+          "tr": "yöneticinin itfalar sırasında zorunlu satış yapmadan daha az likit pozisyonlar tutabilmesini sağlamak"
+        },
+        {
+          "key": "C",
+          "en": "reduce the management fee",
+          "tr": "yönetim ücretini düşürmek"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Longer redemption terms match the fund's liabilities to its less liquid assets.",
+      "explanation_tr": "Uzun itfa koşulları, fonun yükümlülüklerini daha az likit varlıklarıyla uyumlu hâle getirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Lock-ups give no return guarantee.",
+          "tr": "Kilit süresi getiri garantisi vermez."
+        },
+        "C": {
+          "en": "Redemption terms are unrelated to the fee level.",
+          "tr": "İtfa koşullarının ücret düzeyiyle ilgisi yoktur."
+        }
+      },
+      "vocab_ids": [
+        "redemption",
+        "gate",
+        "side-pocket",
+        "illiquid",
+        "liquidity",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-06-c-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-06",
+      "los_id": "AI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A hedge fund returned 12% in a year when the equity market returned 10%. The fund's beta to the market is 0.5. Ignoring the risk-free rate, the fund's alpha is closest to:",
+      "stem_tr": "Bir serbest fon, hisse piyasasının %10 getirdiği bir yılda %12 getiri sağladı. Fonun piyasaya göre betası 0,5'tir. Risksiz faiz yok sayılırsa fonun alfası en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2%",
+          "tr": "%2",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "12%",
+          "tr": "%12",
+          "value": 12.0
+        },
+        {
+          "key": "C",
+          "en": "7%",
+          "tr": "%7",
+          "value": 7.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Beta return = 0.5 x 10% = 5%. Alpha = 12% - 5% = 7%.",
+      "explanation_tr": "Beta getirisi = 0,5 x %10 = %5. Alfa = %12 - %5 = %7.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This subtracts the whole market return (10%) and ignores the beta of 0.5.",
+          "tr": "Betayı (0,5) yok sayıp piyasa getirisinin tamamını (%10) çıkarır."
+        },
+        "B": {
+          "en": "This treats the whole return as alpha and ignores the market exposure.",
+          "tr": "Getirinin tamamını alfa sayar, piyasa maruziyetini yok sayar."
+        }
+      },
+      "vocab_ids": [
+        "alpha",
+        "beta",
+        "skill",
+        "closest",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

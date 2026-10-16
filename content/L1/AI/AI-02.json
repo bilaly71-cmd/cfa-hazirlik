@@ -906,6 +906,152 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "AI-02-a-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "When an analyst removes the smoothing from the appraisal-based return series of a private real estate fund, the fund's estimated correlation with listed equities will most likely:",
+      "stem_tr": "Bir analist, özel gayrimenkul fonunun ekspertize dayalı getiri serisindeki yumuşatmayı (smoothing) kaldırdığında fonun borsadaki hisselerle tahmini korelasyonu büyük olasılıkla nasıl değişir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease, and the estimated volatility will also fall",
+          "tr": "azalır ve tahmini oynaklık da düşer"
+        },
+        {
+          "key": "B",
+          "en": "stay the same because correlation is not affected by smoothing",
+          "tr": "aynı kalır; çünkü korelasyon yumuşatmadan etkilenmez"
+        },
+        {
+          "key": "C",
+          "en": "increase, and the estimated volatility will also rise",
+          "tr": "artar ve tahmini oynaklık da yükselir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Smoothing hides true swings and delays changes, so reported correlation and risk are too low; unsmoothing raises both.",
+      "explanation_tr": "Yumuşatma gerçek dalgalanmaları gizler ve değişimleri geciktirir; bildirilen korelasyon ve risk çok düşüktür. Yumuşatmayı kaldırmak ikisini de artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Removing smoothing raises, not lowers, volatility.",
+          "tr": "Yumuşatmayı kaldırmak oynaklığı düşürmez, artırır."
+        },
+        "B": {
+          "en": "Smoothing and lags distort correlation estimates.",
+          "tr": "Yumuşatma ve gecikmeler korelasyon tahminini bozar."
+        }
+      },
+      "vocab_ids": [
+        "unsmoothing",
+        "smoothed",
+        "appraisal",
+        "lag",
+        "understate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-02-b-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-02",
+      "los_id": "AI-02-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A fund starts the year at TRY 50 million and ends at TRY 62 million before fees. It charges a 1.5% management fee on beginning assets and a 20% incentive fee on profit after the management fee (no hurdle). The net-of-fees return is closest to:",
+      "stem_tr": "Bir fon yıla TRY 50 milyonla başlıyor ve ücretler öncesi TRY 62 milyonla bitiriyor. Yıl başı varlıklar üzerinden %1,5 yönetim ücreti ve yönetim ücreti sonrası kâr üzerinden %20 performans ücreti alıyor (eşik yok). Ücret sonrası getiri en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "18.0%",
+          "tr": "%18,0",
+          "value": 18.0
+        },
+        {
+          "key": "B",
+          "en": "17.7%",
+          "tr": "%17,7",
+          "value": 17.7
+        },
+        {
+          "key": "C",
+          "en": "22.5%",
+          "tr": "%22,5",
+          "value": 22.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Management fee = 0.75. Profit after it = 12 - 0.75 = 11.25. Incentive = 2.25. Net ending value = 62 - 0.75 - 2.25 = 59, so return = 9/50 = 18.0%.",
+      "explanation_tr": "Yönetim ücreti = 0,75. Sonrası kâr = 12 - 0,75 = 11,25. Performans ücreti = 2,25. Net bitiş değeri = 62 - 0,75 - 2,25 = 59; getiri = 9/50 = %18,0.",
+      "solution_steps": [
+        {
+          "en": "We need the net-of-fees return.",
+          "tr": "Ücret sonrası getiri isteniyor."
+        },
+        {
+          "en": "Management fee = 1.5% x 50 = 0.75; profit after it = 12 - 0.75 = 11.25.",
+          "tr": "Yönetim ücreti = %1,5 x 50 = 0,75; sonrası kâr = 12 - 0,75 = 11,25.",
+          "formula_latex": "Fee_m=1.5\\%\\times 50"
+        },
+        {
+          "en": "Incentive fee = 20% x 11.25 = 2.25.",
+          "tr": "Performans ücreti = %20 x 11,25 = 2,25."
+        },
+        {
+          "en": "Net ending value = 62 - 0.75 - 2.25 = 59; return = (59 - 50) / 50 = 18.0%.",
+          "tr": "Net bitiş değeri = 62 - 0,75 - 2,25 = 59; getiri = (59 - 50) / 50 = %18,0.",
+          "formula_latex": "R_{net}=\\frac{V_{net}-V_0}{V_0}"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50 [×] 0.015 [=] (0.75)",
+          "12 [-] 0.75 [=] [×] 0.2 [=] (2.25)",
+          "62 [-] 0.75 [-] 2.25 [-] 50 [=] [÷] 50 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((62-0.75-0.2*(12-0.75))-50)/50*100",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This charges the incentive fee on gross profit (2.4) instead of profit after the management fee.",
+          "tr": "Performans ücretini yönetim ücreti sonrası kâr yerine brüt kâr (2,4) üzerinden hesaplar."
+        },
+        "C": {
+          "en": "This subtracts only the management fee and forgets the incentive fee.",
+          "tr": "Yalnızca yönetim ücretini düşer, performans ücretini unutur."
+        }
+      },
+      "vocab_ids": [
+        "management-fee",
+        "incentive-fee",
+        "net-of-fees",
+        "gross-of-fees",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

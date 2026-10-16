@@ -1392,6 +1392,513 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "CI-05-a-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A company builds a research laboratory to launch a product line it has never sold before. This project is best classified as:",
+      "stem_tr": "Bir şirket, daha önce hiç satmadığı bir ürün hattını başlatmak için araştırma laboratuvarı kuruyor. Bu proje en iyi hangi kategoride sınıflandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a replacement project to maintain the business",
+          "tr": "işi sürdürmek için yenileme projesi"
+        },
+        {
+          "key": "B",
+          "en": "a new product or service project",
+          "tr": "yeni ürün veya hizmet projesi"
+        },
+        {
+          "key": "C",
+          "en": "a regulatory or compliance project",
+          "tr": "mevzuat veya uyum projesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A project to start selling something new is a new product or service project.",
+      "explanation_tr": "Yeni bir şey satmaya başlama projesi, yeni ürün/hizmet projesidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Replacement projects keep existing operations running.",
+          "tr": "Yenileme projeleri mevcut faaliyetleri sürdürür."
+        },
+        "C": {
+          "en": "Nothing here is required by a law or rule.",
+          "tr": "Burada bir yasa veya kural tarafından zorunlu kılınan bir şey yoktur."
+        }
+      },
+      "vocab_ids": [
+        "replacement-project",
+        "expansion",
+        "uncertainty",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-a-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which type of capital project is most likely to have the lowest uncertainty and the simplest analysis?",
+      "stem_tr": "Hangi tür sermaye projesinin belirsizliği en düşük ve analizi en basit olması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Developing an unfamiliar product for a new market",
+          "tr": "Yeni bir pazar için tanıdık olmayan bir ürün geliştirmek"
+        },
+        {
+          "key": "B",
+          "en": "Expanding into a country where the firm has no experience",
+          "tr": "Firmanın deneyimi olmayan bir ülkeye açılmak"
+        },
+        {
+          "key": "C",
+          "en": "Replacing worn equipment with the same model to maintain operations",
+          "tr": "Faaliyetleri sürdürmek için aşınmış ekipmanı aynı modelle değiştirmek"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Replacing like with like has known costs and cash flows.",
+      "explanation_tr": "Aynısıyla değiştirmenin maliyetleri ve nakit akışları bilinir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "New products face uncertain demand and costs.",
+          "tr": "Yeni ürünlerde talep ve maliyet belirsizdir."
+        },
+        "B": {
+          "en": "Entering a new country adds many unknowns.",
+          "tr": "Yeni bir ülkeye girmek birçok bilinmeyen getirir."
+        }
+      },
+      "vocab_ids": [
+        "replacement-project",
+        "maintain",
+        "uncertainty",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A project requires an investment of TRY 800 million today and is expected to return TRY 300 million, TRY 350 million and TRY 400 million at the end of years 1, 2 and 3. The required return is 10%. The project's NPV is closest to:",
+      "stem_tr": "Bir proje bugün TRY 800 milyon yatırım gerektiriyor ve 1., 2. ve 3. yılların sonunda sırasıyla TRY 300 milyon, TRY 350 milyon ve TRY 400 milyon getirmesi bekleniyor. Gerekli getiri %10'dur. Projenin NPV'si en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 62.5 million",
+          "tr": "TRY 62,5 milyon",
+          "value": 62.5
+        },
+        {
+          "key": "B",
+          "en": "TRY 862.5 million",
+          "tr": "TRY 862,5 milyon",
+          "value": 862.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 250.0 million",
+          "tr": "TRY 250,0 milyon",
+          "value": 250.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "PV of inflows = 272.7 + 289.3 + 300.5 = 862.5. NPV = 862.5 - 800 = 62.5.",
+      "explanation_tr": "Girişlerin bugünkü değeri = 272,7 + 289,3 + 300,5 = 862,5. NPV = 862,5 - 800 = 62,5.",
+      "solution_steps": [
+        {
+          "en": "We need the project's NPV.",
+          "tr": "Projenin NPV'si isteniyor."
+        },
+        {
+          "en": "NPV is the sum of discounted cash flows, including the initial outlay.",
+          "tr": "NPV, ilk yatırım dahil iskonto edilmiş nakit akışlarının toplamıdır.",
+          "formula_latex": "NPV=\\sum_{t=0}^{3}\\frac{CF_t}{(1+r)^t}"
+        },
+        {
+          "en": "300/1.1 = 272.7; 350/1.21 = 289.3; 400/1.331 = 300.5.",
+          "tr": "300/1,1 = 272,7; 350/1,21 = 289,3; 400/1,331 = 300,5."
+        },
+        {
+          "en": "NPV = 862.5 - 800 = 62.5.",
+          "tr": "NPV = 862,5 - 800 = 62,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WORK]",
+          "-800 [ENTER]",
+          "[↓] 300 [ENTER]",
+          "[↓] [↓] 350 [ENTER]",
+          "[↓] [↓] 400 [ENTER]",
+          "[NPV] 10 [ENTER]",
+          "[↓] [CPT]"
+        ]
+      },
+      "numeric": {
+        "expr": "npv(0.10,[-800,300,350,400])",
+        "unit": "TRY million"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the present value of inflows and forgets to subtract the investment.",
+          "tr": "Bu girişlerin bugünkü değeridir; yatırım düşülmemiştir."
+        },
+        "C": {
+          "en": "This sums the cash flows without discounting.",
+          "tr": "Bu nakit akışlarını iskonto etmeden toplar."
+        }
+      },
+      "vocab_ids": [
+        "net-present-value",
+        "discount-rate",
+        "cost-of-capital",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-b-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A project costs TRY 500 million today and is expected to return TRY 200 million, TRY 250 million and TRY 300 million at the end of years 1, 2 and 3. The project's IRR is closest to:",
+      "stem_tr": "Bir proje bugün TRY 500 milyona mal oluyor ve 1., 2. ve 3. yılların sonunda sırasıyla TRY 200 milyon, TRY 250 milyon ve TRY 300 milyon getirmesi bekleniyor. Projenin IRR'si en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0%",
+          "tr": "%50,0",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "21.6%",
+          "tr": "%21,6",
+          "value": 21.6
+        },
+        {
+          "key": "C",
+          "en": "16.7%",
+          "tr": "%16,7",
+          "value": 16.7
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "IRR is the rate that makes NPV zero: -500 + 200/(1+r) + 250/(1+r)^2 + 300/(1+r)^3 = 0, giving about 21.6%.",
+      "explanation_tr": "IRR, NPV'yi sıfır yapan orandır: -500 + 200/(1+r) + 250/(1+r)^2 + 300/(1+r)^3 = 0; sonuç yaklaşık %21,6.",
+      "solution_steps": [
+        {
+          "en": "We need the IRR of the cash flows.",
+          "tr": "Nakit akışlarının IRR'si isteniyor."
+        },
+        {
+          "en": "IRR is the discount rate at which NPV equals zero.",
+          "tr": "IRR, NPV'nin sıfır olduğu iskonto oranıdır.",
+          "formula_latex": "0=\\sum_{t=0}^{3}\\frac{CF_t}{(1+IRR)^t}"
+        },
+        {
+          "en": "Enter CF0 = -500, CF1 = 200, CF2 = 250, CF3 = 300.",
+          "tr": "CF0 = -500, CF1 = 200, CF2 = 250, CF3 = 300 girilir."
+        },
+        {
+          "en": "Solving gives IRR of about 21.6%.",
+          "tr": "Çözüm yaklaşık %21,6 IRR verir."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WORK]",
+          "-500 [ENTER]",
+          "[↓] 200 [ENTER]",
+          "[↓] [↓] 250 [ENTER]",
+          "[↓] [↓] 300 [ENTER]",
+          "[IRR] [CPT]"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-500,200,250,300])*100",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides total undiscounted profit (250) by the investment (500).",
+          "tr": "Bu iskonto edilmemiş toplam kârı (250) yatırıma (500) böler."
+        },
+        "C": {
+          "en": "This spreads the undiscounted profit evenly over 3 years, ignoring timing.",
+          "tr": "Bu iskonto edilmemiş kârı 3 yıla eşit dağıtır, zamanlamayı yok sayar."
+        }
+      },
+      "vocab_ids": [
+        "irr",
+        "net-present-value",
+        "discount-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A sound capital allocation decision is based mainly on a project's:",
+      "stem_tr": "Sağlam bir sermaye tahsisi kararı esas olarak projenin neye dayanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "past accounting profit of the whole firm",
+          "tr": "tüm firmanın geçmiş muhasebe kârı"
+        },
+        {
+          "key": "B",
+          "en": "size of money already spent on it",
+          "tr": "şimdiye kadar harcanan para tutarı"
+        },
+        {
+          "key": "C",
+          "en": "incremental after-tax cash flows",
+          "tr": "artımsal vergi sonrası nakit akışları"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Only the extra after-tax cash flows caused by the decision matter.",
+      "explanation_tr": "Yalnızca karardan kaynaklanan ek vergi sonrası nakit akışları önemlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Firm-wide past profit does not measure the project's effect.",
+          "tr": "Firma genelindeki geçmiş kâr projenin etkisini ölçmez."
+        },
+        "B": {
+          "en": "Money already spent is a sunk cost and is ignored.",
+          "tr": "Harcanmış para batık maliyettir ve dikkate alınmaz."
+        }
+      },
+      "vocab_ids": [
+        "incremental-cash-flow",
+        "sunk-cost",
+        "capital-expenditure",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-c-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Managers often submit overly optimistic forecasts to win funding for their projects. Which action would most likely reduce this problem?",
+      "stem_tr": "Yöneticiler projeleri için fon almak amacıyla sıklıkla aşırı iyimser tahminler sunar. Hangi eylem bu sorunu azaltmak için en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Independent review of forecasts and post-audits comparing results with forecasts",
+          "tr": "Tahminlerin bağımsız incelenmesi ve sonuçların tahminlerle karşılaştırıldığı sonradan denetim"
+        },
+        {
+          "key": "B",
+          "en": "Rewarding managers by the number of projects they get approved",
+          "tr": "Yöneticileri onaylatılan proje sayısına göre ödüllendirmek"
+        },
+        {
+          "key": "C",
+          "en": "Using a lower discount rate for all projects",
+          "tr": "Tüm projeler için daha düşük iskonto oranı kullanmak"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Independent review and post-audits create accountability for forecast quality.",
+      "explanation_tr": "Bağımsız inceleme ve sonradan denetim, tahmin kalitesi için hesap verebilirlik yaratır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Paying for approvals encourages more optimism.",
+          "tr": "Onay sayısına göre ödül iyimserliği artırır."
+        },
+        "C": {
+          "en": "A lower discount rate makes weak projects look better, worsening the problem.",
+          "tr": "Düşük iskonto oranı zayıf projeleri daha iyi gösterir, sorunu büyütür."
+        }
+      },
+      "vocab_ids": [
+        "forecast",
+        "uncertainty",
+        "incremental-cash-flow",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A retailer opens one pilot store, planning to open many more only if the pilot succeeds. This feature is best described as a(n):",
+      "stem_tr": "Bir perakendeci tek bir pilot mağaza açıyor ve yalnızca pilot başarılı olursa çok sayıda yeni mağaza açmayı planlıyor. Bu özellik en iyi nasıl adlandırılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "timing option to delay the project",
+          "tr": "projeyi erteleme için zamanlama opsiyonu"
+        },
+        {
+          "key": "B",
+          "en": "expansion (sizing) option",
+          "tr": "genişleme (boyutlandırma) opsiyonu"
+        },
+        {
+          "key": "C",
+          "en": "fundamental option",
+          "tr": "temel (fundamental) opsiyon"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The right to grow later if results are good is an expansion option, a sizing option.",
+      "explanation_tr": "Sonuçlar iyiyse sonra büyüme hakkı bir genişleme opsiyonudur; boyutlandırma opsiyonudur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A timing option is about when to start, not how much to grow.",
+          "tr": "Zamanlama opsiyonu ne zaman başlanacağıyla ilgilidir, ne kadar büyüneceğiyle değil."
+        },
+        "C": {
+          "en": "A fundamental option is where the project value itself depends on a price, like a commodity.",
+          "tr": "Temel opsiyonda proje değeri doğrudan bir fiyata bağlıdır, örneğin emtia."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "expansion",
+        "uncertainty",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-05-d-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-05",
+      "los_id": "CI-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, a real option embedded in a project is most valuable when the uncertainty about the project's future cash flows is:",
+      "stem_tr": "Diğer her şey aynıyken, bir projedeki gömülü reel opsiyonun değeri, projenin gelecekteki nakit akışlarına dair belirsizlik hangi durumdayken en yüksektir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "low, because outcomes are easy to predict",
+          "tr": "düşük; çünkü sonuçları tahmin etmek kolaydır"
+        },
+        {
+          "key": "B",
+          "en": "zero, because options need certain cash flows",
+          "tr": "sıfır; çünkü opsiyonlar kesin nakit akışı gerektirir"
+        },
+        {
+          "key": "C",
+          "en": "high, because managers can act on good outcomes and avoid bad ones",
+          "tr": "yüksek; çünkü yöneticiler iyi sonuçlardan yararlanıp kötülerden kaçınabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Options gain from flexibility; more uncertainty means more upside to capture and downside to avoid.",
+      "explanation_tr": "Opsiyon esneklikten kazanır; belirsizlik arttıkça yakalanacak getiri ve kaçınılacak zarar artar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With low uncertainty the right to adapt has little value.",
+          "tr": "Belirsizlik azken uyum sağlama hakkının değeri azdır."
+        },
+        "B": {
+          "en": "Options exist because of uncertainty, not certainty.",
+          "tr": "Opsiyonlar kesinlikten değil belirsizlikten doğar."
+        }
+      },
+      "vocab_ids": [
+        "real-option",
+        "uncertainty",
+        "timing-option",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

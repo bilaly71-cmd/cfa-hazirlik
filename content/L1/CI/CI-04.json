@@ -1310,6 +1310,534 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "CI-04-a-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A firm has average receivables of TRY 150 million and annual revenue of TRY 1,095 million (all credit sales; COGS is TRY 730 million). Using 365 days, days sales outstanding is closest to:",
+      "stem_tr": "Bir firmanın ortalama alacakları TRY 150 milyon ve yıllık geliri TRY 1.095 milyondur (tamamı vadeli satış; satışların maliyeti TRY 730 milyon). 365 gün kullanılırsa alacak tahsil süresi (DSO) en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0 days",
+          "tr": "50,0 gün",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "75.0 days",
+          "tr": "75,0 gün",
+          "value": 75.0
+        },
+        {
+          "key": "C",
+          "en": "7.3 days",
+          "tr": "7,3 gün",
+          "value": 7.3
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "DSO = receivables / revenue x 365 = 150 / 1,095 x 365 = 50.0 days.",
+      "explanation_tr": "DSO = alacaklar / gelir x 365 = 150 / 1.095 x 365 = 50,0 gün.",
+      "solution_steps": [
+        {
+          "en": "We need days sales outstanding.",
+          "tr": "Alacak tahsil süresi (DSO) isteniyor."
+        },
+        {
+          "en": "DSO = receivables / revenue x 365 (credit sales are revenue).",
+          "tr": "DSO = alacaklar / gelir x 365 (vadeli satış = gelir).",
+          "formula_latex": "DSO=\\frac{Receivables}{Revenue}\\times 365"
+        },
+        {
+          "en": "150 / 1,095 = 0.1370.",
+          "tr": "150 / 1.095 = 0,1370."
+        },
+        {
+          "en": "x 365 = 50.0 days.",
+          "tr": "x 365 = 50,0 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "150 [÷] 1095 [×] 365 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "150/1095*365",
+        "unit": "days"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides receivables by COGS instead of revenue.",
+          "tr": "Alacakları gelir yerine satışların maliyetine böler."
+        },
+        "C": {
+          "en": "This is revenue divided by receivables (turnover), not days.",
+          "tr": "Bu gelir/alacak oranıdır (devir hızı), gün değil."
+        }
+      },
+      "vocab_ids": [
+        "days-sales-outstanding",
+        "accounts-receivable",
+        "day-count",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-a-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm has average inventory of TRY 450 million, average receivables of TRY 300 million and average payables of TRY 180 million. Annual COGS is TRY 2,190 million and revenue is TRY 3,650 million. Using 365 days, the cash conversion cycle is closest to:",
+      "stem_tr": "Bir firmanın ortalama stoku TRY 450 milyon, ortalama alacakları TRY 300 milyon ve ortalama borçları TRY 180 milyondur. Yıllık satışların maliyeti TRY 2.190 milyon, gelir TRY 3.650 milyondur. 365 gün kullanılırsa nakit dönüşüm süresi en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "135 days",
+          "tr": "135 gün",
+          "value": 135.0
+        },
+        {
+          "key": "B",
+          "en": "75 days",
+          "tr": "75 gün",
+          "value": 75.0
+        },
+        {
+          "key": "C",
+          "en": "15 days",
+          "tr": "15 gün",
+          "value": 15.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "DIO = 450/2,190 x 365 = 75; DSO = 300/3,650 x 365 = 30; DPO = 180/2,190 x 365 = 30. CCC = 75 + 30 - 30 = 75 days.",
+      "explanation_tr": "DIO = 450/2.190 x 365 = 75; DSO = 300/3.650 x 365 = 30; DPO = 180/2.190 x 365 = 30. CCC = 75 + 30 - 30 = 75 gün.",
+      "solution_steps": [
+        {
+          "en": "We need the cash conversion cycle.",
+          "tr": "Nakit dönüşüm süresi isteniyor."
+        },
+        {
+          "en": "CCC = DIO + DSO - DPO; DIO and DPO use COGS, DSO uses revenue.",
+          "tr": "CCC = DIO + DSO - DPO; DIO ve DPO satışların maliyetiyle, DSO gelirle hesaplanır.",
+          "formula_latex": "CCC=DIO+DSO-DPO"
+        },
+        {
+          "en": "DIO = 450/2,190 x 365 = 75.0; DSO = 300/3,650 x 365 = 30.0; DPO = 180/2,190 x 365 = 30.0.",
+          "tr": "DIO = 450/2.190 x 365 = 75,0; DSO = 300/3.650 x 365 = 30,0; DPO = 180/2.190 x 365 = 30,0."
+        },
+        {
+          "en": "CCC = 75 + 30 - 30 = 75 days.",
+          "tr": "CCC = 75 + 30 - 30 = 75 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "450 [÷] 2190 [×] 365 [=] (DIO)",
+          "300 [÷] 3650 [×] 365 [=] (DSO)",
+          "180 [÷] 2190 [×] 365 [=] (DPO)",
+          "DIO + DSO - DPO"
+        ]
+      },
+      "numeric": {
+        "expr": "450/2190*365+300/3650*365-180/2190*365",
+        "unit": "days"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This adds DPO instead of subtracting it.",
+          "tr": "DPO'yu çıkarmak yerine ekler."
+        },
+        "C": {
+          "en": "This subtracts DSO as well as DPO from DIO.",
+          "tr": "DIO'dan hem DPO'yu hem DSO'yu çıkarır."
+        }
+      },
+      "vocab_ids": [
+        "cash-conversion-cycle",
+        "days-inventory",
+        "days-sales-outstanding",
+        "days-payable",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm has cash of TRY 80 million, marketable securities of TRY 40 million, receivables of TRY 160 million and inventory of TRY 220 million. Current liabilities are TRY 400 million. The quick ratio is closest to:",
+      "stem_tr": "Bir firmanın nakdi TRY 80 milyon, menkul kıymetleri TRY 40 milyon, alacakları TRY 160 milyon ve stoku TRY 220 milyondur. Kısa vadeli borçlar TRY 400 milyondur. Asit-test (hızlı) oran en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.25",
+          "tr": "1,25",
+          "value": 1.25
+        },
+        {
+          "key": "B",
+          "en": "0.30",
+          "tr": "0,30",
+          "value": 0.3
+        },
+        {
+          "key": "C",
+          "en": "0.70",
+          "tr": "0,70",
+          "value": 0.7
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Quick ratio = (cash + securities + receivables) / current liabilities = 280 / 400 = 0.70.",
+      "explanation_tr": "Hızlı oran = (nakit + menkul kıymet + alacak) / kısa vadeli borç = 280 / 400 = 0,70.",
+      "solution_steps": [
+        {
+          "en": "We need the quick ratio.",
+          "tr": "Hızlı oran isteniyor."
+        },
+        {
+          "en": "Quick ratio = (cash + securities + receivables) / current liabilities; inventory is excluded.",
+          "tr": "Hızlı oran = (nakit + menkul kıymet + alacak) / kısa vadeli borç; stok hariçtir.",
+          "formula_latex": "Quick=\\frac{Cash+Securities+Receivables}{CL}"
+        },
+        {
+          "en": "Numerator = 80 + 40 + 160 = 280.",
+          "tr": "Pay = 80 + 40 + 160 = 280."
+        },
+        {
+          "en": "280 / 400 = 0.70.",
+          "tr": "280 / 400 = 0,70."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [+] 40 [+] 160 [=]",
+          "[÷] 400 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(80+40+160)/400",
+        "unit": "x"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the current ratio (500/400), which includes inventory.",
+          "tr": "Bu cari orandır (500/400); stoku da içerir."
+        },
+        "B": {
+          "en": "This is the cash ratio (120/400), which excludes receivables.",
+          "tr": "Bu nakit orandır (120/400); alacakları dışarıda bırakır."
+        }
+      },
+      "vocab_ids": [
+        "quick-ratio",
+        "current-ratio",
+        "cash-ratio",
+        "liquidity",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-b-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A firm holds cash, marketable securities and receivables totaling TRY 600 million. Its annual cash operating expenses are TRY 2,190 million, spread evenly across 365 days. The defensive interval is closest to:",
+      "stem_tr": "Bir firmanın nakit, menkul kıymet ve alacak toplamı TRY 600 milyondur. Yıllık nakit işletme giderleri TRY 2.190 milyon olup 365 güne eşit dağılmaktadır. Savunma aralığı (defensive interval) en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "100 days",
+          "tr": "100 gün",
+          "value": 100.0
+        },
+        {
+          "key": "B",
+          "en": "3.65 days",
+          "tr": "3,65 gün",
+          "value": 3.65
+        },
+        {
+          "key": "C",
+          "en": "0.27 days",
+          "tr": "0,27 gün",
+          "value": 0.27
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Daily expenses = 2,190 / 365 = 6. Defensive interval = 600 / 6 = 100 days.",
+      "explanation_tr": "Günlük gider = 2.190 / 365 = 6. Savunma aralığı = 600 / 6 = 100 gün.",
+      "solution_steps": [
+        {
+          "en": "We need the defensive interval in days.",
+          "tr": "Savunma aralığı gün cinsinden isteniyor."
+        },
+        {
+          "en": "Defensive interval = liquid assets / daily cash expenses.",
+          "tr": "Savunma aralığı = likit varlıklar / günlük nakit gider.",
+          "formula_latex": "DI=\\frac{LiquidAssets}{Expenses/365}"
+        },
+        {
+          "en": "Daily expenses = 2,190 / 365 = 6.",
+          "tr": "Günlük gider = 2.190 / 365 = 6."
+        },
+        {
+          "en": "600 / 6 = 100 days.",
+          "tr": "600 / 6 = 100 gün."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2190 [÷] 365 [=] (6)",
+          "600 [÷] 6 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "600/(2190/365)",
+        "unit": "days"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This inverts the ratio (expenses divided by liquid assets, then scaled).",
+          "tr": "Oranı ters çevirir (gider / likit varlık)."
+        },
+        "C": {
+          "en": "This divides liquid assets by annual expenses and forgets to convert to days.",
+          "tr": "Likit varlığı yıllık giderlere böler ve güne çevirmeyi unutur."
+        }
+      },
+      "vocab_ids": [
+        "defensive-interval",
+        "liquidity",
+        "day-count",
+        "cash-ratio",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A supplier offers terms of 3/15 net 45. The annualized effective cost of not taking the discount (365-day year, compounding) is closest to:",
+      "stem_tr": "Bir tedarikçi 3/15 net 45 koşulu sunuyor. İskontodan yararlanılmamasının yıllıklandırılmış efektif maliyeti (365 günlük yıl, bileşik) en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "37.6%",
+          "tr": "%37,6",
+          "value": 37.6
+        },
+        {
+          "key": "B",
+          "en": "44.9%",
+          "tr": "%44,9",
+          "value": 44.9
+        },
+        {
+          "key": "C",
+          "en": "3.1%",
+          "tr": "%3,1",
+          "value": 3.1
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Cost = (1 + 3/97)^(365/30) - 1 = 1.0309^12.1667 - 1 = 44.9%.",
+      "explanation_tr": "Maliyet = (1 + 3/97)^(365/30) - 1 = 1,0309^12,1667 - 1 = %44,9.",
+      "solution_steps": [
+        {
+          "en": "We need the annualized cost of forgoing the discount.",
+          "tr": "İskontodan vazgeçmenin yıllık maliyeti isteniyor."
+        },
+        {
+          "en": "Cost = (1 + d/(1-d))^(365/(N-n)) - 1, with d = 3%, N = 45, n = 15.",
+          "tr": "Maliyet = (1 + d/(1-d))^(365/(N-n)) - 1; d = %3, N = 45, n = 15.",
+          "formula_latex": "Cost=\\left(1+\\frac{d}{1-d}\\right)^{\\frac{365}{N-n}}-1"
+        },
+        {
+          "en": "3/97 = 0.030928; 365/30 = 12.1667.",
+          "tr": "3/97 = 0,030928; 365/30 = 12,1667."
+        },
+        {
+          "en": "1.030928^12.1667 = 1.4486, so cost = 44.9%.",
+          "tr": "1,030928^12,1667 = 1,4486; maliyet = %44,9."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [÷] 97 [=] [+] 1 [=]",
+          "[y^x] 12.1667 [=]",
+          "[-] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((1+0.03/0.97)**(365/30)-1)*100",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the simple (non-compounded) annualized rate.",
+          "tr": "Bu basit (bileşiklenmemiş) yıllık orandır."
+        },
+        "C": {
+          "en": "This is only the per-period cost of 3/97, not annualized.",
+          "tr": "Bu yalnızca dönem başına 3/97 maliyetidir, yıllıklandırılmamıştır."
+        }
+      },
+      "vocab_ids": [
+        "trade-credit",
+        "day-count",
+        "closest-to",
+        "working-capital"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-04-c-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-04",
+      "los_id": "CI-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A supplier offers terms of 2/10 net 60. The annualized effective cost of not taking the discount (365-day year, compounding) is closest to:",
+      "stem_tr": "Bir tedarikçi 2/10 net 60 koşulu sunuyor. İskontodan yararlanılmamasının yıllıklandırılmış efektif maliyeti (365 günlük yıl, bileşik) en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "14.9%",
+          "tr": "%14,9",
+          "value": 14.9
+        },
+        {
+          "key": "B",
+          "en": "13.1%",
+          "tr": "%13,1",
+          "value": 13.1
+        },
+        {
+          "key": "C",
+          "en": "15.9%",
+          "tr": "%15,9",
+          "value": 15.9
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cost = (1 + 2/98)^(365/50) - 1 = 1.020408^7.3 - 1 = 15.9%.",
+      "explanation_tr": "Maliyet = (1 + 2/98)^(365/50) - 1 = 1,020408^7,3 - 1 = %15,9.",
+      "solution_steps": [
+        {
+          "en": "We need the annualized cost of forgoing the discount.",
+          "tr": "İskontodan vazgeçmenin yıllık maliyeti isteniyor."
+        },
+        {
+          "en": "Extra days of credit = 60 - 10 = 50; cost per period = 2/98.",
+          "tr": "Ek kredi süresi = 60 - 10 = 50 gün; dönem maliyeti = 2/98.",
+          "formula_latex": "Cost=\\left(1+\\frac{d}{1-d}\\right)^{\\frac{365}{N-n}}-1"
+        },
+        {
+          "en": "2/98 = 0.020408; 365/50 = 7.3.",
+          "tr": "2/98 = 0,020408; 365/50 = 7,3."
+        },
+        {
+          "en": "1.020408^7.3 = 1.1589, so cost = 15.9%.",
+          "tr": "1,020408^7,3 = 1,1589; maliyet = %15,9."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2 [÷] 98 [=] [+] 1 [=]",
+          "[y^x] 7.3 [=]",
+          "[-] 1 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "((1+0.02/0.98)**(365/50)-1)*100",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the simple annualized rate without compounding.",
+          "tr": "Bu bileşik olmayan basit yıllık orandır."
+        },
+        "B": {
+          "en": "This uses 60 days instead of 50 days (N minus n) as the credit period.",
+          "tr": "Kredi süresi olarak N - n (50 gün) yerine 60 gün kullanır."
+        }
+      },
+      "vocab_ids": [
+        "trade-credit",
+        "day-count",
+        "closest-to",
+        "line-of-credit"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

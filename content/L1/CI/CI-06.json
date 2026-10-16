@@ -1554,6 +1554,580 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "CI-06-a-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm's target capital structure is 35% debt and 65% equity. The pre-tax cost of debt is 9%, the cost of equity is 14% and the marginal tax rate is 20%. The WACC is closest to:",
+      "stem_tr": "Bir firmanın hedef sermaye yapısı %35 borç ve %65 özkaynaktır. Vergi öncesi borç maliyeti %9, özkaynak maliyeti %14 ve marjinal vergi oranı %20'dir. WACC en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.3%",
+          "tr": "%12,3",
+          "value": 12.25
+        },
+        {
+          "key": "B",
+          "en": "9.6%",
+          "tr": "%9,6",
+          "value": 9.58
+        },
+        {
+          "key": "C",
+          "en": "11.6%",
+          "tr": "%11,6",
+          "value": 11.62
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "WACC = 0.35 x 9% x (1 - 0.20) + 0.65 x 14% = 2.52% + 9.10% = 11.62%.",
+      "explanation_tr": "WACC = 0,35 x %9 x (1 - 0,20) + 0,65 x %14 = %2,52 + %9,10 = %11,62.",
+      "solution_steps": [
+        {
+          "en": "We need the weighted average cost of capital.",
+          "tr": "Ağırlıklı ortalama sermaye maliyeti (WACC) isteniyor."
+        },
+        {
+          "en": "WACC = w_d x r_d x (1 - t) + w_e x r_e.",
+          "tr": "WACC = w_d x r_d x (1 - t) + w_e x r_e.",
+          "formula_latex": "WACC=w_d r_d(1-t)+w_e r_e"
+        },
+        {
+          "en": "After-tax debt cost = 9% x 0.80 = 7.2%; debt part = 0.35 x 7.2% = 2.52%.",
+          "tr": "Vergi sonrası borç maliyeti = %9 x 0,80 = %7,2; borç payı = 0,35 x %7,2 = %2,52."
+        },
+        {
+          "en": "Equity part = 0.65 x 14% = 9.10%; WACC = 11.62%.",
+          "tr": "Özkaynak payı = 0,65 x %14 = %9,10; WACC = %11,62."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "9 [×] 0.8 [×] 0.35 [=] (2.52)",
+          "14 [×] 0.65 [=] (9.10)",
+          "add the two results"
+        ]
+      },
+      "numeric": {
+        "expr": "0.35*9*(1-0.20)+0.65*14",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not adjust the cost of debt for tax.",
+          "tr": "Borç maliyetini vergiyle düzeltmez."
+        },
+        "B": {
+          "en": "This swaps the weights, putting 65% on after-tax debt and 35% on equity.",
+          "tr": "Ağırlıkları değiştirir: %65 borç, %35 özkaynak kullanır."
+        }
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "cost-of-debt",
+        "after-tax",
+        "tax-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-a-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A firm has 80 million shares priced at TRY 25 and debt with a market value of TRY 1,000 million. The cost of equity is 16%, the pre-tax cost of debt is 12% and the tax rate is 25%. The WACC is closest to:",
+      "stem_tr": "Bir firmanın 80 milyon payı TRY 25'ten işlem görüyor ve borcunun piyasa değeri TRY 1.000 milyondur. Özkaynak maliyeti %16, vergi öncesi borç maliyeti %12 ve vergi oranı %25'tir. WACC en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.7%",
+          "tr": "%13,7",
+          "value": 13.67
+        },
+        {
+          "key": "B",
+          "en": "14.7%",
+          "tr": "%14,7",
+          "value": 14.67
+        },
+        {
+          "key": "C",
+          "en": "12.5%",
+          "tr": "%12,5",
+          "value": 12.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Equity = 80 x 25 = 2,000; V = 3,000. WACC = (2/3) x 16% + (1/3) x 12% x 0.75 = 10.67% + 3.00% = 13.67%.",
+      "explanation_tr": "Özkaynak = 80 x 25 = 2.000; V = 3.000. WACC = (2/3) x %16 + (1/3) x %12 x 0,75 = %10,67 + %3,00 = %13,67.",
+      "solution_steps": [
+        {
+          "en": "We need WACC using market-value weights.",
+          "tr": "Piyasa değeri ağırlıklarıyla WACC isteniyor."
+        },
+        {
+          "en": "Equity value = shares x price = 80 x 25 = TRY 2,000 million; total capital = 3,000.",
+          "tr": "Özkaynak değeri = pay x fiyat = 80 x 25 = TRY 2.000 milyon; toplam sermaye = 3.000.",
+          "formula_latex": "E=N\\times P"
+        },
+        {
+          "en": "Weights: equity 2/3, debt 1/3.",
+          "tr": "Ağırlıklar: özkaynak 2/3, borç 1/3."
+        },
+        {
+          "en": "WACC = 0.6667 x 16% + 0.3333 x 12% x 0.75 = 13.67%.",
+          "tr": "WACC = 0,6667 x %16 + 0,3333 x %12 x 0,75 = %13,67.",
+          "formula_latex": "WACC=w_e r_e+w_d r_d(1-t)"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [×] 25 [=] (2000)",
+          "2000 [÷] 3000 [×] 16 [=] (10.67)",
+          "1000 [÷] 3000 [×] 12 [×] 0.75 [=] (3.00)",
+          "add the two results"
+        ]
+      },
+      "numeric": {
+        "expr": "(2000/3000)*16+(1000/3000)*12*(1-0.25)",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This ignores the tax shield on interest.",
+          "tr": "Faizin vergi kalkanını yok sayar."
+        },
+        "C": {
+          "en": "This uses equal 50/50 weights instead of market-value weights.",
+          "tr": "Piyasa değeri ağırlıkları yerine %50/%50 eşit ağırlık kullanır."
+        }
+      },
+      "vocab_ids": [
+        "market-value",
+        "cost-of-capital",
+        "tax-shield",
+        "capital-structure",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "All else equal, a firm with highly volatile operating cash flows is most likely to use:",
+      "stem_tr": "Diğer her şey aynıyken, faaliyet nakit akışları çok oynak olan bir firma büyük olasılıkla şunu kullanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "more debt, because volatile cash flows are easy to forecast",
+          "tr": "daha çok borç; çünkü oynak nakit akışlarını tahmin etmek kolaydır"
+        },
+        {
+          "key": "B",
+          "en": "less debt, because fixed interest payments are riskier for it",
+          "tr": "daha az borç; çünkü sabit faiz ödemeleri onun için daha risklidir"
+        },
+        {
+          "key": "C",
+          "en": "only debt, because equity is more expensive",
+          "tr": "yalnızca borç; çünkü özkaynak daha pahalıdır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Unstable cash flows raise the chance of missing fixed payments, so the firm carries less debt.",
+      "explanation_tr": "Dengesiz nakit akışı sabit ödemelerin aksama ihtimalini artırır; firma daha az borç taşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Volatile cash flows are hard, not easy, to forecast.",
+          "tr": "Oynak nakit akışlarını tahmin etmek kolay değil, zordur."
+        },
+        "C": {
+          "en": "Using only debt would raise financial distress risk even more.",
+          "tr": "Yalnızca borç kullanmak finansal sıkıntı riskini daha da artırır."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "leverage",
+        "financial-distress",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, a cut in the corporate tax rate would most likely make debt financing:",
+      "stem_tr": "Diğer her şey aynıyken kurumlar vergisi oranının düşürülmesi borçla finansmanı büyük olasılıkla nasıl etkiler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "more attractive, because interest becomes cheaper after tax",
+          "tr": "daha çekici kılar; çünkü faiz vergi sonrası ucuzlar"
+        },
+        {
+          "key": "B",
+          "en": "unaffected, because interest is never tax deductible",
+          "tr": "etkilemez; çünkü faiz hiçbir zaman vergiden indirilemez"
+        },
+        {
+          "key": "C",
+          "en": "less attractive, because the interest tax shield becomes smaller",
+          "tr": "daha az çekici kılar; çünkü faiz vergi kalkanı küçülür"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The tax shield equals interest x tax rate, so a lower rate reduces the benefit of debt.",
+      "explanation_tr": "Vergi kalkanı = faiz x vergi oranıdır; oran düşünce borcun faydası azalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A lower tax rate raises the after-tax cost of debt.",
+          "tr": "Düşük vergi oranı vergi sonrası borç maliyetini artırır."
+        },
+        "B": {
+          "en": "Interest is generally deductible, which is the source of the shield.",
+          "tr": "Faiz genellikle indirilebilir; kalkanın kaynağı budur."
+        }
+      },
+      "vocab_ids": [
+        "tax-shield",
+        "tax-rate",
+        "after-tax",
+        "capital-structure",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Under Modigliani-Miller without taxes, an all-equity firm has a cost of capital of 9% and can borrow at 5%. If it adopts a debt-to-equity ratio of 0.8, its cost of equity becomes closest to:",
+      "stem_tr": "Vergisiz Modigliani-Miller varsayımı altında, tamamı özkaynakla finanse edilen bir firmanın sermaye maliyeti %9'dur ve %5'ten borçlanabilmektedir. Borç/özkaynak oranını 0,8 yaparsa özkaynak maliyeti en yakın hangisi olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.2%",
+          "tr": "%12,2",
+          "value": 12.2
+        },
+        {
+          "key": "B",
+          "en": "9.0%",
+          "tr": "%9,0",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "11.4%",
+          "tr": "%11,4",
+          "value": 11.4
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "r_e = r_0 + (r_0 - r_d) x D/E = 9% + (9% - 5%) x 0.8 = 12.2%.",
+      "explanation_tr": "r_e = r_0 + (r_0 - r_d) x B/Ö = %9 + (%9 - %5) x 0,8 = %12,2.",
+      "solution_steps": [
+        {
+          "en": "We need the levered cost of equity (MM Proposition II, no taxes).",
+          "tr": "Kaldıraçlı özkaynak maliyeti isteniyor (MM Önerme II, vergisiz)."
+        },
+        {
+          "en": "r_e = r_0 + (r_0 - r_d) x D/E.",
+          "tr": "r_e = r_0 + (r_0 - r_d) x D/E.",
+          "formula_latex": "r_e=r_0+(r_0-r_d)\\frac{D}{E}"
+        },
+        {
+          "en": "(9% - 5%) = 4%; 4% x 0.8 = 3.2%.",
+          "tr": "(%9 - %5) = %4; %4 x 0,8 = %3,2."
+        },
+        {
+          "en": "r_e = 9% + 3.2% = 12.2%.",
+          "tr": "r_e = %9 + %3,2 = %12,2."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "9 [-] 5 [=] [×] 0.8 [=] (3.2)",
+          "[+] 9 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "9+(9-5)*0.8",
+        "unit": "%"
+      },
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Cost of equity rises with leverage; it does not stay at 9%.",
+          "tr": "Özkaynak maliyeti kaldıraçla artar; %9'da kalmaz."
+        },
+        "C": {
+          "en": "This multiplies by (1 - tax) even though the case has no taxes.",
+          "tr": "Vergi olmamasına rağmen (1 - vergi) ile çarpar."
+        }
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "leverage",
+        "required-return",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "An unlevered firm is worth TRY 1,500 million. It issues TRY 400 million of permanent debt and uses the proceeds to buy back shares. The tax rate is 30%. Under Modigliani-Miller with taxes, the levered firm's value is closest to:",
+      "stem_tr": "Borçsuz bir firmanın değeri TRY 1.500 milyondur. TRY 400 milyonluk kalıcı borç ihraç edip gelirle pay geri alıyor. Vergi oranı %30'dur. Vergili Modigliani-Miller'e göre kaldıraçlı firmanın değeri en yakın hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1,500 million",
+          "tr": "TRY 1.500 milyon",
+          "value": 1500
+        },
+        {
+          "key": "B",
+          "en": "TRY 1,620 million",
+          "tr": "TRY 1.620 milyon",
+          "value": 1620
+        },
+        {
+          "key": "C",
+          "en": "TRY 1,900 million",
+          "tr": "TRY 1.900 milyon",
+          "value": 1900
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "V_L = V_U + t x D = 1,500 + 0.30 x 400 = 1,620.",
+      "explanation_tr": "V_L = V_U + t x B = 1.500 + 0,30 x 400 = 1.620.",
+      "solution_steps": [
+        {
+          "en": "We need the value of the levered firm with taxes.",
+          "tr": "Vergili durumda kaldıraçlı firma değeri isteniyor."
+        },
+        {
+          "en": "V_L = V_U + t x D (value of the interest tax shield on permanent debt).",
+          "tr": "V_L = V_U + t x B (kalıcı borcun faiz vergi kalkanı değeri).",
+          "formula_latex": "V_L=V_U+tD"
+        },
+        {
+          "en": "Tax shield = 0.30 x 400 = 120.",
+          "tr": "Vergi kalkanı = 0,30 x 400 = 120."
+        },
+        {
+          "en": "V_L = 1,500 + 120 = TRY 1,620 million.",
+          "tr": "V_L = 1.500 + 120 = TRY 1.620 milyon."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 400 [=] (120)",
+          "[+] 1500 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1500+0.30*400",
+        "unit": "TRY million"
+      },
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the no-tax result; with taxes the value rises by the tax shield.",
+          "tr": "Bu vergisiz sonuçtur; vergi varken değer, vergi kalkanı kadar artar."
+        },
+        "C": {
+          "en": "This adds the full debt amount rather than the tax shield t x D.",
+          "tr": "Borcun tamamını ekler; oysa eklenecek olan vergi kalkanı t x B'dir."
+        }
+      },
+      "vocab_ids": [
+        "tax-shield",
+        "leverage",
+        "capital-structure",
+        "market-value",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q06",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In the static trade-off theory, the optimal capital structure is reached at the debt level where:",
+      "stem_tr": "Statik denge (trade-off) kuramında en uygun sermaye yapısına, borç düzeyi şu noktaya ulaştığında erişilir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the tax shield is at its maximum, regardless of distress",
+          "tr": "finansal sıkıntıya bakılmaksızın vergi kalkanı en yüksek düzeye çıkar"
+        },
+        {
+          "key": "B",
+          "en": "the firm has no debt at all",
+          "tr": "firmanın hiç borcu kalmaz"
+        },
+        {
+          "key": "C",
+          "en": "the marginal benefit of the interest tax shield equals the marginal cost of financial distress",
+          "tr": "faizin vergi kalkanının marjinal faydası ile finansal sıkıntının marjinal maliyeti eşit olur"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The theory balances tax savings against distress costs; the best mix is where the two offset at the margin.",
+      "explanation_tr": "Kuram vergi tasarrufunu sıkıntı maliyetleriyle dengeler; en iyi karışım ikisinin marjinde eşitlendiği noktadır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignoring distress costs would push debt to extremes.",
+          "tr": "Sıkıntı maliyetlerini yok saymak borcu uç noktalara iter."
+        },
+        "B": {
+          "en": "Zero debt gives up the tax shield entirely.",
+          "tr": "Sıfır borç vergi kalkanından tümüyle vazgeçmektir."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "tax-shield",
+        "financial-distress",
+        "target",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q07",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm's debt ratio is above its target after a share price drop. Which action is most likely to move the firm toward its target?",
+      "stem_tr": "Hisse fiyatındaki düşüş sonrası bir firmanın borç oranı hedefin üzerine çıkmıştır. Hangi eylem firmayı hedefe yaklaştırmak için en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Issuing new equity and using the proceeds to repay debt",
+          "tr": "Yeni pay ihraç edip geliri borç ödemekte kullanmak"
+        },
+        {
+          "key": "B",
+          "en": "Borrowing to fund a share repurchase",
+          "tr": "Borçlanıp pay geri alımını finanse etmek"
+        },
+        {
+          "key": "C",
+          "en": "Paying a special dividend funded by new loans",
+          "tr": "Yeni kredilerle finanse edilen özel temettü ödemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Issuing equity to repay debt lowers the debt ratio.",
+      "explanation_tr": "Pay ihraç edip borç ödemek borç oranını düşürür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Debt-funded buybacks raise the debt ratio further.",
+          "tr": "Borçla finanse edilen geri alım borç oranını daha da artırır."
+        },
+        "C": {
+          "en": "A loan-funded special dividend also increases leverage.",
+          "tr": "Kredi ile finanse edilen özel temettü de kaldıraçı artırır."
+        }
+      },
+      "vocab_ids": [
+        "target",
+        "repurchase",
+        "capital-structure",
+        "leverage",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }

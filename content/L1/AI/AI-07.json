@@ -1353,6 +1353,230 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "AI-07-a-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which feature of a distributed ledger most directly helps participants trust the same shared record without a central record keeper?",
+      "stem_tr": "Dağıtık defterin hangi özelliği, katılımcıların merkezi bir kayıt tutucu olmadan aynı ortak kayda güvenmesine en doğrudan yardımcı olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "One company keeps the only copy of the records",
+          "tr": "Kayıtların tek kopyasını tek bir şirket tutar"
+        },
+        {
+          "key": "B",
+          "en": "Confirmed entries are copied across participants and are very hard to alter",
+          "tr": "Onaylanmış kayıtlar katılımcılar arasında kopyalanır ve değiştirilmesi çok zordur"
+        },
+        {
+          "key": "C",
+          "en": "Records can be changed by any single participant at any time",
+          "tr": "Kayıtlar herhangi bir katılımcı tarafından istenen zamanda değiştirilebilir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Shared copies and consensus rules make confirmed records tamper-resistant.",
+      "explanation_tr": "Paylaşılan kopyalar ve uzlaşma kuralları onaylanmış kayıtları değişikliğe karşı dirençli kılar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A single copy held by one company is a centralized design.",
+          "tr": "Tek şirketin tuttuğu tek kopya merkezi bir tasarımdır."
+        },
+        "C": {
+          "en": "Free edits by one participant would destroy trust.",
+          "tr": "Tek bir katılımcının serbestçe düzenlemesi güveni yok eder."
+        }
+      },
+      "vocab_ids": [
+        "distributed-ledger",
+        "blockchain",
+        "participant",
+        "database",
+        "transfer",
+        "ownership"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-b-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A cryptocurrency's protocol sets a maximum supply that cannot be changed by any single party. This feature most likely gives the asset:",
+      "stem_tr": "Bir kripto para biriminin protokolü, hiçbir tek tarafın değiştiremeyeceği bir azami arz belirliyor. Bu özellik varlığa büyük olasılıkla ne kazandırır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a guaranteed price floor",
+          "tr": "garanti edilmiş bir taban fiyat"
+        },
+        {
+          "key": "B",
+          "en": "a legal claim on the issuer's earnings",
+          "tr": "ihraççının kazançları üzerinde yasal bir hak"
+        },
+        {
+          "key": "C",
+          "en": "scarcity set by rules rather than by a central issuer's decisions",
+          "tr": "merkezi bir ihraççının kararları yerine kurallarla belirlenen kıtlık"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A fixed supply rule creates programmed scarcity, but it does not guarantee price or cash flows.",
+      "explanation_tr": "Sabit arz kuralı programlı kıtlık yaratır; fiyatı veya nakit akışını garanti etmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A supply cap does not guarantee any price level.",
+          "tr": "Arz sınırı hiçbir fiyat düzeyini garanti etmez."
+        },
+        "B": {
+          "en": "Most cryptocurrencies carry no claim on earnings.",
+          "tr": "Çoğu kripto para kazançlar üzerinde hak vermez."
+        }
+      },
+      "vocab_ids": [
+        "cryptocurrency",
+        "valuation",
+        "ownership",
+        "guarantee",
+        "legal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-c-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a spot digital-asset exchange-traded product, an ETP that holds futures contracts is most likely exposed to additional:",
+      "stem_tr": "Spot dijital varlık borsa yatırım ürününe (ETP) kıyasla vadeli işlem kontratı tutan bir ETP büyük olasılıkla hangi ek maruziyete sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "roll costs when contracts are replaced and the futures price differs from spot",
+          "tr": "kontratlar değiştirilirken ortaya çıkan roll maliyetleri ve vadeli fiyatın spottan farklı olması"
+        },
+        {
+          "key": "B",
+          "en": "private key loss, because the fund holds keys",
+          "tr": "fon anahtarları tuttuğu için özel anahtar kaybı"
+        },
+        {
+          "key": "C",
+          "en": "staking income, because futures pay staking rewards",
+          "tr": "vadeli işlemler staking ödülü ödediği için staking geliri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Futures-based products must roll contracts, and that can create costs or gains versus spot.",
+      "explanation_tr": "Vadeli işlem tabanlı ürünler kontrat yenilemek zorundadır; bu, spota göre maliyet veya kazanç yaratabilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A futures-based ETP typically does not hold the coins or keys.",
+          "tr": "Vadeli işlem tabanlı ETP genellikle coin veya anahtar tutmaz."
+        },
+        "C": {
+          "en": "Futures contracts do not pay staking rewards.",
+          "tr": "Vadeli işlem kontratları staking ödülü ödemez."
+        }
+      },
+      "vocab_ids": [
+        "etp",
+        "future",
+        "exposure",
+        "vehicle",
+        "private-key",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "AI-07-d-q06",
+      "level": "L1",
+      "topic": "AI",
+      "module_id": "AI-07",
+      "los_id": "AI-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "For a payment-focused cryptocurrency with no cash flows, which factor is most likely to be a positive driver of its price over time?",
+      "stem_tr": "Nakit akışı olmayan, ödeme odaklı bir kripto para için zaman içinde fiyatını olumlu etkileyecek en olası etken hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A ban on its use by large merchants",
+          "tr": "Büyük işyerlerinin kullanımını yasaklaması"
+        },
+        {
+          "key": "B",
+          "en": "Wider adoption and more use of the network",
+          "tr": "Daha geniş benimsenme ve ağın daha çok kullanılması"
+        },
+        {
+          "key": "C",
+          "en": "A hack that drains large exchange wallets",
+          "tr": "Büyük borsa cüzdanlarını boşaltan bir saldırı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Without cash flows, value depends largely on adoption and network use.",
+      "explanation_tr": "Nakit akışı olmadığında değer büyük ölçüde benimsenmeye ve ağ kullanımına bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reduced acceptance would hurt demand and price.",
+          "tr": "Kabulün azalması talebi ve fiyatı olumsuz etkiler."
+        },
+        "C": {
+          "en": "Hacks hurt confidence and typically lower prices.",
+          "tr": "Saldırılar güveni sarsar ve genellikle fiyatı düşürür."
+        }
+      },
+      "vocab_ids": [
+        "cryptocurrency",
+        "valuation",
+        "price",
+        "hack",
+        "exposure",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
     }
   ]
 }
