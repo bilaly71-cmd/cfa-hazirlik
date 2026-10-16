@@ -1,0 +1,864 @@
+{
+  "module_id": "EQ-12",
+  "lesson": {
+    "id": "EQ-12-lesson",
+    "level": "L1",
+    "topic": "EQ",
+    "module_id": "EQ-12",
+    "los_ids": [
+      "EQ-12-a",
+      "EQ-12-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "The Capital Asset Pricing Model, Market Model, and Other Factor-Based Equity Models",
+    "title_tr": "Sermaye Varlıklarını Fiyatlama Modeli, Piyasa Modeli ve Diğer Faktör Tabanlı Modeller",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "What return should a share promise?",
+        "heading_tr": "Bir pay hangi getiriyi vaat etmelidir?",
+        "en": "Every DCF model needs a required return, the discount rate for equity. Investors do not want extra return for all risks; they are paid for risks they cannot remove by diversification. Imagine a fictional BIST bank, Anadolu Bankası, whose profits swing strongly with the economy, and a fictional food company, Ege Gıda, whose profits are steady. Investors ask a higher return from the bank, because it moves more with the market. The CAPM turns this idea into a number using the risk-free rate, the market risk premium and the stock's sensitivity to the market (beta).",
+        "tr": "Her İNA modeli bir getiri beklentisine, yani özkaynak için iskonto oranına ihtiyaç duyar. Yatırımcılar tüm riskler için ek getiri istemez; çeşitlendirmeyle ortadan kaldıramayacakları riskler için ödüllendirilirler. Kârı ekonomiyle güçlü dalgalanan kurgusal bir BIST bankası olan Anadolu Bankası ile kârı istikrarlı kurgusal bir gıda şirketi olan Ege Gıda'yı düşünün. Yatırımcılar bankadan daha yüksek getiri ister, çünkü banka piyasayla daha çok birlikte hareket eder. CAPM bu fikri, risksiz faiz, piyasa risk primi ve payın piyasaya duyarlılığı (beta) ile bir sayıya dönüştürür.",
+        "key_terms": [
+          "required return",
+          "cost of equity",
+          "beta"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "CAPM and the market model",
+        "heading_tr": "CAPM ve piyasa modeli",
+        "en": "CAPM: the expected return on a share is E(Ri) = Rf + βi × [E(Rm) − Rf], where Rf is the risk-free rate (for TL, a government bond yield, DİBS), E(Rm) − Rf is the equity risk premium and β is the share's sensitivity to the market. Beta = Cov(Ri, Rm) / Var(Rm) = ρ × σi / σm. Beta of 1 means the share moves with the market; above 1 it amplifies market moves. The result is the cost of equity used in DCF. The CAPM draws the security market line (SML); a share above the line is undervalued. The market model is a statistical regression: Ri = αi + βi Rm + ε. It describes observed returns; alpha is the average return not explained by the market. Use currency consistently: TL cash flows need a TL risk-free rate.",
+        "tr": "CAPM: bir payın beklenen getirisi E(Ri) = Rf + βi × [E(Rm) − Rf]'dir; burada Rf risksiz faiz (TL için devlet tahvili getirisi, DİBS), E(Rm) − Rf özkaynak risk primi ve β payın piyasaya duyarlılığıdır. Beta = Kov(Ri, Rm) / Var(Rm) = ρ × σi / σm. Beta 1 ise pay piyasayla birlikte hareket eder; 1'in üzerinde ise piyasa hareketlerini büyütür. Sonuç İNA'da kullanılan özkaynak maliyetidir. CAPM menkul kıymet piyasası doğrusunu (SML) çizer; doğrunun üzerindeki pay düşük değerlenmiştir. Piyasa modeli istatistiksel bir regresyondur: Ri = αi + βi Rm + ε. Gözlenen getirileri tanımlar; alfa piyasayla açıklanmayan ortalama getiridir. Para birimini tutarlı kullanın: TL nakit akışları TL cinsinden risksiz faiz ister.",
+        "key_terms": [
+          "CAPM",
+          "security market line",
+          "market model",
+          "alpha"
+        ],
+        "formula_latex": "E(R_i)=R_f+\\beta_i[E(R_m)-R_f],\\quad \\beta=\\frac{Cov(R_i,R_m)}{Var(R_m)},\\quad R_i=\\alpha+\\beta R_m+\\varepsilon"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Arbitrage pricing theory and multifactor models",
+        "heading_tr": "Arbitraj fiyatlama teorisi ve çok faktörlü modeller",
+        "en": "Arbitrage pricing theory (APT) says that expected return depends on exposures to several systematic factors, and that no arbitrage is possible: two assets with the same factor exposures must offer the same expected return. E(Ri) = Rf + βi1 λ1 + βi2 λ2 + ... where λ is the risk premium of each factor and β the sensitivity to it. APT needs fewer assumptions than CAPM but does not tell which factors to use. Typical factors: surprises in GDP growth, inflation, interest rates, or style factors such as size and value. Multifactor models matter because a single market factor misses sources of systematic risk, help explain returns and risk, and are used for performance attribution and portfolio construction (factor investing).",
+        "tr": "Arbitraj fiyatlama teorisi (APT), beklenen getirinin birden çok sistematik faktöre maruziyete bağlı olduğunu ve arbitrajın mümkün olmadığını söyler: aynı faktör maruziyetine sahip iki varlık aynı beklenen getiriyi sunmalıdır. E(Ri) = Rf + βi1 λ1 + βi2 λ2 + ...; burada λ her faktörün risk primi, β ona duyarlılıktır. APT, CAPM'den daha az varsayım ister ancak hangi faktörlerin kullanılacağını söylemez. Tipik faktörler: GSYH büyümesi, enflasyon, faiz sürprizleri veya büyüklük ve değer gibi tarz faktörleridir. Çok faktörlü modeller önemlidir; çünkü tek piyasa faktörü sistematik risk kaynaklarını kaçırır, getiri ve riski açıklamaya yardım eder ve performans atfı ile portföy oluşturmada (faktör yatırımcılığı) kullanılır.",
+        "key_terms": [
+          "arbitrage pricing theory",
+          "factor risk premium",
+          "multifactor model"
+        ],
+        "formula_latex": "E(R_i)=R_f+\\sum_{k}\\beta_{ik}\\lambda_k"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Numeric illustration.",
+        "tr": "Sayısal gösterim.",
+        "key_terms": [],
+        "example": {
+          "en": "Anadolu Bankası: Rf = 30%, expected market return = 38%, β = 0.8. CAPM: 30 + 0.8 × (38 − 30) = 36.4%. If the stock has σ = 30%, the market σ = 20% and correlation 0.8, β = 0.8 × 30 / 20 = 1.2. Under APT with Rf = 5%, factor premiums of 3% and 2% and sensitivities of 1.2 and 0.5: E(R) = 5 + 3.6 + 1.0 = 9.6%.",
+          "tr": "Anadolu Bankası: Rf = %30, beklenen piyasa getirisi = %38, β = 0,8. CAPM: 30 + 0,8 × (38 − 30) = %36,4. Payın σ = %30, piyasa σ = %20 ve korelasyon 0,8 ise β = 0,8 × 30 / 20 = 1,2. APT'de Rf = %5, faktör primleri %3 ve %2, duyarlılıklar 1,2 ve 0,5 ise: E(R) = 5 + 3,6 + 1,0 = %9,6."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık yapılan hatalar",
+        "en": "Do not multiply beta by the market return; multiply it by the market risk premium (Rm − Rf). Do not confuse total risk (standard deviation) with systematic risk (beta). Do not mix a TL cash flow with a USD risk-free rate. Do not read alpha in the market model as proof of skill without a significance test. Remember that APT does not name its factors. In the market model, beta uses historical data, so the result depends on the period and the index chosen.",
+        "tr": "Betayı piyasa getirisiyle değil, piyasa risk primiyle (Rm − Rf) çarpın. Toplam riski (standart sapma) sistematik riskle (beta) karıştırmayın. TL nakit akışını USD risksiz faizle karıştırmayın. Piyasa modelindeki alfayı anlamlılık testi olmadan beceri kanıtı saymayın. APT'nin faktörlerini adlandırmadığını unutmayın. Piyasa modelinde beta geçmiş veriyle hesaplanır; sonuç dönemi ve seçilen endekse bağlıdır.",
+        "key_terms": [
+          "beta × Rm",
+          "currency consistency"
+        ]
+      }
+    ],
+    "summary_en": "CAPM gives the cost of equity as Rf + β × market risk premium; beta measures systematic risk. The market model is a regression of share returns on market returns. APT uses several factors and the no-arbitrage condition. Multifactor models capture more sources of systematic risk and are used in explaining returns and investing.",
+    "summary_tr": "CAPM özkaynak maliyetini Rf + β × piyasa risk primi olarak verir; beta sistematik riski ölçer. Piyasa modeli pay getirilerinin piyasa getirilerine regresyonudur. APT birden çok faktör ve arbitraj yokluğu koşulunu kullanır. Çok faktörlü modeller daha çok sistematik risk kaynağını yakalar ve getirileri açıklamada ve yatırımda kullanılır.",
+    "common_traps_tr": [
+      "Betayı piyasa getirisiyle çarpmak.",
+      "Toplam riskle sistematik riski karıştırmak.",
+      "TL akışlarına döviz risksiz faiz uygulamak.",
+      "Alfayı otomatik olarak beceri saymak.",
+      "APT'nin faktörlerini bilindiğini sanmak."
+    ],
+    "vocab_ids": [
+      "capm",
+      "cost-of-equity",
+      "beta",
+      "risk-free-rate",
+      "equity-risk-premium",
+      "security-market-line",
+      "market-model",
+      "alpha",
+      "systematic-risk",
+      "arbitrage-pricing-theory",
+      "factor-risk-premium",
+      "multifactor-model",
+      "regression",
+      "sensitivity",
+      "diversification",
+      "correlation"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "SPK Düzey 3'te beta, risksiz getiri ve CAPM temel düzeyde işlenir; piyasa modeli ve arbitraj fiyatlama teorisi (APT) ile çok faktörlü modeller CFA'ya özgü ek ayrıntıdır."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "EQ-12-a-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The risk-free rate is 4%, the equity risk premium is 5% and a share's beta is 1.2. The cost of equity from the CAPM is closest to:",
+      "stem_tr": "Risksiz faiz %4, özkaynak risk primi %5 ve bir payın betası 1,2. CAPM'e göre özkaynak maliyeti en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "r = 4% + 1.2 × 5% = 10.0%.",
+      "explanation_tr": "r = %4 + 1,2 × %5 = %10,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "9.00% uses beta of 1.0 and adds nothing for the extra sensitivity (4 + 5).",
+          "tr": "%9,00 beta'yı 1,0 alır ve ek duyarlılık için bir şey eklemez (4 + 5)."
+        },
+        "C": {
+          "en": "6.00% omits the risk-free rate (1.2 × 5).",
+          "tr": "%6,00 risksiz faizi dışarıda bırakır (1,2 × 5)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Compute the cost of equity.",
+          "tr": "Özkaynak maliyetini hesaplayın."
+        },
+        {
+          "en": "CAPM: risk-free rate plus beta times the equity risk premium.",
+          "tr": "CAPM: risksiz faiz artı beta çarpı özkaynak risk primi.",
+          "formula_latex": "r=R_f+\\beta\\times ERP"
+        },
+        {
+          "en": "4% + 1.2 × 5% = 4% + 6% = 10%.",
+          "tr": "%4 + 1,2 × %5 = %4 + %6 = %10."
+        }
+      ],
+      "vocab_ids": [
+        "capm",
+        "cost-of-equity",
+        "beta",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "4+1.2*5",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.2",
+          "[×]",
+          "5",
+          "[+]",
+          "4",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-a-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Anadolu Bankası's beta is 0.8, the TL risk-free rate is 30% and the expected market return is 38%. The CAPM cost of equity is closest to:",
+      "stem_tr": "Anadolu Bankası'nın betası 0,8, TL risksiz faiz %30 ve beklenen piyasa getirisi %38. CAPM özkaynak maliyeti en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.40%",
+          "tr": "%30,40",
+          "value": 30.4
+        },
+        {
+          "key": "B",
+          "en": "38.00%",
+          "tr": "%38,00",
+          "value": 38.0
+        },
+        {
+          "key": "C",
+          "en": "36.40%",
+          "tr": "%36,40",
+          "value": 36.4
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "r = 30% + 0.8 × (38% − 30%) = 36.4%.",
+      "explanation_tr": "r = %30 + 0,8 × (%38 − %30) = %36,4.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "30.40% multiplies beta by the market return only (0.8 × 38) and ignores the risk-free rate.",
+          "tr": "%30,40 betayı yalnızca piyasa getirisiyle çarpar (0,8 × 38) ve risksiz faizi yok sayar."
+        },
+        "B": {
+          "en": "38.00% is the market return, ignoring beta.",
+          "tr": "%38,00 betayı yok sayan piyasa getirisidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the market risk premium, then apply beta.",
+          "tr": "Piyasa risk primini bulun, sonra betayı uygulayın."
+        },
+        {
+          "en": "Premium = 38% − 30% = 8%.",
+          "tr": "Prim = %38 − %30 = %8.",
+          "formula_latex": "ERP=E(R_m)-R_f"
+        },
+        {
+          "en": "r = 30% + 0.8 × 8% = 36.4%.",
+          "tr": "r = %30 + 0,8 × %8 = %36,4."
+        }
+      ],
+      "vocab_ids": [
+        "risk-free-rate",
+        "premium",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "30+0.8*(38-30)",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "38",
+          "[−]",
+          "30",
+          "[=]",
+          "[×]",
+          "0.8",
+          "[+]",
+          "30",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-a-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share has a standard deviation of 30%, the market's standard deviation is 20% and the correlation between them is 0.8. The share's beta is closest to:",
+      "stem_tr": "Bir payın standart sapması %30, piyasanın standart sapması %20 ve ikisi arasındaki korelasyon 0,8'dir. Payın betası en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.53",
+          "tr": "0,53",
+          "value": 0.53
+        },
+        {
+          "key": "B",
+          "en": "1.20",
+          "tr": "1,20",
+          "value": 1.2
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Beta = ρ × σi / σm = 0.8 × 30 / 20 = 1.20.",
+      "explanation_tr": "Beta = ρ × σi / σm = 0,8 × 30 / 20 = 1,20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "0.53 divides by the share's own standard deviation: 0.8 × 20 / 30.",
+          "tr": "0,53 payın kendi standart sapmasına böler: 0,8 × 20 / 30."
+        },
+        "C": {
+          "en": "1.50 ignores the correlation (30 / 20).",
+          "tr": "1,50 korelasyonu yok sayar (30 / 20)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Compute beta from correlation and volatilities.",
+          "tr": "Betayı korelasyon ve oynaklıklardan hesaplayın."
+        },
+        {
+          "en": "Beta = correlation × share volatility / market volatility.",
+          "tr": "Beta = korelasyon × pay oynaklığı / piyasa oynaklığı.",
+          "formula_latex": "\\beta=\\rho\\frac{\\sigma_i}{\\sigma_m}"
+        },
+        {
+          "en": "0.8 × 30 / 20 = 1.20.",
+          "tr": "0,8 × 30 / 20 = 1,20."
+        }
+      ],
+      "vocab_ids": [
+        "beta",
+        "correlation",
+        "standard-deviation",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "0.8*30/20"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.8",
+          "[×]",
+          "30",
+          "[÷]",
+          "20",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-a-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In the market model Ri = α + β Rm, a share has α = 0.5% and β = 1.2. If the market return in a month is −4%, the share's predicted return is closest to:",
+      "stem_tr": "Piyasa modeli Ri = α + β Rm'de bir payın α = %0,5 ve β = 1,2'dir. Bir ayda piyasa getirisi −%4 ise payın tahmin edilen getirisi en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-5.30%",
+          "tr": "%-5,30",
+          "value": -5.3
+        },
+        {
+          "key": "B",
+          "en": "-4.30%",
+          "tr": "%-4,30",
+          "value": -4.3
+        },
+        {
+          "key": "C",
+          "en": "-4.00%",
+          "tr": "%-4,00",
+          "value": -4.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Ri = 0.5% + 1.2 × (−4%) = −4.3%.",
+      "explanation_tr": "Ri = %0,5 + 1,2 × (−%4) = −%4,3.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "−5.30% subtracts alpha instead of adding it.",
+          "tr": "−%5,30 alfayı eklemek yerine çıkarır."
+        },
+        "C": {
+          "en": "−4.00% ignores both beta and alpha.",
+          "tr": "−%4,00 hem betayı hem alfayı yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Use the market model with the given market return.",
+          "tr": "Verilen piyasa getirisiyle piyasa modelini kullanın."
+        },
+        {
+          "en": "Add alpha to beta times the market return.",
+          "tr": "Alfaya beta çarpı piyasa getirisini ekleyin.",
+          "formula_latex": "R_i=\\alpha+\\beta R_m"
+        },
+        {
+          "en": "0.5 + 1.2 × (−4) = −4.3%.",
+          "tr": "0,5 + 1,2 × (−4) = −%4,3."
+        }
+      ],
+      "vocab_ids": [
+        "market-model",
+        "alpha",
+        "beta",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "0.5+1.2*(-4)",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.2",
+          "[×]",
+          "4",
+          "[+/−]",
+          "[+]",
+          "0.5",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-a-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share's expected return of 13% is above the return required by the CAPM (11%). On the security market line, this share most likely plots:",
+      "stem_tr": "Bir payın beklenen getirisi %13, CAPM'in gerektirdiği getirinin (%11) üzerindedir. Menkul kıymet piyasası doğrusunda bu pay büyük olasılıkla nerede yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "above the line, suggesting the share is undervalued.",
+          "tr": "doğrunun üzerinde; payın düşük değerlenmiş olduğunu düşündürür."
+        },
+        {
+          "key": "B",
+          "en": "below the line, suggesting the share is overvalued.",
+          "tr": "doğrunun altında; payın yüksek değerlenmiş olduğunu düşündürür."
+        },
+        {
+          "key": "C",
+          "en": "exactly on the line, suggesting the share is fairly priced.",
+          "tr": "tam doğru üzerinde; payın adil fiyatlandığını düşündürür."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Expected return above the required return for its beta means the share offers more than its risk warrants: it is above the SML and undervalued.",
+      "explanation_tr": "Betasına göre gereken getirinin üzerinde beklenen getiri, payın riskinin gerektirdiğinden fazlasını sunduğu anlamına gelir: SML'nin üzerindedir ve düşük değerlenmiştir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Shares below the SML offer less than required return.",
+          "tr": "SML'nin altındaki paylar gereken getiriden azını sunar."
+        },
+        "C": {
+          "en": "On the line, expected and required returns are equal.",
+          "tr": "Doğru üzerinde beklenen ve gereken getiri eşittir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "security-market-line",
+        "undervalued",
+        "expected-return",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-12-b-q01",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Arbitrage pricing theory is best described as a model in which:",
+      "stem_tr": "Arbitraj fiyatlama teorisi en iyi hangi model olarak tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "expected return depends only on the market beta.",
+          "tr": "beklenen getirinin yalnızca piyasa betasına bağlı olduğu."
+        },
+        {
+          "key": "B",
+          "en": "expected return equals the risk-free rate.",
+          "tr": "beklenen getirinin risksiz faize eşit olduğu."
+        },
+        {
+          "key": "C",
+          "en": "expected return depends on exposures to several systematic factors and no arbitrage is possible.",
+          "tr": "beklenen getirinin birden çok sistematik faktöre maruziyete bağlı olduğu ve arbitrajın mümkün olmadığı."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "APT extends the idea of systematic risk to multiple factors and relies on no-arbitrage.",
+      "explanation_tr": "APT sistematik risk fikrini birden çok faktöre genişletir ve arbitraj yokluğuna dayanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes the single-factor CAPM.",
+          "tr": "Bu tek faktörlü CAPM'i tanımlar."
+        },
+        "B": {
+          "en": "Risky assets require returns above the risk-free rate.",
+          "tr": "Riskli varlıklar risksiz faizin üzerinde getiri gerektirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage-pricing-theory",
+        "factor",
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "best-describes"
+      ]
+    },
+    {
+      "id": "EQ-12-b-q02",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Risk-free rate is 5%. A share has a sensitivity of 1.2 to a factor with a 3% risk premium and 0.5 to a second factor with a 2% premium. The APT expected return is closest to:",
+      "stem_tr": "Risksiz faiz %5. Bir payın %3 risk primi olan faktöre duyarlılığı 1,2, %2 primi olan ikinci faktöre duyarlılığı 0,5'tir. APT beklenen getirisi en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.60%",
+          "tr": "%8,60",
+          "value": 8.6
+        },
+        {
+          "key": "B",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "9.60%",
+          "tr": "%9,60",
+          "value": 9.6
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "E(R) = 5% + 1.2 × 3% + 0.5 × 2% = 5 + 3.6 + 1.0 = 9.6%.",
+      "explanation_tr": "E(R) = %5 + 1,2 × %3 + 0,5 × %2 = 5 + 3,6 + 1,0 = %9,6.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "8.60% leaves out the second factor (5 + 3.6).",
+          "tr": "%8,60 ikinci faktörü dışarıda bırakır (5 + 3,6)."
+        },
+        "B": {
+          "en": "10.00% adds the factor premiums without multiplying by the sensitivities (5 + 3 + 2).",
+          "tr": "%10,00 faktör primlerini duyarlılıklarla çarpmadan ekler (5 + 3 + 2)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Add the risk-free rate and each factor's contribution.",
+          "tr": "Risksiz faizi ve her faktörün katkısını toplayın."
+        },
+        {
+          "en": "Contribution = sensitivity × factor premium.",
+          "tr": "Katkı = duyarlılık × faktör primi.",
+          "formula_latex": "E(R)=R_f+\\sum\\beta_k\\lambda_k"
+        },
+        {
+          "en": "1.2 × 3 = 3.6; 0.5 × 2 = 1.0.",
+          "tr": "1,2 × 3 = 3,6; 0,5 × 2 = 1,0."
+        },
+        {
+          "en": "5 + 3.6 + 1.0 = 9.6%.",
+          "tr": "5 + 3,6 + 1,0 = %9,6."
+        }
+      ],
+      "vocab_ids": [
+        "factor-risk-premium",
+        "sensitivity",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "5+1.2*3+0.5*2",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.2",
+          "[×]",
+          "3",
+          "[+]",
+          "0.5",
+          "[×]",
+          "2",
+          "[+]",
+          "5",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-b-q03",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is the most likely reason multifactor models matter in equity investing?",
+      "stem_tr": "Aşağıdakilerden hangisi çok faktörlü modellerin pay yatırımında önemli olmasının en olası nedenidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They remove all risk from a portfolio.",
+          "tr": "Portföyden tüm riski ortadan kaldırırlar."
+        },
+        {
+          "key": "B",
+          "en": "They capture several sources of systematic risk that a single market factor misses.",
+          "tr": "Tek piyasa faktörünün kaçırdığı birkaç sistematik risk kaynağını yakalarlar."
+        },
+        {
+          "key": "C",
+          "en": "They guarantee positive alpha.",
+          "tr": "Pozitif alfayı garanti ederler."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Factors such as size, value or interest rate exposure explain return differences beyond market beta, helping attribution and portfolio construction.",
+      "explanation_tr": "Büyüklük, değer veya faiz maruziyeti gibi faktörler piyasa betasının ötesinde getiri farklarını açıklar; atıf ve portföy oluşturmaya yardım eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No model removes systematic risk.",
+          "tr": "Hiçbir model sistematik riski ortadan kaldırmaz."
+        },
+        "C": {
+          "en": "No model guarantees alpha.",
+          "tr": "Hiçbir model alfayı garanti etmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "multifactor-model",
+        "systematic-risk",
+        "attribution",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "most-likely"
+      ]
+    },
+    {
+      "id": "EQ-12-b-q04",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A share's expected return is 9% and it has a sensitivity of 1.5 to GDP growth. GDP growth comes in 1 percentage point above expectations and no other factor surprises. The share's return is most likely closest to:",
+      "stem_tr": "Bir payın beklenen getirisi %9 ve GSYH büyümesine duyarlılığı 1,5'tir. GSYH büyümesi beklentinin 1 yüzde puan üzerinde gerçekleşiyor ve başka faktör sürprizi yok. Payın getirisi büyük olasılıkla en çok hangisine yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.50%",
+          "tr": "%10,50",
+          "value": 10.5
+        },
+        {
+          "key": "B",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Return = expected + sensitivity × surprise = 9% + 1.5 × 1% = 10.5%.",
+      "explanation_tr": "Getiri = beklenen + duyarlılık × sürpriz = %9 + 1,5 × %1 = %10,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "9.00% ignores the GDP surprise.",
+          "tr": "%9,00 GSYH sürprizini yok sayar."
+        },
+        "C": {
+          "en": "10.00% assumes a sensitivity of 1.0.",
+          "tr": "%10,00 duyarlılığı 1,0 varsayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Add the factor surprise effect to the expected return.",
+          "tr": "Faktör sürprizinin etkisini beklenen getiriye ekleyin."
+        },
+        {
+          "en": "Effect = sensitivity × surprise.",
+          "tr": "Etki = duyarlılık × sürpriz.",
+          "formula_latex": "R=E(R)+\\beta\\times surprise"
+        },
+        {
+          "en": "9 + 1.5 × 1 = 10.5%.",
+          "tr": "9 + 1,5 × 1 = %10,5."
+        }
+      ],
+      "vocab_ids": [
+        "surprise",
+        "sensitivity",
+        "expected-return",
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "numeric": {
+        "expr": "9+1.5*1",
+        "unit": "%"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.5",
+          "[×]",
+          "1",
+          "[+]",
+          "9",
+          "[=]"
+        ]
+      }
+    },
+    {
+      "id": "EQ-12-b-q05",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-12",
+      "los_id": "EQ-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is the LEAST likely statement about arbitrage pricing theory compared with the CAPM?",
+      "stem_tr": "Arbitraj fiyatlama teorisinin CAPM ile kıyaslandığında en az olası ifadesi aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "APT specifies exactly which factors must be used.",
+          "tr": "APT hangi faktörlerin kullanılması gerektiğini tam olarak belirler."
+        },
+        {
+          "key": "B",
+          "en": "APT allows more than one source of systematic risk.",
+          "tr": "APT birden fazla sistematik risk kaynağına izin verir."
+        },
+        {
+          "key": "C",
+          "en": "APT relies on the no-arbitrage argument.",
+          "tr": "APT arbitraj yokluğu argümanına dayanır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "APT does not identify the factors; the analyst must choose them. That is one of its practical limits.",
+      "explanation_tr": "APT faktörleri belirtmez; analist onları seçmelidir. Bu pratik sınırlarından biridir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Multiple factors are a defining feature of APT.",
+          "tr": "Birden çok faktör APT'nin tanımlayıcı özelliğidir."
+        },
+        "C": {
+          "en": "No-arbitrage is the core of the theory.",
+          "tr": "Arbitraj yokluğu teorinin özüdür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage-pricing-theory",
+        "factor",
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false,
+      "pattern_ids": [
+        "least-likely"
+      ]
+    }
+  ]
+}

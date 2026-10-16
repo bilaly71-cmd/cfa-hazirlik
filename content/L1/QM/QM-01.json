@@ -1,0 +1,902 @@
+{
+  "module_id": "QM-01",
+  "lesson": {
+    "id": "QM-01-lesson",
+    "level": "L1",
+    "topic": "QM",
+    "module_id": "QM-01",
+    "los_ids": [
+      "QM-01-a",
+      "QM-01-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Returns of Financial Assets and Instruments",
+    "title_tr": "Finansal Varlık ve Araçların Getirileri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why return has many faces",
+        "heading_tr": "Getirinin birçok yüzü var",
+        "en": "A saver in Turkey sees a deposit rate of 45% and feels rich. Then she sees that consumer prices rose 50%, and her purchasing power fell. The same money can be described by different returns: a price gain, a total gain with income, a gain after inflation, after fees or after tax. An investor who borrows to invest adds one more version: the leveraged return. A good analyst always asks which return is being quoted and whether it matches the question being asked.",
+        "tr": "Türkiye'de bir tasarruf sahibi %45'lik mevduat faizini görünce kendini zengin hisseder. Sonra tüketici fiyatlarının %50 arttığını görür ve alım gücünün düştüğünü fark eder. Aynı para farklı getirilerle anlatılabilir: fiyat kazancı, gelirle birlikte toplam kazanç, enflasyondan arındırılmış, ücretler veya vergi sonrası kazanç. Borçlanarak yatırım yapan kişi bir sürüm daha ekler: kaldıraçlı getiri. İyi bir analist her zaman hangi getirinin verildiğini ve bunun sorulan soruya uyup uymadığını sorar.",
+        "key_terms": [
+          "return",
+          "purchasing power",
+          "leveraged return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Basic ways to measure return",
+        "heading_tr": "Getirinin temel ölçüm yolları",
+        "en": "Return can be a money amount or a percentage. The holding period return (HPR) is the total gain over the period divided by the starting value; the gain has two parts: the price change and the income (dividends or coupons). Price return uses only the price change. A nominal return is stated in current money. A real return removes the effect of inflation. A gross return is before fees, taxes and costs; a net return is after fees and costs; an after-tax return also removes taxes. A leveraged return is the return on the investor's own money when part of the position is borrowed.",
+        "tr": "Getiri bir para tutarı ya da yüzde olabilir. Elde tutma dönemi getirisi (HPR), dönem boyunca toplam kazancın başlangıç değerine bölünmesidir; kazancın iki parçası vardır: fiyat değişimi ve gelir (temettü veya kupon). Fiyat getirisi yalnızca fiyat değişimini kullanır. Nominal getiri cari parayla ifade edilir. Reel getiri enflasyonun etkisini çıkarır. Brüt getiri ücret, vergi ve maliyetlerden önceki, net getiri ücret ve maliyetlerden sonraki getiridir; vergi sonrası getiri ayrıca vergiyi de düşer. Kaldıraçlı getiri, pozisyonun bir kısmı borçla finanse edildiğinde yatırımcının kendi parası üzerindeki getiridir.",
+        "key_terms": [
+          "holding period return",
+          "nominal return",
+          "real return",
+          "gross return",
+          "net return",
+          "after-tax return"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Key formulas",
+        "heading_tr": "Temel formüller",
+        "en": "HPR adds the price change and the income, then divides by the beginning price. The real return is found by dividing the growth factors; subtracting inflation from the nominal return is only a rough approximation. For a leveraged position, subtract the borrowing cost from the gain on the whole position and divide by the investor's own equity.",
+        "tr": "HPR fiyat değişimini ve geliri toplar, sonra başlangıç fiyatına böler. Reel getiri büyüme çarpanlarının bölünmesiyle bulunur; nominal getiriden enflasyonu çıkarmak yalnızca kaba bir yaklaşımdır. Kaldıraçlı pozisyonda tüm pozisyondaki kazançtan borçlanma maliyeti çıkarılır ve yatırımcının kendi özkaynağına bölünür.",
+        "key_terms": [
+          "HPR"
+        ],
+        "formula_latex": "HPR=\\frac{P_1-P_0+CF}{P_0},\\quad r_{real}=\\frac{1+r_{nom}}{1+\\pi}-1,\\quad r_{lev}=\\frac{V\\,r_{asset}-B\\,r_{debt}}{E}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Ada Holding shares cost TL 50. Over one year the price rises to TL 54 and the firm pays a TL 3 dividend. HPR = (54 - 50 + 3) / 50 = 14%. If inflation was 10%, the real return is 1.14 / 1.10 - 1 = 3.64%, not 4%. If the investor had put in TL 20,000 of own money and borrowed TL 30,000 at 40% for a TL 50,000 position earning 14%: gain = 7,000, interest = 12,000, leveraged return = (7,000 - 12,000) / 20,000 = -25%.",
+        "tr": "Ada Holding payı 50 TL'ye alınmıştır. Bir yıl içinde fiyat 54 TL'ye çıkar ve şirket 3 TL temettü öder. HPR = (54 - 50 + 3) / 50 = %14. Enflasyon %10 ise reel getiri 1,14 / 1,10 - 1 = %3,64'tür, %4 değil. Yatırımcı kendi parasından 20.000 TL koyup %14 getiri sağlayan 50.000 TL'lik pozisyon için %40 faizle 30.000 TL borçlandıysa: kazanç = 7.000, faiz = 12.000, kaldıraçlı getiri = (7.000 - 12.000) / 20.000 = %-25.",
+        "key_terms": [
+          "HPR"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Required return and its building blocks",
+        "heading_tr": "Gerekli getiri ve yapı taşları",
+        "en": "A required return is the minimum return an investor demands to hold an asset. It is built in layers. First comes the real risk-free rate, the pure reward for waiting. Add expected inflation to get the nominal risk-free rate. Then add risk premia for the risks of the asset: a default (credit) risk premium, a liquidity premium for assets that are hard to sell quickly, a maturity premium for the price risk of long-term instruments, and for shares an equity risk premium. In rough form: required return = real risk-free rate + expected inflation + risk premia. When expected inflation rises and the other parts stay the same, nominal required returns rise by about the same amount.",
+        "tr": "Gerekli getiri, yatırımcının bir varlığı elinde tutmak için talep ettiği asgari getiridir ve katman katman oluşur. Önce reel risksiz faiz oranı gelir; bu, beklemenin saf karşılığıdır. Beklenen enflasyon eklenince nominal risksiz faiz oranı elde edilir. Sonra varlığın risklerine karşı primler eklenir: temerrüt (kredi) riski primi, kolay satılamayan varlıklar için likidite primi, uzun vadeli araçların fiyat riski için vade primi ve paylar için özkaynak risk primi. Kaba biçimde: gerekli getiri = reel risksiz faiz + beklenen enflasyon + risk primleri. Beklenen enflasyon artar ve diğer bileşenler aynı kalırsa nominal gerekli getiriler yaklaşık aynı miktarda yükselir.",
+        "key_terms": [
+          "required return",
+          "real risk-free rate",
+          "risk premium",
+          "liquidity premium",
+          "maturity premium",
+          "equity risk premium"
+        ],
+        "formula_latex": "r_{req}\\approx r_{rf}^{real}+E(\\pi)+\\text{DRP}+\\text{LP}+\\text{MP}+\\text{ERP}"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Do not treat price return as total return when income is paid. Do not subtract inflation to get the real return unless the question says approximate. Remember that leverage multiplies both gains and losses, and the interest cost is paid on the borrowed amount only. In required-return questions, map each premium to its risk: liquidity to ease of sale, maturity to long-term rate risk, credit to default risk.",
+        "tr": "Gelir ödendiğinde fiyat getirisini toplam getiri sanma. Soru yaklaşık demedikçe reel getiriyi enflasyonu çıkararak bulma. Kaldıraç hem kazancı hem kaybı büyütür; faiz maliyeti yalnızca borçlanılan tutar üzerinden ödenir. Gerekli getiri sorularında her primi riskiyle eşleştir: likidite satış kolaylığıyla, vade uzun vadeli faiz riskiyle, kredi temerrüt riskiyle.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A holding period return adds price change and income and divides by the beginning price. Real, net, after-tax and leveraged returns answer different questions, so always match the measure to the question. A required return stacks the real risk-free rate, expected inflation and premia for credit, liquidity, maturity and equity risk.",
+    "summary_tr": "Elde tutma dönemi getirisi fiyat değişimi ile geliri toplayıp başlangıç fiyatına böler. Reel, net, vergi sonrası ve kaldıraçlı getiri farklı soruları yanıtlar; ölçüyü soruya göre seç. Gerekli getiri reel risksiz faizi, beklenen enflasyonu ve kredi, likidite, vade ve özkaynak riski primlerini üst üste koyar.",
+    "common_traps_tr": [
+      "Gelir ödenen varlıkta yalnızca fiyat getirisini toplam getiri saymak.",
+      "Reel getiriyi, soru yaklaşım istemediği halde nominal getiriden enflasyonu çıkararak bulmak.",
+      "Kaldıraçlı getiriyi toplam pozisyona bölerek hesaplamak; payda yatırımcının kendi özkaynağıdır.",
+      "Nominal risksiz faiz zaten enflasyonu içerirken risk primini hesaplarken enflasyonu bir kez daha çıkarmak.",
+      "Likidite, vade ve kredi primlerini birbirine karıştırmak."
+    ],
+    "vocab_ids": [
+      "holding-period-return",
+      "real-return",
+      "nominal-return",
+      "gross-return",
+      "net-return",
+      "after-tax-return",
+      "leveraged-return",
+      "required-return",
+      "real-risk-free-rate",
+      "risk-premium",
+      "liquidity-premium",
+      "maturity-premium",
+      "equity-risk-premium",
+      "inflation"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Reel getiri ve risk primi SPK Düzey 3'ten tanıdık; kaldıraçlı getiri ve gerekli getirinin bileşenlere ayrılması kısmen yeni."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "QM-01-a-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Over a year, a shareholder receives a cash dividend and the share price also rises. Which measure captures both the dividend and the price change?",
+      "stem_tr": "Bir yıl boyunca bir pay sahibi nakit temettü alıyor ve pay fiyatı da yükseliyor. Hangi ölçü hem temettüyü hem fiyat değişimini yakalar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Holding period return",
+          "tr": "Elde tutma dönemi getirisi"
+        },
+        {
+          "key": "B",
+          "en": "Price return",
+          "tr": "Fiyat getirisi"
+        },
+        {
+          "key": "C",
+          "en": "Dividend yield",
+          "tr": "Temettü verimi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The holding period return is the price change plus income, divided by the beginning value, so it includes both parts.",
+      "explanation_tr": "Elde tutma dönemi getirisi fiyat değişimi artı geliri başlangıç değerine böler; yani iki parçayı da içerir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses only the price change and leaves out the dividend.",
+          "tr": "Yalnızca fiyat değişimini kullanır, temettüyü dışarıda bırakır."
+        },
+        "C": {
+          "en": "Uses only the income part and ignores the price change.",
+          "tr": "Yalnızca gelir kısmını kullanır, fiyat değişimini yok sayar."
+        }
+      },
+      "vocab_ids": [
+        "holding-period-return",
+        "dividend",
+        "income",
+        "price-return",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-a-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor buys a share for TL 40, receives a TL 2 dividend and sells it for TL 43 after one year. The holding period return is closest to:",
+      "stem_tr": "Bir yatırımcı bir payı 40 TL'ye alıyor, 2 TL temettü alıyor ve bir yıl sonra 43 TL'ye satıyor. Elde tutma dönemi getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.50%",
+          "tr": "%7,50",
+          "value": 7.5
+        },
+        {
+          "key": "B",
+          "en": "12.50%",
+          "tr": "%12,50",
+          "value": 12.5
+        },
+        {
+          "key": "C",
+          "en": "11.63%",
+          "tr": "%11,63",
+          "value": 11.63
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "HPR = (43 - 40 + 2) / 40 = 5 / 40 = 12.5%. The base is always the beginning price.",
+      "explanation_tr": "HPR = (43 - 40 + 2) / 40 = 5 / 40 = %12,5. Baz her zaman başlangıç fiyatıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Price return only: (43 - 40) / 40; the dividend is left out.",
+          "tr": "Yalnızca fiyat getirisi: (43 - 40) / 40; temettü dışarıda kalmış."
+        },
+        "C": {
+          "en": "Divides the total gain by the ending price (43) instead of the beginning price.",
+          "tr": "Toplam kazancı başlangıç fiyatı yerine bitiş fiyatına (43) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the total return for one year, including income.",
+          "tr": "Gelir dahil bir yıllık toplam getiri isteniyor."
+        },
+        {
+          "en": "Use HPR: price change plus dividend, divided by the beginning price.",
+          "tr": "HPR kullan: fiyat değişimi artı temettü, başlangıç fiyatına bölünür.",
+          "formula_latex": "HPR=\\frac{P_1-P_0+D}{P_0}"
+        },
+        {
+          "en": "Substitute the values.",
+          "tr": "Değerleri yerine koy.",
+          "values": {
+            "P0": 40,
+            "P1": 43,
+            "D": 2
+          }
+        },
+        {
+          "en": "Total gain = 3 + 2 = 5.",
+          "tr": "Toplam kazanç = 3 + 2 = 5."
+        },
+        {
+          "en": "HPR = 5 / 40 = 12.5%.",
+          "tr": "HPR = 5 / 40 = %12,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "43 [-] 40 [+] 2 [=]",
+          "[÷] 40 [=]  (0.125 → 12.5%)"
+        ]
+      },
+      "numeric": {
+        "expr": "(43-40+2)/40*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "holding-period-return",
+        "dividend",
+        "closest",
+        "receive"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-a-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A one-year TL deposit pays 45% while consumer prices rise 50%. The real return, using the exact relationship, is closest to:",
+      "stem_tr": "Bir yıllık TL mevduat %45 getiri sağlarken tüketici fiyatları %50 artıyor. Tam ilişki kullanılarak hesaplanan reel getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-5.00%",
+          "tr": "%-5,00",
+          "value": -5.0
+        },
+        {
+          "key": "B",
+          "en": "3.45%",
+          "tr": "%3,45",
+          "value": 3.45
+        },
+        {
+          "key": "C",
+          "en": "-3.33%",
+          "tr": "%-3,33",
+          "value": -3.33
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Real return = 1.45 / 1.50 - 1 = -3.33%. The saver lost purchasing power.",
+      "explanation_tr": "Reel getiri = 1,45 / 1,50 - 1 = %-3,33. Tasarruf sahibi alım gücü kaybetmiştir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Simply subtracts inflation from the nominal return, a rough approximation.",
+          "tr": "Enflasyonu nominal getiriden çıkarmış; bu kaba bir yaklaşımdır."
+        },
+        "B": {
+          "en": "Inverts the ratio (1.50 / 1.45) and gets the wrong sign: purchasing power fell.",
+          "tr": "Oranı ters çevirmiş (1,50 / 1,45) ve işareti yanlış bulmuş: alım gücü düşmüştür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the real return after inflation.",
+          "tr": "Enflasyon sonrası reel getiri isteniyor."
+        },
+        {
+          "en": "Divide the nominal growth factor by the inflation growth factor.",
+          "tr": "Nominal büyüme çarpanını enflasyon çarpanına böl.",
+          "formula_latex": "r_{real}=\\frac{1+r_{nom}}{1+\\pi}-1"
+        },
+        {
+          "en": "Substitute 1.45 and 1.50.",
+          "tr": "1,45 ve 1,50 yerine konur.",
+          "values": {
+            "nom": 0.45,
+            "pi": 0.5
+          }
+        },
+        {
+          "en": "1.45 / 1.50 = 0.9667.",
+          "tr": "1,45 / 1,50 = 0,9667."
+        },
+        {
+          "en": "Real return = -3.33%.",
+          "tr": "Reel getiri = %-3,33."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.45 [÷] 1.50 [-] 1 [=]  (-0.0333)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.45/1.50-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "real-return",
+        "inflation",
+        "purchasing-power",
+        "deposit",
+        "closest",
+        "exact"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "spk_link": {
+        "status": "known",
+        "note_tr": "Reel getiri ve enflasyonun etkisi SPK Düzey 3'te tanıdık bir kavramdır."
+      },
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-a-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A fund reports a gross return of 9.0% and a net return of 7.6% for the year. Which statement about the 1.4 percentage-point difference is most accurate?",
+      "stem_tr": "Bir fon yıl için %9,0 brüt ve %7,6 net getiri açıklıyor. %1,4 puanlık fark hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It mostly reflects management fees and other expenses charged to investors.",
+          "tr": "Çoğunlukla yatırımcılardan alınan yönetim ücretleri ve diğer giderleri yansıtır."
+        },
+        {
+          "key": "B",
+          "en": "It is the inflation rate for the year.",
+          "tr": "Yıllık enflasyon oranıdır."
+        },
+        {
+          "key": "C",
+          "en": "It is the compensation for bearing equity risk.",
+          "tr": "Özkaynak riskini üstlenmenin karşılığıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Gross return is before fees and expenses; net return is after them. The gap shows the cost of fees.",
+      "explanation_tr": "Brüt getiri ücret ve giderlerden önce, net getiri sonrasıdır. Aradaki fark ücretlerin maliyetini gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Inflation adjustment gives a real return, not a net return.",
+          "tr": "Enflasyon düzeltmesi net değil reel getiri verir."
+        },
+        "C": {
+          "en": "A risk premium is part of the expected return, not a deduction between gross and net.",
+          "tr": "Risk primi beklenen getirinin parçasıdır; brüt ile net arasındaki bir kesinti değildir."
+        }
+      },
+      "vocab_ids": [
+        "gross-return",
+        "net-return",
+        "fee",
+        "expense",
+        "accurate",
+        "charge"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-a-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "An investor puts TL 40,000 of own money and borrows TL 60,000 at 30% to buy TL 100,000 of shares. The shares return 35% over the year. The investor's leveraged return on own equity is closest to:",
+      "stem_tr": "Bir yatırımcı kendi parasından 40.000 TL koyuyor, %30 faizle 60.000 TL borçlanıyor ve 100.000 TL'lik pay alıyor. Paylar yıl içinde %35 getiri sağlıyor. Yatırımcının kendi özkaynağı üzerindeki kaldıraçlı getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "35.00%",
+          "tr": "%35,00",
+          "value": 35.0
+        },
+        {
+          "key": "B",
+          "en": "42.50%",
+          "tr": "%42,50",
+          "value": 42.5
+        },
+        {
+          "key": "C",
+          "en": "17.00%",
+          "tr": "%17,00",
+          "value": 17.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Gain = 35,000; interest = 18,000; net = 17,000; return on equity = 17,000 / 40,000 = 42.5%.",
+      "explanation_tr": "Kazanç = 35.000; faiz = 18.000; net = 17.000; özkaynak getirisi = 17.000 / 40.000 = %42,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores leverage: it is the return on the whole position, not on own equity.",
+          "tr": "Kaldıracı yok saymış: bu, kendi özkaynağı değil tüm pozisyonun getirisidir."
+        },
+        "C": {
+          "en": "Divides the net gain by the total position (100,000) instead of own equity (40,000).",
+          "tr": "Net kazancı özkaynak (40.000) yerine toplam pozisyona (100.000) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return on the investor's own money.",
+          "tr": "Yatırımcının kendi parası üzerindeki getiri isteniyor."
+        },
+        {
+          "en": "Subtract borrowing cost from the gain on the total position and divide by own equity.",
+          "tr": "Toplam pozisyondaki kazançtan borçlanma maliyetini çıkar ve özkaynağa böl.",
+          "formula_latex": "r_{lev}=\\frac{V r_{asset}-B r_{debt}}{E}"
+        },
+        {
+          "en": "Gain on position = 100,000 × 35% = 35,000; interest = 60,000 × 30% = 18,000.",
+          "tr": "Pozisyon kazancı = 100.000 × %35 = 35.000; faiz = 60.000 × %30 = 18.000.",
+          "values": {
+            "V": 100000,
+            "B": 60000,
+            "E": 40000
+          }
+        },
+        {
+          "en": "Net gain = 17,000.",
+          "tr": "Net kazanç = 17.000."
+        },
+        {
+          "en": "17,000 / 40,000 = 42.5%.",
+          "tr": "17.000 / 40.000 = %42,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100000 [×] 0.35 [-] 60000 [×] 0.30 [=]",
+          "[÷] 40000 [=]  (0.425)"
+        ]
+      },
+      "numeric": {
+        "expr": "(100000*0.35-60000*0.30)/40000*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "leveraged-return",
+        "borrow",
+        "equity",
+        "closest",
+        "position"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-b-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which expression best describes the building blocks of a required return?",
+      "stem_tr": "Gerekli getirinin yapı taşlarını en iyi hangi ifade anlatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Nominal risk-free rate + realized inflation - risk premia",
+          "tr": "Nominal risksiz faiz + gerçekleşen enflasyon - risk primleri"
+        },
+        {
+          "key": "B",
+          "en": "Real risk-free rate + realized return + liquidity premium",
+          "tr": "Reel risksiz faiz + gerçekleşen getiri + likidite primi"
+        },
+        {
+          "key": "C",
+          "en": "Real risk-free rate + expected inflation + risk premia",
+          "tr": "Reel risksiz faiz + beklenen enflasyon + risk primleri"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The required return starts with the real risk-free rate, adds expected inflation (giving the nominal risk-free rate) and then adds the premia for the asset's risks.",
+      "explanation_tr": "Gerekli getiri reel risksiz faizle başlar, beklenen enflasyonu ekler (nominal risksiz faiz) ve varlığın risklerine ait primleri ekler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Risk premia are added, not subtracted, and expected (not realized) inflation matters.",
+          "tr": "Risk primleri çıkarılmaz eklenir ve gerçekleşen değil beklenen enflasyon önemlidir."
+        },
+        "B": {
+          "en": "Realized return is an outcome, not an input of a required return.",
+          "tr": "Gerçekleşen getiri bir sonuçtur, gerekli getirinin girdisi değildir."
+        }
+      },
+      "vocab_ids": [
+        "required-return",
+        "real-risk-free-rate",
+        "risk-premium",
+        "expected-inflation",
+        "realized"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-b-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An investor wants a required return on a corporate bond using: real risk-free rate 3.0%, expected inflation 20.0%, credit premium 4.0% and liquidity premium 1.5%. Adding the parts, the required return is closest to:",
+      "stem_tr": "Bir yatırımcı kurumsal tahvil için gerekli getiriyi şu verilerle hesaplıyor: reel risksiz faiz %3,0, beklenen enflasyon %20,0, kredi primi %4,0 ve likidite primi %1,5. Bileşenler toplanırsa gerekli getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "28.5%",
+          "tr": "%28,5",
+          "value": 28.5
+        },
+        {
+          "key": "B",
+          "en": "8.5%",
+          "tr": "%8,5",
+          "value": 8.5
+        },
+        {
+          "key": "C",
+          "en": "27.0%",
+          "tr": "%27,0",
+          "value": 27.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "3.0 + 20.0 + 4.0 + 1.5 = 28.5%.",
+      "explanation_tr": "3,0 + 20,0 + 4,0 + 1,5 = %28,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Leaves out expected inflation, so it is a real, not a nominal, required return.",
+          "tr": "Beklenen enflasyonu atlamış; bu nominal değil reel bir gerekli getiridir."
+        },
+        "C": {
+          "en": "Leaves out the liquidity premium.",
+          "tr": "Likidite primini atlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the nominal required return of the bond.",
+          "tr": "Tahvilin nominal gerekli getirisi isteniyor."
+        },
+        {
+          "en": "Add the real risk-free rate, expected inflation and the risk premia.",
+          "tr": "Reel risksiz faizi, beklenen enflasyonu ve risk primlerini topla.",
+          "formula_latex": "r_{req}\\approx r^{real}_{rf}+E(\\pi)+DRP+LP"
+        },
+        {
+          "en": "Substitute the values.",
+          "tr": "Değerleri yerine koy.",
+          "values": {
+            "real": 3.0,
+            "infl": 20.0,
+            "credit": 4.0,
+            "liq": 1.5
+          }
+        },
+        {
+          "en": "Sum = 28.5%.",
+          "tr": "Toplam = %28,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [+] 20 [+] 4 [+] 1.5 [=]  (28.5)"
+        ]
+      },
+      "numeric": {
+        "expr": "3+20+4+1.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "required-return",
+        "expected-inflation",
+        "credit-premium",
+        "liquidity-premium",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-b-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which premium most directly compensates an investor for the risk of being unable to sell an asset quickly at a fair price?",
+      "stem_tr": "Hangi prim, yatırımcıyı bir varlığı adil fiyattan hızla satamama riskine karşı en doğrudan tazmin eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Maturity premium",
+          "tr": "Vade primi"
+        },
+        {
+          "key": "B",
+          "en": "Liquidity premium",
+          "tr": "Likidite primi"
+        },
+        {
+          "key": "C",
+          "en": "Default risk premium",
+          "tr": "Temerrüt riski primi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Illiquid assets are hard to sell without a price concession, so investors ask for a liquidity premium.",
+      "explanation_tr": "Likit olmayan varlıklar fiyattan taviz vermeden satılamaz; bu yüzden yatırımcı likidite primi ister.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Compensates for the greater price sensitivity of longer-term instruments.",
+          "tr": "Uzun vadeli araçların daha yüksek fiyat duyarlılığını tazmin eder."
+        },
+        "C": {
+          "en": "Compensates for the chance that the issuer does not pay.",
+          "tr": "İhraççının ödeme yapmama ihtimalini tazmin eder."
+        }
+      },
+      "vocab_ids": [
+        "liquidity-premium",
+        "compensate",
+        "maturity-premium",
+        "default-risk",
+        "quickly",
+        "fair-price"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-b-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A government bond yields 28% while expected inflation is 22%. Using the exact relationship, the implied real risk-free rate is closest to:",
+      "stem_tr": "Bir devlet tahvili %28 getirirken beklenen enflasyon %22'dir. Tam ilişki kullanılırsa zımni reel risksiz faiz aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "4.69%",
+          "tr": "%4,69",
+          "value": 4.69
+        },
+        {
+          "key": "C",
+          "en": "4.92%",
+          "tr": "%4,92",
+          "value": 4.92
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Real rate = 1.28 / 1.22 - 1 = 4.92%.",
+      "explanation_tr": "Reel faiz = 1,28 / 1,22 - 1 = %4,92.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracts inflation directly (28 - 22); only an approximation.",
+          "tr": "Enflasyonu doğrudan çıkarmış (28 - 22); bu yalnızca bir yaklaşımdır."
+        },
+        "B": {
+          "en": "Inverts the ratio (1.22 / 1.28) and subtracts from 1.",
+          "tr": "Oranı ters çevirmiş (1,22 / 1,28) ve 1'den çıkarmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the real rate implied by a nominal yield and expected inflation.",
+          "tr": "Nominal getiri ve beklenen enflasyondan zımni reel faiz isteniyor."
+        },
+        {
+          "en": "Divide the nominal growth factor by the inflation factor.",
+          "tr": "Nominal büyüme çarpanını enflasyon çarpanına böl.",
+          "formula_latex": "r^{real}=\\frac{1+r_{nom}}{1+E(\\pi)}-1"
+        },
+        {
+          "en": "1.28 / 1.22 = 1.04918.",
+          "tr": "1,28 / 1,22 = 1,04918."
+        },
+        {
+          "en": "Real rate = 4.92%.",
+          "tr": "Reel faiz = %4,92."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.28 [÷] 1.22 [-] 1 [=]  (0.0492)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.28/1.22-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "real-risk-free-rate",
+        "government-bond",
+        "expected-inflation",
+        "implied",
+        "closest",
+        "exact"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-01-b-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "An investor requires 30% from a share. Government bonds yield 24% and expected inflation is 20%. Treating the bond yield as the nominal risk-free rate, the implied equity risk premium is closest to:",
+      "stem_tr": "Bir yatırımcı bir paydan %30 getiri talep ediyor. Devlet tahvilleri %24 getirmekte ve beklenen enflasyon %20'dir. Tahvil getirisi nominal risksiz faiz kabul edilirse zımni özkaynak risk primi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.0%",
+          "tr": "%6,0",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "4.0%",
+          "tr": "%4,0",
+          "value": 4.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The nominal risk-free rate already includes expected inflation, so premium = 30% - 24% = 6%.",
+      "explanation_tr": "Nominal risksiz faiz beklenen enflasyonu zaten içerir; prim = %30 - %24 = %6.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Subtracts inflation (30 - 20) from the required return, which mixes the risk-free rate into the premium.",
+          "tr": "Gerekli getiriden enflasyonu (30 - 20) çıkarmış; risksiz faizi prime karıştırmış."
+        },
+        "C": {
+          "en": "Computes the real risk-free rate (24 - 20) instead of the premium.",
+          "tr": "Primi değil reel risksiz faizi (24 - 20) hesaplamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the premium above the nominal risk-free rate.",
+          "tr": "Nominal risksiz faizin üzerindeki prim isteniyor."
+        },
+        {
+          "en": "Premium = required return minus the nominal risk-free rate, because inflation is already inside it.",
+          "tr": "Prim = gerekli getiri eksi nominal risksiz faiz; enflasyon zaten içindedir.",
+          "formula_latex": "ERP=r_{req}-r_{rf}^{nominal}"
+        },
+        {
+          "en": "30% - 24% = 6%.",
+          "tr": "%30 - %24 = %6."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "30 [-] 24 [=]  (6)"
+        ]
+      },
+      "numeric": {
+        "expr": "30-24",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "equity-risk-premium",
+        "required-return",
+        "risk-free-rate",
+        "closest",
+        "imply"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
