@@ -1,0 +1,1475 @@
+{
+  "module_id": "CI-06",
+  "lesson": {
+    "id": "CI-06-lesson",
+    "level": "L1",
+    "topic": "CI",
+    "module_id": "CI-06",
+    "los_ids": [
+      "CI-06-a",
+      "CI-06-b",
+      "CI-06-c",
+      "CI-06-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Capital Structure",
+    "title_tr": "Sermaye Yapısı",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Debt is cheap but dangerous",
+        "heading_tr": "Borç ucuzdur ama tehlikelidir",
+        "en": "A company funds itself with debt and equity. Debt is cheaper for the firm because lenders accept a lower return than shareholders and interest is tax deductible. But more debt means fixed payments that must be met in bad times, so the chance of financial trouble rises, and shareholders ask for a higher return to compensate. The mix of debt and equity is the capital structure. In Türkiye, where lira interest rates are high and many firms borrow in dollars or euros, the choice between lira debt, foreign-currency debt and equity is a major strategic decision. The overall cost of funds, the weighted average cost of capital (WACC), is the hurdle rate used to value projects and companies.",
+        "tr": "Bir şirket kendini borç ve özkaynakla finanse eder. Borç firma için daha ucuzdur; çünkü borç verenler pay sahiplerinden daha düşük getiriyi kabul eder ve faiz vergiden düşülebilir. Ancak daha çok borç, kötü zamanlarda da karşılanması gereken sabit ödemeler demektir; bu yüzden finansal sıkıntı olasılığı artar ve pay sahipleri bunu telafi etmek için daha yüksek getiri ister. Borç ve özkaynak karışımı sermaye yapısıdır. Lira faizlerinin yüksek olduğu ve birçok firmanın dolar ya da euro borçlandığı Türkiye'de lira borç, döviz borcu ve özkaynak arasındaki seçim önemli bir stratejik karardır. Fonların toplam maliyeti, yani ağırlıklı ortalama sermaye maliyeti (WACC), projeleri ve şirketleri değerlemede kullanılan eşik orandır.",
+        "key_terms": [
+          "capital structure",
+          "cost of capital",
+          "WACC"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "WACC",
+        "heading_tr": "WACC",
+        "en": "WACC = w_d x r_d x (1 - t) + w_p x r_p + w_e x r_e, where w are market-value weights of debt, preferred stock and equity, r_d is the pre-tax cost of debt (yield to maturity on new borrowing), t is the marginal tax rate, r_p is the cost of preferred stock and r_e is the cost of equity. Use market values, not book values, and target weights when the firm has a stable target. Interest is tax deductible, so the after-tax cost of debt is r_d x (1 - t). WACC is the required return on the firm's average-risk projects; riskier projects need a higher rate.",
+        "tr": "WACC = w_b x r_b x (1 - t) + w_i x r_i + w_ö x r_ö; burada w'lar borcun, imtiyazlı payın ve özkaynağın piyasa değeri ağırlıklarıdır, r_b vergi öncesi borç maliyeti (yeni borçlanmanın vadeye kadar getirisi), t marjinal vergi oranı, r_i imtiyazlı pay maliyeti ve r_ö özkaynak maliyetidir. Defter değerleri değil, piyasa değerleri kullanılır; firmanın istikrarlı bir hedef yapısı varsa hedef ağırlıklar kullanılır. Faiz vergiden düşülebildiği için vergi sonrası borç maliyeti r_b x (1 - t)'dir. WACC, firmanın ortalama riskli projeleri için istenen getiridir; daha riskli projeler daha yüksek oran gerektirir.",
+        "key_terms": [
+          "after-tax cost of debt",
+          "market value weights",
+          "cost of equity"
+        ],
+        "formula_latex": "WACC=w_d\\,r_d(1-t)+w_p\\,r_p+w_e\\,r_e"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "What drives capital structure",
+        "heading_tr": "Sermaye yapısını ne belirler?",
+        "en": "Internal factors: business risk and stability of cash flows (stable firms can carry more debt), profitability, asset tangibility (collateral lowers borrowing cost), growth opportunities and stage of the firm's life, size, management's attitude to risk and control, and existing tax position. External factors: level of interest rates and the cost of credit, inflation and currency risk (foreign-currency debt in a weak currency is dangerous), tax rules, market conditions and investor appetite, regulation, and the availability of bank and bond funding. Firms often follow a pecking order: internal cash first, then debt, then new equity.",
+        "tr": "İç faktörler: iş riski ve nakit akışlarının istikrarı (istikrarlı firmalar daha çok borç taşıyabilir), kârlılık, varlıkların somutluğu (teminat borçlanma maliyetini düşürür), büyüme fırsatları ve firmanın yaşam evresi, büyüklük, yönetimin risk ve kontrol tutumu ve mevcut vergi durumu. Dış faktörler: faiz düzeyi ve kredi maliyeti, enflasyon ve kur riski (zayıf para biriminde döviz borcu tehlikelidir), vergi kuralları, piyasa koşulları ve yatırımcı iştahı, düzenleme ve banka ile tahvil finansmanının bulunabilirliği. Firmalar çoğu kez bir tercih sırasını izler: önce iç nakit, sonra borç, en son yeni özkaynak.",
+        "key_terms": [
+          "business risk",
+          "financial risk",
+          "pecking order"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Modigliani-Miller propositions",
+        "heading_tr": "Modigliani-Miller önermeleri",
+        "en": "Without taxes (and with no distress costs), Proposition I says firm value does not depend on capital structure: V_L = V_U, so WACC is constant. Proposition II says the cost of equity rises with leverage: r_e = r_0 + (D/E) x (r_0 - r_d), where r_0 is the cost of capital for an all-equity firm. With corporate taxes, Proposition I becomes V_L = V_U + t x D, because the interest tax shield adds value, which suggests maximum debt. Proposition II becomes r_e = r_0 + (D/E) x (r_0 - r_d) x (1 - t). With taxes, leverage lowers WACC; in practice financial distress costs offset this benefit.",
+        "tr": "Vergisiz (ve sıkıntı maliyeti olmayan) dünyada Önerme I, firma değerinin sermaye yapısına bağlı olmadığını söyler: V_L = V_U; yani WACC sabittir. Önerme II, özkaynak maliyetinin kaldıraçla arttığını söyler: r_ö = r_0 + (B/Ö) x (r_0 - r_b); burada r_0 tamamen özkaynakla finanse edilen firmanın sermaye maliyetidir. Kurumlar vergisiyle Önerme I, V_L = V_U + t x B olur; çünkü faiz vergi kalkanı değer ekler ve bu azami borcu akla getirir. Önerme II, r_ö = r_0 + (B/Ö) x (r_0 - r_b) x (1 - t) olur. Vergiyle kaldıraç WACC'ı düşürür; uygulamada finansal sıkıntı maliyetleri bu faydayı dengeler.",
+        "key_terms": [
+          "Modigliani-Miller",
+          "tax shield",
+          "financial distress costs"
+        ],
+        "formula_latex": "r_e=r_0+\\frac{D}{E}(r_0-r_d)(1-t),\\qquad V_L=V_U+tD"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Optimal versus target structure",
+        "heading_tr": "Optimal ve hedef yapı",
+        "en": "The optimal capital structure is the debt-equity mix that minimizes WACC and maximizes firm value. The static trade-off theory says it balances the tax benefit of debt against the expected costs of financial distress (lost customers, forced asset sales, legal fees): as debt rises, WACC first falls and then rises. The target capital structure is the mix a firm aims to maintain, set by management; it may differ from the theoretical optimum and from the current structure. Firms move toward it by issuing or retiring debt, repurchasing shares, paying dividends or retaining earnings, but they tolerate deviations to avoid transaction costs.",
+        "tr": "Optimal sermaye yapısı, WACC'ı en aza indiren ve firma değerini en çoklayan borç-özkaynak karışımıdır. Statik denge (trade-off) teorisi, bunun borcun vergi faydası ile beklenen finansal sıkıntı maliyetlerini (kaybedilen müşteriler, zorunlu varlık satışları, hukuki giderler) dengelediğini söyler: borç arttıkça WACC önce düşer sonra yükselir. Hedef sermaye yapısı, firmanın korumayı amaçladığı ve yönetimin belirlediği karışımdır; teorik optimumdan ve mevcut yapıdan farklı olabilir. Firmalar borç ihraç ederek ya da kapatarak, pay geri alarak, temettü ödeyerek ya da kâr dağıtmayarak hedefe yönelir; ancak işlem maliyetlerinden kaçınmak için sapmaları tolere eder.",
+        "key_terms": [
+          "optimal capital structure",
+          "target capital structure",
+          "trade-off theory"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: WACC and cost of equity",
+        "heading_tr": "Çözümlü örnek: WACC ve özkaynak maliyeti",
+        "en": "A firm has debt TRY 400 million and equity TRY 600 million (market values), pre-tax cost of debt 6%, tax rate 25% and cost of equity 12%. WACC = 0.4 x 6% x 0.75 + 0.6 x 12% = 1.8% + 7.2% = 9.0%. For an all-equity cost r_0 = 10% and r_d = 6%, with D/E = 0.5, MM II without taxes gives r_e = 10% + 0.5 x 4% = 12%. With a 25% tax, r_e = 10% + 0.5 x 4% x 0.75 = 11.5%.",
+        "tr": "Bir firmanın borcu 400 milyon TL, özkaynağı 600 milyon TL (piyasa değerleri), vergi öncesi borç maliyeti %6, vergi oranı %25 ve özkaynak maliyeti %12'dir. WACC = 0,4 x %6 x 0,75 + 0,6 x %12 = %1,8 + %7,2 = %9,0. Tamamen özkaynakla finanse edilen firmanın maliyeti r_0 = %10, r_b = %6 ve B/Ö = 0,5 iken vergisiz MM II, r_ö = %10 + 0,5 x %4 = %12 verir. %25 vergiyle r_ö = %10 + 0,5 x %4 x 0,75 = %11,5 olur.",
+        "key_terms": [],
+        "example": {
+          "en": "WACC = 0.4 x 6% x 0.75 + 0.6 x 12% = 9.0%",
+          "tr": "WACC = 0,4 x %6 x 0,75 + 0,6 x %12 = %9,0",
+          "formula_latex": "WACC=0.4(6)(0.75)+0.6(12)=9.0\\%"
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Common traps",
+        "heading_tr": "Sık hatalar",
+        "en": "Use market-value weights and the after-tax cost of debt in WACC. Do not use the coupon rate of old debt as the cost of debt; use the current yield. In MM with taxes the cost of equity still rises with leverage, but by less. Maximum debt is not optimal in practice because of distress costs. WACC is for average-risk projects; do not apply it to a project with very different risk. The target structure is not always the current one.",
+        "tr": "WACC'ta piyasa değeri ağırlıklarını ve vergi sonrası borç maliyetini kullanın. Eski borcun kupon oranını borç maliyeti olarak kullanmayın; cari getiriyi kullanın. Vergili MM'de özkaynak maliyeti kaldıraçla yine artar ama daha az. Finansal sıkıntı maliyetleri nedeniyle azami borç uygulamada optimal değildir. WACC ortalama riskli projeler içindir; riski çok farklı bir projeye uygulamayın. Hedef yapı her zaman mevcut yapı değildir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "WACC combines market-value weights with the after-tax cost of debt and the cost of equity. Internal and external factors shape capital structure. MM propositions show that without taxes leverage does not change firm value but raises the cost of equity; with taxes it adds a tax shield. Optimal structure balances tax benefits and distress costs, while target structures guide management.",
+    "summary_tr": "WACC, piyasa değeri ağırlıklarını vergi sonrası borç maliyeti ve özkaynak maliyetiyle birleştirir. İç ve dış faktörler sermaye yapısını şekillendirir. MM önermeleri, vergi yokken kaldıracın firma değerini değiştirmediğini ama özkaynak maliyetini artırdığını, vergiyle ise bir vergi kalkanı eklediğini gösterir. Optimal yapı vergi faydaları ile sıkıntı maliyetlerini dengeler; hedef yapılar yönetime rehberlik eder.",
+    "common_traps_tr": [
+      "WACC'ta piyasa değeri ağırlıkları ve vergi sonrası borç maliyeti kullanılır.",
+      "Eski borcun kupon oranı borç maliyeti değildir; güncel getiri kullanılır.",
+      "MM'de vergi yokken WACC sabittir; özkaynak maliyeti kaldıraçla artar.",
+      "Vergiyle V_L = V_U + tD; ama sıkıntı maliyetleri nedeniyle azami borç optimal değildir.",
+      "Hedef yapı mevcut yapı ya da teorik optimum olmak zorunda değildir."
+    ],
+    "vocab_ids": [
+      "capital-structure",
+      "cost-of-capital",
+      "weighted-average",
+      "after-tax",
+      "cost-of-debt",
+      "required-return",
+      "leverage",
+      "tax-shield",
+      "financial-distress",
+      "target",
+      "market-value",
+      "pecking-order",
+      "tax-rate",
+      "preferred-stock",
+      "closest-to",
+      "most-likely"
+    ],
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "CI-06-a-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A firm can borrow at a pre-tax rate of 8% and its marginal tax rate is 25%. The after-tax cost of debt is closest to:",
+      "stem_tr": "Bir firma %8 vergi öncesi faizle borçlanabiliyor ve marjinal vergi oranı %25'tir. Vergi sonrası borç maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.0%",
+          "tr": "%6.0",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "10.7%",
+          "tr": "%10.7",
+          "value": 10.7
+        },
+        {
+          "key": "C",
+          "en": "2.0%",
+          "tr": "%2.0",
+          "value": 2.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "After-tax cost of debt = 8% x (1 - 0.25) = 6.0%.",
+      "explanation_tr": "Vergi sonrası borç maliyeti = %8 x (1 - 0,25) = %6,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "10.7% divides by (1 - t) instead of multiplying (8 / 0.75), which makes the cost larger than the pre-tax rate.",
+          "tr": "%10,7 çarpmak yerine (1 - t)'ye böler (8 / 0,75); bu da maliyeti vergi öncesi orandan büyük yapar."
+        },
+        "C": {
+          "en": "2.0% is the tax saving (8 x 0.25), not the after-tax cost.",
+          "tr": "%2,0 vergi tasarrufudur (8 x 0,25), vergi sonrası maliyet değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the after-tax cost of debt.",
+          "tr": "Vergi sonrası borç maliyeti isteniyor."
+        },
+        {
+          "en": "After-tax cost = pre-tax rate x (1 - tax rate).",
+          "tr": "Vergi sonrası maliyet = vergi öncesi faiz x (1 - vergi oranı).",
+          "formula_latex": "r_d(1-t)"
+        },
+        {
+          "en": "8% x 0.75.",
+          "tr": "%8 x 0,75."
+        },
+        {
+          "en": "6.0%.",
+          "tr": "%6,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [×] 0.75 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "8*(1-0.25)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "after-tax",
+        "cost-of-debt",
+        "tax-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-a-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm has market values of debt TRY 400 million and equity TRY 600 million, a pre-tax cost of debt of 6%, a tax rate of 25% and a cost of equity of 12%. The weighted average cost of capital is closest to:",
+      "stem_tr": "Bir firmanın borcunun piyasa değeri 400 milyon TL, özkaynağının 600 milyon TL, vergi öncesi borç maliyeti %6, vergi oranı %25 ve özkaynak maliyeti %12'dir. Ağırlıklı ortalama sermaye maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.6%",
+          "tr": "%9.6",
+          "value": 9.6
+        },
+        {
+          "key": "B",
+          "en": "9.0%",
+          "tr": "%9.0",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "7.5%",
+          "tr": "%7.5",
+          "value": 7.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "WACC = 0.4 x 6% x 0.75 + 0.6 x 12% = 1.8% + 7.2% = 9.0%.",
+      "explanation_tr": "WACC = 0,4 x %6 x 0,75 + 0,6 x %12 = %1,8 + %7,2 = %9,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "9.6% uses the pre-tax cost of debt (0.4 x 6% + 0.6 x 12%).",
+          "tr": "%9,6 vergi öncesi borç maliyetini kullanır (0,4 x %6 + 0,6 x %12)."
+        },
+        "C": {
+          "en": "7.5% swaps the weights (0.6 for debt and 0.4 for equity).",
+          "tr": "%7,5 ağırlıkları ters çevirir (borç için 0,6, özkaynak için 0,4)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the WACC.",
+          "tr": "WACC isteniyor."
+        },
+        {
+          "en": "WACC = w_d x r_d x (1 - t) + w_e x r_e.",
+          "tr": "WACC = w_b x r_b x (1 - t) + w_ö x r_ö.",
+          "formula_latex": "WACC=w_d r_d(1-t)+w_e r_e"
+        },
+        {
+          "en": "0.4 x 6% x 0.75 = 1.8%; 0.6 x 12% = 7.2%.",
+          "tr": "0,4 x %6 x 0,75 = %1,8; 0,6 x %12 = %7,2."
+        },
+        {
+          "en": "WACC = 9.0%.",
+          "tr": "WACC = %9,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 6 [×] 0.75 [=] (1.8)",
+          "[+] 0.6 [×] 12 [=] (9.0)"
+        ]
+      },
+      "numeric": {
+        "expr": "0.4*6*0.75+0.6*12",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "after-tax",
+        "market-value",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-a-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A Turkish firm has 30% lira debt costing 30% before tax and 70% equity costing 42%. The tax rate is 25%. Its WACC is closest to:",
+      "stem_tr": "Bir Türk firmasının vergi öncesi %30 maliyetli %30 lira borcu ve %42 maliyetli %70 özkaynağı vardır. Vergi oranı %25'tir. WACC'ı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "38.40%",
+          "tr": "%38.40",
+          "value": 38.4
+        },
+        {
+          "key": "B",
+          "en": "33.90%",
+          "tr": "%33.90",
+          "value": 33.9
+        },
+        {
+          "key": "C",
+          "en": "36.15%",
+          "tr": "%36.15",
+          "value": 36.15
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "WACC = 0.30 x 30% x 0.75 + 0.70 x 42% = 6.75% + 29.40% = 36.15%.",
+      "explanation_tr": "WACC = 0,30 x %30 x 0,75 + 0,70 x %42 = %6,75 + %29,40 = %36,15.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "38.4% ignores the tax shield on debt (0.30 x 30 + 0.70 x 42).",
+          "tr": "%38,4 borcun vergi kalkanını yok sayar (0,30 x 30 + 0,70 x 42)."
+        },
+        "B": {
+          "en": "33.9% applies the tax adjustment to equity as well.",
+          "tr": "%33,9 vergi düzeltmesini özkaynağa da uygular."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the WACC in lira terms.",
+          "tr": "Lira cinsinden WACC isteniyor."
+        },
+        {
+          "en": "Apply the tax shield to debt only.",
+          "tr": "Vergi kalkanını yalnızca borca uygula.",
+          "formula_latex": "WACC=w_d r_d(1-t)+w_e r_e"
+        },
+        {
+          "en": "0.30 x 30% x 0.75 = 6.75%; 0.70 x 42% = 29.40%.",
+          "tr": "0,30 x %30 x 0,75 = %6,75; 0,70 x %42 = %29,40."
+        },
+        {
+          "en": "WACC = 36.15%.",
+          "tr": "WACC = %36,15."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 30 [×] 0.75 [=] (6.75)",
+          "[+] 0.7 [×] 42 [=] (36.15)"
+        ]
+      },
+      "numeric": {
+        "expr": "0.30*30*0.75+0.70*42",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "after-tax",
+        "cost-of-debt",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-a-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm has 50 million shares priced at TRY 18 and debt with a market value of TRY 600 million (book value TRY 500 million). Book equity is TRY 500 million. The weight of equity to use in WACC is closest to:",
+      "stem_tr": "Bir firmanın TL 18 fiyatlı 50 milyon payı ve piyasa değeri 600 milyon TL olan borcu (defter değeri 500 milyon TL) vardır. Defter değeri özkaynak 500 milyon TL'dir. WACC'ta kullanılacak özkaynak ağırlığı en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0%",
+          "tr": "%50.0",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "60.0%",
+          "tr": "%60.0",
+          "value": 60.0
+        },
+        {
+          "key": "C",
+          "en": "40.0%",
+          "tr": "%40.0",
+          "value": 40.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity market value = 50 x 18 = TRY 900 million; total = 900 + 600 = 1,500; weight = 900 / 1,500 = 60.0%.",
+      "explanation_tr": "Özkaynağın piyasa değeri = 50 x 18 = 900 milyon TL; toplam = 900 + 600 = 1.500; ağırlık = 900 / 1.500 = %60,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "50.0% uses book values (500 / (500 + 500)).",
+          "tr": "%50,0 defter değerlerini kullanır (500 / (500 + 500))."
+        },
+        "C": {
+          "en": "40.0% is the debt weight, not the equity weight.",
+          "tr": "%40,0 borç ağırlığıdır, özkaynak ağırlığı değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the equity weight at market values.",
+          "tr": "Piyasa değerleriyle özkaynak ağırlığı isteniyor."
+        },
+        {
+          "en": "Equity market value = shares x price.",
+          "tr": "Özkaynak piyasa değeri = pay sayısı x fiyat.",
+          "formula_latex": "w_e=\\frac{E}{D+E}"
+        },
+        {
+          "en": "E = 900, D = 600, total = 1,500.",
+          "tr": "Ö = 900, B = 600, toplam = 1.500."
+        },
+        {
+          "en": "w_e = 900 / 1,500 = 60.0%.",
+          "tr": "w_ö = 900 / 1.500 = %60,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50 [×] 18 [=] (900)",
+          "[÷] 1500 [=] [×] 100 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "50*18/(50*18+600)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "market-value",
+        "capital-structure",
+        "closest-to",
+        "book-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-a-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A firm has weights of 30% debt, 10% preferred stock and 60% equity. The pre-tax cost of debt is 6%, the tax rate is 25%, the cost of preferred stock is 8% and the cost of equity is 12%. WACC is closest to:",
+      "stem_tr": "Bir firmanın ağırlıkları %30 borç, %10 imtiyazlı pay ve %60 özkaynaktır. Vergi öncesi borç maliyeti %6, vergi oranı %25, imtiyazlı pay maliyeti %8 ve özkaynak maliyeti %12'dir. WACC en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "9.80%",
+          "tr": "%9.80",
+          "value": 9.8
+        },
+        {
+          "key": "B",
+          "en": "8.55%",
+          "tr": "%8.55",
+          "value": 8.55
+        },
+        {
+          "key": "C",
+          "en": "9.35%",
+          "tr": "%9.35",
+          "value": 9.35
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "WACC = 0.30 x 6% x 0.75 + 0.10 x 8% + 0.60 x 12% = 1.35% + 0.80% + 7.20% = 9.35%.",
+      "explanation_tr": "WACC = 0,30 x %6 x 0,75 + 0,10 x %8 + 0,60 x %12 = %1,35 + %0,80 + %7,20 = %9,35.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "9.80% ignores the tax shield on debt.",
+          "tr": "%9,80 borcun vergi kalkanını yok sayar."
+        },
+        "B": {
+          "en": "8.55% omits the preferred stock component.",
+          "tr": "%8,55 imtiyazlı pay bileşenini dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the WACC with three funding sources.",
+          "tr": "Üç finansman kaynağıyla WACC isteniyor."
+        },
+        {
+          "en": "Add the preferred stock term; only debt gets the tax shield.",
+          "tr": "İmtiyazlı pay terimini ekle; yalnızca borç vergi kalkanı alır.",
+          "formula_latex": "WACC=w_d r_d(1-t)+w_p r_p+w_e r_e"
+        },
+        {
+          "en": "1.35% + 0.80% + 7.20%.",
+          "tr": "%1,35 + %0,80 + %7,20."
+        },
+        {
+          "en": "WACC = 9.35%.",
+          "tr": "WACC = %9,35."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 6 [×] 0.75 [=] (1.35)",
+          "[+] 0.1 [×] 8 [=] [+] 0.6 [×] 12 [=] (9.35)"
+        ]
+      },
+      "numeric": {
+        "expr": "0.30*6*0.75+0.10*8+0.60*12",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "preferred-stock",
+        "after-tax",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following internal factors most likely allows a firm to carry more debt?",
+      "stem_tr": "Aşağıdaki iç faktörlerden hangisi bir firmanın daha çok borç taşımasına en olası şekilde imkân verir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Stable, predictable cash flows",
+          "tr": "İstikrarlı ve öngörülebilir nakit akışları"
+        },
+        {
+          "key": "B",
+          "en": "Highly volatile cash flows",
+          "tr": "Çok oynak nakit akışları"
+        },
+        {
+          "key": "C",
+          "en": "Mostly intangible assets",
+          "tr": "Ağırlıklı olarak maddi olmayan varlıklar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Stable cash flows make fixed interest payments safer, so the risk of distress is lower.",
+      "explanation_tr": "İstikrarlı nakit akışları sabit faiz ödemelerini daha güvenli kılar; sıkıntı riski daha düşüktür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Volatile cash flows raise the chance of missing payments.",
+          "tr": "Oynak nakit akışları ödemeleri aksatma ihtimalini artırır."
+        },
+        "C": {
+          "en": "Intangibles offer little collateral to lenders.",
+          "tr": "Maddi olmayan varlıklar borç verenlere az teminat sunar."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "leverage",
+        "cost-of-capital",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish exporter earns euros. Compared with a firm that sells only in lira, which external factor most supports the exporter borrowing in euros?",
+      "stem_tr": "Euro kazanan bir Türk ihracatçı var. Yalnızca lira satış yapan bir firmaya kıyasla hangi dış faktör ihracatçının euro borçlanmasını en çok destekler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Euro interest rates are always higher than lira rates",
+          "tr": "Euro faizleri her zaman lira faizlerinden yüksektir"
+        },
+        {
+          "key": "B",
+          "en": "Lira depreciation always lowers euro debt burdens",
+          "tr": "Lira değer kaybı euro borç yükünü her zaman azaltır"
+        },
+        {
+          "key": "C",
+          "en": "Its revenue is in the same currency as the debt, reducing currency mismatch risk",
+          "tr": "Geliri borçla aynı para birimindedir; bu da kur uyumsuzluğu riskini azaltır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Matching the currency of debt and revenue reduces the risk that a weak lira inflates the repayment burden.",
+      "explanation_tr": "Borç ve gelir para biriminin eşleşmesi, zayıf liranın geri ödeme yükünü şişirme riskini azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Euro rates are generally lower than lira rates.",
+          "tr": "Euro faizleri genellikle lira faizlerinden düşüktür."
+        },
+        "B": {
+          "en": "Lira depreciation raises the lira cost of euro debt.",
+          "tr": "Lira değer kaybı euro borcun lira maliyetini artırır."
+        }
+      },
+      "vocab_ids": [
+        "currency-risk",
+        "capital-structure",
+        "exchange-rate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is an external factor that influences a company's capital structure?",
+      "stem_tr": "Aşağıdakilerden hangisi bir şirketin sermaye yapısını etkileyen dış faktördür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The general level of interest rates and credit availability",
+          "tr": "Genel faiz düzeyi ve kredi bulunabilirliği"
+        },
+        {
+          "key": "B",
+          "en": "The firm's own profitability",
+          "tr": "Firmanın kendi kârlılığı"
+        },
+        {
+          "key": "C",
+          "en": "Management's attitude toward risk",
+          "tr": "Yönetimin riske karşı tutumu"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Interest rates and credit conditions come from the market, outside the firm; the others are internal.",
+      "explanation_tr": "Faiz ve kredi koşulları firmanın dışında piyasadan gelir; diğerleri içseldir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Profitability is internal.",
+          "tr": "Kârlılık içseldir."
+        },
+        "C": {
+          "en": "Management attitude is internal.",
+          "tr": "Yönetim tutumu içseldir."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "interest",
+        "credit",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "All else equal, a firm whose assets are mostly tangible (buildings, equipment) compared with a firm of mostly intangible assets will most likely:",
+      "stem_tr": "Diğer her şey aynıyken varlıkları ağırlıklı olarak somut (bina, ekipman) olan bir firma, ağırlıklı olarak maddi olmayan varlıklara sahip firmaya kıyasla büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "borrow less because it has more collateral",
+          "tr": "daha az borçlanır; çünkü daha çok teminatı vardır"
+        },
+        {
+          "key": "B",
+          "en": "borrow more cheaply because assets can serve as collateral",
+          "tr": "daha ucuza borçlanır; çünkü varlıklar teminat olarak kullanılabilir"
+        },
+        {
+          "key": "C",
+          "en": "face higher financial distress costs from tangible assets",
+          "tr": "somut varlıklardan dolayı daha yüksek finansal sıkıntı maliyetleriyle karşılaşır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Lenders recover more from tangible assets in default, so they charge less and lend more.",
+      "explanation_tr": "Borç verenler temerrütte somut varlıklardan daha çok geri kazanır; bu yüzden daha az faiz ister ve daha çok borç verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Collateral allows more, not less, borrowing.",
+          "tr": "Teminat daha az değil daha çok borçlanmaya imkân verir."
+        },
+        "C": {
+          "en": "Tangible assets typically reduce distress losses.",
+          "tr": "Somut varlıklar genellikle sıkıntı kayıplarını azaltır."
+        }
+      },
+      "vocab_ids": [
+        "collateral",
+        "all-else-equal",
+        "capital-structure",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-b-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "According to the pecking order idea, firms most likely prefer to finance projects first with:",
+      "stem_tr": "Finansman tercih sırası fikrine göre firmalar projeleri büyük olasılıkla ilk olarak şununla finanse etmeyi tercih eder:",
+      "options": [
+        {
+          "key": "A",
+          "en": "internally generated funds, then debt, then new equity",
+          "tr": "iç kaynaklı fonlarla, sonra borçla, sonra yeni özkaynakla"
+        },
+        {
+          "key": "B",
+          "en": "new equity first, then debt",
+          "tr": "önce yeni özkaynak, sonra borç"
+        },
+        {
+          "key": "C",
+          "en": "preferred stock only",
+          "tr": "yalnızca imtiyazlı pay"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Internal funds avoid issuance costs and information problems; new equity is the last resort.",
+      "explanation_tr": "İç fonlar ihraç maliyetlerinden ve bilgi sorunlarından kaçınır; yeni özkaynak son çaredir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "New equity is usually the costliest source.",
+          "tr": "Yeni özkaynak genellikle en maliyetli kaynaktır."
+        },
+        "C": {
+          "en": "Preferred stock is not the standard first choice.",
+          "tr": "İmtiyazlı pay standart ilk tercih değildir."
+        }
+      },
+      "vocab_ids": [
+        "pecking-order",
+        "capital-structure",
+        "retained-earnings",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "According to Modigliani-Miller Proposition I without taxes, the value of a firm:",
+      "stem_tr": "Vergisiz Modigliani-Miller Önerme I'e göre bir firmanın değeri:",
+      "options": [
+        {
+          "key": "A",
+          "en": "rises as debt increases",
+          "tr": "borç arttıkça yükselir"
+        },
+        {
+          "key": "B",
+          "en": "does not depend on its capital structure",
+          "tr": "sermaye yapısına bağlı değildir"
+        },
+        {
+          "key": "C",
+          "en": "falls as debt increases",
+          "tr": "borç arttıkça düşer"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "In perfect markets without taxes, how cash flows are split between debt and equity does not change total value.",
+      "explanation_tr": "Vergisiz mükemmel piyasada nakit akışlarının borç ve özkaynak arasında nasıl bölündüğü toplam değeri değiştirmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That result requires corporate taxes.",
+          "tr": "Bu sonuç kurumlar vergisi gerektirir."
+        },
+        "C": {
+          "en": "Value does not fall in this setting.",
+          "tr": "Bu ortamda değer düşmez."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "leverage",
+        "most-likely",
+        "tax-shield"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An all-equity firm has a cost of capital of 10%, and its debt costs 6%. The firm uses D/E of 0.5. Under Modigliani-Miller without taxes, the cost of equity is closest to:",
+      "stem_tr": "Tamamen özkaynakla finanse edilen firmanın sermaye maliyeti %10, borç maliyeti %6'dır. Firma B/Ö = 0,5 kullanıyor. Vergisiz Modigliani-Miller'e göre özkaynak maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.5%",
+          "tr": "%11.5",
+          "value": 11.5
+        },
+        {
+          "key": "B",
+          "en": "8.0%",
+          "tr": "%8.0",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "12.0%",
+          "tr": "%12.0",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "r_e = r_0 + (D/E)(r_0 - r_d) = 10% + 0.5 x (10% - 6%) = 12.0%.",
+      "explanation_tr": "r_ö = r_0 + (B/Ö)(r_0 - r_b) = %10 + 0,5 x (%10 - %6) = %12,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "11.5% applies the tax adjustment (1 - t) even though there are no taxes.",
+          "tr": "%11,5 vergi olmamasına rağmen vergi düzeltmesini (1 - t) uygular."
+        },
+        "B": {
+          "en": "8.0% subtracts the leverage term instead of adding it.",
+          "tr": "%8,0 kaldıraç terimini eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the levered cost of equity without taxes.",
+          "tr": "Vergisiz kaldıraçlı özkaynak maliyeti isteniyor."
+        },
+        {
+          "en": "MM II: r_e = r_0 + D/E x (r_0 - r_d).",
+          "tr": "MM II: r_ö = r_0 + B/Ö x (r_0 - r_b).",
+          "formula_latex": "r_e=r_0+\\frac{D}{E}(r_0-r_d)"
+        },
+        {
+          "en": "10% + 0.5 x 4%.",
+          "tr": "%10 + 0,5 x %4."
+        },
+        {
+          "en": "12.0%.",
+          "tr": "%12,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10 [-] 6 [=] [×] 0.5 [=] [+] 10 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "10+0.5*(10-6)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "leverage",
+        "closest-to",
+        "required-return"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An unlevered firm is worth TRY 2,000 million. The firm borrows TRY 500 million permanently, and the corporate tax rate is 25%. Under Modigliani-Miller with taxes, the value of the levered firm is closest to:",
+      "stem_tr": "Borçsuz bir firmanın değeri 2.000 milyon TL'dir. Firma kalıcı olarak 500 milyon TL borçlanıyor ve kurumlar vergisi oranı %25'tir. Vergili Modigliani-Miller'e göre borçlu firmanın değeri en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 2,000 million",
+          "tr": "2,000 milyon TL",
+          "value": 2000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 2,125 million",
+          "tr": "2,125 milyon TL",
+          "value": 2125.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 2,500 million",
+          "tr": "2,500 milyon TL",
+          "value": 2500.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "V_L = V_U + t x D = 2,000 + 0.25 x 500 = TRY 2,125 million.",
+      "explanation_tr": "V_L = V_U + t x B = 2.000 + 0,25 x 500 = 2.125 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "TRY 2,000 million applies Proposition I without taxes.",
+          "tr": "2.000 milyon TL vergisiz Önerme I'i uygular."
+        },
+        "C": {
+          "en": "TRY 2,500 million adds the whole debt instead of the tax shield.",
+          "tr": "2.500 milyon TL vergi kalkanı yerine borcun tamamını ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the levered firm value with taxes.",
+          "tr": "Vergili borçlu firma değeri isteniyor."
+        },
+        {
+          "en": "V_L = V_U + t x D (value of the interest tax shield).",
+          "tr": "V_L = V_U + t x B (faiz vergi kalkanının değeri).",
+          "formula_latex": "V_L=V_U+tD"
+        },
+        {
+          "en": "0.25 x 500 = 125.",
+          "tr": "0,25 x 500 = 125."
+        },
+        {
+          "en": "2,000 + 125 = TRY 2,125 million.",
+          "tr": "2.000 + 125 = 2.125 milyon TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.25 [×] 500 [=] [+] 2000 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "2000+0.25*500",
+        "unit": "TRY mn"
+      },
+      "vocab_ids": [
+        "tax-shield",
+        "leverage",
+        "closest-to",
+        "tax-rate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Using the same data (r_0 = 10%, r_d = 6%, D/E = 0.5) but with a 25% tax rate, the cost of equity under Modigliani-Miller with taxes is closest to:",
+      "stem_tr": "Aynı verilerle (r_0 = %10, r_b = %6, B/Ö = 0,5) ama %25 vergi oranıyla, vergili Modigliani-Miller'e göre özkaynak maliyeti en yakın olarak:",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.0%",
+          "tr": "%12.0",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "10.0%",
+          "tr": "%10.0",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "11.5%",
+          "tr": "%11.5",
+          "value": 11.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "r_e = r_0 + (D/E)(r_0 - r_d)(1 - t) = 10% + 0.5 x 4% x 0.75 = 11.5%.",
+      "explanation_tr": "r_ö = r_0 + (B/Ö)(r_0 - r_b)(1 - t) = %10 + 0,5 x %4 x 0,75 = %11,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "12.0% ignores the tax term (1 - t).",
+          "tr": "%12,0 vergi terimini (1 - t) yok sayar."
+        },
+        "B": {
+          "en": "10.0% assumes leverage has no effect on the cost of equity.",
+          "tr": "%10,0 kaldıracın özkaynak maliyeti üzerinde etkisi olmadığını varsayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cost of equity with taxes.",
+          "tr": "Vergili özkaynak maliyeti isteniyor."
+        },
+        {
+          "en": "MM II with taxes includes the factor (1 - t).",
+          "tr": "Vergili MM II (1 - t) çarpanını içerir.",
+          "formula_latex": "r_e=r_0+\\frac{D}{E}(r_0-r_d)(1-t)"
+        },
+        {
+          "en": "0.5 x 4% x 0.75 = 1.5%.",
+          "tr": "0,5 x %4 x 0,75 = %1,5."
+        },
+        {
+          "en": "10% + 1.5% = 11.5%.",
+          "tr": "%10 + %1,5 = %11,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10 [-] 6 [=] [×] 0.5 [×] 0.75 [=] [+] 10 [=]"
+        ]
+      },
+      "numeric": {
+        "expr": "10+0.5*(10-6)*(1-0.25)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "leverage",
+        "tax-rate",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-c-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "According to Modigliani-Miller without taxes, as a firm replaces equity with cheaper debt, its weighted average cost of capital will most likely:",
+      "stem_tr": "Vergisiz Modigliani-Miller'e göre bir firma özkaynağı daha ucuz borçla değiştirdikçe ağırlıklı ortalama sermaye maliyeti büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "stay unchanged, because the cost of equity rises to offset cheaper debt",
+          "tr": "değişmeden kalır; çünkü özkaynak maliyeti daha ucuz borcu dengelemek için artar"
+        },
+        {
+          "key": "B",
+          "en": "fall steadily",
+          "tr": "sürekli düşer"
+        },
+        {
+          "key": "C",
+          "en": "rise steadily",
+          "tr": "sürekli yükselir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Added leverage raises the riskiness and required return on equity just enough to keep WACC constant.",
+      "explanation_tr": "Artan kaldıraç özkaynağın riskini ve istenen getirisini WACC'ı sabit tutacak kadar artırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "With taxes WACC falls, but not in the no-tax case.",
+          "tr": "Vergiyle WACC düşer; ama vergisiz durumda düşmez."
+        },
+        "C": {
+          "en": "WACC does not rise in the no-tax, no-distress case.",
+          "tr": "Vergisiz ve sıkıntısız durumda WACC yükselmez."
+        }
+      },
+      "vocab_ids": [
+        "cost-of-capital",
+        "leverage",
+        "required-return",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q01",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The optimal capital structure is best described as the mix of debt and equity that:",
+      "stem_tr": "Optimal sermaye yapısı en iyi şöyle tanımlanır: şu özelliğe sahip borç ve özkaynak karışımı:",
+      "options": [
+        {
+          "key": "A",
+          "en": "maximizes the use of debt",
+          "tr": "borç kullanımını en çoklayan"
+        },
+        {
+          "key": "B",
+          "en": "uses only equity",
+          "tr": "yalnızca özkaynak kullanan"
+        },
+        {
+          "key": "C",
+          "en": "minimizes WACC and maximizes firm value",
+          "tr": "WACC'ı en aza indiren ve firma değerini en çoklayan"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The optimum balances the benefits and costs of debt to give the lowest overall cost of capital.",
+      "explanation_tr": "Optimum, borcun faydaları ile maliyetlerini dengeleyerek en düşük toplam sermaye maliyetini verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Maximum debt raises distress costs.",
+          "tr": "Azami borç sıkıntı maliyetlerini artırır."
+        },
+        "B": {
+          "en": "All-equity gives up the tax shield.",
+          "tr": "Tamamen özkaynak vergi kalkanından vazgeçmektir."
+        }
+      },
+      "vocab_ids": [
+        "capital-structure",
+        "cost-of-capital",
+        "best-describes",
+        "target"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q02",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In the static trade-off theory, as a firm raises its debt from a low level, WACC will most likely:",
+      "stem_tr": "Statik denge teorisine göre bir firma borcunu düşük bir düzeyden artırdıkça WACC büyük olasılıkla şöyle davranır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "first fall because of the tax shield, then rise as financial distress costs grow",
+          "tr": "önce vergi kalkanı nedeniyle düşer, sonra finansal sıkıntı maliyetleri büyüdükçe yükselir"
+        },
+        {
+          "key": "B",
+          "en": "rise throughout",
+          "tr": "baştan sona yükselir"
+        },
+        {
+          "key": "C",
+          "en": "fall throughout until debt is 100%",
+          "tr": "borç %100 olana kadar sürekli düşer"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The marginal tax benefit falls and the marginal distress cost rises with debt, creating an interior optimum.",
+      "explanation_tr": "Borç arttıkça marjinal vergi faydası azalır ve marjinal sıkıntı maliyeti artar; bu bir iç optimum oluşturur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Early debt lowers WACC through the tax shield.",
+          "tr": "İlk borç vergi kalkanı yoluyla WACC'ı düşürür."
+        },
+        "C": {
+          "en": "Distress costs stop WACC from falling all the way.",
+          "tr": "Sıkıntı maliyetleri WACC'ın sonuna kadar düşmesini engeller."
+        }
+      },
+      "vocab_ids": [
+        "tax-shield",
+        "financial-distress",
+        "capital-structure",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q03",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The target capital structure of a firm is most likely:",
+      "stem_tr": "Bir firmanın hedef sermaye yapısı büyük olasılıkla şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "always identical to the firm's current mix",
+          "tr": "her zaman firmanın mevcut karışımıyla aynı"
+        },
+        {
+          "key": "B",
+          "en": "the mix of debt and equity management aims to maintain over time",
+          "tr": "yönetimin zaman içinde korumayı amaçladığı borç ve özkaynak karışımı"
+        },
+        {
+          "key": "C",
+          "en": "fixed by regulators for every firm",
+          "tr": "düzenleyiciler tarafından her firma için sabitlenmiş"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Management sets the target using its view of risk, taxes and funding needs; actual structure moves around it.",
+      "explanation_tr": "Yönetim hedefi risk, vergi ve finansman ihtiyacı görüşüne göre belirler; fiili yapı onun etrafında hareket eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Actual and target mixes often differ.",
+          "tr": "Fiili ve hedef karışım çoğu kez farklıdır."
+        },
+        "C": {
+          "en": "Regulators do not set one structure for all firms.",
+          "tr": "Düzenleyiciler tüm firmalar için tek bir yapı belirlemez."
+        }
+      },
+      "vocab_ids": [
+        "target",
+        "capital-structure",
+        "management",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q04",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm's current debt ratio is below its target. To move toward the target, the firm is most likely to:",
+      "stem_tr": "Bir firmanın mevcut borç oranı hedefinin altındadır. Hedefe doğru ilerlemek için firma büyük olasılıkla şunu yapar:",
+      "options": [
+        {
+          "key": "A",
+          "en": "issue debt and use the proceeds to repurchase shares or fund projects",
+          "tr": "borç ihraç eder ve geliri pay geri alımında ya da proje finansmanında kullanır"
+        },
+        {
+          "key": "B",
+          "en": "issue new equity and retire debt",
+          "tr": "yeni özkaynak ihraç eder ve borcu kapatır"
+        },
+        {
+          "key": "C",
+          "en": "cut dividends and avoid all borrowing",
+          "tr": "temettüyü keser ve her türlü borçlanmadan kaçınır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Raising the debt share requires issuing debt or reducing equity through buybacks.",
+      "explanation_tr": "Borç payını artırmak borç ihracı ya da geri alımla özkaynağı azaltmayı gerektirir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That would lower the debt ratio further.",
+          "tr": "Bu borç oranını daha da düşürür."
+        },
+        "C": {
+          "en": "Avoiding borrowing keeps the ratio below target.",
+          "tr": "Borçlanmadan kaçınmak oranı hedefin altında tutar."
+        }
+      },
+      "vocab_ids": [
+        "target",
+        "leverage",
+        "repurchase",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "CI-06-d-q05",
+      "level": "L1",
+      "topic": "CI",
+      "module_id": "CI-06",
+      "los_id": "CI-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Why might a firm hold a capital structure different from the theoretical optimum?",
+      "stem_tr": "Bir firma neden teorik optimumdan farklı bir sermaye yapısı tutabilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The optimum is always impossible to compute",
+          "tr": "Optimum her zaman hesaplanamaz"
+        },
+        {
+          "key": "B",
+          "en": "Transaction costs, market conditions and management preferences can keep the actual mix away from the optimum",
+          "tr": "İşlem maliyetleri, piyasa koşulları ve yönetim tercihleri fiili karışımı optimumdan uzak tutabilir"
+        },
+        {
+          "key": "C",
+          "en": "Firms are legally required to hold a fixed mix",
+          "tr": "Firmalar yasal olarak sabit bir karışımı tutmak zorundadır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Rebalancing is costly and the optimum is hard to measure precisely, so firms tolerate deviations.",
+      "explanation_tr": "Yeniden dengeleme maliyetlidir ve optimumu kesin ölçmek zordur; bu yüzden firmalar sapmaları tolere eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The optimum can be estimated, but not perfectly.",
+          "tr": "Optimum tahmin edilebilir ama mükemmel değil."
+        },
+        "C": {
+          "en": "No law imposes one structure on all firms.",
+          "tr": "Hiçbir yasa tüm firmalara tek bir yapıyı dayatmaz."
+        }
+      },
+      "vocab_ids": [
+        "target",
+        "capital-structure",
+        "transaction",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
