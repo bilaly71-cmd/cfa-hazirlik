@@ -1,6 +1,6 @@
 # PROGRESS
 
-YAYINDA: https://bilaly71-cmd.github.io/cfa-hazirlik/ (PWA; her main push'ta CI doğrular + Pages'e dağıtır). SIRADAKİ ADIM: çalışan ajanlar (EQ-04..12 denetimi, QM-01..05/11+FSA-09/11/12 üretimi, FI-07/10-13/16-19 üretimi, soru kalıpları+etik vakaları, formül+BA II Plus) bitince commit+`npm run build-content`+push; ardından yeni paketlerin denetimi, 2 mock (180'er soru dengeli), L2/L3 iskelet, FINAL_REPORT.md, DONE. ≤5 ajan, model sonnet.
+YAYINDA: https://bilaly71-cmd.github.io/cfa-hazirlik/ (her main push'ta CI doğrular + Pages'e dağıtır). DURUM: L1'in 102 modülü / 340 LOS yazıldı VE doğrulandı: 1764 soru, 102 ders, 1775 doğrulanmış kelime, 219 formül, 19 hesap rehberi, 19 kalıp, 44 etik vakası. Milestone A ✓; Milestone B ≈ (1800 soru hedefi için ~66 ek soru CI/AI'ye yazılıyor+denetlenecek; 2 mock uygulamada dinamik 2×90). SIRADAKİ ADIM: ek soruları denetle+build+push; 50 soruluk bağımsız örnekleme raporu (reports/error_sample.md); özgünlük taraması için content/_reference/*.txt referans parçacıkları (ngram-check şu an referanssız=boş); Milestone C (≥3000 soru, 4 mock, L2 ilk 300 vignette soru, L3 iskelet — L2/L3.json zaten modül düzeyinde var); docs/FINAL_REPORT.md. DONE dosyası YALNIZCA Milestone C bitince.
 
 ## Nasıl devam edilir (yeni oturum için)
 - İçerik kuralları: `docs/CONTENT_SPEC.md`; üretici görev şablonu: `docs/GEN_PROMPT.md`; denetçi: `docs/REVIEW_SPEC.md`.
