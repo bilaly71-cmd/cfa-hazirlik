@@ -96,6 +96,8 @@ export default function Today() {
 
       <Button kind="secondary" icon="🚌" title="Otobüs modu — 5 soru, 5 dakika" onPress={() => router.push({ pathname: '/quiz', params: { mode: 'bus' } })} />
 
+      <Button kind="secondary" icon="🎮" title="İngilizce oyunu — 2 dakikada kelime" onPress={() => router.push('/english')} />
+
       {qod ? (
         <>
           <H>Günün sorusu</H>

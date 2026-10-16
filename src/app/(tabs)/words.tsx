@@ -72,6 +72,13 @@ export default function Words() {
         </T>
       </Card>
 
+      <Card onPress={() => router.push('/english')} style={{ marginTop: 10 }}>
+        <T weight="700">🎮 İngilizce oyunları</T>
+        <T size={13} sub>
+          Anlam, boşluk doldurma ve eşleştirme — çözdüğün sorulardaki kelimelerle.
+        </T>
+      </Card>
+
       <H>Sözlükte ara ({vocab.length} terim)</H>
       <TextInput
         value={q}

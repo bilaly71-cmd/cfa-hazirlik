@@ -203,3 +203,44 @@ describe('içerik şeması', () => {
   });
   it('kopya kaynak tabanı reddedilir', () => expect(Question.safeParse({ ...base, source_basis: 'schweser' }).success).toBe(false));
 });
+
+import { blank, buildMatch, buildRound } from '../src/lib/games';
+import type { VocabTerm } from '../src/lib/schema';
+
+const mkV = (id: string, term: string, tr: string, ex: string, pos = 'noun'): VocabTerm => ({
+  id, term_en: term, forms: [], pronunciation_tr: 'x', ipa: 'x', tr, definition_en_simple: 'd', definition_tr: 'd',
+  example_en: ex, example_tr: 'ö', cefr_level: 'B1', topic: 'FI', pos, source_basis: 'original', verified: false,
+});
+
+describe('İngilizce oyunları', () => {
+  it('boşluk çekimli biçimi de yakalar', () => {
+    expect(blank('Bonds yield 5% a year.', { term_en: 'yield', forms: [] })).toBe('Bonds _____ 5% a year.');
+    expect(blank('The company issued shares.', { term_en: 'issue', forms: [] })).toBe('The company _____ shares.');
+    expect(blank('Nothing here', { term_en: 'yield', forms: [] })).toBeNull();
+  });
+  const vocab = Array.from({ length: 30 }, (_, i) =>
+    mkV(`w${i}`, `word${i}`, `anlam${i}`, `This is word${i} in a sentence.`),
+  );
+  const input = { vocab, notebookIds: ['w1', 'w2'], seenIds: ['w3'] };
+  it('anlam ve boşluk soruları: tek doğru, benzersiz şıklar', () => {
+    for (const kind of ['meaning', 'cloze'] as const) {
+      const qs = buildRound(kind, input, 10, 42);
+      expect(qs).toHaveLength(10);
+      for (const q of qs) {
+        expect(q.options).toHaveLength(4);
+        expect(new Set(q.options.map((o) => o.label)).size).toBe(4);
+        expect(q.options.filter((o) => o.id === q.answerId)).toHaveLength(1);
+      }
+    }
+  });
+  it('havuz defter kelimelerini önceler ve tekrar etmez', () => {
+    const qs = buildRound('meaning', input, 10, 1);
+    expect(new Set(qs.map((q) => q.id)).size).toBe(10);
+    expect(qs.map((q) => q.id)).toEqual(expect.arrayContaining(['w1', 'w2']));
+  });
+  it('eşleştirme tahtası', () => {
+    const b = buildMatch(input, 5, 3);
+    expect(b.left).toHaveLength(5);
+    expect(new Set(b.left.map((x) => x.id))).toEqual(new Set(b.right.map((x) => x.id)));
+  });
+});
