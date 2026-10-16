@@ -1,0 +1,2505 @@
+{
+  "module_id": "FSA-11",
+  "lesson": {
+    "id": "FSA-11-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-11",
+    "los_ids": [
+      "FSA-11-a",
+      "FSA-11-b",
+      "FSA-11-c",
+      "FSA-11-d",
+      "FSA-11-e",
+      "FSA-11-f"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Financial Analysis Techniques",
+    "title_tr": "Finansal Analiz Teknikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Turning statements into answers",
+        "heading_tr": "Tabloları yanıtlara dönüştürmek",
+        "en": "A BIST 100 company reports TL 5 billion of sales. Is that good? We cannot tell without a yardstick. Is its profit healthy, can it pay its suppliers, is its debt manageable, and is it improving? Ratios turn raw statement numbers into comparable measures: against the company's own past, against competitors and against the industry. DuPont analysis then shows what drives return on equity. Finally, the same ratios feed the earnings models that analysts use to forecast. The work is only useful when we read ratios together, not one by one.",
+        "tr": "Bir BIST 100 şirketi 5 milyar TL satış açıklıyor. Bu iyi mi? Bir ölçüt olmadan söyleyemeyiz. Kârı sağlıklı mı, tedarikçilerine ödeme yapabilir mi, borcu yönetilebilir mi ve durumu iyileşiyor mu? Oranlar ham tablo rakamlarını karşılaştırılabilir ölçülere çevirir: şirketin kendi geçmişiyle, rakipleriyle ve sektörle. DuPont analizi daha sonra özkaynak kârlılığını neyin belirlediğini gösterir. Son olarak aynı oranlar, analistlerin tahmin için kullandığı kazanç modellerini besler. Çalışma, oranlar tek tek değil birlikte okunduğunda işe yarar.",
+        "key_terms": [
+          "ratio analysis",
+          "benchmark"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Analytical tools and their limits",
+        "heading_tr": "Analiz araçları ve sınırları",
+        "en": "Ratio analysis divides one statement item by another. Common-size analysis restates statements as percentages: a vertical common-size income statement divides every line by revenue, and a vertical common-size balance sheet divides by total assets. Horizontal (trend) analysis expresses each item as an index of a base year (value / base value × 100) or as a growth rate. Graphs show trends and mix at a glance. Regression analysis estimates how one item (for example sales) depends on another (for example GDP or the exchange rate) and supports forecasting. Limits: accounting policies differ (for example inventory cost methods, IFRS versus US GAAP), one-off items distort ratios, companies in several industries are hard to compare, balance sheet values are year-end snapshots, and high inflation (TMS 29 restated figures) complicates trends. Always ask which version of a ratio was used.",
+        "tr": "Oran analizi bir tablo kalemini bir diğerine böler. Ortak büyüklük analizi tabloları yüzdeye çevirir: dikey ortak büyüklük gelir tablosunda her satır hasılata, dikey ortak büyüklük bilançoda toplam aktife bölünür. Yatay (trend) analiz her kalemi baz yıl endeksi (değer / baz değer × 100) veya büyüme oranı olarak gösterir. Grafikler eğilimi ve bileşimi bir bakışta gösterir. Regresyon analizi, bir kalemin (örneğin satışların) bir diğerine (örneğin GSYH veya döviz kuruna) nasıl bağlı olduğunu tahmin eder ve tahmini destekler. Sınırlar: muhasebe politikaları farklıdır (örneğin stok maliyet yöntemleri, UFRS ile US GAAP), tek seferlik kalemler oranları bozar, birden çok sektörde faaliyet gösteren şirketleri karşılaştırmak zordur, bilanço değerleri yıl sonu anlık görüntüsüdür ve yüksek enflasyon (TMS 29 ile yeniden ifade edilmiş rakamlar) trendleri karmaşıklaştırır. Oranın hangi sürümünün kullanıldığını her zaman sor.",
+        "key_terms": [
+          "common-size analysis",
+          "horizontal analysis",
+          "regression",
+          "ratio"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The four ratio families",
+        "heading_tr": "Dört oran ailesi",
+        "en": "Activity (efficiency) ratios show how well assets are used: inventory turnover (COGS / average inventory), days of inventory on hand (DIO = 365 / inventory turnover), receivables turnover (revenue / average receivables), days sales outstanding (DSO = 365 / receivables turnover), payables turnover (purchases or COGS / average payables), days payable (DPO) and total asset turnover. The cash conversion cycle = DSO + DIO - DPO. Liquidity ratios measure short-term ability to pay: current ratio (current assets / current liabilities), quick ratio ((cash + marketable securities + receivables) / current liabilities) and cash ratio. Solvency ratios measure long-term ability to meet debt: debt-to-equity, debt-to-assets, financial leverage (average assets / average equity) and interest coverage (EBIT / interest expense). Profitability ratios measure returns: gross, operating and net profit margins, return on assets (net income / average total assets) and return on equity (net income / average equity).",
+        "tr": "Faaliyet (verimlilik) oranları varlıkların ne kadar iyi kullanıldığını gösterir: stok devir hızı (SMM / ortalama stok), stokta kalma süresi (DIO = 365 / stok devir hızı), alacak devir hızı (hasılat / ortalama alacak), tahsilat süresi (DSO = 365 / alacak devir hızı), borç devir hızı (alımlar veya SMM / ortalama ticari borç), ödeme süresi (DPO) ve toplam aktif devir hızı. Nakit dönüşüm süresi = DSO + DIO - DPO. Likidite oranları kısa vadeli ödeme gücünü ölçer: cari oran (dönen varlıklar / kısa vadeli yükümlülükler), asit-test oranı ((nakit + menkul kıymet + alacaklar) / kısa vadeli yükümlülükler) ve nakit oranı. Borç ödeme gücü oranları uzun vadeli borç yükümlülüklerini karşılama gücünü ölçer: borç/özkaynak, borç/aktif, finansal kaldıraç (ortalama aktif / ortalama özkaynak) ve faiz karşılama oranı (FVÖK / faiz gideri). Kârlılık oranları getiriyi ölçer: brüt, faaliyet ve net kâr marjları, aktif kârlılığı (net kâr / ortalama toplam aktif) ve özkaynak kârlılığı (net kâr / ortalama özkaynak).",
+        "key_terms": [
+          "activity ratio",
+          "liquidity ratio",
+          "solvency ratio",
+          "profitability ratio",
+          "cash conversion cycle"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Family",
+              "tr": "Aile"
+            },
+            {
+              "en": "Key ratios",
+              "tr": "Başlıca oranlar"
+            },
+            {
+              "en": "Question answered",
+              "tr": "Yanıtladığı soru"
+            }
+          ],
+          "rows": [
+            [
+              "Activity / Faaliyet",
+              "Turnover, DIO, DSO, DPO",
+              "How efficiently are assets used? / Varlıklar ne kadar verimli kullanılıyor?"
+            ],
+            [
+              "Liquidity / Likidite",
+              "Current, quick, cash ratio",
+              "Can it pay near-term bills? / Kısa vadeli borçları ödeyebilir mi?"
+            ],
+            [
+              "Solvency / Borç ödeme gücü",
+              "D/E, interest coverage",
+              "Can it carry its debt? / Borcunu taşıyabilir mi?"
+            ],
+            [
+              "Profitability / Kârlılık",
+              "Margins, ROA, ROE",
+              "How much does it earn? / Ne kadar kazanıyor?"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: ratios",
+        "heading_tr": "Çözümlü örnek: oranlar",
+        "en": "A firm has cash 80, marketable securities 70, receivables 150, inventory 200 and current liabilities 250. Current assets are 500, so the current ratio is 2.00. The quick ratio is (80 + 70 + 150) / 250 = 1.20, lower because inventory is excluded. With COGS 1,200 and average inventory 200, inventory turnover is 6.0 and DIO = 365 / 6 = 60.8 days. With EBIT 300 and interest expense 60, interest coverage is 5.0 times. With net income 90 and average assets 1,000, ROA = 9%. If receivables turnover is 8.0 (DSO 45.6) and payables turnover is 12.0 (DPO 30.4), the cash conversion cycle = 45.6 + 60.8 - 30.4 = 76.0 days.",
+        "tr": "Bir firmanın nakdi 80, menkul kıymeti 70, alacağı 150, stoku 200 ve kısa vadeli yükümlülüğü 250'dir. Dönen varlıklar 500'dür; cari oran 2,00'dir. Asit-test oranı (80 + 70 + 150) / 250 = 1,20'dir; stok hariç olduğu için daha düşüktür. SMM 1.200 ve ortalama stok 200 iken stok devir hızı 6,0 ve DIO = 365 / 6 = 60,8 gündür. FVÖK 300 ve faiz gideri 60 iken faiz karşılama oranı 5,0 kattır. Net kâr 90 ve ortalama aktif 1.000 iken ROA = %9'dur. Alacak devir hızı 8,0 (DSO 45,6) ve borç devir hızı 12,0 (DPO 30,4) ise nakit dönüşüm süresi = 45,6 + 60,8 - 30,4 = 76,0 gündür.",
+        "key_terms": [
+          "current ratio",
+          "quick ratio"
+        ],
+        "formula_latex": "CCC=DSO+DIO-DPO,\\quad \\text{Interest coverage}=\\frac{EBIT}{\\text{Interest}},\\quad ROA=\\frac{NI}{\\overline{TA}}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Reading ratios together; DuPont analysis",
+        "heading_tr": "Oranları birlikte okumak; DuPont analizi",
+        "en": "Ratios are linked. A higher current ratio built from rising inventory with longer DIO is lower-quality liquidity. A fast sales growth with rising DSO may show loosening credit. High margins with low asset turnover suggests a premium or capital-heavy business, while low margins with high turnover suggests a volume business. DuPont analysis breaks return on equity into parts. Three-step: ROE = net profit margin × asset turnover × equity multiplier (financial leverage). Five-step: ROE = tax burden (NI / EBT) × interest burden (EBT / EBIT) × EBIT margin × asset turnover × equity multiplier. Computing the effect of one driver means changing it and holding the others constant. Leverage raises ROE when the firm earns more than its cost of debt, but it also raises risk.",
+        "tr": "Oranlar birbirine bağlıdır. Stok artışı ve uzayan DIO ile yükselen cari oran düşük kaliteli likiditedir. Hızlı satış büyümesiyle birlikte artan DSO, gevşeyen kredi politikasına işaret edebilir. Yüksek marj ve düşük aktif devir hızı premium veya sermaye yoğun bir işi, düşük marj ve yüksek devir hızı ise hacim işini düşündürür. DuPont analizi özkaynak kârlılığını parçalara ayırır. Üç aşamalı: ROE = net kâr marjı × aktif devir hızı × özkaynak çarpanı (finansal kaldıraç). Beş aşamalı: ROE = vergi yükü (NK / VÖK) × faiz yükü (VÖK / FVÖK) × FVÖK marjı × aktif devir hızı × özkaynak çarpanı. Bir bileşenin etkisini hesaplamak, onu değiştirip diğerlerini sabit tutmaktır. Kaldıraç, firma borç maliyetinin üzerinde kazandığında ROE'yi artırır ama riski de artırır.",
+        "key_terms": [
+          "DuPont analysis",
+          "equity multiplier",
+          "asset turnover",
+          "financial leverage"
+        ],
+        "formula_latex": "ROE=\\frac{NI}{Sales}\\times\\frac{Sales}{\\overline{TA}}\\times\\frac{\\overline{TA}}{\\overline{E}}=\\frac{NI}{EBT}\\times\\frac{EBT}{EBIT}\\times\\frac{EBIT}{Sales}\\times AT\\times EM"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Industry-specific ratios, forecasting and sensitivity",
+        "heading_tr": "Sektöre özgü oranlar, tahmin ve duyarlılık",
+        "en": "General ratios may miss what drives a sector, so analysts add industry metrics: retailers use same-store sales growth and sales per square metre; airlines use load factor (revenue passenger-kilometres / available seat-kilometres) and unit revenue; banks use net interest margin (net interest income / average earning assets), capital adequacy and non-performing loan ratio; software and subscription firms use recurring revenue, churn and customer acquisition cost; utilities and telecoms use capacity and subscriber metrics. For forecasting, analysts project sales and apply historic or expected ratios (margins, turnover, tax rate) to build an income statement and a balance sheet. Sensitivity analysis changes one input at a time to see the effect on the result; scenario analysis changes several inputs together in coherent scenarios (base, optimistic, pessimistic) and can attach probabilities to get an expected value.",
+        "tr": "Genel oranlar bir sektörü belirleyen etkenleri kaçırabilir; bu yüzden analistler sektöre özgü ölçütler ekler: perakendeciler aynı mağaza satış büyümesi ve metrekare başına satış; havayolları doluluk oranı (ücretli yolcu-km / mevcut koltuk-km) ve birim gelir; bankalar net faiz marjı (net faiz geliri / ortalama getirili varlıklar), sermaye yeterliliği ve takipteki kredi oranı; yazılım ve abonelik şirketleri yinelenen gelir, kayıp oranı (churn) ve müşteri edinme maliyeti; kamu hizmetleri ve telekom kapasite ve abone ölçütleri kullanır. Tahmin için analistler satışları öngörür ve gelir tablosu ile bilanço kurmak için geçmiş veya beklenen oranları (marjlar, devir hızı, vergi oranı) uygular. Duyarlılık analizi bir seferde tek girdiyi değiştirerek sonuca etkisini görür; senaryo analizi birkaç girdiyi tutarlı senaryolarda (baz, iyimser, kötümser) birlikte değiştirir ve beklenen değer için olasılık atayabilir.",
+        "key_terms": [
+          "same-store sales",
+          "load factor",
+          "net interest margin",
+          "sensitivity analysis",
+          "scenario analysis"
+        ],
+        "formula_latex": "NIM=\\frac{\\text{Net interest income}}{\\overline{\\text{Earning assets}}},\\quad \\text{Load factor}=\\frac{RPK}{ASK},\\quad E[EPS]=\\sum p_i\\,EPS_i"
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Use average balances for return and turnover ratios when asked (ending balances change the answer). Days ratios use 365 (or the number given). In the quick ratio, leave out inventory and prepaid items. In DuPont analysis, the equity multiplier is assets over equity, not debt over equity. Do not compare ratios across firms without checking accounting methods and industry. A single ratio never tells the whole story: look for contradictions such as rising liquidity with rising inventory. In sensitivity analysis change one variable only; in scenario analysis keep the variables consistent with each other.",
+        "tr": "İstendiğinde getiri ve devir oranlarında ortalama bakiyeleri kullan (dönem sonu bakiyeler sonucu değiştirir). Gün oranları 365'i (veya verilen sayıyı) kullanır. Asit-test oranında stok ve peşin ödenmiş giderleri hariç tut. DuPont analizinde özkaynak çarpanı aktif bölü özkaynaktır, borç bölü özkaynak değil. Muhasebe yöntemlerini ve sektörü kontrol etmeden firmalar arasında oran karşılaştırma. Tek bir oran hikâyenin tamamını anlatmaz: artan stokla birlikte artan likidite gibi çelişkilere bak. Duyarlılık analizinde yalnızca bir değişkeni değiştir; senaryo analizinde değişkenleri birbiriyle tutarlı tut.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Use common-size, trend, ratio and regression tools but respect their limits. Activity, liquidity, solvency and profitability ratios should be read together; DuPont analysis splits ROE into margin, turnover and leverage (three- or five-step). Industry-specific metrics and forecasts with sensitivity and scenario analysis build on the same ratios.",
+    "summary_tr": "Ortak büyüklük, trend, oran ve regresyon araçlarını kullan ama sınırlarına saygı göster. Faaliyet, likidite, borç ödeme gücü ve kârlılık oranları birlikte okunmalıdır; DuPont analizi ROE'yi marj, devir hızı ve kaldıraca (üç veya beş aşamalı) ayırır. Sektöre özgü ölçütler ile duyarlılık ve senaryo analiziyle yapılan tahminler aynı oranlara dayanır.",
+    "common_traps_tr": [
+      "Getiri ve devir oranlarında ortalama yerine dönem sonu bakiyesi kullanmak.",
+      "Asit-test oranında stoku dışarıda bırakmamak.",
+      "Özkaynak çarpanını borç/özkaynak ile karıştırmak (çarpan = aktif / özkaynak).",
+      "Muhasebe politikaları ve sektör farkını düzeltmeden şirketleri kıyaslamak.",
+      "Cari oranın artışını stok günlerine bakmadan likidite iyileşmesi saymak.",
+      "Duyarlılık analizinde birden fazla girdiyi değiştirmek."
+    ],
+    "vocab_ids": [
+      "common-size-analysis",
+      "horizontal-analysis",
+      "inventory-turnover",
+      "quick-ratio",
+      "current-ratio",
+      "interest-coverage-ratio",
+      "days-of-inventory",
+      "days-sales-outstanding",
+      "cash-conversion-cycle",
+      "dupont-analysis",
+      "equity-multiplier",
+      "same-store-sales",
+      "net-interest-margin",
+      "sensitivity-analysis",
+      "scenario-analysis"
+    ],
+    "spk_link": {
+      "status": "known",
+      "note_tr": "Cari oran, asit-test oranı, devir hızları ve ROE SPK Düzey 3 mali analiz konusundan tanıdıktır; beş aşamalı DuPont, sektöre özgü oranlar ve senaryo analizi kısmen yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-11-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a vertical common-size income statement, each line item is expressed as a percentage of:",
+      "stem_tr": "Dikey ortak büyüklük gelir tablosunda her kalem hangi büyüklüğün yüzdesi olarak ifade edilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "revenue",
+          "tr": "hasılat"
+        },
+        {
+          "key": "B",
+          "en": "net income",
+          "tr": "net kâr"
+        },
+        {
+          "key": "C",
+          "en": "the same line item in a base year",
+          "tr": "baz yıldaki aynı kalem"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Vertical common-size statements divide every income statement line by revenue.",
+      "explanation_tr": "Dikey ortak büyüklük tabloları her gelir tablosu satırını hasılata böler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Net income is one of the lines being converted, not the base.",
+          "tr": "Net kâr dönüştürülen kalemlerden biridir, baz değildir."
+        },
+        "C": {
+          "en": "That is horizontal (trend) analysis, not vertical common-size.",
+          "tr": "Bu yatay (trend) analizdir, dikey ortak büyüklük değil."
+        }
+      },
+      "vocab_ids": [
+        "common-size-analysis",
+        "revenue",
+        "percentage",
+        "line-item",
+        "base"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has revenue of TL 1,000 and cost of goods sold of TL 640. In a common-size income statement, gross profit is closest to what percentage of revenue?",
+      "stem_tr": "Bir şirketin hasılatı 1.000 TL ve satılan malın maliyeti 640 TL'dir. Ortak büyüklük gelir tablosunda brüt kâr hasılatın yüzde kaçına en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "64.0%",
+          "tr": "%64,0",
+          "value": 64.0
+        },
+        {
+          "key": "B",
+          "en": "36.0%",
+          "tr": "%36,0",
+          "value": 36.0
+        },
+        {
+          "key": "C",
+          "en": "56.3%",
+          "tr": "%56,3",
+          "value": 56.3
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Gross profit = 1,000 - 640 = 360. As a percentage of revenue: 360 / 1,000 = 36.0%.",
+      "explanation_tr": "Brüt kâr = 1.000 - 640 = 360. Hasılatın yüzdesi: 360 / 1.000 = %36,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is COGS as a percentage of revenue, not gross profit.",
+          "tr": "Bu, brüt kâr değil hasılatın yüzdesi olarak SMM'dir."
+        },
+        "C": {
+          "en": "Divides gross profit by COGS (360 / 640) instead of by revenue.",
+          "tr": "Brüt kârı hasılat yerine SMM'ye (360 / 640) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need gross profit as a share of revenue.",
+          "tr": "Hasılata oranla brüt kâr isteniyor."
+        },
+        {
+          "en": "Compute gross profit, then divide by revenue.",
+          "tr": "Brüt kârı hesapla, sonra hasılata böl.",
+          "formula_latex": "\\text{Gross margin}=\\frac{Rev-COGS}{Rev}"
+        },
+        {
+          "en": "Gross profit = 1,000 - 640 = 360.",
+          "tr": "Brüt kâr = 1.000 - 640 = 360.",
+          "values": {
+            "Rev": 1000,
+            "COGS": 640
+          }
+        },
+        {
+          "en": "360 / 1,000 = 36.0%.",
+          "tr": "360 / 1.000 = %36,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [-] 640 [=]  (360)",
+          "[÷] 1000 [=]  (0.36)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1000-640)/1000*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "common-size-analysis",
+        "gross-profit",
+        "cost-of-goods-sold",
+        "revenue",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Revenue was TL 800 in the base year and TL 1,040 three years later. Using horizontal (trend) analysis with the base year = 100, the index for the later year is closest to:",
+      "stem_tr": "Gelir baz yılda 800 TL, üç yıl sonra 1.040 TL'dir. Baz yıl = 100 alınarak yatay (trend) analiz yapılırsa sonraki yılın endeksi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.0",
+          "tr": "30,0",
+          "value": 30.0
+        },
+        {
+          "key": "B",
+          "en": "76.9",
+          "tr": "76,9",
+          "value": 76.9
+        },
+        {
+          "key": "C",
+          "en": "130.0",
+          "tr": "130,0",
+          "value": 130.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Index = 1,040 / 800 × 100 = 130.",
+      "explanation_tr": "Endeks = 1.040 / 800 × 100 = 130.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the growth rate, not the index level.",
+          "tr": "Bu büyüme oranıdır, endeks düzeyi değil."
+        },
+        "B": {
+          "en": "Inverts the ratio (base / later) × 100.",
+          "tr": "Oranı ters çevirmiş (baz / sonraki) × 100."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the revenue index relative to the base year.",
+          "tr": "Baz yıla göre gelir endeksi isteniyor."
+        },
+        {
+          "en": "Divide the later value by the base value and multiply by 100.",
+          "tr": "Sonraki değeri baz değere böl ve 100 ile çarp.",
+          "formula_latex": "\\text{Index}=\\frac{V_t}{V_0}\\times100"
+        },
+        {
+          "en": "1,040 / 800 = 1.30.",
+          "tr": "1.040 / 800 = 1,30.",
+          "values": {
+            "Vt": 1040,
+            "V0": 800
+          }
+        },
+        {
+          "en": "Index = 130.",
+          "tr": "Endeks = 130."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1040 [÷] 800 [×] 100 [=]  (130)"
+        ]
+      },
+      "numeric": {
+        "expr": "1040/800*100"
+      },
+      "vocab_ids": [
+        "horizontal-analysis",
+        "index",
+        "trend",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst compares the inventory turnover of two companies in the same industry. Which factor is most likely to make the comparison misleading?",
+      "stem_tr": "Bir analist aynı sektördeki iki şirketin stok devir hızını karşılaştırıyor. Hangi etken karşılaştırmayı en çok yanıltıcı kılar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The companies use different inventory cost methods, such as FIFO and weighted average",
+          "tr": "Şirketlerin farklı stok maliyet yöntemleri, örneğin FIFO ve ağırlıklı ortalama, kullanması"
+        },
+        {
+          "key": "B",
+          "en": "Both companies report in the same currency",
+          "tr": "İki şirketin aynı para biriminde raporlaması"
+        },
+        {
+          "key": "C",
+          "en": "Both companies have a December year-end",
+          "tr": "İki şirketin de aralık yıl sonuna sahip olması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Different accounting policies change reported COGS and inventory, so ratios may not be comparable without adjustment.",
+      "explanation_tr": "Farklı muhasebe politikaları raporlanan SMM'yi ve stoku değiştirir; bu yüzden oranlar düzeltme yapılmadan karşılaştırılamayabilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A common currency helps comparability.",
+          "tr": "Ortak para birimi karşılaştırılabilirliğe yardım eder."
+        },
+        "C": {
+          "en": "Same year-ends make balance sheet snapshots more comparable, not less.",
+          "tr": "Aynı yıl sonu bilanço anlık görüntülerini daha karşılaştırılabilir yapar, daha az değil."
+        }
+      },
+      "vocab_ids": [
+        "inventory-turnover",
+        "accounting-policy",
+        "misleading",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst runs a regression of a retailer's quarterly sales on national consumer spending and uses it to forecast next year. Which statement best describes a limitation of this approach?",
+      "stem_tr": "Bir analist, bir perakendecinin üç aylık satışlarını ulusal tüketici harcamasına regresyonla bağlayıp gelecek yılı tahmin etmek için kullanıyor. Bu yaklaşımın sınırını hangi ifade en iyi anlatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A regression can only be used with ratios, never with sales amounts",
+          "tr": "Regresyon yalnızca oranlarla kullanılabilir, satış tutarlarıyla asla"
+        },
+        {
+          "key": "B",
+          "en": "The historical relationship may change, so the forecast can be wrong even if the fit was good in the past",
+          "tr": "Geçmiş ilişki değişebilir; bu yüzden geçmişte uyum iyi olsa bile tahmin yanlış çıkabilir"
+        },
+        {
+          "key": "C",
+          "en": "A good historical fit proves that consumer spending causes the retailer's sales",
+          "tr": "İyi bir geçmiş uyum, tüketici harcamasının perakendecinin satışlarına neden olduğunu kanıtlar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Regression depends on past patterns continuing; structural changes or omitted drivers can break the relationship.",
+      "explanation_tr": "Regresyon geçmiş kalıpların sürmesine dayanır; yapısal değişimler veya ihmal edilen etkenler ilişkiyi bozabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Regression can use amounts, growth rates or ratios.",
+          "tr": "Regresyon tutarlar, büyüme oranları veya oranlarla kullanılabilir."
+        },
+        "C": {
+          "en": "A statistical relationship does not prove causation.",
+          "tr": "İstatistiksel ilişki nedenselliği kanıtlamaz."
+        }
+      },
+      "vocab_ids": [
+        "forecast",
+        "limitation",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has cash of 80, marketable securities of 70, receivables of 150, inventory of 200 and current liabilities of 250. The quick ratio is closest to:",
+      "stem_tr": "Bir şirketin nakdi 80, menkul kıymeti 70, alacağı 150, stoku 200 ve kısa vadeli yükümlülüğü 250'dir. Asit-test oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.00",
+          "tr": "2,00",
+          "value": 2.0
+        },
+        {
+          "key": "B",
+          "en": "0.60",
+          "tr": "0,60",
+          "value": 0.6
+        },
+        {
+          "key": "C",
+          "en": "1.20",
+          "tr": "1,20",
+          "value": 1.2
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Quick assets = 80 + 70 + 150 = 300. Quick ratio = 300 / 250 = 1.20.",
+      "explanation_tr": "Hızlı varlıklar = 80 + 70 + 150 = 300. Asit-test oranı = 300 / 250 = 1,20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the current ratio, which includes inventory.",
+          "tr": "Bu, stoku da içeren cari orandır."
+        },
+        "B": {
+          "en": "Divides receivables alone by current liabilities (150 / 250), leaving out cash and securities.",
+          "tr": "Yalnızca alacakları kısa vadeli yükümlülüklere bölmüş (150 / 250); nakit ve menkul kıymeti atlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the quick (acid-test) ratio.",
+          "tr": "Asit-test oranı isteniyor."
+        },
+        {
+          "en": "Exclude inventory: quick assets = cash + securities + receivables.",
+          "tr": "Stoku hariç tut: hızlı varlıklar = nakit + menkul kıymet + alacak.",
+          "formula_latex": "\\text{Quick}=\\frac{Cash+MS+AR}{CL}"
+        },
+        {
+          "en": "Quick assets = 300.",
+          "tr": "Hızlı varlıklar = 300.",
+          "values": {
+            "cash": 80,
+            "MS": 70,
+            "AR": 150,
+            "CL": 250
+          }
+        },
+        {
+          "en": "300 / 250 = 1.20.",
+          "tr": "300 / 250 = 1,20."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [+] 70 [+] 150 [=]  (300)",
+          "[÷] 250 [=]  (1.20)"
+        ]
+      },
+      "numeric": {
+        "expr": "(80+70+150)/250"
+      },
+      "vocab_ids": [
+        "quick-ratio",
+        "current-ratio",
+        "receivables",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has cost of goods sold of TL 1,200, sales of TL 1,500 and average inventory of TL 200. Using 365 days, days of inventory on hand is closest to:",
+      "stem_tr": "Bir şirketin satılan malın maliyeti 1.200 TL, satışları 1.500 TL ve ortalama stoku 200 TL'dir. 365 gün kullanılarak stokta kalma süresi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "60.83",
+          "tr": "60,83",
+          "value": 60.83
+        },
+        {
+          "key": "B",
+          "en": "6.00",
+          "tr": "6,00",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "48.67",
+          "tr": "48,67",
+          "value": 48.67
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Inventory turnover = 1,200 / 200 = 6.0. DIO = 365 / 6 = 60.83 days.",
+      "explanation_tr": "Stok devir hızı = 1.200 / 200 = 6,0. DIO = 365 / 6 = 60,83 gün.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the inventory turnover, not the number of days.",
+          "tr": "Bu, gün sayısı değil stok devir hızıdır."
+        },
+        "C": {
+          "en": "Uses sales instead of COGS in the denominator of the turnover.",
+          "tr": "Devir hızı hesabında SMM yerine satışları kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the average days that inventory is held.",
+          "tr": "Stokun ortalama kaç gün tutulduğu isteniyor."
+        },
+        {
+          "en": "First compute turnover = COGS / average inventory.",
+          "tr": "Önce devir hızını hesapla = SMM / ortalama stok.",
+          "formula_latex": "DIO=\\frac{365}{COGS/\\overline{Inv}}"
+        },
+        {
+          "en": "Turnover = 1,200 / 200 = 6.0.",
+          "tr": "Devir hızı = 1.200 / 200 = 6,0.",
+          "values": {
+            "COGS": 1200,
+            "avgInv": 200
+          }
+        },
+        {
+          "en": "DIO = 365 / 6 = 60.83.",
+          "tr": "DIO = 365 / 6 = 60,83."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1200 [÷] 200 [=]  (6)",
+          "365 [÷] 6 [=]  (60.83)"
+        ]
+      },
+      "numeric": {
+        "expr": "365/(1200/200)"
+      },
+      "vocab_ids": [
+        "days-of-inventory",
+        "inventory-turnover",
+        "cost-of-goods-sold",
+        "average",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has EBIT of TL 300 and interest expense of TL 60. Its interest coverage ratio is closest to:",
+      "stem_tr": "Bir şirketin FVÖK'ü 300 TL ve faiz gideri 60 TL'dir. Faiz karşılama oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.0",
+          "tr": "4,0",
+          "value": 4.0
+        },
+        {
+          "key": "B",
+          "en": "5.0",
+          "tr": "5,0",
+          "value": 5.0
+        },
+        {
+          "key": "C",
+          "en": "0.2",
+          "tr": "0,2",
+          "value": 0.2
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Interest coverage = EBIT / interest expense = 300 / 60 = 5.0 times.",
+      "explanation_tr": "Faiz karşılama oranı = FVÖK / faiz gideri = 300 / 60 = 5,0 kat.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses earnings before tax (240) instead of EBIT in the numerator.",
+          "tr": "Payda FVÖK yerine vergi öncesi kârı (240) kullanmış."
+        },
+        "C": {
+          "en": "Inverts the ratio (interest / EBIT).",
+          "tr": "Oranı ters çevirmiş (faiz / FVÖK)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need how many times EBIT covers interest.",
+          "tr": "FVÖK'ün faizi kaç kez karşıladığı isteniyor."
+        },
+        {
+          "en": "Divide EBIT by interest expense.",
+          "tr": "FVÖK'ü faiz giderine böl.",
+          "formula_latex": "\\frac{EBIT}{\\text{Interest}}"
+        },
+        {
+          "en": "300 / 60.",
+          "tr": "300 / 60.",
+          "values": {
+            "EBIT": 300,
+            "interest": 60
+          }
+        },
+        {
+          "en": "5.0 times.",
+          "tr": "5,0 kat."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300 [÷] 60 [=]  (5)"
+        ]
+      },
+      "numeric": {
+        "expr": "300/60"
+      },
+      "vocab_ids": [
+        "interest-coverage-ratio",
+        "interest-expense",
+        "solvency",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has net income of TL 90, sales of TL 1,500, beginning total assets of TL 900 and ending total assets of TL 1,100. Return on assets using average total assets is closest to:",
+      "stem_tr": "Bir şirketin net kârı 90 TL, satışları 1.500 TL, dönem başı toplam aktifi 900 TL ve dönem sonu toplam aktifi 1.100 TL'dir. Ortalama toplam aktif kullanılarak aktif kârlılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "8.18%",
+          "tr": "%8,18",
+          "value": 8.18
+        },
+        {
+          "key": "C",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Average assets = (900 + 1,100) / 2 = 1,000. ROA = 90 / 1,000 = 9.0%.",
+      "explanation_tr": "Ortalama aktif = (900 + 1.100) / 2 = 1.000. ROA = 90 / 1.000 = %9,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the net profit margin (90 / 1,500), not ROA.",
+          "tr": "Bu, ROA değil net kâr marjıdır (90 / 1.500)."
+        },
+        "B": {
+          "en": "Uses ending assets (1,100) instead of average assets (1,000).",
+          "tr": "Ortalama aktif (1.000) yerine dönem sonu aktifini (1.100) kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROA with average assets.",
+          "tr": "Ortalama aktifle ROA isteniyor."
+        },
+        {
+          "en": "Average the beginning and ending assets, then divide net income by it.",
+          "tr": "Dönem başı ve sonu aktifinin ortalamasını al, net kârı ona böl.",
+          "formula_latex": "ROA=\\frac{NI}{(TA_0+TA_1)/2}"
+        },
+        {
+          "en": "Average assets = 1,000.",
+          "tr": "Ortalama aktif = 1.000.",
+          "values": {
+            "TA0": 900,
+            "TA1": 1100,
+            "NI": 90
+          }
+        },
+        {
+          "en": "ROA = 9.0%.",
+          "tr": "ROA = %9,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900 [+] 1100 [=] [÷] 2 [=]  (1000)",
+          "90 [÷] 1000 [=]  (0.09)"
+        ]
+      },
+      "numeric": {
+        "expr": "90/((900+1100)/2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "net-income",
+        "closest",
+        "average",
+        "asset"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A company has receivables turnover of 8.0, inventory turnover of 6.0 and payables turnover of 12.0 (all per year, 365-day year). The cash conversion cycle is closest to:",
+      "stem_tr": "Bir şirketin alacak devir hızı 8,0, stok devir hızı 6,0 ve borç devir hızı 12,0'dir (hepsi yıllık, 365 günlük yıl). Nakit dönüşüm süresi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "76.04",
+          "tr": "76,04",
+          "value": 76.04
+        },
+        {
+          "key": "B",
+          "en": "136.88",
+          "tr": "136,88",
+          "value": 136.88
+        },
+        {
+          "key": "C",
+          "en": "106.46",
+          "tr": "106,46",
+          "value": 106.46
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "DSO = 365 / 8 = 45.63; DIO = 365 / 6 = 60.83; DPO = 365 / 12 = 30.42. CCC = 45.63 + 60.83 - 30.42 = 76.04 days.",
+      "explanation_tr": "DSO = 365 / 8 = 45,63; DIO = 365 / 6 = 60,83; DPO = 365 / 12 = 30,42. NDS = 45,63 + 60,83 - 30,42 = 76,04 gün.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Adds the payables days instead of subtracting them.",
+          "tr": "Ödeme süresini çıkarmak yerine eklemiş."
+        },
+        "C": {
+          "en": "Leaves out the days payable outstanding.",
+          "tr": "Ödeme süresini hesaba katmamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the days between paying suppliers and collecting cash.",
+          "tr": "Tedarikçilere ödeme ile nakit tahsilatı arasındaki gün sayısı isteniyor."
+        },
+        {
+          "en": "Convert each turnover into days.",
+          "tr": "Her devir hızını güne çevir.",
+          "formula_latex": "CCC=DSO+DIO-DPO"
+        },
+        {
+          "en": "DSO = 45.63; DIO = 60.83; DPO = 30.42.",
+          "tr": "DSO = 45,63; DIO = 60,83; DPO = 30,42.",
+          "values": {
+            "DSO": 45.63,
+            "DIO": 60.83,
+            "DPO": 30.42
+          }
+        },
+        {
+          "en": "CCC = 45.63 + 60.83 - 30.42 = 76.04.",
+          "tr": "NDS = 45,63 + 60,83 - 30,42 = 76,04."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "365 [÷] 8 [=]  (45.63)",
+          "365 [÷] 6 [=] [+] ... [-] 365 [÷] 12 [=]  (76.04)"
+        ],
+        "note_tr": "Ara sonuçları sırayla topla/çıkar; 365 [÷] 8 [+] 365 [÷] 6 [-] 365 [÷] 12 [=] doğrudan da girilebilir."
+      },
+      "numeric": {
+        "expr": "365/8+365/6-365/12"
+      },
+      "vocab_ids": [
+        "cash-conversion-cycle",
+        "days-sales-outstanding",
+        "days-payable",
+        "inventory-turnover",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "analyze",
+      "stem_en": "A company's current ratio rose from 1.8 to 2.4, but its days of inventory on hand doubled. Which conclusion is most appropriate?",
+      "stem_tr": "Bir şirketin cari oranı 1,8'den 2,4'e çıktı ama stokta kalma süresi iki katına çıktı. Hangi sonuç en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Liquidity clearly improved, because a higher current ratio is always better.",
+          "tr": "Likidite açıkça iyileşti, çünkü yüksek cari oran her zaman daha iyidir."
+        },
+        {
+          "key": "B",
+          "en": "The liquidity improvement may be of low quality because it comes from slow-moving inventory.",
+          "tr": "Likidite iyileşmesi düşük kaliteli olabilir, çünkü yavaş dönen stoktan kaynaklanıyor."
+        },
+        {
+          "key": "C",
+          "en": "The firm's solvency has improved because the quick ratio must also have risen.",
+          "tr": "Firmanın borç ödeme gücü iyileşti, çünkü asit-test oranı da artmış olmalı."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Read ratios together: a rising current ratio with doubling inventory days signals slower conversion into cash, not stronger liquidity.",
+      "explanation_tr": "Oranları birlikte oku: iki katına çıkan stok günleriyle yükselen cari oran daha güçlü likiditeyi değil nakde daha yavaş dönüşümü gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Inventory may take a long time to turn into cash, so the ratio overstates liquidity.",
+          "tr": "Stokun nakde dönüşmesi uzun sürebilir; bu yüzden oran likiditeyi olduğundan yüksek gösterir."
+        },
+        "C": {
+          "en": "The quick ratio excludes inventory, so it need not rise; solvency is also a different question.",
+          "tr": "Asit-test oranı stoku hariç tutar, artmak zorunda değildir; borç ödeme gücü de farklı bir sorudur."
+        }
+      },
+      "vocab_ids": [
+        "current-ratio",
+        "inventory",
+        "liquidity",
+        "slow-moving",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has a net profit margin of 6% and a total asset turnover of 1.5. Its return on assets is closest to:",
+      "stem_tr": "Bir şirketin net kâr marjı %6 ve toplam aktif devir hızı 1,5'tir. Aktif kârlılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.50%",
+          "tr": "%7,50",
+          "value": 7.5
+        },
+        {
+          "key": "B",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "ROA = net margin × asset turnover = 6% × 1.5 = 9%.",
+      "explanation_tr": "ROA = net marj × aktif devir hızı = %6 × 1,5 = %9.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the margin and the turnover instead of multiplying them.",
+          "tr": "Marjı ve devir hızını çarpmak yerine toplamış."
+        },
+        "B": {
+          "en": "Divides the margin by the turnover.",
+          "tr": "Marjı devir hızına bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROA from its two drivers.",
+          "tr": "İki bileşeninden ROA isteniyor."
+        },
+        {
+          "en": "ROA = net profit margin × asset turnover.",
+          "tr": "ROA = net kâr marjı × aktif devir hızı.",
+          "formula_latex": "ROA=\\frac{NI}{Sales}\\times\\frac{Sales}{TA}"
+        },
+        {
+          "en": "6% × 1.5.",
+          "tr": "%6 × 1,5.",
+          "values": {
+            "margin": 0.06,
+            "AT": 1.5
+          }
+        },
+        {
+          "en": "ROA = 9%.",
+          "tr": "ROA = %9."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [×] 1.5 [=]  (9)"
+        ]
+      },
+      "numeric": {
+        "expr": "6*1.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "net-profit-margin",
+        "closest",
+        "margin",
+        "turnover"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has total debt of TL 900, cash of TL 300 and EBITDA of TL 400. Net debt to EBITDA is closest to:",
+      "stem_tr": "Bir şirketin toplam borcu 900 TL, nakdi 300 TL ve FAVÖK'ü 400 TL'dir. Net borç/FAVÖK aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        },
+        {
+          "key": "B",
+          "en": "2.25",
+          "tr": "2,25",
+          "value": 2.25
+        },
+        {
+          "key": "C",
+          "en": "0.75",
+          "tr": "0,75",
+          "value": 0.75
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Net debt = 900 - 300 = 600. Net debt / EBITDA = 600 / 400 = 1.50.",
+      "explanation_tr": "Net borç = 900 - 300 = 600. Net borç / FAVÖK = 600 / 400 = 1,50.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses gross debt (900) and ignores cash.",
+          "tr": "Brüt borcu (900) kullanmış, nakdi yok saymış."
+        },
+        "C": {
+          "en": "Divides cash by EBITDA (300 / 400) and ignores debt.",
+          "tr": "Nakdi FAVÖK'e bölmüş (300 / 400), borcu yok saymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need leverage measured against operating cash earnings.",
+          "tr": "Faaliyet nakit kazancına göre kaldıraç isteniyor."
+        },
+        {
+          "en": "Net debt = debt - cash.",
+          "tr": "Net borç = borç - nakit.",
+          "formula_latex": "\\frac{Debt-Cash}{EBITDA}"
+        },
+        {
+          "en": "600 / 400.",
+          "tr": "600 / 400.",
+          "values": {
+            "debt": 900,
+            "cash": 300,
+            "EBITDA": 400
+          }
+        },
+        {
+          "en": "1.50 times.",
+          "tr": "1,50 kat."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900 [-] 300 [=] [÷] 400 [=]  (1.50)"
+        ]
+      },
+      "numeric": {
+        "expr": "(900-300)/400"
+      },
+      "vocab_ids": [
+        "net-debt",
+        "ebitda",
+        "leverage",
+        "solvency",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Company A has a gross margin of 55% and an asset turnover of 0.6. Company B has a gross margin of 18% and an asset turnover of 2.4. These ratios are most consistent with:",
+      "stem_tr": "A şirketinin brüt kâr marjı %55 ve aktif devir hızı 0,6'dır. B şirketinin brüt kâr marjı %18 ve aktif devir hızı 2,4'tür. Bu oranlar en çok neyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A being less profitable than B on every measure",
+          "tr": "A'nın her ölçüde B'den daha az kârlı olması"
+        },
+        {
+          "key": "B",
+          "en": "A selling premium products with heavy assets, and B competing on volume with thin margins",
+          "tr": "A'nın ağır varlıklarla premium ürün satması ve B'nin ince marjlarla hacim üzerinden rekabet etmesi"
+        },
+        {
+          "key": "C",
+          "en": "Both companies earning exactly the same return on assets by definition",
+          "tr": "İki şirketin de tanım gereği aynı aktif kârlılığını elde etmesi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "High margin with low turnover points to a premium or capital-heavy model; low margin with high turnover points to a volume model.",
+      "explanation_tr": "Yüksek marj ve düşük devir hızı premium veya sermaye yoğun bir modele; düşük marj ve yüksek devir hızı hacim modeline işaret eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A's margin is higher; profitability also depends on turnover, so we cannot say it is less profitable on every measure.",
+          "tr": "A'nın marjı daha yüksektir; kârlılık devir hızına da bağlıdır, bu yüzden her ölçüde daha az kârlı denemez."
+        },
+        "C": {
+          "en": "Margin × turnover is what matters; the products would only be equal if the figures happened to match.",
+          "tr": "Önemli olan marj × devir hızıdır; rakamlar tesadüfen eşleşmedikçe bu eşit olmaz."
+        }
+      },
+      "vocab_ids": [
+        "gross-margin",
+        "premium",
+        "volume",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A company's receivables turnover fell from 10.0 to 8.0, while its sales stayed the same. The percentage increase in its average receivables balance is closest to:",
+      "stem_tr": "Bir şirketin alacak devir hızı satışları aynı kalırken 10,0'dan 8,0'e düştü. Ortalama alacak bakiyesindeki yüzde artış aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.0%",
+          "tr": "%20,0",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "2.0%",
+          "tr": "%2,0",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "25.0%",
+          "tr": "%25,0",
+          "value": 25.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Receivables = sales / turnover. With sales fixed: 1/8 ÷ 1/10 = 1.25, so receivables rose 25% (DSO from 36.5 to 45.6 days).",
+      "explanation_tr": "Alacak = satış / devir hızı. Satış sabitken: 1/8 ÷ 1/10 = 1,25; alacaklar %25 arttı (DSO 36,5'ten 45,6 güne çıktı).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the percentage fall in turnover (2 / 10), not the rise in receivables.",
+          "tr": "Alacaklardaki artışı değil devir hızındaki yüzde düşüşü (2 / 10) kullanmış."
+        },
+        "B": {
+          "en": "Uses the absolute change in the turnover figure as a percentage.",
+          "tr": "Devir hızındaki mutlak değişimi yüzde olarak kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the change in receivables, given the same sales.",
+          "tr": "Aynı satışta alacaklardaki değişim isteniyor."
+        },
+        {
+          "en": "Receivables = sales / turnover, so the ratio of balances equals old turnover / new turnover.",
+          "tr": "Alacak = satış / devir hızı; bakiyelerin oranı eski devir hızı / yeni devir hızına eşittir.",
+          "formula_latex": "\\frac{AR_1}{AR_0}=\\frac{T_0}{T_1}"
+        },
+        {
+          "en": "10 / 8 = 1.25.",
+          "tr": "10 / 8 = 1,25.",
+          "values": {
+            "T0": 10,
+            "T1": 8
+          }
+        },
+        {
+          "en": "Receivables rose 25%.",
+          "tr": "Alacaklar %25 arttı."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10 [÷] 8 [=]  (1.25)",
+          "[-] 1 [=]  (0.25)"
+        ]
+      },
+      "numeric": {
+        "expr": "(10/8-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "receivables",
+        "days-sales-outstanding",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has a net profit margin of 8%, a total asset turnover of 1.25 and an equity multiplier of 2.0. Using three-step DuPont analysis, ROE is closest to:",
+      "stem_tr": "Bir şirketin net kâr marjı %8, toplam aktif devir hızı 1,25 ve özkaynak çarpanı 2,0'dır. Üç aşamalı DuPont analiziyle ROE aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.00%",
+          "tr": "%20,00",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "16.00%",
+          "tr": "%16,00",
+          "value": 16.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "ROE = 8% × 1.25 × 2.0 = 20%.",
+      "explanation_tr": "ROE = %8 × 1,25 × 2,0 = %20.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is ROA (margin × turnover); it leaves out the equity multiplier.",
+          "tr": "Bu ROA'dır (marj × devir hızı); özkaynak çarpanını dışarıda bırakmış."
+        },
+        "C": {
+          "en": "Multiplies margin by leverage and omits asset turnover.",
+          "tr": "Marjı kaldıraçla çarpmış, aktif devir hızını atlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROE from the three DuPont drivers.",
+          "tr": "Üç DuPont bileşeninden ROE isteniyor."
+        },
+        {
+          "en": "Multiply margin, asset turnover and equity multiplier.",
+          "tr": "Marjı, aktif devir hızını ve özkaynak çarpanını çarp.",
+          "formula_latex": "ROE=\\frac{NI}{S}\\times\\frac{S}{A}\\times\\frac{A}{E}"
+        },
+        {
+          "en": "8% × 1.25 = 10% (ROA).",
+          "tr": "%8 × 1,25 = %10 (ROA).",
+          "values": {
+            "NPM": 0.08,
+            "AT": 1.25,
+            "EM": 2.0
+          }
+        },
+        {
+          "en": "10% × 2.0 = 20%.",
+          "tr": "%10 × 2,0 = %20."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [×] 1.25 [×] 2 [=]  (20)"
+        ]
+      },
+      "numeric": {
+        "expr": "8*1.25*2.0",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "dupont-analysis",
+        "return-on-equity",
+        "equity-multiplier",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has net income of TL 120, sales of TL 1,500, average total assets of TL 1,000 and average equity of TL 400. ROE is closest to:",
+      "stem_tr": "Bir şirketin net kârı 120 TL, satışları 1.500 TL, ortalama toplam aktifi 1.000 TL ve ortalama özkaynağı 400 TL'dir. ROE aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "30.00%",
+          "tr": "%30,00",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "18.00%",
+          "tr": "%18,00",
+          "value": 18.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net margin = 8%; asset turnover = 1.5; equity multiplier = 1,000 / 400 = 2.5. ROE = 8% × 1.5 × 2.5 = 30% (= 120 / 400).",
+      "explanation_tr": "Net marj = %8; aktif devir hızı = 1,5; özkaynak çarpanı = 1.000 / 400 = 2,5. ROE = %8 × 1,5 × 2,5 = %30 (= 120 / 400).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is ROA (120 / 1,000); leverage is missing.",
+          "tr": "Bu ROA'dır (120 / 1.000); kaldıraç eksik."
+        },
+        "C": {
+          "en": "Uses the debt-to-equity ratio (1.5) as the multiplier instead of assets / equity (2.5).",
+          "tr": "Çarpan olarak aktif / özkaynak (2,5) yerine borç/özkaynak oranını (1,5) kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROE, ideally by its DuPont parts.",
+          "tr": "ROE, tercihen DuPont bileşenleriyle isteniyor."
+        },
+        {
+          "en": "Compute margin, turnover and equity multiplier.",
+          "tr": "Marjı, devir hızını ve özkaynak çarpanını hesapla.",
+          "formula_latex": "EM=\\frac{\\overline{TA}}{\\overline{E}}"
+        },
+        {
+          "en": "Margin 120/1,500 = 8%; turnover 1,500/1,000 = 1.5; EM 1,000/400 = 2.5.",
+          "tr": "Marj 120/1.500 = %8; devir hızı 1.500/1.000 = 1,5; ÖÇ 1.000/400 = 2,5.",
+          "values": {
+            "NI": 120,
+            "S": 1500,
+            "A": 1000,
+            "E": 400
+          }
+        },
+        {
+          "en": "ROE = 8% × 1.5 × 2.5 = 30%.",
+          "tr": "ROE = %8 × 1,5 × 2,5 = %30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [×] 1.5 [×] 2.5 [=]  (30)",
+          "Kontrol: 120 [÷] 400 [=]  (0.30)"
+        ]
+      },
+      "numeric": {
+        "expr": "120/400*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "return-on-equity",
+        "equity-multiplier",
+        "dupont-analysis",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has a tax burden (NI / EBT) of 0.75, an interest burden (EBT / EBIT) of 0.80, an EBIT margin of 12%, an asset turnover of 1.0 and an equity multiplier of 2.5. Using five-step DuPont analysis, ROE is closest to:",
+      "stem_tr": "Bir şirketin vergi yükü (NK / VÖK) 0,75, faiz yükü (VÖK / FVÖK) 0,80, FVÖK marjı %12, aktif devir hızı 1,0 ve özkaynak çarpanı 2,5'tir. Beş aşamalı DuPont analiziyle ROE aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.20%",
+          "tr": "%7,20",
+          "value": 7.2
+        },
+        {
+          "key": "B",
+          "en": "24.00%",
+          "tr": "%24,00",
+          "value": 24.0
+        },
+        {
+          "key": "C",
+          "en": "18.00%",
+          "tr": "%18,00",
+          "value": 18.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "ROE = 0.75 × 0.80 × 12% × 1.0 × 2.5 = 18%.",
+      "explanation_tr": "ROE = 0,75 × 0,80 × %12 × 1,0 × 2,5 = %18.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Leaves out the equity multiplier, which gives ROA instead of ROE.",
+          "tr": "Özkaynak çarpanını atlamış; ROE yerine ROA bulmuş."
+        },
+        "B": {
+          "en": "Leaves out the tax burden (0.75).",
+          "tr": "Vergi yükünü (0,75) atlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROE using five factors.",
+          "tr": "Beş bileşenle ROE isteniyor."
+        },
+        {
+          "en": "Multiply all five factors.",
+          "tr": "Beş bileşeni çarp.",
+          "formula_latex": "ROE=TB\\times IB\\times EBITm\\times AT\\times EM"
+        },
+        {
+          "en": "0.75 × 0.80 = 0.60; × 12% = 7.2%; × 1.0 = 7.2% (ROA).",
+          "tr": "0,75 × 0,80 = 0,60; × %12 = %7,2; × 1,0 = %7,2 (ROA).",
+          "values": {
+            "TB": 0.75,
+            "IB": 0.8,
+            "EBITm": 0.12,
+            "AT": 1.0,
+            "EM": 2.5
+          }
+        },
+        {
+          "en": "7.2% × 2.5 = 18%.",
+          "tr": "%7,2 × 2,5 = %18."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.75 [×] 0.80 [×] 12 [×] 1.0 [×] 2.5 [=]  (18)"
+        ]
+      },
+      "numeric": {
+        "expr": "0.75*0.80*12*1.0*2.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "closest",
+        "margin",
+        "turnover",
+        "leverage"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company's net margin falls from 8% to 6% while asset turnover (1.2) and equity multiplier (2.0) stay the same. The change in ROE caused by the margin decline is closest to:",
+      "stem_tr": "Bir şirketin net marjı %8'den %6'ya düşerken aktif devir hızı (1,2) ve özkaynak çarpanı (2,0) aynı kalıyor. Marj düşüşünün ROE'de yol açtığı değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-4.80 percentage points",
+          "tr": "-4,80 puan",
+          "value": -4.8
+        },
+        {
+          "key": "B",
+          "en": "-2.00 percentage points",
+          "tr": "-2,00 puan",
+          "value": -2.0
+        },
+        {
+          "key": "C",
+          "en": "-2.40 percentage points",
+          "tr": "-2,40 puan",
+          "value": -2.4
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "ROE before = 8 × 1.2 × 2.0 = 19.2%; after = 6 × 1.2 × 2.0 = 14.4%. Change = -4.8 points.",
+      "explanation_tr": "Önceki ROE = 8 × 1,2 × 2,0 = %19,2; sonraki = 6 × 1,2 × 2,0 = %14,4. Değişim = -4,8 puan.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the change in the margin itself, not in ROE.",
+          "tr": "Bu, ROE'nin değil marjın kendisinin değişimidir."
+        },
+        "C": {
+          "en": "Leaves out the equity multiplier (2.0 × 1.2).",
+          "tr": "Özkaynak çarpanını atlamış (2,0 × 1,2)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the ROE effect of one driver, holding the others fixed.",
+          "tr": "Diğerleri sabitken tek bileşenin ROE etkisi isteniyor."
+        },
+        {
+          "en": "Change in margin × turnover × multiplier.",
+          "tr": "Marj değişimi × devir hızı × çarpan.",
+          "formula_latex": "\\Delta ROE=\\Delta NPM\\times AT\\times EM"
+        },
+        {
+          "en": "(6 - 8) = -2 points; × 1.2 × 2.0.",
+          "tr": "(6 - 8) = -2 puan; × 1,2 × 2,0.",
+          "values": {
+            "dNPM": -2,
+            "AT": 1.2,
+            "EM": 2.0
+          }
+        },
+        {
+          "en": "ΔROE = -4.8 points.",
+          "tr": "ΔROE = -4,8 puan."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [-] 8 [=] [×] 1.2 [×] 2 [=]  (-4.8)"
+        ]
+      },
+      "numeric": {
+        "expr": "(6-8)*1.2*2.0"
+      },
+      "vocab_ids": [
+        "dupont-analysis",
+        "return-on-equity",
+        "margin",
+        "percentage-points",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A company has a net margin of 5% and asset turnover of 1.5. A debt-funded share buyback raises the equity multiplier from 2.0 to 2.5. Assuming margin and turnover do not change, the new ROE is closest to:",
+      "stem_tr": "Bir şirketin net marjı %5 ve aktif devir hızı 1,5'tir. Borçla finanse edilen bir pay geri alımı özkaynak çarpanını 2,0'dan 2,5'e çıkarıyor. Marj ve devir hızı değişmezse yeni ROE aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.00%",
+          "tr": "%15,00",
+          "value": 15.0
+        },
+        {
+          "key": "B",
+          "en": "18.75%",
+          "tr": "%18,75",
+          "value": 18.75
+        },
+        {
+          "key": "C",
+          "en": "11.25%",
+          "tr": "%11,25",
+          "value": 11.25
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "ROA = 5% × 1.5 = 7.5%. New ROE = 7.5% × 2.5 = 18.75%. In practice higher interest cost would also reduce the margin.",
+      "explanation_tr": "ROA = %5 × 1,5 = %7,5. Yeni ROE = %7,5 × 2,5 = %18,75. Uygulamada daha yüksek faiz maliyeti marjı da düşürürdü.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the ROE before the buyback (5 × 1.5 × 2.0).",
+          "tr": "Bu, geri alım öncesi ROE'dir (5 × 1,5 × 2,0)."
+        },
+        "C": {
+          "en": "Uses the debt-to-equity ratio (1.5) instead of the equity multiplier (2.5).",
+          "tr": "Özkaynak çarpanı (2,5) yerine borç/özkaynak oranını (1,5) kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need ROE after the leverage change.",
+          "tr": "Kaldıraç değişiminden sonra ROE isteniyor."
+        },
+        {
+          "en": "Hold margin and turnover; replace the multiplier.",
+          "tr": "Marj ve devir hızını sabit tut; çarpanı değiştir.",
+          "formula_latex": "ROE=NPM\\times AT\\times EM_{new}"
+        },
+        {
+          "en": "ROA = 5% × 1.5 = 7.5%.",
+          "tr": "ROA = %5 × 1,5 = %7,5.",
+          "values": {
+            "NPM": 0.05,
+            "AT": 1.5,
+            "EM": 2.5
+          }
+        },
+        {
+          "en": "ROE = 7.5% × 2.5 = 18.75%.",
+          "tr": "ROE = %7,5 × 2,5 = %18,75."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5 [×] 1.5 [×] 2.5 [=]  (18.75)"
+        ]
+      },
+      "numeric": {
+        "expr": "5*1.5*2.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "equity-multiplier",
+        "return-on-equity",
+        "closest",
+        "buyback",
+        "leverage",
+        "equity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-e-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which metric is most closely associated with analyzing a retail chain?",
+      "stem_tr": "Hangi ölçüt bir perakende zincirinin analiziyle en yakından ilişkilidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Net interest margin",
+          "tr": "Net faiz marjı"
+        },
+        {
+          "key": "B",
+          "en": "Passenger load factor",
+          "tr": "Yolcu doluluk oranı"
+        },
+        {
+          "key": "C",
+          "en": "Same-store sales growth",
+          "tr": "Aynı mağaza satış büyümesi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Same-store sales growth separates growth from existing stores from growth caused by new store openings.",
+      "explanation_tr": "Aynı mağaza satış büyümesi mevcut mağazalardaki büyümeyi yeni mağaza açılışından kaynaklanan büyümeden ayırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is a bank metric.",
+          "tr": "Bu bir banka ölçütüdür."
+        },
+        "B": {
+          "en": "This is an airline metric.",
+          "tr": "Bu bir havayolu ölçütüdür."
+        }
+      },
+      "vocab_ids": [
+        "same-store-sales",
+        "associated",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-e-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Net interest margin, a key ratio for banks, is best described as:",
+      "stem_tr": "Bankalar için temel bir oran olan net faiz marjı en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "net interest income divided by average earning assets",
+          "tr": "net faiz gelirinin ortalama getirili varlıklara bölümü"
+        },
+        {
+          "key": "B",
+          "en": "net income divided by average equity",
+          "tr": "net kârın ortalama özkaynağa bölümü"
+        },
+        {
+          "key": "C",
+          "en": "non-performing loans divided by total loans",
+          "tr": "takipteki kredilerin toplam kredilere bölümü"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "NIM measures the spread earned on interest-bearing assets: net interest income over average earning assets.",
+      "explanation_tr": "NIM, faiz getiren varlıklar üzerinde kazanılan marjı ölçer: net faiz geliri bölü ortalama getirili varlıklar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That is return on equity.",
+          "tr": "Bu özkaynak kârlılığıdır."
+        },
+        "C": {
+          "en": "That is the non-performing loan ratio.",
+          "tr": "Bu takipteki kredi oranıdır."
+        }
+      },
+      "vocab_ids": [
+        "net-interest-margin",
+        "best-describes",
+        "interest",
+        "spread"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-e-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An airline flew 8,400 million revenue passenger-kilometres on 12,000 million available seat-kilometres. Its passenger load factor is closest to:",
+      "stem_tr": "Bir havayolu 12.000 milyon mevcut koltuk-kilometrede 8.400 milyon ücretli yolcu-kilometre uçtu. Yolcu doluluk oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "142.86%",
+          "tr": "%142,86",
+          "value": 142.86
+        },
+        {
+          "key": "B",
+          "en": "70.00%",
+          "tr": "%70,00",
+          "value": 70.0
+        },
+        {
+          "key": "C",
+          "en": "30.00%",
+          "tr": "%30,00",
+          "value": 30.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Load factor = RPK / ASK = 8,400 / 12,000 = 70%.",
+      "explanation_tr": "Doluluk oranı = RPK / ASK = 8.400 / 12.000 = %70.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Inverts the ratio (available / revenue).",
+          "tr": "Oranı ters çevirmiş (mevcut / ücretli)."
+        },
+        "C": {
+          "en": "Computes the share of empty capacity (1 - load factor).",
+          "tr": "Boş kapasite payını (1 - doluluk) hesaplamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the share of seats filled.",
+          "tr": "Doldurulan koltuk payı isteniyor."
+        },
+        {
+          "en": "Divide revenue passenger-km by available seat-km.",
+          "tr": "Ücretli yolcu-km'yi mevcut koltuk-km'ye böl.",
+          "formula_latex": "\\text{Load factor}=\\frac{RPK}{ASK}"
+        },
+        {
+          "en": "8,400 / 12,000.",
+          "tr": "8.400 / 12.000.",
+          "values": {
+            "RPK": 8400,
+            "ASK": 12000
+          }
+        },
+        {
+          "en": "70%.",
+          "tr": "%70."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8400 [÷] 12000 [=]  (0.70)"
+        ]
+      },
+      "numeric": {
+        "expr": "8400/12000*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "load-factor",
+        "capacity",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-e-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Why do analysts add industry-specific ratios to general ratios such as the current ratio and ROE?",
+      "stem_tr": "Analistler cari oran ve ROE gibi genel oranlara neden sektöre özgü oranlar ekler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Industry ratios are required by all accounting standards.",
+          "tr": "Sektöre özgü oranlar tüm muhasebe standartlarınca zorunludur."
+        },
+        {
+          "key": "B",
+          "en": "General ratios cannot be computed for service companies.",
+          "tr": "Genel oranlar hizmet şirketleri için hesaplanamaz."
+        },
+        {
+          "key": "C",
+          "en": "General ratios may not capture the operating drivers of a particular business model.",
+          "tr": "Genel oranlar belirli bir iş modelinin faaliyet etkenlerini yakalamayabilir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Sector metrics such as load factor or churn reflect what actually drives revenue and cost in that sector.",
+      "explanation_tr": "Doluluk oranı veya kayıp oranı gibi sektör ölçütleri o sektörde gelir ve maliyeti gerçekte neyin belirlediğini yansıtır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Accounting standards do not require these analytical ratios.",
+          "tr": "Muhasebe standartları bu analitik oranları zorunlu kılmaz."
+        },
+        "B": {
+          "en": "General ratios can be computed for any company; they just may be less informative.",
+          "tr": "Genel oranlar her şirket için hesaplanabilir; yalnızca daha az bilgilendirici olabilir."
+        }
+      },
+      "vocab_ids": [
+        "ratio",
+        "business-model",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-e-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A retailer's total sales grew 12% last year, but its same-store sales fell 2%. The most appropriate conclusion is that:",
+      "stem_tr": "Bir perakendecinin toplam satışları geçen yıl %12 arttı ama aynı mağaza satışları %2 azaldı. En uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "growth came from new stores while demand at existing stores weakened",
+          "tr": "büyüme yeni mağazalardan geldi, mevcut mağazalardaki talep zayıfladı"
+        },
+        {
+          "key": "B",
+          "en": "demand at existing stores strengthened",
+          "tr": "mevcut mağazalardaki talep güçlendi"
+        },
+        {
+          "key": "C",
+          "en": "the company must have raised prices by about 12%",
+          "tr": "şirketin fiyatları yaklaşık %12 artırmış olması gerekir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Total growth includes new stores; same-store growth isolates existing stores. The negative figure signals weakening underlying demand.",
+      "explanation_tr": "Toplam büyüme yeni mağazaları içerir; aynı mağaza büyümesi mevcut mağazaları ayrıştırır. Negatif rakam temel talebin zayıfladığını gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Falling same-store sales point to weaker, not stronger, demand at existing stores.",
+          "tr": "Düşen aynı mağaza satışları mevcut mağazalarda daha güçlü değil daha zayıf talebe işaret eder."
+        },
+        "C": {
+          "en": "Nothing in the data says price changes; the gap points to store openings.",
+          "tr": "Verilerde fiyat değişikliğine dair bir şey yok; fark mağaza açılışlarına işaret eder."
+        }
+      },
+      "vocab_ids": [
+        "same-store-sales",
+        "demand",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-f-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "How does ratio analysis most directly help an analyst build an earnings forecast?",
+      "stem_tr": "Oran analizi bir analistin kazanç tahmini kurmasına en doğrudan nasıl yardım eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It removes the need to forecast sales.",
+          "tr": "Satış tahmini yapma ihtiyacını ortadan kaldırır."
+        },
+        {
+          "key": "B",
+          "en": "It provides historical relationships, such as margins, turnover and the tax rate, to apply to projected sales.",
+          "tr": "Öngörülen satışlara uygulanacak marjlar, devir hızı ve vergi oranı gibi geçmiş ilişkileri sağlar."
+        },
+        {
+          "key": "C",
+          "en": "It guarantees that future margins will equal past margins.",
+          "tr": "Gelecek marjların geçmiş marjlara eşit olacağını garanti eder."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Forecasting builds statements from projected sales and ratio assumptions; historical ratios inform those assumptions.",
+      "explanation_tr": "Tahmin, öngörülen satışlar ve oran varsayımlarından tablolar kurar; geçmiş oranlar bu varsayımlara dayanak olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ratios are usually applied to a sales forecast, which is still needed.",
+          "tr": "Oranlar genellikle bir satış tahminine uygulanır; bu tahmin yine gereklidir."
+        },
+        "C": {
+          "en": "Past ratios guide the forecast but do not guarantee the future.",
+          "tr": "Geçmiş oranlar tahmine yol gösterir ama geleceği garanti etmez."
+        }
+      },
+      "vocab_ids": [
+        "margin",
+        "turnover",
+        "assumption",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-f-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Next year's sales are forecast to rise 10% from TL 1,000. The gross margin is expected to be 38% and operating expenses 20% of sales. Forecast operating income is closest to:",
+      "stem_tr": "Gelecek yıl satışların 1.000 TL'den %10 artması öngörülüyor. Brüt kâr marjının %38 ve faaliyet giderlerinin satışların %20'si olması bekleniyor. Öngörülen faaliyet kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "180.0",
+          "tr": "180,0",
+          "value": 180.0
+        },
+        {
+          "key": "B",
+          "en": "418.0",
+          "tr": "418,0",
+          "value": 418.0
+        },
+        {
+          "key": "C",
+          "en": "198.0",
+          "tr": "198,0",
+          "value": 198.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Sales = 1,100. Operating margin = 38% - 20% = 18%. Operating income = 1,100 × 18% = 198.",
+      "explanation_tr": "Satışlar = 1.100. Faaliyet marjı = %38 - %20 = %18. Faaliyet kârı = 1.100 × %18 = 198.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses last year's sales (1,000) and ignores the 10% growth.",
+          "tr": "Geçen yılın satışlarını (1.000) kullanmış, %10 büyümeyi yok saymış."
+        },
+        "B": {
+          "en": "Reports gross profit (1,100 × 38%), leaving out operating expenses.",
+          "tr": "Faaliyet giderlerini atlayıp brüt kârı (1.100 × %38) vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need next year's operating income.",
+          "tr": "Gelecek yılın faaliyet kârı isteniyor."
+        },
+        {
+          "en": "Forecast sales, then apply the operating margin (gross margin minus opex ratio).",
+          "tr": "Satışları öngör, sonra faaliyet marjını (brüt marj eksi gider oranı) uygula.",
+          "formula_latex": "OI=S\\times(GM-Opex\\%)"
+        },
+        {
+          "en": "Sales = 1,000 × 1.10 = 1,100; margin = 18%.",
+          "tr": "Satışlar = 1.000 × 1,10 = 1.100; marj = %18.",
+          "values": {
+            "S": 1100,
+            "GM": 0.38,
+            "opex": 0.2
+          }
+        },
+        {
+          "en": "OI = 198.",
+          "tr": "Faaliyet kârı = 198."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [×] 1.1 [=]  (1100)",
+          "[×] 0.18 [=]  (198)"
+        ]
+      },
+      "numeric": {
+        "expr": "1000*1.10*(0.38-0.20)"
+      },
+      "vocab_ids": [
+        "forecast",
+        "operating-income",
+        "gross-margin",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-f-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using sales of TL 1,100, a sensitivity analysis lowers the gross margin from 38% to 36%, holding everything else constant. The change in operating income is closest to:",
+      "stem_tr": "1.100 TL satış kullanılarak yapılan duyarlılık analizinde, diğer her şey sabitken brüt marj %38'den %36'ya düşürülüyor. Faaliyet kârındaki değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-TL 22",
+          "tr": "-22 TL",
+          "value": -22.0
+        },
+        {
+          "key": "B",
+          "en": "-TL 2",
+          "tr": "-2 TL",
+          "value": -2.0
+        },
+        {
+          "key": "C",
+          "en": "-TL 20",
+          "tr": "-20 TL",
+          "value": -20.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Change = 1,100 × (-2%) = -22. Only the margin changes in a sensitivity analysis.",
+      "explanation_tr": "Değişim = 1.100 × (-%2) = -22. Duyarlılık analizinde yalnızca marj değişir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the margin change in percentage points rather than in TL.",
+          "tr": "Marj değişimini TL yerine puan olarak vermiş."
+        },
+        "C": {
+          "en": "Applies the 2-point change to last year's sales (1,000) instead of forecast sales (1,100).",
+          "tr": "2 puanlık değişimi öngörülen satış (1.100) yerine geçen yılın satışına (1.000) uygulamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the effect of a 2-point margin drop.",
+          "tr": "2 puanlık marj düşüşünün etkisi isteniyor."
+        },
+        {
+          "en": "Multiply the margin change by the forecast sales.",
+          "tr": "Marj değişimini öngörülen satışla çarp.",
+          "formula_latex": "\\Delta OI=S\\times\\Delta GM"
+        },
+        {
+          "en": "1,100 × (-0.02).",
+          "tr": "1.100 × (-0,02).",
+          "values": {
+            "S": 1100,
+            "dGM": -0.02
+          }
+        },
+        {
+          "en": "ΔOI = -22.",
+          "tr": "ΔOI = -22."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1100 [×] 0.02 [+/-] [=]  (-22)"
+        ]
+      },
+      "numeric": {
+        "expr": "1100*-0.02"
+      },
+      "vocab_ids": [
+        "sensitivity-analysis",
+        "gross-margin",
+        "operating-income",
+        "holding-constant",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-f-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst builds three scenarios for next year's EPS: base case probability 50% with EPS TL 4.00, optimistic 25% with TL 5.00 and pessimistic 25% with TL 2.00. The probability-weighted expected EPS is closest to:",
+      "stem_tr": "Bir analist gelecek yılın hisse başı kârı için üç senaryo kuruyor: baz durum %50 olasılıkla 4,00 TL, iyimser %25 olasılıkla 5,00 TL ve kötümser %25 olasılıkla 2,00 TL. Olasılık ağırlıklı beklenen hisse başı kâr aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.67",
+          "tr": "3,67",
+          "value": 3.67
+        },
+        {
+          "key": "B",
+          "en": "3.75",
+          "tr": "3,75",
+          "value": 3.75
+        },
+        {
+          "key": "C",
+          "en": "4.00",
+          "tr": "4,00",
+          "value": 4.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "E[EPS] = 0.50 × 4.00 + 0.25 × 5.00 + 0.25 × 2.00 = 2.00 + 1.25 + 0.50 = 3.75.",
+      "explanation_tr": "E[HBK] = 0,50 × 4,00 + 0,25 × 5,00 + 0,25 × 2,00 = 2,00 + 1,25 + 0,50 = 3,75.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the simple average of the three EPS values, ignoring probabilities.",
+          "tr": "Olasılıkları yok sayıp üç HBK değerinin basit ortalamasını almış."
+        },
+        "C": {
+          "en": "Reports the base case only.",
+          "tr": "Yalnızca baz durumu vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected EPS across scenarios.",
+          "tr": "Senaryolar arasında beklenen HBK isteniyor."
+        },
+        {
+          "en": "Weight each scenario's EPS by its probability.",
+          "tr": "Her senaryonun HBK'sını olasılığıyla ağırlıklandır.",
+          "formula_latex": "E[EPS]=\\sum p_iEPS_i"
+        },
+        {
+          "en": "2.00 + 1.25 + 0.50.",
+          "tr": "2,00 + 1,25 + 0,50.",
+          "values": {
+            "p1": 0.5,
+            "p2": 0.25,
+            "p3": 0.25
+          }
+        },
+        {
+          "en": "E[EPS] = 3.75.",
+          "tr": "E[HBK] = 3,75."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5 [×] 4 [+] 0.25 [×] 5 [+] 0.25 [×] 2 [=]  (3.75)"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5*4+0.25*5+0.25*2"
+      },
+      "vocab_ids": [
+        "scenario-analysis",
+        "expected-value",
+        "probability",
+        "earnings-per-share",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-11-f-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-11",
+      "los_id": "FSA-11-f",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement best distinguishes scenario analysis from sensitivity analysis in a forecasting model?",
+      "stem_tr": "Bir tahmin modelinde senaryo analizini duyarlılık analizinden hangi ifade en iyi ayırır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Sensitivity analysis changes all inputs at once; scenario analysis changes one input.",
+          "tr": "Duyarlılık analizi tüm girdileri aynı anda değiştirir; senaryo analizi tek girdiyi değiştirir."
+        },
+        {
+          "key": "B",
+          "en": "They are identical; the names are interchangeable.",
+          "tr": "İkisi aynıdır; adlar birbirinin yerine kullanılır."
+        },
+        {
+          "key": "C",
+          "en": "Scenario analysis changes several inputs together into coherent cases; sensitivity analysis changes one input at a time.",
+          "tr": "Senaryo analizi birkaç girdiyi tutarlı durumlar halinde birlikte değiştirir; duyarlılık analizi bir seferde tek girdiyi değiştirir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Sensitivity isolates the effect of one driver; scenario analysis captures that drivers move together (for example weaker demand with lower margin).",
+      "explanation_tr": "Duyarlılık tek bileşenin etkisini ayrıştırır; senaryo analizi bileşenlerin birlikte hareket ettiğini (örneğin zayıf talep ve düşük marj) yakalar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This reverses the definitions.",
+          "tr": "Bu, tanımları ters çevirir."
+        },
+        "B": {
+          "en": "They differ in how many inputs are changed and whether the changes are linked.",
+          "tr": "Kaç girdinin değiştirildiği ve değişimlerin birbirine bağlı olup olmadığı bakımından farklıdırlar."
+        }
+      },
+      "vocab_ids": [
+        "sensitivity-analysis",
+        "scenario-analysis",
+        "input",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

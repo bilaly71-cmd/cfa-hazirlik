@@ -1,0 +1,655 @@
+{
+  "module_id": "FI-17",
+  "lesson": {
+    "id": "FI-17-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-17",
+    "los_ids": [
+      "FI-17-a",
+      "FI-17-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Fixed-Income Securitization",
+    "title_tr": "Menkul Kıymetleştirme",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Turning loans into bonds",
+        "heading_tr": "Kredileri tahvile çevirmek",
+        "en": "A Turkish bank has thousands of housing loans (konut kredisi) that pay interest and principal every month, but the money is locked in for 10 or 15 years. Securitization lets the bank pool these loans, sell them to a separate entity, and have that entity issue securities backed by the loan payments. The bank gets cash now and can lend again. Investors get a bond-like claim on a diversified pool of loans. Turkish capital market rules allow asset-backed and mortgage-backed securities for this purpose.",
+        "tr": "Bir Türk bankasının binlerce konut kredisi vardır; bunlar her ay faiz ve anapara öder ama para 10 ya da 15 yıl boyunca kilitlidir. Menkul kıymetleştirme, bankanın bu kredileri bir havuzda toplamasına, ayrı bir kuruluşa satmasına ve o kuruluşun kredi ödemeleriyle desteklenen menkul kıymetler ihraç etmesine izin verir. Banka hemen nakit elde eder ve yeniden kredi verebilir. Yatırımcılar çeşitlendirilmiş bir kredi havuzu üzerinde tahvil benzeri bir alacak hakkı elde eder. Türk sermaye piyasası düzenlemeleri bu amaçla varlığa dayalı ve ipoteğe dayalı menkul kıymetlere izin verir.",
+        "key_terms": [
+          "securitization",
+          "asset-backed security"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Benefits of securitization",
+        "heading_tr": "Menkul kıymetleştirmenin faydaları",
+        "en": "For issuers (originators): it converts illiquid assets into cash, can lower funding cost because the securities are priced on the quality of the pool and not on the originator's own rating, and frees capital so new loans can be made. For investors: it gives access to exposures that may not be available directly, and tranching offers different risk and return profiles. For the economy: credit becomes cheaper and more available, and risk is spread across more investors. For markets: it adds liquidity and diversification of funding.",
+        "tr": "İhraççılar (kaynak kuruluşlar) için: likit olmayan varlıkları nakde çevirir; menkul kıymetler kaynak kuruluşun kendi notuna göre değil havuzun kalitesine göre fiyatlandığı için fonlama maliyetini düşürebilir ve yeni kredi vermek için sermaye açar. Yatırımcılar için: doğrudan ulaşılamayabilecek maruziyetlere erişim sağlar; dilimleme (tranching) farklı risk ve getiri profilleri sunar. Ekonomi için: kredi daha ucuz ve erişilebilir olur, risk daha fazla yatırımcıya yayılır. Piyasalar için: likidite ve fonlamada çeşitlendirme sağlar.",
+        "key_terms": [
+          "funding cost",
+          "tranching",
+          "originator"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The parties",
+        "heading_tr": "Taraflar",
+        "en": "The originator (seller) creates or owns the loans. It sells them to a special purpose entity (SPE, also called SPV), a separate legal entity set up only for this deal. The sale must be a true sale so the assets are legally out of the originator's reach (bankruptcy-remote). The SPE issues the ABS to investors and pays the proceeds to the originator. The servicer collects loan payments, handles late payers and passes the cash on. The trustee acts for the investors, holds the assets or monitors the deal, and enforces the rules. Rating agencies and underwriters also take part.",
+        "tr": "Kaynak kuruluş (satıcı) kredileri verir veya sahiptir. Bunları yalnızca bu işlem için kurulmuş ayrı bir tüzel kişi olan özel amaçlı kuruluşa (SPE, SPV olarak da bilinir) satar. Satış gerçek satış olmalıdır; böylece varlıklar hukuken kaynak kuruluşun erişiminin dışında kalır (iflastan korunmuş). SPE, ABS'yi yatırımcılara ihraç eder ve hasılatı kaynak kuruluşa öder. Hizmet sağlayıcı (servicer) kredi ödemelerini toplar, geciken borçluları takip eder ve nakdi iletir. Temsilci (trustee) yatırımcılar adına hareket eder, varlıkları tutar veya işlemi izler ve kuralların uygulanmasını sağlar. Derecelendirme kuruluşları ve aracı kurumlar da sürece katılır.",
+        "key_terms": [
+          "special purpose entity",
+          "true sale",
+          "servicer",
+          "trustee"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "A housing-loan deal",
+        "heading_tr": "Konut kredisi işlemi",
+        "en": "A bank sells TRY 1 billion of housing loans to an SPE. The SPE issues securities worth about TRY 1 billion to investors, using the loan payments to pay them. The bank receives the cash. The bank often stays on as servicer and keeps customer contact. If the bank later fails, creditors of the bank cannot claim the loans, because they belong to the SPE.",
+        "tr": "Bir banka 1 milyar TL'lik konut kredisini bir SPE'ye satar. SPE, kredi ödemelerini kullanarak yatırımcılara yaklaşık 1 milyar TL'lik menkul kıymet ihraç eder. Banka nakdi alır. Banka çoğu zaman hizmet sağlayıcı olarak kalır ve müşteri ilişkisini sürdürür. Banka daha sonra batarsa bankanın alacaklıları bu kredilere el koyamaz; çünkü krediler SPE'ye aittir.",
+        "key_terms": [
+          "special purpose entity"
+        ],
+        "example": {
+          "en": "Cash in: TRY 1 bn to the bank; loans out of the bank's balance sheet.",
+          "tr": "Nakit girişi: bankaya 1 milyar TL; krediler bankanın bilançosundan çıkar."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "The SPE is not owned or controlled for the benefit of the originator's creditors; the true-sale structure is the whole point. The servicer is not the trustee: the servicer collects payments, while the trustee protects investors. Securitization does not remove credit risk from the economy; it moves it. The originate-to-distribute model can weaken lending standards if the originator keeps no risk.",
+        "tr": "SPE, kaynak kuruluşun alacaklıları yararına sahip olunan veya kontrol edilen bir yapı değildir; gerçek satış yapısının amacı budur. Hizmet sağlayıcı ile temsilci aynı şey değildir: hizmet sağlayıcı ödemeleri toplar, temsilci yatırımcıları korur. Menkul kıymetleştirme kredi riskini ekonomiden kaldırmaz; yer değiştirir. Üret ve dağıt modeli, kaynak kuruluş riski elinde tutmuyorsa kredi standartlarını zayıflatabilir.",
+        "key_terms": [
+          "originate-to-distribute"
+        ]
+      }
+    ],
+    "summary_en": "Securitization pools loans, sells them to a special purpose entity and issues securities backed by the cash flows. It lowers funding costs and frees capital for issuers, gives investors new exposures and risk profiles, and spreads risk in the economy. The key parties are the originator, the SPE, the servicer and the trustee, and a true sale keeps the assets bankruptcy-remote.",
+    "summary_tr": "Menkul kıymetleştirme, kredileri havuzlar, özel amaçlı kuruluşa satar ve nakit akışlarıyla desteklenen menkul kıymetler ihraç eder. İhraççılar için fonlama maliyetini düşürür ve sermaye açar; yatırımcılara yeni maruziyetler ve risk profilleri sunar; ekonomide riski yayar. Temel taraflar kaynak kuruluş, SPE, hizmet sağlayıcı ve temsilcidir; gerçek satış varlıkları iflastan korunmuş tutar.",
+    "common_traps_tr": [
+      "Hizmet sağlayıcı ile temsilciyi karıştırmak.",
+      "SPE'nin varlıklarına kaynak kuruluşun alacaklılarının ulaşabildiğini sanmak.",
+      "Menkul kıymetleştirmenin riski tamamen ortadan kaldırdığını düşünmek.",
+      "Gerçek satışı basit bir teminat vermek sanmak.",
+      "Fonlama maliyetinin düşmesinin yalnızca kaynak kuruluşun notuna bağlı olduğunu sanmak."
+    ],
+    "vocab_ids": [
+      "securitization",
+      "asset-backed-security",
+      "originator",
+      "special-purpose-entity",
+      "true-sale",
+      "servicer",
+      "trustee",
+      "tranching",
+      "funding-cost",
+      "bankruptcy-remote",
+      "originate-to-distribute"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Menkul kıymetleştirme SPK Düzey 3'te yüzeysel; CFA'da süreç ve taraflar ayrıntılı."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-17-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a benefit of securitization to the originator of the loans?",
+      "stem_tr": "Aşağıdakilerden hangisi kredilerin kaynak kuruluşu için menkul kıymetleştirmenin büyük olasılıkla bir faydasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It converts illiquid loans into cash that can be used to make new loans.",
+          "tr": "Likit olmayan kredileri, yeni kredi vermekte kullanılabilecek nakde çevirir."
+        },
+        {
+          "key": "B",
+          "en": "It increases the credit risk the originator keeps on its own balance sheet.",
+          "tr": "Kaynak kuruluşun kendi bilançosunda tuttuğu kredi riskini artırır."
+        },
+        {
+          "key": "C",
+          "en": "It guarantees that no borrower will default.",
+          "tr": "Hiçbir borçlunun temerrüde düşmeyeceğini garanti eder."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The originator sells the loans to an SPE and receives cash. This provides liquidity and frees capital for new lending.",
+      "explanation_tr": "Kaynak kuruluş kredileri SPE'ye satar ve nakit alır. Bu, likidite sağlar ve yeni kredi için sermaye açar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Securitization generally moves risk out of the originator's balance sheet; it does not increase it.",
+          "tr": "Menkul kıymetleştirme genellikle riski kaynak kuruluşun bilançosundan çıkarır; artırmaz."
+        },
+        "C": {
+          "en": "Securitization cannot prevent borrower defaults.",
+          "tr": "Menkul kıymetleştirme borçluların temerrüdünü engelleyemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "securitization",
+        "originator",
+        "illiquid",
+        "most-likely",
+        "benefit"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Securitization can lower an originator's funding cost because the securities are most likely priced on the basis of the:",
+      "stem_tr": "Menkul kıymetleştirme, menkul kıymetler büyük olasılıkla aşağıdakilerden hangisine göre fiyatlandığı için kaynak kuruluşun fonlama maliyetini düşürebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "originator's equity market capitalization.",
+          "tr": "kaynak kuruluşun piyasa değeri."
+        },
+        {
+          "key": "B",
+          "en": "quality of the pooled assets and the structure of the deal.",
+          "tr": "havuzdaki varlıkların kalitesi ve işlemin yapısı."
+        },
+        {
+          "key": "C",
+          "en": "originator's own credit rating only.",
+          "tr": "yalnızca kaynak kuruluşun kendi kredi notu."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The assets are legally separated in the SPE. Investors look at the pool and any credit enhancement, so a lower-rated originator can still raise cheaper funds.",
+      "explanation_tr": "Varlıklar SPE'de hukuken ayrılmıştır. Yatırımcılar havuza ve varsa kredi iyileştirmeye bakar; bu yüzden düşük notlu bir kaynak kuruluş da daha ucuz fon bulabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equity market value is not the basis for ABS pricing.",
+          "tr": "Piyasa değeri ABS fiyatlamasının temeli değildir."
+        },
+        "C": {
+          "en": "If the pricing depended only on the originator's rating, funding costs would not fall.",
+          "tr": "Fiyatlama yalnızca kaynak kuruluşun notuna bağlı olsaydı fonlama maliyeti düşmezdi."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "funding-cost",
+        "securitization",
+        "originator"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is LEAST likely to be a benefit of securitization to investors?",
+      "stem_tr": "Aşağıdakilerden hangisinin yatırımcılar için menkul kıymetleştirmenin bir faydası olma olasılığı en düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Access to loan exposures that investors could not hold directly.",
+          "tr": "Yatırımcıların doğrudan tutamayacağı kredi maruziyetlerine erişim."
+        },
+        {
+          "key": "B",
+          "en": "A choice of tranches with different risk and return.",
+          "tr": "Farklı risk ve getiriye sahip dilimler arasından seçim."
+        },
+        {
+          "key": "C",
+          "en": "A guarantee that the securities carry no credit risk.",
+          "tr": "Menkul kıymetlerin hiç kredi riski taşımayacağının garantisi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Securities can still lose value if loans default. Credit enhancement reduces but never removes credit risk.",
+      "explanation_tr": "Krediler temerrüde düşerse menkul kıymetler yine de değer kaybedebilir. Kredi iyileştirme kredi riskini azaltır ama asla ortadan kaldırmaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Securitization gives investors access to exposures that are hard to buy individually.",
+          "tr": "Menkul kıymetleştirme, tek tek alınması zor olan maruziyetlere erişim sağlar."
+        },
+        "B": {
+          "en": "Tranching lets investors choose their preferred risk and return.",
+          "tr": "Dilimleme, yatırımcıların tercih ettiği risk ve getiriyi seçmesine olanak verir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-risk",
+        "tranche",
+        "least-likely",
+        "exposure",
+        "investor"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish bank sells TRY 1 billion of housing loans to an SPE, which issues securities to investors. The immediate effect on the bank is most likely:",
+      "stem_tr": "Bir Türk bankası 1 milyar TL'lik konut kredisini bir SPE'ye satıyor ve SPE yatırımcılara menkul kıymet ihraç ediyor. Bankaya anlık etkisi büyük olasılıkla nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It receives cash and the loans leave its balance sheet.",
+          "tr": "Nakit alır ve krediler bilançosundan çıkar."
+        },
+        {
+          "key": "B",
+          "en": "It owes the investors TRY 1 billion as new bank debt.",
+          "tr": "Yatırımcılara yeni banka borcu olarak 1 milyar TL borçlanır."
+        },
+        {
+          "key": "C",
+          "en": "It keeps the loans and receives a fee only.",
+          "tr": "Kredileri tutar ve yalnızca bir ücret alır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In a true sale the loans are transferred and the bank receives the cash proceeds. It may continue as servicer for a fee.",
+      "explanation_tr": "Gerçek satışta krediler devredilir ve banka nakit hasılatı alır. Ücret karşılığı hizmet sağlayıcı olarak devam edebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The securities are issued by the SPE, so they are not the bank's debt in a true sale.",
+          "tr": "Menkul kıymetleri SPE ihraç eder; gerçek satışta bunlar bankanın borcu değildir."
+        },
+        "C": {
+          "en": "In a true sale the loans are transferred to the SPE.",
+          "tr": "Gerçek satışta krediler SPE'ye devredilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "true-sale",
+        "balance-sheet",
+        "most-likely",
+        "proceeds"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A regulator worries that securitization can weaken lending standards. This concern is most consistent with which feature of the originate-to-distribute model?",
+      "stem_tr": "Bir düzenleyici, menkul kıymetleştirmenin kredi standartlarını zayıflatabileceğinden endişe ediyor. Bu endişe üret-ve-dağıt modelinin hangi özelliğiyle en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The originator must keep all loans on its balance sheet.",
+          "tr": "Kaynak kuruluş tüm kredileri bilançosunda tutmak zorundadır."
+        },
+        {
+          "key": "B",
+          "en": "The originator passes on the credit risk, so it has less incentive to screen borrowers carefully.",
+          "tr": "Kaynak kuruluş kredi riskini devreder; bu yüzden borçluları dikkatle seçmek için daha az teşviki vardır."
+        },
+        {
+          "key": "C",
+          "en": "The servicer collects payments from borrowers.",
+          "tr": "Hizmet sağlayıcı borçlulardan ödemeleri toplar."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "If the originator sells the loans soon after making them, it does not bear the loss. This can reduce the care taken in underwriting.",
+      "explanation_tr": "Kaynak kuruluş kredileri verdikten kısa süre sonra satarsa zararı üstlenmez. Bu, kredi onayında gösterilen özeni azaltabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes the opposite of originate-to-distribute; keeping loans would increase incentives.",
+          "tr": "Bu, üret-ve-dağıtın tersidir; kredileri tutmak teşviki artırırdı."
+        },
+        "C": {
+          "en": "Payment collection is a normal servicing task and does not weaken underwriting.",
+          "tr": "Ödeme toplama olağan bir hizmet görevidir ve kredi onay standartlarını zayıflatmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "originate-to-distribute",
+        "most-consistent",
+        "underwriting",
+        "screen"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a securitization, the special purpose entity (SPE) is best described as:",
+      "stem_tr": "Bir menkul kıymetleştirmede özel amaçlı kuruluş (SPE) en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the party that collects payments from borrowers.",
+          "tr": "borçlulardan ödemeleri toplayan taraf."
+        },
+        {
+          "key": "B",
+          "en": "the party that originally made the loans.",
+          "tr": "kredileri ilk veren taraf."
+        },
+        {
+          "key": "C",
+          "en": "a separate legal entity that buys the assets and issues the securities.",
+          "tr": "varlıkları satın alan ve menkul kıymetleri ihraç eden ayrı bir tüzel kişi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The SPE is set up for one purpose: to hold the pooled assets and issue the ABS. It is legally separate from the originator.",
+      "explanation_tr": "SPE tek bir amaçla kurulur: havuzdaki varlıkları tutmak ve ABS ihraç etmek. Kaynak kuruluştan hukuken ayrıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the servicer.",
+          "tr": "Bu, hizmet sağlayıcıdır."
+        },
+        "B": {
+          "en": "That is the originator.",
+          "tr": "Bu, kaynak kuruluştur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "special-purpose-entity",
+        "best-describes",
+        "issue",
+        "asset"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which party in a securitization acts on behalf of the investors, holding the assets or monitoring the deal and enforcing its terms?",
+      "stem_tr": "Bir menkul kıymetleştirmede hangi taraf yatırımcılar adına hareket eder, varlıkları tutar veya işlemi izler ve şartların uygulanmasını sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The trustee.",
+          "tr": "Temsilci (trustee)."
+        },
+        {
+          "key": "B",
+          "en": "The servicer.",
+          "tr": "Hizmet sağlayıcı (servicer)."
+        },
+        {
+          "key": "C",
+          "en": "The originator.",
+          "tr": "Kaynak kuruluş."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The trustee has a fiduciary role for the investors. The servicer handles the day-to-day collection of loan payments.",
+      "explanation_tr": "Temsilci yatırımcılar için güvene dayalı bir role sahiptir. Hizmet sağlayıcı kredi ödemelerinin günlük tahsilatını yürütür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The servicer collects payments and handles delinquent borrowers.",
+          "tr": "Hizmet sağlayıcı ödemeleri toplar ve geciken borçlularla ilgilenir."
+        },
+        "C": {
+          "en": "The originator sold the assets and is not the investors' representative.",
+          "tr": "Kaynak kuruluş varlıkları satmıştır ve yatırımcıların temsilcisi değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "trustee",
+        "fiduciary",
+        "servicer",
+        "enforce"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Which sequence best describes the typical steps in a securitization?",
+      "stem_tr": "Hangi sıralama tipik bir menkul kıymetleştirmenin adımlarını en iyi anlatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Investors buy the loans; the originator issues securities; the SPE collects payments.",
+          "tr": "Yatırımcılar kredileri satın alır; kaynak kuruluş menkul kıymet ihraç eder; SPE ödemeleri toplar."
+        },
+        {
+          "key": "B",
+          "en": "The originator sells the pool to the SPE; the SPE issues securities to investors; the SPE pays the proceeds to the originator.",
+          "tr": "Kaynak kuruluş havuzu SPE'ye satar; SPE yatırımcılara menkul kıymet ihraç eder; SPE hasılatı kaynak kuruluşa öder."
+        },
+        {
+          "key": "C",
+          "en": "The SPE makes the loans; the originator sells securities to the trustee; the servicer pays the SPE.",
+          "tr": "SPE kredileri verir; kaynak kuruluş menkul kıymetleri temsilciye satar; hizmet sağlayıcı SPE'ye öder."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The originator transfers the loans to the SPE. The SPE funds the purchase by issuing ABS. The loan cash flows then pass through the servicer to pay investors.",
+      "explanation_tr": "Kaynak kuruluş kredileri SPE'ye devreder. SPE satın almayı ABS ihraç ederek finanse eder. Kredi nakit akışları daha sonra hizmet sağlayıcı aracılığıyla yatırımcılara ödenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The roles are mixed up: investors buy the ABS, not the underlying loans, and the originator does not issue the securities.",
+          "tr": "Roller karışmıştır: yatırımcılar kredileri değil ABS'yi alır ve menkul kıymetleri kaynak kuruluş ihraç etmez."
+        },
+        "C": {
+          "en": "The SPE does not make loans; the originator does.",
+          "tr": "Kredileri SPE değil kaynak kuruluş verir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "originator",
+        "special-purpose-entity",
+        "proceeds",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Why is it important that the transfer of assets from the originator to the SPE is a true sale?",
+      "stem_tr": "Varlıkların kaynak kuruluştan SPE'ye devrinin gerçek satış olması neden önemlidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It allows the originator to keep the interest income from the loans.",
+          "tr": "Kaynak kuruluşun kredilerden gelen faiz gelirini elinde tutmasına izin verir."
+        },
+        {
+          "key": "B",
+          "en": "It removes the need for a servicer.",
+          "tr": "Hizmet sağlayıcıya olan ihtiyacı ortadan kaldırır."
+        },
+        {
+          "key": "C",
+          "en": "It keeps the assets out of reach of the originator's creditors if the originator fails.",
+          "tr": "Kaynak kuruluş batarsa varlıkları kaynak kuruluşun alacaklılarının erişiminden uzak tutar."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A true sale makes the SPE bankruptcy-remote. Investors then depend on the pool, not on the originator's financial health.",
+      "explanation_tr": "Gerçek satış SPE'yi iflastan korunmuş yapar. Yatırımcılar böylece kaynak kuruluşun mali sağlığına değil havuza bağlı olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "If the originator kept the income, the sale would not be a true sale.",
+          "tr": "Kaynak kuruluş geliri elinde tutsaydı satış gerçek satış olmazdı."
+        },
+        "B": {
+          "en": "A servicer is still needed to collect loan payments.",
+          "tr": "Kredi ödemelerini toplamak için yine de hizmet sağlayıcı gerekir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "true-sale",
+        "bankruptcy-remote",
+        "creditor",
+        "most-likely",
+        "originator"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-17-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-17",
+      "los_id": "FI-17-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "After a true sale of housing loans to an SPE, the originating bank enters bankruptcy. Which statement is most likely correct?",
+      "stem_tr": "Konut kredilerinin SPE'ye gerçek satışından sonra kaynak banka iflas ediyor. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The loans stay in the SPE, and the ABS investors keep their claim on the loan cash flows.",
+          "tr": "Krediler SPE'de kalır ve ABS yatırımcıları kredi nakit akışları üzerindeki haklarını korur."
+        },
+        {
+          "key": "B",
+          "en": "The bank's creditors can claim the loans in the SPE to repay the bank's debts.",
+          "tr": "Bankanın alacaklıları, bankanın borçlarını ödemek için SPE'deki kredilere el koyabilir."
+        },
+        {
+          "key": "C",
+          "en": "The ABS become worthless immediately because the servicer must be the originator.",
+          "tr": "Hizmet sağlayıcı kaynak kuruluş olmak zorunda olduğu için ABS derhal değersiz hale gelir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The SPE is bankruptcy-remote. The loans belong to it, so investors are paid from the loan cash flows. A replacement servicer may be needed, but the structure remains.",
+      "explanation_tr": "SPE iflastan korunmuştur. Krediler ona aittir; yatırımcılara kredi nakit akışlarından ödeme yapılır. Yeni bir hizmet sağlayıcı gerekebilir ama yapı devam eder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Under a true sale the assets are not part of the bank's estate, so its creditors cannot claim them.",
+          "tr": "Gerçek satışta varlıklar bankanın iflas masasının parçası değildir; alacaklıları bunlara el koyamaz."
+        },
+        "C": {
+          "en": "A replacement servicer can be appointed; the deal does not collapse automatically.",
+          "tr": "Yeni bir hizmet sağlayıcı atanabilir; işlem otomatik olarak çökmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bankruptcy-remote",
+        "true-sale",
+        "servicer",
+        "most-likely",
+        "estate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

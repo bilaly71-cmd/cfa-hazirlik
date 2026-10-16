@@ -1,0 +1,1391 @@
+{
+  "module_id": "FI-13",
+  "lesson": {
+    "id": "FI-13-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-13",
+    "los_ids": [
+      "FI-13-a",
+      "FI-13-b",
+      "FI-13-c",
+      "FI-13-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Curve-Based and Empirical Fixed-Income Risk Measures",
+    "title_tr": "Eğri Esaslı ve Ampirik Faiz Riski Ölçüleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "When the cash flows change too",
+        "heading_tr": "Nakit akışları da değiştiğinde",
+        "en": "Modified duration assumes the cash flows are fixed. This is fine for a plain DİBS. It fails for a bond with an embedded option, such as a callable corporate bond: when rates fall, the issuer may redeem early, so the cash flows change. We then need a measure that reprices the bond after a shift in the benchmark curve. Other tools look at which part of the curve moves, or at what actually happened in past data.",
+        "tr": "Düzeltilmiş durasyon nakit akışlarının sabit olduğunu varsayar. Sade bir DİBS için bu yeterlidir. Çağrılabilir şirket tahvili gibi gömülü opsiyonlu bir tahvilde ise yetersiz kalır: faizler düşünce ihraççı erken itfa edebilir ve nakit akışları değişir. Bu durumda gösterge eğri kaydıktan sonra tahvili yeniden fiyatlayan bir ölçüye ihtiyaç vardır. Diğer araçlar, eğrinin hangi bölümünün hareket ettiğine veya geçmiş verilerde fiilen ne olduğuna bakar.",
+        "key_terms": [
+          "embedded option",
+          "callable bond",
+          "benchmark yield curve"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Effective duration and convexity",
+        "heading_tr": "Efektif durasyon ve efektif konveksite",
+        "en": "Effective duration (EffDur) measures price sensitivity to a parallel shift of the benchmark yield curve, using a full repricing model that lets cash flows change. Effective convexity is the curvature measured in the same way. A callable bond shows negative convexity when yields are low: the price rises less than expected because the call limit caps its value (price compression). A putable bond has a price floor. Compared with an identical option-free bond, a callable has a lower EffDur when yields fall, and a putable has a lower EffDur when yields rise.",
+        "tr": "Efektif durasyon (EffDur), nakit akışlarının değişmesine izin veren tam yeniden fiyatlama modeliyle, gösterge getiri eğrisinin paralel kaymasına karşı fiyat duyarlılığını ölçer. Efektif konveksite aynı yöntemle ölçülen eğriliktir. Çağrılabilir tahvil, getiriler düşükken negatif konveksite gösterir: çağrı hakkı değeri sınırladığı için fiyat beklenenden az artar (fiyat sıkışması). Satılabilir (putable) tahvilin fiyat tabanı vardır. Aynı özelliklere sahip opsiyonsuz tahvile kıyasla, çağrılabilir tahvilin EffDur değeri getiriler düşerken, satılabilir tahvilin EffDur değeri getiriler yükselirken daha düşüktür.",
+        "key_terms": [
+          "effective duration",
+          "effective convexity",
+          "negative convexity",
+          "price compression"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Formulas",
+        "heading_tr": "Formüller",
+        "en": "EffDur = (PV₋ − PV₊) / (2 × PV₀ × Δcurve). Effective convexity = (PV₋ + PV₊ − 2PV₀) / (PV₀ × (Δcurve)²). Here PV₋ and PV₊ are full-model prices after the benchmark curve falls and rises by Δcurve. The price estimate uses the same form as before: %ΔPV ≈ −EffDur × Δcurve + ½ × EffCon × (Δcurve)². Key rate duration (KRD) is the sensitivity to a change in the par rate of one maturity, holding the rest of the curve fixed; the KRDs add up to EffDur. Empirical duration is the slope of a regression of historical price changes on yield changes.",
+        "tr": "EffDur = (PV₋ − PV₊) / (2 × PV₀ × Δeğri). Efektif konveksite = (PV₋ + PV₊ − 2PV₀) / (PV₀ × (Δeğri)²). Burada PV₋ ve PV₊, gösterge eğri Δeğri kadar düşünce ve yükselince tam model fiyatlarıdır. Fiyat tahmini önceki formla aynıdır: %ΔPV ≈ −EffDur × Δeğri + ½ × EffCon × (Δeğri)². Anahtar vade durasyonu (KRD), eğrinin geri kalanı sabitken yalnızca bir vadenin par faizindeki değişime duyarlılıktır; KRD'ler toplamı EffDur'a eşittir. Ampirik durasyon, geçmiş fiyat değişimlerinin getiri değişimlerine regresyonundan elde edilen eğimdir.",
+        "key_terms": [
+          "key rate duration",
+          "empirical duration"
+        ],
+        "formula_latex": "\\text{EffDur}=\\frac{PV_--PV_+}{2\\,PV_0\\,\\Delta curve}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A callable bond",
+        "heading_tr": "Çağrılabilir tahvil örneği",
+        "en": "A callable bond has PV₀ = 102.0. After a 50 bp parallel fall in the benchmark curve, PV₋ = 104.2. After a 50 bp rise, PV₊ = 99.9. EffDur = (104.2 − 99.9) / (2 × 102.0 × 0.005) = 4.3 / 1.02 = 4.22. Effective convexity = (104.2 + 99.9 − 204.0) / (102.0 × 0.005²) = 0.1 / 0.00255 = 39.2.",
+        "tr": "Çağrılabilir bir tahvilin PV₀ değeri 102,0'dır. Gösterge eğri 50 bp paralel düşünce PV₋ = 104,2; 50 bp yükselince PV₊ = 99,9'dur. EffDur = (104,2 − 99,9) / (2 × 102,0 × 0,005) = 4,3 / 1,02 = 4,22. Efektif konveksite = (104,2 + 99,9 − 204,0) / (102,0 × 0,005²) = 0,1 / 0,00255 = 39,2.",
+        "key_terms": [
+          "effective duration"
+        ],
+        "example": {
+          "en": "EffDur ≈ 4.22; EffCon ≈ 39.2.",
+          "tr": "EffDur ≈ 4,22; EffCon ≈ 39,2."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Do not use modified duration for bonds with embedded options. A callable bond can have negative convexity, so the convexity adjustment is then negative. KRDs describe non-parallel shifts, while EffDur assumes a parallel shift. Empirical duration is based on past data and can change with the sample period; it can differ a lot from analytical duration for credit-risky bonds because spreads move with the market.",
+        "tr": "Gömülü opsiyonlu tahvillerde düzeltilmiş durasyonu kullanmayın. Çağrılabilir tahvilin konveksitesi negatif olabilir; bu durumda konveksite düzeltmesi de negatiftir. KRD'ler paralel olmayan kaymaları anlatır; EffDur ise paralel kayma varsayar. Ampirik durasyon geçmiş verilere dayanır ve örneklem dönemine göre değişebilir; spreadler piyasayla birlikte hareket ettiği için kredi riskli tahvillerde analitik durasyondan çok farklı çıkabilir.",
+        "key_terms": [
+          "negative convexity",
+          "non-parallel shift"
+        ]
+      }
+    ],
+    "summary_en": "Effective duration and convexity reprice a bond after a shift in the benchmark curve and are needed for bonds with embedded options. Callable bonds show negative convexity at low yields. Key rate durations capture non-parallel curve moves and sum to effective duration. Empirical duration comes from a historical regression and can differ from analytical duration.",
+    "summary_tr": "Efektif durasyon ve konveksite, gösterge eğri kaydıktan sonra tahvili yeniden fiyatlar ve gömülü opsiyonlu tahvillerde gereklidir. Çağrılabilir tahviller düşük getirilerde negatif konveksite gösterir. Anahtar vade durasyonları paralel olmayan eğri hareketlerini yakalar ve toplamı efektif durasyona eşittir. Ampirik durasyon geçmiş verilerin regresyonundan gelir ve analitik durasyondan farklı olabilir.",
+    "common_traps_tr": [
+      "Gömülü opsiyonlu tahvilde düzeltilmiş durasyon kullanmak.",
+      "Çağrılabilir tahvilde konveksite düzeltmesini hep pozitif almak.",
+      "EffDur formülünde paydadaki 2'yi unutmak.",
+      "KRD'lerin paralel kaymada toplamının EffDur'dan farklı olduğunu sanmak.",
+      "Ampirik durasyonu analitik durasyonla aynı sanmak."
+    ],
+    "vocab_ids": [
+      "effective-duration",
+      "effective-convexity",
+      "embedded-option",
+      "callable-bond",
+      "putable-bond",
+      "negative-convexity",
+      "price-compression",
+      "key-rate-duration",
+      "empirical-duration",
+      "benchmark-yield-curve",
+      "non-parallel-shift",
+      "regression",
+      "analytical-duration"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Gömülü opsiyonlu tahvil ve efektif durasyon SPK Düzey 3'te yok denecek kadar azdır."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-13-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Effective duration is preferred to modified duration for a bond with an embedded option because modified duration:",
+      "stem_tr": "Gömülü opsiyonlu bir tahvil için efektif durasyon, düzeltilmiş durasyona tercih edilir; çünkü düzeltilmiş durasyon:",
+      "options": [
+        {
+          "key": "A",
+          "en": "assumes the bond's cash flows do not change when yields change.",
+          "tr": "getiri değiştiğinde tahvilin nakit akışlarının değişmediğini varsayar."
+        },
+        {
+          "key": "B",
+          "en": "cannot be calculated for bonds with coupons.",
+          "tr": "kuponlu tahviller için hesaplanamaz."
+        },
+        {
+          "key": "C",
+          "en": "measures only the effect of credit spread changes.",
+          "tr": "yalnızca kredi spreadi değişimlerinin etkisini ölçer."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With an embedded call or put, the expected cash flows depend on the yield level. Effective duration reprices the bond with a model that allows this.",
+      "explanation_tr": "Gömülü çağrı veya satım opsiyonu varsa beklenen nakit akışları getiri düzeyine bağlıdır. Efektif durasyon bu durumu hesaba katan bir modelle tahvili yeniden fiyatlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Modified duration can be calculated for coupon bonds; the problem is the fixed cash-flow assumption.",
+          "tr": "Düzeltilmiş durasyon kuponlu tahvillerde hesaplanabilir; sorun nakit akışlarının sabit varsayılmasıdır."
+        },
+        "C": {
+          "en": "Modified duration is a yield-based measure and does not isolate spread changes.",
+          "tr": "Düzeltilmiş durasyon getiri esaslı bir ölçüdür ve spread değişimlerini ayrıştırmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "effective-duration",
+        "embedded-option",
+        "cash-flow",
+        "assume",
+        "modified-duration"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which type of bond is most likely to exhibit negative convexity when yields are low?",
+      "stem_tr": "Getiriler düşükken hangi tür tahvilin negatif konveksite göstermesi en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A putable bond.",
+          "tr": "Satılabilir tahvil."
+        },
+        {
+          "key": "B",
+          "en": "A callable bond.",
+          "tr": "Çağrılabilir tahvil."
+        },
+        {
+          "key": "C",
+          "en": "A zero-coupon bond.",
+          "tr": "Sıfır kuponlu tahvil."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "When yields fall, a callable bond is likely to be called, so its price rises less than an option-free bond (price compression). This produces negative convexity.",
+      "explanation_tr": "Getiriler düşünce çağrılabilir tahvil büyük olasılıkla çağrılır; fiyatı opsiyonsuz tahvilden daha az yükselir (fiyat sıkışması). Bu, negatif konveksite doğurur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A put option gives a price floor and adds convexity.",
+          "tr": "Put opsiyonu fiyat tabanı sağlar ve konveksiteyi artırır."
+        },
+        "C": {
+          "en": "A plain zero-coupon bond has positive convexity.",
+          "tr": "Sade bir sıfır kuponlu tahvil pozitif konveksiteye sahiptir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "negative-convexity",
+        "callable-bond",
+        "most-likely",
+        "price-compression"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with an otherwise identical option-free bond, a callable bond's effective duration when yields fall sharply is most likely:",
+      "stem_tr": "Diğer özellikleri aynı olan opsiyonsuz tahvile kıyasla, getiriler sert düştüğünde çağrılabilir tahvilin efektif durasyonu büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher.",
+          "tr": "daha yüksektir."
+        },
+        {
+          "key": "B",
+          "en": "the same.",
+          "tr": "aynıdır."
+        },
+        {
+          "key": "C",
+          "en": "lower.",
+          "tr": "daha düşüktür."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "As yields fall, the call becomes more likely and the expected life of the bond shortens. The price becomes less sensitive to yields, so effective duration is lower than that of the option-free bond.",
+      "explanation_tr": "Getiriler düştükçe çağrı olasılığı artar ve tahvilin beklenen ömrü kısalır. Fiyat getirilere daha az duyarlı hale gelir; efektif durasyon opsiyonsuz tahvilinkinden düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Call risk makes the price less responsive to yield falls, so duration is not higher.",
+          "tr": "Çağrı riski fiyatı getiri düşüşlerine daha az duyarlı yapar; durasyon daha yüksek olmaz."
+        },
+        "B": {
+          "en": "The call option changes expected cash flows, so durations differ.",
+          "tr": "Call opsiyonu beklenen nakit akışlarını değiştirir; durasyonlar farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "callable-bond",
+        "effective-duration",
+        "compared-with",
+        "identical",
+        "sharply"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with an otherwise identical option-free bond, a putable bond:",
+      "stem_tr": "Diğer özellikleri aynı olan opsiyonsuz tahvile kıyasla, satılabilir (putable) tahvil:",
+      "options": [
+        {
+          "key": "A",
+          "en": "has a price floor when yields rise, which lowers its effective duration in that case.",
+          "tr": "getiriler yükselince fiyat tabanına sahiptir; bu durumda efektif durasyonu daha düşüktür."
+        },
+        {
+          "key": "B",
+          "en": "has negative convexity when yields rise.",
+          "tr": "getiriler yükselince negatif konveksiteye sahiptir."
+        },
+        {
+          "key": "C",
+          "en": "always has a higher effective duration.",
+          "tr": "her zaman daha yüksek efektif durasyona sahiptir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Holders can sell the bond back at the put price when yields rise. This limits the price fall, so the sensitivity to rising yields is smaller.",
+      "explanation_tr": "Getiriler yükselince yatırımcı tahvili satış fiyatından geri satabilir. Bu fiyat düşüşünü sınırlar; yükselen getirilere duyarlılık daha azdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The put option adds positive convexity.",
+          "tr": "Put opsiyonu pozitif konveksite katar."
+        },
+        "C": {
+          "en": "When yields rise, the put is exercised and the effective duration falls rather than rises.",
+          "tr": "Getiriler yükselince opsiyon kullanılır ve efektif durasyon artmaz, düşer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "putable-bond",
+        "price-floor",
+        "effective-duration",
+        "compared-with",
+        "identical"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Eurobond issued by a Turkish corporate is callable at 102. After benchmark yields fall sharply, an analyst notes that its price has barely risen above 102. This behavior is most consistent with:",
+      "stem_tr": "Bir Türk şirketinin ihraç ettiği Eurobond 102'den çağrılabilir. Gösterge getiriler sert düştükten sonra analist, fiyatın 102'nin pek üzerine çıkmadığını görür. Bu davranış aşağıdakilerden hangisiyle en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a price floor and positive convexity.",
+          "tr": "fiyat tabanı ve pozitif konveksite."
+        },
+        {
+          "key": "B",
+          "en": "price compression and negative convexity.",
+          "tr": "fiyat sıkışması ve negatif konveksite."
+        },
+        {
+          "key": "C",
+          "en": "a rise in the bond's modified duration.",
+          "tr": "tahvilin düzeltilmiş durasyonunun artması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The call price caps the bond's value. When yields are low, the price approaches the call price and stops rising: price compression and negative convexity.",
+      "explanation_tr": "Çağrı fiyatı tahvilin değerini sınırlar. Getiriler düşükken fiyat çağrı fiyatına yaklaşır ve yükselmeyi bırakır: fiyat sıkışması ve negatif konveksite.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A price floor describes a putable bond, not a callable one.",
+          "tr": "Fiyat tabanı satılabilir tahviller için geçerlidir, çağrılabilir için değil."
+        },
+        "C": {
+          "en": "Duration falls (not rises) when the call becomes likely.",
+          "tr": "Çağrı olasılığı arttığında durasyon yükselmez, düşer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "callable-bond",
+        "price-compression",
+        "eurobond",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A callable bond is priced at 102.0. If the benchmark yield curve shifts down by 50 bps, its price is 104.2; if it shifts up by 50 bps, its price is 99.9. The effective duration is closest to:",
+      "stem_tr": "Çağrılabilir bir tahvilin fiyatı 102,0'dır. Gösterge getiri eğrisi 50 bp aşağı kayarsa fiyatı 104,2; 50 bp yukarı kayarsa 99,9 olur. Efektif durasyon aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.11 years",
+          "tr": "2,11 years",
+          "value": 2.1078
+        },
+        {
+          "key": "B",
+          "en": "8.43 years",
+          "tr": "8,43 years",
+          "value": 8.4314
+        },
+        {
+          "key": "C",
+          "en": "4.22 years",
+          "tr": "4,22 years",
+          "value": 4.2157
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "EffDur = (104.2 − 99.9) / (2 × 102.0 × 0.005) = 4.3 / 1.02 = 4.22.",
+      "explanation_tr": "EffDur = (104,2 − 99,9) / (2 × 102,0 × 0,005) = 4,3 / 1,02 = 4,22.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses Δcurve = 1% (100 bps) instead of 50 bps.",
+          "tr": "Bu, 50 bp yerine Δeğri = %1 (100 bp) kullanır."
+        },
+        "B": {
+          "en": "This leaves out the 2 in the denominator.",
+          "tr": "Bu, paydaki 2'yi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: effective duration from prices after ± curve shifts.",
+          "tr": "İstenen: ± eğri kaymalarından sonraki fiyatlarla efektif durasyon."
+        },
+        {
+          "en": "Formula: (PV₋ − PV₊) / (2 × PV₀ × Δcurve), Δcurve = 0.005",
+          "tr": "Formül: (PV₋ − PV₊) / (2 × PV₀ × Δeğri), Δeğri = 0,005",
+          "formula_latex": "\\text{EffDur}=\\frac{PV_--PV_+}{2PV_0\\Delta curve}"
+        },
+        {
+          "en": "4.3 / (2 × 102.0 × 0.005) = 4.22",
+          "tr": "4,3 / (2 × 102,0 × 0,005) = 4,22"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "104.2 [-] 99.9 [=]",
+          "[÷] 1.02 [=]"
+        ],
+        "note_tr": "Payda: 2 × 102 × 0,005 = 1,02."
+      },
+      "numeric": {
+        "expr": "(104.2-99.9)/(2*102.0*0.005)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "effective-duration",
+        "callable-bond",
+        "closest-to",
+        "benchmark-yield-curve",
+        "shift"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same prices (PV₀ = 102.0, PV₋ = 104.2, PV₊ = 99.9 for a ±50 bp curve shift), the effective convexity is closest to:",
+      "stem_tr": "Aynı fiyatlarla (±50 bp eğri kayması için PV₀ = 102,0, PV₋ = 104,2, PV₊ = 99,9) efektif konveksite aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "39.2",
+          "tr": "39,2",
+          "value": 39.2157
+        },
+        {
+          "key": "B",
+          "en": "19.6",
+          "tr": "19,6",
+          "value": 19.6078
+        },
+        {
+          "key": "C",
+          "en": "0.2",
+          "tr": "0,2",
+          "value": 0.1961
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Effective convexity = (104.2 + 99.9 − 204.0) / (102.0 × 0.000025) = 0.1 / 0.00255 = 39.2.",
+      "explanation_tr": "Efektif konveksite = (104,2 + 99,9 − 204,0) / (102,0 × 0,000025) = 0,1 / 0,00255 = 39,2.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This adds a factor of 2 in the denominator, which belongs to duration, not convexity.",
+          "tr": "Bu, paydaya durasyona ait olan 2 çarpanını ekler; konveksiteye ait değildir."
+        },
+        "C": {
+          "en": "This does not square Δcurve.",
+          "tr": "Bu, Δeğri'nin karesini almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: effective convexity.",
+          "tr": "İstenen: efektif konveksite."
+        },
+        {
+          "en": "Formula: (PV₋ + PV₊ − 2PV₀) / (PV₀ × Δcurve²)",
+          "tr": "Formül: (PV₋ + PV₊ − 2PV₀) / (PV₀ × Δeğri²)",
+          "formula_latex": "\\text{EffCon}=\\frac{PV_-+PV_+-2PV_0}{PV_0(\\Delta curve)^2}"
+        },
+        {
+          "en": "Numerator = 0.1; denominator = 0.00255; result = 39.2",
+          "tr": "Pay = 0,1; payda = 0,00255; sonuç = 39,2"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "104.2 [+] 99.9 [-] 204 [=]",
+          "[÷] 0.00255 [=]"
+        ],
+        "note_tr": "Payda: 102 × 0,005² = 0,00255."
+      },
+      "numeric": {
+        "expr": "(104.2+99.9-2*102.0)/(102.0*0.005**2)"
+      },
+      "vocab_ids": [
+        "effective-convexity",
+        "closest-to",
+        "curvature",
+        "shift",
+        "price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has an effective duration of 4.2 and an effective convexity of 39. If the benchmark curve shifts up by 100 bps in parallel, the estimated percentage price change is closest to:",
+      "stem_tr": "Bir tahvilin efektif durasyonu 4,2 ve efektif konveksitesi 39'dur. Gösterge eğri 100 bp paralel yukarı kayarsa tahmini yüzde fiyat değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-4.20%",
+          "tr": "-4,20%",
+          "value": -4.2
+        },
+        {
+          "key": "B",
+          "en": "-4.00%",
+          "tr": "-4,00%",
+          "value": -4.005
+        },
+        {
+          "key": "C",
+          "en": "-4.40%",
+          "tr": "-4,40%",
+          "value": -4.395
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "−4.2 × 0.01 = −4.2%; ½ × 39 × 0.0001 = +0.195%; total ≈ −4.0%.",
+      "explanation_tr": "−4,2 × 0,01 = −%4,2; ½ × 39 × 0,0001 = +%0,195; toplam ≈ −%4,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This leaves out the convexity adjustment.",
+          "tr": "Bu, konveksite düzeltmesini dışarıda bırakır."
+        },
+        "C": {
+          "en": "This subtracts a positive convexity adjustment.",
+          "tr": "Bu, pozitif bir konveksite düzeltmesini çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: % price change for +100 bps.",
+          "tr": "İstenen: +100 bp için % fiyat değişimi."
+        },
+        {
+          "en": "Formula: −EffDur × Δcurve + ½ × EffCon × Δcurve²",
+          "tr": "Formül: −EffDur × Δeğri + ½ × EffCon × Δeğri²",
+          "formula_latex": "-\\text{EffDur}\\,\\Delta+\\tfrac12\\text{EffCon}\\,\\Delta^2"
+        },
+        {
+          "en": "−0.042 + 0.00195 = −0.04005 → −4.0%",
+          "tr": "−0,042 + 0,00195 = −0,04005 → −%4,0"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4.2 [×] 0.01 [+/-] [=]",
+          "[+] 0.5 [×] 39 [×] 0.01 [x²] [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "(-4.2*0.01+0.5*39*0.01**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "effective-duration",
+        "effective-convexity",
+        "closest-to",
+        "parallel-shift",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A callable bond trades at 102 with an effective duration of 3.0 and an effective convexity of −60. The benchmark curve falls by 200 bps in parallel. The estimated new price using duration and convexity is closest to:",
+      "stem_tr": "Çağrılabilir bir tahvil 102'den işlem görmekte olup efektif durasyonu 3,0 ve efektif konveksitesi −60'tır. Gösterge eğri 200 bp paralel düşer. Durasyon ve konveksiteyle tahmin edilen yeni fiyat aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "108.12",
+          "tr": "108,12",
+          "value": 108.12
+        },
+        {
+          "key": "B",
+          "en": "109.34",
+          "tr": "109,34",
+          "value": 109.344
+        },
+        {
+          "key": "C",
+          "en": "106.90",
+          "tr": "106,90",
+          "value": 106.896
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "%ΔP = +6.0% + 0.5 × (−60) × 0.0004 = +6.0% − 1.2% = +4.8%. New price = 102 × 1.048 = 106.90.",
+      "explanation_tr": "%ΔP = +%6,0 + 0,5 × (−60) × 0,0004 = +%6,0 − %1,2 = +%4,8. Yeni fiyat = 102 × 1,048 = 106,90.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the duration-only price; the negative convexity adjustment is ignored.",
+          "tr": "Bu, yalnızca durasyonla bulunan fiyattır; negatif konveksite düzeltmesi yok sayılmıştır."
+        },
+        "B": {
+          "en": "This treats the convexity as +60, which gives the wrong sign.",
+          "tr": "Bu, konveksiteyi +60 alır ve işareti yanlış verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: new price after a 200 bp fall (Δcurve = −0.02).",
+          "tr": "İstenen: 200 bp düşüşten sonra yeni fiyat (Δeğri = −0,02)."
+        },
+        {
+          "en": "%ΔP = −3.0 × (−0.02) + 0.5 × (−60) × 0.0004 = 0.06 − 0.012 = 0.048",
+          "tr": "%ΔP = −3,0 × (−0,02) + 0,5 × (−60) × 0,0004 = 0,06 − 0,012 = 0,048"
+        },
+        {
+          "en": "New price = 102 × 1.048 = 106.90",
+          "tr": "Yeni fiyat = 102 × 1,048 = 106,90"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [×] 0.02 [=]",
+          "[-] 0.5 [×] 60 [×] 0.02 [x²] [=]",
+          "[+] 1 [=] [×] 102 [=]"
+        ],
+        "note_tr": "Negatif konveksite getiri düşüşünde bile fiyat kazancını azaltır."
+      },
+      "numeric": {
+        "expr": "102*(1+3.0*0.02+0.5*(-60)*0.02**2)"
+      },
+      "vocab_ids": [
+        "callable-bond",
+        "negative-convexity",
+        "closest-to",
+        "effective-duration"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond is priced at 97.1. After a 25 bp parallel fall in the benchmark curve its price is 98.5; after a 25 bp rise it is 95.8. The effective duration is closest to:",
+      "stem_tr": "Bir tahvilin fiyatı 97,1'dir. Gösterge eğri 25 bp paralel düştükten sonra fiyatı 98,5; 25 bp yükseldikten sonra 95,8 olur. Efektif durasyon aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.56 years",
+          "tr": "5,56 years",
+          "value": 5.5613
+        },
+        {
+          "key": "B",
+          "en": "11.12 years",
+          "tr": "11,12 years",
+          "value": 11.1226
+        },
+        {
+          "key": "C",
+          "en": "5.36 years",
+          "tr": "5,36 years",
+          "value": 5.3553
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "EffDur = (98.5 − 95.8) / (2 × 97.1 × 0.0025) = 2.7 / 0.4855 = 5.56.",
+      "explanation_tr": "EffDur = (98,5 − 95,8) / (2 × 97,1 × 0,0025) = 2,7 / 0,4855 = 5,56.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This leaves out the 2 in the denominator.",
+          "tr": "Bu, paydaki 2'yi unutur."
+        },
+        "C": {
+          "en": "This uses only the upward shift (one-sided), which is less accurate than the two-sided formula.",
+          "tr": "Bu, yalnızca yukarı kaymayı (tek taraflı) kullanır; iki taraflı formülden daha az doğrudur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: effective duration with a ±25 bp shift.",
+          "tr": "İstenen: ±25 bp kayma ile efektif durasyon."
+        },
+        {
+          "en": "Formula: (PV₋ − PV₊) / (2 × PV₀ × Δcurve)",
+          "tr": "Formül: (PV₋ − PV₊) / (2 × PV₀ × Δeğri)",
+          "formula_latex": "\\text{EffDur}=\\frac{PV_--PV_+}{2PV_0\\Delta curve}"
+        },
+        {
+          "en": "2.7 / 0.4855 = 5.56",
+          "tr": "2,7 / 0,4855 = 5,56"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "98.5 [-] 95.8 [=]",
+          "[÷] 0.4855 [=]"
+        ],
+        "note_tr": "Payda: 2 × 97,1 × 0,0025 = 0,4855."
+      },
+      "numeric": {
+        "expr": "(98.5-95.8)/(2*97.1*0.0025)",
+        "unit": "years"
+      },
+      "vocab_ids": [
+        "effective-duration",
+        "closest-to",
+        "benchmark-yield-curve"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Key rate duration is best described as the sensitivity of a bond's price to a change in the:",
+      "stem_tr": "Anahtar vade durasyonu en iyi şekilde bir tahvilin fiyatının hangi değişime duyarlılığıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "benchmark yield at all maturities by the same amount.",
+          "tr": "tüm vadelerdeki gösterge getirinin aynı miktarda değişimi."
+        },
+        {
+          "key": "B",
+          "en": "benchmark yield at one specific maturity, with other maturities unchanged.",
+          "tr": "diğer vadeler sabitken belirli tek bir vadedeki gösterge getiri."
+        },
+        {
+          "key": "C",
+          "en": "credit spread of the issuer only.",
+          "tr": "yalnızca ihraççının kredi spreadi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "KRD isolates the exposure to one point of the yield curve, for example the 2-, 5- or 10-year par rate.",
+      "explanation_tr": "KRD, getiri eğrisinin tek bir noktasına, örneğin 2, 5 veya 10 yıllık par faize olan maruziyeti ayırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes effective duration (a parallel shift).",
+          "tr": "Bu, efektif durasyonu (paralel kayma) tanımlar."
+        },
+        "C": {
+          "en": "Key rate duration is about the benchmark curve, not the issuer's spread.",
+          "tr": "Anahtar vade durasyonu gösterge eğriyle ilgilidir; ihraççı spreadiyle değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "key-rate-duration",
+        "best-describes",
+        "maturity",
+        "benchmark-yield-curve",
+        "unchanged"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond has key rate durations of 0.5 (2-year), 1.2 (5-year) and 2.8 (10-year). The 2-year par rate rises 20 bps, the 5-year rate is unchanged and the 10-year rate falls 30 bps. The estimated percentage price change is closest to:",
+      "stem_tr": "Bir tahvilin anahtar vade durasyonları 0,5 (2 yıl), 1,2 (5 yıl) ve 2,8'dir (10 yıl). 2 yıllık par faiz 20 bp artar, 5 yıllık faiz değişmez ve 10 yıllık faiz 30 bp düşer. Tahmini yüzde fiyat değişimi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-0.74%",
+          "tr": "-0,74%",
+          "value": -0.74
+        },
+        {
+          "key": "B",
+          "en": "-0.94%",
+          "tr": "-0,94%",
+          "value": -0.94
+        },
+        {
+          "key": "C",
+          "en": "0.74%",
+          "tr": "0,74%",
+          "value": 0.74
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "%ΔP ≈ −(0.5 × 0.002) − (1.2 × 0) − (2.8 × (−0.003)) = −0.10% + 0.84% = 0.74%.",
+      "explanation_tr": "%ΔP ≈ −(0,5 × 0,002) − (1,2 × 0) − (2,8 × (−0,003)) = −%0,10 + %0,84 = %0,74.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This has the wrong sign: the 10-year fall raises the price by more than the 2-year rise lowers it.",
+          "tr": "İşaret yanlıştır: 10 yıllık getiri düşüşü fiyatı, 2 yıllık artışın düşürdüğünden daha fazla yükseltir."
+        },
+        "B": {
+          "en": "This treats the 10-year change as a rise, ignoring that it is a fall.",
+          "tr": "Bu, 10 yıllık değişimi düşüş değil artış sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: price change for a non-parallel (twist) shift using KRDs.",
+          "tr": "İstenen: KRD'lerle paralel olmayan (bükülme) kayma için fiyat değişimi."
+        },
+        {
+          "en": "Formula: %ΔP ≈ −Σ KRDᵢ × Δyᵢ",
+          "tr": "Formül: %ΔP ≈ −Σ KRDᵢ × Δyᵢ",
+          "formula_latex": "\\%\\Delta P\\approx-\\sum KRD_i\\,\\Delta y_i"
+        },
+        {
+          "en": "−0.001 − 0 + 0.0084 = +0.0074 → +0.74%",
+          "tr": "−0,001 − 0 + 0,0084 = +0,0074 → +%0,74"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5 [×] 0.002 [+/-] [=]",
+          "[+] 2.8 [×] 0.003 [=]"
+        ],
+        "note_tr": "Her vadeyi ayrı hesaplayıp toplayın; 5 yıllık terim sıfırdır."
+      },
+      "numeric": {
+        "expr": "(-(0.5*0.002)-(1.2*0)-(2.8*(-0.003)))*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "key-rate-duration",
+        "non-parallel-shift",
+        "closest-to",
+        "par-rate",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For a parallel shift of the benchmark curve, the sum of a bond's key rate durations is approximately equal to its:",
+      "stem_tr": "Gösterge eğrinin paralel kaymasında, bir tahvilin anahtar vade durasyonları toplamı yaklaşık olarak hangi büyüklüğe eşittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "effective duration.",
+          "tr": "efektif durasyonuna."
+        },
+        {
+          "key": "B",
+          "en": "Macaulay duration.",
+          "tr": "Macaulay durasyonuna."
+        },
+        {
+          "key": "C",
+          "en": "convexity.",
+          "tr": "konveksitesine."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "If all key rates move by the same amount, the total price effect is the sum of the individual effects, which is the effective duration.",
+      "explanation_tr": "Tüm anahtar faizler aynı miktarda hareket ederse toplam fiyat etkisi bireysel etkilerin toplamıdır; bu da efektif durasyondur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Macaulay duration is a time measure and does not take option effects into account.",
+          "tr": "Macaulay durasyonu bir süre ölçüsüdür ve opsiyon etkilerini içermez."
+        },
+        "C": {
+          "en": "Convexity is a second-order measure, unrelated to the sum of first-order KRDs.",
+          "tr": "Konveksite ikinci dereceden bir ölçüdür; birinci dereceden KRD'lerin toplamıyla ilgisi yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "key-rate-duration",
+        "effective-duration",
+        "parallel-shift"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio's key rate duration exposure is concentrated at the 10-year maturity. The yield curve steepens: short-term yields fall and the 10-year yield rises. All else equal, the portfolio's value will most likely:",
+      "stem_tr": "Bir portföyün anahtar vade durasyonu maruziyeti 10 yıllık vadede yoğunlaşmıştır. Getiri eğrisi dikleşir: kısa vadeli getiriler düşer ve 10 yıllık getiri yükselir. Diğer her şey eşitken portföy değeri büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "rise.",
+          "tr": "yükselir."
+        },
+        {
+          "key": "B",
+          "en": "fall.",
+          "tr": "düşer."
+        },
+        {
+          "key": "C",
+          "en": "stay unchanged.",
+          "tr": "değişmez."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Most of the exposure is to the 10-year rate. Its rise dominates, so the value falls even though short-term yields declined.",
+      "explanation_tr": "Maruziyetin çoğu 10 yıllık faizdedir. Onun yükselişi baskın olur; kısa vadeli getiriler düşse de değer azalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A rising 10-year yield lowers prices, and the short-end fall has little weight in this portfolio.",
+          "tr": "Yükselen 10 yıllık getiri fiyatları düşürür; kısa vadedeki düşüş bu portföyde az ağırlıklıdır."
+        },
+        "C": {
+          "en": "The portfolio is exposed to the 10-year rate; a move there changes the value.",
+          "tr": "Portföy 10 yıllık faize maruzdur; oradaki hareket değeri değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "key-rate-duration",
+        "steepen",
+        "most-likely",
+        "all-else-equal",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "most-likely",
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bond A has key rate durations of 3.0 at the 2-year and 3.0 at the 10-year points. Bond B has a key rate duration of 6.0 at the 6-year point. Both have an effective duration of 6.0. The 2-year par rate rises 50 bps, the 10-year par rate falls 50 bps, and the 6-year par rate rises 10 bps. Which statement is most likely correct?",
+      "stem_tr": "A tahvilinin anahtar vade durasyonları 2 yıllık noktada 3,0 ve 10 yıllık noktada 3,0'dır. B tahvilinin 6 yıllık noktada 6,0'dır. İkisinin de efektif durasyonu 6,0'dır. 2 yıllık par faiz 50 bp artar, 10 yıllık par faiz 50 bp düşer ve 6 yıllık par faiz 10 bp artar. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both bonds fall by the same amount because their effective durations are equal.",
+          "tr": "Efektif durasyonları eşit olduğu için iki tahvil de aynı miktarda düşer."
+        },
+        {
+          "key": "B",
+          "en": "Bond B's value is roughly unchanged, while Bond A falls by about 0.6%.",
+          "tr": "B tahvilinin değeri kabaca değişmez, A tahvilinin değeri yaklaşık %0,6 düşer."
+        },
+        {
+          "key": "C",
+          "en": "Bond A's value is roughly unchanged, while Bond B falls by about 0.6%.",
+          "tr": "A tahvilinin değeri kabaca değişmez, B tahvilinin değeri yaklaşık %0,6 düşer."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Bond A: −3.0 × 0.005 − 3.0 × (−0.005) = 0. Bond B: −6.0 × 0.001 = −0.6%. Equal effective duration hides very different curve exposures.",
+      "explanation_tr": "A tahvili: −3,0 × 0,005 − 3,0 × (−0,005) = 0. B tahvili: −6,0 × 0,001 = −%0,6. Eşit efektif durasyon çok farklı eğri maruziyetlerini gizler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Equal effective durations only help for parallel shifts; this is a twist.",
+          "tr": "Eşit efektif durasyon yalnızca paralel kaymada yardımcı olur; bu bir bükülmedir."
+        },
+        "B": {
+          "en": "Bond B has all its exposure at the 6-year point, which rose, so it is Bond B that falls.",
+          "tr": "B'nin tüm maruziyeti yükselen 6 yıllık noktadadır; düşen B'dir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "key-rate-duration",
+        "most-likely",
+        "twist",
+        "effective-duration",
+        "par-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-d-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Empirical duration is most accurately described as a duration estimate that is:",
+      "stem_tr": "Ampirik durasyon en doğru şekilde nasıl bir durasyon tahmini olarak tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "derived from the observed relation between past bond price changes and yield changes.",
+          "tr": "geçmişteki tahvil fiyat değişimleri ile getiri değişimleri arasındaki gözlenen ilişkiden türetilen."
+        },
+        {
+          "key": "B",
+          "en": "computed only from the bond's promised cash flows and a yield.",
+          "tr": "yalnızca tahvilin vaat edilen nakit akışlarından ve bir getiriden hesaplanan."
+        },
+        {
+          "key": "C",
+          "en": "equal to the bond's time to maturity.",
+          "tr": "tahvilin vadeye kalan süresine eşit olan."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Empirical duration is estimated statistically, typically from a regression of historical price changes on yield changes.",
+      "explanation_tr": "Ampirik durasyon istatistiksel olarak, genellikle geçmiş fiyat değişimlerinin getiri değişimlerine regresyonuyla tahmin edilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes analytical (yield-based) duration.",
+          "tr": "Bu, analitik (getiri esaslı) durasyonu tanımlar."
+        },
+        "C": {
+          "en": "Maturity is not an estimate of price sensitivity except for a zero-coupon bond.",
+          "tr": "Vade, sıfır kuponlu tahvil dışında fiyat duyarlılığının tahmini değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "empirical-duration",
+        "regression",
+        "best-describes",
+        "observed"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-d-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A regression of a bond's percentage price changes on changes in a benchmark yield (in percentage points) gives a slope of −3.8. The empirical duration of the bond is closest to:",
+      "stem_tr": "Bir tahvilin yüzde fiyat değişimlerinin gösterge getiri değişimlerine (yüzde puan olarak) regresyonu −3,8 eğimini verir. Tahvilin ampirik durasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "−3.8.",
+          "tr": "−3,8."
+        },
+        {
+          "key": "B",
+          "en": "3.8.",
+          "tr": "3,8."
+        },
+        {
+          "key": "C",
+          "en": "0.38.",
+          "tr": "0,38."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A slope of −3.8 means a 1 percentage point rise in yield is associated with a 3.8% price fall. Empirical duration is the negative of the slope: 3.8.",
+      "explanation_tr": "−3,8'lik eğim, getirideki 1 puanlık artışın %3,8'lik fiyat düşüşüyle ilişkili olduğunu gösterir. Ampirik durasyon eğimin negatifidir: 3,8.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Duration is defined as the negative of the slope, so it is positive.",
+          "tr": "Durasyon eğimin negatifi olarak tanımlanır; bu yüzden pozitiftir."
+        },
+        "C": {
+          "en": "The yield is already in percentage points, so no rescaling by 10 is needed.",
+          "tr": "Getiri zaten yüzde puandır; 10'a bölerek ölçek değiştirmek gerekmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "empirical-duration",
+        "regression",
+        "slope",
+        "closest-to",
+        "percentage-point"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-d-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The empirical duration of a high-yield corporate bond is estimated to be lower than its analytical duration. Which explanation is most likely?",
+      "stem_tr": "Yüksek getirili bir şirket tahvilinin ampirik durasyonunun analitik durasyonundan düşük çıktığı tahmin ediliyor. Aşağıdaki açıklamalardan hangisi en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The bond has a fixed coupon, so its price does not respond to benchmark yields.",
+          "tr": "Tahvil sabit kuponludur; bu yüzden fiyatı gösterge getirilere tepki vermez."
+        },
+        {
+          "key": "B",
+          "en": "Analytical duration always understates the true price sensitivity.",
+          "tr": "Analitik durasyon her zaman gerçek fiyat duyarlılığını olduğundan düşük gösterir."
+        },
+        {
+          "key": "C",
+          "en": "Credit spreads tend to narrow when benchmark yields rise, partly offsetting the price decline.",
+          "tr": "Gösterge getiriler yükselirken kredi spreadleri daralma eğilimindedir ve fiyat düşüşünü kısmen dengeler."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Benchmark yields often rise in a strong economy, when credit spreads narrow. The two effects offset, so observed price sensitivity to the benchmark is lower than the analytical figure.",
+      "explanation_tr": "Gösterge getiriler çoğunlukla güçlü ekonomide yükselir; bu dönemde kredi spreadleri daralır. İki etki birbirini dengeler ve gözlenen fiyat duyarlılığı analitik rakamdan düşük çıkar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A fixed coupon does not make price insensitive; the bond is still discounted at market yields.",
+          "tr": "Sabit kupon fiyatı duyarsız yapmaz; tahvil yine piyasa getirileriyle iskonto edilir."
+        },
+        "B": {
+          "en": "There is no rule that analytical duration is always too low; the gap depends on the bond and the data.",
+          "tr": "Analitik durasyonun her zaman düşük olduğuna dair bir kural yoktur; fark tahvile ve veriye bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "empirical-duration",
+        "credit-spread",
+        "high-yield",
+        "most-likely",
+        "offset"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-d-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Compared with empirical duration, analytical duration (yield-based or curve-based):",
+      "stem_tr": "Ampirik durasyonla kıyaslandığında analitik durasyon (getiri veya eğri esaslı):",
+      "options": [
+        {
+          "key": "A",
+          "en": "is calculated from a model of the bond's cash flows and discount rates.",
+          "tr": "tahvilin nakit akışları ve iskonto oranlarının bir modelinden hesaplanır."
+        },
+        {
+          "key": "B",
+          "en": "is estimated from historical price data using regression.",
+          "tr": "geçmiş fiyat verilerinden regresyonla tahmin edilir."
+        },
+        {
+          "key": "C",
+          "en": "includes the effect of every factor that moved prices in the past.",
+          "tr": "geçmişte fiyatları hareket ettiren her etkeni içerir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Analytical duration starts from a pricing model: cash flows plus a yield or curve. Empirical duration starts from observed market data.",
+      "explanation_tr": "Analitik durasyon bir fiyatlama modelinden başlar: nakit akışları artı bir getiri veya eğri. Ampirik durasyon gözlenen piyasa verisinden başlar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes empirical duration.",
+          "tr": "Bu, ampirik durasyonu tanımlar."
+        },
+        "C": {
+          "en": "Analytical duration looks at yield or curve changes only, not all other factors.",
+          "tr": "Analitik durasyon yalnızca getiri veya eğri değişimlerine bakar; diğer tüm etkenlere bakmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "analytical-duration",
+        "empirical-duration",
+        "compared-with",
+        "cash-flow"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-13-d-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-13",
+      "los_id": "FI-13-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following is a disadvantage of empirical duration that is LEAST likely to be a disadvantage of analytical duration?",
+      "stem_tr": "Aşağıdakilerden hangisi ampirik durasyonun bir dezavantajıdır ve analitik durasyonun dezavantajı olması en az olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It assumes a parallel shift of the yield curve.",
+          "tr": "Paralel getiri eğrisi kayması varsayar."
+        },
+        {
+          "key": "B",
+          "en": "The estimate can change with the sample period and data frequency.",
+          "tr": "Tahmin, örneklem dönemi ve veri sıklığıyla değişebilir."
+        },
+        {
+          "key": "C",
+          "en": "It ignores changes in expected cash flows from options.",
+          "tr": "Opsiyonlardan kaynaklanan beklenen nakit akışı değişimlerini yok sayar."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Empirical duration depends on past data: the sample period, frequency and market conditions all change the estimate. Analytical duration is computed from the same formula and inputs every time.",
+      "explanation_tr": "Ampirik durasyon geçmiş verilere bağlıdır: örneklem dönemi, sıklığı ve piyasa koşulları tahmini değiştirir. Analitik durasyon her seferinde aynı formül ve girdilerle hesaplanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Analytical yield-based measures also assume parallel shifts.",
+          "tr": "Analitik getiri esaslı ölçüler de paralel kayma varsayar."
+        },
+        "C": {
+          "en": "This is a weakness of yield-based analytical duration, not of regression estimates based on actual prices.",
+          "tr": "Bu, gerçek fiyatlara dayalı regresyon tahmini değil, getiri esaslı analitik durasyonun zayıflığıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "empirical-duration",
+        "least-likely",
+        "disadvantage",
+        "analytical-duration"
+      ],
+      "pattern_ids": [
+        "least-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

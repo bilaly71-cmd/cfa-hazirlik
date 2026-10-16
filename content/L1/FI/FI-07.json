@@ -1,0 +1,849 @@
+{
+  "module_id": "FI-07",
+  "lesson": {
+    "id": "FI-07-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-07",
+    "los_ids": [
+      "FI-07-a",
+      "FI-07-b"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "title_tr": "Sabit Kuponlu Tahvillerde Getiri ve Getiri Farkı Ölçüleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Same bond, many yield numbers",
+        "heading_tr": "Aynı tahvil, birçok getiri rakamı",
+        "en": "A Turkish bank quotes a DİBS yield as an annually compounded rate, while a Eurobond usually has semiannual coupons and a semiannual yield. To compare them, you must put both on the same compounding basis. Beyond that, one bond can have several yield numbers: current yield, yield to maturity, yield to call. And investors want to know how much extra yield a corporate bond pays over a safe benchmark. That extra yield is the yield spread.",
+        "tr": "Türk bankası bir DİBS getirisini yıllık bileşik oran olarak verir; Eurobond ise genellikle yarıyıllık kuponludur ve getirisi yarıyıllık bileşiktir. İkisini karşılaştırmak için aynı bileşik faiz sıklığına getirmek gerekir. Ayrıca tek bir tahvilin birkaç getiri rakamı olabilir: cari getiri, vadeye kadar getiri, çağrıya kadar getiri. Yatırımcılar ayrıca bir şirket tahvilinin güvenli bir gösterge getirinin üzerinde ne kadar ek getiri sağladığını bilmek ister. Bu ek getiri getiri farkı (spread) olarak adlandırılır.",
+        "key_terms": [
+          "compounding frequency",
+          "yield spread"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Yield measures",
+        "heading_tr": "Getiri ölçüleri",
+        "en": "Current yield = annual coupon / price. It ignores price change. Yield to maturity (YTM) is the discount rate that equates the present value of all promised cash flows to the price; it assumes the bond is held to maturity and coupons are reinvested at the YTM. Yield to call (YTC) uses the call date and call price. Yield to worst (YTW) is the lowest of the yields to each possible call date and to maturity. It is the conservative measure for callable bonds.",
+        "tr": "Cari getiri = yıllık kupon / fiyat. Fiyat değişimini yok sayar. Vadeye kadar getiri (YTM), vaat edilen tüm nakit akışlarının bugünkü değerini fiyata eşitleyen iskonto oranıdır; tahvilin vadeye kadar tutulduğunu ve kuponların YTM ile yeniden yatırıldığını varsayar. Çağrıya kadar getiri (YTC) çağrı tarihini ve çağrı fiyatını kullanır. En kötü getiri (YTW), olası her çağrı tarihine ve vadeye kadar hesaplanan getirilerin en düşüğüdür. Çağrılabilir tahviller için temkinli ölçüdür.",
+        "key_terms": [
+          "current yield",
+          "yield to maturity",
+          "yield to call",
+          "yield to worst"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Yield spreads",
+        "heading_tr": "Getiri farkları",
+        "en": "G-spread = bond yield − government bond yield of the same maturity (interpolated if needed). I-spread = bond yield − swap rate of the same maturity. Z-spread (zero-volatility spread) is the constant spread added to every point of the benchmark spot curve so that the PV of cash flows equals the price. Option-adjusted spread (OAS) = Z-spread − option cost, where the option cost is the value of the embedded option in spread terms. For a callable bond OAS is lower than the Z-spread; for a putable bond OAS is higher.",
+        "tr": "G-spread = tahvil getirisi − aynı vadeli devlet tahvili getirisi (gerekirse enterpolasyonla). I-spread = tahvil getirisi − aynı vadeli swap faizi. Z-spread (sıfır oynaklık spreadi), nakit akışlarının bugünkü değerini fiyata eşitlemek için gösterge spot eğrisinin her noktasına eklenen sabit spreaddir. Opsiyon düzeltmeli spread (OAS) = Z-spread − opsiyon maliyetidir; burada opsiyon maliyeti gömülü opsiyonun spread cinsinden değeridir. Çağrılabilir tahvilde OAS, Z-spread'den düşüktür; satılabilir tahvilde yüksektir.",
+        "key_terms": [
+          "G-spread",
+          "I-spread",
+          "Z-spread",
+          "OAS"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Conversions and key formulas",
+        "heading_tr": "Dönüşümler ve temel formüller",
+        "en": "To convert yields with different compounding: (1 + y_m/m)^m = (1 + y_n/n)^n. For example, a semiannual yield y₂ converts to an annual yield by (1 + y₂/2)² − 1, and an annual yield y₁ converts to a semiannual yield by 2 × [(1 + y₁)^(1/2) − 1]. More frequent compounding gives a higher effective annual rate for the same stated rate.",
+        "tr": "Farklı bileşik sıklıklı getiriler arasında dönüşüm: (1 + y_m/m)^m = (1 + y_n/n)^n. Örneğin yarıyıllık bir y₂ getirisi yıllığa (1 + y₂/2)² − 1 ile; yıllık y₁ getirisi yarıyıllığa 2 × [(1 + y₁)^(1/2) − 1] ile çevrilir. Aynı nominal oranda sık bileşik, daha yüksek efektif yıllık oran verir.",
+        "key_terms": [
+          "effective annual rate",
+          "bond-equivalent yield"
+        ],
+        "formula_latex": "\\left(1+\\frac{y_m}{m}\\right)^{m}=\\left(1+\\frac{y_n}{n}\\right)^{n}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "A callable bond",
+        "heading_tr": "Çağrılabilir tahvil",
+        "en": "A bond with a 6% annual coupon, 5 years to maturity, is priced at 104. It is callable in 3 years at 100. Current yield = 6/104 = 5.77%. YTM (5 years, redemption at 100) ≈ 5.07%. YTC (3 years, call at 100) ≈ 4.54%. YTW is the lowest of these, so YTW ≈ 4.54% (the call date).",
+        "tr": "Yıllık %6 kuponlu, vadesine 5 yıl kalan bir tahvil 104'ten fiyatlanır. 3 yıl sonra 100'den çağrılabilir. Cari getiri = 6/104 = %5,77. YTM (5 yıl, 100'den itfa) ≈ %5,07. YTC (3 yıl, 100'den çağrı) ≈ %4,54. YTW bunların en düşüğüdür; dolayısıyla YTW ≈ %4,54 (çağrı tarihi).",
+        "key_terms": [
+          "yield to worst"
+        ],
+        "example": {
+          "en": "YTW = min(YTM, YTC) ≈ 4.54%.",
+          "tr": "YTW = min(YTM, YTC) ≈ %4,54."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Never compare a semiannual yield with an annual yield directly. Current yield is not a total return. YTW is the minimum of the yields, not an average. A larger spread does not always mean a better deal: it may pay for credit risk, option risk or illiquidity. Use OAS, not Z-spread, to compare a bond with an embedded option with an option-free bond.",
+        "tr": "Yarıyıllık getiriyi yıllık getiriyle doğrudan karşılaştırmayın. Cari getiri toplam getiri değildir. YTW getirilerin ortalaması değil en düşüğüdür. Daha büyük spread her zaman daha iyi bir fırsat demek değildir; kredi riski, opsiyon riski veya likidite risk primini ödüyor olabilir. Gömülü opsiyonlu tahvili opsiyonsuz tahville karşılaştırmak için Z-spread değil OAS kullanın.",
+        "key_terms": [
+          "credit risk",
+          "option risk"
+        ]
+      }
+    ],
+    "summary_en": "Yields quoted with different compounding must be converted before comparison using (1 + y_m/m)^m = (1 + y_n/n)^n. Current yield, YTM, YTC and YTW answer different questions, and YTW is the lowest of the possible yields. G-spread and I-spread use government and swap benchmarks, Z-spread uses the whole spot curve, and OAS removes the option effect (OAS = Z-spread − option cost).",
+    "summary_tr": "Farklı bileşik sıklıklı getiriler karşılaştırılmadan önce (1 + y_m/m)^m = (1 + y_n/n)^n ile dönüştürülmelidir. Cari getiri, YTM, YTC ve YTW farklı sorulara yanıt verir; YTW olası getirilerin en düşüğüdür. G-spread ve I-spread devlet ve swap göstergelerini, Z-spread tüm spot eğriyi kullanır; OAS opsiyon etkisini ayıklar (OAS = Z-spread − opsiyon maliyeti).",
+    "common_traps_tr": [
+      "Yarıyıllık getiriyi yıllık getiriyle karşılaştırmak.",
+      "Cari getiriyi toplam getiri sanmak.",
+      "YTW'yi getirilerin ortalaması almak.",
+      "Çağrılabilir tahvilde OAS'ı Z-spread'den büyük sanmak.",
+      "G-spread'i yanlış vadeli devlet tahvili ile hesaplamak."
+    ],
+    "vocab_ids": [
+      "current-yield",
+      "yield-to-maturity",
+      "yield-to-call",
+      "yield-to-worst",
+      "g-spread",
+      "i-spread",
+      "z-spread",
+      "option-adjusted-spread",
+      "compounding-frequency",
+      "effective-annual-rate",
+      "bond-equivalent-yield",
+      "yield-spread",
+      "option-cost",
+      "benchmark"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Cari getiri ve YTM SPK Düzey 3'ten tanıdık; Z-spread ve OAS yeni."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-07-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bond has a stated yield of 6.00% with semiannual compounding. The equivalent effective annual yield is closest to:",
+      "stem_tr": "Bir tahvilin belirtilen getirisi yarıyıllık bileşik %6,00'dır. Eşdeğer efektif yıllık getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "6,00%",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "6.09%",
+          "tr": "6,09%",
+          "value": 6.09
+        },
+        {
+          "key": "C",
+          "en": "6.14%",
+          "tr": "6,14%",
+          "value": 6.1364
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "EAY = (1 + 0.06/2)² − 1 = 1.0609 − 1 = 6.09%.",
+      "explanation_tr": "Efektif yıllık getiri = (1 + 0,06/2)² − 1 = 1,0609 − 1 = %6,09.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the stated rate; it ignores the interest earned on interest within the year.",
+          "tr": "Bu, belirtilen orandır; yıl içindeki faizin faizini yok sayar."
+        },
+        "C": {
+          "en": "This assumes quarterly compounding rather than semiannual.",
+          "tr": "Bu, yarıyıllık yerine üç aylık bileşik varsayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: annual-compounding equivalent of a semiannual yield.",
+          "tr": "İstenen: yarıyıllık getirinin yıllık bileşik eşdeğeri."
+        },
+        {
+          "en": "Formula: (1 + y/2)² − 1",
+          "tr": "Formül: (1 + y/2)² − 1",
+          "formula_latex": "(1+y_2/2)^2-1"
+        },
+        {
+          "en": "1.03² − 1 = 6.09%",
+          "tr": "1,03² − 1 = %6,09"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.03 [x²] [-] 1 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpıp yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "((1+0.06/2)**2-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "compounding",
+        "semiannual",
+        "effective-annual-rate",
+        "closest-to",
+        "equivalent"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An effective annual yield of 8.00% is converted to a stated annual rate with quarterly compounding. The stated rate is closest to:",
+      "stem_tr": "%8,00'lik efektif yıllık getiri, üç aylık bileşik belirtilen yıllık orana çevriliyor. Belirtilen oran aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.00%",
+          "tr": "8,00%",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "7.85%",
+          "tr": "7,85%",
+          "value": 7.8461
+        },
+        {
+          "key": "C",
+          "en": "7.77%",
+          "tr": "7,77%",
+          "value": 7.7706
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Quarterly periodic rate = 1.08^(1/4) − 1 = 1.9427%. Stated rate = 4 × that = 7.77%.",
+      "explanation_tr": "Üç aylık dönemsel oran = 1,08^(1/4) − 1 = %1,9427. Belirtilen oran = bunun 4 katı = %7,77.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the effective annual rate itself, with no conversion.",
+          "tr": "Bu, dönüşüm yapılmamış efektif yıllık oranın kendisidir."
+        },
+        "B": {
+          "en": "This converts to a semiannual, not quarterly, stated rate.",
+          "tr": "Bu, üç aylık değil yarıyıllık belirtilen orana çevirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: stated (nominal) rate with 4 compounding periods.",
+          "tr": "İstenen: 4 bileşik dönemli belirtilen (nominal) oran."
+        },
+        {
+          "en": "Formula: 4 × [(1 + EAR)^(1/4) − 1]",
+          "tr": "Formül: 4 × [(1 + EAR)^(1/4) − 1]",
+          "formula_latex": "4\\left[(1+EAR)^{1/4}-1\\right]"
+        },
+        {
+          "en": "4 × (1.08^0.25 − 1) = 7.77%",
+          "tr": "4 × (1,08^0,25 − 1) = %7,77"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.08 [y^x] 0.25 [=] [-] 1 [=]",
+          "[×] 4 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpıp yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "4*((1.08)**0.25-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "effective-annual-rate",
+        "quarterly",
+        "closest-to",
+        "stated-rate",
+        "compounding"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For the same stated annual rate, more frequent compounding results in:",
+      "stem_tr": "Aynı belirtilen yıllık oranda, bileşik sıklığının artması şu sonucu doğurur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a higher effective annual rate.",
+          "tr": "daha yüksek bir efektif yıllık oran."
+        },
+        {
+          "key": "B",
+          "en": "a lower effective annual rate.",
+          "tr": "daha düşük bir efektif yıllık oran."
+        },
+        {
+          "key": "C",
+          "en": "the same effective annual rate.",
+          "tr": "aynı efektif yıllık oran."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With more compounding periods, interest earns interest sooner, so (1 + y/m)^m − 1 rises with m.",
+      "explanation_tr": "Bileşik dönem sayısı arttıkça faiz daha erken faiz kazanır; bu yüzden (1 + y/m)^m − 1, m ile artar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "More frequent compounding adds more interest on interest, so the rate is higher, not lower.",
+          "tr": "Daha sık bileşik daha fazla faizin faizi ekler; oran düşük değil yüksektir."
+        },
+        "C": {
+          "en": "The effective rate differs unless compounding is annual.",
+          "tr": "Bileşik yıllık değilse efektif oran farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "compounding-frequency",
+        "effective-annual-rate",
+        "stated-rate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish treasury bond has an annually compounded yield of 30.00%. The equivalent yield with semiannual compounding (bond-equivalent basis) is closest to:",
+      "stem_tr": "Bir Hazine tahvilinin yıllık bileşik getirisi %30,00'dır. Yarıyıllık bileşik (bond-equivalent) eşdeğer getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.00%",
+          "tr": "30,00%",
+          "value": 30.0
+        },
+        {
+          "key": "B",
+          "en": "28.04%",
+          "tr": "28,04%",
+          "value": 28.0351
+        },
+        {
+          "key": "C",
+          "en": "32.25%",
+          "tr": "32,25%",
+          "value": 32.25
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Semiannual periodic yield = 1.30^(1/2) − 1 = 14.018%. Annualized by 2 = 28.04%.",
+      "explanation_tr": "Yarıyıllık dönemsel getiri = 1,30^(1/2) − 1 = %14,018. 2 ile yıllıklandırınca = %28,04.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the annual yield with no conversion.",
+          "tr": "Bu, dönüşüm yapılmamış yıllık getiridir."
+        },
+        "C": {
+          "en": "This converts in the wrong direction: it treats 30% as a semiannual yield and compounds it up.",
+          "tr": "Bu, yanlış yönde dönüşüm yapar: %30'u yarıyıllık getiri sayıp yıllığa çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: semiannual-compounding equivalent of an annual yield.",
+          "tr": "İstenen: yıllık getirinin yarıyıllık bileşik eşdeğeri."
+        },
+        {
+          "en": "Formula: 2 × [(1 + y₁)^(1/2) − 1]",
+          "tr": "Formül: 2 × [(1 + y₁)^(1/2) − 1]",
+          "formula_latex": "2\\left[(1+y_1)^{1/2}-1\\right]"
+        },
+        {
+          "en": "2 × (1.30^0.5 − 1) = 28.04%",
+          "tr": "2 × (1,30^0,5 − 1) = %28,04"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.3 [√x] [-] 1 [=]",
+          "[×] 2 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "2*((1.30)**0.5-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "bond-equivalent-yield",
+        "treasury",
+        "semiannual",
+        "closest-to",
+        "equivalent"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bond A has a yield of 5.10% compounded annually. Bond B has a yield of 5.00% compounded semiannually. Which statement about their yields on an equivalent annual basis is correct?",
+      "stem_tr": "A tahvilinin getirisi yıllık bileşik %5,10'dur. B tahvilinin getirisi yarıyıllık bileşik %5,00'dır. Eşdeğer yıllık bazda getirileriyle ilgili hangi ifade doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Bond B is higher: about 5.06% versus 5.00%.",
+          "tr": "B daha yüksektir: yaklaşık %5,06'ya karşılık %5,00."
+        },
+        {
+          "key": "B",
+          "en": "They are equal because both are near 5%.",
+          "tr": "İkisi de yaklaşık %5 olduğu için eşittir."
+        },
+        {
+          "key": "C",
+          "en": "Bond A is higher: 5.10% versus about 5.06%.",
+          "tr": "A daha yüksektir: %5,10'a karşılık yaklaşık %5,06."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Convert B to an annual basis: (1 + 0.05/2)² − 1 = 5.0625%. Bond A's 5.10% is higher.",
+      "explanation_tr": "B'yi yıllık baza çevirin: (1 + 0,05/2)² − 1 = %5,0625. A'nın %5,10'u daha yüksektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Bond B's annual-basis yield is 1.025² − 1 = 5.0625%, below A's 5.10%.",
+          "tr": "B'nin yıllık bazdaki getirisi 1,025² − 1 = %5,0625'tir; A'nın %5,10'undan düşüktür."
+        },
+        "B": {
+          "en": "The yields differ: 5.10% versus 5.0625%.",
+          "tr": "Getiriler farklıdır: %5,10'a karşılık %5,0625."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "compounding",
+        "equivalent",
+        "yield",
+        "compare"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bond with a 6% annual coupon (face value 100) is priced at 95. Its current yield is closest to:",
+      "stem_tr": "Yıllık %6 kuponlu (nominal değer 100) bir tahvil 95'ten fiyatlanmaktadır. Cari getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.32%",
+          "tr": "6,32%",
+          "value": 6.3158
+        },
+        {
+          "key": "B",
+          "en": "6.00%",
+          "tr": "6,00%",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "7.63%",
+          "tr": "7,63%",
+          "value": 7.6316
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Current yield = 6 / 95 = 6.32%.",
+      "explanation_tr": "Cari getiri = 6 / 95 = %6,32.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the coupon rate; current yield divides by the market price, not par.",
+          "tr": "Bu, kupon oranıdır; cari getiri par değere değil piyasa fiyatına bölünür."
+        },
+        "C": {
+          "en": "This adds an annualized price gain, which is not part of current yield.",
+          "tr": "Bu, yıllıklandırılmış fiyat kazancını ekler; bu cari getirinin parçası değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: current yield.",
+          "tr": "İstenen: cari getiri."
+        },
+        {
+          "en": "Formula: annual coupon / price",
+          "tr": "Formül: yıllık kupon / fiyat",
+          "formula_latex": "CY=\\frac{C}{P}"
+        },
+        {
+          "en": "6 / 95 = 6.32%",
+          "tr": "6 / 95 = %6,32"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "6 [÷] 95 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "6/95*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "current-yield",
+        "coupon",
+        "price",
+        "closest-to",
+        "face-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bond with a 6% annual coupon and 5 years to maturity is priced at 104. It is callable in 3 years at 100. Its yield to worst is closest to:",
+      "stem_tr": "Yıllık %6 kuponlu ve vadesine 5 yıl kalan bir tahvil 104'ten fiyatlanmaktadır. 3 yıl sonra 100'den çağrılabilir. En kötü getirisi (YTW) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.07%",
+          "tr": "5,07%",
+          "value": 5.0742
+        },
+        {
+          "key": "B",
+          "en": "4.54%",
+          "tr": "4,54%",
+          "value": 4.5437
+        },
+        {
+          "key": "C",
+          "en": "5.77%",
+          "tr": "5,77%",
+          "value": 5.7692
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "YTC = 4.54% (call at year 3 for 100) and YTM = 5.07%. YTW = the lower, 4.54%.",
+      "explanation_tr": "YTC = %4,54 (3. yılda 100'den çağrı) ve YTM = %5,07. YTW = düşük olan, %4,54.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the yield to maturity, which is higher than the yield to call, so it is not the worst.",
+          "tr": "Bu, çağrıya kadar getiriden yüksek olan vadeye kadar getiridir; en kötü değildir."
+        },
+        "C": {
+          "en": "This is the current yield, which ignores the price premium and the redemption.",
+          "tr": "Bu, fiyat primini ve itfayı yok sayan cari getiridir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: the lowest of the possible yields.",
+          "tr": "İstenen: olası getirilerin en düşüğü."
+        },
+        {
+          "en": "YTC: −104, then 6, 6, 6 + 100 = 106 at year 3 → IRR",
+          "tr": "YTC: −104, sonra 6, 6, 6 + 100 = 106 (3. yıl) → IRR"
+        },
+        {
+          "en": "YTC = 4.54% < YTM = 5.07%, so YTW = 4.54%",
+          "tr": "YTC = %4,54 < YTM = %5,07; dolayısıyla YTW = %4,54"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [N]",
+          "-104 [PV]",
+          "6 [PMT]",
+          "100 [FV]",
+          "[CPT] [I/Y]"
+        ],
+        "note_tr": "YTM için N = 5 ve FV = 100 ile tekrarlayın; düşük olanı seçin."
+      },
+      "numeric": {
+        "expr": "irr([-104,6,6,106])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "yield-to-worst",
+        "yield-to-call",
+        "callable",
+        "closest-to",
+        "redemption"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The I-spread of a corporate bond is the bond's yield minus the:",
+      "stem_tr": "Bir şirket tahvilinin I-spread değeri, tahvilin getirisinden hangisinin çıkarılmasıyla bulunur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "government bond yield of the same maturity.",
+          "tr": "aynı vadeli devlet tahvili getirisi."
+        },
+        {
+          "key": "B",
+          "en": "option cost of the embedded option.",
+          "tr": "gömülü opsiyonun maliyeti."
+        },
+        {
+          "key": "C",
+          "en": "swap rate of the same maturity.",
+          "tr": "aynı vadeli swap faizi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The I-spread uses the interpolated swap rate as the benchmark. The G-spread uses the government yield.",
+      "explanation_tr": "I-spread, gösterge olarak enterpole edilmiş swap faizini kullanır. G-spread devlet getirisini kullanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is the G-spread, which uses a government benchmark.",
+          "tr": "Bu, devlet göstergesini kullanan G-spread'dir."
+        },
+        "B": {
+          "en": "Subtracting the option cost gives OAS from the Z-spread, not the I-spread.",
+          "tr": "Opsiyon maliyetinin çıkarılması Z-spread'den OAS verir; I-spread değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "i-spread",
+        "swap-rate",
+        "benchmark",
+        "maturity",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A callable bond has a Z-spread of 180 bps. The value of the embedded call option is equivalent to 45 bps of spread. The option-adjusted spread (OAS) is closest to:",
+      "stem_tr": "Çağrılabilir bir tahvilin Z-spread değeri 180 bp'tir. Gömülü call opsiyonunun değeri 45 bp spreade eşdeğerdir. Opsiyon düzeltmeli spread (OAS) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "135 bps",
+          "tr": "135 bps",
+          "value": 135.0
+        },
+        {
+          "key": "B",
+          "en": "225 bps",
+          "tr": "225 bps",
+          "value": 225.0
+        },
+        {
+          "key": "C",
+          "en": "180 bps",
+          "tr": "180 bps",
+          "value": 180.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "OAS = Z-spread − option cost = 180 − 45 = 135 bps. The call option benefits the issuer, so some of the Z-spread is compensation for it.",
+      "explanation_tr": "OAS = Z-spread − opsiyon maliyeti = 180 − 45 = 135 bp. Call opsiyonu ihraççıya yarar; Z-spread'in bir kısmı bunun karşılığıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This adds the option cost, which would apply to a putable bond.",
+          "tr": "Bu, opsiyon maliyetini ekler; bu satılabilir tahvil için geçerli olurdu."
+        },
+        "C": {
+          "en": "This is the Z-spread, with no adjustment for the option.",
+          "tr": "Bu, opsiyon için düzeltme yapılmamış Z-spread'dir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: OAS for a callable bond.",
+          "tr": "İstenen: çağrılabilir tahvil için OAS."
+        },
+        {
+          "en": "Formula: OAS = Z-spread − option cost",
+          "tr": "Formül: OAS = Z-spread − opsiyon maliyeti",
+          "formula_latex": "OAS=Z-\\text{option cost}"
+        },
+        {
+          "en": "180 − 45 = 135 bps",
+          "tr": "180 − 45 = 135 bp"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "180 [-] 45 [=]"
+        ],
+        "note_tr": "Basit çıkarma."
+      },
+      "numeric": {
+        "expr": "180-45",
+        "unit": "bps"
+      },
+      "vocab_ids": [
+        "option-adjusted-spread",
+        "z-spread",
+        "callable",
+        "closest-to",
+        "option-cost"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-07-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-07",
+      "los_id": "FI-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst finds that a bond's OAS is lower than its Z-spread. This is most likely because the bond has an embedded:",
+      "stem_tr": "Bir analist, bir tahvilin OAS değerinin Z-spread'inden düşük olduğunu görüyor. Bunun nedeni büyük olasılıkla tahvilin gömülü hangi opsiyona sahip olmasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "put option.",
+          "tr": "put opsiyonu."
+        },
+        {
+          "key": "B",
+          "en": "call option.",
+          "tr": "call opsiyonu."
+        },
+        {
+          "key": "C",
+          "en": "conversion option.",
+          "tr": "dönüştürme opsiyonu."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "OAS = Z-spread − option cost. OAS is lower than the Z-spread when the option cost is positive, which is the case for a call option held by the issuer.",
+      "explanation_tr": "OAS = Z-spread − opsiyon maliyeti. Opsiyon maliyeti pozitifse, yani opsiyonun sahibi ihraççıysa (call opsiyonu), OAS Z-spread'den düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A put option has a negative option cost for the issuer, so OAS would exceed the Z-spread.",
+          "tr": "Put opsiyonu ihraççı açısından negatif maliyetlidir; OAS, Z-spread'i aşardı."
+        },
+        "C": {
+          "en": "The question is about callable or putable features; a conversion option is not the standard case here.",
+          "tr": "Soru call ya da put özellikleriyle ilgilidir; dönüştürme opsiyonu burada standart durum değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "option-adjusted-spread",
+        "z-spread",
+        "embedded-option",
+        "most-likely",
+        "call-option"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

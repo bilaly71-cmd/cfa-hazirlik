@@ -1,0 +1,1278 @@
+{
+  "module_id": "FI-18",
+  "lesson": {
+    "id": "FI-18-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-18",
+    "los_ids": [
+      "FI-18-a",
+      "FI-18-b",
+      "FI-18-c",
+      "FI-18-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Asset-Backed Security (ABS) Instrument and Market Features",
+    "title_tr": "Varlığa Dayalı Menkul Kıymetler (ABS): Araç ve Piyasa Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Many ways to back a bond with assets",
+        "heading_tr": "Tahvili varlıklarla desteklemenin birçok yolu",
+        "en": "Banks and finance companies can fund themselves with assets in different ways. A bank can issue a covered bond that stays on its balance sheet. A lender can sell auto loans or credit card receivables to an SPE and issue ABS. A manager can buy a portfolio of loans and fund it with tranches in a CDO. Turkish banks have also used securitization of future payment flows to raise foreign funding. Each structure moves risk differently, so the first question is always: who bears the loss, and in what order?",
+        "tr": "Bankalar ve finansman şirketleri kendilerini farklı varlık desteğiyle fonlayabilir. Banka, bilançosunda kalan bir teminatlı tahvil (covered bond) ihraç edebilir. Bir kredi veren, taşıt kredilerini ya da kredi kartı alacaklarını SPE'ye satıp ABS ihraç edebilir. Bir yönetici bir kredi portföyü alıp dilimlerle CDO ile fonlayabilir. Türk bankaları ayrıca yurt dışı fonlama sağlamak için gelecekteki ödeme akışlarında menkul kıymetleştirme yöntemini kullanmıştır. Her yapı riski farklı dağıtır; bu yüzden ilk soru her zaman şudur: zararı kim, hangi sırayla üstlenir?",
+        "key_terms": [
+          "covered bond",
+          "ABS",
+          "CDO"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Covered bonds",
+        "heading_tr": "Teminatlı tahviller (covered bond)",
+        "en": "A covered bond is a bond issued by a bank and backed by a cover pool of high-quality assets such as mortgage loans or public-sector loans. The assets stay on the issuer's balance sheet. Investors have dual recourse: first to the cover pool and, if it is not enough, to the issuer as an unsecured creditor. The cover pool is dynamic: assets that default or prepay must be replaced. Covered bonds usually have bullet maturities and lower yields than comparable ABS because of the dual recourse. In an ABS, in contrast, the assets are sold to an SPE and investors have recourse to the pool only.",
+        "tr": "Teminatlı tahvil, bir bankanın ihraç ettiği ve ipotekli krediler ya da kamu sektörü kredileri gibi yüksek kaliteli varlıklardan oluşan bir teminat havuzuyla desteklenen tahvildir. Varlıklar ihraççının bilançosunda kalır. Yatırımcıların çift başvuru hakkı (dual recourse) vardır: önce teminat havuzuna, yetmezse teminatsız alacaklı olarak ihraççıya. Teminat havuzu dinamiktir: temerrüde düşen veya erken ödenen varlıklar yenisiyle değiştirilmelidir. Teminatlı tahviller genellikle tek ödemeli vadeye sahiptir ve çift başvuru nedeniyle benzer ABS'lerden daha düşük getirilidir. ABS'de ise varlıklar SPE'ye satılır ve yatırımcının yalnızca havuza başvuru hakkı vardır.",
+        "key_terms": [
+          "dual recourse",
+          "cover pool",
+          "bullet maturity"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Credit enhancement",
+        "heading_tr": "Kredi iyileştirme",
+        "en": "Credit enhancement improves the credit quality of the securities. Internal enhancement comes from the deal structure: subordination (senior/subordinate tranches, where junior tranches absorb losses first), overcollateralization (collateral worth more than the securities issued), excess spread (collateral interest above the securities' coupons and fees), and reserve accounts. External enhancement comes from a third party, such as a financial guarantee, a letter of credit or bond insurance. External enhancement adds counterparty risk: the guarantor can be downgraded or fail.",
+        "tr": "Kredi iyileştirme, menkul kıymetlerin kredi kalitesini artırır. İç iyileştirme işlemin yapısından gelir: sübordinasyon (senior/sübordine dilimler; alt dilimler zararı ilk üstlenir), aşırı teminatlandırma (ihraç edilen menkul kıymetlerden daha değerli teminat), fazla spread (teminat faizinin menkul kıymet kuponları ve ücretlerini aşan kısmı) ve rezerv hesapları. Dış iyileştirme finansal garanti, akreditif veya tahvil sigortası gibi üçüncü bir taraftan gelir. Dış iyileştirme karşı taraf riski ekler: garantör notu düşebilir ya da batabilir.",
+        "key_terms": [
+          "subordination",
+          "overcollateralization",
+          "excess spread",
+          "reserve account"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Non-mortgage ABS and CDOs",
+        "heading_tr": "Konut dışı ABS ve CDO'lar",
+        "en": "Auto loan ABS pay scheduled interest and principal (amortizing) and are exposed to prepayments and defaults; the collateral (the car) loses value over time. Credit card receivable ABS are non-amortizing: during a revolving period, principal collections buy new receivables, and investors receive interest only. After this period, principal is repaid. Early amortization triggers end the revolving period if asset quality worsens. A collateralized debt obligation (CDO) is a structure that holds a portfolio of debt (bonds, loans, ABS) and issues senior, mezzanine and equity tranches. A CLO holds leveraged loans. A synthetic CDO takes credit exposure through credit default swaps instead of owning the debt.",
+        "tr": "Taşıt kredisi ABS'leri planlı faiz ve anapara öder (amortismanlıdır) ve erken ödeme ile temerrüt riskine maruzdur; teminat (araç) zamanla değer kaybeder. Kredi kartı alacağı ABS'leri amortismansızdır: yenileme döneminde anapara tahsilatı yeni alacak almakta kullanılır ve yatırımcılar yalnızca faiz alır. Bu dönemden sonra anapara ödenir. Erken amortisman tetikleyicileri varlık kalitesi bozulursa yenileme dönemini sona erdirir. Teminatlandırılmış borç yükümlülüğü (CDO), borç portföyü (tahvil, kredi, ABS) tutan ve senior, mezzanine ve özkaynak dilimleri ihraç eden bir yapıdır. CLO kaldıraçlı krediler tutar. Sentetik CDO, borcun kendisine sahip olmak yerine kredi temerrüt swapları (CDS) ile kredi maruziyeti alır.",
+        "key_terms": [
+          "auto loan ABS",
+          "credit card ABS",
+          "revolving period",
+          "CDO",
+          "CLO",
+          "synthetic CDO"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Losses in a tranche structure",
+        "heading_tr": "Dilimli yapıda zarar paylaşımı",
+        "en": "A pool of 1,000 funds senior 800, mezzanine 150 and equity 50. Pool losses are 120. Equity absorbs the first 50 and is wiped out. The mezzanine absorbs the next 70, which is 70/150 = 46.7% of its principal. The senior tranche loses nothing. This shows how subordination protects the senior tranche.",
+        "tr": "1.000'lik bir havuz, 800 senior, 150 mezzanine ve 50 özkaynak dilimini fonlar. Havuz zararı 120'dir. Özkaynak dilimi ilk 50'yi üstlenir ve tamamen silinir. Mezzanine sonraki 70'i üstlenir; bu anaparasının 70/150 = %46,7'sidir. Senior dilim hiçbir şey kaybetmez. Bu, sübordinasyonun senior dilimi nasıl koruduğunu gösterir.",
+        "key_terms": [
+          "subordination"
+        ],
+        "example": {
+          "en": "Mezzanine loss = (120 − 50)/150 = 46.7%.",
+          "tr": "Mezzanine zararı = (120 − 50)/150 = %46,7."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "In a covered bond the assets remain on the issuer's balance sheet; in an ABS they do not. Do not mix up internal and external credit enhancement: overcollateralization and excess spread are internal. Credit card ABS have no scheduled amortization and are not described by the usual prepayment risk of mortgages. In a CDO, equity is the residual and absorbs the first losses; it is not the safest tranche.",
+        "tr": "Teminatlı tahvilde varlıklar ihraççının bilançosunda kalır; ABS'de kalmaz. İç ve dış kredi iyileştirmeyi karıştırmayın: aşırı teminatlandırma ve fazla spread iç iyileştirmedir. Kredi kartı ABS'lerinde planlı amortisman yoktur ve ipoteklerdeki olağan erken ödeme riskiyle tanımlanmazlar. CDO'da özkaynak artık değeri alır ve ilk zararları üstlenir; en güvenli dilim değildir.",
+        "key_terms": [
+          "first-loss"
+        ]
+      }
+    ],
+    "summary_en": "Covered bonds are on-balance-sheet debt with dual recourse, while ABS are backed only by assets sold to an SPE. Credit enhancement can be internal (subordination, overcollateralization, excess spread, reserve accounts) or external (guarantees, letters of credit). Auto loan ABS amortize, credit card ABS have a revolving period, and CDOs repackage debt into tranches where junior tranches absorb the first losses.",
+    "summary_tr": "Teminatlı tahviller çift başvuru haklı, bilanço içi borçlardır; ABS ise yalnızca SPE'ye satılan varlıklarla desteklenir. Kredi iyileştirme iç (sübordinasyon, aşırı teminatlandırma, fazla spread, rezerv hesapları) ya da dış (garanti, akreditif) olabilir. Taşıt kredisi ABS'leri amortismanlıdır, kredi kartı ABS'lerinde yenileme dönemi vardır; CDO'lar borcu, alt dilimlerin ilk zararı üstlendiği dilimlere yeniden paketler.",
+    "common_traps_tr": [
+      "Teminatlı tahvil varlıklarının ABS gibi SPE'ye satıldığını sanmak.",
+      "Aşırı teminatlandırmayı dış kredi iyileştirme saymak.",
+      "Kredi kartı ABS'sinde anaparanın baştan itibaren ödendiğini sanmak.",
+      "CDO özkaynak diliminin en güvenli dilim olduğunu düşünmek.",
+      "Dış iyileştirmenin karşı taraf riski taşımadığını sanmak."
+    ],
+    "vocab_ids": [
+      "covered-bond",
+      "cover-pool",
+      "dual-recourse",
+      "credit-enhancement",
+      "subordination",
+      "overcollateralization",
+      "excess-spread",
+      "reserve-account",
+      "revolving-period",
+      "collateralized-debt-obligation",
+      "tranche",
+      "equity-tranche",
+      "synthetic",
+      "recourse"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Teminatlı tahvil ve CDO yapıları SPK Düzey 3'te sınırlı; CFA'da yapı ve risk dağılımı sorulur."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-18-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A key difference between a covered bond and an asset-backed security is that, in a covered bond:",
+      "stem_tr": "Teminatlı tahvil ile varlığa dayalı menkul kıymet arasındaki temel fark, teminatlı tahvilde:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the assets are sold to an SPE and investors have recourse to the pool only.",
+          "tr": "varlıkların SPE'ye satılması ve yatırımcıların yalnızca havuza başvuru hakkının olmasıdır."
+        },
+        {
+          "key": "B",
+          "en": "the assets stay on the issuer's balance sheet and investors have recourse to the issuer.",
+          "tr": "varlıkların ihraççının bilançosunda kalması ve yatırımcıların ihraççıya başvuru hakkının olmasıdır."
+        },
+        {
+          "key": "C",
+          "en": "investors bear the first losses on the collateral.",
+          "tr": "yatırımcıların teminattaki ilk zararları üstlenmesidir."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The cover pool remains with the issuing bank and investors also have an unsecured claim on the bank. This is called dual recourse.",
+      "explanation_tr": "Teminat havuzu ihraççı bankada kalır ve yatırımcıların bankaya karşı teminatsız bir alacak hakkı da vardır. Buna çift başvuru hakkı denir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This describes an ABS, not a covered bond.",
+          "tr": "Bu, teminatlı tahvil değil ABS'yi tanımlar."
+        },
+        "C": {
+          "en": "Covered bond investors are protected by dual recourse and do not bear first losses ahead of the issuer.",
+          "tr": "Teminatlı tahvil yatırımcıları çift başvuru hakkıyla korunur; ihraççıdan önce ilk zararı üstlenmezler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "covered-bond",
+        "recourse",
+        "balance-sheet",
+        "issuer",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "The cover pool of a covered bond is described as dynamic. This means that:",
+      "stem_tr": "Teminatlı tahvilin teminat havuzunun dinamik olduğu söylenir. Bu şu anlama gelir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the coupon on the covered bond changes with the loan rates in the pool.",
+          "tr": "teminatlı tahvilin kuponu havuzdaki kredi faizleriyle birlikte değişir."
+        },
+        {
+          "key": "B",
+          "en": "investors can sell individual loans from the pool.",
+          "tr": "yatırımcılar havuzdaki tek tek kredileri satabilir."
+        },
+        {
+          "key": "C",
+          "en": "assets that default or prepay must be replaced by performing assets.",
+          "tr": "temerrüde düşen veya erken ödenen varlıkların performans gösteren varlıklarla değiştirilmesi gerekir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The issuer has to keep the cover pool at the required quality and size, replacing non-performing assets. This supports the strong credit quality of covered bonds.",
+      "explanation_tr": "İhraççı teminat havuzunu gereken kalite ve büyüklükte tutmak, performans göstermeyen varlıkları değiştirmek zorundadır. Bu, teminatlı tahvillerin güçlü kredi kalitesini destekler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Covered bonds typically pay fixed coupons that do not depend on pool loan rates.",
+          "tr": "Teminatlı tahviller genellikle havuz kredi faizlerine bağlı olmayan sabit kuponlar öder."
+        },
+        "B": {
+          "en": "Investors hold the bond, not the individual loans.",
+          "tr": "Yatırımcılar tahvili tutar, tek tek kredileri değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cover-pool",
+        "default",
+        "replace"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank's covered bond is backed by a cover pool that turns out to be worth less than the bond's principal after the bank fails. Investors in the covered bond will most likely:",
+      "stem_tr": "Bir bankanın teminatlı tahvili, banka iflas ettikten sonra tahvil anaparasından daha az değerli çıkan bir teminat havuzuyla desteklenmektedir. Teminatlı tahvil yatırımcıları büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "claim the cover pool first and rank as unsecured creditors of the bank for any shortfall.",
+          "tr": "önce teminat havuzu üzerinde hak talep eder ve eksik kalan tutar için bankanın teminatsız alacaklıları arasında yer alır."
+        },
+        {
+          "key": "B",
+          "en": "lose the entire principal because the cover pool is the only recourse.",
+          "tr": "tek başvuru teminat havuzu olduğundan anaparanın tamamını kaybeder."
+        },
+        {
+          "key": "C",
+          "en": "receive the full principal because the covered bond is a government guarantee.",
+          "tr": "teminatlı tahvil devlet garantisi olduğu için anaparanın tamamını alır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Dual recourse: first the cover pool, then a claim on the issuer's other assets as an unsecured creditor. Recovery on the shortfall depends on the issuer's remaining assets.",
+      "explanation_tr": "Çift başvuru: önce teminat havuzu, sonra teminatsız alacaklı olarak ihraççının diğer varlıkları üzerinde hak. Eksik kalan kısmın geri kazanımı ihraççının kalan varlıklarına bağlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That would be true of an ABS without dual recourse; covered bonds also have a claim on the issuer.",
+          "tr": "Bu, çift başvuru hakkı olmayan ABS için doğru olurdu; teminatlı tahvillerin ihraççıya karşı da bir hakkı vardır."
+        },
+        "C": {
+          "en": "Covered bonds are not government guarantees; they rely on the pool and the issuer.",
+          "tr": "Teminatlı tahviller devlet garantisi değildir; havuza ve ihraççıya dayanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "dual-recourse",
+        "cover-pool",
+        "unsecured",
+        "shortfall",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with an ABS backed by a similar mortgage pool, a covered bond is most likely to have:",
+      "stem_tr": "Benzer bir ipotek havuzuyla desteklenen bir ABS ile kıyaslandığında teminatlı tahvil büyük olasılıkla hangisine sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a higher yield because the assets remain on the issuer's balance sheet.",
+          "tr": "varlıklar ihraççının bilançosunda kaldığı için daha yüksek bir getiri."
+        },
+        {
+          "key": "B",
+          "en": "a lower yield because of the additional recourse to the issuer.",
+          "tr": "ihraççıya ek başvuru hakkı nedeniyle daha düşük bir getiri."
+        },
+        {
+          "key": "C",
+          "en": "the same yield because the collateral is identical.",
+          "tr": "teminat aynı olduğu için aynı getiri."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Investors face less risk in a covered bond, so they accept a lower yield than on a comparable ABS.",
+      "explanation_tr": "Yatırımcılar teminatlı tahvilde daha az risk üstlenir; bu yüzden benzer bir ABS'ye göre daha düşük getiriyi kabul eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Staying on the balance sheet is part of the structure that lowers risk, not raises yield.",
+          "tr": "Bilançoda kalma, getiriyi artıran değil riski azaltan yapının parçasıdır."
+        },
+        "C": {
+          "en": "The dual recourse and the replacement of bad assets make covered bonds safer, so the yield differs.",
+          "tr": "Çift başvuru ve kötü varlıkların değiştirilmesi teminatlı tahvilleri daha güvenli yapar; getiri farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "covered-bond",
+        "asset-backed-security",
+        "compared-with",
+        "most-likely",
+        "yield"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about the role of the issuer's credit quality in a covered bond versus an ABS is most accurate?",
+      "stem_tr": "İhraççının kredi kalitesinin teminatlı tahvil ve ABS'deki rolü ile ilgili hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It matters equally for both because both are obligations of the originator.",
+          "tr": "İkisi de kaynak kuruluşun yükümlülüğü olduğu için ikisinde eşit derecede önemlidir."
+        },
+        {
+          "key": "B",
+          "en": "It does not matter for either, because both rely only on the collateral.",
+          "tr": "İkisi de yalnızca teminata dayandığı için hiçbirinde önemli değildir."
+        },
+        {
+          "key": "C",
+          "en": "It matters for a covered bond because of dual recourse, but not for a typical ABS whose assets are in an SPE.",
+          "tr": "Çift başvuru nedeniyle teminatlı tahvil için önemlidir, ancak varlıkları SPE'de olan tipik bir ABS için önemli değildir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "In a covered bond, the issuer's claim backs the pool. In an ABS, the true sale to the SPE isolates the assets, so investors depend on the pool and the structure.",
+      "explanation_tr": "Teminatlı tahvilde ihraççıya karşı alacak havuzu destekler. ABS'de SPE'ye gerçek satış varlıkları ayırır; yatırımcılar havuza ve yapıya bağlıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The ABS is an obligation of the SPE, not of the originator.",
+          "tr": "ABS, kaynak kuruluşun değil SPE'nin yükümlülüğüdür."
+        },
+        "B": {
+          "en": "A covered bond also relies on the issuer through dual recourse.",
+          "tr": "Teminatlı tahvil de çift başvuru yoluyla ihraççıya dayanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "covered-bond",
+        "dual-recourse",
+        "issuer",
+        "most-accurate",
+        "special-purpose-entity"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a form of internal credit enhancement?",
+      "stem_tr": "Aşağıdakilerden hangisi iç kredi iyileştirme biçimidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Overcollateralization.",
+          "tr": "Aşırı teminatlandırma."
+        },
+        {
+          "key": "B",
+          "en": "A letter of credit from a bank.",
+          "tr": "Bir bankadan akreditif."
+        },
+        {
+          "key": "C",
+          "en": "A guarantee from an insurance company.",
+          "tr": "Bir sigorta şirketinden garanti."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Overcollateralization is built into the deal: the collateral is worth more than the securities issued, so losses are absorbed first.",
+      "explanation_tr": "Aşırı teminatlandırma işlemin içine yerleştirilmiştir: teminat ihraç edilen menkul kıymetlerden daha değerlidir; zararlar önce bunda eritilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A letter of credit comes from a third party, so it is external.",
+          "tr": "Akreditif üçüncü bir taraftan gelir; dolayısıyla dış iyileştirmedir."
+        },
+        "C": {
+          "en": "An insurer's guarantee is external credit enhancement.",
+          "tr": "Sigortacı garantisi dış kredi iyileştirmedir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "overcollateralization",
+        "letter-of-credit",
+        "guarantee"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A securitization pool of 1,000 funds a senior tranche of 800, a mezzanine tranche of 150 and an equity tranche of 50. Pool losses are 120. The percentage of the mezzanine principal that is lost is closest to:",
+      "stem_tr": "1.000'lik bir menkul kıymetleştirme havuzu 800'lük senior, 150'lik mezzanine ve 50'lik özkaynak dilimini fonlar. Havuz zararları 120'dir. Mezzanine anaparasının kaybedilen yüzdesi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "80.0%",
+          "tr": "80,0%",
+          "value": 80.0
+        },
+        {
+          "key": "B",
+          "en": "46.7%",
+          "tr": "46,7%",
+          "value": 46.6667
+        },
+        {
+          "key": "C",
+          "en": "12.0%",
+          "tr": "12,0%",
+          "value": 12.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Equity absorbs 50, mezzanine absorbs 120 − 50 = 70, which is 70/150 = 46.7% of its principal. Senior loses nothing.",
+      "explanation_tr": "Özkaynak 50'yi üstlenir; mezzanine 120 − 50 = 70'i üstlenir; bu anaparanın 70/150 = %46,7'idir. Senior hiçbir şey kaybetmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This assigns all 120 of losses to the mezzanine tranche, ignoring that equity absorbs the first 50.",
+          "tr": "Bu, 120'lik zararın tamamını mezzanine'e yazar; özkaynağın ilk 50'yi üstlendiğini yok sayar."
+        },
+        "C": {
+          "en": "This is the loss rate of the whole pool, not of the mezzanine tranche.",
+          "tr": "Bu, mezzanine diliminin değil tüm havuzun zarar oranıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: loss rate of the mezzanine tranche.",
+          "tr": "İstenen: mezzanine diliminin zarar oranı."
+        },
+        {
+          "en": "Equity (first loss) absorbs 50; the rest, 120 − 50 = 70, goes to mezzanine",
+          "tr": "Özkaynak (ilk zarar) 50'yi üstlenir; kalan 120 − 50 = 70 mezzanine'e gider"
+        },
+        {
+          "en": "70 / 150 = 46.7%",
+          "tr": "70 / 150 = %46,7"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "120 [-] 50 [=]",
+          "[÷] 150 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "(120-50)/150*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "subordination",
+        "tranche",
+        "mezzanine",
+        "closest-to",
+        "absorb"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Excess spread, as a form of credit enhancement, is best described as:",
+      "stem_tr": "Kredi iyileştirme biçimi olarak fazla spread (excess spread) en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the extra principal paid to investors at maturity.",
+          "tr": "vadede yatırımcılara ödenen ek anapara."
+        },
+        {
+          "key": "B",
+          "en": "the difference between the senior and mezzanine coupons.",
+          "tr": "senior ve mezzanine kuponları arasındaki fark."
+        },
+        {
+          "key": "C",
+          "en": "the interest earned on the collateral minus the coupons and fees paid on the securities.",
+          "tr": "teminattan elde edilen faiz ile menkul kıymetlere ödenen kuponlar ve ücretler arasındaki fark."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "If the pool earns more than is needed to pay the securities, the excess can cover losses or be held in a reserve account.",
+      "explanation_tr": "Havuz menkul kıymetleri ödemek için gerekenden fazla kazanırsa fazlalık zararları karşılayabilir ya da rezerv hesabında tutulabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Excess spread is an interest-income cushion, not extra principal.",
+          "tr": "Fazla spread bir faiz geliri tamponudur; ek anapara değildir."
+        },
+        "B": {
+          "en": "It arises from the collateral's yield versus the securities' costs, not between tranche coupons.",
+          "tr": "Teminat getirisi ile menkul kıymet maliyeti arasındaki farktan doğar; dilim kuponları arasındaki farktan değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "excess-spread",
+        "credit-enhancement",
+        "best-describes",
+        "collateral",
+        "cushion"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with internal credit enhancement, a disadvantage of external credit enhancement, such as a bank letter of credit, is most likely that it:",
+      "stem_tr": "İç kredi iyileştirmeyle kıyaslandığında, banka akreditifi gibi dış kredi iyileştirmenin dezavantajı büyük olasılıkla şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "exposes investors to the credit risk of the third-party provider.",
+          "tr": "yatırımcıları üçüncü taraf sağlayıcının kredi riskine maruz bırakır."
+        },
+        {
+          "key": "B",
+          "en": "lowers the credit quality of the senior tranche.",
+          "tr": "senior dilimin kredi kalitesini düşürür."
+        },
+        {
+          "key": "C",
+          "en": "requires the collateral to be worth more than the securities.",
+          "tr": "teminatın menkul kıymetlerden daha değerli olmasını gerektirir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The enhancement is only as good as the guarantor. If the guarantor is downgraded or fails, the securities lose that protection.",
+      "explanation_tr": "İyileştirme garantör kadar güçlüdür. Garantörün notu düşer ya da batarsa menkul kıymetler bu korumayı kaybeder.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Credit enhancement is meant to raise credit quality, not to lower it.",
+          "tr": "Kredi iyileştirme kaliteyi artırmayı amaçlar, düşürmeyi değil."
+        },
+        "C": {
+          "en": "That describes overcollateralization, an internal form.",
+          "tr": "Bu, bir iç yöntem olan aşırı teminatlandırmayı tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "counterparty-risk",
+        "letter-of-credit",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In a senior/subordinate structure, which tranche is most likely to offer the highest yield, and why?",
+      "stem_tr": "Senior/sübordine yapıda hangi dilimin en yüksek getiriyi sunması en olasıdır ve neden?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The senior tranche, because it is paid first.",
+          "tr": "Senior dilim; çünkü ilk o ödenir."
+        },
+        {
+          "key": "B",
+          "en": "The junior tranche, because it absorbs losses first.",
+          "tr": "Alt (junior) dilim; çünkü zararları ilk o üstlenir."
+        },
+        {
+          "key": "C",
+          "en": "All tranches offer the same yield because they share the same pool.",
+          "tr": "Tüm dilimler aynı havuzu paylaştığı için aynı getiriyi sunar."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The junior tranche bears the first losses, so investors need a higher yield as compensation.",
+      "explanation_tr": "Alt dilim ilk zararları taşır; yatırımcılar bunun karşılığında daha yüksek getiri ister.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Being paid first lowers the risk, so the senior tranche earns the lowest yield.",
+          "tr": "İlk ödenmek riski azaltır; senior dilim en düşük getiriyi sağlar."
+        },
+        "C": {
+          "en": "Risk differs by tranche, so yields differ even with the same pool.",
+          "tr": "Risk dilime göre farklıdır; aynı havuzda bile getiriler farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "subordination",
+        "most-likely",
+        "compensation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes an auto loan ABS?",
+      "stem_tr": "Hangi ifade taşıt kredisi ABS'sini en iyi anlatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It is non-amortizing, with a revolving period during which principal is reinvested.",
+          "tr": "Amortismansızdır; anaparanın yeniden yatırıldığı bir yenileme dönemi vardır."
+        },
+        {
+          "key": "B",
+          "en": "It pays only interest until the final maturity.",
+          "tr": "Nihai vadeye kadar yalnızca faiz öder."
+        },
+        {
+          "key": "C",
+          "en": "It is amortizing, and its main risks are prepayments and defaults on loans backed by depreciating cars.",
+          "tr": "Amortismanlıdır ve ana riskleri, değer kaybeden araçlarla desteklenen kredilerde erken ödemeler ve temerrütlerdir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Auto loans are paid down over their life. Prepayments shorten the cash flows, and defaults cause losses because the repossessed car is worth less than the loan.",
+      "explanation_tr": "Taşıt kredileri vade boyunca geri ödenir. Erken ödemeler nakit akışlarını kısaltır; temerrütler zarara yol açar çünkü haczedilen araç krediden daha az değerlidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That describes a credit card ABS.",
+          "tr": "Bu, kredi kartı ABS'sini tanımlar."
+        },
+        "B": {
+          "en": "Auto loans pay scheduled principal and interest each period.",
+          "tr": "Taşıt kredileri her dönem planlı anapara ve faiz öder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "amortizing",
+        "prepayment",
+        "best-describes",
+        "default"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "During the revolving period of a credit card receivable ABS, investors most likely receive:",
+      "stem_tr": "Kredi kartı alacağı ABS'sinin yenileme döneminde yatırımcılar büyük olasılıkla neyi alır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "interest only, while principal collections are used to buy new receivables.",
+          "tr": "yalnızca faiz; anapara tahsilatları yeni alacak satın almakta kullanılır."
+        },
+        {
+          "key": "B",
+          "en": "interest and scheduled principal every month.",
+          "tr": "her ay faiz ve planlı anapara."
+        },
+        {
+          "key": "C",
+          "en": "neither interest nor principal until the end of the period.",
+          "tr": "dönem sonuna kadar ne faiz ne anapara."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Credit card balances are non-amortizing. During the revolving period, principal collected is reinvested in new receivables, and investors receive interest.",
+      "explanation_tr": "Kredi kartı bakiyeleri amortismansızdır. Yenileme döneminde tahsil edilen anapara yeni alacaklara yatırılır ve yatırımcılar faiz alır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Scheduled principal repayments start only after the revolving period ends.",
+          "tr": "Planlı anapara ödemeleri yenileme dönemi bittikten sonra başlar."
+        },
+        "C": {
+          "en": "Interest is paid during the revolving period.",
+          "tr": "Faiz yenileme döneminde ödenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "revolving-period",
+        "most-likely",
+        "receivable"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a credit card ABS, an early amortization trigger is most likely activated when:",
+      "stem_tr": "Bir kredi kartı ABS'sinde erken amortisman tetikleyicisi en olası olarak ne zaman devreye girer?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the card holders pay their balances on time.",
+          "tr": "kart sahipleri bakiyelerini zamanında ödediğinde."
+        },
+        {
+          "key": "B",
+          "en": "the performance of the receivables deteriorates below a set level.",
+          "tr": "alacakların performansı belirli bir düzeyin altına bozulduğunda."
+        },
+        {
+          "key": "C",
+          "en": "the revolving period is extended by the issuer.",
+          "tr": "ihraççı yenileme dönemini uzattığında."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Triggers such as a drop in portfolio yield or a rise in charge-offs end the revolving period and start principal repayment, to protect investors.",
+      "explanation_tr": "Portföy getirisindeki düşüş ya da zarara yazılan alacaklardaki artış gibi tetikleyiciler yenileme dönemini bitirir ve yatırımcıları korumak için anapara ödemesini başlatır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Timely payments signal good performance and do not trigger early amortization.",
+          "tr": "Zamanında ödemeler iyi performansa işaret eder ve erken amortismanı tetiklemez."
+        },
+        "C": {
+          "en": "Extending the period is the opposite of early amortization.",
+          "tr": "Dönemi uzatmak erken amortismanın tersidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "early-amortization",
+        "trigger",
+        "deteriorate",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a residential mortgage pool, the risks of an auto loan pool are most likely characterized by:",
+      "stem_tr": "Konut ipoteği havuzuyla kıyaslandığında, taşıt kredisi havuzunun riskleri büyük olasılıkla nasıl nitelenir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "more prepayment sensitivity to interest rates and a lower loss severity.",
+          "tr": "faiz oranlarına karşı daha fazla erken ödeme duyarlılığı ve daha düşük zarar şiddeti."
+        },
+        {
+          "key": "B",
+          "en": "no default risk because cars can be repossessed.",
+          "tr": "araçlar haczedilebildiği için temerrüt riski yoktur."
+        },
+        {
+          "key": "C",
+          "en": "less prepayment sensitivity to interest rates but a higher loss severity on default.",
+          "tr": "faiz oranlarına karşı daha az erken ödeme duyarlılığı ancak temerrütte daha yüksek zarar şiddeti."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Auto loans have short lives and small balances, so refinancing is less driven by rates. But cars lose value quickly, so a default can cause a larger loss relative to the balance.",
+      "explanation_tr": "Taşıt kredileri kısa vadeli ve küçük bakiyelidir; yeniden finansman faizlere daha az bağlıdır. Ancak araçlar hızla değer kaybeder; bu yüzden temerrüt, bakiyeye göre daha büyük zarara yol açabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Auto loans are short and small, so refinancing is less rate-driven; they do not have lower loss severity.",
+          "tr": "Taşıt kredileri kısa ve küçüktür; yeniden finansman faize daha az bağlıdır; zarar şiddetleri daha düşük değildir."
+        },
+        "B": {
+          "en": "Repossession does not remove default risk; the car often sells for less than the balance.",
+          "tr": "Haciz temerrüt riskini ortadan kaldırmaz; araç çoğu zaman bakiyeden daha düşük fiyata satılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "prepayment",
+        "loss-severity",
+        "compared-with",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which feature of a credit card ABS makes it differ most from an auto loan ABS in how principal is repaid?",
+      "stem_tr": "Kredi kartı ABS'sinin anaparanın ödenme biçiminde taşıt kredisi ABS'sinden en çok farklılaşmasını sağlayan özelliği hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Its revolving period, during which principal collections buy new receivables.",
+          "tr": "Anapara tahsilatlarının yeni alacak almakta kullanıldığı yenileme dönemi."
+        },
+        {
+          "key": "B",
+          "en": "Its scheduled monthly principal amortization.",
+          "tr": "Planlı aylık anapara amortismanı."
+        },
+        {
+          "key": "C",
+          "en": "Its backing by a physical asset that can be repossessed.",
+          "tr": "Haczedilebilen fiziksel bir varlıkla desteklenmesi."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Card receivables are revolving and not amortizing, so the pool is replenished during the revolving period before principal is returned.",
+      "explanation_tr": "Kart alacakları yenilenebilir ve amortismansızdır; bu yüzden anapara iade edilmeden önce yenileme döneminde havuz tazelenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Scheduled amortization is a feature of auto loan ABS.",
+          "tr": "Planlı amortisman taşıt kredisi ABS'sinin özelliğidir."
+        },
+        "C": {
+          "en": "Credit card receivables are unsecured; auto loans are backed by cars.",
+          "tr": "Kredi kartı alacakları teminatsızdır; taşıt kredileri araçlarla desteklenir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "revolving-period",
+        "amortizing",
+        "repay",
+        "differ"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-d-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A collateralized loan obligation (CLO) is a CDO whose collateral consists mainly of:",
+      "stem_tr": "Teminatlandırılmış kredi yükümlülüğü (CLO), teminatı ağırlıklı olarak hangisinden oluşan bir CDO'dur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "residential mortgages of households.",
+          "tr": "hanehalkının konut ipotekleri."
+        },
+        {
+          "key": "B",
+          "en": "leveraged loans made to companies.",
+          "tr": "şirketlere verilen kaldıraçlı krediler."
+        },
+        {
+          "key": "C",
+          "en": "credit default swaps only.",
+          "tr": "yalnızca kredi temerrüt swapları."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "CLO stands for collateralized loan obligation: the pool is bank loans, typically leveraged loans to lower-rated corporates.",
+      "explanation_tr": "CLO, teminatlandırılmış kredi yükümlülüğü demektir: havuz banka kredileridir; genellikle düşük notlu şirketlere verilen kaldıraçlı kredilerdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Residential mortgages are the collateral of an RMBS, not a CLO.",
+          "tr": "Konut ipotekleri RMBS'nin teminatıdır; CLO'nun değil."
+        },
+        "C": {
+          "en": "A pool of CDS is the feature of a synthetic CDO.",
+          "tr": "CDS havuzu sentetik CDO'nun özelliğidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "clo",
+        "leveraged-loan",
+        "collateral",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-d-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A cash flow CDO holds a portfolio of 100 yielding 7%. It is funded by a senior tranche of 80 paying 4%, a mezzanine tranche of 15 paying 6% and an equity tranche of 5. Assuming no losses and no fees, the return to the equity tranche is closest to:",
+      "stem_tr": "Bir nakit akışlı CDO, %7 getirili 100'lük bir portföy tutmaktadır. Fonlama; %4 ödeyen 80'lik senior dilim, %6 ödeyen 15'lik mezzanine dilim ve 5'lik özkaynak dilimiyle yapılmıştır. Zarar ve ücret olmadığı varsayılırsa özkaynak diliminin getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7%",
+          "tr": "7%",
+          "value": 7.0
+        },
+        {
+          "key": "B",
+          "en": "76%",
+          "tr": "76%",
+          "value": 76.0
+        },
+        {
+          "key": "C",
+          "en": "58%",
+          "tr": "58%",
+          "value": 58.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Portfolio income = 7. Senior interest = 3.2, mezzanine interest = 0.9. Residual to equity = 2.9. Return = 2.9/5 = 58%.",
+      "explanation_tr": "Portföy geliri = 7. Senior faiz = 3,2, mezzanine faiz = 0,9. Özkaynağa kalan = 2,9. Getiri = 2,9/5 = %58.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the portfolio yield; it ignores the leverage that the equity tranche receives.",
+          "tr": "Bu, portföy getirisidir; özkaynak diliminin elde ettiği kaldıraç etkisini yok sayar."
+        },
+        "B": {
+          "en": "This leaves out the interest on the mezzanine tranche.",
+          "tr": "Bu, mezzanine dilimin faizini dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: return on the equity tranche (residual).",
+          "tr": "İstenen: özkaynak diliminin (artık değer) getirisi."
+        },
+        {
+          "en": "Interest due: 0.04 × 80 = 3.2 and 0.06 × 15 = 0.9",
+          "tr": "Ödenecek faiz: 0,04 × 80 = 3,2 ve 0,06 × 15 = 0,9"
+        },
+        {
+          "en": "Residual = 7 − 3.2 − 0.9 = 2.9; 2.9/5 = 58%",
+          "tr": "Artık = 7 − 3,2 − 0,9 = 2,9; 2,9/5 = %58"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "7 [-] 3.2 [-] 0.9 [=]",
+          "[÷] 5 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "(7-0.04*80-0.06*15)/5*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "equity-tranche",
+        "residual",
+        "closest-to",
+        "leverage",
+        "cash-flow"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-d-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "A synthetic CDO differs from a cash flow CDO in that it:",
+      "stem_tr": "Sentetik CDO, nakit akışlı CDO'dan neyle ayrılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "gains exposure to credit risk through credit default swaps rather than by owning the debt.",
+          "tr": "kredi riskine borcun kendisine sahip olarak değil kredi temerrüt swapları aracılığıyla maruz kalır."
+        },
+        {
+          "key": "B",
+          "en": "holds only government bonds as collateral.",
+          "tr": "teminat olarak yalnızca devlet tahvili tutar."
+        },
+        {
+          "key": "C",
+          "en": "has no tranches.",
+          "tr": "dilimleri yoktur."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Instead of buying bonds or loans, the structure sells credit protection through CDS, so credit risk is transferred without owning the assets.",
+      "explanation_tr": "Yapı, tahvil veya kredi almak yerine CDS yoluyla kredi koruması satar; böylece varlıklara sahip olmadan kredi riski devredilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A synthetic CDO takes credit exposure, not government bond exposure.",
+          "tr": "Sentetik CDO kredi maruziyeti alır, devlet tahvili maruziyeti değil."
+        },
+        "C": {
+          "en": "Synthetic CDOs still have tranches with different loss priorities.",
+          "tr": "Sentetik CDO'ların da farklı zarar önceliklerine sahip dilimleri vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "synthetic",
+        "credit-default-swap",
+        "cdo",
+        "best-describes",
+        "exposure"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-d-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "In an arbitrage CDO, the collateral manager's incentive is most likely to:",
+      "stem_tr": "Bir arbitraj CDO'sunda teminat yöneticisinin teşviki büyük olasılıkla neyi hedefler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "hold only the safest assets to protect the equity tranche.",
+          "tr": "özkaynak dilimini korumak için yalnızca en güvenli varlıkları tutmak."
+        },
+        {
+          "key": "B",
+          "en": "earn a spread between the yield on the collateral and the cost of funding the tranches.",
+          "tr": "teminat getirisi ile dilimlerin fonlama maliyeti arasındaki farkı kazanmak."
+        },
+        {
+          "key": "C",
+          "en": "sell the collateral each month to repay the senior tranche.",
+          "tr": "senior dilimi ödemek için teminatı her ay satmak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The spread between collateral yield and tranche costs flows to the equity tranche. This can push managers toward riskier collateral.",
+      "explanation_tr": "Teminat getirisi ile dilim maliyetleri arasındaki spread özkaynak dilimine akar. Bu, yöneticileri daha riskli teminata itebilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A manager seeking a spread often holds higher-yielding, riskier collateral.",
+          "tr": "Spread arayan yönetici çoğunlukla daha yüksek getirili, daha riskli teminat tutar."
+        },
+        "C": {
+          "en": "A CDO is not usually liquidated each month; cash flows pay the tranches.",
+          "tr": "CDO genellikle her ay tasfiye edilmez; nakit akışları dilimleri öder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "arbitrage",
+        "collateral-manager",
+        "equity-tranche",
+        "most-likely",
+        "spread"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-18-d-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-18",
+      "los_id": "FI-18-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Defaults among the loans in a CLO become more highly correlated. All else equal, which tranche is most likely to see the largest increase in its probability of loss relative to its previous (low) level?",
+      "stem_tr": "Bir CLO'daki kredilerin temerrütleri birbirleriyle daha yüksek korelasyonlu hale geliyor. Diğer her şey eşitken, hangi dilimin zarar olasılığı önceki (düşük) düzeyine göre en çok artar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The equity tranche.",
+          "tr": "Özkaynak dilimi."
+        },
+        {
+          "key": "B",
+          "en": "All tranches by the same proportion.",
+          "tr": "Tüm dilimler aynı oranda."
+        },
+        {
+          "key": "C",
+          "en": "The senior tranche.",
+          "tr": "Senior dilim."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "High correlation makes extreme outcomes, with many defaults together, more likely. Senior tranches lose only in extreme scenarios, so their probability of loss rises most in relative terms.",
+      "explanation_tr": "Yüksek korelasyon, birçok temerrüdün birlikte yaşandığı aşırı sonuçları daha olası kılar. Senior dilimler yalnızca aşırı senaryolarda zarar eder; bu yüzden zarar olasılıkları göreli olarak en çok artar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The equity tranche already has a high probability of loss, so its relative increase is smaller.",
+          "tr": "Özkaynak diliminin zarar olasılığı zaten yüksektir; göreli artışı daha küçüktür."
+        },
+        "B": {
+          "en": "Tranches have different loss thresholds, so the effect is not equal.",
+          "tr": "Dilimlerin zarar eşikleri farklıdır; etki eşit değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "clo",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

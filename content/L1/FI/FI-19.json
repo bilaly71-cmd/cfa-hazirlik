@@ -1,0 +1,1407 @@
+{
+  "module_id": "FI-19",
+  "lesson": {
+    "id": "FI-19-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-19",
+    "los_ids": [
+      "FI-19-a",
+      "FI-19-b",
+      "FI-19-c",
+      "FI-19-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Mortgage-Backed Security (MBS) Instrument and Market Features",
+    "title_tr": "İpoteğe Dayalı Menkul Kıymetler (MBS): Araç ve Piyasa Özellikleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "A home loan that can be repaid early",
+        "heading_tr": "Erken ödenebilen bir konut kredisi",
+        "en": "A borrower who takes a housing loan (konut kredisi) in Turkey can usually repay it early. When interest rates fall, many borrowers refinance; when rates rise, almost nobody does. This makes the timing of MBS cash flows uncertain. The investor does not know whether principal will come back quickly or slowly. That uncertainty is called prepayment risk, and it is the main feature that separates MBS from ordinary bonds. Housing finance institutions that pool mortgages and sell securities backed by them face the same logic.",
+        "tr": "Türkiye'de konut kredisi kullanan bir borçlu genellikle krediyi erken ödeyebilir. Faizler düşünce birçok borçlu krediyi yeniden finanse eder; faizler yükselince neredeyse hiç kimse yapmaz. Bu, MBS nakit akışlarının zamanlamasını belirsiz kılar. Yatırımcı anaparanın hızlı mı yavaş mı geri döneceğini bilmez. Bu belirsizliğe erken ödeme riski denir ve MBS'yi sıradan tahvillerden ayıran temel özelliktir. İpotekleri havuzlayıp bunlarla desteklenen menkul kıymet satan konut finansmanı kuruluşları da aynı mantıkla karşılaşır.",
+        "key_terms": [
+          "prepayment risk",
+          "refinance"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Prepayment risk and tranching",
+        "heading_tr": "Erken ödeme riski ve dilimleme",
+        "en": "Contraction risk: when rates fall, prepayments speed up, the average life of the MBS shortens, and investors must reinvest at lower rates; price appreciation is limited. Extension risk: when rates rise, prepayments slow down, the average life lengthens, and the MBS loses value just when investors would like cash. Time tranching splits the pool into tranches paid in sequence. The earliest tranches take most of the contraction risk, and the latest tranches take most of the extension risk. A PAC tranche is protected within a band of prepayment speeds, while the support tranche absorbs the rest of both risks. Prepayment speed is quoted as SMM (single monthly mortality), CPR (annualized) or PSA.",
+        "tr": "Kısalma (contraction) riski: faizler düşünce erken ödemeler hızlanır, MBS'nin ortalama ömrü kısalır ve yatırımcılar daha düşük faizle yeniden yatırım yapmak zorunda kalır; fiyat artışı sınırlıdır. Uzama (extension) riski: faizler yükselince erken ödemeler yavaşlar, ortalama ömür uzar ve MBS, yatırımcının nakde ihtiyaç duyduğu anda değer kaybeder. Vade dilimleme (time tranching), havuzu sırayla ödenen dilimlere ayırır. En erken dilimler kısalma riskinin çoğunu, en son dilimler uzama riskinin çoğunu taşır. PAC dilimi belirli bir erken ödeme hızı aralığında korunur; destek (support) dilimi her iki riskin kalanını üstlenir. Erken ödeme hızı SMM (tek aylık oran), CPR (yıllıklandırılmış) veya PSA ile ifade edilir.",
+        "key_terms": [
+          "contraction risk",
+          "extension risk",
+          "time tranching",
+          "PAC",
+          "SMM",
+          "CPR",
+          "PSA"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Residential mortgages and securities",
+        "heading_tr": "Konut ipotekleri ve menkul kıymetler",
+        "en": "A fixed-rate, level-payment, fully amortizing mortgage has a constant payment; early payments are mostly interest and later payments mostly principal. Key terms: loan-to-value (LTV, the loan divided by property value; lower LTV means less default risk), recourse (whether the lender can claim other assets of the borrower; in a non-recourse loan, the lender can only take the property), and prepayment penalties. In a mortgage pass-through security, investors receive a pro-rata share of the pool's monthly interest, scheduled principal and prepayments, after servicing and guarantee fees. The pass-through rate is therefore below the weighted average coupon (WAC) of the pool. A CMO (collateralized mortgage obligation) redistributes the pass-through cash flows into tranches such as sequential-pay, PAC and support.",
+        "tr": "Sabit faizli, eşit taksitli, tam amortismanlı ipotekte ödeme sabittir; ilk ödemeler çoğunlukla faiz, sonraki ödemeler çoğunlukla anaparadır. Temel terimler: kredi/değer oranı (LTV; kredinin gayrimenkul değerine bölünmesi, düşük LTV daha az temerrüt riski demektir), rücu hakkı (recourse; borç verenin borçlunun diğer varlıklarına başvurup başvuramaması; rücusuz kredide borç veren yalnızca gayrimenkulü alabilir) ve erken ödeme cezaları. İpotek pass-through menkul kıymetinde yatırımcılar havuzun aylık faizinden, planlı anaparasından ve erken ödemelerinden orantılı pay alır; bu, hizmet ve garanti ücretlerinden sonradır. Bu yüzden pass-through faizi, havuzun ağırlıklı ortalama kuponunun (WAC) altındadır. CMO (teminatlandırılmış ipotek yükümlülüğü), pass-through nakit akışlarını sequential-pay, PAC ve destek gibi dilimlere yeniden dağıtır.",
+        "key_terms": [
+          "LTV",
+          "recourse",
+          "pass-through",
+          "WAC",
+          "CMO"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Commercial MBS (CMBS)",
+        "heading_tr": "Ticari MBS (CMBS)",
+        "en": "CMBS are backed by loans on income-producing properties such as offices, malls and hotels. Loans are usually non-recourse, so the property's income and value matter most. Key credit measures are the debt service coverage ratio (DSCR = net operating income / debt service) and LTV. Many loans are interest-only or partly amortizing and end with a balloon payment, which creates balloon risk: the borrower may not be able to refinance, and the loan extends. CMBS have call protection: loan-level (prepayment lockout, defeasance, yield maintenance, penalties) and structural (sequential pay, senior/subordinate). So CMBS have much less prepayment risk than residential MBS.",
+        "tr": "CMBS; ofis, alışveriş merkezi ve otel gibi gelir getiren gayrimenkuller üzerindeki kredilerle desteklenir. Krediler genellikle rücusuzdur; bu yüzden gayrimenkulün geliri ve değeri en önemlisidir. Temel kredi ölçüleri borç servisi karşılama oranı (DSCR = net işletme geliri / borç servisi) ve LTV'dir. Birçok kredi yalnızca faiz ödemeli veya kısmen amortismanlıdır ve balon ödeme ile biter; bu, balon riski yaratır: borçlu yeniden finanse edemeyebilir ve kredi uzar. CMBS'lerde erken ödeme koruması vardır: kredi düzeyinde (kilitleme dönemi, defeasance, yield maintenance, cezalar) ve yapısal (sequential pay, senior/sübordine). Bu yüzden CMBS'lerin erken ödeme riski konut MBS'lerinden çok daha düşüktür.",
+        "key_terms": [
+          "CMBS",
+          "DSCR",
+          "balloon risk",
+          "call protection",
+          "defeasance"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Speed and payment",
+        "heading_tr": "Hız ve ödeme",
+        "en": "A single monthly mortality (SMM) of 0.5% is equal to a CPR of 1 − (1 − 0.005)^12 = 5.84% per year. For a TRY 1,000,000 loan, 15 years, monthly rate 1.8%, the level payment is about TRY 18,755. In month 1, interest = 1,000,000 × 0.018 = 18,000, so principal repaid is only about 755. PSA: 100 PSA means CPR rises 0.2% per month to 6% at month 30. 150 PSA is 1.5 times this speed.",
+        "tr": "%0,5'lik tek aylık oran (SMM), yıllık 1 − (1 − 0,005)^12 = %5,84 CPR'ye eşittir. 1.000.000 TL'lik, 15 yıl vadeli, aylık faizi %1,8 olan bir kredide eşit taksit yaklaşık 18.755 TL'dir. 1. ayda faiz = 1.000.000 × 0,018 = 18.000; yani ödenen anapara yalnızca yaklaşık 755'tir. PSA: 100 PSA, CPR'nin ayda %0,2 artarak 30. ayda %6'ya ulaşması demektir. 150 PSA bu hızın 1,5 katıdır.",
+        "key_terms": [
+          "SMM",
+          "CPR",
+          "PSA"
+        ],
+        "example": {
+          "en": "CPR = 1 − (1 − SMM)^12.",
+          "tr": "CPR = 1 − (1 − SMM)^12."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Falling rates do not make an MBS as valuable as a plain bond: prepayments cap the price, which is negative convexity. Contraction and extension risks are two sides of the same prepayment risk, and tranching redistributes it but does not remove it. A support tranche is the least protected. Do not confuse pass-through rate with WAC. CMBS prepayment risk is low, but balloon and credit risk are not.",
+        "tr": "Faizler düşünce MBS sade bir tahvil kadar değer kazanmaz: erken ödemeler fiyatı sınırlar; bu, negatif konveksitedir. Kısalma ve uzama riskleri aynı erken ödeme riskinin iki yüzüdür; dilimleme bunu yeniden dağıtır ama ortadan kaldırmaz. Destek dilimi en az korunandır. Pass-through faizini WAC ile karıştırmayın. CMBS'te erken ödeme riski düşüktür, ama balon ve kredi riski düşük değildir.",
+        "key_terms": [
+          "negative convexity"
+        ]
+      }
+    ],
+    "summary_en": "MBS cash flows depend on prepayments. Falling rates cause contraction risk and rising rates cause extension risk; time tranching, PAC and support tranches redistribute these risks. Residential mortgages are usually level-payment and amortizing, and pass-through investors share pool cash flows after fees. CMBS rely on property income (DSCR, LTV), have call protection and balloon risk, and have much less prepayment risk than residential MBS.",
+    "summary_tr": "MBS nakit akışları erken ödemelere bağlıdır. Düşen faizler kısalma riskine, yükselen faizler uzama riskine yol açar; vade dilimleme, PAC ve destek dilimleri bu riskleri yeniden dağıtır. Konut ipotekleri genellikle eşit taksitli ve amortismanlıdır; pass-through yatırımcıları ücretlerden sonra havuz nakit akışlarını paylaşır. CMBS gayrimenkul gelirine dayanır (DSCR, LTV), erken ödeme koruması ve balon riski vardır; erken ödeme riski konut MBS'lerinden çok daha düşüktür.",
+    "common_traps_tr": [
+      "Kısalma ve uzama riskini ayrı ve bağımsız riskler sanmak.",
+      "Pass-through faizinin havuzun WAC'ına eşit olduğunu düşünmek.",
+      "CMBS'te de konut MBS'ndeki kadar erken ödeme riski olduğunu sanmak.",
+      "Faizler düşerken MBS'nin fiyatının sınırsız artacağını düşünmek.",
+      "Eşit taksitli kredide faiz payının zamanla arttığını sanmak."
+    ],
+    "vocab_ids": [
+      "prepayment-risk",
+      "contraction-risk",
+      "extension-risk",
+      "time-tranching",
+      "pac-tranche",
+      "support-tranche",
+      "pass-through",
+      "collateralized-mortgage-obligation",
+      "loan-to-value",
+      "recourse",
+      "balloon-risk",
+      "call-protection",
+      "defeasance",
+      "debt-service-coverage-ratio",
+      "negative-convexity",
+      "smm",
+      "cpr",
+      "psa"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Konut finansmanı ve ipotek SPK Düzey 3'te yüzeysel; erken ödeme riski ve CMO yapıları CFA'ya özgüdür."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-19-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Contraction risk in a mortgage-backed security is best described as the risk that:",
+      "stem_tr": "İpoteğe dayalı menkul kıymette kısalma (contraction) riski en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "rising interest rates slow prepayments and lengthen the average life of the security.",
+          "tr": "yükselen faizlerin erken ödemeleri yavaşlatması ve menkul kıymetin ortalama ömrünü uzatması riskidir."
+        },
+        {
+          "key": "B",
+          "en": "borrowers stop paying their mortgages.",
+          "tr": "borçluların ipotek ödemelerini durdurması riskidir."
+        },
+        {
+          "key": "C",
+          "en": "falling interest rates speed up prepayments and shorten the average life of the security.",
+          "tr": "düşen faizlerin erken ödemeleri hızlandırması ve menkul kıymetin ortalama ömrünü kısaltması riskidir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When rates fall, borrowers refinance and repay early. Investors receive principal sooner and must reinvest at lower rates.",
+      "explanation_tr": "Faizler düşünce borçlular yeniden finanse eder ve erken öder. Yatırımcılar anaparayı daha erken alır ve daha düşük faizle yeniden yatırım yapmak zorunda kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is extension risk.",
+          "tr": "Bu, uzama (extension) riskidir."
+        },
+        "B": {
+          "en": "That is default (credit) risk, not prepayment risk.",
+          "tr": "Bu, erken ödeme riski değil temerrüt (kredi) riskidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "contraction-risk",
+        "prepayment-risk",
+        "best-describes",
+        "refinance",
+        "average-life"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "When interest rates rise, prepayments on a mortgage pool most likely:",
+      "stem_tr": "Faizler yükseldiğinde bir ipotek havuzundaki erken ödemeler büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "slow down, which lengthens the average life of the MBS.",
+          "tr": "yavaşlar; bu, MBS'nin ortalama ömrünü uzatır."
+        },
+        {
+          "key": "B",
+          "en": "speed up, which shortens the average life of the MBS.",
+          "tr": "hızlanır; bu, MBS'nin ortalama ömrünü kısaltır."
+        },
+        {
+          "key": "C",
+          "en": "stay unchanged because loan rates are fixed.",
+          "tr": "kredi faizleri sabit olduğu için değişmez."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Borrowers have less reason to refinance when market rates are above their loan rate. The MBS then lasts longer: extension risk.",
+      "explanation_tr": "Piyasa faizleri kredi faizlerinin üzerindeyse borçluların yeniden finansman için nedeni azalır. MBS daha uzun yaşar: uzama riski.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Prepayments speed up when rates fall, not when they rise.",
+          "tr": "Erken ödemeler faizler yükselince değil düşünce hızlanır."
+        },
+        "C": {
+          "en": "Fixed loan rates do not stop prepayment behavior from depending on current rates.",
+          "tr": "Sabit kredi faizi, erken ödeme davranışının güncel faizlere bağlı olmasını engellemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "extension-risk",
+        "prepayment",
+        "most-likely",
+        "average-life",
+        "refinance"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a four-tranche sequential-pay CMO (Tranches A, B, C and D, paid in that order), which tranche has the most extension risk and which has the most contraction risk?",
+      "stem_tr": "Dört dilimli bir sequential-pay CMO'da (A, B, C ve D dilimleri bu sırayla ödenir) en fazla uzama riski ve en fazla kısalma riski hangi dilimdedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Most extension risk: A; most contraction risk: D.",
+          "tr": "En fazla uzama riski: A; en fazla kısalma riski: D."
+        },
+        {
+          "key": "B",
+          "en": "Most extension risk: D; most contraction risk: A.",
+          "tr": "En fazla uzama riski: D; en fazla kısalma riski: A."
+        },
+        {
+          "key": "C",
+          "en": "Both risks are the same for all four tranches.",
+          "tr": "Her iki risk de dört dilimde aynıdır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Principal goes to A first, so A is hit hardest by faster prepayments (contraction). D receives principal last, so slow prepayments delay it the most (extension).",
+      "explanation_tr": "Anapara önce A'ya gider; bu yüzden A en çok hızlanan erken ödemelerden (kısalma) etkilenir. D anaparayı en son alır; yavaş erken ödemeler onu en çok geciktirir (uzama).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This reverses it: the last tranche waits longest, so it is the one that suffers most when payments slow.",
+          "tr": "Bu, ters yazılmıştır: son dilim en uzun bekler; ödemeler yavaşlayınca en çok o etkilenir."
+        },
+        "C": {
+          "en": "Tranching redistributes the risks unequally among tranches.",
+          "tr": "Dilimleme riskleri dilimler arasında eşit olmayan biçimde dağıtır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sequential-pay",
+        "time-tranching",
+        "extension-risk",
+        "contraction-risk",
+        "respectively"
+      ],
+      "pattern_ids": [
+        "respectively"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A mortgage pool has a single monthly mortality (SMM) rate of 0.50%. The equivalent annualized conditional prepayment rate (CPR) is closest to:",
+      "stem_tr": "Bir ipotek havuzunun tek aylık ödenme oranı (SMM) %0,50'dir. Eşdeğer yıllıklandırılmış koşullu erken ödeme oranı (CPR) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "6,00%",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "6.17%",
+          "tr": "6,17%",
+          "value": 6.1678
+        },
+        {
+          "key": "C",
+          "en": "5.84%",
+          "tr": "5,84%",
+          "value": 5.8377
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "CPR = 1 − (1 − 0.005)^12 = 5.84%.",
+      "explanation_tr": "CPR = 1 − (1 − 0,005)^12 = %5,84.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This multiplies the monthly rate by 12, which ignores that prepayments reduce the pool each month.",
+          "tr": "Bu, aylık oranı 12 ile çarpar; erken ödemelerin havuzu her ay küçülttüğünü yok sayar."
+        },
+        "B": {
+          "en": "This compounds the SMM upward like interest; prepayments shrink the pool, so the correct formula uses survival (1 − SMM).",
+          "tr": "Bu, SMM'yi faiz gibi yukarı doğru bileşikler; erken ödemeler havuzu küçülttüğü için doğru formül hayatta kalma oranını (1 − SMM) kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: CPR from SMM.",
+          "tr": "İstenen: SMM'den CPR."
+        },
+        {
+          "en": "Formula: CPR = 1 − (1 − SMM)^12",
+          "tr": "Formül: CPR = 1 − (1 − SMM)^12",
+          "formula_latex": "CPR=1-(1-SMM)^{12}"
+        },
+        {
+          "en": "1 − 0.995^12 = 5.84%",
+          "tr": "1 − 0,995^12 = %5,84"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.995 [y^x] 12 [=]",
+          "[+/-] [+] 1 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "(1-(1-0.005)**12)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "smm",
+        "cpr",
+        "prepayment",
+        "closest-to",
+        "annualized"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Under the PSA benchmark, 100 PSA assumes a CPR that rises by 0.2 percentage points per month until it reaches 6.0% at month 30. At month 20, the CPR under 150 PSA is closest to:",
+      "stem_tr": "PSA ölçütünde 100 PSA, CPR'nin 30. ayda %6,0'a ulaşana kadar ayda 0,2 puan artacağını varsayar. 20. ayda 150 PSA altında CPR aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.0%",
+          "tr": "6,0%",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "4.0%",
+          "tr": "4,0%",
+          "value": 4.0
+        },
+        {
+          "key": "C",
+          "en": "9.0%",
+          "tr": "9,0%",
+          "value": 9.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "100 PSA at month 20 is 0.2 × 20 = 4.0%. Multiply by 1.5 for 150 PSA: 6.0%.",
+      "explanation_tr": "20. ayda 100 PSA = 0,2 × 20 = %4,0. 150 PSA için 1,5 ile çarpılır: %6,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the CPR under 100 PSA at month 20.",
+          "tr": "Bu, 20. ayda 100 PSA altındaki CPR'dir."
+        },
+        "C": {
+          "en": "This is the 150 PSA speed at or after month 30, not at month 20.",
+          "tr": "Bu, 30. ay ve sonrası için geçerli 150 PSA hızıdır; 20. ay için değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: CPR at month 20 for 150 PSA.",
+          "tr": "İstenen: 20. ayda 150 PSA için CPR."
+        },
+        {
+          "en": "100 PSA at month 20: 0.2% × 20 = 4.0%",
+          "tr": "20. ayda 100 PSA: %0,2 × 20 = %4,0"
+        },
+        {
+          "en": "150 PSA = 1.5 × 4.0% = 6.0%",
+          "tr": "150 PSA = 1,5 × %4,0 = %6,0"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.2 [×] 20 [×] 1.5 [=]"
+        ],
+        "note_tr": "Basit çarpma."
+      },
+      "numeric": {
+        "expr": "0.2*20*1.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "psa",
+        "cpr",
+        "benchmark",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For a fixed-rate, level-payment, fully amortizing mortgage, as the loan ages:",
+      "stem_tr": "Sabit faizli, eşit taksitli, tam amortismanlı bir ipotek kredisinde, kredi yaşlandıkça:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the interest portion rises and the principal portion falls.",
+          "tr": "faiz kısmı artar, anapara kısmı azalır."
+        },
+        {
+          "key": "B",
+          "en": "the interest portion of each payment falls and the principal portion rises.",
+          "tr": "her ödemenin faiz kısmı azalır, anapara kısmı artar."
+        },
+        {
+          "key": "C",
+          "en": "both portions stay constant.",
+          "tr": "iki kısım da sabit kalır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Interest is charged on the remaining balance. As the balance shrinks, a larger part of the fixed payment goes to principal.",
+      "explanation_tr": "Faiz kalan bakiye üzerinden hesaplanır. Bakiye küçüldükçe sabit ödemenin daha büyük kısmı anaparaya gider.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The outstanding balance falls, so interest on it falls.",
+          "tr": "Kalan bakiye azalır; dolayısıyla üzerindeki faiz de azalır."
+        },
+        "C": {
+          "en": "Only the total payment is constant; its split changes.",
+          "tr": "Yalnızca toplam ödeme sabittir; dağılımı değişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "level-payment",
+        "amortizing",
+        "interest",
+        "principal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A TRY 1,000,000 housing loan is fully amortizing over 15 years with monthly payments at a monthly rate of 1.8% (level payment). The monthly payment is closest to:",
+      "stem_tr": "1.000.000 TL'lik bir konut kredisi 15 yıl boyunca, aylık %1,8 faizle, eşit taksitle tam amortismanlıdır. Aylık ödeme aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 18000",
+          "tr": "TRY 18000",
+          "value": 18000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 23556",
+          "tr": "TRY 23556",
+          "value": 23555.5556
+        },
+        {
+          "key": "C",
+          "en": "TRY 18756",
+          "tr": "TRY 18756",
+          "value": 18756.0334
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Payment = 1,000,000 × 0.018 / (1 − 1.018^−180) ≈ TRY 18756.",
+      "explanation_tr": "Taksit = 1.000.000 × 0,018 / (1 − 1,018^−180) ≈ 18756 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is interest-only on the initial balance; it does not repay any principal.",
+          "tr": "Bu, ilk bakiye üzerinden yalnızca faizdir; anapara geri ödemez."
+        },
+        "B": {
+          "en": "This adds equal principal to interest on the full initial balance, which is not a level-payment loan.",
+          "tr": "Bu, tüm ilk bakiye üzerinden faize eşit anapara ekler; eşit taksitli kredi değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: level monthly payment.",
+          "tr": "İstenen: eşit aylık taksit."
+        },
+        {
+          "en": "Formula: PMT = PV × r / (1 − (1 + r)^−n), n = 180",
+          "tr": "Formül: PMT = PV × r / (1 − (1 + r)^−n), n = 180",
+          "formula_latex": "PMT=\\frac{PV\\cdot r}{1-(1+r)^{-n}}"
+        },
+        {
+          "en": "1,000,000 × 0.018 / (1 − 1.018^−180) = 18756",
+          "tr": "1.000.000 × 0,018 / (1 − 1,018^−180) = 18756"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "180 [N]",
+          "1.8 [I/Y]",
+          "1000000 [PV]",
+          "0 [FV]",
+          "[CPT] [PMT]"
+        ],
+        "note_tr": "Aylık faiz %1,8 olduğundan I/Y = 1,8 girilir (P/Y = 1)."
+      },
+      "numeric": {
+        "expr": "abs(pmt(0.018,180,1000000))",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "level-payment",
+        "amortizing",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Using the same loan (TRY 1,000,000; monthly rate 1.8%; level payment of about TRY 18,755), the principal repaid in the first monthly payment is closest to:",
+      "stem_tr": "Aynı kredi için (1.000.000 TL; aylık faiz %1,8; yaklaşık 18.755 TL eşit taksit) ilk aylık ödemede geri ödenen anapara aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 756",
+          "tr": "TRY 756",
+          "value": 756.0334
+        },
+        {
+          "key": "B",
+          "en": "TRY 18756",
+          "tr": "TRY 18756",
+          "value": 18756.0334
+        },
+        {
+          "key": "C",
+          "en": "TRY 18000",
+          "tr": "TRY 18000",
+          "value": 18000.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Interest in month 1 = 1,000,000 × 0.018 = 18,000. Principal = 18756 − 18,000 ≈ 756.",
+      "explanation_tr": "1. ay faizi = 1.000.000 × 0,018 = 18.000. Anapara = 18756 − 18.000 ≈ 756.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the whole payment; it includes the interest part.",
+          "tr": "Bu, ödemenin tamamıdır; faiz kısmını da içerir."
+        },
+        "C": {
+          "en": "This is the interest part of the first payment, not the principal.",
+          "tr": "Bu, ilk ödemenin anapara değil faiz kısmıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: principal part of payment 1.",
+          "tr": "İstenen: 1. ödemenin anapara kısmı."
+        },
+        {
+          "en": "Interest = balance × rate = 1,000,000 × 0.018 = 18,000",
+          "tr": "Faiz = bakiye × faiz = 1.000.000 × 0,018 = 18.000"
+        },
+        {
+          "en": "Principal = payment − interest ≈ 756",
+          "tr": "Anapara = taksit − faiz ≈ 756"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "(taksit: 18,755)",
+          "18755 [-] 18000 [=]"
+        ],
+        "note_tr": "Önce taksiti TVM ile bulun, sonra ilk ay faizini çıkarın."
+      },
+      "numeric": {
+        "expr": "abs(pmt(0.018,180,1000000))-1000000*0.018",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "principal",
+        "interest",
+        "closest-to"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "All else equal, a mortgage with a lower loan-to-value (LTV) ratio is most likely to have:",
+      "stem_tr": "Diğer her şey eşitken, kredi/değer (LTV) oranı daha düşük bir ipotek büyük olasılıkla neye sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher default risk because the loan is smaller.",
+          "tr": "daha yüksek temerrüt riski; çünkü kredi daha küçüktür."
+        },
+        {
+          "key": "B",
+          "en": "lower default risk because the borrower has more equity in the property.",
+          "tr": "daha düşük temerrüt riski; çünkü borçlunun gayrimenkulde daha fazla öz sermayesi vardır."
+        },
+        {
+          "key": "C",
+          "en": "no prepayment risk.",
+          "tr": "hiç erken ödeme riski yoktur."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A borrower with more equity has more to lose by defaulting. The lender also recovers more if it must sell the property.",
+      "explanation_tr": "Daha fazla öz sermayesi olan borçlunun temerrütte kaybedeceği daha çoktur. Borç veren, gayrimenkulü satmak zorunda kalırsa daha fazla geri kazanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A smaller loan relative to value means a larger equity cushion, which lowers default risk.",
+          "tr": "Değere göre küçük kredi, daha büyük bir öz sermaye tamponu demektir; bu temerrüt riskini azaltır."
+        },
+        "C": {
+          "en": "Low LTV loans can still be prepaid.",
+          "tr": "Düşük LTV'li krediler de erken ödenebilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "loan-to-value",
+        "equity",
+        "default",
+        "all-else-equal",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In a non-recourse mortgage, the property value falls well below the loan balance. Which statement is most likely correct?",
+      "stem_tr": "Rücusuz bir ipotekte gayrimenkul değeri kredi bakiyesinin çok altına düşüyor. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The lender can claim the borrower's other assets to cover the shortfall.",
+          "tr": "Borç veren, eksik kalan tutarı karşılamak için borçlunun diğer varlıklarına başvurabilir."
+        },
+        {
+          "key": "B",
+          "en": "The borrower must keep paying because the loan is non-recourse.",
+          "tr": "Kredi rücusuz olduğu için borçlu ödemeye devam etmek zorundadır."
+        },
+        {
+          "key": "C",
+          "en": "The borrower has an incentive to default, and the lender can only claim the property.",
+          "tr": "Borçlunun temerrüde düşmek için teşviki vardır ve borç veren yalnızca gayrimenkule başvurabilir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Because the lender's claim is limited to the property, a borrower with negative equity may give up the property. This raises default risk in non-recourse loans.",
+      "explanation_tr": "Borç verenin hakkı gayrimenkulle sınırlı olduğundan, negatif öz sermayeli borçlu gayrimenkulü bırakabilir. Bu, rücusuz kredilerde temerrüt riskini artırır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That would describe a recourse loan.",
+          "tr": "Bu, rücu hakkı olan bir krediyi tanımlar."
+        },
+        "B": {
+          "en": "Non-recourse means the borrower can walk away without further liability beyond the property.",
+          "tr": "Rücusuz, borçlunun gayrimenkul dışında ek sorumluluk olmadan ayrılabilmesi demektir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "non-recourse",
+        "default",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The pass-through rate of a mortgage pass-through security is lower than the weighted average coupon (WAC) of the underlying pool because:",
+      "stem_tr": "Bir ipotek pass-through menkul kıymetinin pass-through faizi, havuzun ağırlıklı ortalama kuponundan (WAC) neden daha düşüktür?",
+      "options": [
+        {
+          "key": "A",
+          "en": "servicing and guarantee fees are deducted from the pool's interest.",
+          "tr": "hizmet ve garanti ücretleri havuzun faizinden düşülür."
+        },
+        {
+          "key": "B",
+          "en": "investors are paid only on the scheduled principal.",
+          "tr": "yatırımcılara yalnızca planlı anapara ödenir."
+        },
+        {
+          "key": "C",
+          "en": "the pool's loans are always discounted.",
+          "tr": "havuzdaki krediler her zaman iskontolu işlem görür."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The servicer and any guarantor keep a part of the interest. The remainder, the pass-through rate, is paid to investors.",
+      "explanation_tr": "Hizmet sağlayıcı ve varsa garantör faizin bir kısmını alır. Geri kalan, yani pass-through faizi, yatırımcılara ödenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Investors receive interest and principal, including prepayments.",
+          "tr": "Yatırımcılar faiz ve erken ödemeler dahil anapara alır."
+        },
+        "C": {
+          "en": "Discounting is a pricing matter; it does not determine the pass-through rate.",
+          "tr": "İskonto bir fiyatlama konusudur; pass-through faizini belirlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "pass-through",
+        "servicing-fee",
+        "weighted-average-coupon",
+        "deduct"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A mortgage pool has an outstanding balance of TRY 100 million, a WAC of 6.5% and a pass-through rate of 6.0%. Ignoring prepayments, the interest paid to investors in a month is closest to (TRY million):",
+      "stem_tr": "Bir ipotek havuzunun kalan bakiyesi 100 milyon TL, WAC'ı %6,5 ve pass-through faizi %6,0'dır. Erken ödemeler yok sayılırsa bir ayda yatırımcılara ödenen faiz aşağıdakilerden hangisine en yakındır (milyon TL)?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.54 million TRY",
+          "tr": "0,54 million TRY",
+          "value": 0.5417
+        },
+        {
+          "key": "B",
+          "en": "0.50 million TRY",
+          "tr": "0,50 million TRY",
+          "value": 0.5
+        },
+        {
+          "key": "C",
+          "en": "6.00 million TRY",
+          "tr": "6,00 million TRY",
+          "value": 6.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Monthly interest to investors = 100 × 0.06 / 12 = TRY 0.50 million.",
+      "explanation_tr": "Yatırımcılara aylık faiz = 100 × 0,06 / 12 = 0,50 milyon TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the WAC; investors earn only the pass-through rate.",
+          "tr": "Bu, WAC'ı kullanır; yatırımcılar yalnızca pass-through faizini alır."
+        },
+        "C": {
+          "en": "This is the annual interest, not the monthly amount.",
+          "tr": "Bu, aylık değil yıllık faiz tutarıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: monthly pass-through interest.",
+          "tr": "İstenen: aylık pass-through faizi."
+        },
+        {
+          "en": "Use the pass-through rate (6.0%), not the WAC",
+          "tr": "WAC değil pass-through faizini (%6,0) kullanın"
+        },
+        {
+          "en": "100 × 0.06 / 12 = 0.50",
+          "tr": "100 × 0,06 / 12 = 0,50"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [×] 0.06 [÷] 12 [=]"
+        ],
+        "note_tr": "Tek satırlık hesap."
+      },
+      "numeric": {
+        "expr": "100*0.06/12",
+        "unit": "TRY million"
+      },
+      "vocab_ids": [
+        "pass-through",
+        "weighted-average-coupon",
+        "closest-to",
+        "interest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A CMO has PAC tranches, which are protected within a band of prepayment speeds, and a support tranche. Which tranche most likely bears both the most contraction risk and the most extension risk?",
+      "stem_tr": "Bir CMO'da belirli bir erken ödeme hızı aralığında korunan PAC dilimleri ve bir destek dilimi vardır. Hangi dilim hem en fazla kısalma hem de en fazla uzama riskini taşır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The PAC tranche.",
+          "tr": "PAC dilimi."
+        },
+        {
+          "key": "B",
+          "en": "Neither, because prepayment risk is removed by tranching.",
+          "tr": "Hiçbiri, çünkü dilimleme erken ödeme riskini ortadan kaldırır."
+        },
+        {
+          "key": "C",
+          "en": "The support tranche.",
+          "tr": "Destek dilimi."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The support tranche absorbs prepayments that exceed or fall short of the PAC band, so it has the most variable average life.",
+      "explanation_tr": "Destek dilimi, PAC aralığını aşan veya aralığın altında kalan erken ödemeleri üstlenir; ortalama ömrü en değişkendir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "PAC tranches have a stable schedule inside the band, so they carry less risk.",
+          "tr": "PAC dilimlerinin aralık içinde istikrarlı bir takvimi vardır; riskleri daha azdır."
+        },
+        "B": {
+          "en": "Tranching moves prepayment risk between tranches; it does not remove it.",
+          "tr": "Dilimleme erken ödeme riskini dilimler arasında kaydırır; ortadan kaldırmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "pac-tranche",
+        "support-tranche",
+        "contraction-risk",
+        "extension-risk",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "When interest rates fall sharply, the price of a mortgage pass-through security rises less than the price of an otherwise similar option-free bond. This behavior is best described as:",
+      "stem_tr": "Faizler sert düştüğünde, ipotek pass-through menkul kıymetinin fiyatı, diğer yönlerden benzer opsiyonsuz bir tahvilin fiyatından daha az yükselir. Bu davranış en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "negative convexity caused by faster prepayments.",
+          "tr": "daha hızlı erken ödemelerin yol açtığı negatif konveksite."
+        },
+        {
+          "key": "B",
+          "en": "positive convexity caused by slower prepayments.",
+          "tr": "daha yavaş erken ödemelerin yol açtığı pozitif konveksite."
+        },
+        {
+          "key": "C",
+          "en": "a high yield spread caused by default risk.",
+          "tr": "temerrüt riskinin yol açtığı yüksek getiri spreadi."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Borrowers can prepay, which is like a call option held by borrowers. When rates fall, prepayments speed up, so the price is capped: negative convexity.",
+      "explanation_tr": "Borçlular erken ödeyebilir; bu, borçluların elinde bir call opsiyonu gibidir. Faizler düşünce erken ödemeler hızlanır ve fiyat sınırlanır: negatif konveksite.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Slower prepayments occur when rates rise, not when they fall.",
+          "tr": "Daha yavaş erken ödemeler faizler yükselince olur, düşünce değil."
+        },
+        "C": {
+          "en": "The effect described is a prepayment effect, not a credit spread effect.",
+          "tr": "Anlatılan etki bir kredi spreadi değil erken ödeme etkisidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "negative-convexity",
+        "pass-through",
+        "best-describes",
+        "prepayment",
+        "option-free"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Investors in a mortgage pass-through security receive monthly cash flows that consist of:",
+      "stem_tr": "İpotek pass-through menkul kıymeti yatırımcılarının aldığı aylık nakit akışları nelerden oluşur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "only interest, with principal paid at maturity.",
+          "tr": "yalnızca faiz; anapara vadede ödenir."
+        },
+        {
+          "key": "B",
+          "en": "a pro-rata share of interest, scheduled principal and prepayments, net of fees.",
+          "tr": "ücretler düşüldükten sonra faiz, planlı anapara ve erken ödemelerden orantılı pay."
+        },
+        {
+          "key": "C",
+          "en": "scheduled principal only; prepayments are kept by the servicer.",
+          "tr": "yalnızca planlı anapara; erken ödemeleri hizmet sağlayıcı alır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A pass-through passes the pool's interest, scheduled principal and prepaid principal to investors pro rata, after servicing and guarantee fees.",
+      "explanation_tr": "Pass-through, havuzun faizini, planlı anaparasını ve erken ödenen anaparasını hizmet ve garanti ücretlerinden sonra yatırımcılara orantılı olarak iletir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Pass-throughs pay principal during the life of the pool, not only at maturity.",
+          "tr": "Pass-through'lar anaparayı yalnızca vadede değil havuzun ömrü boyunca öder."
+        },
+        "C": {
+          "en": "Prepayments are passed on to investors; the servicer does not keep them.",
+          "tr": "Erken ödemeler yatırımcılara iletilir; hizmet sağlayıcı bunları almaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "pass-through",
+        "pro-rata",
+        "prepayment",
+        "net-of"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-d-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with residential mortgage loans, loans in a CMBS pool are most likely to be:",
+      "stem_tr": "Konut ipotek kredileriyle kıyaslandığında, bir CMBS havuzundaki kredilerin büyük olasılıkla nitelikleri nelerdir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "full-recourse, with level fully amortizing payments.",
+          "tr": "tam rücu hakkı olan ve eşit taksitli tam amortismanlı."
+        },
+        {
+          "key": "B",
+          "en": "unsecured loans to individuals.",
+          "tr": "bireylere verilmiş teminatsız krediler."
+        },
+        {
+          "key": "C",
+          "en": "non-recourse, with balloon payments at maturity.",
+          "tr": "rücusuz ve vadede balon ödemeli."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Commercial loans are typically non-recourse, so lenders focus on the property's income. Many have balloon payments due at maturity.",
+      "explanation_tr": "Ticari krediler genellikle rücusuzdur; bu yüzden borç verenler gayrimenkulün gelirine odaklanır. Birçoğunda vadede ödenecek balon ödeme vardır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "CMBS loans are commonly non-recourse and often not fully amortizing.",
+          "tr": "CMBS kredileri çoğunlukla rücusuzdur ve çoğu kez tam amortismanlı değildir."
+        },
+        "B": {
+          "en": "CMBS loans are secured by income-producing properties.",
+          "tr": "CMBS kredileri gelir getiren gayrimenkullerle teminatlandırılmıştır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cmbs",
+        "non-recourse",
+        "balloon-payment",
+        "compared-with",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-d-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a form of loan-level call protection in a CMBS?",
+      "stem_tr": "Aşağıdakilerden hangisi bir CMBS'de kredi düzeyinde erken ödeme koruması (call protection) biçimidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Defeasance.",
+          "tr": "Defeasance."
+        },
+        {
+          "key": "B",
+          "en": "A sequential-pay structure.",
+          "tr": "Sequential-pay yapısı."
+        },
+        {
+          "key": "C",
+          "en": "A senior/subordinate structure.",
+          "tr": "Senior/sübordine yapı."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Defeasance requires the borrower to replace the property collateral with a portfolio of government securities that covers the remaining payments. That discourages early repayment at the loan level.",
+      "explanation_tr": "Defeasance, borçlunun gayrimenkul teminatını kalan ödemeleri karşılayan devlet menkul kıymetleri portföyüyle değiştirmesini gerektirir. Bu, kredi düzeyinde erken ödemeyi caydırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Sequential pay is structural, applied at the securities level.",
+          "tr": "Sequential pay yapısaldır; menkul kıymet düzeyinde uygulanır."
+        },
+        "C": {
+          "en": "A senior/subordinate structure is also structural protection, not loan-level.",
+          "tr": "Senior/sübordine yapı da kredi düzeyinde değil yapısal korumadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "defeasance",
+        "call-protection",
+        "cmbs",
+        "collateral"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-d-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A commercial property generates net operating income (NOI) of TRY 1.8 million per year. The annual debt service on its CMBS loan is TRY 1.2 million. The debt service coverage ratio (DSCR) is closest to:",
+      "stem_tr": "Bir ticari gayrimenkul yılda 1,8 milyon TL net işletme geliri (NOI) elde etmektedir. CMBS kredisinin yıllık borç servisi 1,2 milyon TL'dir. Borç servisi karşılama oranı (DSCR) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.67x",
+          "tr": "0,67x",
+          "value": 0.6667
+        },
+        {
+          "key": "B",
+          "en": "1.50x",
+          "tr": "1,50x",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "0.60x",
+          "tr": "0,60x",
+          "value": 0.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "DSCR = NOI / debt service = 1.8 / 1.2 = 1.50x.",
+      "explanation_tr": "DSCR = NOI / borç servisi = 1,8 / 1,2 = 1,50x.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is inverted: debt service divided by NOI.",
+          "tr": "Bu ters alınmıştır: borç servisi bölü NOI."
+        },
+        "C": {
+          "en": "This is the cash left after debt service (0.6), not a ratio.",
+          "tr": "Bu, borç servisinden sonra kalan nakittir (0,6); oran değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: DSCR.",
+          "tr": "İstenen: DSCR."
+        },
+        {
+          "en": "Formula: NOI / annual debt service",
+          "tr": "Formül: NOI / yıllık borç servisi",
+          "formula_latex": "DSCR=\\frac{NOI}{\\text{Debt service}}"
+        },
+        {
+          "en": "1.8 / 1.2 = 1.50x",
+          "tr": "1,8 / 1,2 = 1,50x"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.8 [÷] 1.2 [=]"
+        ],
+        "note_tr": "Tek bölme."
+      },
+      "numeric": {
+        "expr": "1.8/1.2",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "debt-service-coverage-ratio",
+        "net-operating-income",
+        "cmbs",
+        "closest-to",
+        "coverage"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-d-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A CMBS loan has a balloon payment due in one year, and the borrower cannot refinance because lending conditions have tightened. Which outcome is most likely?",
+      "stem_tr": "Bir CMBS kredisinin balon ödemesi bir yıl sonra vadesi gelmektedir ve kredi koşulları sıkılaştığı için borçlu yeniden finansman sağlayamamaktadır. Hangi sonuç en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The loan is prepaid early, which shortens the securities' life.",
+          "tr": "Kredi erken ödenir; bu, menkul kıymetlerin ömrünü kısaltır."
+        },
+        {
+          "key": "B",
+          "en": "The borrower pays the balloon from the property's income without difficulty.",
+          "tr": "Borçlu balon ödemeyi gayrimenkul gelirinden zorlanmadan öder."
+        },
+        {
+          "key": "C",
+          "en": "The loan is extended or defaults, which lengthens the securities' life or causes losses (balloon risk).",
+          "tr": "Kredi uzatılır ya da temerrüde düşer; bu, menkul kıymetlerin ömrünü uzatır veya zarara yol açar (balon riski)."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Balloon risk is the risk that the loan cannot be refinanced at maturity. The loan is then extended or defaults, so it is a form of extension and credit risk.",
+      "explanation_tr": "Balon riski, kredinin vadede yeniden finanse edilememesi riskidir. Kredi bu durumda uzatılır ya da temerrüde düşer; bu, bir uzama ve kredi riski biçimidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Early prepayment is unlikely when borrowers cannot refinance.",
+          "tr": "Borçlular yeniden finansman sağlayamıyorsa erken ödeme olası değildir."
+        },
+        "B": {
+          "en": "A balloon is usually far larger than one year of income, which is why refinancing is needed.",
+          "tr": "Balon ödeme genellikle bir yıllık gelirden çok büyüktür; bu yüzden yeniden finansman gerekir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "balloon-risk",
+        "refinance",
+        "extension-risk",
+        "most-likely",
+        "tighten"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-19-d-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-19",
+      "los_id": "FI-19-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Compared with a residential MBS pool, a CMBS is most likely to have:",
+      "stem_tr": "Konut MBS havuzuyla kıyaslandığında, bir CMBS büyük olasılıkla neye sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "less prepayment risk because of call protection, but more exposure to loan-level credit and balloon risk.",
+          "tr": "erken ödeme koruması nedeniyle daha az erken ödeme riskine, ancak kredi düzeyinde kredi ve balon riskine daha fazla maruziyete."
+        },
+        {
+          "key": "B",
+          "en": "more prepayment risk because commercial borrowers refinance easily.",
+          "tr": "ticari borçlular kolayca yeniden finansman sağladığı için daha fazla erken ödeme riskine."
+        },
+        {
+          "key": "C",
+          "en": "no credit risk because the properties generate income.",
+          "tr": "gayrimenkuller gelir ürettiği için hiç kredi riskine."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "CMBS loans are protected from early repayment by lockouts, defeasance and structure. In exchange, investors depend on each property's income and the borrower's ability to refinance the balloon.",
+      "explanation_tr": "CMBS kredileri kilitleme, defeasance ve yapıyla erken ödemeye karşı korunur. Buna karşılık yatırımcılar her gayrimenkulün gelirine ve borçlunun balon ödemeyi yeniden finanse edebilmesine bağlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Call protection, such as lockouts and defeasance, restrains commercial prepayments.",
+          "tr": "Kilitleme dönemi ve defeasance gibi erken ödeme korumaları ticari kredilerin erken ödenmesini sınırlar."
+        },
+        "C": {
+          "en": "Income can fall, so there is credit risk.",
+          "tr": "Gelir düşebilir; bu nedenle kredi riski vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cmbs",
+        "call-protection",
+        "prepayment-risk",
+        "compared-with",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

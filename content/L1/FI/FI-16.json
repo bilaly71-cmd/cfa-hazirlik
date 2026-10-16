@@ -1,0 +1,1109 @@
+{
+  "module_id": "FI-16",
+  "lesson": {
+    "id": "FI-16-lesson",
+    "level": "L1",
+    "topic": "FI",
+    "module_id": "FI-16",
+    "los_ids": [
+      "FI-16-a",
+      "FI-16-b",
+      "FI-16-c"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Credit Analysis for Corporate Issuers",
+    "title_tr": "Şirket İhraççıları için Kredi Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Will the borrower pay me back?",
+        "heading_tr": "Borçlu bana geri ödeyecek mi?",
+        "en": "A corporate bond investor lends money and gets only the promised coupons and principal back. There is no upside if the company does very well, but there is a loss if it fails to pay. So credit analysis focuses on downside: can the issuer pay, and what is left for me if it cannot? Turkish banks, brokerages and funds that buy corporate bonds (özel sektör tahvili) or Eurobonds use this framework, and rating agencies use similar logic to assign ratings.",
+        "tr": "Şirket tahvili yatırımcısı borç verir ve yalnızca vaat edilen kuponları ve anaparayı geri alır. Şirket çok iyi giderse ek kazanç yoktur, ama ödeyemezse kayıp vardır. Bu yüzden kredi analizi aşağı yönlü riske odaklanır: ihraççı ödeyebilir mi ve ödeyemezse bana ne kalır? Özel sektör tahvili ya da Eurobond alan Türk bankaları, aracı kurumlar ve fonlar bu çerçeveyi kullanır; derecelendirme kuruluşları da notlarını benzer bir mantıkla belirler.",
+        "key_terms": [
+          "credit analysis",
+          "downside risk"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "The four Cs and ratios",
+        "heading_tr": "Dört C ve oranlar",
+        "en": "The four Cs of credit are: Capacity (ability to generate cash to service debt), Collateral (assets backing the debt), Covenants (rules that protect lenders) and Character (management quality and track record). Capacity is analysed with industry structure, competitive position and financial ratios. Leverage ratios show how much debt there is: Debt/EBITDA, Net debt/EBITDA, Debt/Capital, FFO/Debt. Coverage ratios show how easily interest is paid: EBITDA/Interest and EBIT/Interest. Higher leverage and lower coverage mean weaker credit.",
+        "tr": "Kredinin dört C'si şunlardır: Capacity (borcu ödemek için nakit üretme gücü), Collateral (borcu karşılayan varlıklar), Covenants (borç verenleri koruyan kurallar) ve Character (yönetim kalitesi ve geçmiş performansı). Capacity; sektör yapısı, rekabet konumu ve finansal oranlarla analiz edilir. Kaldıraç oranları borcun büyüklüğünü gösterir: Borç/FAVÖK, Net borç/FAVÖK, Borç/Sermaye, FFO/Borç. Karşılama oranları faizin ne kadar rahat ödendiğini gösterir: FAVÖK/Faiz ve FVÖK/Faiz. Kaldıraç yükseldikçe ve karşılama düştükçe kredi kalitesi zayıflar.",
+        "key_terms": [
+          "capacity",
+          "collateral",
+          "covenants",
+          "character",
+          "leverage ratio",
+          "coverage ratio"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Ratio formulas",
+        "heading_tr": "Oran formülleri",
+        "en": "Debt/EBITDA = total debt / EBITDA. Net debt/EBITDA = (debt − cash) / EBITDA. Debt/Capital = debt / (debt + equity). FFO/Debt = (net income + depreciation and other non-cash charges) / debt. EBITDA interest coverage = EBITDA / interest expense. EBIT interest coverage = EBIT / interest expense. Because EBITDA ignores capital spending, EBIT coverage is the more conservative of the two.",
+        "tr": "Borç/FAVÖK = toplam borç / FAVÖK. Net borç/FAVÖK = (borç − nakit) / FAVÖK. Borç/Sermaye = borç / (borç + özkaynak). FFO/Borç = (net kâr + amortisman ve diğer nakit dışı giderler) / borç. FAVÖK faiz karşılama = FAVÖK / faiz gideri. FVÖK faiz karşılama = FVÖK / faiz gideri. FAVÖK yatırım harcamalarını yok saydığı için FVÖK karşılama ikisinden daha temkinli olanıdır.",
+        "key_terms": [
+          "EBITDA",
+          "EBIT",
+          "FFO"
+        ],
+        "formula_latex": "\\text{EBIT coverage}=\\frac{EBIT}{\\text{Interest expense}}"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Seniority, security and notching",
+        "heading_tr": "Öncelik, teminat ve notching",
+        "en": "In bankruptcy, claims are paid in order of priority: secured debt (from its collateral), then senior unsecured, then subordinated debt, then equity. This is the priority of claims. Recovery rate is the share of the claim that is paid. Rating agencies give an issuer rating and may notch an issue rating up or down from it: senior secured debt may be rated at or above the issuer rating, and subordinated debt is notched below. Structural subordination arises when a holding company's creditors rank behind the subsidiaries' creditors.",
+        "tr": "İflasta alacaklar öncelik sırasına göre ödenir: teminatlı borç (teminatından), sonra teminatsız senior borç, sonra sübordine borç, en son özkaynak. Buna alacak önceliği denir. Geri kazanım oranı, alacağın ödenen kısmıdır. Derecelendirme kuruluşları bir ihraççı notu verir ve ihraç notunu bu nottan yukarı veya aşağı basamaklayabilir (notching): senior teminatlı borç ihraççı notunda ya da üzerinde, sübordine borç ise daha aşağıda notlanabilir. Yapısal sübordinasyon, holding şirket alacaklılarının bağlı ortaklık alacaklılarının arkasında yer almasıdır.",
+        "key_terms": [
+          "seniority",
+          "priority of claims",
+          "recovery rate",
+          "notching",
+          "structural subordination"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Recovery in a liquidation",
+        "heading_tr": "Tasfiyede geri kazanım",
+        "en": "A company is liquidated and TRY 600 million is available. Claims: senior secured 300, senior unsecured 400, subordinated 200. Senior secured is paid in full (300). The remaining 300 goes to senior unsecured, which is paid 300/400 = 75%. Subordinated debt and equity receive nothing.",
+        "tr": "Bir şirket tasfiye ediliyor ve 600 milyon TL dağıtılabilir. Alacaklar: senior teminatlı 300, senior teminatsız 400, sübordine 200. Senior teminatlı tam ödenir (300). Kalan 300, senior teminatsıza gider; bu alacaklı 300/400 = %75 alır. Sübordine borç ve özkaynak hiçbir şey almaz.",
+        "key_terms": [
+          "recovery rate"
+        ],
+        "example": {
+          "en": "Senior unsecured recovery = (600 − 300) / 400 = 75%.",
+          "tr": "Senior teminatsız geri kazanım = (600 − 300) / 400 = %75."
+        }
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "EBITDA is not cash flow after investment: heavy capital spending can make EBITDA coverage look too good. Net debt can hide the fact that cash is trapped in subsidiaries or in another currency. In real bankruptcies, the absolute priority rule is not always followed exactly, because negotiation and legal costs change the outcome. A higher issue rating than the issuer rating comes from seniority or collateral, not from better business strength.",
+        "tr": "FAVÖK yatırımlardan sonraki nakit akışı değildir: yüksek yatırım harcaması FAVÖK karşılamayı olduğundan iyi gösterebilir. Net borç, nakdin bağlı ortaklıklarda ya da başka bir para biriminde kilitli olduğunu gizleyebilir. Gerçek iflaslarda mutlak öncelik kuralı her zaman tam uygulanmaz; pazarlık ve hukuki maliyetler sonucu değiştirir. İhraç notunun ihraççı notundan yüksek olması işin güçlü olmasından değil, önceliğinden veya teminatından gelir.",
+        "key_terms": [
+          "absolute priority"
+        ]
+      }
+    ],
+    "summary_en": "Credit analysis looks at the four Cs (capacity, collateral, covenants, character) and at leverage and coverage ratios. Lower leverage and higher coverage mean stronger credit. In bankruptcy, claims are paid by priority; the recovery rate differs by seniority, and rating agencies notch issue ratings above or below the issuer rating accordingly.",
+    "summary_tr": "Kredi analizi dört C'ye (capacity, collateral, covenants, character) ile kaldıraç ve karşılama oranlarına bakar. Düşük kaldıraç ve yüksek karşılama daha güçlü krediyi gösterir. İflasta alacaklar öncelik sırasına göre ödenir; geri kazanım oranı önceliğe göre değişir ve derecelendirme kuruluşları ihraç notlarını buna göre ihraççı notunun üstünde veya altında belirler.",
+    "common_traps_tr": [
+      "FAVÖK/faiz oranının yatırım harcamalarından bağımsız bir güvence olduğunu sanmak.",
+      "Net borç/FAVÖK'te nakdin her zaman serbestçe kullanılabildiğini varsaymak.",
+      "Sübordine borcu senior borçla aynı geri kazanımda saymak.",
+      "İhraç notunu ihraççı notuyla her zaman aynı sanmak.",
+      "Holding borcunu bağlı ortaklık borcuyla aynı önceliğe koymak."
+    ],
+    "vocab_ids": [
+      "capacity",
+      "collateral",
+      "covenants",
+      "character",
+      "leverage",
+      "coverage-ratio",
+      "ebitda",
+      "ebit",
+      "ffo",
+      "seniority",
+      "secured",
+      "unsecured",
+      "subordinated",
+      "recovery-rate",
+      "notching",
+      "priority-of-claims",
+      "structural-subordination",
+      "credit-rating"
+    ],
+    "source_basis": "original",
+    "verified": false,
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Kredi riski ve derecelendirme SPK Düzey 3'te var; oran analizi ve notching daha ayrıntılı."
+    }
+  },
+  "questions": [
+    {
+      "id": "FI-16-a-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In the four Cs of credit analysis, the borrower's ability to generate cash flow to service its debt is called:",
+      "stem_tr": "Kredi analizinin dört C'sinde, borçlunun borcunu ödemek için nakit akışı üretme gücüne ne ad verilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Collateral.",
+          "tr": "Collateral."
+        },
+        {
+          "key": "B",
+          "en": "Character.",
+          "tr": "Character."
+        },
+        {
+          "key": "C",
+          "en": "Capacity.",
+          "tr": "Capacity."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Capacity is the cash-generating ability of the borrower. It is judged with business analysis and ratios such as EBITDA coverage.",
+      "explanation_tr": "Capacity, borçlunun nakit üretme gücüdür. İş analizi ve FAVÖK karşılama gibi oranlarla değerlendirilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Collateral refers to the assets that back the debt.",
+          "tr": "Collateral, borcu karşılayan varlıkları ifade eder."
+        },
+        "B": {
+          "en": "Character refers to management's integrity and track record.",
+          "tr": "Character, yönetimin dürüstlüğü ve geçmiş performansını ifade eder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capacity",
+        "ability",
+        "cash-flow",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-a-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT one of the four Cs of credit?",
+      "stem_tr": "Aşağıdakilerden hangisi kredinin dört C'sinden biri DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Currency.",
+          "tr": "Currency."
+        },
+        {
+          "key": "B",
+          "en": "Covenants.",
+          "tr": "Covenants."
+        },
+        {
+          "key": "C",
+          "en": "Collateral.",
+          "tr": "Collateral."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The four Cs are capacity, collateral, covenants and character. Currency is not one of them, although currency mismatch can affect capacity.",
+      "explanation_tr": "Dört C; capacity, collateral, covenants ve character'dır. Currency bunlardan biri değildir; ancak kur uyumsuzluğu capacity'yi etkileyebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Covenants are one of the four Cs.",
+          "tr": "Covenants dört C'den biridir."
+        },
+        "C": {
+          "en": "Collateral is one of the four Cs.",
+          "tr": "Collateral dört C'den biridir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "covenants",
+        "collateral",
+        "not-question",
+        "currency",
+        "credit"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-a-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst reviews a borrower's industry structure, competitive position, and the quality and track record of management. Compared with ratio analysis, this review is best described as:",
+      "stem_tr": "Bir analist, borçlunun sektör yapısını, rekabet konumunu ve yönetimin kalitesini ve geçmiş performansını inceliyor. Oran analiziyle kıyaslandığında bu inceleme en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "quantitative factors that replace ratio analysis.",
+          "tr": "oran analizinin yerini alan nicel faktörler."
+        },
+        {
+          "key": "B",
+          "en": "qualitative factors that complement quantitative ratios.",
+          "tr": "nicel oranları tamamlayan nitel faktörler."
+        },
+        {
+          "key": "C",
+          "en": "legal factors that apply only in bankruptcy.",
+          "tr": "yalnızca iflasta geçerli olan hukuki faktörler."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Industry structure, competitive position and management quality are qualitative inputs to capacity and character. They are used with ratios to form a full credit view.",
+      "explanation_tr": "Sektör yapısı, rekabet konumu ve yönetim kalitesi, capacity ve character için nitel girdilerdir. Tam bir kredi görüşü oluşturmak için oranlarla birlikte kullanılırlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "These factors are not numeric ratios, and they complement rather than replace them.",
+          "tr": "Bu faktörler sayısal oran değildir ve oranların yerini almaz, onları tamamlar."
+        },
+        "C": {
+          "en": "They are used before any default, to judge the likelihood of default.",
+          "tr": "Temerrütten önce, temerrüt olasılığını değerlendirmek için kullanılırlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "qualitative",
+        "quantitative",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-a-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish exporter earns most of its revenue in TRY but has 80% of its debt in USD. Which of the four Cs is most directly affected by a sharp TRY depreciation?",
+      "stem_tr": "Bir Türk ihracatçısı gelirinin çoğunu TL olarak elde ederken borcunun %80'i USD cinsindendir. Sert bir TL değer kaybından dört C'den hangisi en doğrudan etkilenir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Character.",
+          "tr": "Character."
+        },
+        {
+          "key": "B",
+          "en": "Covenants.",
+          "tr": "Covenants."
+        },
+        {
+          "key": "C",
+          "en": "Capacity.",
+          "tr": "Capacity."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Depreciation raises the TRY cost of USD interest and principal while revenue stays in TRY. This cuts the cash available for debt service, which is capacity.",
+      "explanation_tr": "Değer kaybı, gelir TL'de kalırken USD faiz ve anaparanın TL maliyetini artırır. Bu, borç servisi için kalan nakdi azaltır; yani capacity'yi etkiler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Character is about management integrity, not about currency exposure.",
+          "tr": "Character, yönetimin dürüstlüğüyle ilgilidir; kur maruziyetiyle değil."
+        },
+        "B": {
+          "en": "Covenants are contractual terms; depreciation changes cash flows, not the contract wording.",
+          "tr": "Covenants sözleşme şartlarıdır; değer kaybı sözleşme metnini değil nakit akışlarını değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "capacity",
+        "currency-mismatch",
+        "depreciation",
+        "most-likely",
+        "debt-service"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-a-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two issuers in the same industry have the same leverage and coverage ratios. Issuer X has a longer record of meeting its obligations and conservative financial policies. Issuer Y has a history of aggressive acquisitions funded with debt. Which statement is most likely correct?",
+      "stem_tr": "Aynı sektördeki iki ihraççının kaldıraç ve karşılama oranları aynıdır. X ihraççısının yükümlülüklerini yerine getirme geçmişi daha uzun ve mali politikaları muhafazakârdır. Y ihraççısının borçla finanse edilen agresif satın alma geçmişi vardır. Aşağıdaki ifadelerden hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Issuer X's bonds will most likely trade at a lower credit spread.",
+          "tr": "X ihraççısının tahvilleri büyük olasılıkla daha düşük kredi spreadiyle işlem görür."
+        },
+        {
+          "key": "B",
+          "en": "Issuer Y's bonds will most likely trade at a lower credit spread.",
+          "tr": "Y ihraççısının tahvilleri büyük olasılıkla daha düşük kredi spreadiyle işlem görür."
+        },
+        {
+          "key": "C",
+          "en": "The two issuers have identical credit quality because the ratios are equal.",
+          "tr": "Oranlar eşit olduğu için iki ihraççının kredi kalitesi aynıdır."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Character and financial policy affect future leverage. X's conservative record lowers the chance that credit quality deteriorates, so the market usually requires a lower spread.",
+      "explanation_tr": "Character ve mali politika gelecekteki kaldıracı etkiler. X'in muhafazakâr geçmişi kredi kalitesinin bozulma olasılığını azaltır; piyasa genellikle daha düşük spread ister.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Aggressive debt-funded acquisitions suggest more risk of higher leverage later, so Y is not safer.",
+          "tr": "Borçla finanse edilen agresif satın almalar ileride daha yüksek kaldıraç riskine işaret eder; Y daha güvenli değildir."
+        },
+        "C": {
+          "en": "Equal ratios do not capture the character and policy differences.",
+          "tr": "Eşit oranlar character ve politika farklarını yakalamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "character",
+        "credit-spread",
+        "most-likely",
+        "leverage",
+        "aggressive"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-b-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has total debt of TRY 480 million, cash of TRY 60 million, EBITDA of TRY 140 million and EBIT of TRY 100 million. Net debt/EBITDA is closest to:",
+      "stem_tr": "Bir şirketin toplam borcu 480 milyon TL, nakdi 60 milyon TL, FAVÖK'ü 140 milyon TL ve FVÖK'ü 100 milyon TL'dir. Net borç/FAVÖK aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.43x",
+          "tr": "3,43x",
+          "value": 3.4286
+        },
+        {
+          "key": "B",
+          "en": "3.00x",
+          "tr": "3,00x",
+          "value": 3.0
+        },
+        {
+          "key": "C",
+          "en": "4.80x",
+          "tr": "4,80x",
+          "value": 4.8
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net debt = 480 − 60 = 420. Net debt/EBITDA = 420/140 = 3.00x.",
+      "explanation_tr": "Net borç = 480 − 60 = 420. Net borç/FAVÖK = 420/140 = 3,00x.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is gross debt/EBITDA; cash has not been subtracted.",
+          "tr": "Bu brüt borç/FAVÖK'tür; nakit düşülmemiştir."
+        },
+        "C": {
+          "en": "This divides gross debt by EBIT instead of net debt by EBITDA.",
+          "tr": "Bu, net borç/FAVÖK yerine brüt borcu FVÖK'e böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: net debt/EBITDA.",
+          "tr": "İstenen: net borç/FAVÖK."
+        },
+        {
+          "en": "Formula: (Debt − Cash) / EBITDA",
+          "tr": "Formül: (Borç − Nakit) / FAVÖK",
+          "formula_latex": "\\frac{D-Cash}{EBITDA}"
+        },
+        {
+          "en": "(480 − 60)/140 = 3.00x",
+          "tr": "(480 − 60)/140 = 3,00x"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "480 [-] 60 [=]",
+          "[÷] 140 [=]"
+        ],
+        "note_tr": "İki adımlı hesap."
+      },
+      "numeric": {
+        "expr": "(480-60)/140",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "net-debt",
+        "ebitda",
+        "leverage",
+        "closest-to",
+        "ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-b-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has EBITDA of TRY 140 million, EBIT of TRY 100 million and interest expense of TRY 28 million. Its EBIT interest coverage is closest to:",
+      "stem_tr": "Bir şirketin FAVÖK'ü 140 milyon TL, FVÖK'ü 100 milyon TL ve faiz gideri 28 milyon TL'dir. FVÖK faiz karşılama oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00x",
+          "tr": "5,00x",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "0.28x",
+          "tr": "0,28x",
+          "value": 0.28
+        },
+        {
+          "key": "C",
+          "en": "3.57x",
+          "tr": "3,57x",
+          "value": 3.5714
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "EBIT coverage = 100/28 = 3.57x.",
+      "explanation_tr": "FVÖK karşılama = 100/28 = 3,57x.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is EBITDA coverage, not EBIT coverage.",
+          "tr": "Bu FVÖK değil FAVÖK karşılama oranıdır."
+        },
+        "B": {
+          "en": "This is inverted: interest divided by EBIT.",
+          "tr": "Bu ters alınmıştır: faiz bölü FVÖK."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: EBIT / interest expense.",
+          "tr": "İstenen: FVÖK / faiz gideri."
+        },
+        {
+          "en": "Formula: EBIT / interest",
+          "tr": "Formül: FVÖK / faiz",
+          "formula_latex": "\\frac{EBIT}{\\text{Interest}}"
+        },
+        {
+          "en": "100/28 = 3.57x",
+          "tr": "100/28 = 3,57x"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [÷] 28 [=]"
+        ],
+        "note_tr": "Tek bölme."
+      },
+      "numeric": {
+        "expr": "100/28",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "ebit",
+        "coverage-ratio",
+        "interest-expense",
+        "closest-to",
+        "ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-b-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A firm reports net income of TRY 40 million, depreciation of TRY 35 million and deferred taxes of TRY 5 million (non-cash). Total debt is TRY 400 million. FFO/Debt is closest to:",
+      "stem_tr": "Bir firmanın net kârı 40 milyon TL, amortismanı 35 milyon TL ve (nakit dışı) ertelenmiş vergisi 5 milyon TL'dir. Toplam borç 400 milyon TL'dir. FFO/Borç oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.0%",
+          "tr": "20,0%",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "18.8%",
+          "tr": "18,8%",
+          "value": 18.75
+        },
+        {
+          "key": "C",
+          "en": "10.0%",
+          "tr": "10,0%",
+          "value": 10.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FFO = 40 + 35 + 5 = 80. FFO/Debt = 80/400 = 20.0%.",
+      "explanation_tr": "FFO = 40 + 35 + 5 = 80. FFO/Borç = 80/400 = %20,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This omits the deferred tax non-cash charge from FFO.",
+          "tr": "Bu, FFO'dan ertelenmiş vergi gibi nakit dışı gideri dışarıda bırakır."
+        },
+        "C": {
+          "en": "This uses net income only and leaves out all non-cash charges.",
+          "tr": "Bu, yalnızca net kârı kullanır ve tüm nakit dışı giderleri dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: FFO/Debt.",
+          "tr": "İstenen: FFO/Borç."
+        },
+        {
+          "en": "FFO = net income + depreciation + other non-cash charges = 80",
+          "tr": "FFO = net kâr + amortisman + diğer nakit dışı giderler = 80",
+          "formula_latex": "FFO=NI+D\\&A+\\text{non-cash}"
+        },
+        {
+          "en": "80/400 = 20.0%",
+          "tr": "80/400 = %20,0"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "40 [+] 35 [+] 5 [=]",
+          "[÷] 400 [=]"
+        ],
+        "note_tr": "Sonucu yüzdeye çevirin."
+      },
+      "numeric": {
+        "expr": "(40+35+5)/400*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "ffo",
+        "leverage",
+        "closest-to",
+        "non-cash",
+        "depreciation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-b-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has total debt of TRY 300 million and shareholders' equity of TRY 500 million. Debt/Capital is closest to:",
+      "stem_tr": "Bir şirketin toplam borcu 300 milyon TL ve özkaynağı 500 milyon TL'dir. Borç/Sermaye oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "60.0%",
+          "tr": "60,0%",
+          "value": 60.0
+        },
+        {
+          "key": "B",
+          "en": "37.5%",
+          "tr": "37,5%",
+          "value": 37.5
+        },
+        {
+          "key": "C",
+          "en": "62.5%",
+          "tr": "62,5%",
+          "value": 62.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Capital = 300 + 500 = 800. Debt/Capital = 300/800 = 37.5%.",
+      "explanation_tr": "Sermaye = 300 + 500 = 800. Borç/Sermaye = 300/800 = %37,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is debt/equity, not debt/capital.",
+          "tr": "Bu, borç/sermaye değil borç/özkaynak oranıdır."
+        },
+        "C": {
+          "en": "This is equity/capital, the complement of debt/capital.",
+          "tr": "Bu, borç/sermaye oranının tamamlayıcısı olan özkaynak/sermayedir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: debt as a share of total capital.",
+          "tr": "İstenen: borcun toplam sermayedeki payı."
+        },
+        {
+          "en": "Formula: Debt / (Debt + Equity)",
+          "tr": "Formül: Borç / (Borç + Özkaynak)",
+          "formula_latex": "\\frac{D}{D+E}"
+        },
+        {
+          "en": "300 / 800 = 37.5%",
+          "tr": "300 / 800 = %37,5"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300 [÷] 800 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "300/(300+500)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "leverage",
+        "capital",
+        "debt-to-capital",
+        "closest-to",
+        "equity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-b-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Over two years, an issuer's net debt/EBITDA rises from 2.5x to 3.8x while its EBITDA/interest falls from 6.0x to 3.5x. All else equal, the issuer's credit quality has most likely:",
+      "stem_tr": "İki yıl içinde bir ihraççının net borç/FAVÖK oranı 2,5x'ten 3,8x'e çıkarken FAVÖK/faiz oranı 6,0x'ten 3,5x'e düşmektedir. Diğer her şey eşitken ihraççının kredi kalitesi büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "improved, because EBITDA is still positive.",
+          "tr": "iyileşmiştir, çünkü FAVÖK hâlâ pozitiftir."
+        },
+        {
+          "key": "B",
+          "en": "not changed, because the two ratios offset each other.",
+          "tr": "değişmemiştir, çünkü iki oran birbirini dengeler."
+        },
+        {
+          "key": "C",
+          "en": "deteriorated, which would put pressure on its rating and widen its spread.",
+          "tr": "bozulmuştur; bu, notu üzerinde baskı yaratır ve spreadini genişletir."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Higher leverage means more debt per unit of earnings. Lower coverage means less cushion to pay interest. Both are negative, so downgrade risk and spread widening are likely.",
+      "explanation_tr": "Yüksek kaldıraç, kazanç başına daha fazla borç demektir. Düşük karşılama, faiz ödemek için daha az tampon demektir. İkisi de olumsuzdur; not indirimi riski ve spread genişlemesi olasıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher leverage and lower coverage both point to weaker credit, not stronger.",
+          "tr": "Daha yüksek kaldıraç ve daha düşük karşılama ikisi de daha zayıf krediyi gösterir."
+        },
+        "B": {
+          "en": "The two ratios move in the same adverse direction; they do not offset.",
+          "tr": "İki oran da aynı olumsuz yönde hareket eder; birbirini dengelemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "coverage-ratio",
+        "deteriorate",
+        "all-else-equal",
+        "downgrade"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-c-q01",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a bankruptcy, which ranking of claims, from highest priority to lowest, is most likely correct?",
+      "stem_tr": "Bir iflasta, en yüksek öncelikten en düşüğe doğru alacak sıralaması hangisi en olası olarak doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Senior secured, senior unsecured, subordinated, equity.",
+          "tr": "Senior teminatlı, senior teminatsız, sübordine, özkaynak."
+        },
+        {
+          "key": "B",
+          "en": "Senior unsecured, senior secured, equity, subordinated.",
+          "tr": "Senior teminatsız, senior teminatlı, özkaynak, sübordine."
+        },
+        {
+          "key": "C",
+          "en": "Subordinated, senior unsecured, senior secured, equity.",
+          "tr": "Sübordine, senior teminatsız, senior teminatlı, özkaynak."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The usual order is secured creditors, senior unsecured, subordinated, and finally shareholders, who are paid only if all debt is repaid.",
+      "explanation_tr": "Olağan sıra teminatlı alacaklılar, senior teminatsız, sübordine ve son olarak hissedarlardır; hissedarlara yalnızca tüm borç ödenirse ödeme yapılır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Secured debt has a claim on collateral, so it ranks above unsecured debt, and equity ranks last.",
+          "tr": "Teminatlı borcun teminat üzerinde hakkı vardır; teminatsızın üzerinde yer alır ve özkaynak sonunculuktur."
+        },
+        "C": {
+          "en": "Subordinated debt, by definition, ranks below senior debt.",
+          "tr": "Sübordine borç, tanımı gereği senior borcun altında yer alır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "seniority",
+        "secured",
+        "subordinated",
+        "most-likely",
+        "equity"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-c-q02",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A rating agency assigns an issuer a credit rating of BBB. Compared with that rating, the issue rating of the issuer's subordinated bond is most likely:",
+      "stem_tr": "Bir derecelendirme kuruluşu bir ihraççıya BBB kredi notu veriyor. Bu notla kıyaslandığında ihraççının sübordine tahvilinin ihraç notu büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "higher, because subordinated bonds pay more yield.",
+          "tr": "daha yüksektir; çünkü sübordine tahviller daha yüksek getiri öder."
+        },
+        {
+          "key": "B",
+          "en": "lower, because of notching down for lower priority.",
+          "tr": "daha düşüktür; çünkü düşük öncelik nedeniyle not aşağı basamaklanır."
+        },
+        {
+          "key": "C",
+          "en": "the same, because the issuer is the same.",
+          "tr": "aynıdır; çünkü ihraççı aynıdır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Subordinated creditors are paid after senior creditors, so expected recovery is lower. Agencies therefore notch the issue rating below the issuer rating.",
+      "explanation_tr": "Sübordine alacaklılara senior alacaklılardan sonra ödeme yapılır; beklenen geri kazanım daha düşüktür. Bu yüzden derecelendirme kuruluşları ihraç notunu ihraççı notunun altına basamaklar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher yield compensates for higher risk; it does not raise the rating.",
+          "tr": "Yüksek getiri daha yüksek riski telafi eder; notu artırmaz."
+        },
+        "C": {
+          "en": "Issue ratings can differ from the issuer rating because recovery prospects differ.",
+          "tr": "Geri kazanım beklentileri farklı olduğu için ihraç notları ihraççı notundan farklı olabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "notching",
+        "subordinated",
+        "issuer-rating",
+        "most-likely",
+        "recovery-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-c-q03",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company is liquidated and TRY 600 million is available for creditors. Claims are: senior secured TRY 300 million, senior unsecured TRY 400 million and subordinated TRY 200 million. Assuming strict priority of claims, the recovery rate of the senior unsecured creditors is closest to:",
+      "stem_tr": "Bir şirket tasfiye ediliyor ve alacaklılara dağıtılmak üzere 600 milyon TL vardır. Alacaklar: senior teminatlı 300 milyon TL, senior teminatsız 400 milyon TL ve sübordine 200 milyon TL. Kesin alacak önceliği varsayılırsa senior teminatsız alacaklıların geri kazanım oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "66.7%",
+          "tr": "66,7%",
+          "value": 66.6667
+        },
+        {
+          "key": "B",
+          "en": "100.0%",
+          "tr": "100,0%",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "75.0%",
+          "tr": "75,0%",
+          "value": 75.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Secured gets 300. Remaining = 300. Senior unsecured recovery = 300/400 = 75.0%.",
+      "explanation_tr": "Teminatlı 300 alır. Kalan = 300. Senior teminatsız geri kazanımı = 300/400 = %75,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This spreads value equally across all claims, ignoring priority (66.7%).",
+          "tr": "Bu, değeri önceliği yok sayarak tüm alacaklara eşit dağıtır (%66,7)."
+        },
+        "B": {
+          "en": "Full recovery is not possible: after the secured claim only 300 remains for 400 of claims.",
+          "tr": "Tam geri kazanım mümkün değildir: teminatlı alacaktan sonra 400'lük alacak için yalnızca 300 kalır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Asked: recovery rate of senior unsecured claims under strict priority.",
+          "tr": "İstenen: kesin öncelik altında senior teminatsız alacakların geri kazanım oranı."
+        },
+        {
+          "en": "Pay senior secured first: 600 − 300 = 300 left",
+          "tr": "Önce senior teminatlıyı öde: 600 − 300 = 300 kalır"
+        },
+        {
+          "en": "Recovery = 300/400 = 75.0%",
+          "tr": "Geri kazanım = 300/400 = %75,0"
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "600 [-] 300 [=]",
+          "[÷] 400 [=]"
+        ],
+        "note_tr": "Sonucu 100 ile çarpın."
+      },
+      "numeric": {
+        "expr": "(600-300)/400*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "recovery-rate",
+        "priority-of-claims",
+        "senior-unsecured",
+        "closest-to",
+        "liquidation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-c-q04",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A BIST-listed holding company issues a bond. Its only assets are shares in operating subsidiaries, which have their own bank loans. Bondholders of the holding company are most likely:",
+      "stem_tr": "BIST'te işlem gören bir holding şirketi tahvil ihraç ediyor. Tek varlığı, kendi banka kredileri olan operasyonel bağlı ortaklıklardaki paylardır. Holding şirketin tahvil yatırımcıları büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "structurally subordinated to the subsidiaries' creditors.",
+          "tr": "bağlı ortaklıkların alacaklılarına karşı yapısal olarak sübordinedir."
+        },
+        {
+          "key": "B",
+          "en": "structurally senior to the subsidiaries' creditors.",
+          "tr": "bağlı ortaklıkların alacaklılarına karşı yapısal olarak senior durumdadır."
+        },
+        {
+          "key": "C",
+          "en": "paid pari passu with the subsidiaries' bank lenders.",
+          "tr": "bağlı ortaklıkların banka kredi verenleriyle eşit sırada (pari passu) ödenir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Value flows to the holding company only after the subsidiaries' creditors are paid. This is structural subordination, so holding company bonds usually have lower recovery.",
+      "explanation_tr": "Değer, bağlı ortaklıkların alacaklıları ödendikten sonra holdinge ulaşır. Bu yapısal sübordinasyondur; holding tahvillerinin geri kazanımı genellikle daha düşüktür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Subsidiary creditors have the first claim on the subsidiary's assets.",
+          "tr": "Bağlı ortaklık alacaklıları, ortaklığın varlıkları üzerinde ilk hakka sahiptir."
+        },
+        "C": {
+          "en": "The holding company is only a shareholder of the subsidiaries, so it cannot rank equally with their lenders.",
+          "tr": "Holding, bağlı ortaklıkların yalnızca ortağıdır; onların kredi verenleriyle eşit sırada olamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "structural-subordination",
+        "holding-company",
+        "most-likely",
+        "subsidiary",
+        "creditor"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FI-16-c-q05",
+      "level": "L1",
+      "topic": "FI",
+      "module_id": "FI-16",
+      "los_id": "FI-16-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which statement about recovery in actual corporate bankruptcies is most accurate?",
+      "stem_tr": "Gerçek şirket iflaslarında geri kazanımla ilgili hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Senior unsecured creditors always receive full recovery.",
+          "tr": "Senior teminatsız alacaklılar her zaman tam geri kazanım sağlar."
+        },
+        {
+          "key": "B",
+          "en": "The absolute priority rule is not always followed, so junior creditors or equity may receive some value.",
+          "tr": "Mutlak öncelik kuralı her zaman izlenmez; bu nedenle düşük öncelikli alacaklılar ya da özkaynak bir miktar değer alabilir."
+        },
+        {
+          "key": "C",
+          "en": "Secured creditors always receive more than their claim.",
+          "tr": "Teminatlı alacaklılar her zaman alacaklarından fazlasını alır."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Negotiated reorganizations and legal costs often change the order of payment, so lower-ranking classes can be paid something even when higher ones are not repaid in full.",
+      "explanation_tr": "Müzakereli yeniden yapılandırmalar ve hukuki maliyetler ödeme sırasını sıklıkla değiştirir; bu yüzden üst sıradakiler tam ödenmese bile alt sıradaki sınıflara bir miktar ödeme yapılabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "There is no guarantee of full recovery for unsecured creditors; many suffer losses.",
+          "tr": "Teminatsız alacaklılar için tam geri kazanım garantisi yoktur; birçoğu zarar eder."
+        },
+        "C": {
+          "en": "Secured creditors are limited to their claim and may receive less if collateral is worth less.",
+          "tr": "Teminatlı alacaklılar alacakları ile sınırlıdır; teminat değeri düşükse daha az alabilirler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "absolute-priority",
+        "bankruptcy",
+        "most-accurate",
+        "recovery-rate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

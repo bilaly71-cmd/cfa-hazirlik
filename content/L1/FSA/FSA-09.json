@@ -1,0 +1,1706 @@
+{
+  "module_id": "FSA-09",
+  "lesson": {
+    "id": "FSA-09-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-09",
+    "los_ids": [
+      "FSA-09-a",
+      "FSA-09-b",
+      "FSA-09-c",
+      "FSA-09-d"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Analysis of Income Taxes",
+    "title_tr": "Gelir Vergilerinin Analizi",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why profit and tax paid differ",
+        "heading_tr": "Kâr ile ödenen vergi neden farklıdır",
+        "en": "A Turkish manufacturer reports a profit before tax of TL 1,000 million, but the tax return shows a lower taxable profit because tax law allows faster depreciation than the accounting rules. The company pays less tax today and more later. The accounting standards (TMS 12 under Turkish IFRS, IAS 12 internationally, ASC 740 under US GAAP) want the income statement to show the full tax cost of the profit it reports, so they record a deferred tax liability for the tax that has been postponed. An analyst must understand these deferred taxes to judge earnings quality and leverage.",
+        "tr": "Bir Türk üreticisi 1.000 milyon TL vergi öncesi kâr açıklar, ancak vergi beyannamesinde, vergi mevzuatı muhasebe kurallarından daha hızlı amortismana izin verdiği için daha düşük bir mali kâr görünür. Şirket bugün daha az, ileride daha çok vergi öder. Muhasebe standartları (Türkiye'de TMS 12, uluslararası IAS 12, US GAAP'ta ASC 740) gelir tablosunun açıkladığı kârın tüm vergi maliyetini göstermesini ister; bu yüzden ertelenen vergi için ertelenmiş vergi yükümlülüğü kaydedilir. Analist, kazanç kalitesini ve kaldıracı değerlendirmek için bu ertelenmiş vergileri anlamalıdır.",
+        "key_terms": [
+          "income tax",
+          "deferred tax",
+          "taxable income"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Key terms",
+        "heading_tr": "Temel terimler",
+        "en": "Accounting profit (pretax income) is profit before income tax in the financial statements. Taxable income is the profit on the tax return, calculated under tax law. Income tax payable is taxable income times the tax rate: the amount owed to the tax authority for the period. Income tax expense is the tax cost reported in the income statement; it equals income tax payable plus the change in deferred tax liabilities minus the change in deferred tax assets. A temporary difference arises when the carrying amount of an asset or liability differs from its tax base and will reverse; it creates deferred tax. A permanent difference never reverses (for example tax-exempt income or non-deductible fines); it creates no deferred tax but moves the effective tax rate away from the statutory rate.",
+        "tr": "Muhasebe kârı (vergi öncesi kâr), finansal tablolardaki vergi öncesi kârdır. Mali kâr, vergi beyannamesindeki ve vergi mevzuatına göre hesaplanan kârdır. Ödenecek vergi, mali kârın vergi oranıyla çarpımıdır: dönem için vergi idaresine borçlanılan tutar. Vergi gideri, gelir tablosunda raporlanan vergi maliyetidir; ödenecek vergi artı ertelenmiş vergi yükümlülüklerindeki değişim eksi ertelenmiş vergi varlığındaki değişime eşittir. Geçici fark, bir varlığın veya yükümlülüğün defter değeri ile vergi değeri arasındaki ve ileride ortadan kalkacak farktır; ertelenmiş vergi doğurur. Kalıcı fark hiç tersine dönmez (örneğin vergiden muaf gelir veya indirilemeyen cezalar); ertelenmiş vergi doğurmaz ama efektif vergi oranını yasal orandan uzaklaştırır.",
+        "key_terms": [
+          "accounting profit",
+          "taxable income",
+          "income tax payable",
+          "income tax expense",
+          "temporary difference",
+          "permanent difference"
+        ],
+        "formula_latex": "\\text{Tax expense}=\\text{Taxes payable}+\\Delta DTL-\\Delta DTA"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Deferred tax assets and liabilities",
+        "heading_tr": "Ertelenmiş vergi varlığı ve yükümlülüğü",
+        "en": "A deferred tax liability (DTL) arises when taxable income is temporarily lower than accounting profit, so tax is postponed: for example accelerated tax depreciation, or when the asset's carrying amount exceeds its tax base. A deferred tax asset (DTA) arises when taxable income is temporarily higher than accounting profit, so tax is prepaid: for example warranty or pension expenses recognized before they are tax deductible, or tax loss carryforwards. Balances are measured as the temporary difference times the enacted (IFRS: enacted or substantively enacted) tax rate expected to apply when the difference reverses, and are not discounted. When the tax rate changes, balances are remeasured and the change goes to income tax expense. IFRS recognizes a DTA only to the extent future taxable profit is probable; US GAAP recognizes the full DTA and then reduces it with a valuation allowance if it is more likely than not (above 50%) that part will not be realized. Under both frameworks deferred taxes are now presented as non-current.",
+        "tr": "Ertelenmiş vergi yükümlülüğü (DTL), mali kâr geçici olarak muhasebe kârından düşük olduğunda, yani vergi ertelendiğinde doğar: örneğin hızlandırılmış vergi amortismanı veya varlığın defter değerinin vergi değerini aşması. Ertelenmiş vergi varlığı (DTA), mali kâr geçici olarak muhasebe kârından yüksek olduğunda, yani vergi peşin ödendiğinde doğar: örneğin vergiden indirilebilir hale gelmeden önce giderleştirilen garanti veya emeklilik giderleri ya da mali zarar devri. Bakiyeler, geçici fark ile fark tersine döndüğünde uygulanması beklenen yasalaşmış (UFRS: yasalaşmış veya fiilen yasalaşmış) vergi oranının çarpımıdır ve iskonto edilmez. Vergi oranı değişince bakiyeler yeniden ölçülür ve değişim vergi giderine yansır. UFRS, DTA'yı yalnızca gelecekte mali kâr elde edilmesi muhtemelse tanır; US GAAP tam DTA'yı tanır ve bir kısmının gerçekleşmeme olasılığı yüzde 50'nin üzerindeyse (daha olası) karşılık ayırarak (değerleme karşılığı) azaltır. Her iki çerçevede de ertelenmiş vergiler artık duran (uzun vadeli) kalem olarak sunulur.",
+        "key_terms": [
+          "deferred tax liability",
+          "deferred tax asset",
+          "tax base",
+          "valuation allowance",
+          "tax loss carryforward"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Topic",
+              "tr": "Konu"
+            },
+            {
+              "en": "IFRS (IAS 12 / TMS 12)",
+              "tr": "UFRS (TMS 12)"
+            },
+            {
+              "en": "US GAAP (ASC 740)",
+              "tr": "US GAAP (ASC 740)"
+            }
+          ],
+          "rows": [
+            [
+              "DTA recognition / DTA kaydı",
+              "Only if future taxable profit is probable / Yalnızca gelecekte vergilendirilebilir kâr muhtemelse",
+              "Full DTA, then valuation allowance if more likely than not unrealized / Tam DTA, gerçekleşmeme ihtimali yüzde 50 üzerindeyse değerleme karşılığı"
+            ],
+            [
+              "Tax rate / Vergi oranı",
+              "Enacted or substantively enacted / Yasalaşmış veya fiilen yasalaşmış",
+              "Enacted / Yasalaşmış"
+            ],
+            [
+              "Balance sheet / Bilanço",
+              "Non-current / Duran",
+              "Non-current / Duran"
+            ],
+            [
+              "Discounting / İskonto",
+              "Not allowed / Yasak",
+              "Not allowed / Yasak"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Rates and tax expense",
+        "heading_tr": "Oranlar ve vergi gideri",
+        "en": "The effective tax rate is income tax expense divided by pretax income. The cash tax rate is income taxes actually paid divided by pretax income. The statutory rate is the legal rate for the company's jurisdiction. The tax rate reconciliation in the notes starts from statutory tax (pretax income times statutory rate) and adds or subtracts items such as tax-exempt income, non-deductible expenses, different foreign rates, credits and changes in valuation allowance to reach the actual tax expense. The deferred tax balance for a difference is the difference times the tax rate.",
+        "tr": "Efektif vergi oranı, vergi giderinin vergi öncesi kâra bölümüdür. Nakdi vergi oranı, fiilen ödenen gelir vergisinin vergi öncesi kâra bölümüdür. Yasal oran, şirketin bulunduğu ülkedeki yasal orandır. Dipnotlardaki vergi oranı mutabakatı, yasal vergiden (vergi öncesi kâr çarpı yasal oran) başlar ve fiili vergi giderine ulaşmak için vergiden muaf gelir, indirilemeyen giderler, farklı yabancı oranlar, vergi indirimleri ve değerleme karşılığı değişimi gibi kalemleri ekler veya çıkarır. Bir fark için ertelenmiş vergi bakiyesi, farkın vergi oranıyla çarpımıdır.",
+        "key_terms": [
+          "effective tax rate",
+          "cash tax rate",
+          "statutory tax rate",
+          "tax rate reconciliation"
+        ],
+        "formula_latex": "ETR=\\frac{\\text{Tax expense}}{\\text{Pretax income}},\\quad CTR=\\frac{\\text{Cash taxes paid}}{\\text{Pretax income}},\\quad DT=(CV-TB)\\times t"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Pretax income is TL 1,000. Tax depreciation exceeds book depreciation by TL 100, and the tax rate is 25%. Taxable income = 1,000 - 100 = 900, so taxes payable = 225. The temporary difference creates a DTL of 100 × 25% = 25, so income tax expense = 225 + 25 = 250, an effective rate of 25%. Now a permanent difference: pretax income 800, non-deductible fines 40, tax-exempt income 60. Taxable income = 800 + 40 - 60 = 780, tax = 195, effective rate = 195 / 800 = 24.38% (below 25% because the exempt income exceeds the fines).",
+        "tr": "Vergi öncesi kâr 1.000 TL'dir. Vergi amortismanı defter amortismanını 100 TL aşar ve vergi oranı %25'tir. Mali kâr = 1.000 - 100 = 900; ödenecek vergi = 225. Geçici fark 100 × %25 = 25 DTL doğurur; vergi gideri = 225 + 25 = 250, yani efektif oran %25'tir. Şimdi kalıcı fark: vergi öncesi kâr 800, indirilemeyen ceza 40, vergiden muaf gelir 60. Mali kâr = 800 + 40 - 60 = 780; vergi = 195; efektif oran = 195 / 800 = %24,38 (muaf gelir cezayı aştığı için %25'in altındadır).",
+        "key_terms": [
+          "deferred tax liability"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "How analysts treat deferred taxes",
+        "heading_tr": "Analistler ertelenmiş vergiyi nasıl ele alır",
+        "en": "Analysts ask whether a deferred tax balance will really reverse. If a DTL is expected to reverse and be paid, treat it as a liability. If it will not reverse (for example the company keeps growing its capital spending, so new timing differences replace old ones), treat it as equity, which lowers leverage ratios such as debt-to-equity. If the timing is uncertain, many analysts leave it out of both debt and equity. A DTA backed by tax loss carryforwards is worth less if future profits are doubtful, so check valuation allowance changes. A release of a valuation allowance lowers tax expense for one period but is not a lasting improvement; use a normalized tax rate when forecasting. Read the notes for the tax rate reconciliation, the components of deferred taxes and the expiry dates of loss carryforwards.",
+        "tr": "Analistler ertelenmiş vergi bakiyesinin gerçekten tersine dönüp dönmeyeceğini sorar. DTL'nin ters dönüp ödenmesi bekleniyorsa yükümlülük sayılır. Ters dönmeyecekse (örneğin şirket yatırım harcamalarını büyütmeyi sürdürdüğü için yeni zamanlama farkları eskilerin yerini alıyorsa) özkaynak sayılır; bu da borç/özkaynak gibi kaldıraç oranlarını düşürür. Zamanlama belirsizse birçok analist onu hem borçtan hem özkaynaktan hariç tutar. Mali zarar devrine dayanan DTA, gelecekteki kârlar şüpheliyse daha az değerlidir; bu yüzden değerleme karşılığı değişimlerine bak. Değerleme karşılığının çözülmesi bir dönem için vergi giderini düşürür ama kalıcı bir iyileşme değildir; tahmin yaparken normalleştirilmiş vergi oranı kullan. Dipnotlardaki vergi oranı mutabakatını, ertelenmiş vergi bileşenlerini ve zarar devirlerinin son kullanım tarihlerini oku.",
+        "key_terms": [
+          "valuation allowance",
+          "normalized tax rate"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Do not apply the tax rate to accounting profit to get taxes payable; use taxable income. Do not mix up the sign: a DTL increase adds to tax expense, a DTA increase reduces it. Permanent differences never create deferred taxes. Remember that the deferred tax balance changes when the tax rate changes, and the change goes through income tax expense. Under US GAAP use the valuation allowance wording (more likely than not); under IFRS a DTA is recognized only if profit is probable. Inflation accounting under TMS 29 can create new temporary differences, because carrying amounts are restated for inflation while tax bases may not be.",
+        "tr": "Ödenecek vergiyi bulmak için vergi oranını muhasebe kârına uygulama; mali kârı kullan. İşareti karıştırma: DTL artışı vergi giderine eklenir, DTA artışı onu azaltır. Kalıcı farklar hiçbir zaman ertelenmiş vergi doğurmaz. Vergi oranı değişince ertelenmiş vergi bakiyesinin değiştiğini ve değişimin vergi giderine gittiğini unutma. US GAAP'ta değerleme karşılığı ifadesini (daha olası) kullan; UFRS'de DTA yalnızca kâr muhtemelse tanınır. TMS 29 enflasyon muhasebesi yeni geçici farklar doğurabilir, çünkü defter değerleri enflasyona göre yeniden ifade edilirken vergi değerleri edilmeyebilir.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Accounting profit and taxable income differ because of temporary differences (which create DTAs and DTLs) and permanent differences (which move the effective rate). Tax expense equals taxes payable plus the change in DTL minus the change in DTA. Compare effective, statutory and cash tax rates, read the rate reconciliation and decide whether deferred taxes are real liabilities or equity-like.",
+    "summary_tr": "Muhasebe kârı ile mali kâr geçici farklar (DTA ve DTL doğurur) ve kalıcı farklar (efektif oranı oynatır) nedeniyle ayrışır. Vergi gideri ödenecek vergi artı DTL değişimi eksi DTA değişimine eşittir. Efektif, yasal ve nakdi vergi oranlarını karşılaştır, vergi oranı mutabakatını oku ve ertelenmiş vergilerin gerçek yükümlülük mü yoksa özkaynak benzeri mi olduğuna karar ver.",
+    "common_traps_tr": [
+      "Ödenecek vergiyi hesaplarken oranı muhasebe kârına uygulamak.",
+      "DTL artışını vergi giderinden çıkarmak (eklenir).",
+      "Kalıcı farklardan ertelenmiş vergi doğduğunu sanmak.",
+      "Vergi oranı değişince ertelenmiş vergi bakiyesini yeniden ölçmemek.",
+      "Değerleme karşılığı çözümünü kalıcı bir vergi tasarrufu saymak; tahminde normalleştirilmiş oran kullan.",
+      "UFRS ve US GAAP'ın DTA tanıma ölçütlerini karıştırmak: UFRS'de 'muhtemel', US GAAP'ta tam DTA eksi 'daha olası' karşılık."
+    ],
+    "vocab_ids": [
+      "income-tax-payable",
+      "income-tax-expense",
+      "taxable-income",
+      "temporary-difference",
+      "permanent-difference",
+      "deferred-tax-asset",
+      "deferred-tax-liability",
+      "tax-base",
+      "valuation-allowance",
+      "tax-loss-carryforward",
+      "effective-tax-rate",
+      "statutory-tax-rate",
+      "cash-tax-rate",
+      "tax-rate-reconciliation",
+      "normalized"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Vergi gideri ve efektif vergi oranı SPK Düzey 3 mali analizinde tanıdıktır; ertelenmiş vergi ve değerleme karşılığı büyük ölçüde yenidir."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-09-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is a permanent difference between accounting profit and taxable income?",
+      "stem_tr": "Aşağıdakilerden hangisi muhasebe kârı ile mali kâr arasında kalıcı bir farktır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Interest income on bonds that are exempt from tax",
+          "tr": "Vergiden muaf tahvillerden elde edilen faiz geliri"
+        },
+        {
+          "key": "B",
+          "en": "Depreciation that is faster for tax than for accounting",
+          "tr": "Vergide muhasebeden daha hızlı olan amortisman"
+        },
+        {
+          "key": "C",
+          "en": "A warranty expense recognized now and deductible when paid",
+          "tr": "Şimdi giderleştirilen ve ödendiğinde indirilebilen garanti gideri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Tax-exempt income is never taxed, so the difference never reverses. Permanent differences create no deferred tax.",
+      "explanation_tr": "Vergiden muaf gelir hiç vergilendirilmez; fark asla tersine dönmez. Kalıcı farklar ertelenmiş vergi doğurmaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This reverses over the asset's life, so it is temporary.",
+          "tr": "Varlığın ömrü boyunca tersine döner; bu yüzden geçicidir."
+        },
+        "C": {
+          "en": "The deduction happens later, so the difference reverses and is temporary.",
+          "tr": "İndirim sonradan gerçekleşir; fark tersine döner ve geçicidir."
+        }
+      },
+      "vocab_ids": [
+        "permanent-difference",
+        "temporary-difference",
+        "taxable-income",
+        "exempt"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Pretax income is TL 1,000. Tax depreciation exceeds book depreciation by TL 100, and the tax rate is 25%. Income tax payable for the period is closest to:",
+      "stem_tr": "Vergi öncesi kâr 1.000 TL'dir. Vergi amortismanı defter amortismanını 100 TL aşıyor ve vergi oranı %25'tir. Dönem için ödenecek gelir vergisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "250.0",
+          "tr": "250,0",
+          "value": 250.0
+        },
+        {
+          "key": "B",
+          "en": "225.0",
+          "tr": "225,0",
+          "value": 225.0
+        },
+        {
+          "key": "C",
+          "en": "275.0",
+          "tr": "275,0",
+          "value": 275.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Taxable income = 1,000 - 100 = 900. Tax payable = 900 × 25% = 225.",
+      "explanation_tr": "Mali kâr = 1.000 - 100 = 900. Ödenecek vergi = 900 × %25 = 225.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies the tax rate to accounting profit instead of taxable income.",
+          "tr": "Vergi oranını mali kâr yerine muhasebe kârına uygulamış."
+        },
+        "C": {
+          "en": "Adds the extra tax depreciation to income instead of deducting it.",
+          "tr": "Ek vergi amortismanını gelirden düşmek yerine gelire eklemiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the tax owed for the period.",
+          "tr": "Dönem için borçlanılan vergi isteniyor."
+        },
+        {
+          "en": "Start from pretax income, adjust for the timing difference to get taxable income, then apply the rate.",
+          "tr": "Vergi öncesi kârdan başla, zamanlama farkıyla mali kâra ulaş, sonra oranı uygula.",
+          "formula_latex": "\\text{Tax payable}=(\\text{PBT}-\\text{extra tax depreciation})\\times t"
+        },
+        {
+          "en": "Taxable income = 1,000 - 100 = 900.",
+          "tr": "Mali kâr = 1.000 - 100 = 900.",
+          "values": {
+            "PBT": 1000,
+            "extra": 100,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "Tax payable = 900 × 0.25 = 225.",
+          "tr": "Ödenecek vergi = 900 × 0,25 = 225."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [-] 100 [=]  (900)",
+          "[×] 0.25 [=]  (225)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1000-100)*0.25"
+      },
+      "vocab_ids": [
+        "income-tax-payable",
+        "taxable-income",
+        "depreciation",
+        "exceed",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Taxable income is TL 900 and the tax rate is 25%. A deferred tax liability increased by TL 25 during the year, and there were no other deferred tax changes. Income tax expense is closest to:",
+      "stem_tr": "Mali kâr 900 TL ve vergi oranı %25'tir. Yıl içinde ertelenmiş vergi yükümlülüğü 25 TL arttı ve başka ertelenmiş vergi değişimi olmadı. Vergi gideri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "225.0",
+          "tr": "225,0",
+          "value": 225.0
+        },
+        {
+          "key": "B",
+          "en": "200.0",
+          "tr": "200,0",
+          "value": 200.0
+        },
+        {
+          "key": "C",
+          "en": "250.0",
+          "tr": "250,0",
+          "value": 250.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Tax payable = 900 × 25% = 225. Expense = 225 + ΔDTL 25 = 250.",
+      "explanation_tr": "Ödenecek vergi = 900 × %25 = 225. Gider = 225 + ΔDTL 25 = 250.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports taxes payable only and leaves out the DTL increase.",
+          "tr": "Yalnızca ödenecek vergiyi vermiş, DTL artışını atlamış."
+        },
+        "B": {
+          "en": "Subtracts the DTL increase instead of adding it.",
+          "tr": "DTL artışını eklemek yerine çıkarmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the income statement tax charge.",
+          "tr": "Gelir tablosundaki vergi yükü isteniyor."
+        },
+        {
+          "en": "Expense = taxes payable + increase in DTL - increase in DTA.",
+          "tr": "Gider = ödenecek vergi + DTL artışı - DTA artışı.",
+          "formula_latex": "\\text{Expense}=\\text{Payable}+\\Delta DTL-\\Delta DTA"
+        },
+        {
+          "en": "Taxes payable = 900 × 0.25 = 225.",
+          "tr": "Ödenecek vergi = 900 × 0,25 = 225.",
+          "values": {
+            "taxable": 900,
+            "t": 0.25,
+            "dDTL": 25
+          }
+        },
+        {
+          "en": "Expense = 225 + 25 = 250.",
+          "tr": "Gider = 225 + 25 = 250."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "900 [×] 0.25 [+] 25 [=]  (250)"
+        ]
+      },
+      "numeric": {
+        "expr": "900*0.25+25"
+      },
+      "vocab_ids": [
+        "income-tax-expense",
+        "deferred-tax-liability",
+        "taxes-payable",
+        "increase",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A company records a warranty expense in the current year but can deduct it for tax only when claims are paid in later years. All else equal, in the current year this most likely causes:",
+      "stem_tr": "Bir şirket garanti giderini cari yılda kaydediyor ancak vergi açısından ancak talepler sonraki yıllarda ödendiğinde indirebiliyor. Diğer her şey eşitken cari yılda bu durum en olası olarak neye yol açar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "taxable income above pretax income and a deferred tax asset",
+          "tr": "mali kârın vergi öncesi kârın üzerinde olması ve ertelenmiş vergi varlığı"
+        },
+        {
+          "key": "B",
+          "en": "taxable income below pretax income and a deferred tax liability",
+          "tr": "mali kârın vergi öncesi kârın altında olması ve ertelenmiş vergi yükümlülüğü"
+        },
+        {
+          "key": "C",
+          "en": "a permanent difference with no deferred tax",
+          "tr": "ertelenmiş vergi doğurmayan kalıcı fark"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Book expense now, tax deduction later: taxable income is temporarily higher, tax is prepaid, and a DTA is created.",
+      "explanation_tr": "Muhasebede gider şimdi, vergide indirim sonra: mali kâr geçici olarak yüksektir, vergi peşin ödenir ve DTA doğar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The expense is not yet deductible, so taxable income is higher, not lower.",
+          "tr": "Gider henüz indirilebilir olmadığından mali kâr düşük değil yüksektir."
+        },
+        "C": {
+          "en": "The deduction occurs later, so the difference reverses and is temporary.",
+          "tr": "İndirim sonradan gerçekleşir; fark tersine döner ve geçicidir."
+        }
+      },
+      "vocab_ids": [
+        "deferred-tax-asset",
+        "deductible",
+        "taxable-income",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal",
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "Pretax income is TL 800. Non-deductible fines are TL 40 and tax-exempt income is TL 60 (both are permanent differences). The tax rate is 25% and there are no other differences. The effective tax rate is closest to:",
+      "stem_tr": "Vergi öncesi kâr 800 TL'dir. İndirilemeyen cezalar 40 TL ve vergiden muaf gelir 60 TL'dir (ikisi de kalıcı farktır). Vergi oranı %25'tir ve başka fark yoktur. Efektif vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.00%",
+          "tr": "%25,00",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "24.38%",
+          "tr": "%24,38",
+          "value": 24.38
+        },
+        {
+          "key": "C",
+          "en": "23.13%",
+          "tr": "%23,13",
+          "value": 23.13
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Taxable income = 800 + 40 - 60 = 780. Tax = 195 (no deferred tax). ETR = 195 / 800 = 24.38%.",
+      "explanation_tr": "Mali kâr = 800 + 40 - 60 = 780. Vergi = 195 (ertelenmiş vergi yok). Efektif oran = 195 / 800 = %24,38.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the statutory rate and ignores the permanent differences.",
+          "tr": "Yasal oranı vermiş, kalıcı farkları yok saymış."
+        },
+        "C": {
+          "en": "Deducts the exempt income but forgets to add back the non-deductible fines.",
+          "tr": "Muaf geliri düşmüş ama indirilemeyen cezaları geri eklemeyi unutmuş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need tax expense divided by pretax income.",
+          "tr": "Vergi giderinin vergi öncesi kâra bölümü isteniyor."
+        },
+        {
+          "en": "Permanent differences change taxable income but create no deferred tax.",
+          "tr": "Kalıcı farklar mali kârı değiştirir ama ertelenmiş vergi doğurmaz.",
+          "formula_latex": "\\text{TI}=\\text{PBT}+\\text{non-deductible}-\\text{exempt}"
+        },
+        {
+          "en": "TI = 800 + 40 - 60 = 780; tax = 780 × 0.25 = 195.",
+          "tr": "Mali kâr = 800 + 40 - 60 = 780; vergi = 780 × 0,25 = 195.",
+          "values": {
+            "PBT": 800,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "ETR = 195 / 800 = 24.38%.",
+          "tr": "Efektif oran = 195 / 800 = %24,38."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "800 [+] 40 [-] 60 [=] [×] 0.25 [=]  (195)",
+          "[÷] 800 [=]  (0.2438)"
+        ]
+      },
+      "numeric": {
+        "expr": "(800+40-60)*0.25/800*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "effective-tax-rate",
+        "permanent-difference",
+        "non-deductible",
+        "tax-exempt",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A deferred tax liability most likely arises when:",
+      "stem_tr": "Ertelenmiş vergi yükümlülüğü en olası olarak ne zaman doğar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "taxable income is temporarily higher than pretax income",
+          "tr": "mali kârın vergi öncesi kârdan geçici olarak yüksek olması"
+        },
+        {
+          "key": "B",
+          "en": "the company has a permanent tax-exempt income",
+          "tr": "şirketin kalıcı olarak vergiden muaf geliri bulunması"
+        },
+        {
+          "key": "C",
+          "en": "taxable income is temporarily lower than pretax income, for example because of accelerated tax depreciation",
+          "tr": "mali kârın, örneğin hızlandırılmış vergi amortismanı nedeniyle, vergi öncesi kârdan geçici olarak düşük olması"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When taxes are postponed, the company will pay more in future periods, which is a liability.",
+      "explanation_tr": "Vergi ertelenince şirket gelecek dönemlerde daha çok ödeyecektir; bu bir yükümlülüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That creates a deferred tax asset (tax prepaid).",
+          "tr": "Bu, ertelenmiş vergi varlığı doğurur (vergi peşin ödenmiştir)."
+        },
+        "B": {
+          "en": "Permanent differences never create deferred taxes.",
+          "tr": "Kalıcı farklar hiçbir zaman ertelenmiş vergi doğurmaz."
+        }
+      },
+      "vocab_ids": [
+        "deferred-tax-liability",
+        "accelerated-depreciation",
+        "postpone",
+        "taxable-income",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An asset has a carrying amount of TL 800 and a tax base of TL 600. The tax rate is 25%. The deferred tax liability is closest to:",
+      "stem_tr": "Bir varlığın defter değeri 800 TL ve vergi değeri 600 TL'dir. Vergi oranı %25'tir. Ertelenmiş vergi yükümlülüğü aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.0",
+          "tr": "50,0",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "200.0",
+          "tr": "200,0",
+          "value": 200.0
+        },
+        {
+          "key": "C",
+          "en": "150.0",
+          "tr": "150,0",
+          "value": 150.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Temporary difference = 800 - 600 = 200. DTL = 200 × 25% = 50.",
+      "explanation_tr": "Geçici fark = 800 - 600 = 200. DTL = 200 × %25 = 50.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the temporary difference itself and does not apply the tax rate.",
+          "tr": "Vergi oranını uygulamadan geçici farkın kendisini vermiş."
+        },
+        "C": {
+          "en": "Applies the rate to the tax base (600) instead of to the difference.",
+          "tr": "Oranı fark yerine vergi değerine (600) uygulamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the deferred tax liability on the asset.",
+          "tr": "Varlıktaki ertelenmiş vergi yükümlülüğü isteniyor."
+        },
+        {
+          "en": "Carrying amount above tax base means a taxable temporary difference; multiply by the rate.",
+          "tr": "Defter değeri vergi değerinin üzerindeyse vergilendirilebilir geçici fark vardır; oranla çarp.",
+          "formula_latex": "DTL=(CV-TB)\\times t"
+        },
+        {
+          "en": "Difference = 800 - 600 = 200.",
+          "tr": "Fark = 800 - 600 = 200.",
+          "values": {
+            "CV": 800,
+            "TB": 600,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "DTL = 200 × 0.25 = 50.",
+          "tr": "DTL = 200 × 0,25 = 50."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "800 [-] 600 [×] 0.25 [=]  (50)"
+        ]
+      },
+      "numeric": {
+        "expr": "(800-600)*0.25"
+      },
+      "vocab_ids": [
+        "carrying-amount",
+        "tax-base",
+        "deferred-tax-liability",
+        "temporary-difference",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has a tax loss carryforward of TL 400 and a tax rate of 25%. Under US GAAP, management judges that TL 40 of the resulting asset is more likely than not to go unused. The net deferred tax asset reported is closest to:",
+      "stem_tr": "Bir şirketin 400 TL mali zarar devri ve %25 vergi oranı vardır. US GAAP'a göre yönetim, ortaya çıkan varlığın 40 TL'lik kısmının kullanılmama olasılığının daha yüksek olduğunu değerlendiriyor. Raporlanan net ertelenmiş vergi varlığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "100.0",
+          "tr": "100,0",
+          "value": 100.0
+        },
+        {
+          "key": "B",
+          "en": "60.0",
+          "tr": "60,0",
+          "value": 60.0
+        },
+        {
+          "key": "C",
+          "en": "40.0",
+          "tr": "40,0",
+          "value": 40.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Gross DTA = 400 × 25% = 100. Less valuation allowance of 40 = 60.",
+      "explanation_tr": "Brüt DTA = 400 × %25 = 100. Eksi 40 değerleme karşılığı = 60.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Recognizes the gross DTA without deducting the valuation allowance.",
+          "tr": "Değerleme karşılığını düşmeden brüt DTA'yı tanımış."
+        },
+        "C": {
+          "en": "Reports the valuation allowance itself instead of the net asset.",
+          "tr": "Net varlık yerine değerleme karşılığının kendisini vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the net DTA after the valuation allowance.",
+          "tr": "Değerleme karşılığı sonrası net DTA isteniyor."
+        },
+        {
+          "en": "Gross DTA = loss × rate; then subtract the valuation allowance.",
+          "tr": "Brüt DTA = zarar × oran; sonra değerleme karşılığını çıkar.",
+          "formula_latex": "DTA_{net}=L\\times t-VA"
+        },
+        {
+          "en": "Gross DTA = 400 × 0.25 = 100.",
+          "tr": "Brüt DTA = 400 × 0,25 = 100.",
+          "values": {
+            "L": 400,
+            "t": 0.25,
+            "VA": 40
+          }
+        },
+        {
+          "en": "Net DTA = 100 - 40 = 60.",
+          "tr": "Net DTA = 100 - 40 = 60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "400 [×] 0.25 [-] 40 [=]  (60)"
+        ]
+      },
+      "numeric": {
+        "expr": "400*0.25-40"
+      },
+      "vocab_ids": [
+        "tax-loss-carryforward",
+        "valuation-allowance",
+        "deferred-tax-asset",
+        "more-likely-than-not",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has a taxable temporary difference of TL 1,000 and a deferred tax liability of TL 250 at a 25% rate. The rate is cut to 20% and the difference stays the same. The effect on income tax expense for the year is closest to:",
+      "stem_tr": "Bir şirketin vergilendirilebilir geçici farkı 1.000 TL'dir ve %25 oranla ertelenmiş vergi yükümlülüğü 250 TL'dir. Oran %20'ye indirilir ve fark aynı kalır. Yıl için vergi giderine etkisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An increase of TL 50",
+          "tr": "50 TL'lik artış",
+          "value": 50.0
+        },
+        {
+          "key": "B",
+          "en": "No effect, because the difference is unchanged",
+          "tr": "Etki yok, çünkü fark değişmedi",
+          "value": 0.0
+        },
+        {
+          "key": "C",
+          "en": "A decrease of TL 50",
+          "tr": "50 TL'lik azalış",
+          "value": -50.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "New DTL = 1,000 × 20% = 200, a fall of 50 from 250. The DTL decrease reduces income tax expense by 50.",
+      "explanation_tr": "Yeni DTL = 1.000 × %20 = 200; 250'den 50 düşüş. DTL azalışı vergi giderini 50 azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A lower rate shrinks the liability; the remeasurement reduces expense.",
+          "tr": "Düşük oran yükümlülüğü küçültür; yeniden ölçüm gideri azaltır."
+        },
+        "B": {
+          "en": "Balances are remeasured at the new rate and the change goes through tax expense.",
+          "tr": "Bakiyeler yeni oranla yeniden ölçülür ve değişim vergi giderine gider."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the change in the DTL caused by the rate cut.",
+          "tr": "Oran indiriminin neden olduğu DTL değişimi isteniyor."
+        },
+        {
+          "en": "Remeasure the DTL at the new rate.",
+          "tr": "DTL'yi yeni oranla yeniden ölçü.",
+          "formula_latex": "DTL_{new}=\\text{difference}\\times t_{new}"
+        },
+        {
+          "en": "New DTL = 1,000 × 0.20 = 200.",
+          "tr": "Yeni DTL = 1.000 × 0,20 = 200.",
+          "values": {
+            "diff": 1000,
+            "tnew": 0.2,
+            "old": 250
+          }
+        },
+        {
+          "en": "Change = 200 - 250 = -50, so tax expense falls by 50.",
+          "tr": "Değişim = 200 - 250 = -50; vergi gideri 50 azalır."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [×] 0.20 [-] 250 [=]  (-50)"
+        ]
+      },
+      "numeric": {
+        "expr": "1000*0.20-250"
+      },
+      "vocab_ids": [
+        "deferred-tax-liability",
+        "remeasure",
+        "income-tax-expense",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company's deferred tax liability comes from accelerated depreciation. The company keeps expanding its capital spending every year, so new timing differences always replace those that reverse. For solvency analysis, the analyst should most appropriately treat the deferred tax liability as:",
+      "stem_tr": "Bir şirketin ertelenmiş vergi yükümlülüğü hızlandırılmış amortismandan kaynaklanıyor. Şirket her yıl yatırım harcamalarını büyütmeye devam ediyor; bu nedenle tersine dönen zamanlama farklarının yerini hep yenileri alıyor. Borç ödeme gücü analizinde analist ertelenmiş vergi yükümlülüğünü en uygun biçimde nasıl ele almalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "part of equity, because it is not expected to be paid",
+          "tr": "özkaynağın parçası olarak, çünkü ödenmesi beklenmiyor"
+        },
+        {
+          "key": "B",
+          "en": "a liability, because every deferred tax liability will be paid in full",
+          "tr": "yükümlülük olarak, çünkü her ertelenmiş vergi yükümlülüğü tam olarak ödenecek"
+        },
+        {
+          "key": "C",
+          "en": "an asset, because it reduces cash taxes",
+          "tr": "varlık olarak, çünkü nakdi vergiyi azaltır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A DTL that is not expected to reverse can be treated as equity, which lowers measured leverage.",
+      "explanation_tr": "Tersine dönmesi beklenmeyen DTL özkaynak sayılabilir; bu ölçülen kaldıracı düşürür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "If the liability keeps being renewed it may never be paid, so a liability treatment overstates leverage.",
+          "tr": "Yükümlülük sürekli yenileniyorsa hiç ödenmeyebilir; yükümlülük sayılması kaldıracı olduğundan yüksek gösterir."
+        },
+        "C": {
+          "en": "A deferred tax liability is a claim of the tax authority, not an asset.",
+          "tr": "Ertelenmiş vergi yükümlülüğü vergi idaresinin alacağıdır, varlık değildir."
+        }
+      },
+      "vocab_ids": [
+        "deferred-tax-liability",
+        "solvency",
+        "reverse",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company reports income tax expense of TL 140, income taxes paid in cash of TL 100 and pretax income of TL 500. The effective tax rate is closest to:",
+      "stem_tr": "Bir şirket 140 TL vergi gideri, nakden ödenen 100 TL gelir vergisi ve 500 TL vergi öncesi kâr raporluyor. Efektif vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "20.00%",
+          "tr": "%20,00",
+          "value": 20.0
+        },
+        {
+          "key": "B",
+          "en": "28.00%",
+          "tr": "%28,00",
+          "value": 28.0
+        },
+        {
+          "key": "C",
+          "en": "38.89%",
+          "tr": "%38,89",
+          "value": 38.89
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "ETR = income tax expense / pretax income = 140 / 500 = 28%.",
+      "explanation_tr": "Efektif oran = vergi gideri / vergi öncesi kâr = 140 / 500 = %28.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses cash taxes paid (the cash tax rate) instead of tax expense.",
+          "tr": "Vergi gideri yerine ödenen nakdi vergiyi (nakdi vergi oranı) kullanmış."
+        },
+        "C": {
+          "en": "Divides tax expense by net income (360) instead of pretax income.",
+          "tr": "Vergi giderini vergi öncesi kâr yerine net kâra (360) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the effective tax rate.",
+          "tr": "Efektif vergi oranı isteniyor."
+        },
+        {
+          "en": "Divide income tax expense by pretax income.",
+          "tr": "Vergi giderini vergi öncesi kâra böl.",
+          "formula_latex": "ETR=\\frac{\\text{Tax expense}}{\\text{PBT}}"
+        },
+        {
+          "en": "140 / 500.",
+          "tr": "140 / 500.",
+          "values": {
+            "expense": 140,
+            "PBT": 500
+          }
+        },
+        {
+          "en": "ETR = 28%.",
+          "tr": "Efektif oran = %28."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "140 [÷] 500 [=]  (0.28)"
+        ]
+      },
+      "numeric": {
+        "expr": "140/500*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "effective-tax-rate",
+        "income-tax-expense",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A company has pretax income of TL 800, income tax expense of TL 200 and income taxes paid in cash of TL 160. The cash tax rate is closest to:",
+      "stem_tr": "Bir şirketin vergi öncesi kârı 800 TL, vergi gideri 200 TL ve nakden ödenen gelir vergisi 160 TL'dir. Nakdi vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.00%",
+          "tr": "%25,00",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "26.67%",
+          "tr": "%26,67",
+          "value": 26.67
+        },
+        {
+          "key": "C",
+          "en": "20.00%",
+          "tr": "%20,00",
+          "value": 20.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Cash tax rate = cash taxes paid / pretax income = 160 / 800 = 20%.",
+      "explanation_tr": "Nakdi vergi oranı = ödenen nakdi vergi / vergi öncesi kâr = 160 / 800 = %20.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the effective tax rate (200 / 800).",
+          "tr": "Efektif vergi oranını (200 / 800) vermiş."
+        },
+        "B": {
+          "en": "Divides cash taxes by income after tax (600) instead of pretax income.",
+          "tr": "Nakdi vergiyi vergi öncesi kâr yerine vergi sonrası kâra (600) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cash tax rate.",
+          "tr": "Nakdi vergi oranı isteniyor."
+        },
+        {
+          "en": "Divide cash taxes paid by pretax income.",
+          "tr": "Ödenen nakdi vergiyi vergi öncesi kâra böl.",
+          "formula_latex": "CTR=\\frac{\\text{Cash taxes}}{\\text{PBT}}"
+        },
+        {
+          "en": "160 / 800.",
+          "tr": "160 / 800.",
+          "values": {
+            "cash": 160,
+            "PBT": 800
+          }
+        },
+        {
+          "en": "CTR = 20%.",
+          "tr": "Nakdi vergi oranı = %20."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "160 [÷] 800 [=]  (0.20)"
+        ]
+      },
+      "numeric": {
+        "expr": "160/800*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "cash-tax-rate",
+        "effective-tax-rate",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "Which of the following would most likely make a company's effective tax rate higher than its statutory rate?",
+      "stem_tr": "Aşağıdakilerden hangisi bir şirketin efektif vergi oranını yasal oranından yüksek yapma olasılığı en yüksek olandır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Expenses that are not deductible for tax, such as fines",
+          "tr": "Vergiden indirilemeyen giderler, örneğin cezalar"
+        },
+        {
+          "key": "B",
+          "en": "Income earned in a foreign subsidiary taxed at a lower rate",
+          "tr": "Daha düşük oranla vergilendirilen yabancı iştirak geliri"
+        },
+        {
+          "key": "C",
+          "en": "Tax-exempt interest income",
+          "tr": "Vergiden muaf faiz geliri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Non-deductible expenses are in pretax income but not deductible, so taxes rise relative to pretax income.",
+      "explanation_tr": "İndirilemeyen giderler vergi öncesi kârı azaltır ama vergiden düşülemez; bu yüzden vergi, vergi öncesi kâra göre artar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This lowers the effective rate below the statutory rate.",
+          "tr": "Bu efektif oranı yasal oranın altına çeker."
+        },
+        "C": {
+          "en": "Exempt income lowers taxable income and reduces the effective rate.",
+          "tr": "Muaf gelir mali kârı azaltır ve efektif oranı düşürür."
+        }
+      },
+      "vocab_ids": [
+        "effective-tax-rate",
+        "statutory-tax-rate",
+        "non-deductible",
+        "fine",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Pretax income is TL 1,000 and the statutory rate is 25%. The tax rate reconciliation shows: tax-exempt income reduces tax by TL 20, non-deductible expenses add TL 10, and a lower foreign tax rate reduces tax by TL 15. The effective tax rate is closest to:",
+      "stem_tr": "Vergi öncesi kâr 1.000 TL ve yasal oran %25'tir. Vergi oranı mutabakatında: vergiden muaf gelir vergiyi 20 TL azaltıyor, indirilemeyen giderler 10 TL ekliyor ve düşük yabancı vergi oranı vergiyi 15 TL azaltıyor. Efektif vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "25.00%",
+          "tr": "%25,00",
+          "value": 25.0
+        },
+        {
+          "key": "B",
+          "en": "22.50%",
+          "tr": "%22,50",
+          "value": 22.5
+        },
+        {
+          "key": "C",
+          "en": "21.50%",
+          "tr": "%21,50",
+          "value": 21.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Statutory tax = 250. Tax expense = 250 - 20 + 10 - 15 = 225. ETR = 225 / 1,000 = 22.5%.",
+      "explanation_tr": "Yasal vergi = 250. Vergi gideri = 250 - 20 + 10 - 15 = 225. Efektif oran = 225 / 1.000 = %22,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the statutory rate without the reconciling items.",
+          "tr": "Mutabakat kalemlerini uygulamadan yasal oranı vermiş."
+        },
+        "C": {
+          "en": "Leaves out the TL 10 of non-deductible expenses.",
+          "tr": "10 TL'lik indirilemeyen giderleri atlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the effective rate implied by the reconciliation.",
+          "tr": "Mutabakatın ima ettiği efektif oran isteniyor."
+        },
+        {
+          "en": "Start from the statutory tax and add or subtract each reconciling item.",
+          "tr": "Yasal vergiden başla ve her mutabakat kalemini ekle veya çıkar.",
+          "formula_latex": "\\text{Tax}=\\text{PBT}\\times t_{stat}\\pm\\text{items}"
+        },
+        {
+          "en": "250 - 20 + 10 - 15 = 225.",
+          "tr": "250 - 20 + 10 - 15 = 225.",
+          "values": {
+            "stat": 250,
+            "exempt": -20,
+            "nondeduct": 10,
+            "foreign": -15
+          }
+        },
+        {
+          "en": "ETR = 225 / 1,000 = 22.5%.",
+          "tr": "Efektif oran = 225 / 1.000 = %22,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [×] 0.25 [-] 20 [+] 10 [-] 15 [=]  (225)",
+          "[÷] 1000 [=]  (0.225)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1000*0.25-20+10-15)/1000*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "tax-rate-reconciliation",
+        "statutory-tax-rate",
+        "effective-tax-rate",
+        "tax-exempt",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A company reports income tax expense of TL 240. Its deferred tax liability increased by TL 60 and its deferred tax asset increased by TL 10 during the year. Income tax payable (taxes due for the period) is closest to:",
+      "stem_tr": "Bir şirket 240 TL vergi gideri raporluyor. Yıl içinde ertelenmiş vergi yükümlülüğü 60 TL ve ertelenmiş vergi varlığı 10 TL arttı. Ödenecek gelir vergisi (dönem için doğan vergi) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "290.0",
+          "tr": "290,0",
+          "value": 290.0
+        },
+        {
+          "key": "B",
+          "en": "170.0",
+          "tr": "170,0",
+          "value": 170.0
+        },
+        {
+          "key": "C",
+          "en": "190.0",
+          "tr": "190,0",
+          "value": 190.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Expense = payable + ΔDTL - ΔDTA, so payable = 240 - 60 + 10 = 190.",
+      "explanation_tr": "Gider = ödenecek + ΔDTL - ΔDTA; dolayısıyla ödenecek = 240 - 60 + 10 = 190.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the DTL increase and subtracts the DTA increase, which reverses the rearrangement.",
+          "tr": "DTL artışını ekleyip DTA artışını çıkarmış; bu, formülün ters düzenlemesidir."
+        },
+        "B": {
+          "en": "Subtracts both increases from the expense, treating the DTA increase with the wrong sign.",
+          "tr": "İki artışı da giderden çıkarmış; DTA artışının işaretini yanlış almış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the tax due for the period.",
+          "tr": "Dönem için doğan vergi isteniyor."
+        },
+        {
+          "en": "Rearrange: payable = expense - ΔDTL + ΔDTA.",
+          "tr": "Düzenle: ödenecek = gider - ΔDTL + ΔDTA.",
+          "formula_latex": "\\text{Payable}=\\text{Expense}-\\Delta DTL+\\Delta DTA"
+        },
+        {
+          "en": "Substitute 240, 60 and 10.",
+          "tr": "240, 60 ve 10'u yerine koy.",
+          "values": {
+            "expense": 240,
+            "dDTL": 60,
+            "dDTA": 10
+          }
+        },
+        {
+          "en": "Payable = 240 - 60 + 10 = 190.",
+          "tr": "Ödenecek = 240 - 60 + 10 = 190."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "240 [-] 60 [+] 10 [=]  (190)"
+        ]
+      },
+      "numeric": {
+        "expr": "240-60+10"
+      },
+      "vocab_ids": [
+        "income-tax-payable",
+        "income-tax-expense",
+        "deferred-tax-liability",
+        "deferred-tax-asset",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "How are deferred tax assets and liabilities presented on the balance sheet under IFRS and under current US GAAP?",
+      "stem_tr": "Ertelenmiş vergi varlığı ve yükümlülüğü UFRS'de ve güncel US GAAP'ta bilançoda nasıl sunulur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "As non-current items under both",
+          "tr": "Her ikisinde de duran (uzun vadeli) kalem olarak"
+        },
+        {
+          "key": "B",
+          "en": "As current under US GAAP and non-current under IFRS",
+          "tr": "US GAAP'ta kısa vadeli, UFRS'de duran olarak"
+        },
+        {
+          "key": "C",
+          "en": "Split between current and non-current under both",
+          "tr": "Her ikisinde de kısa ve uzun vadeli olarak bölünmüş"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Both frameworks classify deferred tax balances as non-current.",
+      "explanation_tr": "Her iki çerçeve de ertelenmiş vergi bakiyelerini duran olarak sınıflandırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "US GAAP also requires non-current classification now.",
+          "tr": "US GAAP da artık duran olarak sınıflandırmayı gerektirir."
+        },
+        "C": {
+          "en": "Neither framework splits them; both use non-current.",
+          "tr": "Hiçbir çerçeve bunları bölmez; ikisi de duran kullanır."
+        }
+      },
+      "vocab_ids": [
+        "deferred-tax-asset",
+        "non-current",
+        "ifrs",
+        "classification"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes a valuation allowance on a deferred tax asset under US GAAP?",
+      "stem_tr": "US GAAP'ta ertelenmiş vergi varlığı üzerindeki değerleme karşılığını hangi ifade en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "An increase of the DTA when future profit is expected to be high",
+          "tr": "Gelecek kârın yüksek olması beklendiğinde DTA'nın artırılması"
+        },
+        {
+          "key": "B",
+          "en": "A reduction of the DTA when it is more likely than not that some of it will not be realized",
+          "tr": "Bir kısmının gerçekleşmeme ihtimali yüzde 50'nin üzerindeyse DTA'nın azaltılması"
+        },
+        {
+          "key": "C",
+          "en": "A rule under IFRS that DTAs are never recognized",
+          "tr": "UFRS'de DTA'ların hiç kaydedilmeyeceğine dair bir kural"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "US GAAP records the full DTA, then reduces it with a valuation allowance if realization is not more likely than not.",
+      "explanation_tr": "US GAAP tam DTA'yı kaydeder, gerçekleşme ihtimali yüzde 50'nin üzerinde değilse değerleme karşılığıyla azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A valuation allowance only reduces a DTA; it never raises it.",
+          "tr": "Değerleme karşılığı yalnızca DTA'yı azaltır; asla artırmaz."
+        },
+        "C": {
+          "en": "IFRS recognizes DTAs when future taxable profit is probable; the allowance concept is US GAAP.",
+          "tr": "UFRS gelecek mali kâr muhtemel olduğunda DTA kaydeder; karşılık kavramı US GAAP'a aittir."
+        }
+      },
+      "vocab_ids": [
+        "valuation-allowance",
+        "deferred-tax-asset",
+        "more-likely-than-not",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company reports total liabilities of TL 600 (including a deferred tax liability of TL 100) and equity of TL 400. The analyst decides the DTL will not reverse and reclassifies it to equity. The adjusted liabilities-to-equity ratio is closest to:",
+      "stem_tr": "Bir şirket toplam yükümlülük 600 TL (100 TL ertelenmiş vergi yükümlülüğü dahil) ve özkaynak 400 TL raporluyor. Analist, DTL'nin tersine dönmeyeceğine karar verip onu özkaynağa sınıflıyor. Düzeltilmiş yükümlülük/özkaynak oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        },
+        {
+          "key": "B",
+          "en": "1.25",
+          "tr": "1,25",
+          "value": 1.25
+        },
+        {
+          "key": "C",
+          "en": "1.00",
+          "tr": "1,00",
+          "value": 1.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Adjusted liabilities = 600 - 100 = 500; adjusted equity = 400 + 100 = 500. Ratio = 1.00.",
+      "explanation_tr": "Düzeltilmiş yükümlülük = 600 - 100 = 500; düzeltilmiş özkaynak = 400 + 100 = 500. Oran = 1,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the unadjusted ratio (600 / 400).",
+          "tr": "Düzeltilmemiş oranı (600 / 400) vermiş."
+        },
+        "B": {
+          "en": "Removes the DTL from liabilities but does not add it to equity (500 / 400).",
+          "tr": "DTL'yi yükümlülüklerden çıkarmış ama özkaynağa eklememiş (500 / 400)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the leverage ratio after the reclassification.",
+          "tr": "Yeniden sınıflamadan sonra kaldıraç oranı isteniyor."
+        },
+        {
+          "en": "Move the DTL out of liabilities and into equity.",
+          "tr": "DTL'yi yükümlülüklerden çıkarıp özkaynağa taşı.",
+          "formula_latex": "\\frac{L-DTL}{E+DTL}"
+        },
+        {
+          "en": "Liabilities = 500; equity = 500.",
+          "tr": "Yükümlülük = 500; özkaynak = 500.",
+          "values": {
+            "L": 600,
+            "E": 400,
+            "DTL": 100
+          }
+        },
+        {
+          "en": "Ratio = 1.00.",
+          "tr": "Oran = 1,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "600 [-] 100 [=]  (500)",
+          "[÷] ( 400 [+] 100 ) [=]  (1.00)"
+        ]
+      },
+      "numeric": {
+        "expr": "(600-100)/(400+100)"
+      },
+      "vocab_ids": [
+        "deferred-tax-liability",
+        "leverage",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company has pretax income of TL 400 and income tax expense of TL 100 before a one-time release of a valuation allowance of TL 30, which reduces tax expense. After the release, the effective tax rate is closest to:",
+      "stem_tr": "Bir şirketin vergi öncesi kârı 400 TL'dir ve 30 TL'lik tek seferlik bir değerleme karşılığı çözümü (vergi giderini azaltır) öncesinde vergi gideri 100 TL'dir. Çözümden sonra efektif vergi oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "17.50%",
+          "tr": "%17,50",
+          "value": 17.5
+        },
+        {
+          "key": "B",
+          "en": "25.00%",
+          "tr": "%25,00",
+          "value": 25.0
+        },
+        {
+          "key": "C",
+          "en": "7.50%",
+          "tr": "%7,50",
+          "value": 7.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Tax expense after release = 100 - 30 = 70. ETR = 70 / 400 = 17.5%.",
+      "explanation_tr": "Çözüm sonrası vergi gideri = 100 - 30 = 70. Efektif oran = 70 / 400 = %17,5.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores the release and keeps the pre-release rate (100 / 400).",
+          "tr": "Çözümü yok sayıp çözüm öncesi oranı (100 / 400) korumuş."
+        },
+        "C": {
+          "en": "Divides only the release (30) by pretax income and treats it as the whole rate.",
+          "tr": "Yalnızca çözümü (30) vergi öncesi kâra bölüp bunu oranın tamamı saymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the effective rate after the one-time benefit.",
+          "tr": "Tek seferlik fayda sonrası efektif oran isteniyor."
+        },
+        {
+          "en": "Subtract the release from tax expense, then divide by pretax income.",
+          "tr": "Çözümü vergi giderinden çıkar, sonra vergi öncesi kâra böl.",
+          "formula_latex": "ETR=\\frac{\\text{Tax}-\\text{release}}{\\text{PBT}}"
+        },
+        {
+          "en": "Expense = 100 - 30 = 70.",
+          "tr": "Gider = 100 - 30 = 70.",
+          "values": {
+            "tax": 100,
+            "release": 30,
+            "PBT": 400
+          }
+        },
+        {
+          "en": "ETR = 70 / 400 = 17.5%.",
+          "tr": "Efektif oran = 70 / 400 = %17,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [-] 30 [=] [÷] 400 [=]  (0.175)"
+        ]
+      },
+      "numeric": {
+        "expr": "(100-30)/400*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "valuation-allowance",
+        "effective-tax-rate",
+        "release",
+        "one-time",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-09-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-09",
+      "los_id": "FSA-09-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company's effective tax rate fell from 25% to 17.5% because of a one-time valuation allowance release. An analyst forecasting next year's earnings should most appropriately:",
+      "stem_tr": "Bir şirketin efektif vergi oranı tek seferlik bir değerleme karşılığı çözümü nedeniyle %25'ten %17,5'e düştü. Gelecek yılın kazançlarını tahmin eden analist en uygun olarak ne yapmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "extrapolate the 17.5% rate, because lower taxes are now permanent",
+          "tr": "%17,5 oranını ileriye taşımak, çünkü düşük vergi artık kalıcıdır"
+        },
+        {
+          "key": "B",
+          "en": "use a normalized tax rate close to the recurring rate rather than 17.5%",
+          "tr": "%17,5 yerine yinelenen orana yakın normalleştirilmiş bir vergi oranı kullanmak"
+        },
+        {
+          "key": "C",
+          "en": "ignore taxes entirely in the forecast",
+          "tr": "tahminde vergiyi tamamen yok saymak"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Non-recurring tax benefits make current earnings look better than the sustainable level, so use a normalized rate.",
+      "explanation_tr": "Tekrarlanmayan vergi faydaları cari kazancı sürdürülebilir düzeyden iyi gösterir; bu yüzden normalleştirilmiş oran kullanılmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A one-time release does not lower the recurring tax burden.",
+          "tr": "Tek seferlik çözüm yinelenen vergi yükünü düşürmez."
+        },
+        "C": {
+          "en": "Taxes are a real cost of earnings and must be forecast.",
+          "tr": "Vergi kazancın gerçek bir maliyetidir ve tahmin edilmelidir."
+        }
+      },
+      "vocab_ids": [
+        "effective-tax-rate",
+        "normalized",
+        "non-recurring",
+        "forecast",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

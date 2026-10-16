@@ -1,0 +1,1922 @@
+{
+  "module_id": "FSA-12",
+  "lesson": {
+    "id": "FSA-12-lesson",
+    "level": "L1",
+    "topic": "FSA",
+    "module_id": "FSA-12",
+    "los_ids": [
+      "FSA-12-a",
+      "FSA-12-b",
+      "FSA-12-c",
+      "FSA-12-d",
+      "FSA-12-e"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Financial Statement Modeling",
+    "title_tr": "Finansal Tablo Modellemesine Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "From history to forecast",
+        "heading_tr": "Geçmişten tahmine",
+        "en": "Valuing a share means forecasting the cash flows or earnings it will produce. An analyst covering a Turkish white-goods maker must guess next year's sales, the cost of steel and imported parts, and what the competition will do to prices. A financial statement model builds an income statement and balance sheet for future years from a few drivers, usually sales growth and ratios such as margins and turnover. The numbers are only as good as the thinking behind them, so good modeling combines arithmetic with industry reasoning and with awareness of our own biases.",
+        "tr": "Bir payı değerlemek, onun üreteceği nakit akışlarını veya kazançları tahmin etmek demektir. Bir Türk beyaz eşya üreticisini izleyen analist gelecek yılın satışlarını, çelik ve ithal parça maliyetini ve rekabetin fiyatlara ne yapacağını tahmin etmek zorundadır. Finansal tablo modeli, birkaç etkenden, genellikle satış büyümesinden ve marj ile devir hızı gibi oranlardan yola çıkarak gelecek yıllar için gelir tablosu ve bilanço kurar. Rakamlar yalnızca arkasındaki düşünce kadar iyidir; bu yüzden iyi modelleme aritmetiği sektör akıl yürütmesi ve kendi önyargılarımızın farkındalığıyla birleştirir.",
+        "key_terms": [
+          "pro forma",
+          "forecast",
+          "driver"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Building a revenue-driven pro forma model",
+        "heading_tr": "Satış odaklı proforma model kurmak",
+        "en": "A pro forma (forecast) model starts with revenue because most costs and balance sheet items depend on it. Revenue can be forecast top-down (industry size × market share), bottom-up (units × price, store count × sales per store) or by growth rate. Then each cost line is linked to a driver: cost of goods sold as a percentage of sales (or one minus gross margin), selling and administrative expense as a percentage of sales or partly fixed, depreciation from planned capital spending, interest from debt, taxes as an effective rate times pretax income. The balance sheet follows: receivables from days sales outstanding, inventory from days of inventory on hand (based on COGS), payables from days payable. Cost behavior matters: variable costs move with sales while fixed costs do not, so profit changes more than sales (operating leverage).",
+        "tr": "Proforma (tahmin) model, çoğu maliyet ve bilanço kalemi ona bağlı olduğu için hasılatla başlar. Hasılat yukarıdan aşağı (sektör büyüklüğü × pazar payı), aşağıdan yukarı (adet × fiyat, mağaza sayısı × mağaza başına satış) veya büyüme oranıyla tahmin edilir. Sonra her maliyet kalemi bir etkene bağlanır: satılan malın maliyeti satışların yüzdesi (veya bir eksi brüt marj), satış ve yönetim giderleri satışların yüzdesi veya kısmen sabit, amortisman planlanan yatırım harcamasından, faiz borçtan, vergi efektif oran çarpı vergi öncesi kâr. Bilanço bunu izler: alacaklar tahsilat süresinden, stok SMM'ye dayalı stokta kalma süresinden, ticari borçlar ödeme süresinden. Maliyet davranışı önemlidir: değişken maliyetler satışla birlikte hareket eder, sabit maliyetler etmez; bu yüzden kâr satıştan daha fazla değişir (faaliyet kaldıracı).",
+        "key_terms": [
+          "pro forma",
+          "top-down",
+          "bottom-up",
+          "operating leverage",
+          "variable cost",
+          "fixed cost"
+        ],
+        "formula_latex": "S_t=S_{t-1}(1+g),\\quad COGS=S\\,(1-GM),\\quad AR=S\\frac{DSO}{365},\\quad Inv=COGS\\frac{DIO}{365}"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example: a simple pro forma",
+        "heading_tr": "Çözümlü örnek: basit bir proforma",
+        "en": "The market is TL 10,000 and grows 5%; the company has a 12% share. Sales = 10,000 × 1.05 × 12% = 1,260. Gross margin is 35%, so COGS = 1,260 × 65% = 819 and gross profit = 441. SG&A is 15% of sales (189) and depreciation is 60, so EBIT = 441 - 189 - 60 = 192. Interest is 30, so EBT = 162; at 25% tax, net income = 121.5. With DSO 45 days, receivables = 1,260 × 45 / 365 = 155.3. With DIO 60 days, inventory = 819 × 60 / 365 = 134.6. Operating leverage: with fixed costs 300 and variable costs 55% of sales, a 10% sales rise from 1,000 lifts operating income from 150 to 195, a 30% increase.",
+        "tr": "Pazar 10.000 TL'dir ve %5 büyür; şirketin %12 payı vardır. Satışlar = 10.000 × 1,05 × %12 = 1.260. Brüt marj %35'tir; SMM = 1.260 × %65 = 819 ve brüt kâr = 441. Satış ve yönetim giderleri satışların %15'i (189) ve amortisman 60'tır; FVÖK = 441 - 189 - 60 = 192. Faiz 30'dur; VÖK = 162; %25 vergiyle net kâr = 121,5. DSO 45 gün ise alacaklar = 1.260 × 45 / 365 = 155,3. DIO 60 gün ise stok = 819 × 60 / 365 = 134,6. Faaliyet kaldıracı: sabit maliyet 300 ve değişken maliyet satışların %55'i iken 1.000'den başlayan %10'luk satış artışı faaliyet kârını 150'den 195'e, yani %30 yükseltir.",
+        "key_terms": [
+          "pro forma"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Behavioral biases in forecasting",
+        "heading_tr": "Tahminde davranışsal önyargılar",
+        "en": "Analysts are human, and several biases distort forecasts. Overconfidence makes forecast ranges too narrow. Anchoring ties the new forecast to an earlier number (last year's EPS or a price target). Confirmation bias favors evidence that supports the existing view. Herding (following the consensus) hides independent judgement. Recency bias and availability bias overweight recent or vivid events. Illusion of control overstates how well management or the analyst can steer outcomes. Framing changes the answer when the same facts are presented differently. Countermeasures: build forecasts bottom-up from fundamentals, use wider ranges and scenarios, record the reasons for each assumption, seek disconfirming evidence (a devil's advocate), compare with base rates and long-run history, review past forecast errors and use independent review.",
+        "tr": "Analistler insandır ve birkaç önyargı tahminleri bozar. Aşırı güven tahmin aralıklarını fazla dar yapar. Çıpalama yeni tahmini önceki bir sayıya (geçen yılın HBK'sı veya hedef fiyat) bağlar. Doğrulama yanlılığı mevcut görüşü destekleyen kanıtı tercih eder. Sürü davranışı (konsensüsü izleme) bağımsız yargıyı gizler. Yakınlık yanlılığı ve erişilebilirlik yanlılığı yakın veya çarpıcı olayları fazla ağırlıklandırır. Kontrol yanılsaması yönetimin veya analistin sonuçları ne kadar yönlendirebildiğini abartır. Çerçeveleme aynı olgular farklı sunulduğunda yanıtı değiştirir. Önlemler: tahminleri temel etkenlerden aşağıdan yukarı kur, daha geniş aralıklar ve senaryolar kullan, her varsayımın gerekçesini kaydet, çürütücü kanıt ara (şeytanın avukatı), taban oranlar ve uzun dönem geçmişle kıyasla, geçmiş tahmin hatalarını gözden geçir ve bağımsız gözden geçirme kullan.",
+        "key_terms": [
+          "overconfidence",
+          "anchoring",
+          "confirmation bias",
+          "herding",
+          "recency bias"
+        ],
+        "table": {
+          "headers": [
+            {
+              "en": "Bias",
+              "tr": "Önyargı"
+            },
+            {
+              "en": "Effect on forecast",
+              "tr": "Tahmine etkisi"
+            },
+            {
+              "en": "Countermeasure",
+              "tr": "Önlem"
+            }
+          ],
+          "rows": [
+            [
+              "Overconfidence / Aşırı güven",
+              "Ranges too narrow / Aralıklar fazla dar",
+              "Scenarios, wider ranges / Senaryo, geniş aralık"
+            ],
+            [
+              "Anchoring / Çıpalama",
+              "Stuck near old number / Eski sayıya yapışma",
+              "Bottom-up rebuild / Aşağıdan yukarı yeniden kur"
+            ],
+            [
+              "Confirmation / Doğrulama",
+              "Ignores contrary evidence / Aksi kanıtı yok sayar",
+              "Devil's advocate / Şeytanın avukatı"
+            ],
+            [
+              "Herding / Sürü",
+              "Copies consensus / Konsensüsü kopyalar",
+              "Independent view, document reasons / Bağımsız görüş, gerekçe yaz"
+            ],
+            [
+              "Recency / Yakınlık",
+              "Extrapolates recent results / Yakın sonuçları uzatır",
+              "Long history, base rates / Uzun geçmiş, taban oran"
+            ]
+          ]
+        }
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Competitive position: Porter's five forces",
+        "heading_tr": "Rekabet konumu: Porter'ın beş gücü",
+        "en": "Porter's five forces explain how attractive an industry is and so how much price and margin a company can keep. (1) Threat of new entrants: low barriers (little capital, no brand or regulation advantage) pull prices down. (2) Bargaining power of suppliers: a few strong suppliers can raise input costs that the company cannot pass on. (3) Bargaining power of buyers: a few large customers or easy switching push prices down. (4) Threat of substitutes: close substitutes cap prices. (5) Rivalry among existing competitors: many equal rivals, slow industry growth, high fixed costs and low differentiation lead to price wars. Strong forces mean lower forecast prices and margins, or higher forecast costs; weak forces mean the opposite. A company's competitive position (cost leadership or differentiation) decides how it fares within the same forces.",
+        "tr": "Porter'ın beş gücü, bir sektörün ne kadar çekici olduğunu ve dolayısıyla şirketin ne kadar fiyat ve marj tutabileceğini açıklar. (1) Yeni giriş tehdidi: düşük giriş engelleri (az sermaye, marka veya mevzuat avantajı yok) fiyatları aşağı çeker. (2) Tedarikçilerin pazarlık gücü: birkaç güçlü tedarikçi, şirketin yansıtamayacağı girdi maliyeti artışları yapabilir. (3) Alıcıların pazarlık gücü: birkaç büyük müşteri veya kolay geçiş fiyatları aşağı iter. (4) İkame tehdidi: yakın ikameler fiyatı sınırlar. (5) Mevcut rakipler arası rekabet: çok sayıda eşit rakip, yavaş sektör büyümesi, yüksek sabit maliyet ve düşük farklılaşma fiyat savaşlarına yol açar. Güçlü güçler daha düşük tahmini fiyat ve marj veya daha yüksek tahmini maliyet demektir; zayıf güçler tersini. Şirketin rekabet konumu (maliyet liderliği veya farklılaşma) aynı güçler içinde nasıl bir performans göstereceğini belirler.",
+        "key_terms": [
+          "barriers to entry",
+          "bargaining power",
+          "substitutes",
+          "rivalry",
+          "pricing power"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Input-price inflation, deflation and pass-through",
+        "heading_tr": "Girdi fiyatı enflasyonu, deflasyonu ve fiyata yansıtma",
+        "en": "When input costs change, the forecast needs a view on how much is passed on to customers. Cost impact = share of costs affected × input price change. Pass-through ratio = part of the cost change recovered through higher prices. The net effect on operating income = cost change × (1 - pass-through) when volumes do not change. Pass-through is higher when demand is inelastic, competitors face the same cost (an industry-wide shock) and the firm has pricing power; it is lower when buyers are powerful or competitors have different cost bases. Sales growth in nominal terms is volume growth combined with price growth: (1 + volume growth) × (1 + price growth) - 1. In Turkey a weaker lira raises the lira cost of imported inputs, and high inflation lifts nominal sales; analysts should model real (volume) and price effects separately and watch for TMS 29 restated comparatives.",
+        "tr": "Girdi maliyetleri değiştiğinde tahminin, bunun ne kadarının müşterilere yansıtılacağına dair bir görüşe ihtiyacı vardır. Maliyet etkisi = etkilenen maliyet payı × girdi fiyatı değişimi. Yansıtma oranı = maliyet değişiminin yüksek fiyatlarla geri kazanılan kısmı. Hacim değişmediğinde faaliyet kârına net etki = maliyet değişimi × (1 - yansıtma). Talep esnek değilse, rakipler aynı maliyetle karşılaşıyorsa (sektör çapında şok) ve firmanın fiyatlama gücü varsa yansıtma yüksektir; alıcılar güçlüyse veya rakiplerin maliyet tabanı farklıysa düşüktür. Nominal satış büyümesi hacim büyümesi ile fiyat büyümesinin birleşimidir: (1 + hacim büyümesi) × (1 + fiyat büyümesi) - 1. Türkiye'de zayıflayan lira ithal girdilerin lira maliyetini artırır ve yüksek enflasyon nominal satışları yükseltir; analistler reel (hacim) ve fiyat etkilerini ayrı modellemeli ve TMS 29 ile yeniden ifade edilmiş karşılaştırmalı rakamlara dikkat etmelidir.",
+        "key_terms": [
+          "pass-through",
+          "input price",
+          "inflation",
+          "deflation",
+          "pricing power"
+        ],
+        "formula_latex": "\\Delta OI=-\\Delta C\\,(1-\\phi),\\qquad g_{nominal}=(1+g_{vol})(1+g_{price})-1"
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Forecast horizon and long-term projections",
+        "heading_tr": "Tahmin ufku ve uzun dönem projeksiyonları",
+        "en": "The explicit forecast horizon should be long enough for the company to reach a normal, steady state: growth, margins and returns that can be sustained. A young, fast-growing firm needs a longer explicit period than a mature utility. Cyclical firms need a horizon that covers a full cycle, with mid-cycle (normalized) margins at the end. Beyond the horizon, analysts use a terminal value: a long-term growth rate (which cannot exceed the growth of the economy indefinitely) or a valuation multiple. Competition tends to push abnormally high returns toward the cost of capital over time (mean reversion or fade), and unusually low returns tend to rise as weak competitors exit, unless there is a lasting competitive advantage. Short-term projections use detailed drivers; longer-term projections use simpler assumptions such as long-run growth, normalized margin and sustainable returns.",
+        "tr": "Açık tahmin ufku, şirketin normal ve durağan bir duruma, yani sürdürülebilir büyüme, marj ve getirilere ulaşması için yeterince uzun olmalıdır. Genç ve hızlı büyüyen bir firma, olgun bir kamu hizmeti şirketinden daha uzun açık döneme ihtiyaç duyar. Döngüsel firmalar tam bir döngüyü kapsayan bir ufka ve sonunda döngü ortası (normalleştirilmiş) marjlara ihtiyaç duyar. Ufkun ötesinde analistler uç değer kullanır: ekonominin büyümesini süresiz aşamayan uzun dönem büyüme oranı veya bir değerleme çarpanı. Rekabet zamanla olağandışı yüksek getirileri sermaye maliyetine doğru çekme eğilimindedir (ortalamaya dönüş veya sönümlenme); olağandışı düşük getiriler de zayıf rakipler çekildikçe, kalıcı bir rekabet avantajı yoksa yükselme eğilimindedir. Kısa dönem projeksiyonlar ayrıntılı etkenler kullanır; uzun dönem projeksiyonlar uzun dönem büyüme, normalleştirilmiş marj ve sürdürülebilir getiri gibi daha basit varsayımlar kullanır.",
+        "key_terms": [
+          "forecast horizon",
+          "terminal value",
+          "mean reversion",
+          "normalized",
+          "steady state"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Apply DSO to sales but DIO and DPO to COGS. Do not use last year's sales when a growth forecast is given. Fixed costs do not move with sales, so operating income changes by a larger percentage than sales. Pass-through reduces but does not always remove the cost shock. Do not mix real and nominal growth; multiply the growth factors. In behavioral bias questions, match the symptom to the bias (anchoring is stuck on a number, confirmation is selective evidence, herding follows the group). In Porter questions, say whether the force is strong or weak and what it does to price and cost.",
+        "tr": "DSO'yu satışlara, DIO ve DPO'yu SMM'ye uygula. Büyüme tahmini verilmişken geçen yılın satışlarını kullanma. Sabit maliyetler satışla değişmez; bu yüzden faaliyet kârı satıştan daha büyük yüzdeyle değişir. Yansıtma maliyet şokunu azaltır ama her zaman ortadan kaldırmaz. Reel ve nominal büyümeyi karıştırma; büyüme çarpanlarını çarp. Davranışsal önyargı sorularında belirtiyi önyargıyla eşleştir (çıpalama bir sayıya takılmak, doğrulama seçici kanıt, sürü davranışı grubu izlemektir). Porter sorularında gücün güçlü mü zayıf mı olduğunu ve fiyat ile maliyete etkisini söyle.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "A revenue-driven pro forma links costs and balance sheet items to sales through margins, turnover and days ratios, and shows operating leverage. Behavioral biases (overconfidence, anchoring, confirmation, herding, recency) distort forecasts and can be countered with scenarios, base rates and disconfirming evidence. Porter's five forces, input-price pass-through and the choice of forecast horizon shape price, cost and long-term projections.",
+    "summary_tr": "Satış odaklı bir proforma model maliyet ve bilanço kalemlerini marj, devir hızı ve gün oranlarıyla satışa bağlar ve faaliyet kaldıracını gösterir. Davranışsal önyargılar (aşırı güven, çıpalama, doğrulama, sürü, yakınlık) tahminleri bozar; senaryolar, taban oranlar ve çürütücü kanıtla karşılanabilir. Porter'ın beş gücü, girdi fiyatının yansıtılması ve tahmin ufkunun seçimi fiyat, maliyet ve uzun dönem projeksiyonları şekillendirir.",
+    "common_traps_tr": [
+      "DSO'yu satışlara, DIO ve DPO'yu SMM'ye uygulamamak.",
+      "Büyüme tahmini verilmişken geçen yılın satışlarını kullanmak.",
+      "Sabit maliyetleri unutup faaliyet kârının satışlarla aynı oranda değişeceğini sanmak.",
+      "Reel ve nominal büyümeyi toplamak; çarpanlar çarpılır.",
+      "Maliyet şokunda yansıtma oranını ters uygulamak (net etki = şok × (1 - yansıtma)).",
+      "Zirve dönem marjını uç değere taşımak.",
+      "Önyargıyı belirtiyle eşleştirememek: çıpalama sayıya takılmak, sürü davranışı konsensüsü izlemektir."
+    ],
+    "vocab_ids": [
+      "pro-forma",
+      "top-down",
+      "bottom-up",
+      "operating-leverage",
+      "overconfidence",
+      "anchoring",
+      "confirmation-bias",
+      "herding",
+      "recency-bias",
+      "barriers-to-entry",
+      "bargaining-power",
+      "pricing-power",
+      "pass-through",
+      "forecast-horizon",
+      "terminal-value",
+      "mean-reversion",
+      "steady-state"
+    ],
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Proforma modelleme, davranışsal tahmin önyargıları ve Porter'ın beş gücü SPK Düzey 3 programında büyük ölçüde yer almaz; yeni bir konudur."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "FSA-12-a-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An industry has sales of TL 10,000 that are expected to grow 5% next year. The company holds a 12% market share and expects it to stay constant. Forecast company sales are closest to:",
+      "stem_tr": "Bir sektörün satışları 10.000 TL'dir ve gelecek yıl %5 büyümesi beklenmektedir. Şirketin pazar payı %12'dir ve sabit kalması beklenmektedir. Öngörülen şirket satışları aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1,260.0",
+          "tr": "1.260,0",
+          "value": 1260.0
+        },
+        {
+          "key": "B",
+          "en": "1,200.0",
+          "tr": "1.200,0",
+          "value": 1200.0
+        },
+        {
+          "key": "C",
+          "en": "1,323.0",
+          "tr": "1.323,0",
+          "value": 1323.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Market next year = 10,000 × 1.05 = 10,500. Company sales = 10,500 × 12% = 1,260.",
+      "explanation_tr": "Gelecek yıl pazar = 10.000 × 1,05 = 10.500. Şirket satışları = 10.500 × %12 = 1.260.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Ignores the 5% industry growth.",
+          "tr": "Sektördeki %5 büyümeyi yok saymış."
+        },
+        "C": {
+          "en": "Grows both the market and the share by 5%, although the share is constant.",
+          "tr": "Pay sabit olduğu halde hem pazarı hem payı %5 büyütmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need top-down company sales.",
+          "tr": "Yukarıdan aşağı şirket satışları isteniyor."
+        },
+        {
+          "en": "Grow the market, then apply the share.",
+          "tr": "Pazarı büyüt, sonra payı uygula.",
+          "formula_latex": "S=M_0(1+g)\\times\\text{share}"
+        },
+        {
+          "en": "10,000 × 1.05 = 10,500.",
+          "tr": "10.000 × 1,05 = 10.500.",
+          "values": {
+            "M0": 10000,
+            "g": 0.05,
+            "share": 0.12
+          }
+        },
+        {
+          "en": "10,500 × 12% = 1,260.",
+          "tr": "10.500 × %12 = 1.260."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10000 [×] 1.05 [×] 0.12 [=]  (1260)"
+        ]
+      },
+      "numeric": {
+        "expr": "10000*1.05*0.12"
+      },
+      "vocab_ids": [
+        "pro-forma",
+        "market-share",
+        "forecast",
+        "top-down",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-a-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Forecast sales are TL 1,260 and the gross margin is expected to be 35%. Forecast cost of goods sold is closest to:",
+      "stem_tr": "Öngörülen satışlar 1.260 TL'dir ve brüt marjın %35 olması beklenmektedir. Öngörülen satılan malın maliyeti aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "441.0",
+          "tr": "441,0",
+          "value": 441.0
+        },
+        {
+          "key": "B",
+          "en": "819.0",
+          "tr": "819,0",
+          "value": 819.0
+        },
+        {
+          "key": "C",
+          "en": "780.0",
+          "tr": "780,0",
+          "value": 780.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "COGS = sales × (1 - gross margin) = 1,260 × 0.65 = 819.",
+      "explanation_tr": "SMM = satışlar × (1 - brüt marj) = 1.260 × 0,65 = 819.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is gross profit (35% of sales), not COGS.",
+          "tr": "Bu, SMM değil brüt kârdır (satışların %35'i)."
+        },
+        "C": {
+          "en": "Uses last year's sales of 1,200 instead of the forecast 1,260.",
+          "tr": "Öngörülen 1.260 yerine geçen yılın 1.200 satışını kullanmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need COGS from the margin assumption.",
+          "tr": "Marj varsayımından SMM isteniyor."
+        },
+        {
+          "en": "COGS = sales × (1 - gross margin).",
+          "tr": "SMM = satışlar × (1 - brüt marj).",
+          "formula_latex": "COGS=S(1-GM)"
+        },
+        {
+          "en": "1 - 0.35 = 0.65.",
+          "tr": "1 - 0,35 = 0,65.",
+          "values": {
+            "S": 1260,
+            "GM": 0.35
+          }
+        },
+        {
+          "en": "1,260 × 0.65 = 819.",
+          "tr": "1.260 × 0,65 = 819."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1260 [×] 0.65 [=]  (819)"
+        ]
+      },
+      "numeric": {
+        "expr": "1260*(1-0.35)"
+      },
+      "vocab_ids": [
+        "cost-of-goods-sold",
+        "gross-margin",
+        "forecast",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-a-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Forecast sales are TL 1,260 and the gross margin is 35%. SG&A is 15% of sales, depreciation is TL 60, interest expense is TL 30 and the tax rate is 25%. Forecast net income is closest to:",
+      "stem_tr": "Öngörülen satışlar 1.260 TL ve brüt marj %35'tir. Satış ve yönetim giderleri satışların %15'i, amortisman 60 TL, faiz gideri 30 TL ve vergi oranı %25'tir. Öngörülen net kâr aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "162.0",
+          "tr": "162,0",
+          "value": 162.0
+        },
+        {
+          "key": "B",
+          "en": "144.0",
+          "tr": "144,0",
+          "value": 144.0
+        },
+        {
+          "key": "C",
+          "en": "121.5",
+          "tr": "121,5",
+          "value": 121.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Gross profit = 441; SG&A = 189; EBIT = 441 - 189 - 60 = 192; EBT = 192 - 30 = 162; NI = 162 × 0.75 = 121.5.",
+      "explanation_tr": "Brüt kâr = 441; SVG = 189; FVÖK = 441 - 189 - 60 = 192; VÖK = 192 - 30 = 162; NK = 162 × 0,75 = 121,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Stops at pretax income and does not deduct tax.",
+          "tr": "Vergi öncesi kârda durmuş, vergiyi düşmemiş."
+        },
+        "B": {
+          "en": "Leaves out interest expense (EBIT × (1 - 25%)).",
+          "tr": "Faiz giderini atlamış (FVÖK × (1 - %25))."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the bottom line of the pro forma income statement.",
+          "tr": "Proforma gelir tablosunun son satırı isteniyor."
+        },
+        {
+          "en": "Work down: gross profit, SG&A, depreciation, interest, tax.",
+          "tr": "Aşağı doğru ilerle: brüt kâr, SVG, amortisman, faiz, vergi.",
+          "formula_latex": "NI=(GP-SGA-Dep-Int)(1-t)"
+        },
+        {
+          "en": "GP = 441; SG&A = 189; EBIT = 192; EBT = 162.",
+          "tr": "BK = 441; SVG = 189; FVÖK = 192; VÖK = 162.",
+          "values": {
+            "GP": 441,
+            "SGA": 189,
+            "Dep": 60,
+            "Int": 30,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "NI = 162 × 0.75 = 121.5.",
+          "tr": "NK = 162 × 0,75 = 121,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1260 [×] 0.35 [=]  (441)",
+          "[-] 189 [-] 60 [-] 30 [=]  (162)",
+          "[×] 0.75 [=]  (121.5)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1260*0.35-1260*0.15-60-30)*0.75"
+      },
+      "vocab_ids": [
+        "net-income",
+        "pro-forma",
+        "interest-expense",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-a-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Forecast cost of goods sold is TL 819 and sales are TL 1,260. Using a 365-day year, the company expects 60 days of inventory on hand. Forecast inventory is closest to:",
+      "stem_tr": "Öngörülen satılan malın maliyeti 819 TL ve satışlar 1.260 TL'dir. 365 günlük yıl kullanılarak şirket 60 günlük stokta kalma süresi bekliyor. Öngörülen stok aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "134.63",
+          "tr": "134,63",
+          "value": 134.63
+        },
+        {
+          "key": "B",
+          "en": "207.12",
+          "tr": "207,12",
+          "value": 207.12
+        },
+        {
+          "key": "C",
+          "en": "13.65",
+          "tr": "13,65",
+          "value": 13.65
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Inventory = COGS × DIO / 365 = 819 × 60 / 365 = 134.63.",
+      "explanation_tr": "Stok = SMM × DIO / 365 = 819 × 60 / 365 = 134,63.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Applies days of inventory to sales instead of to the cost of goods sold.",
+          "tr": "Stokta kalma süresini satılan malın maliyeti yerine satışlara uygulamış."
+        },
+        "C": {
+          "en": "Divides COGS by the number of days (819 / 60).",
+          "tr": "SMM'yi gün sayısına bölmüş (819 / 60)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forecast inventory balance.",
+          "tr": "Öngörülen stok bakiyesi isteniyor."
+        },
+        {
+          "en": "Inventory = COGS × days / 365.",
+          "tr": "Stok = SMM × gün / 365.",
+          "formula_latex": "Inv=COGS\\times\\frac{DIO}{365}"
+        },
+        {
+          "en": "819 × 60 = 49,140.",
+          "tr": "819 × 60 = 49.140.",
+          "values": {
+            "COGS": 819,
+            "DIO": 60
+          }
+        },
+        {
+          "en": "49,140 / 365 = 134.63.",
+          "tr": "49.140 / 365 = 134,63."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "819 [×] 60 [÷] 365 [=]  (134.63)"
+        ]
+      },
+      "numeric": {
+        "expr": "819*60/365"
+      },
+      "vocab_ids": [
+        "inventory",
+        "cost-of-goods-sold",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-a-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A company has fixed costs of TL 300 and variable costs equal to 55% of sales. Sales are TL 1,000 and are forecast to rise 10%. The percentage increase in operating income is closest to:",
+      "stem_tr": "Bir şirketin sabit maliyeti 300 TL ve değişken maliyeti satışların %55'idir. Satışlar 1.000 TL'dir ve %10 artması öngörülmektedir. Faaliyet kârındaki yüzde artış aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.0%",
+          "tr": "%10,0",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "30.0%",
+          "tr": "%30,0",
+          "value": 30.0
+        },
+        {
+          "key": "C",
+          "en": "23.1%",
+          "tr": "%23,1",
+          "value": 23.1
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Before: 1,000 × 0.45 - 300 = 150. After: 1,100 × 0.45 - 300 = 195. Increase = 45 / 150 = 30%.",
+      "explanation_tr": "Önce: 1.000 × 0,45 - 300 = 150. Sonra: 1.100 × 0,45 - 300 = 195. Artış = 45 / 150 = %30.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Assumes operating income grows at the same rate as sales, ignoring fixed costs.",
+          "tr": "Sabit maliyetleri yok sayıp faaliyet kârının satışlarla aynı oranda büyüdüğünü varsaymış."
+        },
+        "C": {
+          "en": "Divides the change in operating income by the new level (45 / 195) instead of the old level.",
+          "tr": "Faaliyet kârı değişimini eski düzey yerine yeni düzeye (45 / 195) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the percentage change in operating income.",
+          "tr": "Faaliyet kârındaki yüzde değişim isteniyor."
+        },
+        {
+          "en": "Operating income = sales × (1 - variable %) - fixed costs, before and after.",
+          "tr": "Faaliyet kârı = satışlar × (1 - değişken %) - sabit maliyet; önce ve sonra.",
+          "formula_latex": "OI=S(1-v)-F"
+        },
+        {
+          "en": "Before = 450 - 300 = 150; after = 495 - 300 = 195.",
+          "tr": "Önce = 450 - 300 = 150; sonra = 495 - 300 = 195.",
+          "values": {
+            "S0": 1000,
+            "S1": 1100,
+            "v": 0.55,
+            "F": 300
+          }
+        },
+        {
+          "en": "(195 - 150) / 150 = 30%.",
+          "tr": "(195 - 150) / 150 = %30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1000 [×] 0.45 [-] 300 [=]  (150)",
+          "1100 [×] 0.45 [-] 300 [=]  (195)",
+          "195 [÷] 150 [-] 1 [=]  (0.30)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1100*0.45-300)/(1000*0.45-300)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "operating-leverage",
+        "operating-income",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-b-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An analyst's earnings forecast ranges are consistently too narrow, and actual results often fall outside them. This behavior is most consistent with:",
+      "stem_tr": "Bir analistin kazanç tahmini aralıkları sürekli fazla dar ve gerçekleşen sonuçlar sık sık bu aralıkların dışına çıkıyor. Bu davranış en çok neyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "herding",
+          "tr": "sürü davranışı"
+        },
+        {
+          "key": "B",
+          "en": "framing",
+          "tr": "çerçeveleme"
+        },
+        {
+          "key": "C",
+          "en": "overconfidence",
+          "tr": "aşırı güven"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Overconfidence leads to too little uncertainty in forecasts; scenarios and wider ranges help counter it.",
+      "explanation_tr": "Aşırı güven, tahminlerde çok az belirsizlik bırakır; senaryolar ve daha geniş aralıklar buna karşı yardımcı olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Herding is copying the consensus, not narrow ranges.",
+          "tr": "Sürü davranışı konsensüsü kopyalamaktır, dar aralıklar değil."
+        },
+        "B": {
+          "en": "Framing is about how information is presented, not about the width of ranges.",
+          "tr": "Çerçeveleme bilginin nasıl sunulduğuyla ilgilidir, aralıkların genişliğiyle değil."
+        }
+      },
+      "vocab_ids": [
+        "overconfidence",
+        "narrow",
+        "bias",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-b-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An analyst keeps her new EPS forecast within a few percent of last year's EPS, even though a major customer was just lost. This is best described as:",
+      "stem_tr": "Bir analist, önemli bir müşteri yeni kaybedilmiş olmasına rağmen yeni HBK tahminini geçen yılın HBK'sının birkaç yüzde yakınında tutuyor. Bu en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "anchoring",
+          "tr": "çıpalama"
+        },
+        {
+          "key": "B",
+          "en": "confirmation bias",
+          "tr": "doğrulama yanlılığı"
+        },
+        {
+          "key": "C",
+          "en": "recency bias",
+          "tr": "yakınlık yanlılığı"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Anchoring ties the forecast to a prior reference number. Rebuilding the forecast bottom-up from current drivers is a remedy.",
+      "explanation_tr": "Çıpalama tahmini önceki bir referans sayıya bağlar. Tahmini güncel etkenlerden aşağıdan yukarı yeniden kurmak bir çözümdür.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Confirmation bias would show selective use of evidence, not attachment to a prior number.",
+          "tr": "Doğrulama yanlılığı eski bir sayıya bağlılığı değil kanıtın seçici kullanımını gösterirdi."
+        },
+        "C": {
+          "en": "Recency bias would make her overreact to the latest event, not stick to the old number.",
+          "tr": "Yakınlık yanlılığı eski sayıya yapışmayı değil son olaya aşırı tepki vermeyi doğururdu."
+        }
+      },
+      "vocab_ids": [
+        "anchoring",
+        "forecast",
+        "prior",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-b-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst who is bullish on a company reads only articles that support the view and dismisses negative reports. Which action is most appropriate to counter this bias?",
+      "stem_tr": "Bir şirket hakkında iyimser olan analist yalnızca bu görüşü destekleyen makaleleri okuyor ve olumsuz raporları göz ardı ediyor. Bu önyargıyı gidermek için hangi eylem en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Narrow the forecast range to reflect conviction.",
+          "tr": "Güveni yansıtmak için tahmin aralığını daraltmak."
+        },
+        {
+          "key": "B",
+          "en": "Actively seek disconfirming evidence and have a colleague argue the opposite case.",
+          "tr": "Çürütücü kanıtı aktif olarak aramak ve bir meslektaşın karşı görüşü savunmasını sağlamak."
+        },
+        {
+          "key": "C",
+          "en": "Copy the consensus forecast.",
+          "tr": "Konsensüs tahmini kopyalamak."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Confirmation bias is reduced by looking for contrary evidence, for example with a devil's advocate.",
+      "explanation_tr": "Doğrulama yanlılığı, örneğin şeytanın avukatıyla, aksi kanıt aranarak azaltılır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A narrower range increases overconfidence, not objectivity.",
+          "tr": "Daha dar aralık nesnelliği değil aşırı güveni artırır."
+        },
+        "C": {
+          "en": "This replaces one bias (confirmation) with another (herding).",
+          "tr": "Bu, bir önyargıyı (doğrulama) bir başkasıyla (sürü) değiştirir."
+        }
+      },
+      "vocab_ids": [
+        "confirmation-bias",
+        "most-appropriate",
+        "bias",
+        "evidence",
+        "consensus"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-b-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst's sales forecast is always within a point of the consensus, and she admits she does not want to be the outlier. This is most consistent with:",
+      "stem_tr": "Bir analistin satış tahmini her zaman konsensüsün bir puan yakınındadır ve uç görüş olmak istemediğini kabul ediyor. Bu en çok neyle tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "illusion of control",
+          "tr": "kontrol yanılsaması"
+        },
+        {
+          "key": "B",
+          "en": "anchoring on last year's result",
+          "tr": "geçen yılın sonucuna çıpalama"
+        },
+        {
+          "key": "C",
+          "en": "herding",
+          "tr": "sürü davranışı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Following the consensus to avoid standing out is herding. Independent bottom-up analysis with documented reasons helps.",
+      "explanation_tr": "Öne çıkmamak için konsensüsü izlemek sürü davranışıdır. Gerekçeleri belgelenmiş bağımsız aşağıdan yukarı analiz yardımcı olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Illusion of control is overestimating how much one can influence outcomes.",
+          "tr": "Kontrol yanılsaması, sonuçları ne kadar etkileyebileceğini olduğundan yüksek görmektir."
+        },
+        "B": {
+          "en": "The reference is the consensus, not the company's own prior result.",
+          "tr": "Referans şirketin kendi önceki sonucu değil konsensüstür."
+        }
+      },
+      "vocab_ids": [
+        "herding",
+        "consensus",
+        "outlier",
+        "independent",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-b-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "After two quarters of very strong sales, an analyst raises her long-term growth forecast well above the industry's historical average. Which bias is most likely at work and which response is most appropriate?",
+      "stem_tr": "İki çeyrek çok güçlü satıştan sonra bir analist uzun dönem büyüme tahminini sektörün tarihsel ortalamasının çok üzerine çıkarıyor. Hangi önyargı büyük olasılıkla etkilidir ve hangi tepki en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Recency bias; compare with longer history and base rates for similar firms",
+          "tr": "Yakınlık yanlılığı; daha uzun geçmiş ve benzer firmaların taban oranlarıyla kıyaslamak"
+        },
+        {
+          "key": "B",
+          "en": "Anchoring; raise the forecast further to be safe",
+          "tr": "Çıpalama; güvenli olmak için tahmini daha da artırmak"
+        },
+        {
+          "key": "C",
+          "en": "Herding; follow the consensus exactly",
+          "tr": "Sürü davranışı; konsensüsü aynen izlemek"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Recency bias overweights the latest results. Long-run history and base rates for comparable firms show how rare sustained abnormal growth is.",
+      "explanation_tr": "Yakınlık yanlılığı en son sonuçlara aşırı ağırlık verir. Uzun dönem geçmiş ve benzer firmaların taban oranları, sürdürülebilir olağandışı büyümenin ne kadar nadir olduğunu gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Raising the forecast further would worsen, not fix, the distortion.",
+          "tr": "Tahmini daha da artırmak çarpıklığı düzeltmez, kötüleştirir."
+        },
+        "C": {
+          "en": "The problem is overweighting recent results, not copying others.",
+          "tr": "Sorun başkalarını kopyalamak değil yakın sonuçlara aşırı ağırlık vermektir."
+        }
+      },
+      "vocab_ids": [
+        "recency-bias",
+        "base-rate",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-c-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT one of Porter's five competitive forces?",
+      "stem_tr": "Aşağıdakilerden hangisi Porter'ın beş rekabet gücünden biri DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Threat of substitutes",
+          "tr": "İkame tehdidi"
+        },
+        {
+          "key": "B",
+          "en": "Government regulation",
+          "tr": "Devlet düzenlemesi"
+        },
+        {
+          "key": "C",
+          "en": "Bargaining power of suppliers",
+          "tr": "Tedarikçilerin pazarlık gücü"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The five forces are entrants, suppliers, buyers, substitutes and rivalry. Regulation may matter, but it is not one of the five.",
+      "explanation_tr": "Beş güç giriş tehdidi, tedarikçiler, alıcılar, ikameler ve rekabettir. Düzenleme önemli olabilir ama beşten biri değildir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is one of the five forces.",
+          "tr": "Bu beş güçten biridir."
+        },
+        "C": {
+          "en": "This is one of the five forces.",
+          "tr": "Bu beş güçten biridir."
+        }
+      },
+      "vocab_ids": [
+        "porter-five-forces",
+        "substitutes",
+        "regulation",
+        "not-question"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-c-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An industry has very high barriers to entry because of large capital needs and licensing. All else equal, the analyst's price and margin forecasts for incumbents should most likely be:",
+      "stem_tr": "Bir sektörde büyük sermaye gereksinimleri ve lisanslar nedeniyle giriş engelleri çok yüksektir. Diğer her şey eşitken analistin yerleşik firmalar için fiyat ve marj tahminleri büyük olasılıkla nasıl olmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Lower, because high barriers invite price wars",
+          "tr": "Düşük, çünkü yüksek engeller fiyat savaşlarını davet eder"
+        },
+        {
+          "key": "B",
+          "en": "Unaffected, because entry never affects prices",
+          "tr": "Etkilenmez, çünkü giriş fiyatları asla etkilemez"
+        },
+        {
+          "key": "C",
+          "en": "Stable or higher, because new competitors are unlikely to bid prices down",
+          "tr": "İstikrarlı veya yüksek, çünkü yeni rakiplerin fiyatları aşağı çekmesi olası değil"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "High barriers weaken the threat of entry, supporting prices and margins.",
+      "explanation_tr": "Yüksek engeller giriş tehdidini zayıflatır; fiyatları ve marjları destekler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Low barriers, not high ones, invite entrants and price pressure.",
+          "tr": "Fiyat baskısını ve yeni girişleri yüksek değil düşük engeller davet eder."
+        },
+        "B": {
+          "en": "The threat of entry is one of the forces that shape pricing.",
+          "tr": "Giriş tehdidi fiyatlamayı şekillendiren güçlerden biridir."
+        }
+      },
+      "vocab_ids": [
+        "barriers-to-entry",
+        "incumbent",
+        "margin",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-c-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A packaged-food manufacturer buys most of its main raw material from two large suppliers with no close substitutes. For the forecast of the manufacturer's costs and margins, this most likely implies:",
+      "stem_tr": "Ambalajlı gıda üreticisi ana hammaddesinin çoğunu yakın ikamesi olmayan iki büyük tedarikçiden satın alıyor. Üreticinin maliyet ve marj tahmini için bu büyük olasılıkla neyi ima eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Higher forecast input costs and margin pressure, because suppliers can raise prices",
+          "tr": "Daha yüksek öngörülen girdi maliyetleri ve marj baskısı, çünkü tedarikçiler fiyat artırabilir"
+        },
+        {
+          "key": "B",
+          "en": "Lower input costs, because concentrated suppliers compete fiercely",
+          "tr": "Daha düşük girdi maliyeti, çünkü yoğunlaşmış tedarikçiler sert rekabet eder"
+        },
+        {
+          "key": "C",
+          "en": "No effect, because supplier power affects only prices charged to customers",
+          "tr": "Etki yok, çünkü tedarikçi gücü yalnızca müşterilere uygulanan fiyatları etkiler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Strong supplier power raises costs the company may not be able to pass on, compressing margins.",
+      "explanation_tr": "Güçlü tedarikçi gücü, şirketin yansıtamayabileceği maliyetleri artırır ve marjları sıkıştırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Few suppliers means less competition among them and more pricing power.",
+          "tr": "Az tedarikçi, aralarında daha az rekabet ve daha çok fiyatlama gücü demektir."
+        },
+        "C": {
+          "en": "Supplier power affects the manufacturer's input costs.",
+          "tr": "Tedarikçi gücü üreticinin girdi maliyetini etkiler."
+        }
+      },
+      "vocab_ids": [
+        "concentrated",
+        "most-likely",
+        "supplier",
+        "margin",
+        "price"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-c-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A Turkish food producer sells 60% of its output to three large supermarket chains that can easily switch to other suppliers. The most appropriate implication for its price forecast is:",
+      "stem_tr": "Bir Türk gıda üreticisi üretiminin %60'ını başka tedarikçilere kolayca geçebilen üç büyük süpermarket zincirine satıyor. Fiyat tahmini için en uygun çıkarım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Forecast higher price growth, because large buyers accept price increases",
+          "tr": "Daha yüksek fiyat artışı öngörmek, çünkü büyük alıcılar fiyat artışını kabul eder"
+        },
+        {
+          "key": "B",
+          "en": "Forecast lower price growth, because powerful buyers can negotiate prices down",
+          "tr": "Daha düşük fiyat artışı öngörmek, çünkü güçlü alıcılar fiyatları aşağı pazarlık edebilir"
+        },
+        {
+          "key": "C",
+          "en": "Forecast no change, because buyer concentration is irrelevant to pricing",
+          "tr": "Değişiklik öngörmemek, çünkü alıcı yoğunlaşması fiyatlamayla ilgisizdir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Strong buyers push prices down or resist increases, so the price forecast should be lower.",
+      "explanation_tr": "Güçlü alıcılar fiyatları aşağı çeker veya artışlara direnir; bu yüzden fiyat tahmini daha düşük olmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Concentrated buyers with easy switching have more, not less, bargaining power.",
+          "tr": "Kolayca geçebilen yoğunlaşmış alıcıların pazarlık gücü daha fazladır, daha az değil."
+        },
+        "C": {
+          "en": "Buyer power is one of the five forces and directly affects price.",
+          "tr": "Alıcı gücü beş güçten biridir ve fiyatı doğrudan etkiler."
+        }
+      },
+      "vocab_ids": [
+        "bargaining-power",
+        "most-appropriate",
+        "price",
+        "negotiate",
+        "competitor"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-c-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which combination of industry conditions would most likely support a higher forecast gross margin for a company?",
+      "stem_tr": "Hangi sektör koşulları bileşimi bir şirket için daha yüksek bir brüt marj tahminini en olası biçimde destekler?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Low entry barriers, strong buyers, many substitutes and intense rivalry",
+          "tr": "Düşük giriş engelleri, güçlü alıcılar, çok sayıda ikame ve yoğun rekabet"
+        },
+        {
+          "key": "B",
+          "en": "High entry barriers but powerful suppliers and powerful buyers",
+          "tr": "Yüksek giriş engelleri ama güçlü tedarikçiler ve güçlü alıcılar"
+        },
+        {
+          "key": "C",
+          "en": "High entry barriers, weak buyers, few close substitutes and moderate rivalry",
+          "tr": "Yüksek giriş engelleri, zayıf alıcılar, az yakın ikame ve ılımlı rekabet"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Weak forces leave the company more pricing power and lower cost pressure, supporting margins.",
+      "explanation_tr": "Zayıf güçler şirkete daha çok fiyatlama gücü ve daha az maliyet baskısı bırakır; marjları destekler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "All five forces are strong, which pressures prices and margins.",
+          "tr": "Beş gücün hepsi güçlüdür; bu fiyatlar ve marjlar üzerinde baskı yaratır."
+        },
+        "B": {
+          "en": "Strong suppliers and buyers squeeze the company from both sides despite the barriers.",
+          "tr": "Güçlü tedarikçiler ve alıcılar, engellere rağmen şirketi iki taraftan sıkıştırır."
+        }
+      },
+      "vocab_ids": [
+        "gross-margin",
+        "pricing-power",
+        "rivalry",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-d-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A manufacturer's cost of goods sold is TL 600, of which TL 300 is an imported material whose price will rise 10%. Other costs do not change. Forecast COGS before any price pass-through is closest to:",
+      "stem_tr": "Bir üreticinin satılan malın maliyeti 600 TL'dir ve bunun 300 TL'si fiyatı %10 artacak olan ithal bir malzemedir. Diğer maliyetler değişmiyor. Fiyata yansıtma öncesi öngörülen SMM aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "630.0",
+          "tr": "630,0",
+          "value": 630.0
+        },
+        {
+          "key": "B",
+          "en": "660.0",
+          "tr": "660,0",
+          "value": 660.0
+        },
+        {
+          "key": "C",
+          "en": "570.0",
+          "tr": "570,0",
+          "value": 570.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Cost increase = 300 × 10% = 30. COGS = 600 + 30 = 630.",
+      "explanation_tr": "Maliyet artışı = 300 × %10 = 30. SMM = 600 + 30 = 630.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Applies the 10% increase to all COGS, not only to the material.",
+          "tr": "%10 artışı yalnızca malzemeye değil tüm SMM'ye uygulamış."
+        },
+        "C": {
+          "en": "Subtracts the increase as if input prices were falling.",
+          "tr": "Girdi fiyatları düşüyormuş gibi artışı çıkarmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need COGS after the input price increase.",
+          "tr": "Girdi fiyat artışından sonra SMM isteniyor."
+        },
+        {
+          "en": "Apply the price change only to the affected cost.",
+          "tr": "Fiyat değişimini yalnızca etkilenen maliyete uygula.",
+          "formula_latex": "\\Delta C=C_{input}\\times\\Delta p"
+        },
+        {
+          "en": "300 × 10% = 30.",
+          "tr": "300 × %10 = 30.",
+          "values": {
+            "Cinput": 300,
+            "dp": 0.1
+          }
+        },
+        {
+          "en": "COGS = 630.",
+          "tr": "SMM = 630."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "300 [×] 0.10 [=]  (30)",
+          "[+] 600 [=]  (630)"
+        ]
+      },
+      "numeric": {
+        "expr": "600+300*0.10"
+      },
+      "vocab_ids": [
+        "cost-of-goods-sold",
+        "imported",
+        "inflation",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-d-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A cost increase of TL 30 hits a company's operating costs. The company is able to pass 60% of it on to customers through higher prices, with unchanged volumes. The change in operating income is closest to:",
+      "stem_tr": "Bir şirketin faaliyet maliyetlerine 30 TL'lik bir maliyet artışı geliyor. Şirket bunun %60'ını hacim değişmeden daha yüksek fiyatlarla müşterilere yansıtabiliyor. Faaliyet kârındaki değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-TL 30",
+          "tr": "-30 TL",
+          "value": -30.0
+        },
+        {
+          "key": "B",
+          "en": "-TL 12",
+          "tr": "-12 TL",
+          "value": -12.0
+        },
+        {
+          "key": "C",
+          "en": "-TL 18",
+          "tr": "-18 TL",
+          "value": -18.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Absorbed share = 40% of 30 = 12, so operating income falls by TL 12.",
+      "explanation_tr": "Absorbe edilen pay = 30'un %40'ı = 12; faaliyet kârı 12 TL düşer.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Assumes no pass-through at all.",
+          "tr": "Hiç yansıtma olmadığını varsaymış."
+        },
+        "C": {
+          "en": "Reports the part that was passed on instead of the part that was absorbed.",
+          "tr": "Absorbe edilen kısım yerine yansıtılan kısmı vermiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the part of the cost shock the company absorbs.",
+          "tr": "Şirketin absorbe ettiği maliyet şoku kısmı isteniyor."
+        },
+        {
+          "en": "Net effect = cost change × (1 - pass-through).",
+          "tr": "Net etki = maliyet değişimi × (1 - yansıtma).",
+          "formula_latex": "\\Delta OI=-\\Delta C(1-\\phi)"
+        },
+        {
+          "en": "30 × (1 - 0.60) = 12.",
+          "tr": "30 × (1 - 0,60) = 12.",
+          "values": {
+            "dC": 30,
+            "phi": 0.6
+          }
+        },
+        {
+          "en": "Operating income falls by 12.",
+          "tr": "Faaliyet kârı 12 azalır."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "30 [×] 0.40 [=]  (12)"
+        ]
+      },
+      "numeric": {
+        "expr": "-30*(1-0.60)"
+      },
+      "vocab_ids": [
+        "pass-through",
+        "operating-income",
+        "price",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-d-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Industry volumes are forecast to grow 2% and prices 8% because producers pass cost inflation on to customers. Nominal industry sales growth is closest to:",
+      "stem_tr": "Sektör hacminin %2, fiyatların ise üreticiler maliyet enflasyonunu müşterilere yansıttığı için %8 büyümesi öngörülüyor. Nominal sektör satış büyümesi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "C",
+          "en": "10.16%",
+          "tr": "%10,16",
+          "value": 10.16
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "(1.02)(1.08) - 1 = 10.16%.",
+      "explanation_tr": "(1,02)(1,08) - 1 = %10,16.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the growth rates instead of multiplying the growth factors.",
+          "tr": "Büyüme çarpanlarını çarpmak yerine büyüme oranlarını toplamış."
+        },
+        "B": {
+          "en": "Subtracts volume growth from price growth.",
+          "tr": "Hacim büyümesini fiyat büyümesinden çıkarmış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need nominal growth from volume and price effects.",
+          "tr": "Hacim ve fiyat etkilerinden nominal büyüme isteniyor."
+        },
+        {
+          "en": "Multiply the growth factors.",
+          "tr": "Büyüme çarpanlarını çarp.",
+          "formula_latex": "g=(1+g_{vol})(1+g_{price})-1"
+        },
+        {
+          "en": "1.02 × 1.08 = 1.1016.",
+          "tr": "1,02 × 1,08 = 1,1016.",
+          "values": {
+            "gvol": 0.02,
+            "gprice": 0.08
+          }
+        },
+        {
+          "en": "g = 10.16%.",
+          "tr": "g = %10,16."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.02 [×] 1.08 [=]  (1.1016)",
+          "[-] 1 [=]  (0.1016)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.02*1.08-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "volume",
+        "price",
+        "pass-through",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-d-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Raw-material costs of TL 400 fall 15% (deflation). Competitive pressure forces the company to pass half of the saving on to customers through lower prices, with unchanged volumes. The change in operating income is closest to:",
+      "stem_tr": "400 TL'lik hammadde maliyetleri %15 düşüyor (deflasyon). Rekabet baskısı şirketi, hacim değişmeden tasarrufun yarısını daha düşük fiyatlarla müşterilere yansıtmaya zorluyor. Faaliyet kârındaki değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "+TL 30",
+          "tr": "+30 TL",
+          "value": 30.0
+        },
+        {
+          "key": "B",
+          "en": "+TL 60",
+          "tr": "+60 TL",
+          "value": 60.0
+        },
+        {
+          "key": "C",
+          "en": "+TL 0",
+          "tr": "0 TL",
+          "value": 0.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Saving = 400 × 15% = 60. Half is passed on (30 less revenue), so operating income rises by 60 - 30 = 30.",
+      "explanation_tr": "Tasarruf = 400 × %15 = 60. Yarısı yansıtılır (30 daha az gelir); faaliyet kârı 60 - 30 = 30 artar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Keeps the whole saving and ignores the price cuts.",
+          "tr": "Tasarrufun tamamını elde tutmuş ve fiyat indirimlerini yok saymış."
+        },
+        "C": {
+          "en": "Assumes the entire saving is given away.",
+          "tr": "Tasarrufun tamamının verildiğini varsaymış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the retained part of the cost saving.",
+          "tr": "Elde kalan maliyet tasarrufu kısmı isteniyor."
+        },
+        {
+          "en": "Net effect = saving × (1 - pass-through).",
+          "tr": "Net etki = tasarruf × (1 - yansıtma).",
+          "formula_latex": "\\Delta OI=S_{cost}(1-\\phi)"
+        },
+        {
+          "en": "Saving = 400 × 0.15 = 60.",
+          "tr": "Tasarruf = 400 × 0,15 = 60.",
+          "values": {
+            "cost": 400,
+            "fall": 0.15,
+            "phi": 0.5
+          }
+        },
+        {
+          "en": "60 × 0.5 = +30.",
+          "tr": "60 × 0,5 = +30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "400 [×] 0.15 [×] 0.5 [=]  (30)"
+        ]
+      },
+      "numeric": {
+        "expr": "400*0.15*(1-0.5)"
+      },
+      "vocab_ids": [
+        "pass-through",
+        "operating-income",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-d-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "apply",
+      "stem_en": "A Turkish appliance maker has COGS of TL 800, of which TL 400 is imported and priced in US dollars. USD/TRY rises 25%. The company can pass 40% of the added cost to customers through higher prices, with unchanged volumes. The change in operating income is closest to:",
+      "stem_tr": "Bir Türk beyaz eşya üreticisinin SMM'si 800 TL'dir ve bunun 400 TL'si ithaldır ve ABD doları cinsinden fiyatlanır. USD/TRY %25 yükseliyor. Şirket eklenen maliyetin %40'ını hacim değişmeden daha yüksek fiyatlarla müşterilere yansıtabiliyor. Faaliyet kârındaki değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "-TL 100",
+          "tr": "-100 TL",
+          "value": -100.0
+        },
+        {
+          "key": "B",
+          "en": "-TL 60",
+          "tr": "-60 TL",
+          "value": -60.0
+        },
+        {
+          "key": "C",
+          "en": "-TL 140",
+          "tr": "-140 TL",
+          "value": -140.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Added cost = 400 × 25% = 100. Pass-through = 40. Net = -100 + 40 = -60.",
+      "explanation_tr": "Eklenen maliyet = 400 × %25 = 100. Yansıtma = 40. Net = -100 + 40 = -60.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores the pass-through to customers.",
+          "tr": "Müşterilere yansıtmayı yok saymış."
+        },
+        "C": {
+          "en": "Adds the passed-on amount to the loss instead of subtracting it.",
+          "tr": "Yansıtılan tutarı zarardan düşmek yerine zarara eklemiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the net hit to operating income from a weaker lira.",
+          "tr": "Zayıflayan liradan faaliyet kârına net darbe isteniyor."
+        },
+        {
+          "en": "Imported cost in TL rises by the exchange rate change; the company recovers a share through prices.",
+          "tr": "İthal maliyet TL cinsinden kur değişimi kadar artar; şirket bir kısmını fiyatlarla geri kazanır.",
+          "formula_latex": "\\Delta OI=-C_{imp}\\Delta e(1-\\phi)"
+        },
+        {
+          "en": "Added cost = 400 × 25% = 100.",
+          "tr": "Eklenen maliyet = 400 × %25 = 100.",
+          "values": {
+            "Cimp": 400,
+            "de": 0.25,
+            "phi": 0.4
+          }
+        },
+        {
+          "en": "Net = -100 × (1 - 0.40) = -60.",
+          "tr": "Net = -100 × (1 - 0,40) = -60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "400 [×] 0.25 [=]  (100)",
+          "[×] 0.60 [+/-] [=]  (-60)"
+        ]
+      },
+      "numeric": {
+        "expr": "-400*0.25*(1-0.40)"
+      },
+      "vocab_ids": [
+        "exchange-rate",
+        "pass-through",
+        "operating-income",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-e-q01",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The explicit forecast horizon should most appropriately be long enough for the company to:",
+      "stem_tr": "Açık tahmin ufku en uygun biçimde şirketin neye ulaşması için yeterince uzun olmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "grow at a rate far above the economy forever",
+          "tr": "ekonominin çok üzerinde bir oranda sonsuza dek büyümeye"
+        },
+        {
+          "key": "B",
+          "en": "report its highest ever margin",
+          "tr": "şimdiye kadarki en yüksek marjını raporlamaya"
+        },
+        {
+          "key": "C",
+          "en": "reach a normal, sustainable state of growth, margins and returns",
+          "tr": "sürdürülebilir bir normal büyüme, marj ve getiri durumuna"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A forecast should reach a steady state so that a terminal value can be based on sustainable assumptions.",
+      "explanation_tr": "Tahmin, uç değerin sürdürülebilir varsayımlara dayanabilmesi için durağan bir duruma ulaşmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "No company can grow far above the economy indefinitely.",
+          "tr": "Hiçbir şirket ekonominin çok üzerinde süresiz büyüyemez."
+        },
+        "B": {
+          "en": "The horizon should end at a normal, not a peak, level.",
+          "tr": "Ufuk bir zirve değil normal düzeyde bitmelidir."
+        }
+      },
+      "vocab_ids": [
+        "forecast-horizon",
+        "steady-state",
+        "sustainable",
+        "margin",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-e-q02",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Beyond the explicit forecast period, an analyst's long-term growth assumption in a terminal value should most appropriately:",
+      "stem_tr": "Açık tahmin döneminin ötesinde, bir analistin uç değerdeki uzun dönem büyüme varsayımı en uygun biçimde nasıl olmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "not exceed the long-run growth of the economy",
+          "tr": "ekonominin uzun dönem büyümesini aşmamalıdır"
+        },
+        {
+          "key": "B",
+          "en": "equal the company's highest historical growth rate",
+          "tr": "şirketin tarihsel en yüksek büyüme oranına eşit olmalıdır"
+        },
+        {
+          "key": "C",
+          "en": "be zero for every company",
+          "tr": "her şirket için sıfır olmalıdır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A company cannot outgrow the economy forever, so the terminal growth rate is capped by long-run economic growth.",
+      "explanation_tr": "Bir şirket ekonomiyi sonsuza dek aşamaz; bu yüzden uç değer büyüme oranı uzun dönem ekonomik büyümeyle sınırlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Peak growth is rarely sustainable in perpetuity.",
+          "tr": "Zirve büyüme nadiren sonsuza dek sürdürülebilir."
+        },
+        "C": {
+          "en": "Zero is not required; modest growth in line with the economy can be reasonable.",
+          "tr": "Sıfır gerekmez; ekonomiyle uyumlu ılımlı büyüme makul olabilir."
+        }
+      },
+      "vocab_ids": [
+        "terminal-value",
+        "perpetuity",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-e-q03",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst values a cyclical Turkish cement company whose current earnings are at a cyclical peak. Which approach to the horizon and the end-of-horizon margin is most appropriate?",
+      "stem_tr": "Bir analist, mevcut kazançları döngüsel zirvede olan döngüsel bir Türk çimento şirketini değerliyor. Ufuk ve ufuk sonundaki marj için hangi yaklaşım en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Extend today's peak margin into the terminal value",
+          "tr": "Bugünkü zirve marjını uç değere taşımak"
+        },
+        {
+          "key": "B",
+          "en": "Use a horizon that covers a full cycle and end with a mid-cycle (normalized) margin",
+          "tr": "Tam bir döngüyü kapsayan bir ufuk kullanmak ve döngü ortası (normalleştirilmiş) bir marjla bitirmek"
+        },
+        {
+          "key": "C",
+          "en": "Use a one-year horizon, because cycles cannot be forecast",
+          "tr": "Bir yıllık ufuk kullanmak, çünkü döngüler tahmin edilemez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "For cyclical firms, normalize the margin to a mid-cycle level so that peak results are not capitalized into perpetuity.",
+      "explanation_tr": "Döngüsel firmalarda zirve sonuçlar sonsuza dek kapitalize edilmesin diye marj döngü ortası düzeye normalleştirilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Peak margins are not sustainable and would overvalue the firm.",
+          "tr": "Zirve marjlar sürdürülebilir değildir ve firmayı olduğundan yüksek değerler."
+        },
+        "C": {
+          "en": "A short horizon would capture only the peak and ignore normalization.",
+          "tr": "Kısa ufuk yalnızca zirveyi yakalar ve normalleşmeyi yok sayar."
+        }
+      },
+      "vocab_ids": [
+        "cyclical",
+        "mid-cycle",
+        "peak",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-e-q04",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A company currently earns a return on invested capital far above its cost of capital in a competitive industry with low barriers to entry. For long-term projections, which assumption is most consistent with competitive dynamics?",
+      "stem_tr": "Bir şirket, giriş engellerinin düşük olduğu rekabetçi bir sektörde mevcut olarak sermaye maliyetinin çok üzerinde yatırım sermayesi getirisi elde ediyor. Uzun dönem projeksiyonlar için hangi varsayım rekabet dinamikleriyle en tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Returns stay at the current level indefinitely",
+          "tr": "Getirilerin süresiz olarak mevcut düzeyde kalması"
+        },
+        {
+          "key": "B",
+          "en": "Returns rise further each year as competition increases",
+          "tr": "Rekabet arttıkça getirilerin her yıl daha da yükselmesi"
+        },
+        {
+          "key": "C",
+          "en": "Returns fade toward the cost of capital as competitors enter",
+          "tr": "Rakipler girdikçe getirilerin sermaye maliyetine doğru sönümlenmesi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Mean reversion (fade) is expected unless a durable competitive advantage protects the returns.",
+      "explanation_tr": "Kalıcı bir rekabet avantajı getirileri korumuyorsa ortalamaya dönüş (sönümlenme) beklenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Low barriers mean competitors will compete away abnormal returns.",
+          "tr": "Düşük engeller, rakiplerin olağandışı getirileri aşındıracağı anlamına gelir."
+        },
+        "B": {
+          "en": "More competition lowers, not raises, abnormal returns.",
+          "tr": "Daha çok rekabet olağandışı getirileri artırmaz, düşürür."
+        }
+      },
+      "vocab_ids": [
+        "mean-reversion",
+        "fade",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "FSA-12-e-q05",
+      "level": "L1",
+      "topic": "FSA",
+      "module_id": "FSA-12",
+      "los_id": "FSA-12-e",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Which company most likely needs the longest explicit forecast horizon before reaching a steady state?",
+      "stem_tr": "Hangi şirketin durağan bir duruma ulaşmadan önce en uzun açık tahmin ufkuna ihtiyaç duyması en olasıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A young software company with fast growth and margins that are still rising",
+          "tr": "Hızlı büyüyen ve marjları hâlâ yükselen genç bir yazılım şirketi"
+        },
+        {
+          "key": "B",
+          "en": "A mature regulated water utility with stable growth",
+          "tr": "İstikrarlı büyümeye sahip olgun, düzenlenmiş bir su şirketi"
+        },
+        {
+          "key": "C",
+          "en": "A long-established packaged-food company with steady margins",
+          "tr": "Marjları sabit, köklü bir ambalajlı gıda şirketi"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Firms still in rapid growth with changing margins need more years to fade to normal growth and returns.",
+      "explanation_tr": "Hızlı büyüme ve değişen marjlar içindeki firmalar normal büyüme ve getiriye dönmek için daha çok yıla ihtiyaç duyar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A stable, mature firm is already close to a steady state.",
+          "tr": "İstikrarlı, olgun bir firma zaten durağan duruma yakındır."
+        },
+        "C": {
+          "en": "Steady margins and growth mean a short horizon is enough.",
+          "tr": "Sabit marj ve büyüme, kısa ufkun yeterli olduğu anlamına gelir."
+        }
+      },
+      "vocab_ids": [
+        "forecast-horizon",
+        "steady-state",
+        "mature",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
