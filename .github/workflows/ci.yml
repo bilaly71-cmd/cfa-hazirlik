@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - name: İçerik doğrulama (şema + kurallar)
         run: npm run validate-content
       - name: Sayısal cevapların Python ile yeniden hesaplanması
@@ -39,7 +39,7 @@ jobs:
 
   deploy:
     needs: validate
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && github.event.repository.private == false
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -50,7 +50,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - name: PWA derle
         env:
           EXPO_BASE_URL: /${{ github.event.repository.name }}
