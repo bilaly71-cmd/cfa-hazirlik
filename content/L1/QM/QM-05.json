@@ -134,7 +134,11 @@
       "note_tr": "Ortalama, standart sapma, kovaryans ve korelasyon SPK Düzey 3'ten tanıdık; çarpıklık, basıklık, aşağı yönlü sapma ve Chebyshev kısmen yeni."
     },
     "source_basis": "original",
-    "verified": false
+    "verified": {
+      "by": "reviewer-agent",
+      "method": "content-review+bilingual-check",
+      "date": "2026-10-16"
+    }
   },
   "questions": [
     {
@@ -217,7 +221,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-a-q02",
@@ -271,7 +279,11 @@
         "least-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-a-q03",
@@ -345,17 +357,16 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]  (DATA)",
-          "[2ND] [CLR WORK]",
+          "[2ND] [DATA] [2ND] [CLR WORK]",
           "10 [ENTER] [↓] [↓]",
-          "4 [+/-] [ENTER] [↓] [↓]",
+          "-4 [ENTER] [↓] [↓]",
           "18 [ENTER] [↓] [↓]",
           "6 [ENTER] [↓] [↓]",
           "12 [ENTER]",
-          "[2ND] [8]  (STAT)",
-          "[↓] ... Sx = 8.17"
+          "[2ND] [STAT] (LIN seçili olmalı; değilse [2ND] [SET])",
+          "[↓] [↓] [↓]  (n, X̄ ve ardından Sx: 8.17)"
         ],
-        "note_tr": "BA II Plus'ta Sx örneklem, σx ana kütle standart sapmasıdır; Sx'i oku."
+        "note_tr": "BA II Plus'ta Sx örneklem (n - 1), σx ana kütle standart sapmasıdır; Sx'i oku. Tek değişkenli veride Y sütununu boş bırakmak için her girişten sonra iki kez [↓] yapılır."
       },
       "numeric": {
         "expr": "stdev_s([10,-4,18,6,12])",
@@ -372,7 +383,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-a-q04",
@@ -468,7 +483,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-a-q05",
@@ -562,7 +581,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-b-q01",
@@ -616,7 +639,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-b-q02",
@@ -671,7 +698,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-b-q03",
@@ -724,7 +755,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-b-q04",
@@ -779,7 +814,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-b-q05",
@@ -832,7 +871,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-c-q01",
@@ -886,7 +929,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-c-q02",
@@ -978,7 +1025,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-c-q03",
@@ -1052,14 +1103,17 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7]  (DATA)",
-          "[2ND] [CLR WORK]",
-          "10 [ENTER] [↓]  4 [ENTER] [↓]  (X01, Y01)",
-          "... her çifti X ve Y olarak gir",
-          "[2ND] [8]  (STAT)",
-          "[↓] ... r, Sx, Sy oku; Cov = r × Sx × Sy"
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "10 [ENTER] [↓] 4 [ENTER] [↓]  (X01 = 10, Y01 = 4)",
+          "-4 [ENTER] [↓] 2 [ENTER] [↓]",
+          "18 [ENTER] [↓] 9 [ENTER] [↓]",
+          "6 [ENTER] [↓] -3 [ENTER] [↓]",
+          "12 [ENTER] [↓] 1 [ENTER]",
+          "[2ND] [STAT] (LIN seçili olmalı)",
+          "[↓] ile gez ve Sx = 8.17, Sy = 4.39, r = 0.55 değerlerini oku",
+          "8.17 [×] 4.39 [×] 0.55 [=]  (yaklaşık 19.7)"
         ],
-        "note_tr": "BA II Plus kovaryansı doğrudan vermez; r, Sx ve Sy'den hesaplanır."
+        "note_tr": "BA II Plus kovaryansı doğrudan vermez; STAT ekranından Sx, Sy ve r okunur ve Kov = r × Sx × Sy ile hesaplanır (yuvarlamadan dolayı 19.7'ye yakın bir değer çıkar). Kesin değer için elle çarpım toplamı / (n - 1) kullan."
       },
       "numeric": {
         "expr": "cov_s([10,-4,18,6,12],[4,2,9,-3,1])"
@@ -1074,7 +1128,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-c-q04",
@@ -1148,10 +1206,16 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "[2ND] [7] veri gir (X = A, Y = B)",
-          "[2ND] [8] → LIN",
-          "[↓] ... r = 0.55"
-        ]
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "10 [ENTER] [↓] 4 [ENTER] [↓]  (X01, Y01)",
+          "-4 [ENTER] [↓] 2 [ENTER] [↓]",
+          "18 [ENTER] [↓] 9 [ENTER] [↓]",
+          "6 [ENTER] [↓] -3 [ENTER] [↓]",
+          "12 [ENTER] [↓] 1 [ENTER]",
+          "[2ND] [STAT] (LIN seçili olmalı)",
+          "[↓] ile gez ve r değerini oku  (0.55)"
+        ],
+        "note_tr": "BA II Plus STAT ekranında r (korelasyon katsayısı) doğrudan gösterilir; X = Fon A, Y = Fon B."
       },
       "numeric": {
         "expr": "corr([10,-4,18,6,12],[4,2,9,-3,1])"
@@ -1166,7 +1230,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-c-q05",
@@ -1220,7 +1288,11 @@
         "most-appropriate"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-d-q01",
@@ -1310,7 +1382,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-d-q02",
@@ -1365,7 +1441,11 @@
         "best-describes"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-d-q03",
@@ -1456,7 +1536,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-d-q04",
@@ -1545,7 +1629,11 @@
         "closest-to"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     },
     {
       "id": "QM-05-d-q05",
@@ -1600,7 +1688,11 @@
         "most-likely"
       ],
       "source_basis": "original",
-      "verified": false
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-16"
+      }
     }
   ]
 }

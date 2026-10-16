@@ -50,8 +50,8 @@
       },
       {
         "kind": "example",
-        "heading_en": "A 100 bp yield rise",
-        "heading_tr": "100 bp getiri artışı",
+        "heading_en": "An 80 bp yield rise",
+        "heading_tr": "80 bp getiri artışı",
         "en": "A bond has ModDur = 7.2 and convexity = 62. Yield rises by 80 bps (0.008). Duration effect = −7.2 × 0.008 = −5.76%. Convexity adjustment = ½ × 62 × 0.008² = +0.198%. Total estimate = −5.76% + 0.198% = −5.56%. Using duration alone overstates the loss by about 0.2 percentage points.",
         "tr": "Bir tahvilin ModDur değeri 7,2 ve konveksitesi 62'dir. Getiri 80 bp (0,008) artar. Durasyon etkisi = −7,2 × 0,008 = −%5,76. Konveksite düzeltmesi = ½ × 62 × 0,008² = +%0,198. Toplam tahmin = −%5,76 + %0,198 = −%5,56. Yalnızca durasyon kullanmak kaybı yaklaşık 0,2 puan fazla gösterir.",
         "key_terms": [
@@ -185,8 +185,8 @@
         },
         {
           "key": "C",
-          "en": "0.0",
-          "tr": "0,0",
+          "en": "0.0024",
+          "tr": "0,0024",
           "value": 0.0024
         }
       ],
@@ -503,10 +503,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 62 [×] 0.008 [x²] [=] [STO] 1",
           "7.2 [×] 0.008 [+/-] [=]",
-          "[+] 0.5 [×] 62 [×] 0.008 [x²] [=]"
+          "[+] [RCL] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Sonuç ondalık olarak −0,0556; 100 ile çarpıp yüzdeye çevirin."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Sonuç −5,56 (%)."
       },
       "numeric": {
         "expr": "(-7.2*0.008+0.5*62*0.008**2)*100",
@@ -587,10 +589,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 30 [×] 0.015 [x²] [=] [STO] 1",
           "4.5 [×] 0.015 [=]",
-          "[+] 0.5 [×] 30 [×] 0.015 [x²] [=]"
+          "[+] [RCL] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Δy karesi pozitif olduğundan konveksite terimi artıdır."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Sonuç +7,09 (%)."
       },
       "numeric": {
         "expr": "(4.5*0.015+0.5*30*0.015**2)*100",
@@ -670,10 +674,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "5.5 [×] 0.01 [+/-] [+] 0.5 [×] 40 [×] 0.01 [x²] [=]",
+          "0.5 [×] 40 [×] 0.01 [x²] [=] [STO] 1",
+          "5.5 [×] 0.01 [+/-] [=]",
+          "[+] [RCL] 1 [=]",
           "[×] 20 [=]"
         ],
-        "note_tr": "Önce yüzde değişimi bulun, sonra piyasa değeriyle çarpın."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Önce yüzde değişimi (−0,053), sonra piyasa değeriyle (20) çarpın."
       },
       "numeric": {
         "expr": "20*(-5.5*0.01+0.5*40*0.01**2)",
@@ -809,11 +815,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 90 [×] 0.02 [x²] [=] [STO] 1",
           "8 [×] 0.02 [+/-] [=]",
-          "[+] 0.5 [×] 90 [×] 0.02 [x²] [=]",
-          "[+] 1 [=] [×] 100 [=]"
+          "[+] [RCL] 1 [+] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Yüzde değişimi hesaplayıp 1 ekleyin ve 100 ile çarpın."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Yüzde değişimi (−0,142) üzerine 1 ekleyip 100 ile çarpın: 85,8."
       },
       "numeric": {
         "expr": "100*(1-8*0.02+0.5*90*0.02**2)"
@@ -893,9 +900,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "0.4 [×] 3 [+] 0.35 [×] 5.5 [+] 0.25 [×] 8 [=]"
+          "0.4 [×] 3 [=] [STO] 1",
+          "0.35 [×] 5.5 [=] [STO] 2",
+          "0.25 [×] 8 [=] [STO] 3",
+          "[RCL] 1 [+] [RCL] 2 [+] [RCL] 3 [=]"
         ],
-        "note_tr": "Ağırlıklı ortalama."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Ağırlıklı ortalama 5,125."
       },
       "numeric": {
         "expr": "0.40*3.0+0.35*5.5+0.25*8.0",
@@ -1033,9 +1043,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
-          "0.3 [×] 20 [+] 0.5 [×] 60 [+] 0.2 [×] 150 [=]"
+          "0.3 [×] 20 [=] [STO] 1",
+          "0.5 [×] 60 [=] [STO] 2",
+          "0.2 [×] 150 [=] [STO] 3",
+          "[RCL] 1 [+] [RCL] 2 [+] [RCL] 3 [=]"
         ],
-        "note_tr": "Ağırlıklı ortalama."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Ağırlıklı ortalama 66."
       },
       "numeric": {
         "expr": "0.3*20+0.5*60+0.2*150"
@@ -1171,10 +1184,12 @@
       "calculator": {
         "device": "BA II Plus",
         "keystrokes": [
+          "0.5 [×] 66 [×] 0.005 [x²] [=] [STO] 1",
           "5.125 [×] 0.005 [+/-] [=]",
-          "[+] 0.5 [×] 66 [×] 0.005 [x²] [=]"
+          "[+] [RCL] 1 [=]",
+          "[×] 100 [=]"
         ],
-        "note_tr": "Sonucu 100 ile çarpıp yüzdeye çevirin."
+        "note_tr": "Ara sonuçlar STO/RCL ile saklanır (zincir/AOS ayarından bağımsız çalışır). Sonuç −2,48 (%)."
       },
       "numeric": {
         "expr": "(-5.125*0.005+0.5*66*0.005**2)*100",

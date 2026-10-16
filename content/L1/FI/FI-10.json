@@ -198,8 +198,8 @@
         }
       ],
       "answer": "B",
-      "explanation_en": "Future value = coupons with interest + principal = 115.918. Horizon yield = (1.15918)^(1/3) − 1 ≈ 5.07%, above 5% because coupons earn 6%.",
-      "explanation_tr": "Gelecek değer = faizli kuponlar + anapara = 115,918. Ufuk getirisi = (1,15918)^(1/3) − 1 ≈ %5,07; kuponlar %6 kazandığı için %5'in üzerindedir.",
+      "explanation_en": "Future value = coupons with interest + principal = 115.918. Horizon yield = (1.15918)^(1/3) − 1 ≈ 5.05%, above 5% because coupons earn 6%.",
+      "explanation_tr": "Gelecek değer = faizli kuponlar + anapara = 115,918. Ufuk getirisi = (1,15918)^(1/3) − 1 ≈ %5,05; kuponlar %6 kazandığı için %5'in üzerindedir.",
       "wrong_option_reasons": {
         "A": {
           "en": "This is the original yield; it assumes reinvestment at 5%.",
@@ -220,8 +220,8 @@
           "tr": "Anaparayı ekle: 15,918 + 100 = 115,918"
         },
         {
-          "en": "Horizon yield = (115.918/100)^(1/3) − 1 ≈ 5.07%",
-          "tr": "Ufuk getirisi = (115,918/100)^(1/3) − 1 ≈ %5,07",
+          "en": "Horizon yield = (115.918/100)^(1/3) − 1 ≈ 5.05%",
+          "tr": "Ufuk getirisi = (115,918/100)^(1/3) − 1 ≈ %5,05",
           "formula_latex": "r=\\left(\\frac{FV}{P_0}\\right)^{1/H}-1"
         }
       ],
@@ -832,9 +832,11 @@
         "keystrokes": [
           "6 [÷] 1.06 [=]",
           "106 [÷] 1.06 [x²] [=]",
-          "[×] 2 ..."
+          "[×] 2 [=]",
+          "[+] 5.66 [=]",
+          "[÷] 100 [=]"
         ],
-        "note_tr": "BA II Plus'ta durasyon tuşu yoktur; bugünkü değerleri tek tek hesaplayıp ağırlıklı toplamı alın."
+        "note_tr": "BA II Plus'ta durasyon tuşu yoktur; PV'leri (5,660 ve 94,340) hesaplayın, t × PV toplamını (5,660 + 2 × 94,340 = 194,34) fiyata (100) bölün."
       },
       "numeric": {
         "expr": "macaulay(0.06,0.06,2)",
