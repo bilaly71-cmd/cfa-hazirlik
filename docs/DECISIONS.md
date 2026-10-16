@@ -8,3 +8,4 @@
 - 2026-10-16 · Not: private repoda GitHub Pages için GitHub Pro (veya org planı) gerekir; yoksa Pages'i public repo ile ya da Expo Go/yerel ağ ile kullan · GitHub kısıtı.
 - 2026-10-16 · `build-content --preview` doğrulanmamış içeriği yalnızca yerel UI testi için pakete alır; commit edilen bundle daima yalnızca doğrulanmış içerik içerir.
 - 2026-10-16 · Kullanıcı isteğiyle ajanlar Sonnet 5.5'e (maliyet) geçirildi, aynı anda ≤3 ajan · kota tasarrufu.
+- 2026-10-16 · Repo public yapıldı, GitHub Pages ile yayın: https://bilaly71-cmd.github.io/cfa-hazirlik/ · Kullanıcı önceliği "önce yayınla"; Cloudflare Pages hesap açmayı gerektirdiği için (kırmızı çizgi 4) kullanılamadı. Yayın öncesi gizli bilgi taraması temiz.

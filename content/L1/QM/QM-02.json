@@ -1,0 +1,566 @@
+{
+  "module_id": "QM-02",
+  "lesson": {
+    "id": "QM-02-lesson",
+    "level": "L1",
+    "topic": "QM",
+    "module_id": "QM-02",
+    "los_ids": [
+      "QM-02-a"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Types of Financial Returns",
+    "title_tr": "Finansal Getiri Türleri",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "One investment, many return numbers",
+        "heading_tr": "Tek yatırım, birçok getiri rakamı",
+        "en": "A fund advertises that it earned 60%, 30% and -20% in three years. Is the investor's yearly return 23.3% (the simple average) or something lower? A pension fund that holds BIST 100 shares wants a yearly figure, but its data arrive monthly. A quant model prefers returns that can be added over time. Each need leads to a different return measure: arithmetic mean, geometric mean, annualized return, continuously compounded return, real return and net return. The skill is to pick the measure that fits the question.",
+        "tr": "Bir fon üç yılda %60, %30 ve %-20 getiri sağladığını duyuruyor. Yatırımcının yıllık getirisi %23,3 (basit ortalama) mı, yoksa daha düşük mü? BIST 100 payı tutan bir emeklilik fonu yıllık bir rakam ister ama verileri aylık gelir. Bir nicel model zaman içinde toplanabilen getiriler tercih eder. Her ihtiyaç farklı bir getiri ölçüsüne götürür: aritmetik ortalama, geometrik ortalama, yıllıklandırılmış getiri, sürekli bileşik getiri, reel getiri ve net getiri. Beceri, soruya uyan ölçüyü seçmektir.",
+        "key_terms": [
+          "arithmetic mean",
+          "geometric mean",
+          "annualized return"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Return variants",
+        "heading_tr": "Getiri türleri",
+        "en": "The holding period return (HPR) covers one period. The arithmetic mean adds the period returns and divides by the number of periods; it estimates the typical return in one period. The geometric mean links the returns by compounding and gives the constant per-period rate that would produce the same ending wealth; it is never larger than the arithmetic mean, and the gap grows with volatility. An annualized return converts the return of any holding period to a one-year rate by compounding. A continuously compounded return is the natural log of the ending price over the beginning price; it is additive across periods. Real returns remove inflation; gross returns are before and net returns are after fees and costs.",
+        "tr": "Elde tutma dönemi getirisi (HPR) tek bir dönemi kapsar. Aritmetik ortalama dönem getirilerini toplayıp dönem sayısına böler; tek bir dönemdeki tipik getiriyi tahmin eder. Geometrik ortalama getirileri bileşik olarak zincirler ve aynı son serveti üretecek sabit dönemlik oranı verir; hiçbir zaman aritmetik ortalamadan büyük olmaz ve fark oynaklıkla artar. Yıllıklandırılmış getiri, herhangi bir elde tutma dönemi getirisini bileşik yöntemle bir yıllık orana çevirir. Sürekli bileşik getiri, bitiş fiyatının başlangıç fiyatına oranının doğal logaritmasıdır; dönemler arasında toplanabilir. Reel getiri enflasyonu çıkarır; brüt getiri ücret ve maliyetlerden önce, net getiri sonradır.",
+        "key_terms": [
+          "arithmetic mean",
+          "geometric mean",
+          "continuously compounded return",
+          "real return"
+        ]
+      },
+      {
+        "kind": "formula",
+        "heading_en": "Formulas",
+        "heading_tr": "Formüller",
+        "en": "Geometric mean: take the product of growth factors, then the n-th root, then subtract 1. Annualizing: raise the growth factor of the holding period to the power of periods per year. Continuously compounded return: ln of the price ratio, which equals ln(1 + HPR). Real return: divide growth factors. Net return: gross return minus fees (when fees are quoted as a rate on the same base).",
+        "tr": "Geometrik ortalama: büyüme çarpanlarının çarpımını al, sonra n'inci kökünü al ve 1 çıkar. Yıllıklandırma: elde tutma dönemi büyüme çarpanını yıllık dönem sayısı kuvvetine yükselt. Sürekli bileşik getiri: fiyat oranının ln'i; bu ln(1 + HPR)'ye eşittir. Reel getiri: büyüme çarpanlarının bölümü. Net getiri: brüt getiri eksi ücretler (ücretler aynı baz üzerinden oran olarak verilmişse).",
+        "key_terms": [
+          "geometric mean"
+        ],
+        "formula_latex": "R_G=\\Big[\\prod_{t=1}^{n}(1+R_t)\\Big]^{1/n}-1,\\quad R_{ann}=(1+HPR)^{c}-1,\\quad r_{cc}=\\ln\\frac{P_1}{P_0}=\\ln(1+HPR)"
+      },
+      {
+        "kind": "example",
+        "heading_en": "Worked example",
+        "heading_tr": "Çözümlü örnek",
+        "en": "Returns of a TL fund over three years: +60%, +30%, -20%. The arithmetic mean is (60 + 30 - 20) / 3 = 23.33%. The growth factors multiply to 1.60 × 1.30 × 0.80 = 1.664, so the geometric mean is 1.664^(1/3) - 1 = 18.5%. The geometric mean is lower, and it is the rate that actually turns TL 100 into TL 166.4 in three years. A 6-month HPR of 8% annualizes to 1.08^2 - 1 = 16.64%, not 16%. A price move from 50 to 56 gives a continuously compounded return of ln(56/50) = 11.33%, and the HPR is 12%.",
+        "tr": "Bir TL fonunun üç yıllık getirileri: %60, %30, %-20. Aritmetik ortalama (60 + 30 - 20) / 3 = %23,33'tür. Büyüme çarpanları 1,60 × 1,30 × 0,80 = 1,664 verir; geometrik ortalama 1,664^(1/3) - 1 = %18,5'tir. Geometrik ortalama daha düşüktür ve 100 TL'yi üç yılda gerçekten 166,4 TL yapan orandır. 6 aylık %8'lik HPR yıllıklandırılınca 1,08^2 - 1 = %16,64 olur, %16 değil. Fiyatın 50'den 56'ya çıkması %11,33 sürekli bileşik getiri verir (ln(56/50)); HPR ise %12'dir.",
+        "key_terms": [
+          "geometric mean"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Traps",
+        "heading_tr": "Tuzaklar",
+        "en": "Do not use the arithmetic mean to describe the compound growth of wealth over many periods. Do not annualize by simple multiplication (4 × quarterly return) unless the question asks for a simple annual rate. Continuously compounded returns are always lower than the HPR for positive returns. When you compute a real geometric mean, deflate each year first or use the ratio of the two geometric growth factors, not the difference of arithmetic means. Watch the sign convention of your calculator for ln and the yx key.",
+        "tr": "Servetin çok dönemli bileşik büyümesini anlatmak için aritmetik ortalamayı kullanma. Soru basit yıllık oran istemedikçe çarpma ile yıllıklandırma yapma (4 × üç aylık getiri). Pozitif getirilerde sürekli bileşik getiri HPR'den her zaman düşüktür. Reel geometrik ortalamada önce her yılı enflasyondan arındır ya da iki geometrik büyüme çarpanının oranını kullan; aritmetik ortalamaların farkını alma. Hesap makinesinde ln ve yx tuşlarını doğru kullandığından emin ol.",
+        "key_terms": []
+      }
+    ],
+    "summary_en": "Choose the return measure that fits the question: arithmetic mean for a typical single period, geometric mean for compound growth, annualizing for comparing different horizons, log returns for additivity, and real or net returns when inflation or fees matter. The geometric mean is never above the arithmetic mean.",
+    "summary_tr": "Soruya uyan getiri ölçüsünü seç: tek dönemin tipik getirisi için aritmetik ortalama, bileşik büyüme için geometrik ortalama, farklı vadeleri kıyaslamak için yıllıklandırma, toplanabilirlik için logaritmik getiri; enflasyon veya ücret önemliyse reel veya net getiri. Geometrik ortalama aritmetik ortalamanın üzerine çıkmaz.",
+    "common_traps_tr": [
+      "Çok yıllık servet büyümesini aritmetik ortalamayla anlatmak.",
+      "Üç aylık getiriyi 4 ile çarparak yıllıklandırmak (bileşik yöntem gerekir).",
+      "Logaritmik getiriyi HPR ile karıştırmak; pozitif getirilerde logaritmik getiri daha düşüktür.",
+      "Reel geometrik ortalamayı hesaplarken yılları önce enflasyondan arındırmamak.",
+      "30 ay gibi kesirli dönemleri tam yıla yuvarlamak."
+    ],
+    "vocab_ids": [
+      "arithmetic-mean",
+      "geometric-mean",
+      "annualized",
+      "continuously-compounded",
+      "natural-logarithm",
+      "real-return",
+      "compounding",
+      "holding-period-return",
+      "consecutive"
+    ],
+    "spk_link": {
+      "status": "partial",
+      "note_tr": "Elde tutma dönemi getirisi ve yıllıklandırma Düzey 3'ten tanıdık; sürekli bileşik getiri ve geometrik ortalama kısmen yeni."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "QM-02-a-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund returned +20%, -10% and +15% in three consecutive years. The geometric mean annual return is closest to:",
+      "stem_tr": "Bir fon üç ardışık yılda %+20, %-10 ve %+15 getiri sağlamıştır. Geometrik ortalama yıllık getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.49%",
+          "tr": "%7,49",
+          "value": 7.49
+        },
+        {
+          "key": "B",
+          "en": "8.33%",
+          "tr": "%8,33",
+          "value": 8.33
+        },
+        {
+          "key": "C",
+          "en": "24.20%",
+          "tr": "%24,20",
+          "value": 24.2
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Product of growth factors = 1.20 × 0.90 × 1.15 = 1.242. Cube root = 1.0749, so the geometric mean is 7.49%.",
+      "explanation_tr": "Büyüme çarpanlarının çarpımı = 1,20 × 0,90 × 1,15 = 1,242. Küpkökü = 1,0749; geometrik ortalama %7,49'dur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the arithmetic mean, which ignores compounding and overstates growth.",
+          "tr": "Bu aritmetik ortalamadır; bileşik etkiyi yok sayar ve büyümeyi olduğundan yüksek gösterir."
+        },
+        "C": {
+          "en": "This is the cumulative three-year return, not a per-year rate.",
+          "tr": "Bu üç yıllık kümülatif getiridir, yıllık oran değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the constant yearly rate that gives the same ending wealth.",
+          "tr": "Aynı son serveti veren sabit yıllık oran isteniyor."
+        },
+        {
+          "en": "Use the geometric mean of the growth factors.",
+          "tr": "Büyüme çarpanlarının geometrik ortalamasını kullan.",
+          "formula_latex": "R_G=\\left[\\prod(1+R_t)\\right]^{1/n}-1"
+        },
+        {
+          "en": "Multiply: 1.20 × 0.90 × 1.15.",
+          "tr": "Çarp: 1,20 × 0,90 × 1,15.",
+          "values": {
+            "g1": 1.2,
+            "g2": 0.9,
+            "g3": 1.15
+          }
+        },
+        {
+          "en": "Product = 1.242; 1.242^(1/3) = 1.0749.",
+          "tr": "Çarpım = 1,242; 1,242^(1/3) = 1,0749."
+        },
+        {
+          "en": "R_G = 7.49%.",
+          "tr": "R_G = %7,49."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.20 [×] 0.90 [×] 1.15 [=]",
+          "[yˣ] 3 [1/x] [=]  (1.0749)",
+          "[-] 1 [=]  (0.0749)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.2*0.9*1.15)**(1/3)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "geometric-mean",
+        "arithmetic-mean",
+        "compounding",
+        "consecutive",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-02-a-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A TL money market fund earns a 3-month holding period return of 4.0%. Annualized by compounding, the return is closest to:",
+      "stem_tr": "Bir TL para piyasası fonu 3 aylık %4,0 elde tutma dönemi getirisi sağlıyor. Bileşik yöntemle yıllıklandırılan getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "16.00%",
+          "tr": "%16,00",
+          "value": 16.0
+        },
+        {
+          "key": "B",
+          "en": "16.99%",
+          "tr": "%16,99",
+          "value": 16.99
+        },
+        {
+          "key": "C",
+          "en": "12.49%",
+          "tr": "%12,49",
+          "value": 12.49
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "There are 4 quarters in a year: 1.04^4 - 1 = 16.99%.",
+      "explanation_tr": "Bir yılda 4 çeyrek vardır: 1,04^4 - 1 = %16,99.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multiplies by 4 (simple annualization) and ignores compounding.",
+          "tr": "4 ile çarpmış (basit yıllıklandırma); bileşik etkiyi yok saymış."
+        },
+        "C": {
+          "en": "Compounds for three periods instead of four.",
+          "tr": "Dört yerine üç dönem için bileşik hesaplamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a one-year rate from a 3-month return.",
+          "tr": "3 aylık getiriden bir yıllık oran isteniyor."
+        },
+        {
+          "en": "Compound the growth factor over the number of 3-month periods in a year.",
+          "tr": "Büyüme çarpanını bir yıldaki 3 aylık dönem sayısı kadar bileşik uygula.",
+          "formula_latex": "R_{ann}=(1+HPR)^{4}-1"
+        },
+        {
+          "en": "1.04^4 = 1.1699.",
+          "tr": "1,04^4 = 1,1699."
+        },
+        {
+          "en": "Annualized return = 16.99%.",
+          "tr": "Yıllıklandırılmış getiri = %16,99."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.04 [yˣ] 4 [=]  (1.1699)",
+          "[-] 1 [=]  (0.1699)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.04**4-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "annualized",
+        "compounding",
+        "holding-period-return",
+        "quarter",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-02-a-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share rises from TL 80 to TL 92 over a year with no dividend. The continuously compounded return is closest to:",
+      "stem_tr": "Bir pay temettü ödemeden bir yılda 80 TL'den 92 TL'ye çıkıyor. Sürekli bileşik getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.00%",
+          "tr": "%15,00",
+          "value": 15.0
+        },
+        {
+          "key": "B",
+          "en": "13.04%",
+          "tr": "%13,04",
+          "value": 13.04
+        },
+        {
+          "key": "C",
+          "en": "13.98%",
+          "tr": "%13,98",
+          "value": 13.98
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "r = ln(92 / 80) = ln(1.15) = 13.98%. Log returns are lower than HPR for gains.",
+      "explanation_tr": "r = ln(92 / 80) = ln(1,15) = %13,98. Kazançlarda logaritmik getiri HPR'den düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the simple holding period return, not the log return.",
+          "tr": "Bu basit elde tutma dönemi getirisidir, logaritmik getiri değildir."
+        },
+        "B": {
+          "en": "Divides the price gain by the ending price (92) instead of the beginning price.",
+          "tr": "Fiyat kazancını başlangıç fiyatı yerine bitiş fiyatına (92) bölmüş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the continuously compounded return.",
+          "tr": "Sürekli bileşik getiri isteniyor."
+        },
+        {
+          "en": "Take the natural log of the price ratio.",
+          "tr": "Fiyat oranının doğal logaritmasını al.",
+          "formula_latex": "r_{cc}=\\ln\\frac{P_1}{P_0}"
+        },
+        {
+          "en": "92 / 80 = 1.15.",
+          "tr": "92 / 80 = 1,15.",
+          "values": {
+            "P0": 80,
+            "P1": 92
+          }
+        },
+        {
+          "en": "ln(1.15) = 0.1398.",
+          "tr": "ln(1,15) = 0,1398."
+        },
+        {
+          "en": "r = 13.98%.",
+          "tr": "r = %13,98."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "92 [÷] 80 [=]",
+          "[LN]  (0.1398)"
+        ]
+      },
+      "numeric": {
+        "expr": "math.log(92/80)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "continuously-compounded",
+        "natural-logarithm",
+        "holding-period-return",
+        "closest",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-02-a-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investment earns a total holding period return of 40% over 30 months. Annualized by compounding, the return is closest to:",
+      "stem_tr": "Bir yatırım 30 ayda toplam %40 elde tutma dönemi getirisi sağlıyor. Bileşik yöntemle yıllıklandırılan getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "14.41%",
+          "tr": "%14,41",
+          "value": 14.41
+        },
+        {
+          "key": "B",
+          "en": "16.00%",
+          "tr": "%16,00",
+          "value": 16.0
+        },
+        {
+          "key": "C",
+          "en": "11.87%",
+          "tr": "%11,87",
+          "value": 11.87
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "30 months is 2.5 years. Annualized = 1.40^(1/2.5) - 1 = 1.40^0.4 - 1 = 14.41%.",
+      "explanation_tr": "30 ay 2,5 yıldır. Yıllıklandırılmış getiri = 1,40^(1/2,5) - 1 = 1,40^0,4 - 1 = %14,41.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Scales the return linearly (40% × 12 / 30), ignoring compounding.",
+          "tr": "Getiriyi doğrusal ölçeklemiş (%40 × 12 / 30); bileşik etkiyi yok saymış."
+        },
+        "C": {
+          "en": "Rounds 2.5 years up to 3 years before taking the root.",
+          "tr": "Kökü almadan önce 2,5 yılı 3 yıla yuvarlamış."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a per-year rate from a 30-month total return.",
+          "tr": "30 aylık toplam getiriden yıllık oran isteniyor."
+        },
+        {
+          "en": "Raise the growth factor to the power of 12 / 30 (one divided by 2.5 years).",
+          "tr": "Büyüme çarpanını 12 / 30 kuvvetine (1 bölü 2,5 yıl) yükselt.",
+          "formula_latex": "R_{ann}=(1+HPR)^{12/30}-1"
+        },
+        {
+          "en": "1.40^0.4 = 1.1441.",
+          "tr": "1,40^0,4 = 1,1441."
+        },
+        {
+          "en": "Annualized return = 14.41%.",
+          "tr": "Yıllıklandırılmış getiri = %14,41."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.40 [yˣ] 0.4 [=]  (1.1441)",
+          "[-] 1 [=]  (0.1441)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.40**(12/30)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "annualized",
+        "holding-period-return",
+        "compounding",
+        "closest",
+        "months"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-02-a-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A TL fund earned gross returns of 72% and 22% in two years, with fees of 2% of assets each year deducted from the gross return. Inflation was 30% and 20%. The geometric mean real net return per year is closest to:",
+      "stem_tr": "Bir TL fonu iki yılda %72 ve %22 brüt getiri sağlamıştır; her yıl varlığın %2'si tutarında ücret brüt getiriden düşülmektedir. Enflasyon %30 ve %20'dir. Yıllık geometrik ortalama reel net getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.38%",
+          "tr": "%15,38",
+          "value": 15.38
+        },
+        {
+          "key": "B",
+          "en": "14.35%",
+          "tr": "%14,35",
+          "value": 14.35
+        },
+        {
+          "key": "C",
+          "en": "15.98%",
+          "tr": "%15,98",
+          "value": 15.98
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net returns: 70% and 20%. Real growth factors: 1.70 / 1.30 = 1.3077 and 1.20 / 1.20 = 1.0. Geometric mean = (1.3077 × 1.0)^(1/2) - 1 = 14.35%.",
+      "explanation_tr": "Net getiriler: %70 ve %20. Reel büyüme çarpanları: 1,70 / 1,30 = 1,3077 ve 1,20 / 1,20 = 1,0. Geometrik ortalama = (1,3077 × 1,0)^(1/2) - 1 = %14,35.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the arithmetic mean of the two real net returns (30.77% and 0%).",
+          "tr": "İki reel net getirinin (%30,77 ve %0) aritmetik ortalamasını almış."
+        },
+        "C": {
+          "en": "Uses gross instead of net returns, so the fee drag is ignored.",
+          "tr": "Net yerine brüt getiriyi kullanmış; ücret etkisi göz ardı edilmiş."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the yearly real return after fees, compounded over two years.",
+          "tr": "Ücretler sonrası, iki yıl bileşik yıllık reel getiri isteniyor."
+        },
+        {
+          "en": "First compute net returns: gross minus 2%: 70% and 20%.",
+          "tr": "Önce net getiriler: brüt eksi %2: %70 ve %20."
+        },
+        {
+          "en": "Deflate each year: divide the net growth factor by the inflation factor.",
+          "tr": "Her yılı arındır: net büyüme çarpanını enflasyon çarpanına böl.",
+          "formula_latex": "1+r_{real,t}=\\frac{1+r_{net,t}}{1+\\pi_t}",
+          "values": {
+            "y1": "1.70/1.30",
+            "y2": "1.20/1.20"
+          }
+        },
+        {
+          "en": "Real factors are 1.3077 and 1.0000.",
+          "tr": "Reel çarpanlar 1,3077 ve 1,0000."
+        },
+        {
+          "en": "Geometric mean = sqrt(1.3077) - 1 = 14.35%.",
+          "tr": "Geometrik ortalama = karekök(1,3077) - 1 = %14,35."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.70 [÷] 1.30 [=] [×] 1 [=]",
+          "[yˣ] 2 [1/x] [=]  (1.1435)",
+          "[-] 1 [=]  (0.1435)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.70/1.30)*(1.20/1.20))**0.5*100-100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "real-return",
+        "geometric-mean",
+        "fee",
+        "deduct",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

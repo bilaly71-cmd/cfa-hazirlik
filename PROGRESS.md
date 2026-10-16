@@ -1,6 +1,6 @@
 # PROGRESS
 
-SIRADAKİ ADIM: Sonnet ajanları çalışıyor (ETH 05-10 denetimi; QM 06-10+FSA-04+FI-06 denetimi; ECO+CI üretimi). Bitince commit + `npm run build-content` + push. Kuyruk: FSA-09/11/12, FI-07/10-13/16-19, EQ-04..06/08..12, QM-01..05/11, DER, AI, PM, etik vakaları+formüller+BA II Plus+soru kalıpları (content/patterns yok!), 2 mock hedefi (≥360 doğrulanmış soru gerek). Aynı anda ≤3 ajan, model sonnet (maliyet). YAYIN: repo github.com/bilaly71-cmd/cfa-hazirlik (private); Pages özel repoda ücretsiz planda çalışmıyor → kullanıcı kararı (repoyu public yap veya yerelde `npm run web`).
+YAYINDA: https://bilaly71-cmd.github.io/cfa-hazirlik/ (PWA; her main push'ta CI doğrular + Pages'e dağıtır). SIRADAKİ ADIM: çalışan ajanlar (EQ-04..12 denetimi, QM-01..05/11+FSA-09/11/12 üretimi, FI-07/10-13/16-19 üretimi, soru kalıpları+etik vakaları, formül+BA II Plus) bitince commit+`npm run build-content`+push; ardından yeni paketlerin denetimi, 2 mock (180'er soru dengeli), L2/L3 iskelet, FINAL_REPORT.md, DONE. ≤5 ajan, model sonnet.
 
 ## Nasıl devam edilir (yeni oturum için)
 - İçerik kuralları: `docs/CONTENT_SPEC.md`; üretici görev şablonu: `docs/GEN_PROMPT.md`; denetçi: `docs/REVIEW_SPEC.md`.
