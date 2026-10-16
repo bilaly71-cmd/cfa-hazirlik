@@ -1,0 +1,447 @@
+{
+  "module_id": "AI-03",
+  "vignettes": [
+    {
+      "id": "L2-AI-03-v01",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "curriculum_year": 2027,
+      "title_en": "A Listed REIT: FFO, AFFO and NAV",
+      "title_tr": "Borsada İşlem Gören GYO: FFO, AFFO ve NAV",
+      "text_en": "Gül Kaplan covers listed real estate for the fictional asset manager Sultanahmet Portföy. She analyses Marmara GYO, a Borsa Istanbul listed REIT that owns shopping centres and office buildings and pays most of its income to shareholders. The company has 50 million shares outstanding, and the share price is TRY 24.00.\nFor the latest year, Marmara GYO reports net income of TRY 60 million, depreciation of TRY 40 million, and a gain on the sale of one property of TRY 10 million. Under IFRS, rent that rises by contract over the lease is recognised on a straight-line basis, which adds TRY 3 million of non-cash rent to net income. The company spent TRY 12 million on recurring maintenance of its buildings and tenant improvements.\nGül also estimates net asset value (NAV) per share. She expects next year's NOI to be TRY 130 million and uses a cap rate of 7.5% for the portfolio. The company holds TRY 80 million of cash and other assets, has TRY 700 million of debt and TRY 55 million of other liabilities.\nGül must decide if the REIT is expensive or cheap and explain to the investment committee why a listed REIT can trade at a price above its NAV per share.",
+      "text_tr": "Gül Kaplan, kurgusal Sultanahmet Portföy'de listelenmiş gayrimenkul sektörünü izliyor. Alışveriş merkezleri ve ofis binaları olan, gelirinin çoğunu pay sahiplerine dağıtan, Borsa İstanbul'da işlem gören Marmara GYO'yu analiz ediyor. Şirketin 50 milyon payı dolaşımda ve pay fiyatı 24,00 TL.\nSon yıl için Marmara GYO 60 milyon TL net kâr, 40 milyon TL amortisman ve bir mülkün satışından 10 milyon TL kazanç bildiriyor. UFRS'ye göre kira sözleşmesi boyunca sözleşme gereği artan kira doğrusal (straight-line) esasla muhasebeleştirilir; bu, net kâra 3 milyon TL nakit olmayan kira ekler. Şirket binalarının yinelenen bakımına ve kiracı iyileştirmelerine 12 milyon TL harcadı.\nGül ayrıca pay başına net aktif değeri (NAV) tahmin ediyor. Gelecek yılın NOI'sinin 130 milyon TL olmasını bekliyor ve portföy için %7,5 kapitalizasyon oranı kullanıyor. Şirketin 80 milyon TL nakit ve diğer varlığı, 700 milyon TL borcu ve 55 milyon TL diğer yükümlülüğü var.\nGül, GYO'nun pahalı mı ucuz mu olduğuna karar vermeli ve yatırım komitesine, listelenmiş bir GYO'nun neden pay başına NAV'ının üzerinde bir fiyatta işlem görebildiğini açıklamalı.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Marmara GYO data (TRY million unless stated)",
+          "title_tr": "Gösterge 1: Marmara GYO verileri (aksi belirtilmedikçe milyon TL)",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Net income",
+              "60"
+            ],
+            [
+              "Depreciation",
+              "40"
+            ],
+            [
+              "Gain on property sale",
+              "10"
+            ],
+            [
+              "Straight-line (non-cash) rent",
+              "3"
+            ],
+            [
+              "Recurring maintenance and improvements",
+              "12"
+            ],
+            [
+              "Forward NOI / cap rate",
+              "130 / 7.5%"
+            ],
+            [
+              "Cash and other assets / debt / other liabilities",
+              "80 / 700 / 55"
+            ],
+            [
+              "Shares (million) / price (TRY)",
+              "50 / 24.00"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-AI-03-v01-q1",
+        "L2-AI-03-v01-q2",
+        "L2-AI-03-v01-q3",
+        "L2-AI-03-v01-q4",
+        "L2-AI-03-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-AI-03-v01-q1",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "los_id": "AI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-AI-03-v01",
+      "stem_en": "Funds from operations (FFO) for the latest year is closest to:",
+      "stem_tr": "Son yıl için faaliyetlerden fonlar (FFO) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 90 million",
+          "tr": "90 milyon TL",
+          "value": 90.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 100 million",
+          "tr": "100 milyon TL",
+          "value": 100.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 110 million",
+          "tr": "110 milyon TL",
+          "value": 110.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "FFO = net income + depreciation - gains on sale = 60 + 40 - 10 = 90 million. The gain is a non-recurring item.",
+      "explanation_tr": "FFO = net kâr + amortisman - satış kazançları = 60 + 40 - 10 = 90 milyon. Kazanç tekrarlanmayan bir kalemdir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It leaves out the adjustment for the one-off gain on the property sale.",
+          "tr": "Mülk satışından gelen tek seferlik kazancın düzeltmesini atlar."
+        },
+        "C": {
+          "en": "It adds the gain on sale instead of subtracting it.",
+          "tr": "Satış kazancını çıkarmak yerine ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find FFO.",
+          "tr": "FFO isteniyor."
+        },
+        {
+          "en": "FFO = net income + depreciation - gains on property sales.",
+          "tr": "FFO = net kâr + amortisman - mülk satış kazançları."
+        },
+        {
+          "en": "60 + 40 - 10.",
+          "tr": "60 + 40 - 10."
+        },
+        {
+          "en": "Result: TRY 90 million.",
+          "tr": "Sonuç: 90 milyon TL."
+        }
+      ],
+      "numeric": {
+        "expr": "60+40-10"
+      },
+      "vocab_ids": [
+        "funds-from-operations",
+        "depreciation",
+        "gain-on-sale",
+        "reit",
+        "net-income"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-03-v01-q2",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "los_id": "AI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-03-v01",
+      "stem_en": "Adjusted funds from operations (AFFO) per share is closest to:",
+      "stem_tr": "Pay başına düzeltilmiş faaliyetlerden fonlar (AFFO) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1.80",
+          "tr": "1,80 TL",
+          "value": 1.8
+        },
+        {
+          "key": "B",
+          "en": "TRY 1.50",
+          "tr": "1,50 TL",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 1.56",
+          "tr": "1,56 TL",
+          "value": 1.56
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "AFFO = FFO - straight-line rent - recurring capex = 90 - 3 - 12 = 75 million. Per share: 75/50 = 1.50.",
+      "explanation_tr": "AFFO = FFO - doğrusal kira - yinelenen yatırım harcaması = 90 - 3 - 12 = 75 milyon. Pay başına: 75/50 = 1,50.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is FFO per share; it ignores the straight-line rent and recurring maintenance adjustments.",
+          "tr": "Bu pay başına FFO'dur; doğrusal kira ve yinelenen bakım düzeltmelerini yok sayar."
+        },
+        "C": {
+          "en": "It deducts the maintenance spending but forgets to remove the non-cash straight-line rent.",
+          "tr": "Bakım harcamasını düşer ama nakit olmayan doğrusal kirayı çıkarmayı unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find AFFO per share.",
+          "tr": "Pay başına AFFO isteniyor."
+        },
+        {
+          "en": "AFFO = FFO - non-cash rent - recurring capex; then divide by shares.",
+          "tr": "AFFO = FFO - nakit olmayan kira - yinelenen yatırım harcaması; sonra pay sayısına böl."
+        },
+        {
+          "en": "(90 - 3 - 12)/50 = 75/50.",
+          "tr": "(90 - 3 - 12)/50 = 75/50."
+        },
+        {
+          "en": "Result: TRY 1.50.",
+          "tr": "Sonuç: 1,50 TL."
+        }
+      ],
+      "numeric": {
+        "expr": "(90-3-12)/50"
+      },
+      "vocab_ids": [
+        "adjusted-funds-from-operations",
+        "funds-from-operations",
+        "straight-line",
+        "recurring",
+        "distribution"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-03-v01-q3",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "los_id": "AI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-03-v01",
+      "stem_en": "The NAV per share, using forward NOI and the 7.5% cap rate, is closest to:",
+      "stem_tr": "İleri NOI ve %7,5 kapitalizasyon oranıyla pay başına NAV en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 22.27",
+          "tr": "22,27 TL",
+          "value": 22.27
+        },
+        {
+          "key": "B",
+          "en": "TRY 34.67",
+          "tr": "34,67 TL",
+          "value": 34.67
+        },
+        {
+          "key": "C",
+          "en": "TRY 21.17",
+          "tr": "21,17 TL",
+          "value": 21.17
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Property value = 130/0.075 = 1,733.3. NAV = 1,733.3 + 80 - 700 - 55 = 1,058.3 million. NAV per share = 1,058.3/50 = 21.17.",
+      "explanation_tr": "Mülk değeri = 130/0,075 = 1,733,3. NAV = 1,733,3 + 80 - 700 - 55 = 1,058,3 milyon. Pay başına NAV = 1,058,3/50 = 21,17.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It forgets to subtract the other liabilities of TRY 55 million.",
+          "tr": "55 milyon TL'lik diğer yükümlülükleri çıkarmayı unutur."
+        },
+        "B": {
+          "en": "It divides the gross asset value by the shares and ignores the cash, debt and other liabilities.",
+          "tr": "Brüt varlık değerini paya böler; nakdi, borcu ve diğer yükümlülükleri yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find NAV per share.",
+          "tr": "Pay başına NAV isteniyor."
+        },
+        {
+          "en": "NAV = NOI / cap rate + other assets - debt - other liabilities.",
+          "tr": "NAV = NOI / kapitalizasyon oranı + diğer varlıklar - borç - diğer yükümlülükler."
+        },
+        {
+          "en": "1,733.3 + 80 - 700 - 55 = 1,058.3; divide by 50.",
+          "tr": "1,733,3 + 80 - 700 - 55 = 1,058,3; 50'ye böl."
+        },
+        {
+          "en": "Result: TRY 21.17.",
+          "tr": "Sonuç: 21,17 TL."
+        }
+      ],
+      "numeric": {
+        "expr": "(130/0.075+80-700-55)/50"
+      },
+      "vocab_ids": [
+        "net-asset-value",
+        "cap-rate",
+        "net-operating-income",
+        "valuation",
+        "premium"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-03-v01-q4",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "los_id": "AI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "set_id": "L2-AI-03-v01",
+      "stem_en": "The price-to-AFFO multiple at the current share price is closest to:",
+      "stem_tr": "Güncel pay fiyatında fiyat/AFFO çarpanı en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "16.0x",
+          "tr": "16,0x",
+          "value": 16.0
+        },
+        {
+          "key": "B",
+          "en": "13.3x",
+          "tr": "13,3x",
+          "value": 13.3
+        },
+        {
+          "key": "C",
+          "en": "1.1x",
+          "tr": "1,1x",
+          "value": 1.1
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "AFFO per share = 1.50. P/AFFO = 24.00/1.50 = 16.0x. P/FFO would be 13.3x.",
+      "explanation_tr": "Pay başına AFFO = 1,50. F/AFFO = 24,00/1,50 = 16,0x. F/FFO ise 13,3x olurdu.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is price-to-FFO, which uses the unadjusted FFO figure.",
+          "tr": "Bu fiyat/FFO'dur ve düzeltilmemiş FFO rakamını kullanır."
+        },
+        "C": {
+          "en": "This is the price-to-NAV ratio, not a price-to-AFFO multiple.",
+          "tr": "Bu fiyat/NAV oranıdır, fiyat/AFFO çarpanı değil."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find P/AFFO.",
+          "tr": "F/AFFO isteniyor."
+        },
+        {
+          "en": "P/AFFO = price / AFFO per share.",
+          "tr": "F/AFFO = fiyat / pay başına AFFO."
+        },
+        {
+          "en": "24.00 / 1.50.",
+          "tr": "24,00 / 1,50."
+        },
+        {
+          "en": "Result: 16.0x.",
+          "tr": "Sonuç: 16,0x."
+        }
+      ],
+      "numeric": {
+        "expr": "24.0/((90-3-12)/50)"
+      },
+      "vocab_ids": [
+        "reit",
+        "valuation",
+        "multiple",
+        "distribution",
+        "recurring"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-03-v01-q5",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-03",
+      "los_id": "AI-03-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-03-v01",
+      "stem_en": "The share price (TRY 24.00) is above the NAV per share (TRY 21.17). Which explanation is most consistent with this premium?",
+      "stem_tr": "Pay fiyatı (24,00 TL) pay başına NAV'ın (21,17 TL) üzerindedir. Hangi açıklama bu primle en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A premium proves the REIT is certainly overvalued and should be sold.",
+          "tr": "Prim, GYO'nun kesinlikle aşırı değerli olduğunu ve satılması gerektiğini kanıtlar."
+        },
+        {
+          "key": "B",
+          "en": "The market uses a lower cap rate than 7.5%; the price implies about 6.9%, or expects growth and values management and liquidity.",
+          "tr": "Piyasa %7,5'ten düşük bir kapitalizasyon oranı kullanıyor; fiyat yaklaşık %6,9'i ima ediyor veya büyüme beklentisi ile yönetim ve likiditeyi değerliyor."
+        },
+        {
+          "key": "C",
+          "en": "The NAV was understated because depreciation was ignored.",
+          "tr": "NAV düşük hesaplandı çünkü amortisman göz ardı edildi."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Market value of assets implied by the price = 24 x 50 + 700 + 55 - 80 = 1,875 million, so the implied cap rate is 130/1,875 = 6.9%, lower than the analyst's 7.5%. Investors may be paying for growth, management quality and liquidity.",
+      "explanation_tr": "Fiyatın ima ettiği varlık piyasa değeri = 24 x 50 + 700 + 55 - 80 = 1,875 milyon; ima edilen kapitalizasyon oranı 130/1,875 = %6,9, analistin %7,5'inden düşük. Yatırımcılar büyüme, yönetim kalitesi ve likidite için ödeme yapıyor olabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A premium can reflect a lower market cap rate, expected growth or valuable management; it is a signal to investigate, not proof of overvaluation.",
+          "tr": "Prim daha düşük bir piyasa kapitalizasyon oranını, beklenen büyümeyi veya değerli yönetimi yansıtabilir; incelenmesi gereken bir sinyaldir, aşırı değerin kanıtı değildir."
+        },
+        "C": {
+          "en": "NAV is based on market value of assets from NOI and the cap rate, so book depreciation does not enter the calculation.",
+          "tr": "NAV, NOI ve kapitalizasyon oranından türetilen varlık piyasa değerine dayanır; muhasebe amortismanı hesaba girmez."
+        }
+      },
+      "vocab_ids": [
+        "net-asset-value",
+        "implied-cap-rate",
+        "cap-rate",
+        "premium",
+        "liquidity"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}

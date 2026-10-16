@@ -1,0 +1,413 @@
+{
+  "module_id": "AI-04",
+  "vignettes": [
+    {
+      "id": "L2-AI-04-v01",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "curriculum_year": 2027,
+      "title_en": "Fees and Strategies at Two Hedge Funds",
+      "title_tr": "İki Serbest Fonda Ücretler ve Stratejiler",
+      "text_en": "Kaan Doğru is an investment officer at the fictional endowment Anadolu Vakfı. He is reviewing two hedge funds. Fund Alfa is a multi-strategy fund with a management fee of 2% on beginning-of-year assets and an incentive fee of 20% of profits after the management fee. Alfa began the year with TRY 100 million in assets and earned a gross return of TRY 18 million in the year. The fee terms include a hurdle rate of 5% (TRY 5 million on the starting assets) and a high-water mark. Kaan wants to see how the result changes if the hurdle is hard or soft.\nFund Beta runs two sleeves. In the first sleeve, the manager buys convertible bonds issued by listed companies and sells short a calculated number of the underlying shares, so that the equity price risk is largely hedged. The sleeve earns the bond coupon, the short rebate and gains from volatility, but loses when credit spreads widen suddenly or financing becomes scarce. In the second sleeve, the manager buys shares of a takeover target. The target trades at TRY 50.00, and the all-cash offer is TRY 55.00 per share; the deal is expected to close in 6 months.\nKaan also learns that the published hedge fund index he plans to use was assembled from funds that report voluntarily, and funds are added to the database with their prior track record.",
+      "text_tr": "Kaan Doğru, kurgusal Anadolu Vakfı'nda yatırım yetkilisidir. İki serbest fonu inceliyor. Alfa Fonu, yıl başı varlıklar üzerinden %2 yönetim ücreti ve yönetim ücreti sonrası kârın %20'i kadar performans ücreti alan çok stratejili bir fon. Alfa yıla 100 milyon TL varlıkla başladı ve yıl içinde 18 milyon TL brüt getiri elde etti. Ücret şartları %5 eşik oranını (başlangıç varlıkları üzerinden 5 milyon TL) ve bir yüksek su işareti (high-water mark) içeriyor. Kaan eşik sert veya yumuşak olduğunda sonucun nasıl değiştiğini görmek istiyor.\nBeta Fonu iki alt portföy yönetiyor. Birincisinde yönetici, borsada işlem gören şirketlerin ihraç ettiği dönüştürülebilir tahvilleri alıyor ve altındaki payların hesaplanmış bir miktarını açığa satıyor; böylece hisse fiyat riski büyük ölçüde korunuyor. Alt portföy tahvil kuponunu, açığa satış iadesini ve oynaklıktan kazançları elde ediyor ama kredi marjları aniden genişlediğinde veya finansman kıtlaştığında kaybediyor. İkincisinde yönetici bir devralma hedefinin paylarını alıyor. Hedef 50,00 TL'den işlem görüyor, tamamı nakit teklif pay başına 55,00 TL; anlaşmanın 6 ayda kapanması bekleniyor.\nKaan ayrıca kullanmayı planladığı yayımlanmış serbest fon endeksinin gönüllü rapor veren fonlardan oluşturulduğunu ve fonların veri tabanına önceki performans geçmişleriyle eklendiğini öğreniyor.",
+      "tables": [
+        {
+          "title_en": "Exhibit 1: Fund Alfa fee terms (TRY million)",
+          "title_tr": "Gösterge 1: Alfa Fonu ücret şartları (milyon TL)",
+          "headers": [
+            "Item",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Beginning assets",
+              "100"
+            ],
+            [
+              "Gross profit",
+              "18"
+            ],
+            [
+              "Management fee (on beginning assets)",
+              "2%"
+            ],
+            [
+              "Incentive fee",
+              "20% of profit after management fee"
+            ],
+            [
+              "Hurdle rate",
+              "5% (TRY 5 million)"
+            ]
+          ]
+        }
+      ],
+      "question_ids": [
+        "L2-AI-04-v01-q1",
+        "L2-AI-04-v01-q2",
+        "L2-AI-04-v01-q3",
+        "L2-AI-04-v01-q4",
+        "L2-AI-04-v01-q5"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "L2-AI-04-v01-q1",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-04-v01",
+      "stem_en": "With a hard hurdle (incentive fee on profit above the hurdle only), the net return of Fund Alfa for the year is closest to:",
+      "stem_tr": "Sert eşikle (performans ücreti yalnızca eşiğin üzerindeki kârdan), Alfa Fonu'nun yıllık net getirisi en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "13.80%",
+          "tr": "13,80%",
+          "value": 13.8
+        },
+        {
+          "key": "B",
+          "en": "12.80%",
+          "tr": "12,80%",
+          "value": 12.8
+        },
+        {
+          "key": "C",
+          "en": "16.00%",
+          "tr": "16,00%",
+          "value": 16.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Management fee = 2.0. Profit after fee = 16.0. Incentive fee = 20% x (16.0 - 5.0) = 2.2. Net profit = 18.0 - 2.0 - 2.2 = 13.8, a net return of 13.8%.",
+      "explanation_tr": "Yönetim ücreti = 2,0. Ücret sonrası kâr = 16,0. Performans ücreti = %20 x (16,0 - 5,0) = 2,2. Net kâr = 18,0 - 2,0 - 2,2 = 13,8; net getiri %13,8.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the net return with a soft hurdle, where the incentive fee applies to all profit.",
+          "tr": "Bu, performans ücretinin tüm kâra uygulandığı yumuşak eşikle net getiridir."
+        },
+        "C": {
+          "en": "It deducts only the management fee and omits the incentive fee.",
+          "tr": "Yalnızca yönetim ücretini düşer, performans ücretini atlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find Alfa's net return with a hard hurdle.",
+          "tr": "Sert eşikle Alfa'nın net getirisi isteniyor."
+        },
+        {
+          "en": "Net = gross - management fee - incentive fee on the excess over the hurdle.",
+          "tr": "Net = brüt - yönetim ücreti - eşiği aşan kısım üzerinden performans ücreti."
+        },
+        {
+          "en": "18.0 - 2.0 - 0.20 x (16.0 - 5.0) = 18.0 - 2.0 - 2.2.",
+          "tr": "18,0 - 2,0 - 0,20 x (16,0 - 5,0) = 18,0 - 2,0 - 2,2."
+        },
+        {
+          "en": "Result: 13.80% of TRY 100 million.",
+          "tr": "Sonuç: 100 milyon TL üzerinden %13,80."
+        }
+      ],
+      "numeric": {
+        "expr": "(18-2.0-0.20*(18-2.0-5.0))/100*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "hurdle-rate",
+        "incentive-fee",
+        "management-fee",
+        "hard-hurdle",
+        "net-return"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-04-v01-q2",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-04-v01",
+      "stem_en": "With a soft hurdle, the incentive fee paid by Fund Alfa (TRY million) is closest to:",
+      "stem_tr": "Yumuşak eşikle Alfa Fonu'nun ödediği performans ücreti (milyon TL) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.20",
+          "tr": "2,20",
+          "value": 2.2
+        },
+        {
+          "key": "B",
+          "en": "3.20",
+          "tr": "3,20",
+          "value": 3.2
+        },
+        {
+          "key": "C",
+          "en": "3.60",
+          "tr": "3,60",
+          "value": 3.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The 18% gross return beats the 5% hurdle, so the fee applies to all profit after the management fee: 20% x 16.0 = 3.20. The net return is 12.8%.",
+      "explanation_tr": "%18'lik brüt getiri %5 eşiği aştığı için ücret yönetim ücreti sonrası tüm kâra uygulanır: %20 x 16,0 = 3,20. Net getiri %12,8.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the fee under a hard hurdle, applied only above the 5% hurdle.",
+          "tr": "Bu, yalnızca %5 eşiğin üzerine uygulanan sert eşik ücretidir."
+        },
+        "C": {
+          "en": "It applies the 20% to the gross profit of 18 before the management fee.",
+          "tr": "%20'yi yönetim ücreti öncesi 18'lik brüt kâra uygular."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the incentive fee with a soft hurdle.",
+          "tr": "Yumuşak eşikle performans ücreti isteniyor."
+        },
+        {
+          "en": "If the hurdle is beaten, the fee applies to all profit after the management fee.",
+          "tr": "Eşik aşılırsa ücret, yönetim ücreti sonrası kârın tamamına uygulanır."
+        },
+        {
+          "en": "20% x (18.0 - 2.0).",
+          "tr": "%20 x (18,0 - 2,0)."
+        },
+        {
+          "en": "Result: 3.20 million.",
+          "tr": "Sonuç: 3,20 milyon."
+        }
+      ],
+      "numeric": {
+        "expr": "0.20*(18-2.0)"
+      },
+      "vocab_ids": [
+        "soft-hurdle",
+        "hurdle-rate",
+        "incentive-fee",
+        "management-fee",
+        "gross-return"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-04-v01-q3",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-04-v01",
+      "stem_en": "Beta's first sleeve (long convertible bonds, short underlying shares) is best classified as which hedge fund strategy, and what is its main risk?",
+      "stem_tr": "Beta'nın birinci alt portföyü (uzun dönüştürülebilir tahvil, kısa altındaki pay) hangi serbest fon stratejisi olarak sınıflandırılır ve ana riski nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Global macro; the main risk is a change in central bank policy",
+          "tr": "Küresel makro; ana risk merkez bankası politikasında değişikliktir"
+        },
+        {
+          "key": "B",
+          "en": "Event-driven; the main risk is that a merger fails",
+          "tr": "Olay güdümlü; ana risk bir birleşmenin başarısız olmasıdır"
+        },
+        {
+          "key": "C",
+          "en": "Relative value (convertible arbitrage); the main risk is wider credit spreads and tighter financing",
+          "tr": "Göreli değer (dönüştürülebilir tahvil arbitrajı); ana risk genişleyen kredi marjları ve sıkılaşan finansmandır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Buying the convertible and shorting the stock exploits a pricing gap between related securities, which is relative value. The position loses when credit spreads widen or leverage is cut.",
+      "explanation_tr": "Dönüştürülebilir tahvili alıp payı açığa satmak ilişkili menkul kıymetler arasındaki fiyat farkından yararlanır; bu göreli değerdir. Kredi marjları genişlediğinde veya kaldıraç azaltıldığında pozisyon kaybeder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Global macro takes directional views on rates, currencies and commodities, not a hedged position within one issuer's securities.",
+          "tr": "Küresel makro faiz, döviz ve emtiada yönlü görüş alır; tek bir ihraççının menkul kıymetleri içinde korunmuş pozisyon almaz."
+        },
+        "B": {
+          "en": "Merger failure is the risk of the second sleeve, not of a hedged convertible bond position.",
+          "tr": "Birleşmenin bozulması ikinci alt portföyün riskidir; korunmuş dönüştürülebilir tahvil pozisyonunun değil."
+        }
+      },
+      "vocab_ids": [
+        "relative-value",
+        "convertible-arbitrage",
+        "event-driven",
+        "global-macro",
+        "hedge-fund"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-04-v01-q4",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "set_id": "L2-AI-04-v01",
+      "stem_en": "For Beta's second sleeve, the annualized return from the deal spread (compounded, assuming the deal closes in 6 months) is closest to:",
+      "stem_tr": "Beta'nın ikinci alt portföyü için anlaşma farkından yıllıklandırılmış getiri (bileşik, anlaşmanın 6 ayda kapandığı varsayımıyla) en yakın şunlardır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "21.0%",
+          "tr": "21,0%",
+          "value": 21.0
+        },
+        {
+          "key": "B",
+          "en": "10.0%",
+          "tr": "10,0%",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "20.0%",
+          "tr": "20,0%",
+          "value": 20.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Deal spread = (55.00 - 50.00)/50.00 = 10.0% over 6 months. Annualized = 1.10^2 - 1 = 21.0%. This return is earned only if the deal closes; if it fails, the target price can fall sharply.",
+      "explanation_tr": "Anlaşma farkı = (55,00 - 50,00)/50,00 = 6 ayda %10,0. Yıllık = 1,10^2 - 1 = %21,0. Bu getiri yalnızca anlaşma kapanırsa kazanılır; bozulursa hedef fiyatı sert düşebilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "It reports the 6-month spread without annualizing it.",
+          "tr": "6 aylık farkı yıllıklandırmadan bildirir."
+        },
+        "C": {
+          "en": "It annualizes by simple multiplication (2 x 10%) rather than by compounding.",
+          "tr": "Bileşik yerine basit çarpmayla yıllıklandırır (2 x %10)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "Find the annualized deal return.",
+          "tr": "Yıllıklandırılmış anlaşma getirisi isteniyor."
+        },
+        {
+          "en": "Spread = offer/price - 1; annualize by compounding.",
+          "tr": "Fark = teklif/fiyat - 1; bileşikle yıllıklandır."
+        },
+        {
+          "en": "1.10^(12/6) - 1 = 1.21 - 1.",
+          "tr": "1,10^(12/6) - 1 = 1,21 - 1."
+        },
+        {
+          "en": "Result: 21.0%.",
+          "tr": "Sonuç: %21,0."
+        }
+      ],
+      "numeric": {
+        "expr": "((55.0/50.0)**(12/6)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "merger-arbitrage",
+        "deal-spread",
+        "event-driven",
+        "annualized",
+        "acquisition"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "L2-AI-04-v01-q5",
+      "level": "L2",
+      "topic": "AI",
+      "module_id": "AI-04",
+      "los_id": "AI-04-set",
+      "curriculum_year": 2027,
+      "type": "item_set",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "set_id": "L2-AI-04-v01",
+      "stem_en": "Kaan's concern about the hedge fund index built from voluntary reports and back-filled histories is best described as:",
+      "stem_tr": "Kaan'ın gönüllü raporlardan ve geriye dönük doldurulmuş geçmişlerden oluşan serbest fon endeksine ilişkin kaygısı en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Look-ahead bias in the incentive fees, which makes returns look worse",
+          "tr": "Performans ücretlerinde ileriye bakma yanlılığı; getiriler daha kötü görünür"
+        },
+        {
+          "key": "B",
+          "en": "Backfill and survivorship bias, which make index returns look better than the experience of an actual investor",
+          "tr": "Endeks getirilerini gerçek bir yatırımcının deneyiminden daha iyi gösteren geriye dönük doldurma ve hayatta kalma yanlılığı"
+        },
+        {
+          "key": "C",
+          "en": "Liquidity bias, which means the index contains only daily-dealing funds",
+          "tr": "Likidite yanlılığı; endeks yalnızca günlük işlem yapan fonları içerir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Funds that report voluntarily tend to be successful (self-selection), failed funds drop out (survivorship), and adding past returns when a fund joins the database (backfill) inflates the track record.",
+      "explanation_tr": "Gönüllü rapor veren fonlar başarılı olma eğilimindedir (kendi kendine seçim), başarısız fonlar veri tabanından çıkar (hayatta kalma) ve fon veri tabanına katılırken geçmiş getirilerin eklenmesi (geriye dönük doldurma) performans geçmişini şişirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The biases in voluntary databases flatter returns rather than hurt them, and they do not arise from the incentive fees.",
+          "tr": "Gönüllü veri tabanlarındaki yanlılıklar getirileri kötüleştirmez, iyileştirir; ayrıca performans ücretlerinden kaynaklanmaz."
+        },
+        "C": {
+          "en": "The issue is selective reporting and backfilled histories, not daily dealing; hedge funds typically have redemption restrictions.",
+          "tr": "Sorun seçici raporlama ve geriye dönük doldurulmuş geçmişlerdir, günlük işlem değil; serbest fonların genellikle itfa kısıtları vardır."
+        }
+      },
+      "vocab_ids": [
+        "backfill-bias",
+        "survivorship-bias",
+        "hedge-fund",
+        "high-water-mark",
+        "redemption"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
