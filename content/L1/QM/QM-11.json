@@ -1,0 +1,388 @@
+{
+  "module_id": "QM-11",
+  "lesson": {
+    "id": "QM-11-lesson",
+    "level": "L1",
+    "topic": "QM",
+    "module_id": "QM-11",
+    "los_ids": [
+      "QM-11-a"
+    ],
+    "curriculum_year": 2027,
+    "title_en": "Introduction to Financial Data Science",
+    "title_tr": "Finansal Veri Bilimine Giriş",
+    "sections": [
+      {
+        "kind": "intuition",
+        "heading_en": "Why finance now uses data science",
+        "heading_tr": "Finans neden artık veri bilimi kullanıyor",
+        "en": "Every day a Turkish bank receives millions of card payments, a stock exchange records billions of order messages, and companies publish disclosures on the Public Disclosure Platform (KAP) in text. People cannot read all of it. Computers can, if we teach them to find patterns. Data science is the set of methods for doing that: collecting data, cleaning it, building models that learn from it, and checking whether the results can be trusted. In investment management it is used to forecast, to classify, to read text and to automate decisions.",
+        "tr": "Bir Türk bankası her gün milyonlarca kart ödemesi alır, bir borsa milyarlarca emir mesajı kaydeder ve şirketler Kamuyu Aydınlatma Platformu'nda (KAP) metin halinde açıklamalar yayımlar. İnsanlar hepsini okuyamaz. Bilgisayarlar, kalıpları bulmayı öğretirsek okuyabilir. Veri bilimi bunu yapmanın yöntemleridir: veriyi toplamak, temizlemek, ondan öğrenen modeller kurmak ve sonuçlara güvenilip güvenilemeyeceğini denetlemek. Yatırım yönetiminde tahmin etmek, sınıflandırmak, metin okumak ve kararları otomatikleştirmek için kullanılır.",
+        "key_terms": [
+          "data science",
+          "fintech",
+          "big data"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Fintech and big data",
+        "heading_tr": "Fintek ve büyük veri",
+        "en": "Fintech means technology used to deliver or improve financial services: robo-advisers, algorithmic trading, payment systems, online lending and risk analytics. Big data refers to datasets that are too large or complex for traditional tools. It is commonly described by the three or four Vs: volume (a very large amount of data), velocity (the speed at which data arrive), variety (structured numbers, text, images and audio) and veracity (the reliability and quality of the data). Alternative data, such as satellite images of shopping-centre car parks, web traffic, card spending and social media text, are non-traditional sources that analysts use next to financial statements and prices.",
+        "tr": "Fintek, finansal hizmetleri sunmak veya iyileştirmek için kullanılan teknolojidir: robo danışmanlar, algoritmik işlem, ödeme sistemleri, çevrimiçi kredi ve risk analitiği. Büyük veri, geleneksel araçlar için çok büyük veya karmaşık veri kümelerini anlatır. Genellikle üç veya dört V ile tanımlanır: hacim (çok büyük veri miktarı), hız (verinin geliş hızı), çeşitlilik (yapılandırılmış sayılar, metin, görüntü ve ses) ve doğruluk (verinin güvenilirliği ve kalitesi). Alışveriş merkezi otoparklarının uydu görüntüleri, web trafiği, kart harcamaları ve sosyal medya metni gibi alternatif veriler, analistlerin finansal tablolar ve fiyatların yanında kullandığı geleneksel olmayan kaynaklardır.",
+        "key_terms": [
+          "fintech",
+          "big data",
+          "volume",
+          "velocity",
+          "variety",
+          "veracity",
+          "alternative data"
+        ]
+      },
+      {
+        "kind": "definition",
+        "heading_en": "Machine learning and AI",
+        "heading_tr": "Makine öğrenmesi ve yapay zekâ",
+        "en": "Machine learning (ML) lets a model learn patterns from data instead of following fixed rules. In supervised learning the data have labels (for example 'defaulted' or 'did not default') and the model learns to predict them; regression predicts a number and classification predicts a category. In unsupervised learning there are no labels and the model finds structure, such as clusters of similar customers. Reinforcement learning learns by trial and reward. Deep learning uses neural networks with many layers and is strong on images, speech and text. Natural language processing (NLP) turns text into data. Large language models (LLMs) are very large neural networks trained on huge text collections to predict the next word; they can summarize, translate and answer questions.",
+        "tr": "Makine öğrenmesi (ML), bir modelin sabit kurallar izlemek yerine veriden kalıpları öğrenmesini sağlar. Denetimli öğrenmede verinin etiketleri vardır (örneğin 'temerrüde düştü' veya 'düşmedi') ve model bunları tahmin etmeyi öğrenir; regresyon bir sayıyı, sınıflandırma bir kategoriyi tahmin eder. Denetimsiz öğrenmede etiket yoktur ve model benzer müşteri kümeleri gibi yapıyı bulur. Pekiştirmeli öğrenme deneme ve ödülle öğrenir. Derin öğrenme çok katmanlı sinir ağları kullanır ve görüntü, konuşma ve metinde güçlüdür. Doğal dil işleme (NLP) metni veriye çevirir. Büyük dil modelleri (LLM), devasa metin koleksiyonlarıyla bir sonraki kelimeyi tahmin etmek üzere eğitilmiş çok büyük sinir ağlarıdır; özetleyebilir, çevirebilir ve soru yanıtlayabilir.",
+        "key_terms": [
+          "machine learning",
+          "supervised learning",
+          "unsupervised learning",
+          "deep learning",
+          "natural language processing",
+          "large language model"
+        ]
+      },
+      {
+        "kind": "example",
+        "heading_en": "Applications in investment management",
+        "heading_tr": "Yatırım yönetimindeki uygulamalar",
+        "en": "A bank trains a supervised model on past loan files with the label 'defaulted' to score new applicants for credit. An asset manager uses NLP to score the tone of KAP disclosures and earnings-call transcripts and to flag unusual wording. A portfolio team uses unsupervised clustering to group shares by behaviour rather than by sector. A risk team uses ML to spot unusual transactions (fraud or market abuse). An LLM drafts a first summary of a long annual report, and an analyst then checks it against the source. Trading firms use algorithms to split large orders and to react to news in milliseconds.",
+        "tr": "Bir banka, yeni başvuru sahiplerini puanlamak için geçmiş kredi dosyaları üzerinde 'temerrüde düştü' etiketiyle denetimli bir model eğitir. Bir portföy yöneticisi, KAP açıklamalarının ve bilanço toplantısı metinlerinin tonunu puanlamak ve olağandışı ifadeleri işaretlemek için NLP kullanır. Bir portföy ekibi payları sektöre göre değil davranışa göre gruplamak için denetimsiz kümeleme kullanır. Bir risk ekibi olağandışı işlemleri (dolandırıcılık veya piyasa suistimali) yakalamak için ML kullanır. Bir LLM uzun bir faaliyet raporunun ilk özetini hazırlar ve analist bunu kaynakla karşılaştırarak kontrol eder. İşlem şirketleri büyük emirleri bölmek ve haberlere milisaniyeler içinde tepki vermek için algoritma kullanır.",
+        "key_terms": [
+          "natural language processing"
+        ]
+      },
+      {
+        "kind": "traps",
+        "heading_en": "Limits and traps",
+        "heading_tr": "Sınırlar ve tuzaklar",
+        "en": "Models are only as good as the data. Overfitting happens when a model learns noise in the training data: it fits the past very well but performs badly on new data, so always test out of sample. Biased or unrepresentative data produce biased results. Complex models such as deep neural networks can be hard to explain (the black-box problem), which matters for regulators and clients. LLMs can produce fluent but false statements (hallucinations) and should not be treated as a source of facts without checking. Data privacy and security rules, such as personal data protection law, also limit what data can be used. Correlation found in data is not proof of cause.",
+        "tr": "Modeller verileri kadar iyidir. Aşırı uyum (overfitting), modelin eğitim verisindeki gürültüyü öğrenmesidir: geçmişe çok iyi uyar ama yeni veride kötü performans verir; bu yüzden her zaman örneklem dışı test yapılmalıdır. Taraflı veya temsil gücü zayıf veri taraflı sonuç üretir. Derin sinir ağları gibi karmaşık modellerin açıklanması zor olabilir (kara kutu sorunu); bu düzenleyiciler ve müşteriler için önemlidir. LLM'ler akıcı ama yanlış ifadeler (halüsinasyon) üretebilir ve kontrol edilmeden olgu kaynağı sayılmamalıdır. Kişisel verilerin korunması mevzuatı gibi veri gizliliği ve güvenliği kuralları da hangi verinin kullanılabileceğini sınırlar. Veride bulunan korelasyon nedenselliğin kanıtı değildir.",
+        "key_terms": [
+          "overfitting",
+          "black box",
+          "hallucination"
+        ]
+      }
+    ],
+    "summary_en": "Fintech uses big data (volume, velocity, variety, veracity) and machine learning (supervised, unsupervised, reinforcement, deep learning, NLP, LLMs) in credit scoring, text analysis, risk monitoring and trading. Overfitting, biased data, black-box models and LLM hallucinations are the main limits, so models need out-of-sample testing and human checks.",
+    "summary_tr": "Fintek büyük veriyi (hacim, hız, çeşitlilik, doğruluk) ve makine öğrenmesini (denetimli, denetimsiz, pekiştirmeli, derin öğrenme, NLP, LLM) kredi puanlama, metin analizi, risk izleme ve işlemde kullanır. Aşırı uyum, taraflı veri, kara kutu modeller ve LLM halüsinasyonları başlıca sınırlardır; bu yüzden modellerin örneklem dışı testi ve insan kontrolü gerekir.",
+    "common_traps_tr": [
+      "Etiketli veriyle öğrenmeyi denetimsiz öğrenme sanmak.",
+      "Örneklem içi yüksek doğruluğu modelin iyi olduğunun kanıtı saymak (aşırı uyum).",
+      "LLM çıktısını kaynakla karşılaştırmadan olgu kabul etmek.",
+      "Karmaşık modelin açıklanabilirlik ve yanlılık sorununu göz ardı etmek.",
+      "Büyük veride yalnızca hacmi düşünmek; hız, çeşitlilik ve doğruluk da önemlidir."
+    ],
+    "vocab_ids": [
+      "data-science",
+      "fintech",
+      "alternative-data",
+      "machine-learning",
+      "supervised-learning",
+      "unsupervised-learning",
+      "deep-learning",
+      "natural-language-processing",
+      "large-language-model",
+      "overfitting",
+      "hallucination",
+      "black-box",
+      "out-of-sample"
+    ],
+    "spk_link": {
+      "status": "new",
+      "note_tr": "Büyük veri, makine öğrenmesi ve büyük dil modelleri SPK Düzey 3 programında yer almaz; tamamen yeni bir konudur."
+    },
+    "source_basis": "original",
+    "verified": false
+  },
+  "questions": [
+    {
+      "id": "QM-11-a-q01",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-11",
+      "los_id": "QM-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is NOT one of the commonly cited characteristics of big data?",
+      "stem_tr": "Aşağıdakilerden hangisi büyük verinin yaygın olarak anılan özelliklerinden biri DEĞİLDİR?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Verification of every record by an auditor",
+          "tr": "Her kaydın bir denetçi tarafından doğrulanması"
+        },
+        {
+          "key": "B",
+          "en": "Velocity of data arrival",
+          "tr": "Verinin geliş hızı"
+        },
+        {
+          "key": "C",
+          "en": "Variety of data types",
+          "tr": "Veri türlerinin çeşitliliği"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Big data is described by volume, velocity, variety (and veracity). Auditor verification of each record is not a defining feature.",
+      "explanation_tr": "Büyük veri hacim, hız, çeşitlilik (ve doğruluk) ile tanımlanır. Her kaydın denetçi tarafından doğrulanması tanımlayıcı bir özellik değildir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Velocity is one of the Vs: data arrive very fast.",
+          "tr": "Hız V'lerden biridir: veri çok hızlı gelir."
+        },
+        "C": {
+          "en": "Variety is one of the Vs: numbers, text, images and audio.",
+          "tr": "Çeşitlilik V'lerden biridir: sayı, metin, görüntü ve ses."
+        }
+      },
+      "vocab_ids": [
+        "velocity",
+        "variety",
+        "characteristic",
+        "not-question"
+      ],
+      "pattern_ids": [
+        "not-question"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-11-a-q02",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-11",
+      "los_id": "QM-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A bank has ten years of loan files, each labeled 'defaulted' or 'repaid', and wants a model that predicts default for new applicants. This task is best described as:",
+      "stem_tr": "Bir bankanın her biri 'temerrüde düştü' veya 'geri ödedi' etiketli on yıllık kredi dosyası vardır ve yeni başvuru sahipleri için temerrüdü tahmin eden bir model istemektedir. Bu görev en iyi nasıl tanımlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "unsupervised learning (clustering)",
+          "tr": "denetimsiz öğrenme (kümeleme)"
+        },
+        {
+          "key": "B",
+          "en": "supervised learning (classification)",
+          "tr": "denetimli öğrenme (sınıflandırma)"
+        },
+        {
+          "key": "C",
+          "en": "reinforcement learning",
+          "tr": "pekiştirmeli öğrenme"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Labeled outcomes and a category to predict (default or repaid) define supervised classification.",
+      "explanation_tr": "Etiketli sonuçlar ve tahmin edilecek bir kategori (temerrüt veya geri ödeme) denetimli sınıflandırmayı tanımlar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Unsupervised learning works without labels; here the labels exist.",
+          "tr": "Denetimsiz öğrenme etiket olmadan çalışır; burada etiketler vardır."
+        },
+        "C": {
+          "en": "Reinforcement learning learns from rewards through trial and error, not from labeled historical examples.",
+          "tr": "Pekiştirmeli öğrenme etiketli geçmiş örneklerden değil deneme yanılma ve ödülle öğrenir."
+        }
+      },
+      "vocab_ids": [
+        "supervised-learning",
+        "classification",
+        "label",
+        "default",
+        "best-describes"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-11-a-q03",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-11",
+      "los_id": "QM-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A model predicts next-month share returns with 98% accuracy on the data used to build it but only slightly better than chance on new data. The most likely explanation is:",
+      "stem_tr": "Bir model, kurulurken kullanılan veride gelecek ay pay getirilerini %98 doğrulukla tahmin ediyor ama yeni veride rastlantıdan ancak biraz iyi. En olası açıklama hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "underfitting because the model is too complex",
+          "tr": "model çok karmaşık olduğu için yetersiz uyum"
+        },
+        {
+          "key": "B",
+          "en": "the model has learned a true and stable relationship",
+          "tr": "modelin gerçek ve istikrarlı bir ilişki öğrenmiş olması"
+        },
+        {
+          "key": "C",
+          "en": "overfitting to noise in the training data",
+          "tr": "eğitim verisindeki gürültüye aşırı uyum"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Excellent in-sample but poor out-of-sample performance is the classic sign of overfitting; the fix is out-of-sample testing and simpler models.",
+      "explanation_tr": "Örneklem içinde mükemmel ama örneklem dışında kötü performans aşırı uyumun klasik işaretidir; çözüm örneklem dışı test ve daha basit modellerdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Underfitting means poor performance even on the training data.",
+          "tr": "Yetersiz uyum eğitim verisinde bile kötü performans demektir."
+        },
+        "B": {
+          "en": "A true relationship would carry over to new data.",
+          "tr": "Gerçek bir ilişki yeni veriye de taşınırdı."
+        }
+      },
+      "vocab_ids": [
+        "overfitting",
+        "out-of-sample",
+        "noise",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-11-a-q04",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-11",
+      "los_id": "QM-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst uses a large language model to summarize a long disclosure on the Public Disclosure Platform. Which practice is most appropriate?",
+      "stem_tr": "Bir analist Kamuyu Aydınlatma Platformu'ndaki uzun bir açıklamayı özetlemek için büyük dil modeli kullanıyor. Hangi uygulama en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Use the summary as a first draft and check key figures against the original document.",
+          "tr": "Özeti ilk taslak olarak kullanmak ve temel rakamları orijinal belgeyle karşılaştırmak."
+        },
+        {
+          "key": "B",
+          "en": "Rely on the summary alone, because LLMs only repeat the source.",
+          "tr": "Yalnızca özete güvenmek, çünkü LLM'ler yalnızca kaynağı tekrarlar."
+        },
+        {
+          "key": "C",
+          "en": "Avoid any use, because LLMs cannot process text.",
+          "tr": "Hiç kullanmamak, çünkü LLM'ler metin işleyemez."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "LLMs save time on first drafts, but because they can hallucinate, a human must verify the facts and numbers.",
+      "explanation_tr": "LLM'ler ilk taslakta zaman kazandırır ancak halüsinasyon görebildikleri için olgu ve rakamları bir insan doğrulamalıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "LLMs generate text and can add errors or invented details (hallucinations).",
+          "tr": "LLM'ler metin üretir ve hata veya uydurma ayrıntı (halüsinasyon) ekleyebilir."
+        },
+        "C": {
+          "en": "Summarizing text is a core strength of LLMs; the issue is verification, not ability.",
+          "tr": "Metin özetlemek LLM'lerin temel gücüdür; sorun yeteneğin değil doğrulamanın eksikliğidir."
+        }
+      },
+      "vocab_ids": [
+        "large-language-model",
+        "hallucination",
+        "summary",
+        "verify",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": false
+    },
+    {
+      "id": "QM-11-a-q05",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-11",
+      "los_id": "QM-11-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A bank replaces its scorecard with a deep neural network for credit decisions. A regulator asks the bank to explain individual rejections. Which concern does this most clearly illustrate?",
+      "stem_tr": "Bir banka kredi kararları için puan kartını derin sinir ağıyla değiştiriyor. Bir düzenleyici bankadan tek tek ret kararlarını açıklamasını istiyor. Bu durum en açık biçimde hangi endişeyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The model cannot use labeled historical data.",
+          "tr": "Modelin etiketli geçmiş verileri kullanamaması."
+        },
+        {
+          "key": "B",
+          "en": "The model may be a black box whose decisions are hard to interpret and audit for bias.",
+          "tr": "Modelin, kararları yorumlanması ve yanlılık açısından denetlenmesi zor bir kara kutu olabilmesi."
+        },
+        {
+          "key": "C",
+          "en": "Deep learning always has lower accuracy than a simple scorecard.",
+          "tr": "Derin öğrenmenin her zaman basit puan kartından düşük doğrulukta olması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Complex models can be opaque. Regulators and clients need explanations, and hidden bias in past data can be copied into decisions.",
+      "explanation_tr": "Karmaşık modeller opak olabilir. Düzenleyiciler ve müşteriler açıklama ister ve geçmiş verideki gizli yanlılık kararlara taşınabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Neural networks can use labeled data; that is how supervised models are trained.",
+          "tr": "Sinir ağları etiketli veriyi kullanabilir; denetimli modeller böyle eğitilir."
+        },
+        "C": {
+          "en": "Accuracy is often higher; the problem is explainability, not accuracy.",
+          "tr": "Doğruluk çoğu zaman daha yüksektir; sorun doğruluk değil açıklanabilirliktir."
+        }
+      },
+      "vocab_ids": [
+        "black-box",
+        "neural-network",
+        "regulator",
+        "bias",
+        "interpret",
+        "most-consistent"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": false
+    }
+  ]
+}
