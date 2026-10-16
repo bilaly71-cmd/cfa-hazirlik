@@ -2,15 +2,12 @@ import { router } from 'expo-router';
 import { useMemo } from 'react';
 import { View } from 'react-native';
 
-import { Bar, Button, Card, Chip, H, Row, Screen, T } from '@/components/ui';
+import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
 import { questions, topicName, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { dailyPlan, daysUntil, localDay, readinessScore, recommendTrLevel, streak, weakTopics } from '@/lib/scoring';
-import { questionOfDay } from '@/lib/session';
 import { dueCards } from '@/lib/srs';
 import { actions, useStore } from '@/state/store';
-
-const TR_LABEL = ['0 · Sınav modu', '1 · Yalnızca popup', '2 · Çevirince', '3 · Her yerde'];
 
 export default function Today() {
   const c = useColors();
@@ -26,7 +23,6 @@ export default function Today() {
   const score = readinessScore(s.attempts, weights);
   const weak = weakTopics(s.attempts, weights, 3);
   const rec = recommendTrLevel(s.attempts, s.settings.trLevel);
-  const qod = questionOfDay(today);
   const st = streak(s.studyDays, today);
   const goal = Math.max(s.settings.dailyGoal, 1);
 
@@ -94,21 +90,9 @@ export default function Today() {
         </T>
       </Card>
 
-      <Button kind="secondary" icon="🚌" title="Otobüs modu — 5 soru, 5 dakika" onPress={() => router.push({ pathname: '/quiz', params: { mode: 'bus' } })} />
 
       <Button kind="secondary" icon="🎮" title="İngilizce oyunu — 2 dakikada kelime" onPress={() => router.push('/english')} />
 
-      {qod ? (
-        <>
-          <H>Günün sorusu</H>
-          <Card onPress={() => router.push({ pathname: '/quiz', params: { mode: 'ids', ids: qod.id } })}>
-            <Row style={{ marginBottom: 6 }}>
-              <Chip label={topicName(qod.topic)} />
-            </Row>
-            <T numberOfLines={3}>{qod.stem_en}</T>
-          </Card>
-        </>
-      ) : null}
 
       <H>Hazırlık</H>
       <Card onPress={() => router.push('/stats')}>
@@ -129,18 +113,7 @@ export default function Today() {
         ) : null}
       </Card>
 
-      <Card onPress={() => router.push('/settings')}>
-        <Row style={{ justifyContent: 'space-between' }}>
-          <T>Türkçe destek seviyesi</T>
-          <Chip label={TR_LABEL[s.settings.trLevel]} />
-        </Row>
-      </Card>
 
-      {!questions.length ? (
-        <Card style={{ backgroundColor: c.warnBg }}>
-          <T size={14}>İçerik paketleri hazırlanıyor: doğrulanan sorular geldikçe burada görünecek.</T>
-        </Card>
-      ) : null}
     </Screen>
   );
 }
