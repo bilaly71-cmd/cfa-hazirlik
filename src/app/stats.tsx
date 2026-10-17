@@ -1,7 +1,7 @@
-import { Stack } from 'expo-router';
+import { Stack, router } from 'expo-router';
 import { useMemo } from 'react';
 
-import { Bar, Card, H, Row, Screen, T } from '@/components/ui';
+import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
 import { questions, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { daysUntil, localDay, readinessScore, streak, topicStats } from '@/lib/scoring';
@@ -71,10 +71,19 @@ export default function Stats() {
           ] as const
         ).map(([k, label]) => {
           const n = s.attempts.filter((a) => a.reason === k).length;
+          // Şu an hâlâ yanlış olan ve en son bu nedenle etiketlenen sorular
+          const last = new Map<string, (typeof s.attempts)[number]>();
+          for (const a of s.attempts) last.set(a.qid, a);
+          const ids = [...last.values()].filter((a) => !a.correct && a.reason === k).map((a) => a.qid);
           return (
-            <Row key={k} style={{ justifyContent: 'space-between' }}>
+            <Row key={k} style={{ justifyContent: 'space-between', alignItems: 'center' }}>
               <T>{label}</T>
-              <T sub>{n}</T>
+              <Row>
+                <T sub>{n}</T>
+                {ids.length ? (
+                  <Button small kind="secondary" title={`${ids.length} soruyu çöz`} onPress={() => router.push({ pathname: '/quiz', params: { mode: 'ids', ids: ids.slice(0, 15).join(',') } })} />
+                ) : null}
+              </Row>
             </Row>
           );
         })}

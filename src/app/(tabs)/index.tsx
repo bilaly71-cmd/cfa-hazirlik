@@ -72,6 +72,19 @@ export default function Today() {
         </Card>
       ) : null}
 
+      <Button
+        icon="▶"
+        title={due.length ? `Başla — ${Math.min(due.length, 10)} tekrar kartı` : 'Başla — 5 soru, 3 dakika'}
+        onPress={() =>
+          due.length
+            ? router.push('/review')
+            : router.push({ pathname: '/quiz', params: focus ? { mode: 'topic', topic: focus.id, n: '5' } : { mode: 'daily', n: '5' } })
+        }
+      />
+      <T size={12} sub style={{ textAlign: 'center' }}>
+        Ne çalışacağını düşünme, başla. Kısa tur de sayılır; 5 soru bile seriyi sürdürür.
+      </T>
+
       <H>Kaç dakikan var?</H>
       <Row>
         {([[5, 3], [10, 7], [15, 10]] as const).map(([min, n]) => (

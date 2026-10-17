@@ -6,6 +6,7 @@ import { QuestionCard, type AnswerResult } from '@/components/question-card';
 import { Bar, Button, Card, Empty, Row, Screen, T } from '@/components/ui';
 import { questionById, topicName } from '@/content';
 import { useColors } from '@/hooks/use-theme';
+import { localDay, streak } from '@/lib/scoring';
 import { pickQuestions, type QuizMode } from '@/lib/session';
 import { gradeFromAnswer } from '@/lib/srs';
 import { actions, getState } from '@/state/store';
@@ -52,6 +53,9 @@ export default function Quiz() {
     const correct = results.filter((r) => r.correct).length;
     const avg = results.length ? Math.round(results.reduce((s, r) => s + r.seconds, 0) / results.length) : 0;
     const wrong = results.filter((r) => !r.correct).map((r) => r.qid);
+    const st = getState();
+    const todayDone = st.attempts.filter((a) => a.at.slice(0, 10) === localDay()).length;
+    const streakNow = Math.max(streak(st.studyDays, localDay()), 1);
     return (
       <Screen>
         <Stack.Screen options={{ title: 'Sonuç' }} />
@@ -66,6 +70,14 @@ export default function Quiz() {
             <Bar value={results.length ? (correct / results.length) * 100 : 0} color={c.good} />
           </View>
         </Card>
+        <Card style={{ backgroundColor: c.goodBg }}>
+          <T weight="700">
+            {correct === results.length && results.length ? 'Tam isabet! 🎯' : correct / Math.max(results.length, 1) >= 0.7 ? 'Güzel iş 👏' : 'Yanlışlar öğrenmenin parçası: onları şimdi gördün, sınavda artık tanıyacaksın. 💪'}
+          </T>
+          <T size={13} sub style={{ marginTop: 4 }}>
+            Bugün toplam {todayDone} soru · seri 🔥 {streakNow} gün. Kısa tur da sayılır: bir tur daha 5 soru, 3 dakika.
+          </T>
+        </Card>
         {wrong.length ? (
           <T sub style={{ marginBottom: 8 }}>
             Yanlış yaptığın {wrong.length} soru aralıklı tekrar listene eklendi.
@@ -75,6 +87,12 @@ export default function Quiz() {
           {wrong.length ? (
             <Button style={{ flex: 1 }} kind="secondary" title="Yanlışları tekrar çöz" onPress={() => router.replace({ pathname: '/quiz', params: { mode: 'ids', ids: wrong.join(',') } })} />
           ) : null}
+          <Button
+            style={{ flex: 1 }}
+            kind="secondary"
+            title="Bir tur daha (5)"
+            onPress={() => router.replace({ pathname: '/quiz', params: { mode: 'mixed', n: '5', ...(p.topic ? { topic: p.topic } : {}) } })}
+          />
           <Button style={{ flex: 1 }} title="Bitti" onPress={() => router.back()} />
         </Row>
       </Screen>
