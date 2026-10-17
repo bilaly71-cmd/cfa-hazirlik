@@ -38,6 +38,57 @@ export default function Stats() {
         </T>
       </Card>
 
+      <H>Bu hafta ve tempo</H>
+      <Card>
+        {(() => {
+          const day = (n: number) => {
+            const d = new Date(today + 'T12:00:00Z');
+            d.setUTCDate(d.getUTCDate() - n);
+            return d.toISOString().slice(0, 10);
+          };
+          const wk = (from: number, to: number) => s.attempts.filter((a) => a.at.slice(0, 10) <= day(from) && a.at.slice(0, 10) > day(to));
+          const thisW = wk(0, 7);
+          const prevW = wk(7, 14);
+          const acc = (xs: typeof thisW) => (xs.length ? Math.round((xs.filter((a) => a.correct).length / xs.length) * 100) : null);
+          const daysStudied = s.studyDays.filter((d) => d <= today && d > day(7)).length;
+          const perDay = thisW.length / 7;
+          const left = Math.max(daysUntil(s.settings.examDate) - 14, 1);
+          const unseen = Math.max(questions.length - seen, 0);
+          const need = Math.ceil(unseen / left);
+          const a1 = acc(thisW);
+          const a0 = acc(prevW);
+          return (
+            <>
+              <Row style={{ justifyContent: 'space-between' }}>
+                <T>Çalıştığın gün (son 7)</T>
+                <T weight="700">{daysStudied}/7</T>
+              </Row>
+              <Row style={{ justifyContent: 'space-between' }}>
+                <T>Çözülen soru</T>
+                <T weight="700">
+                  {thisW.length}
+                  {prevW.length ? ` (önceki hafta ${prevW.length})` : ''}
+                </T>
+              </Row>
+              <Row style={{ justifyContent: 'space-between' }}>
+                <T>Doğruluk</T>
+                <T weight="700">
+                  {a1 === null ? '—' : `%${a1}`}
+                  {a1 !== null && a0 !== null ? (a1 >= a0 ? ` ▲ (%${a0})` : ` ▼ (%${a0})`) : ''}
+                </T>
+              </Row>
+              <T size={13} sub style={{ marginTop: 8 }}>
+                {unseen === 0
+                  ? 'Tüm soruları en az bir kez gördün. Şimdi tekrar ve mock zamanı.'
+                  : perDay >= need
+                    ? `Tempo yeterli: günde ~${Math.round(perDay)} soru çözüyorsun, ${unseen} yeni soruyu bitirmek için günde ~${need} yeter.`
+                    : `Yeni soruları sınavdan 2 hafta öncesine kadar bitirmek için günde ~${need} soru gerekir (şu an ~${Math.round(perDay)}). Kısa turlar toplanır.`}
+              </T>
+            </>
+          );
+        })()}
+      </Card>
+
       <H>Konu bazında</H>
       {topics.map((t) => {
         const st = stats[t.id];
@@ -59,6 +110,22 @@ export default function Stats() {
           </Card>
         );
       })}
+
+      {(() => {
+        const miss = new Map<string, number>();
+        for (const a of s.attempts) if (!a.correct) miss.set(a.qid, (miss.get(a.qid) ?? 0) + 1);
+        const hard = [...miss].filter(([, n]) => n >= 2).map(([id]) => id);
+        if (!hard.length) return null;
+        return (
+          <>
+            <H>Takıldığın sorular</H>
+            <Card>
+              <T size={14}>{hard.length} soruyu 2 kez veya daha fazla yanlış yaptın. Bunlar en çok puan kazandıracak sorular: gerekçeyi bir kez daha oku.</T>
+              <Button style={{ marginTop: 8 }} title={`Bunları çöz (${Math.min(hard.length, 10)})`} onPress={() => router.push({ pathname: '/quiz', params: { mode: 'ids', ids: hard.slice(0, 10).join(',') } })} />
+            </Card>
+          </>
+        );
+      })()}
 
       <H>Yanlışların nedeni</H>
       <Card>

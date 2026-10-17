@@ -55,6 +55,8 @@ export default function Quiz() {
     const wrong = results.filter((r) => !r.correct).map((r) => r.qid);
     const st = getState();
     const todayDone = st.attempts.filter((a) => a.at.slice(0, 10) === localDay()).length;
+    const total = st.attempts.length;
+    const milestone = [50, 100, 250, 500, 1000, 1500, 2500].find((m) => total >= m && total - results.length < m);
     const streakNow = Math.max(streak(st.studyDays, localDay()), 1);
     return (
       <Screen>
@@ -75,7 +77,7 @@ export default function Quiz() {
             {correct === results.length && results.length ? 'Tam isabet! 🎯' : correct / Math.max(results.length, 1) >= 0.7 ? 'Güzel iş 👏' : 'Yanlışlar öğrenmenin parçası: onları şimdi gördün, sınavda artık tanıyacaksın. 💪'}
           </T>
           <T size={13} sub style={{ marginTop: 4 }}>
-            Bugün toplam {todayDone} soru · seri 🔥 {streakNow} gün. Kısa tur da sayılır: bir tur daha 5 soru, 3 dakika.
+            {milestone ? `🏅 ${milestone} soruya ulaştın! ` : ''}Bugün toplam {todayDone} soru · seri 🔥 {streakNow} gün. Kısa tur da sayılır: bir tur daha 5 soru, 3 dakika.
           </T>
         </Card>
         {wrong.length ? (
