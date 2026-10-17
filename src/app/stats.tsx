@@ -60,6 +60,29 @@ export default function Stats() {
         );
       })}
 
+      <H>Yanlışların nedeni</H>
+      <Card>
+        {(
+          [
+            ['know', 'Bilmiyordum'],
+            ['rush', 'Acele ettim'],
+            ['read', 'Yanlış okudum'],
+            ['calc', 'Hesap hatası'],
+          ] as const
+        ).map(([k, label]) => {
+          const n = s.attempts.filter((a) => a.reason === k).length;
+          return (
+            <Row key={k} style={{ justifyContent: 'space-between' }}>
+              <T>{label}</T>
+              <T sub>{n}</T>
+            </Row>
+          );
+        })}
+        <T size={12} sub style={{ marginTop: 6 }}>
+          “Yanlış okudum” yüksekse Soru kalıpları bölümüne bak; “Acele ettim” yüksekse zamanlı modda yavaşla.
+        </T>
+      </Card>
+
       <H>Türkçe destek seviyesine göre</H>
       <Card>
         {byLevel.map((b) => (

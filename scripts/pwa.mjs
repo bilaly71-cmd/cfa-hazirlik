@@ -56,7 +56,7 @@ const head = `
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="CFA" />
     <link rel="apple-touch-icon" href="${base}/apple-touch-icon.png" />
-    <script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('${base}/sw.js',{scope:'${base}/'})})}</script>`;
+    <script>if('serviceWorker' in navigator){var had=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had)location.reload()});addEventListener('load',function(){navigator.serviceWorker.register('${base}/sw.js',{scope:'${base}/'})})}</script>`;
 if (!html.includes('rel="manifest"')) html = html.replace('</head>', `${head}\n  </head>`);
 html = html.replace('<html lang="en">', '<html lang="tr">');
 fs.writeFileSync(indexPath, html);

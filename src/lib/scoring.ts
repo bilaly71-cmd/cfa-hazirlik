@@ -10,6 +10,8 @@ export type Attempt = {
   at: string; // ISO
   trLevel: TrLevel;
   mode?: string;
+  /** Yanlışın nedeni (kullanıcı etiketi): bilmiyordum / acele / okuma / hesap */
+  reason?: 'know' | 'rush' | 'read' | 'calc';
 };
 
 export type TrLevel = 0 | 1 | 2 | 3;

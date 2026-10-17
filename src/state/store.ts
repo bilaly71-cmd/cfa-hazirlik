@@ -129,6 +129,10 @@ export async function hydrate() {
   emit();
 }
 
+export function exportJson() {
+  return JSON.stringify(state);
+}
+
 export function getState() {
   return state;
 }
@@ -226,6 +230,28 @@ export const actions = {
       const p = s.patternDrills[patternId] ?? { correct: 0, total: 0 };
       return { ...s, patternDrills: { ...s.patternDrills, [patternId]: { correct: p.correct + (correct ? 1 : 0), total: p.total + 1 } } };
     });
+  },
+  tagAttempt(qid: string, reason: NonNullable<Attempt['reason']>) {
+    setState((s) => {
+      const i = [...s.attempts].reverse().findIndex((a) => a.qid === qid);
+      if (i < 0) return s;
+      const idx = s.attempts.length - 1 - i;
+      const attempts = s.attempts.slice();
+      attempts[idx] = { ...attempts[idx], reason };
+      return { ...s, attempts };
+    });
+  },
+  /** Yedekten yükle: geçerli bir v1 durum JSON'ı bekler; başarılıysa true. */
+  importState(json: string) {
+    try {
+      const d = JSON.parse(json) as Partial<AppState>;
+      if (d.version !== 1 || !Array.isArray(d.attempts) || typeof d.srs !== 'object' || typeof d.settings !== 'object') return false;
+      setState(() => ({ ...initialState(), ...d, settings: { ...initialState().settings, ...d.settings } }) as AppState);
+      flush();
+      return true;
+    } catch {
+      return false;
+    }
   },
   resetAll() {
     setState(() => initialState());

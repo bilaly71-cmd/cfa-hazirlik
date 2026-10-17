@@ -9,7 +9,7 @@ import { patterns, topicName, vocabById } from '@/content';
 import { Fonts } from '@/constants/theme';
 import { useColors } from '@/hooks/use-theme';
 import type { Question } from '@/lib/schema';
-import { useSettings } from '@/state/store';
+import { actions, useSettings } from '@/state/store';
 
 export type AnswerResult = { choice: string | null; correct: boolean; seconds: number };
 
@@ -149,6 +149,8 @@ function Feedback({ q, choice }: { q: Question; choice: string | null }) {
         </T>
       </Card>
 
+      {!correct ? <ReasonTag qid={q.id} /> : null}
+
       <T weight="700" style={{ marginTop: 6 }}>
         Açıklama
       </T>
@@ -243,6 +245,38 @@ function Feedback({ q, choice }: { q: Question; choice: string | null }) {
       <T size={12} sub style={{ marginTop: 10 }}>
         {topicName(q.topic)} · {q.module_id}
       </T>
+    </View>
+  );
+}
+
+const REASONS = [
+  ['know', 'Bilmiyordum'],
+  ['rush', 'Acele ettim'],
+  ['read', 'Yanlış okudum'],
+  ['calc', 'Hesap hatası'],
+] as const;
+
+/** Yanlışın nedeni: tek dokunuşla etiketle; istatistikte dağılımı görünür. */
+function ReasonTag({ qid }: { qid: string }) {
+  const [sel, setSel] = useState<string | null>(null);
+  return (
+    <View style={{ marginTop: 6 }}>
+      <T size={13} sub>
+        Neden yanlış yaptın?
+      </T>
+      <Row wrap style={{ marginTop: 4 }}>
+        {REASONS.map(([k, label]) => (
+          <Chip
+            key={k}
+            label={label}
+            active={sel === k}
+            onPress={() => {
+              setSel(k);
+              actions.tagAttempt(qid, k);
+            }}
+          />
+        ))}
+      </Row>
     </View>
   );
 }

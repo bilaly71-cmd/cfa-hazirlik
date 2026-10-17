@@ -22,6 +22,7 @@ export default function Today() {
   const todayCount = s.attempts.filter((a) => a.at.slice(0, 10) === today).length;
   const score = readinessScore(s.attempts, weights);
   const weak = weakTopics(s.attempts, weights, 3);
+  const focus = s.attempts.length >= 20 ? weak[0] : undefined; // en çok puan getirecek zayıf konu
   const rec = recommendTrLevel(s.attempts, s.settings.trLevel);
   const st = streak(s.studyDays, today);
   const goal = Math.max(s.settings.dailyGoal, 1);
@@ -83,7 +84,12 @@ export default function Today() {
             disabled={!due.length}
             onPress={() => router.push('/review')}
           />
-          <Button style={{ flex: 1, minWidth: 140 }} kind="secondary" title="10 soru çöz" onPress={() => router.push({ pathname: '/quiz', params: { mode: 'daily', n: '10' } })} />
+          <Button
+            style={{ flex: 1, minWidth: 140 }}
+            kind="secondary"
+            title={focus ? `10 soru: ${focus.id}` : '10 soru çöz'}
+            onPress={() => router.push({ pathname: '/quiz', params: focus ? { mode: 'topic', topic: focus.id, n: '10' } : { mode: 'daily', n: '10' } })}
+          />
         </Row>
         <T size={12} sub style={{ marginTop: 6 }}>
           Tekrar: {dueQ} soru · {dueV} kelime

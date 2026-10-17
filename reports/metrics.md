@@ -1,4 +1,4 @@
-# İçerik metrikleri (2026-10-16)
+# İçerik metrikleri (2026-10-17)
 
 | Konu | Soru | Doğrulanmış | Oran | LOS (≥5 soru) | Ders (doğr.) | Kelime |
 |---|---|---|---|---|---|---|

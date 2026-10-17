@@ -7,7 +7,8 @@ import { BiText } from '@/components/bitext';
 import { useColors, useFont } from '@/hooks/use-theme';
 import { recommendTrLevel, type TrLevel } from '@/lib/scoring';
 import { speakEn } from '@/lib/speech';
-import { actions, useStore } from '@/state/store';
+import { exportFile } from '@/lib/export-file';
+import { actions, exportJson, useStore } from '@/state/store';
 
 const LEVELS: { l: TrLevel; title: string; sub: string }[] = [
   { l: 3, title: 'Seviye 3 — Türkçe her yerde', sub: 'İngilizce metnin altında Türkçesi hep görünür.' },
@@ -24,6 +25,8 @@ export default function Settings() {
   const rec = recommendTrLevel(attempts, st.trLevel);
   const [date, setDate] = useState(st.examDate);
   const [confirm, setConfirm] = useState(false);
+  const [paste, setPaste] = useState('');
+  const [bmsg, setBmsg] = useState('');
   return (
     <Screen>
       <Stack.Screen options={{ title: 'Ayarlar' }} />
@@ -97,8 +100,42 @@ export default function Settings() {
 
       <H>Veri</H>
       <T size={13} sub>
-        Tüm ilerleme yalnızca bu cihazda saklanır (sunucu yok).
+        Tüm ilerleme yalnızca bu cihazda saklanır (sunucu yok). Tarayıcı verisi silinirse kaybolur; arada yedek al.
       </T>
+      <Row style={{ marginTop: 8 }}>
+        <Button
+          small
+          style={{ flex: 1 }}
+          kind="secondary"
+          title="Yedek indir"
+          onPress={async () => setBmsg((await exportFile(`cfa-yedek-${new Date().toISOString().slice(0, 10)}.json`, exportJson(), 'application/json')) ? 'Yedek hazır.' : 'Yedek alınamadı.')}
+        />
+      </Row>
+      <TextInput
+        value={paste}
+        onChangeText={setPaste}
+        placeholder="Yedekten dönmek için yedek dosyasının içeriğini buraya yapıştır"
+        placeholderTextColor={c.sub}
+        multiline
+        style={{ marginTop: 8, minHeight: 56, borderWidth: 1, borderColor: c.border, borderRadius: 10, padding: 10, color: c.text, backgroundColor: c.card, fontSize: f(13) }}
+      />
+      <Button
+        small
+        style={{ marginTop: 6 }}
+        kind="secondary"
+        title="Yedekten yükle"
+        disabled={paste.length < 20}
+        onPress={() => {
+          const ok = actions.importState(paste);
+          setBmsg(ok ? 'Yüklendi.' : 'Geçersiz yedek.');
+          if (ok) setPaste('');
+        }}
+      />
+      {bmsg ? (
+        <T size={12} sub style={{ marginTop: 4 }}>
+          {bmsg}
+        </T>
+      ) : null}
       {confirm ? (
         <Row style={{ marginTop: 8 }}>
           <Button style={{ flex: 1 }} kind="bad" title="Evet, her şeyi sil" onPress={() => (actions.resetAll(), setConfirm(false))} />
