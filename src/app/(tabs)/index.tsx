@@ -69,6 +69,24 @@ export default function Today() {
         </T>
         <Bar value={(todayCount / goal) * 100} color={c.good} />
         <Row style={{ justifyContent: 'space-between', marginTop: 12 }}>
+          {Array.from({ length: 7 }, (_, k) => {
+            const d = new Date(today + 'T12:00:00Z');
+            d.setUTCDate(d.getUTCDate() - (6 - k));
+            const key = d.toISOString().slice(0, 10);
+            const done = s.studyDays.includes(key);
+            return (
+              <View key={key} style={{ alignItems: 'center', flex: 1 }}>
+                <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: done ? c.good : c.cardAlt, borderWidth: key === today ? 2 : 0, borderColor: c.primary, alignItems: 'center', justifyContent: 'center' }}>
+                  {done ? <T size={13} weight="800" color="#fff">✓</T> : null}
+                </View>
+                <T size={10} sub>
+                  {['Pz', 'Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct'][d.getUTCDay()]}
+                </T>
+              </View>
+            );
+          })}
+        </Row>
+        <Row style={{ justifyContent: 'space-between', marginTop: 12 }}>
           <T size={13} weight="700" style={{ flexShrink: 1 }}>
             🎖 Seviye {xp.level} · {xp.rank}
           </T>
