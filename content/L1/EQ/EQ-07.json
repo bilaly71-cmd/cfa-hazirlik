@@ -2030,6 +2030,1098 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "EQ-07-a-q06",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Gökova Elektronik (fictional) has trailing EPS of TRY 3.50. The median trailing P/E of its peer group is 10. Using the method of comparables, the implied value per share is closest to:",
+      "stem_tr": "Gökova Elektronik'in (kurgusal) geriye dönük hisse başına kazancı 3,50 TL'dir. Benzer şirket grubunun geriye dönük F/K medyanı 10'dur. Karşılaştırılabilir şirketler yöntemiyle ima edilen pay başına değer en yakın olarak kaçtır?",
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0.35",
+          "tr": "0,35 TL",
+          "value": 0.35
+        },
+        {
+          "key": "B",
+          "en": "TRY 13.5",
+          "tr": "13,5 TL",
+          "value": 13.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 35.0",
+          "tr": "35,0 TL",
+          "value": 35.0
+        }
+      ],
+      "explanation_en": "Implied value = peer P/E × company EPS = 10 × 3.50 = TRY 35.",
+      "explanation_tr": "İma edilen değer = benzer şirket F/K'sı × şirketin HBK'sı = 10 × 3,50 = 35 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides EPS by the P/E. Value per share is EPS multiplied by the P/E.",
+          "tr": "Bu, HBK'yı F/K'ya böler. Pay başına değer HBK ile F/K'nın çarpımıdır."
+        },
+        "B": {
+          "en": "This adds the P/E to EPS instead of multiplying them.",
+          "tr": "Bu, F/K'yı HBK ile çarpmak yerine toplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the value per share implied by the peer multiple.",
+          "tr": "(a) Benzer şirket çarpanının ima ettiği pay başına değer isteniyor."
+        },
+        {
+          "en": "(b) Value = peer median P/E × EPS.",
+          "tr": "(b) Değer = benzer şirket F/K medyanı × HBK."
+        },
+        {
+          "en": "(c) P/E = 10, EPS = 3.50.",
+          "tr": "(c) F/K = 10, HBK = 3,50."
+        },
+        {
+          "en": "(d) 10 × 3.50.",
+          "tr": "(d) 10 × 3,50."
+        },
+        {
+          "en": "(e) TRY 35.",
+          "tr": "(e) 35 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10",
+          "[×]",
+          "3.5",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "3.5*10",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "comparables",
+        "peer-group",
+        "median",
+        "earnings-per-share",
+        "closest-to",
+        "implied-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-a-q07",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Mersin Liman A.Ş. (fictional) is expected to pay out 50% of its earnings. Its required return on equity is 12% and dividends are expected to grow at 5% forever. The justified forward P/E ratio is closest to:",
+      "stem_tr": "Mersin Liman A.Ş.'nin (kurgusal) kazancının %50'sini dağıtması beklenmektedir. Özkaynak için istenen getirisi %12'dir ve temettülerin sonsuza dek %5 büyümesi beklenir. Haklı (justified) ileriye dönük F/K oranı en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.94x",
+          "tr": "2,94x",
+          "value": 2.94
+        },
+        {
+          "key": "B",
+          "en": "7.14x",
+          "tr": "7,14x",
+          "value": 7.14
+        },
+        {
+          "key": "C",
+          "en": "7.50x",
+          "tr": "7,50x",
+          "value": 7.5
+        }
+      ],
+      "explanation_en": "Justified forward P/E = payout / (r − g) = 0.50 / (0.12 − 0.05) = 7.14.",
+      "explanation_tr": "Haklı ileriye dönük F/K = dağıtım oranı / (r − g) = 0,50 / (0,12 − 0,05) = 7,14.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This divides the payout ratio by (r + g) instead of (r − g).",
+          "tr": "Bu, dağıtım oranını (r − g) yerine (r + g)'ye böler."
+        },
+        "C": {
+          "en": "This is the justified trailing P/E, which multiplies the payout ratio by (1 + g). The question asks for the forward P/E.",
+          "tr": "Bu, dağıtım oranını (1 + g) ile çarpan geriye dönük F/K'dır. Soru ileriye dönük F/K'yı sormaktadır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the justified forward P/E.",
+          "tr": "(a) Haklı ileriye dönük F/K isteniyor."
+        },
+        {
+          "en": "(b) P0 = D1 / (r − g), so P0 / E1 = payout / (r − g).",
+          "tr": "(b) P0 = D1 / (r − g); dolayısıyla P0 / E1 = dağıtım oranı / (r − g)."
+        },
+        {
+          "en": "(c) Payout = 0.50, r = 0.12, g = 0.05.",
+          "tr": "(c) Payout = 0,50, r = 0,12, g = 0,05."
+        },
+        {
+          "en": "(d) r − g = 0.07.",
+          "tr": "(d) r − g = 0,07."
+        },
+        {
+          "en": "(e) 0.50 / 0.07 = 7.14.",
+          "tr": "(e) 0,50 / 0,07 = 7,14."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5",
+          "[÷]",
+          "0.07",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5/(0.12-0.05)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "payout-ratio",
+        "justified-multiple",
+        "required-return",
+        "growth",
+        "closest-to",
+        "forward-looking"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-a-q08",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company's justified trailing P/E is 12, its payout ratio is 60% and the required return is 10%. Using P/E = payout × (1 + g) / (r − g), the implied constant dividend growth rate is closest to:",
+      "stem_tr": "Bir şirketin haklı geriye dönük F/K oranı 12, dağıtım oranı %60 ve istenen getiri %10'dur. F/K = dağıtım oranı × (1 + g) / (r − g) formülünü kullanarak ima edilen sabit temettü büyüme oranı en yakın olarak kaçtır?",
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.76%",
+          "tr": "%4,76",
+          "value": 4.76
+        },
+        {
+          "key": "B",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "C",
+          "en": "6.67%",
+          "tr": "%6,67",
+          "value": 6.67
+        }
+      ],
+      "explanation_en": "12 = 0.6(1 + g) / (0.10 − g). So 1.2 − 12g = 0.6 + 0.6g, which gives g = 0.6 / 12.6 = 4.76%.",
+      "explanation_tr": "12 = 0,6(1 + g) / (0,10 − g). Buradan 1,2 − 12g = 0,6 + 0,6g ve g = 0,6 / 12,6 = %4,76 bulunur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This uses the forward formula, P/E = payout / (r − g), although the P/E here is trailing.",
+          "tr": "Bu, buradaki F/K geriye dönük olduğu halde ileriye dönük formülü (F/K = dağıtım oranı / (r − g)) kullanır."
+        },
+        "C": {
+          "en": "This uses the retention ratio (40%) instead of the payout ratio in the forward formula.",
+          "tr": "Bu, ileriye dönük formülde dağıtım oranı yerine alıkoyma oranını (%40) kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need g implied by a trailing P/E of 12.",
+          "tr": "(a) 12 olan geriye dönük F/K'nın ima ettiği g isteniyor."
+        },
+        {
+          "en": "(b) Solve P/E × (r − g) = payout × (1 + g) for g.",
+          "tr": "(b) F/K × (r − g) = dağıtım oranı × (1 + g) denklemi g için çözülür."
+        },
+        {
+          "en": "(c) 12 × 0.10 − 12g = 0.6 + 0.6g.",
+          "tr": "(c) 12 × 0,10 − 12g = 0,6 + 0,6g."
+        },
+        {
+          "en": "(d) 1.2 − 0.6 = 12.6g, so 0.6 = 12.6g.",
+          "tr": "(d) 1,2 − 0,6 = 12,6g, yani 0,6 = 12,6g."
+        },
+        {
+          "en": "(e) g = 0.6 / 12.6 = 4.76%.",
+          "tr": "(e) g = 0,6 / 12,6 = %4,76."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12",
+          "[×]",
+          "0.1",
+          "[−]",
+          "0.6",
+          "[=]",
+          "[÷]",
+          "12.6",
+          "[=]",
+          "[×]",
+          "100",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(12*0.10-0.6)/(12+0.6)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "payout-ratio",
+        "justified-multiple",
+        "trailing",
+        "growth",
+        "closest-to",
+        "required-return"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-b-q08",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Fatsa Tekstil (fictional) has a market capitalisation of TRY 3,600 million and annual sales of TRY 2,400 million. Its price-to-sales (P/S) ratio is closest to:",
+      "stem_tr": "Fatsa Tekstil'in (kurgusal) piyasa değeri 3.600 milyon TL, yıllık satışları 2.400 milyon TL'dir. Fiyat/satış (F/S) oranı en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.67x",
+          "tr": "0,67x",
+          "value": 0.67
+        },
+        {
+          "key": "B",
+          "en": "1.50x",
+          "tr": "1,50x",
+          "value": 1.5
+        },
+        {
+          "key": "C",
+          "en": "1.75x",
+          "tr": "1,75x",
+          "value": 1.75
+        }
+      ],
+      "explanation_en": "P/S = market capitalisation / total sales = 3,600 / 2,400 = 1.5.",
+      "explanation_tr": "F/S = piyasa değeri / toplam satış = 3.600 / 2.400 = 1,5.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This inverts the ratio (sales divided by market capitalisation).",
+          "tr": "Bu, oranı tersine çevirir (satış bölü piyasa değeri)."
+        },
+        "C": {
+          "en": "This adds TRY 600 million of net debt to the numerator. P/S uses equity value only.",
+          "tr": "Bu, paya 600 milyon TL net borç ekler. F/S yalnızca özkaynak değerini kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the price-to-sales ratio.",
+          "tr": "(a) Fiyat/satış oranı isteniyor."
+        },
+        {
+          "en": "(b) P/S = market cap / sales (or price / sales per share).",
+          "tr": "(b) F/S = piyasa değeri / satış (ya da fiyat / pay başına satış)."
+        },
+        {
+          "en": "(c) Market cap = 3,600; sales = 2,400.",
+          "tr": "(c) Piyasa değeri = 3.600; satış = 2.400."
+        },
+        {
+          "en": "(d) 3,600 / 2,400.",
+          "tr": "(d) 3.600 / 2.400."
+        },
+        {
+          "en": "(e) P/S = 1.5.",
+          "tr": "(e) F/S = 1,5."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3600",
+          "[÷]",
+          "2400",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "3600/2400",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "multiple",
+        "market-capitalization",
+        "revenue",
+        "price",
+        "closest-to",
+        "ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-b-q09",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Zonguldak Maden (fictional) has enterprise value of TRY 2,800 million, operating profit (EBIT) of TRY 350 million and depreciation and amortisation of TRY 50 million. Its EV/EBITDA is closest to:",
+      "stem_tr": "Zonguldak Maden'in (kurgusal) firma değeri 2.800 milyon TL, faaliyet kârı (FVÖK) 350 milyon TL, amortisman ve itfa payı 50 milyon TL'dir. FD/FAVÖK oranı en yakın olarak kaçtır?",
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.00x",
+          "tr": "7,00x",
+          "value": 7.0
+        },
+        {
+          "key": "B",
+          "en": "8.00x",
+          "tr": "8,00x",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "9.33x",
+          "tr": "9,33x",
+          "value": 9.33
+        }
+      ],
+      "explanation_en": "EBITDA = EBIT + D&A = 350 + 50 = 400. EV/EBITDA = 2,800 / 400 = 7.0.",
+      "explanation_tr": "FAVÖK = FVÖK + A&İ = 350 + 50 = 400. FD/FAVÖK = 2.800 / 400 = 7,0.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides by EBIT (350) instead of EBITDA (400).",
+          "tr": "Bu, FAVÖK (400) yerine FVÖK'e (350) böler."
+        },
+        "C": {
+          "en": "This subtracts depreciation and amortisation from EBIT instead of adding it back.",
+          "tr": "Bu, amortisman ve itfa payını FVÖK'e eklemek yerine ondan çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need EV/EBITDA, so EBITDA must be found first.",
+          "tr": "(a) FD/FAVÖK isteniyor; önce FAVÖK bulunmalı."
+        },
+        {
+          "en": "(b) EBITDA = EBIT + depreciation and amortisation.",
+          "tr": "(b) FAVÖK = FVÖK + amortisman ve itfa payı."
+        },
+        {
+          "en": "(c) 350 + 50 = 400.",
+          "tr": "(c) 350 + 50 = 400."
+        },
+        {
+          "en": "(d) EV = 2,800.",
+          "tr": "(d) FD = 2.800."
+        },
+        {
+          "en": "(e) 2,800 / 400 = 7.0.",
+          "tr": "(e) 2.800 / 400 = 7,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "350",
+          "[+]",
+          "50",
+          "[=]",
+          "[STO]",
+          "1",
+          "2800",
+          "[÷]",
+          "[RCL]",
+          "1",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "2800/(350+50)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "ebitda",
+        "ebit",
+        "enterprise-value",
+        "depreciation",
+        "closest-to",
+        "multiple"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-b-q10",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Bolu Ambalaj (fictional) has a P/B ratio of 1.8 and an ROE of 12%. Because P/B = ROE × P/E, its P/E ratio is closest to:",
+      "stem_tr": "Bolu Ambalaj'ın (kurgusal) F/DD oranı 1,8 ve özkaynak kârlılığı %12'dir. F/DD = ÖKK × F/K olduğuna göre F/K oranı en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.7x",
+          "tr": "6,7x",
+          "value": 6.7
+        },
+        {
+          "key": "B",
+          "en": "15.0x",
+          "tr": "15,0x",
+          "value": 15.0
+        },
+        {
+          "key": "C",
+          "en": "21.6x",
+          "tr": "21,6x",
+          "value": 21.6
+        }
+      ],
+      "explanation_en": "P/E = (P/B) / ROE = 1.8 / 0.12 = 15.",
+      "explanation_tr": "F/K = (F/DD) / ÖKK = 1,8 / 0,12 = 15.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This inverts the relationship and divides ROE by P/B.",
+          "tr": "Bu, ilişkiyi tersine çevirir ve ÖKK'yı F/DD'ye böler."
+        },
+        "C": {
+          "en": "This multiplies P/B by 12 and does not convert ROE to a decimal correctly.",
+          "tr": "Bu, F/DD'yi 12 ile çarpar ve ÖKK'yı ondalığa doğru çevirmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the P/E implied by P/B and ROE.",
+          "tr": "(a) F/DD ve ÖKK'nın ima ettiği F/K isteniyor."
+        },
+        {
+          "en": "(b) P/B = (P/E) × ROE, because ROE = E / book value.",
+          "tr": "(b) F/DD = (F/K) × ÖKK; çünkü ÖKK = kazanç / defter değeri."
+        },
+        {
+          "en": "(c) P/E = (P/B) / ROE.",
+          "tr": "(c) F/K = (F/DD) / ÖKK."
+        },
+        {
+          "en": "(d) 1.8 / 0.12.",
+          "tr": "(d) 1,8 / 0,12."
+        },
+        {
+          "en": "(e) P/E = 15.",
+          "tr": "(e) F/K = 15."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.8",
+          "[÷]",
+          "0.12",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "1.8/0.12",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "price-to-book",
+        "return-on-equity",
+        "multiple",
+        "book-value",
+        "closest-to",
+        "ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-c-q06",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which set of characteristics makes two companies most comparable for use in a peer group?",
+      "stem_tr": "Hangi özellikler kümesi iki şirketi benzer şirket grubunda kullanım için en karşılaştırılabilir kılar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Similar business activities, growth prospects and risk.",
+          "tr": "Benzer faaliyetler, büyüme beklentileri ve risk."
+        },
+        {
+          "key": "B",
+          "en": "The same first letter at the start of the company name.",
+          "tr": "Şirket adının başında aynı harfin bulunması."
+        },
+        {
+          "key": "C",
+          "en": "The same number of employees, even in different businesses.",
+          "tr": "Farklı işlerde olsalar bile aynı çalışan sayısı."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Multiples depend on growth, risk and cash flow patterns. Peers with similar business, growth and risk should trade at similar multiples.",
+      "explanation_tr": "Çarpanlar büyüme, risk ve nakit akışı yapısına bağlıdır. Benzer iş, büyüme ve riske sahip şirketler benzer çarpanlarla işlem görmelidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Names have no link to value drivers. Comparability depends on fundamentals.",
+          "tr": "İsimlerin değer belirleyicileriyle bağı yoktur. Karşılaştırılabilirlik temel göstergelere bağlıdır."
+        },
+        "C": {
+          "en": "Employee count alone does not tell about cash flows, growth or risk.",
+          "tr": "Yalnızca çalışan sayısı nakit akışı, büyüme ya da risk hakkında bilgi vermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "comparable",
+        "peer-group",
+        "growth",
+        "risk",
+        "multiple",
+        "most-likely"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-c-q07",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst compares a Turkish company's P/E with that of a similar German company. Which difference most limits the comparison?",
+      "stem_tr": "Bir analist, bir Türk şirketinin F/K oranını benzer bir Alman şirketinin F/K oranıyla karşılaştırmaktadır. Hangi fark karşılaştırmayı en çok sınırlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both companies operate in the same broad industry sector globally.",
+          "tr": "Her iki şirketin de dünya genelinde aynı geniş sektörde faaliyet göstermesi."
+        },
+        {
+          "key": "B",
+          "en": "Very different inflation and interest rates in the two countries.",
+          "tr": "İki ülkedeki çok farklı enflasyon ve faiz oranları."
+        },
+        {
+          "key": "C",
+          "en": "Both companies publish audited annual reports for all of their investors.",
+          "tr": "Her iki şirketin de tüm yatırımcıları için denetlenmiş yıllık rapor yayımlaması."
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "High inflation and interest rates raise discount rates and change growth expectations, so P/E levels differ between the two markets even for similar businesses.",
+      "explanation_tr": "Yüksek enflasyon ve faiz iskonto oranlarını yükseltir ve büyüme beklentilerini değiştirir; bu yüzden benzer işler için bile iki piyasada F/K düzeyleri farklı olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Operating in the same industry makes comparison easier, not harder.",
+          "tr": "Aynı sektörde faaliyet göstermek karşılaştırmayı zorlaştırmaz, kolaylaştırır."
+        },
+        "C": {
+          "en": "Publishing reports is a common feature that helps comparison.",
+          "tr": "Rapor yayımlamak karşılaştırmaya yardım eden ortak bir özelliktir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "peer-group",
+        "multiple",
+        "inflation",
+        "discount-rate",
+        "least-likely",
+        "comparable"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-c-q08",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst builds a peer group using only industry labels and finds P/E ratios ranging from 6 to 30. The most appropriate next step is to:",
+      "stem_tr": "Bir analist yalnızca sektör etiketlerini kullanarak benzer şirket grubu oluşturur ve F/K oranlarının 6 ile 30 arasında değiştiğini görür. Yapılacak en uygun sonraki adım şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "average all the P/E ratios and use the result without review.",
+          "tr": "tüm F/K oranlarının ortalamasını alıp sonucu incelemeden kullanmaktır."
+        },
+        {
+          "key": "B",
+          "en": "use only the company with the highest P/E as the benchmark.",
+          "tr": "yalnızca en yüksek F/K'ya sahip şirketi ölçüt olarak kullanmaktır."
+        },
+        {
+          "key": "C",
+          "en": "examine growth, risk and business mix to narrow the group.",
+          "tr": "büyüme, risk ve iş karmasını inceleyerek grubu daraltmaktır."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A wide range of multiples suggests that the label hides differences in growth, risk or business mix. Refining the group makes the comparison more meaningful.",
+      "explanation_tr": "Geniş çarpan aralığı, etiketin büyüme, risk veya iş karmasındaki farkları gizlediğini gösterir. Grubu daraltmak karşılaştırmayı daha anlamlı kılar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A very wide range signals that the group is mixed. An unreviewed average blends companies that are not comparable.",
+          "tr": "Çok geniş aralık, grubun karışık olduğunu gösterir. İncelenmemiş ortalama, karşılaştırılamayan şirketleri harmanlar."
+        },
+        "B": {
+          "en": "Picking the highest multiple is arbitrary and would overstate the value.",
+          "tr": "En yüksek çarpanı seçmek keyfidir ve değeri olduğundan yüksek gösterir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "peer-group",
+        "industry-classification",
+        "return-driver",
+        "range",
+        "multiple",
+        "most-appropriate"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-d-q07",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Sinop Balık (fictional) trades at TRY 48 per share. Its EPS over the last four quarters totals TRY 6. The trailing P/E is closest to:",
+      "stem_tr": "Sinop Balık (kurgusal) pay başına 48 TL'den işlem görmektedir. Son dört çeyrekteki toplam HBK 6 TL'dir. Geriye dönük F/K en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.125x",
+          "tr": "0,125x",
+          "value": 0.125
+        },
+        {
+          "key": "B",
+          "en": "8.0x",
+          "tr": "8,0x",
+          "value": 8.0
+        },
+        {
+          "key": "C",
+          "en": "288.0x",
+          "tr": "288,0x",
+          "value": 288.0
+        }
+      ],
+      "explanation_en": "Trailing P/E = price / trailing 12-month EPS = 48 / 6 = 8.0.",
+      "explanation_tr": "Geriye dönük F/K = fiyat / son 12 aylık HBK = 48 / 6 = 8,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This inverts the ratio (EPS divided by price, the earnings yield).",
+          "tr": "Bu, oranı tersine çevirir (HBK bölü fiyat; kazanç verimi)."
+        },
+        "C": {
+          "en": "This multiplies price by EPS instead of dividing.",
+          "tr": "Bu, fiyatı bölmek yerine HBK ile çarpar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the trailing P/E.",
+          "tr": "(a) Geriye dönük F/K isteniyor."
+        },
+        {
+          "en": "(b) Trailing P/E = price / EPS over the last four quarters.",
+          "tr": "(b) Geriye dönük F/K = fiyat / son dört çeyrek HBK."
+        },
+        {
+          "en": "(c) Price = 48; EPS = 6.",
+          "tr": "(c) Fiyat = 48; HBK = 6."
+        },
+        {
+          "en": "(d) 48 / 6.",
+          "tr": "(d) 48 / 6."
+        },
+        {
+          "en": "(e) 8.0.",
+          "tr": "(e) 8,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "48",
+          "[÷]",
+          "6",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "48/6",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "trailing",
+        "earnings-per-share",
+        "price",
+        "quarter",
+        "closest-to",
+        "ratio"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-d-q08",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Edirne Cam (fictional) trades at TRY 42. Its trailing EPS is TRY 3.50 and analysts expect EPS to grow 20% next year. The forward P/E is closest to:",
+      "stem_tr": "Edirne Cam (kurgusal) 42 TL'den işlem görmektedir. Geriye dönük HBK 3,50 TL'dir ve analistler gelecek yıl HBK'nın %20 artmasını beklemektedir. İleriye dönük F/K en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.33x",
+          "tr": "8,33x",
+          "value": 8.33
+        },
+        {
+          "key": "B",
+          "en": "10.00x",
+          "tr": "10,00x",
+          "value": 10.0
+        },
+        {
+          "key": "C",
+          "en": "12.00x",
+          "tr": "12,00x",
+          "value": 12.0
+        }
+      ],
+      "explanation_en": "Forward EPS = 3.50 × 1.20 = 4.20. Forward P/E = 42 / 4.20 = 10.0.",
+      "explanation_tr": "İleriye dönük HBK = 3,50 × 1,20 = 4,20. İleriye dönük F/K = 42 / 4,20 = 10,0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This applies the 20% growth twice (EPS of 5.04).",
+          "tr": "Bu, %20 büyümeyi iki kez uygular (HBK 5,04)."
+        },
+        "C": {
+          "en": "This is the trailing P/E (42 / 3.50). It does not use next year's expected EPS.",
+          "tr": "Bu, geriye dönük F/K'dır (42 / 3,50). Gelecek yılın beklenen HBK'sını kullanmaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the forward P/E, which uses next year's expected EPS.",
+          "tr": "(a) Gelecek yılın beklenen HBK'sını kullanan ileriye dönük F/K isteniyor."
+        },
+        {
+          "en": "(b) Forward EPS = trailing EPS × (1 + growth).",
+          "tr": "(b) İleriye dönük HBK = geriye dönük HBK × (1 + büyüme)."
+        },
+        {
+          "en": "(c) 3.50 × 1.20 = 4.20.",
+          "tr": "(c) 3,50 × 1,20 = 4,20."
+        },
+        {
+          "en": "(d) Price = 42.",
+          "tr": "(d) Fiyat = 42."
+        },
+        {
+          "en": "(e) 42 / 4.20 = 10.0.",
+          "tr": "(e) 42 / 4,20 = 10,0."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3.5",
+          "[×]",
+          "1.2",
+          "[=]",
+          "[STO]",
+          "1",
+          "42",
+          "[÷]",
+          "[RCL]",
+          "1",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "42/(3.5*1.2)",
+        "unit": "x"
+      },
+      "vocab_ids": [
+        "forward-looking",
+        "trailing",
+        "earnings-per-share",
+        "growth",
+        "closest-to",
+        "multiple"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "EQ-07-d-q09",
+      "level": "L1",
+      "topic": "EQ",
+      "module_id": "EQ-07",
+      "los_id": "EQ-07-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Last year Kars Süt (fictional) reported EPS of TRY 5.50, including a one-time gain of TRY 1.00 per share. Underlying earnings are expected to grow 10% next year. The peer median forward P/E is 10. The implied share price is closest to:",
+      "stem_tr": "Kars Süt (kurgusal) geçen yıl 5,50 TL HBK açıklamıştır; bunun içinde pay başına 1,00 TL tek seferlik kazanç vardır. Esas kazancın gelecek yıl %10 artması beklenmektedir. Benzer şirketlerin ileriye dönük F/K medyanı 10'dur. İma edilen pay fiyatı en yakın olarak kaçtır?",
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 45.0",
+          "tr": "45,0 TL",
+          "value": 45.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 49.5",
+          "tr": "49,5 TL",
+          "value": 49.5
+        },
+        {
+          "key": "C",
+          "en": "TRY 60.5",
+          "tr": "60,5 TL",
+          "value": 60.5
+        }
+      ],
+      "explanation_en": "Underlying EPS = 5.50 − 1.00 = 4.50. Forward EPS = 4.50 × 1.10 = 4.95. Price = 10 × 4.95 = TRY 49.5.",
+      "explanation_tr": "Esas HBK = 5,50 − 1,00 = 4,50. İleriye dönük HBK = 4,50 × 1,10 = 4,95. Fiyat = 10 × 4,95 = 49,5 TL.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This removes the one-time gain but forgets to apply the 10% growth.",
+          "tr": "Bu, tek seferlik kazancı çıkarır ama %10 büyümeyi uygulamayı unutur."
+        },
+        "C": {
+          "en": "This grows the reported EPS (5.50) without removing the one-time gain.",
+          "tr": "Bu, tek seferlik kazancı çıkarmadan açıklanan HBK'yı (5,50) büyütür."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "(a) We need the price implied by the peer forward P/E.",
+          "tr": "(a) Benzer şirketlerin ileriye dönük F/K'sının ima ettiği fiyat isteniyor."
+        },
+        {
+          "en": "(b) Remove non-recurring items, grow underlying EPS, then multiply by the P/E.",
+          "tr": "(b) Tekrarlanmayan kalemler çıkarılır, esas HBK büyütülür, sonra F/K ile çarpılır."
+        },
+        {
+          "en": "(c) 5.50 − 1.00 = 4.50.",
+          "tr": "(c) 5,50 − 1,00 = 4,50."
+        },
+        {
+          "en": "(d) 4.50 × 1.10 = 4.95.",
+          "tr": "(d) 4,50 × 1,10 = 4,95."
+        },
+        {
+          "en": "(e) 10 × 4.95 = TRY 49.5.",
+          "tr": "(e) 10 × 4,95 = 49,5 TL."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5.5",
+          "[−]",
+          "1",
+          "[=]",
+          "[×]",
+          "1.1",
+          "[×]",
+          "10",
+          "[=]"
+        ]
+      },
+      "numeric": {
+        "expr": "(5.5-1)*1.1*10",
+        "unit": "TRY"
+      },
+      "vocab_ids": [
+        "non-recurring",
+        "normalized-earnings",
+        "forward-looking",
+        "earnings-per-share",
+        "closest-to",
+        "peer-group"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }
