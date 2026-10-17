@@ -60,6 +60,12 @@ export function QuestionCard({
     if (done) return;
     setDone(true);
     const seconds = Math.round((Date.now() - start.current) / 1000);
+    if (!examMode) {
+      try {
+        // kısa dokunsal geri bildirim (Android web); desteklemeyen cihazlarda sessizce geçer
+        (globalThis as { navigator?: { vibrate?: (p: number | number[]) => boolean } }).navigator?.vibrate?.(k === q.answer ? 15 : [40, 50, 40]);
+      } catch {}
+    }
     onAnswered?.({ choice: k, correct: k === q.answer, seconds });
   }
 
