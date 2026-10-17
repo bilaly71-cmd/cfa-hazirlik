@@ -79,3 +79,6 @@ Bölüm sırası (`sections[].kind`):
 - Forumlardaki "sınavda çıkan sorular" (brain dump) ASLA kullanılmaz.
 - Olgusal bilgi (oran, tarih, kural) uydurma; emin değilsen genel tut.
 - Yalnızca sana atanan dosyalara yaz. git çalıştırma.
+
+## 7. Şık uzunluğu yanlılığı (zorunlu)
+Sayısal olmayan sorularda doğru şık TEK BAŞINA en uzun olmasın; üç şık benzer uzunluk ve ayrıntıda, paralel dilbilgisinde yazılsın. (İlk üretimde doğru şık %66 oranla en uzun çıktı; şans %33. Ölçüm: `node scripts/len_bias.js`, düzeltme: `scripts/apply_options_patch.py`.)
