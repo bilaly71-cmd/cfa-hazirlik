@@ -1,6 +1,7 @@
 import { Stack, router, useLocalSearchParams } from 'expo-router';
 
 import { Button, Card, Chip, H, Row, Screen, T, spkChip } from '@/components/ui';
+import { workLinks } from '@/content/work-links';
 import { lessonByModule, questionsByModule, spkMap, topicById } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import type { TopicId } from '@/lib/schema';
@@ -30,6 +31,16 @@ export default function TopicScreen() {
             </T>
           ) : null}
           {spk.note_tr ? <T size={14}>{spk.note_tr}</T> : null}
+        </Card>
+      ) : null}
+      {workLinks[t.id] ? (
+        <Card style={{ marginTop: 10 }}>
+          <T weight="700">İşinde nerede karşına çıkar?</T>
+          {workLinks[t.id].map((x) => (
+            <T key={x} size={14} style={{ marginTop: 4 }}>
+              • {x}
+            </T>
+          ))}
         </Card>
       ) : null}
       <Row style={{ marginTop: 10 }}>
