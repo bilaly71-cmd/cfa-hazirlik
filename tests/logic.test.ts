@@ -262,3 +262,23 @@ describe('xpInfo', () => {
     expect(x.toNext).toBeGreaterThan(0);
   });
 });
+
+import { solveFv, solveN, solvePmt, solvePv, solveRate } from '../src/lib/tvm';
+describe('tvm', () => {
+  it('FV: -1000 PV, %8, 5 yıl', () => {
+    expect(solveFv({ n: 5, r: 0.08, pv: -1000, pmt: 0, when: 0 })).toBeCloseTo(1469.33, 2);
+  });
+  it('PV: kupon 5/yıl, 3 yıl, %6, nominal 100', () => {
+    expect(solvePv({ n: 3, r: 0.06, pmt: 5, fv: 100, when: 0 })).toBeCloseTo(-97.33, 2);
+  });
+  it('PMT: 200.000 kredi, 240 ay, %0.5/ay', () => {
+    expect(solvePmt({ n: 240, r: 0.005, pv: 200000, fv: 0, when: 0 })).toBeCloseTo(-1432.86, 2);
+  });
+  it('I/Y ve N geri bulunur', () => {
+    expect(solveRate({ n: 5, pv: -1000, pmt: 0, fv: 1469.328, when: 0 })).toBeCloseTo(0.08, 4);
+    expect(solveN({ r: 0.08, pv: -1000, pmt: 0, fv: 1469.328, when: 0 })).toBeCloseTo(5, 3);
+  });
+  it('dönem başı annüite PV', () => {
+    expect(solvePv({ n: 3, r: 0.1, pmt: 100, fv: 0, when: 1 })).toBeCloseTo(-273.55, 2);
+  });
+});
