@@ -244,3 +244,21 @@ describe('İngilizce oyunları', () => {
     expect(new Set(b.left.map((x) => x.id))).toEqual(new Set(b.right.map((x) => x.id)));
   });
 });
+
+import { xpInfo } from '../src/lib/scoring';
+describe('xpInfo', () => {
+  it('boş durumda seviye 1', () => {
+    const x = xpInfo([], 0, 0);
+    expect(x.level).toBe(1);
+    expect(x.xp).toBe(0);
+    expect(x.pct).toBe(0);
+  });
+  it('puan arttıkça seviye artar, yüzde 0-100 arasında', () => {
+    const many = Array.from({ length: 200 }, (_, i) => ({ correct: i % 2 === 0 }));
+    const x = xpInfo(many, 10, 1);
+    expect(x.level).toBeGreaterThan(2);
+    expect(x.pct).toBeGreaterThanOrEqual(0);
+    expect(x.pct).toBeLessThan(100);
+    expect(x.toNext).toBeGreaterThan(0);
+  });
+});

@@ -5,7 +5,7 @@ import { Platform, View } from 'react-native';
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
 import { lessonByModule, questions, topicName, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
-import { dailyPlan, daysUntil, localDay, readMinutes, readinessScore, recommendTrLevel, streak, weakTopics, wordCount } from '@/lib/scoring';
+import { dailyPlan, daysUntil, localDay, readMinutes, readinessScore, recommendTrLevel, streak, weakTopics, wordCount, xpInfo } from '@/lib/scoring';
 import { dueCards } from '@/lib/srs';
 import { actions, useStore } from '@/state/store';
 
@@ -40,6 +40,7 @@ export default function Today() {
     !(navigator as unknown as { standalone?: boolean }).standalone &&
     /android|iphone|ipad/i.test(navigator.userAgent);
   const isIos = typeof navigator !== 'undefined' && /iphone|ipad/i.test(navigator.userAgent);
+  const xp = xpInfo(s.attempts, s.studyDays.length, s.mocks.length);
   const goal = Math.max(s.settings.dailyGoal, 1);
 
   return (
@@ -64,9 +65,18 @@ export default function Today() {
           </View>
         </Row>
         <T size={13} sub style={{ marginTop: 8 }}>
-          Bugün: {todayCount}/{goal} soru
+          Bugün: {todayCount}/{goal} soru{todayCount >= goal ? ' ✓ hedef tamam!' : ''}
         </T>
         <Bar value={(todayCount / goal) * 100} color={c.good} />
+        <Row style={{ justifyContent: 'space-between', marginTop: 12 }}>
+          <T size={13} weight="700" style={{ flexShrink: 1 }}>
+            🎖 Seviye {xp.level} · {xp.rank}
+          </T>
+          <T size={12} sub>
+            +{xp.toNext} puan → Sv. {xp.level + 1}
+          </T>
+        </Row>
+        <Bar value={xp.pct} height={5} />
       </Card>
 
       {rec.suggest !== null && s.settings.lastSuggestionDismissed !== `${rec.suggest}-${s.attempts.length >> 5}` ? (

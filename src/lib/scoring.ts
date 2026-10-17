@@ -148,3 +148,17 @@ export function streak(days: string[], today: string) {
   }
   return n;
 }
+
+const RANKS = ['Stajyer', 'Yardımcı Analist', 'Analist', 'Kıdemli Analist', 'Portföy Yöneticisi', 'Baş Analist', 'CFA Adayı Usta'];
+
+/** Basit ilerleme puanı: doğru 10, yanlış 3 (denemek de sayılır), çalışılan gün 20, mock 100. */
+export function xpInfo(attempts: { correct: boolean }[], studyDays: number, mocks: number) {
+  const right = attempts.filter((a) => a.correct).length;
+  const xp = right * 10 + (attempts.length - right) * 3 + studyDays * 20 + mocks * 100;
+  const need = (lvl: number) => Math.round(120 * Math.pow(lvl, 1.6)); // lvl'e ulaşmak için toplam xp
+  let level = 1;
+  while (xp >= need(level + 1)) level += 1;
+  const from = level === 1 ? 0 : need(level);
+  const to = need(level + 1);
+  return { xp, level, rank: RANKS[Math.min(Math.floor((level - 1) / 3), RANKS.length - 1)], pct: Math.round(((xp - from) / (to - from)) * 100), toNext: to - xp };
+}

@@ -102,6 +102,8 @@ export default function Quiz() {
   }
 
   const q = list[i];
+  let run = 0;
+  for (let k = results.length - 1; k >= 0 && results[k].correct; k--) run++;
   const onAnswered = (r: AnswerResult) => {
     setAnswered(true);
     setResults((xs) => [...xs, { ...r, qid: q.id }]);
@@ -122,11 +124,16 @@ export default function Quiz() {
       <Stack.Screen options={{ title: `${TITLES[mode] ?? 'Sorular'} · ${i + 1}/${list.length}` }} />
       <View style={{ marginBottom: 10 }}>
         <Bar value={(i / list.length) * 100} height={5} />
-        {p.topic ? (
-          <T size={12} sub style={{ marginTop: 4 }}>
-            {topicName(p.topic)}
+        <Row style={{ justifyContent: 'space-between', marginTop: 4 }}>
+          <T size={12} sub>
+            {p.topic ? topicName(p.topic) : ' '}
           </T>
-        ) : null}
+          {run >= 2 ? (
+            <T size={12} weight="700" color={c.good}>
+              🔥 {run} doğru üst üste
+            </T>
+          ) : null}
+        </Row>
       </View>
       <QuestionCard key={q.id} q={q} onAnswered={onAnswered} timeLimit={timed ? 90 : undefined} />
     </Screen>
