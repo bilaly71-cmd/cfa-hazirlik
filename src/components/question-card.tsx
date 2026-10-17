@@ -147,6 +147,7 @@ function Feedback({ q, choice }: { q: Question; choice: string | null }) {
   const c = useColors();
   const open = useWordPopup();
   const correct = choice === q.answer;
+  const [more, setMore] = useState(!correct); // doğruysa kısa özet, yanlışta tam çözüm açık
   const pats = (q.pattern_ids ?? []).map((id) => patterns.find((p) => p.id === id)).filter(Boolean);
   return (
     <View style={{ marginTop: 14 }}>
@@ -163,6 +164,8 @@ function Feedback({ q, choice }: { q: Question; choice: string | null }) {
       </T>
       <BiText en={q.explanation_en} tr={q.explanation_tr} levelOverride={3} />
 
+      {more ? (
+        <>
       {q.solution_steps.length ? (
         <>
           <T weight="700" style={{ marginTop: 12 }}>
@@ -222,6 +225,11 @@ function Feedback({ q, choice }: { q: Question; choice: string | null }) {
           </T>
         </Card>
       ))}
+
+        </>
+      ) : (
+        <Button small kind="secondary" style={{ marginTop: 10 }} title="Adım adım çözümü ve çeldiricileri göster" onPress={() => setMore(true)} />
+      )}
 
       {pats.length ? (
         <Card style={{ marginTop: 8, backgroundColor: c.warnBg }}>
