@@ -17,3 +17,6 @@ KAPSAM: YALNIZCA LEVEL I (kullanıcı kararı; L2/L3 YAPILMAYACAK, L2 vignette m
 
 ## Metrikler
 (npm run build-content → reports/metrics.md)
+
+## Şık uzunluğu yanlılığı (2026-10-17)
+Ölçüm: `node scripts/len_bias.js` (sayısal olmayan sorularda doğru şık tek başına en uzun oranı; şans ≈ %33). İlk durum %66. Yalnızca AI+CI+DER grubunun yaması uygulandı (227 soru; AI %0, CI %42, DER %69 kaldı). ETH/PM/FSA/ECO/EQ/FI/QM grupları YAPILMADI — kullanıcı kararıyla bırakıldı (öncelik değil). Araç: `scripts/apply_options_patch.py`. Yeni içerik üretiminde şartname §7: doğru şık en uzun olmasın.
