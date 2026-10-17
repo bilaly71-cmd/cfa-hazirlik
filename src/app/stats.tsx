@@ -2,7 +2,7 @@ import { Stack, router } from 'expo-router';
 import { useMemo } from 'react';
 
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
-import { questions, topics, weights } from '@/content';
+import { questions, questionsByTopic, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { daysUntil, localDay, readinessScore, streak, topicStats } from '@/lib/scoring';
 import { useStore } from '@/state/store';
@@ -28,7 +28,7 @@ export default function Stats() {
         <Row style={{ justifyContent: 'space-between' }}>
           <T weight="700">Hazırlık skoru</T>
           <T size={24} weight="800">
-            %{score}
+            %{Math.round(score)}
           </T>
         </Row>
         <Bar value={score} />
@@ -77,6 +77,20 @@ export default function Stats() {
                   {a1 !== null && a0 !== null ? (a1 >= a0 ? ` ▲ (%${a0})` : ` ▼ (%${a0})`) : ''}
                 </T>
               </Row>
+              {thisW.length >= 5 ? (
+                <Button
+                  style={{ marginTop: 8 }}
+                  kind="secondary"
+                  title="Haftalık tekrar: bu haftaki konulardan 15 soru"
+                  onPress={() => {
+                    const cnt = new Map<string, number>();
+                    for (const a of thisW) cnt.set(a.topic, (cnt.get(a.topic) ?? 0) + 1);
+                    const tops = [...cnt].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([t]) => t);
+                    const pool = tops.flatMap((t) => questionsByTopic(t as never).map((q) => q.id)).sort(() => Math.random() - 0.5);
+                    router.push({ pathname: '/quiz', params: { mode: 'ids', ids: pool.slice(0, 15).join(',') } });
+                  }}
+                />
+              ) : null}
               <T size={13} sub style={{ marginTop: 8 }}>
                 {unseen === 0
                   ? 'Tüm soruları en az bir kez gördün. Şimdi tekrar ve mock zamanı.'
