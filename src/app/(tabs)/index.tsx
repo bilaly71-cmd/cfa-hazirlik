@@ -1,9 +1,10 @@
 import { router } from 'expo-router';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Platform, View } from 'react-native';
 
+import { MathView } from '@/components/math';
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
-import { lessonByModule, questions, topicName, topics, weights } from '@/content';
+import { formulas, lessonByModule, questions, topicName, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { dailyPlan, daysUntil, localDay, readMinutes, readinessScore, recommendTrLevel, streak, weakTopics, wordCount, xpInfo } from '@/lib/scoring';
 import { dueCards } from '@/lib/srs';
@@ -40,6 +41,12 @@ export default function Today() {
     !(navigator as unknown as { standalone?: boolean }).standalone &&
     /android|iphone|ipad/i.test(navigator.userAgent);
   const isIos = typeof navigator !== 'undefined' && /iphone|ipad/i.test(navigator.userAgent);
+  const [showF, setShowF] = useState(false);
+  const fOfDay = useMemo(() => {
+    if (!formulas.length) return undefined;
+    const h = [...today].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 11);
+    return formulas[h % formulas.length];
+  }, [today]);
   const xp = xpInfo(s.attempts, s.studyDays.length, s.mocks.length);
   const goal = Math.max(s.settings.dailyGoal, 1);
 
@@ -169,6 +176,28 @@ export default function Today() {
           title={`Sıradaki ders: ${nextMod.title_tr} (~${readMinutes(nextLesson.sections.reduce((a, x) => a + wordCount(x.en), 0))} dk)`}
           onPress={() => router.push({ pathname: '/lesson/[id]', params: { id: nextMod.id } })}
         />
+      ) : null}
+
+      {fOfDay ? (
+        <Card onPress={() => setShowF(true)}>
+          <T size={12} sub>
+            ∑ Günün formülü — önce aklından söyle
+          </T>
+          <T weight="700">{fOfDay.name_en}</T>
+          <T size={13} sub>
+            {fOfDay.name_tr}
+          </T>
+          {showF ? (
+            <>
+              <MathView latex={fOfDay.latex} />
+              {fOfDay.vars_tr ? <T size={13}>{fOfDay.vars_tr}</T> : null}
+            </>
+          ) : (
+            <T size={12} sub style={{ marginTop: 4 }}>
+              Dokun, formülü gör.
+            </T>
+          )}
+        </Card>
       ) : null}
 
       <Button kind="secondary" icon="🎮" title="İngilizce oyunu — 2 dakikada kelime" onPress={() => router.push('/english')} />
