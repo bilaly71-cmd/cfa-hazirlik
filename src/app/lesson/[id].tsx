@@ -5,7 +5,7 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { BiText } from '@/components/bitext';
 import { MathView } from '@/components/math';
 import { Button, Card, Chip, H, Row, Screen, T, spkChip } from '@/components/ui';
-import { lessonByModule, moduleById, questionsByLos, questionsByModule } from '@/content';
+import { lessonByModule, moduleById, questionsByLos, questionsByModule, topics } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { readMinutes, wordCount } from '@/lib/scoring';
 import { speakEn, stopSpeech } from '@/lib/speech';
@@ -220,6 +220,21 @@ export default function LessonScreen() {
         title="Tüm LOS'ları okundu işaretle"
         onPress={() => m.los.forEach((l) => actions.markLos(l.id, true))}
       />
+      {(() => {
+        const all = topics.flatMap((t) => t.modules).filter((x) => lessonByModule.has(x.id));
+        const nx = all[all.findIndex((x) => x.id === m.id) + 1];
+        return nx ? (
+          <Button
+            style={{ marginTop: 8 }}
+            kind="secondary"
+            title={`Okudum, sonraki ders → ${nx.title_tr}`}
+            onPress={() => {
+              m.los.forEach((l) => actions.markLos(l.id, true));
+              router.replace({ pathname: '/lesson/[id]', params: { id: nx.id } });
+            }}
+          />
+        ) : null;
+      })()}
     </Screen>
   );
 }
