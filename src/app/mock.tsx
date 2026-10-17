@@ -9,7 +9,6 @@ import { useColors } from '@/hooks/use-theme';
 import { allocate, buildMock, mockReport } from '@/lib/mock';
 import { actions, getState, useStore, type MockInProgress } from '@/state/store';
 
-const SESSION_MIN = 135;
 
 export default function Mock() {
   const c = useColors();
@@ -22,9 +21,9 @@ export default function Mock() {
 
   const target = allocate(weights, 180);
   const enough = questions.length >= 180;
-  const start = () => {
+  const start = (perSession = 90, sessions = 2) => {
     const seed = Date.now() % 2147483647;
-    const m = buildMock(questions, weights, seed);
+    const m = buildMock(questions, weights, seed, perSession, sessions);
     actions.setMockInProgress({ seed, session: 0, ids: m.sessions.map((s) => s.map((q) => q.id)), answers: {}, startedAt: new Date().toISOString(), flagged: [] });
   };
   return (
@@ -46,7 +45,11 @@ export default function Mock() {
             Havuzda {questions.length} doğrulanmış soru var; 180'den azsa mock kısa olur ve konu dağılımı eksik kalabilir.
           </T>
         ) : null}
-        <Button style={{ marginTop: 12 }} title="Mock'u başlat" disabled={!questions.length} onPress={start} />
+        <Button style={{ marginTop: 12 }} title="Mock'u başlat" disabled={!questions.length} onPress={() => start()} />
+        <Button style={{ marginTop: 8 }} kind="secondary" title="Mini mock: 30 soru, 45 dk" disabled={questions.length < 30} onPress={() => start(30, 1)} />
+        <T size={12} sub style={{ marginTop: 4 }}>
+          Mini mock tek oturum: aynı sınav kuralları, daha kısa. Tam mock'tan önce tempo denemek için ideal.
+        </T>
       </Card>
       <H>Geçmiş</H>
       {!mocks.length ? <T sub>Henüz mock yok.</T> : null}
@@ -74,7 +77,8 @@ function Session({ prog, onDone }: { prog: MockInProgress; onDone: (id: string) 
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
   }, []);
-  const leftSec = Math.max(0, SESSION_MIN * 60 - Math.floor((now - new Date(prog.startedAt).getTime()) / 1000));
+  const sessionMin = Math.round(ids.length * 1.5);
+  const leftSec = Math.max(0, sessionMin * 60 - Math.floor((now - new Date(prog.startedAt).getTime()) / 1000));
   const finishSession = () => {
     const p = getState().mockInProgress!;
     if (p.session + 1 < p.ids.length) {
@@ -88,7 +92,7 @@ function Session({ prog, onDone }: { prog: MockInProgress; onDone: (id: string) 
       return { topic: q.topic, correct: p.answers[id] === q.answer };
     });
     const id = `mock-${Date.now()}`;
-    const minutes = SESSION_MIN * p.ids.length;
+    const minutes = p.ids.reduce((a, l) => a + Math.round(l.length * 1.5), 0);
     actions.saveMock({
       id,
       at: new Date().toISOString(),
