@@ -79,6 +79,26 @@ export default function Settings() {
       </Row>
 
       <H>Sınav tarihi ve günlük hedef</H>
+      <Row wrap style={{ marginBottom: 8 }}>
+        {(
+          [
+            ['2027-02-22', 'Şub 2027'],
+            ['2027-05-11', 'May 2027'],
+            ['2027-08-15', 'Ağu 2027'],
+            ['2027-11-13', 'Kas 2027'],
+          ] as const
+        ).map(([d, label]) => (
+          <Chip
+            key={d}
+            label={label}
+            active={st.examDate === d}
+            onPress={() => {
+              setDate(d);
+              actions.updateSettings({ examDate: d });
+            }}
+          />
+        ))}
+      </Row>
       <Row>
         <TextInput
           value={date}
@@ -90,7 +110,7 @@ export default function Settings() {
         <Button small title="Kaydet" disabled={!/^\d{4}-\d{2}-\d{2}$/.test(date)} onPress={() => actions.updateSettings({ examDate: date })} />
       </Row>
       <T size={12} sub style={{ marginTop: 4 }}>
-        Örnek pencereler (Sınav bilgisi ekranına bak): Mayıs 2027 L1 11–17 Mayıs · Ağustos 2027 L1 15–22 Ağustos.
+        Seçtiğin pencerenin ilk günü kullanılır (L1: Şubat 22–28, Mayıs 11–17, Ağustos 15–22, Kasım 13–19). Kendi randevu tarihini de yazabilirsin.
       </T>
       <Row wrap style={{ marginTop: 10 }}>
         {[10, 20, 30, 45, 60].map((k) => (

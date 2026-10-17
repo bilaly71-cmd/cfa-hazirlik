@@ -113,6 +113,15 @@ export function localDay(d: Date = new Date()) {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 }
 
+/** Tahmini okuma süresi (dk): A2-B1 okuyucu için ~110 kelime/dk; en az 1. */
+export function readMinutes(words: number) {
+  return Math.max(1, Math.round(words / 110));
+}
+
+export function wordCount(text: string) {
+  return text.trim() ? text.trim().split(/\s+/).length : 0;
+}
+
 export function daysUntil(dateIso: string, now: Date = new Date()) {
   const d = new Date(dateIso + (dateIso.length === 10 ? 'T00:00:00' : ''));
   const a = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());

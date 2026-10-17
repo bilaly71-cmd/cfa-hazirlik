@@ -7,6 +7,7 @@ import { MathView } from '@/components/math';
 import { Button, Card, Chip, H, Row, Screen, T, spkChip } from '@/components/ui';
 import { lessonByModule, moduleById, questionsByLos, questionsByModule } from '@/content';
 import { useColors } from '@/hooks/use-theme';
+import { readMinutes, wordCount } from '@/lib/scoring';
 import { speakEn, stopSpeech } from '@/lib/speech';
 import { actions, useStore } from '@/state/store';
 
@@ -56,6 +57,11 @@ export default function LessonScreen() {
         {lesson?.title_en ?? m.title_en}
       </T>
       <T color={c.tr}>{lesson?.title_tr ?? m.title_tr}</T>
+      {lesson ? (
+        <T size={12} sub>
+          ~{readMinutes(lesson.sections.reduce((a, x) => a + wordCount(x.en), 0))} dk okuma · {m.los.length} LOS
+        </T>
+      ) : null}
       {spk ? (
         <Row style={{ marginTop: 6 }}>
           <Chip label={spk.label} color={(c as Record<string, string>)[spk.key]} />

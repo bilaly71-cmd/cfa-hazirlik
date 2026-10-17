@@ -4,6 +4,7 @@ import { Button, Card, Chip, H, Row, Screen, T, spkChip } from '@/components/ui'
 import { lessonByModule, questionsByModule, spkMap, topicById } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import type { TopicId } from '@/lib/schema';
+import { readMinutes, wordCount } from '@/lib/scoring';
 import { useStore } from '@/state/store';
 
 export default function TopicScreen() {
@@ -50,7 +51,7 @@ export default function TopicScreen() {
               {m.title_en}
             </T>
             <Row wrap style={{ marginTop: 6 }}>
-              <Chip label={lesson ? '📖 anlatım' : 'anlatım hazırlanıyor'} color={lesson ? c.good : undefined} />
+              <Chip label={lesson ? `📖 ~${readMinutes(lesson.sections.reduce((a, x) => a + wordCount(x.en), 0))} dk` : 'anlatım hazırlanıyor'} color={lesson ? c.good : undefined} />
               <Chip label={`${qn} soru`} />
               <Chip label={`LOS ${read}/${m.los.length}`} color={read === m.los.length && read ? c.good : undefined} />
             </Row>
