@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useMemo } from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
 import { lessonByModule, questions, topicName, topics, weights } from '@/content';
@@ -31,6 +31,15 @@ export default function Today() {
     return undefined;
   }, [s.losRead]);
   const nextLesson = nextMod ? lessonByModule.get(nextMod.id) : undefined;
+  // Web'de ve uygulama olarak yüklenmemişse "ana ekrana ekle" ipucu
+  const showInstall =
+    Platform.OS === 'web' &&
+    !s.settings.installDismissed &&
+    typeof window !== 'undefined' &&
+    !window.matchMedia?.('(display-mode: standalone)').matches &&
+    !(navigator as unknown as { standalone?: boolean }).standalone &&
+    /android|iphone|ipad/i.test(navigator.userAgent);
+  const isIos = typeof navigator !== 'undefined' && /iphone|ipad/i.test(navigator.userAgent);
   const goal = Math.max(s.settings.dailyGoal, 1);
 
   return (
@@ -75,6 +84,16 @@ export default function Today() {
               onPress={() => actions.updateSettings({ lastSuggestionDismissed: `${rec.suggest}-${s.attempts.length >> 5}` })}
             />
           </Row>
+        </Card>
+      ) : null}
+
+      {showInstall ? (
+        <Card style={{ backgroundColor: c.warnBg }}>
+          <T weight="700">📲 Ana ekrana ekle</T>
+          <T size={13} style={{ marginTop: 4 }}>
+            {isIos ? 'Safari’de Paylaş düğmesi → “Ana Ekrana Ekle”.' : 'Tarayıcı menüsü (⋮) → “Uygulamayı yükle” / “Ana ekrana ekle”.'} Uygulama gibi açılır, internetsiz de çalışır.
+          </T>
+          <Button small kind="ghost" title="Tamam, gizle" style={{ marginTop: 6 }} onPress={() => actions.updateSettings({ installDismissed: true })} />
         </Card>
       ) : null}
 

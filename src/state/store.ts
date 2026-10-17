@@ -15,6 +15,7 @@ export type Settings = {
   dailyGoal: number; // soru/gün
   ttsRate: number; // 0.5 - 1.2
   oneHand: boolean; // butonları alta topla
+  installDismissed?: boolean; // 'ana ekrana ekle' ipucunu gizle
   quickAnswer?: boolean; // şıkka dokununca hemen cevapla (Kontrol et adımı yok)
   lastSuggestionDismissed?: string;
 };

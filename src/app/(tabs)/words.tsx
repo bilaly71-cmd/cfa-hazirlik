@@ -48,7 +48,13 @@ export default function Words() {
 
   return (
     <Screen>
-      <Card>
+      <Card onPress={() => router.push('/english')}>
+        <T weight="700">🎮 İngilizce oyunları</T>
+        <T size={13} sub>
+          Anlam, boşluk doldurma ve eşleştirme — çözdüğün sorulardaki kelimelerle.
+        </T>
+      </Card>
+      <Card style={{ marginTop: 10 }}>
         <Row style={{ justifyContent: 'space-between' }}>
           <View>
             <T weight="700">Kelime defteri</T>
@@ -58,6 +64,8 @@ export default function Words() {
           </View>
           <Button small title="Tekrar et" disabled={!dueV} onPress={() => router.push({ pathname: '/review', params: { only: 'v' } })} />
         </Row>
+        {ids.length ? (
+          <>
         <Row style={{ marginTop: 10 }}>
           <Button small kind="secondary" title="JSON indir" disabled={!ids.length} onPress={() => doExport('json')} />
           <Button small kind="secondary" title="CSV indir" disabled={!ids.length} onPress={() => doExport('csv')} />
@@ -70,13 +78,8 @@ export default function Words() {
         <T size={11} sub style={{ marginTop: 4 }}>
           Alanlar: term_en, tr, example_en, example_tr, topic {Platform.OS === 'web' ? '· dosya indirilir' : '· paylaş menüsü açılır'}
         </T>
-      </Card>
-
-      <Card onPress={() => router.push('/english')} style={{ marginTop: 10 }}>
-        <T weight="700">🎮 İngilizce oyunları</T>
-        <T size={13} sub>
-          Anlam, boşluk doldurma ve eşleştirme — çözdüğün sorulardaki kelimelerle.
-        </T>
+          </>
+        ) : null}
       </Card>
 
       <H>Sözlükte ara ({vocab.length} terim)</H>
