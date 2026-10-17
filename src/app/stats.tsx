@@ -2,7 +2,7 @@ import { Stack, router } from 'expo-router';
 import { useMemo } from 'react';
 
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
-import { questions, questionsByTopic, topics, weights } from '@/content';
+import { losById, questions, questionsByTopic, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
 import { daysUntil, localDay, readinessScore, streak, topicStats } from '@/lib/scoring';
 import { useStore } from '@/state/store';
@@ -125,6 +125,39 @@ export default function Stats() {
           </Card>
         );
       })}
+
+      {(() => {
+        // En zayıf LOS'lar: en az 3 deneme, doğruluk %60'ın altında
+        const by = new Map<string, { n: number; ok: number }>();
+        for (const a of s.attempts) {
+          const e = by.get(a.los_id) ?? { n: 0, ok: 0 };
+          e.n += 1;
+          e.ok += a.correct ? 1 : 0;
+          by.set(a.los_id, e);
+        }
+        const weak = [...by]
+          .filter(([, e]) => e.n >= 3 && e.ok / e.n < 0.6)
+          .sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n)
+          .slice(0, 3);
+        if (!weak.length) return null;
+        return (
+          <>
+            <H>En zayıf alt konular</H>
+            {weak.map(([id, e]) => {
+              const l = losById.get(id);
+              return (
+                <Card key={id} style={{ paddingVertical: 10 }}>
+                  <T size={14}>{l?.tr ?? id}</T>
+                  <T size={12} sub>
+                    {id} · %{Math.round((e.ok / e.n) * 100)} ({e.ok}/{e.n})
+                  </T>
+                  <Button small kind="secondary" style={{ marginTop: 6 }} title="Bu alt konudan 5 soru" onPress={() => router.push({ pathname: '/quiz', params: { mode: 'los', los: id, n: '5' } })} />
+                </Card>
+              );
+            })}
+          </>
+        );
+      })()}
 
       {(() => {
         const miss = new Map<string, number>();
