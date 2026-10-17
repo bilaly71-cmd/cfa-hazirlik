@@ -30,6 +30,12 @@ export default function Review() {
       <Screen>
         <Stack.Screen options={{ title: 'Tekrar' }} />
         <Empty text={queue.length ? `Bitti! ${queue.length} kart tekrar edildi. ✓` : 'Bugün tekrar edilecek kart yok. ✓'} />
+        {queue.length ? (
+          <T center sub style={{ marginBottom: 10 }}>
+            Aralıklı tekrar böyle çalışır: bugün unutmaya yaklaşan kartları tazeledin. Şimdi 5 yeni soruyla devam edebilirsin.
+          </T>
+        ) : null}
+        <Button kind="secondary" style={{ marginBottom: 8 }} title="5 yeni soru çöz" onPress={() => router.replace({ pathname: '/quiz', params: { mode: 'new', n: '5' } })} />
         <Button title="Kapat" onPress={() => router.back()} />
       </Screen>
     );
