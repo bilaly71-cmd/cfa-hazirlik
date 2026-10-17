@@ -72,6 +72,26 @@ export default function Today() {
         </Card>
       ) : null}
 
+      <H>Kaç dakikan var?</H>
+      <Row>
+        {([[5, 3], [10, 7], [15, 10]] as const).map(([min, n]) => (
+          <Button
+            key={min}
+            style={{ flex: 1 }}
+            kind={min === 10 ? 'primary' : 'secondary'}
+            title={`${min} dk`}
+            onPress={() =>
+              min === 5 && due.length
+                ? router.push('/review')
+                : router.push({ pathname: '/quiz', params: focus ? { mode: 'topic', topic: focus.id, n: String(n) } : { mode: 'daily', n: String(n) } })
+            }
+          />
+        ))}
+      </Row>
+      <T size={12} sub>
+        5 dk: bekleyen tekrar varsa tekrar, yoksa 3 soru · 10 dk: 7 soru · 15 dk: 10 soru (zayıf konundan).
+      </T>
+
       <H>Bugünün planı</H>
       <Card>
         <T>
