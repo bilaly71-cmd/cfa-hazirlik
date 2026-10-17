@@ -3,9 +3,9 @@ import { useMemo } from 'react';
 import { View } from 'react-native';
 
 import { Bar, Button, Card, H, Row, Screen, T } from '@/components/ui';
-import { questions, topicName, weights } from '@/content';
+import { lessonByModule, questions, topicName, topics, weights } from '@/content';
 import { useColors } from '@/hooks/use-theme';
-import { dailyPlan, daysUntil, localDay, readinessScore, recommendTrLevel, streak, weakTopics } from '@/lib/scoring';
+import { dailyPlan, daysUntil, localDay, readMinutes, readinessScore, recommendTrLevel, streak, weakTopics, wordCount } from '@/lib/scoring';
 import { dueCards } from '@/lib/srs';
 import { actions, useStore } from '@/state/store';
 
@@ -25,6 +25,12 @@ export default function Today() {
   const focus = s.attempts.length >= 20 ? weak[0] : undefined; // en çok puan getirecek zayıf konu
   const rec = recommendTrLevel(s.attempts, s.settings.trLevel);
   const st = streak(s.studyDays, today);
+  // Sıradaki ders: müfredat sırasında, okunmamış LOS'u olan ilk anlatımlı modül
+  const nextMod = useMemo(() => {
+    for (const t of topics) for (const m of t.modules) if (lessonByModule.has(m.id) && m.los.some((l) => !s.losRead[l.id])) return m;
+    return undefined;
+  }, [s.losRead]);
+  const nextLesson = nextMod ? lessonByModule.get(nextMod.id) : undefined;
   const goal = Math.max(s.settings.dailyGoal, 1);
 
   return (
@@ -102,33 +108,21 @@ export default function Today() {
         ))}
       </Row>
       <T size={12} sub>
-        5 dk: bekleyen tekrar varsa tekrar, yoksa 3 soru · 10 dk: 7 soru · 15 dk: 10 soru (zayıf konundan).
+        5 dk: tekrar ya da 3 soru · 10 dk: 7 soru · 15 dk: 10 soru
       </T>
 
-      <H>Bugünün planı</H>
-      <Card>
-        <T>
-          • {plan.newQuestions} yeni soru · {plan.reviews} tekrar · ~{plan.minutes} dk
-        </T>
-        <Row style={{ marginTop: 10 }} wrap>
-          <Button
-            style={{ flex: 1, minWidth: 140 }}
-            title={due.length ? `Tekrar (${due.length})` : 'Tekrar yok ✓'}
-            disabled={!due.length}
-            onPress={() => router.push('/review')}
-          />
-          <Button
-            style={{ flex: 1, minWidth: 140 }}
-            kind="secondary"
-            title={focus ? `10 soru: ${focus.id}` : '10 soru çöz'}
-            onPress={() => router.push({ pathname: '/quiz', params: focus ? { mode: 'topic', topic: focus.id, n: '10' } : { mode: 'daily', n: '10' } })}
-          />
-        </Row>
-        <T size={12} sub style={{ marginTop: 6 }}>
-          Tekrar: {dueQ} soru · {dueV} kelime
-        </T>
-      </Card>
+      <T size={13} sub>
+        Bugünün planı: {plan.newQuestions} yeni soru · {due.length} tekrar ({dueQ} soru, {dueV} kelime) · ~{plan.minutes} dk. Hepsini bitirmek zorunda değilsin.
+      </T>
 
+      {nextMod && nextLesson ? (
+        <Button
+          kind="secondary"
+          icon="📖"
+          title={`Sıradaki ders: ${nextMod.title_tr} (~${readMinutes(nextLesson.sections.reduce((a, x) => a + wordCount(x.en), 0))} dk)`}
+          onPress={() => router.push({ pathname: '/lesson/[id]', params: { id: nextMod.id } })}
+        />
+      ) : null}
 
       <Button kind="secondary" icon="🎮" title="İngilizce oyunu — 2 dakikada kelime" onPress={() => router.push('/english')} />
 
