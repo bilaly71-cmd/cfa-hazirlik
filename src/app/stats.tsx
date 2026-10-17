@@ -79,7 +79,18 @@ export default function Stats() {
           );
         })}
         <T size={12} sub style={{ marginTop: 6 }}>
-          “Yanlış okudum” yüksekse Soru kalıpları bölümüne bak; “Acele ettim” yüksekse zamanlı modda yavaşla.
+          {(() => {
+            const tips = {
+              know: 'En sık neden “bilmiyordum”: ilgili dersi tekrar oku, Tekrar sekmesindeki kartları çalış.',
+              rush: 'En sık neden “acele”: şıkları okumadan işaretleme; son 10 saniyeye kadar bekle.',
+              read: 'En sık neden “yanlış okudum”: Soru kalıpları bölümüne bak (NOT, least likely, closest to).',
+              calc: 'En sık neden “hesap hatası”: Hesap rehberi ve Formüller ekranında adımları tekrar et.',
+            } as const;
+            const top = (['know', 'rush', 'read', 'calc'] as const)
+              .map((k) => [k, s.attempts.filter((a) => a.reason === k).length] as const)
+              .sort((a, b) => b[1] - a[1])[0];
+            return top[1] ? tips[top[0]] : 'Yanlış yaptığında nedenini işaretle; burada sana özel öneri çıkar.';
+          })()}
         </T>
       </Card>
 
