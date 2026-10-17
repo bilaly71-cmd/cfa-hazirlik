@@ -1606,6 +1606,1063 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-04-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A zero-coupon bond with a face value of 100 matures in 4 years. The market yield is 15% per year, compounded annually. The price of the bond is closest to:",
+      "stem_tr": "Nominal değeri 100 olan sıfır kuponlu bir tahvilin vadesine 4 yıl var. Piyasa getirisi yıllık %15, yıllık bileşik. Tahvilin fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "57.18",
+          "tr": "57,18",
+          "value": 57.18
+        },
+        {
+          "key": "B",
+          "en": "62.50",
+          "tr": "62,50",
+          "value": 62.5
+        },
+        {
+          "key": "C",
+          "en": "52.20",
+          "tr": "52,20",
+          "value": 52.2
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A zero-coupon bond pays only the face value at maturity: 100 / 1.15^4 = 57.18.",
+      "explanation_tr": "Sıfır kuponlu tahvil vadede yalnızca nominal değeri öder: 100 / 1,15^4 = 57,18.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Discounts with simple interest (1 + 0.15 × 4) instead of compounding.",
+          "tr": "Bileşik yerine basit faizle (1 + 0,15 × 4) iskonto eder."
+        },
+        "C": {
+          "en": "Reduces the face value by 15% each year, which is not present-value discounting.",
+          "tr": "Nominal değeri her yıl %15 azaltır; bu, bugünkü değer iskontosu değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the price of a zero-coupon bond.",
+          "tr": "Sıfır kuponlu bir tahvilin fiyatı isteniyor."
+        },
+        {
+          "en": "Discount the single payment at maturity at the market yield.",
+          "tr": "Vadedeki tek ödemeyi piyasa getirisiyle iskonto et.",
+          "formula_latex": "P=\\frac{F}{(1+y)^n}",
+          "values": {
+            "F": 100,
+            "y": 0.15,
+            "n": 4
+          }
+        },
+        {
+          "en": "1.15^4 = 1.7490.",
+          "tr": "1,15^4 = 1,7490."
+        },
+        {
+          "en": "100 / 1.7490 = 57.18.",
+          "tr": "100 / 1,7490 = 57,18."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "4 [N]  15 [I/Y]  0 [PMT]  100 [FV]",
+          "[CPT] [PV]  (-57.18)"
+        ]
+      },
+      "numeric": {
+        "expr": "abs(pv(0.15,4,0,100))"
+      },
+      "vocab_ids": [
+        "present-value",
+        "discount",
+        "yield",
+        "face-value",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 2-year bond with a face value of 100 pays an 8% annual coupon. The 1-year spot rate is 10% and the 2-year spot rate is 14%, both annual. Discounting each cash flow at the spot rate for its own maturity, the bond price is closest to:",
+      "stem_tr": "Nominal değeri 100 olan 2 yıllık bir tahvil yıllık %8 kupon ödüyor. 1 yıllık spot oran %10, 2 yıllık spot oran %14'tür; ikisi de yıllıktır. Her nakit akışı kendi vadesinin spot oranıyla iskonto edildiğinde tahvil fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "96.53",
+          "tr": "96,53",
+          "value": 96.53
+        },
+        {
+          "key": "B",
+          "en": "90.37",
+          "tr": "90,37",
+          "value": 90.37
+        },
+        {
+          "key": "C",
+          "en": "83.10",
+          "tr": "83,10",
+          "value": 83.1
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Price = 8 / 1.10 + 108 / 1.14^2 = 7.27 + 83.10 = 90.37.",
+      "explanation_tr": "Fiyat = 8 / 1,10 + 108 / 1,14^2 = 7,27 + 83,10 = 90,37.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Discounts both cash flows at the 1-year rate, so the second payment is discounted too lightly.",
+          "tr": "Her iki nakit akışını 1 yıllık oranla iskonto eder; ikinci ödeme gereğinden az iskonto edilmiş olur."
+        },
+        "C": {
+          "en": "Discounts only the final payment and leaves out the first coupon.",
+          "tr": "Yalnızca son ödemeyi iskonto eder, ilk kuponu dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the bond price using spot rates.",
+          "tr": "Spot oranlarla tahvil fiyatı isteniyor."
+        },
+        {
+          "en": "Discount each cash flow at the spot rate that matches its date.",
+          "tr": "Her nakit akışını kendi tarihine uyan spot oranla iskonto et.",
+          "formula_latex": "P=\\frac{C}{(1+s_1)}+\\frac{C+F}{(1+s_2)^2}",
+          "values": {
+            "C": 8,
+            "F": 100,
+            "s1": 0.1,
+            "s2": 0.14
+          }
+        },
+        {
+          "en": "Year 1: 8 / 1.10 = 7.27. Year 2: 108 / 1.2996 = 83.10.",
+          "tr": "1. yıl: 8 / 1,10 = 7,27. 2. yıl: 108 / 1,2996 = 83,10."
+        },
+        {
+          "en": "Price = 7.27 + 83.10 = 90.37.",
+          "tr": "Fiyat = 7,27 + 83,10 = 90,37."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [÷] 1.10 [=]  (7.27)",
+          "108 [÷] 1.14 [x²] [=]  (83.10)",
+          "7.27 [+] 83.10 [=]  → 90.37"
+        ]
+      },
+      "numeric": {
+        "expr": "8/1.10+108/1.14**2"
+      },
+      "vocab_ids": [
+        "spot-rate",
+        "coupon",
+        "cash-flow",
+        "discount",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A bond with a coupon rate of 6% is priced to yield 9%. If its yield stays at 9%, the bond's price one year from now will most likely be:",
+      "stem_tr": "Kupon oranı %6 olan bir tahvil %9 getiri verecek şekilde fiyatlanmış. Getirisi %9'da kalırsa tahvilin bir yıl sonraki fiyatı büyük olasılıkla ne olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Lower, moving further below par as maturity approaches",
+          "tr": "Daha düşük; vade yaklaştıkça nominal değerden uzaklaşır"
+        },
+        {
+          "key": "B",
+          "en": "Unchanged, because the yield did not move",
+          "tr": "Değişmez; çünkü getiri değişmedi"
+        },
+        {
+          "key": "C",
+          "en": "Higher, moving closer to par as maturity approaches",
+          "tr": "Daha yüksek; vade yaklaştıkça nominal değere yakınlaşır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The bond sells at a discount (coupon below yield). With a constant yield, the discount shrinks and the price pulls toward par.",
+      "explanation_tr": "Tahvil iskontoyla satılır (kupon getirinin altında). Getiri sabitken iskonto küçülür ve fiyat nominal değere doğru yaklaşır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A discount bond does not drift away from par; the discount shrinks over time.",
+          "tr": "İskontolu tahvil nominal değerden uzaklaşmaz; iskonto zamanla küçülür."
+        },
+        "B": {
+          "en": "A constant yield does not freeze the price; the remaining cash flows are discounted over a shorter time, so the price changes.",
+          "tr": "Sabit getiri fiyatı dondurmaz; kalan nakit akışları daha kısa süre iskonto edilir ve fiyat değişir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "discount",
+        "premium",
+        "par",
+        "maturity",
+        "coupon",
+        "pull-to-par"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company just paid a dividend of TL 3 per share. Dividends are expected to grow at 8% a year forever, and the required return is 14%. Using the Gordon growth model, the value of one share one year from now (just after the next dividend is paid) is closest to:",
+      "stem_tr": "Bir şirket pay başına TL 3 temettü ödedi. Temettülerin sonsuza dek yılda %8 büyümesi bekleniyor ve gerekli getiri %14. Gordon büyüme modeliyle, bir payın bir yıl sonraki (bir sonraki temettü ödendikten hemen sonraki) değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "58.32",
+          "tr": "58,32",
+          "value": 58.32
+        },
+        {
+          "key": "B",
+          "en": "54.00",
+          "tr": "54,00",
+          "value": 54.0
+        },
+        {
+          "key": "C",
+          "en": "24.99",
+          "tr": "24,99",
+          "value": 24.99
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "After the next dividend D1 = 3.24, the next one is D2 = 3.24 × 1.08 = 3.4992. P1 = D2 / (r - g) = 3.4992 / 0.06 = 58.32.",
+      "explanation_tr": "Bir sonraki temettüden (D1 = 3,24) sonra gelecek temettü D2 = 3,24 × 1,08 = 3,4992'dir. P1 = D2 / (r - g) = 3,4992 / 0,06 = 58,32.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the value today (D1 / (r - g)); one year later the value has grown by 8%.",
+          "tr": "Bu bugünkü değerdir (D1 / (r - g)); bir yıl sonra değer %8 artmıştır."
+        },
+        "C": {
+          "en": "Uses D2 but divides by r alone, ignoring growth in the denominator.",
+          "tr": "D2'yi kullanır ancak paydada büyümeyi göz ardı ederek yalnızca r'ye böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the Gordon value one year ahead.",
+          "tr": "Bir yıl sonraki Gordon değeri isteniyor."
+        },
+        {
+          "en": "The value at t = 1 uses the dividend for t = 2.",
+          "tr": "t = 1'deki değer t = 2 temettüsünü kullanır.",
+          "formula_latex": "P_1=\\frac{D_2}{r-g}",
+          "values": {
+            "D0": 3,
+            "g": 0.08,
+            "r": 0.14
+          }
+        },
+        {
+          "en": "D1 = 3 × 1.08 = 3.24; D2 = 3.24 × 1.08 = 3.4992.",
+          "tr": "D1 = 3 × 1,08 = 3,24; D2 = 3,24 × 1,08 = 3,4992."
+        },
+        {
+          "en": "P1 = 3.4992 / 0.06 = 58.32.",
+          "tr": "P1 = 3,4992 / 0,06 = 58,32."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3 [×] 1.08 [×] 1.08 [=]  (3.4992)",
+          "[÷] 0.06 [=]  → 58.32"
+        ]
+      },
+      "numeric": {
+        "expr": "3*1.08*1.08/(0.14-0.08)"
+      },
+      "vocab_ids": [
+        "dividend",
+        "growth",
+        "perpetuity",
+        "required-return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A 3-year zero-coupon bond with a face value of 100 is priced at 70. The implied annual yield to maturity, compounded annually, is closest to:",
+      "stem_tr": "Nominal değeri 100 olan 3 yıllık sıfır kuponlu bir tahvil 70'ten fiyatlanıyor. Yıllık bileşik zımni vadeye kadar getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "14.29%",
+          "tr": "%14,29",
+          "value": 14.29
+        },
+        {
+          "key": "B",
+          "en": "12.62%",
+          "tr": "%12,62",
+          "value": 12.62
+        },
+        {
+          "key": "C",
+          "en": "19.52%",
+          "tr": "%19,52",
+          "value": 19.52
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Solve 70 = 100 / (1 + y)^3: y = (100 / 70)^(1/3) - 1 = 12.62%.",
+      "explanation_tr": "70 = 100 / (1 + y)^3 denklemini çöz: y = (100 / 70)^(1/3) - 1 = %12,62.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Spreads the total gain over three years with simple interest instead of compounding.",
+          "tr": "Toplam kazancı bileşik yerine basit faizle üç yıla yayar."
+        },
+        "C": {
+          "en": "Uses a two-year root, which does not match the three-year maturity.",
+          "tr": "İki yıllık kök kullanır; bu, üç yıllık vadeyle uyuşmaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the yield implied by the price.",
+          "tr": "Fiyatın ima ettiği getiri isteniyor."
+        },
+        {
+          "en": "Solve the zero-coupon price equation for y.",
+          "tr": "Sıfır kuponlu fiyat denklemini y için çöz.",
+          "formula_latex": "y=\\left(\\frac{F}{P}\\right)^{1/n}-1",
+          "values": {
+            "F": 100,
+            "P": 70,
+            "n": 3
+          }
+        },
+        {
+          "en": "(100 / 70)^(1/3) = 1.1262.",
+          "tr": "(100 / 70)^(1/3) = 1,1262."
+        },
+        {
+          "en": "Yield = 12.62%.",
+          "tr": "Getiri = %12,62."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "3 [N]  -70 [PV]  0 [PMT]  100 [FV]",
+          "[CPT] [I/Y]  → 12.62"
+        ]
+      },
+      "numeric": {
+        "expr": "((100/70)**(1/3)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "implied-yield",
+        "price",
+        "maturity",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share's price and next-year dividend are fixed. An analyst raises her estimate of the perpetual dividend growth rate. All else equal, the required return implied by the Gordon growth model:",
+      "stem_tr": "Bir payın fiyatı ve gelecek yıl temettüsü sabit. Bir analist sonsuz temettü büyüme oranı tahminini yükseltiyor. Diğer her şey eşitken, Gordon büyüme modelinin ima ettiği gerekli getiri:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Falls, because faster growth makes the share less risky overall",
+          "tr": "Azalır; çünkü daha hızlı büyüme payı genel olarak daha az riskli yapar"
+        },
+        {
+          "key": "B",
+          "en": "Is unchanged, because the price and the dividend are both fixed",
+          "tr": "Değişmez; çünkü fiyat ve temettü ikisi de sabittir"
+        },
+        {
+          "key": "C",
+          "en": "Rises, because the return equals the dividend yield plus growth",
+          "tr": "Artar; çünkü getiri, temettü verimi artı büyümeye eşittir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "From P = D1 / (r - g), r = D1 / P + g. With D1 and P fixed, a higher g means a higher implied r.",
+      "explanation_tr": "P = D1 / (r - g) denkleminden r = D1 / P + g bulunur. D1 ve P sabitken daha yüksek g, daha yüksek zımni r demektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The model backs out the return that makes value equal price; growth does not reduce risk in this formula.",
+          "tr": "Model, değeri fiyata eşitleyen getiriyi bulur; bu formülde büyüme riski azaltmaz."
+        },
+        "B": {
+          "en": "Fixed price and dividend do not fix r; r is the unknown, and g enters its formula directly.",
+          "tr": "Sabit fiyat ve temettü r'yi sabitlemez; r bilinmeyendir ve g formüle doğrudan girer."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "gordon-growth-model",
+        "implied",
+        "required-return",
+        "price",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 2-year bond with a face value of 100 pays a 10% annual coupon and is priced at 98. Its yield to maturity is closest to:",
+      "stem_tr": "Nominal değeri 100 olan 2 yıllık bir tahvil yıllık %10 kupon ödüyor ve 98'den fiyatlanıyor. Vadeye kadar getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.17%",
+          "tr": "%11,17",
+          "value": 11.17
+        },
+        {
+          "key": "B",
+          "en": "10.20%",
+          "tr": "%10,20",
+          "value": 10.2
+        },
+        {
+          "key": "C",
+          "en": "12.24%",
+          "tr": "%12,24",
+          "value": 12.24
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Solve 98 = 10 / (1 + y) + 110 / (1 + y)^2. The solution is y = 11.17%, above the 10% coupon because the bond sells at a discount.",
+      "explanation_tr": "98 = 10 / (1 + y) + 110 / (1 + y)^2 denklemini çöz. Çözüm y = %11,17'dir; tahvil iskontoyla satıldığından kupon oranı olan %10'un üstündedir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides the coupon by the price, which is the current yield and ignores the discount gain.",
+          "tr": "Kuponu fiyata böler; bu cari getiridir ve iskonto kazancını göz ardı eder."
+        },
+        "C": {
+          "en": "Adds the full 2-point discount gain to one year's coupon, as if it were earned in a single year.",
+          "tr": "İki puanlık iskonto kazancının tamamını bir yıllık kupona ekler; sanki tek yılda kazanılıyormuş gibi."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the yield to maturity, the discount rate that equates PV of cash flows to price.",
+          "tr": "Nakit akışlarının bugünkü değerini fiyata eşitleyen iskonto oranı, yani vadeye kadar getiri isteniyor."
+        },
+        {
+          "en": "Set the price equal to the PV of the coupons and the principal and solve for y.",
+          "tr": "Fiyatı kuponların ve anaparanın bugünkü değerine eşitle ve y için çöz.",
+          "formula_latex": "P=\\frac{C}{1+y}+\\frac{C+F}{(1+y)^2}",
+          "values": {
+            "P": 98,
+            "C": 10,
+            "F": 100
+          }
+        },
+        {
+          "en": "Use the TVM keys with N = 2, PV = -98, PMT = 10, FV = 100.",
+          "tr": "TVM tuşlarını N = 2, PV = -98, PMT = 10, FV = 100 ile kullan."
+        },
+        {
+          "en": "YTM = 11.17%.",
+          "tr": "VKG = %11,17."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [CLR TVM]",
+          "2 [N]  -98 [PV]  10 [PMT]  100 [FV]",
+          "[CPT] [I/Y]  → 11.17"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-98,10,110])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "yield-to-maturity",
+        "coupon",
+        "price",
+        "discount",
+        "closest",
+        "annual"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company earns TL 10 per share next year and pays out 40% as dividends. It earns a return on equity of 15% on retained earnings, so dividends are expected to grow at (retention rate × ROE) forever. The share trades at TL 80. The required return implied by the Gordon growth model is closest to:",
+      "stem_tr": "Bir şirket gelecek yıl pay başına TL 10 kazanıyor ve %40'ını temettü olarak dağıtıyor. Dağıtılmayan kazançlar üzerinden %15 özsermaye karlılığı sağladığı için temettülerin sonsuza dek (kâr tutma oranı × ÖKO) hızıyla büyümesi bekleniyor. Pay TL 80'den işlem görüyor. Gordon büyüme modelinin ima ettiği gerekli getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "14.00%",
+          "tr": "%14,00",
+          "value": 14.0
+        },
+        {
+          "key": "C",
+          "en": "21.50%",
+          "tr": "%21,50",
+          "value": 21.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "D1 = 10 × 0.40 = 4. Growth g = 0.60 × 15% = 9%. r = D1 / P + g = 4 / 80 + 9% = 5% + 9% = 14.00%.",
+      "explanation_tr": "D1 = 10 × 0,40 = 4. Büyüme g = 0,60 × %15 = %9. r = D1 / P + g = 4 / 80 + %9 = %5 + %9 = %14,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gives only the dividend yield (5%) and leaves out the growth component.",
+          "tr": "Yalnızca temettü verimini (%5) verir, büyüme bileşenini dışarıda bırakır."
+        },
+        "C": {
+          "en": "Uses earnings per share (10) instead of the dividend (4) as the cash payout to the shareholder.",
+          "tr": "Temettü (4) yerine pay başına kazanç rakamını (10) nakit ödeme olarak kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the required return implied by price and growth.",
+          "tr": "Fiyat ve büyümenin ima ettiği gerekli getiri isteniyor."
+        },
+        {
+          "en": "Find the dividend and the growth rate, then add the dividend yield to growth.",
+          "tr": "Temettüyü ve büyüme oranını bul, sonra temettü verimini büyümeye ekle.",
+          "formula_latex": "r=\\frac{D_1}{P_0}+g,\\quad g=b\\times ROE",
+          "values": {
+            "EPS1": 10,
+            "payout": 0.4,
+            "b": 0.6,
+            "ROE": 0.15,
+            "P0": 80
+          }
+        },
+        {
+          "en": "D1 = 4; dividend yield = 4 / 80 = 5%; g = 0.6 × 0.15 = 9%.",
+          "tr": "D1 = 4; temettü verimi = 4 / 80 = %5; g = 0,6 × 0,15 = %9."
+        },
+        {
+          "en": "r = 5% + 9% = 14.00%.",
+          "tr": "r = %5 + %9 = %14,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "4 [÷] 80 [=]  (0.05)",
+          "0.6 [×] 0.15 [=]  (0.09)",
+          "0.05 [+] 0.09 [=]  → 0.14"
+        ]
+      },
+      "numeric": {
+        "expr": "(10*0.4/80+0.6*0.15)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "sustainable-growth",
+        "return-on-equity",
+        "implied",
+        "required-return"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-c-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "USD/TRY spot is 42.00 (TRY per USD). The 6-month TRY interest rate is 24% per year and the 6-month USD interest rate is 4% per year, both simple annual rates. The no-arbitrage 6-month forward rate is closest to:",
+      "stem_tr": "USD/TRY spot kuru 42,00 (1 USD için TRY). 6 aylık TRY faizi yıllık %24, 6 aylık USD faizi yıllık %4'tür; ikisi de basit yıllık orandır. Arbitrajsız 6 aylık vadeli kur aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "50.08",
+          "tr": "50,08",
+          "value": 50.08
+        },
+        {
+          "key": "B",
+          "en": "38.25",
+          "tr": "38,25",
+          "value": 38.25
+        },
+        {
+          "key": "C",
+          "en": "46.12",
+          "tr": "46,12",
+          "value": 46.12
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F = S × (1 + r_TRY × 0.5) / (1 + r_USD × 0.5) = 42 × 1.12 / 1.02 = 46.12.",
+      "explanation_tr": "F = S × (1 + r_TRY × 0,5) / (1 + r_USD × 0,5) = 42 × 1,12 / 1,02 = 46,12.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the full annual rates for a six-month contract.",
+          "tr": "Altı aylık sözleşme için tam yıllık oranları kullanır."
+        },
+        "B": {
+          "en": "Inverts the ratio, putting the foreign (USD) rate in the numerator, which would imply the lira is the stronger currency.",
+          "tr": "Oranı ters çevirir ve yabancı (USD) faizi paya koyar; bu, liranın daha güçlü para birimi olduğunu ima eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the no-arbitrage forward exchange rate.",
+          "tr": "Arbitrajsız vadeli kur isteniyor."
+        },
+        {
+          "en": "The forward rate equals spot adjusted by the ratio of the domestic to the foreign growth factor.",
+          "tr": "Vadeli kur, spot kurun yurt içi ve yurt dışı büyüme çarpanları oranıyla düzeltilmiş halidir.",
+          "formula_latex": "F=S\\frac{1+r_{TRY}t}{1+r_{USD}t}",
+          "values": {
+            "S": 42,
+            "r_TRY": 0.24,
+            "r_USD": 0.04,
+            "t": 0.5
+          }
+        },
+        {
+          "en": "Growth factors: 1 + 0.24 × 0.5 = 1.12; 1 + 0.04 × 0.5 = 1.02.",
+          "tr": "Büyüme çarpanları: 1 + 0,24 × 0,5 = 1,12; 1 + 0,04 × 0,5 = 1,02."
+        },
+        {
+          "en": "F = 42 × 1.12 / 1.02 = 46.12.",
+          "tr": "F = 42 × 1,12 / 1,02 = 46,12."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.12 [÷] 1.02 [=] [×] 42 [=]",
+          "→ 46.12"
+        ]
+      },
+      "numeric": {
+        "expr": "42*(1+0.24*0.5)/(1+0.04*0.5)"
+      },
+      "vocab_ids": [
+        "forward-rate",
+        "exchange-rate",
+        "no-arbitrage",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The 1-year spot rate is 12% and the 3-year spot rate is 15%, both annual and compounded annually. The implied annual forward rate for a 2-year loan that starts one year from now is closest to:",
+      "stem_tr": "1 yıllık spot oran %12, 3 yıllık spot oran %15'tir; ikisi de yıllık ve yıllık bileşiktir. Bir yıl sonra başlayacak 2 yıllık bir borç için zımni yıllık vadeli oran aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "16.53%",
+          "tr": "%16,53",
+          "value": 16.53
+        },
+        {
+          "key": "B",
+          "en": "15.00%",
+          "tr": "%15,00",
+          "value": 15
+        },
+        {
+          "key": "C",
+          "en": "35.79%",
+          "tr": "%35,79",
+          "value": 35.79
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "(1 + s3)^3 = (1 + s1)(1 + f)^2, so f = (1.15^3 / 1.12)^(1/2) - 1 = (1.5209 / 1.12)^(1/2) - 1 = 16.53%.",
+      "explanation_tr": "(1 + s3)^3 = (1 + s1)(1 + f)^2 olduğundan f = (1,15^3 / 1,12)^(1/2) - 1 = (1,5209 / 1,12)^(1/2) - 1 = %16,53.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the 3-year spot rate itself, which averages all three years instead of isolating years 2 and 3.",
+          "tr": "3 yıllık spot oranın kendisini verir; bu oran 2. ve 3. yılları ayırmak yerine üç yılın ortalamasıdır."
+        },
+        "C": {
+          "en": "Finds the two-year cumulative growth but does not take the square root to get an annual rate.",
+          "tr": "İki yıllık birikimli büyümeyi bulur ancak yıllık oran için karekökünü almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 2-year forward rate, 1 year ahead.",
+          "tr": "1 yıl sonrası için 2 yıllık vadeli oran isteniyor."
+        },
+        {
+          "en": "Equate the 3-year spot growth to the 1-year spot growth times two years of forward growth.",
+          "tr": "3 yıllık spot büyümesini, 1 yıllık spot büyümesi çarpı iki yıllık vadeli büyümeye eşitle.",
+          "formula_latex": "(1+s_3)^3=(1+s_1)(1+f_{1,2})^2",
+          "values": {
+            "s1": 0.12,
+            "s3": 0.15
+          }
+        },
+        {
+          "en": "1.15^3 / 1.12 = 1.5209 / 1.12 = 1.3580.",
+          "tr": "1,15^3 / 1,12 = 1,5209 / 1,12 = 1,3580."
+        },
+        {
+          "en": "1.3580^(1/2) - 1 = 16.53%.",
+          "tr": "1,3580^(1/2) - 1 = %16,53."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.15 [y^x] 3 [=] [÷] 1.12 [=]",
+          "[y^x] 0.5 [=] [-] 1 [=]",
+          "→ 0.1653"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.15**3/1.12)**0.5-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "spot-rate",
+        "forward-rate",
+        "implied",
+        "compounding",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A forward contract on a share that pays no dividends trades above its no-arbitrage price (spot compounded at the risk-free rate). Which strategy would most appropriately exploit the mispricing?",
+      "stem_tr": "Temettü ödemeyen bir paya ilişkin forward sözleşme, arbitrajsız fiyatının (spot fiyatın risksiz faizle bileşik değeri) üzerinde işlem görüyor. Hangi strateji bu fiyat hatasından en uygun biçimde yararlanır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Short the share, lend the proceeds and buy the forward",
+          "tr": "Payı açığa sat, geliri borç ver ve forward sözleşmeyi al"
+        },
+        {
+          "key": "B",
+          "en": "Borrow, buy the share now and sell the forward",
+          "tr": "Borçlan, payı şimdi al ve forward sözleşmeyi sat"
+        },
+        {
+          "key": "C",
+          "en": "Buy the share with own cash and wait for prices to converge",
+          "tr": "Payı kendi nakdinle al ve fiyatların yakınsamasını bekle"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The forward is overpriced, so sell it and hedge by buying the share with borrowed money; the locked-in sale price exceeds the cost of carry, giving a risk-free profit.",
+      "explanation_tr": "Forward sözleşme pahalıdır; sat ve payı borç parayla alarak koru. Kilitlenen satış fiyatı taşıma maliyetini aştığı için risksiz kâr doğar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the strategy for an underpriced forward, the reverse of what is needed here.",
+          "tr": "Bu, ucuz forward sözleşme için stratejidir; burada gerekenin tersidir."
+        },
+        "C": {
+          "en": "Waiting is speculation, not arbitrage, because it locks in no sale price and leaves price risk open.",
+          "tr": "Beklemek arbitraj değil spekülasyondur; satış fiyatını kilitlemez ve fiyat riskini açık bırakır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-price",
+        "arbitrage",
+        "cash-and-carry",
+        "spot",
+        "borrow"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-04-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-04",
+      "los_id": "QM-04-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share trades at TL 100. The risk-free rate is 20% per year. The share will pay a dividend of TL 8 on the expiry date of a 1-year forward contract, and the forward holder does not receive it. The no-arbitrage forward price is closest to:",
+      "stem_tr": "Bir pay TL 100'den işlem görüyor. Risksiz faiz yıllık %20. Pay, 1 yıllık bir forward sözleşmenin vade tarihinde TL 8 temettü ödeyecek ve forward sözleşme sahibi bunu almayacak. Arbitrajsız vadeli fiyat aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "120.00",
+          "tr": "120,00",
+          "value": 120.0
+        },
+        {
+          "key": "B",
+          "en": "110.40",
+          "tr": "110,40",
+          "value": 110.4
+        },
+        {
+          "key": "C",
+          "en": "112.00",
+          "tr": "112,00",
+          "value": 112.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F = S × (1 + r) - FV(dividend) = 100 × 1.20 - 8 = 112.00. The dividend is received on the expiry date, so it is not compounded.",
+      "explanation_tr": "F = S × (1 + r) - temettünün gelecek değeri = 100 × 1,20 - 8 = 112,00. Temettü vade tarihinde alındığı için bileşikleştirilmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Ignores the dividend, which the spot holder receives but the forward holder does not.",
+          "tr": "Spot payı elinde tutanın aldığı ancak forward sözleşme sahibinin almadığı temettüyü göz ardı eder."
+        },
+        "B": {
+          "en": "Subtracts the dividend before compounding, as if it were received today instead of on the expiry date.",
+          "tr": "Temettüyü bileşikleştirmeden önce düşer; sanki bugün alınıyormuş da vade tarihinde değilmiş gibi."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward price of a share that pays a dividend.",
+          "tr": "Temettü ödeyen bir payın vadeli fiyatı isteniyor."
+        },
+        {
+          "en": "Compound the spot price at the risk-free rate and subtract the future value of the dividend.",
+          "tr": "Spot fiyatı risksiz faizle bileşikleştir ve temettünün gelecek değerini çıkar.",
+          "formula_latex": "F=S(1+r)-FV(D)",
+          "values": {
+            "S": 100,
+            "r": 0.2,
+            "D": 8
+          }
+        },
+        {
+          "en": "100 × 1.20 = 120; the dividend arrives at expiry, so FV(D) = 8.",
+          "tr": "100 × 1,20 = 120; temettü vadede geldiği için FV(D) = 8."
+        },
+        {
+          "en": "F = 120 - 8 = 112.00.",
+          "tr": "F = 120 - 8 = 112,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [×] 1.20 [-] 8 [=]",
+          "→ 112.00"
+        ]
+      },
+      "numeric": {
+        "expr": "100*1.20-8"
+      },
+      "vocab_ids": [
+        "forward-price",
+        "dividend",
+        "expiry",
+        "carry",
+        "closest",
+        "no-arbitrage"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

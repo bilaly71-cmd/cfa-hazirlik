@@ -1693,6 +1693,1291 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-05-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund manager treats the four annual returns 4%, 8%, 6% and 2% as the entire population of interest. The population variance is closest to:",
+      "stem_tr": "Bir fon yöneticisi %4, %8, %6 ve %2 olan dört yıllık getiriyi ilgilendiği ana kütlenin tamamı olarak kabul ediyor. Ana kütle varyansı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.67",
+          "tr": "6,67",
+          "value": 6.67
+        },
+        {
+          "key": "B",
+          "en": "20.00",
+          "tr": "20,00",
+          "value": 20
+        },
+        {
+          "key": "C",
+          "en": "5.00",
+          "tr": "5,00",
+          "value": 5.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Mean = 5. Squared deviations: 1, 9, 1, 9 = 20. Dividing by n = 4 gives a population variance of 5.00 (%²).",
+      "explanation_tr": "Ortalama = 5. Kareli sapmalar: 1, 9, 1, 9 = 20. n = 4'e bölününce ana kütle varyansı 5,00 (%²) bulunur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by n - 1, which is the sample variance, not the population variance.",
+          "tr": "n - 1'e böler; bu örneklem varyansıdır, ana kütle varyansı değildir."
+        },
+        "B": {
+          "en": "Stops at the sum of squared deviations and does not divide by anything.",
+          "tr": "Kareli sapmaların toplamında durur ve hiçbir şeye bölmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the population variance.",
+          "tr": "Ana kütle varyansı isteniyor."
+        },
+        {
+          "en": "Average the squared deviations from the mean, dividing by n.",
+          "tr": "Ortalamadan kareli sapmaların ortalamasını al, n'e böl.",
+          "formula_latex": "\\sigma^2=\\frac{\\sum(X_i-\\mu)^2}{N}",
+          "values": {
+            "N": 4
+          }
+        },
+        {
+          "en": "Mean = 5; squares: 1 + 9 + 1 + 9 = 20.",
+          "tr": "Ortalama = 5; kareler: 1 + 9 + 1 + 9 = 20."
+        },
+        {
+          "en": "20 / 4 = 5.00.",
+          "tr": "20 / 4 = 5,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "4 [ENTER] [↓] [↓] 8 [ENTER] [↓] [↓] 6 [ENTER] [↓] [↓] 2 [ENTER]",
+          "[2ND] [STAT] [↓] [↓] [↓] [↓]  (σx = 2.236)",
+          "2.236 [x²] [=]  → 5.00"
+        ]
+      },
+      "numeric": {
+        "expr": "stdev_p([4,8,6,2])**2"
+      },
+      "vocab_ids": [
+        "population",
+        "variance",
+        "deviation",
+        "mean",
+        "closest",
+        "squared"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Ten annual returns, sorted, are 1%, 2%, 4%, 5%, 7%, 8%, 10%, 12%, 15% and 21%. Using the position formula (n + 1) × y / 100 with interpolation, the third quartile (75th percentile) is closest to:",
+      "stem_tr": "Sıralanmış on yıllık getiri %1, %2, %4, %5, %7, %8, %10, %12, %15 ve %21'dir. Enterpolasyonlu (n + 1) × y / 100 konum formülüyle üçüncü çeyreklik (75. yüzdelik) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "12.75%",
+          "tr": "%12,75",
+          "value": 12.75
+        },
+        {
+          "key": "B",
+          "en": "11.00%",
+          "tr": "%11,00",
+          "value": 11.0
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Position = 11 × 0.75 = 8.25: a quarter of the way from the 8th value (12) to the 9th (15). 12 + 0.25 × 3 = 12.75%.",
+      "explanation_tr": "Konum = 11 × 0,75 = 8,25: 8. değerden (12) 9. değere (15) giden yolun dörtte biri. 12 + 0,25 × 3 = %12,75.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses n × 0.75 = 7.5 as the position instead of (n + 1) × 0.75, which lands between the 7th and 8th values.",
+          "tr": "Konum olarak (n + 1) × 0,75 yerine n × 0,75 = 7,5 kullanır; bu, 7. ve 8. değerler arasına düşer."
+        },
+        "C": {
+          "en": "Reports the 8th value without interpolating the fraction of 0.25 toward the 9th.",
+          "tr": "8. değeri, 0,25 kesrini 9. değere doğru enterpole etmeden verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the third quartile with the (n + 1) position formula.",
+          "tr": "(n + 1) konum formülüyle üçüncü çeyreklik isteniyor."
+        },
+        {
+          "en": "Find the position, then interpolate between the neighboring ordered values.",
+          "tr": "Konumu bul, sonra komşu sıralı değerler arasında enterpole et.",
+          "formula_latex": "L_y=(n+1)\\frac{y}{100}",
+          "values": {
+            "n": 10,
+            "y": 75
+          }
+        },
+        {
+          "en": "Position = 11 × 0.75 = 8.25; 8th value = 12, 9th value = 15.",
+          "tr": "Konum = 11 × 0,75 = 8,25; 8. değer = 12, 9. değer = 15."
+        },
+        {
+          "en": "12 + 0.25 × (15 - 12) = 12.75%.",
+          "tr": "12 + 0,25 × (15 - 12) = %12,75."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11 [×] 0.75 [=]  (8.25)",
+          "12 [+] 0.25 [×] 3 [=]  → 12.75"
+        ]
+      },
+      "numeric": {
+        "expr": "12+0.25*(15-12)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "quartile",
+        "percentile",
+        "sorted",
+        "interpolation",
+        "position",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Compared with the variance of annual returns, the standard deviation of annual returns is generally preferred for reporting because it:",
+      "stem_tr": "Yıllık getirilerin varyansıyla karşılaştırıldığında, yıllık getirilerin standart sapması raporlamada genellikle tercih edilir; çünkü:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Is always larger than the variance, so it shows risk more clearly",
+          "tr": "Her zaman varyanstan büyüktür, bu yüzden riski daha net gösterir"
+        },
+        {
+          "key": "B",
+          "en": "Is expressed in the same units as the returns themselves",
+          "tr": "Getirilerin kendisiyle aynı birimde ifade edilir"
+        },
+        {
+          "key": "C",
+          "en": "Ignores returns below the mean, so it measures only downside risk",
+          "tr": "Ortalamanın altındaki getirileri yok sayar, bu yüzden yalnızca aşağı yönlü riski ölçer"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Variance is in squared percent units; its square root, the standard deviation, is in percent and can be read directly against the mean return.",
+      "explanation_tr": "Varyans kareli yüzde birimindedir; karekökü olan standart sapma yüzde cinsindendir ve ortalama getiriyle doğrudan kıyaslanabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A standard deviation is smaller than the variance when the variance exceeds 1, and larger when it is below 1; it is not always larger.",
+          "tr": "Varyans 1'den büyükse standart sapma varyanstan küçük, 1'den küçükse büyüktür; her zaman büyük olmaz."
+        },
+        "C": {
+          "en": "Standard deviation uses deviations on both sides of the mean; downside deviation is the measure that focuses on shortfalls.",
+          "tr": "Standart sapma ortalamanın iki yanındaki sapmaları kullanır; yalnızca eksikliklere odaklanan ölçü aşağı yönlü sapmadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "standard-deviation",
+        "variance",
+        "dispersion",
+        "squared"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund's annual returns have a mean of 10% and a standard deviation of 5%. Without assuming any particular distribution, the minimum proportion of returns that lie between -5% and 25% is closest to:",
+      "stem_tr": "Bir fonun yıllık getirilerinin ortalaması %10, standart sapması %5'tir. Belirli bir dağılım varsaymadan, getirilerin -%5 ile %25 arasında kalan asgari oranı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "99.70%",
+          "tr": "%99,70",
+          "value": 99.7
+        },
+        {
+          "key": "B",
+          "en": "66.67%",
+          "tr": "%66,67",
+          "value": 66.67
+        },
+        {
+          "key": "C",
+          "en": "88.89%",
+          "tr": "%88,89",
+          "value": 88.89
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The interval 10% ± 15% is within k = 3 standard deviations. Chebyshev: at least 1 - 1/k² = 1 - 1/9 = 88.89%.",
+      "explanation_tr": "10% ± 15% aralığı k = 3 standart sapma içindedir. Chebyshev: en az 1 - 1/k² = 1 - 1/9 = %88,89.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the normal-distribution rule for three standard deviations, which requires assuming normality.",
+          "tr": "Üç standart sapma için normal dağılım kuralını kullanır; bu, normallik varsayımı gerektirir."
+        },
+        "B": {
+          "en": "Uses 1 - 1/k instead of 1 - 1/k², which gives the wrong bound.",
+          "tr": "1 - 1/k² yerine 1 - 1/k kullanır; bu yanlış sınırı verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a distribution-free minimum proportion.",
+          "tr": "Dağılımdan bağımsız bir asgari oran isteniyor."
+        },
+        {
+          "en": "Find k, the number of standard deviations from the mean, and apply Chebyshev's inequality.",
+          "tr": "Ortalamadan kaç standart sapma uzaklıkta olunduğunu (k) bul ve Chebyshev eşitsizliğini uygula.",
+          "formula_latex": "P\\ge 1-\\frac{1}{k^2}",
+          "values": {
+            "mean": 10,
+            "sd": 5,
+            "lower": -5,
+            "upper": 25
+          }
+        },
+        {
+          "en": "k = (25 - 10) / 5 = 3.",
+          "tr": "k = (25 - 10) / 5 = 3."
+        },
+        {
+          "en": "1 - 1/9 = 88.89%.",
+          "tr": "1 - 1/9 = %88,89."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [÷] 9 [=] [+/-] [+] 1 [=]",
+          "→ 0.8889"
+        ]
+      },
+      "numeric": {
+        "expr": "(1-1/3**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "chebyshev",
+        "proportion",
+        "standard-deviation",
+        "distribution",
+        "minimum",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A return series has a kurtosis of 3.0. Compared with a normal distribution, the tails of this series are most likely:",
+      "stem_tr": "Bir getiri serisinin basıklığı (kurtosis) 3,0'tür. Normal dağılımla karşılaştırıldığında bu serinin kuyrukları büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Similar to the tails of a normal distribution",
+          "tr": "Normal dağılımın kuyruklarına benzer kalınlıkta"
+        },
+        {
+          "key": "B",
+          "en": "Thicker than the tails of a normal distribution",
+          "tr": "Normal dağılımın kuyruklarından belirgin biçimde daha kalın"
+        },
+        {
+          "key": "C",
+          "en": "Thinner than the tails of a normal distribution",
+          "tr": "Normal dağılımın kuyruklarından belirgin biçimde daha ince"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A normal distribution has kurtosis of 3, which is an excess kurtosis of 0, so tails of similar thickness are expected.",
+      "explanation_tr": "Normal dağılımın basıklığı 3'tür; bu, 0 fazla basıklık demektir. Yani benzer kalınlıkta kuyruklar beklenir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Thicker tails would show a kurtosis above 3 (positive excess kurtosis).",
+          "tr": "Daha kalın kuyruklar 3'ün üzerinde bir basıklık (pozitif fazla basıklık) gösterirdi."
+        },
+        "C": {
+          "en": "Thinner tails would show a kurtosis below 3 (negative excess kurtosis).",
+          "tr": "Daha ince kuyruklar 3'ün altında bir basıklık (negatif fazla basıklık) gösterirdi."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "kurtosis",
+        "excess-kurtosis",
+        "normal-distribution",
+        "tail"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Monthly returns of a fund are approximately symmetric. A single extremely large positive return is then added to the data set. The sample skewness and the relation between mean and median will most likely become:",
+      "stem_tr": "Bir fonun aylık getirileri yaklaşık simetriktir. Veri setine tek bir aşırı büyük pozitif getiri ekleniyor. Örneklem çarpıklığı ve ortalama ile medyan arasındaki ilişki büyük olasılıkla nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Negative skewness, with the mean pulled below the median",
+          "tr": "Negatif çarpıklık; ortalama medyanın altına çekilir"
+        },
+        {
+          "key": "B",
+          "en": "Positive skewness, with the mean pulled above the median",
+          "tr": "Pozitif çarpıklık; ortalama medyanın üzerine çekilir"
+        },
+        {
+          "key": "C",
+          "en": "Zero skewness, with the mean still equal to the median",
+          "tr": "Sıfır çarpıklık; ortalama hâlâ medyana eşit"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "One large positive value stretches the right tail. The mean reacts to it but the median hardly moves, so mean > median and skewness is positive.",
+      "explanation_tr": "Tek bir büyük pozitif değer sağ kuyruğu uzatır. Ortalama bundan etkilenir, medyan ise neredeyse hiç değişmez; böylece ortalama > medyan olur ve çarpıklık pozitiftir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A large positive outlier lengthens the right tail, which gives positive, not negative, skewness.",
+          "tr": "Büyük pozitif bir aykırı değer sağ kuyruğu uzatır; bu negatif değil pozitif çarpıklık verir."
+        },
+        "C": {
+          "en": "One extreme value breaks the symmetry; the mean moves much more than the median.",
+          "tr": "Tek bir aşırı değer simetriyi bozar; ortalama medyandan çok daha fazla hareket eder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "outlier",
+        "skewness",
+        "symmetric",
+        "median",
+        "mean"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A risk manager estimates the probability of a very large monthly loss by assuming that returns are normally distributed. If the actual returns have positive excess kurtosis, the manager most likely:",
+      "stem_tr": "Bir risk yöneticisi, getirilerin normal dağıldığını varsayarak çok büyük bir aylık zararın olasılığını tahmin ediyor. Gerçek getirilerin fazla basıklığı pozitifse yönetici büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Overestimates the probability of very large losses",
+          "tr": "Çok büyük zararların olasılığını olduğundan yüksek tahmin eder"
+        },
+        {
+          "key": "B",
+          "en": "Estimates the probability correctly, because the mean and standard deviation are the same",
+          "tr": "Olasılığı doğru tahmin eder; çünkü ortalama ve standart sapma aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "Underestimates the probability of very large losses",
+          "tr": "Çok büyük zararların olasılığını olduğundan düşük tahmin eder"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Positive excess kurtosis means fatter tails, so extreme outcomes are more likely than a normal curve with the same mean and standard deviation implies.",
+      "explanation_tr": "Pozitif fazla basıklık daha kalın kuyruk demektir; yani aşırı sonuçlar, aynı ortalama ve standart sapmaya sahip normal eğrinin ima ettiğinden daha olasıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Fatter tails raise, not lower, the chance of extreme outcomes, so the normal model understates it.",
+          "tr": "Daha kalın kuyruklar aşırı sonuç şansını azaltmaz, artırır; bu yüzden normal model onu düşük gösterir."
+        },
+        "B": {
+          "en": "Two distributions can share a mean and standard deviation yet differ in tail thickness, so the assumption does matter.",
+          "tr": "İki dağılım aynı ortalama ve standart sapmayı paylaşıp kuyruk kalınlığında farklı olabilir; yani varsayım önemlidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "excess-kurtosis",
+        "probability",
+        "loss",
+        "underestimate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Series X has skewness of 0.05 and excess kurtosis of 0.10. Series Y has skewness of -1.10 and excess kurtosis of 4.00. Which statement is most appropriate?",
+      "stem_tr": "X serisinin çarpıklığı 0,05 ve fazla basıklığı 0,10'dur. Y serisinin çarpıklığı -1,10 ve fazla basıklığı 4,00'dır. Hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "X is close to normal; Y has frequent extreme outcomes, with large losses more likely than large gains",
+          "tr": "X normale yakındır; Y'de aşırı sonuçlar sık görülür ve büyük zararlar büyük kazançlardan daha olasıdır"
+        },
+        {
+          "key": "B",
+          "en": "Y is close to normal; X has frequent extreme outcomes, with large gains more likely than large losses",
+          "tr": "Y normale yakındır; X'te aşırı sonuçlar sık görülür ve büyük kazançlar büyük zararlardan daha olasıdır"
+        },
+        {
+          "key": "C",
+          "en": "Both are close to normal, because normality depends only on the mean and the standard deviation",
+          "tr": "İkisi de normale yakındır; çünkü normallik yalnızca ortalamaya ve standart sapmaya bağlıdır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "X has near-zero skewness and excess kurtosis. Y's negative skew puts the longer tail on the loss side and its high excess kurtosis means fat tails.",
+      "explanation_tr": "X'in çarpıklığı ve fazla basıklığı sıfıra yakındır. Y'nin negatif çarpıklığı daha uzun kuyruğu zarar tarafına koyar; yüksek fazla basıklığı ise kalın kuyruk demektir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This reverses the pattern: it is Y that has the large negative skew and fat tails, and its long tail is on the loss side.",
+          "tr": "Bu, örüntüyü tersine çevirir: büyük negatif çarpıklığı ve kalın kuyrukları olan Y'dir; uzun kuyruğu da zarar tarafındadır."
+        },
+        "C": {
+          "en": "Skewness and kurtosis describe shape beyond the first two moments, so two series can share them and still differ greatly.",
+          "tr": "Çarpıklık ve basıklık ilk iki momentin ötesinde şekli anlatır; iki seri ilk ikisini paylaşıp yine de çok farklı olabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "skewness",
+        "kurtosis",
+        "tail-risk",
+        "approximately"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-c-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Two share returns have a correlation of 0.60. Their standard deviations are 15% and 10%. The covariance between the returns is closest to:",
+      "stem_tr": "İki pay getirisinin korelasyonu 0,60'tır. Standart sapmaları %15 ve %10'dur. Getiriler arasındaki kovaryans aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.00",
+          "tr": "15,00",
+          "value": 15.0
+        },
+        {
+          "key": "B",
+          "en": "90.00",
+          "tr": "90,00",
+          "value": 90.0
+        },
+        {
+          "key": "C",
+          "en": "150.00",
+          "tr": "150,00",
+          "value": 150
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Covariance = correlation × SD1 × SD2 = 0.60 × 15 × 10 = 90.00 (%²).",
+      "explanation_tr": "Kovaryans = korelasyon × SS1 × SS2 = 0,60 × 15 × 10 = 90,00 (%²).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multiplies the correlation by the sum of the standard deviations instead of their product.",
+          "tr": "Korelasyonu standart sapmaların çarpımı yerine toplamıyla çarpar."
+        },
+        "C": {
+          "en": "Multiplies the two standard deviations and leaves out the correlation, which would be the covariance only if correlation were 1.",
+          "tr": "İki standart sapmayı çarpar ve korelasyonu dışarıda bırakır; bu ancak korelasyon 1 ise kovaryans olurdu."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the covariance.",
+          "tr": "Kovaryans isteniyor."
+        },
+        {
+          "en": "Rearrange the definition of correlation.",
+          "tr": "Korelasyon tanımını yeniden düzenle.",
+          "formula_latex": "Cov(A,B)=\\rho\\,\\sigma_A\\sigma_B",
+          "values": {
+            "rho": 0.6,
+            "sA": 15,
+            "sB": 10
+          }
+        },
+        {
+          "en": "0.60 × 15 × 10.",
+          "tr": "0,60 × 15 × 10."
+        },
+        {
+          "en": "Covariance = 90.00 (%²).",
+          "tr": "Kovaryans = 90,00 (%²)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.6 [×] 15 [×] 10 [=]",
+          "→ 90.00"
+        ]
+      },
+      "numeric": {
+        "expr": "0.6*15*10"
+      },
+      "vocab_ids": [
+        "covariance",
+        "correlation",
+        "standard-deviation",
+        "closest",
+        "coefficient"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Annual returns (%) of a fund and an index over four years are: fund 2, 4, 6, 8 and index 5, 3, 6, 10. The sample covariance between the fund and the index is closest to:",
+      "stem_tr": "Bir fon ile bir endeksin dört yıllık getirileri (%) şöyledir: fon 2, 4, 6, 8 ve endeks 5, 3, 6, 10. Fon ile endeks arasındaki örneklem kovaryansı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.50",
+          "tr": "4,50",
+          "value": 4.5
+        },
+        {
+          "key": "B",
+          "en": "18.00",
+          "tr": "18,00",
+          "value": 18
+        },
+        {
+          "key": "C",
+          "en": "6.00",
+          "tr": "6,00",
+          "value": 6.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Means: fund 5, index 6. Cross-products: (-3)(-1) + (-1)(-3) + (1)(0) + (3)(4) = 3 + 3 + 0 + 12 = 18. Sample covariance = 18 / (4 - 1) = 6.00.",
+      "explanation_tr": "Ortalamalar: fon 5, endeks 6. Çarpımlar: (-3)(-1) + (-1)(-3) + (1)(0) + (3)(4) = 3 + 3 + 0 + 12 = 18. Örneklem kovaryansı = 18 / (4 - 1) = 6,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by n = 4, which gives the population covariance.",
+          "tr": "n = 4'e böler; bu ana kütle kovaryansını verir."
+        },
+        "B": {
+          "en": "Stops at the sum of cross-products (18) and does not divide.",
+          "tr": "Çarpımlar toplamında (18) durur ve bölmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the sample covariance.",
+          "tr": "Örneklem kovaryansı isteniyor."
+        },
+        {
+          "en": "Multiply the paired deviations from the means, add them and divide by n - 1.",
+          "tr": "Ortalamalardan eşli sapmaları çarp, topla ve n - 1'e böl.",
+          "formula_latex": "s_{XY}=\\frac{\\sum(X_i-\\bar X)(Y_i-\\bar Y)}{n-1}",
+          "values": {
+            "n": 4,
+            "meanX": 5,
+            "meanY": 6
+          }
+        },
+        {
+          "en": "Sum of cross-products = 18.",
+          "tr": "Çarpımlar toplamı = 18."
+        },
+        {
+          "en": "18 / 3 = 6.00.",
+          "tr": "18 / 3 = 6,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "2 [ENTER] [↓] 5 [ENTER] [↓]  4 [ENTER] [↓] 3 [ENTER] [↓]",
+          "6 [ENTER] [↓] 6 [ENTER] [↓]  8 [ENTER] [↓] 10 [ENTER]",
+          "[2ND] [STAT] (LIN), then [↓] to read Sx = 2.58, Sy = 2.94 and r = 0.789",
+          "Cov = r × Sx × Sy = 0.789 × 2.58 × 2.94 → 6.00"
+        ]
+      },
+      "numeric": {
+        "expr": "cov_s([2,4,6,8],[5,3,6,10])"
+      },
+      "vocab_ids": [
+        "covariance",
+        "paired",
+        "sample",
+        "deviation",
+        "closest",
+        "index"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a sample of 12 monthly return pairs, the correlation between two shares is 0.10. After one extreme pair is added, the correlation rises to 0.70. The most appropriate conclusion is that:",
+      "stem_tr": "12 aylık getiri çiftinden oluşan bir örneklemde iki payın korelasyonu 0,10'dur. Tek bir aşırı çift eklenince korelasyon 0,70'e çıkıyor. En uygun sonuç hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Correlation is sensitive to outliers, so the scatter plot should be checked",
+          "tr": "Korelasyon aykırı değerlere duyarlıdır, dağılım grafiği incelenmelidir"
+        },
+        {
+          "key": "B",
+          "en": "The relationship between the two shares is now proven to be strong and causal",
+          "tr": "İki pay arasındaki ilişkinin artık güçlü ve nedensel olduğu kanıtlanmıştır"
+        },
+        {
+          "key": "C",
+          "en": "The first correlation was wrong, because correlation cannot change with new data",
+          "tr": "İlk korelasyon yanlıştı; çünkü korelasyon yeni verilerle değişemez"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "One extreme pair can dominate a small sample's correlation. A scatter plot shows whether the strong value comes from one point.",
+      "explanation_tr": "Tek bir aşırı çift küçük bir örneklemin korelasyonuna egemen olabilir. Dağılım grafiği, güçlü değerin tek bir noktadan gelip gelmediğini gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Correlation measures linear association only; it never proves causation, and one outlier-driven value proves nothing.",
+          "tr": "Korelasyon yalnızca doğrusal ilişkiyi ölçer; nedenselliği asla kanıtlamaz ve tek bir aykırı değerin sürüklediği değer hiçbir şey kanıtlamaz."
+        },
+        "C": {
+          "en": "Sample correlations do change when data are added; the issue is that this one change is large.",
+          "tr": "Örneklem korelasyonları veri eklenince değişir; sorun, bu tek değişikliğin büyük olmasıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "outlier",
+        "sample",
+        "sensitive"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "For four paired return observations, the sum of cross-products of deviations is 18, the sum of squared deviations of X is 20 and the sum of squared deviations of Y is 26. The sample correlation between X and Y is closest to:",
+      "stem_tr": "Dört eşli getiri gözlemi için sapmaların çarpımlarının toplamı 18, X'in kareli sapmalar toplamı 20 ve Y'nin kareli sapmalar toplamı 26'dır. X ile Y arasındaki örneklem korelasyonu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.90",
+          "tr": "0,90",
+          "value": 0.9
+        },
+        {
+          "key": "B",
+          "en": "0.79",
+          "tr": "0,79",
+          "value": 0.79
+        },
+        {
+          "key": "C",
+          "en": "0.69",
+          "tr": "0,69",
+          "value": 0.69
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "r = Σ(x-x̄)(y-ȳ) / √[Σ(x-x̄)² × Σ(y-ȳ)²] = 18 / √(20 × 26) = 18 / 22.80 = 0.79. The n - 1 terms cancel.",
+      "explanation_tr": "r = Σ(x-x̄)(y-ȳ) / √[Σ(x-x̄)² × Σ(y-ȳ)²] = 18 / √(20 × 26) = 18 / 22,80 = 0,79. n - 1 terimleri sadeleşir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by the sum of squares of X alone, which is the regression slope, not the correlation.",
+          "tr": "Yalnızca X'in kareler toplamına böler; bu korelasyon değil, regresyon eğimidir."
+        },
+        "C": {
+          "en": "Divides by the sum of squares of Y alone, which understates the correlation.",
+          "tr": "Yalnızca Y'nin kareler toplamına böler; bu korelasyonu olduğundan düşük gösterir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the correlation from sums of squares and cross-products.",
+          "tr": "Kareler ve çarpımlar toplamından korelasyon isteniyor."
+        },
+        {
+          "en": "Divide the sum of cross-products by the square root of the product of the two sums of squares.",
+          "tr": "Çarpımlar toplamını, iki kareler toplamının çarpımının karekökine böl.",
+          "formula_latex": "r=\\frac{S_{XY}}{\\sqrt{S_{XX}S_{YY}}}",
+          "values": {
+            "Sxy": 18,
+            "Sxx": 20,
+            "Syy": 26
+          }
+        },
+        {
+          "en": "√(20 × 26) = √520 = 22.80.",
+          "tr": "√(20 × 26) = √520 = 22,80."
+        },
+        {
+          "en": "r = 18 / 22.80 = 0.79.",
+          "tr": "r = 18 / 22,80 = 0,79."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20 [×] 26 [=] [√x]  (22.80)",
+          "18 [÷] 22.80 [=]  → 0.79"
+        ]
+      },
+      "numeric": {
+        "expr": "18/(20*26)**0.5"
+      },
+      "vocab_ids": [
+        "correlation",
+        "covariance",
+        "sum-of-squares",
+        "sample",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-d-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund has a mean annual return of 15% and a standard deviation of 24%. Its coefficient of variation is closest to:",
+      "stem_tr": "Bir fonun ortalama yıllık getirisi %15, standart sapması %24'tür. Değişim katsayısı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.62",
+          "tr": "0,62",
+          "value": 0.62
+        },
+        {
+          "key": "B",
+          "en": "9.00",
+          "tr": "9,00",
+          "value": 9
+        },
+        {
+          "key": "C",
+          "en": "1.60",
+          "tr": "1,60",
+          "value": 1.6
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "CV = standard deviation / mean = 24 / 15 = 1.60.",
+      "explanation_tr": "DK = standart sapma / ortalama = 24 / 15 = 1,60.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Inverts the ratio (mean / standard deviation), which measures return per unit of risk instead.",
+          "tr": "Oranı ters çevirir (ortalama / standart sapma); bu, risk birimi başına getiriyi ölçer."
+        },
+        "B": {
+          "en": "Subtracts the mean from the standard deviation instead of dividing.",
+          "tr": "Bölmek yerine standart sapmadan ortalamayı çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the coefficient of variation.",
+          "tr": "Değişim katsayısı isteniyor."
+        },
+        {
+          "en": "Divide the standard deviation by the mean.",
+          "tr": "Standart sapmayı ortalamaya böl.",
+          "formula_latex": "CV=\\frac{s}{\\bar X}",
+          "values": {
+            "s": 24,
+            "mean": 15
+          }
+        },
+        {
+          "en": "24 / 15.",
+          "tr": "24 / 15."
+        },
+        {
+          "en": "CV = 1.60.",
+          "tr": "DK = 1,60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "24 [÷] 15 [=]",
+          "→ 1.60"
+        ]
+      },
+      "numeric": {
+        "expr": "24/15"
+      },
+      "vocab_ids": [
+        "coefficient-of-variation",
+        "standard-deviation",
+        "mean",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-d-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Six annual returns are 8%, -2%, 5%, -6%, 10% and 1%. The target return is 4%. Dividing the sum of squared shortfalls below the target by n - 1 (n = 6), the downside deviation is closest to:",
+      "stem_tr": "Altı yıllık getiri %8, -%2, %5, -%6, %10 ve %1'dir. Hedef getiri %4'tür. Hedefin altındaki kareli eksiklerin toplamı n - 1'e (n = 6) bölündüğünde aşağı yönlü sapma aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.39%",
+          "tr": "%5,39",
+          "value": 5.39
+        },
+        {
+          "key": "B",
+          "en": "4.92%",
+          "tr": "%4,92",
+          "value": 4.92
+        },
+        {
+          "key": "C",
+          "en": "6.95%",
+          "tr": "%6,95",
+          "value": 6.95
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Shortfalls below 4%: -2 gives 6, -6 gives 10, 1 gives 3. Squares: 36 + 100 + 9 = 145. Downside deviation = √(145 / 5) = 5.39%.",
+      "explanation_tr": "%4'ün altındaki eksikler: -2 için 6, -6 için 10, 1 için 3. Kareler: 36 + 100 + 9 = 145. Aşağı yönlü sapma = √(145 / 5) = %5,39.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by n = 6 rather than n - 1 = 5.",
+          "tr": "n - 1 = 5 yerine n = 6'ya böler."
+        },
+        "C": {
+          "en": "Divides by 3, the number of below-target observations, instead of n - 1 for all observations.",
+          "tr": "Tüm gözlemler için n - 1 yerine, hedefin altındaki gözlem sayısı olan 3'e böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the downside deviation.",
+          "tr": "Aşağı yönlü sapma isteniyor."
+        },
+        {
+          "en": "Square only the shortfalls below the target; observations above the target count as zero. Divide by n - 1.",
+          "tr": "Yalnızca hedefin altındaki eksikleri karele; hedefin üstündeki gözlemler sıfır sayılır. n - 1'e böl.",
+          "formula_latex": "s_T=\\sqrt{\\frac{\\sum\\min(R_i-T,0)^2}{n-1}}",
+          "values": {
+            "T": 4,
+            "n": 6
+          }
+        },
+        {
+          "en": "Shortfalls: 6, 10, 3; squares: 36, 100, 9; sum = 145.",
+          "tr": "Eksikler: 6, 10, 3; kareler: 36, 100, 9; toplam = 145."
+        },
+        {
+          "en": "√(145 / 5) = √29 = 5.39%.",
+          "tr": "√(145 / 5) = √29 = %5,39."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "145 [÷] 5 [=]  (29)",
+          "[√x]  → 5.39"
+        ]
+      },
+      "numeric": {
+        "expr": "(145/5)**0.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "downside-deviation",
+        "shortfall",
+        "squared",
+        "closest",
+        "sample"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-d-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A fund's returns are unchanged. An analyst raises the target return used to compute downside deviation. All else equal, the downside deviation will:",
+      "stem_tr": "Bir fonun getirileri değişmiyor. Bir analist aşağı yönlü sapmayı hesaplamak için kullandığı hedef getiriyi yükseltiyor. Diğer her şey eşitken aşağı yönlü sapma:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Stay the same or decrease",
+          "tr": "Aynı kalır veya azalır"
+        },
+        {
+          "key": "B",
+          "en": "Stay the same or increase",
+          "tr": "Aynı kalır veya artar"
+        },
+        {
+          "key": "C",
+          "en": "Change in either direction, depending on the standard deviation",
+          "tr": "Standart sapmaya bağlı olarak her iki yönde de değişebilir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A higher target puts more observations below it and enlarges existing shortfalls, so the measure cannot fall.",
+      "explanation_tr": "Daha yüksek hedef daha fazla gözlemi hedefin altına iter ve mevcut eksikleri büyütür; bu yüzden ölçü azalamaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A higher target never removes a shortfall, so the measure cannot decrease.",
+          "tr": "Daha yüksek hedef hiçbir eksiği ortadan kaldırmaz; bu yüzden ölçü azalamaz."
+        },
+        "C": {
+          "en": "Downside deviation depends on shortfalls versus the target; once the data are fixed, a higher target moves it in one direction only.",
+          "tr": "Aşağı yönlü sapma hedefe göre eksiklere bağlıdır; veri sabitken daha yüksek hedef onu yalnızca tek yöne hareket ettirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "downside-deviation",
+        "shortfall",
+        "observation",
+        "increase"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-05-d-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-05",
+      "los_id": "QM-05-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A strategy has a standard deviation of 15%. The manager wants its coefficient of variation to be 1.25. The mean return needed is closest to:",
+      "stem_tr": "Bir stratejinin standart sapması %15'tir. Yönetici değişim katsayısının 1,25 olmasını istiyor. Gereken ortalama getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "18.75%",
+          "tr": "%18,75",
+          "value": 18.75
+        },
+        {
+          "key": "B",
+          "en": "9.60%",
+          "tr": "%9,60",
+          "value": 9.6
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "CV = s / mean, so mean = s / CV = 15 / 1.25 = 12.00%.",
+      "explanation_tr": "DK = s / ortalama olduğundan ortalama = s / DK = 15 / 1,25 = %12,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Multiplies instead of dividing, which would give a CV of 0.80 for this mean.",
+          "tr": "Bölmek yerine çarpar; bu ortalama için DK 0,80 çıkardı."
+        },
+        "B": {
+          "en": "Divides by the square of the coefficient of variation, which has no basis in the formula.",
+          "tr": "Değişim katsayısının karesine böler; bunun formülde dayanağı yoktur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the mean return that gives the target CV.",
+          "tr": "Hedef DK'yı veren ortalama getiri isteniyor."
+        },
+        {
+          "en": "Rearrange CV = s / mean.",
+          "tr": "DK = s / ortalama eşitliğini yeniden düzenle.",
+          "formula_latex": "\\bar X=\\frac{s}{CV}",
+          "values": {
+            "s": 15,
+            "CV": 1.25
+          }
+        },
+        {
+          "en": "15 / 1.25.",
+          "tr": "15 / 1,25."
+        },
+        {
+          "en": "Mean = 12.00%.",
+          "tr": "Ortalama = %12,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "15 [÷] 1.25 [=]",
+          "→ 12.00"
+        ]
+      },
+      "numeric": {
+        "expr": "15/1.25",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "coefficient-of-variation",
+        "target",
+        "required",
+        "closest",
+        "standard-deviation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

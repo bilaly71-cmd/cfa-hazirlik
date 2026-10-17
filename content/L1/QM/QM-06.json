@@ -2194,6 +2194,1413 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-06-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An analyst expects a project to pay TL 80 million with probability 0.25, TL 100 million with probability 0.50 and TL 130 million with probability 0.25. The expected payoff is closest to:",
+      "stem_tr": "Bir analist bir projenin TL 80 milyon ödemesini 0,25 olasılıkla, TL 100 milyon ödemesini 0,50 olasılıkla ve TL 130 milyon ödemesini 0,25 olasılıkla bekliyor. Beklenen ödeme aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "102.5",
+          "tr": "102,5",
+          "value": 102.5
+        },
+        {
+          "key": "B",
+          "en": "100.0",
+          "tr": "100,0",
+          "value": 100
+        },
+        {
+          "key": "C",
+          "en": "103.3",
+          "tr": "103,3",
+          "value": 103.3
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Expected value = 0.25 × 80 + 0.50 × 100 + 0.25 × 130 = 20 + 50 + 32.5 = 102.5 (TL million).",
+      "explanation_tr": "Beklenen değer = 0,25 × 80 + 0,50 × 100 + 0,25 × 130 = 20 + 50 + 32,5 = 102,5 (TL milyon).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Takes the most likely outcome (the mode), which ignores the other two scenarios.",
+          "tr": "En olası sonucu (mod) alır; diğer iki senaryoyu göz ardı eder."
+        },
+        "C": {
+          "en": "Averages the three payoffs with equal weights although the probabilities are unequal.",
+          "tr": "Olasılıklar eşit olmadığı halde üç ödemeyi eşit ağırlıkla ortalar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the probability-weighted average payoff.",
+          "tr": "Olasılık ağırlıklı ortalama ödeme isteniyor."
+        },
+        {
+          "en": "Multiply each payoff by its probability and add.",
+          "tr": "Her ödemeyi olasılığıyla çarp ve topla.",
+          "formula_latex": "E(X)=\\sum p_iX_i",
+          "values": {
+            "p1": 0.25,
+            "p2": 0.5,
+            "p3": 0.25,
+            "X1": 80,
+            "X2": 100,
+            "X3": 130
+          }
+        },
+        {
+          "en": "20 + 50 + 32.5.",
+          "tr": "20 + 50 + 32,5."
+        },
+        {
+          "en": "Expected payoff = 102.5 (TL million).",
+          "tr": "Beklenen ödeme = 102,5 (TL milyon)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.25 [×] 80 [+] 0.5 [×] 100 [+] 0.25 [×] 130 [=]",
+          "→ 102.5"
+        ]
+      },
+      "numeric": {
+        "expr": "0.25*80+0.5*100+0.25*130"
+      },
+      "vocab_ids": [
+        "expected-value",
+        "scenario",
+        "probability",
+        "payoff",
+        "closest",
+        "weighted"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst assigns probabilities of 0.40, 0.40 and 0.20 to three scenarios in which a share returns +5%, +10% and -5%. The standard deviation of the share's return is closest to:",
+      "stem_tr": "Bir analist, bir payın %5, %10 ve -%5 getiri sağladığı üç senaryoya sırasıyla 0,40, 0,40 ve 0,20 olasılık veriyor. Payın getirisinin standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.64%",
+          "tr": "%7,64",
+          "value": 7.64
+        },
+        {
+          "key": "B",
+          "en": "5.48%",
+          "tr": "%5,48",
+          "value": 5.48
+        },
+        {
+          "key": "C",
+          "en": "30.00%",
+          "tr": "%30,00",
+          "value": 30.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "E(R) = 0.4 × 5 + 0.4 × 10 + 0.2 × (-5) = 5%. Variance = 0.4 × 0 + 0.4 × 25 + 0.2 × 100 = 30 (%²). Standard deviation = √30 = 5.48%.",
+      "explanation_tr": "E(R) = 0,4 × 5 + 0,4 × 10 + 0,2 × (-5) = %5. Varyans = 0,4 × 0 + 0,4 × 25 + 0,2 × 100 = 30 (%²). Standart sapma = √30 = %5,48.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Treats the three scenario returns as equally likely observations and uses the sample formula, ignoring the probabilities.",
+          "tr": "Üç senaryo getirisini eşit olasılıklı gözlem sayar ve örneklem formülünü kullanır; olasılıkları göz ardı eder."
+        },
+        "C": {
+          "en": "Reports the variance (30) without taking the square root.",
+          "tr": "Varyansı (30) karekökünü almadan verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the standard deviation from scenarios.",
+          "tr": "Senaryolardan standart sapma isteniyor."
+        },
+        {
+          "en": "Compute the expected return, then the probability-weighted squared deviations, then the square root.",
+          "tr": "Beklenen getiriyi, sonra olasılık ağırlıklı kareli sapmaları, sonra karekökü hesapla.",
+          "formula_latex": "\\sigma^2=\\sum p_i(R_i-E(R))^2",
+          "values": {
+            "p1": 0.4,
+            "p2": 0.4,
+            "p3": 0.2,
+            "R1": 5,
+            "R2": 10,
+            "R3": -5
+          }
+        },
+        {
+          "en": "E(R) = 5%. Variance = 0 + 10 + 20 = 30.",
+          "tr": "E(R) = %5. Varyans = 0 + 10 + 20 = 30."
+        },
+        {
+          "en": "√30 = 5.48%.",
+          "tr": "√30 = %5,48."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 0 [+] 0.4 [×] 25 [+] 0.2 [×] 100 [=]  (30)",
+          "[√x]  → 5.48"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.4*(5-5)**2+0.4*(10-5)**2+0.2*(-5-5)**2)**0.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "standard-deviation",
+        "variance",
+        "scenario",
+        "probability",
+        "closest",
+        "weighted"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Three scenarios have probabilities 0.50, 0.30 and 0.20. In them, the returns on asset A are 10%, 4% and -6%, and the returns on asset B are 2%, 5% and 12%. The covariance between A and B is closest to:",
+      "stem_tr": "Üç senaryonun olasılıkları 0,50, 0,30 ve 0,20'dir. Bu senaryolarda A varlığının getirileri %10, %4 ve -%6, B varlığının getirileri %2, %5 ve %12'dir. A ile B arasındaki kovaryans aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "22.90",
+          "tr": "22,90",
+          "value": 22.9
+        },
+        {
+          "key": "B",
+          "en": "1.60",
+          "tr": "1,60",
+          "value": 1.6
+        },
+        {
+          "key": "C",
+          "en": "-22.90",
+          "tr": "-22,90",
+          "value": -22.9
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "E(A) = 5.0; E(B) = 4.9. Cov = 0.5 × (5)(-2.9) + 0.3 × (-1)(0.1) + 0.2 × (-11)(7.1) = -7.25 - 0.03 - 15.62 = -22.90 (%²).",
+      "explanation_tr": "E(A) = 5,0; E(B) = 4,9. Kov = 0,5 × (5)(-2,9) + 0,3 × (-1)(0,1) + 0,2 × (-11)(7,1) = -7,25 - 0,03 - 15,62 = -22,90 (%²).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Has the right size but the wrong sign; A is high when B is low, so the covariance is negative.",
+          "tr": "Büyüklük doğru, işaret yanlış; A yüksekken B düşük olduğundan kovaryans negatiftir."
+        },
+        "B": {
+          "en": "Computes E(AB), the expected product of returns, without subtracting E(A) × E(B).",
+          "tr": "E(A) × E(B)'yi çıkarmadan getirilerin beklenen çarpımı olan E(AB)'yi hesaplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the probability-weighted covariance.",
+          "tr": "Olasılık ağırlıklı kovaryans isteniyor."
+        },
+        {
+          "en": "Multiply the two deviations from the expected returns in each scenario, weight by probability and add.",
+          "tr": "Her senaryoda beklenen getirilerden iki sapmayı çarp, olasılıkla ağırlıklandır ve topla.",
+          "formula_latex": "Cov(A,B)=\\sum p_i(A_i-E(A))(B_i-E(B))",
+          "values": {
+            "p1": 0.5,
+            "p2": 0.3,
+            "p3": 0.2
+          }
+        },
+        {
+          "en": "E(A) = 5.0, E(B) = 4.9; products: -7.25, -0.03, -15.62.",
+          "tr": "E(A) = 5,0, E(B) = 4,9; çarpımlar: -7,25, -0,03, -15,62."
+        },
+        {
+          "en": "Covariance = -22.90 (%²).",
+          "tr": "Kovaryans = -22,90 (%²)."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5 [×] 5 [×] 2.9 [+/-] [=]  (-7.25)",
+          "0.3 [×] 1 [+/-] [×] 0.1 [=]  (-0.03)",
+          "0.2 [×] 11 [+/-] [×] 7.1 [=]  (-15.62)",
+          "Sum → -22.90"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5*(10-5)*(2-4.9)+0.3*(4-5)*(5-4.9)+0.2*(-6-5)*(12-4.9)"
+      },
+      "vocab_ids": [
+        "covariance",
+        "scenario",
+        "expected-return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst moves probability from the middle scenario to the two extreme scenarios of a return distribution, in equal amounts, so that the expected return stays the same. The variance of the return will:",
+      "stem_tr": "Bir analist, beklenen getiri aynı kalacak biçimde, bir getiri dağılımının orta senaryosundaki olasılığı iki uç senaryoya eşit miktarlarda kaydırıyor. Getirinin varyansı:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Increase, because more weight sits far from the mean",
+          "tr": "Artar; çünkü ağırlık ortalamadan uzaklaşır"
+        },
+        {
+          "key": "B",
+          "en": "Decrease, because the expected return is unchanged",
+          "tr": "Azalır; çünkü beklenen getiri değişmemiştir"
+        },
+        {
+          "key": "C",
+          "en": "Stay the same, because the scenario outcomes are unchanged",
+          "tr": "Aynı kalır; çünkü senaryo sonuçları değişmemiştir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Variance weights squared distances from the mean by probability. Moving probability from the middle, where the distance is small, to the extremes raises it.",
+      "explanation_tr": "Varyans, ortalamadan kareli uzaklıkları olasılıkla ağırlıklandırır. Olasılığı uzaklığın küçük olduğu ortadan uçlara kaydırmak onu artırır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "An unchanged mean does not fix the variance; the spread around the mean is what changed.",
+          "tr": "Ortalamanın değişmemesi varyansı sabitlemez; değişen, ortalama etrafındaki yayılımdır."
+        },
+        "C": {
+          "en": "The outcomes are the same but their probabilities moved, and variance depends on both.",
+          "tr": "Sonuçlar aynıdır ancak olasılıkları kaymıştır; varyans ikisine de bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "variance",
+        "probability",
+        "scenario",
+        "dispersion",
+        "expected-value"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio's annual return is normally distributed with a mean of 8% and a standard deviation of 10%. For a standard normal variable, the cumulative probability at z = 1.20 is 0.8849. The probability that the return exceeds 20% is closest to:",
+      "stem_tr": "Bir portföyün yıllık getirisi ortalaması %8, standart sapması %10 olan normal dağılıma sahiptir. Standart normal değişken için z = 1,20 noktasındaki kümülatif olasılık 0,8849'dur. Getirinin %20'yi aşma olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "88.49%",
+          "tr": "%88,49",
+          "value": 88.49
+        },
+        {
+          "key": "B",
+          "en": "11.51%",
+          "tr": "%11,51",
+          "value": 11.51
+        },
+        {
+          "key": "C",
+          "en": "23.01%",
+          "tr": "%23,01",
+          "value": 23.01
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "z = (20 - 8) / 10 = 1.20. P(R > 20%) = 1 - 0.8849 = 11.51%.",
+      "explanation_tr": "z = (20 - 8) / 10 = 1,20. P(R > %20) = 1 - 0,8849 = %11,51.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the cumulative probability of being below 20% instead of above.",
+          "tr": "%20'nin altında olma kümülatif olasılığını, üstünde olma yerine verir."
+        },
+        "C": {
+          "en": "Doubles the tail probability, which applies to a two-sided question (above 20% or below -4%).",
+          "tr": "Kuyruk olasılığını ikiye katlar; bu, iki yönlü bir soru (%20 üstü veya -%4 altı) için geçerlidir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need an upper-tail probability for a normal variable.",
+          "tr": "Normal bir değişken için üst kuyruk olasılığı isteniyor."
+        },
+        {
+          "en": "Standardize, then take one minus the cumulative probability.",
+          "tr": "Standartlaştır, sonra bir eksi kümülatif olasılığı al.",
+          "formula_latex": "z=\\frac{x-\\mu}{\\sigma}",
+          "values": {
+            "x": 20,
+            "mu": 8,
+            "sigma": 10
+          }
+        },
+        {
+          "en": "z = 12 / 10 = 1.20; N(1.20) = 0.8849.",
+          "tr": "z = 12 / 10 = 1,20; N(1,20) = 0,8849."
+        },
+        {
+          "en": "1 - 0.8849 = 11.51%.",
+          "tr": "1 - 0,8849 = %11,51."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20 [-] 8 [=] [÷] 10 [=]  (z = 1.20)",
+          "1 [-] 0.8849 [=]  → 0.1151"
+        ]
+      },
+      "numeric": {
+        "expr": "100*(1-0.5*(1+math.erf(1.2/math.sqrt(2))))",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "normal-distribution",
+        "z-score",
+        "probability",
+        "exceed",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which distribution is most appropriate for modeling a share price, which cannot fall below zero, when the continuously compounded return is normally distributed?",
+      "stem_tr": "Sürekli bileşik getirinin normal dağıldığı durumda, sıfırın altına düşemeyen bir pay fiyatını modellemek için hangi dağılım en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The standard normal distribution",
+          "tr": "Standart normal dağılım"
+        },
+        {
+          "key": "B",
+          "en": "The binomial distribution",
+          "tr": "Binom dağılımı"
+        },
+        {
+          "key": "C",
+          "en": "The lognormal distribution",
+          "tr": "Lognormal dağılım"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "If ln(P1 / P0) is normal, the price P1 = P0 × e^r is lognormal: it is never negative and has a right-skewed shape.",
+      "explanation_tr": "ln(P1 / P0) normalse P1 = P0 × e^r lognormaldir: asla negatif olmaz ve sağa çarpık bir şekle sahiptir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A standard normal variable can take negative values, so it cannot represent a price.",
+          "tr": "Standart normal değişken negatif değerler alabilir; bu yüzden fiyatı temsil edemez."
+        },
+        "B": {
+          "en": "The binomial distribution counts successes in a fixed number of trials; it does not describe a continuous price level.",
+          "tr": "Binom dağılımı sabit sayıdaki denemede başarıları sayar; sürekli bir fiyat düzeyini tanımlamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "negative",
+        "normal-distribution",
+        "continuously-compounded"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank holds 10 loans that default independently, each with a probability of 0.10 over the year. The probability that exactly 2 loans default is closest to:",
+      "stem_tr": "Bir banka birbirinden bağımsız olarak temerrüde düşen 10 kredi tutuyor; her birinin yıl içinde temerrüt olasılığı 0,10'dur. Tam olarak 2 kredinin temerrüde düşme olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "19.37%",
+          "tr": "%19,37",
+          "value": 19.37
+        },
+        {
+          "key": "B",
+          "en": "0.43%",
+          "tr": "%0,43",
+          "value": 0.43
+        },
+        {
+          "key": "C",
+          "en": "38.74%",
+          "tr": "%38,74",
+          "value": 38.74
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "P(X = 2) = C(10, 2) × 0.10² × 0.90⁸ = 45 × 0.01 × 0.4305 = 19.37%.",
+      "explanation_tr": "P(X = 2) = C(10, 2) × 0,10² × 0,90⁸ = 45 × 0,01 × 0,4305 = %19,37.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Omits the number of ways (45) to choose which 2 loans default.",
+          "tr": "Hangi 2 kredinin temerrüde düşeceğini seçme sayısını (45) atlar."
+        },
+        "C": {
+          "en": "Computes the probability of exactly 1 default instead of exactly 2.",
+          "tr": "Tam olarak 2 yerine tam olarak 1 temerrüt olasılığını hesaplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a binomial probability.",
+          "tr": "Binom olasılığı isteniyor."
+        },
+        {
+          "en": "Count the combinations and multiply by the probabilities of successes and failures.",
+          "tr": "Kombinasyonları say ve başarı ile başarısızlık olasılıklarıyla çarp.",
+          "formula_latex": "P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}",
+          "values": {
+            "n": 10,
+            "k": 2,
+            "p": 0.1
+          }
+        },
+        {
+          "en": "C(10, 2) = 45; 0.10² = 0.01; 0.90⁸ = 0.4305.",
+          "tr": "C(10, 2) = 45; 0,10² = 0,01; 0,90⁸ = 0,4305."
+        },
+        {
+          "en": "45 × 0.01 × 0.4305 = 19.37%.",
+          "tr": "45 × 0,01 × 0,4305 = %19,37."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "10 [2ND] [nCr] 2 [=]  (45)",
+          "0.9 [y^x] 8 [=]  (0.4305)",
+          "45 [×] 0.01 [×] 0.4305 [=]  → 0.1937"
+        ]
+      },
+      "numeric": {
+        "expr": "100*math.comb(10,2)*0.1**2*0.9**8",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "binomial",
+        "probability",
+        "default",
+        "independent",
+        "exactly",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-b-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share trades at TL 100. Its one-year continuously compounded return is normally distributed with a mean of 8% and a standard deviation of 25%. For a standard normal variable, the cumulative probability at z = -0.32 is 0.3745. The probability that the share price is below TL 100 in one year is closest to:",
+      "stem_tr": "Bir pay TL 100'den işlem görüyor. Bir yıllık sürekli bileşik getirisi ortalaması %8, standart sapması %25 olan normal dağılıma sahiptir. Standart normal değişken için z = -0,32 noktasındaki kümülatif olasılık 0,3745'tir. Pay fiyatının bir yıl sonra TL 100'ün altında olma olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "62.55%",
+          "tr": "%62,55",
+          "value": 62.55
+        },
+        {
+          "key": "B",
+          "en": "37.45%",
+          "tr": "%37,45",
+          "value": 37.45
+        },
+        {
+          "key": "C",
+          "en": "46.81%",
+          "tr": "%46,81",
+          "value": 46.81
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The price is below 100 exactly when the continuously compounded return is below 0. z = (0 - 8) / 25 = -0.32, so the probability is 37.45%.",
+      "explanation_tr": "Fiyat, sürekli bileşik getiri 0'ın altında olduğunda tam olarak 100'ün altındadır. z = (0 - 8) / 25 = -0,32; olasılık %37,45'tir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses the upper tail (0.6255), which is the probability of ending above TL 100.",
+          "tr": "Üst kuyruğu (0,6255) kullanır; bu, TL 100'ün üzerinde bitme olasılığıdır."
+        },
+        "C": {
+          "en": "Forgets to divide by the standard deviation, using z = -0.08.",
+          "tr": "Standart sapmaya bölmeyi unutur ve z = -0,08 kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the probability that the price falls below its starting level.",
+          "tr": "Fiyatın başlangıç düzeyinin altına düşme olasılığı isteniyor."
+        },
+        {
+          "en": "P1 < P0 is the same as a continuously compounded return below zero, so standardize with 0.",
+          "tr": "P1 < P0, sürekli bileşik getirinin sıfırın altında olmasıyla aynıdır; bu yüzden 0 ile standartlaştır.",
+          "formula_latex": "z=\\frac{0-\\mu}{\\sigma}",
+          "values": {
+            "mu": 8,
+            "sigma": 25
+          }
+        },
+        {
+          "en": "z = -8 / 25 = -0.32.",
+          "tr": "z = -8 / 25 = -0,32."
+        },
+        {
+          "en": "N(-0.32) = 0.3745, i.e. 37.45%.",
+          "tr": "N(-0,32) = 0,3745 yani %37,45."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8 [+/-] [÷] 25 [=]  (z = -0.32)",
+          "Read N(-0.32) from the table → 0.3745"
+        ]
+      },
+      "numeric": {
+        "expr": "100*0.5*(1+math.erf(-0.32/math.sqrt(2)))",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "continuously-compounded",
+        "price",
+        "probability",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-c-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The probability of a central bank rate cut is 0.40. The probability that a rate cut happens and a bank share rises is 0.30, and the unconditional probability that the share rises is 0.50. The probability that the share rises given a rate cut is closest to:",
+      "stem_tr": "Merkez bankasının faiz indirme olasılığı 0,40'tır. Faiz indirimi olması ve bir banka payının yükselmesinin birlikte gerçekleşme olasılığı 0,30, payın koşulsuz yükselme olasılığı 0,50'dir. Faiz indirimi koşuluyla payın yükselme olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "60.00%",
+          "tr": "%60,00",
+          "value": 60.0
+        },
+        {
+          "key": "B",
+          "en": "30.00%",
+          "tr": "%30,00",
+          "value": 30
+        },
+        {
+          "key": "C",
+          "en": "75.00%",
+          "tr": "%75,00",
+          "value": 75.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "P(rise | cut) = P(rise and cut) / P(cut) = 0.30 / 0.40 = 75.00%.",
+      "explanation_tr": "P(yükseliş | indirim) = P(yükseliş ve indirim) / P(indirim) = 0,30 / 0,40 = %75,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by the unconditional probability of a rise instead of by the probability of the condition (a cut).",
+          "tr": "Koşulun olasılığına (indirim) değil, yükselişin koşulsuz olasılığına böler."
+        },
+        "B": {
+          "en": "Reports the joint probability and does not divide by the probability of the condition.",
+          "tr": "Birleşik olasılığı verir ve koşulun olasılığına bölmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need a conditional probability.",
+          "tr": "Koşullu olasılık isteniyor."
+        },
+        {
+          "en": "Divide the joint probability by the probability of the given event.",
+          "tr": "Birleşik olasılığı koşul olayının olasılığına böl.",
+          "formula_latex": "P(A|B)=\\frac{P(A\\cap B)}{P(B)}",
+          "values": {
+            "joint": 0.3,
+            "P_cut": 0.4
+          }
+        },
+        {
+          "en": "0.30 / 0.40.",
+          "tr": "0,30 / 0,40."
+        },
+        {
+          "en": "Probability = 75.00%.",
+          "tr": "Olasılık = %75,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.30 [÷] 0.40 [=]",
+          "→ 0.75"
+        ]
+      },
+      "numeric": {
+        "expr": "0.3/0.4*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "joint-probability",
+        "unconditional",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "If the economy is strong, a share returns +14% with probability 0.70 and +2% with probability 0.30. The variance of the share's return given a strong economy is closest to:",
+      "stem_tr": "Ekonomi güçlüyse bir pay 0,70 olasılıkla %14, 0,30 olasılıkla %2 getiri sağlıyor. Ekonominin güçlü olması koşuluyla payın getiri varyansı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.24",
+          "tr": "30,24",
+          "value": 30.24
+        },
+        {
+          "key": "B",
+          "en": "36.00",
+          "tr": "36,00",
+          "value": 36.0
+        },
+        {
+          "key": "C",
+          "en": "5.50",
+          "tr": "5,50",
+          "value": 5.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Conditional mean = 0.7 × 14 + 0.3 × 2 = 10.4. Variance = 0.7 × 3.6² + 0.3 × 8.4² = 9.07 + 21.17 = 30.24 (%²).",
+      "explanation_tr": "Koşullu ortalama = 0,7 × 14 + 0,3 × 2 = 10,4. Varyans = 0,7 × 3,6² + 0,3 × 8,4² = 9,07 + 21,17 = 30,24 (%²).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Treats the two outcomes as equally likely and centers them on 8, ignoring the 0.70 / 0.30 weights.",
+          "tr": "İki sonucu eşit olasılıklı sayar ve 8 etrafında merkezler; 0,70 / 0,30 ağırlıklarını göz ardı eder."
+        },
+        "C": {
+          "en": "Takes the square root of the variance, which is the standard deviation (5.50), not the variance.",
+          "tr": "Varyansın karekökünü alır; bu standart sapmadır (5,50), varyans değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the variance conditional on a strong economy.",
+          "tr": "Güçlü ekonomi koşullu varyans isteniyor."
+        },
+        {
+          "en": "Use the conditional probabilities and the conditional mean.",
+          "tr": "Koşullu olasılıkları ve koşullu ortalamayı kullan.",
+          "formula_latex": "Var(R|S)=\\sum p_i(R_i-E(R|S))^2",
+          "values": {
+            "p1": 0.7,
+            "p2": 0.3,
+            "R1": 14,
+            "R2": 2
+          }
+        },
+        {
+          "en": "E(R | S) = 10.4; deviations: 3.6 and -8.4.",
+          "tr": "E(R | S) = 10,4; sapmalar: 3,6 ve -8,4."
+        },
+        {
+          "en": "0.7 × 12.96 + 0.3 × 70.56 = 30.24.",
+          "tr": "0,7 × 12,96 + 0,3 × 70,56 = 30,24."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.7 [×] 14 [+] 0.3 [×] 2 [=]  (10.4)",
+          "0.7 [×] 3.6 [x²] [+] 0.3 [×] 8.4 [x²] [=]  → 30.24"
+        ]
+      },
+      "numeric": {
+        "expr": "0.7*(14-10.4)**2+0.3*(2-10.4)**2"
+      },
+      "vocab_ids": [
+        "expected-return",
+        "probability-tree",
+        "closest",
+        "weighted"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "The expected return of a share is 15% if the economy expands and -5% if it contracts. The probability of expansion is 0.30. The unconditional expected return will most likely be:",
+      "stem_tr": "Bir payın beklenen getirisi ekonomi genişlerse %15, daralırsa -%5'tir. Genişleme olasılığı 0,30'dur. Koşulsuz beklenen getiri büyük olasılıkla nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Between -5% and 15%, closer to 15%",
+          "tr": "-%5 ile %15 arasında, %15'e daha yakın"
+        },
+        {
+          "key": "B",
+          "en": "Between -5% and 15%, closer to -5%",
+          "tr": "-%5 ile %15 arasında, -%5'e daha yakın"
+        },
+        {
+          "key": "C",
+          "en": "Above 15%, because both outcomes add return",
+          "tr": "%15'in üzerinde; çünkü iki sonuç da getiri ekler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "It is a probability-weighted average of the conditional expectations, so it lies between them. Contraction is more likely (0.70), so it sits nearer -5%: 0.3 × 15 + 0.7 × (-5) = 1%.",
+      "explanation_tr": "Koşullu beklentilerin olasılık ağırlıklı ortalamasıdır; bu yüzden ikisinin arasında kalır. Daralma daha olasıdır (0,70), dolayısıyla -%5'e yakındır: 0,3 × 15 + 0,7 × (-5) = %1.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "It is between the two values, but the heavier weight (0.70) is on the contraction state, so it is nearer -5%.",
+          "tr": "İki değerin arasındadır, ancak daha büyük ağırlık (0,70) daralma durumundadır; bu yüzden -%5'e daha yakındır."
+        },
+        "C": {
+          "en": "A weighted average of two numbers can never exceed the larger of them.",
+          "tr": "İki sayının ağırlıklı ortalaması büyük olandan fazla olamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "unconditional",
+        "expansion",
+        "recession",
+        "probability"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "If the central bank cuts rates (probability 0.40), a share has a conditional expected return of 12% and a conditional variance of 25 (%²). If rates are held (probability 0.60), the conditional expected return is 4% and the conditional variance is 16 (%²). The unconditional variance of the share's return is closest to:",
+      "stem_tr": "Merkez bankası faiz indirirse (olasılık 0,40) bir payın koşullu beklenen getirisi %12, koşullu varyansı 25 (%²)'dir. Faiz sabit kalırsa (olasılık 0,60) koşullu beklenen getiri %4, koşullu varyans 16 (%²)'dır. Payın getirisinin koşulsuz varyansı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "19.60",
+          "tr": "19,60",
+          "value": 19.6
+        },
+        {
+          "key": "B",
+          "en": "15.36",
+          "tr": "15,36",
+          "value": 15.36
+        },
+        {
+          "key": "C",
+          "en": "34.96",
+          "tr": "34,96",
+          "value": 34.96
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Unconditional mean = 0.4 × 12 + 0.6 × 4 = 7.2. Average conditional variance = 10 + 9.6 = 19.6. Variance of the conditional means = 0.4 × 4.8² + 0.6 × 3.2² = 15.36. Total = 34.96 (%²).",
+      "explanation_tr": "Koşulsuz ortalama = 0,4 × 12 + 0,6 × 4 = 7,2. Ortalama koşullu varyans = 10 + 9,6 = 19,6. Koşullu ortalamaların varyansı = 0,4 × 4,8² + 0,6 × 3,2² = 15,36. Toplam = 34,96 (%²).",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Averages only the conditional variances and leaves out the spread between the two conditional means.",
+          "tr": "Yalnızca koşullu varyansların ortalamasını alır; iki koşullu ortalama arasındaki yayılımı dışarıda bırakır."
+        },
+        "B": {
+          "en": "Counts only the spread between the conditional means and leaves out the variance within each state.",
+          "tr": "Yalnızca koşullu ortalamalar arasındaki yayılımı sayar; her durumun içindeki varyansı dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the unconditional variance from conditional information.",
+          "tr": "Koşullu bilgiden koşulsuz varyans isteniyor."
+        },
+        {
+          "en": "Add the average within-state variance and the variance of the conditional means.",
+          "tr": "Durum içi varyansların ortalamasını ve koşullu ortalamaların varyansını topla.",
+          "formula_latex": "Var(R)=E[Var(R|S)]+Var(E[R|S])",
+          "values": {
+            "p1": 0.4,
+            "p2": 0.6,
+            "mean1": 12,
+            "mean2": 4,
+            "var1": 25,
+            "var2": 16
+          }
+        },
+        {
+          "en": "Overall mean = 7.2. Within = 0.4 × 25 + 0.6 × 16 = 19.6. Between = 0.4 × 4.8² + 0.6 × 3.2² = 15.36.",
+          "tr": "Genel ortalama = 7,2. İç = 0,4 × 25 + 0,6 × 16 = 19,6. Arası = 0,4 × 4,8² + 0,6 × 3,2² = 15,36."
+        },
+        {
+          "en": "Total = 19.6 + 15.36 = 34.96.",
+          "tr": "Toplam = 19,6 + 15,36 = 34,96."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 25 [+] 0.6 [×] 16 [=]  (19.6)",
+          "0.4 [×] 4.8 [x²] [+] 0.6 [×] 3.2 [x²] [=]  (15.36)",
+          "19.6 [+] 15.36 [=]  → 34.96"
+        ]
+      },
+      "numeric": {
+        "expr": "0.4*25+0.6*16+0.4*(12-7.2)**2+0.6*(4-7.2)**2"
+      },
+      "vocab_ids": [
+        "conditional",
+        "weighted",
+        "unconditional",
+        "closest",
+        "scenario"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-d-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst believes there is a 20% chance that a bond will be downgraded. Negative sector news appears with probability 0.90 before a downgrade and with probability 0.25 when no downgrade follows. After seeing negative sector news, the updated probability of a downgrade is closest to:",
+      "stem_tr": "Bir analist bir tahvilin not indirimine uğrama olasılığının %20 olduğunu düşünüyor. Olumsuz sektör haberi, not indiriminden önce 0,90 olasılıkla, not indirimi gelmeyecekse 0,25 olasılıkla ortaya çıkıyor. Olumsuz sektör haberi görüldükten sonra güncellenmiş not indirimi olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "47.37%",
+          "tr": "%47,37",
+          "value": 47.37
+        },
+        {
+          "key": "B",
+          "en": "90.00%",
+          "tr": "%90,00",
+          "value": 90
+        },
+        {
+          "key": "C",
+          "en": "18.00%",
+          "tr": "%18,00",
+          "value": 18.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "P(D | N) = P(N | D) P(D) / [P(N | D) P(D) + P(N | not D) P(not D)] = 0.18 / (0.18 + 0.20) = 47.37%.",
+      "explanation_tr": "P(NI | H) = P(H | NI) P(NI) / [P(H | NI) P(NI) + P(H | NI değil) P(NI değil)] = 0,18 / (0,18 + 0,20) = %47,37.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the likelihood of the news given a downgrade, not the probability of a downgrade given the news.",
+          "tr": "Haber görüldüğünde not indirimi olasılığı yerine, not indirimi koşuluyla haberin olasılığını verir."
+        },
+        "C": {
+          "en": "Reports the joint probability (0.18) and does not divide by the total probability of the news.",
+          "tr": "Birleşik olasılığı (0,18) verir ve haberin toplam olasılığına bölmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the posterior probability of a downgrade.",
+          "tr": "Not indirimi için sonsal olasılık isteniyor."
+        },
+        {
+          "en": "Apply Bayes' formula: prior times likelihood, divided by the total probability of the news.",
+          "tr": "Bayes formülünü uygula: öncül çarpı olabilirlik, haberin toplam olasılığına bölünür.",
+          "formula_latex": "P(D|N)=\\frac{P(N|D)P(D)}{P(N)}",
+          "values": {
+            "prior": 0.2,
+            "L_D": 0.9,
+            "L_notD": 0.25
+          }
+        },
+        {
+          "en": "P(N) = 0.2 × 0.9 + 0.8 × 0.25 = 0.18 + 0.20 = 0.38.",
+          "tr": "P(H) = 0,2 × 0,9 + 0,8 × 0,25 = 0,18 + 0,20 = 0,38."
+        },
+        {
+          "en": "0.18 / 0.38 = 47.37%.",
+          "tr": "0,18 / 0,38 = %47,37."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.2 [×] 0.9 [=]  (0.18)",
+          "0.8 [×] 0.25 [=]  (0.20)",
+          "0.18 [÷] 0.38 [=]  → 0.4737"
+        ]
+      },
+      "numeric": {
+        "expr": "0.2*0.9/(0.2*0.9+0.8*0.25)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "prior",
+        "posterior",
+        "likelihood",
+        "downgrade",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-d-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A bond's prior probability of downgrade is 20%. A first signal (negative sector news) is seen with probability 0.90 if a downgrade follows and 0.25 if not. After updating, a second independent signal (a falling price) is seen with probability 0.70 if a downgrade follows and 0.40 if not. The final probability of a downgrade, after both signals, is closest to:",
+      "stem_tr": "Bir tahvilin not indirimi öncül olasılığı %20'dir. Birinci sinyal (olumsuz sektör haberi) not indirimi gelecekse 0,90, gelmeyecekse 0,25 olasılıkla görülür. Güncellemeden sonra ikinci bağımsız sinyal (düşen fiyat) not indirimi gelecekse 0,70, gelmeyecekse 0,40 olasılıkla görülür. İki sinyalden sonraki nihai not indirimi olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.43%",
+          "tr": "%30,43",
+          "value": 30.43
+        },
+        {
+          "key": "B",
+          "en": "61.17%",
+          "tr": "%61,17",
+          "value": 61.17
+        },
+        {
+          "key": "C",
+          "en": "70.00%",
+          "tr": "%70,00",
+          "value": 70
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "First update: 0.18 / 0.38 = 47.37%. Use it as the new prior: 0.4737 × 0.70 / (0.4737 × 0.70 + 0.5263 × 0.40) = 0.3316 / 0.5421 = 61.17%.",
+      "explanation_tr": "Birinci güncelleme: 0,18 / 0,38 = %47,37. Bunu yeni öncül olarak kullan: 0,4737 × 0,70 / (0,4737 × 0,70 + 0,5263 × 0,40) = 0,3316 / 0,5421 = %61,17.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Applies the second signal to the original 20% prior, discarding what the first signal revealed.",
+          "tr": "İkinci sinyali orijinal %20 öncüle uygular; birinci sinyalin gösterdiğini yok sayar."
+        },
+        "C": {
+          "en": "Reports the likelihood of the second signal given a downgrade rather than a posterior probability.",
+          "tr": "Sonsal olasılık yerine, not indirimi koşuluyla ikinci sinyalin olabilirliğini verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the posterior after two sequential signals.",
+          "tr": "İki ardışık sinyalden sonra sonsal olasılık isteniyor."
+        },
+        {
+          "en": "Update once, then use the posterior as the prior for the second update.",
+          "tr": "Bir kez güncelle, sonra sonsalı ikinci güncellemenin öncülü olarak kullan.",
+          "formula_latex": "P_{new}=\\frac{L_1P_{old}}{L_1P_{old}+L_0(1-P_{old})}",
+          "values": {
+            "prior": 0.2
+          }
+        },
+        {
+          "en": "Step 1: 0.18 / (0.18 + 0.20) = 0.4737.",
+          "tr": "Adım 1: 0,18 / (0,18 + 0,20) = 0,4737."
+        },
+        {
+          "en": "Step 2: 0.3316 / (0.3316 + 0.2105) = 61.17%.",
+          "tr": "Adım 2: 0,3316 / (0,3316 + 0,2105) = %61,17."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.2 [×] 0.9 [÷] (0.2 [×] 0.9 [+] 0.8 [×] 0.25) [=]  (0.4737)",
+          "0.4737 [×] 0.7 [÷] (0.4737 [×] 0.7 [+] 0.5263 [×] 0.4) [=]  → 0.6117"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.18/0.38*0.7)/(0.18/0.38*0.7+(1-0.18/0.38)*0.4)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "posterior",
+        "prior",
+        "signal",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-d-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A new signal is exactly as likely to appear if an event will occur as if it will not occur. After seeing the signal, the posterior probability of the event will be:",
+      "stem_tr": "Yeni bir sinyal, bir olay gerçekleşecekse de gerçekleşmeyecekse de tam olarak aynı olasılıkla ortaya çıkıyor. Sinyal görüldükten sonra olayın sonsal olasılığı nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Higher than the prior probability",
+          "tr": "Öncül olasılıktan yüksek"
+        },
+        {
+          "key": "B",
+          "en": "Lower than the prior probability",
+          "tr": "Öncül olasılıktan düşük"
+        },
+        {
+          "key": "C",
+          "en": "Equal to the prior probability",
+          "tr": "Öncül olasılığa eşit"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When the likelihood is the same in both cases, the signal carries no information and Bayes' formula returns the prior.",
+      "explanation_tr": "Olabilirlik her iki durumda aynıysa sinyal bilgi taşımaz ve Bayes formülü öncülü geri verir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A signal raises the probability only if it is more likely when the event occurs.",
+          "tr": "Bir sinyal, olasılığı yalnızca olay gerçekleştiğinde daha olası olduğunda artırır."
+        },
+        "B": {
+          "en": "A signal lowers the probability only if it is less likely when the event occurs.",
+          "tr": "Bir sinyal, olasılığı yalnızca olay gerçekleştiğinde daha az olası olduğunda azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "prior",
+        "posterior",
+        "likelihood",
+        "signal"
+      ],
+      "pattern_ids": [
+        "if-then"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-06-d-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-06",
+      "los_id": "QM-06-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst assigns prior probabilities of 0.30 to a boom, 0.50 to normal conditions and 0.20 to a recession. A strong retail sales report is seen with probability 0.80 in a boom, 0.40 in normal conditions and 0.10 in a recession. After a strong report, the probability of a boom is closest to:",
+      "stem_tr": "Bir analist öncül olasılıkları patlama için 0,30, normal koşullar için 0,50 ve durgunluk için 0,20 olarak belirliyor. Güçlü bir perakende satış raporu patlamada 0,80, normal koşullarda 0,40 ve durgunlukta 0,10 olasılıkla görülüyor. Güçlü bir rapordan sonra patlama olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "52.17%",
+          "tr": "%52,17",
+          "value": 52.17
+        },
+        {
+          "key": "B",
+          "en": "80.00%",
+          "tr": "%80,00",
+          "value": 80
+        },
+        {
+          "key": "C",
+          "en": "24.00%",
+          "tr": "%24,00",
+          "value": 24.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "P(report) = 0.3 × 0.8 + 0.5 × 0.4 + 0.2 × 0.1 = 0.24 + 0.20 + 0.02 = 0.46. P(boom | report) = 0.24 / 0.46 = 52.17%.",
+      "explanation_tr": "P(rapor) = 0,3 × 0,8 + 0,5 × 0,4 + 0,2 × 0,1 = 0,24 + 0,20 + 0,02 = 0,46. P(patlama | rapor) = 0,24 / 0,46 = %52,17.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the likelihood of the report in a boom, not the probability of a boom given the report.",
+          "tr": "Rapor görüldüğünde patlama olasılığı yerine, patlamada raporun olabilirliğini verir."
+        },
+        "C": {
+          "en": "Reports the joint probability (0.24) without dividing by the total probability of the report.",
+          "tr": "Birleşik olasılığı (0,24) raporun toplam olasılığına bölmeden verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the posterior probability of a boom given a strong report.",
+          "tr": "Güçlü rapor görüldüğünde patlamanın sonsal olasılığı isteniyor."
+        },
+        {
+          "en": "Divide the joint probability for a boom by the total probability of the report across all three regimes.",
+          "tr": "Patlamanın birleşik olasılığını, raporun üç rejim üzerindeki toplam olasılığına böl.",
+          "formula_latex": "P(B|R)=\\frac{P(R|B)P(B)}{\\sum P(R|i)P(i)}",
+          "values": {
+            "priors1": 0.3,
+            "priors2": 0.5,
+            "priors3": 0.2,
+            "likelihoods1": 0.8,
+            "likelihoods2": 0.4,
+            "likelihoods3": 0.1
+          }
+        },
+        {
+          "en": "Joint terms: 0.24, 0.20, 0.02; total 0.46.",
+          "tr": "Birleşik terimler: 0,24, 0,20, 0,02; toplam 0,46."
+        },
+        {
+          "en": "0.24 / 0.46 = 52.17%.",
+          "tr": "0,24 / 0,46 = %52,17."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 0.8 [=]  (0.24)",
+          "0.24 [+] 0.5 [×] 0.4 [+] 0.2 [×] 0.1 [=]  (0.46)",
+          "0.24 [÷] 0.46 [=]  → 0.5217"
+        ]
+      },
+      "numeric": {
+        "expr": "0.3*0.8/(0.3*0.8+0.5*0.4+0.2*0.1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "regime",
+        "recession",
+        "posterior",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

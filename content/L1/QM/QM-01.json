@@ -941,6 +941,629 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-01-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A share is bought at TL 100. One year later it is worth TL 108 and the holder has also received a TL 3 dividend. The holding period return is closest to:",
+      "stem_tr": "Bir pay TL 100'den alınıyor. Bir yıl sonra değeri TL 108 oluyor ve yatırımcı ayrıca TL 3 temettü almış. Elde tutma dönemi getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.00%",
+          "tr": "%8,00",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "11.00%",
+          "tr": "%11,00",
+          "value": 11.0
+        },
+        {
+          "key": "C",
+          "en": "11.24%",
+          "tr": "%11,24",
+          "value": 11.24
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "HPR = (ending value + income - beginning value) / beginning value = (108 + 3 - 100) / 100 = 11.00%.",
+      "explanation_tr": "EDG getirisi = (son değer + gelir - başlangıç değeri) / başlangıç değeri = (108 + 3 - 100) / 100 = %11,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Counts only the price change (8%) and leaves out the dividend.",
+          "tr": "Yalnızca fiyat değişimini (%8) sayar, temettüyü dışarıda bırakır."
+        },
+        "C": {
+          "en": "Compounds the price return and the dividend yield, but both are measured on the same beginning value, so they should simply be added.",
+          "tr": "Fiyat getirisi ile temettü verimini çarpıp bileşikleştirir; oysa ikisi de aynı başlangıç değerine göre ölçüldüğü için toplanmalıdır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the one-year holding period return.",
+          "tr": "Bir yıllık elde tutma dönemi getirisi isteniyor."
+        },
+        {
+          "en": "Add the income to the price change and divide by the beginning value.",
+          "tr": "Geliri fiyat değişimine ekle ve başlangıç değerine böl.",
+          "formula_latex": "HPR=\\frac{P_1+D-P_0}{P_0}",
+          "values": {
+            "P0": 100,
+            "P1": 108,
+            "D": 3
+          }
+        },
+        {
+          "en": "(108 + 3 - 100) / 100 = 0.11.",
+          "tr": "(108 + 3 - 100) / 100 = 0,11."
+        },
+        {
+          "en": "HPR = 11.00%.",
+          "tr": "EDG = %11,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11 [÷] 100 [=]",
+          "→ 0.11 = 11.00%"
+        ]
+      },
+      "numeric": {
+        "expr": "(108+3-100)/100*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "holding-period-return",
+        "dividend",
+        "price-return",
+        "income",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investment earns a pre-tax return of 36% over a year. The investor pays tax at 25% on the whole gain. The after-tax return is closest to:",
+      "stem_tr": "Bir yatırım bir yılda %36 vergi öncesi getiri sağlıyor. Yatırımcı kazancın tamamı üzerinden %25 vergi ödüyor. Vergi sonrası getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.00%",
+          "tr": "%11,00",
+          "value": 11
+        },
+        {
+          "key": "B",
+          "en": "9.00%",
+          "tr": "%9,00",
+          "value": 9.0
+        },
+        {
+          "key": "C",
+          "en": "27.00%",
+          "tr": "%27,00",
+          "value": 27.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The tax is taken from the gain, not from the return figure by subtraction: after-tax return = 36% × (1 - 0.25) = 27.00%.",
+      "explanation_tr": "Vergi kazançtan alınır, getiri rakamından çıkarılmaz: vergi sonrası getiri = %36 × (1 - 0,25) = %27,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracts the tax rate (25) from the return (36), mixing a rate on the gain with the return itself.",
+          "tr": "Vergi oranını (25) getiriden (36) çıkarır; kazanç üzerindeki oranla getirinin kendisini karıştırır."
+        },
+        "B": {
+          "en": "Computes the tax paid (9%) and reports it as the return instead of what the investor keeps.",
+          "tr": "Ödenen vergiyi (%9) hesaplar ve yatırımcının elinde kalan yerine bunu getiri olarak verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return the investor keeps after tax.",
+          "tr": "Yatırımcının vergiden sonra elinde kalan getiri isteniyor."
+        },
+        {
+          "en": "Tax reduces the gain by the tax rate, so multiply by (1 - t).",
+          "tr": "Vergi kazancı vergi oranı kadar azaltır; bu yüzden (1 - t) ile çarp.",
+          "formula_latex": "r_{AT}=r(1-t)",
+          "values": {
+            "r": 36,
+            "t": 0.25
+          }
+        },
+        {
+          "en": "36% × 0.75.",
+          "tr": "%36 × 0,75."
+        },
+        {
+          "en": "After-tax return = 27.00%.",
+          "tr": "Vergi sonrası getiri = %27,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "36 [×] 0.75 [=]",
+          "→ 27.00"
+        ]
+      },
+      "numeric": {
+        "expr": "36*(1-0.25)",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "after-tax",
+        "gain",
+        "return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An investor finances part of a share purchase with borrowed money. Which statement about the return on the investor's own capital is most accurate?",
+      "stem_tr": "Bir yatırımcı pay alımının bir bölümünü borçla finanse ediyor. Yatırımcının kendi sermayesi üzerindeki getiri hakkında hangi ifade en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "If the share's return is below the loan rate, leverage pushes own-capital return below it.",
+          "tr": "Payın getirisi kredi faizinin altındaysa kaldıraç, öz sermaye getirisini bunun altına çeker."
+        },
+        {
+          "key": "B",
+          "en": "Leverage raises the expected return on own capital but leaves the range of possible outcomes unchanged.",
+          "tr": "Kaldıraç öz sermayenin beklenen getirisini artırır ancak olası sonuçların aralığını değiştirmez."
+        },
+        {
+          "key": "C",
+          "en": "Leverage magnifies gains but does not affect losses, because the lender bears the shortfall.",
+          "tr": "Kaldıraç kazançları büyütür ancak kayıpları etkilemez, çünkü açığı borç veren üstlenir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Return on own capital = asset return + (borrowed / own capital) × (asset return - borrowing rate). If the asset return is below the rate, the second term is negative.",
+      "explanation_tr": "Öz sermaye getirisi = varlık getirisi + (borç / öz sermaye) × (varlık getirisi - borçlanma faizi). Varlık getirisi faizin altındaysa ikinci terim negatiftir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Borrowing widens the range of outcomes in both directions, so the range does change.",
+          "tr": "Borçlanma sonuç aralığını iki yönde de genişletir; yani aralık değişir."
+        },
+        "C": {
+          "en": "Losses are magnified too; the investor still owes the loan and interest in full.",
+          "tr": "Kayıplar da büyür; yatırımcı krediyi ve faizi yine tam olarak öder."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "leverage",
+        "borrow",
+        "magnify",
+        "gain",
+        "loss",
+        "whereas"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Turkish share returns 40% in lira over a year. Over the same year the lira loses 18% of its value against the US dollar. A US dollar-based investor who held the share earns a dollar return closest to:",
+      "stem_tr": "Bir Türk payı bir yılda lira cinsinden %40 getiri sağlıyor. Aynı yıl lira ABD dolarına karşı değerinin %18'ini kaybediyor. Payı elinde tutan dolar bazlı bir yatırımcının dolar getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "22.0%",
+          "tr": "%22,0",
+          "value": 22
+        },
+        {
+          "key": "B",
+          "en": "14.8%",
+          "tr": "%14,8",
+          "value": 14.8
+        },
+        {
+          "key": "C",
+          "en": "70.7%",
+          "tr": "%70,7",
+          "value": 70.7
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Convert by multiplying growth factors: 1.40 × 0.82 - 1 = 14.8%. The lira return and the currency move compound.",
+      "explanation_tr": "Büyüme çarpanlarını çarparak çevir: 1,40 × 0,82 - 1 = %14,8. Lira getirisi ile kur hareketi bileşik etki yapar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Subtracts 18 from 40 and ignores that the currency loss applies to the grown value (1.40), not to the starting value.",
+          "tr": "40'tan 18'i çıkarır; kur kaybının başlangıç değerine değil, büyümüş değere (1,40) uygulandığını göz ardı eder."
+        },
+        "C": {
+          "en": "Divides by the lira's change factor, which would convert in the wrong direction and overstate the dollar return.",
+          "tr": "Lira çarpanına böler; bu, çeviriyi ters yönde yapar ve dolar getirisini olduğundan yüksek gösterir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return measured in dollars.",
+          "tr": "Dolar cinsinden ölçülen getiri isteniyor."
+        },
+        {
+          "en": "Multiply the growth factors of the share (in lira) and of the lira (in dollars).",
+          "tr": "Payın (lira cinsinden) ve liranın (dolar cinsinden) büyüme çarpanlarını çarp.",
+          "formula_latex": "1+r_{USD}=(1+r_{TRY})(1+r_{FX})",
+          "values": {
+            "r_TRY": 0.4,
+            "r_FX": -0.18
+          }
+        },
+        {
+          "en": "1.40 × 0.82 = 1.148.",
+          "tr": "1,40 × 0,82 = 1,148."
+        },
+        {
+          "en": "Dollar return = 14.8%.",
+          "tr": "Dolar getirisi = %14,8."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.40 [×] 0.82 [=] [-] 1 [=]",
+          "→ 0.148"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.40*(1-0.18)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "currency",
+        "depreciate",
+        "return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which premium compensates a lender for the possibility that the borrower will not pay interest or principal in full and on time?",
+      "stem_tr": "Hangi prim, borçlunun faizi veya anaparayı tam ve zamanında ödememe olasılığı için borç verene tazminat sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Maturity risk premium",
+          "tr": "Vade riski primi"
+        },
+        {
+          "key": "B",
+          "en": "Expected inflation premium",
+          "tr": "Beklenen enflasyon primi"
+        },
+        {
+          "key": "C",
+          "en": "Default risk premium",
+          "tr": "Temerrüt riski primi"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The default risk premium is the extra return demanded because the promised payments might not be received.",
+      "explanation_tr": "Temerrüt riski primi, vaat edilen ödemelerin alınamama ihtimali nedeniyle talep edilen ek getiridir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Pays for the extra price risk of holding a longer-term instrument, not for the borrower's failure to pay.",
+          "tr": "Borçlunun ödeme yapamamasını değil, daha uzun vadeli aracı tutmanın ek fiyat riskini karşılar."
+        },
+        "B": {
+          "en": "Pays for the loss of purchasing power as prices rise, not for the borrower's failure to pay.",
+          "tr": "Fiyatlar artarken alım gücünün erimesini karşılar, borçlunun ödeme yapamamasını değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "default-risk",
+        "premium",
+        "borrower",
+        "compensation",
+        "interest"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A lender uses the exact relationship to find the nominal risk-free rate from a real risk-free rate of 2% and expected inflation of 15%. For a corporate bond it then adds premiums (credit, liquidity and maturity) totaling 6 percentage points. The required return on the bond is closest to:",
+      "stem_tr": "Bir borç veren, %2 reel risksiz faiz ve %15 beklenen enflasyondan nominal risksiz faizi kesin ilişkiyle buluyor. Sonra bir şirket tahvili için toplam 6 puanlık primleri (kredi, likidite ve vade) ekliyor. Tahvilin gerekli getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "23.30%",
+          "tr": "%23,30",
+          "value": 23.3
+        },
+        {
+          "key": "B",
+          "en": "17.30%",
+          "tr": "%17,30",
+          "value": 17.3
+        },
+        {
+          "key": "C",
+          "en": "8.00%",
+          "tr": "%8,00",
+          "value": 8
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Nominal risk-free = 1.02 × 1.15 - 1 = 17.30%. Adding the 6-point premiums gives 23.30%.",
+      "explanation_tr": "Nominal risksiz faiz = 1,02 × 1,15 - 1 = %17,30. 6 puanlık primler eklenince %23,30 bulunur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Stops at the nominal risk-free rate and leaves out the premiums.",
+          "tr": "Nominal risksiz faizde durur, primleri dahil etmez."
+        },
+        "C": {
+          "en": "Adds the premiums to the real rate only and leaves out expected inflation.",
+          "tr": "Primleri yalnızca reel faize ekler, beklenen enflasyonu dahil etmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the required return on the corporate bond.",
+          "tr": "Şirket tahvilinin gerekli getirisi isteniyor."
+        },
+        {
+          "en": "First build the nominal risk-free rate from the real rate and inflation.",
+          "tr": "Önce reel faiz ve enflasyondan nominal risksiz faizi oluştur.",
+          "formula_latex": "1+r_{nom}=(1+r_{real})(1+\\pi)",
+          "values": {
+            "real": 0.02,
+            "pi": 0.15
+          }
+        },
+        {
+          "en": "1.02 × 1.15 - 1 = 17.30%.",
+          "tr": "1,02 × 1,15 - 1 = %17,30."
+        },
+        {
+          "en": "Add the 6 points of premiums: 17.30% + 6% = 23.30%.",
+          "tr": "6 puanlık primleri ekle: %17,30 + %6 = %23,30."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.02 [×] 1.15 [=] [-] 1 [=] [×] 100 [=]  (17.30)",
+          "[+] 6 [=]  → 23.30"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.02*1.15-1)*100)+6",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "risk-free-rate",
+        "inflation",
+        "premium",
+        "real",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A lira corporate bond and a lira government bond have the same maturity and the same coupon type. The corporate bond yields 4 percentage points more. This yield spread most likely mainly reflects:",
+      "stem_tr": "Bir lira şirket tahvili ile bir lira devlet tahvilinin vadesi ve kupon yapısı aynı. Şirket tahvili 4 puan daha fazla getiri sağlıyor. Bu getiri farkı büyük olasılıkla esas olarak neyi yansıtır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Compensation for a longer maturity than the government bond has",
+          "tr": "Devlet tahvilinden daha uzun bir vadenin karşılığı olması"
+        },
+        {
+          "key": "B",
+          "en": "Compensation for the issuer's credit risk and thinner trading",
+          "tr": "İhraççının kredi riski ve daha sığ işlem görmenin karşılığı"
+        },
+        {
+          "key": "C",
+          "en": "Compensation for higher expected inflation on the corporate bond",
+          "tr": "Şirket tahvilindeki daha yüksek beklenen enflasyonun karşılığı"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With maturity and currency matched, the spread over the government bond is explained by credit (default) and liquidity premiums.",
+      "explanation_tr": "Vade ve para birimi aynıyken devlet tahvili üzerindeki fark kredi (temerrüt) ve likidite primleriyle açıklanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The maturities are equal, so there is no maturity difference to compensate.",
+          "tr": "Vadeler eşit olduğundan karşılanacak bir vade farkı yoktur."
+        },
+        "C": {
+          "en": "Both bonds are in lira and face the same inflation, so inflation does not explain the gap.",
+          "tr": "İki tahvil de lira cinsindendir ve aynı enflasyonla karşılaşır; fark enflasyonla açıklanamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "yield-spread",
+        "government-bond",
+        "liquidity",
+        "credit",
+        "compensation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-01-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-01",
+      "los_id": "QM-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Two lira bonds from the same issuer have identical credit quality. Bond P matures in 2 years and trades daily. Bond Q matures in 10 years and trades rarely. All else equal, which statement about their required returns is most likely true?",
+      "stem_tr": "Aynı ihraççının iki lira tahvilinin kredi kalitesi aynı. P tahvili 2 yıl vadeli ve her gün işlem görüyor. Q tahvili 10 yıl vadeli ve nadiren işlem görüyor. Diğer her şey eşitken, gerekli getirilerine ilişkin hangi ifade büyük olasılıkla doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "P's required return is higher because its frequent trading exposes it to more price changes.",
+          "tr": "P'nin gerekli getirisi daha yüksektir, çünkü sık işlem görmesi onu daha fazla fiyat değişimine açar."
+        },
+        {
+          "key": "B",
+          "en": "The required returns are equal because credit quality, the main premium, is identical for both.",
+          "tr": "Gerekli getiriler eşittir, çünkü temel prim olan kredi kalitesi ikisinde de aynıdır."
+        },
+        {
+          "key": "C",
+          "en": "Q's required return is higher because of its larger maturity and liquidity premiums.",
+          "tr": "Q'nun gerekli getirisi daha yüksektir, çünkü vade ve likidite primleri daha büyüktür."
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A longer maturity adds price risk (maturity premium) and rare trading makes selling harder (liquidity premium), so Q needs a higher return.",
+      "explanation_tr": "Daha uzun vade fiyat riski (vade primi) ekler, nadir işlem de satışı zorlaştırır (likidite primi); bu yüzden Q daha yüksek getiri gerektirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Frequent trading signals an easy exit, which lowers, not raises, the liquidity premium.",
+          "tr": "Sık işlem çıkışın kolay olduğunu gösterir; bu likidite primini artırmaz, azaltır."
+        },
+        "B": {
+          "en": "Credit quality is only one premium; the maturity and liquidity premiums differ here, so the required returns differ.",
+          "tr": "Kredi kalitesi yalnızca bir primdir; burada vade ve likidite primleri farklıdır, dolayısıyla gerekli getiriler de farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "maturity-premium",
+        "liquidity-premium",
+        "required-return",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

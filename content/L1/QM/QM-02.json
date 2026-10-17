@@ -585,6 +585,389 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-02-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A fund returned +12%, -6%, +9% and +5% in four consecutive years. The arithmetic mean annual return is closest to:",
+      "stem_tr": "Bir fon art arda dört yılda sırasıyla %12, -%6, %9 ve %5 getiri sağladı. Aritmetik ortalama yıllık getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.77%",
+          "tr": "%4,77",
+          "value": 4.77
+        },
+        {
+          "key": "B",
+          "en": "7.00%",
+          "tr": "%7,00",
+          "value": 7.0
+        },
+        {
+          "key": "C",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Add the four returns and divide by four: (12 - 6 + 9 + 5) / 4 = 5.00%.",
+      "explanation_tr": "Dört getiriyi topla ve dörde böl: (12 - 6 + 9 + 5) / 4 = %5,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Chains the returns into a geometric mean, which is the compound growth rate, not the arithmetic mean.",
+          "tr": "Getirileri zincirleyerek geometrik ortalamayı bulur; bu bileşik büyüme oranıdır, aritmetik ortalama değildir."
+        },
+        "B": {
+          "en": "Averages only the two middle returns after sorting, which is the median.",
+          "tr": "Sıralamadan sonra yalnızca ortadaki iki getirinin ortalamasını alır; bu medyandır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the arithmetic mean of four annual returns.",
+          "tr": "Dört yıllık getirinin aritmetik ortalaması isteniyor."
+        },
+        {
+          "en": "Sum the returns and divide by the number of observations.",
+          "tr": "Getirileri topla ve gözlem sayısına böl.",
+          "formula_latex": "\\bar R=\\frac{1}{n}\\sum R_t",
+          "values": {
+            "n": 4
+          }
+        },
+        {
+          "en": "(12 - 6 + 9 + 5) / 4 = 20 / 4.",
+          "tr": "(12 - 6 + 9 + 5) / 4 = 20 / 4."
+        },
+        {
+          "en": "Mean = 5.00%.",
+          "tr": "Ortalama = %5,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12 [+] 6 [+/-] [+] 9 [+] 5 [=] [÷] 4 [=]",
+          "→ 5.00"
+        ]
+      },
+      "numeric": {
+        "expr": "mean([12,-6,9,5])",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "arithmetic-mean",
+        "geometric-mean",
+        "median",
+        "return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-02-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio returned +4%, -2%, +6% and +3% in four consecutive quarters. The holding period return over the four quarters is closest to:",
+      "stem_tr": "Bir portföy art arda dört çeyrekte sırasıyla %4, -%2, %6 ve %3 getiri sağladı. Dört çeyreklik elde tutma dönemi getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.28%",
+          "tr": "%11,28",
+          "value": 11.28
+        },
+        {
+          "key": "B",
+          "en": "11.00%",
+          "tr": "%11,00",
+          "value": 11
+        },
+        {
+          "key": "C",
+          "en": "2.71%",
+          "tr": "%2,71",
+          "value": 2.71
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Multiply the growth factors: 1.04 × 0.98 × 1.06 × 1.03 - 1 = 11.28%.",
+      "explanation_tr": "Büyüme çarpanlarını çarp: 1,04 × 0,98 × 1,06 × 1,03 - 1 = %11,28.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Adds the quarterly returns, which ignores compounding of returns on returns.",
+          "tr": "Çeyreklik getirileri toplar; getiri üzerinden getirinin bileşikleşmesini göz ardı eder."
+        },
+        "C": {
+          "en": "Takes the fourth root, giving the average quarterly (geometric) return rather than the four-quarter return.",
+          "tr": "Dördüncü kökü alır; dört çeyreklik getiri yerine ortalama çeyreklik (geometrik) getiriyi verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cumulative return over four quarters.",
+          "tr": "Dört çeyreğin toplam getirisi isteniyor."
+        },
+        {
+          "en": "Compound the growth factors of each quarter.",
+          "tr": "Her çeyreğin büyüme çarpanını bileşikleştir.",
+          "formula_latex": "R_{HP}=\\prod(1+R_t)-1",
+          "values": {
+            "R1": 0.04,
+            "R2": -0.02,
+            "R3": 0.06,
+            "R4": 0.03
+          }
+        },
+        {
+          "en": "1.04 × 0.98 × 1.06 × 1.03 = 1.1128.",
+          "tr": "1,04 × 0,98 × 1,06 × 1,03 = 1,1128."
+        },
+        {
+          "en": "Holding period return = 11.28%.",
+          "tr": "Elde tutma dönemi getirisi = %11,28."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.04 [×] 0.98 [×] 1.06 [×] 1.03 [=] [-] 1 [=]",
+          "→ 0.1128"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.04*0.98*1.06*1.03-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "holding-period-return",
+        "consecutive",
+        "chain",
+        "compound",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-02-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A fund's continuously compounded returns were +3.0%, -1.0% and +2.0% in three consecutive months. The holding period return over the three months is closest to:",
+      "stem_tr": "Bir fonun sürekli bileşik getirileri art arda üç ayda sırasıyla %3,0, -%1,0 ve %2,0 oldu. Üç aylık elde tutma dönemi getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "4.00%",
+          "tr": "%4,00",
+          "value": 4
+        },
+        {
+          "key": "B",
+          "en": "4.08%",
+          "tr": "%4,08",
+          "value": 4.08
+        },
+        {
+          "key": "C",
+          "en": "17.35%",
+          "tr": "%17,35",
+          "value": 17.35
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Continuously compounded returns add across periods: 3 - 1 + 2 = 4.0%. Converting, HPR = e^0.04 - 1 = 4.08%.",
+      "explanation_tr": "Sürekli bileşik getiriler dönemler arasında toplanır: 3 - 1 + 2 = %4,0. Dönüştürünce EDG = e^0,04 - 1 = %4,08.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the three-month continuously compounded return itself instead of converting it to a holding period return.",
+          "tr": "Üç aylık sürekli bileşik getirinin kendisini, elde tutma dönemi getirisine çevirmeden verir."
+        },
+        "C": {
+          "en": "Annualizes the three-month figure (four such periods per year) although the question asks for the three-month return.",
+          "tr": "Üç aylık rakamı yıllıklandırır (yılda dört dönem); oysa soru üç aylık getiriyi sorar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the three-month holding period return.",
+          "tr": "Üç aylık elde tutma dönemi getirisi isteniyor."
+        },
+        {
+          "en": "Add the continuously compounded returns, then convert with the exponential.",
+          "tr": "Sürekli bileşik getirileri topla, sonra üstel fonksiyonla dönüştür.",
+          "formula_latex": "R_{HP}=e^{\\sum r_t}-1",
+          "values": {
+            "sum_r": 0.04
+          }
+        },
+        {
+          "en": "Sum = 0.03 - 0.01 + 0.02 = 0.04.",
+          "tr": "Toplam = 0,03 - 0,01 + 0,02 = 0,04."
+        },
+        {
+          "en": "e^0.04 - 1 = 4.08%.",
+          "tr": "e^0,04 - 1 = %4,08."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.04 [2ND] [e^x] [-] 1 [=]",
+          "→ 0.0408"
+        ]
+      },
+      "numeric": {
+        "expr": "(math.exp(0.03-0.01+0.02)-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "continuously-compounded",
+        "holding-period-return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-02-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-02",
+      "los_id": "QM-02-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A very volatile fund returned +60% in one year and -40% in the next. Its geometric mean annual return over the two years is closest to:",
+      "stem_tr": "Çok oynak bir fon bir yıl %60, ertesi yıl -%40 getiri sağladı. İki yıllık geometrik ortalama yıllık getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "-4.00%",
+          "tr": "%-4,00",
+          "value": -4.0
+        },
+        {
+          "key": "C",
+          "en": "-2.02%",
+          "tr": "%-2,02",
+          "value": -2.02
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Geometric mean = (1.60 × 0.60)^(1/2) - 1 = 0.96^0.5 - 1 = -2.02%. The fund lost value even though the arithmetic mean is positive.",
+      "explanation_tr": "Geometrik ortalama = (1,60 × 0,60)^(1/2) - 1 = 0,96^0,5 - 1 = -%2,02. Aritmetik ortalama pozitif olsa da fon değer kaybetti.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gives the arithmetic mean, which overstates growth for volatile returns.",
+          "tr": "Aritmetik ortalamayı verir; oynak getirilerde büyümeyi olduğundan yüksek gösterir."
+        },
+        "B": {
+          "en": "Gives the two-year cumulative return and forgets to convert it to an annual rate.",
+          "tr": "İki yıllık toplam getiriyi verir; yıllık orana çevirmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the geometric mean annual return.",
+          "tr": "Geometrik ortalama yıllık getiri isteniyor."
+        },
+        {
+          "en": "Multiply the growth factors, take the n-th root and subtract 1.",
+          "tr": "Büyüme çarpanlarını çarp, n. kökü al ve 1 çıkar.",
+          "formula_latex": "R_G=\\left[\\prod(1+R_t)\\right]^{1/n}-1",
+          "values": {
+            "R1": 0.6,
+            "R2": -0.4,
+            "n": 2
+          }
+        },
+        {
+          "en": "1.60 × 0.60 = 0.96; 0.96^(1/2) = 0.9798.",
+          "tr": "1,60 × 0,60 = 0,96; 0,96^(1/2) = 0,9798."
+        },
+        {
+          "en": "Geometric mean = -2.02%.",
+          "tr": "Geometrik ortalama = -%2,02."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.6 [×] 0.6 [=] [y^x] 0.5 [=] [-] 1 [=]",
+          "→ -0.0202"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.6*0.6)**0.5-1)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "geometric-mean",
+        "arithmetic-mean",
+        "volatile",
+        "overstate",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

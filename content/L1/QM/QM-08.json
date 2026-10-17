@@ -1808,6 +1808,981 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-08-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A portfolio holds three assets with weights of 50%, 30% and 20% and expected returns of 10%, 6% and 4%, respectively. The portfolio's expected return is closest to:",
+      "stem_tr": "Bir portföy, sırasıyla %50, %30 ve %20 ağırlıkla ve %10, %6 ve %4 beklenen getiriyle üç varlık tutuyor. Portföyün beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.60%",
+          "tr": "%7,60",
+          "value": 7.6
+        },
+        {
+          "key": "B",
+          "en": "6.67%",
+          "tr": "%6,67",
+          "value": 6.67
+        },
+        {
+          "key": "C",
+          "en": "5.80%",
+          "tr": "%5,80",
+          "value": 5.8
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Expected return = 0.50 × 10 + 0.30 × 6 + 0.20 × 4 = 5.0 + 1.8 + 0.8 = 7.60%.",
+      "explanation_tr": "Beklenen getiri = 0,50 × 10 + 0,30 × 6 + 0,20 × 4 = 5,0 + 1,8 + 0,8 = %7,60.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Averages the three expected returns with equal weights, ignoring the portfolio weights.",
+          "tr": "Üç beklenen getiriyi eşit ağırlıkla ortalar; portföy ağırlıklarını göz ardı eder."
+        },
+        "C": {
+          "en": "Applies the weights in the wrong order, matching 20% to the 10% asset and 50% to the 4% asset.",
+          "tr": "Ağırlıkları yanlış sırayla uygular; %20'yi %10'luk varlıkla, %50'yi %4'lük varlıkla eşleştirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the portfolio expected return.",
+          "tr": "Portföyün beklenen getirisi isteniyor."
+        },
+        {
+          "en": "It is the weighted average of the assets' expected returns.",
+          "tr": "Varlıkların beklenen getirilerinin ağırlıklı ortalamasıdır.",
+          "formula_latex": "E(R_p)=\\sum w_iE(R_i)",
+          "values": {
+            "w1": 0.5,
+            "w2": 0.3,
+            "w3": 0.2,
+            "R1": 10,
+            "R2": 6,
+            "R3": 4
+          }
+        },
+        {
+          "en": "5.0 + 1.8 + 0.8.",
+          "tr": "5,0 + 1,8 + 0,8."
+        },
+        {
+          "en": "Expected return = 7.60%.",
+          "tr": "Beklenen getiri = %7,60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.5 [×] 10 [+] 0.3 [×] 6 [+] 0.2 [×] 4 [=]",
+          "→ 7.60"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5*10+0.3*6+0.2*4",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "portfolio",
+        "weight",
+        "expected-return",
+        "asset",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio holds 40% in asset X (standard deviation 25%) and 60% in asset Y (standard deviation 15%). The correlation between X and Y is 0.50. The portfolio's standard deviation is closest to:",
+      "stem_tr": "Bir portföyün %40'ı X varlığında (standart sapma %25), %60'ı Y varlığındadır (standart sapma %15). X ile Y arasındaki korelasyon 0,50'dir. Portföyün standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "19.00%",
+          "tr": "%19,00",
+          "value": 19.0
+        },
+        {
+          "key": "B",
+          "en": "16.46%",
+          "tr": "%16,46",
+          "value": 16.46
+        },
+        {
+          "key": "C",
+          "en": "271.00%",
+          "tr": "%271,00",
+          "value": 271.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Variance = 0.16 × 625 + 0.36 × 225 + 2 × 0.4 × 0.6 × 0.5 × 25 × 15 = 100 + 81 + 90 = 271. SD = √271 = 16.46%.",
+      "explanation_tr": "Varyans = 0,16 × 625 + 0,36 × 225 + 2 × 0,4 × 0,6 × 0,5 × 25 × 15 = 100 + 81 + 90 = 271. SS = √271 = %16,46.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the weighted average of the standard deviations (19.0%), which is correct only if the correlation is +1.",
+          "tr": "Standart sapmaların ağırlıklı ortalamasını (%19,0) alır; bu yalnızca korelasyon +1 ise doğrudur."
+        },
+        "C": {
+          "en": "Reports the variance (271) without taking the square root.",
+          "tr": "Varyansı (271) karekökünü almadan verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the portfolio standard deviation of two assets.",
+          "tr": "İki varlıklı portföyün standart sapması isteniyor."
+        },
+        {
+          "en": "Compute the portfolio variance from the weights, standard deviations and correlation, then take the square root.",
+          "tr": "Portföy varyansını ağırlıklar, standart sapmalar ve korelasyondan hesapla, sonra karekökü al.",
+          "formula_latex": "\\sigma_p^2=w_X^2\\sigma_X^2+w_Y^2\\sigma_Y^2+2w_Xw_Y\\rho\\sigma_X\\sigma_Y",
+          "values": {
+            "wX": 0.4,
+            "wY": 0.6,
+            "sX": 25,
+            "sY": 15,
+            "rho": 0.5
+          }
+        },
+        {
+          "en": "100 + 81 + 90 = 271.",
+          "tr": "100 + 81 + 90 = 271."
+        },
+        {
+          "en": "√271 = 16.46%.",
+          "tr": "√271 = %16,46."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.16 [×] 625 [+] 0.36 [×] 225 [+] 90 [=]  (271)",
+          "[√x]  → 16.46"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.4**2*25**2+0.6**2*15**2+2*0.4*0.6*0.5*25*15)**0.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "correlation",
+        "weight",
+        "diversification",
+        "closest",
+        "variance"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "To compute the variance of a portfolio of 20 assets, an analyst needs the variance of each asset and the covariance of every distinct pair of assets. The number of distinct pairwise covariances is closest to:",
+      "stem_tr": "20 varlıklı bir portföyün varyansını hesaplamak için bir analistin her varlığın varyansına ve her ayrı varlık çiftinin kovaryansına ihtiyacı var. Ayrı ikili kovaryans sayısı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "380",
+          "tr": "380",
+          "value": 380
+        },
+        {
+          "key": "B",
+          "en": "210",
+          "tr": "210",
+          "value": 210.0
+        },
+        {
+          "key": "C",
+          "en": "190",
+          "tr": "190",
+          "value": 190.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Distinct pairs = n(n - 1) / 2 = 20 × 19 / 2 = 190.",
+      "explanation_tr": "Ayrı çift sayısı = n(n - 1) / 2 = 20 × 19 / 2 = 190.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Counts each pair twice (A with B and B with A), but Cov(A, B) = Cov(B, A).",
+          "tr": "Her çifti iki kez sayar (A ile B ve B ile A); oysa Kov(A, B) = Kov(B, A)."
+        },
+        "B": {
+          "en": "Includes the 20 variances (n(n + 1) / 2), which are not covariances between distinct assets.",
+          "tr": "20 varyansı da (n(n + 1) / 2) içerir; bunlar ayrı varlıklar arasındaki kovaryanslar değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the number of distinct pairs of assets.",
+          "tr": "Ayrı varlık çiftlerinin sayısı isteniyor."
+        },
+        {
+          "en": "Each pair counts once because the covariance is symmetric.",
+          "tr": "Kovaryans simetrik olduğundan her çift bir kez sayılır.",
+          "formula_latex": "N_{cov}=\\frac{n(n-1)}{2}",
+          "values": {
+            "n": 20
+          }
+        },
+        {
+          "en": "20 × 19 = 380.",
+          "tr": "20 × 19 = 380."
+        },
+        {
+          "en": "380 / 2 = 190.",
+          "tr": "380 / 2 = 190."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20 [×] 19 [÷] 2 [=]",
+          "→ 190"
+        ]
+      },
+      "numeric": {
+        "expr": "20*19/2"
+      },
+      "vocab_ids": [
+        "covariance",
+        "portfolio",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-a-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Asset A has a standard deviation of 20% and asset B has a standard deviation of 10%. In an equal-weighted portfolio of the two, the portfolio standard deviation equals exactly 15% only if the correlation between them is:",
+      "stem_tr": "A varlığının standart sapması %20, B varlığının standart sapması %10'dur. İkisinden oluşan eşit ağırlıklı bir portföyde, portföy standart sapmasının tam olarak %15 olması yalnızca aralarındaki korelasyon şu olduğunda mümkündür:",
+      "options": [
+        {
+          "key": "A",
+          "en": "+1.0",
+          "tr": "+1,0"
+        },
+        {
+          "key": "B",
+          "en": "0.0",
+          "tr": "0,0"
+        },
+        {
+          "key": "C",
+          "en": "-1.0",
+          "tr": "-1,0"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The weighted average of the standard deviations is 0.5 × 20 + 0.5 × 10 = 15%. The portfolio SD equals it only when there is no diversification benefit, i.e. correlation +1.",
+      "explanation_tr": "Standart sapmaların ağırlıklı ortalaması 0,5 × 20 + 0,5 × 10 = %15'tir. Portföy SS'si buna yalnızca çeşitlendirme faydası yoksa, yani korelasyon +1 iken eşittir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "With zero correlation the SD is √(0.25 × 400 + 0.25 × 100) = 11.18%, below 15%.",
+          "tr": "Sıfır korelasyonda SS = √(0,25 × 400 + 0,25 × 100) = %11,18 olur; %15'in altındadır."
+        },
+        "C": {
+          "en": "With correlation -1 the SD is |0.5 × 20 - 0.5 × 10| = 5%, far below 15%.",
+          "tr": "Korelasyon -1 iken SS = |0,5 × 20 - 0,5 × 10| = %5 olur; %15'in çok altındadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "weighted-average",
+        "standard-deviation",
+        "risk",
+        "portfolio"
+      ],
+      "pattern_ids": [
+        "if-then"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Asset 1 has a standard deviation of 30% and asset 2 has a standard deviation of 20%. The correlation between them is 0.30. The weight in asset 1 in the minimum-variance portfolio is closest to:",
+      "stem_tr": "1. varlığın standart sapması %30, 2. varlığın standart sapması %20'dir. Aralarındaki korelasyon 0,30'dur. Minimum varyanslı portföyde 1. varlığın ağırlığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "30.77%",
+          "tr": "%30,77",
+          "value": 30.77
+        },
+        {
+          "key": "B",
+          "en": "23.40%",
+          "tr": "%23,40",
+          "value": 23.4
+        },
+        {
+          "key": "C",
+          "en": "76.60%",
+          "tr": "%76,60",
+          "value": 76.6
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "w1 = (σ2² - ρσ1σ2) / (σ1² + σ2² - 2ρσ1σ2) = (400 - 180) / (900 + 400 - 360) = 220 / 940 = 23.40%.",
+      "explanation_tr": "w1 = (σ2² - ρσ1σ2) / (σ1² + σ2² - 2ρσ1σ2) = (400 - 180) / (900 + 400 - 360) = 220 / 940 = %23,40.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Uses inverse-variance weights and ignores the covariance term.",
+          "tr": "Ters varyans ağırlıklarını kullanır ve kovaryans terimini göz ardı eder."
+        },
+        "C": {
+          "en": "Reports the weight in asset 2 (76.60%) instead of asset 1.",
+          "tr": "1. varlık yerine 2. varlığın ağırlığını (%76,60) verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the minimum-variance weight in asset 1.",
+          "tr": "Minimum varyanslı portföyde 1. varlığın ağırlığı isteniyor."
+        },
+        {
+          "en": "Use the two-asset minimum-variance formula.",
+          "tr": "İki varlıklı minimum varyans formülünü kullan.",
+          "formula_latex": "w_1=\\frac{\\sigma_2^2-\\rho\\sigma_1\\sigma_2}{\\sigma_1^2+\\sigma_2^2-2\\rho\\sigma_1\\sigma_2}",
+          "values": {
+            "s1": 30,
+            "s2": 20,
+            "rho": 0.3
+          }
+        },
+        {
+          "en": "Numerator = 400 - 0.3 × 600 = 220; denominator = 900 + 400 - 360 = 940.",
+          "tr": "Pay = 400 - 0,3 × 600 = 220; payda = 900 + 400 - 360 = 940."
+        },
+        {
+          "en": "220 / 940 = 23.40%.",
+          "tr": "220 / 940 = %23,40."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3 [×] 600 [=]  (180)",
+          "400 [-] 180 [=]  (220)",
+          "220 [÷] 940 [=]  → 0.2340"
+        ]
+      },
+      "numeric": {
+        "expr": "(20**2-0.3*30*20)/(30**2+20**2-2*0.3*30*20)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "weight",
+        "correlation",
+        "portfolio",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which portion of the minimum-variance frontier (the curve of lowest-risk portfolios for each expected return) is the efficient frontier?",
+      "stem_tr": "Minimum varyans sınırının (her beklenen getiri için en düşük riskli portföyler eğrisi) hangi kısmı etkin sınırdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The part below the global minimum-variance portfolio",
+          "tr": "Küresel minimum varyanslı portföyün altında kalan kısım"
+        },
+        {
+          "key": "B",
+          "en": "The whole curve, because every point has the lowest risk for its return",
+          "tr": "Eğrinin tamamı; çünkü her noktanın kendi getirisi için en düşük riski vardır"
+        },
+        {
+          "key": "C",
+          "en": "The part from the global minimum-variance portfolio upward",
+          "tr": "Küresel minimum varyanslı portföyden yukarı doğru uzanan kısım"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Above the global minimum-variance portfolio, higher risk comes with higher expected return. These portfolios offer the best return for their risk.",
+      "explanation_tr": "Küresel minimum varyanslı portföyün üstünde daha yüksek risk daha yüksek beklenen getiriyle gelir. Bu portföyler riskleri için en iyi getiriyi sunar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Each portfolio below it is dominated by one with the same risk and a higher expected return on the upper part.",
+          "tr": "Altındaki her portföy, üst kısımda aynı riske ve daha yüksek beklenen getiriye sahip bir portföy tarafından domine edilir."
+        },
+        "B": {
+          "en": "Points on the lower part have the same risk as points above them but lower expected returns, so they are not efficient.",
+          "tr": "Alt kısımdaki noktalar üstlerindekilerle aynı riske ve daha düşük beklenen getiriye sahiptir; bu yüzden etkin değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "efficient-frontier",
+        "upward",
+        "expected-return"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Two assets are uncorrelated. Asset 1 has a standard deviation of 15% and asset 2 has a standard deviation of 10%. The standard deviation of the minimum-variance portfolio of these two assets is closest to:",
+      "stem_tr": "İki varlık birbiriyle ilişkisizdir. 1. varlığın standart sapması %15, 2. varlığın standart sapması %10'dur. Bu iki varlıktan oluşan minimum varyanslı portföyün standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.32%",
+          "tr": "%8,32",
+          "value": 8.32
+        },
+        {
+          "key": "B",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10
+        },
+        {
+          "key": "C",
+          "en": "11.54%",
+          "tr": "%11,54",
+          "value": 11.54
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With zero correlation, w1 = 100 / (225 + 100) = 30.77% and w2 = 69.23%. Variance = 0.3077² × 225 + 0.6923² × 100 = 21.3 + 47.9 = 69.2. SD = 8.32%.",
+      "explanation_tr": "Korelasyon sıfırken w1 = 100 / (225 + 100) = %30,77 ve w2 = %69,23. Varyans = 0,3077² × 225 + 0,6923² × 100 = 21,3 + 47,9 = 69,2. SS = %8,32.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Gives the standard deviation of the safer asset alone; the mix does better because the assets are uncorrelated.",
+          "tr": "Yalnızca daha güvenli varlığın standart sapmasını verir; varlıklar ilişkisiz olduğundan karışım daha iyi sonuç verir."
+        },
+        "C": {
+          "en": "Takes the weighted average of the standard deviations, which ignores the diversification benefit.",
+          "tr": "Standart sapmaların ağırlıklı ortalamasını alır; çeşitlendirme faydasını göz ardı eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the standard deviation of the minimum-variance mix.",
+          "tr": "Minimum varyanslı karışımın standart sapması isteniyor."
+        },
+        {
+          "en": "With zero correlation, the weights are proportional to the other asset's variance.",
+          "tr": "Korelasyon sıfırken ağırlıklar diğer varlığın varyansıyla orantılıdır.",
+          "formula_latex": "w_1=\\frac{\\sigma_2^2}{\\sigma_1^2+\\sigma_2^2}",
+          "values": {
+            "s1": 15,
+            "s2": 10
+          }
+        },
+        {
+          "en": "w1 = 100 / 325 = 0.3077; w2 = 0.6923.",
+          "tr": "w1 = 100 / 325 = 0,3077; w2 = 0,6923."
+        },
+        {
+          "en": "Variance = 69.2; SD = 8.32%.",
+          "tr": "Varyans = 69,2; SS = %8,32."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.3077 [x²] [×] 225 [+] 0.6923 [x²] [×] 100 [=]  (69.2)",
+          "[√x]  → 8.32"
+        ]
+      },
+      "numeric": {
+        "expr": "(1/(1/15**2+1/10**2))**0.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "uncorrelated",
+        "standard-deviation",
+        "portfolio",
+        "closest",
+        "lowest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-b-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Compared with an investor who may sell assets short, an investor who is barred from short selling will most likely face an efficient frontier that is:",
+      "stem_tr": "Açığa satış yapabilen bir yatırımcıyla karşılaştırıldığında, açığa satışı yasak olan bir yatırımcının karşılaştığı etkin sınır büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "More attractive, since short sales add risk that the frontier excludes",
+          "tr": "Daha çekici; çünkü açığa satış, sınırın dışladığı ek risk getirir"
+        },
+        {
+          "key": "B",
+          "en": "The same or less attractive, since fewer portfolios can be formed",
+          "tr": "Aynı veya daha az çekici; çünkü daha az portföy oluşturulabilir"
+        },
+        {
+          "key": "C",
+          "en": "Identical, since short selling does not change the available assets",
+          "tr": "Aynıdır; çünkü açığa satış mevcut varlık kümesini değiştirmez"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A constraint removes some feasible portfolios. The constrained frontier can only match or lie inside (to the right of) the unconstrained one.",
+      "explanation_tr": "Bir kısıt bazı uygulanabilir portföyleri ortadan kaldırır. Kısıtlı sınır, kısıtsız sınıra en fazla eşit olabilir veya onun içinde (sağında) kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Removing options cannot improve the best attainable risk-return trade-off; short sales are an extra option.",
+          "tr": "Seçenekleri kaldırmak ulaşılabilir en iyi risk-getiri dengesini iyileştiremez; açığa satış ek bir seçenektir."
+        },
+        "C": {
+          "en": "Short selling creates new portfolios, so barring it changes the set of attainable portfolios even with the same assets.",
+          "tr": "Açığa satış yeni portföyler yaratır; yasaklamak, aynı varlıklarla bile ulaşılabilir portföyler kümesini değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "constraint",
+        "efficient-frontier",
+        "investor"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which statement best describes a risk-averse investor?",
+      "stem_tr": "Hangi ifade risk karşıtı bir yatırımcıyı en iyi tanımlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Always chooses the portfolio with the lowest risk, whatever its expected return",
+          "tr": "Beklenen getirisi ne olursa olsun her zaman en düşük riskli portföyü seçer"
+        },
+        {
+          "key": "B",
+          "en": "Is indifferent between any two portfolios that share the same expected return",
+          "tr": "Aynı beklenen getiriyi paylaşan portföyler arasında kayıtsızdır"
+        },
+        {
+          "key": "C",
+          "en": "Prefers the less risky portfolio when expected returns are the same",
+          "tr": "Beklenen getiriler aynıysa daha düşük riskli portföyü tercih eder"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Risk aversion means demanding extra expected return for extra risk, so lower risk wins when the expected return is equal.",
+      "explanation_tr": "Risk karşıtlığı ek risk için ek beklenen getiri talep etmek demektir; bu yüzden beklenen getiri eşitken düşük risk kazanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A risk-averse investor will accept more risk if compensated with enough extra expected return.",
+          "tr": "Risk karşıtı bir yatırımcı, yeterli ek beklenen getiriyle ödüllendirilirse daha fazla risk üstlenir."
+        },
+        "B": {
+          "en": "Indifference to risk describes a risk-neutral investor, not a risk-averse one.",
+          "tr": "Riske kayıtsızlık risk karşıtı değil, risk nötr yatırımcıyı tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "expected-return",
+        "utility",
+        "risk",
+        "investor"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor with risk-aversion coefficient A = 4 can invest in a risky portfolio with an expected return of 10% and a standard deviation of 14%, or in a risk-free asset yielding 3%. The utility-maximizing weight in the risky portfolio, y* = (E(R) - Rf) / (A × σ²), is closest to:",
+      "stem_tr": "Risk karşıtlığı katsayısı A = 4 olan bir yatırımcı, beklenen getirisi %10 ve standart sapması %14 olan riskli bir portföye veya %3 getirili risksiz bir varlığa yatırım yapabilir. Faydayı en çok yapan riskli portföy ağırlığı, y* = (E(R) - Rf) / (A × σ²), aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "89.29%",
+          "tr": "%89,29",
+          "value": 89.29
+        },
+        {
+          "key": "B",
+          "en": "12.50%",
+          "tr": "%12,50",
+          "value": 12.5
+        },
+        {
+          "key": "C",
+          "en": "178.57%",
+          "tr": "%178,57",
+          "value": 178.57
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "y* = (0.10 - 0.03) / (4 × 0.14²) = 0.07 / 0.0784 = 89.29%.",
+      "explanation_tr": "y* = (0,10 - 0,03) / (4 × 0,14²) = 0,07 / 0,0784 = %89,29.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by A × σ instead of A × σ², so the risk is not squared.",
+          "tr": "A × σ² yerine A × σ'ya böler; riskin karesi alınmaz."
+        },
+        "C": {
+          "en": "Divides by 0.5 × A × σ², which is not the formula for the optimal weight.",
+          "tr": "0,5 × A × σ²'ye böler; bu, en uygun ağırlığın formülü değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the optimal weight in the risky portfolio.",
+          "tr": "Riskli portföydeki en uygun ağırlık isteniyor."
+        },
+        {
+          "en": "Divide the risk premium by risk aversion times variance.",
+          "tr": "Risk primini, risk karşıtlığı çarpı varyansa böl.",
+          "formula_latex": "y^*=\\frac{E(R_p)-R_f}{A\\sigma_p^2}",
+          "values": {
+            "E": 0.1,
+            "Rf": 0.03,
+            "A": 4,
+            "sigma": 0.14
+          }
+        },
+        {
+          "en": "Premium = 0.07; A × σ² = 4 × 0.0196 = 0.0784.",
+          "tr": "Prim = 0,07; A × σ² = 4 × 0,0196 = 0,0784."
+        },
+        {
+          "en": "0.07 / 0.0784 = 89.29%.",
+          "tr": "0,07 / 0,0784 = %89,29."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.14 [x²] [×] 4 [=]  (0.0784)",
+          "0.07 [÷] 0.0784 [=]  → 0.8929"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.10-0.03)/(4*0.14**2)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "risk-aversion",
+        "allocation",
+        "variance",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A risky portfolio has an expected return of 12% and the risk-free rate (also the borrowing rate) is 4%. An investor puts 140% of her wealth in the risky portfolio by borrowing 40% at the risk-free rate. The expected return of her overall portfolio is closest to:",
+      "stem_tr": "Riskli bir portföyün beklenen getirisi %12, risksiz faiz (aynı zamanda borçlanma faizi) %4'tür. Bir yatırımcı varlığının %40'ını risksiz faizle borçlanarak varlığının %140'ını riskli portföye yatırıyor. Toplam portföyünün beklenen getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "16.80%",
+          "tr": "%16,80",
+          "value": 16.8
+        },
+        {
+          "key": "B",
+          "en": "15.20%",
+          "tr": "%15,20",
+          "value": 15.2
+        },
+        {
+          "key": "C",
+          "en": "7.20%",
+          "tr": "%7,20",
+          "value": 7.2
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "E(R) = 1.4 × 12% + (-0.4) × 4% = 16.8 - 1.6 = 15.20%. Equivalent: 4% + 1.4 × (12% - 4%) = 15.2%.",
+      "explanation_tr": "E(R) = 1,4 × %12 + (-0,4) × %4 = 16,8 - 1,6 = %15,20. Eşdeğeri: %4 + 1,4 × (%12 - %4) = %15,2.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Earns 12% on 140% of wealth but ignores the cost of the borrowed 40%.",
+          "tr": "Varlığın %140'ı üzerinden %12 kazanır ancak borçlanılan %40'ın maliyetini göz ardı eder."
+        },
+        "C": {
+          "en": "Treats the leverage as 0.4 instead of 1.4 when applying the risk premium.",
+          "tr": "Risk primini uygularken kaldıracı 1,4 yerine 0,4 alır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the expected return of a levered position.",
+          "tr": "Kaldıraçlı bir pozisyonun beklenen getirisi isteniyor."
+        },
+        {
+          "en": "Weights sum to 1: 140% in the risky portfolio and -40% in the risk-free asset.",
+          "tr": "Ağırlıklar 1'e toplanır: riskli portföyde %140 ve risksiz varlıkta -%40.",
+          "formula_latex": "E(R)=wE(R_p)+(1-w)R_f",
+          "values": {
+            "w": 1.4,
+            "Rp": 12,
+            "Rf": 4
+          }
+        },
+        {
+          "en": "1.4 × 12 = 16.8; -0.4 × 4 = -1.6.",
+          "tr": "1,4 × 12 = 16,8; -0,4 × 4 = -1,6."
+        },
+        {
+          "en": "E(R) = 15.20%.",
+          "tr": "E(R) = %15,20."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.4 [×] 12 [=]  (16.8)",
+          "0.4 [×] 4 [=]  (1.6)",
+          "16.8 [-] 1.6 [=]  → 15.20"
+        ]
+      },
+      "numeric": {
+        "expr": "1.4*12-0.4*4",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "capital-allocation-line",
+        "borrow",
+        "leverage",
+        "risk-free",
+        "expected-return",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-08-c-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-08",
+      "los_id": "QM-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An investor combines a risky portfolio P with the risk-free asset in different proportions. Compared with the Sharpe ratio of portfolio P, the Sharpe ratio of any such combination (with a positive weight in P) is:",
+      "stem_tr": "Bir yatırımcı riskli bir P portföyünü risksiz varlıkla farklı oranlarda birleştiriyor. P portföyünün Sharpe oranıyla karşılaştırıldığında, P'de pozitif ağırlığı olan her birleşimin Sharpe oranı nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Lower, because the risk-free asset dilutes the risky portfolio's return",
+          "tr": "Daha düşüktür; çünkü risksiz varlık riskli portföyün getirisini sulandırır"
+        },
+        {
+          "key": "B",
+          "en": "Higher, because adding the risk-free asset reduces the total risk",
+          "tr": "Daha yüksektir; çünkü risksiz varlık eklemek toplam riski azaltır"
+        },
+        {
+          "key": "C",
+          "en": "The same, because all combinations lie on one straight line",
+          "tr": "Aynıdır; çünkü tüm birleşimler tek bir doğru üzerindedir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The excess return and the standard deviation both scale with the weight in P, so their ratio, the slope of the capital allocation line, does not change.",
+      "explanation_tr": "Fazla getiri ve standart sapma, P'deki ağırlıkla aynı oranda ölçeklenir; dolayısıyla oranları, yani sermaye tahsis doğrusunun eğimi değişmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The risk-free asset lowers excess return and risk in the same proportion, so the ratio is unchanged.",
+          "tr": "Risksiz varlık fazla getiriyi ve riski aynı oranda düşürür; bu yüzden oran değişmez."
+        },
+        "B": {
+          "en": "Risk falls, but the excess return falls in the same proportion, so the ratio does not rise.",
+          "tr": "Risk düşer, ancak fazla getiri de aynı oranda düşer; bu yüzden oran artmaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "sharpe-ratio",
+        "capital-allocation-line",
+        "weight",
+        "risk-free",
+        "slope"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

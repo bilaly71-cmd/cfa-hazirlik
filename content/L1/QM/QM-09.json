@@ -1228,6 +1228,720 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-09-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The key assumption behind a historical simulation of portfolio losses is that:",
+      "stem_tr": "Portföy zararlarının tarihsel simülasyonunun arkasındaki temel varsayım şudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "Price changes follow a normal distribution with constant volatility",
+          "tr": "Fiyat değişimleri sabit oynaklıkla normal dağılım izler"
+        },
+        {
+          "key": "B",
+          "en": "Past changes in prices are a reasonable guide to future changes",
+          "tr": "Geçmiş fiyat değişimleri gelecek için makul bir kılavuzdur"
+        },
+        {
+          "key": "C",
+          "en": "Price changes on different days are perfectly negatively correlated",
+          "tr": "Farklı günlerdeki fiyat değişimleri tamamen negatif ilişkilidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Historical simulation replays observed changes, so it works only if the sample period resembles what lies ahead.",
+      "explanation_tr": "Tarihsel simülasyon gözlenen değişimleri yeniden oynatır; bu yüzden yalnızca örneklem dönemi öndeki döneme benziyorsa işe yarar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is a parametric assumption. Historical simulation avoids assuming a specific distribution.",
+          "tr": "Bu parametrik bir varsayımdır. Tarihsel simülasyon belirli bir dağılım varsaymaktan kaçınır."
+        },
+        "C": {
+          "en": "Perfect negative correlation across days is not assumed; historical simulation just replays past observations.",
+          "tr": "Günler arasında tam negatif ilişki varsayılmaz; tarihsel simülasyon yalnızca geçmiş gözlemleri yeniden oynatır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "historical-simulation",
+        "assumption",
+        "sample",
+        "future",
+        "distribution"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A risk analyst can run a historical simulation on either 6 months or 15 years of daily returns. Which statement about this choice is most appropriate?",
+      "stem_tr": "Bir risk analisti tarihsel simülasyonu 6 aylık veya 15 yıllık günlük getiriler üzerinde çalıştırabilir. Bu seçime ilişkin hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The long window is always better because more data always makes the past more similar to the future",
+          "tr": "Uzun pencere her zaman daha iyidir; çünkü daha fazla veri geçmişi geleceğe her zaman daha çok benzetir"
+        },
+        {
+          "key": "B",
+          "en": "The short window is always better because only recent days matter, so extreme days can be ignored",
+          "tr": "Kısa pencere her zaman daha iyidir; çünkü yalnızca yakın günler önemlidir ve uç günler göz ardı edilebilir"
+        },
+        {
+          "key": "C",
+          "en": "The short window is current but has few extreme days; the long window has more but may be outdated",
+          "tr": "Kısa pencere günceldir ama az uç gün içerir; uzun pencerede daha çok uç gün vardır ama eskimiş olabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The window length is a trade-off: recency against the number of extreme observations available to describe the tails.",
+      "explanation_tr": "Pencere uzunluğu bir dengedir: güncellik ile kuyrukları tanımlamak için mevcut uç gözlem sayısı arasında.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "More data adds old regimes that may no longer apply, so a long window is not automatically better.",
+          "tr": "Daha fazla veri artık geçerli olmayabilecek eski rejimler ekler; bu yüzden uzun pencere kendiliğinden daha iyi değildir."
+        },
+        "B": {
+          "en": "Ignoring extreme days defeats the purpose, since risk estimates are driven by the tails.",
+          "tr": "Uç günleri göz ardı etmek amacı bozar; çünkü risk tahminlerini kuyruklar belirler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "look-back",
+        "window",
+        "historical-simulation",
+        "relevant",
+        "trade-off"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "A bank runs a historical simulation on ten calm years of data that contain no market crisis. The estimated worst-case loss is most likely:",
+      "stem_tr": "Bir banka, hiçbir piyasa krizi içermeyen on sakin yıllık veri üzerinde tarihsel simülasyon çalıştırıyor. Tahmin edilen en kötü durum zararı büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Too small, because outcomes absent from the sample cannot appear in the simulation",
+          "tr": "Çok küçüktür; çünkü örneklemde bulunmayan sonuçlar simülasyonda ortaya çıkamaz"
+        },
+        {
+          "key": "B",
+          "en": "Too large, because calm years make the simulation exaggerate each loss it finds",
+          "tr": "Çok büyüktür; çünkü sakin yıllar simülasyonun bulduğu her zararı abartmasına yol açar"
+        },
+        {
+          "key": "C",
+          "en": "Accurate, because a long sample always covers every possible outcome in the future",
+          "tr": "Doğrudur; çünkü uzun bir örneklem gelecekteki olası her sonucu her zaman kapsar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Historical simulation can only replay what happened. With no crisis in the data, its tail losses will understate crisis risk.",
+      "explanation_tr": "Tarihsel simülasyon yalnızca olanı yeniden oynatabilir. Verilerde kriz yoksa kuyruk zararları kriz riskini olduğundan düşük gösterir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Calm years contain small moves, so the simulated losses are small, not exaggerated.",
+          "tr": "Sakin yıllar küçük hareketler içerir; simüle edilen zararlar abartılmış değil küçüktür."
+        },
+        "C": {
+          "en": "No sample, however long, is guaranteed to include every future outcome.",
+          "tr": "Hiçbir örneklem, ne kadar uzun olursa olsun, gelecekteki her sonucu içereceğini garanti etmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "historical-simulation",
+        "crisis",
+        "sample",
+        "underestimate",
+        "loss"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A fund doubled its holding in one share last month. To estimate the fund's one-day risk today with historical simulation, the analyst should most appropriately:",
+      "stem_tr": "Bir fon geçen ay bir paydaki pozisyonunu ikiye katladı. Fonun bugünkü tek günlük riskini tarihsel simülasyonla tahmin etmek için analist en uygun biçimde ne yapmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Use the fund's own past portfolio returns, which reflect its old weights",
+          "tr": "Eski ağırlıklarını yansıtan fonun kendi geçmiş portföy getirilerini kullanmalıdır"
+        },
+        {
+          "key": "B",
+          "en": "Apply the past returns of each asset to the portfolio's current weights",
+          "tr": "Her varlığın geçmiş getirilerini portföyün mevcut ağırlıklarına uygulamalıdır"
+        },
+        {
+          "key": "C",
+          "en": "Wait until a full year of data exists under the new weights",
+          "tr": "Yeni ağırlıklarla tam bir yıllık veri oluşana kadar beklemelidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Risk today depends on today's holdings. Replaying each asset's history through the current weights shows how the present portfolio would have behaved.",
+      "explanation_tr": "Bugünkü risk bugünkü pozisyonlara bağlıdır. Her varlığın geçmişini mevcut ağırlıklardan geçirmek, mevcut portföyün nasıl davranacağını gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The fund's old returns reflect an old allocation, so they misstate the risk of the new one.",
+          "tr": "Fonun eski getirileri eski bir dağılımı yansıtır; bu yüzden yeni dağılımın riskini yanlış gösterir."
+        },
+        "C": {
+          "en": "No wait is needed, because the asset-level history already exists and can be re-weighted immediately.",
+          "tr": "Beklemeye gerek yoktur; çünkü varlık düzeyindeki geçmiş zaten vardır ve hemen yeniden ağırlıklandırılabilir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "historical-simulation",
+        "holdings",
+        "portfolio",
+        "risk-factor"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In bootstrap resampling, observations are drawn from the original sample with replacement. If they were drawn without replacement and each resample had the same size as the original sample, the resamples would:",
+      "stem_tr": "Bootstrap yeniden örneklemede gözlemler orijinal örneklemden iadeli çekilir. İadesiz çekilseydi ve her yeniden örneklem orijinalle aynı büyüklükte olsaydı, yeniden örneklemler ne olurdu?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Contain more extreme observations, so the estimates would be too volatile",
+          "tr": "Daha fazla uç gözlem içerirdi; bu yüzden tahminler fazla oynak olurdu"
+        },
+        {
+          "key": "B",
+          "en": "Contain new observations from the population, so the estimates would be more accurate",
+          "tr": "Ana kütleden yeni gözlemler içerirdi; bu yüzden tahminler daha doğru olurdu"
+        },
+        {
+          "key": "C",
+          "en": "All contain exactly the same observations, so no variation would be created",
+          "tr": "Hepsi aynı gözlemleri içerirdi; bu yüzden hiç değişim yaratılmazdı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Without replacement and with full-size resamples, every resample uses each observation once, so the statistic never changes. Replacement is what creates variation.",
+      "explanation_tr": "İadesiz ve tam büyüklükte yeniden örneklemede her yeniden örneklem her gözlemi bir kez kullanır; istatistik hiç değişmez. Değişimi yaratan iadedir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Without replacement no observation can repeat, so the resamples cannot contain extra extremes.",
+          "tr": "İadesiz çekimde hiçbir gözlem tekrar edemez; yeniden örneklemler fazladan uç gözlem içeremez."
+        },
+        "B": {
+          "en": "Bootstrapping never adds data from outside the original sample; it only reuses what is there.",
+          "tr": "Bootstrap orijinal örneklemin dışından veri eklemez; yalnızca eldekini yeniden kullanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bootstrap",
+        "resample",
+        "identical",
+        "sample"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An analyst increases the number of bootstrap resamples from 1,000 to 100,000 but keeps the same original sample of 40 observations. All else equal, this most likely:",
+      "stem_tr": "Bir analist bootstrap yeniden örneklem sayısını 1.000'den 100.000'e çıkarıyor ancak 40 gözlemlik aynı orijinal örneklemi kullanıyor. Diğer her şey eşitken bu büyük olasılıkla neyi sağlar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Smooths the resampling distribution but gives no new information about the population",
+          "tr": "Yeniden örnekleme dağılımını düzgünleştirir ancak ana kütle hakkında yeni bilgi vermez"
+        },
+        {
+          "key": "B",
+          "en": "Reduces the uncertainty about the population mean as much as collecting 100,000 new observations",
+          "tr": "Ana kütle ortalamasına ilişkin belirsizliği 100.000 yeni gözlem toplamak kadar azaltır"
+        },
+        {
+          "key": "C",
+          "en": "Biases the estimate, because reusing the same 40 observations that many times distorts them",
+          "tr": "Tahmini yanlı kılar; çünkü aynı 40 gözlemi o kadar çok kez yeniden kullanmak onları bozar"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "More resamples reduce the noise in the simulated distribution, but all information still comes from the original 40 observations.",
+      "explanation_tr": "Daha fazla yeniden örneklem simüle edilen dağılımdaki gürültüyü azaltır, ancak tüm bilgi hâlâ orijinal 40 gözlemden gelir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The original sample size, not the number of resamples, limits what is known about the population.",
+          "tr": "Ana kütle hakkında bilinenleri sınırlayan şey yeniden örneklem sayısı değil, orijinal örneklem büyüklüğüdür."
+        },
+        "C": {
+          "en": "Resampling many times does not by itself bias the estimate; it just describes the sampling variation more fully.",
+          "tr": "Çok kez yeniden örnekleme tek başına tahmini yanlı kılmaz; yalnızca örnekleme değişimini daha ayrıntılı tanımlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bootstrap",
+        "precision",
+        "sample-size",
+        "information",
+        "increase"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "An analyst needs a standard error for the median monthly return of a fund, for which no simple formula is available. The approach most likely to help is:",
+      "stem_tr": "Bir analistin, basit bir formülü bulunmayan bir fonun aylık getiri medyanı için standart hataya ihtiyacı var. En çok yardımcı olması muhtemel yaklaşım hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The central limit theorem, dividing the sample standard deviation by √n",
+          "tr": "Örneklem standart sapmasını √n'e bölen merkezi limit teoremi"
+        },
+        {
+          "key": "B",
+          "en": "Bootstrap resampling, computing the median in each resample",
+          "tr": "Her yeniden örneklemde medyanı hesaplayan bootstrap"
+        },
+        {
+          "key": "C",
+          "en": "A chi-square test of independence on the monthly returns",
+          "tr": "Aylık getiriler üzerinde bağımsızlık için ki-kare testi"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Bootstrapping can approximate the sampling distribution of almost any statistic, including a median, without a formula.",
+      "explanation_tr": "Bootstrap, medyan dahil neredeyse her istatistiğin örnekleme dağılımını formül olmadan yaklaşık olarak bulabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The s / √n formula applies to the sample mean, not to the median.",
+          "tr": "s / √n formülü örneklem ortalaması içindir, medyan için değil."
+        },
+        "C": {
+          "en": "A chi-square test of independence works on category counts and gives no standard error for a median.",
+          "tr": "Bağımsızlık için ki-kare testi kategori sayımlarıyla çalışır ve medyan için standart hata vermez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bootstrap",
+        "median",
+        "standard-error",
+        "estimate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst has only 30 monthly returns, all from a calm period. She bootstraps them 10,000 times to estimate the chance of a large loss. The resulting estimate is most likely:",
+      "stem_tr": "Bir analistin yalnızca sakin bir dönemden 30 aylık getirisi var. Büyük bir zarar olasılığını tahmin etmek için bunları 10.000 kez bootstrap ile yeniden örnekliyor. Ortaya çıkan tahmin büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Too high, because repeating observations 10,000 times inflates the number of losses",
+          "tr": "Çok yüksektir; çünkü gözlemleri 10.000 kez tekrar etmek zarar sayısını şişirir"
+        },
+        {
+          "key": "B",
+          "en": "Reliable, because 10,000 resamples remove any weakness in the original sample",
+          "tr": "Güvenilirdir; çünkü 10.000 yeniden örneklem orijinal örneklemdeki her zayıflığı giderir"
+        },
+        {
+          "key": "C",
+          "en": "Too low, because resamples can only reuse the calm outcomes in the sample",
+          "tr": "Çok düşüktür; çünkü yeniden örneklemler yalnızca sakin sonuçları kullanabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Bootstrapping cannot create outcomes that are not in the original sample. A calm sample gives calm resamples and understates tail risk.",
+      "explanation_tr": "Bootstrap orijinal örneklemde olmayan sonuçlar yaratamaz. Sakin bir örneklem sakin yeniden örneklemler verir ve kuyruk riskini olduğundan düşük gösterir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Repeating observations does not create new losses; the resamples contain only losses that were already in the sample.",
+          "tr": "Gözlemleri tekrar etmek yeni zararlar yaratmaz; yeniden örneklemler yalnızca örneklemde zaten bulunan zararları içerir."
+        },
+        "B": {
+          "en": "More resamples cannot fix a sample that fails to represent the population.",
+          "tr": "Daha fazla yeniden örneklem, ana kütleyi temsil etmeyen bir örneklemi düzeltemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "bootstrap",
+        "sample",
+        "crisis",
+        "limitation",
+        "tail"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The results of a Monte Carlo simulation depend most directly on:",
+      "stem_tr": "Bir Monte Carlo simülasyonunun sonuçları en doğrudan neye bağlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The distributions and parameters the analyst chooses for the inputs",
+          "tr": "Girdiler için seçilen dağılımlara ve parametrelere"
+        },
+        {
+          "key": "B",
+          "en": "The exact sequence of historical returns in the most recent year",
+          "tr": "Son yıldaki tarihsel getirilerin tam sırasına ve düzenine"
+        },
+        {
+          "key": "C",
+          "en": "The number of observations in the analyst's original historical sample",
+          "tr": "Analistin orijinal tarihsel örnekleminin gözlem sayısına"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Monte Carlo draws random values from assumed distributions, so unrealistic input assumptions give unrealistic results.",
+      "explanation_tr": "Monte Carlo varsayılan dağılımlardan rastgele değerler çeker; bu yüzden gerçekçi olmayan girdi varsayımları gerçekçi olmayan sonuçlar verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes historical simulation, which replays past observations; Monte Carlo draws from assumed distributions.",
+          "tr": "Bu, geçmiş gözlemleri yeniden oynatan tarihsel simülasyonu anlatır; Monte Carlo varsayılan dağılımlardan çeker."
+        },
+        "C": {
+          "en": "That relates to historical or bootstrap methods; Monte Carlo is limited by its assumed inputs, not by a sample size.",
+          "tr": "Bu tarihsel veya bootstrap yöntemleriyle ilgilidir; Monte Carlo bir örneklem büyüklüğüyle değil varsayılan girdileriyle sınırlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "input",
+        "assumption",
+        "distribution",
+        "output"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Two shares are positively correlated. An analyst runs a Monte Carlo simulation of a portfolio of the two shares but draws their returns independently of each other. The simulated portfolio risk will most likely be:",
+      "stem_tr": "İki pay pozitif ilişkilidir. Bir analist bu iki paydan oluşan bir portföyün Monte Carlo simülasyonunu, getirilerini birbirinden bağımsız çekerek çalıştırıyor. Simüle edilen portföy riski büyük olasılıkla nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Too high, because independent draws add extra randomness to the portfolio",
+          "tr": "Çok yüksektir; çünkü bağımsız çekimler portföye fazladan rastlantısallık ekler"
+        },
+        {
+          "key": "B",
+          "en": "Too low, because the shares would in reality tend to fall together",
+          "tr": "Çok düşüktür; çünkü paylar gerçekte birlikte düşme eğilimindedir"
+        },
+        {
+          "key": "C",
+          "en": "Unaffected, because correlation matters only for the expected return",
+          "tr": "Etkilenmez; çünkü korelasyon yalnızca beklenen getiri için önemlidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Ignoring positive correlation removes the joint moves that raise portfolio variance, so the simulated risk is understated.",
+      "explanation_tr": "Pozitif korelasyonu yok saymak portföy varyansını artıran ortak hareketleri ortadan kaldırır; bu yüzden simüle edilen risk olduğundan düşüktür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Independent draws partly cancel each other out, which lowers risk rather than raising it.",
+          "tr": "Bağımsız çekimler birbirini kısmen götürür; bu riski artırmaz, azaltır."
+        },
+        "C": {
+          "en": "Correlation enters portfolio variance directly, so it affects risk even when expected returns are unchanged.",
+          "tr": "Korelasyon portföy varyansına doğrudan girer; beklenen getiriler değişmese bile riski etkiler."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "correlation",
+        "independent",
+        "portfolio",
+        "understate",
+        "risk"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A risk manager wants to use Monte Carlo simulation to see how a portfolio might behave in a crisis that has not happened in the data. Which approach is most appropriate?",
+      "stem_tr": "Bir risk yöneticisi, verilerde yaşanmamış bir krizde portföyün nasıl davranabileceğini görmek için Monte Carlo simülasyonu kullanmak istiyor. Hangi yaklaşım en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Keep the calm-period inputs and increase the number of trials until crises appear",
+          "tr": "Sakin dönem girdilerini koru ve krizler görünene kadar deneme sayısını artır"
+        },
+        {
+          "key": "B",
+          "en": "Replace the simulation with a replay of the calmest year in the data",
+          "tr": "Simülasyonu verideki en sakin yılın yeniden oynatılmasıyla değiştir"
+        },
+        {
+          "key": "C",
+          "en": "Raise the assumed volatilities and correlations in the inputs, then simulate",
+          "tr": "Girdilerdeki oynaklık ve korelasyon varsayımlarını yükselt, sonra simüle et"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Because inputs are chosen by the analyst, they can be set to crisis-like values, which a data-driven replay could not do.",
+      "explanation_tr": "Girdileri analist seçtiği için kriz benzeri değerlere ayarlanabilir; veriye dayalı bir yeniden oynatma bunu yapamaz.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "More trials only describe the calm-period model more precisely; they do not make crises appear.",
+          "tr": "Daha fazla deneme yalnızca sakin dönem modelini daha kesin tanımlar; krizleri ortaya çıkarmaz."
+        },
+        "B": {
+          "en": "Replaying the calmest year shows only calm outcomes, the opposite of a stress test.",
+          "tr": "En sakin yılı yeniden oynatmak yalnızca sakin sonuçları gösterir; bu, stres testinin tersidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "volatility",
+        "scenario",
+        "correlation",
+        "crisis"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-09-c-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-09",
+      "los_id": "QM-09-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A Monte Carlo simulation with 10,000 trials shows a 4.2% probability that a client's savings fall short of a target. Which interpretation is most appropriate?",
+      "stem_tr": "10.000 denemeli bir Monte Carlo simülasyonu, bir müşterinin birikimlerinin hedefin altında kalma olasılığını %4,2 gösteriyor. Hangi yorum en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It is an estimate that depends on the inputs and has simulation error",
+          "tr": "Girdi varsayımlarına bağlı olan ve simülasyon hatası taşıyan bir tahmindir"
+        },
+        {
+          "key": "B",
+          "en": "It is the true probability, because 10,000 trials remove all sampling error",
+          "tr": "Gerçek olasılıktır; çünkü 10.000 deneme tüm örnekleme hatasını giderir"
+        },
+        {
+          "key": "C",
+          "en": "It is a historical frequency, because the trials replay actual past outcomes",
+          "tr": "Tarihsel bir sıklıktır; çünkü denemeler gerçek geçmiş sonuçları yeniden oynatır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The 4.2% is only as good as the assumed distributions, and a finite number of random trials leaves some estimation error.",
+      "explanation_tr": "%4,2, varsayılan dağılımlar kadar iyidir ve sonlu sayıda rastgele deneme bir miktar tahmin hatası bırakır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A finite number of random trials never removes error completely, and the model may also be wrong.",
+          "tr": "Sonlu sayıda rastgele deneme hatayı hiçbir zaman tamamen gidermez; üstelik model de yanlış olabilir."
+        },
+        "C": {
+          "en": "Monte Carlo draws from assumed distributions; replaying actual past outcomes is historical simulation.",
+          "tr": "Monte Carlo varsayılan dağılımlardan çeker; gerçek geçmiş sonuçları yeniden oynatmak tarihsel simülasyondur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "probability",
+        "estimate",
+        "model-risk",
+        "shortfall"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

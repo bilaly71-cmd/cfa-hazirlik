@@ -2509,6 +2509,1399 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-10-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A simple regression of Y on X uses four observations: X = 1, 2, 3, 4 and Y = 3, 5, 4, 8. The estimated slope coefficient is closest to:",
+      "stem_tr": "Y'nin X'e basit regresyonunda dört gözlem kullanılıyor: X = 1, 2, 3, 4 ve Y = 3, 5, 4, 8. Tahmin edilen eğim katsayısı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.50",
+          "tr": "0,50",
+          "value": 0.5
+        },
+        {
+          "key": "B",
+          "en": "1.40",
+          "tr": "1,40",
+          "value": 1.4
+        },
+        {
+          "key": "C",
+          "en": "1.75",
+          "tr": "1,75",
+          "value": 1.75
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Means: X̄ = 2.5, Ȳ = 5. ΣXY deviations = 7; ΣX deviations² = 5. Slope = 7 / 5 = 1.40.",
+      "explanation_tr": "Ortalamalar: X̄ = 2,5, Ȳ = 5. Sapma çarpımlarının toplamı = 7; X sapma kareleri toplamı = 5. Eğim = 7 / 5 = 1,40.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides by the sum of squared deviations of Y (14), which is the slope of X regressed on Y.",
+          "tr": "Y'nin kareli sapmalar toplamına (14) böler; bu, X'in Y'ye regresyonunun eğimidir."
+        },
+        "C": {
+          "en": "Divides by n = 4 instead of the sum of squared X deviations (5).",
+          "tr": "X kareli sapmalar toplamı (5) yerine n = 4'e böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the OLS slope.",
+          "tr": "OLS eğimi isteniyor."
+        },
+        {
+          "en": "Slope = sum of cross-product deviations divided by sum of squared X deviations.",
+          "tr": "Eğim = sapma çarpımları toplamı bölü X kareli sapmalar toplamı.",
+          "formula_latex": "\\hat b_1=\\frac{\\sum(X_i-\\bar X)(Y_i-\\bar Y)}{\\sum(X_i-\\bar X)^2}",
+          "values": {
+            "Sxy": 7,
+            "Sxx": 5
+          }
+        },
+        {
+          "en": "Deviations of X: -1.5, -0.5, 0.5, 1.5; of Y: -2, 0, -1, 3. Cross-products: 3, 0, -0.5, 4.5 = 7.",
+          "tr": "X sapmaları: -1,5, -0,5, 0,5, 1,5; Y sapmaları: -2, 0, -1, 3. Çarpımlar: 3, 0, -0,5, 4,5 = 7."
+        },
+        {
+          "en": "7 / 5 = 1.40.",
+          "tr": "7 / 5 = 1,40."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[2ND] [DATA] [2ND] [CLR WORK]",
+          "1 [ENTER] [↓] 3 [ENTER] [↓] 2 [ENTER] [↓] 5 [ENTER] [↓] 3 [ENTER] [↓] 4 [ENTER] [↓] 4 [ENTER] [↓] 8 [ENTER]",
+          "[2ND] [STAT] (LIN) [↓] to read b = 1.40, a = 1.50"
+        ]
+      },
+      "numeric": {
+        "expr": "cov_s([1,2,3,4],[3,5,4,8])/var_s([1,2,3,4])"
+      },
+      "vocab_ids": [
+        "ordinary-least-squares",
+        "slope",
+        "dependent-variable",
+        "paired",
+        "closest",
+        "deviation"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "Using the data X = 1, 2, 3, 4 and Y = 3, 5, 4, 8, the estimated slope of the regression of Y on X is 1.40. The estimated intercept is closest to:",
+      "stem_tr": "X = 1, 2, 3, 4 ve Y = 3, 5, 4, 8 verileriyle Y'nin X'e regresyonunun tahmin edilen eğimi 1,40'tır. Tahmin edilen kesim noktası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00",
+          "tr": "5,00",
+          "value": 5
+        },
+        {
+          "key": "B",
+          "en": "2.00",
+          "tr": "2,00",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The line passes through the point of means: intercept = Ȳ - slope × X̄ = 5 - 1.40 × 2.5 = 1.50.",
+      "explanation_tr": "Doğru ortalamalar noktasından geçer: kesim noktası = Ȳ - eğim × X̄ = 5 - 1,40 × 2,5 = 1,50.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the mean of Y, which is the intercept only if the slope is zero.",
+          "tr": "Y'nin ortalamasını verir; bu, ancak eğim sıfırsa kesim noktası olur."
+        },
+        "B": {
+          "en": "Divides the mean of Y by the mean of X, which has no role in the OLS formula.",
+          "tr": "Y'nin ortalamasını X'in ortalamasına böler; bunun OLS formülünde yeri yoktur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the intercept.",
+          "tr": "Kesim noktası isteniyor."
+        },
+        {
+          "en": "The OLS line goes through (X̄, Ȳ), so intercept = Ȳ - b1 × X̄.",
+          "tr": "OLS doğrusu (X̄, Ȳ) noktasından geçer; kesim noktası = Ȳ - b1 × X̄.",
+          "formula_latex": "\\hat b_0=\\bar Y-\\hat b_1\\bar X",
+          "values": {
+            "Ybar": 5,
+            "b1": 1.4,
+            "Xbar": 2.5
+          }
+        },
+        {
+          "en": "1.40 × 2.5 = 3.50.",
+          "tr": "1,40 × 2,5 = 3,50."
+        },
+        {
+          "en": "5 - 3.50 = 1.50.",
+          "tr": "5 - 3,50 = 1,50."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.4 [×] 2.5 [=]  (3.5)",
+          "5 [-] 3.5 [=]  → 1.50"
+        ]
+      },
+      "numeric": {
+        "expr": "5-1.4*2.5"
+      },
+      "vocab_ids": [
+        "intercept",
+        "ordinary-least-squares",
+        "mean",
+        "closest",
+        "slope"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "recall",
+      "stem_en": "In a simple linear regression estimated by ordinary least squares with an intercept, the residuals (actual minus fitted values) have which property?",
+      "stem_tr": "Kesim noktası içeren ve en küçük kareler yöntemiyle tahmin edilen basit doğrusal regresyonda, kalıntılar (gerçek eksi tahmin edilen değerler) hangi özelliğe sahiptir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "They sum to zero",
+          "tr": "Toplamları sıfırdır"
+        },
+        {
+          "key": "B",
+          "en": "They are all positive",
+          "tr": "Hepsi pozitiftir"
+        },
+        {
+          "key": "C",
+          "en": "They equal the intercept",
+          "tr": "Kesim noktasına eşittir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With an intercept, OLS places the line through the means, so positive and negative residuals offset exactly and sum to zero.",
+      "explanation_tr": "Kesim noktası olduğunda OLS doğruyu ortalamalardan geçirir; pozitif ve negatif kalıntılar tam dengelenir ve toplamları sıfır olur.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Some points lie above and some below the fitted line, so the residuals have both signs.",
+          "tr": "Bazı noktalar doğrunun üstünde, bazıları altındadır; bu yüzden kalıntıların işaretleri karışıktır."
+        },
+        "C": {
+          "en": "The intercept is a coefficient of the line; residuals are the vertical gaps from each point to the line.",
+          "tr": "Kesim noktası doğrunun bir katsayısıdır; kalıntılar her noktadan doğruya olan dikey boşluklardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "residual",
+        "ordinary-least-squares",
+        "intercept",
+        "observed"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-a-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "In a simple regression of a fund's return (Y) on a benchmark's return (X), the estimated slope is 0.80. The standard deviation of X is 10% and the standard deviation of Y is 20%. The R² of the regression is closest to:",
+      "stem_tr": "Bir fonun getirisinin (Y) bir kıyas endeksinin getirisine (X) basit regresyonunda tahmin edilen eğim 0,80'dir. X'in standart sapması %10, Y'nin standart sapması %20'dir. Regresyonun R²'si aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.40",
+          "tr": "0,40",
+          "value": 0.4
+        },
+        {
+          "key": "B",
+          "en": "0.16",
+          "tr": "0,16",
+          "value": 0.16
+        },
+        {
+          "key": "C",
+          "en": "0.64",
+          "tr": "0,64",
+          "value": 0.64
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The correlation is r = b1 × sX / sY = 0.80 × 10 / 20 = 0.40. In a simple regression R² = r² = 0.16.",
+      "explanation_tr": "Korelasyon r = b1 × sX / sY = 0,80 × 10 / 20 = 0,40'tır. Basit regresyonda R² = r² = 0,16.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Stops at the correlation (0.40) and does not square it.",
+          "tr": "Korelasyonda (0,40) durur ve karesini almaz."
+        },
+        "C": {
+          "en": "Squares the slope itself, which is not the R² because it ignores the ratio of standard deviations.",
+          "tr": "Eğimin kendisinin karesini alır; standart sapma oranını göz ardı ettiği için bu R² değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need R² from the slope and the standard deviations.",
+          "tr": "Eğim ve standart sapmalardan R² isteniyor."
+        },
+        {
+          "en": "Recover the correlation from the slope, then square it.",
+          "tr": "Korelasyonu eğimden bul, sonra karesini al.",
+          "formula_latex": "r=\\hat b_1\\frac{s_X}{s_Y},\\quad R^2=r^2",
+          "values": {
+            "b1": 0.8,
+            "sX": 10,
+            "sY": 20
+          }
+        },
+        {
+          "en": "r = 0.80 × 0.5 = 0.40.",
+          "tr": "r = 0,80 × 0,5 = 0,40."
+        },
+        {
+          "en": "R² = 0.16.",
+          "tr": "R² = 0,16."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.8 [×] 10 [÷] 20 [=]  (0.40)",
+          "[x²]  → 0.16"
+        ]
+      },
+      "numeric": {
+        "expr": "(0.8*10/20)**2"
+      },
+      "vocab_ids": [
+        "slope",
+        "standard-deviation",
+        "r-squared",
+        "correlation",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A simple regression has a total sum of squares of 200 and an R² of 0.64. The sum of squared errors (SSE) is closest to:",
+      "stem_tr": "Bir basit regresyonun toplam kareler toplamı 200 ve R²'si 0,64'tür. Hata kareleri toplamı (HKT) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "128",
+          "tr": "128",
+          "value": 128.0
+        },
+        {
+          "key": "B",
+          "en": "40",
+          "tr": "40",
+          "value": 40.0
+        },
+        {
+          "key": "C",
+          "en": "72",
+          "tr": "72",
+          "value": 72.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "R² is the explained share of total variation, so SSE = SST × (1 - R²) = 200 × 0.36 = 72.",
+      "explanation_tr": "R², toplam değişimin açıklanan payıdır; bu yüzden HKT = TKT × (1 - R²) = 200 × 0,36 = 72.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Gives the explained sum of squares (128), the part R² captures, not the unexplained part.",
+          "tr": "R²'nin yakaladığı kısım olan açıklanan kareler toplamını (128) verir; açıklanamayan kısmı değil."
+        },
+        "B": {
+          "en": "Uses the correlation (0.80) in place of R², so it subtracts the wrong share.",
+          "tr": "R² yerine korelasyonu (0,80) kullanır; bu yüzden yanlış payı çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the unexplained sum of squares.",
+          "tr": "Açıklanamayan kareler toplamı isteniyor."
+        },
+        {
+          "en": "SSE is the part of total variation not explained by the regression.",
+          "tr": "HKT, toplam değişimin regresyonla açıklanmayan kısmıdır.",
+          "formula_latex": "SSE=SST(1-R^2)",
+          "values": {
+            "SST": 200,
+            "R2": 0.64
+          }
+        },
+        {
+          "en": "1 - 0.64 = 0.36.",
+          "tr": "1 - 0,64 = 0,36."
+        },
+        {
+          "en": "200 × 0.36 = 72.",
+          "tr": "200 × 0,36 = 72."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [-] 0.64 [=]  (0.36)",
+          "[×] 200 [=]  → 72"
+        ]
+      },
+      "numeric": {
+        "expr": "200*(1-0.64)"
+      },
+      "vocab_ids": [
+        "sum-of-squares",
+        "r-squared",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A simple linear regression estimated from 22 observations has an R² of 0.36. The F-statistic for testing whether the slope is zero, using F = R² / [(1 - R²) / (n - 2)], is closest to:",
+      "stem_tr": "22 gözlemden tahmin edilen basit doğrusal regresyonun R²'si 0,36'dır. Eğimin sıfır olup olmadığını sınayan F istatistiği, F = R² / [(1 - R²) / (n - 2)] ile, aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "11.25",
+          "tr": "11,25",
+          "value": 11.25
+        },
+        {
+          "key": "B",
+          "en": "12.38",
+          "tr": "12,38",
+          "value": 12.38
+        },
+        {
+          "key": "C",
+          "en": "0.56",
+          "tr": "0,56",
+          "value": 0.56
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "F = 0.36 / (0.64 / 20) = 0.36 / 0.032 = 11.25, with 1 and 20 degrees of freedom.",
+      "explanation_tr": "F = 0,36 / (0,64 / 20) = 0,36 / 0,032 = 11,25; serbestlik dereceleri 1 ve 20.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by n = 22 instead of n - 2 = 20, which overstates the F-statistic.",
+          "tr": "n - 2 = 20 yerine n = 22'ye böler ve F istatistiğini olduğundan büyük gösterir."
+        },
+        "C": {
+          "en": "Omits the degrees-of-freedom adjustment and reports the ratio of explained to unexplained variation.",
+          "tr": "Serbestlik derecesi düzeltmesini atlar ve açıklanan değişimin açıklanamayana oranını verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the F-statistic for the slope.",
+          "tr": "Eğim için F istatistiği isteniyor."
+        },
+        {
+          "en": "Scale the explained-to-unexplained ratio by the error degrees of freedom.",
+          "tr": "Açıklanan/açıklanamayan oranını hata serbestlik derecesiyle ölçekle.",
+          "formula_latex": "F=\\frac{R^2}{(1-R^2)/(n-2)}",
+          "values": {
+            "R2": 0.36,
+            "n": 22
+          }
+        },
+        {
+          "en": "(1 - 0.36) / 20 = 0.032.",
+          "tr": "(1 - 0,36) / 20 = 0,032."
+        },
+        {
+          "en": "F = 0.36 / 0.032 = 11.25.",
+          "tr": "F = 0,36 / 0,032 = 11,25."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.64 [÷] 20 [=]  (0.032)",
+          "0.36 [÷] 0.032 [=]  → 11.25"
+        ]
+      },
+      "numeric": {
+        "expr": "0.36/((1-0.36)/20)"
+      },
+      "vocab_ids": [
+        "f-statistic",
+        "r-squared",
+        "degrees-of-freedom",
+        "closest",
+        "slope"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-b-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a regression of a company's quarterly sales on time, a plot of residuals shows that a positive residual is usually followed by another positive residual, and a negative one by another negative one. This pattern most likely indicates that:",
+      "stem_tr": "Bir şirketin çeyreklik satışlarının zamana regresyonunda kalıntı grafiği, pozitif bir kalıntının çoğunlukla bir başka pozitif kalıntıyla, negatif bir kalıntının ise bir başka negatif kalıntıyla izlendiğini gösteriyor. Bu örüntü büyük olasılıkla neyi gösterir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The errors have constant variance, as the regression assumes",
+          "tr": "Hataların varyansı sabittir ve bu, regresyonun varsaydığı durumdur"
+        },
+        {
+          "key": "B",
+          "en": "The errors are not independent, violating a regression assumption",
+          "tr": "Hatalar bağımsız değildir ve bir regresyon varsayımı ihlal edilmiştir"
+        },
+        {
+          "key": "C",
+          "en": "The slope coefficient is exactly zero, so time explains nothing",
+          "tr": "Eğim katsayısı tam olarak sıfırdır; bu yüzden zaman hiçbir şeyi açıklamaz"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Residuals that follow one another in runs signal serial correlation, so the independence assumption fails and standard errors and tests become unreliable.",
+      "explanation_tr": "Birbirini seri halinde izleyen kalıntılar seri korelasyona işaret eder; bağımsızlık varsayımı çöker ve standart hatalar ile testler güvenilmez olur.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Constant variance is a separate assumption; this pattern concerns the order of the residuals, not their spread.",
+          "tr": "Sabit varyans ayrı bir varsayımdır; bu örüntü kalıntıların yayılımıyla değil, sırasıyla ilgilidir."
+        },
+        "C": {
+          "en": "A zero slope would not by itself make residuals run in streaks; the pattern points to dependence between errors.",
+          "tr": "Sıfır eğim tek başına kalıntıların seri halinde gelmesine yol açmaz; örüntü hatalar arasındaki bağımlılığı gösterir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "autocorrelation",
+        "residual",
+        "time-series",
+        "independent",
+        "standard-error",
+        "violation"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-b-q11",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A regression of a share's excess returns on the market's excess returns gives a slope estimate of 1.20 with a standard error of 0.40 from 30 observations. The t-statistic for testing H0: β = 1 (the share is as risky as the market) is closest to:",
+      "stem_tr": "Bir payın fazla getirilerinin piyasanın fazla getirilerine regresyonu, 30 gözlemden 1,20 eğim tahmini ve 0,40 standart hata veriyor. H0: β = 1 (pay piyasa kadar risklidir) hipotezini sınayan t istatistiği aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.00",
+          "tr": "3,00",
+          "value": 3.0
+        },
+        {
+          "key": "B",
+          "en": "0.17",
+          "tr": "0,17",
+          "value": 0.17
+        },
+        {
+          "key": "C",
+          "en": "0.50",
+          "tr": "0,50",
+          "value": 0.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The hypothesized value is 1, not 0: t = (1.20 - 1) / 0.40 = 0.50. This is far below the critical value, so H0 is not rejected.",
+      "explanation_tr": "Varsayılan değer 0 değil 1'dir: t = (1,20 - 1) / 0,40 = 0,50. Bu, kritik değerin çok altındadır; H0 reddedilmez.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Tests H0: β = 0 by dividing the estimate by its standard error, which answers a different question.",
+          "tr": "Tahmini standart hatasına bölerek H0: β = 0 hipotezini sınar; bu başka bir soruyu yanıtlar."
+        },
+        "B": {
+          "en": "Divides the difference by the slope estimate rather than by its standard error.",
+          "tr": "Farkı standart hataya değil, eğim tahminine böler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the t-statistic for a slope tested against 1.",
+          "tr": "Eğimin 1'e karşı sınanması için t istatistiği isteniyor."
+        },
+        {
+          "en": "Subtract the hypothesized slope from the estimate and divide by the standard error.",
+          "tr": "Tahminden varsayılan eğimi çıkar ve standart hataya böl.",
+          "formula_latex": "t=\\frac{\\hat b_1-b_{1,0}}{s_{\\hat b_1}}",
+          "values": {
+            "b1": 1.2,
+            "b10": 1,
+            "se": 0.4
+          }
+        },
+        {
+          "en": "1.20 - 1 = 0.20.",
+          "tr": "1,20 - 1 = 0,20."
+        },
+        {
+          "en": "0.20 / 0.40 = 0.50.",
+          "tr": "0,20 / 0,40 = 0,50."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.2 [-] 1 [=] [÷] 0.4 [=]",
+          "→ 0.50"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.2-1)/0.4"
+      },
+      "vocab_ids": [
+        "t-statistic",
+        "slope",
+        "beta",
+        "null-hypothesis",
+        "standard-error",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-c-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A simple regression estimated from 22 observations has a total sum of squares of 500 and an R² of 0.80. The standard error of estimate is closest to:",
+      "stem_tr": "22 gözlemden tahmin edilen basit bir regresyonun toplam kareler toplamı 500 ve R²'si 0,80'dir. Tahmin standart hatası aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.24",
+          "tr": "2,24",
+          "value": 2.24
+        },
+        {
+          "key": "B",
+          "en": "2.13",
+          "tr": "2,13",
+          "value": 2.13
+        },
+        {
+          "key": "C",
+          "en": "5.00",
+          "tr": "5,00",
+          "value": 5.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "SSE = 500 × (1 - 0.80) = 100. SEE = √[SSE / (n - 2)] = √(100 / 20) = √5 = 2.24.",
+      "explanation_tr": "HKT = 500 × (1 - 0,80) = 100. TSH = √[HKT / (n - 2)] = √(100 / 20) = √5 = 2,24.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Divides by n = 22 instead of n - 2 = 20.",
+          "tr": "n - 2 = 20 yerine n = 22'ye böler."
+        },
+        "C": {
+          "en": "Reports the mean squared error (5.00) without taking the square root.",
+          "tr": "Ortalama hata karesini (5,00) karekökünü almadan verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the standard error of estimate.",
+          "tr": "Tahmin standart hatası isteniyor."
+        },
+        {
+          "en": "Find SSE from SST and R², then divide by n - 2 and take the square root.",
+          "tr": "HKT'yi TKT ve R²'den bul, n - 2'ye böl ve karekökünü al.",
+          "formula_latex": "SEE=\\sqrt{\\frac{SSE}{n-2}}",
+          "values": {
+            "SST": 500,
+            "R2": 0.8,
+            "n": 22
+          }
+        },
+        {
+          "en": "SSE = 500 × 0.20 = 100; MSE = 100 / 20 = 5.",
+          "tr": "HKT = 500 × 0,20 = 100; OHK = 100 / 20 = 5."
+        },
+        {
+          "en": "SEE = √5 = 2.24.",
+          "tr": "TSH = √5 = 2,24."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "500 [×] 0.2 [=]  (100)",
+          "[÷] 20 [=] [√x]  → 2.24"
+        ]
+      },
+      "numeric": {
+        "expr": "(500*(1-0.8)/20)**0.5"
+      },
+      "vocab_ids": [
+        "standard-error-of-estimate",
+        "sum-of-squares",
+        "r-squared",
+        "degrees-of-freedom",
+        "closest",
+        "residual"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-c-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A regression predicts Ŷ = 12.4 for a given X. The standard error of the forecast at that X is 1.5, and the critical t-value for a 95% interval is 2.048. The lower limit of the 95% prediction interval is closest to:",
+      "stem_tr": "Bir regresyon, verilen bir X için Ŷ = 12,4 tahmin ediyor. Bu X noktasında tahmin standart hatası 1,5, %95 aralık için kritik t değeri 2,048'dir. %95 tahmin aralığının alt sınırı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "15.47",
+          "tr": "15,47",
+          "value": 15.47
+        },
+        {
+          "key": "B",
+          "en": "9.33",
+          "tr": "9,33",
+          "value": 9.33
+        },
+        {
+          "key": "C",
+          "en": "10.35",
+          "tr": "10,35",
+          "value": 10.35
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Lower limit = Ŷ - t × sf = 12.4 - 2.048 × 1.5 = 12.4 - 3.07 = 9.33.",
+      "explanation_tr": "Alt sınır = Ŷ - t × sf = 12,4 - 2,048 × 1,5 = 12,4 - 3,07 = 9,33.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Adds the margin instead of subtracting it, which gives the upper limit.",
+          "tr": "Payı çıkarmak yerine ekler; bu üst sınırı verir."
+        },
+        "C": {
+          "en": "Uses a margin of 2.048 × 1.0, leaving out the forecast standard error of 1.5.",
+          "tr": "2,048 × 1,0 payını kullanır; 1,5 olan tahmin standart hatasını dışarıda bırakır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the lower limit of a prediction interval.",
+          "tr": "Tahmin aralığının alt sınırı isteniyor."
+        },
+        {
+          "en": "Subtract the critical value times the forecast standard error from the predicted value.",
+          "tr": "Tahmin edilen değerden kritik değer çarpı tahmin standart hatasını çıkar.",
+          "formula_latex": "\\hat Y\\pm t_c\\,s_f",
+          "values": {
+            "Y": 12.4,
+            "t": 2.048,
+            "sf": 1.5
+          }
+        },
+        {
+          "en": "Margin = 2.048 × 1.5 = 3.07.",
+          "tr": "Pay = 2,048 × 1,5 = 3,07."
+        },
+        {
+          "en": "12.4 - 3.07 = 9.33.",
+          "tr": "12,4 - 3,07 = 9,33."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2.048 [×] 1.5 [=]  (3.072)",
+          "12.4 [-] 3.072 [=]  → 9.33"
+        ]
+      },
+      "numeric": {
+        "expr": "12.4-2.048*1.5"
+      },
+      "vocab_ids": [
+        "prediction-interval",
+        "forecast",
+        "critical-value",
+        "standard-error",
+        "lower-limit",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-c-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A regression estimated on firms with market capitalizations between TL 1 billion and TL 10 billion is used to predict the value of a firm worth TL 80 billion. Which statement is most appropriate?",
+      "stem_tr": "Piyasa değeri TL 1 milyar ile TL 10 milyar arasında olan firmalarla tahmin edilen bir regresyon, TL 80 milyar değerindeki bir firmanın değerini tahmin etmek için kullanılıyor. Hangi ifade en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The prediction is more reliable, because larger values reduce the forecast standard error",
+          "tr": "Tahmin daha güvenilirdir; çünkü büyük değerler tahmin standart hatasını azaltır"
+        },
+        {
+          "key": "B",
+          "en": "The prediction is as reliable as any other, because the fitted line is the same everywhere",
+          "tr": "Tahmin diğerleri kadar güvenilirdir; çünkü uydurulan doğru her yerde aynıdır"
+        },
+        {
+          "key": "C",
+          "en": "The prediction is less reliable, because it extrapolates far outside the range of the data",
+          "tr": "Tahmin daha az güvenilirdir; çünkü veri aralığının dışına ekstrapolasyon yapar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The relationship is only estimated within the observed range, and the forecast error grows as X moves away from its mean, so far extrapolation is unreliable.",
+      "explanation_tr": "İlişki yalnızca gözlenen aralıkta tahmin edilmiştir ve X ortalamasından uzaklaştıkça tahmin hatası büyür; bu yüzden uzak ekstrapolasyon güvenilmezdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The forecast standard error rises, not falls, as X moves away from the sample mean.",
+          "tr": "Tahmin standart hatası, X örneklem ortalamasından uzaklaştıkça azalmaz, artar."
+        },
+        "B": {
+          "en": "The line is estimated from data in a limited range; nothing guarantees the same relationship holds outside it.",
+          "tr": "Doğru sınırlı bir aralıktaki verilerden tahmin edilmiştir; aynı ilişkinin dışında da geçerli olacağını hiçbir şey garanti etmez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "range",
+        "reliable",
+        "sample"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-c-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst fits a log-linear trend model for a fund's assets under management (AUM, in TL million): ln(AUM) = 3.00 + 0.04 × t, where t counts years. The forecast of AUM at t = 10 is closest to:",
+      "stem_tr": "Bir analist bir fonun yönetilen varlıkları (YV, TL milyon) için log-doğrusal trend modeli uyduruyor: ln(YV) = 3,00 + 0,04 × t; burada t yıl sayısıdır. t = 10 için YV tahmini aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "29.96",
+          "tr": "29,96",
+          "value": 29.96
+        },
+        {
+          "key": "B",
+          "en": "3.40",
+          "tr": "3,40",
+          "value": 3.4
+        },
+        {
+          "key": "C",
+          "en": "20.49",
+          "tr": "20,49",
+          "value": 20.49
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The model forecasts the log of AUM: ln(AUM) = 3.00 + 0.40 = 3.40. Convert back with the exponential: e^3.40 = 29.96 (TL million).",
+      "explanation_tr": "Model YV'nin logaritmasını tahmin eder: ln(YV) = 3,00 + 0,40 = 3,40. Üstel fonksiyonla geri çevir: e^3,40 = 29,96 (TL milyon).",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Reports the forecast of ln(AUM) (3.40) without converting back to TL million.",
+          "tr": "ln(YV) tahminini (3,40) TL milyona geri çevirmeden verir."
+        },
+        "C": {
+          "en": "Applies the exponential to the intercept only and then adds the slope term in levels, mixing the two scales.",
+          "tr": "Üstel fonksiyonu yalnızca kesim noktasına uygular, sonra eğim terimini düzey olarak ekler; iki ölçeği karıştırır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the AUM forecast in TL million, not in logs.",
+          "tr": "Logaritma değil, TL milyon cinsinden YV tahmini isteniyor."
+        },
+        {
+          "en": "Forecast the log first, then exponentiate.",
+          "tr": "Önce logaritmayı tahmin et, sonra üstelle.",
+          "formula_latex": "\\widehat{AUM}=e^{\\hat b_0+\\hat b_1t}",
+          "values": {
+            "b0": 3.0,
+            "b1": 0.04,
+            "t": 10
+          }
+        },
+        {
+          "en": "3.00 + 0.04 × 10 = 3.40.",
+          "tr": "3,00 + 0,04 × 10 = 3,40."
+        },
+        {
+          "en": "e^3.40 = 29.96.",
+          "tr": "e^3,40 = 29,96."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "3.4 [2ND] [e^x]",
+          "→ 29.96"
+        ]
+      },
+      "numeric": {
+        "expr": "math.exp(3.00+0.04*10)"
+      },
+      "vocab_ids": [
+        "trend",
+        "natural-logarithm",
+        "forecast",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-d-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A market-model regression of a share's monthly excess returns on the market's monthly excess returns gives an intercept (alpha) of 0.50% and a slope (beta) of 1.30. If the market's excess return next month is expected to be 8%, the share's predicted excess return is closest to:",
+      "stem_tr": "Bir payın aylık fazla getirilerinin piyasanın aylık fazla getirilerine piyasa modeli regresyonu, %0,50 kesim noktası (alfa) ve 1,30 eğim (beta) veriyor. Piyasanın gelecek aydaki fazla getirisinin %8 olması bekleniyorsa payın tahmin edilen fazla getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "10.40%",
+          "tr": "%10,40",
+          "value": 10.4
+        },
+        {
+          "key": "B",
+          "en": "10.90%",
+          "tr": "%10,90",
+          "value": 10.9
+        },
+        {
+          "key": "C",
+          "en": "8.50%",
+          "tr": "%8,50",
+          "value": 8.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Predicted excess return = alpha + beta × market excess return = 0.50 + 1.30 × 8 = 10.90%.",
+      "explanation_tr": "Tahmin edilen fazla getiri = alfa + beta × piyasa fazla getirisi = 0,50 + 1,30 × 8 = %10,90.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Drops alpha and reports only the beta-driven part (10.40%).",
+          "tr": "Alfayı atar ve yalnızca beta kaynaklı kısmı (%10,40) verir."
+        },
+        "C": {
+          "en": "Adds alpha to the market excess return and ignores beta.",
+          "tr": "Alfayı piyasa fazla getirisine ekler ve betayı göz ardı eder."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the predicted excess return.",
+          "tr": "Tahmin edilen fazla getiri isteniyor."
+        },
+        {
+          "en": "Use the fitted market-model line.",
+          "tr": "Uydurulan piyasa modeli doğrusunu kullan.",
+          "formula_latex": "\\hat R_i-R_f=\\hat\\alpha+\\hat\\beta(R_m-R_f)",
+          "values": {
+            "alpha": 0.5,
+            "beta": 1.3,
+            "mkt": 8
+          }
+        },
+        {
+          "en": "1.30 × 8 = 10.40.",
+          "tr": "1,30 × 8 = 10,40."
+        },
+        {
+          "en": "0.50 + 10.40 = 10.90%.",
+          "tr": "0,50 + 10,40 = %10,90."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.3 [×] 8 [+] 0.5 [=]",
+          "→ 10.90"
+        ]
+      },
+      "numeric": {
+        "expr": "0.5+1.3*8",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "market-model",
+        "excess-return",
+        "alpha",
+        "beta",
+        "forecast",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-d-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "A share has an estimated beta of 0.80. Which statement best describes what this means?",
+      "stem_tr": "Bir payın tahmin edilen betası 0,80'dir. Hangi ifade bunun ne anlama geldiğini en iyi anlatır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "It has an expected excess return of 0.8% in every single month",
+          "tr": "Her ay tam olarak %0,8 beklenen fazla getirisi vardır, piyasadan bağımsız olarak"
+        },
+        {
+          "key": "B",
+          "en": "The market explains 80% of the variation in the share's excess returns",
+          "tr": "Piyasa, payın fazla getirilerindeki değişimin %80'ini açıklar; kalanı paya özgüdür"
+        },
+        {
+          "key": "C",
+          "en": "Its excess return tends to move 0.8 points per 1-point market move",
+          "tr": "Fazla getirisi piyasanın her 1 puanlık hareketinde yaklaşık 0,8 puan oynar"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Beta is the slope: the average change in the share's excess return per unit change in the market's excess return.",
+      "explanation_tr": "Beta eğimdir: piyasanın fazla getirisindeki birim değişim başına payın fazla getirisindeki ortalama değişimdir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The expected excess return when the market is flat is the intercept (alpha), not beta.",
+          "tr": "Piyasa yatayken beklenen fazla getiri betadır değil, kesim noktasıdır (alfa)."
+        },
+        "B": {
+          "en": "The share of variation explained is the R², which is a different quantity from beta.",
+          "tr": "Açıklanan değişim payı R²'dir; bu, betadan farklı bir büyüklüktür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "beta",
+        "market",
+        "sensitivity",
+        "defensive",
+        "excess-return"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-d-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share's market-model regression has an R² of 0.49 with a positive slope. The standard deviation of the share's returns is 20% and the standard deviation of the market's returns is 14%. The beta is closest to:",
+      "stem_tr": "Bir payın piyasa modeli regresyonunun R²'si 0,49'dur ve eğimi pozitiftir. Payın getirilerinin standart sapması %20, piyasanın getirilerinin standart sapması %14'tür. Beta aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "1.00",
+          "tr": "1,00",
+          "value": 1.0
+        },
+        {
+          "key": "B",
+          "en": "0.70",
+          "tr": "0,70",
+          "value": 0.7
+        },
+        {
+          "key": "C",
+          "en": "0.49",
+          "tr": "0,49",
+          "value": 0.49
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Correlation = √0.49 = 0.70 (positive slope). Beta = r × sShare / sMarket = 0.70 × 20 / 14 = 1.00.",
+      "explanation_tr": "Korelasyon = √0,49 = 0,70 (eğim pozitif). Beta = r × sPay / sPiyasa = 0,70 × 20 / 14 = 1,00.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Uses R² (0.49) in place of the correlation (0.70).",
+          "tr": "Korelasyon (0,70) yerine R²'yi (0,49) kullanır."
+        },
+        "C": {
+          "en": "Inverts the ratio of standard deviations, so it scales by the market over the share instead of the share over the market.",
+          "tr": "Standart sapma oranını ters çevirir; payın piyasaya değil, piyasanın paya oranıyla ölçekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need beta from R² and the standard deviations.",
+          "tr": "R² ve standart sapmalardan beta isteniyor."
+        },
+        {
+          "en": "Find the correlation from R², then scale by the ratio of standard deviations.",
+          "tr": "Korelasyonu R²'den bul, sonra standart sapma oranıyla ölçekle.",
+          "formula_latex": "\\beta=r\\frac{s_i}{s_m}",
+          "values": {
+            "R2": 0.49,
+            "si": 20,
+            "sm": 14
+          }
+        },
+        {
+          "en": "r = 0.70.",
+          "tr": "r = 0,70."
+        },
+        {
+          "en": "Beta = 0.70 × 20 / 14 = 1.00.",
+          "tr": "Beta = 0,70 × 20 / 14 = 1,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.49 [√x]  (0.70)",
+          "[×] 20 [÷] 14 [=]  → 1.00"
+        ]
+      },
+      "numeric": {
+        "expr": "0.7*20/14"
+      },
+      "vocab_ids": [
+        "beta",
+        "r-squared",
+        "correlation",
+        "standard-deviation",
+        "closest",
+        "market"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-10-d-q10",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-10",
+      "los_id": "QM-10-d",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share has a beta of 1.4. The standard deviation of the market's returns is 20%, and the market model has an R² of 0.50. The share's total standard deviation of returns is closest to:",
+      "stem_tr": "Bir payın betası 1,4'tür. Piyasa getirilerinin standart sapması %20 ve piyasa modelinin R²'si 0,50'dir. Payın toplam getiri standart sapması aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "28.00%",
+          "tr": "%28,00",
+          "value": 28.0
+        },
+        {
+          "key": "B",
+          "en": "39.60%",
+          "tr": "%39,60",
+          "value": 39.6
+        },
+        {
+          "key": "C",
+          "en": "56.00%",
+          "tr": "%56,00",
+          "value": 56.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Systematic variance = β² σm² = 1.96 × 400 = 784. R² is the systematic share of total variance, so total variance = 784 / 0.50 = 1,568 and total SD = √1,568 = 39.60%.",
+      "explanation_tr": "Sistematik varyans = β² σm² = 1,96 × 400 = 784. R², toplam varyansın sistematik payıdır; bu yüzden toplam varyans = 784 / 0,50 = 1.568 ve toplam SS = √1.568 = %39,60.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Reports the systematic standard deviation (28%) only, leaving out the firm-specific part of risk.",
+          "tr": "Yalnızca sistematik standart sapmayı (%28) verir; riskin firmaya özgü kısmını dışarıda bırakır."
+        },
+        "C": {
+          "en": "Divides the standard deviation (not the variance) by R², which does not undo the squaring.",
+          "tr": "Varyansı değil standart sapmayı R²'ye böler; bu, karenin etkisini geri almaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the total standard deviation of the share.",
+          "tr": "Payın toplam standart sapması isteniyor."
+        },
+        {
+          "en": "Compute the systematic variance, divide by R² to get total variance, then take the square root.",
+          "tr": "Sistematik varyansı hesapla, toplam varyansı bulmak için R²'ye böl, sonra karekökünü al.",
+          "formula_latex": "\\sigma_i^2=\\frac{\\beta^2\\sigma_m^2}{R^2}",
+          "values": {
+            "beta": 1.4,
+            "sm": 20,
+            "R2": 0.5
+          }
+        },
+        {
+          "en": "Systematic variance = 1.96 × 400 = 784; total = 784 / 0.5 = 1,568.",
+          "tr": "Sistematik varyans = 1,96 × 400 = 784; toplam = 784 / 0,5 = 1.568."
+        },
+        {
+          "en": "√1,568 = 39.60%.",
+          "tr": "√1.568 = %39,60."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.4 [x²] [×] 400 [÷] 0.5 [=]  (1568)",
+          "[√x]  → 39.60"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.4**2*20**2/0.5)**0.5",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "systematic-risk",
+        "beta",
+        "r-squared",
+        "standard-deviation",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

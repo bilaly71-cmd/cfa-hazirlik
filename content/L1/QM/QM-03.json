@@ -945,6 +945,676 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "QM-03-a-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A portfolio starts at TL 200. Just before the end of year 1 it is worth TL 220, and the client then adds TL 80. At the end of year 2 it is worth TL 285. The annualized time-weighted return over the two years is closest to:",
+      "stem_tr": "Bir portföyün başlangıç değeri TL 200. Birinci yılın sonundan hemen önce değeri TL 220 ve müşteri ardından TL 80 ekliyor. İkinci yılın sonunda değeri TL 285. İki yıllık yıllıklandırılmış zaman ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "2.50%",
+          "tr": "%2,50",
+          "value": 2.5
+        },
+        {
+          "key": "B",
+          "en": "2.23%",
+          "tr": "%2,23",
+          "value": 2.23
+        },
+        {
+          "key": "C",
+          "en": "4.50%",
+          "tr": "%4,50",
+          "value": 4.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Year 1 = 220/200 - 1 = 10%; year 2 = 285/300 - 1 = -5%. Geometric link: (1.10 × 0.95)^(1/2) - 1 = 2.23% per year.",
+      "explanation_tr": "1. yıl = 220/200 - 1 = %10; 2. yıl = 285/300 - 1 = -%5. Geometrik bağlama: (1,10 × 0,95)^(1/2) - 1 = yıllık %2,23.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the simple average of the two period returns, which ignores compounding.",
+          "tr": "İki dönem getirisinin basit ortalamasını alır; bileşik etkiyi göz ardı eder."
+        },
+        "C": {
+          "en": "Links the two periods correctly but does not convert the two-year figure to an annual rate.",
+          "tr": "İki dönemi doğru bağlar ancak iki yıllık rakamı yıllık orana çevirmez."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annualized time-weighted return.",
+          "tr": "Yıllıklandırılmış zaman ağırlıklı getiri isteniyor."
+        },
+        {
+          "en": "Split at the cash flow, compute each sub-period return, link them geometrically and annualize.",
+          "tr": "Nakit akışında böl, her alt dönem getirisini hesapla, geometrik olarak bağla ve yıllıklandır.",
+          "formula_latex": "TWR=\\left[\\prod(1+R_i)\\right]^{1/n}-1",
+          "values": {
+            "V0": 200,
+            "V1": 220,
+            "V1_after": 300,
+            "V2": 285
+          }
+        },
+        {
+          "en": "R1 = 220/200 - 1 = 10%; R2 = 285/300 - 1 = -5%.",
+          "tr": "R1 = 220/200 - 1 = %10; R2 = 285/300 - 1 = -%5."
+        },
+        {
+          "en": "(1.10 × 0.95)^(1/2) - 1 = 2.23%.",
+          "tr": "(1,10 × 0,95)^(1/2) - 1 = %2,23."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.10 [×] 0.95 [=] [y^x] 0.5 [=] [-] 1 [=]",
+          "→ 0.0223"
+        ]
+      },
+      "numeric": {
+        "expr": "((220/200)*(285/300))**0.5*100-100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "time-weighted-return",
+        "cash-flow",
+        "contribution",
+        "annualize",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-a-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "An investor puts TL 1,000 into a fund at the start of year 1 and adds another TL 1,000 at the end of year 1. At the end of year 2 the account is worth TL 2,310. The annual money-weighted return is closest to:",
+      "stem_tr": "Bir yatırımcı birinci yılın başında bir fona TL 1.000 yatırıyor ve birinci yılın sonunda TL 1.000 daha ekliyor. İkinci yılın sonunda hesap değeri TL 2.310. Yıllık para ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.75%",
+          "tr": "%7,75",
+          "value": 7.75
+        },
+        {
+          "key": "B",
+          "en": "15.50%",
+          "tr": "%15,50",
+          "value": 15.5
+        },
+        {
+          "key": "C",
+          "en": "10.00%",
+          "tr": "%10,00",
+          "value": 10.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The money-weighted return is the IRR of the flows -1,000, -1,000 and +2,310. Solving 1,000x² + 1,000x = 2,310 gives x = 1.10, so the return is 10.00%.",
+      "explanation_tr": "Para ağırlıklı getiri, -1.000, -1.000 ve +2.310 akışlarının İÇO'sudur. 1.000x² + 1.000x = 2.310 denkleminin çözümü x = 1,10 olduğundan getiri %10,00'dır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Divides the total profit by total contributions and then by two years, which ignores that the second TL 1,000 was invested for only one year.",
+          "tr": "Toplam kârı toplam katkıya, sonra iki yıla böler; ikinci TL 1.000'in yalnızca bir yıl yatırımda kaldığını göz ardı eder."
+        },
+        "B": {
+          "en": "Gives the two-year profit on total contributions without annualizing and without time-weighting the flows.",
+          "tr": "Akışları zamanla ağırlıklandırmadan ve yıllıklandırmadan, toplam katkı üzerinden iki yıllık kârı verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the money-weighted return, which is the IRR of the cash flows.",
+          "tr": "Para ağırlıklı getiri, yani nakit akışlarının İÇO'su isteniyor."
+        },
+        {
+          "en": "Set the present value of outflows equal to the present value of the ending value.",
+          "tr": "Çıkışların bugünkü değerini son değerin bugünkü değerine eşitle.",
+          "formula_latex": "0=-1000-\\frac{1000}{1+r}+\\frac{2310}{(1+r)^2}",
+          "values": {
+            "CF0": -1000,
+            "CF1": -1000,
+            "CF2": 2310
+          }
+        },
+        {
+          "en": "Enter the flows and compute the IRR.",
+          "tr": "Akışları gir ve İÇO'yu hesapla."
+        },
+        {
+          "en": "IRR = 10.00% per year.",
+          "tr": "İÇO = yıllık %10,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "[CF] [2ND] [CLR WORK]",
+          "-1000 [ENTER] [↓] 1 [ENTER]",
+          "[↓] -1000 [ENTER] [↓] 1 [ENTER]",
+          "[↓] 2310 [ENTER] [↓] 1 [ENTER]",
+          "[IRR] [CPT]  → 10.00"
+        ]
+      },
+      "numeric": {
+        "expr": "irr([-1000,-1000,2310])*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "money-weighted-return",
+        "deposit",
+        "closest",
+        "annual"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-a-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "For which of the following is the money-weighted return most appropriate as a measure of performance?",
+      "stem_tr": "Aşağıdakilerden hangisinde para ağırlıklı getiri performans ölçüsü olarak en uygundur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A private fund whose manager times capital calls and returns",
+          "tr": "Yöneticisinin sermayenin ne zaman çağrılıp iade edileceğine karar verdiği özel fon"
+        },
+        {
+          "key": "B",
+          "en": "A mutual fund whose clients decide when to buy and redeem units",
+          "tr": "Müşterilerinin ne zaman birim alıp bozduracağına kendisinin karar verdiği yatırım fonu"
+        },
+        {
+          "key": "C",
+          "en": "A comparison of two managers against the same index over the same year",
+          "tr": "Aynı yıl içinde iki yöneticinin aynı endeksle karşılaştırılması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "When the manager controls the timing of cash flows, the IRR-based money-weighted return reflects the manager's decisions.",
+      "explanation_tr": "Nakit akışlarının zamanlamasını yönetici kontrol ettiğinde, İÇO temelli para ağırlıklı getiri yöneticinin kararlarını yansıtır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Clients control the flows here, so a time-weighted return, which removes the effect of flows, is the fairer measure.",
+          "tr": "Akışları burada müşteriler belirler; akışların etkisini ortadan kaldıran zaman ağırlıklı getiri daha adil ölçüdür."
+        },
+        "C": {
+          "en": "Comparison across managers and with an index calls for the time-weighted return, which is not distorted by flows.",
+          "tr": "Yöneticiler arası ve endeksle karşılaştırma, akışlardan etkilenmeyen zaman ağırlıklı getiriyi gerektirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "money-weighted-return",
+        "capital",
+        "timing",
+        "manager",
+        "call"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-a-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A portfolio starts at TL 100. It is worth TL 108 just before a TL 42 contribution. It is worth TL 135 just before a TL 35 withdrawal. Three years from the start, the value is TL 112. If each sub-period shown is one year, the annualized time-weighted return is closest to:",
+      "stem_tr": "Bir portföyün başlangıç değeri TL 100. TL 42 katkıdan hemen önce değeri TL 108. TL 35 çekimden hemen önce değeri TL 135. Başlangıçtan üç yıl sonra değer TL 112. Gösterilen her alt dönem bir yıl ise yıllıklandırılmış zaman ağırlıklı getiri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "3.33%",
+          "tr": "%3,33",
+          "value": 3.33
+        },
+        {
+          "key": "B",
+          "en": "2.87%",
+          "tr": "%2,87",
+          "value": 2.87
+        },
+        {
+          "key": "C",
+          "en": "8.86%",
+          "tr": "%8,86",
+          "value": 8.86
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Sub-period returns: 108/100 - 1 = 8%; 135/150 - 1 = -10% (value after the contribution is 150); 112/100 - 1 = 12% (value after the withdrawal is 100). (1.08 × 0.90 × 1.12)^(1/3) - 1 = 2.87%.",
+      "explanation_tr": "Alt dönem getirileri: 108/100 - 1 = %8; 135/150 - 1 = -%10 (katkıdan sonra değer 150); 112/100 - 1 = %12 (çekimden sonra değer 100). (1,08 × 0,90 × 1,12)^(1/3) - 1 = %2,87.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Takes the simple average of the three sub-period returns instead of linking them geometrically.",
+          "tr": "Üç alt dönem getirisini geometrik olarak bağlamak yerine basit ortalamasını alır."
+        },
+        "C": {
+          "en": "Links the three returns but reports the three-year cumulative return rather than the annualized figure.",
+          "tr": "Üç getiriyi bağlar ancak yıllıklandırılmış rakam yerine üç yıllık toplam getiriyi verir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the annualized time-weighted return across three sub-periods.",
+          "tr": "Üç alt dönem üzerinden yıllıklandırılmış zaman ağırlıklı getiri isteniyor."
+        },
+        {
+          "en": "Start each sub-period from the value after the previous cash flow.",
+          "tr": "Her alt dönemi önceki nakit akışından sonraki değerle başlat.",
+          "formula_latex": "R_i=\\frac{V_{end,i}}{V_{start,i}}-1",
+          "values": {
+            "V0": 100,
+            "V1": 108,
+            "V1_after": 150,
+            "V2": 135,
+            "V2_after": 100,
+            "V3": 112
+          }
+        },
+        {
+          "en": "R1 = 8%, R2 = 135/150 - 1 = -10%, R3 = 112/100 - 1 = 12%.",
+          "tr": "R1 = %8, R2 = 135/150 - 1 = -%10, R3 = 112/100 - 1 = %12."
+        },
+        {
+          "en": "(1.08 × 0.90 × 1.12)^(1/3) - 1 = 2.87%.",
+          "tr": "(1,08 × 0,90 × 1,12)^(1/3) - 1 = %2,87."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.08 [×] 0.90 [×] 1.12 [=] [y^x] 0.3333333 [=] [-] 1 [=]",
+          "→ 0.0287"
+        ]
+      },
+      "numeric": {
+        "expr": "((108/100)*(135/150)*(112/100))**(1/3)*100-100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "time-weighted-return",
+        "withdrawal",
+        "sub-period",
+        "annualize",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-b-q06",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "An equal-weighted index holds three shares whose returns over the period are +12%, -6% and +30%. Their market capitalizations are TL 600 million, TL 300 million and TL 100 million. The index return is closest to:",
+      "stem_tr": "Eşit ağırlıklı bir endeks, dönem getirileri %12, -%6 ve %30 olan üç pay içeriyor. Piyasa değerleri TL 600 milyon, TL 300 milyon ve TL 100 milyondur. Endeks getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.40%",
+          "tr": "%8,40",
+          "value": 8.4
+        },
+        {
+          "key": "B",
+          "en": "36.00%",
+          "tr": "%36,00",
+          "value": 36
+        },
+        {
+          "key": "C",
+          "en": "12.00%",
+          "tr": "%12,00",
+          "value": 12.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Each share has a one-third weight regardless of size: (12 - 6 + 30) / 3 = 12.00%.",
+      "explanation_tr": "Her payın ağırlığı büyüklüğünden bağımsız olarak üçte birdir: (12 - 6 + 30) / 3 = %12,00.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Weights the returns by market capitalization (60%, 30%, 10%), which is how a cap-weighted index would work.",
+          "tr": "Getirileri piyasa değerine göre (%60, %30, %10) ağırlıklandırır; bu, piyasa değeri ağırlıklı endeksin yöntemidir."
+        },
+        "B": {
+          "en": "Adds the three returns and forgets to divide by the number of shares.",
+          "tr": "Üç getiriyi toplar ve pay sayısına bölmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the return of an equal-weighted index.",
+          "tr": "Eşit ağırlıklı endeksin getirisi isteniyor."
+        },
+        {
+          "en": "Each constituent gets weight 1/n, so the index return is the simple average.",
+          "tr": "Her bileşenin ağırlığı 1/n'dir; endeks getirisi basit ortalamadır.",
+          "formula_latex": "R_{EW}=\\frac{1}{n}\\sum R_i",
+          "values": {
+            "n": 3
+          }
+        },
+        {
+          "en": "(12 - 6 + 30) / 3.",
+          "tr": "(12 - 6 + 30) / 3."
+        },
+        {
+          "en": "Index return = 12.00%.",
+          "tr": "Endeks getirisi = %12,00."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12 [+] 6 [+/-] [+] 30 [=] [÷] 3 [=]",
+          "→ 12.00"
+        ]
+      },
+      "numeric": {
+        "expr": "mean([12,-6,30])",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "equal-weighted",
+        "index",
+        "market-capitalization",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-b-q07",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Compared with a market-capitalization-weighted index of the same shares, a fundamental-weighted index (weights based on earnings, dividends or sales) most likely:",
+      "stem_tr": "Aynı paylardan oluşan piyasa değeri ağırlıklı bir endeksle karşılaştırıldığında, temel göstergelere (kazanç, temettü veya satış) dayalı ağırlıklı bir endeks büyük olasılıkla neyi yapar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Gives less weight to shares priced high relative to fundamentals",
+          "tr": "Temellerine göre pahalı fiyatlanan paylara daha az ağırlık verir"
+        },
+        {
+          "key": "B",
+          "en": "Gives more weight to shares whose prices have risen the most recently",
+          "tr": "Fiyatı son dönemde en çok yükselmiş paylara daha fazla ağırlık verir"
+        },
+        {
+          "key": "C",
+          "en": "Gives every share the same weight at each rebalancing date, whatever its size",
+          "tr": "Her yeniden dengeleme tarihinde, büyüklüğüne bakmaksızın her paya aynı ağırlığı verir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Weights come from fundamentals, not price, so a share with a high price relative to earnings or sales gets a smaller weight than under cap weighting.",
+      "explanation_tr": "Ağırlıklar fiyattan değil temel göstergelerden gelir; kazanca veya satışa göre pahalı bir pay, piyasa değeri ağırlığına göre daha küçük ağırlık alır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This describes cap weighting, where rising prices raise a share's weight.",
+          "tr": "Bu, fiyat artışının payın ağırlığını yükselttiği piyasa değeri ağırlıklandırmasını anlatır."
+        },
+        "C": {
+          "en": "This describes equal weighting; fundamental weights differ across shares.",
+          "tr": "Bu, eşit ağırlıklandırmayı anlatır; temel ağırlıklar paylar arasında farklıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "fundamental-weighting",
+        "market-capitalization",
+        "overvalued",
+        "earnings",
+        "index"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-b-q08",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A market-capitalization-weighted index holds three shares. Share A trades at TL 20 with 50 million shares outstanding, share B at TL 40 with 10 million, and share C at TL 5 with 200 million. The weight of share C in the index is closest to:",
+      "stem_tr": "Piyasa değeri ağırlıklı bir endeks üç pay içeriyor. A payı TL 20 fiyatla, 50 milyon dolaşımdaki payla; B payı TL 40 fiyatla, 10 milyon payla; C payı TL 5 fiyatla, 200 milyon payla işlem görüyor. C payının endeksteki ağırlığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "7.69%",
+          "tr": "%7,69",
+          "value": 7.69
+        },
+        {
+          "key": "B",
+          "en": "41.67%",
+          "tr": "%41,67",
+          "value": 41.67
+        },
+        {
+          "key": "C",
+          "en": "33.33%",
+          "tr": "%33,33",
+          "value": 33.33
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Market caps: A = 1,000m; B = 400m; C = 1,000m; total = 2,400m. Weight of C = 1,000 / 2,400 = 41.67%.",
+      "explanation_tr": "Piyasa değerleri: A = 1.000 milyon; B = 400 milyon; C = 1.000 milyon; toplam = 2.400 milyon. C'nin ağırlığı = 1.000 / 2.400 = %41,67.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Weights by share price alone (5 / 65), which is how a price-weighted index works.",
+          "tr": "Yalnızca pay fiyatına göre (5 / 65) ağırlıklandırır; bu, fiyat ağırlıklı endeksin yöntemidir."
+        },
+        "C": {
+          "en": "Uses an equal one-third weight, ignoring the differences in market value.",
+          "tr": "Piyasa değeri farklarını göz ardı ederek üçte bir eşit ağırlık kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need share C's weight in a cap-weighted index.",
+          "tr": "C payının piyasa değeri ağırlıklı endeksteki ağırlığı isteniyor."
+        },
+        {
+          "en": "Market cap = price × shares outstanding; weight = share cap / total cap.",
+          "tr": "Piyasa değeri = fiyat × dolaşımdaki pay; ağırlık = payın değeri / toplam değer.",
+          "formula_latex": "w_i=\\frac{P_iQ_i}{\\sum P_jQ_j}",
+          "values": {
+            "capA": 1000,
+            "capB": 400,
+            "capC": 1000
+          }
+        },
+        {
+          "en": "Total = 1,000 + 400 + 1,000 = 2,400 (million).",
+          "tr": "Toplam = 1.000 + 400 + 1.000 = 2.400 (milyon)."
+        },
+        {
+          "en": "1,000 / 2,400 = 41.67%.",
+          "tr": "1.000 / 2.400 = %41,67."
+        }
+      ],
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5 [×] 200 [=]  (1000)",
+          "20 [×] 50 [+] 40 [×] 10 [+] 5 [×] 200 [=]  (2400)",
+          "1000 [÷] 2400 [=]  → 0.4167"
+        ]
+      },
+      "numeric": {
+        "expr": "(5*200)/(20*50+40*10+5*200)*100",
+        "unit": "%"
+      },
+      "vocab_ids": [
+        "market-capitalization",
+        "shares-outstanding",
+        "weight",
+        "index",
+        "closest"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "QM-03-b-q09",
+      "level": "L1",
+      "topic": "QM",
+      "module_id": "QM-03",
+      "los_id": "QM-03-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A handful of large shares rally strongly while the rest of the market is flat. Which statement is most consistent with this outcome for a cap-weighted index and an equal-weighted index of the same shares?",
+      "stem_tr": "Birkaç büyük pay güçlü yükselirken piyasanın geri kalanı yatay seyrediyor. Aynı paylardan oluşan piyasa değeri ağırlıklı ve eşit ağırlıklı endeksler için hangi ifade bu sonuçla en uyumludur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both indexes sell part of the winners to rebalance, so both keep their original weights",
+          "tr": "İki endeks de yeniden dengelemek için kazananların bir kısmını satar; bu yüzden ikisi de ilk ağırlıklarını korur"
+        },
+        {
+          "key": "B",
+          "en": "The equal-weighted index drifts toward the winners, while the cap-weighted index must sell part of them to rebalance",
+          "tr": "Eşit ağırlıklı endeks kazananlara doğru kayar; piyasa değeri ağırlıklı endeks ise yeniden dengelemek için bunların bir kısmını satmak zorundadır"
+        },
+        {
+          "key": "C",
+          "en": "The cap-weighted index drifts toward the winners, while the equal-weighted index must sell part of them to rebalance",
+          "tr": "Piyasa değeri ağırlıklı endeks kazananlara doğru kayar; eşit ağırlıklı endeks ise yeniden dengelemek için bunların bir kısmını satmak zorundadır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A cap-weighted index needs no trading as prices move, so its weights drift toward winners. An equal-weighted index returns each share to 1/n, which means selling winners.",
+      "explanation_tr": "Piyasa değeri ağırlıklı endeksin fiyatlar değişince işlem yapmasına gerek yoktur; ağırlıkları kazananlara kayar. Eşit ağırlıklı endeks her payı 1/n'e döndürür; bu da kazananları satmak demektir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Only the equal-weighted index rebalances; a cap-weighted index holds shares as they are and its weights change.",
+          "tr": "Yalnızca eşit ağırlıklı endeks yeniden dengeler; piyasa değeri ağırlıklı endeks payları olduğu gibi tutar ve ağırlıkları değişir."
+        },
+        "B": {
+          "en": "This reverses the two indexes: the cap-weighted index is the one that drifts toward winners.",
+          "tr": "Bu, iki endeksi ters çevirir: kazananlara kayan, piyasa değeri ağırlıklı endekstir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "market-capitalization",
+        "equal-weighted",
+        "rebalance",
+        "rally",
+        "concentrated",
+        "turnover"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }
