@@ -231,14 +231,23 @@ function Report({ id, onClose }: { id: string; onClose: () => void }) {
           <Bar value={r.pct} color={r.pct >= 70 ? c.good : r.pct >= 50 ? c.warn : c.bad} height={5} />
         </Card>
       ))}
-      <H>Zayıf alanlar</H>
-      <T>
-        {rows
+      <H>Şimdi ne çalışmalı?</H>
+      {rows.filter((r) => r.pct < 70).length ? (
+        rows
           .filter((r) => r.pct < 70)
           .slice(0, 3)
-          .map((r) => topicName(r.topic))
-          .join(', ') || 'Belirgin zayıf alan yok.'}
-      </T>
+          .map((r) => (
+            <Button
+              key={r.topic}
+              kind="secondary"
+              style={{ marginBottom: 8 }}
+              title={`${topicName(r.topic)} (%${r.pct}): 10 soru`}
+              onPress={() => router.push({ pathname: '/quiz', params: { mode: 'topic', topic: r.topic, n: '10' } })}
+            />
+          ))
+      ) : (
+        <T>Belirgin zayıf alan yok. Yanlışlarını çözüp bir mock daha dene.</T>
+      )}
       <Row style={{ marginTop: 12 }}>
         <Button style={{ flex: 1 }} kind="secondary" title="Yanlışları çöz" onPress={() => router.push({ pathname: '/quiz', params: { mode: 'wrong', n: '30' } })} />
         <Button style={{ flex: 1 }} title="Kapat" onPress={onClose} />
