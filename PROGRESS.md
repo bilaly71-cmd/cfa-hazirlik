@@ -20,3 +20,9 @@ KAPSAM: YALNIZCA LEVEL I (kullanıcı kararı; L2/L3 YAPILMAYACAK, L2 vignette m
 
 ## Şık uzunluğu yanlılığı (2026-10-17)
 Ölçüm: `node scripts/len_bias.js` (sayısal olmayan sorularda doğru şık tek başına en uzun oranı; şans ≈ %33). İlk durum %66. Yalnızca AI+CI+DER grubunun yaması uygulandı (227 soru; AI %0, CI %42, DER %69 kaldı). ETH/PM/FSA/ECO/EQ/FI/QM grupları YAPILMADI — kullanıcı kararıyla bırakıldı (öncelik değil). Araç: `scripts/apply_options_patch.py`. Yeni içerik üretiminde şartname §7: doğru şık en uzun olmasın.
+
+## Uygulama geliştirmeleri (2026-10-17, otonom döngü)
+Yayında: sınav penceresi seçimi, okuma süresi, yedek/yükle, yanlış nedeni + nedene göre çözme, takıldığın sorular, haftalık özet/tempo + haftalık tekrar, seviye/XP, son 7 gün noktaları, tek "Başla" + 5/10/15 dk, Sıradaki ders, Günün formülü, formül flaş modu, konu başına "İşinde nerede?" notları, Mini mock (30 soru/45 dk), doğru cevapta kısa özet, "okudum→sonraki ders", hızlı cevap ayarı (şıka dokun), titreşim, ana ekrana ekle ipucu, TVM hesaplayıcı (src/lib/tvm.ts + testler).
+İçerik: QM/ETH/EQ/DER'e +447 soru (bağımsız denetimden geçti) → 2277 doğrulanmış soru.
+Kural: yalnızca L1; sadelik; Bugün ekranı dolu → yeni kart ekleme. Kullanıcı DEHB (kısa seans, düşük sürtünme, ödül).
+Sıradaki fikirler: karışık yanlış defteri (kalıp bazlı), zaman yönetimi raporu, sınav günü kontrol listesi; kalan konulara soru (FI/FSA/PM) kullanıcı "önce uygulama" dediği için ertelendi.
