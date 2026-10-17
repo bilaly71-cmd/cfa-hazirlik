@@ -895,6 +895,645 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-10-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A share is TRY 60 today. In one period it will be either TRY 72 or TRY 54. A European call has X = TRY 60. The hedge ratio (shares per call sold) that makes the portfolio riskless is closest to:",
+      "stem_tr": "Bir pay bugün 60 TRY. Bir dönem sonra 72 TRY ya da 54 TRY olacak. Bir Avrupa tipi alım opsiyonunun X = 60 TRY. Portföyü risksiz yapan hedge oranı (satılan alım başına pay) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.67",
+          "tr": "0,67",
+          "value": 0.67
+        },
+        {
+          "key": "B",
+          "en": "0.20",
+          "tr": "0,20",
+          "value": 0.2
+        },
+        {
+          "key": "C",
+          "en": "1.50",
+          "tr": "1,50",
+          "value": 1.5
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Hedge ratio = (12 − 0) / (72 − 54) = 0.67 shares per call.",
+      "explanation_tr": "Hedge oranı = (12 − 0) / (72 − 54) = alım başına 0,67 pay.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This divides the up-state payoff by the current share price instead of by the price range.",
+          "tr": "Bu değer yukarı durum getirisini fiyat aralığına değil güncel pay fiyatına böler."
+        },
+        "C": {
+          "en": "This inverts the ratio.",
+          "tr": "Bu değer oranı ters çevirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the one-period hedge ratio.",
+          "tr": "Tek dönemli hedge oranı isteniyor."
+        },
+        {
+          "en": "It is the call payoff spread divided by the share price spread.",
+          "tr": "Alım getirisi aralığının pay fiyatı aralığına oranıdır.",
+          "formula_latex": "h=\\frac{c^+-c^-}{S^+-S^-}"
+        },
+        {
+          "en": "Substitute c⁺ = 12, c⁻ = 0, S⁺ = 72, S⁻ = 54.",
+          "tr": "c⁺ = 12, c⁻ = 0, S⁺ = 72, S⁻ = 54 değerlerini koy.",
+          "values": {
+            "cu": 12,
+            "cd": 0,
+            "Su": 72,
+            "Sd": 54
+          }
+        },
+        {
+          "en": "Numerator = 12; denominator = 18.",
+          "tr": "Pay = 12; payda = 18."
+        },
+        {
+          "en": "h = 12 / 18 = 0.67.",
+          "tr": "h = 12 / 18 = 0,67."
+        }
+      ],
+      "vocab_ids": [
+        "hedge-ratio",
+        "binomial",
+        "riskless-portfolio",
+        "up-move"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "12 [÷] 18 [=]  (0.667)"
+        ]
+      },
+      "numeric": {
+        "expr": "(max(0,72-60)-max(0,54-60))/(72-54)",
+        "unit": "shares"
+      }
+    },
+    {
+      "id": "DER-10-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a one-period binomial model, u = 1.15, d = 0.90 and the one-period risk-free rate is 4%. The risk-neutral probability of an up move is closest to:",
+      "stem_tr": "Tek dönemli bir binom modelde u = 1,15, d = 0,90 ve dönemlik risksiz faiz %4. Yukarı hareketin riske duyarsız olasılığı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "0.56",
+          "tr": "0,56",
+          "value": 0.56
+        },
+        {
+          "key": "B",
+          "en": "0.44",
+          "tr": "0,44",
+          "value": 0.44
+        },
+        {
+          "key": "C",
+          "en": "0.40",
+          "tr": "0,40",
+          "value": 0.4
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "π = (1 + r − d) / (u − d) = (1.04 − 0.90) / (1.15 − 0.90) = 0.56.",
+      "explanation_tr": "π = (1 + r − d) / (u − d) = (1,04 − 0,90) / (1,15 − 0,90) = 0,56.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the probability of the down move (1 − π), not of the up move.",
+          "tr": "Bu değer aşağı hareket olasılığıdır (1 − π), yukarı hareket değil."
+        },
+        "C": {
+          "en": "This ignores the risk-free rate by using (1 − d) / (u − d).",
+          "tr": "Bu değer (1 − d) / (u − d) ile risksiz faizi yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the risk-neutral probability of an up move.",
+          "tr": "Yukarı hareketin riske duyarsız olasılığı isteniyor."
+        },
+        {
+          "en": "Use the formula with the gross risk-free return and the two factors.",
+          "tr": "Brüt risksiz getiri ve iki faktörle formülü kullan.",
+          "formula_latex": "\\pi=\\frac{1+r-d}{u-d}"
+        },
+        {
+          "en": "Substitute r = 4%, u = 1.15, d = 0.90.",
+          "tr": "r = %4, u = 1,15, d = 0,90 değerlerini koy.",
+          "values": {
+            "r": 0.04,
+            "u": 1.15,
+            "d": 0.9
+          }
+        },
+        {
+          "en": "Numerator = 1.04 − 0.90 = 0.14; denominator = 0.25.",
+          "tr": "Pay = 1,04 − 0,90 = 0,14; payda = 0,25."
+        },
+        {
+          "en": "π = 0.14 / 0.25 = 0.56.",
+          "tr": "π = 0,14 / 0,25 = 0,56."
+        }
+      ],
+      "vocab_ids": [
+        "risk-neutral",
+        "up-factor",
+        "down-factor",
+        "probability"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.04 [-] 0.9 [=]  (0.14)",
+          "[÷] 0.25 [=]  (0.56)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.04-0.90)/(1.15-0.90)",
+        "unit": ""
+      }
+    },
+    {
+      "id": "DER-10-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A share is TRY 80. After one period it will be TRY 100 (u = 1.25) or TRY 60 (d = 0.75). The risk-free rate is 5% per period. A European put has X = TRY 90. The put value today is closest to:",
+      "stem_tr": "Bir pay 80 TRY. Bir dönem sonra 100 TRY (u = 1,25) ya da 60 TRY (d = 0,75) olacak. Dönemlik risksiz faiz %5. Bir Avrupa tipi satım opsiyonunun X = 90 TRY. Satımın bugünkü değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 12.00",
+          "tr": "TRY 12,00",
+          "value": 12.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 17.14",
+          "tr": "TRY 17,14",
+          "value": 17.14
+        },
+        {
+          "key": "C",
+          "en": "TRY 11.43",
+          "tr": "TRY 11,43",
+          "value": 11.43
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "π = (1.05 − 0.75)/0.50 = 0.60. Put payoffs: 0 up, 30 down. Value = 0.40 × 30 / 1.05 = TRY 11.43.",
+      "explanation_tr": "π = (1,05 − 0,75)/0,50 = 0,60. Satım getirileri: yukarıda 0, aşağıda 30. Değer = 0,40 × 30 / 1,05 = 11,43 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the expected payoff back one period.",
+          "tr": "Bu değer beklenen getiriyi bir dönem geriye iskonto etmez."
+        },
+        "B": {
+          "en": "This uses the up-move probability (0.60) instead of the down-move probability (0.40) on the put's payoff.",
+          "tr": "Bu değer satımın getirisinde aşağı hareket olasılığı (0,40) yerine yukarı hareket olasılığını (0,60) kullanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a put with a one-period binomial tree.",
+          "tr": "Tek dönemli binom ağaçla satım opsiyonunun değeri isteniyor."
+        },
+        {
+          "en": "Compute the risk-neutral probabilities, take the expected payoff and discount it.",
+          "tr": "Riske duyarsız olasılıkları hesapla, beklenen getiriyi bul ve iskonto et.",
+          "formula_latex": "p_0=\\frac{\\pi p^++(1-\\pi)p^-}{1+r}"
+        },
+        {
+          "en": "Substitute u = 1.25, d = 0.75, r = 5%, X = 90, S⁺ = 100, S⁻ = 60.",
+          "tr": "u = 1,25, d = 0,75, r = %5, X = 90, S⁺ = 100, S⁻ = 60 değerlerini koy.",
+          "values": {
+            "u": 1.25,
+            "d": 0.75,
+            "r": 0.05,
+            "X": 90
+          }
+        },
+        {
+          "en": "π = 0.60; put payoffs are 0 and 30.",
+          "tr": "π = 0,60; satım getirileri 0 ve 30."
+        },
+        {
+          "en": "p_0 = (0.60 × 0 + 0.40 × 30) / 1.05 = TRY 11.43.",
+          "tr": "p_0 = (0,60 × 0 + 0,40 × 30) / 1,05 = 11,43 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "risk-neutral",
+        "european-put",
+        "discount"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.4 [×] 30 [=]  (12)",
+          "[÷] 1.05 [=]  (11.43)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1-(1.05-0.75)/(1.25-0.75))*30)/1.05",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-10-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share is TRY 40. After one period it will be TRY 52 (u = 1.30) or TRY 34 (d = 0.85). The risk-free rate is 3% per period. A European call has X = TRY 44. The call value today is closest to:",
+      "stem_tr": "Bir pay 40 TRY. Bir dönem sonra 52 TRY (u = 1,30) ya da 34 TRY (d = 0,85) olacak. Dönemlik risksiz faiz %3. Bir Avrupa tipi alım opsiyonunun X = 44 TRY. Alımın bugünkü değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3.20",
+          "tr": "TRY 3,20",
+          "value": 3.2
+        },
+        {
+          "key": "B",
+          "en": "TRY 3.11",
+          "tr": "TRY 3,11",
+          "value": 3.11
+        },
+        {
+          "key": "C",
+          "en": "TRY 3.56",
+          "tr": "TRY 3,56",
+          "value": 3.56
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "π = (1.03 − 0.85)/(1.30 − 0.85) = 0.40. Call payoffs: 8 up, 0 down. Value = 0.40 × 8 / 1.03 = TRY 3.11.",
+      "explanation_tr": "π = (1,03 − 0,85)/(1,30 − 0,85) = 0,40. Alım getirileri: yukarıda 8, aşağıda 0. Değer = 0,40 × 8 / 1,03 = 3,11 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the expected payoff back one period.",
+          "tr": "Bu değer beklenen getiriyi bir dönem geriye iskonto etmez."
+        },
+        "C": {
+          "en": "This multiplies the up payoff by the hedge ratio instead of using the risk-neutral probability.",
+          "tr": "Bu değer yukarı durum getirisini riske duyarsız olasılık yerine hedge oranıyla çarpar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the call value with a one-period binomial tree.",
+          "tr": "Tek dönemli binom ağaçla alım opsiyonunun değeri isteniyor."
+        },
+        {
+          "en": "Find π, take the expected call payoff under π and discount it one period.",
+          "tr": "π'yi bul, π altında beklenen alım getirisini hesapla ve bir dönem iskonto et.",
+          "formula_latex": "c_0=\\frac{\\pi c^++(1-\\pi)c^-}{1+r}"
+        },
+        {
+          "en": "Substitute u = 1.30, d = 0.85, r = 3%, c⁺ = 8, c⁻ = 0.",
+          "tr": "u = 1,30, d = 0,85, r = %3, c⁺ = 8, c⁻ = 0 değerlerini koy.",
+          "values": {
+            "u": 1.3,
+            "d": 0.85,
+            "r": 0.03,
+            "cu": 8,
+            "cd": 0
+          }
+        },
+        {
+          "en": "π = 0.18 / 0.45 = 0.40.",
+          "tr": "π = 0,18 / 0,45 = 0,40."
+        },
+        {
+          "en": "c_0 = 0.40 × 8 / 1.03 = TRY 3.11.",
+          "tr": "c_0 = 0,40 × 8 / 1,03 = 3,11 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "binomial",
+        "risk-neutral",
+        "hedge-ratio",
+        "european-call"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "0.18 [÷] 0.45 [=]  (0.4)",
+          "[×] 8 [÷] 1.03 [=]  (3.107)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.03-0.85)/(1.30-0.85)*8)/1.03",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-10-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a risk-neutral world, the expected return on any asset is equal to:",
+      "stem_tr": "Riske duyarsız bir dünyada herhangi bir varlığın beklenen getirisi neye eşittir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the asset's own required return",
+          "tr": "varlığın kendi gerekli getirisi"
+        },
+        {
+          "key": "B",
+          "en": "zero",
+          "tr": "sıfır"
+        },
+        {
+          "key": "C",
+          "en": "the risk-free rate",
+          "tr": "risksiz faiz oranı"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "With no risk premium required, every asset is expected to earn the risk-free rate.",
+      "explanation_tr": "Risk primi istenmediğinde her varlığın risksiz oranı kazanması beklenir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "In a risk-neutral world investors demand no risk premium, so required returns do not differ by asset.",
+          "tr": "Riske duyarsız dünyada yatırımcılar risk primi istemez; gerekli getiri varlığa göre değişmez."
+        },
+        "B": {
+          "en": "Risk-neutral valuation does not set returns to zero; they earn the risk-free rate.",
+          "tr": "Riske duyarsız değerleme getirileri sıfıra eşitlemez; getiri risksiz orandır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-neutral",
+        "risk-free-rate",
+        "expected-return",
+        "risk-premium"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-10-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Two analysts disagree on the real-world probability that a share will rise, but they agree on u, d and the risk-free rate. Their one-period binomial values for a call will be:",
+      "stem_tr": "İki analist, bir payın yükselme olasılığına ilişkin gerçek dünya tahminlerinde farklı düşünüyor; ancak u, d ve risksiz faiz konusunda hemfikir. Alım opsiyonu için tek dönemli binom değerleri nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "identical, because the value uses the risk-neutral probability",
+          "tr": "aynıdır; çünkü değer riske duyarsız olasılığı kullanır"
+        },
+        {
+          "key": "B",
+          "en": "different, because each uses their own probability of an up move",
+          "tr": "farklıdır; çünkü her biri kendi yukarı hareket olasılığını kullanır"
+        },
+        {
+          "key": "C",
+          "en": "different, because the more optimistic analyst applies a higher discount rate",
+          "tr": "farklıdır; çünkü daha iyimser analist daha yüksek iskonto oranı uygular"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The value depends only on u, d, r and the payoffs through π, not on beliefs about the true probability.",
+      "explanation_tr": "Değer yalnızca u, d, r ve getirilere π üzerinden bağlıdır; gerçek olasılık hakkındaki inançlara bağlı değildir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The real-world probability does not enter the pricing formula.",
+          "tr": "Gerçek dünya olasılığı fiyatlama formülüne girmez."
+        },
+        "C": {
+          "en": "The discount rate is the risk-free rate for both, whatever the beliefs.",
+          "tr": "İskonto oranı, inançlar ne olursa olsun ikisi için de risksiz orandır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-neutral",
+        "probability",
+        "binomial",
+        "preferences"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-10-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a binomial model, u and d stay the same while the one-period risk-free rate rises. The risk-neutral probability of an up move will most likely:",
+      "stem_tr": "Bir binom modelde u ve d aynı kalırken dönemlik risksiz faiz yükseliyor. Yukarı hareketin riske duyarsız olasılığı büyük olasılıkla ne olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease, because a higher rate lowers the chance of a rise",
+          "tr": "azalır; çünkü yüksek faiz yükselme şansını düşürür"
+        },
+        {
+          "key": "B",
+          "en": "increase, because π = (1 + r − d) / (u − d)",
+          "tr": "artar; çünkü π = (1 + r − d) / (u − d)"
+        },
+        {
+          "key": "C",
+          "en": "stay unchanged, because π depends only on u and d",
+          "tr": "değişmez; çünkü π yalnızca u ve d'ye bağlıdır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With a higher r, the share must rise more often in the risk-neutral world to earn the higher risk-free return.",
+      "explanation_tr": "Daha yüksek r ile payın daha yüksek risksiz getiriyi kazanması için riske duyarsız dünyada daha sık yükselmesi gerekir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "π rises with r, since the share must be expected to earn more to match the higher risk-free return.",
+          "tr": "π, r ile birlikte artar; çünkü payın yüksek risksiz getiriye ulaşması için daha çok kazanması beklenmelidir."
+        },
+        "C": {
+          "en": "The risk-free rate appears in the numerator of π.",
+          "tr": "Risksiz faiz π'nin payında yer alır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-neutral",
+        "up-factor",
+        "down-factor",
+        "risk-free-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-10-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-10",
+      "los_id": "DER-10-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "Under the risk-neutral probabilities in a one-period binomial model, the expected share price at the end of the period, discounted at the risk-free rate, equals:",
+      "stem_tr": "Tek dönemli bir binom modelde riske duyarsız olasılıklar altında dönem sonundaki beklenen pay fiyatı, risksiz faizle iskonto edildiğinde neye eşit olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the current share price",
+          "tr": "güncel pay fiyatı"
+        },
+        {
+          "key": "B",
+          "en": "the strike price of the option",
+          "tr": "opsiyonun kullanım fiyatı"
+        },
+        {
+          "key": "C",
+          "en": "the call value today",
+          "tr": "bugünkü alım opsiyonu değeri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "π is chosen so that π·S⁺ + (1 − π)·S⁻ = S₀(1 + r); discounting returns S₀.",
+      "explanation_tr": "π, π·S⁺ + (1 − π)·S⁻ = S₀(1 + r) olacak şekilde seçilir; iskonto edince S₀ elde edilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The strike price is unrelated to the expected share price in the tree.",
+          "tr": "Kullanım fiyatı, ağaçtaki beklenen pay fiyatıyla ilgili değildir."
+        },
+        "C": {
+          "en": "The call value depends on the payoffs, not on the share price itself.",
+          "tr": "Alım değeri payın kendisine değil, opsiyon getirilerine bağlıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "risk-neutral",
+        "expected-return",
+        "discount",
+        "binomial"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

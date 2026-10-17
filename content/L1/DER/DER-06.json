@@ -781,6 +781,560 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-06-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A trader holds 4 short BIST 30 futures contracts. The multiplier is TRY 10 per index point (hypothetical). The previous settlement price was 11,800 and today's settlement price is 11,725. The trader's mark-to-market result for today is closest to:",
+      "stem_tr": "Bir yatırımcı 4 adet kısa BIST 30 vadeli işlem sözleşmesine sahip. Çarpan endeks puanı başına 10 TRY (varsayımsal). Önceki uzlaşma fiyatı 11.800, bugünkü uzlaşma fiyatı 11.725. Yatırımcının bugünkü günlük uzlaşma sonucu aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY +3,000",
+          "tr": "TRY +3.000",
+          "value": 3000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY −3,000",
+          "tr": "TRY −3.000",
+          "value": -3000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY +750",
+          "tr": "TRY +750",
+          "value": 750.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Gain = (11,800 − 11,725) × 10 × 4 = TRY 3,000 credited to the margin account.",
+      "explanation_tr": "Kazanç = (11.800 − 11.725) × 10 × 4 = marjin hesabına yazılan 3.000 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The price fell, which is a gain for a short position, not a loss.",
+          "tr": "Fiyat düşmüştür; bu kısa pozisyon için kayıp değil kazançtır."
+        },
+        "C": {
+          "en": "This forgets to multiply by the number of contracts.",
+          "tr": "Bu değer sözleşme sayısıyla çarpmayı unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need today's mark-to-market result for a short futures position.",
+          "tr": "Kısa vadeli işlem pozisyonunun bugünkü günlük uzlaşma sonucu isteniyor."
+        },
+        {
+          "en": "A short gains when the settlement price falls: multiply the price change by the multiplier and the number of contracts.",
+          "tr": "Kısa taraf uzlaşma fiyatı düşünce kazanır: fiyat değişimini çarpan ve sözleşme sayısıyla çarp.",
+          "formula_latex": "\\text{Gain}=(F_{t-1}-F_t)\\times m\\times n"
+        },
+        {
+          "en": "Substitute F_{t−1} = 11,800, F_t = 11,725, m = 10, n = 4.",
+          "tr": "F_{t−1} = 11.800, F_t = 11.725, m = 10, n = 4 değerlerini koy.",
+          "values": {
+            "F_prev": 11800,
+            "F_t": 11725,
+            "m": 10,
+            "n": 4
+          }
+        },
+        {
+          "en": "Price change = 75 points.",
+          "tr": "Fiyat değişimi = 75 puan."
+        },
+        {
+          "en": "Gain = 75 × 10 × 4 = TRY 3,000.",
+          "tr": "Kazanç = 75 × 10 × 4 = 3.000 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "mark-to-market",
+        "daily-settlement",
+        "margin-account",
+        "short"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "11800 [-] 11725 [=]  (75)",
+          "[×] 10 [×] 4 [=]  (3000)"
+        ]
+      },
+      "numeric": {
+        "expr": "(11800-11725)*10*4",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-06-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Why does daily settlement of a futures contract reduce credit exposure compared with a forward contract?",
+      "stem_tr": "Bir futures sözleşmesinin günlük uzlaşması, forward sözleşmeye göre kredi maruziyetini neden azaltır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Losses are paid every day, so they cannot build up unpaid until expiry",
+          "tr": "Zararlar her gün ödenir; bu nedenle vadeye kadar ödenmeden birikemez"
+        },
+        {
+          "key": "B",
+          "en": "The futures price is always equal to the spot price, so no loss can arise",
+          "tr": "Futures fiyatı her zaman spot fiyata eşittir, dolayısıyla zarar oluşamaz"
+        },
+        {
+          "key": "C",
+          "en": "The long party pays the full price of the underlying up front",
+          "tr": "Uzun taraf dayanak varlığın tam bedelini peşin öder"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Because losses are collected daily, the amount one party could fail to pay is limited to about one day's price move.",
+      "explanation_tr": "Zararlar günlük tahsil edildiği için bir tarafın ödeyememe ihtimali yaklaşık bir günlük fiyat hareketiyle sınırlı kalır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The futures price differs from spot before expiry; they converge only at expiry.",
+          "tr": "Futures fiyatı vadeden önce spottan farklıdır; ancak vadede yakınsar."
+        },
+        "C": {
+          "en": "No full payment is made up front; only margin is deposited.",
+          "tr": "Peşin tam ödeme yapılmaz; yalnızca marjin yatırılır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "daily-settlement",
+        "credit-exposure",
+        "mark-to-market",
+        "margin"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-06-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A futures trader receives a margin call and deposits additional funds. The deposit is best described as:",
+      "stem_tr": "Bir vadeli işlem yatırımcısı marjin çağrısı alıyor ve ek fon yatırıyor. Bu yatırım en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a premium paid to the clearinghouse in exchange for the futures contract",
+          "tr": "vadeli işlem sözleşmesi karşılığında takas kuruluşuna ödenen prim"
+        },
+        {
+          "key": "B",
+          "en": "a purchase price that transfers ownership of the underlying to the trader",
+          "tr": "dayanak varlığın mülkiyetini yatırımcıya devreden bir satın alma bedeli"
+        },
+        {
+          "key": "C",
+          "en": "variation margin that restores the account to the required level",
+          "tr": "hesabı gereken seviyeye getiren değişim (variation) marjini"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "When the balance falls below maintenance margin, the trader must deposit variation margin to bring it back up.",
+      "explanation_tr": "Bakiye sürdürme teminatının altına düştüğünde yatırımcı, bakiyeyi geri yükseltmek için değişim marjini yatırmalıdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A futures contract has no premium; margin is a good-faith deposit, not a price.",
+          "tr": "Futures sözleşmesinde prim yoktur; marjin bir güvence depozitosudur, bir bedel değildir."
+        },
+        "B": {
+          "en": "Margin does not buy the underlying; it only secures the position.",
+          "tr": "Marjin dayanak varlığı satın almaz; yalnızca pozisyonu güvence altına alır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "margin-call",
+        "maintenance-margin",
+        "margin",
+        "margin-account"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-06-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A trader buys 10 futures contracts at 250.0 with a multiplier of TRY 100 per point. The settlement prices are 252.0 on day 1 and 249.5 on day 2. The cumulative gain or loss on the position after day 2 is closest to:",
+      "stem_tr": "Bir yatırımcı 100 TRY/puan çarpanlı 10 adet vadeli işlem sözleşmesini 250,0'dan satın alıyor. Uzlaşma fiyatları 1. gün 252,0 ve 2. gün 249,5. İkinci günün sonunda pozisyonun kümülatif kazanç veya zararı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY −2,500",
+          "tr": "TRY −2.500",
+          "value": -2500.0
+        },
+        {
+          "key": "B",
+          "en": "TRY −500",
+          "tr": "TRY −500",
+          "value": -500.0
+        },
+        {
+          "key": "C",
+          "en": "TRY +2,000",
+          "tr": "TRY +2.000",
+          "value": 2000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Day 1: +2.0 × 100 × 10 = +2,000. Day 2: −2.5 × 100 × 10 = −2,500. Total = TRY −500.",
+      "explanation_tr": "1. gün: +2,0 × 100 × 10 = +2.000. 2. gün: −2,5 × 100 × 10 = −2.500. Toplam = −500 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This counts only the day 2 move and ignores the day 1 gain.",
+          "tr": "Bu değer yalnızca 2. günün hareketini sayar, 1. günün kazancını yok sayar."
+        },
+        "C": {
+          "en": "This counts only the day 1 gain and ignores the day 2 loss.",
+          "tr": "Bu değer yalnızca 1. günün kazancını sayar, 2. günün zararını yok sayar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the cumulative result of two daily settlements for a long position.",
+          "tr": "Uzun pozisyon için iki günlük uzlaşmanın kümülatif sonucu isteniyor."
+        },
+        {
+          "en": "Compute each day's gain as the price change times the multiplier times the number of contracts, then add.",
+          "tr": "Her günün kazancını fiyat değişimi × çarpan × sözleşme sayısı olarak hesapla, sonra topla.",
+          "formula_latex": "\\sum_t (F_t-F_{t-1})\\times m\\times n"
+        },
+        {
+          "en": "Substitute m = 100, n = 10 and the price path 250.0 → 252.0 → 249.5.",
+          "tr": "m = 100, n = 10 ve fiyat yolu 250,0 → 252,0 → 249,5 değerlerini koy.",
+          "values": {
+            "m": 100,
+            "n": 10
+          }
+        },
+        {
+          "en": "Day 1 = +2,000. Day 2 = −2,500.",
+          "tr": "1. gün = +2.000. 2. gün = −2.500."
+        },
+        {
+          "en": "Total = −500 TRY (equivalently (249.5 − 250.0) × 100 × 10).",
+          "tr": "Toplam = −500 TRY (eşdeğer olarak (249,5 − 250,0) × 100 × 10)."
+        }
+      ],
+      "vocab_ids": [
+        "mark-to-market",
+        "daily-settlement",
+        "margin-account",
+        "settlement-price"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "249.5 [-] 250 [=]  (-0.5)",
+          "[×] 1000 [=]  (-500)"
+        ]
+      },
+      "numeric": {
+        "expr": "(252-250)*100*10+(249.5-252)*100*10",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-06-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Why are the prices of a short-dated forward and a short-dated futures on the same underlying usually very close?",
+      "stem_tr": "Aynı dayanak varlık üzerindeki kısa vadeli bir forward ile kısa vadeli bir futures fiyatı neden genellikle birbirine çok yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Both contracts are listed and traded on the same organized exchange",
+          "tr": "İki sözleşme de aynı organize borsada kote edilir ve işlem görür"
+        },
+        {
+          "key": "B",
+          "en": "Both contracts require no margin deposit at any point in their life",
+          "tr": "İki sözleşme de ömrünün hiçbir noktasında marjin yatırılmasını gerektirmez"
+        },
+        {
+          "key": "C",
+          "en": "With a short life, the interest effect of daily settlement is small",
+          "tr": "Ömür kısa olduğunda günlük uzlaşmanın faiz etkisi küçüktür"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The gap comes from interest on daily margin flows; over a short period these flows have little effect.",
+      "explanation_tr": "Fark günlük marjin akışlarının faizinden doğar; kısa sürede bu akışların etkisi azdır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Forwards are OTC contracts and are not traded on an exchange.",
+          "tr": "Forwardlar OTC sözleşmelerdir ve borsada işlem görmez."
+        },
+        "B": {
+          "en": "Futures require margin, so this statement is false.",
+          "tr": "Futures marjin gerektirir; bu nedenle ifade yanlıştır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-price",
+        "daily-settlement",
+        "margin",
+        "approximately"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-06-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A futures holder must settle losses in cash every day, whereas a forward holder settles only at maturity. This difference most directly gives rise to:",
+      "stem_tr": "Bir futures sahibi zararlarını her gün nakit olarak ödemek zorundayken forward sahibi yalnızca vadede uzlaşır. Bu fark en doğrudan neye yol açar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "a change in the underlying asset specified in the contract",
+          "tr": "sözleşmede belirtilen dayanak varlıkta değişiklik"
+        },
+        {
+          "key": "B",
+          "en": "interest earned or paid on the interim cash flows of futures",
+          "tr": "futures'ın ara nakit akışlarına işleyen veya ödenen faiz"
+        },
+        {
+          "key": "C",
+          "en": "a lower credit risk for the forward holder than for the futures holder",
+          "tr": "forward sahibi için futures sahibine göre daha düşük kredi riski"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Daily cash flows can be reinvested or must be financed, so interest on them can make futures and forward prices differ.",
+      "explanation_tr": "Günlük nakit akışları yeniden yatırılabilir ya da finanse edilmelidir; bu nedenle üzerlerine işleyen faiz futures ve forward fiyatlarını farklılaştırabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The underlying is identical in both contracts; the settlement timing is what differs.",
+          "tr": "Dayanak varlık iki sözleşmede aynıdır; değişen uzlaşma zamanlamasıdır."
+        },
+        "C": {
+          "en": "Daily settlement lowers the credit risk of futures, not of forwards.",
+          "tr": "Günlük uzlaşma forward'ın değil futures'ın kredi riskini azaltır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "daily-settlement",
+        "reinvest",
+        "cash-flow",
+        "mark-to-market"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-06-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "analyze",
+      "stem_en": "An analyst says that forward and futures prices must always be equal because arbitrage forces them together. The flaw in this argument is that equality requires:",
+      "stem_tr": "Bir analist, arbitrajın fiyatları birleştireceğini söyleyerek forward ve futures fiyatlarının her zaman eşit olması gerektiğini savunuyor. Bu argümandaki hata, eşitliğin şunu gerektirmesidir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "interest rates that are constant or uncorrelated with the futures price",
+          "tr": "sabit olan veya futures fiyatıyla ilişkisiz faiz oranları"
+        },
+        {
+          "key": "B",
+          "en": "both contracts to be issued by counterparties with identical credit ratings",
+          "tr": "iki sözleşmenin de kredi notu aynı olan karşı taraflarla yapılması"
+        },
+        {
+          "key": "C",
+          "en": "forwards to have lower transaction costs than futures contracts do",
+          "tr": "forwardların futures sözleşmelerinden düşük işlem maliyetli olması"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The equality argument assumes that daily margin flows earn no systematic interest benefit, which holds if rates are constant or uncorrelated.",
+      "explanation_tr": "Eşitlik argümanı, günlük marjin akışlarının sistematik bir faiz avantajı sağlamadığını varsayar; bu da faizler sabit ya da ilişkisizse geçerlidir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Credit quality is not the condition; the equality result rests on how interest rates behave.",
+          "tr": "Kredi kalitesi bu koşul değildir; eşitlik sonucu faizlerin davranışına dayanır."
+        },
+        "C": {
+          "en": "Transaction costs are not the assumption behind the equality result.",
+          "tr": "İşlem maliyetleri eşitlik sonucunun dayandığı varsayım değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "forward-price",
+        "uncorrelated",
+        "constant",
+        "arbitrage"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-06-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-06",
+      "los_id": "DER-06-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "The futures price on an asset is higher than the forward price on the same asset and maturity. Which of the following is most consistent with this observation?",
+      "stem_tr": "Bir varlık üzerindeki futures fiyatı, aynı varlık ve vadedeki forward fiyatından yüksektir. Aşağıdakilerden hangisi bu gözlemle en tutarlıdır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Futures gains tend to arrive when rates are low, so they are reinvested at weak rates",
+          "tr": "Futures kazançları faizler düşükken gelme eğilimindedir; bu nedenle zayıf oranlarla yeniden yatırılır"
+        },
+        {
+          "key": "B",
+          "en": "The forward carries daily margin calls while the futures carries none, so forward costs more",
+          "tr": "Forward günlük marjin çağrısı içerir, futures ise içermez; bu nedenle forward daha pahalıdır"
+        },
+        {
+          "key": "C",
+          "en": "Futures gains tend to arrive when rates are high, so they can be reinvested at high rates",
+          "tr": "Futures kazançları faizler yüksekken gelme eğilimindedir; bu nedenle yüksek oranlarla yeniden yatırılabilir"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A positive rate-price correlation helps the long futures holder, who is paid when rates are high, so the long accepts a higher price.",
+      "explanation_tr": "Pozitif faiz-fiyat ilişkisi uzun futures sahibine yarar: faizler yüksekken ödeme alır; bu yüzden daha yüksek fiyatı kabul eder.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That pattern makes futures less attractive to the long, so the futures price would be below the forward price.",
+          "tr": "Bu görünüm futures'ı uzun taraf için daha az cazip yapar; futures fiyatı forward fiyatının altında olurdu."
+        },
+        "B": {
+          "en": "It is the futures, not the forward, that carries daily margin calls.",
+          "tr": "Günlük marjin çağrısı forward'da değil futures'ta vardır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "positive-correlation",
+        "reinvest",
+        "forward-price",
+        "futures"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

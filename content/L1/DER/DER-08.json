@@ -1257,6 +1257,875 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-08-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A call option has a strike price of TRY 45. The underlying share price is TRY 40. The exercise (intrinsic) value of the call is closest to:",
+      "stem_tr": "Bir alım opsiyonunun kullanım fiyatı 45 TRY. Dayanak pay fiyatı 40 TRY. Alım opsiyonunun kullanım (içsel) değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 5.00",
+          "tr": "TRY 5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "TRY −5.00",
+          "tr": "TRY −5,00",
+          "value": -5.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 0.00",
+          "tr": "TRY 0,00",
+          "value": 0.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Exercise value = max(0, S − X) = max(0, 40 − 45) = 0.",
+      "explanation_tr": "Kullanım değeri = max(0, S − X) = max(0, 40 − 45) = 0.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The call is out of the money; the difference of 5 is a shortfall, not value.",
+          "tr": "Alım opsiyonu paranın dışındadır; 5'lik fark bir eksiklik olup değer değildir."
+        },
+        "B": {
+          "en": "Exercise value cannot be negative because the holder is not obliged to exercise.",
+          "tr": "Sahibi kullanmak zorunda olmadığından kullanım değeri negatif olamaz."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the exercise (intrinsic) value of a call.",
+          "tr": "Alım opsiyonunun kullanım (içsel) değeri isteniyor."
+        },
+        {
+          "en": "It is the larger of zero and the underlying price minus the strike.",
+          "tr": "Sıfır ile dayanak fiyat eksi kullanım fiyatından büyük olanıdır.",
+          "formula_latex": "\\text{EV}=\\max(0,S-X)"
+        },
+        {
+          "en": "Substitute S = 40 and X = 45.",
+          "tr": "S = 40 ve X = 45 değerlerini koy.",
+          "values": {
+            "S": 40,
+            "X": 45
+          }
+        },
+        {
+          "en": "S − X = −5, which is below zero.",
+          "tr": "S − X = −5, yani sıfırın altında."
+        },
+        {
+          "en": "Exercise value = TRY 0.00.",
+          "tr": "Kullanım değeri = 0,00 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "intrinsic-value",
+        "out-of-the-money",
+        "strike",
+        "moneyness"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "40 [-] 45 [=]  (-5, so value is 0)"
+        ]
+      },
+      "numeric": {
+        "expr": "max(0,40-45)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-08-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A put option has a strike price of TRY 55 and trades at a premium of TRY 6.30 while the underlying share price is TRY 52. The time value of the put is closest to:",
+      "stem_tr": "Bir satım opsiyonunun kullanım fiyatı 55 TRY; dayanak pay fiyatı 52 TRY iken 6,30 TRY primle işlem görüyor. Satım opsiyonunun zaman değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3.30",
+          "tr": "TRY 3,30",
+          "value": 3.3
+        },
+        {
+          "key": "B",
+          "en": "TRY 3.00",
+          "tr": "TRY 3,00",
+          "value": 3.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 9.30",
+          "tr": "TRY 9,30",
+          "value": 9.3
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Exercise value = 55 − 52 = 3.00. Time value = 6.30 − 3.00 = TRY 3.30.",
+      "explanation_tr": "Kullanım değeri = 55 − 52 = 3,00. Zaman değeri = 6,30 − 3,00 = 3,30 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "TRY 3.00 is the exercise value; the time value is what the premium adds on top of it.",
+          "tr": "3,00 TRY kullanım değeridir; zaman değeri primin bunun üzerine eklediği kısımdır."
+        },
+        "C": {
+          "en": "This adds the exercise value to the premium instead of subtracting it.",
+          "tr": "Bu değer kullanım değerini primden düşmek yerine ona ekler."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the time value of a put.",
+          "tr": "Satım opsiyonunun zaman değeri isteniyor."
+        },
+        {
+          "en": "Time value equals the option premium minus its exercise value.",
+          "tr": "Zaman değeri, opsiyon primi eksi kullanım değeridir.",
+          "formula_latex": "\\text{TV}=p_0-\\max(0,X-S)"
+        },
+        {
+          "en": "Substitute p_0 = 6.30, X = 55, S = 52.",
+          "tr": "p_0 = 6,30, X = 55, S = 52 değerlerini koy.",
+          "values": {
+            "p0": 6.3,
+            "X": 55,
+            "S": 52
+          }
+        },
+        {
+          "en": "Exercise value = max(0, 55 − 52) = 3.00.",
+          "tr": "Kullanım değeri = max(0, 55 − 52) = 3,00."
+        },
+        {
+          "en": "Time value = 6.30 − 3.00 = TRY 3.30.",
+          "tr": "Zaman değeri = 6,30 − 3,00 = 3,30 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "time-value",
+        "intrinsic-value",
+        "premium",
+        "in-the-money"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "55 [-] 52 [=]  (3)",
+          "6.3 [-] 3 [=]  (3.3)"
+        ]
+      },
+      "numeric": {
+        "expr": "6.30-max(0,55-52)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-08-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "At the expiration of an option, the time value of the option is:",
+      "stem_tr": "Bir opsiyonun vadesinde opsiyonun zaman değeri nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "positive for every option that is in the money at that time",
+          "tr": "o anda paranın içinde olan her opsiyon için pozitiftir"
+        },
+        {
+          "key": "B",
+          "en": "zero, so the option is worth its exercise value",
+          "tr": "sıfırdır; opsiyon kullanım değerine eşittir"
+        },
+        {
+          "key": "C",
+          "en": "equal to the premium originally paid",
+          "tr": "başlangıçta ödenen prime eşittir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "With no time left, there is no chance for further favorable price moves, so only the exercise value remains.",
+      "explanation_tr": "Zaman kalmadığından lehte yeni fiyat hareketi şansı yoktur; yalnızca kullanım değeri kalır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With no time left, even an in-the-money option has no time value.",
+          "tr": "Zaman kalmadığında paranın içindeki opsiyonun bile zaman değeri yoktur."
+        },
+        "C": {
+          "en": "The original premium is a sunk amount and is unrelated to the value at expiry.",
+          "tr": "Başlangıçta ödenen prim geçmişte kalmış bir tutardır ve vade sonu değeriyle ilgili değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "time-value",
+        "expiration",
+        "intrinsic-value",
+        "exercise"
+      ],
+      "pattern_ids": [
+        "most-consistent"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A call option has a strike of TRY 100. Initially the share is TRY 100 and the call trades at TRY 7.50. Later the share is TRY 112 and the call trades at TRY 14.00. The change in the call's time value is closest to:",
+      "stem_tr": "Bir alım opsiyonunun kullanım fiyatı 100 TRY. Başlangıçta pay 100 TRY ve alım opsiyonu 7,50 TRY'den işlem görüyor. Daha sonra pay 112 TRY ve alım opsiyonu 14,00 TRY. Alım opsiyonunun zaman değerindeki değişim aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY +6.50",
+          "tr": "TRY +6,50",
+          "value": 6.5
+        },
+        {
+          "key": "B",
+          "en": "TRY −7.50",
+          "tr": "TRY −7,50",
+          "value": -7.5
+        },
+        {
+          "key": "C",
+          "en": "TRY −5.50",
+          "tr": "TRY −5,50",
+          "value": -5.5
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Initial time value = 7.50 − 0 = 7.50. Later = 14.00 − 12.00 = 2.00. Change = 2.00 − 7.50 = TRY −5.50.",
+      "explanation_tr": "Başlangıç zaman değeri = 7,50 − 0 = 7,50. Sonraki = 14,00 − 12,00 = 2,00. Değişim = 2,00 − 7,50 = −5,50 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the change in the premium, which includes the rise in exercise value.",
+          "tr": "Bu değer primdeki değişimdir; kullanım değerindeki artışı da içerir."
+        },
+        "B": {
+          "en": "This is the initial time value; the later time value is not zero.",
+          "tr": "Bu değer başlangıçtaki zaman değeridir; sonraki zaman değeri sıfır değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the change in the time value of a call between two dates.",
+          "tr": "İki tarih arasında alım opsiyonunun zaman değerindeki değişim isteniyor."
+        },
+        {
+          "en": "Time value is the premium minus the exercise value at each date; then take the difference.",
+          "tr": "Her tarihte zaman değeri prim eksi kullanım değeridir; sonra farkı al.",
+          "formula_latex": "\\text{TV}=c-\\max(0,S-X)"
+        },
+        {
+          "en": "Substitute the data: (c, S) = (7.50, 100) and (14.00, 112), X = 100.",
+          "tr": "Verileri koy: (c, S) = (7,50, 100) ve (14,00, 112), X = 100.",
+          "values": {
+            "X": 100
+          }
+        },
+        {
+          "en": "Initial TV = 7.50; later TV = 14.00 − 12.00 = 2.00.",
+          "tr": "Başlangıç ZD = 7,50; sonraki ZD = 14,00 − 12,00 = 2,00."
+        },
+        {
+          "en": "Change = 2.00 − 7.50 = TRY −5.50.",
+          "tr": "Değişim = 2,00 − 7,50 = −5,50 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "time-value",
+        "intrinsic-value",
+        "premium",
+        "in-the-money"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "14 [-] 12 [=]  (2)",
+          "[-] 7.5 [=]  (-5.5)"
+        ]
+      },
+      "numeric": {
+        "expr": "(14-max(0,112-100))-(7.5-max(0,100-100))",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-08-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The maximum value of a European call option at any time before expiry is:",
+      "stem_tr": "Bir Avrupa tipi alım opsiyonunun vadeden önce herhangi bir anda alabileceği en yüksek değer nedir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "the price of the underlying",
+          "tr": "dayanak varlığın fiyatı"
+        },
+        {
+          "key": "B",
+          "en": "the strike price",
+          "tr": "kullanım fiyatı"
+        },
+        {
+          "key": "C",
+          "en": "the present value of the strike price",
+          "tr": "kullanım fiyatının bugünkü değeri"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "A call gives the right to buy the underlying, so it cannot be worth more than owning the underlying itself.",
+      "explanation_tr": "Alım opsiyonu dayanak varlığı alma hakkıdır; dayanak varlığın kendisine sahip olmaktan daha değerli olamaz.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The strike price is not an upper limit; the call can be worth more than X when S is far above X.",
+          "tr": "Kullanım fiyatı bir üst sınır değildir; S, X'in çok üzerindeyse alım opsiyonu X'ten fazla değer taşıyabilir."
+        },
+        "C": {
+          "en": "The present value of the strike is the upper bound for a European put, not for a call.",
+          "tr": "Kullanım fiyatının bugünkü değeri alım için değil, Avrupa tipi satım opsiyonu için üst sınırdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "upper-bound",
+        "european-call",
+        "underlying-price",
+        "option"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a one-period model, a call option can be replicated by:",
+      "stem_tr": "Tek dönemli bir modelde bir alım opsiyonu hangisiyle replike edilebilir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "buying the underlying and buying a put on it",
+          "tr": "dayanak varlığı alıp üzerine satım opsiyonu satın alarak"
+        },
+        {
+          "key": "B",
+          "en": "buying a fraction of the underlying and borrowing at the risk-free rate",
+          "tr": "dayanak varlığın bir kısmını alıp risksiz faizle borçlanarak"
+        },
+        {
+          "key": "C",
+          "en": "selling the underlying forward and lending at the risk-free rate",
+          "tr": "dayanak varlığı forward satıp risksiz faizle borç vererek"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Holding a hedge-ratio fraction of the underlying, financed partly by borrowing, matches the call's payoffs in each state.",
+      "explanation_tr": "Hedge oranı kadar dayanak varlık alıp bir kısmını borçla finanse etmek, alım opsiyonunun her durumdaki getirisini yakalar.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "That is a protective put, whose payoff is not that of a call by itself.",
+          "tr": "Bu bir koruyucu satım opsiyonudur; tek başına alım opsiyonunun getirisini vermez."
+        },
+        "C": {
+          "en": "That combination gives a riskless payoff, not an option-like payoff.",
+          "tr": "Bu birleşim opsiyon benzeri değil, risksiz bir getiri sağlar."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "replicate",
+        "replication",
+        "hedge-ratio",
+        "borrow"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A European put has X = TRY 100 and one year to expiry. The share price is TRY 90, the annual risk-free rate is 5% and there are no dividends. The lower bound on the put value is closest to:",
+      "stem_tr": "Bir Avrupa tipi satım opsiyonunun X = 100 TRY ve vadesine bir yıl var. Pay fiyatı 90 TRY, yıllık risksiz faiz %5 ve temettü yok. Satım opsiyonu değerinin alt sınırı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 10.00",
+          "tr": "TRY 10,00",
+          "value": 10.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 0.00",
+          "tr": "TRY 0,00",
+          "value": 0.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 5.24",
+          "tr": "TRY 5,24",
+          "value": 5.24
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Lower bound = max(0, X/(1 + r)^T − S) = max(0, 95.24 − 90) = TRY 5.24.",
+      "explanation_tr": "Alt sınır = max(0, X/(1 + r)^T − S) = max(0, 95,24 − 90) = 5,24 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the exercise value X − S, which ignores the discounting of the strike for a European option.",
+          "tr": "Bu değer X − S kullanım değeridir; Avrupa tipi opsiyonda kullanım fiyatının iskontosunu yok sayar."
+        },
+        "B": {
+          "en": "Zero is the bound only when the discounted strike is below the share price; here it is above.",
+          "tr": "Sıfır, yalnızca iskonto edilmiş kullanım fiyatı pay fiyatının altındaysa sınırdır; burada üstündedir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the lower bound of a European put.",
+          "tr": "Avrupa tipi satım opsiyonunun alt sınırı isteniyor."
+        },
+        {
+          "en": "It is the larger of zero and the PV of the strike minus the share price.",
+          "tr": "Sıfır ile kullanım fiyatının bugünkü değeri eksi pay fiyatından büyük olanıdır.",
+          "formula_latex": "p_0\\ge\\max\\left(0,\\frac{X}{(1+r)^T}-S_0\\right)"
+        },
+        {
+          "en": "Substitute X = 100, r = 5%, T = 1, S_0 = 90.",
+          "tr": "X = 100, r = %5, T = 1, S_0 = 90 değerlerini koy.",
+          "values": {
+            "X": 100,
+            "r": 0.05,
+            "T": 1,
+            "S0": 90
+          }
+        },
+        {
+          "en": "PV of the strike = 100 / 1.05 = 95.24.",
+          "tr": "Kullanım fiyatının bugünkü değeri = 100 / 1,05 = 95,24."
+        },
+        {
+          "en": "Lower bound = 95.24 − 90 = TRY 5.24.",
+          "tr": "Alt sınır = 95,24 − 90 = 5,24 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "lower-bound",
+        "european-put",
+        "present-value",
+        "option"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [÷] 1.05 [=]  (95.238)",
+          "[-] 90 [=]  (5.238)"
+        ]
+      },
+      "numeric": {
+        "expr": "max(0,100/1.05-90)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-08-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "For a share that pays no dividends, an American call is generally not exercised before expiry. The best explanation is that early exercise:",
+      "stem_tr": "Temettü ödemeyen bir pay için Amerikan tipi alım opsiyonu genellikle vadeden önce kullanılmaz. En iyi açıklama, erken kullanımın şunu yapmasıdır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "gives up the time value and the interest earned on the strike price",
+          "tr": "zaman değerinden ve kullanım fiyatına işleyen faizden vazgeçirir"
+        },
+        {
+          "key": "B",
+          "en": "is not allowed under the terms of an American option",
+          "tr": "Amerikan tipi opsiyonun koşullarına göre izin verilmez"
+        },
+        {
+          "key": "C",
+          "en": "makes the call worth less than the share, which is impossible",
+          "tr": "opsiyonu paydan daha az değerli yapar, bu ise imkânsızdır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Selling the call or keeping it is worth more than exercising, since exercise gives up time value and lets the strike be paid early.",
+      "explanation_tr": "Opsiyonu elde tutmak ya da satmak kullanmaktan daha değerlidir; çünkü kullanım zaman değerini yok eder ve kullanım fiyatının erken ödenmesine yol açar.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "American options can be exercised at any time up to expiry; the point is that it is usually not optimal.",
+          "tr": "Amerikan tipi opsiyonlar vadeye kadar her an kullanılabilir; mesele bunun genellikle en iyi seçenek olmamasıdır."
+        },
+        "C": {
+          "en": "A call is always worth less than the share, so that is not why exercise is avoided.",
+          "tr": "Alım opsiyonu her zaman paydan daha az değerlidir; erken kullanımın bundan kaçınılmasının nedeni bu değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "american-option",
+        "early-exercise",
+        "time-value",
+        "dividend"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-c-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "All else equal, an increase in the price of the underlying will most likely:",
+      "stem_tr": "Diğer her şey sabitken dayanak varlık fiyatındaki bir artış büyük olasılıkla ne yapar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease the value of a call and increase the value of a put",
+          "tr": "alım opsiyonunun değerini azaltır, satım opsiyonunun değerini artırır"
+        },
+        {
+          "key": "B",
+          "en": "increase the value of a call and decrease the value of a put",
+          "tr": "alım opsiyonunun değerini artırır, satım opsiyonunun değerini azaltır"
+        },
+        {
+          "key": "C",
+          "en": "increase the value of both the call and the put",
+          "tr": "hem alım hem satım opsiyonunun değerini artırır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A call pays when the underlying is above the strike, a put when it is below, so they react in opposite directions.",
+      "explanation_tr": "Alım dayanak varlık kullanım fiyatının üstündeyken, satım altındayken ödeme yapar; bu yüzden zıt yönde tepki verirler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This reverses the effects: a higher underlying price helps the call and hurts the put.",
+          "tr": "Bu ifade etkileri tersine çevirir: daha yüksek dayanak fiyatı alıma yarar, satıma zarar verir."
+        },
+        "C": {
+          "en": "Only volatility lifts both; a higher underlying price lowers the put value.",
+          "tr": "İkisini birden artıran yalnızca oynaklıktır; yüksek dayanak fiyatı satımın değerini düşürür."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "underlying-price",
+        "call",
+        "put",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-c-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "All else equal, a longer time to expiry will most likely have what effect on an American option?",
+      "stem_tr": "Diğer her şey sabitken vadeye kalan sürenin uzaması bir Amerikan tipi opsiyon üzerinde büyük olasılıkla nasıl bir etki yapar?",
+      "options": [
+        {
+          "key": "A",
+          "en": "The value will decrease, because the buyer pays the premium for a longer period",
+          "tr": "Değer azalır; çünkü alıcı primi daha uzun bir süre için öder"
+        },
+        {
+          "key": "B",
+          "en": "The value will not decrease, since the longer option keeps every right of the shorter",
+          "tr": "Değer azalmaz; çünkü uzun vadeli opsiyon kısa vadelinin her hakkını korur"
+        },
+        {
+          "key": "C",
+          "en": "The value is unaffected, because only the strike price matters to the option value",
+          "tr": "Değer etkilenmez; çünkü opsiyon değeri için yalnızca kullanım fiyatı önemlidir"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "An American option can be exercised at any time, so the longer-dated option can do everything the shorter one can, and more.",
+      "explanation_tr": "Amerikan tipi opsiyon her an kullanılabilir; bu yüzden uzun vadeli opsiyon kısa vadelinin yapabildiği her şeyi ve daha fazlasını yapabilir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The premium is paid at the start in both cases; more time adds opportunity, it does not reduce value.",
+          "tr": "Prim iki durumda da başlangıçta ödenir; daha fazla süre fırsat ekler, değeri azaltmaz."
+        },
+        "C": {
+          "en": "Time value depends on the time left, so a longer life changes the value.",
+          "tr": "Zaman değeri kalan süreye bağlıdır; uzun süre değeri değiştirir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "american-option",
+        "time-value",
+        "expiry",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-c-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The underlying of an option is a commodity whose storage costs rise. All else equal, the call value and put value will most likely:",
+      "stem_tr": "Bir opsiyonun dayanak varlığı olan emtianın depolama maliyetleri artıyor. Diğer her şey sabitken alım ve satım opsiyonu değerleri büyük olasılıkla nasıl değişir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease for the call and increase for the put",
+          "tr": "alımda azalır, satımda artar"
+        },
+        {
+          "key": "B",
+          "en": "decrease for both",
+          "tr": "ikisinde de azalır"
+        },
+        {
+          "key": "C",
+          "en": "increase for the call and decrease for the put",
+          "tr": "alımda artar, satımda azalır"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Costs of holding the underlying act like higher interest: they raise the forward price, which lifts calls and lowers puts.",
+      "explanation_tr": "Dayanak varlığı tutma maliyetleri daha yüksek faiz gibi davranır: forward fiyatı artırır; bu alımları yükseltir, satımları düşürür.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Higher carrying costs raise the forward price of the underlying, which helps the call and hurts the put.",
+          "tr": "Daha yüksek taşıma maliyeti dayanak varlığın forward fiyatını artırır; bu alıma yarar, satıma zarar verir."
+        },
+        "B": {
+          "en": "The two options respond in opposite directions to a change in carrying costs.",
+          "tr": "İki opsiyon taşıma maliyeti değişimine zıt yönde tepki verir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "storage",
+        "cost-of-carry",
+        "forward-price",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-08-c-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-08",
+      "los_id": "DER-08-c",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst expects the expected volatility of a share to fall and also expects higher dividends during the life of a European call. All else equal, the value of the call will most likely:",
+      "stem_tr": "Bir analist, bir payın beklenen oynaklığının düşmesini ve bir Avrupa tipi alım opsiyonunun ömrü boyunca daha yüksek temettü ödenmesini bekliyor. Diğer her şey sabitken alım opsiyonunun değeri büyük olasılıkla nasıl olur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "decrease, because both changes lower the call value",
+          "tr": "azalır; çünkü iki değişiklik de alım değerini düşürür"
+        },
+        {
+          "key": "B",
+          "en": "increase, because higher dividends raise the call value",
+          "tr": "artar; çünkü yüksek temettü alım değerini artırır"
+        },
+        {
+          "key": "C",
+          "en": "be unchanged, because the two effects exactly offset",
+          "tr": "değişmez; çünkü iki etki birbirini tam dengeler"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Lower volatility reduces the chance of large gains, and dividends reduce the share price, so both hurt the call.",
+      "explanation_tr": "Düşük oynaklık büyük kazanç ihtimalini azaltır, temettü ise pay fiyatını düşürür; ikisi de alıma zarar verir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Higher dividends lower the share price after payment, which hurts a European call.",
+          "tr": "Yüksek temettü ödeme sonrasında pay fiyatını düşürür; bu Avrupa tipi alıma zarar verir."
+        },
+        "C": {
+          "en": "Both effects point in the same direction, so they add to each other and do not offset.",
+          "tr": "İki etki aynı yöndedir; birbirini dengelemez, toplanır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "volatility",
+        "dividend",
+        "european-call",
+        "all-else-equal"
+      ],
+      "pattern_ids": [
+        "all-else-equal"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

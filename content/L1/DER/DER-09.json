@@ -967,6 +967,740 @@
         "expr": "100+(15-8)*1.10",
         "unit": "TRY"
       }
+    },
+    {
+      "id": "DER-09-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A European call (X = TRY 60, one year to expiry) is priced at TRY 5. The share price is TRY 58 and the annual risk-free rate is 8%. There are no dividends. The price of the European put with the same strike and expiry is closest to:",
+      "stem_tr": "Bir Avrupa tipi alım opsiyonu (X = 60 TRY, vadesine bir yıl) 5 TRY'den fiyatlanıyor. Pay fiyatı 58 TRY ve yıllık risksiz faiz %8. Temettü yok. Aynı kullanım fiyatı ve vadeli Avrupa tipi satım opsiyonunun fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 7.00",
+          "tr": "TRY 7,00",
+          "value": 7.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 2.56",
+          "tr": "TRY 2,56",
+          "value": 2.56
+        },
+        {
+          "key": "C",
+          "en": "TRY 7.44",
+          "tr": "TRY 7,44",
+          "value": 7.44
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "p0 = c0 + X/(1 + r)^T − S0 = 5 + 55.56 − 58 = TRY 2.56.",
+      "explanation_tr": "p0 = c0 + X/(1 + r)^T − S0 = 5 + 55,56 − 58 = 2,56 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the strike price to its present value.",
+          "tr": "Bu değer kullanım fiyatını bugünkü değerine iskonto etmez."
+        },
+        "C": {
+          "en": "This reverses the signs of the share price and the discounted strike.",
+          "tr": "Bu değer pay fiyatı ile iskonto edilmiş kullanım fiyatının işaretlerini ters çevirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the put price from put-call parity.",
+          "tr": "Put-call paritesinden satım opsiyonu fiyatı isteniyor."
+        },
+        {
+          "en": "Parity says c + PV(X) = p + S.",
+          "tr": "Parite c + PV(X) = p + S der.",
+          "formula_latex": "c_0+\\frac{X}{(1+r)^T}=p_0+S_0"
+        },
+        {
+          "en": "Substitute c_0 = 5, X = 60, r = 8%, T = 1, S_0 = 58.",
+          "tr": "c_0 = 5, X = 60, r = %8, T = 1, S_0 = 58 değerlerini koy.",
+          "values": {
+            "c0": 5,
+            "X": 60,
+            "r": 0.08,
+            "T": 1,
+            "S0": 58
+          }
+        },
+        {
+          "en": "PV(X) = 60 / 1.08 = 55.56.",
+          "tr": "PV(X) = 60 / 1,08 = 55,56."
+        },
+        {
+          "en": "p_0 = 5 + 55.56 − 58 = TRY 2.56.",
+          "tr": "p_0 = 5 + 55,56 − 58 = 2,56 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-parity",
+        "present-value",
+        "european-put",
+        "european-call"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "60 [÷] 1.08 [=]  (55.556)",
+          "[+] 5 [-] 58 [=]  (2.556)"
+        ]
+      },
+      "numeric": {
+        "expr": "5+60/1.08-58",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-09-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A European put (X = TRY 42, six months to expiry) trades at TRY 3.80. The share price is TRY 40, the annual risk-free rate is 4% (annual compounding) and there are no dividends. The price of the European call with the same strike and expiry is closest to:",
+      "stem_tr": "Bir Avrupa tipi satım opsiyonu (X = 42 TRY, vadesine altı ay) 3,80 TRY'den işlem görüyor. Pay fiyatı 40 TRY, yıllık risksiz faiz %4 (yıllık bileşik) ve temettü yok. Aynı kullanım fiyatı ve vadeli Avrupa tipi alım opsiyonunun fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 1.80",
+          "tr": "TRY 1,80",
+          "value": 1.8
+        },
+        {
+          "key": "B",
+          "en": "TRY 4.99",
+          "tr": "TRY 4,99",
+          "value": 4.99
+        },
+        {
+          "key": "C",
+          "en": "TRY 2.61",
+          "tr": "TRY 2,61",
+          "value": 2.61
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "c0 = p0 + S0 − X/(1 + r)^T = 3.80 + 40 − 41.19 = TRY 2.61.",
+      "explanation_tr": "c0 = p0 + S0 − X/(1 + r)^T = 3,80 + 40 − 41,19 = 2,61 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the strike price to its present value.",
+          "tr": "Bu değer kullanım fiyatını bugünkü değerine iskonto etmez."
+        },
+        "B": {
+          "en": "This reverses the signs of the share price and the discounted strike.",
+          "tr": "Bu değer pay fiyatı ile iskonto edilmiş kullanım fiyatının işaretlerini ters çevirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the call price from put-call parity.",
+          "tr": "Put-call paritesinden alım opsiyonu fiyatı isteniyor."
+        },
+        {
+          "en": "Rearrange c + PV(X) = p + S to solve for the call.",
+          "tr": "c + PV(X) = p + S eşitliğini alım için çöz.",
+          "formula_latex": "c_0=p_0+S_0-\\frac{X}{(1+r)^T}"
+        },
+        {
+          "en": "Substitute p_0 = 3.80, S_0 = 40, X = 42, r = 4%, T = 0.5.",
+          "tr": "p_0 = 3,80, S_0 = 40, X = 42, r = %4, T = 0,5 değerlerini koy.",
+          "values": {
+            "p0": 3.8,
+            "S0": 40,
+            "X": 42,
+            "r": 0.04,
+            "T": 0.5
+          }
+        },
+        {
+          "en": "PV(X) = 42 / 1.04^0.5 = 41.19.",
+          "tr": "PV(X) = 42 / 1,04^0,5 = 41,19."
+        },
+        {
+          "en": "c_0 = 3.80 + 40 − 41.19 = TRY 2.61.",
+          "tr": "c_0 = 3,80 + 40 − 41,19 = 2,61 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-parity",
+        "present-value",
+        "european-call",
+        "european-put"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.04 [y^x] 0.5 [=]  (1.0198)",
+          "42 [÷] 1.0198 [=]  (41.185)",
+          "3.8 [+] 40 [-] 41.185 [=]  (2.615)"
+        ]
+      },
+      "numeric": {
+        "expr": "3.8+40-42/1.04**0.5",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-09-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Which combination replicates a long European put, according to put-call parity?",
+      "stem_tr": "Put-call paritesine göre hangi birleşim uzun bir Avrupa tipi satım opsiyonunu replike eder?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A long call, a long zero-coupon bond with face value X, and a short position in the underlying",
+          "tr": "Uzun alım opsiyonu, itibari değeri X olan uzun sıfır kuponlu tahvil ve dayanak varlıkta kısa pozisyon"
+        },
+        {
+          "key": "B",
+          "en": "A long call, a short zero-coupon bond with face value X, and a long position in the underlying",
+          "tr": "Uzun alım opsiyonu, itibari değeri X olan kısa sıfır kuponlu tahvil ve dayanak varlıkta uzun pozisyon"
+        },
+        {
+          "key": "C",
+          "en": "A short call, a long zero-coupon bond with face value X, and a short position in the underlying",
+          "tr": "Kısa alım opsiyonu, itibari değeri X olan uzun sıfır kuponlu tahvil ve dayanak varlıkta kısa pozisyon"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Rearranging parity gives p = c + PV(X) − S: long call, long bond and short underlying.",
+      "explanation_tr": "Pariteyi düzenlersek p = c + PV(X) − S bulunur: uzun alım, uzun tahvil ve kısa dayanak varlık.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The signs of the bond and the underlying are reversed; this does not replicate a long put.",
+          "tr": "Tahvil ve dayanak varlığın işaretleri ters alınmıştır; bu birleşim uzun satımı replike etmez."
+        },
+        "C": {
+          "en": "The call must be long, not short, to match the put's payoff.",
+          "tr": "Satımın getirisini yakalamak için alım kısa değil uzun olmalıdır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "put-call-parity",
+        "replicate",
+        "zero-coupon",
+        "synthetic"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-09-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "European options on a share have X = TRY 85 and one year to expiry. The call trades at TRY 6.50 and the put at TRY 7.00. The share price is TRY 80 and the annual risk-free rate is 6%. If the position is set up to lock in the mispricing, the arbitrage profit in present-value terms is closest to:",
+      "stem_tr": "Bir paya ait Avrupa tipi opsiyonların X = 85 TRY ve vadesine bir yıl var. Alım opsiyonu 6,50 TRY, satım opsiyonu 7,00 TRY'den işlem görüyor. Pay fiyatı 80 TRY ve yıllık risksiz faiz %6. Pozisyon bu fiyat hatasını kilitleyecek şekilde kurulursa bugünkü değer cinsinden arbitraj kârı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 0.50",
+          "tr": "TRY 0,50",
+          "value": 0.5
+        },
+        {
+          "key": "B",
+          "en": "TRY 4.81",
+          "tr": "TRY 4,81",
+          "value": 4.81
+        },
+        {
+          "key": "C",
+          "en": "TRY 0.31",
+          "tr": "TRY 0,31",
+          "value": 0.31
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Fiduciary call = 6.50 + 85/1.06 = 86.69. Protective put = 7.00 + 80 = 87.00. The gap is TRY 0.31.",
+      "explanation_tr": "Fiduciary call = 6,50 + 85/1,06 = 86,69. Koruyucu satım = 7,00 + 80 = 87,00. Fark 0,31 TRY'dir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is simply the difference between the put and call prices, which ignores the share price and the strike.",
+          "tr": "Bu değer yalnızca satım ve alım fiyatları arasındaki farktır; pay fiyatını ve kullanım fiyatını yok sayar."
+        },
+        "B": {
+          "en": "This is the difference between the strike and its present value, not the mispricing.",
+          "tr": "Bu değer kullanım fiyatı ile bugünkü değeri arasındaki farktır, fiyat hatası değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the present-value arbitrage profit when parity fails.",
+          "tr": "Parite bozulduğunda bugünkü değer cinsinden arbitraj kârı isteniyor."
+        },
+        {
+          "en": "Compare the fiduciary call (c + PV(X)) with the protective put (p + S); the gap is the profit.",
+          "tr": "Fiduciary call (c + PV(X)) ile koruyucu satımı (p + S) karşılaştır; fark kârdır.",
+          "formula_latex": "\\text{Gap}=|(p_0+S_0)-(c_0+PV(X))|"
+        },
+        {
+          "en": "Substitute c_0 = 6.50, p_0 = 7.00, S_0 = 80, X = 85, r = 6%.",
+          "tr": "c_0 = 6,50, p_0 = 7,00, S_0 = 80, X = 85, r = %6 değerlerini koy.",
+          "values": {
+            "c0": 6.5,
+            "p0": 7,
+            "S0": 80,
+            "X": 85,
+            "r": 0.06
+          }
+        },
+        {
+          "en": "Fiduciary call = 6.50 + 80.19 = 86.69; protective put = 87.00.",
+          "tr": "Fiduciary call = 6,50 + 80,19 = 86,69; koruyucu satım = 87,00."
+        },
+        {
+          "en": "The protective put is overpriced by TRY 0.31.",
+          "tr": "Koruyucu satım 0,31 TRY pahalıdır."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-parity",
+        "arbitrage",
+        "fiduciary-call",
+        "protective-put",
+        "mispricing"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "85 [÷] 1.06 [=]  (80.189)",
+          "[+] 6.5 [=]  (86.689)",
+          "87 [-] 86.689 [=]  (0.311)"
+        ]
+      },
+      "numeric": {
+        "expr": "abs((7+80)-(6.5+85/1.06))",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-09-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A one-year European call (X = TRY 92) costs TRY 5.20. The one-year forward price of the share is TRY 90 and the annual risk-free rate is 8%. The price of the European put with the same strike and expiry is closest to:",
+      "stem_tr": "Bir yıllık Avrupa tipi alım opsiyonu (X = 92 TRY) 5,20 TRY'dir. Payın bir yıllık forward fiyatı 90 TRY ve yıllık risksiz faiz %8. Aynı kullanım fiyatı ve vadeli Avrupa tipi satım opsiyonunun fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 7.20",
+          "tr": "TRY 7,20",
+          "value": 7.2
+        },
+        {
+          "key": "B",
+          "en": "TRY 7.05",
+          "tr": "TRY 7,05",
+          "value": 7.05
+        },
+        {
+          "key": "C",
+          "en": "TRY 3.35",
+          "tr": "TRY 3,35",
+          "value": 3.35
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "p0 = c0 + (X − F0(T)) / (1 + r)^T = 5.20 + 2 / 1.08 = TRY 7.05.",
+      "explanation_tr": "p0 = c0 + (X − F0(T)) / (1 + r)^T = 5,20 + 2 / 1,08 = 7,05 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the difference between the strike and the forward price.",
+          "tr": "Bu değer kullanım fiyatı ile forward fiyat arasındaki farkı iskonto etmez."
+        },
+        "C": {
+          "en": "This subtracts the discounted difference instead of adding it.",
+          "tr": "Bu değer iskonto edilmiş farkı eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the put price from put-call-forward parity.",
+          "tr": "Put-call-forward paritesinden satım opsiyonu fiyatı isteniyor."
+        },
+        {
+          "en": "Parity says c − p = (F − X) / (1 + r)^T.",
+          "tr": "Parite c − p = (F − X) / (1 + r)^T der.",
+          "formula_latex": "p_0=c_0+\\frac{X-F_0(T)}{(1+r)^T}"
+        },
+        {
+          "en": "Substitute c_0 = 5.20, X = 92, F_0(T) = 90, r = 8%, T = 1.",
+          "tr": "c_0 = 5,20, X = 92, F_0(T) = 90, r = %8, T = 1 değerlerini koy.",
+          "values": {
+            "c0": 5.2,
+            "X": 92,
+            "F": 90,
+            "r": 0.08,
+            "T": 1
+          }
+        },
+        {
+          "en": "(92 − 90) / 1.08 = 1.85.",
+          "tr": "(92 − 90) / 1,08 = 1,85."
+        },
+        {
+          "en": "p_0 = 5.20 + 1.85 = TRY 7.05.",
+          "tr": "p_0 = 5,20 + 1,85 = 7,05 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-forward-parity",
+        "forward-price",
+        "present-value",
+        "european-put"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "2 [÷] 1.08 [=]  (1.852)",
+          "[+] 5.2 [=]  (7.05)"
+        ]
+      },
+      "numeric": {
+        "expr": "5.2+(92-90)/1.08",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-09-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A six-month European put (X = TRY 290) costs TRY 15. The six-month forward price of the share is TRY 300 and the annual risk-free rate is 10% (annual compounding). The price of the European call with the same strike and expiry is closest to:",
+      "stem_tr": "Altı aylık Avrupa tipi bir satım opsiyonu (X = 290 TRY) 15 TRY'dir. Payın altı aylık forward fiyatı 300 TRY ve yıllık risksiz faiz %10 (yıllık bileşik). Aynı kullanım fiyatı ve vadeli Avrupa tipi alım opsiyonunun fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 24.53",
+          "tr": "TRY 24,53",
+          "value": 24.53
+        },
+        {
+          "key": "B",
+          "en": "TRY 25.00",
+          "tr": "TRY 25,00",
+          "value": 25.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 5.47",
+          "tr": "TRY 5,47",
+          "value": 5.47
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "c0 = p0 + (F0(T) − X) / (1 + r)^T = 15 + 10 / 1.10^0.5 = TRY 24.53.",
+      "explanation_tr": "c0 = p0 + (F0(T) − X) / (1 + r)^T = 15 + 10 / 1,10^0,5 = 24,53 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This does not discount the forward-minus-strike difference.",
+          "tr": "Bu değer forward eksi kullanım fiyatı farkını iskonto etmez."
+        },
+        "C": {
+          "en": "This subtracts the discounted difference instead of adding it.",
+          "tr": "Bu değer iskonto edilmiş farkı eklemek yerine çıkarır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the call price from put-call-forward parity.",
+          "tr": "Put-call-forward paritesinden alım opsiyonu fiyatı isteniyor."
+        },
+        {
+          "en": "Rearrange c − p = (F − X) / (1 + r)^T.",
+          "tr": "c − p = (F − X) / (1 + r)^T eşitliğini düzenle.",
+          "formula_latex": "c_0=p_0+\\frac{F_0(T)-X}{(1+r)^T}"
+        },
+        {
+          "en": "Substitute p_0 = 15, F_0(T) = 300, X = 290, r = 10%, T = 0.5.",
+          "tr": "p_0 = 15, F_0(T) = 300, X = 290, r = %10, T = 0,5 değerlerini koy.",
+          "values": {
+            "p0": 15,
+            "F": 300,
+            "X": 290,
+            "r": 0.1,
+            "T": 0.5
+          }
+        },
+        {
+          "en": "(300 − 290) / 1.10^0.5 = 9.53.",
+          "tr": "(300 − 290) / 1,10^0,5 = 9,53."
+        },
+        {
+          "en": "c_0 = 15 + 9.53 = TRY 24.53.",
+          "tr": "c_0 = 15 + 9,53 = 24,53 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-forward-parity",
+        "forward-price",
+        "present-value",
+        "european-call"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.1 [y^x] 0.5 [=]  (1.0488)",
+          "10 [÷] 1.0488 [=]  (9.535)",
+          "[+] 15 [=]  (24.53)"
+        ]
+      },
+      "numeric": {
+        "expr": "15+(300-290)/1.1**0.5",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-09-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "European call and put options on the same share have the same strike X and expiry. The call is priced above the put. This most likely means that the forward price of the share for that expiry is:",
+      "stem_tr": "Aynı paya ait Avrupa tipi alım ve satım opsiyonlarının kullanım fiyatı X ve vadesi aynıdır. Alım opsiyonu satımdan yüksek fiyatlanıyor. Bu durum büyük olasılıkla payın o vadeye ilişkin forward fiyatının şu olduğunu gösterir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "below the strike price X",
+          "tr": "kullanım fiyatı X'in altında"
+        },
+        {
+          "key": "B",
+          "en": "above the strike price X",
+          "tr": "kullanım fiyatı X'in üzerinde"
+        },
+        {
+          "key": "C",
+          "en": "exactly equal to the strike price X, with a call premium of zero",
+          "tr": "kullanım fiyatı X'e tam eşit; alım primi sıfır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Parity gives c − p = (F − X)/(1 + r)^T; a positive difference requires F > X.",
+      "explanation_tr": "Parite c − p = (F − X)/(1 + r)^T verir; pozitif fark F > X gerektirir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "If the forward were below X, the put would be worth more than the call.",
+          "tr": "Forward X'in altında olsaydı satım alımdan değerli olurdu."
+        },
+        "C": {
+          "en": "When F equals X, the call and put are equal in price, and neither premium is zero.",
+          "tr": "F, X'e eşitse alım ve satım aynı fiyatlanır; hiçbir prim sıfır değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "put-call-forward-parity",
+        "forward-price",
+        "strike",
+        "european-call"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-09-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-09",
+      "los_id": "DER-09-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A share has a spot price of TRY 100. The annual risk-free rate is 6% and the share pays no dividends, so the one-year forward price equals S0(1 + r). A one-year European call with X = TRY 104 costs TRY 7.50. The price of the European put with the same strike and expiry is closest to:",
+      "stem_tr": "Bir payın spot fiyatı 100 TRY. Yıllık risksiz faiz %6 ve pay temettü ödemiyor; dolayısıyla bir yıllık forward fiyat S0(1 + r)'ye eşittir. X = 104 TRY olan bir yıllık Avrupa tipi alım opsiyonu 7,50 TRY'dir. Aynı kullanım fiyatı ve vadeli Avrupa tipi satım opsiyonunun fiyatı aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 5.50",
+          "tr": "TRY 5,50",
+          "value": 5.5
+        },
+        {
+          "key": "B",
+          "en": "TRY 9.39",
+          "tr": "TRY 9,39",
+          "value": 9.39
+        },
+        {
+          "key": "C",
+          "en": "TRY 5.61",
+          "tr": "TRY 5,61",
+          "value": 5.61
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F0 = 100 × 1.06 = 106. p0 = 7.50 + (104 − 106)/1.06 = 7.50 − 1.89 = TRY 5.61.",
+      "explanation_tr": "F0 = 100 × 1,06 = 106. p0 = 7,50 + (104 − 106)/1,06 = 7,50 − 1,89 = 5,61 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the strike-minus-forward difference.",
+          "tr": "Bu değer kullanım fiyatı eksi forward farkını iskonto etmez."
+        },
+        "B": {
+          "en": "This adds the discounted difference with the wrong sign (it should be subtracted).",
+          "tr": "Bu değer iskonto edilmiş farkı yanlış işaretle ekler (çıkarılmalıdır)."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the put price; first find the forward price, then use put-call-forward parity.",
+          "tr": "Satım fiyatı isteniyor; önce forward fiyatı bul, sonra put-call-forward paritesini kullan."
+        },
+        {
+          "en": "F_0 = S_0(1 + r), then p_0 = c_0 + (X − F_0)/(1 + r).",
+          "tr": "F_0 = S_0(1 + r); sonra p_0 = c_0 + (X − F_0)/(1 + r).",
+          "formula_latex": "p_0=c_0+\\frac{X-F_0(T)}{1+r}"
+        },
+        {
+          "en": "Substitute S_0 = 100, r = 6%, X = 104, c_0 = 7.50.",
+          "tr": "S_0 = 100, r = %6, X = 104, c_0 = 7,50 değerlerini koy.",
+          "values": {
+            "S0": 100,
+            "r": 0.06,
+            "X": 104,
+            "c0": 7.5
+          }
+        },
+        {
+          "en": "F_0 = 106, so (104 − 106) / 1.06 = −1.89.",
+          "tr": "F_0 = 106, dolayısıyla (104 − 106) / 1,06 = −1,89."
+        },
+        {
+          "en": "p_0 = 7.50 − 1.89 = TRY 5.61.",
+          "tr": "p_0 = 7,50 − 1,89 = 5,61 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "put-call-forward-parity",
+        "forward-price",
+        "no-arbitrage",
+        "european-put"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "100 [×] 1.06 [=]  (106)",
+          "104 [-] 106 [=] [÷] 1.06 [=]  (-1.887)",
+          "[+] 7.5 [=]  (5.613)"
+        ]
+      },
+      "numeric": {
+        "expr": "7.5+(104-100*1.06)/1.06",
+        "unit": "TRY"
+      }
     }
   ]
 }

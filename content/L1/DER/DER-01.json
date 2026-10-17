@@ -744,6 +744,479 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-01-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "The date on which a derivative contract ends and its final obligations are settled is called the:",
+      "stem_tr": "Bir türev sözleşmesinin sona erdiği ve son yükümlülüklerin yerine getirildiği tarih aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "strike price",
+          "tr": "kullanım fiyatı"
+        },
+        {
+          "key": "B",
+          "en": "expiration date",
+          "tr": "vade (itfa) tarihi"
+        },
+        {
+          "key": "C",
+          "en": "notional amount",
+          "tr": "itibari tutar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The expiration (or maturity) date is when the contract ends and settlement takes place.",
+      "explanation_tr": "Vade tarihi, sözleşmenin sona erip uzlaşmanın yapıldığı tarihtir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The strike price is the price at which the underlying may be bought or sold, not a date.",
+          "tr": "Kullanım fiyatı dayanak varlığın alınıp satılabileceği fiyattır; bir tarih değildir."
+        },
+        "C": {
+          "en": "The notional amount is the contract size used to compute payments, not a date.",
+          "tr": "İtibari tutar ödemelerin hesabında kullanılan sözleşme büyüklüğüdür; bir tarih değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "expiration",
+        "settlement",
+        "term",
+        "contract"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Which statement about cash settlement of a derivative is most accurate?",
+      "stem_tr": "Bir türevin nakit uzlaşması ile ilgili aşağıdaki ifadelerden hangisi en doğrudur?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Only the value difference is paid in cash and the underlying is not delivered.",
+          "tr": "Yalnızca değer farkı nakit ödenir, dayanak varlık teslim edilmez."
+        },
+        {
+          "key": "B",
+          "en": "The buyer must always receive the underlying asset at expiry, whatever the contract says.",
+          "tr": "Alıcı, sözleşme ne derse desin, vadede dayanak varlık teslim almak zorundadır."
+        },
+        {
+          "key": "C",
+          "en": "The long party pays the full price of the underlying in cash.",
+          "tr": "Uzun taraf dayanak varlığın tüm bedelini nakit öder."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "With cash settlement the parties exchange only the net gain or loss in cash, so no underlying changes hands.",
+      "explanation_tr": "Nakit uzlaşmada taraflar yalnızca net kâr ya da zararı nakit olarak öder; dayanak varlık el değiştirmez.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "That describes physical delivery, not cash settlement.",
+          "tr": "Bu ifade fiziki teslimi anlatır, nakit uzlaşmayı değil."
+        },
+        "C": {
+          "en": "Under cash settlement only the net difference moves, not the full price of the underlying.",
+          "tr": "Nakit uzlaşmada yalnızca net fark el değiştirir, dayanak varlığın tam bedeli değil."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "cash-settled",
+        "settle",
+        "price-difference",
+        "physical-delivery"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A bank and a corporate client agree on a swap with a notional amount of TRY 50 million. The notional amount is never exchanged. It is used to:",
+      "stem_tr": "Bir banka ve bir şirket müşterisi 50 milyon TRY itibari tutarlı bir swap yapıyor. İtibari tutar hiç el değiştirmiyor. Bu tutar ne için kullanılır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "pay for the underlying asset delivered at expiry",
+          "tr": "vadede teslim edilen dayanak varlık için ödeme yapmak"
+        },
+        {
+          "key": "B",
+          "en": "serve as the collateral posted by the client",
+          "tr": "müşterinin yatırdığı teminat olarak hizmet etmek"
+        },
+        {
+          "key": "C",
+          "en": "compute the periodic payments between the parties",
+          "tr": "taraflar arasındaki dönemsel ödemeleri hesaplamak"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The notional is a reference amount; payments such as interest are computed by applying rates to it.",
+      "explanation_tr": "İtibari tutar bir referans tutardır; faiz gibi ödemeler oranların bu tutara uygulanmasıyla hesaplanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Nothing is purchased with the notional; it is only a reference amount.",
+          "tr": "İtibari tutarla bir alım yapılmaz; yalnızca referans tutardır."
+        },
+        "B": {
+          "en": "Collateral or margin is a separate arrangement; the notional is not a deposit.",
+          "tr": "Teminat ya da marjin ayrı bir düzenlemedir; itibari tutar bir depozito değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "notional",
+        "swap",
+        "term",
+        "cash-flow"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "An analyst claims that a derivative's value is unrelated to its underlying because the contract is a separate agreement. The most appropriate response is that the claim is:",
+      "stem_tr": "Bir analist, sözleşme ayrı bir anlaşma olduğundan türevin değerinin dayanak varlıkla ilgisi olmadığını söylüyor. En uygun yanıt, bu iddianın şu olduğudur:",
+      "options": [
+        {
+          "key": "A",
+          "en": "correct, because the contract terms alone fix the value over its life",
+          "tr": "doğru, çünkü yalnızca sözleşme koşulları değeri ömrü boyunca belirler"
+        },
+        {
+          "key": "B",
+          "en": "incorrect, because the contract's value is derived from the underlying",
+          "tr": "yanlış, çünkü sözleşmenin değeri dayanak varlıktan türetilir"
+        },
+        {
+          "key": "C",
+          "en": "correct, because only the premium determines the derivative's value",
+          "tr": "doğru, çünkü türevin değerini yalnızca prim belirler"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A derivative's value depends on the underlying; the contract only specifies how the underlying translates into a payoff.",
+      "explanation_tr": "Türevin değeri dayanak varlığa bağlıdır; sözleşme yalnızca dayanak varlığın getiriye nasıl dönüşeceğini belirler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The terms define the payoff formula, but the value still moves with the underlying.",
+          "tr": "Koşullar getiri formülünü tanımlar; ancak değer yine dayanak varlıkla birlikte değişir."
+        },
+        "C": {
+          "en": "The premium is a price paid at the start; it does not drive later value changes.",
+          "tr": "Prim başlangıçta ödenen bir bedeldir; sonraki değer değişimlerini belirlemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "derivative",
+        "underlying",
+        "value",
+        "contract"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "Which of the following is most likely a feature of an OTC derivative?",
+      "stem_tr": "Aşağıdakilerden hangisi büyük olasılıkla bir tezgahüstü (OTC) türevin özelliğidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Contract terms are negotiated between the two parties.",
+          "tr": "Sözleşme koşulları iki taraf arasında pazarlıkla belirlenir."
+        },
+        {
+          "key": "B",
+          "en": "Contract terms are fixed by an exchange and cannot be changed by the parties.",
+          "tr": "Sözleşme koşullarını borsa belirler ve taraflar bunları değiştiremez."
+        },
+        {
+          "key": "C",
+          "en": "A clearinghouse stands between buyer and seller.",
+          "tr": "Alıcı ile satıcı arasında bir takas kuruluşu bulunur."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "In OTC markets the two parties tailor terms such as size, date and underlying to their needs.",
+      "explanation_tr": "OTC piyasada taraflar büyüklük, tarih ve dayanak varlık gibi koşulları ihtiyaçlarına göre belirler.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Fixed, standardized terms are typical of exchange-traded contracts.",
+          "tr": "Sabit, standart koşullar borsada işlem gören sözleşmelere özgüdür."
+        },
+        "C": {
+          "en": "A clearinghouse is typical of exchange trading; OTC deals are usually bilateral.",
+          "tr": "Takas kuruluşu borsa işlemlerine özgüdür; OTC işlemler genellikle ikili anlaşmadır."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "over-the-counter",
+        "tailor",
+        "customized",
+        "standardized"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Compared with OTC derivatives, exchange-traded derivatives most likely have:",
+      "stem_tr": "OTC türevlerle karşılaştırıldığında borsada işlem gören türevlerin sahip olma olasılığı en yüksek özellik hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "more flexibility and higher counterparty risk",
+          "tr": "daha fazla esneklik ve daha yüksek karşı taraf riski"
+        },
+        {
+          "key": "B",
+          "en": "more flexibility and lower counterparty risk",
+          "tr": "daha fazla esneklik ve daha düşük karşı taraf riski"
+        },
+        {
+          "key": "C",
+          "en": "less flexibility but lower counterparty risk",
+          "tr": "daha az esneklik ancak daha düşük karşı taraf riski"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Standardization limits customization, while the clearinghouse and daily margin reduce counterparty risk.",
+      "explanation_tr": "Standartlaşma özelleştirmeyi sınırlar; takas kuruluşu ve günlük marjin ise karşı taraf riskini azaltır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "Exchange-traded contracts are standardized, so they have less, not more, flexibility.",
+          "tr": "Borsa sözleşmeleri standarttır; yani esneklikleri daha fazla değil, daha azdır."
+        },
+        "B": {
+          "en": "Lower counterparty risk is correct, but standardized contracts are less flexible.",
+          "tr": "Düşük karşı taraf riski doğrudur; ancak standart sözleşmeler daha az esnektir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "standardized",
+        "flexible",
+        "counterparty-risk",
+        "exchange-traded"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "Which of the following is the most likely reason that OTC derivatives carry greater credit risk than exchange-traded derivatives?",
+      "stem_tr": "OTC türevlerin borsada işlem gören türevlere göre daha yüksek kredi riski taşımasının en olası nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "Each party bears the risk that the other fails to pay.",
+          "tr": "Her taraf, diğerinin ödeme yapamama riskini üstlenir."
+        },
+        {
+          "key": "B",
+          "en": "A clearinghouse guarantees every trade and collects margin from both sides.",
+          "tr": "Her işlemi bir takas kuruluşu garanti eder ve iki taraftan da marjin toplar."
+        },
+        {
+          "key": "C",
+          "en": "Positions are marked to market every day.",
+          "tr": "Pozisyonlar her gün piyasa değerine getirilir."
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Without a central counterparty, each side depends on the other's ability to pay.",
+      "explanation_tr": "Merkezi karşı taraf olmadığında her taraf diğerinin ödeme gücüne bağımlıdır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "A clearinghouse guarantee lowers credit risk and is typical of exchange trading, not OTC.",
+          "tr": "Takas kuruluşu garantisi kredi riskini azaltır ve borsa işlemlerine özgüdür, OTC'ye değil."
+        },
+        "C": {
+          "en": "Daily mark-to-market reduces credit risk; it is not why OTC risk is higher.",
+          "tr": "Günlük piyasa değerlemesi kredi riskini azaltır; OTC riskinin yüksek olma nedeni değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "credit-risk",
+        "counterparty-risk",
+        "clearinghouse",
+        "guarantee"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-01-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-01",
+      "los_id": "DER-01-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A fund manager wants a position that exactly matches a TRY 37 million exposure to a particular share on a date of the fund's choosing. Which choice is the most appropriate, and what is its main trade-off?",
+      "stem_tr": "Bir fon yöneticisi, belirli bir paya ilişkin 37 milyon TRY'lik riski, kendi seçtiği bir tarihte tam olarak karşılayan bir pozisyon istiyor. En uygun tercih ve ana ödünleşim hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "en": "A listed contract, accepting a possible mismatch in size and date",
+          "tr": "Boyut ve tarihte olası uyumsuzluk kabul edilerek borsa sözleşmesi"
+        },
+        {
+          "key": "B",
+          "en": "A listed contract, accepting that terms can be renegotiated at any time",
+          "tr": "Koşulların her an yeniden pazarlık edilebileceği kabul edilerek borsa sözleşmesi"
+        },
+        {
+          "key": "C",
+          "en": "An OTC contract, accepting higher counterparty risk",
+          "tr": "Daha yüksek karşı taraf riski kabul edilerek OTC sözleşme"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "A tailor-made size and date points to an OTC contract, whose cost is credit exposure to the counterparty.",
+      "explanation_tr": "Özel boyut ve tarih OTC sözleşmeyi gerektirir; bunun bedeli karşı tarafa kredi maruziyetidir.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "A listed contract offers low credit risk, but the manager wants an exact match of size and date, which standard contracts cannot give.",
+          "tr": "Borsa sözleşmesi düşük kredi riski sunar; ancak yönetici boyut ve tarihte tam uyum istiyor, standart sözleşmeler bunu sağlayamaz."
+        },
+        "B": {
+          "en": "Listed contract terms are set by the exchange and cannot be renegotiated by the parties.",
+          "tr": "Borsa sözleşmesi koşulları borsa tarafından belirlenir; taraflar yeniden pazarlık edemez."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "over-the-counter",
+        "exposure",
+        "mismatch",
+        "counterparty-risk",
+        "tailor"
+      ],
+      "pattern_ids": [
+        "most-appropriate"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
     }
   ]
 }

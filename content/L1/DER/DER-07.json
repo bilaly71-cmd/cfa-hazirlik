@@ -857,6 +857,642 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-07-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "recall",
+      "stem_en": "In a plain vanilla interest rate swap, the party that pays the floating rate:",
+      "stem_tr": "Klasik (plain vanilla) bir faiz swapında değişken faiz ödeyen taraf:",
+      "options": [
+        {
+          "key": "A",
+          "en": "receives the fixed rate",
+          "tr": "sabit faizi alır"
+        },
+        {
+          "key": "B",
+          "en": "also pays the fixed rate",
+          "tr": "sabit faizi de öder"
+        },
+        {
+          "key": "C",
+          "en": "receives a premium from the counterparty at inception",
+          "tr": "başlangıçta karşı taraftan prim alır"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "The floating payer is the receive-fixed party; the two legs are exchanged on the notional.",
+      "explanation_tr": "Değişken ödeyen taraf sabit alan taraftır; iki bacak itibari tutar üzerinden değiştirilir.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "Each party pays one leg and receives the other; both legs are not paid by one side.",
+          "tr": "Her taraf bir bacağı öder, diğerini alır; iki bacak da aynı tarafça ödenmez."
+        },
+        "C": {
+          "en": "A swap normally has no upfront premium because it starts with zero value.",
+          "tr": "Swap sıfır değerle başladığından normalde peşin prim yoktur."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "interest-rate-swap",
+        "floating-rate",
+        "fixed-rate",
+        "pay-fixed"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-07-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The yield curve is flat. Compared with the forward rates for the individual periods, the fixed rate of a swap is most likely:",
+      "stem_tr": "Getiri eğrisi yataydır. Bir swapın sabit faizi, tek tek dönemlere ait forward faizlerle karşılaştırıldığında büyük olasılıkla nasıldır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "above all of the forward rates",
+          "tr": "tüm forward faizlerin üzerindedir"
+        },
+        {
+          "key": "B",
+          "en": "equal to each of them",
+          "tr": "her birine eşittir"
+        },
+        {
+          "key": "C",
+          "en": "below all of the forward rates",
+          "tr": "tüm forward faizlerin altındadır"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "The swap rate is a kind of average of the forward rates, so with equal forwards it takes the same value.",
+      "explanation_tr": "Swap faizi forward faizlerin bir tür ortalamasıdır; forwardlar eşitse aynı değeri alır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "With a flat curve all forward rates are equal, so the swap rate cannot lie above all of them.",
+          "tr": "Eğri yataysa tüm forward faizler eşittir; swap faizi hepsinin üzerinde olamaz."
+        },
+        "C": {
+          "en": "With a flat curve all forward rates are equal, so the swap rate cannot lie below all of them.",
+          "tr": "Eğri yataysa tüm forward faizler eşittir; swap faizi hepsinin altında olamaz."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap-rate",
+        "forward-rate",
+        "yield-curve",
+        "constant"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-07-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The yield curve is upward sloping when a pay-fixed swap is entered. In the early periods, compared with the floating payments expected, the pay-fixed party is most likely:",
+      "stem_tr": "Getiri eğrisi yukarı eğimliyken sabit ödeyen bir swap yapılıyor. İlk dönemlerde, beklenen değişken ödemelerle karşılaştırıldığında sabit ödeyen taraf büyük olasılıkla:",
+      "options": [
+        {
+          "key": "A",
+          "en": "a net payer, with net receipts expected in later periods",
+          "tr": "net ödeyendir; sonraki dönemlerde net alım beklenir"
+        },
+        {
+          "key": "B",
+          "en": "a net receiver, with net payments expected in later periods",
+          "tr": "net alandır; sonraki dönemlerde net ödeme beklenir"
+        },
+        {
+          "key": "C",
+          "en": "a net payer in every period",
+          "tr": "her dönemde net ödeyendir"
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Early forward rates are below the single swap rate and later ones are above it, so the fixed payer overpays early and is repaid later.",
+      "explanation_tr": "İlk dönem forward faizleri tek swap faizinin altında, sonrakiler üstündedir; sabit ödeyen başta fazla öder, sonra geri alır.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is the pattern for the receive-fixed party in an upward-sloping curve, not for the payer of fixed.",
+          "tr": "Bu, yukarı eğimli eğride sabit ödeyen tarafın değil sabit alan tarafın görünümüdür."
+        },
+        "C": {
+          "en": "Over the life the swap has zero value at the start, so net payments in early periods must be offset by later net receipts.",
+          "tr": "Swap başlangıçta sıfır değerlidir; ilk dönemlerdeki net ödemeler sonraki net alımlarla dengelenmelidir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "yield-curve",
+        "upward-sloping",
+        "pay-fixed",
+        "swap-rate"
+      ],
+      "pattern_ids": [
+        "most-likely"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-07-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "The fixed rate of an interest rate swap can best be described as:",
+      "stem_tr": "Bir faiz swapının sabit faizi en iyi şu şekilde tanımlanabilir:",
+      "options": [
+        {
+          "key": "A",
+          "en": "an unweighted average of the spot rates for all of the same maturities",
+          "tr": "aynı vadelerdeki tüm spot faizlerin ağırlıksız ortalaması"
+        },
+        {
+          "key": "B",
+          "en": "the highest forward rate found anywhere in the strip of forward rates",
+          "tr": "forward faiz dizisinde bulunan en yüksek forward faiz"
+        },
+        {
+          "key": "C",
+          "en": "a weighted average of the forward rates, with discount factors as weights",
+          "tr": "iskonto faktörlerinin ağırlık olduğu, forward faizlerin ağırlıklı ortalaması"
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "The swap rate sets the present value of fixed payments equal to the present value of the floating payments implied by the forwards.",
+      "explanation_tr": "Swap faizi, sabit ödemelerin bugünkü değerini forwardların ima ettiği değişken ödemelerin bugünkü değerine eşitler.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The swap rate is built from forward rates and discount factors, not from a simple average of spot rates.",
+          "tr": "Swap faizi forward faizlerden ve iskonto faktörlerinden oluşur; spot faizlerin basit ortalaması değildir."
+        },
+        "B": {
+          "en": "The swap rate lies between the lowest and the highest forward rate, not at the highest.",
+          "tr": "Swap faizi en düşük ve en yüksek forward faiz arasındadır; en yüksek değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "swap-rate",
+        "forward-rate",
+        "discount-factor",
+        "strip"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-07-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A pay-fixed swap has a notional of TRY 8 million, a fixed rate of 6.0% and annual payments. The floating rate for the period is set at 7.5%. The net payment received by the fixed-rate payer at settlement is closest to:",
+      "stem_tr": "Sabit ödeyen bir swapın itibari tutarı 8 milyon TRY, sabit faizi %6,0 ve ödemeleri yıllıktır. Dönem için değişken faiz %7,5 olarak belirlenmiştir. Sabit ödeyen tarafın uzlaşmada aldığı net ödeme aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY −120,000",
+          "tr": "TRY −120.000",
+          "value": -120000.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 120,000",
+          "tr": "TRY 120.000",
+          "value": 120000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 600,000",
+          "tr": "TRY 600.000",
+          "value": 600000.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Net = 8,000,000 × (7.5% − 6.0%) = TRY 120,000 received by the fixed payer.",
+      "explanation_tr": "Net = 8.000.000 × (%7,5 − %6,0) = sabit ödeyenin aldığı 120.000 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The fixed payer receives the higher floating rate, so the net amount is received, not paid.",
+          "tr": "Sabit ödeyen daha yüksek olan değişken faizi alır; net tutar ödenmez, alınır."
+        },
+        "C": {
+          "en": "This is the gross floating payment; only the net difference is exchanged.",
+          "tr": "Bu değer brüt değişken ödemedir; yalnızca net fark el değiştirir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the net swap payment to the fixed-rate payer.",
+          "tr": "Sabit ödeyen tarafın net swap ödemesi isteniyor."
+        },
+        {
+          "en": "The fixed payer receives floating and pays fixed, so the net is the rate difference on the notional.",
+          "tr": "Sabit ödeyen değişkeni alır, sabiti öder; net tutar itibari tutar üzerindeki faiz farkıdır.",
+          "formula_latex": "\\text{Net}=N\\,(R_{float}-R_{fixed})"
+        },
+        {
+          "en": "Substitute N = 8,000,000, R_float = 7.5%, R_fixed = 6.0%.",
+          "tr": "N = 8.000.000, R_float = %7,5, R_fixed = %6,0 değerlerini koy.",
+          "values": {
+            "N": 8000000,
+            "R_float": 0.075,
+            "R_fixed": 0.06
+          }
+        },
+        {
+          "en": "Rate difference = 1.5%.",
+          "tr": "Faiz farkı = %1,5."
+        },
+        {
+          "en": "Net = TRY 120,000 received.",
+          "tr": "Net = alınan 120.000 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "swap",
+        "pay-fixed",
+        "reset",
+        "notional"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "8000000 [×] 0.015 [=]  (120000)"
+        ]
+      },
+      "numeric": {
+        "expr": "8000000*(0.075-0.06)",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-07-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A two-year annual-pay interest rate swap is priced with discount factors of 0.9615 for year 1 and 0.8900 for year 2. The swap fixed rate is closest to:",
+      "stem_tr": "İki yıllık, yıllık ödemeli bir faiz swapı; 1. yıl için 0,9615 ve 2. yıl için 0,8900 iskonto faktörleriyle fiyatlanıyor. Swap sabit faizi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "6.00%",
+          "tr": "%6,00",
+          "value": 6.0
+        },
+        {
+          "key": "B",
+          "en": "5.94%",
+          "tr": "%5,94",
+          "value": 5.94
+        },
+        {
+          "key": "C",
+          "en": "11.00%",
+          "tr": "%11,00",
+          "value": 11.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "Swap rate = (1 − 0.8900) / (0.9615 + 0.8900) = 0.1100 / 1.8515 = 5.94%.",
+      "explanation_tr": "Swap faizi = (1 − 0,8900) / (0,9615 + 0,8900) = 0,1100 / 1,8515 = %5,94.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the two-year spot rate (1 / √0.8900 − 1), not the swap rate.",
+          "tr": "Bu değer iki yıllık spot faizdir (1 / √0,8900 − 1), swap faizi değildir."
+        },
+        "C": {
+          "en": "This is 1 − DF₂ expressed as a percentage and is not divided by the sum of the discount factors.",
+          "tr": "Bu değer 1 − DF₂'nin yüzdesidir; iskonto faktörleri toplamına bölünmemiştir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the par swap fixed rate from discount factors.",
+          "tr": "İskonto faktörlerinden par swap sabit faizi isteniyor."
+        },
+        {
+          "en": "Set the PV of fixed payments equal to the PV of floating payments, which is 1 − DF_n.",
+          "tr": "Sabit ödemelerin bugünkü değerini, 1 − DF_n olan değişken ödemelerin bugünkü değerine eşitle.",
+          "formula_latex": "R=\\frac{1-DF_n}{\\sum DF_i}"
+        },
+        {
+          "en": "Substitute DF₁ = 0.9615 and DF₂ = 0.8900.",
+          "tr": "DF₁ = 0,9615 ve DF₂ = 0,8900 değerlerini koy.",
+          "values": {
+            "DF1": 0.9615,
+            "DF2": 0.89
+          }
+        },
+        {
+          "en": "Numerator = 0.1100. Denominator = 1.8515.",
+          "tr": "Pay = 0,1100. Payda = 1,8515."
+        },
+        {
+          "en": "R = 0.05941 = 5.94%.",
+          "tr": "R = 0,05941 = %5,94."
+        }
+      ],
+      "vocab_ids": [
+        "swap-rate",
+        "discount-factor",
+        "zero-value",
+        "present-value"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1 [-] 0.89 [=]  (0.11)",
+          "[÷] 1.8515 [=]  (0.0594)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1-0.8900)/(0.9615+0.8900)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "DER-07-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A company entered a pay-fixed swap on a notional of TRY 5 million at a fixed rate of 3.0%. Three years remain with annual payments. The current par swap rate is 4.0% and the sum of the three discount factors is 2.75. The value of the swap to the company is closest to:",
+      "stem_tr": "Bir şirket, 5 milyon TRY itibari tutar üzerinden %3,0 sabit faizli, sabit ödeyen bir swap yapmıştır. Yıllık ödemelerle üç yıl kalmıştır. Güncel par swap faizi %4,0 ve üç iskonto faktörünün toplamı 2,75. Swapın şirket açısından değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 137,500",
+          "tr": "TRY 137.500",
+          "value": 137500.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 150,000",
+          "tr": "TRY 150.000",
+          "value": 150000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY −137,500",
+          "tr": "TRY −137.500",
+          "value": -137500.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Value = 5,000,000 × (4.0% − 3.0%) × 2.75 = TRY 137,500.",
+      "explanation_tr": "Değer = 5.000.000 × (%4,0 − %3,0) × 2,75 = 137.500 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This sums the three payment differences without discounting them.",
+          "tr": "Bu değer üç ödeme farkını iskonto etmeden toplar."
+        },
+        "C": {
+          "en": "The sign is reversed: the company pays only 3.0% when the market rate is 4.0%, so the swap is an asset.",
+          "tr": "İşaret ters alınmıştır: piyasa faizi %4,0 iken şirket yalnızca %3,0 öder; swap bir varlıktır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a pay-fixed swap after rates have risen.",
+          "tr": "Faizler yükseldikten sonra sabit ödeyen swapın değeri isteniyor."
+        },
+        {
+          "en": "Value equals the rate difference times the notional times the sum of the discount factors.",
+          "tr": "Değer; faiz farkı × itibari tutar × iskonto faktörleri toplamıdır.",
+          "formula_latex": "V=N\\,(R_{par}-R_{fixed})\\sum DF"
+        },
+        {
+          "en": "Substitute N = 5,000,000, R_par = 4.0%, R_fixed = 3.0%, ΣDF = 2.75.",
+          "tr": "N = 5.000.000, R_par = %4,0, R_fixed = %3,0, ΣDF = 2,75 değerlerini koy.",
+          "values": {
+            "N": 5000000,
+            "R_par": 0.04,
+            "R_fixed": 0.03,
+            "sumDF": 2.75
+          }
+        },
+        {
+          "en": "Annual saving = 5,000,000 × 1.0% = 50,000.",
+          "tr": "Yıllık tasarruf = 5.000.000 × %1,0 = 50.000."
+        },
+        {
+          "en": "Value = 50,000 × 2.75 = TRY 137,500.",
+          "tr": "Değer = 50.000 × 2,75 = 137.500 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "swap-value",
+        "pay-fixed",
+        "discount-factor",
+        "notional"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000000 [×] 0.01 [=]  (50000)",
+          "[×] 2.75 [=]  (137500)"
+        ]
+      },
+      "numeric": {
+        "expr": "5000000*(0.04-0.03)*2.75",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-07-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-07",
+      "los_id": "DER-07-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A company receives fixed at 5.0% on a TRY 20 million swap with two annual payments remaining. The current par swap rate is 4.2% and the discount factors are 0.9615 and 0.8900. The value of the swap to the fixed receiver is closest to:",
+      "stem_tr": "Bir şirket, kalan iki yıllık ödemesi olan 20 milyon TRY'lik swapta %5,0 sabit faiz alıyor. Güncel par swap faizi %4,2 ve iskonto faktörleri 0,9615 ve 0,8900. Swapın sabit alan taraf için değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY −296,240",
+          "tr": "TRY −296.240",
+          "value": -296240.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 320,000",
+          "tr": "TRY 320.000",
+          "value": 320000.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 296,240",
+          "tr": "TRY 296.240",
+          "value": 296240.0
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Value = 20,000,000 × (5.0% − 4.2%) × (0.9615 + 0.8900) = 160,000 × 1.8515 = TRY 296,240.",
+      "explanation_tr": "Değer = 20.000.000 × (%5,0 − %4,2) × (0,9615 + 0,8900) = 160.000 × 1,8515 = 296.240 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The sign is reversed: the receiver collects 5.0% when the market pays only 4.2%, so the swap is an asset.",
+          "tr": "İşaret ters alınmıştır: piyasa %4,2 öderken alıcı %5,0 tahsil eder; swap bir varlıktır."
+        },
+        "B": {
+          "en": "This adds the two annual differences (2 × 160,000) without discounting them.",
+          "tr": "Bu değer iki yıllık farkı (2 × 160.000) iskonto etmeden toplar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a receive-fixed swap after rates have fallen.",
+          "tr": "Faizler düştükten sonra sabit alan swapın değeri isteniyor."
+        },
+        {
+          "en": "The receiver gains the difference between its fixed rate and the current par rate on each remaining payment, discounted.",
+          "tr": "Alıcı, kalan her ödemede kendi sabit faizi ile güncel par faiz arasındaki farkı kazanır; bu iskonto edilir.",
+          "formula_latex": "V=N\\,(R_{fixed}-R_{par})\\sum DF"
+        },
+        {
+          "en": "Substitute N = 20,000,000, R_fixed = 5.0%, R_par = 4.2%, ΣDF = 1.8515.",
+          "tr": "N = 20.000.000, R_fixed = %5,0, R_par = %4,2, ΣDF = 1,8515 değerlerini koy.",
+          "values": {
+            "N": 20000000,
+            "R_fixed": 0.05,
+            "R_par": 0.042,
+            "sumDF": 1.8515
+          }
+        },
+        {
+          "en": "Annual difference = 20,000,000 × 0.8% = 160,000.",
+          "tr": "Yıllık fark = 20.000.000 × %0,8 = 160.000."
+        },
+        {
+          "en": "Value = 160,000 × 1.8515 = TRY 296,240.",
+          "tr": "Değer = 160.000 × 1,8515 = 296.240 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "swap-value",
+        "discount-factor",
+        "fixed-rate",
+        "notional"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "20000000 [×] 0.008 [=]  (160000)",
+          "[×] 1.8515 [=]  (296240)"
+        ]
+      },
+      "numeric": {
+        "expr": "20000000*(0.05-0.042)*(0.9615+0.8900)",
+        "unit": "TRY"
+      }
     }
   ]
 }

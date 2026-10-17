@@ -999,6 +999,770 @@
         "method": "independent-solve+numeric-script+bilingual-check",
         "date": "2026-10-16"
       }
+    },
+    {
+      "id": "DER-05-a-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "A trader holds a short forward to sell a share at TRY 80. At expiry the share price is TRY 72. The value of the short forward position at expiry is closest to:",
+      "stem_tr": "Bir yatırımcı, bir payı 80 TRY'den satmayı öngören kısa forward pozisyonuna sahip. Vadede pay fiyatı 72 TRY. Kısa forward pozisyonunun vadedeki değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 8.00",
+          "tr": "TRY 8,00",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "TRY −8.00",
+          "tr": "TRY −8,00",
+          "value": -8.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 72.00",
+          "tr": "TRY 72,00",
+          "value": 72.0
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "Value of the short forward at expiry = F0 − ST = 80 − 72 = TRY 8.00.",
+      "explanation_tr": "Kısa forward'un vadedeki değeri = F0 − ST = 80 − 72 = 8,00 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "The short side gains when the price falls below the forward price; the sign is reversed.",
+          "tr": "Fiyat forward fiyatın altına düşünce kısa taraf kazanır; işaret ters alınmıştır."
+        },
+        "C": {
+          "en": "TRY 72 is the spot price, not the value of the position.",
+          "tr": "72 TRY spot fiyattır, pozisyonun değeri değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a short forward at expiry.",
+          "tr": "Kısa forward'un vade sonu değeri isteniyor."
+        },
+        {
+          "en": "At expiry the short side receives the forward price and gives up the asset worth the spot price.",
+          "tr": "Vadede kısa taraf forward fiyatı alır ve spot değerindeki varlığı verir.",
+          "formula_latex": "V_T(\\text{short})=F_0-S_T"
+        },
+        {
+          "en": "Substitute F_0 = 80, S_T = 72.",
+          "tr": "F_0 = 80, S_T = 72 değerlerini koy.",
+          "values": {
+            "F0": 80,
+            "ST": 72
+          }
+        },
+        {
+          "en": "80 − 72 = 8.",
+          "tr": "80 − 72 = 8."
+        },
+        {
+          "en": "The value is TRY 8.00 (positive for the short party).",
+          "tr": "Değer 8,00 TRY'dir (kısa taraf için pozitif)."
+        }
+      ],
+      "vocab_ids": [
+        "short",
+        "forward",
+        "value",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "80 [-] 72 [=]  (8)"
+        ]
+      },
+      "numeric": {
+        "expr": "80-72",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-05-a-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "In a hypothetical case, the EUR/TRY spot rate is 35.00 (TRY per EUR). The annual risk-free rates are 30% in TRY and 3% in EUR (annual compounding). The one-year no-arbitrage forward rate is closest to:",
+      "stem_tr": "Varsayımsal bir durumda EUR/TRY spot kuru 35,00 (1 EUR için TRY). Yıllık risksiz faizler TRY için %30, EUR için %3 (yıllık bileşik). Bir yıllık arbitrajsız forward kur aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "45.50",
+          "tr": "45,50",
+          "value": 45.5
+        },
+        {
+          "key": "B",
+          "en": "27.73",
+          "tr": "27,73",
+          "value": 27.73
+        },
+        {
+          "key": "C",
+          "en": "44.17",
+          "tr": "44,17",
+          "value": 44.17
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "F0 = 35.00 × 1.30 / 1.03 = 44.17 TRY per EUR.",
+      "explanation_tr": "F0 = 35,00 × 1,30 / 1,03 = EUR başına 44,17 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses only the TRY rate and ignores the EUR rate.",
+          "tr": "Bu değer yalnızca TRY faizini kullanır, EUR faizini yok sayar."
+        },
+        "B": {
+          "en": "This inverts the rate ratio, which would price the forward in the wrong direction.",
+          "tr": "Bu değer faiz oranını ters çevirir ve forward'u yanlış yönde fiyatlar."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the forward exchange rate from interest rate parity.",
+          "tr": "Faiz paritesinden forward kur isteniyor."
+        },
+        {
+          "en": "Compound the spot rate by the ratio of the price-currency rate to the base-currency rate.",
+          "tr": "Spot kuru, fiyat para birimi faizinin baz para birimi faizine oranıyla büyüt.",
+          "formula_latex": "F_0=S_0\\frac{(1+r_{TRY})^T}{(1+r_{EUR})^T}"
+        },
+        {
+          "en": "Substitute S_0 = 35.00, r_TRY = 30%, r_EUR = 3%, T = 1.",
+          "tr": "S_0 = 35,00, r_TRY = %30, r_EUR = %3, T = 1 değerlerini koy.",
+          "values": {
+            "S0": 35,
+            "rTRY": 0.3,
+            "rEUR": 0.03,
+            "T": 1
+          }
+        },
+        {
+          "en": "Ratio = 1.30 / 1.03 = 1.26214.",
+          "tr": "Oran = 1,30 / 1,03 = 1,26214."
+        },
+        {
+          "en": "F_0 = 35.00 × 1.26214 = 44.17.",
+          "tr": "F_0 = 35,00 × 1,26214 = 44,17."
+        }
+      ],
+      "vocab_ids": [
+        "interest-rate-parity",
+        "forward-price",
+        "currency",
+        "spot"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.30 [÷] 1.03 [=]  (1.26214)",
+          "[×] 35 [=]  (44.17)"
+        ]
+      },
+      "numeric": {
+        "expr": "35*1.30/1.03",
+        "unit": "TRY/EUR"
+      }
+    },
+    {
+      "id": "DER-05-a-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A trader entered a long forward on a share (no dividends) at F0 = TRY 50. One year remains to maturity, the share price is now TRY 55 and the annual risk-free rate is 4% (annual compounding). The current value of the long forward is closest to:",
+      "stem_tr": "Bir yatırımcı, temettüsüz bir paya ilişkin uzun forward'a F0 = 50 TRY'den girmiş. Vadeye bir yıl var, pay fiyatı şimdi 55 TRY ve yıllık risksiz faiz %4 (yıllık bileşik). Uzun forward'un güncel değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 5.00",
+          "tr": "TRY 5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "TRY 6.92",
+          "tr": "TRY 6,92",
+          "value": 6.92
+        },
+        {
+          "key": "C",
+          "en": "TRY 3.00",
+          "tr": "TRY 3,00",
+          "value": 3.0
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "V = St − F0 / (1 + r)^(T − t) = 55 − 50 / 1.04 = TRY 6.92.",
+      "explanation_tr": "V = St − F0 / (1 + r)^(T − t) = 55 − 50 / 1,04 = 6,92 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the forward price back to today.",
+          "tr": "Bu değer forward fiyatı bugüne iskonto etmez."
+        },
+        "C": {
+          "en": "This compounds the forward price forward instead of discounting it.",
+          "tr": "Bu değer forward fiyatı iskonto etmek yerine ileri taşır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a long forward before maturity.",
+          "tr": "Vadeden önce uzun forward'un değeri isteniyor."
+        },
+        {
+          "en": "Value equals the spot price minus the present value of the forward price.",
+          "tr": "Değer, spot fiyat eksi forward fiyatın bugünkü değeridir.",
+          "formula_latex": "V_t=S_t-\\frac{F_0}{(1+r)^{T-t}}"
+        },
+        {
+          "en": "Substitute S_t = 55, F_0 = 50, r = 4%, T − t = 1.",
+          "tr": "S_t = 55, F_0 = 50, r = %4, T − t = 1 değerlerini koy.",
+          "values": {
+            "St": 55,
+            "F0": 50,
+            "r": 0.04,
+            "Tt": 1
+          }
+        },
+        {
+          "en": "PV of the forward price = 50 / 1.04 = 48.08.",
+          "tr": "Forward fiyatın bugünkü değeri = 50 / 1,04 = 48,08."
+        },
+        {
+          "en": "V = 55 − 48.08 = TRY 6.92.",
+          "tr": "V = 55 − 48,08 = 6,92 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "forward-value",
+        "present-value",
+        "discount",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "50 [÷] 1.04 [=]  (48.077)",
+          "55 [-] 48.077 [=]  (6.92)"
+        ]
+      },
+      "numeric": {
+        "expr": "55-50/1.04",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-05-a-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-a",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A long forward on a share was entered at F0 = TRY 98. Six months remain to maturity. The share is TRY 100, a dividend with a present value of TRY 1.20 will be paid before maturity, and the annual risk-free rate is 6% (annual compounding). The current value of the long forward is closest to:",
+      "stem_tr": "Bir paya ilişkin uzun forward F0 = 98 TRY'den yapılmış. Vadeye altı ay var. Pay 100 TRY, vadeden önce bugünkü değeri 1,20 TRY olan bir temettü ödenecek ve yıllık risksiz faiz %6 (yıllık bileşik). Uzun forward'un güncel değeri aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY 3.61",
+          "tr": "TRY 3,61",
+          "value": 3.61
+        },
+        {
+          "key": "B",
+          "en": "TRY 2.00",
+          "tr": "TRY 2,00",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "TRY 4.81",
+          "tr": "TRY 4,81",
+          "value": 4.81
+        }
+      ],
+      "answer": "A",
+      "explanation_en": "V = 100 − 1.20 − 98 / 1.06^0.5 = 98.80 − 95.19 = TRY 3.61.",
+      "explanation_tr": "V = 100 − 1,20 − 98 / 1,06^0,5 = 98,80 − 95,19 = 3,61 TRY.",
+      "wrong_option_reasons": {
+        "B": {
+          "en": "This is simply S − F0 and ignores both the dividend and discounting.",
+          "tr": "Bu değer yalnızca S − F0'dır; temettüyü ve iskontoyu yok sayar."
+        },
+        "C": {
+          "en": "This forgets to subtract the present value of the dividend.",
+          "tr": "Bu değer temettünün bugünkü değerini düşmeyi unutur."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the value of a long forward on a dividend-paying share.",
+          "tr": "Temettü ödeyen bir paya ilişkin uzun forward'un değeri isteniyor."
+        },
+        {
+          "en": "Value equals the spot price less the PV of dividends, less the PV of the forward price.",
+          "tr": "Değer, spot fiyat eksi temettülerin bugünkü değeri eksi forward fiyatın bugünkü değeridir.",
+          "formula_latex": "V_t=S_t-PV(D)-\\frac{F_0}{(1+r)^{T-t}}"
+        },
+        {
+          "en": "Substitute S_t = 100, PV(D) = 1.20, F_0 = 98, r = 6%, T − t = 0.5.",
+          "tr": "S_t = 100, PV(D) = 1,20, F_0 = 98, r = %6, T − t = 0,5 değerlerini koy.",
+          "values": {
+            "St": 100,
+            "PVD": 1.2,
+            "F0": 98,
+            "r": 0.06,
+            "Tt": 0.5
+          }
+        },
+        {
+          "en": "PV of the forward price = 98 / 1.06^0.5 = 95.19.",
+          "tr": "Forward fiyatın bugünkü değeri = 98 / 1,06^0,5 = 95,19."
+        },
+        {
+          "en": "V = 100 − 1.20 − 95.19 = TRY 3.61.",
+          "tr": "V = 100 − 1,20 − 95,19 = 3,61 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "forward-value",
+        "dividend",
+        "present-value",
+        "maturity"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.06 [y^x] 0.5 [=]  (1.02956)",
+          "98 [÷] 1.02956 [=]  (95.19)",
+          "100 [-] 1.2 [-] 95.19 [=]  (3.61)"
+        ]
+      },
+      "numeric": {
+        "expr": "100-1.2-98/1.06**0.5",
+        "unit": "TRY"
+      }
+    },
+    {
+      "id": "DER-05-b-q06",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 1,
+      "cognitive": "apply",
+      "stem_en": "The one-year spot rate is 1% and the two-year spot rate is 3% (annual compounding). The one-year forward rate starting one year from now (1y1y) is closest to:",
+      "stem_tr": "Bir yıllık spot faiz %1 ve iki yıllık spot faiz %3 (yıllık bileşik). Bir yıl sonra başlayan bir yıllık forward faiz (1y1y) aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "5.00%",
+          "tr": "%5,00",
+          "value": 5.0
+        },
+        {
+          "key": "B",
+          "en": "2.00%",
+          "tr": "%2,00",
+          "value": 2.0
+        },
+        {
+          "key": "C",
+          "en": "5.04%",
+          "tr": "%5,04",
+          "value": 5.04
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "(1.03)² = (1.01)(1 + f), so f = 1.0609 / 1.01 − 1 = 5.04%.",
+      "explanation_tr": "(1,03)² = (1,01)(1 + f); dolayısıyla f = 1,0609 / 1,01 − 1 = %5,04.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This uses the linear shortcut 2 × 3% − 1%, which ignores compounding.",
+          "tr": "Bu değer 2 × %3 − %1 kestirmesini kullanır ve bileşik etkiyi yok sayar."
+        },
+        "B": {
+          "en": "This is the simple average of the two spot rates, not a forward rate.",
+          "tr": "Bu değer iki spot faizin basit ortalamasıdır, forward faiz değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 1y1y forward rate implied by two spot rates.",
+          "tr": "İki spot faizin ima ettiği 1y1y forward faiz isteniyor."
+        },
+        {
+          "en": "Investing for two years must give the same growth as investing for one year and then at the forward rate.",
+          "tr": "İki yıl yatırım yapmak, bir yıl yatırıp sonra forward faizle yatırmakla aynı büyümeyi vermelidir.",
+          "formula_latex": "(1+s_2)^2=(1+s_1)(1+f_{1,1})"
+        },
+        {
+          "en": "Substitute s_1 = 1% and s_2 = 3%.",
+          "tr": "s_1 = %1 ve s_2 = %3 değerlerini koy.",
+          "values": {
+            "s1": 0.01,
+            "s2": 0.03
+          }
+        },
+        {
+          "en": "1.03² = 1.0609, and 1.0609 / 1.01 = 1.05040.",
+          "tr": "1,03² = 1,0609 ve 1,0609 / 1,01 = 1,05040."
+        },
+        {
+          "en": "f = 5.04%.",
+          "tr": "f = %5,04."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "compounding",
+        "implied"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.03 [x²] [=]  (1.0609)",
+          "[÷] 1.01 [=]  (1.0504)",
+          "[-] 1 [=]  (0.0504)"
+        ]
+      },
+      "numeric": {
+        "expr": "(1.03**2/1.01-1)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "DER-05-b-q07",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "The two-year spot rate is 2% and the four-year spot rate is 5% (annual compounding). The two-year forward rate starting two years from now (2y2y), expressed per year, is closest to:",
+      "stem_tr": "İki yıllık spot faiz %2 ve dört yıllık spot faiz %5 (yıllık bileşik). İki yıl sonra başlayan iki yıllık forward faiz (2y2y), yıllık olarak aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "8.00%",
+          "tr": "%8,00",
+          "value": 8.0
+        },
+        {
+          "key": "B",
+          "en": "8.09%",
+          "tr": "%8,09",
+          "value": 8.09
+        },
+        {
+          "key": "C",
+          "en": "3.50%",
+          "tr": "%3,50",
+          "value": 3.5
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "(1.05)⁴ = (1.02)²(1 + f)², so (1 + f)² = 1.21551 / 1.0404 = 1.16831 and f = 8.09%.",
+      "explanation_tr": "(1,05)⁴ = (1,02)²(1 + f)²; dolayısıyla (1 + f)² = 1,21551 / 1,0404 = 1,16831 ve f = %8,09.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This is the linear shortcut (4 × 5% − 2 × 2%) / 2 and ignores compounding.",
+          "tr": "Bu değer doğrusal kestirmedir ((4 × %5 − 2 × %2) / 2) ve bileşik etkiyi yok sayar."
+        },
+        "C": {
+          "en": "This is the average of the two spot rates, which is not a forward rate.",
+          "tr": "Bu değer iki spot faizin ortalamasıdır; forward faiz değildir."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the 2y2y forward rate per year.",
+          "tr": "Yıllık 2y2y forward faiz isteniyor."
+        },
+        {
+          "en": "Four years of growth equals two years at the spot rate followed by two years at the forward rate.",
+          "tr": "Dört yıllık büyüme, iki yıl spot faiz ve ardından iki yıl forward faizle büyümeye eşittir.",
+          "formula_latex": "(1+s_4)^4=(1+s_2)^2(1+f_{2,2})^2"
+        },
+        {
+          "en": "Substitute s_2 = 2% and s_4 = 5%.",
+          "tr": "s_2 = %2 ve s_4 = %5 değerlerini koy.",
+          "values": {
+            "s2": 0.02,
+            "s4": 0.05
+          }
+        },
+        {
+          "en": "(1.05)⁴ / (1.02)² = 1.21551 / 1.0404 = 1.16831.",
+          "tr": "(1,05)⁴ / (1,02)² = 1,21551 / 1,0404 = 1,16831."
+        },
+        {
+          "en": "1 + f = √1.16831 = 1.08088, so f = 8.09%.",
+          "tr": "1 + f = √1,16831 = 1,08088; dolayısıyla f = %8,09."
+        }
+      ],
+      "vocab_ids": [
+        "forward-rate",
+        "spot-rate",
+        "compounding",
+        "implied"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "1.05 [y^x] 4 [÷] 1.02 [x²] [=]  (1.16831)",
+          "[2ND] [√x]  (1.08088)",
+          "[-] 1 [=]  (0.0809)"
+        ]
+      },
+      "numeric": {
+        "expr": "((1.05**4/1.02**2)**0.5-1)*100",
+        "unit": "%"
+      }
+    },
+    {
+      "id": "DER-05-b-q08",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 2,
+      "cognitive": "apply",
+      "stem_en": "A 2 × 5 forward rate agreement (FRA) is best described as a contract in which:",
+      "stem_tr": "2 × 5 türünden bir ileri faiz sözleşmesi (FRA) en iyi şu şekilde tanımlanır:",
+      "options": [
+        {
+          "key": "A",
+          "en": "the FRA expires in five months and the underlying rate covers the two months before expiry",
+          "tr": "FRA beş ay sonra sona erer ve dayanak faiz vadeden önceki iki ayı kapsar"
+        },
+        {
+          "key": "B",
+          "en": "the FRA expires in two months and the underlying rate covers the following three months",
+          "tr": "FRA iki ay sonra sona erer ve dayanak faiz sonraki üç ayı kapsar"
+        },
+        {
+          "key": "C",
+          "en": "the FRA expires in two months and the underlying rate covers five months",
+          "tr": "FRA iki ay sonra sona erer ve dayanak faiz beş ayı kapsar"
+        }
+      ],
+      "answer": "B",
+      "explanation_en": "A 2 × 5 FRA settles at month 2, based on a 3-month rate (5 − 2) that applies from month 2 to month 5.",
+      "explanation_tr": "2 × 5 FRA 2. ayda uzlaşılır; 2. aydan 5. aya uygulanan 3 aylık (5 − 2) faize dayanır.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "The notation gives months to expiry first (2) and months to the end of the underlying loan second (5).",
+          "tr": "Gösterimde önce vadeye kalan ay (2), sonra dayanak kredinin bitişine kalan ay (5) gelir."
+        },
+        "C": {
+          "en": "The underlying period is 5 − 2 = 3 months, not 5 months.",
+          "tr": "Dayanak dönem 5 − 2 = 3 aydır, 5 ay değildir."
+        }
+      },
+      "solution_steps": [],
+      "vocab_ids": [
+        "fra",
+        "forward-rate-agreement",
+        "underlying-rate",
+        "expiry"
+      ],
+      "pattern_ids": [
+        "best-describes"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      }
+    },
+    {
+      "id": "DER-05-b-q09",
+      "level": "L1",
+      "topic": "DER",
+      "module_id": "DER-05",
+      "los_id": "DER-05-b",
+      "curriculum_year": 2027,
+      "type": "mcq3",
+      "difficulty": 3,
+      "cognitive": "analyze",
+      "stem_en": "A TRY 5 million FRA (hypothetical, 360-day basis) has a fixed rate of 7%. At expiry the underlying 90-day rate is 6%. The payoff at expiry to the short (receive-fixed) position, with the payment discounted to the settlement date, is closest to:",
+      "stem_tr": "5 milyon TRY'lik bir FRA'nın (varsayımsal, 360 gün esaslı) sabit oranı %7. Vadede dayanak 90 günlük faiz %6. Kısa (sabit alan) pozisyonun, ödemesi uzlaşma tarihine iskonto edilmiş vade sonu getirisi aşağıdakilerden hangisine en yakındır?",
+      "options": [
+        {
+          "key": "A",
+          "en": "TRY +12,500",
+          "tr": "TRY +12.500",
+          "value": 12500.0
+        },
+        {
+          "key": "B",
+          "en": "TRY −12,315",
+          "tr": "TRY −12.315",
+          "value": -12315.27
+        },
+        {
+          "key": "C",
+          "en": "TRY +12,315",
+          "tr": "TRY +12.315",
+          "value": 12315.27
+        }
+      ],
+      "answer": "C",
+      "explanation_en": "Short payoff = 5,000,000 × (0.07 − 0.06) × (90/360) / (1 + 0.06 × 90/360) = TRY +12,315.",
+      "explanation_tr": "Kısa taraf getirisi = 5.000.000 × (0,07 − 0,06) × (90/360) / (1 + 0,06 × 90/360) = +12.315 TRY.",
+      "wrong_option_reasons": {
+        "A": {
+          "en": "This does not discount the payment, although the FRA settles at the start of the underlying period.",
+          "tr": "Bu değer ödemeyi iskonto etmez; oysa FRA dayanak dönemin başında uzlaşılır."
+        },
+        "B": {
+          "en": "The sign is reversed: the short side receives fixed 7%, which is above the market rate, so it gains.",
+          "tr": "İşaret ters alınmıştır: kısa taraf piyasa faizinin üstündeki sabit %7'yi alır, dolayısıyla kazanır."
+        }
+      },
+      "solution_steps": [
+        {
+          "en": "We need the discounted FRA payoff for the receive-fixed side.",
+          "tr": "Sabit alan tarafın iskonto edilmiş FRA getirisi isteniyor."
+        },
+        {
+          "en": "Payoff is the rate difference times the notional times the period, discounted at the market rate.",
+          "tr": "Getiri; faiz farkı × itibari tutar × dönemdir ve piyasa faiziyle iskonto edilir.",
+          "formula_latex": "\\text{Payoff}=\\frac{N\\,(R_{FRA}-R)\\,\\frac{d}{360}}{1+R\\,\\frac{d}{360}}"
+        },
+        {
+          "en": "Substitute N = 5,000,000, R_FRA = 7%, R = 6%, d = 90.",
+          "tr": "N = 5.000.000, R_FRA = %7, R = %6, d = 90 değerlerini koy.",
+          "values": {
+            "N": 5000000,
+            "R_FRA": 0.07,
+            "R": 0.06,
+            "d": 90
+          }
+        },
+        {
+          "en": "Numerator = 5,000,000 × 0.01 × 0.25 = 12,500.",
+          "tr": "Pay = 5.000.000 × 0,01 × 0,25 = 12.500."
+        },
+        {
+          "en": "Discount factor: 1 + 0.015 = 1.015, so payoff = 12,500 / 1.015 = TRY 12,315.",
+          "tr": "İskonto: 1 + 0,015 = 1,015; getiri = 12.500 / 1,015 = 12.315 TRY."
+        }
+      ],
+      "vocab_ids": [
+        "fra",
+        "notional",
+        "forward-rate-agreement",
+        "present-value",
+        "settlement"
+      ],
+      "pattern_ids": [
+        "closest-to"
+      ],
+      "source_basis": "original",
+      "verified": {
+        "by": "reviewer-agent",
+        "method": "independent-solve+numeric-script+bilingual-check",
+        "date": "2026-10-17"
+      },
+      "calculator": {
+        "device": "BA II Plus",
+        "keystrokes": [
+          "5000000 [×] 0.01 [×] 0.25 [=]  (12500)",
+          "[÷] 1.015 [=]  (12315.27)"
+        ]
+      },
+      "numeric": {
+        "expr": "5000000*(0.07-0.06)*(90/360)/(1+0.06*90/360)",
+        "unit": "TRY"
+      }
     }
   ]
 }
