@@ -118,8 +118,9 @@ export default function Stats() {
               </T>
             </Row>
             <Bar value={acc} height={5} color={acc >= 70 ? c.good : acc >= 50 ? c.warn : c.bad} />
-            <T size={12} sub>
+            <T size={12} sub color={st && st.attempts >= 5 && st.avgSeconds > 90 ? c.warn : undefined}>
               {st ? `${st.attempts} soru · ort. ${Math.round(st.avgSeconds)} sn` : 'henüz soru yok'}
+              {st && st.attempts >= 5 && st.avgSeconds > 90 ? ' · sınav temposundan yavaş (hedef ~90 sn)' : ''}
             </T>
           </Card>
         );
