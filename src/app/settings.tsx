@@ -118,6 +118,14 @@ export default function Settings() {
         ))}
       </Row>
 
+      <H>Soru çözerken</H>
+      <Row>
+        <Chip label="Şıka dokununca hemen cevapla" active={!!st.quickAnswer} onPress={() => actions.updateSettings({ quickAnswer: !st.quickAnswer })} />
+      </Row>
+      <T size={12} sub style={{ marginTop: 4 }}>
+        Açıkken “Kontrol et” adımı yok: hızlı ve az dokunuşlu. Kapalıyken önce seçer, sonra onaylarsın. Mock sınavda her zaman onaylamalı.
+      </T>
+
       <H>Veri</H>
       <T size={13} sub>
         Tüm ilerleme yalnızca bu cihazda saklanır (sunucu yok). Tarayıcı verisi silinirse kaybolur; arada yedek al.

@@ -32,7 +32,7 @@ export function QuestionCard({
   onSelect?: (k: string) => void;
 }) {
   const c = useColors();
-  const { trLevel } = useSettings();
+  const { trLevel, quickAnswer } = useSettings();
   const [choice, setChoice] = useState<string | null>(selected ?? null);
   const [done, setDone] = useState(false);
   const [left, setLeft] = useState(timeLimit ?? 0);
@@ -67,6 +67,7 @@ export function QuestionCard({
     if (done) return;
     setChoice(k);
     onSelect?.(k);
+    if (quickAnswer && !examMode) submit(k); // hızlı cevap: dokununca hemen kontrol
   };
 
   const spk = spkChip(q.spk_link?.status);
